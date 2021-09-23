@@ -1,0 +1,44 @@
+---
+title: Equipes de projeto
+description: Crie a equipe certa para o seu projeto de comércio eletrônico.
+source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 0%
+
+---
+
+
+# Equipes de projeto
+
+Cada loja de tijolos e argamassa precisa de uma equipe e é o mesmo para uma loja de comércio eletrônico online. É importante ter pessoas em sua equipe que se encaixem no papel com as habilidades necessárias. Para o comércio eletrônico B2B e B2C, é essencial que cada departamento da organização esteja envolvido no projeto de comércio eletrônico.
+
+Há dependências diretas e indiretas entre departamentos que ajudam a atingir as metas da equipe do projeto. É fundamental que cada indivíduo entenda o objetivo da equipe e como alcançá-lo. A integração de um membro da equipe que não conhece bem a plataforma ou que não está alinhado tende a retardar as coisas e aumenta a pressão sobre os outros membros da equipe.
+
+O tamanho da sua equipe depende da complexidade do projeto.
+
+## Principais funções da equipe
+
+- Gerenciador de projetos
+- Arquiteto técnico
+- Líder Funcional
+- Analista de negócios
+- Desenvolvedores de back-end
+- desenvolvedores de primeiro plano
+- Designer
+- Gerenciador de conteúdo
+- Testador
+
+Cada uma dessas funções é responsável pelo planejamento e execução do projeto de comércio eletrônico. No entanto, há outros papéis que compartilham responsabilidade.
+
+## Dependências externas
+
+As organizações tendem a ignorar as dependências externas que direta ou indiretamente desempenham um papel importante no sucesso do projeto, incluindo:
+
+- **Equipe** de depósito - Se o site estiver funcionando, mas a equipe no depósito for limitada, a embalagem e o envio poderão ser atrasados. Também pode haver um problema do sistema no depósito que impeça o rastreamento de pedidos que também podem atrasar o envio e a embalagem.
+
+- **Equipe** de atendimento ao cliente — Essa equipe está em contato direto com os clientes. Eles estão cientes dos pontos problemáticos do cliente, mas geralmente são a equipe mais subestimada em uma organização. Por exemplo, se você executar uma nova promoção em seu site e a equipe não souber, talvez eles não consigam fornecer aos clientes as informações corretas ou talvez eles não consigam lidar com o volume de chamadas se for uma pequena equipe. Esses exemplos podem levar a uma experiência negativa do cliente.
+
+- **Equipe** de marketing: as equipes de marketing lidam com vendas, ofertas, promoções e campanhas. Se eles enviarem emails sobre um produto, mas não souberem que o estoque é limitado, isso pode criar uma experiência ruim para o cliente e diminuir a taxa de conversão.
+
+Ao criar a equipe do projeto, é essencial não só ter as pessoas corretas com as competências necessárias, mas também garantir que as equipes externas sejam informadas e alinhadas para alcançar um resultado bem-sucedido.
