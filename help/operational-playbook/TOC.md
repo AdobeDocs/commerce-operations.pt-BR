@@ -1,15 +1,15 @@
 ---
-user-guide-title: Playbook operacional comercial
+user-guide-title: Playbook operacional
 user-guide-description: Saiba como preparar suas empresas operacionalmente para executar um site de comércio eletrônico bem-sucedido.
-source-git-commit: 6eeb6547d06d416c50fcf97cb07cbc94729ebcd0
+source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
 
 
-# Playbook operacional comercial {#operational-playbook}
+# Playbook operacional {#operational-playbook}
 
 - [Visão geral](overview.md)
 - Comércio {#intro}
