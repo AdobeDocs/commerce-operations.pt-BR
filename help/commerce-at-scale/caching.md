@@ -1,9 +1,9 @@
 ---
 title: Planejamento de Cache Efetivo
 description: Consulte os benchmarks recomendados para armazenamento em cache para garantir o sucesso do site sob carregamento.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 41c0ba17b3d731a82ad6ecd8b16fac151a597e75
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Planejamento de armazenamento em cache eficaz para o sucesso do comércio eletrônico sob carga
 
-Fornecer uma experiência de compra sob carga exigirá uma estratégia de armazenamento em cache planejada antecipadamente. Embora, inicialmente, o pedido das partes interessadas possa ser sempre o de apresentar dados do produto em tempo real aos clientes, não se trata de uma utilização ótima dos recursos do sistema, e os impactos do desempenho do site do usuário final ultrapassariam consideravelmente os benefícios da apresentação consistente de informações em tempo real.
+Fornecer uma experiência de compra sob carga requer uma estratégia de cache bem planejada. Embora, inicialmente, o pedido das partes interessadas possa ser sempre o de apresentar dados do produto em tempo real aos clientes, não se trata de uma utilização ótima dos recursos do sistema, e os impactos do desempenho do site do usuário final ultrapassariam consideravelmente os benefícios da apresentação consistente de informações em tempo real.
 
 A primeira etapa da estratégia de armazenamento em cache deve, por conseguinte, consistir em definir com as partes interessadas uma matriz de tempos de armazenamento em cache aceitáveis para as diferentes áreas do sítio, por exemplo:
 
