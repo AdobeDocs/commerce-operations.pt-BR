@@ -1,9 +1,9 @@
 ---
 title: Fornecer Experiências Em Escala
 description: Saiba como fornecer experiências em escala com o Adobe Commerce e o Adobe Experience Manager.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,6 @@ Um exemplo dos diferentes componentes em uma Página de detalhes do produto em u
 
 ## Renderização do lado do cliente
 
-Quando atributos mais dinâmicos, como níveis de estoque/disponibilidade ou preço, são exibidos, por exemplo, nas Páginas de detalhes do produto (PDPs), os componentes do lado do cliente podem ser usados. Embora a página de modelo possa ser criada e armazenada em cache no dispatcher usando a abordagem de renderização do lado do servidor acima, dentro da própria página estática pode haver componentes da Web dinâmicos do lado do cliente. Esses componentes dinâmicos podem buscar dados diretamente no navegador do cliente do Adobe Commerce por meio de APIs GraphQL para verificar, por exemplo, o preço atual ou o nível de estoque em tempo real na PDP. Isso garante que o conteúdo, normalmente crítico para ser exibido em tempo real, sempre seja buscado no carregamento da página. Exemplos disso são mostrados nas caixas amarelas do exemplo acima.
+Quando atributos mais dinâmicos, como níveis de estoque/disponibilidade ou preço, são exibidos, por exemplo, nas Páginas de detalhes do produto (PDPs), os componentes do lado do cliente podem ser usados. Embora a página de modelo possa ser criada e armazenada em cache no dispatcher usando a abordagem de renderização do lado do servidor acima, dentro da própria página estática pode haver componentes da Web dinâmicos do lado do cliente. Esses componentes dinâmicos podem buscar dados diretamente no navegador do cliente do Adobe Commerce por meio de APIs GraphQL para verificar, por exemplo, o preço atual ou o nível de estoque em tempo real na PDP. Isso garante que o conteúdo, normalmente crítico para ser exibido em tempo real, sempre seja buscado no carregamento da página. Exemplos disso são mostrados nas caixas vermelhas no exemplo acima.
 
 Uma combinação de modelos de AEM e renderização no lado do cliente também pode ser usada durante o processo de finalização: os componentes do carrinho do lado do cliente renderizam o carrinho de compras, o formulário de check-out e a integração com o provedor de serviços de pagamento. Essa abordagem híbrida também pode ser usada para a funcionalidade de gerenciamento de conta do Adobe Commerce, como criar conta, entrar em conta e senha esquecida.

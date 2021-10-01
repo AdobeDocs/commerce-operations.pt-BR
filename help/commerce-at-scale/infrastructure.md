@@ -1,9 +1,9 @@
 ---
 title: Alinhamento da infraestrutura Adobe Commerce e Adobe Experience Manager
 description: Alinhe sua infraestrutura Adobe-Commerce e Adobe Experience Manager para definir tempos limite e limites de conexão aceitáveis.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ Supondo que haja um balanceador de carga de aplicativo AWS na infraestrutura e v
 
 1. As verificações de integridade do editor devem ser revisadas para evitar que os despachantes saiam do serviço desnecessariamente cedo de sobrecargas. As configurações de tempo limite da verificação de integridade do balanceador de carga devem ser alinhadas com as configurações de tempo limite do editor.
 
-   ![Captura de tela mostrando AEM verificações de integridade do balanceador de carga](../assets/commerce-at-scale/health-checks.svg)
+   ![Captura de tela mostrando AEM verificações de integridade do balanceador de carga](../assets/commerce-at-scale/health-checks.png)
 
 1. A adesão do grupo de destino do Dispatcher pode ser desativada e o algoritmo de balanceamento de carga Round Robin pode ser usado. Isso é suposto que não haja AEM funcionalidade específica ou AEM sessões de usuário usadas que exigiriam que a adesão à sessão fosse definida. Ele presume que o logon do usuário e o gerenciamento de sessões estejam somente no Adobe Commerce via GraphQL.
 
-   ![Captura de tela mostrando atributos de adesão AEM sessão](../assets/commerce-at-scale/session-stickiness.svg)
+   ![Captura de tela mostrando atributos de adesão AEM sessão](../assets/commerce-at-scale/session-stickiness.png)
 
 1. Observe que se você ativar a adesão à sessão, isso pode fazer com que as solicitações não sejam armazenadas em cache de forma rápida, pois, por padrão, o Fastly não armazena páginas em cache com o cabeçalho Definir cookies . O Adobe Commerce define cookies mesmo em páginas que podem ser armazenadas em cache (TTL > 0), mas o Fastly VCL padrão desmonta esses cookies em páginas que podem ser armazenadas em cache para que o armazenamento em cache Fastly funcione. Se as páginas não estiverem sendo armazenadas em cache, verifique os cookies personalizados que você estiver usando e também carregue o VCL com rapidez e verifique novamente o site.
 
@@ -49,8 +49,8 @@ O tempo limite da conexão http e o tempo limite do soquete http devem ser defin
 
 A imagem a seguir mostra a Fábrica de configuração do cliente GraphQL da CIF do Magento. As configurações mostradas aqui são apenas exemplos e precisam ser ajustadas caso a caso:
 
-![Captura de tela das configurações da estrutura de integração do Commerce](../assets/commerce-at-scale/cif-config.svg)
+![Captura de tela das configurações da estrutura de integração do Commerce](../assets/commerce-at-scale/cif-config.png)
 
 As imagens a seguir mostram as configurações Fastly backend. As configurações mostradas aqui são apenas exemplos e precisam ser ajustadas caso a caso:
 
-![Captura de tela das configurações do Administrador do Commerce para Fastly](../assets/commerce-at-scale/cif-config-advanced.svg)
+![Captura de tela das configurações do Administrador do Commerce para Fastly](../assets/commerce-at-scale/cif-config-advanced.png)

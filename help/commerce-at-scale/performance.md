@@ -1,9 +1,9 @@
 ---
-title: Otimizações de desempenho
+title: Otimizações de desempenho AEM
 description: Otimize sua configuração padrão do Adobe Experience Manager para suportar cargas altas no Adobe Commerce.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Cada nível de pasta teria &quot;nível de estatística&quot; - conforme mostrad
 
 | conteúdo (docroot) | comércio eletrônico | us | en | products | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
-| 0 | 1 | 2 | 1 | 4 | - |
+| 0 | 1 | 2 | 3 | 4 | - |
 
 Nesse caso, se você tiver deixado a propriedade statfilelevel definida como padrão &quot;0&quot; e o modelo product-page.html for atualizado e ativado, acionando uma invalidação, cada arquivo .stat do docroot para o nível 4 será tocado, e os arquivos serão invalidados, causando uma nova solicitação das instâncias de publicação de AEM para todas as páginas no site (incluindo outros sites, países e idiomas) dessa única alteração.
 
