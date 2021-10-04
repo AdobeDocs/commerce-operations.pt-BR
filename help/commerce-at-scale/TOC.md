@@ -3,7 +3,7 @@ user-guide-title: Fornecer experiências comerciais em escala
 user-guide-description: Saiba como fornecer experiências em escala usando o Adobe Commerce com a Adobe Experience Manager.
 source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
