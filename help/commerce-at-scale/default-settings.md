@@ -4,7 +4,7 @@ description: Prepare seu projeto do Adobe Commerce para usar o Adobe Experience 
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
