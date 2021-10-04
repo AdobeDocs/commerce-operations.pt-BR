@@ -2,7 +2,7 @@
 title: Playbook de implementação
 description: Objetivo do manual de implementação do Commerce
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 7bad54402e4698545f3436d4195170adb7b48c15
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Além disso, esses processos e considerações se aplicam a qualquer tipo de pro
 - Implantações no mercado único ou em vários mercados
 - Integrações abrangentes com ou sem middleware
 
-Esperamos que esse manual forneça insights e orientações para uma variedade de participantes que normalmente estariam envolvidos em uma iniciativa de projeto de comércio eletrônico, como:
+Esperamos que esse manual forneça insights e orientações para uma variedade de participantes que normalmente estariam envolvidos em uma iniciativa de projeto de comércio eletrônico, incluindo:
 
 - CEOs e gerenciamento geral, que devem ter uma ideia sólida do que implica um lançamento de comércio eletrônico
 - OCM e gerentes digitais, que trabalharão com os usuários empresariais na própria plataforma
