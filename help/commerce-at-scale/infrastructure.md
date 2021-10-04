@@ -1,13 +1,13 @@
 ---
 title: Alinhamento da infraestrutura Adobe Commerce e Adobe Experience Manager
 description: Alinhe sua infraestrutura Adobe-Commerce e Adobe Experience Manager para definir tempos limite e limites de conexão aceitáveis.
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
-
 
 # Alinhamentos de infraestrutura (limites de tempo limite e de conexão)
 

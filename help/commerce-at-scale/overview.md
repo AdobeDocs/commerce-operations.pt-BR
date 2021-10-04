@@ -1,13 +1,13 @@
 ---
 title: Fornecer Experiências Em Escala
 description: Saiba como fornecer experiências em escala com o Adobe Commerce e o Adobe Experience Manager.
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
-
 
 # Fornecer experiências em escala com o Adobe Commerce, Commerce Integration Framework e Adobe Experience Manager
 

@@ -1,19 +1,19 @@
 ---
 title: Playbook de implementação
 description: Objetivo do manual de implementação do Commerce
-source-git-commit: bb7dbf2a9d7f2fca1ecc7714f8f1ea53e4fcf067
+exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # Reprodução da implementação
 
 O objetivo desse livro de reprodução é fornecer a visão geral mais holística de uma implementação típica do Adobe Commerce.
 
-Desde os estágios iniciais do escopo do projeto até desenvolvimento e integrações e, finalmente, até implantação e suporte contínuo, há muitas metodologias e práticas recomendadas que você precisa considerar para iniciar com sucesso um projeto comercial.
+Desde os estágios iniciais do escopo do projeto até desenvolvimento, integrações e implantação até o suporte contínuo, há muitas metodologias e práticas recomendadas que você precisa considerar para iniciar com sucesso um projeto do Adobe Commerce.
 
 Além disso, esses processos e considerações se aplicam a qualquer tipo de projeto de Comércio de Adobe:
 
