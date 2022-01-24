@@ -1,9 +1,9 @@
 ---
 title: Práticas recomendadas
 description: Use as práticas recomendadas do Adobe para gerenciar o processo de atualização para seus projetos do Adobe Commerce e do Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Avalie o trabalho a ser feito para atualizar:
 
 - Revise o [notas de versão](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) para compreender o escopo e o impacto da nova versão.
 
-- Use o [Ferramenta de compatibilidade de atualização](../upgrade-compatibility-tool/overview.md) para identificar possíveis problemas que devem ser corrigidos em seu código personalizado antes de tentar atualizar para uma versão mais recente.
+- Use o [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) para identificar possíveis problemas que devem ser corrigidos em seu código personalizado antes de tentar atualizar para uma versão mais recente.
 
 - Se estiver usando extensões de terceiros, valide a compatibilidade com a versão de destino para a qual você pretende atualizar.
 

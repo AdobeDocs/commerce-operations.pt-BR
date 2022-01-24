@@ -1,19 +1,19 @@
 ---
-title: Pré-requisitos da ferramenta de compatibilidade de atualização
-description: 'Verifique se o sistema atende aos requisitos necessários para executar a Ferramenta de compatibilidade de atualização para seu projeto do Adobe Commerce. '
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] Pré-requisitos'
+description: 'Verifique se o sistema atende aos requisitos necessários para executar o [!DNL Upgrade Compatibility Tool] para seu projeto do Adobe Commerce. '
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
 
-# Pré-requisitos da Ferramenta de Compatibilidade de Atualização
+# [!DNL Upgrade Compatibility Tool] pré-requisitos
 
-A execução da Ferramenta de Compatibilidade de Atualização ajuda a identificar o que deve ser feito **before** atualizando sua versão do Adobe Commerce.
+Executar o [!DNL Upgrade Compatibility Tool] ajuda a identificar o que deve ser feito **before** atualizando sua versão do Adobe Commerce.
 
-Os requisitos mínimos para executar a Ferramenta de Compatibilidade de Atualização são:
+Os requisitos mínimos para executar o [!DNL Upgrade Compatibility Tool] são:
 
 | **Requisitos** | **Restrições** |
 |----------------|-----------------|
@@ -24,6 +24,6 @@ Os requisitos mínimos para executar a Ferramenta de Compatibilidade de Atualiza
 | Chaves de acesso do Adobe Commerce | nenhum |
 | Adobe Commerce (fonte aberta ou empresa) | nenhum |
 
-Você pode executar a Ferramenta de compatibilidade de atualização em qualquer sistema operacional. Não há requisito para executar a Ferramenta de Compatibilidade de Atualização, onde a instância do Adobe Commerce está localizada.
+Você pode executar o [!DNL Upgrade Compatibility Tool] em qualquer sistema operacional. Não há necessidade de executar o [!DNL Upgrade Compatibility Tool] onde a instância do Adobe Commerce está localizada.
 
-É necessário que a Ferramenta de Compatibilidade de Atualização tenha acesso ao código-fonte da instância do Adobe Commerce. Por exemplo, você pode instalá-lo em um servidor e apontá-lo na instalação do Adobe Commerce em outro servidor. Consulte a [instalar](../upgrade-compatibility-tool/install.md) para obter mais informações.
+É necessário [!DNL Upgrade Compatibility Tool] para ter acesso ao código-fonte da instância do Adobe Commerce. Por exemplo, você pode instalá-lo em um servidor e apontá-lo na instalação do Adobe Commerce em outro servidor. Consulte a [instalar](../upgrade-compatibility-tool/install.md) para obter mais informações.

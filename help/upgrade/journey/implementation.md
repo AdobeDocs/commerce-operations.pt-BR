@@ -1,9 +1,9 @@
 ---
 title: Atualizar implementação
 description: Saiba mais sobre as diferentes fases de implementação de atualização para projetos Adobe Commerce e Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '877'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ A seguir estão itens que você pode incluir em uma análise completa:
 
 - **Escopo da versão do target**—Documentação sobre [DevDocs do Commerce](https://devdocs.magento.com) Os webinários de versão do e do parceiro fornecem todos os detalhes que você precisa saber sobre a atualização do target.
 
-- **Atualizar resultados da Ferramenta de Compatibilidade**—Essa ferramenta facilita e agiliza qualquer atualização, comparando seu código atual ao código da versão de destino e produzindo um relatório de todos os problemas que precisam ser resolvidos. Consulte a [Ferramenta de compatibilidade de atualização](../upgrade-compatibility-tool/overview.md). Os principais detalhes do relatório incluem:
+- **[!DNL Upgrade Compatibility Tool]resultados**—Essa ferramenta facilita e agiliza qualquer atualização, comparando seu código atual ao código da versão de destino e produzindo um relatório de todos os problemas que precisam ser resolvidos. Consulte a [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Os principais detalhes do relatório incluem:
 
    - Versão atual instalada
    - Atualizar a versão de destino

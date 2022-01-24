@@ -1,17 +1,17 @@
 ---
-title: Atualizar informações do desenvolvedor da ferramenta de compatibilidade
-description: Personalize a Ferramenta de compatibilidade de atualização usando a integração de índice da API.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] Informações do desenvolvedor'
+description: Personalize o [!DNL Upgrade Compatibility Tool] usando a integração de índice da API.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
 
-# Atualizar informações do desenvolvedor da Ferramenta de Compatibilidade
+# [!DNL Upgrade Compatibility Tool] informações do desenvolvedor
 
-Este tópico contém informações para desenvolvedores que trabalham em conjunto com o código Adobe Commerce e que desejam obter informações detalhadas sobre a Ferramenta de compatibilidade de atualização. Você pode usar esse conhecimento para personalizar os componentes da ferramenta.
+Este tópico contém informações para desenvolvedores que trabalham em conjunto com o código Adobe Commerce e que desejam obter informações detalhadas sobre o [!DNL Upgrade Compatibility Tool]. Você pode usar esse conhecimento para personalizar os componentes da ferramenta.
 
 ## Integração de índice da API Adobe Commerce
 
@@ -29,7 +29,7 @@ Edite este arquivo para personalizar a resposta de acordo com sua instalação. 
 
 `sut\Domain\MRay\MRayInterface : "@sut_mray_mock"`
 
-No exemplo anterior, a Ferramenta de Compatibilidade de Atualização usa `@sut_mray_mock` como `MRayInterface` implementação. As respostas da `api()` e `modules()` Os métodos vêm dos seguintes arquivos:
+No exemplo anterior, a variável [!DNL Upgrade Compatibility Tool] uses `@sut_mray_mock` como `MRayInterface` implementação. As respostas da `api()` e `modules()` Os métodos vêm dos seguintes arquivos:
 
 - `dev/mray_mock_files/api.json`
 - `dev/mray_mock_files/modules.json`
@@ -117,7 +117,7 @@ Essa pontuação é baseada nos resultados extraídos da análise:
 - Número de problemas identificados
 - Gravidade dos problemas identificados
 
-A Ferramenta de Compatibilidade de Atualização calcula essa pontuação de acordo com a fórmula de pontuação de complexidade abaixo.
+O [!DNL Upgrade Compatibility Tool] O calcula essa pontuação de acordo com a fórmula de pontuação de complexidade abaixo.
 
 ### Fórmula de pontuação de complexidade
 
