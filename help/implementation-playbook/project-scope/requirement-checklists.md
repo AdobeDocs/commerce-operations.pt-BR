@@ -1,13 +1,13 @@
 ---
 title: Listas de verificação de requisitos
-description: Use esta lista de perguntas abrangentes para ajudá-lo a se preparar para uma implementação do Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Use esta lista de perguntas abrangentes para ajudar você a se preparar para uma implementação do Adobe Commerce.
+exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Listas de verificação de requisitos
 
@@ -29,7 +29,7 @@ As seguintes questões podem servir de ponto de partida para ver quais as inform
 
 - Quantos dos seus analistas técnicos serão atribuídos a este projeto?
 
-- Quantos dos seus desenvolvedores de HTML serão atribuídos a este projeto?
+- Quantos dos seus desenvolvedores do HTML serão atribuídos a este projeto?
 
 - Que documentação existe para os processos de negócios atuais?
 
@@ -45,7 +45,7 @@ As seguintes questões podem servir de ponto de partida para ver quais as inform
 
 - Qual o treinamento a ser concluído após a ativação?
 
-- Que suporte ao Adobe Commerce será necessário após o lançamento?
+- Qual suporte Adobe Commerce será necessário após o lançamento?
 
 - Este projeto depende de outros projetos de desenvolvimento de sistemas?
 
@@ -55,11 +55,11 @@ As seguintes questões podem servir de ponto de partida para ver quais as inform
 
 - De onde você vê o crescimento futuro vindo em sua empresa?
 
-- Qual o papel do comércio digital na sua estratégia de negócios? Quais são seus principais objetivos para configurar esta plataforma de comércio eletrônico?
+- Qual o papel do comércio digital na sua estratégia de negócios? Quais são seus principais objetivos para configurar essa plataforma de comércio eletrônico?
 
 - Você tem alguma marca/empresa que use como referência em como expandir seu negócio omnicanal?
 
-- Quais equipes ou indivíduos estão liderando a estratégia econômica? Descreva as posições relevantes.
+- Quais equipes ou indivíduos estão liderando a estratégia de comércio eletrônico? Descreva as posições relevantes.
 
 ## Plataforma atual
 
@@ -149,7 +149,7 @@ As seguintes questões podem servir de ponto de partida para ver quais as inform
 
 - Qualquer navegador específico que deve ser testado (exceto para os navegadores padrão IE9+, Firefox, Chrome, Safari)?
 
-- Quais são os idiomas para cada front-end? O conteúdo traduzido está disponível ou o suporte é necessário?
+- Quais são os idiomas de cada frontend? O conteúdo traduzido está disponível ou o suporte é necessário?
 
 - Há vários sites da Web? Em caso afirmativo, os clientes podem usar suas credenciais em todos os sites?
 
@@ -171,15 +171,15 @@ Há APIs existentes que podem ser usadas?
 
 - Qual sistema ERP será integrado ao Adobe Commerce? (Exemplos: SAP, MS Dynamics NAV)
 
-- Qual sistema de transportadora será integrado ao Adobe Commerce?
+- Qual sistema de transportadora será integrado à Adobe Commerce?
 
-- Qual sistema de software fiscal será integrado ao Adobe Commerce? (Exemplo:Taxware)
+- Qual sistema de software fiscal será integrado ao Adobe Commerce? (Exemplo: Taxware)
 
 - De qual sistema os dados do produto serão importados para o Adobe Commerce?
 
 - Frequência dos carregamentos de dados de produtos importados?
 
-- Em qual sistema o Adobe Commerce exportará os dados do produto?
+- Em qual sistema a Adobe Commerce exportará os dados do produto?
 
 - Frequência de carregamentos de dados de produtos exportados?
 
@@ -187,7 +187,7 @@ Há APIs existentes que podem ser usadas?
 
 - Frequência dos carregamentos de dados de pedidos importados?
 
-- Em qual sistema o Adobe Commerce exportará os dados do pedido?
+- Em qual sistema a Adobe Commerce exportará os dados do pedido?
 
 - Frequência dos carregamentos de dados de pedido exportados?
 
@@ -231,7 +231,7 @@ Há APIs existentes que podem ser usadas?
 
 - Você precisará de um site de preparo de conteúdo?
 
-- Os clientes devem ter permissão para criar uma conta de site
+- Os clientes devem ter permissão para criar uma conta no site?
 
 - Você usará cupons de desconto exclusivos para promoções?
 
@@ -257,7 +257,7 @@ Há APIs existentes que podem ser usadas?
 
 - Você permitirá que um cliente inicie o retorno dos itens do site?
 
-- O Adobe Commerce emitirá um RMA de retorno?
+- A Adobe Commerce emitirá um RMA de retorno?
 
 - Capturar informações de reembolso no Adobe Commerce?
 
@@ -285,7 +285,7 @@ Há APIs existentes que podem ser usadas?
 
 - Pontos positivos
 
-- &quot;Fale-me mais tarde&quot; - mais comumente conhecido como &quot;Compre agora, pague mais tarde&quot; já que é imediatamente cobrado, mas ainda não paga
+- &quot;Fale-me Mais Tarde&quot; - mais comumente conhecida como &quot;Compre Agora, Pague Depois&quot;, pois é imediatamente cobrado, mas ainda não paga
 
 - Haverá preços de produtos diferentes em sites diferentes?
 
@@ -307,9 +307,9 @@ Há APIs existentes que podem ser usadas?
 
 - Carrinho de compras: Produtos em carrinhos, artes abandonadas
 
-- Produtos: Bestseletores, produtos comprados, mais visualizados, em estoque inferior, downloads
+- Produtos: Vendedores, produtos solicitados, mais visualizados, baixo estoque, downloads
 
-- Clientes: Contas novas, clientes por total de pedidos, clientes por número de ordens, segmentos de clientes, revisões de clientes
+- Clientes: Novas contas, total de clientes por ordens, clientes por número de ordens, segmentos de clientes, revisões de clientes
 
 - Revisões de produtos
 
@@ -321,9 +321,9 @@ Há APIs existentes que podem ser usadas?
 
 - Você precisará do Adobe Commerce para gerar relatórios com base nos dados de uso do cupom?
 
-- Você precisará do Adobe Commerce para gerar relatórios com base nos dados de vendas?
+- Você precisará que o Adobe Commerce gere relatórios com base nos dados de vendas?
 
-- Você precisará de portas Adobe Commercere personalizadas?
+- Você precisará de relatórios personalizados do Adobe Commerce?
 
 - Qual é sua estratégia atual de SEO?
 

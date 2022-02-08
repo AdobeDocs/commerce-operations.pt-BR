@@ -1,13 +1,13 @@
 ---
 title: Visão geral da infraestrutura e implantação
-description: Obtenha uma visão geral do que ensinamos sobre a solução Adobe Commerce até agora.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Obtenha uma visão geral do que ensinamos sobre a solução da Adobe Commerce até agora.
+exl-id: 8767bb83-9175-4a54-8c5c-c6af0931917c
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
 
 ---
-
 
 # Visão geral
 

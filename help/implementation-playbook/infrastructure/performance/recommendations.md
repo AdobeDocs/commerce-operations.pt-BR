@@ -2,7 +2,7 @@
 title: Recommendations de otimização de desempenho
 description: Otimize o desempenho de sua implementação do Adobe Commerce seguindo essas recomendações.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%

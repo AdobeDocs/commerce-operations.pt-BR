@@ -1,13 +1,13 @@
 ---
 title: Modelos de manutenção e suporte
-description: 'Use esses modelos comuns de manutenção e suporte para manter a implementação do Adobe Commerce em execução sem problemas. '
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Use esses modelos comuns de manutenção e suporte para manter a implementação do Adobe Commerce em execução sem problemas.
+exl-id: 44469b83-a10b-44c2-8721-9a7daa2733d3
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Modelos de manutenção e suporte
 
@@ -83,7 +83,7 @@ A gestão de delivery e serviços também é parte integrante da função de sup
 - Melhoria contínua
 - Auditoria de processo
 - Documentação e relatórios
-- Atualizações da plataforma do Adobe Commerce
+- Atualizações da plataforma Adobe Commerce
 
 O modelo de suporte funciona perfeitamente com responsabilidade clara distribuída entre as equipes dos clientes e as equipes L1, L2 e L3, com um modelo comprovado de governança e comunicação.
 

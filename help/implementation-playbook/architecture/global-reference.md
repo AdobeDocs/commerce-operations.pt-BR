@@ -1,13 +1,13 @@
 ---
-title: Arquitetura de referência global do Adobe Commerce
-description: Aproveite ao máximo a sua implementação do Adobe Commerce, aproveitando uma arquitetura de referência global.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: Arquitetura de referência global da Adobe Commerce
+description: Aproveite ao máximo a sua implementação do Adobe Commerce aproveitando uma arquitetura de referência global.
+exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
 
 ---
-
 
 # Arquitetura de referência global (GRA)
 
@@ -46,4 +46,3 @@ Impactos da GRA:
 - Como novos mercados são ativados
 
    - Simplifica o lançamento de vários canais e mercados que, de outra forma, custariam consideravelmente mais tempo e dinheiro.
-
