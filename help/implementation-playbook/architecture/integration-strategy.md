@@ -2,9 +2,9 @@
 title: Estratégia de integração da Adobe Commerce
 description: Analise as estratégias e opções de integração para sua implementação do Adobe Commerce.
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 1e545d8d5554e73f522469e526ed098395db9075
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Uma abordagem de integração holística para sistemas de armazenamento e back-e
 
 A API GraphQL da Adobe Commerce fornece uma cobertura de vitrine abrangente que pode ser usada para integrar com outras vitrines, incluindo:
 
-- Plataformas de experiência digital (DXPs) como o Adobe Experience Manager e o Bloomreach
+- Plataformas de experiência digital (DXPs) como Adobe Experience Manager e Bloomreach
 - Sistemas de gerenciamento de conteúdo (CMS) como Drupal e WordPress
 - Aplicativo de vitrine personalizada moderno, como Adobe Commerce, PWA Studio e Vue Storefront
 
