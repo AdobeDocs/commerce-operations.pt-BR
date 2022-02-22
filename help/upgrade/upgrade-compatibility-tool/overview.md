@@ -1,9 +1,9 @@
 ---
 title: Visão geral da [!DNL Upgrade Compatibility Tool]
 description: Saiba mais sobre o [!DNL Upgrade Compatibility Tool] e como ele pode ajudá-lo com seu projeto do Adobe Commerce.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: e6b6c61aa3fc7c3f22e3a1450b43015f1a7ffed7
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -21,16 +21,20 @@ O [!DNL Upgrade Compatibility Tool] O permite identificar quando as alterações
 
 Ele é distribuído como um pacote Composer com cada versão de uma versão do Adobe Commerce. Consulte a [Desenvolvedor](../upgrade-compatibility-tool/developer.md) para obter mais informações.
 
-Consulte a [Instalar](../upgrade-compatibility-tool/install.md) para as primeiras etapas com o [!DNL Upgrade Compatibility Tool].
+Consulte a [Instalar](../upgrade-compatibility-tool/install.md) tópico para as primeiras etapas com o [!DNL Upgrade Compatibility Tool].
 
 ## Ajude a melhorar o [!DNL Upgrade Compatibility Tool]
 
-Para conectar-se ao [!DNL Upgrade Compatibility Tool] equipe, entre em contato conosco no canal de Slack de Engenharia [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F).
+Para conectar-se ao [!DNL Upgrade Compatibility Tool] equipe, entre em contato conosco no canal de Slack de Engenharia [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F). Queremos ouvir seus comentários, problemas e sugestões para nos ajudar a melhorar a ferramenta.
 
->[!NOTE]
->
->Queremos ouvir seus comentários, problemas e sugestões para nos ajudar a melhorar a ferramenta.
+O [!DNL Upgrade Compatibility Tool] usa regras definidas em nossa [Padrões de codificação](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) para garantir que seu projeto esteja seguindo as práticas recomendadas da Adobe Commerce e para ajudá-lo a melhorar e estender o [!DNL Upgrade Compatibility Tool].
 
-Você tem uma ideia de como melhorar nossa análise de compatibilidade? Verifique a [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) para obter mais informações.
+Consulte a [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html)  para obter mais informações sobre como contribuir com esse projeto.
 
-Consulte a [Recursos](https://devdocs.magento.com/community/resources/resources.html) para obter mais informações.
+## Recursos
+
+Desenvolvemos os seguintes recursos para ajudá-lo a entender as atualizações do Adobe Commerce:
+
+- [Guia de atualização](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
+- [Próximas versões](https://devdocs.magento.com/release/)
+- [Recursos da comunidade](https://devdocs.magento.com/community/resources/resources.html) para obter mais informações.
