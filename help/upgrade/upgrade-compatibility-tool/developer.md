@@ -1,9 +1,9 @@
 ---
-title: '[!DNL Upgrade Compatibility Tool] Informações do desenvolvedor'
+title: '"[!DNL Upgrade Compatibility Tool] Informações do desenvolvedor"'
 description: Personalize o [!DNL Upgrade Compatibility Tool] usando a integração de índice da API.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
