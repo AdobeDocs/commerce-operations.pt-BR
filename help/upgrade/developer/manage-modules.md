@@ -1,9 +1,9 @@
 ---
 title: Gerenciar módulos e extensões
 description: Gerencie módulos e extensões Adobe Commerce e Magento Open Source usando a interface de linha de comando e o gerenciador de pacotes do Composer.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,7 @@ Contribuição de desenvolvedores para atualizar módulos e extensões especific
 
 Você pode adicionar uma `require` para `composer.json` ou você pode usar o `composer require` comando como segue:
 
-1. Faça logon no servidor.
-1. Alterne para [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Altere para o diretório onde você clonou o aplicativo. Por exemplo,
-
-   ```bash
-   cd /var/www/magento2
-   ```
+{{$include /help/_includes/server-login.md}
 
 Você tem as seguintes opções:
 
