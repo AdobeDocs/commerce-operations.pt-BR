@@ -1,9 +1,9 @@
 ---
 title: Execute o [!DNL Upgrade Compatibility Tool]
 description: Siga estas etapas para executar o [!DNL Upgrade Compatibility Tool] no seu projeto do Adobe Commerce.
-source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
+source-git-commit: bcb8fced43c5d9972291f15a5039dbbc2a692a59
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -279,6 +279,20 @@ Existem algumas limitações ao executar o comando anterior:
 - Forneça a versão da tag sem aspas (nem simples nem duplo): ~~&quot;2.4.1-desenvolver&quot;~~.
 - Você NÃO deve fornecer versões mais antigas do que as que instalou atualmente, ou mais antigas do que a 2.3, que é a mais antiga compatível no momento.
 
+### Use o `refactor` comando
+
+O [!DNL Upgrade Compatibility Tool] O tem a capacidade de corrigir automaticamente um conjunto reduzido de problemas:
+
+- Funções que podiam ser usadas sem passar um argumento, mas com esse uso agora se tornaram obsoletas.
+- Utilização de `$this` em templates Magento.
+- Uso de palavra-chave PHP `final` em métodos privados.
+
+Executar:
+
+```bash
+bin/uct refactor <dir>
+```
+
 ## Verificação de compatibilidade de esquema GraphQL
 
 O [!DNL Upgrade Compatibility Tool] O também oferece a opção de inserir dois pontos de extremidade GraphQL e comparar seus esquemas que buscam alterações perigosas e de quebra entre eles:
@@ -316,7 +330,46 @@ Consulte [Informações do desenvolvedor](../upgrade-compatibility-tool/develope
 
 Você pode executar o [!DNL Upgrade Compatibility Tool] com uma configuração de execução por meio do plug-in PhpStorm. Consulte a [[!DNL Upgrade Compatibility Tool] Executar configuração](https://devdocs.magento.com/guides/v2.3/ext-best-practices/phpstorm/uct-run-configuration.html) para obter mais informações.
 
+## Ações recomendadas
+
+### Otimize seus resultados
+
+O [!DNL Upgrade Compatibility Tool] O fornece um relatório contendo resultados com todos os problemas identificados em seu projeto por padrão. Você pode otimizar os resultados para se concentrar nos problemas que você deve corrigir para concluir a atualização:
+
+- Use a opção `--ignore-current-version-compatibility-issues`, que suprime todos os problemas críticos, erros e avisos conhecidos em relação à versão atual do Adobe Commerce. Ela só fornece erros em relação à versão para a qual você está tentando atualizar.
+- Adicione o `--min-issue-level` , essa configuração permite definir o nível mínimo de edição para ajudar a priorizar apenas os problemas mais importantes com sua atualização. Se quiser analisar apenas um determinado fornecedor, módulo ou diretório par, também poderá especificar o caminho como uma opção.
+- Execute o `bin` com a opção adicionada `-m`. Isso permite que a variável [!DNL Upgrade Compatibility Tool] para analisar um módulo específico de maneira independente e ajudar com problemas de memória que podem ocorrer ao executar o [!DNL Upgrade Compatibility Tool].
+
+### Siga as práticas recomendadas do Adobe Commerce
+
+- Evite ter dois módulos com o mesmo nome.
+- Seguir o Adobe Commerce [normas de codificação](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
+
 ## Solução de problemas
+
+### Erro de falha de segmentação
+
+Quando dois módulos têm o mesmo nome, a variável [!DNL Upgrade Compatibility Tool] mostra um erro de falha de segmentação.
+
+Para evitar esse erro, é recomendável executar a variável `bin` com a opção adicionada `-m`:
+
+```bash
+bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/<module-name>
+```
+
+>[!NOTE]
+>
+>O `<dir>` é o diretório onde sua instância do Adobe Commerce está localizada.
+
+O `-m` permite [!DNL Upgrade Compatibility Tool] para analisar cada módulo específico independentemente para evitar encontrar dois módulos com o mesmo nome na instância do Adobe Commerce.
+
+Essa opção de comando também permite [!DNL Upgrade Compatibility Tool] para analisar uma pasta contendo vários módulos:
+
+```bash
+bin/uct upgrade:check /<dir>/<instance-name> --coming-version=2.4.1 -m /vendor/<vendor-name>/
+```
+
+Essa recomendação também ajuda com problemas de memória que podem ocorrer ao executar o [!DNL Upgrade Compatibility Tool].
 
 ### Saída vazia
 
