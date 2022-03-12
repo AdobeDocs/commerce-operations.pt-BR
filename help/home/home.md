@@ -2,9 +2,9 @@
 keywords: Adobe Commerce; home; tópicos populares
 title: Início
 description: Navegue por um índice da documentação operacional do produto Adobe Commerce.
-source-git-commit: 3637e81bf3951d0130941613d88488405073e7e1
+source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -12,18 +12,7 @@ ht-degree: 0%
 
 # Guias operacionais Adobe Commerce
 
-Esta página fornece links para todos os guias operacionais do Adobe Commerce e do Magento Open Source.
-
-## Novidades
-
-A tabela a seguir inclui alterações recentes que achamos que você gostaria de conhecer, como novos tópicos e atualizações significativas para os tópicos existentes:
-
-| Descrição | Tipo |
-|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Adicionado [informações](../upgrade/upgrade-compatibility-tool/overview.md) sobre como as regras são definidas para a Ferramenta de Compatibilidade de Atualização. | Atualização importante |
-| Ferramenta de compatibilidade de atualização desatualizada removida [códigos de erro](../upgrade/upgrade-compatibility-tool/error-messages.md). | Técnica |
-
-## Guias
+Obtenha informações práticas sobre conceitos, processos, ferramentas e práticas recomendadas para desenvolver, implantar e manter projetos de comércio implantados em plataformas Adobe Commerce e Magento Open Source.
 
 <table>
 <tr>
@@ -63,7 +52,7 @@ A tabela a seguir inclui alterações recentes que achamos que você gostaria de
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="Atualizar" src="../assets/icons/download-cloud.svg" width="40" height="40"/>
+      <img alt="Atualizar" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Atualizar</strong></a>
@@ -129,3 +118,12 @@ A tabela a seguir inclui alterações recentes que achamos que você gostaria de
   </td>
 </tr>
 </table>
+
+## Novidades
+
+Saiba mais sobre a nova documentação e atualizações significativas da documentação existente.
+
+| Alterar | Tipo |
+|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Adicionado [informações](../upgrade/upgrade-compatibility-tool/overview.md) sobre como as regras são definidas para a Ferramenta de Compatibilidade de Atualização. | Atualização importante |
+| Ferramenta de compatibilidade de atualização desatualizada removida [códigos de erro](../upgrade/upgrade-compatibility-tool/error-messages.md). | Técnica |
