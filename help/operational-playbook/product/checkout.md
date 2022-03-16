@@ -1,13 +1,13 @@
 ---
 title: Fluxos e processo de finalização
 description: Aumente as taxas de conversão fornecendo aos clientes uma experiência de finalização contínua.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
 
 ---
-
 
 # Fluxos e processo de finalização
 
@@ -68,7 +68,7 @@ Não force um tipo de opção no usuário.
 
 Os retalhistas devem fornecer diferentes métodos de transporte para satisfazer as necessidades dos diferentes clientes.
 
-Além das opções de pagamento, os varejistas também podem fornecer opções como [clicar e coletar](click-collect.md).
+Além das opções de pagamento, os retalhistas também podem fornecer opções como [clicar e coletar](click-collect.md).
 
 ## Detalhes do pagamento
 

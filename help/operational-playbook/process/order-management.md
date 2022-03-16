@@ -1,18 +1,17 @@
 ---
 title: Gerenciamento de pedidos
 description: Saiba como um sistema de gerenciamento de pedidos é essencial para sua empresa de comércio eletrônico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 62edc895-d725-4252-9a43-e03427579444
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
-
 # Gerenciamento de pedidos
 
-Para novos negócios, os níveis de pedido são baixos e é mais fácil
-conclua pedidos com um custo menor. No entanto, quando a demanda aumenta os pedidos e torna-se difícil lidar com pedidos com uma pequena equipe ou por você mesmo a um custo menor. Você pode precisar de uma instalação maior, como um depósito ou mais de um depósito, dependendo da natureza do negócio, o que pode ser caro e requer mais pessoal. É aqui que o gerenciamento de pedidos surge.
+Para novos negócios, os níveis de pedido são baixos e é mais fácil concluir os pedidos com um custo menor. No entanto, quando a demanda aumenta os pedidos e torna-se difícil lidar com pedidos com uma pequena equipe ou por você mesmo a um custo menor. Você pode precisar de uma instalação maior, como um depósito ou mais de um depósito, dependendo da natureza do negócio, o que pode ser caro e requer mais pessoal. É aqui que o gerenciamento de pedidos surge.
 
 O gerenciamento de pedidos ajuda a atender às necessidades operacionais em constante mudança para gerenciar demanda, inventário, empacotamento e remessa. A integração de um sistema de gerenciamento de pedidos com a plataforma pode ajudar as empresas a atender às necessidades em constante mudança e impulsionar a satisfação do cliente, a retenção do cliente, as taxas de conversão mais altas e a fidelidade da marca. Todos esses fatores afetam direta e indiretamente o desempenho e o crescimento da receita de sua empresa.
 

@@ -1,19 +1,19 @@
 ---
-user-guide-title: Playbook operacional
-user-guide-description: Saiba como preparar suas empresas operacionalmente para executar um site de comércio eletrônico bem-sucedido.
+user-guide-title: Manual operacional
+user-guide-description: Saiba como preparar seus negócios operacionalmente para gerenciar um site de comércio eletrônico bem-sucedido.
 source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
 
-# Playbook operacional {#operational-playbook}
+# Manual operacional {#operational-playbook}
 
 - [Visão geral](overview.md)
 - Comércio {#intro}
-   - [Comércio Adobe](intro/commerce.md)
+   - [Adobe Commerce](intro/commerce.md)
    - [O que é comércio eletrônico?](intro/ecommerce.md)
    - [Modelo de negócios](intro/business-model.md)
    - [Operações comerciais](intro/operations.md)

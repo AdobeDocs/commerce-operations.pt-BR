@@ -1,13 +1,13 @@
 ---
 title: Atendimento ao cliente
 description: Um bom serviço ao cliente pode ser uma vantagem competitiva no espaço de comércio eletrônico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: ef798b1b-96d0-493e-b125-1d67aa7644a1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
 
 ---
-
 
 # Atendimento ao cliente
 
@@ -17,11 +17,11 @@ O comércio eletrônico é baseado digitalmente e a única equipe que interage c
 
 Os varejistas precisam ser pró-ativos em termos de serviço ao cliente, pois não apenas é a marca em jogo, como também, e o mais importante, é a fidelidade do cliente. Para que os varejistas tenham sucesso em fornecer a melhor experiência do cliente, há algumas práticas recomendadas que podem ser seguidas:
 
-- **Canal** de suporte múltiplo — A prestação de serviços somente por email ou telefone não é suficiente na era atual. O serviço ao cliente precisa ser fornecido em vários canais, como chats ao vivo, emails, chamadas telefônicas, redes sociais e ou mensagens de texto. Cada um deles tem seus próprios prós e contras que os varejistas precisam analisar.
+- **Canal de suporte múltiplo**—Prestar serviço somente por email ou telefone não é suficiente na era de hoje. O serviço ao cliente precisa ser fornecido em vários canais, como chats ao vivo, emails, chamadas telefônicas, redes sociais e ou mensagens de texto. Cada um deles tem seus próprios prós e contras que os varejistas precisam analisar.
 
-- **Serviço personalizado** — Todas as atividades do cliente são feitas online, e os varejistas podem acompanhar para entender o comportamento do cliente. Por exemplo, quando um cliente chega à equipe de Atendimento ao cliente, a equipe terá suas informações antecipadamente, como nome, endereço de email, histórico de pedidos e devoluções. Isso ajuda o Serviço de atendimento ao cliente a fornecer serviço rápido e preciso e também fornece aos clientes serviço personalizado.
+- **Serviço personalizado**—Todas as atividades dos clientes são feitas online, e os varejistas podem acompanhar para entender o comportamento dos clientes. Por exemplo, quando um cliente chega à equipe de Atendimento ao cliente, a equipe terá suas informações antecipadamente, como nome, endereço de email, histórico de pedidos e devoluções. Isso ajuda o Serviço de atendimento ao cliente a fornecer serviço rápido e preciso e também fornece aos clientes serviço personalizado.
 
-- **Autoatendimento** — Os clientes também podem receber autoatendimento, como fornecer perguntas frequentes, política de privacidade, termos e condições e fóruns.
+- **Autoatendimento**—Os clientes também podem receber autoatendimento, como fornecer perguntas frequentes, política de privacidade, termos e condições e fóruns.
 
 Os revendedores devem se colocar no lugar do cliente para entender seu problema e fornecer a melhor experiência do cliente. A experiência do cliente mantém o cliente fiel e promove a marca.
 

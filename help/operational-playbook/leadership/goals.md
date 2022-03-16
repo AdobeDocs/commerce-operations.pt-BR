@@ -1,13 +1,13 @@
 ---
 title: Metas de comércio
 description: Defina metas de curto e longo prazo para ajudar sua equipe a se alinhar aos objetivos estratégicos e aumentar a eficácia organizacional.
-source-git-commit: 225ead587fb9f8fbb31442db6cc7ce1826ebb3e8
+exl-id: 749f6a9a-c06f-4f51-a19c-9e4181e002f7
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # Metas
 

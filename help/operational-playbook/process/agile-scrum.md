@@ -1,13 +1,13 @@
 ---
 title: Metodologia do escrum ágico
 description: Saiba como a combinação de metodologias Agile e Scrum pode ajudar a acelerar seu projeto de comércio eletrônico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 2c46acad-bff9-4a9f-acfb-622ffbf97288
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
 
 ---
-
 
 # Metodologia do Agile Scrum
 
@@ -19,12 +19,12 @@ O Scrum encoraja as equipes auto-organizadas e multifuncionais a resolverem prob
 
 Na metodologia Scrum, há várias reuniões que são usadas para promover transparência e progresso em um projeto de comércio eletrônico:
 
-- **Planejamento** do Sprint — uma reunião de planejamento em que os membros da equipe se reúnem para decidir quanto trabalho pode ser concluído em uma etapa.
+- **Planejamento de Sprint**—Uma reunião de planejamento em que os membros da equipe se reúnem para decidir quanto trabalho pode ser concluído em uma etapa.
 
-- **Sombra diária** — Uma reunião de 15 minutos usada para compartilhar atualizações sobre o que cada membro da equipe está trabalhando.
+- **Escovas diárias**—Uma reunião de 15 minutos usada para compartilhar atualizações sobre o que cada membro da equipe está trabalhando.
 
-- **Revisão** do Sprint — Uma reunião usada para demonstrar o progresso da primavera.
+- **Revisão do Sprint**—Uma reunião usada para demonstrar o progresso da primavera.
 
-- **Sprint retrospective** — Uma reunião usada para refletir sobre a tendência anterior e identificar oportunidades de aprimoramento.
+- **Retroativo de Sprint**—Uma reunião usada para refletir sobre a etapa anterior e identificar oportunidades de melhoramento.
 
 No final de cada impressão, um aumento de valor (por exemplo, novos recursos, correções de erros, atualizações ou atualizações de código gerais) deve ser entregue e liberável aos clientes.

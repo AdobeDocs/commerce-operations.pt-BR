@@ -1,13 +1,13 @@
 ---
 title: Equipes de projeto
 description: Crie a equipe certa para o seu projeto de comércio eletrônico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 57aee5ac-db27-4c2a-8e08-3e926d7658d3
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
 
 ---
-
 
 # Equipes de projeto
 
@@ -35,10 +35,10 @@ Cada uma dessas funções é responsável pelo planejamento e execução do proj
 
 As organizações tendem a ignorar as dependências externas que direta ou indiretamente desempenham um papel importante no sucesso do projeto, incluindo:
 
-- **Equipe** de depósito - Se o site estiver funcionando, mas a equipe no depósito for limitada, a embalagem e o envio poderão ser atrasados. Também pode haver um problema do sistema no depósito que impeça o rastreamento de pedidos que também podem atrasar o envio e a embalagem.
+- **Equipe de depósito**-Se o site estiver funcionando, mas o pessoal do depósito for limitado, isso pode atrasar a embalagem e o envio. Também pode haver um problema do sistema no depósito que impeça o rastreamento de pedidos que também podem atrasar o envio e a embalagem.
 
-- **Equipe** de atendimento ao cliente — Essa equipe está em contato direto com os clientes. Eles estão cientes dos pontos problemáticos do cliente, mas geralmente são a equipe mais subestimada em uma organização. Por exemplo, se você executar uma nova promoção em seu site e a equipe não souber, talvez eles não consigam fornecer aos clientes as informações corretas ou talvez eles não consigam lidar com o volume de chamadas se for uma pequena equipe. Esses exemplos podem levar a uma experiência negativa do cliente.
+- **Equipe de atendimento ao cliente**—Essa equipe está em contato direto com os clientes. Eles estão cientes dos pontos problemáticos do cliente, mas geralmente são a equipe mais subestimada em uma organização. Por exemplo, se você executar uma nova promoção em seu site e a equipe não souber, talvez eles não consigam fornecer aos clientes as informações corretas ou talvez eles não consigam lidar com o volume de chamadas se for uma pequena equipe. Esses exemplos podem levar a uma experiência negativa do cliente.
 
-- **Equipe** de marketing: as equipes de marketing lidam com vendas, ofertas, promoções e campanhas. Se eles enviarem emails sobre um produto, mas não souberem que o estoque é limitado, isso pode criar uma experiência ruim para o cliente e diminuir a taxa de conversão.
+- **Equipe de marketing**—As equipes de marketing lidam com vendas, ofertas, promoções e campanhas. Se eles enviarem emails sobre um produto, mas não souberem que o estoque é limitado, isso pode criar uma experiência ruim para o cliente e diminuir a taxa de conversão.
 
 Ao criar a equipe do projeto, é essencial não só ter as pessoas corretas com as competências necessárias, mas também garantir que as equipes externas sejam informadas e alinhadas para alcançar um resultado bem-sucedido.

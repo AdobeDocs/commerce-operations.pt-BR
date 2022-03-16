@@ -1,13 +1,13 @@
 ---
 title: Abordagem de Entrega e Planejamento
-description: Use nossa abordagem recomendada para planejar e fornecer a implementação do Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Use nossa abordagem recomendada para planejar e fornecer sua implementação do Adobe Commerce.
+exl-id: ee2918d6-0d97-4f02-8e8f-b88bc999cd22
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # Abordagem de delivery e planejamento
 
@@ -31,9 +31,9 @@ Esta abordagem consiste nas seguintes etapas:
 
 O modelo híbrido permite aproveitar o poder da metodologia Agile, mantendo o target da linha do tempo, do custo e da qualidade. O plano inteiro é dividido em duas fases distintas, seguidas por atividades de lançamento, otimização e manutenção.
 
-- **Obtendo a ideia** correta — Essa é uma fase de pré-implementação para garantir que os requisitos, o design e a solução de tecnologia sejam estrategizados, documentados e colaborados entre as partes interessadas. O backlog para implementação é agrupado e criado, as marcas de desenvolvimento são planejadas e uma estratégia sequencial para a criação do produto é finalizada.
+- **Conseguir a ideia correta**—Esta é uma fase de pré-implementação para garantir que os requisitos, o design e a solução tecnológica sejam estrategizados, documentados e colaborados entre as partes interessadas. O backlog para implementação é agrupado e criado, as marcas de desenvolvimento são planejadas e uma estratégia sequencial para a criação do produto é finalizada.
 
-- **Correção da ideia**: essa é a fase de implementação para criar o produto iterativamente, testar completamente e lançar adequadamente. O primeiro passo é desenvolver o código por meio de várias gravuras; cada impressora contém desenvolvimento e testes na impressora, seguidos por testes de integração do sistema, testes de desempenho e segurança, testes de aceitação do usuário e atividades de lançamento.
+- **Entender a ideia corretamente**—Esta é a fase de implementação para criar o produto iterativamente, testar completamente e lançar adequadamente. O primeiro passo é desenvolver o código por meio de várias gravuras; cada impressora contém desenvolvimento e testes na impressora, seguidos por testes de integração do sistema, testes de desempenho e segurança, testes de aceitação do usuário e atividades de lançamento.
 
 O planejamento de projetos é uma atividade crítica. Ele orienta as partes interessadas, as equipes, os patrocinadores e os gerentes de projeto sobre como monitorar, gerenciar e controlar as fases do projeto. Também ajuda a identificar metas, evitar prazos ausentes, priorizar tarefas essenciais, reduzir riscos e fornecer os resultados desejados.
 

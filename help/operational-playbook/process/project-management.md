@@ -1,13 +1,13 @@
 ---
 title: Gerenciamento de projetos
 description: Aplique estruturas bem conhecidas para gerenciar seu projeto de comércio eletrônico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 514e2317-f409-4079-bdee-1596f6635467
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
 
 ---
-
 
 # Gerenciamento de projetos
 
@@ -36,17 +36,17 @@ O Scrum ajuda a gerenciar alterações durante o projeto, permite que as equipes
 
 Um plano básico de gestão de projetos de comércio eletrônico inclui:
 
-- **Análise** — No estágio inicial de um projeto, a empresa precisa realizar análises, incluindo análise de negócios de mercado e de concorrentes, para entender os pontos fortes e fracos da organização.
+- **Análise**—Na fase inicial de um projeto, a empresa precisa realizar análises, incluindo análises de mercado e de negócios de concorrentes, para compreender os pontos fortes e fracos da organização.
 
-- **Requisitos** — defina os requisitos detalhados do que a organização deseja no final do projeto em termos de aprimoramento das habilidades existentes e/ou implementação de novos recursos e/ou integrações.
+- **Requisitos**—Defina os requisitos detalhados do que a organização deseja no final do projeto em termos de aprimoramento das habilidades existentes e/ou implementação de novos recursos e/ou integrações.
 
-- **Fornecedores** de terceiros — Nesta etapa, mapeie as integrações de terceiros necessárias (por exemplo, pagamento, envio, classificações e revisões).
+- **Fornecedores de terceiros**—Nesta etapa, mapeie as integrações de terceiros necessárias (por exemplo, pagamento, remessa, classificações e revisões).
 
-- **Design** — requisitos específicos de projeto do Brainstorm para modelos e o livro de marcas da empresa.
+- **Design**—Requisitos específicos de projeto do Brainstorm para modelos e o livro da marca da empresa.
 
-- **Migração** — planeje as etapas para migrar conteúdo e dados.
+- **Migração**—Planeje as etapas para migrar conteúdo e dados.
 
-- **Plataforma** de comércio eletrônico — Analise e finalize a plataforma necessária para que a empresa atenda aos requisitos.
+- **Plataforma de comércio eletrônico**—Analise e finalize a plataforma necessária para que a empresa atenda aos requisitos.
 
 ## Práticas recomendadas
 

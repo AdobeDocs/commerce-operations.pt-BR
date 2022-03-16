@@ -1,13 +1,13 @@
 ---
 title: Seminários de projetos
 description: Saiba mais sobre os diferentes tipos de workshops de gestão comuns para projetos de comércio eletrônico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 72e465a0-b965-46a7-b0d0-0ed8a59a4bab
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 0%
 
 ---
-
 
 # Workshop de projetos comuns
 

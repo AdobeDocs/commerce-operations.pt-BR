@@ -1,17 +1,17 @@
 ---
 title: Marketing
 description: Promova seus produtos e atraia clientes por meio de campanhas de marketing de comércio eletrônico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
 
 ---
 
-
 # Marketing por email
 
-O marketing por email (em termos simples) está enviando mensagens de marketing a clientes potenciais e atuais por meio de emails para promover, atrair e vender produtos aos clientes. As equipes de marketing têm controle total sobre a recuperação de informações do cliente e o envio de conteúdo personalizado dos clientes por meio de campanhas diretas de email. O email atua como uma ferramenta que ajuda a criar uma relação entre os clientes e a marca.
+O marketing por email (em termos simples) está enviando mensagens de marketing a clientes potenciais e atuais por meio de emails para promover, atrair e vender produtos aos clientes. As equipes de marketing têm controle total sobre a recuperação de informações do cliente e o envio de conteúdo personalizado dos clientes por meio de campanhas diretas de email. O email atua como uma ferramenta que ajuda a criar uma relação entre seus clientes e sua marca.
 
 Por que você deve considerar o marketing por email:
 

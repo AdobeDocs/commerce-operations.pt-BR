@@ -1,13 +1,13 @@
 ---
 title: Etapas de pré-lançamento
 description: Use nossas listas de verificação de pré-lançamento para garantir uma implementação sem problemas do site Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: bd10881f-0336-4aa4-82ad-4d635010e2e4
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
 
 ---
-
 
 # Etapas de pré-lançamento
 
@@ -23,7 +23,7 @@ A lista de verificação de pré-lançamento é necessária para verificar antes
 - Os serviços de email estão bem configurados e funcionam para emails transacionais
 - O CDN está configurado para ambientes de preparo/produção
 - Configurar a verificação de segurança para ambientes de preparo/produção
-   - Verificação de segurança do Adobe Commerce
+   - Análise de segurança do Adobe Commerce
 - Faça uma avaliação de desempenho por
    - JMeter
    - Cerco
@@ -35,11 +35,11 @@ A lista de verificação de pré-lançamento é necessária para verificar antes
 
 ![Diagrama que mostra a fase 1 do processo de lançamento](../../assets/playbooks/launch-steps-1.svg)
 
-As principais diferenças entre as implementações do Adobe Commerce no local e na nuvem são os scripts e as ferramentas de implantação, bem como a configuração para SSL, Serviço de email e CDN. Mas o processo continua o mesmo.
+As principais diferenças entre as implementações locais e de nuvem do Adobe Commerce são os scripts e as ferramentas de implantação, bem como a configuração para SSL, Serviço de email e CDN. Mas o processo continua o mesmo.
 
-Para o certificado SSL(TLS), o Adobe Commerce on cloud Infrastructure fornece um certificado curinga Fastly. Para começar a usá-lo, você precisa passar a validação: adicione o registro Fastly TXT ao nome do domínio de anexo nas configurações de DNS. O registro TXT Fastly pode ser encontrado na planilha integrada; caso contrário, é necessário enviar o suporte a um tíquete para obtê-lo. Substitua este texto com suas perguntas/comentários aqui. Se você usar seu próprio certificado SSL(TLS) em vez de um certificado curinga Fastly, envie um tíquete de suporte com seu certificado anexado à configuração.
+Para o certificado SSL(TLS), o Adobe Commerce na infraestrutura de nuvem fornece um certificado curinga Fastly. Para começar a usá-lo, você precisa passar a validação: adicione o registro Fastly TXT ao nome do domínio de anexo nas configurações de DNS. O registro TXT Fastly pode ser encontrado na planilha integrada; caso contrário, é necessário enviar o suporte a um tíquete para obtê-lo. Substitua este texto com suas perguntas/comentários aqui. Se você usar seu próprio certificado SSL(TLS) em vez de um certificado curinga Fastly, envie um tíquete de suporte com seu certificado anexado à configuração.
 
-O Adobe Commerce na infraestrutura em nuvem fornece a funcionalidade SendGrid Mail para os emails transacionais. Para planos Pro, você precisa adicionar registros SendGrid às suas configurações de DNS. Os registros SendGrid podem ser encontrados na planilha de integração, caso contrário, o SI ou o comerciante devem enviar tíquetes de suporte para obtê-los. Para iniciar, não é necessário fazer alterações no DNS; SendGrid é pré-configurado para você.
+A infraestrutura em nuvem do Adobe Commerce fornece a funcionalidade SendGrid Mail para seus emails transacionais. Para planos Pro, você precisa adicionar registros SendGrid às suas configurações de DNS. Os registros SendGrid podem ser encontrados na planilha de integração, caso contrário, o SI ou o comerciante devem enviar tíquetes de suporte para obtê-los. Para iniciar, não é necessário fazer alterações no DNS; SendGrid é pré-configurado para você.
 
 ## Lista de verificação de pré-lançamento completa
 

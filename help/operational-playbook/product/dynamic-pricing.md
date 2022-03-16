@@ -1,13 +1,13 @@
 ---
 title: Gerenciamento dinâmico de preços
 description: Obter uma vantagem competitiva através da criação de uma estratégia para alterar dinamicamente os preços dos produtos com base nas condições do mercado.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 913dba96-d939-4e9a-b382-f22c6669fed1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
 
 ---
-
 
 # Gerenciamento dinâmico de preços
 
@@ -15,11 +15,11 @@ Os preços dinâmicos são uma estratégia de preços responsiva, na qual o pre�
 
 Existem três fatores que impulsionam os preços dinâmicos, incluindo:
 
-- **Setor** — Os varejistas precisam verificar qual é o preço mais básico de um produto entre outras marcas.
+- **Setor**—Os revendedores precisam verificar qual é o preço mais básico de um produto entre outras marcas.
 
-- **Mercado** — Qual é a oferta e a demanda atuais? Qual é a oferta e a procura previstas?
+- **Mercado**—Qual é a oferta e a demanda atuais? Qual é a oferta e a procura previstas?
 
-- **Clientes** — Qual é o comportamento de compra do cliente? Qual é o preço que o cliente está disposto a pagar por um produto.
+- **Clientes**—Qual é o comportamento de compra do cliente? Qual é o preço que o cliente está disposto a pagar por um produto.
 
 Você precisa analisar todos os aspectos ao trabalhar em uma estratégia de preços dinâmica.
 

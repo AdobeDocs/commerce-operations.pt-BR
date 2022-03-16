@@ -1,13 +1,13 @@
 ---
 title: Estrutura da equipe
-description: 'Revise as opções de como organizar a equipe de comércio eletrônico. '
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+description: Revise as opções de como organizar a equipe de comércio eletrônico.
+exl-id: ce298092-63ae-489c-a2a7-4ba660b9d86f
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
 
 ---
-
 
 # Estrutura da equipe
 

@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guia de atualização
-user-guide-description: Saiba por que atualizar seu aplicativo Adobe Commerce ou Magento Open Source é tão importante e como planejar e executar uma atualização com sucesso.
+user-guide-description: Saiba porque atualizar seu aplicativo do Adobe Commerce ou Magento Open Source é tão importante e como planejar e executar uma atualização com sucesso.
 source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 0%
+ht-degree: 22%
 
 ---
 

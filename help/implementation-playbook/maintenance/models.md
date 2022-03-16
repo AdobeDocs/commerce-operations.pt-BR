@@ -4,7 +4,7 @@ description: Use esses modelos comuns de manutenção e suporte para manter a im
 exl-id: 44469b83-a10b-44c2-8721-9a7daa2733d3
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ As operações e as atividades de correção podem ser divididas em L1 (Nível 1
    - Gerenciamento de alterações
    - Suporte de pico
 
-- **Melhorias**
+- **Aprimoramentos**
    - Limpeza de backlog + priorização
    - Sprint + planejamento de versão
    - Design + desenvolvimento

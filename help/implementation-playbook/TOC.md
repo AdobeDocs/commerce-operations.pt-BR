@@ -1,16 +1,16 @@
 ---
-user-guide-title: Playbook de implementação
-user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site de Adobe Commerce bem-sucedido.
+user-guide-title: Manual de implementação
+user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
 source-git-commit: 0def7f131883428f4d959071e36200644b73b7c2
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
 
-# Playbook de implementação {#implementation-playbook}
+# Manual de implementação {#implementation-playbook}
 
 - [Visão geral](overview.md)
 - Comércio {#intro}
@@ -37,7 +37,7 @@ ht-degree: 0%
    - [Estratégia de extensibilidade](architecture/extensibility-strategy.md)
    - [Opções de integração](architecture/integration-options.md)
    - [Arquitetura de referência global](architecture/global-reference.md)
-   - Comércio headless {#headless}
+   - Comércio livre {#headless}
       - [Benefícios](architecture/headless/benefits.md)
       - [Jornada sem cabeça](architecture/headless/journey-to-headless.md)
       - [Microsserviços](architecture/headless/microservices.md)

@@ -1,18 +1,17 @@
 ---
 title: Hospedagem de comércio no local
 description: As soluções de hospedagem baseadas em nuvem são muito populares, mas a hospedagem local pode fazer sentido para o seu projeto de comércio eletrônico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: e505c216-2d6c-4ca4-a4ec-4853cd9347fe
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-
 # Hospedagem no local
 
-As soluções de hospedagem baseadas em nuvem são extremamente populares e, com certeza, servem um
-no entanto, o importante papel desempenhado em muitas organizações continua a ser uma opção adequada para algumas organizações e comerciantes.
+As soluções de hospedagem baseadas em nuvem são extremamente populares e certamente desempenham um papel importante em muitas organizações. No entanto, a infraestrutura local ainda é uma opção adequada para algumas organizações e comerciantes.
 
 Você precisa considerar vários fatores antes de escolher a hospedagem no local, incluindo custos irrelevantes, um pool de conhecimento competente/econômico em TI e o fato de que os aplicativos no local geralmente podem ser mais prontamente adaptados às necessidades de uma organização.
 

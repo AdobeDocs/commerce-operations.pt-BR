@@ -1,13 +1,13 @@
 ---
 title: Princípios do comércio
-description: Use esses princípios de liderança importantes para ajudar a garantir que seu projeto de Adobe Commerce funcione de maneira eficaz.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+description: Use esses princípios de liderança importantes para ajudar a garantir que seu projeto do Adobe Commerce funcione de maneira eficaz.
+exl-id: 70b7346a-8536-428f-a980-b240bd5eb5ab
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 0%
 
 ---
-
 
 # Princípios
 
@@ -15,27 +15,27 @@ Recomendamos seguir alguns princípios fundamentais de liderança ao operar um p
 
 ## Patrocínio
 
-![Dobra de ](../../assets/playbooks/sponsorship.png)
-coração de mão: ter um patrocinador executivo eficaz ajuda o projeto a obter o máximo de sucesso. Para ser verdadeiramente eficaz, este patrocinador executivo interno deve ter senioridade e influência suficientes no seio da empresa para ter uma participação de outros interessados em toda a organização. Devem igualmente ter um elevado nível de interesse próprio no sucesso da loja em linha e uma paixão pela transformação digital e pelo comércio eletrônico; acreditar verdadeiramente em como o Adobe Commerce vai transformar os negócios também é fundamental.
+![Coração dobrável da mão](../../assets/playbooks/sponsorship.png)
+Ter um patrocinador executivo eficaz ajuda o projeto a obter o máximo de sucesso. Para ser verdadeiramente eficaz, este patrocinador executivo interno deve ter senioridade e influência suficientes no seio da empresa para ter uma participação de outros interessados em toda a organização. Devem igualmente ter um elevado nível de interesse próprio no sucesso da loja em linha e uma paixão pela transformação digital e pelo comércio eletrônico; acreditar verdadeiramente em como a Adobe Commerce vai transformar os negócios também é fundamental.
 
 Um patrocinador executivo eficaz deve garantir que a gestão, o roteiro e o crescimento contínuo da plataforma de comércio eletrônico permaneçam em conformidade com a estratégia empresarial; protegendo-o de iniciativas conflitantes ou políticas internas e ajudando a lidar com fatores limitantes, como recursos, escassez de competências ou restrições orçamentárias.
 
 ## Comprar
 
-![Tíquete de ](../../assets/playbooks/buyin.png)
-máquinaA obtenção do ingresso de gerenciamento em sua equipe de liderança também é fundamental. Ter vários agentes de alteração para impulsionar o crescimento ajuda você a aumentar o crescimento de forma mais fácil e rápida. A responsabilidade pela gestão bem sucedida do Adobe Commerce tem de ser partilhada por toda a equipe de liderança. É então responsabilidade do patrocinador executivo conquistar a equipe executiva compartilhando exemplos que provem o valor do Adobe Commerce em geral. Normalmente, isso se concentra em fornecer uma melhor experiência do cliente e benefícios subsequentes para os negócios.
+![Tíquete retirado da máquina](../../assets/playbooks/buyin.png)
+Alcançar o ingresso de gerenciamento em sua equipe de liderança também é fundamental. Ter vários agentes de alteração para impulsionar o crescimento ajuda você a aumentar o crescimento de forma mais fácil e rápida. A responsabilidade pelo gerenciamento bem-sucedido da Adobe Commerce precisa ser compartilhada por toda a equipe de liderança. É então responsabilidade do patrocinador executivo conquistar a equipe executiva compartilhando exemplos que provem o valor do Adobe Commerce em geral. Normalmente, isso se concentra em fornecer uma melhor experiência do cliente e benefícios subsequentes para os negócios.
 
 Ao gerenciar sites de comércio eletrônico ou ao implementar projetos digitais como o Adobe Commerce, os líderes são responsáveis por monitorar diferentes departamentos e equipes responsáveis por diferentes partes das iniciativas de comércio eletrônico. É fundamental assegurar que todos os grupos partilhem uma estratégia comum para alcançar objetivos comuns. Fazer uma apresentação interna para obter o suporte dos executivos ajuda a aumentar a conscientização, alinhar as equipes e obter os recursos necessários para uma implementação ideal.
 
 ## Responsabilidade
 
-![números adquiridos em torno de uma ](../../assets/playbooks/accountability.png)
-tabelaA liderança de um projeto é o ato de liderar uma equipe no sentido da conclusão bem-sucedida de um objetivo. Pode ser, muitas vezes, uma das áreas mais críticas para se acertar a fim de realizar com sucesso um projeto de comércio eletrônico. Uma liderança bem sucedida no projeto requer competências tanto em termos de gestão como de liderança, a fim de garantir a adesão das pessoas certas, ao mesmo tempo que lidera a equipe na direção certa.
+![números em torno de uma tabela](../../assets/playbooks/accountability.png)
+A liderança de projetos é o ato de liderar uma equipe com vista à realização bem-sucedida de um objetivo-alvo. Muitas vezes, pode ser uma das áreas mais críticas para se dar bem a fim de realizar com sucesso um projeto de comércio eletrônico. Uma liderança bem sucedida no projeto requer competências tanto em termos de gestão como de liderança, a fim de garantir a adesão das pessoas certas, ao mesmo tempo que lidera a equipe na direção certa.
 
 ## Nível C
 
-![Figura rodeada por ](../../assets/playbooks/c-level.png)
-estrelasOs executivos de nível C desempenham um papel estratégico em uma organização. Eles ocupam cargos de chefia e têm impacto nas decisões de toda a empresa. C significa &quot;Chefe&quot;, portanto, um executivo de nível C é geralmente responsável por um departamento ou unidade de negócios inteira, como Finanças, TI ou Vendas. Dado que estes indivíduos são importantes partes interessadas na organização, é importante assegurar que estão conscientes dos benefícios que o projeto de comércio eletrônico traz para a organização.
+![Figura cercada por estrelas](../../assets/playbooks/c-level.png)
+Os executivos de nível C desempenham um papel estratégico em uma organização. Eles ocupam cargos de chefia e têm impacto nas decisões de toda a empresa. C significa &quot;Chefe&quot;, portanto, um executivo de nível C é geralmente responsável por um departamento ou unidade de negócios inteira, como Finanças, TI ou Vendas. Dado que estes indivíduos são importantes partes interessadas na organização, é importante assegurar que estão conscientes dos benefícios que o projeto de comércio eletrônico traz para a organização.
 
 Mais especificamente, pode ser útil identificar os benefícios específicos que o projeto traz para o seu departamento, pois isso pode ser um fator de motivação importante. Vincular métricas tangíveis à entrega bem-sucedida do projeto pode motivar e transformar seus participantes de nível C para se tornarem apoiadores ativos do projeto de transformação digital.
 
@@ -43,15 +43,15 @@ Em organizações menores, os executivos de nível C tendem a estar muito envolv
 
 ## Partes interessadas
 
-![Dois ](../../assets/playbooks/stakeholders.png)
-númerosAs partes interessadas são aquelas que têm interesse no resultado do seu projeto. Normalmente, são membros da equipe do projeto, gerentes do projeto, executivos, patrocinadores do projeto e, por fim, usuários finais. É importante garantir a aquisição de todas as partes interessadas para garantir uma mudança efetiva. Se você não conseguir o apoio de principais partes interessadas que contribuem para a decisão final, os projetos frequentemente falham.
+![Dois algarismos](../../assets/playbooks/stakeholders.png)
+As partes interessadas são aquelas que têm interesse no resultado do seu projeto. Normalmente, são membros da equipe do projeto, gerentes do projeto, executivos, patrocinadores do projeto e, por fim, usuários finais. É importante garantir a aquisição de todas as partes interessadas para garantir uma mudança efetiva. Se você não conseguir o apoio de principais partes interessadas que contribuem para a decisão final, os projetos frequentemente falham.
 
 Também é importante garantir que você tenha um processo eficaz em vigor para treinar e ativar usuários nos novos sistemas ou plataformas. As pessoas podem frequentemente ser um forte obstáculo à mudança, especialmente quando desconhecem um novo sistema e o impacto que isso pode ter nos processos e fluxos de trabalho dentro do seu ambiente. Ter processos eficazes de gerenciamento e treinamento de mudanças pode ajudar a mitigar isso. Além disso, a requalificação de usuários garante que você obtenha o máximo do sistema. Equipes que conhecem bem a plataforma podem otimizar a plataforma para fins de eficácia, garantindo que você obtenha o máximo proveito.
 
 ## Comitê Diretor
 
-![Envelope com ](../../assets/playbooks/steering-committee.png)
-marcadores Os comitês de direção são órgãos consultivos compostos por principais partes interessadas ou peritos. Fornecem orientação sobre uma série de fatores que podem afetar um projeto. O objetivo do comitê diretor é garantir o êxito do projeto, incluindo a maximização dos benefícios do projeto e a garantia de que são seguidos processos e controlos adequados de gestão dos projetos.
+![Envelope com marcador](../../assets/playbooks/steering-committee.png)
+Os comitês de direção são órgãos consultivos compostos por principais partes interessadas ou peritos. Fornecem orientação sobre uma série de fatores que podem afetar um projeto. O objetivo do comitê diretor é garantir o êxito do projeto, incluindo a maximização dos benefícios do projeto e a garantia de que são seguidos processos e controlos adequados de gestão dos projetos.
 
 ### Funções e responsabilidades comuns
 
@@ -72,10 +72,8 @@ Responsável por garantir que o projeto se concentre em atingir seus objetivos e
 
 - Projeta e nomeia as equipes de gerenciamento de projetos
 - Acompanha o desenvolvimento do caso comercial, garantindo o alinhamento estratégico corporativo
-- Acompanha e controla os progressos a nível estratégico, em especial
-análise regular do caso
-- Escalona problemas e riscos (é o ponto de escalonamento para problemas e
-riscos e garante que todos os riscos associados ao caso comercial sejam identificados, avaliados e controlados)
+- Acompanha e controla os progressos a nível estratégico, em particular revendo regularmente o caso
+- Escalada problemas e riscos (é o ponto de escalonamento para problemas e riscos e garante que todos os riscos associados ao caso comercial sejam identificados, avaliados e controlados)
 - Toma decisões em problemas escalados com foco especial na justificação contínua dos negócios
 - Garante a garantia geral dos negócios do projeto e garante que ele permaneça no target para fornecer produtos que alcancem os benefícios esperados dos negócios
 
@@ -159,5 +157,4 @@ A gestão eficaz de um sítio de comércio eletrônico exige que a equipe de ges
 
 Para integrar a organização, é sempre uma boa ideia compartilhar a visão e reforçar repetidamente o motivo pelo qual sua empresa está investindo em tecnologia de comércio eletrônico, articulando os benefícios do cliente e os benefícios dos negócios.
 
-Compartilhamento de documentação, como estudos de caso de sucesso de
-As implementações do ajudam a validar por e como esse investimento leva a organização a um novo nível. Se você quiser que a organização aceite a transformação digital, é importante informar aos funcionários que essa é uma prioridade.
+O compartilhamento de documentação, como estudos de caso de sucesso de implementações digitais, ajuda você a validar por que e como esse investimento leva a organização a um novo nível. Se você quiser que a organização aceite a transformação digital, é importante informar aos funcionários que essa é uma prioridade.

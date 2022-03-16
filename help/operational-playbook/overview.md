@@ -1,13 +1,13 @@
 ---
-title: Playbook operacional
+title: Manual operacional
 description: Objetivo do manual operacional Comércio
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: f072f6ca-3654-4bd2-a32e-000358bb67b3
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
-
 
 # Par de Reprodução Operacional
 
@@ -17,7 +17,7 @@ Criamos esse manual para todos os setores e clientes (B2C e B2B) a serem usados 
 
 Este manual foi criado para ajudá-lo a evitar alguns dos erros comuns identificados em equipes de entrega e gerenciamento de sites de comércio eletrônico de menor sucesso. As recomendações e as práticas recomendadas deste manual devem ser aplicadas a qualquer setor e empresa, em paralelo à solução tecnológica, para garantir que sua empresa esteja posicionada para obter valor do seu investimento e usar a plataforma de ponta a ponta.
 
-Os livros de reprodução desta série usam uma estrutura de governança digital comum focada nas áreas-chave de liderança, estratégia, pessoas, solução, produto e processo para fornecer uma abordagem robusta para a leitura de seus negócios, seja implantando um novo recurso em sua plataforma ou planejando um roteiro robusto de comércio eletrônico no Adobe Commerce.
+Os livros de reprodução desta série usam uma estrutura de governança digital comum, focada nas principais áreas de liderança, estratégia, pessoas, solução, produto e processo, para fornecer uma abordagem robusta para a leitura de seus negócios, independentemente de você estar implantando um novo recurso em sua plataforma ou planejando um roteiro robusto de comércio eletrônico no Adobe Commerce.
 
 O público-alvo desta pasta de reprodução inclui:
 
@@ -30,19 +30,19 @@ O público-alvo desta pasta de reprodução inclui:
 
 ## Sobre este playbook
 
-Este documento segue uma estrutura projetada para ajudá-lo a entender as principais áreas de foco e obter o máximo valor do seu investimento no Adobe Commerce. Essa estrutura é baseada na Deloitte and Adobe Commerce Governance Framework, que cria o ambiente de negócios apropriado para o sucesso das operações e transformações digitais. Inclui:
+Este documento segue uma estrutura projetada para ajudá-lo a entender as principais áreas de foco e maximizar o valor do seu investimento no Adobe Commerce. Essa estrutura é baseada na Deloitte and Adobe Commerce Governance Framework, que cria o ambiente de negócios apropriado para o sucesso das operações e transformações digitais. Inclui:
 
-- **Liderança** — Compras executivas e suporte para o gerenciamento bem-sucedido de uma plataforma de comércio eletrônico.
+- **Liderança**—Compras executivas e suporte para o gerenciamento bem-sucedido de uma plataforma de comércio eletrônico.
 
-- **Estratégia** — clareza e alinhamento em torno das principais metas de negócios para avaliar o desempenho digital e as operações de comércio eletrônico.
+- **Estratégia**—Clareza e alinhamento em torno dos principais objetivos de negócios para avaliar o desempenho digital e as operações de comércio eletrônico.
 
-- **Solução** — Hospedagem e avaliação da infraestrutura para atender a diferentes necessidades de negócios e de comércio eletrônico.
+- **Solução**—Avaliação de hospedagem e infraestrutura para atender a diferentes requisitos de negócios e comércio eletrônico.
 
-- **Pessoas**: recursos, experiência e a estrutura de equipe apropriada para executar operações de comércio eletrônico de maneira eficaz.
+- **Pessoas**—Recursos, experiência e a estrutura de equipe adequada para executar operações de comércio eletrônico de maneira eficaz.
 
-- **Processo** — procedimentos, gerenciamento de projetos e fluxos de trabalho para gerenciar um site de comércio eletrônico com eficiência.
+- **Processo**—Procedimentos, gerenciamento de projetos e fluxos de trabalho para gerenciar um site de comércio eletrônico de maneira eficaz.
 
-- **Produto** — soluções gerais de comércio eletrônico, integrações comuns e automações.
+- **Produto**—Soluções gerais de comércio eletrônico, integrações comuns e automações.
 
 >[!NOTE]
 >

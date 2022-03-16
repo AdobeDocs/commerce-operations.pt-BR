@@ -1,13 +1,13 @@
 ---
 title: Métricas de suporte
 description: Monitore os esforços de suporte e manutenção da implementação do Adobe Commerce usando métricas comuns.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: a8171a08-3583-4c6a-bb18-158161be42d1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
-
 
 # Métricas de suporte
 
@@ -24,6 +24,6 @@ A medição e a emissão de relatórios dos serviços L2 (melhorias e serviços 
 | Superexposição de Sprint | Número | Gráfico (Relatório, rastreia a conclusão do trabalho em toda a etapa) |
 | Qualidade do código | Números, Porcentagem | Complexidade, LoC, Violações, Cobertura de código para impressão |
 | Volatilidade do requisito | Número | Número de requisitos alteração/número total de requisitos para a fonte |
-| Densidade de Defeito | Porcentagem | [Não. de defeitos válidos encontrados/Total n.o .of Test cases executados]*100 para a impressão |
-| Eficácia do teste | Porcentagem | [Defeitos válidos levantados/(Defeitos válidos levantados + defeitos rejeitados)]*100 para a impressora |
+| Densidade de Defeito | Porcentagem | [Não. de defeitos válidos encontrados/Total n.o .of Casos de teste executados]*100 para a impressão |
+| Eficácia do teste | Porcentagem | [Defeitos válidos levantados/(Defeitos válidos levantados + defeitos rejeitados)]*100 para a impressão |
 | Produtividade | Número (tendência) | Pontos de história fornecidos por fonte/capacidade |

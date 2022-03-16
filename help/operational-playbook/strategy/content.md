@@ -1,13 +1,13 @@
 ---
 title: Estratégia de conteúdo
 description: Aproveite seu conteúdo para criar campanhas envolventes que envolvam seus clientes.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: fabfed9e-63ff-4be3-8bb7-192ccdb9dde6
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # Estratégia de conteúdo
 
@@ -33,14 +33,14 @@ Finalmente, o teste, o direcionamento e a estratégia darão a você a oportunid
 
 ## Adobe Experience Manager
 
-Esteja você gerenciando conteúdo básico da Web ou conteúdo a ser lançado em redes sociais, o Adobe Experience Manager ajuda a fornecer ativos criativos e outro conteúdo em todos os canais onde um cliente pode se envolver. Com o AEM, você pode aproveitar o conteúdo gerenciado no ambiente de criação do AEM para criar campanhas altamente envolventes. Você pode publicar facilmente ativos de marketing que projetam, gerenciam e validam no Adobe Experience Manager em diferentes canais e plataformas.
+Esteja você gerenciando conteúdo básico da Web ou conteúdo a ser lançado em redes sociais, o Adobe Experience Manager ajuda a fornecer ativos criativos e outros conteúdos em todos os canais onde um cliente pode se envolver. Com o AEM, você pode aproveitar o conteúdo gerenciado no ambiente de criação do AEM para criar campanhas altamente envolventes. Você pode publicar facilmente ativos de marketing que projetam, gerenciam e validam no Adobe Experience Manager em diferentes canais e plataformas.
 
 A Adobe Experience Manager combina várias funções de nível de infraestrutura e de aplicativo em um único pacote integrado. O endereço da oferta:
 
 - **Sites**—Crie e entregue rapidamente sites e aplicativos móveis relevantes e atualize o conteúdo a qualquer momento sem sobrecarregar seu departamento de TI.
-- **Ativos** — gerencie facilmente imagens, vídeos e outros ativos em cada canal digital para proporcionar experiências personalizadas ao cliente.
-- **Comunidades**—Crie comunidades prósperas e converse de forma envolvente em todas as suas propriedades sociais para que você possa inspirar novos níveis de aprendizado e fidelidade do cliente.
-- **Forms** — integre formulários corporativos a seus sites e experiências móveis e simplifique a criação de formulários e a conclusão de transações.
-- **Aplicativos**: crie e entregue aplicativos móveis com uma solução que libere a lacuna entre profissionais de marketing e TI para que os profissionais de marketing possam atualizar facilmente o conteúdo (mesmo após o lançamento).
+- **Ativos**—Gerencie facilmente imagens, vídeos e outros ativos em cada canal digital para proporcionar experiências personalizadas ao cliente.
+- **Comunidades**—Crie comunidades prósperas e conversas envolventes em todas as suas propriedades sociais para que você possa inspirar novos níveis de aprendizado e fidelidade do cliente.
+- **Forms**—Integre formulários corporativos a seus sites e experiências móveis e simplifique a criação de formulários e a conclusão de transações.
+- **Aplicativos**—Crie e forneça aplicativos móveis com uma solução que libere a lacuna entre os profissionais de marketing e a TI para que os profissionais de marketing possam atualizar facilmente o conteúdo (mesmo após o lançamento).
 
 ![Diagrama de estrutura da estratégia de conteúdo](../../assets/playbooks/content-strategy-framework2.png)

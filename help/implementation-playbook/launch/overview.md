@@ -1,13 +1,13 @@
 ---
 title: Visão geral de disponibilidade do Launch
-description: Analise um resumo do que significa preparação para o lançamento para implementações do Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Revise um resumo do que significa preparação para o lançamento para implementações do Adobe Commerce.
+exl-id: 87cfcb48-3c0e-4c14-afb4-62bb9fe94c48
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 0%
 
 ---
-
 
 # Visão geral de disponibilidade do Launch
 

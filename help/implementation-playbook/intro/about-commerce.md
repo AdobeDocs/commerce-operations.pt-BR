@@ -1,21 +1,21 @@
 ---
 title: Sobre o Adobe Commerce
 description: Descrição do Adobe Commerce
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
 # Sobre o Adobe Commerce
 
-O Adobe Commerce fornece aos comerciantes o poder de criar experiências de compras únicas e envolventes. A plataforma oferece recursos avançados e prontos para uso, uma capacidade ilimitada de personalizar, uma arquitetura flexível e sem periféricos e integrações ininterruptas de terceiros. Isso é combinado com um ecossistema global de parceiros de implementação e um vasto mercado de extensões para dar vida aos projetos de comércio.
+O Adobe Commerce fornece aos comerciantes o poder de criar experiências de compras exclusivas e envolventes. A plataforma oferece recursos avançados e prontos para uso, uma capacidade ilimitada de personalizar, uma arquitetura flexível e sem periféricos e integrações ininterruptas de terceiros. Isso é combinado com um ecossistema global de parceiros de implementação e um vasto mercado de extensões para dar vida aos projetos de comércio.
 
 ## Fornecer experiências comerciais significativas
 
-Ao se casar com conteúdo com comércio para atender às demandas dos clientes por interações de marca sem falhas, os recursos do Adobe Commerce estão sempre evoluindo tendo em mente o consumidor. O Adobe Commerce permite que as marcas sejam proprietárias da experiência do cliente, criar conteúdo e promoções personalizadas e fornecer um caminho suave para a compra através dos seguintes recursos:
+Ao se casar com conteúdo com comércio para atender às demandas dos clientes por interações de marca sem falhas, os recursos da Adobe Commerce estão sempre evoluindo tendo o consumidor em mente. O Adobe Commerce permite que as marcas sejam proprietárias da experiência do cliente, criar conteúdo e promoções personalizadas e fornecer um caminho suave para a compra por meio dos seguintes recursos:
 
 - Page Builder
 - Recommendations do produto
@@ -38,7 +38,7 @@ O crescimento do comércio é alimentado pelas necessidades de seus clientes, on
 
 ## Gerenciamento de operações inteligentes e eficientes
 
-Eficiência, automação e acesso aos dados são necessários para competir no cenário de comércio moderno. O Adobe Commerce facilita que os comerciantes transformem e operem como uma organização de comércio eficaz e orientada por dados para expandir seus negócios.
+Eficiência, automação e acesso aos dados são necessários para competir no cenário de comércio moderno. A Adobe Commerce facilita que os comerciantes transformem e operem como uma organização de comércio eficaz e orientada por dados para expandir seus negócios.
 
 - Inteligência empresarial
 - Envio

@@ -1,13 +1,13 @@
 ---
 title: Clique em e colete
 description: Siga estas dez dicas para oferecer um clique e uma experiência de coleta para seus clientes.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 0%
 
 ---
-
 
 # Clique e colete
 
@@ -34,13 +34,13 @@ As empresas devem seguir essas dez dicas para fornecer um bom serviço de clique
 
 Ao decidir implementar o click e a coleta, as empresas devem considerar como pretendem fornecer cliques e coletar aos clientes, como tipos de serviço:
 
-- **Pagamento on-line e coleta na loja** — O usuário paga o produto on-line e, após a confirmação do pagamento, a loja notifica o cliente quando o produto está pronto para ser coletado com base na seleção da loja de clientes. Coletar o pagamento primeiro ajuda a reservar o produto.
+- **Pagamento online e cobrança na loja**—O usuário paga o produto on-line e, após a confirmação do pagamento, a loja notifica o cliente quando o produto está pronto para ser coletado com base na seleção da loja de clientes. Coletar o pagamento primeiro ajuda a reservar o produto.
 
-- **Reservar produtos on-line, pagamento e coleta na loja** — Nesse tipo de serviço, o cliente não paga on-line ao reservar um produto. Nesse tipo de serviço, o cliente pode mudar de ideia e pode não comprar o produto.
+- **Reservar produtos em linha, pagamento e recolha em loja**—Nesse tipo de serviço, o cliente não paga online ao reservar um produto. Nesse tipo de serviço, o cliente pode mudar de ideia e pode não comprar o produto.
 
-- **Integração** — Após a seleção do tipo de delivery, as empresas precisam decidir sobre a estrutura de integração (onde os pedidos são enviados, onde os pedidos são realizados). As existências podem ser realizadas quer a partir de um entreposto central quer diretamente a partir de lojas individuais.
+- **Integração**—Depois que o tipo de delivery é selecionado, as empresas precisam decidir sobre a estrutura de integração (onde os pedidos são enviados, onde os pedidos são realizados). As existências podem ser realizadas quer a partir de um entreposto central quer diretamente a partir de lojas individuais.
 
-- **Retornos** — Os retornos podem ser complexos. As empresas precisam ter uma estratégia clara para gerenciar o retorno de produtos e produtos entregues solicitados usando o clique e a coleta. As empresas precisam permitir que os clientes devolvam os produtos solicitados por meio de cliques e coletas para fornecer um serviço completo ao cliente.
+- **Devoluções**—Os retornos podem ser complexos. As empresas precisam ter uma estratégia clara para gerenciar o retorno de produtos e produtos entregues solicitados usando o clique e a coleta. As empresas precisam permitir que os clientes devolvam os produtos solicitados por meio de cliques e coletas para fornecer um serviço completo ao cliente.
 
 ## Promoção
 

@@ -1,13 +1,13 @@
 ---
 title: Serviços da plataforma de comércio
 description: Analise as vantagens e desvantagens de usar soluções de PaaS para sua infraestrutura de hospedagem para determinar o que é certo para seu projeto de comércio eletrônico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 071e6e9b-6874-4d08-90b4-036d6cdca4c2
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # Plataforma como um serviço (PaaS)
 
@@ -17,9 +17,9 @@ O PaaS é fornecido como um serviço hospedado na infraestrutura do provedor e p
 
 A PaaS funciona em nuvens privadas, públicas e híbridas:
 
-- **Nuvem** privada — Os PaaS são fornecidos no firewall do cliente para fins de segurança, onde os dados são armazenados no local.
-- **Nuvem pública** — O cliente está no controle das implantações e o provedor é responsável por todos os outros componentes, como rede e sistema operacional.
-- **Nuvem** híbrida — A híbrido mescla as funções de privado e público para que o cliente possa ter flexibilidade.
+- **Nuvem privada**—O PaaS é fornecido dentro do firewall do cliente para fins de segurança, onde os dados são armazenados no local.
+- **Nuvem pública**—O cliente está no controle das implantações e o provedor é responsável por todos os outros componentes, como rede e sistema operacional.
+- **Nuvem híbrida**—Hybrid mistura as funções tanto privadas quanto públicas para que o cliente possa ter flexibilidade.
 
 ## Vantagens
 
@@ -39,8 +39,7 @@ A PaaS funciona em nuvens privadas, públicas e híbridas:
 
 - Pode causar uma ameaça à segurança, pois tudo está armazenado na nuvem
 - Dependente do provedor de serviços
-- Se o provedor passar por um tempo de inatividade, isso será um problema para a variável
-cliente
+- Se o provedor experimentar um tempo de inatividade, isso será um problema para o cliente
 - Permite atualizações fáceis e rápidas
 
 Quando o cliente usa PaaS no comércio eletrônico, ele não precisa gerenciar o sistema e o software operacional. O cliente recebe uma plataforma para configurar seu site de comércio eletrônico, onde cria e configura conteúdo, dados de código e produtos. que é separado do lado administrativo das coisas relacionadas ao PaaS.

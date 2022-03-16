@@ -1,17 +1,17 @@
 ---
 title: Principais partes interessadas
-description: Revise os principais participantes envolvidos na implementação do Adobe Commerce e que são proprietários de diferentes aspectos do projeto.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Revise os principais participantes envolvidos em uma implementação do Adobe Commerce e proprietários de diferentes aspectos do projeto.
+exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
-
 # Principais partes interessadas
 
-Muitas empresas em 2021 se deram conta de que tornar-se &quot;à prova de pandemia&quot; está diretamente relacionado com a força digital de uma organização. Com base nos dados da Forrester,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)descobriu que o comércio eletrônico tem registrado um crescimento de 10 anos em apenas 3 meses, com o crescimento sendo impulsionado pela necessidade de se conectar digitalmente com os clientes enquanto as portas de tijolo e morteiro estavam fechadas.
+Muitas empresas em 2021 se deram conta de que tornar-se &quot;à prova de pandemia&quot; está diretamente relacionado com a força digital de uma organização. Com base nos dados da Forrester,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)descobriu que o comércio eletrônico tem registrado um crescimento de 10 anos em apenas 3 meses, sendo o crescimento impulsionado pela necessidade de se conectar digitalmente com os clientes enquanto as portas de tijolo e argamassa estavam fechadas.
 
 Quando se decide investir em transformação comercial, um dos passos mais importantes é determinar quem da organização está envolvido no processo. Para empresas menores, às vezes o comércio eletrônico ou a equipe digital são apenas um punhado de pessoas, então toda a equipe assume a tarefa. No entanto, para as organizações de maior dimensão, uma abordagem consiste em dividi-lo em três áreas diferentes, incluindo:
 

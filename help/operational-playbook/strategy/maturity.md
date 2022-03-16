@@ -1,13 +1,13 @@
 ---
 title: Prazo
 description: Avalie em que estágio seu negócio está com base nesse modelo de maturidade.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
 
 ---
-
 
 # Modelo de vencimento
 
@@ -55,7 +55,7 @@ As empresas em fase de execução têm uma compreensão completa dos clientes e 
 
 Com uma compreensão profunda de clientes, mercados e equipes internas e externas, as empresas em fase de execução podem implementar recursos personalizados que diferenciam seu site. Por exemplo, ofereça vários métodos de pagamento, forneça serviços de assinatura ou ofereça descontos de frete grátis.
 
-Os negócios podem implementar facilmente recursos complexos, pois já ganharam fatia de mercado e estão confiantes de que investir neles os ajuda a melhorar o serviço ao cliente e a manter seus clientes voltando.
+As empresas podem implementar facilmente recursos complexos, pois já ganharam fatia de mercado e estão confiantes de que investir neles ajuda a melhorar o serviço ao cliente e mantém seus clientes retornando.
 
 ## Elementos de um modelo de maturidade
 

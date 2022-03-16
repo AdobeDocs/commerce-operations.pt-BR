@@ -1,13 +1,13 @@
 ---
 title: Controle de qualidade
-description: Saiba mais sobre os processos de controle de qualidade do Adobe Commerce relacionados a projetos de implementação.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Saiba mais sobre os processos de controle de qualidade da Adobe Commerce relacionados a projetos de implementação.
+exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
 
 ---
-
 
 # Processo e ferramentas de controlo da qualidade
 
@@ -142,12 +142,12 @@ O processo de controlo de qualidade no diagrama anterior pode ser descrito resum
 </tbody>
 </table>
 
-Semelhante às [ferramentas](project-management-tools.md) que identificamos para o processo de desenvolvimento, selecionamos algumas soluções e plataformas de escolha que geralmente utilizamos para testes de controle de qualidade.
+Semelhante ao [ferramentas](project-management-tools.md) identificamos o processo de desenvolvimento, selecionamos algumas soluções e plataformas de escolha que muitas vezes utilizamos para testes de controle de qualidade.
 
 | Finalidade | Ferramenta |
 |---------------------------|---------------------------------------------------|
 | Índice de desempenho do site | Google PageSpeed, Webpagetest, JMeter |
-| Segurança | Adobe Commerce Security Scan Tool, SonarQube, ZAP |
+| Segurança | Ferramenta Adobe Commerce Security Scan, SonarQube, ZAP |
 | Sistema de gestão de problemas | JIRA |
 | Teste da interface do usuário | Pixel perfeito, BrowserStack |
 | Teste de API | Postman, SoapUI |

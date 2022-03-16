@@ -5,7 +5,7 @@ description: Navegue por um índice da documentação operacional do produto Ado
 source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -97,7 +97,7 @@ Obtenha informações práticas sobre conceitos, processos, ferramentas e práti
       <img alt="Implementação" src="../assets/icons/play.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>Playbook de implementação</strong></a>
+      <a href="../implementation-playbook/overview.md"><strong>Manual de implementação</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -105,7 +105,7 @@ Obtenha informações práticas sobre conceitos, processos, ferramentas e práti
        <img alt="Operações" src="../assets/icons/refresh.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>Playbook operacional</strong></a>
+      <a href="../operational-playbook/overview.md"><strong>Manual operacional</strong></a>
     </div>
   </td>
   <td valign="top">

@@ -1,13 +1,13 @@
 ---
 title: Integrações de comércio
 description: Combine sua equipe com as ferramentas necessárias para atrair seus clientes e garantir operações diárias ininterruptas.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 52bfa6c7-0687-45de-8889-c529cea7d01a
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
 
 ---
-
 
 # Integrações de terceiros
 
@@ -15,8 +15,7 @@ A maioria das empresas entende que muitas estratégias e processos únicos preci
 
 A maioria das necessidades operacionais pode ser atendida usando diferentes plataformas de software, incluindo ERP, marketplace, ferramentas de inteligência de negócios, software de contabilidade, conjuntos de relatórios e muito mais. O software adicional é selecionado para reduzir o tempo e o esforço da organização e, ao mesmo tempo, otimizar a experiência do cliente e as operações comerciais.
 
-Ao selecionar um provedor de terceiros, as empresas devem usar um
-e uma abordagem eficaz da integração que satisfaça as suas necessidades. Depois de entender as necessidades do cliente, decida um plano detalhado com a ajuda das partes interessadas. Depois de decidir o plano, configure um documento de especificação que defina como o sistema se comunica e que tipo de dados é necessário e passado para terceiros.
+Ao selecionar um provedor de terceiros, as empresas devem usar uma abordagem simples e eficaz para a integração que atenda às suas necessidades. Depois de entender as necessidades do cliente, decida um plano detalhado com a ajuda das partes interessadas. Depois de decidir o plano, configure um documento de especificação que defina como o sistema se comunica e que tipo de dados é necessário e passado para terceiros.
 
 >[!NOTE]
 >
@@ -41,4 +40,4 @@ e uma abordagem eficaz da integração que satisfaça as suas necessidades. Depo
 - Marketplace
 - Marketing por email
 - Social
-- Compras do Google, gerenciador de tags e outros feeds de API
+- Google Shopping, Tag Manager e outros feeds de API

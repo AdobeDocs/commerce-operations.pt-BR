@@ -1,17 +1,17 @@
 ---
 title: Otimização de desempenho
-description: Saiba tudo sobre a otimização de desempenho e as etapas a serem seguidas para analisar o desempenho da implementação do Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Saiba tudo sobre a otimização de desempenho e as etapas a serem seguidas para analisar o desempenho de sua implementação do Adobe Commerce.
+exl-id: 506ef2cc-c6fd-4401-afa5-a71e7b9871e6
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-
 # Otimização de desempenho
 
-O desempenho é um grande tópico. Quando os usuários experimentam um site lento ou sem resposta, isso afeta a conversão. Recomendamos seguir estas etapas para otimizar o desempenho do seu Adobe Commerce na implementação da infraestrutura em nuvem:
+O desempenho é um grande tópico. Quando os usuários experimentam um site lento ou sem resposta, isso afeta a conversão. Recomendamos seguir essas etapas para otimizar o desempenho do Adobe Commerce na implementação da infraestrutura de nuvem:
 
 - Avalie o problema
 - Medir desempenho
@@ -41,7 +41,7 @@ O TTFB (High-time-to-first-byte) geralmente é considerado um indicador que defi
 
 Os recursos de carregamento lento geralmente são considerados como um indicador que define o recurso estático (CSS, JavaScript, imagens, vídeos, resposta de chamada do Ajax de terceiros).
 
-O Adobe Commerce pode ser expandido com sua empresa através de seus recursos:
+A Adobe Commerce pode ser dimensionada com sua empresa através de seus recursos:
 
 ![Diagrama que mostra os recursos escaláveis do Adobe Commerce](../../../assets/playbooks/scalable-capabilities.svg)
 
@@ -56,4 +56,4 @@ Há também fatores fundamentais que determinam a escala no comércio, o que tam
 
 Para arquiteturas em camadas e em cache criadas para escala, você pode usar esse gráfico como referência.
 
-![Diagrama que mostra como usar a API GraphQL do Adobe Commerce em uma arquitetura armazenável em cache](../../../assets/playbooks/cacheable-architecture.svg)
+![Diagrama que mostra como usar a API GraphQL da Adobe Commerce em uma arquitetura armazenável em cache](../../../assets/playbooks/cacheable-architecture.svg)

@@ -38,13 +38,13 @@ Você pode usar a linha de comando ou o Administrador para determinar o mecanism
 
 - Insira o `bin/magento config:show catalog/search/engine` comando. O comando retorna um valor de `mysql`, `elasticsearch` (que indica que o Elasticsearch 2 está configurado), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`ou um valor personalizado, indicando que você instalou um mecanismo de pesquisa de terceiros.
 
-- From the Admin, check the value of the **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** field.
+- Em Admin, verifique o valor da variável **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** campo.
 
 As seções a seguir descrevem as ações que devem ser tomadas antes de atualizar para a versão 2.4.0.
 
 ### MySQL
 
-As of 2.4, MySQL is no longer a supported catalog search engine. Você deve instalar e configurar o Elasticsearch antes de atualizar. Use os seguintes recursos para ajudar a orientá-lo durante este processo:
+A partir da versão 2.4, o MySQL não é mais um mecanismo de pesquisa de catálogo compatível. Você deve instalar e configurar o Elasticsearch antes de atualizar. Use os seguintes recursos para ajudar a orientá-lo durante este processo:
 
 - [Instalar e configurar o Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-overview.html)
 - [Instalação do Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
@@ -69,11 +69,11 @@ Recomendamos que você entre em contato com o fornecedor do mecanismo de pesquis
 
 ## Definir o limite de arquivos abertos
 
-A definição do limite de arquivos abertos (ulimit) pode ajudar a evitar a falha de várias chamadas recursivas de longas sequências de consulta ou problemas com o uso da variável `bin/magento setup:rollback` comando. Esse comando é diferente para diferentes shell UNIX. Consult your individual flavor for specifics about the `ulimit` command.
+A definição do limite de arquivos abertos (ulimit) pode ajudar a evitar a falha de várias chamadas recursivas de longas sequências de consulta ou problemas com o uso da variável `bin/magento setup:rollback` comando. Esse comando é diferente para diferentes shell UNIX. Consulte seu sabor individual para obter detalhes sobre o `ulimit` comando.
 
-Adobe recommends setting the open files [ulimit](http://ss64.com/bash/ulimit.html) to a value of `65536` or more, but you can use a larger value if necessary. Você pode definir o limite na linha de comando ou torná-lo uma configuração permanente para o shell do usuário.
+O Adobe recomenda configurar os arquivos abertos [ulimit](http://ss64.com/bash/ulimit.html) para um valor de `65536` ou mais, mas você pode usar um valor maior, se necessário. Você pode definir o limite na linha de comando ou torná-lo uma configuração permanente para o shell do usuário.
 
-To set the ulimit from the command line:
+Para definir o limite da linha de comando:
 
 1. Alterne para [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 1. Defina o limite como 65536.
@@ -90,7 +90,7 @@ Para definir o valor no shell Bash:
 
 1. Alterne para [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 1. Abrir `/home/<username>/.bashrc` em um editor de texto.
-1. Add the following line:
+1. Adicione a seguinte linha:
 
    ```bash
    ulimit -s 65536
@@ -100,7 +100,7 @@ Para definir o valor no shell Bash:
 
 >[!IMPORTANT]
 >
->We recommend that you avoid setting a value for the `pcre.recursion_limit` property in the `php.ini` file because it can result in incomplete rollbacks with no failure notice.
+>Recomendamos que você evite definir um valor para a variável `pcre.recursion_limit` na `php.ini` porque pode resultar em reversões incompletas sem aviso de falha.
 
 ## Verifique se trabalhos do cron estão em execução
 
@@ -234,7 +234,7 @@ Para obter informações mais detalhadas, você pode inserir o seguinte comando:
 ls -la /var/www/html/magento2/pub
 ```
 
-Because Adobe Commerce and Magento Open Source deploy static file assets to subdirectories of `pub`, it’s a good idea to verify permissions and ownership there as well.
+Como o Adobe Commerce e o Magento Open Source implantam ativos de arquivos estáticos em subdiretórios de `pub`, é uma boa ideia verificar também as permissões e a propriedade.
 
 Para obter mais informações, consulte [Permissões e propriedade do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
 

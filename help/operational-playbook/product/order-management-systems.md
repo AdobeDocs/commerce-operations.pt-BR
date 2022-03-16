@@ -1,13 +1,13 @@
 ---
 title: Sistemas de gerenciamento de pedidos
 description: Conclua seu projeto de comércio eletrônico com um sistema para empacotamento, envio e devoluções.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 2a5f19fa-e8fe-452b-9ab6-65428dda691d
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
 
 ---
-
 
 # Sistema de Gestão das Ordens (OMS)
 
@@ -19,13 +19,13 @@ Um OMS fornece integração e automação por meio da jornada de pedido de clien
 
 Um OMS é importante para um site de comércio eletrônico porque ajuda as marcas a crescerem. Os clientes têm altas expectativas, o que não deixa espaço para erros. Algumas das razões pelas quais um OMS é essencial incluem:
 
-- **Fornece entrega** mais rápida — Em uma era de entrega do próximo dia ou de 2 dias, as empresas precisam procurar maneiras de encaminhar seus pedidos mais rapidamente, à medida que a janela para concluir pedidos está ficando mais estreita. Um OMS é imediatamente notificado quando um pedido é feito, e o OMS pode escolher o depósito mais próximo do destino do pedido para ajudar a acelerar o delivery. O OMS envia informações de pedido automatizadas para a equipe de depósito para preparar e compactar o pedido para entrega usando um método de envio econômico.
+- **Fornece entrega mais rápida**—Em uma era do próximo dia ou no envio de 2 dias, as empresas precisam procurar maneiras de encaminhar seus pedidos mais rapidamente, já que a janela para concluir os pedidos está ficando mais estreita. Um OMS é imediatamente notificado quando um pedido é feito, e o OMS pode escolher o depósito mais próximo do destino do pedido para ajudar a acelerar o delivery. O OMS envia informações de pedido automatizadas para a equipe de depósito para preparar e compactar o pedido para entrega usando um método de envio econômico.
 
-- **Erros** limitados: Um OMS ajuda a reduzir os erros humanos. Esses erros podem ser demorados e caros. Um OMS notifica a equipe quando os níveis de inventário são baixos, quando um produto não está vendendo ou qual produto tem a maior taxa de devolução. Isso ajuda a empresa a corrigir erros de envio e analisar o motivo dos retornos.
+- **Erros limitados**: Um OMS ajuda a reduzir os erros humanos. Esses erros podem ser demorados e caros. Um OMS notifica a equipe quando os níveis de inventário são baixos, quando um produto não está vendendo ou qual produto tem a maior taxa de devolução. Isso ajuda a empresa a corrigir erros de envio e analisar o motivo dos retornos.
 
-- **Aumento na escalabilidade** — Um OMS é escalável de acordo com a necessidade da empresa, ao contrário dos sistemas manuais mais antigos. O software OMS oferece às empresas a opção de se ajustarem ao mercado.
+- **Aumento na escalabilidade**—Um OMS é escalável de acordo com a necessidade do negócio, ao contrário de sistemas manuais mais antigos. O software OMS oferece às empresas a opção de se ajustarem ao mercado.
 
-- **Mais possibilidades** de multicanal — Em uma era de vendas de vários canais em sites, mercados ou parcerias (Facebook e Instagram), os pedidos de rastreamento podem ser complexos porque estão sendo enviados para vários locais usando um ou mais métodos de envio. Um OMS o reúne e aumenta a experiência do cliente.
+- **Mais possibilidades de multicanal**—Em uma era de vendas multicanal em sites, mercados ou parcerias (Facebook e Instagram), os pedidos de rastreamento podem ser complexos porque estão sendo enviados para vários locais usando um ou mais métodos de envio. Um OMS o reúne e aumenta a experiência do cliente.
 
 ## Principais recursos
 

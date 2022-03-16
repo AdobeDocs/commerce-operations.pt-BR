@@ -1,13 +1,13 @@
 ---
 title: Equipes
 description: Saiba mais sobre os diferentes tipos de equipes que tornam projetos de comércio eletrônico bem-sucedidos.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: b1a007b2-49ff-475f-9ad7-5fa100cdfa3b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1224'
 ht-degree: 0%
 
 ---
-
 
 # Equipes
 
@@ -87,8 +87,8 @@ Ao iniciar um projeto de comércio eletrônico, lembre-se do nível C e dos neg�
 
 Há outras equipes que fazem parte de uma equipe existente ou são independentes, incluindo:
 
-- **Equipe** de conteúdo: eles precisam estar alinhados a todas as equipes para criar conteúdo efetivo. O conteúdo do site requer atualizações regulares. A equipe de Conteúdo é responsável pela configuração do conteúdo na página do produto, nas páginas de categoria, no blog e no rodapé, o que atrai o tráfego do site e aumenta sua taxa de conversão.
+- **Equipe de conteúdo**—Eles precisam estar alinhados a todas as equipes para criar conteúdo efetivo. O conteúdo do site requer atualizações regulares. A equipe de Conteúdo é responsável pela configuração do conteúdo na página do produto, nas páginas de categoria, no blog e no rodapé, o que atrai o tráfego do site e aumenta sua taxa de conversão.
 
-- **Equipe** de dados — Os sites de comércio eletrônico geram muitos dados que você pode coletar e analisar, incluindo informações sobre clientes, hábitos gastos, produtos populares e o tempo em que o site tem mais tráfego. A equipe de dados processa todas essas informações para fornecer informações sobre como o site está funcionando e onde o site precisa de mais melhorias. A equipe de dados pode recomendar quais tendências estão por vir e onde os negócios precisam se concentrar.
+- **Equipe de dados**—Os sites de comércio eletrônico geram muitos dados que você pode coletar e analisar, incluindo informações sobre clientes, hábitos de consumo, produtos populares e o tempo em que o site tem mais tráfego. A equipe de dados processa todas essas informações para fornecer informações sobre como o site está funcionando e onde o site precisa de mais melhorias. A equipe de dados pode recomendar quais tendências estão por vir e onde os negócios precisam se concentrar.
 
-- **Equipe** de finanças e contabilidade — Algumas empresas têm uma pequena equipe de Finanças e Contabilidade, que pode ser interna ou externa. Eles se concentram em orçamentar, prever e gerenciar o aspecto financeiro da configuração e execução de um site de comércio eletrônico.
+- **Equipe financeira e contabilística**—Algumas empresas têm uma pequena equipe de Finanças e Contabilidade, que pode ser interna ou externa. Eles se concentram em orçamentar, prever e gerenciar o aspecto financeiro da configuração e execução de um site de comércio eletrônico.

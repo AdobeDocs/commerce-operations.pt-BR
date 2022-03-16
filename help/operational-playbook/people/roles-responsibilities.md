@@ -1,13 +1,13 @@
 ---
 title: Funções e responsabilidades
 description: Saiba mais sobre as diferentes funções e responsabilidades envolvidas em um projeto de comércio eletrônico bem-sucedido.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 0%
 
 ---
-
 
 # Funções e responsabilidades
 
@@ -130,12 +130,12 @@ A equipe de Conteúdo fica na equipe de Marketing, na equipe de Comércio eletr�
 
 A equipe de conteúdo é responsável por:
 
-- **Organização do conteúdo**: elementos, URLs, navegação e estrutura de página precisam ser simples e fáceis de usar. Se o site for muito complicado, os clientes se perderão.
+- **Organização do conteúdo**—Elementos, URLs, navegação e estrutura de página precisam ser simples e fáceis de usar. Se o site for muito complicado, os clientes se perderão.
 
-- **Correção de conteúdo** quebrado — Imagens, páginas, páginas ausentes, fluxo de check-out quebrado e mensagens de erro fazem com que os clientes saiam do site e deixem uma impressão negativa.
+- **Correção de conteúdo corrompido**—Imagens, páginas, páginas ausentes, fluxo de check-out quebrado e mensagens de erro fazem com que os clientes saiam do site e deixem uma impressão negativa.
 
-- **Atualização de conteúdo** — O conteúdo do site precisa estar atualizado. Se o site consiste em conteúdo desatualizado, isso afeta a experiência do cliente e aumenta a carga de trabalho da equipe de Atendimento ao cliente. Por exemplo, eles precisam responder perguntas do cliente que devem ter sido respondidas por conteúdo no site.
+- **Atualização de conteúdo**—O conteúdo do site precisa estar atualizado. Se o site consiste em conteúdo desatualizado, isso afeta a experiência do cliente e aumenta a carga de trabalho da equipe de Atendimento ao cliente. Por exemplo, eles precisam responder perguntas do cliente que devem ter sido respondidas por conteúdo no site.
 
-- **Simplificação de conteúdo** — A equipe de Conteúdo precisa criar conteúdo simples e direto. A linguagem simples funciona melhor ao interagir com os clientes.
+- **Simplificação de conteúdo**—A equipe de Conteúdo precisa criar conteúdo simples e direto. A linguagem simples funciona melhor ao interagir com os clientes.
 
 A equipe de Conteúdo cria, testa, gerencia e otimiza todo o conteúdo no site, o que traz o ROI.

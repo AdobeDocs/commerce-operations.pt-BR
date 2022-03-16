@@ -1,13 +1,13 @@
 ---
 title: Personalização
 description: Saiba mais sobre o tipo de personalização de experiência que deve fornecer aos clientes.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: ea829c53-1f98-4e23-90ee-5424a4ef0324
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
 
 ---
-
 
 # Personalização
 
@@ -25,21 +25,21 @@ A personalização deve incluir:
 
 Os exemplos de personalização incluem:
 
-- **Interesse** do cliente — Alteração da página inicial e da navegação com base no perfil do cliente. Por exemplo, se um usuário tiver visitado o site anteriormente e explorado a seção de mulheres, ele navegará até a página inicial de mulheres na próxima vez que acessar o URL.
+- **Interesse do cliente**—Alteração da página inicial e da navegação com base no perfil do cliente. Por exemplo, se um usuário tiver visitado o site anteriormente e explorado a seção de mulheres, ele navegará até a página inicial de mulheres na próxima vez que acessar o URL.
 
-- **Produtos** recomendados — Produtos recomendados com base no comportamento de navegação dos clientes.
+- **Produtos recomendados**—Recomende produtos com base no comportamento de navegação dos clientes.
 
-- **Pesquisar** — Exibe resultados de pesquisa personalizados com base em um comportamento de pesquisa anterior dos clientes.
+- **Pesquisar**—Exibe resultados de pesquisa personalizados com base em um comportamento de pesquisa anterior de clientes.
 
-- **Email** — Envie emails personalizados sobre produtos se um cliente tiver deixado o item no carrinho ou se o produto estiver indisponível, envie uma notificação quando estiver de volta ao estoque.
+- **Email**—Envie emails personalizados sobre produtos se um cliente tiver deixado o item no carrinho ou se o produto estiver indisponível envie uma notificação quando estiver de volta ao estoque.
 
-- **Localização geográfica** — Exibição de várias localizações geográficas para o site. Por exemplo, um cliente visita o site da UA, mas a opção de site dos EUA também é exibida para dar uma escolha ao cliente.
+- **Geolocalização**—Exibição de várias localizações geográficas para o site. Por exemplo, um cliente visita o site da UA, mas a opção de site dos EUA também é exibida para dar uma escolha ao cliente.
 
-- **Código de desconto** — exibe códigos de desconto de categoria específica para promover produtos de uma categoria específica.
+- **Código de desconto**—Exibe códigos de desconto de categoria específica para promover produtos de uma categoria específica.
 
-- **Produtos** complementares — exibe produtos complementares quando o cliente visita um produto. Por exemplo, um cliente visualiza um vestido e pode ver produtos complementares como sapatos, bolsas e acessórios que acompanham o vestido.
+- **Produtos complementares**—Exiba produtos complementares quando o cliente visitar um produto. Por exemplo, um cliente visualiza um vestido e pode ver produtos complementares como sapatos, bolsas e acessórios que acompanham o vestido.
 
-- **Página inicial personalizada** — Exibe uma página inicial personalizada para um usuário registrado que se sinta especial.
+- **Página inicial personalizada**—Exibe uma página inicial personalizada para um usuário registrado que se sinta especial.
 
 ![Exemplo de produtos personalizados](../../assets/playbooks/personalization-example.png)
 

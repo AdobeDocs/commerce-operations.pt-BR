@@ -1,13 +1,13 @@
 ---
 title: Gateways de Pagamento
 description: Escolha um provedor de gateway de pagamento para o seu projeto de comércio eletrônico com base nas necessidades da sua empresa.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: eab50191-0744-41da-99ba-2e06ea61da27
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # Gateways de pagamento
 
@@ -36,14 +36,13 @@ Há algumas limitações de gateways de pagamento que você precisa conhecer, in
 - Algumas opções de pagamento podem não estar disponíveis para compradores internacionais.
 - Falhas de segurança no gateway de pagamento. Os clientes tendem a hesitar em fazer pedidos online por motivos de segurança.
 
-Quando uma empresa decide integrar um gateway de pagamento à sua plataforma, é sempre melhor ver como ele aparece na loja, que tipo de experiência ele fornece aos clientes e se é fácil de usar. Além disso, certificar-se de que a garantia do pagamento não pode ser comprometida. Um gateway de pagamento de trabalho seguro e eficiente proporciona uma melhor experiência ao cliente.
+Quando uma empresa decide integrar um gateway de pagamento à sua plataforma, é sempre melhor ver como ele aparece na loja, que tipo de experiência ele fornece aos clientes e se é fácil de usar. Além disso, certificar-se de que a garantia do pagamento não pode ser comprometida. Um bom e seguro gateway de pagamento de trabalho proporciona uma melhor experiência ao cliente.
 
 ## Considerações B2B e B2C
 
 As empresas B2B e B2C têm sistemas de pagamento semelhantes, mas as empresas B2B têm mais regras, regulamentos e processos. As empresas B2B tendem a lidar com volumes maiores em comparação com as empresas B2C.
 
-Clientes B2C compram produtos ou serviços para uso individual. Normalmente, os clientes pagam o mesmo preço que os outros clientes e não há nenhuma negociação envolvida. Os clientes B2B incluem vários
-partes interessadas, o que torna a aprovação mais complexa e dispendiosa.
+Clientes B2C compram produtos ou serviços para uso individual. Normalmente, os clientes pagam o mesmo preço que os outros clientes e não há nenhuma negociação envolvida. Os clientes B2B incluem vários participantes, o que torna a aprovação mais complexa e cara.
 
 Os clientes B2B têm diferentes pedidos e requisitos, que precisam ser processados e aprovados pelo representante de vendas ou um representante de vendas precisa estar envolvido quando um cliente compra online usando uma solicitação de proposta (RFP) ou ordem de compra (PO).
 

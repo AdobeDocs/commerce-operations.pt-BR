@@ -1,17 +1,17 @@
 ---
 title: Ferramentas de gerenciamento de projetos
 description: Escolha as ferramentas recomendadas de gerenciamento de projeto para a implementação do Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # Ferramentas de gestão de projetos
 
-Sair do ambiente de Adobe Commerce atual, mas igualmente importante, são as ferramentas e soluções que tornam a colaboração e todo o processo de desenvolvimento o mais suave possível.
+Sair do ambiente Adobe Commerce real, mas igualmente importante, são as ferramentas e soluções que tornam a colaboração e todo o processo de desenvolvimento o mais suave possível.
 
 A tabela a seguir inclui as ferramentas recomendadas de gerenciamento de projetos:
 

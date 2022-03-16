@@ -1,13 +1,13 @@
 ---
 title: Contratos de nível de serviço
-description: Saiba mais sobre os contratos de nível de serviço e como usá-los para dar suporte à implementação do Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Saiba mais sobre os contratos de nível de serviço e como usá-los para dar suporte à sua implementação do Adobe Commerce.
+exl-id: 5da42dfa-e165-4142-a863-6f3ce7689478
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 1%
 
 ---
-
 
 # Contratos de nível de serviço (SLAs)
 

@@ -1,13 +1,13 @@
 ---
 title: Manutenção de projeto do Commerce
 description: Definir padrões de qualidade elevados e estabelecer mecanismos para manter esses padrões ao longo do tempo.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
 
 ---
-
 
 # Atualizações, backups e manutenção
 
@@ -29,18 +29,17 @@ Ao atualizar, você está protegendo seus negócios no futuro e se capacitando p
 
 Veja uma lista rápida de perguntas que você deve fazer enquanto planeja sua atualização:
 
-- **Limpeza** do site — O que posso manter e o que pode mudar? Quais novidades eu quero implementar? Por exemplo, que alterações eu desejo fazer na taxonomia e na estrutura do produto ou alterações no conteúdo?
+- **Limpeza do site**—O que posso manter e o que pode mudar? Quais novidades eu quero implementar? Por exemplo, que alterações eu desejo fazer na taxonomia e na estrutura do produto ou alterações no conteúdo?
 
-- **Verificação** do Analytics — Quais são meus KPIs atuais? O que meus dados me dizem sobre como meu site pode ser melhorado? Existem novos KPIs que eu quero implementar para o meu novo site?
+- **Verificação do Analytics**—Quais são meus KPIs atuais? O que meus dados me dizem sobre como meu site pode ser melhorado? Existem novos KPIs que eu quero implementar para o meu novo site?
 
-- **Extensões** — Ainda preciso delas? Quais extensões de terceiros atendem às minhas necessidades?
+- **Extensões**—Ainda preciso delas? Quais extensões de terceiros atendem às minhas necessidades?
 
-- **Integrações** — Quais sistemas de terceiros, como ERP e contabilidade, eu preciso integrar? Eles têm conectores específicos ou são necessárias integrações personalizadas?
+- **Integrações**—Quais sistemas de terceiros, como ERP e contabilidade, eu preciso integrar? Eles têm conectores específicos ou são necessárias integrações personalizadas?
 
-- **Treinamento** — A equipe de atualização tem o conhecimento e o treinamento corretos? O que é
-meu plano para treinar usuários finais sobre como usar o novo administrador antes que ele entre em vigor?
+- **Treinamento**—A equipe de upgrade tem o conhecimento e o treinamento adequados? Qual é meu plano para treinar usuários finais sobre como usar o novo administrador antes que ele entre em funcionamento?
 
-- **Equipe** de atualização — quem é dedicado ao projeto de atualização (especialistas internos e externos)? Têm o apoio necessário da liderança e de outras equipes internas?
+- **Equipe de atualização**—Quem é dedicado ao projeto de atualização (especialistas internos e externos)? Têm o apoio necessário da liderança e de outras equipes internas?
 
 ## Perguntas comuns sobre atualização
 
@@ -55,7 +54,7 @@ A: Novamente, depende da sua situação atual e dos requisitos para o novo site.
 
 P: As versões do Adobe Commerce 2 das minhas extensões do Adobe Commerce 1 estão disponíveis?
 
-A: Praticamente todas as necessidades críticas para os negócios são contempladas. Desde conteúdo e personalizações, envio e cumprimento até a otimização do site, temos visto um aumento dramático no número e na diversidade de extensões no Commerce Marketplace como a adoção comercial do Adobe Commerce, e a familiaridade com parceiros, cresceu.
+A: Praticamente todas as necessidades críticas para os negócios são contempladas. Desde conteúdo e personalizações, envio e cumprimento até a otimização do site, temos visto um aumento dramático no número e na diversidade de extensões no Commerce Marketplace como a adoção comercial da Adobe Commerce e a familiaridade com parceiros cresceram.
 
 Exemplos das principais empresas globais de tecnologia que criaram extensões incluem:
 
@@ -72,7 +71,7 @@ Exemplos das principais empresas globais de tecnologia que criaram extensões in
 
 Além disso, as verificações de garantia de qualidade implementadas para todas as extensões garantem consistentemente alta qualidade do produto, de modo que há uma probabilidade muito alta de que sua extensão ou uma alternativa de alta qualidade para sua extensão já esteja no Commerce Marketplace.
 
-Muitos comerciantes descobriram que os recursos nativos do Adobe Commerce reduziram a necessidade e a dependência em extensões, simplificando as operações de desenvolvimento e manutenção e melhorando o desempenho geral. Caso ainda não o tenha feito, recomendamos que você se envolva no planejamento completo da atualização para descobrir esses tipos de oportunidades.
+Muitos comerciantes descobriram que os recursos nativos no Adobe Commerce reduziram a necessidade e a dependência em extensões, simplificando as operações de desenvolvimento e manutenção e melhorando o desempenho geral. Caso ainda não o tenha feito, recomendamos que você se envolva no planejamento completo da atualização para descobrir esses tipos de oportunidades.
 
 P: E se minhas extensões e integrações não forem compatíveis com a plataforma?
 
