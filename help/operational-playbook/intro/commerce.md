@@ -1,15 +1,15 @@
 ---
-title: Sobre o Adobe Commerce
+title: Adobe Commerce
 description: Descrição do Adobe Commerce
 exl-id: 130bae23-8a22-4523-abe2-8dc97b3881d2
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce
+# Sobre o Adobe Commerce
 
 O Adobe Commerce é a plataforma líder em inovação de comércio aberto. Todos os anos, a Adobe Commerce lida com mais de US$ 100 bilhões em volume bruto de mercadorias. O Adobe Commerce oferece aos clientes o poder de criar experiências de compras exclusivas e envolventes, recursos prontos para uso e a capacidade ilimitada de personalizar, uma arquitetura flexível e sem periféricos e integrações ininterruptas de terceiros.
 
