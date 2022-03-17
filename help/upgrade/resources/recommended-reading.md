@@ -1,9 +1,9 @@
 ---
 title: Leitura recomendada para atualizações
 description: Revise a leitura recomendada para planejar sua atualização do Adobe Commerce ou Magento Open Source.
-source-git-commit: 01ece828514da11459010f2633e370dd53e4e82e
+source-git-commit: 9700c0066d2f765ff22419f6b61beda4cf1e61bc
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ Continue aprendendo sobre as atualizações do Adobe Commerce e do Magento Open 
             <li><a href="https://helpx.adobe.com/security/products/magento/apsb22-12.html">Aviso de segurança do Adobe</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
             <li><a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">Notas de versão</a></li>
-            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Portal de parceiros de soluções</a> (para parceiros com um logon válido)</li>
+            <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Portal de parceiros de soluções</a></li>
           </ul>
         </td>
       <td><strong>Ferramentas</strong>
         <ul>
             <li><a href="https://magento.com/tech-resources/downloads">Download de versões do Adobe Commerce</li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">Como usar a Ferramenta de compatibilidade de atualização com o plug-in PHPStorm</a> (vídeo)</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">Atualização do plug-in PhpStorm da Ferramenta de Compatibilidade</a> (vídeo)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en">Ferramenta de compatibilidade de atualização</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityCanal de Slack da ferramenta</a></li>
             <li><a href="https://devdocs.magento.com/quality-patches/usage.html">Ferramenta Correções de Qualidade</a></li>
@@ -60,7 +60,7 @@ Continue aprendendo sobre as atualizações do Adobe Commerce e do Magento Open 
       <td><strong>Atualizar recursos</strong>
         <ul>
              <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-upgrade-paths-2022.html?lang=en">Caminhos de atualização recomendados para 2022</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html">Guia de atualização 2.4</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf">Guia de atualização 2.4</a> (PDF)</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Registro do workshop de atualização técnica</a></li>
             <li><a href="https://support.magento.com/hc/en-us/articles/360034120932">Acesso a pré-versões</a></li>
             <li><a href="https://devdocs.magento.com/release/beta-program.html">Visão geral do programa beta</a></li>
