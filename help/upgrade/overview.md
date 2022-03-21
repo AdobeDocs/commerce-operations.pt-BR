@@ -1,9 +1,9 @@
 ---
 title: Visão geral do processo de atualização
 description: Saiba mais sobre como atualizar seu projeto do Adobe Commerce e do Magento Open Source ajuda a manter sua loja segura e funcionando com eficiência.
-source-git-commit: 517e38aa5b0f413503fdb7ba00be8c605cceb570
+source-git-commit: 5841f30f3b3539de425f0597ef05cab4e3316263
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -84,4 +84,3 @@ Os eventos importantes a serem observados incluem:
 - 2.4.0 a 2.4.3 (baseado no PHP 7.4) chega ao EOS em novembro de 2022, quando o PHP 7.4 chega ao fim da vida útil (EOL)
 - Com base nestes dois eventos de EOS, **é importante atualizar para a versão 2.4.4 ou superior até novembro de 2022**
 - Em conformidade com a Adobe Commerce [política de ciclo de vida](https://devdocs.magento.com/release/lifecycle-policy.html), as versões 2.4.4 e 2.4.5 receberão suporte de qualidade e patches de segurança até novembro de 2024
-
