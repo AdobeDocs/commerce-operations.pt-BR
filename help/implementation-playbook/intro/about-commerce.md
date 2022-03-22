@@ -2,9 +2,9 @@
 title: Sobre o Adobe Commerce
 description: Descrição do Adobe Commerce
 exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -26,9 +26,9 @@ Ao se casar com conteúdo com comércio para atender às demandas dos clientes p
 
 ## Fazer compras sem interrupções em todos os lugares
 
-O crescimento do comércio é alimentado pelas necessidades de seus clientes, onde quer que estejam. Expanda o alcance e torne-se um novo canal, geografia e venda online para empresas e consumidores em uma única plataforma. Traga comércio para seus clientes onde, quando e como quiser.
+O crescimento do comércio é alimentado pelas necessidades de seus clientes. Expanda o alcance e torne-se um novo canal, geografia e venda online para empresas e consumidores em uma única plataforma. Traga comércio para seus clientes onde, quando e como quiser.
 
-- Comércio móvel
+- Mobile commerce
 - Comércio eletrônico B2B
 - PWA Studio
 - Expansão global
@@ -42,7 +42,7 @@ Eficiência, automação e acesso aos dados são necessários para competir no c
 
 - Inteligência empresarial
 - Envio
-- Gerenciamento de inventário
+- Inventory management
 - Gerenciamento de pedidos e atendimento ao cliente
 
 ## Operar com confiança
