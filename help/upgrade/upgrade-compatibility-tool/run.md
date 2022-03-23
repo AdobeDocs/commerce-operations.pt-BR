@@ -1,9 +1,9 @@
 ---
 title: Execute o [!DNL Upgrade Compatibility Tool]
 description: Siga estas etapas para executar o [!DNL Upgrade Compatibility Tool] no seu projeto do Adobe Commerce.
-source-git-commit: ee80753da5327ebf593e007e3b4316e2b01c5a61
+source-git-commit: ba077f5d5429f2971dfbca8edd8ebd5ea44922c8
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1885'
 ht-degree: 0%
 
 ---
@@ -73,10 +73,10 @@ Disponível `--help` para a `upgrade:check` comando:
 
 - `-m, --module-path[=MODULE-PATH]`: Caminho dos módulos a serem analisados
 - `-a, --current-version[=CURRENT-VERSION]`: A versão atual do Adobe Commerce, versão da instalação do Adobe Commerce, será usada se omitida.
-- `-c, --coming-version[=COMING-VERSION]`: Versão do Adobe Commerce do Target, a versão mais recente do Adobe Commerce será usada se omitida.
+- `-c, --coming-version[=COMING-VERSION]`: Versão do Adobe Commerce do Target, a versão mais recente do Adobe Commerce será usada se omitida. Fornece uma lista de todas as versões disponíveis do Adobe Commerce.
 - `--json-output-path[=JSON-OUTPUT-PATH]`: Caminho do arquivo em que a saída será exportada no formato json.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: Caminho do arquivo no qual a saída será exportada no formato HTML.
-- `--min-issue-level`: Nível mínimo de problema a ser exibido no relatório. O padrão é [AVISO].
+- `--min-issue-level`: Nível mínimo de problema a ser exibido no relatório. O nível padrão é [AVISO].
 - `-i, --ignore-current-version-compatibility-issues`: Use esta opção quando não quiser incluir problemas críticos conhecidos, erros e avisos na sua [!DNL Upgrade Compatibility Tool] relatório.
 - `--context=CONTEXT`: Contexto de execução. Essa opção é para fins de integração e não afeta o resultado da execução.
 - `-h, --help`: Exibe a ajuda desse comando específico. Se nenhum comando for fornecido, `list` é o resultado padrão.
@@ -267,6 +267,10 @@ Você deve fornecer a versão como um parâmetro ao executar o comando:
 ```bash
 bin/uct upgrade:check <dir> -c 2.4.3
 ```
+
+>[!NOTE]
+>
+>Esse parâmetro fornece uma lista de todas as versões disponíveis do Adobe Commerce.
 
 Em que:
 
