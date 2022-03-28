@@ -1,7 +1,7 @@
 ---
 title: Pré-requisitos completos
 description: Prepare seu projeto do Adobe Commerce ou Magento Open Source para uma atualização completando essas etapas de pré-requisito.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Recomendamos que você entre em contato com o fornecedor do mecanismo de pesquis
 
 A definição do limite de arquivos abertos (ulimit) pode ajudar a evitar a falha de várias chamadas recursivas de longas sequências de consulta ou problemas com o uso da variável `bin/magento setup:rollback` comando. Esse comando é diferente para diferentes shell UNIX. Consulte seu sabor individual para obter detalhes sobre o `ulimit` comando.
 
-O Adobe recomenda configurar os arquivos abertos [ulimit](http://ss64.com/bash/ulimit.html) para um valor de `65536` ou mais, mas você pode usar um valor maior, se necessário. Você pode definir o limite na linha de comando ou torná-lo uma configuração permanente para o shell do usuário.
+O Adobe recomenda configurar os arquivos abertos [ulimit](https://ss64.com/bash/ulimit.html) para um valor de `65536` ou mais, mas você pode usar um valor maior, se necessário. Você pode definir o limite na linha de comando ou torná-lo uma configuração permanente para o shell do usuário.
 
 Para definir o limite da linha de comando:
 

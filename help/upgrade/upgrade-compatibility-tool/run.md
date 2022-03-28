@@ -1,9 +1,9 @@
 ---
 title: Execute o [!DNL Upgrade Compatibility Tool]
 description: Siga estas etapas para executar o [!DNL Upgrade Compatibility Tool] no seu projeto do Adobe Commerce.
-source-git-commit: ba077f5d5429f2971dfbca8edd8ebd5ea44922c8
+source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1883'
 ht-degree: 0%
 
 ---
@@ -206,7 +206,7 @@ bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
 
 A _baunilha_ instalação é uma instalação limpa de uma tag ou ramificação de versão especificada para uma versão específica.
 
-O `bin/uct core:code:changes` O comando verifica se há uma instância baunilha no sistema. Se esta for a primeira vez que usa uma instalação baunilha, uma pergunta interativa de linha de comando solicitará que você baixe o projeto baunilha do [Repositório Adobe Commerce](https://repo.magento.com/).
+O `bin/uct core:code:changes` O comando verifica se há uma instância baunilha no sistema. Se esta for a primeira vez usando uma instalação baunilha, uma pergunta interativa de linha de comando solicitará que você baixe o projeto baunilha do repositório do Adobe Commerce (`https://repo.magento.com/`).
 
 Você pode executar um [!DNL Upgrade Compatibility Tool] com o `--vanilla-dir` para especificar o diretório de instalação Adobe Commerce baunilha.
 
