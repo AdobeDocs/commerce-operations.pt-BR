@@ -1,50 +1,51 @@
 ---
 user-guide-title: Guia de atualização
 user-guide-description: Saiba porque atualizar seu aplicativo do Adobe Commerce ou Magento Open Source é tão importante e como planejar e executar uma atualização com sucesso.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d4aac5687b299603f763b7fee14c768c67754e63
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 22%
+source-wordcount: '124'
+ht-degree: 21%
 
 ---
 
 
 # Guia de atualização {#upgrade-guide}
 
-- [Visão geral do processo de atualização](overview.md)
-- Atualizar jornada {#journey}
-   - [Fases de jornada](journey/phases.md)
-   - [Início do projeto](journey/project-launch.md)
-   - [Planejamento anual](journey/annual-planning.md)
-   - [Implementação](journey/implementation.md)
-- Preparação {#prepare}
-   - [Práticas recomendadas](prepare/best-practices.md)
-   - [Revisar alterações na plataforma](prepare/platform-changes.md)
-   - [Concluir pré-requisitos de atualização](prepare/prerequisites.md)
-   - [Entender o escopo de atualização](prepare/scope.md)
-- Implementação {#implementation}
-   - [Executar uma atualização](implementation/perform-upgrade.md)
-- Módulos e extensões {#modules}
-   - [Atualizar módulos](modules/upgrade.md)
-   - [Gerenciar módulos](modules/manage.md)
-- Correções {#patches}
-   - [Como funcionam os patches](patches/overview.md)
-   - [Aplicar patches](patches/apply.md)
+- [Overview of the upgrade process](overview.md)
+- {#journey}
+   - [Journey phases](journey/phases.md)
+   - [Project launch](journey/project-launch.md)
+   - [Annual planning](journey/annual-planning.md)
+   - [Implementation](journey/implementation.md)
+- {#prepare}
+   - [Best practices](prepare/best-practices.md)
+   - [Review platform changes](prepare/platform-changes.md)
+   - [Complete upgrade prerequisites](prepare/prerequisites.md)
+   - [Understand upgrade scope](prepare/scope.md)
+- {#implementation}
+   - [Perform an upgrade](implementation/perform-upgrade.md)
+- {#modules}
+   - [Upgrade modules](modules/upgrade.md)
+   - [Manage modules](modules/manage.md)
+- {#patches}
+   - [How patches work](patches/overview.md)
+   - [Apply patches](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [Visão geral](upgrade-compatibility-tool/overview.md)
-   - [Pré-requisitos](upgrade-compatibility-tool/prerequisites.md)
-   - [Instalar](upgrade-compatibility-tool/install.md)
-   - [Executar a ferramenta](upgrade-compatibility-tool/run.md)
-   - [Informações do desenvolvedor](upgrade-compatibility-tool/developer.md)
-   - [Mensagens de erro](upgrade-compatibility-tool/error-messages.md)
-- Desenvolvedores colaboradores {#developer}
-   - [Atualizar uma instalação baseada em git](developer/git-installs.md)
-   - [Gerenciar módulos](developer/manage-modules.md)
-- Solução de problemas {#troubleshooting}
-   - [Mecanismo de pesquisa atual não suportado](troubleshooting/search-engine-not-supported.md)
-   - [Reverter após a falha de atualização do módulo](troubleshooting/roll-back-after-update-failure.md)
-   - [Opções de modo de manutenção para atualização](troubleshooting/maintenance-mode-options.md)
-- Recursos {#resources}
-   - [Leitura recomendada](resources/recommended-reading.md)
-   - [Modernização de sua plataforma com o Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
-   - [Atualizar lista de verificação do plano](https://support.magento.com/hc/en-us/articles/360057968951)
+   - [Overview](upgrade-compatibility-tool/overview.md)
+   - [Prerequisites](upgrade-compatibility-tool/prerequisites.md)
+   - [Install](upgrade-compatibility-tool/install.md)
+   - [Run the tool](upgrade-compatibility-tool/run.md)
+   - [ [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+   - [Developer information](upgrade-compatibility-tool/developer.md)
+   - [Error messages](upgrade-compatibility-tool/error-messages.md)
+- {#developer}
+   - [Upgrade a git-based installation](developer/git-installs.md)
+   - [Manage modules](developer/manage-modules.md)
+- {#troubleshooting}
+   - [Current search engine not supported](troubleshooting/search-engine-not-supported.md)
+   - [Roll back after module update failure](troubleshooting/roll-back-after-update-failure.md)
+   - [Maintenance mode options for upgrade](troubleshooting/maintenance-mode-options.md)
+- {#resources}
+   - [Recommended reading](resources/recommended-reading.md)
+   - [Modernizing your platform with Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
+   - [](https://support.magento.com/hc/en-us/articles/360057968951)
