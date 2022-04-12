@@ -2,9 +2,9 @@
 keywords: Adobe Commerce; home; tópicos populares
 title: Início
 description: Navegue por um índice da documentação operacional do produto Adobe Commerce.
-source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
+source-git-commit: d3eac6db56f658ead240e8244858d0bd80a43908
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '209'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Obtenha informações práticas sobre conceitos, processos, ferramentas e práti
        <img alt="Ferramentas" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/quality-patches/tool.html"><strong>Ferramentas</strong></a>
+      <a href="https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Ferramentas</strong></a>
     </div>
   </td>
 </tr>
