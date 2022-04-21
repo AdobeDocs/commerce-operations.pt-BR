@@ -2,10 +2,10 @@
 keywords: Adobe Commerce; home; tópicos populares
 title: Início
 description: Navegue por um índice da documentação operacional do produto Adobe Commerce.
-source-git-commit: 29b8d64cd700531f04166ad20694fa342ea0e186
+source-git-commit: bca5208cb5a53ac839c666cb42f2124de5d96be2
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -127,3 +127,4 @@ Saiba mais sobre a nova documentação e atualizações significativas da docume
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | Adicionado [informações](../upgrade/upgrade-compatibility-tool/overview.md) sobre como as regras são definidas para a Ferramenta de Compatibilidade de Atualização. | Atualização importante |
 | Ferramenta de compatibilidade de atualização desatualizada removida [códigos de erro](../upgrade/upgrade-compatibility-tool/error-messages.md). | Técnica |
+| Movido [Guia da ferramenta de análise do site](../tools/site-wide-analysis-tool/intro.md) from [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) para Experience League. | Novo |
