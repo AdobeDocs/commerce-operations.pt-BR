@@ -1,9 +1,9 @@
 ---
 title: Processamento de Ordem de Alta Throughput
 description: Otimize a experiência de posicionamento e check-out do pedido para sua implantação do Adobe Commerce ou Magento Open Source.
-source-git-commit: 0a902d7fe967bbcee5019fea83e5be66ce2aefd0
+source-git-commit: c4c52baa9e04a4e935ccc29fcce2ac2745a454ee
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,10 @@ ht-degree: 0%
 Você pode otimizar a experiência de posicionamento do pedido e check-out configurando o seguinte conjunto de módulos para **processamento de pedidos de alta taxa de transferência**:
 
 - [AsyncOrder](#asynchronous-order-placement)—Processa pedidos de forma assíncrona usando uma fila.
-- [NegociableQuoteAsyncOrder](#negotiable-quote-asyn-order)—Processa de forma assíncrona itens da ordem de gravação NegotiableQuote.
-- [DeferedTotalCalculation](#deferred-total-calculation)—Oferece cálculos para totais de pedidos até o início do check-out.
+- [Cálculo Total Diferido](#deferred-total-calculation)—Oferece cálculos para totais de pedidos até o início do check-out.
+- [Verificação de Inventário no Carregamento da Cotação](#disable-inventory-check)—Escolha ignorar a validação de inventário dos itens do carrinho.
 
-Todos os recursos funcionam de forma independente. Você pode usar todos os recursos simultaneamente ou ativar e desativar recursos em qualquer combinação.
-
-Use a interface da linha de comando para ativar esses recursos ou edite o `app/etc/env.php` de acordo com os arquivos README correspondentes definidos no [_Guia de referência do módulo_][mrg].
+Todos os recursos — AsyncOrder, Cálculo Total Diferido e Verificação de Inventário — funcionam de forma independente. Você pode usar todos os três recursos simultaneamente ou ativar e desativar recursos em qualquer combinação.
 
 ## Colocação assíncrona de pedido
 
@@ -30,7 +28,9 @@ Por exemplo, um cliente adiciona um produto ao carrinho e seleciona **[!UICONTRO
 - **Produto disponível**—o status do pedido muda para _Pending_, a quantidade do produto é ajustada, um email com detalhes do pedido é enviado ao cliente e os detalhes do pedido bem-sucedido ficam disponíveis para visualização no **Pedidos e devoluções** lista com opções acionáveis, como reordenar.
 - **Produto esgotado ou pouco fornecido**—o status do pedido muda para _Rejeitada_, a quantidade do produto não é ajustada, um email com detalhes do pedido sobre o problema é enviado ao cliente e os detalhes do pedido rejeitado ficam disponíveis na **Pedidos e devoluções** lista sem opções acionáveis.
 
-Para ativar o AsyncOrder:
+Use a interface da linha de comando para ativar esses recursos ou edite o `app/etc/env.php` de acordo com os arquivos README correspondentes definidos no [_Guia de referência do módulo_][mrg].
+
+**Para ativar o AsyncOrder**:
 
 Você pode ativar o AsyncOrder usando a interface da linha de comando:
 
@@ -49,7 +49,7 @@ O `set` grava o seguinte no `app/etc/env.php` arquivo:
 
 Consulte [AsyncOrder] no _Guia de referência do módulo_.
 
-Para desativar o AsyncOrder:
+**Para desativar o AsyncOrder**:
 
 >[!WARNING]
 >
@@ -109,7 +109,7 @@ Quando o módulo AsyncOrder é ativado, os seguintes pontos de extremidade REST 
 
 Os desenvolvedores podem excluir explicitamente determinados métodos de pagamento do posicionamento de pedidos assíncronos, adicionando-os ao `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` matriz. As ordens que usam métodos de pagamento excluídos são processadas de forma síncrona.
 
-## Ordem Assíncrona da Cotação Negociável
+### Ordem Assíncrona da Cotação Negociável
 
 O _Ordem Assíncrona da Cotação Negociável_ O módulo B2B permite que você salve itens de ordem de forma assíncrona para o `NegotiableQuote` funcionalidade. Você deve ter AsyncOrder e NegotiableQuote ativadas.
 
@@ -117,9 +117,9 @@ O _Ordem Assíncrona da Cotação Negociável_ O módulo B2B permite que você s
 
 O _Cálculo Total Diferido_ O módulo otimiza o processo de check-out adiando o cálculo total até que seja solicitado para o carrinho de compras ou durante as etapas de check-out final. Quando ativado, somente o subtotal é calculado como um cliente que adiciona produtos ao carrinho de compras.
 
-DeferredTotalCalculation é **desativado** por padrão.
+DeferredTotalCalculation é **desativado** por padrão. Use a interface da linha de comando para ativar esses recursos ou edite o `app/etc/env.php` de acordo com os arquivos README correspondentes definidos no [_Guia de referência do módulo_][mrg].
 
-Para ativar DeferredTotalCalculation:
+**Para ativar DeferredTotalCalculation**:
 
 Você pode ativar DeferredTotalCalculation usando a interface da linha de comando:
 
@@ -136,7 +136,7 @@ O `set` grava o seguinte no `app/etc/env.php` arquivo:
    ]
 ```
 
-Para desativar DeferredTotalCalculation:
+**Desabilitar DeferredTotalCalculation**:
 
 Você pode desativar DeferredTotalCalculation usando a interface da linha de comando:
 
@@ -165,9 +165,7 @@ O _Ativar Inventário No Carregamento Do Carrinho_ a configuração global deter
 
 Quando desativado, a verificação de inventário não ocorre ao adicionar um produto ao carrinho de compras. Se essa verificação de inventário for ignorada, alguns cenários indisponíveis poderão gerar outros tipos de erros. Uma verificação de inventário _always_ ocorre na etapa de posicionamento do pedido, mesmo quando desabilitado.
 
-Habilitar Inventário no Carregamento do Carrinho é **ativado** por padrão.
-
-Para desativar a verificação de inventário ao carregar o carrinho, defina **[!UICONTROL Enable Inventory Check On Cart Load]** para `No` na interface do usuário do administrador. Consulte [Configurar opções globais][global] e [Inventário do catálogo][inventory] no _Guia do usuário_.
+**Ativar Verificação de Inventário No Carregamento Do Carrinho** estiver ativado (definido como Sim) por padrão. Para desativar a verificação de inventário ao carregar o carrinho, defina **[!UICONTROL Enable Inventory Check On Cart Load]** para `No` na interface do usuário do administrador **Lojas** > **Configuração** > **Catálogo** > **Inventário** > **Opções de Estoque** seção. Consulte [Configurar opções globais][global] e [Inventário do catálogo][inventory] no _Guia do usuário_.
 
 <!-- link definitions -->
 
