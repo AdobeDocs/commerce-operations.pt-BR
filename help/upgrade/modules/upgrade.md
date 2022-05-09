@@ -1,9 +1,9 @@
 ---
 title: Atualizar módulos e extensões
 description: Use a interface de linha de comando e o Composer para atualizar módulos e extensões Adobe Commerce e Magento Open Source.
-source-git-commit: 70f1bda91023526fbc0024b6a6fef93c7633ecc2
+source-git-commit: c619bff9785d22298bc49e2ac9874480ff7a320b
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -50,3 +50,12 @@ Para atualizar ou atualizar um módulo ou extensão:
 Adobe removido tudo [VBEs](https://devdocs.magento.com/extensions/vendor/) na versão 2.4.4. Os fornecedores continuam a oferecer suporte a essas extensões no Adobe Commerce Marketplace.
 
 Se quiser continuar usando essas extensões com o Adobe Commerce e o Magento Open Source 2.4.4 e posterior, atualize as dependências do pacote correspondentes em sua `composer.json` arquivo _before_ atualizando para 2.4.4. Entre em contato com o fornecedor para obter o nome e a versão do pacote que será usado.
+
+Consulte as seguintes listagens do Adobe Commerce Marketplace para obter mais informações:
+
+- [Amazon Pay](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
+- [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
+- [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html)
+- [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
+- [Yotpo](https://marketplace.magento.com/yotpo-module-yotpo.html)
+
