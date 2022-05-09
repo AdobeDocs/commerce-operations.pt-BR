@@ -1,7 +1,7 @@
 ---
 title: Práticas recomendadas de configuração
 description: Otimize o tempo de resposta da implantação do Adobe Commerce ou Magento Open Source usando essas práticas recomendadas.
-source-git-commit: 09c4d0e09354230c8779b930f085d8c7c131b85b
+source-git-commit: 20c4f55162b25be8906562c395abf4671437992b
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Práticas recomendadas de configuração
 
-O Commerce fornece várias configurações e ferramentas que podem ser usadas para melhorar o tempo de resposta nas páginas, além de fornecer throughput mais alta.
+O Commerce fornece muitas configurações e ferramentas que você pode usar para melhorar o tempo de resposta nas páginas, além de oferecer uma taxa de transferência mais alta.
 
 ## Trabalhos Cron
 
