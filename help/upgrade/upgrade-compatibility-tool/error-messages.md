@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Mensagens de erro"'
 description: Saiba mais sobre as mensagens de erro encontradas ao usar o [!DNL Upgrade Compatibility Tool] no seu projeto do Adobe Commerce.
-source-git-commit: d62299d23d73b8566ed1c9b9739ca59fb0535d6f
+source-git-commit: a13b0ea5aa109ce2f5d33e0966b194d64bad5d0c
 workflow-type: tm+mt
-source-wordcount: '3756'
+source-wordcount: '3782'
 ht-degree: 4%
 
 ---
@@ -233,6 +233,7 @@ Os avisos de código personalizado são gerados quando as referências ao códig
 | 1338 | Implementação do Adobe Commerce `@deprecated` interface | A interface obsoleta será removida em versões futuras. Considere remover a herança da interface, usando uma interface marcada como `@api` ou uma interface introduzida na implementação. |
 | 1430 | Chame o método dataobject não declarado | Os métodos mágicos que não são declarados podem ser alterados. Considere confiar em métodos de interface. |
 | 1439 | Chame o Adobe Commerce `@deprecated` método | O método obsoleto será removido nas versões futuras. Em vez disso, considere confiar em métodos declarados em interfaces de API. |
+| 1440 | Incompatibilidade de assinatura de método | Uma chamada ou substituição do método principal é detectada com parâmetros, argumentos ou tipo de retorno que não corresponde à assinatura do método. |
 | 1534 | Uso do Adobe Commerce `@deprecated` propriedade | O método obsoleto será removido nas versões futuras. Em vez disso, considere confiar em métodos declarados em interfaces de API. |
 | 1535 | Substituição do Adobe Commerce `@deprecated` propriedade | A propriedade obsoleta será removida em versões futuras. Considere confiar em métodos declarados em interfaces da API ou usar uma propriedade privada na implementação. |
 | 1536 | Atribuição do Adobe Commerce `@deprecated` propriedade | O método obsoleto será removido nas versões futuras. Em vez disso, considere confiar em métodos declarados em interfaces de API. |
