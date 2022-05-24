@@ -1,9 +1,9 @@
 ---
 title: Guia de instalação
 description: Use este guia para instalar [!DNL Site-Wide Analysis Tool] para o seu site
-source-git-commit: de2fb829def2cf94c452a06a219d7f29885c8f9f
+source-git-commit: a694de861fcc681d864ffb2c405b2366b32bba41
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Criamos um [script de shell](https://github.com/magento-swat/install-agent-helpe
 1. Verifique a instalação.
 
    ```bash
-   scheduler -v
+   ./scheduler -v
    ```
 
    ```bash
@@ -253,7 +253,7 @@ Recomendamos configurar o agente para ser executado como um serviço. Se você t
 
 ### Serviço {#service}
 
-1. Criar um arquivo de unidade do sistema `(/etc/systemd/system/scheduler.service)` com a seguinte configuração (substitua `<filesystemowner>` com o usuário do Unix que possui o diretório onde o agente está instalado).
+1. Criar um arquivo de unidade do sistema `(/etc/systemd/system/scheduler.service)` com a seguinte configuração (substitua `<filesystemowner>` com o usuário do Unix que possui o diretório onde o agente e o software do Adobe Commerce estão instalados). Se você tiver baixado o agente como o usuário raiz, altere o diretório e o proprietário dos arquivos aninhados.
 
    ```config
    [Unit]
