@@ -1,9 +1,9 @@
 ---
 title: '"Integre o [!DNL Site-Wide Analysis Tool]"'
 description: Siga estas etapas para recuperar o [!DNL Upgrade Compatibility Tool] relatório do [!DNL Site-Wide Analysis Tool] painel em seu projeto do Adobe Commerce.
-source-git-commit: 8db30895604dc6414975e00818138815e5dfc360
+source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 O [!DNL Site-Wide Analysis Tool] O fornece monitoramento, relatórios e recomendações de desempenho 24 horas por dia, 7 dias por semana, para garantir a segurança e a operabilidade das instalações do Adobe Commerce.
 
-Consulte a [guia do usuário](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) para obter mais informações.
+O [!DNL Upgrade Compatibility Tool] agora está integrado ao [!DNL Site-Wide Analysis Tool] , a fim de proporcionar às pessoas não técnicas a capacidade de gerirem a [!DNL Upgrade Compatibility Tool] e obtenha um [relatório HTML](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/run.html?lang=en#output) contendo uma lista de problemas para cada arquivo especificando sua gravidade, código de erro e descrição do erro.
 
-O [!DNL Site-Wide Analysis Tool] o painel fornece a capacidade de solicitar a execução da [!DNL Upgrade Compatibility Tool] e acesse os resultados.
+Consulte a [[!DNL Site-Wide Analysis Tool] guia do usuário](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) para obter mais informações.
 
 ## Execute o [!DNL Upgrade Compatibility Tool] da SWAT
 
