@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guia de atualização
 user-guide-description: Saiba porque atualizar seu aplicativo do Adobe Commerce ou Magento Open Source é tão importante e como planejar e executar uma atualização com sucesso.
-source-git-commit: 84c24627c00ecea97e29bf0cb023ddf2dc285aeb
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 20%
+source-wordcount: '145'
+ht-degree: 19%
 
 ---
 
@@ -32,13 +32,16 @@ ht-degree: 20%
    - [Como funcionam os patches](patches/overview.md)
    - [Aplicar patches](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [[!DNL Upgrade Compatibility Tool] Visão geral](upgrade-compatibility-tool/overview.md)
+   - [Visão geral](upgrade-compatibility-tool/overview.md)
    - [Pré-requisitos](upgrade-compatibility-tool/prerequisites.md)
-   - [Instalar](upgrade-compatibility-tool/install.md)
-   - [Executar a ferramenta](upgrade-compatibility-tool/run.md)
+   - Use o [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+      - [Execute a ferramenta em uma interface de linha de comando](upgrade-compatibility-tool/run.md)
+      - [Integrar com o [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [Execute a ferramenta no plugin Magento PHPStorm](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
+   - Relatório {#reporting}
+      - [Relatórios](upgrade-compatibility-tool/reports.md)
+      - [Mensagens de erro](upgrade-compatibility-tool/error-messages.md)
    - [Ferramentas relacionadas](upgrade-compatibility-tool/related-tools.md)
-   - [Integre o [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-   - [Mensagens de erro](upgrade-compatibility-tool/error-messages.md)
 - Desenvolvedores colaboradores {#developer}
    - [Atualizar uma instalação baseada em git](developer/git-installs.md)
    - [Gerenciar módulos](developer/manage-modules.md)
