@@ -1,7 +1,7 @@
 ---
 title: '"Integre o [!DNL Site-Wide Analysis Tool]"'
 description: Siga estas etapas para recuperar o [!DNL Upgrade Compatibility Tool] relatório do [!DNL Site-Wide Analysis Tool] painel em seu projeto do Adobe Commerce.
-source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
+source-git-commit: c70e431035f0e0b2c495715563faf6be46aa514e
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -31,4 +31,4 @@ Após a conclusão da verificação, os resultados de alto nível são exibidos 
 
 ![Dispositivo SWAT UCT - Resultados](../../assets/upgrade-guide/uct-swat-results.png)
 
-Clique em **[!UICONTROL Download Report]** para recuperar o [!DNL Upgrade Compatibility Tool] relatório de HTML e revise os detalhes.
+Clique em **[!UICONTROL Download Report]** para recuperar o [!DNL Upgrade Compatibility Tool] [relatório HTML](../upgrade-compatibility-tool/reports.md#html-report) e revise os detalhes.
