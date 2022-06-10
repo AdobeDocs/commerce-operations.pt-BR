@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] relatórios"'
 description: Siga estas etapas para executar o [!DNL Upgrade Compatibility Tool] no seu projeto do Adobe Commerce.
-source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
+source-git-commit: 1ce02c3215b01f64e86383938a257514f0e4257c
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ Este relatório também inclui um resumo detalhado que mostra:
 - *Total de erros críticos*: o número de erros críticos encontrados.
 - *Total de erros*: o número de erros encontrados.
 - *Total de avisos*: o número de avisos encontrados.
+- *Uso de pico de memória*: a quantidade máxima de memória [!DNL Upgrade Compatibility Tool] foi atingido durante a execução.
 
 Consulte o exemplo de interface da linha de comando a seguir:
 
