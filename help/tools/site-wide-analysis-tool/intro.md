@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Site-Wide Analysis Tool]"'
 description: Saiba mais sobre o [!DNL Site-Wide Analysis] Ferramenta, seus usos, o processo de instalação e como obter acesso
-source-git-commit: becf58c17b80a0b2d25c42a905f5c9aa8f84c258
+source-git-commit: 52a74694ad01cf3192a7eb8af086d77a5b7e9276
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ Este guia fornece uma visão geral holística do [!DNL Site-Wide Analysis Tool].
 ## O que é [!DNL Site-Wide Analysis Tool]?
 
 O [!DNL Site-Wide Analysis Tool] O é uma ferramenta de autoatendimento proativa e um repositório central que inclui informações e recomendações detalhadas do sistema para garantir a segurança e a operabilidade de sua instalação do Adobe Commerce. Ele fornece monitoramento, relatórios e conselhos em tempo real 24 horas por dia, 7 dias por semana, para identificar possíveis problemas e melhor visibilidade sobre a integridade do site, a segurança e as configurações do aplicativo. Ajuda a reduzir o tempo de resolução e a melhorar a estabilidade e o desempenho do site.
+
+Veja isso [vídeo de introdução](https://www.youtube.com/watch?v=KW2R8ki_RG4) para saber mais.
 
 ## Visão geral da ferramenta
 
