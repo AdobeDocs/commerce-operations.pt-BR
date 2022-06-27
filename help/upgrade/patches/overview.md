@@ -1,9 +1,9 @@
 ---
 title: Como funcionam os patches
 description: Saiba mais sobre os diferentes tipos de patches para Adobe Commerce e Magento Open Source e como eles funcionam.
-source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
+source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Arquivos de patch (ou diff) são arquivos de texto que observam:
 - O número da linha para iniciar a alteração e o número de linhas a serem alteradas.
 - O novo código para troca.
 
-Quando a variável [correção](https://en.wikipedia.org/wiki/Patch_(Unix)) for executado, este arquivo será lido e as alterações especificadas serão feitas no(s) arquivo(s).
+Quando o programa de patch é executado, esse arquivo é lido e as alterações especificadas são feitas no(s) arquivo(s).
 
 Existem três tipos de patches:
 
