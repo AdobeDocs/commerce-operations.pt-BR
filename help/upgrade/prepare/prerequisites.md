@@ -1,9 +1,9 @@
 ---
 title: Pré-requisitos completos
 description: Prepare seu projeto do Adobe Commerce ou Magento Open Source para uma atualização completando essas etapas de pré-requisito.
-source-git-commit: ea5de44ab40b873fa30393359dd714534bd789e3
+source-git-commit: 0729e84adabcded6d50cf28a7525b97fd50d45f5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Para definir a variável de ambiente:
 1. Defina a variável :
 
    ```bash
-   export DATA_CONVERTER_BATCH_SIZE 100000
+   export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
    >[!NOTE]
