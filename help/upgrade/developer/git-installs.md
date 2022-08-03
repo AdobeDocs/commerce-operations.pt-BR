@@ -3,7 +3,7 @@ title: Atualizar uma instalação baseada em Git
 description: Atualize uma instalação do Adobe Commerce ou Magento Open Source que você clonou de um repositório Git.
 source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Este tópico discute como um desenvolvedor contribuinte pode atualizar o Adobe C
 
 Para atualizar se você for um desenvolvedor contribuidor:
 
-{{$include /help/_includes/server-login.md}
+{{$include /help/_includes/server-login.md}}
 
 1. Salve as alterações feitas no `composer.json` porque as próximas etapas o substituem.
 

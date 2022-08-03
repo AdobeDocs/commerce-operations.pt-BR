@@ -3,7 +3,7 @@ title: Gerenciar módulos e extensões (desenvolvedor)
 description: Gerencie módulos e extensões Adobe Commerce e Magento Open Source usando a interface de linha de comando e o gerenciador de pacotes do Composer.
 source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '139'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ Contribuição de desenvolvedores para atualizar módulos e extensões especific
 
 Você pode adicionar uma `require` para `composer.json` ou você pode usar o `composer require` comando como segue:
 
-{{$include /help/_includes/server-login.md}
+{{$include /help/_includes/server-login.md}}
 
 Você tem as seguintes opções:
 
