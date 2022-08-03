@@ -1,17 +1,17 @@
 ---
 title: Configurar automaticamente bancos de dados principais
 description: Consulte orientações sobre como configurar automaticamente a solução de banco de dados dividido.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Configurar automaticamente bancos de dados principais
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 

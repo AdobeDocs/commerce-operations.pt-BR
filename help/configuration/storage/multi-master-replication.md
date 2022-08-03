@@ -1,7 +1,7 @@
 ---
 title: Replicação de banco de dados
 description: Veja os benefícios da configuração da replicação do banco de dados.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Replicação de banco de dados
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 
