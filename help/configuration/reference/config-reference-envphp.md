@@ -1,9 +1,9 @@
 ---
 title: referência env.php
 description: Consulte uma lista de valores para o arquivo env.php.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 7ecd54b40690ec046e9a3d46a6ef9ad44ffaf4ab
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ O `env.php` O arquivo contém as seguintes seções:
 | `cron` | Ative ou desative as tarefas do cron |
 | `crypt` | A chave de criptografia para funções criptográficas |
 | `db` | Configurações de conexão de banco de dados |
+| `default_connection` | Conexão padrão das filas de mensagens |
 | `directories` | Configurações de mapeamento de diretórios de comércio |
 | `downloadable_domains` | Lista de domínios baixáveis |
 | `install` | A data de instalação |
@@ -168,6 +169,19 @@ Todas as configurações de banco de dados estão disponíveis neste nó.
   ]
 ]
 ```
+
+## default_connection
+
+Define a conexão padrão para filas de mensagens. O valor pode ser `db`, `amqp`ou um sistema de fila personalizado como `redismq`. Se você especificar qualquer valor diferente de `db`, o software da fila de mensagens deve ser instalado e configurado primeiro. Caso contrário, as mensagens não serão processadas corretamente.
+
+```conf
+'queue' => [
+    'default_connection' => 'amqp'
+]
+```
+
+If `queue/default_connection` é especificado no sistema `env.php` , essa conexão é usada para todas as filas de mensagens pelo sistema, a menos que uma conexão específica seja definida em um `queue_topology.xml`, `queue_publisher.xml` ou `queue_consumer.xml` arquivo.
+Por exemplo, se `queue/default_connection` é `amqp` em `env.php` mas um `db` conexão especificada nos arquivos XML de configuração de fila de um módulo, o módulo usará o MySQL como um mediador de mensagens.
 
 ## diretórios
 

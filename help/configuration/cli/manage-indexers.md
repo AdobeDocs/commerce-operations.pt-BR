@@ -1,9 +1,9 @@
 ---
 title: Gerenciar os indexadores
 description: Veja exemplos de como visualizar e gerenciar indexadores do Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: dd84039be22b6bd25d57912615d64bad91970926
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,6 @@ bin/magento indexer:status [indexer]
 ```
 
 Onde `[indexer]` é uma lista de indexadores separada por espaços. Omit `[indexer]` para visualizar o status de todos os indexadores.
-
 
 Exemplo de resultado:
 
@@ -120,8 +119,9 @@ Você pode executar os seguintes índices no modo paralelo:
 - `Catalog Search Fulltext` pode ser rotulada em paralelo por exibições de loja.
 - `Category Product` pode ser rotulada em paralelo por exibições de loja.
 - `Catalog Price` pode ser rotulada em paralelo por grupos de sites e de clientes.
+- `Catalog Permissions` pode ser em paralelo por grupos de clientes.
 
-Se quiser usar paralelização, defina um dos modos de dimensões disponíveis para o indexador de preço do produto:
+Para usar a paralelização, defina um dos modos de dimensões disponíveis para o indexador de preço do produto:
 
 - `none` (padrão)
 - `website`
@@ -133,6 +133,11 @@ Por exemplo, para definir o modo por site:
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
+
+Para usar a paralelização para permissões de Catálogo, defina um dos modos de dimensões disponíveis para o indexador de Permissões de Catálogo:
+
+- `none` (padrão)
+- `customer_group`
 
 Ou para verificar o modo atual:
 
