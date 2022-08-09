@@ -1,9 +1,9 @@
 ---
 title: Processamento de Ordem de Alta Throughput
 description: Otimize a experiência de posicionamento e check-out do pedido para sua implantação do Adobe Commerce ou Magento Open Source.
-source-git-commit: 4ce6f01ab6c3e0bb408657727b65bcb2f84dd954
+source-git-commit: 6afdb941ce3753af02bde3dddd4e66414f488957
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,21 @@ O _Ativar Inventário No Carregamento Do Carrinho_ a configuração global deter
 Quando desativado, a verificação de inventário não ocorre ao adicionar um produto ao carrinho de compras. Se essa verificação de inventário for ignorada, alguns cenários indisponíveis poderão gerar outros tipos de erros. Uma verificação de inventário _always_ ocorre na etapa de posicionamento do pedido, mesmo quando desabilitado.
 
 **Ativar Verificação de Inventário No Carregamento Do Carrinho** estiver ativado (definido como Sim) por padrão. Para desativar a verificação de inventário ao carregar o carrinho, defina **[!UICONTROL Enable Inventory Check On Cart Load]** para `No` na interface do usuário do administrador **Lojas** > **Configuração** > **Catálogo** > **Inventário** > **Opções de Estoque** seção. Consulte [Configurar opções globais][global] e [Inventário do catálogo][inventory] no _Guia do usuário_.
+
+## Balanceamento de carga
+
+Você pode ajudar a equilibrar a carga em diferentes nós, habilitando conexões secundárias para o banco de dados MySQL e a instância Redis.
+
+O Adobe Commerce pode ler vários bancos de dados ou instâncias do Redis de forma assíncrona. Se você estiver usando o Commerce on cloud Infrastructure, poderá configurar as conexões secundárias editando o [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) na `.magento.env.yaml` arquivo. Somente um nó precisa lidar com o tráfego de leitura e gravação, portanto, defina as variáveis como `true` resulta na criação de uma conexão secundária para o tráfego somente leitura. Defina os valores como `false` para remover qualquer matriz de conexão somente leitura existente do `env.php` arquivo.
+
+Exemplo da variável `.magento.env.yaml` arquivo:
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    REDIS_USE_SLAVE_CONNECTION: true
+```
 
 <!-- link definitions -->
 
