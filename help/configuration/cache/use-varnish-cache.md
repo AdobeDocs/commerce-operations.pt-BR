@@ -1,9 +1,9 @@
 ---
 title: Limpeza de cache com Varnish
 description: Saiba como a limpeza de cache funciona com a Varnish e como usá-la como um acelerador de cache da Web para o aplicativo Adobe Commerce.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Depois de ter instalado e configurado o Varnish para funcionar com o Commerce, a
 
 ## Configurar o Commerce para limpar o Varnish
 
-O Commerce limpa hosts Varnish depois que você configura hosts Varnish usando o [`magento setup:config:set`](https://devdocs.magento.com/guides/2.4/install-gde/install/cli/install-cli-subcommands-deployment.html) comando.
+O Commerce limpa hosts Varnish depois que você configura hosts Varnish usando o [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) comando.
 
 Você pode usar o parâmetro opcional `--http-cache-hosts` para especificar uma lista separada por vírgulas de hosts Varnish e portas de escuta. Configure todos os hosts Varnish, caso tenha um ou vários. (Não separe hosts com um caractere de espaço.)
 
@@ -57,4 +57,4 @@ Você pode, então, limpar hosts Varnish ao atualizar o cache do Commerce (tamb�
 
 Para atualizar o cache usando o Administrador, clique em **[!UICONTROL SYSTEM]** > Ferramentas > **Gerenciamento de cache**, depois clique em **Liberar cache Magento** na parte superior da página. (Você também pode atualizar tipos de cache individuais.)
 
-Para atualizar o cache usando a linha de comando, normalmente use o [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comando como [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/2.4/install-gde/prereq/file-sys-perms-over.html).
+Para atualizar o cache usando a linha de comando, normalmente use o [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comando como [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).

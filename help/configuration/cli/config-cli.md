@@ -1,9 +1,9 @@
 ---
 title: Ferramenta Linha de comando
 description: Use a ferramenta de linha de comando do Commerce para executar tarefas de instalação e configuração.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Os benefícios adicionais incluem:
 - A CLI é extensível para que desenvolvedores de terceiros possam &quot;conectar-se&quot; a ela. Isso tem o benefício adicional de eliminar a curva de aprendizado dos usuários.
 - Os comandos para módulos desativados não são exibidos.
 
-Este tópico discute a configuração do software Adobe Commerce e Magento Open Source usando a CLI. Para obter informações sobre como instalar o Commerce, consulte [Visão geral da instalação](https://devdocs.magento.com/guides/2.4/install-gde/bk-install-guide.html) no _Guia de instalação_.
+Este tópico discute a configuração do software Adobe Commerce e Magento Open Source usando a CLI. Para obter informações sobre como instalar o Commerce, consulte [Fluxo de instalação](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) no _Guia de instalação_.
 
 ## Pré-requisitos
 

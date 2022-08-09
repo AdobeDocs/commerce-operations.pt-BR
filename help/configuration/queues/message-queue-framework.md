@@ -1,7 +1,7 @@
 ---
 title: Visão geral das filas de mensagens
 description: Leia sobre a estrutura da fila de mensagens e como ela funciona com o aplicativo Adobe Commerce e Magento Open Source.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Visão geral das filas de mensagens
 
-A Estrutura da Fila de Mensagens (MQF) é um sistema que permite uma [módulo](https://glossary.magento.com/module) para publicar mensagens em filas. Também define os consumidores que receberão as mensagens de forma assíncrona. O MQF usa [RabbitMQ](http://www.rabbitmq.com) como o corretor de mensagens, que fornece uma plataforma escalável para enviar e receber mensagens. Também inclui um mecanismo para armazenar mensagens não entregues. O RabbitMQ é baseado na especificação do Advanced Message Queuing Protocol (AMQP) 0.9.1.
+A Estrutura da Fila de Mensagens (MQF) é um sistema que permite uma [módulo](https://glossary.magento.com/module) para publicar mensagens em filas. Também define os consumidores que receberão as mensagens de forma assíncrona. O MQF usa [RabbitMQ](https://www.rabbitmq.com) como o corretor de mensagens, que fornece uma plataforma escalável para enviar e receber mensagens. Também inclui um mecanismo para armazenar mensagens não entregues. O RabbitMQ é baseado na especificação do Advanced Message Queuing Protocol (AMQP) 0.9.1.
 
 O diagrama a seguir ilustra a Estrutura da Fila de Mensagens:
 

@@ -1,9 +1,9 @@
 ---
 title: Use Redis para armazenamento de sessão
 description: Saiba como configurar o Redis para armazenamento de sessão.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '724'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ em que
 | session-save-redis-timeout | timeout | Tempo limite da conexão, em segundos. | 2,5 |
 | session-save-redis-persistent-id | persistent_identifier | Sequência de caracteres exclusiva para ativar conexões persistentes (por exemplo, sess-db0).<br>[Problemas conhecidos com phpredis e php-fpm](https://github.com/phpredis/phpredis/issues/70). |
 | session-save-redis-db | banco de dados | Número exclusivo do banco de dados Redis, recomendado para proteção contra perda de dados.<br><br>**Importante**: Se você usar Redis para mais de um tipo de armazenamento em cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número padrão do banco de dados de armazenamento em cache a 0, o número do banco de dados de armazenamento em cache de página a 1 e o número do banco de dados de armazenamento de sessão a 2. | 0 |
-| session-save-redis-compression-threshold | compression_threshold | Defina como 0 para desativar a compactação (recomendado quando [suhosin.session.encrypt = Ativado](https://suhosin.org/stories/howtos.html)).<br>[Problema conhecido com strings de mais de 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-redis-compression-threshold | compression_threshold | Defina como 0 para desativar a compactação (recomendado quando `suhosin.session.encrypt = On`).<br>[Problema conhecido com strings de mais de 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Opções: gzip, lzf, lz4 ou snappy. | gzip |
 | session-save-redis-log-level | log_level | Defina como qualquer um dos seguintes, listado em ordem de menos detalhado a mais detalhado:<ul><li>0 (emergência: apenas os erros mais graves)<li>1 (alerta: ação imediata necessária)<li>2 (crítico: componente de aplicativo indisponível)<li>3 (erro: erros de tempo de execução, não críticos, mas devem ser monitorados)<li>4 (aviso: informações adicionais, recomendado)<li>5 (anúncio: estado normal, mas significativo)<li>6 (informações: mensagens informativas)<li>7 (depurar: as mais informações somente para desenvolvimento ou teste)</ul> | 1 |
 | session-save-redis-max-concurrency | max_concurrency | Número máximo de processos que podem aguardar um bloqueio em uma sessão. Para grandes clusters de produção, defina isso como pelo menos 10% do número de processos PHP. | 6 |
