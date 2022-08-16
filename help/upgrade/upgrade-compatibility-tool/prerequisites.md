@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] exigências"'
 description: 'Verifique se o sistema atende aos requisitos necessários para executar o [!DNL Upgrade Compatibility Tool] em uma interface de linha de comando para seu projeto do Adobe Commerce. '
-source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
+source-git-commit: 167e0e7554e912aeef276a34daeaff29d7762009
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,31 @@ Os requisitos mínimos para utilizar a variável [!DNL Upgrade Compatibility Too
 | Composer | nenhum requisito conhecido. |
 | Node.js | Versões do Node.js `^12.22.0`, `^14.17.0`ou `>=16.0.0` (consulte [Instalar o Node.js](https://nodejs.dev/learn/how-to-install-nodejs)) |
 | Limitações de memória | Pelo menos 2 GB de RAM. |
+
+[!DNL Upgrade Compatibility Tool] exige [PCNTL](https://www.php.net/manual/en/book.pcntl.php) e outras extensões PHP para a execução. Verifique as extensões PHP necessárias usando `composer check-platform-reqs` comando:
+
+```bash
+# Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
+
+$ composer check-platform-reqs
+Checking platform requirements for packages in the vendor dir
+ext-ctype     *         success provided by symfony/polyfill-ctype
+ext-dom       20031129  success
+ext-filter    7.4.30    success
+ext-json      7.4.30    success
+ext-libxml    7.4.30    success
+ext-mbstring  *         success provided by symfony/polyfill-mbstring
+ext-openssl   7.4.30    success
+ext-pcntl     7.4.30    success
+ext-pcre      7.4.30    success
+ext-phar      7.4.30    success
+ext-simplexml 7.4.30    success
+ext-tokenizer 7.4.30    success
+ext-xml       7.4.30    success
+ext-xmlwriter 7.4.30    success
+ext-zip       1.15.6    success
+php           7.4.30    success
+```
 
 O Adobe Commerce só é compatível com sistemas operacionais Linux. Você pode executar o [!DNL Upgrade Compatibility Tool] em um sistema operacional Linux. Você não precisa executar a variável [!DNL Upgrade Compatibility Tool] onde a instância do Adobe Commerce está localizada.
 
