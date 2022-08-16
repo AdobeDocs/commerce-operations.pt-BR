@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Mensagens de erro"'
 description: Saiba mais sobre as mensagens de erro encontradas ao usar o [!DNL Upgrade Compatibility Tool] no seu projeto do Adobe Commerce.
-source-git-commit: a13b0ea5aa109ce2f5d33e0966b194d64bad5d0c
+source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
 workflow-type: tm+mt
-source-wordcount: '3781'
+source-wordcount: '4140'
 ht-degree: 4%
 
 ---
@@ -64,6 +64,17 @@ Erros críticos são gerados quando o código personalizado faz referência a en
 | 5072 | Possível violação de design do Magento 2. Detectada uma construção típica de Magento 1.x | Atualize a construção para os padrões Magento 2. |
 | 5076 | Não é possível usar no namespace, pois está reservado desde PHP 7 | Substitua a palavra reservada no namespace por uma palavra-chave não reservada. |
 | 5077 | Não é possível usar como nome de classe, pois está reservado desde PHP 7 | Substitua o nome da classe reservada por um nome não reservado. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Esquema de BD
+
+Os problemas críticos do Esquema de Banco de Dados são relatados se tabelas ou colunas principais removidas forem referenciadas por restrições personalizadas.
+
+| Código de erro | Descrição do erro | Ação sugerida |
+| --- | --- | --- |
+| 7009 | A restrição personalizada está referenciando uma tabela principal que foi removida na versão de destino | Remova a restrição ou atualize os atributos referenceTable e referenceColumn |
+| 7010 | A restrição personalizada está referenciando uma coluna principal que foi removida na versão de destino | Remova a restrição ou atualize o atributo referenceColumn |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -199,6 +210,23 @@ Erros de código personalizado são gerados quando o código personalizado está
 | 6009 | `jQuery.isArray()` está obsoleto | Em vez disso, use o método Array.isArray nativo. |
 | 6009 | `jQuery.parseJSON()` está obsoleto | Para analisar cadeias de caracteres JSON, use o método JSON.parse nativo. |
 | 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) está obsoleta | Em vez disso, use jQuery.expr.pseudos. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Esquema de BD
+
+Os erros do Esquema de Banco de Dados são gerados se as tabelas, colunas, índices ou restrições do banco de dados, adicionadas ou removidas na versão de destino do Adobe Commerce, puderem resultar em conflitos com o esquema de banco de dados personalizado.
+
+| Código de erro | Descrição do erro | Ação sugerida |
+| --- | --- | --- |
+| 7001 | A versão principal do target introduz uma tabela com o mesmo nome de uma tabela declarada por um módulo personalizado | Usar a nova tabela principal (se adequado) ou renomear a tabela personalizada |
+| 7002 | A tabela principal que é estendida por um módulo personalizado foi removida na versão de destino | Todas as referências da tabela principal removidas devem ser removidas da base de código |
+| 7003 | A versão principal do target introduz uma coluna com o mesmo nome de uma coluna declarada por um módulo personalizado | Usar a nova coluna principal (se adequado) ou renomear a coluna personalizada |
+| 7004 | A coluna principal que é estendida por um módulo personalizado foi removida na versão de destino | Todas as referências da coluna principal removidas devem ser removidas da base de código |
+| 7005 | A versão principal do target introduz um índice com a mesma referenceId como um índice declarado por um módulo personalizado | Remover (se duplicado para o índice principal introduzido) ou renomear o índice personalizado |
+| 7006 | O índice principal que é estendido por um módulo personalizado foi removido na versão de destino | Todas as referências do índice principal removidas devem ser removidas da base de código |
+| 7007 | A versão principal do target introduz uma restrição com o mesmo nome de uma restrição declarada por um módulo personalizado | Remover (se duplicado para a restrição principal introduzida) ou renomear a restrição personalizada |
+| 7008 | A restrição principal que é estendida por um módulo personalizado foi removida na versão de destino | Use a nova restrição principal (se adequado) ou renomeie a restrição personalizada |
 
 {style=&quot;table-layout:auto&quot;}
 
