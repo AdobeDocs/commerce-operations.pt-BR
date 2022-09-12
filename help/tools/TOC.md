@@ -1,9 +1,9 @@
 ---
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
-source-git-commit: 2ad429bf3676055f3ae199450f75906afc6542e5
+source-git-commit: 653e2deb96672625c37ccec2b2022b767b8879bd
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ ht-degree: 0%
    - [Extensões](site-wide-analysis-tool/extensions.md)
    - [Alertas](site-wide-analysis-tool/alerts.md)
    - [Correções](site-wide-analysis-tool/patches.md)
+- Ferramenta Correções de Qualidade {#quality-patches-tool}
+   - [Uso](quality-patches-tool/usage.md)
 - Observação para o Adobe Commerce {#observation-for-adobe-commerce}
    - [Introdução](observation-for-adobe-commerce/intro.md)
    - [Como acessar](observation-for-adobe-commerce/access.md)
