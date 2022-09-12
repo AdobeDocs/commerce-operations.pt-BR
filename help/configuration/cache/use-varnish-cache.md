@@ -1,9 +1,9 @@
 ---
 title: Limpeza de cache com Varnish
 description: Saiba como a limpeza de cache funciona com a Varnish e como usá-la como um acelerador de cache da Web para o aplicativo Adobe Commerce.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,4 @@ Você pode, então, limpar hosts Varnish ao atualizar o cache do Commerce (tamb�
 
 Para atualizar o cache usando o Administrador, clique em **[!UICONTROL SYSTEM]** > Ferramentas > **Gerenciamento de cache**, depois clique em **Liberar cache Magento** na parte superior da página. (Você também pode atualizar tipos de cache individuais.)
 
-Para atualizar o cache usando a linha de comando, normalmente use o [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comando como [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Para atualizar o cache usando a linha de comando, normalmente use o [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comando como [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).

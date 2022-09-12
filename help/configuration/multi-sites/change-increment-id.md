@@ -1,9 +1,9 @@
 ---
 title: Alterar ID de incremento
 description: Altere a ID do incremento para uma entidade de banco de dados do Commerce.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Este artigo discute como alterar a ID de incremento de uma entidade de banco de 
 
 - Adobe Commerce (nas instalações): 2.x.x
 - Adobe Commerce na infraestrutura de nuvem: 2.x.x
-- MySQL: [qualquer versão compatível]
+- MySQL: [qualquer versão compatível](../../installation/prerequisites/database/mysql.md)
 
 ## Quando é necessário alterar a ID de incremento
 
@@ -75,4 +75,4 @@ Antes de executar o `ALTER TABLE` Em um ambiente de produção do Adobe Commerce
 
 [Solicitação rejeitada do gateway PayPal - problema de fatura duplicada]: https://support.magento.com/hc/en-us/articles/115002457473
 [Criar um backup de banco de dados]: https://support.magento.com/hc/en-us/articles/360003254334
-[qualquer versão compatível]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html
+[qualquer versão compatível]

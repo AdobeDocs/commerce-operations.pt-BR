@@ -1,9 +1,9 @@
 ---
 title: Ferramenta Linha de comando
 description: Use a ferramenta de linha de comando do Commerce para executar tarefas de instalação e configuração.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ Os benefícios adicionais incluem:
 - A CLI é extensível para que desenvolvedores de terceiros possam &quot;conectar-se&quot; a ela. Isso tem o benefício adicional de eliminar a curva de aprendizado dos usuários.
 - Os comandos para módulos desativados não são exibidos.
 
-Este tópico discute a configuração do software Adobe Commerce e Magento Open Source usando a CLI. Para obter informações sobre como instalar o Commerce, consulte [Fluxo de instalação](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) no _Guia de instalação_.
+Este tópico discute a configuração do software Adobe Commerce e Magento Open Source usando a CLI. Para obter informações sobre como instalar o Commerce, consulte [Fluxo de instalação](../../installation/overview.md) no _Guia de instalação_.
 
 ## Pré-requisitos
 
 Antes de começar a usar a CLI, verifique se:
 
-1. Seu sistema atende aos requisitos discutidos no [Requisitos do sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) no _Guia de instalação_.
-1. Você concluiu todas as tarefas de pré-requisito discutidas em [Pré-requisitos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/prereq-overview.html) no _Guia de instalação_.
-1. Depois de fazer logon no servidor do Commerce, mude para um usuário com permissões para gravar no sistema de arquivos do Commerce. Consulte [mudar para o proprietário do sistema de ficheiros](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) no _Guia de instalação_.
+1. Seu sistema atende aos requisitos discutidos no [Requisitos do sistema](../../installation/system-requirements.md) no _Guia de instalação_.
+1. Você concluiu todas as tarefas de pré-requisito discutidas em [Pré-requisitos](../../installation/prerequisites/overview.md) no _Guia de instalação_.
+1. Depois de fazer logon no servidor do Commerce, mude para um usuário com permissões para gravar no sistema de arquivos do Commerce. Consulte [mudar para o proprietário do sistema de ficheiros](../../installation/prerequisites/file-system/overview.md) no _Guia de instalação_.
 
 ## Execução de comandos
 

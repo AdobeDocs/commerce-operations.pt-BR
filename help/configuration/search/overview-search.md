@@ -1,9 +1,9 @@
 ---
 title: Visão geral do mecanismo de pesquisa
 description: Visão geral das opções do mecanismo de pesquisa para Adobe Commerce e Magento Open Source.
-source-git-commit: 52c472bf80942339b511292243b5da9babf829d9
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
@@ -25,10 +25,9 @@ Depois de instalar e integrar seu mecanismo de pesquisa com o Adobe Commerce, vo
 
 <!-- Link Definitions -->
 
-[Pré-requisitos do mecanismo de pesquisa]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html
-[Configurar o nó do mecanismo de pesquisa]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html
-[Configurar o Apache para seu mecanismo de pesquisa]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html
+[Pré-requisitos do mecanismo de pesquisa]: ../../installation/prerequisites/search-engine/overview.md
+[Configurar o nó do mecanismo de pesquisa]: ../../installation/prerequisites/search-engine/configure-nginx.md
+[Configurar o Apache para seu mecanismo de pesquisa]: ../../installation/prerequisites/search-engine/configure-apache.md
 [Elasticsearch]: https://www.elastic.co
-[Elasticsearch documentation]: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
-[Instalar o software Commerce]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-install.html
+[Instalar o software Commerce]: ../../installation/composer.md
 [OpenSearch]: https://opensearch.org/docs/latest/opensearch/install/index/

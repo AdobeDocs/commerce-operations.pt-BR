@@ -1,7 +1,7 @@
 ---
-title: '"O [!UICONTROL Summary] tab"'
+title: "O [!UICONTROL Summary] tab"
 description: Saiba mais sobre o [!UICONTROL Summary] guia de [!DNL Observation for Adobe Commerce].
-source-git-commit: 22df5b80262fbc98f3dd929ec8fdf6f697734c9b
+source-git-commit: 5bcb834bc563c52cd5b169b9f4f20dab31d404cd
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -109,7 +109,7 @@ O **[!UICONTROL Deployment State]** o quadro faceta frases de implantação espe
 
 **Frases do log de implantação:**
 
-* ‘%Iniciando gerar comando%&#39;) como &#39;start_gen&#39;
+* &#39;%Iniciando gerar comando%&#39;) como &#39;start_gen&#39;
 * &#39;%git apply /app/vendor/magento/ece-tools/patches%&#39;) como &#39;apply_patches&#39;
 * &#39;%Definir sinalizador: .static_content_deploy%&#39;) como &#39;SCD&#39;
 * &#39;%AVISO: Gerar comando concluído%&#39;) como &#39;gen_compl&#39;
@@ -122,7 +122,7 @@ O **[!UICONTROL Deployment State]** o quadro faceta frases de implantação espe
 
 ![Frequência de IP](../../assets/tools/ip-frequency.jpg)
 
-O **[!UICONTROL IP Frequency]** O quadro conta os status (&quot;MISS&quot; e &quot;PASS&quot;) para cada IP a partir do [!DNL Fastly] logs. As solicitações da Web com esses status alcançarão o servidor de origem e adicionarão carga ao servidor. Ele mostra os vinte principais endereços com frequência. Esse quadro pode ser usado para detectar ataques de IP ou fontes de carga pesada em um site.
+O **[!UICONTROL IP Frequency]** O quadro conta os status (&#39;MISS&#39; e &#39;PASS&#39;) para cada IP a partir do [!DNL Fastly] logs. As solicitações da Web com esses status alcançarão o servidor de origem e adicionarão carga ao servidor. Ele mostra os vinte principais endereços com frequência. Esse quadro pode ser usado para detectar ataques de IP ou fontes de carga pesada em um site.
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
@@ -152,7 +152,7 @@ O **[!UICONTROL API Calls by IP, details by URL]** O quadro fornece detalhes de 
 
 ![bots potenciais](../../assets/tools/potential-bots.jpg)
 
-O **[!UICONTROL Potential Bots]** o quadro procura solicitações com um nome request_user_agent como NULL ou ‘%bot%’. Normalmente, o request_user_agent ‘%bot%’ seguirá a configuração da política em `robots.txt` arquivo.
+O **[!UICONTROL Potential Bots]** o quadro procura solicitações com um nome request_user_agent como NULL ou &#39;%bot%&#39;. Normalmente, o request_user_agent &#39;%bot%&#39; seguirá a configuração da política em `robots.txt` arquivo.
 
 ## [!UICONTROL Transaction Errors]
 
@@ -181,7 +181,7 @@ O **[!UICONTROL Nginx access by node]** o quadro observa as contagens a partir d
 * &#39;%self-Leave%&#39;) como &#39;susp_node&#39;
 * &#39;%membros = 3/3 (associado/total)%&#39;) como &#39;3of3&#39;
 * &#39;%membros = 2/3 (associado/total)%&#39;) como &#39;2of3&#39;
-* &#39;%membros = 2/2%&#39;) como &#39;2of2&#39; ・ &#39;%membros = 1/2%&#39;) como &#39;1of2&#39; ・ &#39;%membros = 1/3%&#39;) como &#39;1of3&#39;
+* &#39;%membros = 2/2%&#39;) como &#39;2of2&#39; * &#39;%membros = 1/2%&#39;) como &#39;1of2&#39; * &#39;%membros = 1/3%&#39;) como &#39;1of3&#39;
 * &#39;%membros = 1/1%&#39;) como &#39;1of1&#39;
 * &#39;%\[Observação\] /usr/sbin/mysqld (mysqld 10.%&#39;) como &#39;sql_restart&#39;
 * &#39;%Quorum: Nenhum nó com estado completo:%&#39;) como &#39;no_node_count&#39;
@@ -190,7 +190,7 @@ O **[!UICONTROL Nginx access by node]** o quadro observa as contagens a partir d
 * &#39;%WSREP: Membro 2%&quot;) como &quot;mem2&quot;
 * &#39;%WSREP: Sincronizado com grupo, pronto para conexões%&#39;) como &#39;pronto&#39;
 * &#39;%/usr/sbin/mysqld, Version:%&#39;) como &#39;mysql_restart_mysql.low&#39;
-* &quot;%\[Nota\] WSREP: Nova visualização de cluster: estado global:%&#39;) como &#39;galera_cluster_view_change&#39;
+* &#39;%\[Nota\] WSREP: Nova visualização de cluster: estado global:%&#39;) como &#39;galera_cluster_view_change&#39;
 
 Esses sinais podem indicar problemas de armazenamento, memória ou consulta se o estado for alterado com frequência.
 
@@ -228,7 +228,7 @@ Esses sinais podem indicar problemas de armazenamento, memória ou consulta se o
 * &#39;%1062 \[\ERROR\] InnoDB:%&#39;) como &#39;sql_1062_e&#39;
 * &#39;%\[Nota\] WSREP: A transferir mapa de memória para o disco...%&#39;) como &#39;mem_map_flush&#39;
 * &#39;%Código de erro interno de MariaDB: 1146%&#39;) como &#39;sql_1146&#39;
-* &#39;%Código de erro interno de MariaDB: 1062%&#39;) como &#39;sql_1062&#39; ・ &#39;%1062 \[Aviso\] InnoDB:%&#39;) como &#39;sql_1062_w&#39;
+* &#39;%Código de erro interno de MariaDB: 1062%&#39;) como &#39;sql_1062&#39; * &#39;%1062 \[Aviso\] InnoDB:%&#39;) como &#39;sql_1062_w&#39;
 * &#39;%Código de erro interno de MariaDB: 1064%&#39;) como &#39;sql_1064&#39;
 * &#39;%InnoDB: Falha de asserção no arquivo%&#39;) como &#39;assertion_err&#39;
 * &#39;%mysqld_safe Número de processos em execução agora: 0%&#39;) como &#39;mysql_oom&#39;
@@ -289,7 +289,7 @@ A forma como os processos PHP se comportam depende de [configuração](https://w
 
 ![erros de php](../../assets/tools/php-errors.jpg)
 
-O **[!UICONTROL PHP errors]** frame mostra o número de erros PHP com trabalhadores durante o período selecionado. Para obter mais informações, consulte [Configurações PHP do Adobe Commerce](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+O **[!UICONTROL PHP errors]** frame mostra o número de erros PHP com trabalhadores durante o período selecionado. Para obter mais informações, consulte [Configurações PHP do Adobe Commerce](../../installation/prerequisites/php-settings.md).
 
 **mensagens e erros PHP**
 
@@ -309,7 +309,7 @@ O **[!UICONTROL PHP errors]** frame mostra o número de erros PHP com trabalhado
 
 ![processos php](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] usado por [!DNL Nginx]. Para saber mais sobre os requisitos do sistema, consulte [Requisitos da versão PHP mapeados para versões Adobe Commerce](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). O **[!UICONTROL PHP processes]** frame mostra o número de processos PHP em execução em um horário específico na linha do tempo selecionada.
+[PHP-FPM](https://php-fpm.org/), a [!UICONTROL FastCGI Process Manager] usado por [!DNL Nginx]. Para saber mais sobre os requisitos do sistema, consulte [Requisitos da versão PHP mapeados para versões Adobe Commerce](../../installation/system-requirements.md). O **[!UICONTROL PHP processes]** frame mostra o número de processos PHP em execução em um horário específico na linha do tempo selecionada.
 
 ## [!UICONTROL Secondary processes]
 
@@ -321,7 +321,7 @@ Processos secundários podem afetar a resposta do site. O **[!UICONTROL Secondar
 
 ![tráfego vs semana atrás](../../assets/tools/traffic-vs-week-ago.jpg)
 
-O **[!UICONTROL Traffic vs Week Ago]** o quadro verifica o tráfego do site (solicitações) a partir do [!DNL Fastly] registros com status de cache (&quot;MISS&quot;, &quot;PASS&quot;). Essas solicitações adicionam carga aos servidores de origem. Este quadro exibe o volume de solicitação da Web versus uma semana atrás durante o mesmo período.
+O **[!UICONTROL Traffic vs Week Ago]** o quadro verifica o tráfego do site (solicitações) a partir do [!DNL Fastly] registros com status de cache (&#39;MISS&#39;, &#39;PASS&#39;). Essas solicitações adicionam carga aos servidores de origem. Este quadro exibe o volume de solicitação da Web versus uma semana atrás durante o mesmo período.
 
 ## [!UICONTROL Fastly Cache]
 
@@ -402,7 +402,7 @@ O **[!UICONTROL Cron view]** O frame procura no log do cron o equilíbrio entre 
 * &#39;%Não foi possível adquirir bloqueio para trabalho cron%&#39; como &#39;cron_lock&#39;
 * &#39;%Erro geral: 2006 O servidor MySQL sumiu% como &#39;mysql_has_away_away&#39;
 * &#39;%error%&#39; como &#39;error&#39;
-* &#39;%Erro geral: 1205 O tempo limite de espera de bloqueio excedeu%’ como sql_1205_cron
+* &#39;%Erro geral: 1205 Tempo limite de espera de bloqueio excedido%&#39; como sql_1205_cron
 
 ## [!UICONTROL cron_schedule table updates]
 

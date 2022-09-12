@@ -1,9 +1,9 @@
 ---
 title: Configurar manualmente bancos de dados principais
 description: Consulte orientações sobre como configurar manualmente a solução de banco de dados dividido.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ O Adobe recomenda que você faça o backup do banco de dados e do sistema de arq
 
 **Para fazer backup do sistema**:
 
-1. Faça logon no seu servidor do Commerce como, ou alterne para, a variável [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Faça logon no seu servidor do Commerce como, ou alterne para, a variável [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 1. Insira os seguintes comandos:
 
    ```bash
@@ -476,7 +476,7 @@ A etapa final na divisão manual de bancos de dados é adicionar informações d
 
 Para atualizar a configuração de implantação:
 
-1. Faça logon no seu servidor do Commerce como, ou alterne para, a variável [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Faça logon no seu servidor do Commerce como, ou alterne para, a variável [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 1. Faça backup da configuração de implantação:
 
    ```bash

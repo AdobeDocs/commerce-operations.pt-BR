@@ -1,9 +1,9 @@
 ---
 title: Guia de instalação
 description: Use este guia para instalar [!DNL Site-Wide Analysis Tool] para o seu site
-source-git-commit: a694de861fcc681d864ffb2c405b2366b32bba41
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ bin/magento module:status Magento_ServicesConnector
 
 Se tiver instalado e configurado a extensão usando uma chave de API existente para um serviço diferente, **DEVE gerar novamente a chave de API** e atualize-o no Administrador do Adobe Commerce para o agente.
 
-1. Coloque seu site em [modo de manutenção](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+1. Coloque seu site em [modo de manutenção](../../installation/tutorials/maintenance-mode.md).
 
 1. Faça logon [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
 
@@ -317,7 +317,7 @@ Execute os seguintes comandos para desinstalar o serviço do sistema e remover t
    systemctl disable scheduler
    ```
 
-1. Remova o `systemd` arquivo da unidade.
+1. Remova o do serviço de agendador `systemd` arquivo da unidade.
 
    ```bash
    rm /etc/systemd/system/scheduler.service

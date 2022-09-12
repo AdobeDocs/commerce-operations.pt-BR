@@ -1,9 +1,9 @@
 ---
 title: Entender o escopo de atualização
 description: Saiba mais sobre as alterações incompatíveis com o passado em uma versão que podem afetar os módulos personalizados do Adobe Commerce ou Magento Open Source ou extensões de terceiros.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ A nova política de compatibilidade do Adobe Commerce Marketplace garante que _a
 
 ## Módulos personalizados
 
-Todos os módulos personalizados devem ser verificados em relação à versão de destino para a qual você deseja atualizar. Esse é o processo que utiliza mais tempo e recursos de uma atualização. Ao avaliar seus módulos personalizados, você deve procurar alterações incompatíveis com o passado e estar ciente de novas práticas, como a decomposição do controlador. Você pode saber mais sobre isso na seção [notas de versão](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Além disso, verifique se você está seguindo [práticas recomendadas](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) para desenvolvimento de módulo.
+Todos os módulos personalizados devem ser verificados em relação à versão de destino para a qual você deseja atualizar. Esse é o processo que utiliza mais tempo e recursos de uma atualização. Ao avaliar seus módulos personalizados, você deve procurar alterações incompatíveis com o passado e estar ciente de novas práticas, como a decomposição do controlador. Você pode saber mais sobre isso na seção [notas de versão](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Além disso, verifique se você está seguindo [práticas recomendadas](https://developer.adobe.com/commerce/php/best-practices/extensions/) para desenvolvimento de módulo.
 
 ## [!DNL Upgrade Compatibility Tool]
 

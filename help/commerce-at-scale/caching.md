@@ -2,9 +2,9 @@
 title: Planejamento de Cache Efetivo
 description: Consulte os benchmarks recomendados para armazenamento em cache para garantir o sucesso do site sob carregamento.
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
-source-git-commit: 87e379aff4ec57f15ce914a13b4e9bc2769e6d1c
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -31,4 +31,4 @@ A primeira etapa da estratégia de armazenamento em cache deve, por conseguinte,
 
 Com esse planejamento inicial concluído, a configuração técnica pode começar a ser implementada para configurar caches com base nesses requisitos.
 
-Mesmo que o conteúdo seja atualizado e precise ser ativado no TTL de armazenamento em cache, é possível, na maioria dos casos, limpar manualmente os caches para a variável [AEM dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) e [Adobe Commerce](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean) armazenar em cache seletivamente para esse conteúdo, o que significa que as alterações urgentes serão refletidas imediatamente. O processo de limpeza manual do cache também deve ser planejado e testado antecipadamente para que, se houver a necessidade de forçar uma atualização manual em algum conteúdo, ele seja documentado em um runbook de operações do site e saiba como e quem precisa estar envolvido para agir.
+Mesmo que o conteúdo seja atualizado e precise ser ativado no TTL de armazenamento em cache, é possível, na maioria dos casos, limpar manualmente os caches para a variável [AEM dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) e [Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types) armazenar em cache seletivamente para esse conteúdo, o que significa que as alterações urgentes serão refletidas imediatamente. O processo de limpeza manual do cache também deve ser planejado e testado antecipadamente para que, se houver a necessidade de forçar uma atualização manual em algum conteúdo, ele seja documentado em um runbook de operações do site e saiba como e quem precisa estar envolvido para agir.

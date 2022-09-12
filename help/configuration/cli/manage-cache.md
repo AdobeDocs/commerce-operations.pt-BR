@@ -1,9 +1,9 @@
 ---
 title: Gerenciar o cache
 description: Gerencie os tipos de cache e exiba o status do cache.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Este comando permite habilitar ou desabilitar todos os tipos de cache ou somente
 
 >[!INFO]
 >
->A partir da versão 2.2, você só poderá ativar ou desativar os tipos de cache usando a linha de comando ao executar o Commerce no modo de produção. Se o Commerce estiver sendo executado no modo desenvolvedor, é possível ativar ou desativar os tipos de cache usando a linha de comando ou manualmente. Antes de fazer isso, você deve fazer manualmente `<magento_root>/app/etc/env.php` gravável pelo [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+>A partir da versão 2.2, você só poderá ativar ou desativar os tipos de cache usando a linha de comando ao executar o Commerce no modo de produção. Se o Commerce estiver sendo executado no modo desenvolvedor, é possível ativar ou desativar os tipos de cache usando a linha de comando ou manualmente. Antes de fazer isso, você deve fazer manualmente `<magento_root>/app/etc/env.php` gravável pelo [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 
 Você pode limpar (também conhecido como _liberação_ ou _atualizar_) tipos de cache usando a linha de comando ou o Administrador.
 

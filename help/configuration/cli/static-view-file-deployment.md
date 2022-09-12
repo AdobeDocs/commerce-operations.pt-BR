@@ -1,9 +1,9 @@
 ---
 title: Implantar arquivos de visualização estáticos
 description: Saiba como gravar arquivos estáticos no sistema de arquivos do Commerce durante o modo de produção.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ Você deve gravar arquivos de visualização estáticos no sistema de arquivos d
 
 >[!WARNING]
 >
->_Somente no modo Desenvolvedor_: Ao instalar ou habilitar um novo módulo, ele pode carregar novos JavaScript, CSS, layouts e assim por diante. Para evitar problemas com arquivos estáticos, é necessário limpar os arquivos antigos para garantir que você obtenha todas as alterações para o novo módulo. Você pode limpar arquivos de visualização estática gerados de várias maneiras. Consulte [Tópico de cache de arquivos estáticos limpos para obter detalhes](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) para obter mais informações.
+>_Somente no modo Desenvolvedor_: Ao instalar ou habilitar um novo módulo, ele pode carregar novos JavaScript, CSS, layouts e assim por diante. Para evitar problemas com arquivos estáticos, é necessário limpar os arquivos antigos para garantir que você obtenha todas as alterações para o novo módulo. Você pode limpar arquivos de visualização estática gerados de várias maneiras. Consulte [Tópico de cache de arquivos estáticos limpos para obter detalhes](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) para obter mais informações.
 
 **Para implantar arquivos de visualização estáticos**:
 
-1. Faça logon no servidor do Commerce como ou [mudar para o proprietário do sistema de ficheiros](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Faça logon no servidor do Commerce como ou [mudar para o proprietário do sistema de ficheiros](../../installation/prerequisites/file-system/overview.md).
 1. Excluir o conteúdo de `<magento_root>/pub/static`, exceto para o `.htaccess` arquivo. Não exclua este arquivo.
 1. Execute a ferramenta de implantação de arquivos de visualização estáticos `<magento_root>/bin/magento setup:static-content:deploy`.
 
@@ -158,7 +158,7 @@ Para fazer isso, execute as seguintes etapas:
 
 ## Solução de problemas da ferramenta de implantação de arquivos de visualização estáticos
 
-[Instale o software Commerce primeiro](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html); caso contrário, não será possível executar a ferramenta de implantação de arquivos de visualização estáticos.
+[Instale o software Commerce primeiro](../../installation/overview.md); caso contrário, não será possível executar a ferramenta de implantação de arquivos de visualização estáticos.
 
 **Sintoma**: O seguinte erro é exibido quando você executa a ferramenta de implantação de arquivos de visualização estáticos:
 
@@ -170,9 +170,9 @@ ERROR: You need to install the Commerce application before running this utility.
 
 Use as seguintes etapas:
 
-1. Instale o software Commerce usando o [linha de comando](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
-1. Faça logon no servidor do Commerce como ou [alternar para](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html), o proprietário do sistema de arquivos.
-1. Excluir o conteúdo de `<magento_root>/pub/static` , exceto para o `.htaccess` arquivo. Não exclua este arquivo.
+1. Instale o software Commerce usando o [linha de comando](../../installation/composer.md).
+1. Faça logon no servidor de aplicativos como ou [alternar para](../../installation/prerequisites/file-system/overview.md), o proprietário do sistema de arquivos.
+1. Excluir o conteúdo de `<app_root>/pub/static` , exceto para o `.htaccess` arquivo. Não exclua este arquivo.
 1. Implantar arquivos de visualização estáticos: `bin/magento setup:static-content:deploy`
 
 ## Dica para desenvolvedores personalizarem a ferramenta de implantação de conteúdo estático

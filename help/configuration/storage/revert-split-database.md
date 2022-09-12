@@ -1,9 +1,9 @@
 ---
 title: Reverter Banco de Dados Dividido
 description: Reverter de uma implementação obsoleta do banco de dados dividido para uma única implementação do banco de dados.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Neste exemplo, fazemos logon em todos os três bancos de dados, que estão insta
 
 ## Verifique seu trabalho
 
-Para verificar se a implementação de seu único banco de dados está funcionando corretamente, execute as seguintes tarefas e verifique se os dados foram adicionados ao grupo `magento_main` tabelas de banco de dados usando uma ferramenta de banco de dados como [phpMyAdmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+Para verificar se a implementação de seu único banco de dados está funcionando corretamente, execute as seguintes tarefas e verifique se os dados foram adicionados ao grupo `magento_main` tabelas de banco de dados usando uma ferramenta de banco de dados como [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 1. Verifique se as chaves estrangeiras foram restauradas. Por exemplo, a variável `QUOTE_STORE_ID_STORE_STORE_ID` na chave `quote` tabela de banco de dados.
 1. Verifique se os clientes podem fazer pedidos na loja.

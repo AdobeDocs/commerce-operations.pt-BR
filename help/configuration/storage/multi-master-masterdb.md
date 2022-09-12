@@ -1,10 +1,10 @@
 ---
 title: Configurar automaticamente bancos de dados principais
 description: Consulte orientações sobre como configurar automaticamente a solução de banco de dados dividido.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '358'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ Este tópico discute como começar a usar a solução de banco de dados dividido
 
 ## Instalar o software Adobe Commerce
 
-Você pode ativar bancos de dados divididos a qualquer momento após instalar o software Adobe Commerce; em outras palavras, é possível adicionar bancos de dados divididos a um sistema Adobe Commerce que já tenha dados de check-out e pedido. Use as instruções no Adobe Commerce README ou na [guia de instalação](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) para instalar o software Adobe Commerce usando um único banco de dados principal.
+Você pode ativar bancos de dados divididos a qualquer momento após instalar o software Adobe Commerce; em outras palavras, é possível adicionar bancos de dados divididos a um sistema Adobe Commerce que já tenha dados de check-out e pedido. Use as instruções no Adobe Commerce README ou na [guia de instalação](../../installation/overview.md) para instalar o software Adobe Commerce usando um único banco de dados principal.
 
 ## Configurar bancos de dados principais adicionais
 

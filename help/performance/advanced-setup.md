@@ -1,9 +1,9 @@
 ---
 title: Configuração avançada
 description: Revise as práticas recomendadas e recomendações para sistemas empresariais de grande porte, projetados para processar grandes volumes de dados.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Por exemplo, se você estiver executando um perfil semelhante à Média B2B, é 
 
 Um grande número de SKUs de produtos, sites, grupos de clientes ou catálogos compartilhados afetará o tempo de execução dos indexadores de Preço do produto e Regra do catálogo. Isso ocorre porque, por padrão, todos os sites são atribuídos a todos os grupos de clientes (catálogos compartilhados).
 
-Para diminuir o tempo de indexação, você pode [excluir determinados sites dos grupos de clientes (catálogos compartilhados)](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-optimization.html#customer-group-limitations-by-websites).
+Para diminuir o tempo de indexação, você pode [excluir determinados sites dos grupos de clientes (catálogos compartilhados)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
 
 ## Configurar Redis
 
@@ -56,7 +56,7 @@ Magento Open Source e Adobe [!DNL Commerce] suporte a filas de mensagens impleme
 
 >[!WARNING]
 >
->O recurso de banco de dados dividido era [obsoleto](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) na versão 2.4.2 do Adobe Commerce. Consulte [Reverter de um banco de dados dividido para um único banco de dados](https://devdocs.magento.com/guides/v2.4/config-guide/revert-split-database.html).
+>O recurso de banco de dados dividido era [obsoleto](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) na versão 2.4.2 do Adobe Commerce. Consulte [Reverter de um banco de dados dividido para um único banco de dados](../configuration/storage/revert-split-database.md).
 
 O Adobe Commerce permite configurar o armazenamento escalável de banco de dados para atender às necessidades de uma empresa em crescimento. Você pode configurar três bancos de dados principais separados que atendem a domínios específicos:
 
@@ -95,7 +95,7 @@ Esse comando executa alterações de configuração, mas não configura a replic
 Depois de dividir o banco de dados principal e definir bancos de dados escravos, [!DNL Commerce] O regula automaticamente as conexões com um banco de dados específico, tomando decisões com base no tipo de solicitação (POST, PUT, GET, etc.) e no recurso de dados. If [!DNL Commerce] Para que suas extensões executem operações de gravação em uma solicitação GET, o sistema alterna automaticamente a conexão do banco de dados subordinado para o principal. Funciona da mesma forma com bancos de dados principais: assim que você trabalha com uma tabela relacionada ao check-out, o sistema redireciona todas as consultas para um banco de dados específico. Enquanto isso, todas as consultas relacionadas ao catálogo irão para o banco de dados principal.
 
 Para obter mais detalhes sobre a configuração e os benefícios de várias configurações principais/escravas, consulte
-[Solução de desempenho de banco de dados dividida](https://devdocs.magento.com/guides/v2.4/config-guide/multi-master/multi-master.html).
+[Solução de desempenho de banco de dados dividida](../configuration/storage/multi-master.md).
 
 ## Fornecer conteúdo de mídia
 

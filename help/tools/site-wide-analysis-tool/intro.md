@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Site-Wide Analysis Tool]"'
+title: "[!DNL Site-Wide Analysis Tool]"
 description: Saiba mais sobre o [!DNL Site-Wide Analysis] Ferramenta, seus usos, o processo de instalação e como obter acesso
-source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Veja todos os insights importantes sobre seu site em um único lugar. [!DNL Site
 
 - [**[!DNL Security Scan Tool]**](https://docs.magento.com/user-guide/magento/security-scan.html) - Fornece aos clientes Adobe Commerce e Magento Open-Source insights em tempo real sobre o status de segurança de sua loja detectando proativamente malware e notificando-os se a loja estiver comprometida.
 
-- [**[!DNL Upgrade Compatability Tool]**](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) - Executa a instância personalizada do Adobe Commerce em relação à versão de atualização de destino e retorna um resumo de problemas críticos, erros e avisos que devem ser abordados, tornando o processo de análise de atualização mais fácil, rápido e barato.
+- [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) - Executa a instância personalizada do Adobe Commerce em relação à versão de atualização de destino e retorna um resumo de problemas críticos, erros e avisos que devem ser abordados, tornando o processo de análise de atualização mais fácil, rápido e barato.
 
 - [**[!DNL Managed Alerts]**](https://support.magento.com/hc/en-us/sections/360010758472-Managed-alerts-for-Adobe-Commerce) - Monitore várias métricas para acompanhar proativamente o desempenho da plataforma e fornecer instruções específicas sobre como solucionar problemas para que os comerciantes possam evitar tempo de inatividade crítico e se manter informados sobre a CPU, o desempenho do aplicativo, o disco, a memória e o banco de dados.
 

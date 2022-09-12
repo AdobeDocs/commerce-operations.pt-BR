@@ -1,9 +1,9 @@
 ---
 title: Práticas recomendadas
 description: Use as práticas recomendadas do Adobe para gerenciar o processo de atualização para seus projetos do Adobe Commerce e do Magento Open Source.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Caso seu projeto esteja em execução, sugerimos que você execute uma auditoria
 
 A partir do momento em que você começar a trabalhar em um projeto, deve considerar como as atualizações futuras serão afetadas pelo seu trabalho atual. Siga sempre as práticas recomendadas de desenvolvimento do Adobe Commerce conforme descrito aqui:
 
-- [Práticas recomendadas de desenvolvimento](https://devdocs.magento.com/guides/v2.4/ext-best-practices/bk-ext-best-practices.html)
-- [Normas de codificação](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html)
+- [Práticas recomendadas de desenvolvimento](https://developer.adobe.com/commerce/php/best-practices/)
+- [Normas de codificação](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Comece a adotar a plataforma Adobe Commerce Extensibility, se ainda não tiver feito. A plataforma permite personalizar com eficiência os processos, integrar sistemas e implantar novos recursos, mantendo a capacidade de atualização semelhante ao SaaS. Seus recursos incluem:
 
@@ -80,7 +80,7 @@ Avalie o trabalho a ser feito para atualizar:
 
 ### Teste pós-atualização
 
-O teste é a fase de uma atualização que requer mais tempo. Consequentemente, este processo deve ser tão automatizado quanto possível. Você pode se beneficiar do uso das ferramentas de teste principais. O [Guia de teste de aplicativo](https://devdocs.magento.com/guides/v2.4/test/testing.html) fornece detalhes.
+O teste é a fase de uma atualização que requer mais tempo. Consequentemente, este processo deve ser tão automatizado quanto possível. Você pode se beneficiar do uso das ferramentas de teste principais. O [Guia de teste de aplicativo](https://developer.adobe.com/commerce/testing/guide/) fornece detalhes.
 
 Use um ambiente de preparo para testar e validar sua atualização antes de migrar para a produção.
 

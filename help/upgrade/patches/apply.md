@@ -1,9 +1,9 @@
 ---
 title: Aplicar Correções
 description: Saiba mais sobre os métodos para aplicar patches a um projeto do Adobe Commerce ou Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Para aplicar um patch personalizado usando o Composer:
 Para aplicar patches a partir da linha de comando:
 
 1. Faça upload do arquivo local no `<Magento_root>` no servidor usando FTP, SFTP, SSH ou seu método de transporte normal.
-1. Faça logon no servidor como o [usuário administrador](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli.html#config-install-cli-first) e verifique se o arquivo está no diretório correto.
+1. Faça logon no servidor como o [usuário administrador](../../configuration/cli/config-cli.md#prerequisites) e verifique se o arquivo está no diretório correto.
 1. Na interface da linha de comando, execute os seguintes comandos de acordo com a extensão de patch:
 
    ```bash

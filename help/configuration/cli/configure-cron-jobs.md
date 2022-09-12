@@ -1,9 +1,9 @@
 ---
 title: Configurar e executar trabalhos do cron
 description: Saiba como gerenciar trabalhos do cron.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ O aplicativo Commerce usa tarefas cron que podem ser executadas com configuraç�
 
 >[!WARNING]
 >
->- Para evitar problemas durante a instalação e a atualização, recomendamos que você aplique as mesmas configurações PHP tanto na configuração da linha de comando PHP quanto na configuração do plug-in do servidor Web PHP. Para obter mais informações, consulte [Configurações PHP necessárias](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+>- Para evitar problemas durante a instalação e a atualização, recomendamos que você aplique as mesmas configurações PHP tanto na configuração da linha de comando PHP quanto na configuração do plug-in do servidor Web PHP. Para obter mais informações, consulte [Configurações PHP necessárias](../../installation/prerequisites/php-settings.md).
 >- Em um sistema de vários nós, o crontab pode ser executado em apenas um nó. Isso se aplica a você somente se você configurar mais de um nó da Web por motivos relacionados ao desempenho ou escalabilidade.
 
 
@@ -58,7 +58,7 @@ O crontab de Comércio está dentro `#~ MAGENTO START` e `#~ MAGENTO END` coment
 
 Para criar o crontab de Comércio:
 
-1. Faça logon como ou alterne para o [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Faça logon como ou alterne para o [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 1. Altere para o diretório de instalação do Commerce.
 1. Digite o seguinte comando:
 
@@ -100,7 +100,7 @@ Remova o crontab do Commerce somente antes de desinstalar o aplicativo do Commer
 
 Para remover o crontab de Comércio:
 
-1. Faça o login como ou alterne para o [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Faça o login como ou alterne para o [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 1. Altere para o diretório de instalação do Commerce.
 1. Digite o seguinte comando:
 

@@ -1,9 +1,9 @@
 ---
 title: Práticas recomendadas de configuração
 description: Otimize o tempo de resposta da implantação do Adobe Commerce ou Magento Open Source usando essas práticas recomendadas.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ O Commerce fornece muitas configurações e ferramentas que você pode usar para
 
 ## Trabalhos Cron
 
-Todas as operações assíncronas em [!DNL Commerce] são executados com o Linux `cron` comando. Consulte [Configurar e executar o cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) para configurá-lo corretamente.
+Todas as operações assíncronas em [!DNL Commerce] são executados com o Linux `cron` comando. Consulte [Configurar e executar o cron](../configuration/cli/configure-cron-jobs.md) para configurá-lo corretamente.
 
 ## Indexadores
 
@@ -40,7 +40,7 @@ Pode haver momentos em que as vendas intensas em uma loja ocorrem ao mesmo tempo
 
 >[!WARNING]
 >
->O **[!UICONTROL Developer]** e as opções só estão disponíveis em [Modo de desenvolvedor](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe Commerce na infraestrutura de nuvem](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) não suporta `Developer` modo.
+>O **[!UICONTROL Developer]** e as opções só estão disponíveis em [Modo de desenvolvedor](../configuration/cli/set-mode.md). [Adobe Commerce na infraestrutura de nuvem](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) não suporta `Developer` modo.
 
 ## Atualização de estoque adiada
 
@@ -66,7 +66,7 @@ Para melhorar a capacidade de resposta da loja de sua [!DNL Commerce] , acesse A
 
 >[!INFO]
 >
->O **[!UICONTROL Developer]** e as opções só estão disponíveis em [Modo de desenvolvedor](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe [!DNL Commerce] na infraestrutura em nuvem](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) não suporta `Developer` modo.
+>O **[!UICONTROL Developer]** e as opções só estão disponíveis em [Modo de desenvolvedor](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] na infraestrutura em nuvem](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) não suporta `Developer` modo.
 
 Quando você ativa o **[!UICONTROL Enable [!DNL JavaScript] Bundling]** , você permite que o Commerce mescle todos os recursos JS em um ou em um conjunto de pacotes que são carregados em páginas de loja. O pacote de JS resulta em menos solicitações para o servidor, o que melhora o desempenho da página. Também ajuda o navegador a armazenar em cache os recursos do JS na primeira chamada e reutilizá-los para qualquer navegação posterior. Essa opção também traz avaliação lenta, pois todo JS é carregado como texto. Ele inicia a análise e a avaliação do código somente após ações específicas serem acionadas na página. No entanto, essa configuração não é recomendada para armazenamentos em que o primeiro tempo de carregamento de página é extremamente crítico, pois todo o conteúdo JS será carregado na primeira chamada.
 

@@ -1,9 +1,9 @@
 ---
 title: Limpeza de cache com várias instâncias do Varnish
 description: Saiba como a limpeza de cache funciona com várias instâncias do Varnish.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '179'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Este tópico mostra as noções básicas para configurar várias instâncias de 
 
 ## Configuração para limpar várias instâncias do Varnish
 
-O Commerce limpa hosts Varnish depois que você configura hosts Varnish usando o [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-deployment.html) comando.
+O Commerce limpa hosts Varnish depois que você configura hosts Varnish usando o [`magento setup:config:set`](../../installation/tutorials/deployment.md) comando.
 
 Você deve usar o `--http-cache-hosts` para especificar uma lista separada por vírgulas de hosts Varnish e portas de escuta. (Não separe hosts com um caractere de espaço.)
 
@@ -33,4 +33,4 @@ Você pode limpar todos os hosts Varnish ao atualizar o cache do Commerce (tamb�
 
 Para atualizar o cache usando o Administrador, clique em **SISTEMA** > Ferramentas > **Gerenciamento de cache**, depois clique em **Liberar cache Magento** na parte superior da página. (Você também pode atualizar tipos de cache individuais.)
 
-Para atualizar o cache de várias instâncias do Varnish da cli, use o [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comando como [proprietário do sistema de arquivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Para atualizar o cache de várias instâncias do Varnish da cli, use o [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comando como [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).

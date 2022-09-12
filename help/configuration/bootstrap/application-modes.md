@@ -1,9 +1,9 @@
 ---
 title: Modos de aplicativo
 description: O aplicativo Commerce pode operar em modos diferentes dependendo de suas necessidades. Exiba uma lista detalhada dos modos de aplicativo disponíveis.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,6 @@ No modo de produção:
 
 Execute o aplicativo Commerce no modo de manutenção para colocar seu site off-line enquanto você conclui as tarefas de manutenção, atualização ou configuração. No modo de manutenção, o site redireciona os visitantes para um padrão `Service Temporarily Unavailable` página.
 
-Você pode criar um [página de manutenção personalizada](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html), ative e desative manualmente o modo de manutenção e configure o modo de manutenção para permitir que os visitantes de endereços IP autorizados visualizem a loja normalmente. Consulte [ativar e desativar o modo de manutenção](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+Você pode criar um [página de manutenção personalizada](../../upgrade/troubleshooting/maintenance-mode-options.md), ative e desative manualmente o modo de manutenção e configure o modo de manutenção para permitir que os visitantes de endereços IP autorizados visualizem a loja normalmente. Consulte [ativar e desativar o modo de manutenção](../../installation/tutorials/maintenance-mode.md).
 
 Se você estiver usando o Commerce on cloud Infrastructure, o aplicativo Commerce será executado no modo de manutenção durante a fase de implantação. Quando a implantação é concluída com êxito, o aplicativo Commerce volta a ser executado no modo de produção. Consulte [Ganchos de implantação](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) no _guia Commerce Cloud_.

@@ -1,9 +1,9 @@
 ---
 title: Configurar vários sites com o Nginx
 description: Siga este tutorial para configurar vários sites com o Nginx.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Utilizando apenas uma [nginx arquivo de host virtual](#step-2-create-nginx-virtu
 
 **Para criar um host virtual** (simplificado):
 
-Essa configuração é expandida em [Configuração Nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html).
+Essa configuração é expandida em [configuração nginx](../../installation/prerequisites/web-server/nginx.md).
 
 1. Abra um editor de texto e adicione o seguinte conteúdo a um novo arquivo chamado `/etc/nginx/sites-available/magento`:
 

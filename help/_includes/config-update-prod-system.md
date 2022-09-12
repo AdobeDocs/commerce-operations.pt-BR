@@ -1,7 +1,7 @@
 ---
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '85'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   Para obter opções adicionais, como a capacidade de definir uma lista de permissões de endereço IP, consulte [`magento maintenance:enable`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+   Para obter opções adicionais, como a capacidade de definir uma lista de permissões de endereço IP, consulte [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
 1. Interrompa todos os trabalhadores da fila em execução definindo `cron_run` para `false` em `app/etc/env.php` como se segue:
 

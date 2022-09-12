@@ -1,9 +1,9 @@
 ---
 title: Compilador de código
 description: Saiba como executar o compilador de código a partir da linha de comando.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Em alguns casos, talvez você queira compilar o código antes de instalar o apli
 
    Use o `[-c|--clear-static-content]` opção para limpar [conteúdo estático](https://glossary.magento.com/static-content). Isso é necessário se você ativou ou desativou os módulos anteriormente e precisa limpar o conteúdo estático gerado anteriormente para eles.
 
-   Consulte [Ativar módulos](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+   Consulte [Ativar módulos](../../installation/tutorials/manage-modules.md).
 
 1. Compile o código.
 

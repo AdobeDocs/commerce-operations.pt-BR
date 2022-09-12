@@ -2,10 +2,10 @@
 keywords: Adobe Commerce; home; tópicos populares
 title: Início
 description: Navegue por um índice da documentação operacional do produto Adobe Commerce.
-source-git-commit: 6c462d615675615b317c6de529d1af5846d26e69
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,27 +25,27 @@ Obtenha informações práticas sobre conceitos, processos, ferramentas e práti
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html">
+    <a href="../installation/overview.md">
       <img alt="Instalação" src="../assets/icons/servers.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html"><strong>Instalação</strong></a>
+      <a href="../installation/overview.md"><strong>Instalação</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html">
+    <a href="../configuration/overview.md">
       <img alt="Configuração" src="../assets/icons/settings.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html"><strong>Configuração</strong></a>
+      <a href="../configuration/overview.md"><strong>Configuração</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html">
+    <a href="../tools/data-migration-tool/how-migration-works.md">
       <img alt="Migração" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html"><strong>Migração</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Migração</strong></a>
     </div>
   </td>
 </tr>
@@ -75,11 +75,11 @@ Obtenha informações práticas sobre conceitos, processos, ferramentas e práti
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
+    <a href="../tools/overview.md">
        <img alt="Ferramentas" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Ferramentas</strong></a>
+      <a href="../tools/overview.md"><strong>Ferramentas</strong></a>
     </div>
   </td>
 </tr>

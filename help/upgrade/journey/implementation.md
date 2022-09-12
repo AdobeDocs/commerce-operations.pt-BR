@@ -1,9 +1,9 @@
 ---
 title: Atualizar implementação
 description: Saiba mais sobre as diferentes fases de implementação de atualização para projetos Adobe Commerce e Magento Open Source.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ A seguir estão itens que você pode incluir em uma análise completa:
    - Atualizar a versão de destino
    - Número e detalhes de erros críticos encontrados
 
-- Atualização de serviços para oferecer suporte à versão de destino. Use o modelo de tabela a seguir para mapear quais serviços você deve atualizar. Use o [requisitos do sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) para determinar o que será adicionado ao _Atualizar para_ coluna.
+- Atualização de serviços para oferecer suporte à versão de destino. Use o modelo de tabela a seguir para mapear quais serviços você deve atualizar. Use o [requisitos do sistema](../../installation/system-requirements.md) para determinar o que será adicionado ao _Atualizar para_ coluna.
 
 
    | Serviço | Versão atual | Atualizar para | Notas |
@@ -64,7 +64,7 @@ Além disso, os parceiros podem participar da [Programa Adobe Commerce Beta](htt
 
 ## Desenvolvimento e controle de qualidade
 
-O teste é a fase de uma atualização que requer mais tempo. Consequentemente, este processo deve ser tão automatizado quanto possível. O _[Guia de teste de aplicativo](https://devdocs.magento.com/guides/v2.4/test/testing.html)_ O fornece detalhes sobre como configurar e usar ferramentas de teste de plataforma e sistema para garantir um controle de qualidade mais rápido. Use um ambiente de preparo para testar e validar sua atualização antes de migrar para a produção.
+O teste é a fase de uma atualização que requer mais tempo. Consequentemente, este processo deve ser tão automatizado quanto possível. O _[Guia de teste de aplicativo](https://developer.adobe.com/commerce/testing/guide/)_ O fornece detalhes sobre como configurar e usar ferramentas de teste de plataforma e sistema para garantir um controle de qualidade mais rápido. Use um ambiente de preparo para testar e validar sua atualização antes de migrar para a produção.
 
 ## UAT e preparação para o lançamento
 

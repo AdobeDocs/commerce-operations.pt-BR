@@ -1,9 +1,9 @@
 ---
-title: '"Execute o [!DNL Upgrade Compatibility Tool]"'
+title: "Execute o [!DNL Upgrade Compatibility Tool]"
 description: Siga estas etapas para executar o [!DNL Upgrade Compatibility Tool] em uma interface de linha de comando para seu projeto do Adobe Commerce.
-source-git-commit: c10afb6632fa4e77f46b540c2b89f54b9cab430c
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -156,7 +156,7 @@ O `bin/uct core:code:changes` O comando verifica se há uma instância baunilha 
 
 Você pode executar um [!DNL Upgrade Compatibility Tool] com o `--vanilla-dir` para especificar o diretório de instalação Adobe Commerce baunilha.
 
-Consulte a [Implantar instância baunilha](https://devdocs.magento.com/contributor-guide/contributing.html#vanilla-pr) para obter mais informações.
+Consulte a [Implantar instância baunilha](https://developer.adobe.com/commerce/contributor/guides/code-contributions/#deploy-vanilla-magento-open-source-instance) para obter mais informações.
 
 ## Use o `refactor` comando
 
@@ -249,7 +249,7 @@ Isso retorna opções específicas que podem ser executadas para a variável `up
 ## Siga as práticas recomendadas do Adobe Commerce
 
 - Evite ter dois módulos com o mesmo nome.
-- Seguir o Adobe Commerce [normas de codificação](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html).
+- Seguir o Adobe Commerce [normas de codificação](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [Guia de atualização](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) práticas recomendadas.
 
 ## Otimize seus resultados

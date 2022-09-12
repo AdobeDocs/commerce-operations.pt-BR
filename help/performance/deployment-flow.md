@@ -1,9 +1,9 @@
 ---
 title: Fluxo de implantação
-description: 'Saiba mais sobre as etapas necessárias para implantar o Adobe Commerce ou o Magento Open Source em um ambiente de produção. '
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+description: Saiba mais sobre as etapas necessárias para implantar o Adobe Commerce ou o Magento Open Source em um ambiente de produção.
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ bin/magento setup:di:compile
 
 ## Atualizar o carregador automático
 
-Depois que a compilação for concluída, confirme se [APCu está ativado](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html#php-settings) e atualize o carregador automático:
+Depois que a compilação for concluída, confirme se [APCu está ativado](../performance/software.md#php-settings) e atualize o carregador automático:
 
 Para atualizar o carregador automático:
 
@@ -82,7 +82,7 @@ A implantação de conteúdo estático causa [!DNL Commerce] para executar as se
 
 Se o conteúdo estático não for implantado, [!DNL Commerce] realiza todas as operações listadas em tempo real, levando a um aumento significativo no tempo de resposta.
 
-Você pode usar uma variedade de opções para personalizar as operações de implantação com base no tamanho da loja e nas necessidades de atendimento. A estratégia de implantação compacta é a mais comum. Consulte [Estratégias de implantação de arquivos estáticos](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
+Você pode usar uma variedade de opções para personalizar as operações de implantação com base no tamanho da loja e nas necessidades de atendimento. A estratégia de implantação compacta é a mais comum. Consulte [Estratégias de implantação de arquivos estáticos](../configuration/cli/static-view-file-strategy.md)
 
 Para implantar conteúdo estático:
 

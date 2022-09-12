@@ -1,9 +1,9 @@
 ---
 title: Solução de desempenho de banco de dados dividida
 description: Leia sobre a solução de banco de dados dividido para Adobe Commerce e Magento Open Source.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Isso também significa que é possível:
 
    >[!WARNING]
    >
-   >Você deve fazer o backup das duas instâncias de banco de dados adicionais manualmente. O Commerce faz o backup apenas da instância do banco de dados principal. O [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) As opções de comando e de Administrador não fazem backup das tabelas adicionais.
+   >Você deve fazer o backup das duas instâncias de banco de dados adicionais manualmente. O Commerce faz o backup apenas da instância do banco de dados principal. O [`magento setup:backup --db`](../../installation/tutorials/backup.md) As opções de comando e de Administrador não fazem backup das tabelas adicionais.
 
 ## Pré-requisitos
 
