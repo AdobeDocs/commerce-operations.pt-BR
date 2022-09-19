@@ -1,7 +1,7 @@
 ---
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
-source-git-commit: 653e2deb96672625c37ccec2b2022b767b8879bd
+source-git-commit: 5b623d713d8950b362a9fa66ad97e444811d23fa
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -40,6 +40,7 @@ ht-degree: 0%
    - [A guia Implantar](observation-for-adobe-commerce/deploy-tab.md)
    - [A guia Alertas](observation-for-adobe-commerce/alerts-tab.md)
    - [A guia WAF](observation-for-adobe-commerce/waf-tab.md)
+   - [A guia Bots](observation-for-adobe-commerce/bots.md)
    - [A guia CDN](observation-for-adobe-commerce/cdn-tab.md)
    - [A guia RabbitMQ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [A guia Cron](observation-for-adobe-commerce/cron-tab.md)
