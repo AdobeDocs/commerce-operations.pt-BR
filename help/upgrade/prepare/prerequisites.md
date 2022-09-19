@@ -1,9 +1,9 @@
 ---
 title: Pré-requisitos completos
 description: Prepare seu projeto do Adobe Commerce ou Magento Open Source para uma atualização completando essas etapas de pré-requisito.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -97,12 +97,8 @@ Para definir o limite da linha de comando:
 1. Defina o limite como `65536`.
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
-
-   >[!NOTE]
-   >
-   > A sintaxe para arquivos abertos depende do UNIX shell usado. A configuração anterior deve funcionar com CentOS e Ubuntu com o shell Bash. No entanto, para o sistema operacional Mac, a configuração correta é ulimit -S 65532. Consulte uma página principal ou uma referência de sistema operacional para obter mais informações.
 
 Para definir o valor no shell Bash:
 
@@ -111,7 +107,7 @@ Para definir o valor no shell Bash:
 1. Adicione a seguinte linha:
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
 
 1. Salve as alterações no `.bashrc` e saia do editor de texto.
