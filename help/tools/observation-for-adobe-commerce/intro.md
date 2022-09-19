@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Observation for Adobe Commerce]"'
+title: "[!DNL Observation for Adobe Commerce]"
 description: Saiba mais sobre [!DNL Observation for Adobe Commerce], seus usos, quando usar e como obter acesso.
-source-git-commit: e042acac00d9aaa7d2f49beb8ce98e213ae369e7
+source-git-commit: 6523372cd5fe3219dc582123471cc85f3c47f37d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Este guia fornece uma visão geral holística do [!DNL Observation for Adobe Com
 
 Quando surgirem problemas, pode ser demorado identificar onde o problema está enraizado e ter o conhecimento para corrigi-lo. A organização de suporte do Adobe acumulou conhecimentos tribais baseados em anos de observação de registros e saídas de linha de comando enquanto solucionava problemas. A ferramenta aproveita esse conhecimento para identificar sinais importantes em relação a uma linha do tempo comum. A linha do tempo pode ser expandida ou contratada, permitindo que você visualize seus dados de log para ajudar no gerenciamento de desempenho e na resolução de problemas.
 
-Usando [!DNL Observation], é possível analisar problemas complexos encontrados pelo suporte para ajudar a identificar as causas raiz. Em vez de rastrear dados diferentes, você pode gastar seu tempo correlacionando eventos e erros para obter insights profundos sobre as causas dos gargalos de desempenho. A ferramenta tem como objetivo fornecer uma visão mais clara de alguns dos problemas enfrentados pelos sites para ajudar a identificar possíveis causas raiz de problemas e manter o desempenho ideal dos sites.
+Usando [!DNL Observation], é possível analisar problemas complexos encontrados pelo suporte para ajudar a identificar as causas raiz. Em vez de rastrear dados diferentes, você pode gastar seu tempo correlacionando eventos e erros para obter insights profundos sobre as causas dos gargalos de desempenho. A ferramenta tem como objetivo fornecer uma visão mais clara de alguns dos problemas enfrentados pelos sites para ajudar a identificar possíveis causas raiz de problemas e manter o desempenho ideal dos sites. Isso inclui identificar se e o que [!DNL bots] estão causando problemas no site.
 
 ## Para quem é este guia?
 
