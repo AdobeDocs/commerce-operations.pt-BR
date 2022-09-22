@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '538'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ No repositório público, os rótulos automatizados são atribuídos para extrai
 ## Modelos
 
 O `_jekyll` O diretório contém tópicos modelos e ativos necessários.
-Os modelos que usam a linguagem de modelo Líquido residem no `_jekyll` como arquivos HTML.
+Os modelos que usam a linguagem de modelo Líquido residem no `_jekyll/templated` como arquivos HTML.
 O `_jekyll/_data` contém arquivos com os dados usados para renderizar os modelos.
 
 Para renderizar todos os modelos:
@@ -80,7 +80,6 @@ _scripts/render
 > **OBSERVAÇÃO:** Você deve executar o script a partir da variável `_jekyll` diretório.
 > **OBSERVAÇÃO:** É necessário ter o Ruby instalado para executar esse script.
 
-O script executa a renderização, grava arquivos renderizados no `_jekyll/_rendered` como arquivos HTML e os copia para o `help/_includes` diretório como `.md` arquivos.
-
+O script executa a renderização e grava modelos renderizados no `help/_includes/templated` diretório.
 
 Consulte a documentação de Jekyll para obter mais detalhes sobre [Arquivos de dados](https://jekyllrb.com/docs/datafiles) [Filtros líquidos](https://jekyllrb.com/docs/liquid/filters/)e outros recursos.

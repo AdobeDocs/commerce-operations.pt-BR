@@ -1,9 +1,9 @@
 ---
 title: Requisitos do sistema
 description: Use essa referência para identificar as dependências de software necessárias que foram testadas com versões de Adobe Commerce e Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Esta tabela mostra versões de dependências de software de terceiros que o Adob
 
 Por exemplo, o 2.4.3 é totalmente testado com o MariaDB 10.4. O Adobe recomenda que você atualize para o MariaDB 10.4 antes de atualizar para o 2.4.3.
 
-{{$include /help/_includes/system-requirements-table.md}}
+{{$include /help/_includes/templated/system-requirements-table.md}}
 
 ## Diversos
 
