@@ -2,10 +2,10 @@
 keywords: Adobe Commerce; home; tópicos populares
 title: Início
 description: Navegue por um índice da documentação operacional do produto Adobe Commerce.
-source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
+source-git-commit: 8605fa5c791a48c112efa997b14d7bffe5f3028c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '162'
+ht-degree: 2%
 
 ---
 
@@ -59,11 +59,11 @@ Obtenha informações práticas sobre conceitos, processos, ferramentas e práti
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
        <img alt="Referência de ferramentas de linha de comando" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>Referência de ferramentas de linha de comando</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Referência de ferramentas de linha de comando</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -117,5 +117,6 @@ Saiba mais sobre a nova documentação e atualizações significativas da docume
 
 | Alterar | Tipo |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Movido o [Guia de Instalação no Local](../installation/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) para Experience League. | Novo |
-| Movido o [Guia da migração de dados](../tools/data-migration-tool/how-migration-works.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) para Experience League. | Novo |
+| Movido o [Referência de ferramentas da linha de comando](../reference/commerce.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | Novo |
+| Movido o [Guia de Instalação no Local](../installation/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | Novo |
+| Movido o [Guia da migração de dados](../tools/data-migration-tool/how-migration-works.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | Novo |
