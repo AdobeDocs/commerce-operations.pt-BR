@@ -1,7 +1,7 @@
 ---
 title: Configuração Varnish avançada
 description: Configure recursos avançados do Varnish, incluindo os modos de verificação de integridade, carência e saint.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -48,7 +48,7 @@ O `vcl_hit` subrotina define como o Varnish responde a uma solicitação para ob
 
 ### Quando o back-end do Commerce estiver íntegro
 
-Quando as verificações de integridade determinam que o backend do Commerce está íntegro, a Varnish verifica se o tempo permanece no período de carência. O período de carência padrão é de 300 segundos, mas um comerciante pode definir o valor da variável [Administrador](https://glossary.magento.com/admin) conforme descrito em [Configurar comércio para usar o Varnish](config-varnish-magento.md). Se o período de carência não tiver expirado, a Varnish fornecerá o conteúdo obsoleto e atualizará de forma assíncrona o objeto do servidor do Commerce. Se o período de carência tiver expirado, a Varnish exibirá o conteúdo obsoleto e atualizará de forma síncrona o objeto do back-end do Commerce.
+Quando as verificações de integridade determinam que o backend do Commerce está íntegro, a Varnish verifica se o tempo permanece no período de carência. O período de carência padrão é de 300 segundos, mas um comerciante pode definir o valor da variável [Administrador](https://glossary.magento.com/admin) conforme descrito em [Configurar comércio para usar o Varnish](configure-varnish-commerce.md). Se o período de carência não tiver expirado, a Varnish fornecerá o conteúdo obsoleto e atualizará de forma assíncrona o objeto do servidor do Commerce. Se o período de carência tiver expirado, a Varnish exibirá o conteúdo obsoleto e atualizará de forma síncrona o objeto do back-end do Commerce.
 
 A quantidade máxima de tempo que a Varnish serve um objeto obsoleto é a soma do período de carência (300 segundos por padrão) e do valor TTL (86400 segundos por padrão).
 
