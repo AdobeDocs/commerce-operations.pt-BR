@@ -2,9 +2,9 @@
 keywords: Adobe Commerce; home; tópicos populares
 title: Início
 description: Navegue por um índice da documentação operacional do produto Adobe Commerce.
-source-git-commit: 8605fa5c791a48c112efa997b14d7bffe5f3028c
+source-git-commit: e247b0bd2765e425da033f32ab99f79cfe6cc0b2
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '174'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ Obtenha informações práticas sobre conceitos, processos, ferramentas e práti
 <table>
 <tr>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
       <img alt="Informações da versão" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html"><strong>Informações da versão</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Informações da versão</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -117,6 +117,7 @@ Saiba mais sobre a nova documentação e atualizações significativas da docume
 
 | Alterar | Tipo |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Movido o [Guia de informações da versão](../release/roadmap.md) from [devdocs.magento.com](https://devdocs.magento.com/release/versions.html). | Novo |
 | Movido o [Referência de ferramentas da linha de comando](../reference/commerce.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | Novo |
 | Movido o [Guia de Instalação no Local](../installation/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | Novo |
 | Movido o [Guia da migração de dados](../tools/data-migration-tool/how-migration-works.md) from [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | Novo |
