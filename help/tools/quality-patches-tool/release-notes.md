@@ -1,7 +1,7 @@
 ---
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
-source-git-commit: ead062ac2f5dbf07293aef2a5a5d9f1f21255402
+source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
 workflow-type: tm+mt
 source-wordcount: '9233'
 ht-degree: 0%
@@ -14,7 +14,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) O fo
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches a seus projetos do Adobe Commerce ou Magento Open Source. Consulte [Patches disponíveis](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) no Guia de atualização de software para consultar uma lista completa dos patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches a seus projetos do Adobe Commerce ou Magento Open Source. Consulte [Patches disponíveis](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de atualização de software para consultar uma lista completa dos patches lançados.
 
 >[!INFO]
 >
@@ -542,4 +542,3 @@ Correções secundárias para versões de patch
 * **MDVA-30052** (*para Adobe Commerce >=2.3.2-p2 &lt;2.3.5*) - Corrige o problema em que o conteúdo privado (armazenamento local) não era preenchido corretamente, o que resultava em problemas de desempenho.
 * **MDVA-30131** (*para Adobe Commerce >=2.3.4 &lt;2.3.6 || 2.4.0*) - Corrige o problema com a navegação em camadas, onde a variável *Não* o valor para atributos de produto do tipo booleano não foi incluído na navegação em camadas se [!DNL Elasticsearch] foi usado como um mecanismo de pesquisa.
 * **MDVA-35514** (*para Adobe Commerce >=2.4.0 &lt;2.4.1*) - Corrige o problema ao criar um rótulo de envio e adicionar produtos solicitados a um pacote na janela modal Criar pacotes .
-
