@@ -1,9 +1,9 @@
 ---
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
-source-git-commit: 3914a9bb185a18fa80497630f8a6e09b58bdec22
+source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
    - [A guia Redis](observation-for-adobe-commerce/redis-tab.md)
    - [A guia MySQL](observation-for-adobe-commerce/mysql-tab.md)
    - [A guia PHP](observation-for-adobe-commerce/php-tab.md)
+   - [A guia Bots](observation-for-adobe-commerce/bots.md)
    - [A guia Implantar](observation-for-adobe-commerce/deploy-tab.md)
    - [A guia Alertas](observation-for-adobe-commerce/alerts-tab.md)
    - [A guia WAF](observation-for-adobe-commerce/waf-tab.md)
