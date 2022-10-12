@@ -1,24 +1,28 @@
 ---
 title: Configurar o redimensionamento de imagem para armazenamento remoto
 description: Otimize os recursos de disco configurando o redimensionamento de imagem do lado do servidor.
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+source-git-commit: 7fc5d561baa3c2a4aab160a35a1c8a302a62a3b1
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
 
 # Configurar o redimensionamento de imagem para armazenamento remoto
 
-Por padrão, [!DNL Commerce] O suporta redimensionamento de imagem no lado do aplicativo. No entanto, ao ativar o módulo de Armazenamento Remoto, você pode usar o Nginx para descarregar o redimensionamento de imagem no lado do servidor, onde você pode salvar recursos de disco e otimizar o uso do disco.
+Por padrão, o Adobe Commerce suporta o redimensionamento de imagens no lado do aplicativo. No entanto, ao ativar o módulo de Armazenamento Remoto, você pode usar o Nginx para descarregar o redimensionamento de imagem no lado do servidor, onde você pode salvar recursos de disco e otimizar o uso do disco.
 
 O diagrama a seguir mostra como o Nginx recupera, redimensiona e armazena imagens no cache. O redimensionamento é determinado pelos parâmetros incluídos no URL, como altura e largura.
 
 ![redimensionamento de imagem](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
-## Configurar o formato do URL em [!DNL Commerce]
+>[!TIP]
+>
+>Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Configurar o armazenamento remoto para o Commerce on Cloud Infrastructure](cloud-support.md)
 
-Para redimensionar imagens no lado do servidor, você deve configurar o Commerce para fornecer argumentos para a altura, a largura e o local (URL) da imagem.
+## Configurar o formato do URL no Adobe Commerce
+
+Para redimensionar imagens no lado do servidor, você deve configurar o Adobe Commerce para fornecer argumentos para a altura, a largura e o local (URL) da imagem.
 
 **Para configurar o Commerce para redimensionamento de imagens no lado do servidor**:
 

@@ -1,30 +1,30 @@
 ---
 title: Configurar armazenamento remoto
 description: Saiba como configurar o módulo de Armazenamento remoto para o aplicativo comercial local.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
 
 # Configurar armazenamento remoto
 
-O módulo de Armazenamento Remoto fornece a opção de armazenar arquivos de mídia e agendar importações/exportações em um contêiner de armazenamento remoto persistente usando um serviço de armazenamento, como o AWS S3. Por padrão, a variável [!DNL Commerce] O aplicativo armazena arquivos de mídia no mesmo sistema de arquivos que contém o aplicativo. Isso é ineficiente para configurações complexas de vários servidores e pode resultar em desempenho degradado ao compartilhar recursos. Com o módulo de Armazenamento Remoto, você pode armazenar arquivos de mídia no `pub/media` e importar/exportar arquivos no `var` diretório do armazenamento remoto de objetos para aproveitar o redimensionamento de imagens do lado do servidor.
+O módulo de Armazenamento Remoto fornece a opção de armazenar arquivos de mídia e agendar importações e exportações em um contêiner de armazenamento persistente e remoto usando um serviço de armazenamento, como o AWS S3. Por padrão, o aplicativo Adobe Commerce armazena arquivos de mídia no mesmo sistema de arquivos que contém o aplicativo. Isso é ineficiente para configurações complexas de vários servidores e pode resultar em desempenho degradado ao compartilhar recursos. Com o módulo de Armazenamento Remoto, você pode armazenar arquivos de mídia no `pub/media` e importar/exportar arquivos no `var` diretório do armazenamento remoto de objetos para aproveitar o redimensionamento de imagens do lado do servidor.
 
 >[!INFO]
 >
->O armazenamento remoto está disponível somente na versão 2.4.2 e posterior. Consulte a [Notas de versão 2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>O armazenamento remoto está disponível somente para a versão 2.4.2 e posterior do Commerce. Consulte a [Notas de versão 2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 
 >[!INFO]
 >
->O módulo de armazenamento remoto tem _limitado_ suporte no Adobe Commerce na infraestrutura em nuvem. O Adobe não pode solucionar totalmente os problemas do serviço do adaptador de armazenamento de terceiros.
+>O módulo de armazenamento remoto tem _limitado_ suporte no Adobe Commerce na infraestrutura em nuvem. O Adobe não pode solucionar totalmente os problemas do serviço do adaptador de armazenamento de terceiros. Consulte [Configurar o armazenamento remoto para o Commerce on Cloud Infrastructure](cloud-support.md) para obter orientação sobre a implementação de armazenamento remoto para projetos em nuvem.
 
 ![imagem do esquema](../../assets/configuration/remote-storage-schema.png)
 
 ## Opções de armazenamento remoto
 
-Você pode configurar o armazenamento remoto usando o `remote-storage` com a opção [`setup` comando CLI][setup]. O `remote-storage` A opção usa a seguinte sintaxe:
+Você pode configurar o armazenamento remoto usando o `remote-storage` com a opção [`setup` comando CLI](../../installation/tutorials/deployment.md). O `remote-storage` A opção usa a seguinte sintaxe:
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -49,21 +49,23 @@ O local de armazenamento padrão está no sistema de arquivos local. A _adaptado
 
 ## Habilitar armazenamento remoto
 
-Você pode instalar o armazenamento remoto durante um novo [!DNL Commerce] instale ou adicione-o a uma instância do Commerce existente usando `remote-storage` nome e valor do parâmetro com `setup` Comandos CLI. No mínimo, você deve fornecer o armazenamento `driver`, `bucket`e `region`.
+Você pode instalar o armazenamento remoto durante uma instalação do Adobe Commerce ou adicionar o armazenamento remoto a uma instância do Commerce existente. Os exemplos a seguir demonstram cada método usando um conjunto de `remote-storage` parâmetros com Commerce `setup` Comandos CLI. No mínimo, você deve fornecer o armazenamento `driver`, `bucket`e `region`.
 
-Os exemplos a seguir habilitam o armazenamento remoto com um adaptador de armazenamento AWS S3 nos EUA:
-
-- Instalar novo [!DNL Commerce] com armazenamento remoto
+- Exemplo: Instalar o Commerce com armazenamento remoto
 
    ```bash
    bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
    ```
 
-- Habilitar armazenamento remoto em [!DNL Commerce]
+- Exemplo: Habilitar armazenamento remoto no Commerce existente
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
    ```
+
+>[!TIP]
+>
+>Para obter informações sobre a infraestrutura em nuvem do Adobe Commerce, consulte [Configurar o armazenamento remoto para o Commerce on Cloud Infrastructure](cloud-support.md).
 
 ## Limitações
 
@@ -75,7 +77,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 Habilitar o armazenamento remoto pode afetar sua experiência de desenvolvimento estabelecida. Por exemplo, certas funções de arquivo PHP podem não funcionar conforme esperado. O uso da Estrutura de comércio para operações de arquivo deve ser aplicado.
 
-A lista de funções nativas PHP proibidas está disponível em [Padrão de codificação de Magento] repositório.
+A lista de funções nativas PHP proibidas está disponível em [repositório magento-coding-standard][code-standard].
 
 ## Migrar conteúdo
 
@@ -92,5 +94,4 @@ Depois de habilitar o armazenamento remoto para um adaptador específico, você 
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[Padrão de codificação de Magento]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
-[setup]: ../../installation/tutorials/deployment.md
+[code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
