@@ -1,7 +1,7 @@
 ---
 title: Como funcionam os patches
 description: Saiba mais sobre os diferentes tipos de patches para Adobe Commerce e Magento Open Source e como eles funcionam.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 1a18a445cb104420dd9b853b7c4d42ce3bddf2ac
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Você pode encontrar hotfixes no [Central de segurança](https://magento.com/sec
 
 Os patches individuais contêm correções de qualidade de baixo impacto para um problema específico. Essas correções são aplicadas à versão secundária compatível mais recentemente (por exemplo, 2.4.x), mas podem estar ausentes da versão secundária compatível anterior (por exemplo, 2.3.x). O Adobe libera patches individuais conforme necessário.
 
-Use o [Ferramenta Correções de Qualidade](https://devdocs.magento.com/quality-patches/tool.html) para aplicar patches individuais.
+Use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} para aplicar patches individuais.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ index c8a6fef58d31..7d01c195791e 100644
              clearTimeout: function () {
                  clearTimeout(this.timeoutId);
 +                this.fail();
- 
+
                  return this;
              },
 ```
@@ -90,7 +90,7 @@ index c8a6fef58d31..7d01c195791e 100644
 
 Você pode aplicar patches usando qualquer um dos seguintes métodos:
 
-- [Ferramenta Correções de Qualidade](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [Linha de comando](/help/upgrade/patches/apply.md#command-line)
 - [Composer](/help/upgrade/patches/apply.md#composer)
 

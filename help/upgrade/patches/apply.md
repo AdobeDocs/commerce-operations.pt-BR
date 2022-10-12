@@ -1,7 +1,7 @@
 ---
 title: Aplicar Correções
 description: Saiba mais sobre os métodos para aplicar patches a um projeto do Adobe Commerce ou Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Você pode aplicar patches usando qualquer um dos seguintes métodos:
 
-- [Ferramenta Correções de Qualidade](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [Linha de comando](../patches/apply.md#command-line)
 - [Composer](../patches/apply.md#composer)
 
@@ -21,7 +21,7 @@ Você pode aplicar patches usando qualquer um dos seguintes métodos:
 
 >[!IMPORTANT]
 >
->Para aplicar os sistemas oficiais de qualidade, utilize o [Ferramenta Correções de Qualidade](https://devdocs.magento.com/quality-patches/tool.html). Sempre execute testes abrangentes antes de implantar qualquer patch personalizado.
+>Para aplicar os sistemas oficiais de qualidade, utilize o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}. Sempre execute testes abrangentes antes de implantar qualquer patch personalizado.
 
 Para aplicar um patch personalizado usando o Composer:
 
