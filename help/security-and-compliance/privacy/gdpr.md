@@ -1,9 +1,9 @@
 ---
 title: Regulamento Geral sobre a Proteção de Dados (GDPR)
 description: Saiba mais sobre o Regulamento Geral sobre a Proteção de Dados (GDPR), que é a legislação que regulamenta a proteção e a privacidade de dados para todos os indivíduos na União Europeia e no Espaço Econômico Europeu.
-source-git-commit: 1a608e8a5986026d5a187dc8cbd358fed2db5d9e
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 0%
 
 A União Europeia (UE) promulgou [Regulamento Geral sobre a Proteção de Dados](https://ec.europa.eu/info/law/law-topic/data-protection_en) (GDPR) para dar aos seus cidadãos mais controle sobre seus dados pessoais. O GDPR se aplica a qualquer organização que opere na UE. Aplica-se igualmente a organizações fora da UE que oferecem bens ou serviços a clientes ou empresas na UE.
 
-Os integradores de sistema podem usar os diagramas de fluxo de dados e as informações de banco de dados na Referência de informações pessoais para criar scripts para resolver casos de uso semelhantes aos seguintes:
+Os integradores de sistema podem usar os diagramas de fluxo de dados e as informações de banco de dados na Referência de informações pessoais para criar scripts a fim de resolver casos de uso semelhantes aos seguintes:
 
 - Um comprador solicita uma cópia dos dados que o comerciante armazenou sobre eles
 - Um comprador solicita que suas informações sejam excluídas
 
 ## Referência de informações pessoais
 
-Para obter informações técnicas, consulte os diagramas de fluxo de dados e os mapeamentos de entidade de banco de dados na Referência de informações pessoais que se aplica a cada versão do Adobe Commerce ou do Magento Open Source compatível.
+Para obter informações técnicas, consulte os diagramas de fluxo de dados e os mapeamentos de entidade de banco de dados na Referência de informações pessoais que se aplicam a cada versão do Adobe Commerce ou do Magento Open Source compatível.
 
 - [Referência de informações pessoais do cliente (versão 2.x)](data-m2.md)
 - [Referência de informações pessoais do cliente (versão) 1.x](data-m1.md)

@@ -1,9 +1,9 @@
 ---
 title: Referência de informações pessoais do cliente (versão 2.x)
-description: Saiba mais sobre diagramas de fluxo de dados e mapeamentos de entidade de banco de dados para informações pessoais de clientes no Adobe Commerce e no Magento Open Source 2.x.
-source-git-commit: 0640b59cc529123911537475bbfc179c917ac258
+description: Saiba mais sobre diagramas de fluxo de dados e mapeamentos de entidades de banco de dados para informações pessoais de clientes no Adobe Commerce e Magento Open Source 2.x.
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Use os seguintes diagramas de fluxo de dados e mapeamentos de entidade de banco 
 - [RGPD](gdpr.md)
 - [CCPA](ccpa.md)
 
-## Diagramas do fluxo de dados
+## Diagramas de fluxo de dados
 
 Os diagramas de fluxo de dados mostram os tipos de dados que os clientes e administradores podem inserir e recuperar na loja e no Administrador.
 

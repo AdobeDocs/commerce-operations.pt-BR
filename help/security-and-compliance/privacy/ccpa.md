@@ -1,7 +1,7 @@
 ---
 title: Lei de Privacidade do Consumidor da Califórnia (CCPA)
 description: Saiba mais sobre a California Consumer Privacy Act (CCPA), que expande os direitos dos consumidores da Califórnia para determinar como suas informações pessoais são coletadas, armazenadas e usadas.
-source-git-commit: 495dfd515759e4df507479de57118586eac14fda
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -24,7 +24,7 @@ A CCPA concede os seguintes novos direitos aos consumidores:
 - **Direito de não participação** da venda das suas informações pessoais.
 - **Direito à não discriminação** em termos de preço ou de serviço por ter exercido um direito de privacidade ao abrigo da CCPA.
 
-## Guia de conformidade com a CCPA
+## Conformidade com a CCPA
 
 O desenvolvimento e a implementação de um plano de conformidade da CCPA requer um esforço coordenado. Incentivamos os comerciantes a montar uma equipe multifuncional e a seguir o roteiro descrito em [Guia de conformidade com a CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) para que a sua empresa cumpra o regulamento. Como desenvolvedor, você pode ser convidado a participar como parte interessada, com ênfase nas etapas 2 a 5 do processo. Consulte a [Guia de conformidade com a CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) para obter mais informações.
 
@@ -48,5 +48,5 @@ O desenvolvimento e a implementação de um plano de conformidade da CCPA requer
 
 Para obter informações técnicas, consulte os diagramas de fluxo de dados e os mapeamentos de entidade de banco de dados na Referência de informações pessoais que se aplica a cada versão do Adobe Commerce ou do Magento Open Source compatível.
 
-- [Referência de informações pessoais (versão 2.x)](data-m2.md)
-- [Referência de informações pessoais (versão 1.x)](data-m1.md)
+- [Referência de informações pessoais do cliente (versão 2.x)](data-m2.md)
+- [Referência de informações pessoais do cliente (versão) 1.x](data-m1.md)
