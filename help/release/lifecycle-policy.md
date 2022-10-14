@@ -1,7 +1,7 @@
 ---
 title: Política de ciclo de vida do software
 description: Saiba mais sobre as principais datas de fim do suporte de software para versões do Adobe Commerce.
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Para o Adobe Commerce 2.4 e versões subsequentes:
 
-- Para simplificar melhor nossa política de ciclo de vida, o Adobe fornece correções de qualidade para a linha da versão 2.4 até a data de fim do suporte para a versão PHP em que se baseia. Um cliente pode acessar correções de qualidade entrando em contato com [Suporte Adobe Commerce](https://developer.adobe.com/commerce/contributor/community/support/) ou através do autoatendimento [Ferramenta Correções de Qualidade](https://devdocs.magento.com/quality-patches/tool.html) se a sua versão ainda for elegível para apoio de qualidade. Consulte a tabela abaixo para obter as datas de Fim do Suporte de Software para as linhas de lançamento da Adobe Commerce.
+- Para simplificar melhor nossa política de ciclo de vida, o Adobe fornece correções de qualidade para a linha da versão 2.4 até a data de fim do suporte para a versão PHP em que se baseia. Um cliente pode acessar correções de qualidade entrando em contato com [Suporte Adobe Commerce](https://developer.adobe.com/commerce/contributor/community/support/) ou através do autoatendimento [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} se a versão ainda estiver qualificada para suporte de qualidade. Consulte a tabela abaixo para obter as datas de Fim do Suporte de Software para as linhas de lançamento da Adobe Commerce.
 
 - O Adobe fornece correções de segurança somente por meio do patch ou da versão de patch de segurança mais recente, mesmo que a versão de um cliente ainda esteja qualificada para suporte de qualidade. Ao contrário de correções de qualidade, as correções de segurança não podem ser enviadas para versões secundárias anteriores nem para versões de patches anteriores em versões secundárias compatíveis.
 
