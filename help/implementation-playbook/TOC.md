@@ -2,10 +2,10 @@
 user-guide-title: Manual de implementação
 user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
-source-git-commit: 0def7f131883428f4d959071e36200644b73b7c2
+source-git-commit: 514426d622ba47b8a7e517368132c86c9236b63a
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +65,4 @@ ht-degree: 12%
    - [Etapas pós-lançamento](launch/post-launch-steps.md)
 - Manutenção e suporte {#maintenance}
    - [Visão geral](maintenance/overview.md)
-   - [Modelos](maintenance/models.md)
-   - [Níveis de serviço](maintenance/service-level-agreements.md)
-   - [Métricas](maintenance/metrics.md)
    - [Serviços gerenciados da Adobe](maintenance/adobe-managed-services.md)
