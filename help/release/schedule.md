@@ -1,7 +1,7 @@
 ---
 title: Programação de lançamento
 description: Saiba quando versões específicas do Adobe Commerce estão programadas para beta, pré-lançamento e disponibilidade geral.
-source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
+source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Programação de lançamento
 
-O Adobe se esforça continuamente para encontrar o equilíbrio certo entre tornar as atualizações de produtos simples e previsíveis e fornecer melhorias e novos recursos aos usuários iniciais mais rapidamente. Ao longo do último ano, temos refinado como fornecemos software para suportar este equilíbrio. Para obter mais informações, consulte nossa [política de versão](policy.md).
+O Adobe se esforça continuamente para encontrar o equilíbrio certo entre tornar as atualizações de produtos simples e previsíveis e fornecer melhorias e novos recursos aos usuários iniciais mais rapidamente. Ao longo do último ano, temos refinado como fornecemos software para suportar este equilíbrio. Para obter mais informações, consulte nossa [política de controle de versão](versioning-policy.md).
 
 O Adobe lança patches de segurança e funcionais para cada linha de lançamento compatível do Adobe Commerce e do Magento Open Source.
 
