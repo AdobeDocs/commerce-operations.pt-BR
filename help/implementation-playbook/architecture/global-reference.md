@@ -2,14 +2,16 @@
 title: Arquitetura de referência global da Adobe Commerce
 description: Aproveite ao máximo a sua implementação do Adobe Commerce aproveitando uma arquitetura de referência global.
 exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: f713e07b57705e8720c773f9f762a357c173e29d
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Arquitetura de referência global (GRA)
+
+>[!VIDEO](https://video.tv.adobe.com/v/3410528/?quality=12&learn=on)
 
 Ao executar empresas que têm vários sites para várias marcas em vários mercados locais (com moedas, idiomas, mídia, catálogos compartilhados e carrinhos únicos localizados) e que desejam evitar custos desnecessários para implementar o mesmo recurso e integrações. A Arquitetura de Referência Global (GRA) é sempre uma boa opção.
 
