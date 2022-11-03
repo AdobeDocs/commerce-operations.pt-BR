@@ -1,15 +1,16 @@
 ---
-title: Processo e linha do tempo
+title: Processo de implementação e cronograma
 description: Consulte exemplos de linhas do tempo e atividades de linha do tempo típicas da implementação do Adobe Commerce.
 exl-id: 73e38098-db2b-4ad3-9f2d-ac8a377f2525
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 6e07f8c958adedd2a98d3fe0d174865a3b9ebead
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
-# Processo típico e linha do tempo
+
+# Processo de implementação e cronograma típicos
 
 Muitas organizações se preparam para uma transformação comercial criando uma solicitação de proposta (RFP). Isso inclui requisitos detalhados, sistemas atuais de registro, um caso comercial e objetivos específicos (por exemplo, receita, conversão, valor médio de pedido) para definir o sucesso. A marca então se aproxima de dois a três integradores de sistemas de comércio diferentes ou agências digitais para avaliar, revisar estimativas e propostas, selecionar uma empresa e começar a trabalhar para a linha do tempo projetada para o lançamento.
 

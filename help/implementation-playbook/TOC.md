@@ -2,10 +2,10 @@
 user-guide-title: Manual de implementação
 user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
-source-git-commit: 514426d622ba47b8a7e517368132c86c9236b63a
+source-git-commit: 1582431fed6978de23bd1b7f6d901ae343523a2e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '235'
+ht-degree: 6%
 
 ---
 
@@ -66,3 +66,46 @@ ht-degree: 0%
 - Manutenção e suporte {#maintenance}
    - [Visão geral](maintenance/overview.md)
    - [Serviços gerenciados da Adobe](maintenance/adobe-managed-services.md)
+- Práticas recomendadas {#best-practices}
+   - [Visão geral](best-practices/phases.md)
+   - Planejamento {#planning}
+      - [Visão geral](best-practices/planning/overview.md)
+      - [Configuração de sites, lojas e visualizações de loja](best-practices/planning/sites-stores-store-views.md)
+      - [Configuração de relatórios](best-practices/planning/reporting-configuration.md)
+      - [Configuração do banco de dados para implantações em nuvem &#x200B;](best-practices/planning/database-on-cloud.md)
+      - [&#x200B; de configuração da conexão subordinada MySQL](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
+      - [Uso de acionadores MySQL](best-practices/planning/mysql-triggers-usage.md)
+      - [Configuração do serviço Redis](best-practices/planning/redis-service-configuration.md)
+      - [Tamanho da memória do OPcache](best-practices/planning/opcache-memory-size.md)
+      - [Tamanho do cache do Realpath](best-practices/planning/realpath-cache-size.md)
+      - [Categorias](best-practices/planning/category-limits.md)
+      - [Produto](best-practices/planning/product-sku-limits.md)
+      - [Alterações do produto](best-practices/planning/product-variations.md)
+      - [Opções de produto](best-practices/planning/product-options.md)
+      - [Atributos do produto](best-practices/planning/product-attributes-and-options.md)
+      - [Paginação da listagem de produtos](best-practices/planning/product-listing-pagination.md)
+      - [Limite do carrinho do produto](best-practices/planning/product-cart.md)
+      - [Promoções](best-practices/planning/product-cart-promotions.md)
+      - [Extensões](best-practices/planning/extensions.md)
+      - [Escalonamentos de parceiros](best-practices/planning/partner-escalation.md)
+   - Desenvolvimento {#development}
+      - [Visão geral](best-practices/development/overview.md)
+      - [Otimização de imagem](best-practices/development/image-optimization.md)
+      - [Solução de problemas](best-practices/development/troubleshooting.md)
+      - [Otimizar arquivos CSS e JS](best-practices/development/optimize-css-js-files.md)
+      - [Blocos de conteúdo privado](best-practices/development/private-content-block-configuration.md)
+      - [Implantação de conteúdo estático](best-practices/development/static-content-deployment.md)
+   - Launch {#launch}
+      - [Visão geral](best-practices/launch/overview.md)
+      - [Serviço de Notificação de Segurança do Adobe](best-practices/launch/security-notification-service.md)
+      - [Configurar o arquivo robots.txt](best-practices/launch/robots-txt.md)
+   - Manutenção {#maintenance}
+      - [Visão geral](best-practices/maintenance/overview.md)
+      - [Auditar o desempenho da frente](best-practices/maintenance/frontend-performance.md)
+      - [Configuração do indexador](best-practices/maintenance/indexer-configuration.md)
+      - [Processamento de pedidos](best-practices/maintenance/order-processing-configuration.md)
+      - [Agendamento de atualizações do Administrador em sites de produção](best-practices/maintenance/scheduling-admin-updates-in-production.md)
+      - [Serviços de atualização](best-practices/maintenance/update-services.md)
+      - [Atualizar lista de verificação](best-practices/maintenance/upgrade-checklist.md)
+      - [Resolver problemas de desempenho do banco de dados &#x200B;](best-practices/maintenance/resolve-database-performance-issues.md)
+      - [Pré-requisitos de atualização do Adobe Commerce 2.3.5 para o &#x200B; do MariaDB](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
