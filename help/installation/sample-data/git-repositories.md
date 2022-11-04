@@ -1,9 +1,9 @@
 ---
 title: Clonar dados de amostra Repositórios Git
 description: Siga estas etapas para instalar dados de amostra do Adobe Commerce e do Magento Open Source clonando repositórios Git.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,10 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo SSH:
 
    Se você usou o `2.4-develop` ramificação do repositório GitHub do Magento Open Source, a ramificação de dados de amostra deve ser `2.4-develop`.
 
-   Se você usou o `2.4.3` ramificação do repositório GitHub do Magento Open Source, a ramificação de dados de amostra deve ser `2.4.3`.
-
-   Para verificar a ramificação correta, execute o seguinte comando a partir do diretório raiz do repositório de dados de amostra (supondo que você precise do `2.4.3` ramificação):
+   Para verificar a ramificação correta, execute o seguinte comando a partir do diretório raiz do repositório de dados de amostra (supondo que você precise do `2.4-develop` ramificação):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Alterar para `<app_root>`.
@@ -129,12 +127,10 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
 
    Se você usou o `2.4-develop` ramificação do repositório GitHub do Magento Open Source, a ramificação de dados de amostra deve ser `2.4-develop`.
 
-   Se você usou o `2.4.3` ramificação do repositório GitHub do Magento Open Source, a ramificação de dados de amostra deve ser `2.4.3`.
-
-   Para verificar a ramificação correta, execute o seguinte comando a partir do diretório raiz do repositório de dados de amostra (supondo que você precise do `2.4.3` ramificação):
+   Para verificar a ramificação correta, execute o seguinte comando a partir do diretório raiz do repositório de dados de amostra (supondo que você precise do `2.4-develop` ramificação):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Alterar para `<magento_root>`.

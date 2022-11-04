@@ -1,9 +1,9 @@
 ---
 title: Instalação no local de início rápido
 description: Siga estas etapas para instalar o Adobe Commerce ou o Magento Open Source na infraestrutura que você possui.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -95,32 +95,32 @@ Para obter o metapackage do Adobe Commerce ou do Magento Open Source:
 
    >[!NOTE]
    >
-   >Os clientes da Adobe Commerce podem acessar os patches 2.4.x e 2.3.x duas semanas antes da data da Disponibilidade Geral (GA). Os pacotes de pré-lançamento estão disponíveis somente por meio do Composer. Não é possível acessar pré-versões no Portal do desenvolvedor ou no GitHub até o GA. Se não conseguir encontrar esses pacotes no Composer, entre em contato com o Suporte da Adobe Commerce.
+   >Os clientes da Adobe Commerce podem acessar os patches duas semanas antes da data da Disponibilidade Geral (GA). Os pacotes de pré-lançamento estão disponíveis somente por meio do Composer. Não é possível acessar pré-versões no Portal do desenvolvedor ou no GitHub até o GA. Se não conseguir encontrar esses pacotes no Composer, entre em contato com o Suporte da Adobe Commerce.
 
 ### Exemplo - Versão secundária
 
-As versões secundárias contêm novos recursos, correções de qualidade e correções de segurança. Use o Composer para especificar uma versão secundária. Por exemplo, para especificar o metapackage do Adobe Commerce 2.4.3:
+As versões secundárias contêm novos recursos, correções de qualidade e correções de segurança. Use o Composer para especificar uma versão secundária. Por exemplo, para especificar o metapackage do Adobe Commerce 2.4.5:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### Exemplo - Patch de qualidade
 
-Os patches de qualidade contêm principalmente funcionalidade _e_ correções de segurança. No entanto, às vezes, também podem conter novos recursos compatíveis com versões anteriores. Use o Composer para baixar um patch de qualidade. Por exemplo, para especificar o metapackage do Adobe Commerce 2.4.3:
+Os patches de qualidade contêm principalmente funcionalidade _e_ correções de segurança. No entanto, às vezes, também podem conter novos recursos compatíveis com versões anteriores. Use o Composer para baixar um patch de qualidade. Por exemplo, para especificar o metapackage do Adobe Commerce 2.4.5:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### Exemplo - Correção de segurança
 
 Os patches de segurança contêm apenas correções de segurança. Eles foram projetados para tornar o processo de atualização mais rápido e fácil.
 
-Os patches de segurança usam a convenção de nomenclatura do Composer `2.4.3-px`. Use o Composer para especificar um patch. Por exemplo, para baixar o metapackage do Adobe Commerce 2.4.3-p1:
+Os patches de segurança usam a convenção de nomenclatura do Composer `2.4.5-px`. Use o Composer para especificar um patch. Por exemplo, para baixar o metapackage do Adobe Commerce 2.4.5-p1:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
 ```
 
 ## Definir permissões de arquivo
