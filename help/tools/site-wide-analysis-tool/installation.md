@@ -1,9 +1,9 @@
 ---
 title: Guia de instalação
 description: Use este guia para instalar [!DNL Site-Wide Analysis Tool] para o seu site
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 434fb9eb9570f183d9bf9d4b56b8e56a69e8005d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Sua infraestrutura local deve atender aos seguintes requisitos antes de instalar
 
 ## [!DNL Commerce Services Connector]
 
-O agente exige que o [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) para ser instalada em seu sistema e [configurado](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) com chaves de API. Para verificar se a extensão está instalada, execute o seguinte comando:
+O agente exige que o [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) para ser instalada em seu sistema e [configurado](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) com chaves de API. Para verificar se a extensão está instalada, execute o seguinte comando:
 
 ```bash
 bin/magento module:status Magento_ServicesConnector
@@ -83,7 +83,7 @@ Se tiver instalado e configurado a extensão usando uma chave de API existente p
 
 1. Clique em **[!UICONTROL Delete]** ao lado da Chave da API existente.
 
-1. [Configurar](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) uma nova chave de API.
+1. [Configurar](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) uma nova chave de API.
 
 >[!IMPORTANT]
 >
@@ -109,7 +109,7 @@ Se a extensão não estiver instalada, use as seguintes instruções para instal
    bin/magento setup:upgrade
    ```
 
-1. [Configurar chaves de API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) para conectar a extensão ao seu sistema.
+1. [Configurar chaves de API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) para conectar a extensão ao seu sistema.
 
 ## Instalar o agente
 
