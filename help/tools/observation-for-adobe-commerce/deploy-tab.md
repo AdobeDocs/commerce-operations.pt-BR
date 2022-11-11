@@ -1,7 +1,7 @@
 ---
-title: '"O [!UICONTROL Deploy] tab"'
+title: "O [!UICONTROL Deploy] tab"
 description: Saiba mais sobre o [!UICONTROL Deploy] guia de [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: b95a35ee64cd8e844a51a9ff699eceb9c3a9266c
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -40,7 +40,7 @@ O **[!UICONTROL Deploy State]** quadro mostra os eventos de implantação que oc
 
 O **[!UICONTROL Deploy Log Detail]** quadro mostra os detalhes resumidos da mensagem de log de implantação que ocorreram ao longo do período selecionado. O quadro está analisando as seguintes strings nos logs de implantação:
 
-* ‘%AVISO: Iniciando implantação.%&#39;) como &#39;start_ply&#39;
+* &#39;%AVISO: Iniciando implantação.%&#39;) como &#39;start_ply&#39;
 * &#39;%INFO: Iniciando cenário(s): scenario/deploy.xml%&#39;) como &#39;start_scenario&#39;
 * &#39;%AVISO: Iniciando o pre-deploy%&#39;) como &#39;start_predply&#39;
 * &#39;% INFORMAÇÕES: Restaurando arquivo de log de patch%&#39;) como &#39;rstr_ptch_log&#39;
@@ -97,7 +97,7 @@ O **[!UICONTROL Post Deploy Log Detail]** quadro mostra os detalhes do log pós-
 
 ![Detalhes do registro na nuvem](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
-O **[!UICONTROL Cloud Log Detail]** quadro mostra os detalhes do log de nuvem que ocorreram ao longo do período selecionado. As strings a seguir são analisadas e retornadas com o rótulo &quot;AS&quot; abaixo:
+O **[!UICONTROL Cloud Log Detail]** quadro mostra os detalhes do log de nuvem que ocorreram ao longo do período selecionado. As strings a seguir são analisadas e retornadas com o rótulo &#39;AS&#39; abaixo:
 
 * &#39;%DEBUG: /bin/bash -c &quot;set -o pipefail; php ./bin/magento configuração:upgrade%&#39;) como &#39;start_update&#39;
 * &#39;%Schema creation/updates:%&#39;) como &#39;schema_updates&#39;

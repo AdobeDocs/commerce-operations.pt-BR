@@ -1,9 +1,9 @@
 ---
-title: '"O [!UICONTROL Elasticsearch] tab"'
+title: "O [!UICONTROL Elasticsearch] tab"
 description: Saiba mais sobre o [!UICONTROL Elasticsearch] guia de [!DNL Observation for Adobe Commerce].
-source-git-commit: 2427a18ea67833bc50912ef78be29d4320b5b205
+source-git-commit: b3cc9033eb9445af3edafd8c7ae9809dbb8174fc
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ![Resumo do Status do Cluster](../../assets/tools/cluster-status-summary.jpg)
 
-Durante o período de tempo selecionado, a variável **[!UICONTROL Cluster Status Summary]** quadro mostra os status de cor que a variável [!DNL Elasticsearch] O cluster foi aprovado. Neste exemplo, durante o período de tempo selecionado, o cluster estava em um status Verde uma vez e em um status Amarelo uma vez durante o período de tempo selecionado.
+Durante o período de tempo selecionado, a variável **[!UICONTROL Cluster Status Summary]** quadro mostra os status de cor que a variável [!DNL Elasticsearch] O cluster foi aprovado. Neste exemplo, durante o período de tempo selecionado, o cluster estava em status Verde uma vez e em status Amarelo uma vez durante o período de tempo selecionado.
 
 ## [!UICONTROL Active Primary Shards]
 
 ![Compartilhamentos Primários Ativos](../../assets/tools/active-primary-shards.jpg)
 
-O **[!UICONTROL Active Primary Shards]** o quadro mostrará números diferentes dependendo do número de fragmentos primários ativos da conta selecionada [!DNL Elasticsearch] serviço.
+O **[!UICONTROL Active Primary Shards]** quadro mostra os números diferentes dependendo do número de fragmentos primários ativos para a conta selecionada [!DNL Elasticsearch] serviço.
 
 De [!DNL Elasticsearch]: O guia definitivo [2.x]:
 
@@ -33,31 +33,31 @@ Quando um índice é criado, há vários fragmentos criados com esse índice. Po
 
 ![Compartilhamentos Ativos no Cluster](../../assets/tools/active-shards-in-cluster.jpg)
 
-**[!UICONTROL Active Shards in Cluster]** - TODOS os compartilhamentos primários e de réplica em um [!DNL Elasticsearch] cluster.
+O **[!UICONTROL Active Shards in Cluster]** quadro mostra o número total de compartilhamentos primários e de réplicas em um [!DNL Elasticsearch] cluster.
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
 ![Integridade do índice](../../assets/tools/index-health.jpg)
 
-Este quadro mostrará o nome do índice e a contagem do status da cor do índice. Ao rolar a tabela para baixo, você verá o mesmo nome de índice com status de cor Amarelo e Vermelho. O número após o nome do índice 27 é a contagem da cor do status. Se for zero, não houve instâncias do índice que estivesse nesse status de cor durante esses intervalos de tempo selecionados.
+Este quadro mostra o nome do índice e a contagem do status da cor do índice. Ao rolar a tabela para baixo, você verá o mesmo nome de índice com status de cor Amarelo e Vermelho. O número após o nome do índice 27 é a contagem da cor do status. Se for zero, não houve instâncias do índice sendo exibido nesse status de cor durante os intervalos de tempo selecionados.
 
 ## [!UICONTROL Elasticsearch Status by node information]
 
 ![Status do Elasticsearch](../../assets/tools/elasticsearch-status-by-node.jpg)
 
-O **[!UICONTROL Elasticsearch Status by node information]** quadro mostra o [!DNL Elasticsearch] status do cluster por cor, por nó. Isso ajudará a indicar qual nó na [!DNL Elasticsearch] O cluster está retornando qual status durante o período selecionado.
+O **[!UICONTROL Elasticsearch Status by node information]** quadro mostra o [!DNL Elasticsearch] status do cluster por cor e por nó. Isso ajuda a indicar qual nó na variável [!DNL Elasticsearch] O cluster está retornando qual status durante o período selecionado.
 
 ## [!UICONTROL Elasticsearch index information]
 
 ![Informações do índice Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
-Essa **[!UICONTROL Elasticsearch index information]** a tabela mostra o nome do índice, em que nó ele está, o número de documentos indexados, a integridade do índice e o tamanho do índice em MB em um horário específico.
+O **[!UICONTROL Elasticsearch index information]** a tabela mostra o nome do índice, em que nó ele está, o número de documentos indexados, a integridade do índice e o tamanho do índice em MB em um horário específico.
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
 ![Elasticsearch processar CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-O **[!UICONTROL Elasticsearch process CPU %]** O quadro mostra o processo CPU% pelo [!DNL Elasticsearch] processar durante o período selecionado.
+O **[!UICONTROL Elasticsearch process CPU %]** quadro mostra o percentual da CPU do processo de acordo com a variável [!DNL Elasticsearch] processar durante o período selecionado.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
@@ -81,7 +81,7 @@ O **[!UICONTROL Elasticsearch Index Size]** frame indica o nome e o tamanho do �
 
 ![Erros de Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
-O **[!UICONTROL Elasticsearch Errors]** o quadro exibirá erros com [!DNL Elasticsearch] como ficar sem espaço, alternar do status Amarelo para Vermelho, quando todos os fragmentos falharem, quando houver problemas de parâmetro com pesquisas, erros de versão e quando todos os nós estiverem indisponíveis.
+O **[!UICONTROL Elasticsearch Errors]** quadro exibe erros com [!DNL Elasticsearch] como ficar sem espaço, alternar do status Amarelo para Vermelho, quando todos os fragmentos falharem, quando houver problemas de parâmetro com pesquisas, erros de versão e quando todos os nós estiverem indisponíveis.
 
 ## [!UICONTROL Elasticsearch Unassigned Shards]:
 

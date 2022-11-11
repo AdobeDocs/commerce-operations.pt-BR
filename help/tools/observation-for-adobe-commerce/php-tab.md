@@ -1,9 +1,9 @@
 ---
-title: '"O [!UICONTROL PHP] tab"'
-description: Saiba mais sobre o [!UICONTROL PHP] guia de [!DNS Observation for Adobe Commerce].
-source-git-commit: f71fc3b2a66a4cc0b0d7865138184135e4a874e0
+title: "O [!UICONTROL PHP] tab"
+description: Saiba mais sobre o [!UICONTROL PHP] guia de [!DNL Observation for Adobe Commerce].
+source-git-commit: 28055eb09235912c66c637990e2081a70e1c7808
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ O **[!UICONTROL PHP active process details]** frame mostra os processos PHP, inc
 
 ![Carga do processo PHP](../../assets/tools/php-process-load.jpg)
 
-Este quadro mostra a carga da CPU dos processos PHP-FPM ao longo do período de tempo selecionado.
+O **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** O quadro mostra a carga da CPU dos processos PHP-FPM ao longo do período de tempo selecionado.
 
 ## [!UICONTROL PHP Memory detail]
 
@@ -35,13 +35,13 @@ O **[!UICONTROL PHP Memory detail]** quadro mostra o uso de memória de processo
 
 ![Utilização da CPU PHP](../../assets/tools/php-cpu-utilization.jpg)
 
-O **[!UICONTROL PHP CPU Utilization]** frame mostra a % de utilização da CPU de processos PHP no período selecionado.
+O **[!UICONTROL PHP CPU Utilization]** frame mostra a porcentagem de utilização da CPU de processos PHP no período selecionado.
 
 ## [!UICONTROL PHP Process states]
 
 ![Estados do processo PHP](../../assets/tools/php-process-states-image-1.jpg)
 
-O **[!UICONTROL PHP Process states]** quadro mostra os estados do processo PHP no período selecionado. Ele será exibido quando os processos PHP forem encerrados e reiniciados. Cuidado com processos PHP terminados que não mostram reinicializações.
+O **[!UICONTROL PHP Process states]** quadro mostra os estados do processo PHP no período selecionado. Ele é exibido quando os processos PHP terminam e reiniciam. Cuidado com processos PHP terminados que não mostram reinicializações.
 
 * &#39;%AVISO: A terminar ...%&#39;) como &#39;php_term&#39;
 * AVISO &#39;%: saindo, adeus!%&#39;) como &#39;php_exit&#39;
@@ -106,7 +106,7 @@ O **[!UICONTROL Database Errors]** quadro mostra erros de banco de dados no per�
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) como &#39;sql_1062_e&#39;
 * &#39;%[Observação] WSREP: A transferir mapa de memória para o disco...%&#39;) como &#39;mem_map_flush&#39;
 * &#39;%Código de erro interno de MariaDB: 1146%&#39;) como &#39;sql_1146&#39;
-* &#39;%Código de erro interno de MariaDB: 1062%&#39;) como &#39;sql_1062&#39; ・ &#39;%1062 [Aviso] InnoDB:%&#39;) como &#39;sql_1062_w&#39;
+* &#39;%Código de erro interno de MariaDB: 1062%&#39;) como &#39;sql_1062&#39; * &#39;%1062 [Aviso] InnoDB:%&#39;) como &#39;sql_1062_w&#39;
 * &#39;%Código de erro interno de MariaDB: 1064%&#39;) como &#39;sql_1064&#39;
 * &#39;%InnoDB: Falha de asserção no arquivo%&#39;) como &#39;assertion_err&#39;
 * &#39;%mysqld_safe Número de processos em execução agora: 0%&#39;) como &#39;mysql_oom&#39;

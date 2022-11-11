@@ -1,9 +1,9 @@
 ---
-title: '"O [!UICONTROL Redis] tab"'
+title: "O [!UICONTROL Redis] tab"
 description: Saiba mais sobre o [!UICONTROL Redis] guia de [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: f4379d0b89a6ea6d2f2a5a02c505581d4d54708f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![Resumo do nó Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-1.jpg)
 
-O **[!UICONTROL Redis Node summary]** é inclusiva de todos os nós em um ambiente. Este exemplo inclui os nós para armazenamento temporário compartilhado. Há um principal e dois secundários na produção e também um principal e dois secundários na preparação.
+O **[!UICONTROL Redis Node summary]** é inclusiva de todos os nós em um ambiente. O exemplo acima inclui os nós para armazenamento temporário compartilhado. Há um principal e dois secundários na produção e também um principal e dois secundários na preparação.
 
 ## [!UICONTROL Redis node detail]
 
@@ -44,7 +44,7 @@ O **[!UICONTROL Commands per second by node]** quadro mostra o [!DNL Redis] coma
 
 ![Redis % da memória utilizada](../../assets/tools/observation-for-adobe-commerce/redis-tab-6.jpg)
 
-O **[!UICONTROL Redis % of memory used]** quadro mostra a % de memória máxima usada pelo [!DNL Redis] servidores.
+O **[!UICONTROL Redis % of memory used]** quadro mostra a porcentagem de memória máxima usada pelo [!DNL Redis] servidores.
 
 ## [!UICONTROL Redis used memory]
 
@@ -56,10 +56,10 @@ O **[!UICONTROL Redis used memory]** quadro mostra o uso de memória por nó em 
 
 ![Redis alterações desde o último salvamento do db](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] é um residente de memória e salva as informações no armazenamento. O **[!UICONTROL Redis changes since last db save]** frame indica o número de alterações na memória que ocorreram desde que o último banco de dados foi salvo no armazenamento. [Estas informações](https://redis.io/docs/manual/persistence/) explica [!DNL Redis's] persistência.
+[!DNL Redis] é um residente de memória e salva as informações no armazenamento. O **[!UICONTROL Redis changes since last db save]** frame indica o número de alterações na memória que ocorreram desde que o último banco de dados foi salvo no armazenamento. Consulte [Persistência de Redis](https://redis.io/docs/manual/persistence/) para obter mais explicações sobre [!DNL Redis's] persistência.
 
 ## [!UICONTROL Redis synchronization from Log]
 
 ![Redis sincronização do Log](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-O **[!UICONTROL Redis synchronization from Log]** O quadro foca nos erros encontrados durante [!DNL Redis] sincronização ou erros que ocorrem devido a problemas de sincronização. Consulte [Documentação de Redis](https://redis.io/docs/).
+O **[!UICONTROL Redis synchronization from Log]** O quadro foca nos erros encontrados durante [!DNL Redis] sincronização ou erros que ocorrem devido a problemas de sincronização. Para obter mais informações sobre [!DNL Redis], consulte [[!DNL Redis] Documentação](https://redis.io/docs/).
