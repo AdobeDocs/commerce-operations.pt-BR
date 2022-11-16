@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de configuração para m
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: fbeaa486d32d77135ab97f4819ef4df9e64c6471
+source-git-commit: fb30b18c9b9f6a9f538189eeafda9ee7a29d436c
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - **[!UICONTROL Asynchronous indexing]**—Ative essa opção para impedir bloqueios de banco de dados e processamento lento que podem ocorrer quando grandes números de pedidos são colocados simultaneamente.
 - **[!UICONTROL Asynchronous email notifications]**—Ative essa opção para acelerar o desempenho do check-out, enviando notificações por email de check-out e processamento de pedidos em intervalos designados, em vez de enviá-las imediatamente.
-- **[!UICONTROL Enable Archiving]**—Ative essa opção para melhorar o desempenho das grades de Pedidos, NFFs, Entregas e Avisos de Crédito e manter seu espaço de trabalho livre de informações desnecessárias, para que você possa se concentrar nos negócios atuais. Consulte [Ativar arquivamento](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
+- **[!UICONTROL Enable Archiving]**—Ative essa opção para melhorar o desempenho de pedidos, faturas, remessas e avisos de crédito, e mantenha seu espaço de trabalho livre de informações desnecessárias para que você possa se concentrar nos negócios atuais. Consulte [Ativar arquivamento](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
 
 ## Produtos e versões afetados
 
