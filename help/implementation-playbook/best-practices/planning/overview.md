@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de implementação para 
 role: Developer, Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 78308f9cb3d2ebe8af41c42f9bb146409367ab6c
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,14 @@ Os tópicos a seguir descrevem as práticas recomendadas de otimização de dese
 
 ## **Vendas e Marketing**
 
-- [Práticas recomendadas para &#x200B; de limite do carrinho de produtos](product-cart.md)
+- [Práticas recomendadas para o limite do carrinho de produtos](product-cart.md)
 - [Práticas recomendadas para configurar promoções](product-cart-promotions.md)
 
 ## **Escopo do projeto**
 
 - [Escalonamentos de parceiros](partner-escalation.md)
+- [Processamento de armazenamento de pagamentos](payment-processing-storage.md)
 
 ## **Extensões de compra**
 
-- [Práticas recomendadas para usar extensões de terceiros no Adobe Commerce &#x200B;](extensions.md)
+- [Práticas recomendadas para usar extensões de terceiros no Adobe Commerce](extensions.md)

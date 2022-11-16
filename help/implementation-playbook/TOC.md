@@ -2,9 +2,9 @@
 user-guide-title: Manual de implementação
 user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
-source-git-commit: 8c86688cd0c7127b6b39c0c605c668288dbe09dc
+source-git-commit: 86149bbe268a573f94e8bdb34974403459e46909
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 6%
 
 ---
@@ -88,6 +88,7 @@ ht-degree: 6%
       - [Promoções](best-practices/planning/product-cart-promotions.md)
       - [Extensões](best-practices/planning/extensions.md)
       - [Escalonamentos de parceiros](best-practices/planning/partner-escalation.md)
+      - [Processamento de armazenamento de pagamentos](best-practices/planning/payment-processing-storage.md)
    - Desenvolvimento {#development}
       - [Visão geral](best-practices/development/overview.md)
       - [Otimização de imagem](best-practices/development/image-optimization.md)
