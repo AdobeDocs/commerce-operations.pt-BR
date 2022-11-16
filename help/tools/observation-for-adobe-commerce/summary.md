@@ -1,9 +1,9 @@
 ---
 title: "O [!UICONTROL Summary] tab"
 description: Saiba mais sobre o [!UICONTROL Summary] guia de [!DNL Observation for Adobe Commerce].
-source-git-commit: 808018aca0630f725eebdd279b9314e2ee80eccc
+source-git-commit: 61d0de370cbfa02f5fcc7d20ad283c54357294a3
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2653'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ O **[!UICONTROL Alerts during timeframe]** exibe todos os alertas, incluindo [!U
 
 ![Uso da CPU](../../assets/tools/cpu-usage.jpg)
 
-Se a variável **[!UICONTROL CPU Usage]** estiver em branco, é uma indicação de que a aplicação de infraestrutura de [!DNL New Relic] não está ativado. Se seu site estiver no Starter, você não verá essas informações. Se o site estiver no Pro, abra um [tíquete de suporte](https://experienceleague.corp.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) para [!DNL New Relic Infrastructure] habilitado para seu site.
+Se a variável **[!UICONTROL CPU Usage]** estiver em branco, é uma indicação de que a aplicação de infraestrutura de [!DNL New Relic] não está ativado. Se seu site estiver no Starter, você não verá essas informações. Se o site estiver no Pro, abra um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) para [!DNL New Relic Infrastructure] habilitado para seu site.
 
 ## [!UICONTROL Average Response Time]
 
