@@ -1,9 +1,9 @@
 ---
 title: Ativar ou desativar o modo de manutenção
 description: Siga estas etapas para personalizar o que os clientes veem quando a implantação do Adobe Commerce ou Magento Open Source está inativa para manutenção.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: bc025217ed7bc2195c0a2d919139abe13d184259
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,10 @@ O `--none` limpa a lista.
 
 ## Configurações de várias lojas
 
-Para configurar várias lojas, cada uma com um layout diferente e conteúdo localizado, crie uma capa para cada uma e coloque-a em `pub/errors/{name}` em que `{name}` é o código de armazenamento. Para distinguir entre armazenamentos e sites com a mesma instância, use `pub/errors/{type}-{name}` em que `{type}` é `store` ou `website` e corresponde ao `MAGE_RUN_TYPE` na configuração do servidor.
+<!-- To set up multiple stores, each with a different layout and localized content, create a skin for each and put it into `pub/errors/{name}` where `{name}` is the store code. To distinguish between stores and websites with the same instance, use `pub/errors/{type}-{name}` where `{type}` is either `store` or `website` and matches the `MAGE_RUN_TYPE` in your server configuration. Another option is to pass the `$_GET['skin']` parameter to the intended processor. This method requires a specific configuration on your server. -->
+<!-- Replace the line below with the commented text after https://github.com/magento/magento2/pull/35095 is merged. -->
 
-Outra opção é passar a variável `$_GET['skin']` para o processador pretendido. Esse método requer uma configuração específica no servidor.
+Se você quiser configurar várias lojas, cada uma com um layout diferente e conteúdo localizado, passe o `$_GET['skin']` para o processador pretendido.
 
 No exemplo a seguir, estamos usando um `503` digite o arquivo do modelo de erro, que requer conteúdo localizado.
 
