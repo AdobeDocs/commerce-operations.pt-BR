@@ -2,9 +2,9 @@
 title: Visão geral da infraestrutura na nuvem
 description: Saiba mais sobre o Adobe Commerce na infraestrutura de nuvem.
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,6 @@ Vamos também analisar o software que torna os benefícios da Adobe Commerce uma
 
 - O Git é seu código em repositórios. Ele permite ramificações locais, áreas de preparo convenientes e vários fluxos de trabalho com criação e implantação automáticas para um desenvolvimento rápido e implantação contínua eficientes.
 
-- A Platform-as-Service (PaaS) fornece uma infraestrutura pré-provisionada que inclui as tecnologias PHP, MySQL, Redis, RabbitMQ e Elasticsearch.
+- A Platform-as-Service (PaaS) fornece uma infraestrutura pré-provisionada que inclui PHP, MySQL, Redis, [!DNL RabbitMQ]e tecnologias Elasticsearch.
 
 - A hospedagem em nuvem da AWS ou do Azure capacita a infraestrutura subjacente como um serviço (IaaS), que oferece um ambiente escalável e seguro para vendas e varejo online.

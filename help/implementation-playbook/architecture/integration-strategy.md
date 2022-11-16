@@ -2,9 +2,9 @@
 title: Estratégia de integração da Adobe Commerce
 description: Analise as estratégias e opções de integração para sua implementação do Adobe Commerce.
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 1e545d8d5554e73f522469e526ed098395db9075
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -47,4 +47,4 @@ O Adobe Commerce oferece três opções flexíveis de integração:
 
 ![Opções de integração do Adobe Commerce](../../assets/playbooks/integration-options.svg)
 
-Embora as integrações em tempo real geralmente sejam desejadas, não é necessário para alguns cenários. A Adobe Commerce oferece suporte nativo ao RabbitMQ como barramento de mensagens para habilitar processos assíncronos, o que é recomendado para alguns dados que não são necessários para troca em tempo real, mas para atualizar com a troca de arquivos em lote ou a API do processo de dados em lote REST para processar de forma assíncrona.
+Embora as integrações em tempo real geralmente sejam desejadas, não é necessário para alguns cenários. O Adobe Commerce é compatível nativamente [!DNL RabbitMQ] como o barramento de mensagens para habilitar processos assíncronos, o que é recomendado para alguns dados que não são necessários para troca em tempo real, mas para atualizar com a troca de arquivos em lote ou a API do processo de dados em lote REST para processar de forma assíncrona.

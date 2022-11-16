@@ -1,9 +1,9 @@
 ---
 title: Configurar o aplicativo
 description: Saiba mais sobre a configuração pós-instalação necessária para implantações locais do Adobe Commerce e Magento Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Elasticsearch ou OpenSearch é necessário para todas as instalações a partir 
 
 Desde a versão 2.3.0, o Adobe Commerce e o Magento Open Source incluem a funcionalidade de fila de mensagens. Em versões anteriores, está disponível somente para o Adobe Commerce.
 
-* [RabbitMQ](../../configuration/queues/message-queue-framework.md)
+* [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 
 ## Configurações somente para Adobe Commerce
 

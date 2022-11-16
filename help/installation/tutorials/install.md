@@ -1,9 +1,9 @@
 ---
 title: Instalar o Adobe Commerce
 description: Siga estas etapas para instalar o Adobe Commerce ou o Magento Open Source na infraestrutura que você possui.
-source-git-commit: 46302eb8e8fd9bb7c9e7fbf990abb149bedd0ff4
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2106'
 ht-degree: 0%
 
 ---
@@ -132,16 +132,16 @@ No Adobe Commerce versão 2.2.8 e posterior, você pode criar o usuário adminis
 | `--elasticsearch-username` | A ID de usuário a ser autenticada | Não, a menos que a autenticação esteja habilitada |
 | `--elasticsearch-password` | A senha para autenticar | Não, a menos que a autenticação esteja habilitada |
 
-**Opções de configuração do RabbitMQ:**
+**[!DNL RabbitMQ]opções de configuração:**
 
 | Nome | Valor | Obrigatório? |
 |--- |--- |--- |
-| `--amqp-host` | Não utilize o `--amqp` opções a menos que você já tenha configurado uma instalação do RabbitMQ. Consulte Instalação do RabbitMQ para obter mais informações sobre a instalação e configuração do RabbitMQ.<br><br>O nome do host onde o RabbitMQ está instalado. | Não |
-| `--amqp-port` | A porta a ser usada para se conectar ao RabbitMQ. O padrão é 5672. | Não |
-| `--amqp-user` | O nome de usuário para conexão com o RabbitMQ. Não usar o usuário padrão `guest`. | Não |
-| `--amqp-password` | A senha para conexão com o RabbitMQ. Não use a senha padrão `guest`. | Não |
-| `--amqp-virtualhost` | O host virtual para conexão com o RabbitMQ. O padrão é `/`. | Não |
-| `--amqp-ssl` | Indica se conectar ao RabbitMQ. O padrão é `false`. Consulte RabbitMQ para obter informações sobre como configurar o SSL para RabbitMQ. | Não |
+| `--amqp-host` | Não utilize o `--amqp` , a menos que já tenha configurado uma instalação de [!DNL RabbitMQ]. Consulte [!DNL RabbitMQ] instalação para obter mais informações sobre instalação e configuração [!DNL RabbitMQ].<br><br>O nome do host onde [!DNL RabbitMQ] está instalado. | Não |
+| `--amqp-port` | A porta a ser usada para conexão [!DNL RabbitMQ]. O padrão é 5672. | Não |
+| `--amqp-user` | O nome de usuário para conexão com o [!DNL RabbitMQ]. Não usar o usuário padrão `guest`. | Não |
+| `--amqp-password` | A senha para conexão com o [!DNL RabbitMQ]. Não use a senha padrão `guest`. | Não |
+| `--amqp-virtualhost` | O host virtual para conexão com o [!DNL RabbitMQ]. O padrão é `/`. | Não |
+| `--amqp-ssl` | Indica se deseja se conectar ao [!DNL RabbitMQ]. O padrão é `false`. Consulte [!DNL RabbitMQ] para obter informações sobre como configurar o SSL para [!DNL RabbitMQ]. | Não |
 | `--consumers-wait-for-messages` | Os consumidores devem aguardar uma mensagem da fila? 1 - Sim, 0 - Não | Não |
 
 **Opções de armazenamento remoto:**

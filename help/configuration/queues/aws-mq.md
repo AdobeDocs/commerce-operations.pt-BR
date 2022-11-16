@@ -1,9 +1,9 @@
 ---
 title: Configurar a fila de mensagens do Amazon
 description: Saiba como configurar o Commerce para usar o serviço AWS MQ.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -65,20 +65,20 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-A configuração padrão para `InventoryCatalog` não publica mensagens no RabbitMQ; o comportamento padrão é executar a ação no mesmo thread do usuário. Para dizer `InventoryCatalog` para publicar mensagens, habilite `cataloginventory/bulk_operations/async`. No administrador, acesse **Lojas** > Configuração > **Catálogo** > **Inventário** > Administração de operações em massa e conjunto  `Run asynchronously`para **Sim**.
+A configuração padrão para `InventoryCatalog` não publica mensagens no [!DNL RabbitMQ]; o comportamento padrão é executar a ação no mesmo thread do usuário. Para dizer `InventoryCatalog` para publicar mensagens, habilite `cataloginventory/bulk_operations/async`. No administrador, acesse **Lojas** > Configuração > **Catálogo** > **Inventário** > Administração de operações em massa e conjunto  `Run asynchronously`para **Sim**.
 
 ## Teste da fila de mensagens
 
-Para testar o envio de mensagens do Commerce para o RabbitMQ:
+Para testar o envio de mensagens do Commerce para [!DNL RabbitMQ]:
 
-1. Faça logon no console da Web do RabbitMQ no AWS para monitorar as filas.
+1. Faça logon no [!DNL RabbitMQ] console da Web no AWS para monitorar as filas.
 1. No Administrador, crie um produto.
 1. Crie uma fonte de inventário.
 1. Habilitar **Lojas** > Configuração > **Catálogo** > **Inventário** > Operações de administração em massa > Executar de forma assíncrona.
 1. Ir para **Catálogo** > Produtos. Na grade, selecione o produto criado acima e clique em **Atribuir Origem de Inventário**.
 1. Clique em **Salvar e fechar** para concluir o processo.
 
-   Agora, você deve ver mensagens exibidas no console da Web do RabbitMQ.
+   Agora, você deve ver as mensagens serem exibidas no [!DNL RabbitMQ] console da Web.
 
 1. Inicie o `async.operations.all` consumidor da fila de mensagens.
 
@@ -86,5 +86,5 @@ Para testar o envio de mensagens do Commerce para o RabbitMQ:
    bin/magento queue:consumers:start async.operations.all
    ```
 
-Agora você deve ver a mensagem na fila ser processada no console da Web do RabbitMQ.
+Agora, você deve ver a mensagem na fila ser processada no [!DNL RabbitMQ] console da Web.
 Verifique se as fontes de inventário foram alteradas no produto em Admin.

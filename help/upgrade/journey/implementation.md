@@ -1,9 +1,9 @@
 ---
 title: Atualizar implementação
 description: Saiba mais sobre as diferentes fases de implementação de atualização para projetos Adobe Commerce e Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '869'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ A seguir estão itens que você pode incluir em uma análise completa:
    |-----------------|-----------------|------------|----------------------------------------------------------|
    | PHP | 7.2.33 | 8,1 |  |
    | Redis | 5,05 | 6,0 |  |
-   | RabbitMQ | 3,7 | 3,8 | Não está a ser utilizado, mas devemos considerar a sua utilização |
+   | [!DNL RabbitMQ] | 3,7 | 3,8 | Não está a ser utilizado, mas devemos considerar a sua utilização |
    | MariaDB (nuvem) | 10.2.33 | 10,4 |  |
    | MySQL | 8,0 |  |  |
    | Composer | 1.9.2 | 2,0 |  |

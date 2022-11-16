@@ -2,9 +2,9 @@
 title: Ferramentas da plataforma
 description: Escolha as ferramentas de plataforma recomendadas para a implementação do Adobe Commerce.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ A tabela a seguir inclui soluções que recomendamos e que podem ser usadas no A
 | Servidor da Web | Nginx, Apache |
 | Serviços de armazenamento em cache | Redis, Varnish |
 | Serviços de pesquisa | Elasticsearch |
-| Serviços de fila de mensagens | RabbitMQ |
+| Serviços de fila de mensagens | [!DNL RabbitMQ] |
 | Ferramenta de verificação de segurança | SonarQube, ZAP |
 
 ## Banco de dados
@@ -61,7 +61,7 @@ Para o Adobe Commerce versão 2.4 e posterior, todas as instalações devem ser 
 
 ## Serviços de fila de mensagens
 
-As filas de mensagens fornecem um mecanismo de comunicação assíncrono no qual o remetente e o destinatário de uma mensagem não se conectam. O RabbitMQ é um corretor de mensagens de código aberto que oferece um sistema de mensagens confiável, altamente disponível, escalável e portátil.
+As filas de mensagens fornecem um mecanismo de comunicação assíncrono no qual o remetente e o destinatário de uma mensagem não se conectam. [!DNL RabbitMQ] é um agente de mensagens de código aberto que oferece um sistema de mensagens confiável, altamente disponível, escalável e portátil.
 
 ## Ferramentas de segurança
 

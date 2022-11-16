@@ -2,9 +2,9 @@
 title: Recommendations de otimização de desempenho
 description: Otimize o desempenho de sua implementação do Adobe Commerce seguindo essas recomendações.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Embora a invalidação de memória de cache de página inteira Varnish seja efic
 
 ### Filas de mensagens
 
-O MQF (Message Queue Framework, Estrutura da Fila de Mensagens) é um sistema que permite que um módulo publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona. A Adobe Commerce suporta o RabbitMQ como o corretor de mensagens, que fornece uma plataforma escalável para enviar e receber mensagens.
+O MQF (Message Queue Framework, Estrutura da Fila de Mensagens) é um sistema que permite que um módulo publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona. O Adobe Commerce suporta [!DNL RabbitMQ] como o corretor de mensagens, que fornece uma plataforma escalável para enviar e receber mensagens.
 
 ### Teste e monitoramento de desempenho
 
