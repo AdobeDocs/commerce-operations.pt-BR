@@ -1,9 +1,9 @@
 ---
 title: Guia de instalação
 description: Use este guia para instalar [!DNL Site-Wide Analysis Tool] para o seu site
-source-git-commit: 434fb9eb9570f183d9bf9d4b56b8e56a69e8005d
+source-git-commit: 23ad424a913c5ee58f4092aae008a47fe37b5382
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -57,13 +57,17 @@ Sua infraestrutura local deve atender aos seguintes requisitos antes de instalar
 
 - Utilitários Bash/shell
 
-   - `grep`
+   - `php`
+
+   - `wget`
 
    - `awk`
 
    - `nice`
 
    - `grep`
+
+   - `openssl`
 
 ## [!DNL Commerce Services Connector]
 
@@ -185,7 +189,7 @@ Se você não quiser usar nosso [script de shell](https://github.com/magento-swa
       curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. Embale o arquivo do iniciador.
+   1. Descompacte o arquivo do iniciador.
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
