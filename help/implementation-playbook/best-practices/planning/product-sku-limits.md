@@ -4,7 +4,7 @@ description: Conheça as práticas recomendadas para configurar as SKUs (Product
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 3a187ae8c066e56df0d7f4981d26ffb934f64576
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # Práticas recomendadas para a configuração do SKU do produto
 
-Para maximizar o desempenho, o máximo recomendado para as SKUs (Unidades de armazenamento de produtos) eficazes é 10 milhões. Este produto efetivo máximo é calculado do seguinte modo:
+Para maximizar o desempenho, o máximo recomendado para as SKUs (Unidades de armazenamento de produtos) eficazes é 242 milhões. Este produto efetivo máximo é calculado do seguinte modo:
 
-`Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups`
+```text
+Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups
+```
 
 Ter mais do que o número máximo de SKUs eficazes retarda a recuperação de dados do produto e aumenta o tempo para concluir as operações de Administração.
 
