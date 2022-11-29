@@ -1,7 +1,7 @@
 ---
 title: Guia de instalação
-description: Use este guia para instalar [!DNL Site-Wide Analysis Tool] para o seu site
-source-git-commit: 23ad424a913c5ee58f4092aae008a47fe37b5382
+description: "Use este guia para instalar [!DNL Site-Wide Analysis Tool] para o seu site"
+source-git-commit: bfcedda38f91f5dba8880bb1593ad40a6e3f8041
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
