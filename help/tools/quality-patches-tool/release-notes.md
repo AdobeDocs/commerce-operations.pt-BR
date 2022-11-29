@@ -1,9 +1,9 @@
 ---
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
-source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
+source-git-commit: aad242e3a458e40fb1977399649ffe3e31696cd3
 workflow-type: tm+mt
-source-wordcount: '9752'
+source-wordcount: '10066'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) O fo
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte a [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.24 {#v1-1-24}
+
+* **ACSD-45168** (para Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.6) - Corrige o problema no qual URLs compatíveis com SEO não são geradas para produtos que têm *url_key* atributos sobrepostos no nível de exibição de loja.
+* **ACSD-46865** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Corrige o problema no qual a grade Remessa e Aviso de crédito não é preenchida quando a indexação assíncrona está habilitada.
+* **ACSD-47004** (para Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.6) - Corrige o problema em que o IVA não é aplicado a um endereço de faturamento sem um ID de IVA.
+* **ACSD-47803** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Corrige o problema no qual amostras de produtos configuráveis out-of-stock são exibidas como disponíveis.
+* **ACSD-47137** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Melhora a velocidade de carregamento da galeria de imagens quando a pasta pub/media é muito grande.
+* **ACSD-46770** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Corrige o problema em que os emails de ordem de administrador são enviados mesmo quando a função *Confirmação de pedido de email* está desmarcada.
+* **ACSD-47955** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Corrige o problema em que GraphQL não exibe o desconto do carrinho corretamente.
+* **ACSD-46617** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Corrige o problema em que a função *Prossiga para o check-out* está esmaecido mesmo se o subtotal for maior que o configurado *Valor Mínimo da Ordem*.
+* **ACSD-47079** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.5) - Corrige o problema em que os status de estoque dos produtos compostos (pacote, agrupado e configurável) não são atualizados quando o status do estoque do subproduto é alterado por meio da API REST POST /rest/V1/inventory/source-items.
+* **ACSD-47336** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Correções *Algo deu errado.* ao descartar notificações no Administrador do Commerce.
+* **ACSD-47559** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Corrige o problema no qual a área Visualizar modelo de email não está totalmente visível.
+* **ACSD-47920** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Corrige o problema em que os pedidos podem ser feitos por meio da API Rest como um usuário convidado, mesmo quando a função *Permitir Check-out de Convidado* está desligado.
+* Correções substituídas: MDVA-39305, MDVA-42855.
 
 ## v1.1.23 {#v1-1-23}
 
@@ -465,7 +481,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) O fo
 * **MDVA-31236** (*para Adobe Commerce >=2.4.0 &lt;2.4.2*) - Corrige o problema em que os Administradores com acesso a recursos personalizados não conseguem configurar o 2FA ou fazer logon.
 * **MDVA-30845** (*para Adobe Commerce >=2.3.5 &lt;2.3.7*) - Corrige o problema em que a variável *Não há aspas disponíveis para este pedido neste momento* é exibido ao não se conectar ao UPS XML/USPS/DHL, e nenhum outro método de envio está disponível.
 * **MDVA-32133** (*para Adobe Commerce >=2.4.0 &lt;2.4.1*) - Corrige o problema que fazia com que a galeria de mídia não fosse carregada no Page Builder em determinados casos.
-* **MDVA-12304** (*para Adobe Commerce >=2.3.0 &lt;2.4.2*) - Aumenta o número máximo de cookies de 50 para 200.
+* **MDVA-12304** (*para Adobe Commerce >=2.3.0*) - Aumenta o número máximo de cookies de 50 para 200.
 * **MDVA-32632** (*para Adobe Commerce >=2.3.2 &lt;2.3.5*) - Corrige o problema em que as ordens são exibidas no sistema de pagamento, mas não no Adobe Commerce.
 * **MDVA-32449** (*para Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || >=2.4.1 &lt;2.4.2 com extensão B2B*) - Corrige o problema em que o histórico de pedidos é carregado muito lentamente ou não é carregado.
 * **MDVA-32739** (*para Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige o problema no qual a ativação de Notificações por email assíncronas envia emails de vendas antigos.
