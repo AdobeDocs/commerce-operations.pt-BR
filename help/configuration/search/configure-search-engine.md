@@ -1,9 +1,9 @@
 ---
 title: Configuração do mecanismo de pesquisa
 description: Configure um mecanismo de pesquisa com Adobe Commerce e Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 66681f06c15907a5d25e71005c27785f0745ed63
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Esta seção discute as configurações mínimas que você deve escolher para testar o Elasticsearch ou o OpenSearch com o Adobe Commerce e o Magento Open Source. Desde as versões 2.4.4 e 2.4.3-p2, todos os campos são rotulados **Elasticsearch** também se aplicam ao OpenSearch.
 
-Para obter detalhes adicionais sobre como configurar seu mecanismo de pesquisa, consulte o [Guia do usuário](https://docs.magento.com/user-guide/catalog/search-elasticsearch.html).
+Para obter detalhes adicionais sobre como configurar seu mecanismo de pesquisa, consulte o [Guia do usuário](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Configure seu mecanismo de pesquisa pelo Administrador
 
