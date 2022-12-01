@@ -1,9 +1,9 @@
 ---
 title: Pré-requisitos completos
 description: Prepare seu projeto do Adobe Commerce ou Magento Open Source para uma atualização completando essas etapas de pré-requisito.
-source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
+source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ Depois de revisar os requisitos do sistema, você deve concluir os seguintes pr�
 
 - Atualizar todo o software
 - Verifique se um mecanismo de pesquisa suportado está instalado
+- Converter formato de tabela de banco de dados
 - Definir o limite de arquivos abertos
 - Verifique se trabalhos do cron estão em execução
 - Definir `DATA_CONVERTER_BATCH_SIZE`
@@ -30,7 +31,11 @@ O [requisitos do sistema](../../installation/system-requirements.md) descreva ex
 
 Certifique-se de ter atualizado todos os requisitos e dependências do sistema em seu ambiente. Consulte PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php)e [configurações PHP necessárias](../../installation/prerequisites/php-settings.md#php-settings).
 
-## Verificar se um mecanismo de pesquisa suportado está instalado
+>[!NOTE]
+>
+>Para projetos do Adobe Commerce on cloud Infrastructure Pro, você deve criar um [Suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) ticket para instalar ou atualizar serviços em ambientes de preparo e produção. Indique as alterações de serviço necessárias e inclua o `.magento.app.yaml` e `services.yaml` arquivos e versão PHP no tíquete. Pode levar até 48 horas para a equipe de infraestrutura da Cloud atualizar o projeto. Consulte [Software e serviços compatíveis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+
+## Verifique se um mecanismo de pesquisa suportado está instalado
 
 O Adobe Commerce e o Magento Open Source exigem o Elasticsearch ou o OpenSearch para serem instalados a fim de usar o software.
 
@@ -63,13 +68,13 @@ Você deve instalar e configurar o Elasticsearch 7.6 ou superior ou o OpenSearch
 
 Consulte [Atualização do Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obter instruções completas sobre como fazer backup de seus dados, detectar possíveis problemas de migração e testar atualizações antes de implantar na produção. Dependendo da versão atual do Elasticsearch, pode ser ou não necessário reiniciar o cluster completo.
 
-O Elasticsearch requer o JDK 1.8 ou superior. Consulte [Instale o Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para verificar qual versão do JDK está instalada.
+O Elasticsearch requer o Java Development Kit (JDK) 1.8 ou superior. Consulte [Instale o Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para verificar qual versão do JDK está instalada.
 
 [Configurar Elasticsearch](../../configuration/search/configure-search-engine.md) descreve as tarefas que devem ser realizadas após atualizar o Elasticsearch 2 para uma versão compatível.
 
 ### OpenSearch
 
-OpenSearch é uma bifurcação de código aberto do Elasticsearch 7.10.2, após a alteração de licenciamento do Elasticsearch. As seguintes versões do Adobe Commerce e do Magento Open Source apresentam suporte para o OpenSearch:
+O OpenSearch é uma bifurcação de código aberto do Elasticsearch 7.1 0.2, após a mudança de licenciamento do Elasticsearch. As seguintes versões do Adobe Commerce e do Magento Open Source apresentam suporte para o OpenSearch:
 
 - 2.4.4
 - 2.4.3-p2
@@ -79,11 +84,15 @@ Você pode [migrar do Elasticsearch para o OpenSearch](opensearch-migration.md) 
 
 O OpenSearch requer o JDK 1.8 ou superior. Consulte [Instale o Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para verificar qual versão do JDK está instalada.
 
-[Configurar o Magento para usar o Elasticsearch](../../configuration/search/configure-search-engine.md) descreve as tarefas que devem ser realizadas após alterar os mecanismos de pesquisa.
+[Configuração do mecanismo de pesquisa](../../configuration/search/configure-search-engine.md) descreve as tarefas que devem ser realizadas após alterar os mecanismos de pesquisa.
 
 ### Extensões de terceiros
 
 Recomendamos que você entre em contato com o fornecedor do mecanismo de pesquisa para determinar se a extensão é totalmente compatível com a versão 2.4.
+
+## Converter formato de tabela de banco de dados
+
+Você deve converter o formato de todas as tabelas de banco de dados de `COMPACT` para `DYNAMIC`. Você também deve converter o tipo de mecanismo de armazenamento de `MyISAM` para `InnoDB`. Consulte [práticas recomendadas](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
 
 ## Definir o limite de arquivos abertos
 
@@ -118,7 +127,7 @@ Para definir o valor no shell Bash:
 
 ## Verifique se trabalhos do cron estão em execução
 
-O agendador de tarefas UNIX `cron` O é essencial para as operações diárias do Adobe Commerce e do Magento Open Source. Ele programa coisas como reindexação, boletins informativos, e-mails, mapas de sites e assim por diante. Vários recursos exigem pelo menos um trabalho cron em execução como proprietário do sistema de arquivos.
+O agendador de tarefas UNIX `cron` O é essencial para as operações diárias do Adobe Commerce e do Magento Open Source. Ele programa coisas como reindexação, boletins informativos, e-mails e mapas de sites. Vários recursos exigem pelo menos um trabalho cron em execução como proprietário do sistema de arquivos.
 
 Para verificar se o trabalho do cron está configurado corretamente, verifique o crontab inserindo o seguinte comando como proprietário do sistema de arquivos:
 
