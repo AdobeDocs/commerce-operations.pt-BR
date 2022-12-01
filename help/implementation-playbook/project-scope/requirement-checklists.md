@@ -2,7 +2,7 @@
 title: Listas de verificação de requisitos
 description: Use esta lista de perguntas abrangentes para ajudar você a se preparar para uma implementação do Adobe Commerce.
 exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: d18be812626723e203d2308be8c3f9783a19b43b
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -205,7 +205,7 @@ Há APIs existentes que podem ser usadas?
 
 - Qual sistema de gerenciamento de pedidos será integrado ao Adobe Commerce? (Exemplos: Microsoft Dynamics, SAP, Retail Pro)
 
-- Qual sistema de gerenciamento de inventário de produtos será integrado ao Adobe Commerce? (Exemplos: Akeneo, InRiver, Bluestone)
+- Qual sistema de gerenciamento de informações do produto será integrado ao Adobe Commerce? (Exemplos: Akeneo, InRiver, Bluestone)
 
 - Qual sistema de gerenciamento de relacionamento com o cliente será integrado ao Adobe Commerce? (Exemplos: Hubspot, Salesforce, Klaviyo)
 
