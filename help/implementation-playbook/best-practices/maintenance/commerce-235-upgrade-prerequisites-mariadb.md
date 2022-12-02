@@ -4,9 +4,9 @@ description: Saiba como preparar seu banco de dados do Adobe Commerce para atual
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 1abe86197de68336e10c50cab7ad38eebb098aeb
+source-git-commit: 071e88c6a07df0f74b6d4b09cce858710c9332cc
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Este artigo explica como preparar seu banco de dados ao atualizar para o Adobe Commerce 2.3.5 da versão 2.3.4 ou anterior.
 
-Essa atualização requer que a equipe de suporte atualize o MariaDB na infraestrutura de nuvem de MariaDB 10.0 para 10.2 para atender aos requisitos do Adobe Commerce . Adobe Commerce versão 2.3.5 e posterior.
+Essa atualização requer que a equipe de suporte atualize o MariaDB na infraestrutura de nuvem de MariaDB 10.0 para 10.2 para atender aos requisitos da versão 2.3.5 e posterior do Adobe Commerce.
 
 ## Produto e versões afetados
 
@@ -24,77 +24,118 @@ Adobe Commerce na infraestrutura de nuvem com Adobe Commerce versão 2.3.4 ou an
 
 ## Preparar seu banco de dados para a atualização
 
-Antes de a equipe de suporte da Adobe Commerce iniciar o processo de atualização, prepare seu banco de dados convertendo o formato de todas as tabelas de `COMPACT` para `DYNAMIC`. Você também deve converter o tipo de mecanismo de armazenamento de `MyISAM` para `InnoDB`.
+Antes de a equipe de suporte da Adobe Commerce iniciar o processo de atualização, prepare o banco de dados convertendo as tabelas do banco de dados:
 
-Lembre-se das diretrizes a seguir ao criar o plano e o agendamento para conversão do banco de dados.
+- Converter o formato de linha de `COMPACT` para `DYNAMIC`
+- Converter o mecanismo de armazenamento de `MyISAM` para `InnoDB`
+
+Lembre-se das seguintes considerações ao planejar e programar a conversão:
 
 - Conversão de `COMPACT` para `DYNAMIC` tabelas podem levar várias horas com um banco de dados grande.
 
-- Para evitar corrupção de dados, não execute a conversão quando o site estiver ativo.
+- Para evitar a corrupção de dados, não conclua o trabalho de conversão em um site ativo.
 
 - Conclua o trabalho de conversão durante um período de tráfego baixo no site.
 
-- Mudar seu site para [modo de manutenção](../../../installation/tutorials/maintenance-mode.md) antes de executar o `ALTER` comandos.
+- Mudar seu site para [modo de manutenção](../../../installation/tutorials/maintenance-mode.md) antes de executar os comandos para converter tabelas de banco de dados.
 
-### Converter tabelas de banco de dados
+### Converter formato de linha da tabela do banco de dados
 
-Você pode converter tabelas em um nó do cluster. As alterações serão replicadas para os outros nós principais no cluster.
+Você pode converter tabelas em um nó do cluster. As alterações são replicadas automaticamente para os outros nós de serviço.
 
 1. No ambiente de infraestrutura em nuvem do Adobe Commerce, use SSH para se conectar ao nó 1.
 
 1. Efetue login no MariaDB.
 
-1. Converta o formato da tabela.
+1. Identificar as tabelas a serem convertidas do formato compacto para dinâmico.
 
-   - Identificar as tabelas a serem convertidas do formato compacto para dinâmico.
+   ```mysql
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+   ```
 
-      ```mysql
-      SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
-      ```
+1. Determine os tamanhos da tabela para agendar o trabalho de conversão.
 
-   - Determine os tamanhos da tabela para agendar o trabalho de conversão.
+   ```mysql
+   SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
+   ```
 
-      ```mysql
-      SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
-      ```
+   Tabelas maiores demoram mais para serem convertidas. Revise as tabelas e agrupe o trabalho de conversão em lote por prioridade e tamanho da tabela para ajudar a planejar as janelas de manutenção necessárias.
 
-      Tabelas maiores demoram mais para serem convertidas. Você deve planejar adequadamente ao colocar e sair do modo de manutenção quais lotes de tabelas serão convertidos em qual ordem, de modo a planejar os horários das janelas de manutenção necessárias
+1. Converta todas as tabelas em formato dinâmico, uma de cada vez.
 
-   - Converta todas as tabelas em formato dinâmico, uma de cada vez.
+   ```mysql
+   ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
+   ```
 
-      ```mysql
-      ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
-      ```
+### Converter formato de armazenamento de tabela de banco de dados
 
-1. Atualize o mecanismo de armazenamento de tabela.
+Você pode converter tabelas em um nó do cluster. As alterações são replicadas automaticamente para os outros nós de serviço.
 
-   - Identificar tabelas que usam `MyISAM` armazenamento.
+O processo para converter o formato de armazenamento é diferente para projetos Adobe Commerce Starter e Adobe Commerce Pro.
 
-      ```mysql
-      SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
-      ```
+- Para arquitetura Inicial, use o MySQL `ALTER` para converter o formato.
+- Na arquitetura Pro, use o MySQL `CREATE` e `SELECT` comandos para criar uma tabela de banco de dados com `InnoDB` e copie os dados da tabela existente para a nova tabela. Esse método garante que as alterações sejam replicadas para todos os nós no cluster.
 
-   - Converter tabelas que usam `MyISAM` armazenamento para `InnoDB` armazenamento.
+**Converter formato de armazenamento de tabela para projetos do Adobe Commerce Pro**
 
-      ```mysql
-      ALTER TABLE [ table name here ] ENGINE=InnoDB;
-      ```
+1. Identificar tabelas que usam `MyISAM` armazenamento.
 
-1. Verifique a conversão.
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
 
-   Essa etapa é necessária porque as implantações de código feitas após a conclusão da conversão podem fazer com que algumas tabelas sejam revertidas para a configuração original.
+1. Converter todas as tabelas em `InnoDB` formato de armazenamento, um de cada vez.
 
-   - O dia antes da atualização programada para o MariaDB versão 10.2, faça logon no banco de dados e execute as consultas para verificar o formato e o mecanismo de armazenamento.
-
-      ```mysql
-      SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
-      ```
+   - Renomeie a tabela existente para evitar conflitos de nome.
 
       ```mysql
-      SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+      RENAME TABLE <existing_table> <table_old>;
       ```
 
-   - Se alguma tabela tiver sido revertida, repita as etapas para alterar o formato da tabela e o mecanismo de armazenamento.
+   - Crie uma tabela que use `InnoDB` armazenamento usando os dados da tabela existente.
+
+      ```mysql
+      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
+      ```
+
+   - Verifique se a nova tabela tem todos os dados necessários.
+
+   - Exclua a tabela original que você renomeou.
+
+
+**Converter formato de armazenamento de tabela para projetos Adobe Commerce Starter**
+
+1. Identificar tabelas que usam `MyISAM` armazenamento.
+
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
+
+1. Converter tabelas que usam `MyISAM` armazenamento para `InnoDB` armazenamento.
+
+   ```mysql
+   ALTER TABLE [ table name here ] ENGINE=InnoDB;
+   ```
+
+### Verificar a conversão do banco de dados
+
+No dia anterior à atualização programada para a versão 10.2 do MariaDB, verifique se todas as tabelas têm o formato de linha e mecanismo de armazenamento corretos. A verificação é necessária porque implantações de código feitas após a conclusão da conversão podem fazer com que algumas tabelas sejam revertidas para a configuração original.
+
+1. Faça logon no banco de dados.
+
+1. Verifique se há tabelas que ainda tenham a variável `COMPACT` formato de linha.
+
+   ```mysql
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
+   ```
+
+1. Verifique se há tabelas que ainda usam o `MyISAM` formato de armazenamento
+
+   ```mysql
+   SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
+   ```
+
+1. Se alguma tabela tiver sido revertida, repita as etapas para alterar o formato da linha da tabela e o mecanismo de armazenamento.
 
 ## Informações adicionais
 
