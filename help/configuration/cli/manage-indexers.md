@@ -1,9 +1,9 @@
 ---
 title: Gerenciar os indexadores
 description: Veja exemplos de como visualizar e gerenciar indexadores do Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Antes de alternar entre modos de indexador, recomendamos colocar seu site na [manutenção](../../installation/tutorials/maintenance-mode.md) modo e [desativar trabalhos do cron](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). Isso garante que você não sofra bloqueios de banco de dados.
+>Antes de alternar entre modos de indexador, recomendamos colocar seu site na [manutenção](../../installation/tutorials/maintenance-mode.md) modo e [desativar trabalhos do cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Isso garante que você não sofra bloqueios de banco de dados.
 
 Para especificar a configuração do indexador:
 

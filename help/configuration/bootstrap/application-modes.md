@@ -1,9 +1,9 @@
 ---
 title: Modos de aplicativo
 description: O aplicativo Commerce pode operar em modos diferentes dependendo de suas necessidades. Exiba uma lista detalhada dos modos de aplicativo disponíveis.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Você pode executar o aplicativo Commerce em qualquer um dos seguintes _modos_:
 
 >[!INFO]
 >
->[Adobe Commerce na infraestrutura de nuvem](https://devdocs.magento.com/cloud/bk-cloud.html) suporta apenas os modos de produção e manutenção.
+>[Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) suporta apenas os modos de produção e manutenção.
 
 ## Modo padrão
 
@@ -71,4 +71,4 @@ Execute o aplicativo Commerce no modo de manutenção para colocar seu site off-
 
 Você pode criar um [página de manutenção personalizada](../../upgrade/troubleshooting/maintenance-mode-options.md), ative e desative manualmente o modo de manutenção e configure o modo de manutenção para permitir que os visitantes de endereços IP autorizados visualizem a loja normalmente. Consulte [ativar e desativar o modo de manutenção](../../installation/tutorials/maintenance-mode.md).
 
-Se você estiver usando o Commerce on cloud Infrastructure, o aplicativo Commerce será executado no modo de manutenção durante a fase de implantação. Quando a implantação é concluída com êxito, o aplicativo Commerce volta a ser executado no modo de produção. Consulte [Ganchos de implantação](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) no _guia Commerce Cloud_.
+Se você estiver usando o Commerce on cloud Infrastructure, o aplicativo Commerce será executado no modo de manutenção durante a fase de implantação. Quando a implantação é concluída com êxito, o aplicativo Commerce volta a ser executado no modo de produção. Consulte [Ganchos de implantação](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) no _Guia do Commerce on Cloud Infrastructure_.

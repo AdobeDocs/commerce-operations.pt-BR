@@ -1,9 +1,9 @@
 ---
 title: Substituir configurações
 description: Saiba como usar variáveis de ambiente para substituir configurações.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Você pode substituir o valor de _any_ configuração usando variáveis de ambie
 
 >[!TIP]
 >
->Confira o [Configurar ambientes](https://devdocs.magento.com/cloud/env/variables-intro.html) no tópico _guia Commerce Cloud_ para obter detalhes sobre como trabalhar com variáveis no Adobe Commerce na infraestrutura de nuvem.
+>Confira o [Configurar ambientes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) no tópico _Guia do Commerce on Cloud Infrastructure_.
 
 ## Variáveis de ambiente
 
@@ -253,6 +253,6 @@ Um exemplo passo a passo é mostrado em [Definir valores de configuração usand
 >
 >- Para usar valores definidos na variável `$_ENV` matriz, você deve definir `variables_order = "EGPCS"`(Ambiente, Get, Post, Cookie e Servidor) em seu `php.ini` arquivo. Para obter detalhes, consulte [documentação PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Para o Adobe Commerce na infraestrutura de nuvem, se você estiver tentando substituir as configurações usando o [Interface da Web do projeto](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var), você deve anexar o nome da variável como `env:`. Por exemplo:
+>- Para o Adobe Commerce na infraestrutura de nuvem, se você estiver tentando substituir as configurações usando o [Interface da Web do projeto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), você deve anexar o nome da variável como `env:`. Por exemplo:
 >
->![Exemplo de variável de ambiente](https://devdocs.magento.com/common/images/cloud/cloud_env_var_example.png)
+>![Exemplo de variável de ambiente](../../assets/configuration/cloud-console-envvariable.png)

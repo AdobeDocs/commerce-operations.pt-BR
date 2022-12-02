@@ -1,9 +1,9 @@
 ---
 title: Visão geral do guia de configuração
 description: Saiba mais sobre todos os recursos e serviços configuráveis para seu aplicativo Adobe Commerce ou Magento Open Source.
-source-git-commit: 573b407bf29fd4dea2c0e9a52593f65fa64ffa2d
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ Há tópicos correspondentes na [Guia do usuário do Commerce](https://docs.mage
 
 ## Configuração na nuvem
 
-[!DNL Commerce on cloud infrastructure] usa um [conjunto de arquivos de configuração](https://devdocs.magento.com/cloud/env/environments.html) para atualizar o [!DNL Commerce] recursos e serviços do aplicativo nos ambientes hospedados. Devido à natureza exclusiva dos ambientes hospedados na nuvem do Adobe, você sempre deve revisar a variável [Guia da nuvem](https://devdocs.magento.com/cloud/bk-cloud.html) para obter requisitos de configuração adicionais.
+[!DNL Commerce on cloud infrastructure] usa um [conjunto de arquivos de configuração](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) para atualizar os recursos e serviços do aplicativo Commerce nos ambientes hospedados. Devido à natureza exclusiva dos ambientes hospedados na nuvem do Adobe, você sempre deve revisar a variável [Guia da nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) para obter requisitos de configuração adicionais.
