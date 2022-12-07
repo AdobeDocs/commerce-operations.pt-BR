@@ -1,9 +1,9 @@
 ---
 title: Guia de instalação
 description: "Use este guia para instalar [!DNL Site-Wide Analysis Tool] para o seu site"
-source-git-commit: bfcedda38f91f5dba8880bb1593ad40a6e3f8041
+source-git-commit: 5603d0feee6ec9dd5e8b534a0e64df274d7ab84d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ O [!DNL Site-Wide Analysis Tool] O oferece monitoramento, relatórios e recomend
 >
 >Saiba mais [como ativar](../site-wide-analysis-tool/access.md) o [!DNL Site-Wide Analysis Tool] e gerar relatórios.
 
-Se você tiver uma instalação local do Adobe Commerce, deverá instalar um agente em sua infraestrutura para usar a ferramenta. Não é necessário instalar o agente no Adobe Commerce em projetos de infraestrutura em nuvem.
+Se você tiver uma instalação local do Adobe Commerce, instale um agente em sua infraestrutura para usar a ferramenta. Não é necessário instalar o agente no Adobe Commerce em projetos de infraestrutura em nuvem.
 
 ## Agente
 
@@ -36,7 +36,7 @@ A instalação do agente requer as seguintes etapas:
 
 >[!INFO]
 >
->O agente oferece suporte a instalações de vários nós do Adobe Commerce. Você deve instalar e configurar o agente em cada nó.
+>O agente oferece suporte a instalações de vários nós do Adobe Commerce. Instale e configure o agente em cada nó.
 
 ## Requisitos do sistema
 
@@ -44,7 +44,7 @@ Sua infraestrutura local deve atender aos seguintes requisitos antes de instalar
 
 - Sistemas operacionais
 
-   - [!DNL Linux x86-64] distribuições, como [!DNL RedHat Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian]e semelhantes
+   - [!DNL Linux x86-64] distribuições, como [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian]e semelhantes
    >[!IMPORTANT]
    >
    >O Adobe Commerce não é compatível com [!DNL Microsoft Windows] ou [!DNL macOS].
@@ -81,7 +81,11 @@ Se tiver instalado e configurado a extensão usando uma chave de API existente p
 
 1. Coloque seu site em [modo de manutenção](../../installation/tutorials/maintenance-mode.md).
 
-1. Faça logon [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+1. Faça logon [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
+
+   >[!NOTE]
+   >
+   > Se tiver problemas para acessar sua conta, consulte [Não é possível fazer logon no suporte da Adobe Commerce ou na conta na nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) para obter ajuda para solucionar problemas.
 
 1. Clique em **[!UICONTROL API Portal]**.
 
@@ -91,7 +95,7 @@ Se tiver instalado e configurado a extensão usando uma chave de API existente p
 
 >[!IMPORTANT]
 >
-> Se você gerar novas chaves no Portal da API, atualize imediatamente as chaves da API no [!DNL Admin configuration]. Se você gerar novas chaves e não as atualizar na [!DNL Admin], suas extensões SaaS não funcionarão mais e você perderá dados valiosos.
+> Se você gerar novas chaves no Portal da API, atualize imediatamente as chaves da API no [!DNL Admin configuration]. Se você gerar novas chaves e não atualizar as chaves no [!DNL Admin], suas extensões SaaS não funcionarão mais e você perderá dados valiosos.
 
 Se a extensão não estiver instalada, use as seguintes instruções para instalá-la:
 
@@ -146,7 +150,7 @@ Criamos um [script de shell](https://github.com/magento-swat/install-agent-helpe
    Success exit.
    ```
 
-1. Após baixar e instalar o agente, é necessário [configure-a para ser executada](#run-the-agent) utilizando um dos seguintes métodos:
+1. Após baixar e instalar o agente, [configure-a para ser executada](#run-the-agent) utilizando um dos seguintes métodos:
 
    - [Serviço](#service) (preferencial se você tiver acesso raiz)
 
@@ -257,7 +261,7 @@ Recomendamos configurar o agente para ser executado como um serviço. Se você t
 
 ### Serviço {#service}
 
-1. Criar um arquivo de unidade do sistema `(/etc/systemd/system/scheduler.service)` com a seguinte configuração (substitua `<filesystemowner>` com o usuário do Unix que possui o diretório onde o agente e o software do Adobe Commerce estão instalados). Se você tiver baixado o agente como o usuário raiz, altere o diretório e o proprietário dos arquivos aninhados.
+1. Criar um arquivo de unidade do sistema `(/etc/systemd/system/scheduler.service)` com a seguinte configuração (substitua `<filesystemowner>` com o usuário UNIX® que possui o diretório onde o agente e o software Adobe Commerce estão instalados). Se você tiver baixado o agente como o usuário raiz, altere o diretório e o proprietário dos arquivos aninhados.
 
    ```config
    [Unit]
