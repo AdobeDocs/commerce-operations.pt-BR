@@ -1,9 +1,9 @@
 ---
 title: Obter as chaves de autenticação
 description: Siga estas etapas para recuperar credenciais para acessar os pacotes do Adobe Commerce e do Magento Open Source Composer no repo.magento.com.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: d209d3f7fde55f7495488f2cbeeebf21024875ed
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,15 @@ ht-degree: 0%
 
 O `repo.magento.com` O repositório é onde os pacotes Adobe Commerce e Magento Open Source e Composer de terceiros são armazenados e exigem autenticação. Use sua conta Commerce Marketplace para gerar um par de 32 caracteres *chaves de autenticação* para acessar o repositório.
 
->[!NOTE]
+Para obter o direito de acesso aos pacotes Adobe Commerce e Magento Open Source, você deve usar chaves associadas a um MAGEID que recebeu acesso a esses pacotes. Normalmente, o MAGEID é o Contato principal na conta da Adobe Commerce e nem sempre pode ser o Proprietário do Projeto do Adobe Commerce no projeto de infraestrutura em nuvem.
+
+>[!TIP]
 >
->Para obter o direito de acesso aos pacotes Adobe Commerce e Magento Open Source, você deve usar chaves associadas a um MAGEID que recebeu acesso a esses pacotes. Normalmente, o MAGEID é o **Contato de Faturamento** na conta do Adobe Commerce e nem sempre pode ser o **Proprietário do projeto** do projeto de infraestrutura em nuvem do Adobe Commerce on. Se encontrar [erros](https://support.magento.com/hc/en-us/articles/360040296392), você pode não ter autorização para acessar o pacote ou o direito de acesso expirou devido a uma fatura pendente na conta. Contato [Suporte Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda com seu MAGEID.
+>Se encontrar [erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), você pode não ter autorização para acessar o pacote ou o direito de acesso expirou devido a uma fatura pendente em sua conta.
+>
+>* Se você for o contato principal na conta, verifique se não há nenhuma fatura pendente listada na conta.
+>* Se as chaves fornecidas pelo Contato Principal não estiverem funcionando e não houver faturas pendentes na conta, entre em contato com [Suporte Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obter assistência com o MAGEID do Contato Principal.
+
 
 Para criar chaves de autenticação:
 
