@@ -1,17 +1,17 @@
 ---
-title: '"O [!UICONTROL Infra] tab"'
-description: O [!UICONTROL Infra] A guia isola problemas e causas de problemas de infraestrutura.
-source-git-commit: b0d80d97f60b24bc801063dc484f3a495cf0a036
+title: "O [!DNL Infra] tab"
+description: O [!DNL Infra] A guia isola problemas e causas de problemas de infraestrutura.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 
-# O [!UICONTROL Infra] guia
+# O [!DNL Infra] guia
 
-O **[!UICONTROL Infra]** A guia isola problemas e causas de problemas de infraestrutura. Além disso, estão descritos os quadros que podem ser vistos na guia .
+O **[!DNL Infra]** A guia isola problemas e causas de problemas de infraestrutura. Além disso, estão descritos os quadros que podem ser vistos na guia .
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
@@ -23,7 +23,7 @@ O **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]** 
 
 ![Uso do nó por montagem](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
-O **[!UICONTROL Inode usage by mount]** quadro mostra o uso de nó por montagem no período selecionado. Embora possa haver bastante armazenamento livre, se um nó ficar sem nós, ele mostrará uma falta de armazenamento disponível. A remoção de arquivos (especialmente os pequenos) liberará espaço e disponibilizará nós.
+O **[!UICONTROL Inode usage by mount]** exibições de quadro [!DNL inode] uso por montagem no período selecionado. Embora possa haver bastante armazenamento livre, se um nó ficar sem [!DNL inodes], mostrará falta de armazenamento disponível. A remoção de arquivos (especialmente os pequenos) liberará espaço e criará [!DNL inodes] disponível.
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 

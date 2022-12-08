@@ -1,15 +1,15 @@
 ---
-title: '"O [!UICONTROL QuickView] tab"'
-description: A guia QuickView explica os diferentes tipos de alerta que você pode ver, incluindo aqueles em baixo espaço em disco e uso do servidor.
-source-git-commit: 4d700c04be5cd1ec2dc1c43c627feeed93f0fbee
+title: "O [!DNL QuickView] tab"
+description: O [!DNL QuickView] guia explica os diferentes tipos de alerta que podem ser vistos, incluindo aqueles em baixo espaço em disco e uso do servidor.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 
-# O [!UICONTROL QuickView] guia
+# O [!DNL QuickView] guia
 
 O **[!UICONTROL QuickView]** guia explica os diferentes tipos de alerta que podem ser vistos, incluindo aqueles em baixo espaço em disco e uso do servidor. Além disso, os quadros da guia são descritos.
 

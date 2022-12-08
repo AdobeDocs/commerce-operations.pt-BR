@@ -1,52 +1,52 @@
 ---
-title: '"O [!UICONTROL Cron] tab"'
-description: Saiba mais sobre o [!UICONTROL Cron] guia de [!DNL Observation for Adobe Commerce].
-source-git-commit: 3c1e50b3bff1bd2b2760e2e763173275161b0044
+title: "O [!DNL Cron] tab"
+description: Saiba mais sobre o [!DNL Cron] guia de [!DNL Observation for Adobe Commerce].
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
-# O [!UICONTROL Cron] guia
+# O [!DNL Cron] guia
 
-Esta guia é uma tentativa de isolar rapidamente os problemas e as causas de problemas de cron.
+Esta guia é uma tentativa de isolar rapidamente os problemas e as causas de [!DNL cron] problemas.
 
 ## [!UICONTROL Cron transaction duration in seconds]
 
 ![Duração da transação Cron em segundos](../../assets/tools/observation-for-adobe-commerce/cron-tab-1.jpg)
 
-O **[!UICONTROL Cron transaction duration in seconds]** quadro exibe crons transaction duration em segundos. Isso exibirá as transações que têm tempos de execução longos. Um mergulho mais profundo no APM mostrará mais detalhes sobre qual query a transação/operação pode estar sendo executada.
+O **[!UICONTROL Cron transaction duration in seconds]** quadros exibidos [!DNL crons] duração da transação em segundos. Isso exibirá as transações que têm tempos de execução longos. Um mergulho mais profundo no APM mostrará mais detalhes sobre qual query a transação/operação pode estar sendo executada.
 
-## [!UICONTROL MySql Non-Sleeping Threads by Node]
+## [!UICONTROL MySQL Non-Sleeping Threads by Node]
 
-![Threads que não dormem MySql por nó](../../assets/tools/observation-for-adobe-commerce/cron-tab-2.jpg)
+![Threads Não Suspensos do MySQL por Nó](../../assets/tools/observation-for-adobe-commerce/cron-tab-2.jpg)
 
-O **[!UICONTROL MySql Non-Sleeping Threads by Node]** mostra os threads MySql Non-Sleeping por nó no período de tempo selecionado.
+O **[!UICONTROL MySQL Non-Sleeping Threads by Node]** O quadro mostra os threads do MySQL Non-Sleching por nó no período selecionado.
 
 ## [!UICONTROL SQL Trace count by path]
 
 ![Contagem de Rastreio SQL por caminho](../../assets/tools/observation-for-adobe-commerce/cron-tab-3.jpg)
 
-O **[!UICONTROL SQL Trace count by path]** O frame procura as contagens de rastreamento do MySql por caminho, o que pode ajudar a rastrear instruções SQL em um período selecionado.
+O **[!UICONTROL SQL Trace count by path]** O quadro procura as contagens de rastreamento do MySQL por caminho, o que pode ajudar a rastrear instruções SQL em um período selecionado.
 
 ## [!UICONTROL Cron database call]
 
 ![Chamada de banco de dados Cron](../../assets/tools/observation-for-adobe-commerce/cron-tab-4.jpg)
 
-O **[!UICONTROL Cron database call]** O frame procura o número de crons que chamam o banco de dados em um período selecionado.
+O **[!UICONTROL Cron database call]** o quadro observa o número de [!DNL crons] chamada para o banco de dados em um período selecionado.
 
 ## [!UICONTROL Cron schedule table locks]
 
 ![Bloqueios da tabela de programação de Cron](../../assets/tools/observation-for-adobe-commerce/cron-tab-5.jpg)
 
-O **[!UICONTROL Cron schedule table locks]** O quadro observa os bloqueios da tabela de programação de cron em um período selecionado.
+O **[!UICONTROL Cron schedule table locks]** o quadro procura [!DNL cron] a tabela do agendamento é bloqueada em um período selecionado.
 
 ## [!UICONTROL Cron schedule clean cron fired]
 
 ![Bloqueios da tabela de programação de Cron](../../assets/tools/observation-for-adobe-commerce/cron-tab-6.jpg)
 
-O **[!UICONTROL Cron schedule clean cron fired]** O frame procura o número de crons limpos em um período selecionado. Se nenhum dado for exibido nesse quadro, isso pode indicar um problema com os crons sendo executados corretamente. Se o cronograma de tarefas do cron não for limpo, os crons não serão executados de maneira ideal e poderão demorar mais para serem executados.
+O **[!UICONTROL Cron schedule clean cron fired]** o quadro observa o número de [!DNL crons] limpo em um período selecionado. Se nenhum dado for exibido nesse quadro, isso pode indicar um problema com [!DNL crons] em execução corretamente. Se a variável [!DNL cron] a programação de tarefas não é limpa, [!DNL crons] não será executado de maneira ideal e pode demorar mais para ser executado.
 
 ## [!UICONTROL Cron schedule clean records details table]
 
@@ -58,7 +58,7 @@ O **[!UICONTROL Cron schedule clean records details table]** a tabela fornece de
 
 ![atualizações da tabela cron_schedule](../../assets/tools/observation-for-adobe-commerce/cron-tab-8.jpg)
 
-O **[!UICONTROL cron_schedule table updates]** O frame procura o número de atualizações de tabela programadas do cron em um período selecionado. A alta atividade na exclusão ou atualização desta tabela pode indicar um problema com crons. Além disso, os crons atualizam essa tabela quando são executados e concluídos, de modo que, se não houver atividade nessa tabela e houver crons configurados, poderá haver um problema com os crons.
+O **[!UICONTROL cron_schedule table updates]** o quadro observa o número de [!DNL cron] atualizações de tabela programadas em um período selecionado. A alta atividade na exclusão ou atualização desta tabela pode indicar um problema com [!DNL crons]. Além disso, [!DNL crons] atualize esta tabela quando elas forem executadas e concluídas, portanto, se não houver nenhuma atividade nessa tabela e houver [!DNL crons] configurado, pode haver um problema com [!DNL crons].
 
 ## [!UICONTROL Datastore Operations Tables]
 
