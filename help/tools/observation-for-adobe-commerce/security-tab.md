@@ -1,9 +1,9 @@
 ---
-title: '"O [!UICONTROL Security] tab"'
+title: "O [!UICONTROL Security] tab"
 description: Saiba mais sobre o [!UICONTROL Security] guia de [!DNL Observation for Adobe Commerce].
-source-git-commit: 5e4babd14bb918db7f894b7ca6a0344a4652704c
+source-git-commit: 297c3fed4c0f7ad1a3cb40addef1d33fa8d41525
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -33,24 +33,24 @@ O **[!UICONTROL Create Account access]** quadro mostra o número de novas ativid
 
 ## [!UICONTROL POST activities]
 
-O **[!UICONTROL POST activities]** quadro mostra as atividades do POST para o site, faceadas em client_ip do [!DNL Fastly] logs. Também mostra o URL que é acessado pelo endereço IP.
+O **[!UICONTROL POST activities]** quadro mostra o `POST` atividades para o site, facetadas em `client_ip` do [!DNL Fastly] logs. Também mostra o URL que é acessado pelo endereço IP.
 
 ![POST-activities](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-O **Tabela de resumo de atividades do POST** quadro mostra as atividades de POST resumidas para o site, faceadas em client_ip do [!DNL Fastly] logs. Também mostra a contagem do URL que é acessado pelo endereço IP. A contagem é para o período de tempo selecionado.
+O **[!UICONTROL POST activities summary table]** quadro mostra o resumo `POST` atividades para o site, facetadas em `client_ip` do [!DNL Fastly] logs. Também mostra a contagem do URL que é acessado pelo endereço IP. A contagem é para o período de tempo selecionado.
 
 ![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-O **[!UICONTROL POST activities details table]** quadro mostra as atividades do POST para o site a partir do [!DNL Fastly] logs. Também mostra todos os detalhes da [!DNL Fastly] registre essas solicitações. Limita-se aos últimos 2000 pedidos.
+O **[!UICONTROL POST activities details table]** quadro mostra o `POST` atividades para o site a partir do [!DNL Fastly] logs. Também mostra todos os detalhes da [!DNL Fastly] registre essas solicitações. Limita-se aos últimos 2000 pedidos.
 ![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 
-O **[!UICONTROL Guest Carts activities]** quadro mostra o número de atividades do carrinho de hóspedes em um período selecionado, faceado pelo endereço IP e URL acessado. Carrinhos convidados podem ser usados em um ataque de cardado. Este quadro mostra o número total de solicitações em que os URLs de carrinhos de convidado são acessados.
+O **[!UICONTROL Guest Carts activities]** quadro mostra o número de atividades do carrinho de hóspedes em um período selecionado, faceado pelo endereço IP e URL acessado. Carrinhos convidados podem ser usados em um ataque de cardado. Este quadro mostra o número total de solicitações em que os URLs dos carrinhos de convidado são acessados.
 
 ![atividades de carrinhos de visitas](../../assets/tools/observation-for-adobe-commerce/guest-carts-activities.jpg)
 

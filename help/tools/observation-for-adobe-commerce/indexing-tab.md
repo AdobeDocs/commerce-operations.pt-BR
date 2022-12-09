@@ -1,9 +1,9 @@
 ---
-title: '"O [!UICONTROL Indexing] tab"'
+title: "O [!UICONTROL Indexing] tab"
 description: Saiba mais sobre o [!UICONTROL Indexing] guia de [!DNL Observation for Adobe Commerce].
-source-git-commit: 1f334f329b72b715afa7f3617b1ce2fb8004f816
+source-git-commit: e6038d6f0add9d01d650914b35a1daba885fa7f8
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -16,21 +16,21 @@ O **[!UICONTROL Indexing]** A guia tenta explicar problemas com indexação e id
 
 ![Índice principal invalidado](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
 
-O **[!UICONTROL Core index invalidated]** O quadro observa a invalidação de indexação em um período selecionado. Se a indexação estiver acontecendo ao mesmo tempo que outros crons com muitos recursos, ela colocará uma carga pesada nos recursos do site.
+O **[!UICONTROL Core index invalidated]** O quadro observa a invalidação de indexação em um período selecionado. Se a indexação estiver acontecendo ao mesmo tempo que outros recursos intensivos [!DNL crons], isso colocará uma carga pesada nos recursos do site.
 
-* &#39;%Indexador de Regra de Produto do Catálogo foi invalidado%&#39;) como &#39;catalog_product_rule_idx_reset&#39;
-* &#39;%Indexador de Produto de Regra de Catálogo foi invalidado%&#39;) como &#39;catalog_rule_product_idx_reset&#39;
-* &#39;%Indexador de Pesquisa de Catálogo foi invalidado%&#39;) como &#39;catalog_search_idx_reset&#39;
-* &#39;%O indexador de Produtos de Categoria foi invalidado%&#39;) como &#39;category_products_idx_reset&#39;
-* &#39;%O indexador de Grade de Cliente foi invalidado%&#39;) como &#39;customer_grid_idx_reset&#39;
-* &#39;%O indexador da Grade de Configuração de Design foi invalidado%&#39;) como &#39;design_config_grid_idx_
-* &#39;%O indexador de Categorias de Produto foi invalidado%&#39;) como &#39;product_categories_idx_reset&#39;
-* &#39;%O indexador EAV do produto foi invalidado%&#39;) como &#39;product_eav_idx_reset&#39;
-* &#39;%O indexador de Preço do Produto foi invalidado%&#39;) como &#39;product_price_idx_reset&#39;
-* &#39;%O indexador de estoque foi invalidado%&#39;) como &#39;stock_idx_reset&#39;
-* &#39;%O indexador de inventário foi invalidado%&#39;) como &#39;inventory_idx_reset&#39;
-* &#39;%O indexador de inventário foi invalidado%&#39;) como &#39;inventory_idx_reset&#39;
-* &#39;%O indexador da Regra de Vendas foi invalidado%&#39;) como &#39;sales_rule_idx_reset&#39;
+* `%Catalog Product Rule indexer has been invalidated%`) como `catalog_product_rule_idx_reset`
+* `%Catalog Rule Product indexer has been invalidated%`) como `catalog_rule_product_idx_reset`
+* `%Catalog Search indexer has been invalidated%`) como `catalog_search_idx_reset`
+* `%Category Products indexer has been invalidated%`) como `category_products_idx_reset`
+* `%Customer Grid indexer has been invalidated%`) como `customer_grid_idx_reset`
+* `%Design Config Grid indexer has been invalidated%`) como `design_config_grid_idx_`
+* `%Product Categories indexer has been invalidated%`) como `product_categories_idx_reset`
+* `%Product EAV indexer has been invalidated%`) como `product_eav_idx_reset`
+* `%Product Price indexer has been invalidated%`) como `product_price_idx_reset`
+* `%Stock indexer has been invalidated%`) como `stock_idx_reset`
+* `%Inventory indexer has been invalidated%`) como `inventory_idx_reset`
+* `%Inventory indexer has been invalidated%`) como `inventory_idx_reset`
+* `%Sales Rule indexer has been invalidated%`) como `sales_rule_idx_reset`
 
 ## [!UICONTROL Core index rebuilds]
 
@@ -38,29 +38,29 @@ O **[!UICONTROL Core index invalidated]** O quadro observa a invalidação de in
 
 O **[!UICONTROL Core index rebuilds]** O quadro observa as recriações do índice principal em um período selecionado. Estas são as cadeias de caracteres analisadas dos logs para indicar a conclusão da reconstrução do índice.
 
-* &#39;%O índice da Regra de Produto do Catálogo foi reconstruído%&#39;) como &#39;catalog_product_rule_idx&#39;
-* &#39;%Catalog Rule Product index foi reconstruído%&#39;) como &#39;catalog_rule_product_idx&#39;
-* &#39;%Índice de Pesquisa de Catálogo recriado%&#39;) como &#39;catalog_search_idx&#39;
-* &#39;%O índice de Produtos de Categoria foi reconstruído com êxito%&#39;) como &#39;category_products_idx&#39;
-* &#39;%Índice de Grade de Cliente foi reconstruído%&#39;) como &#39;customer_grid_idx&#39;
-* &#39;%O índice da Grade de Configuração de Design foi reconstruído%&#39;) como &#39;design_config_grid_idx&#39;
-* &#39;%O índice de Categorias de Produto foi reconstruído%&#39;) como &#39;product_categories_idx&#39;
-* &#39;%O índice EAV do Produto foi reconstruído%&#39;) como &#39;product_eav_idx&#39;
-* &#39;%Product Price index has rebuild%&#39;) como &#39;product_price_idx&#39;
-* &#39;%Stock index foi reconstruído%&#39;) como &#39;stock_idx&#39;
-* &#39;%O índice de inventário foi reconstruído com êxito%&#39;) como &#39;inventory_idx&#39;
-* %O índice de Regra de Produto/Destino foi recriado com êxito%&#39;) como &#39;prod_target_rule_idx&#39;
-* &#39;%O índice da Regra de Vendas foi reconstruído com êxito%&#39;) como &#39;sales_rule_idx&#39;
+* `%Catalog Product Rule index has been rebuilt%`) como `catalog_product_rule_idx`
+* `%Catalog Rule Product index has been rebuilt%`) como `catalog_rule_product_idx`
+* `%Catalog Search index has been rebuilt%`) como `catalog_search_idx`
+* `%Category Products index has been rebuilt successfully%`) como `category_products_idx`
+* `%Customer Grid index has been rebuilt%`) como `customer_grid_idx`
+* `%Design Config Grid index has been rebuilt%`) como `design_config_grid_idx`
+* `%Product Categories index has been rebuilt%`) como `product_categories_idx`
+* `%Product EAV index has been rebuilt%`) como `product_eav_idx`
+* `%Product Price index has been rebuilt%`) como `product_price_idx`
+* `%Stock index has been rebuilt%`) como `stock_idx`
+* `%Inventory index has been rebuilt successfully%`) como `inventory_idx`
+* `%Product/Target Rule index has been rebuilt successfully%`) como `prod_target_rule_idx`
+* `%Sales Rule index has been rebuilt successfully%`) como `sales_rule_idx`
 
 
 ## [!UICONTROL catalogsearch index table(s)]
 
 ![tabela(s) de índice catalogsearch](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
 
-O **[!UICONTROL catalogsearch index table(s)]** o frame procura as tabelas de índice do catalogsearch em um período selecionado. Esta consulta está analisando a duração de quaisquer operações do armazenamento de dados em relação a tabelas com &quot;%catalogsearch%&quot; no nome da tabela.
+O **[!UICONTROL catalogsearch index table(s)]** o frame procura as tabelas de índice do catalogsearch em um período selecionado. Esta consulta está analisando a duração de quaisquer operações do armazenamento de dados em relação a tabelas com `%catalogsearch%` no nome da tabela.
 
 ## [!UICONTROL product index table(s)]
 
 ![tabela(s) de índice de produto](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
-O **[!UICONTROL product index table(s)]** O frame procura as tabelas do índice do produto em um período selecionado. Esta consulta está analisando a duração de quaisquer operações do armazenamento de dados em relação a tabelas com &quot;%product%&quot; no nome da tabela.
+O **[!UICONTROL product index table(s)]** O frame procura as tabelas do índice do produto em um período selecionado. Esta consulta está analisando a duração de quaisquer operações do armazenamento de dados em relação a tabelas com `%product%` no nome da tabela.
