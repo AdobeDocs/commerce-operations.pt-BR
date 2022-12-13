@@ -1,9 +1,9 @@
 ---
 title: Armazenamento remoto para o Commerce na infraestrutura em nuvem
 description: Consulte as orientações sobre como configurar o armazenamento remoto para o Adobe Commerce na infraestrutura em nuvem.
-source-git-commit: 0653d90d92e264b62fcc648f2b1307c013e9be54
+source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Defina as `REMOTE_STORAGE` como uma [variável de nível de ambiente](https://ex
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
-Isso cria uma `REMOTE_STORAGE` com a configuração JSON especificada. O `REMOTE_STORAGE` exige uma string JSON para configurar o armazenamento remoto. Abaixo está um exemplo de configuração JSON.
+Isso cria uma `REMOTE_STORAGE` com a configuração JSON especificada. O `REMOTE_STORAGE` exige uma string JSON para configurar o armazenamento remoto. Este é um exemplo de configuração JSON:
 
 ```json
 {
