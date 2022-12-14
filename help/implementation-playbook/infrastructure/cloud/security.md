@@ -2,9 +2,9 @@
 title: Segurança da infraestrutura em nuvem
 description: Saiba mais sobre como mantemos a Adobe Commerce na infraestrutura de nuvem segura.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Todas as atividades do AWS estão conectadas no AWS CloudTrail. Linux, servidor 
 
 Os dados confidenciais podem abranger informações pessoais de consumidores ou dados confidenciais de clientes da Managed Services. A proteção de dados confidenciais de clientes e consumidores é uma obrigação fundamental para a Adobe Commerce Managed Services. A Managed Services e seus clientes têm obrigações legais em relação a informações de identificação pessoal. Além dos recursos de segurança da arquitetura, há outros controles para limitar a distribuição e o acesso a dados confidenciais.
 
-Os clientes são proprietários de seus dados e têm controle sobre onde esses dados serão localizados. O cliente especifica o local onde as instâncias de produção e desenvolvimento residem. Eles também especificam qual local será usado para o ambiente Magento Business Intelligence (MBI) em conjunto com Commerce e se esse aplicativo MBI tem acesso ou não a informações de identificação pessoal. As instâncias de produção podem estar localizadas na maioria das regiões do AWS, enquanto os ambientes de desenvolvimento e MBI podem se integrar nos Estados Unidos ou na União Europeia no momento.
+Os clientes são proprietários de seus dados e têm controle sobre onde esses dados serão localizados. O cliente especifica o local onde as instâncias de produção e desenvolvimento residem. Eles também especificam qual local será usado para o ambiente de Relatórios do Adobe Commerce em conjunto com o Commerce e se esse aplicativo Adobe Commerce Reporting tem acesso ou não a informações de identificação pessoal. As instâncias de Produção podem ser localizadas na maioria das regiões do AWS, enquanto os ambientes de desenvolvimento e Adobe Commerce Reporting podem ser encontrados nos Estados Unidos ou na União Europeia no momento.
 
 Os dados confidenciais podem passar pela rede do servidor CDN Fastly, mas não são armazenados na rede Fastly. Todos os parceiros incluídos na oferta da Adobe Commerce Managed Services têm obrigações contratuais para garantir a proteção de dados confidenciais. A Managed Services não moverá dados confidenciais de clientes ou consumidores dos locais especificados pelo cliente.
 
