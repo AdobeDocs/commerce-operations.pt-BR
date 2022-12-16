@@ -1,7 +1,7 @@
 ---
 title: Iniciar consumidores de fila de mensagens
 description: Saiba como iniciar um consumidor de fila de mensagens.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: 3e3dac0c75622b210cf1168639b8804003f3c538
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Você deve iniciar um consumidor de fila de mensagens para ativar operações assíncronas, como ações em massa do Inventory management e pontos de extremidade REST em massa e assíncronos. Para habilitar a funcionalidade B2B, você deve iniciar vários consumidores. Módulos de terceiros também podem exigir que você inicie um consumidor personalizado.
+Você deve iniciar um [consumidor da fila de mensagens](../queues/consumers.md) para permitir operações assíncronas, como ações em massa do Inventory management e endpoints REST em massa e assíncronos. Para habilitar a funcionalidade B2B, você deve iniciar vários consumidores. Módulos de terceiros também podem exigir que você inicie um consumidor personalizado.
 
 Para exibir uma lista de todos os consumidores:
 
