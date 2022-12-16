@@ -2,9 +2,9 @@
 keywords: Adobe Commerce; home; tópicos populares
 title: Início
 description: Navegue por um índice da documentação operacional do produto Adobe Commerce.
-source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
+source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '164'
 ht-degree: 2%
 
 ---
@@ -124,6 +124,7 @@ Obtenha informações práticas sobre conceitos, processos, ferramentas e práti
 Saiba mais sobre a nova documentação e atualizações significativas da documentação existente.
 
 | Alterar | Tipo |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| Movido o [Guia de segurança e conformidade](../security-and-compliance/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | Novo |
-| Movido o [Guia de informações da versão](../release/release-notes/overview.md) from [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Novo |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| Adição de um novo tópico que descreve todos os [consumidores de fila de mensagens](../configuration/queues/consumers.md). | Novo |
+| Adicionado [instruções](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) para converter o formato de armazenamento de tabela do banco de dados para projetos do Adobe Commerce on cloud Infrastructure Pro. | Atualizado |
+| Adicionado [instruções](../configuration/remote-storage/cloud-support.md) para habilitar o armazenamento remoto para o Adobe Commerce em projetos de infraestrutura em nuvem. | Atualizado |
