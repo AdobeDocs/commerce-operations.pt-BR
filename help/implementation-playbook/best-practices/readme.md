@@ -1,46 +1,50 @@
 ---
-source-git-commit: aaf174e5d895ebc60d4937b0214e23a559532942
+source-git-commit: 8013e6339d42108dbefbbafa5db7f9ffc5288c4f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 # Práticas recomendadas: Fluxo de trabalho de criação de conteúdo
 
-O objetivo deste documento é detalhar o fluxo de trabalho que os usuários devem seguir para solicitar o conteúdo de Práticas recomendadas.
+Este documento descreve o fluxo de trabalho do usuário para solicitar alterações ou adições à *[Práticas recomendadas](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html)* no *Playbook de implementação do Adobe Commerce*.
 
 ## Quem pode criar uma solicitação?
 
-Há dois grupos de partes interessadas que podem apresentar um pedido, incluindo, mas não se limitando a:
+O Adobe aceita solicitações de participantes internos e externos, incluindo, mas não limitado a, indivíduos nos seguintes grupos:
 
-- Externo: Parceiros
-- Interno: CTAG (Customer Technical Advisory Group), Suporte ao cliente, sucesso do cliente, equipes de engenharia
+- Parceiros Adobe
+- Adobe CTAG (Customer Technical Advisory Group), Suporte ao cliente, Sucesso do cliente, equipes de engenharia
 
 ## Como criar uma solicitação?
 
-As partes interessadas internas devem fazer pedidos abrindo uma questão Jira no projeto COMDOX. Os participantes externos devem fazer solicitações abrindo um problema do GitHub neste repositório. As partes interessadas podem fazer as seguintes solicitações:
+**Interessados internos** O pode enviar solicitações abrindo um problema Jira no projeto COMDOX. **Partes interessadas externas** pode enviar solicitações abrindo uma [Problema do GitHub](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) neste repositório.
 
-- Solicitar a adição de novo conteúdo
-- Solicitar edições para conteúdo já publicado
-- Compartilhar seu próprio conteúdo para publicação
+Você pode enviar os seguintes tipos de solicitações:
+
+- Ideias para novo conteúdo
+- Atualizações do conteúdo já publicado
+- Publicar novo conteúdo fornecido pela parte interessada ou pela comunidade
 
 ## Qual é o processo global?
 
-Os participantes internos devem abrir um tíquete Jira no projeto Commerce Documentation (COMDOX) e fornecer detalhes completos, incluindo o preenchimento de um modelo. Esses detalhes ajudam a equipe a priorizar as solicitações de conteúdo.
 
-A equipe monitora regularmente as solicitações no backlog para determinar a prioridade e se o Playbook de implementação é o melhor lugar para a solicitação. A equipe pode determinar que, em vez de criar um novo tópico, o conteúdo solicitado deve ser adicionado à documentação existente do produto no Experience League ou no site do Adobe Developer.
+**Criar um tíquete ou problema Jira**—Interessados internos criam um tíquete Jira no projeto COMDOX. Os participantes externos enviam um problema com o GitHub. Inclua detalhes completos na Jira ou [Problema do GitHub](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) para ajudar a equipe a entender o contexto e priorizar a solicitação.
 
-Se não houver informações suficientes fornecidas em uma solicitação, a equipe pedirá ao solicitante que preencha todos os campos correspondentes. Se o solicitante não responder dentro de X dias, a equipe fecha a solicitação.
-Depois que a equipe valida e prioriza a solicitação, a próxima etapa é criar o tópico. Isso pode significar adaptar o conteúdo ao formato .md ou criar o artigo do zero.
+**A equipe do projeto Adobe avalia e prioriza a solicitação**—A equipe monitora regularmente solicitações para determinar a prioridade e avaliar as alterações solicitadas para inclusão nas Práticas recomendadas do manual de implementação. Por exemplo, a equipe pode determinar que, em vez de criar um novo tópico de Práticas recomendadas , o conteúdo solicitado deve ser adicionado à documentação existente do produto no Experience League ou no site do Adobe Developer.
 
-O conteúdo é revisado e editado durante a criação do tópico. O processo de revisão acontece por meio de solicitações de pull do GitHub. Todo o conteúdo deve passar pela revisão editorial. A revisão técnica é opcional e depende do conteúdo. Se não for necessária uma revisão técnica, o processo prossegue apenas com uma revisão editorial. Esse processo pode levar várias iterações até que o conteúdo seja aprovado.
+Se não houver informações suficientes fornecidas em uma solicitação, a equipe solicitará informações adicionais ao solicitante. Se o solicitante não responder em 14 dias, a equipe fecha a solicitação.
 
-Depois que um artigo é aprovado, a próxima etapa é mesclá-lo com a ramificação de produção. A mesclagem deve ser feita pelo autor. O tópico pode ser publicado imediatamente ou aguardar a execução do próximo trabalho de publicação, que publica todos os tópicos aprovados e mesclados.
+**Criar ou atualizar conteúdo**- O trabalho de criação de conteúdo é concluído após o processo documentado no [Guia do colaborador da Adobe Experience League](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html). Dependendo da solicitação, o trabalho pode incluir a conversão de novo conteúdo em marcação, a criação de um tópico ou a atualização de um tópico existente.
 
-Exibiremos uma nova seção na página inicial de Práticas recomendadas no Experience League para ajudar os usuários a se manter atualizados com os tópicos publicados recentemente, de modo que eles não precisam navegar por páginas e portais diferentes para encontrar informações relevantes de interesse. Também promoveremos o conteúdo nos canais existentes, como marketing e comunicações internas.
+**Revisão, aprovação e publicação de conteúdo**-O conteúdo é revisado e editado durante a criação ou atualização do tópico usando [Solicitações de extração do GitHub](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=en#pull-requests). Todo o conteúdo deve passar pela revisão editorial. A revisão técnica é opcional e depende do conteúdo. Se não for necessária uma revisão técnica, o processo prossegue apenas com uma revisão editorial. Esse processo pode levar várias iterações até que o conteúdo seja aprovado.
+
+Depois que um artigo é aprovado, a solicitação de pull pode ser mesclada à ramificação de produção. A mesclagem deve ser feita pelo autor. Depois que um tópico é mesclado, ele pode ser publicado na produção imediatamente usando um processo manual ou automaticamente na próxima vez que o trabalho de publicação for executado. Os trabalhos de publicação normalmente são executados a cada duas horas.
+
+**Nova notificação de conteúdo** O Adobe fornecerá um *Novidades* seção sobre [Visão geral das práticas recomendadas](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) tópico para manter os usuários informados sobre tópicos publicados ou atualizados recentemente. O Adobe também promoverá o novo conteúdo de Práticas recomendadas usando os canais existentes, como marketing e comunicações internas.
 
 ## Backlog e Quadro Kanban
 
-Para evitar a duplicação, as solicitações que foram criadas e priorizadas devem estar visíveis no backlog. Os utilizadores são encorajados a colaborar com o sistema de votação em Jira para votar favoravelmente os pedidos que considerem necessários ou relevantes. Este será também um bom indicador para a equipe do tipo de conteúdo esperado das partes interessadas. As solicitações pendentes de priorização e revisão serão mostradas no backlog até que sejam movidas para as faixas ativas no quadro Kanban.
+Para evitar a duplicação, as solicitações que foram criadas e priorizadas estarão visíveis no backlog Jira do projeto COMDOX e [Projeto de problemas do GitHub](https://github.com/orgs/AdobeDocs/projects/6/views/1). Os interessados internos são encorajados a associar-se ao sistema de votação em Jira para votar favoravelmente os pedidos que considerem necessários ou relevantes. A votação também ajuda a equipe do projeto de Práticas recomendadas a entender o tipo de conteúdo que os participantes esperam e valorizam. As solicitações pendentes de priorização e revisão são mostradas no backlog até serem movidas para as faixas ativas no quadro de Kanban.
 
 O quadro Kanban pode ser acessado por usuários internos para visualizar (e/ou monitorar) em qual conteúdo está sendo trabalhado e o progresso feito. Somente as solicitações ativas serão exibidas neste quadro.
