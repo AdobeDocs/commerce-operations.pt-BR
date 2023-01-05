@@ -1,9 +1,9 @@
 ---
 title: Guia de instalação
 description: "Use este guia para instalar [!DNL Site-Wide Analysis Tool] para o seu site"
-source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
+source-git-commit: 0c27d4cf5854161e14a482912941cd144ca654f7
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -267,7 +267,7 @@ Recomendamos configurar o agente para ser executado como um serviço. Se você t
 
 ### Serviço {#service}
 
-1. Criar um arquivo de unidade do sistema `(/etc/systemd/system/scheduler.service)` com a seguinte configuração (substitua `<filesystemowner>` com o usuário UNIX® que possui o diretório onde o agente e o software Adobe Commerce estão instalados). Se você tiver baixado o agente como o usuário raiz, altere o diretório e o proprietário dos arquivos aninhados.
+1. Criar um arquivo de unidade do sistema `(/etc/systemd/system/scheduler.service)` com a seguinte configuração (substitua `<filesystemowner>` com o usuário UNIX® que possui o diretório onde o agente e o software Adobe Commerce estão instalados). Se você tiver baixado o agente como um usuário raiz, altere o diretório e o proprietário dos arquivos aninhados.
 
    ```config
    [Unit]
@@ -381,27 +381,27 @@ Se você configurou o agente para executar com o cron, use as seguintes instruç
    rm -rf swat-agent
    ```
 
-## Substituir o arquivo de configuração
+## Solução de problemas
 
-Você pode substituir os valores especificados no arquivo de configuração durante a instalação usando variáveis de ambiente. Isso preserva a compatibilidade com versões anteriores do agente. Consulte a tabela a seguir para obter os valores recomendados:
+### Chaves de acesso não analisadas corretamente
 
-| PROPRIEDADE | DESCRIÇÃO |
-| --- | --- |
-| `SWAT_AGENT_APP_NAME` | Nome da empresa ou do site fornecido ao instalar o agente |
-| `SWAT_AGENT_APPLICATION_PHP_PATH` | Caminho para o seu interpretador da CLI PHP (geralmente `/usr/bin/php`) |
-| `SWAT_AGENT_APPLICATION_MAGENTO_PATH` | Diretório raiz onde o aplicativo Adobe Commerce está instalado (normalmente `/var/www/html`) |
-| `SWAT_AGENT_APPLICATION_DB_USER` | Usuário do banco de dados para sua instalação do Adobe Commerce |
-| `SWAT_AGENT_APPLICATION_DB_PASSWORD` | Senha do banco de dados para o usuário especificado para sua instalação do Adobe Commerce |
-| `SWAT_AGENT_APPLICATION_DB_HOST` | Host de banco de dados para sua instalação do Adobe Commerce |
-| `SWAT_AGENT_APPLICATION_DB_NAME` | Nome do banco de dados para sua instalação do Adobe Commerce |
-| `SWAT_AGENT_APPLICATION_DB_PORT` | Porta do banco de dados para sua instalação do Adobe Commerce (normalmente `3306`) |
-| `SWAT_AGENT_APPLICATION_DB_TABLE_PREFIX` | Prefixo da tabela para sua instalação do Adobe Commerce (valor padrão: `empty`) |
-| `SWAT_AGENT_APPLICATION_DB_REPLICATED` | Se a instalação do Adobe Commerce tem uma instância de banco de dados secundária (normalmente `false`) |
-| `SWAT_AGENT_APPLICATION_CHECK_REGISTRY_PATH` | Diretório temporário do agente (geralmente `/usr/local/swat-agent/tmp`) |
-| `SWAT_AGENT_RUN_CHECKS_ON_START` | Coletar dados na primeira execução (normalmente `1`) |
-| `SWAT_AGENT_LOG_LEVEL` | Determina quais eventos são registrados com base na gravidade (normalmente `error`) |
-| `SWAT_AGENT_ENABLE_AUTO_UPGRADE` | Ativa a atualização automática (reinicialização necessária após uma atualização; O agente não verifica as atualizações se a opção estiver desativada; `true` ou `false`) |
-| `SWAT_AGENT_IS_SANDBOX=false` | Ativar o modo sandbox para usar o agente no ambiente de preparo |
+Você pode ver o seguinte erro se as chaves de acesso não forem analisadas corretamente:
+
+```terminal
+ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
+FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+```
+
+Para resolver esse erro, tente as seguintes etapas:
+
+1. Faça uma [instalação com script](#scripted), salve a saída e revise a saída em busca de erros.
+1. Revise o `config.yaml` e verifique se o caminho para sua instância do Commerce e PHP está correto.
+1. Certifique-se de que o usuário que está executando o scheduler esteja no [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md) Grupo Unix ou é o mesmo usuário que o proprietário do sistema de arquivos.
+1. Certifique-se de que a variável [Conector do Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) as chaves estão instaladas corretamente e tente atualizá-las para conectar a extensão ao seu sistema.
+1. [Desinstalar](#uninstall) o agente após atualizar as chaves e reinstalar usando o [instalar script](#scripted).
+1. Execute o scheduler e veja se você ainda recebe o mesmo erro.
+1. Se você ainda receber o mesmo erro, aumente o nível de log no `config.yaml` para depurar e abrir um tíquete de suporte.
+
 
 >[!INFO]
 >
