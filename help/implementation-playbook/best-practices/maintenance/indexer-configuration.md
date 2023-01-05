@@ -4,9 +4,9 @@ description: Mantenha e otimize o desempenho do site seguindo as práticas recom
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ Para maximizar o desempenho do site, siga estas práticas recomendadas para inde
 - Revise a configuração do índice.
 - Defina os indexadores como _[!UICONTROL Update on Schedule]_para sites grandes e sites com atualizações frequentes e tráfego pesado. Consulte [Gerenciamento de índice](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 - Seguir [práticas recomendadas de desempenho](../../../performance/configuration.md) para gerenciar índices.
+
+>[!IMPORTANT]
+>
+>O [!DNL Customer Grid] só pode ser reindexado usando o [!UICONTROL Update on Save] opção. Este índice não suporta a variável `Update by Schedule` opção.
 
 ## Informações adicionais
 

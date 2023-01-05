@@ -1,9 +1,9 @@
 ---
 title: Fase de desenvolvimento da implementação
 description: Saiba mais sobre as práticas recomendadas de implementação para a fase de desenvolvimento de projetos do Adobe Commerce.
-source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -27,18 +27,15 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 ### Análise, mesclagem e teste do código
 
-- Diretrizes e normas
-
 <!--Assets not yet integrated
+- Guidelines and standards
   - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
   - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
   - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
 -->
 - [Otimizar arquivos CSS e JS](optimize-css-js-files.md)
 - [Práticas recomendadas para blocos de conteúdo privado](private-content-block-configuration.md)
-
-- Adicionar código personalizado
-   - [Práticas recomendadas para desenvolvedores de extensão](https://developer.adobe.com/commerce/php/best-practices/)
+- [Práticas recomendadas para desenvolvedores de extensão](https://developer.adobe.com/commerce/php/best-practices/)
 
 <!--Assets not yet integrated
 
@@ -61,13 +58,13 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 ### Configuração do ambiente local e de preparo
 
-- [Fluxo de trabalho de desenvolvimento na infraestrutura da nuvem](https://devdocs.magento.com/cloud/architecture/pro-develop-deploy-workflow.html) - adicionado do Guia do Cloud
+- [Fluxo de trabalho de desenvolvimento na infraestrutura da nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
 
 ## Código, mesclagem, teste
 
-- [Práticas recomendadas para criações e implantação](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices)
+- [Práticas recomendadas para criações e implantação](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
 - [Implantação de conteúdo estático - Cloud](static-content-deployment.md)
 - [Otimizar arquivos CSS e JS](optimize-css-js-files.md)
 - [Otimizar imagens para um site mais responsivo](image-optimization.md)
-- [Práticas recomendadas de solução de problemas para o Adobe Commerce em &#x200B; de infraestrutura em nuvem](troubleshooting.md)
-- [Saiba quando e como modificar tabelas de banco de dados &#x200B;](modifying-core-and-third-party-tables.md)
+- [Práticas recomendadas de solução de problemas para o Adobe Commerce na infraestrutura de nuvem](troubleshooting.md)
+- [Saiba quando e como modificar tabelas de banco de dados](modifying-core-and-third-party-tables.md)

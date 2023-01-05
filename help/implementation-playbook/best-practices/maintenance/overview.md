@@ -1,9 +1,9 @@
 ---
 title: Fase de manutenção da implementação
 description: Saiba mais sobre as práticas recomendadas de implementação para a fase de manutenção de projetos da Adobe Commerce.
-source-git-commit: 46c06a74f221877391196894abc1f5f217c5b073
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 - [Auditar o desempenho da frente](frontend-performance.md)
 - [Pronto, Definir, Manter](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [Use a ferramenta SWAT para garantir a segurança e a operabilidade do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - convés CTAG
-- Novo Relic
-- Logs
-- Espaço em disco
+- [Use as notificações do New Relic e do Health para monitorar o desempenho, o espaço em disco e os registros dos sites do Adobe Commerce implantados na infraestrutura de nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
 
 ## Gerenciamento de banco de dados
 
@@ -53,14 +51,15 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 - [Como reindexar](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Práticas recomendadas de configuração para &#x200B; de indexadores](indexer-configuration.md)
 - [Práticas recomendadas de configuração para processamento de pedidos](order-processing-configuration.md)
-- convés CTAG
-- Planejar o redimensionamento para aumentos de tráfego planejados durante promoções ou feriados - conteúdo do convés CTAG
+
+<!-- Asset not yet integrated from CTAG deck:
+- Plan upsizing for planned traffic increases during promotions or holidays -->
 
 ## Configuração
 
 - [Agendamento de atualizações do Administrador em sites de produção](scheduling-admin-updates-in-production.md)
 
-- Planejamento para a época de pico e períodos promocionais (redimensionamento) - Conteúdo do convés CTAG
+<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
 
 ## Correções de erros
 

@@ -4,9 +4,9 @@ description: Saiba como configurar as configurações do banco de dados e do apl
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ Consulte [Ativar arquivamento](https://experienceleague.adobe.com/docs/commerce-
 
 ## Informações adicionais
 
-- [Quais são as principais diferenças entre o InnoDB e o MYISAM?](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
+- [Mecanismos de armazenamento MySQL](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Pré-requisitos de atualização do Adobe Commerce 2.3.5 para o MariaDB](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Práticas recomendadas para resolver problemas de desempenho do banco de dados](../maintenance/resolve-database-performance-issues.md)

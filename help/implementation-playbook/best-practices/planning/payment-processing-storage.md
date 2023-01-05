@@ -4,9 +4,9 @@ description: Saiba como processar e armazenar com segurança detalhes de pagamen
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 124eaf6e7b465b320d3d7e6a3694130edb93f187
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Práticas recomendadas para processamento e armazenamento de pagamentos
 
-Um dos princípios fundamentais para a manutenção [Conformidade com a PCI](https://nam04.safelinks.protection.outlook.com/GetUrlReputation) A tem uma estratégia para processar e armazenar adequadamente os pagamentos com cartão de crédito.
+Um dos princípios fundamentais para a manutenção [Conformidade com a PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) A tem uma estratégia para processar e armazenar adequadamente os pagamentos com cartão de crédito.
 
 O armazenamento de dados de titulares de cartão no Adobe Commerce é **estritamente proibido** e fazer isso pode ser uma violação de suas obrigações como comerciante sob o padrão PCI-DSS (Payment Card Industry Data Security Standard, padrão de segurança de dados do setor de cartões de pagamento). Mais informações sobre nosso modelo de responsabilidade compartilhada e diretrizes para obrigações de comerciantes podem ser encontradas em nosso [guia de responsabilidade compartilhada do Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) no Adobe Trust Center.
 
@@ -31,7 +31,7 @@ Recomendamos seguir as práticas recomendadas abaixo para ajudar a garantir que 
 
 Se o armazenamento de dados do titular do cartão for necessário, os dados do titular do cartão deverão ser armazenados fora da Adobe Commerce com proteções de armazenamento. A existência de salvaguardas de armazenamento para os detalhes do pagamento, como os dados do titular do cartão de crédito, ajuda a evitar fraudes e outras potenciais questões de segurança. De acordo com outros padrões PCI, ter proteções em vigor é a primeira linha de defesa. Alguns métodos preferidos para aprimorar as proteções dos dados armazenados incluem criptografia, truncamento, tokenização, hash unidirecional e mascaramento.
 
-As proteções das chaves criptográficas são vitais para as estratégias de proteção de dados. É essencial ter custodiantes qualificados e confiáveis que supervisionem essas chaves.
+As proteções das chaves criptográficas são vitais para as estratégias de proteção de dados. É importante ter custodiantes qualificados e confiáveis que supervisionem essas chaves.
 
 Por fim, um número de conta principal (PAN) deve estar ilegível durante o armazenamento (por exemplo, mascarado como XXX). Isso inclui armazenamento portátil e mídia de backup, como unidades flash, USB e discos rígidos externos, e até registros de auditoria.
 
