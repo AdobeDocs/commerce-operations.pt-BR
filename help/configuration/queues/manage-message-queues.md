@@ -1,9 +1,9 @@
 ---
 title: Gerenciar filas de mensagens
 description: Saiba como gerenciar filas de mensagens na linha de comando do Adobe Commerce.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ O exemplo a seguir mostra o `crontab` configuração para executar consumidores:
 
 >[!INFO]
 >
->A frequência com que você verifica as filas de mensagens depende da lógica comercial e dos recursos disponíveis do sistema. Em geral, você pode querer verificar se há novos clientes e enviar emails de boas-vindas com mais frequência do que um processo que consome muitos recursos, como atualizar o catálogo. Você deve definir `cron` programações de acordo com suas necessidades comerciais.
+>A frequência com que você verifica as filas de mensagens pode depender da lógica comercial e dos recursos disponíveis do sistema. Em geral, você pode querer verificar se há novos clientes e enviar emails de boas-vindas com mais frequência do que um processo que consome muitos recursos, como atualizar o catálogo. Você deve definir `cron` programações de acordo com suas necessidades comerciais.
 >
 >Ele pode ser configurado nas opções de configuração Admin Stores > Configurações > Configuração > Avançado > Sistema > Cron para o grupo: consumidores.
 >

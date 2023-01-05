@@ -1,9 +1,9 @@
 ---
 title: Configurar Redis
 description: Obtenha uma visão geral dos recursos do Redis e inicie a configuração do Redis.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Você também pode ativar as opções RDB e AOF ao mesmo tempo. Para obter detal
 
 Para a instância do cache, configure a instância de forma que seja grande o suficiente para armazenar todo o cache do Commerce. Os requisitos de tamanho dependem de fatores diferentes, como o número de produtos e visualizações de loja. Como ponto de partida, você pode usar o tamanho da pasta de cache em seu sistema de arquivos. Por exemplo, se a variável `var/cache` A pasta no seu sistema de arquivos é de 5 GB, configure a instância do Redis com pelo menos 5 GB para iniciar. A persistência não é necessária para a instância do cache porque o cache do Commerce pode ser restaurado. Consulte [Guia de cache de Redis](https://redis.io/docs/manual/eviction/).
 
-Para o ajuste de desempenho, você também pode ativar as seguintes configurações para exclusão assíncrona. Essas configurações não alteram o comportamento de Redis. Consulte também [notícias da redis](http://antirez.com/news/93) para obter detalhes sobre a exclusão assíncrona.
+Para o ajuste de desempenho, você pode ativar as seguintes configurações para exclusão assíncrona. Essas configurações não alteram o comportamento de Redis.
 
 ```ini
 lazyfree-lazy-eviction yes

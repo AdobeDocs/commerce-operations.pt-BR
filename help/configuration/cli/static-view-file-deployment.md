@@ -1,7 +1,7 @@
 ---
 title: Implantar arquivos de visualização estáticos
 description: Saiba como gravar arquivos estáticos no sistema de arquivos do Commerce durante o modo de produção.
-source-git-commit: 4fe6d6a76a5d4849d4f96b61b95a9a3dae7fc76a
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 0%
@@ -53,7 +53,7 @@ A tabela a seguir explica os parâmetros e valores desse comando.
 
 | Opção | Descrição | Obrigatório? |
 | ------ | ----------- | --------- |
-| `<languages>` | Lista separada por espaços de [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) códigos de idioma para os quais os arquivos de visualização estática serão enviados. (O padrão é `en_US`.)<br>Encontre a lista executando: `bin/magento info:language:list` | Não |
+| `<languages>` | Lista separada por espaços de [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) códigos de idioma para os quais os arquivos de visualização estática serão enviados. (O padrão é `en_US`.)<br>Encontre a lista executando: `bin/magento info:language:list` | Não |
 | `--language (-l)` | Gere arquivos somente para os idiomas especificados. O padrão, sem opção especificada, é gerar arquivos para todos os códigos de idioma ISO-639. Você pode especificar o nome de um código de idioma por vez. O valor padrão é **all**.<br>Por exemplo: `--language en_US --language es_ES` | Não |
 | `--exclude-language` | Gere arquivos para os códigos de idioma especificados. O padrão, sem opção especificada, é não excluir nada. Você pode especificar o nome de um código de idioma ou uma lista separada por vírgulas de códigos de idioma. O valor padrão é **nenhum**. | Não |
 | `--theme <theme>` | Temas para os quais implantar conteúdo estático. O valor padrão é **all**.<br>Por exemplo: `--theme Magento/blank --theme Magento/luma` | Não |

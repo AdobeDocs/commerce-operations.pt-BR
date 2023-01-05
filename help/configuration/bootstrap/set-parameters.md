@@ -1,7 +1,7 @@
 ---
 title: Definir o valor dos parâmetros de inicialização
 description: Saiba como definir parâmetros de inicialização para o aplicativo Commerce.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
@@ -169,7 +169,7 @@ Os procedimentos a seguir mostram como definir o modo de aplicativo em um host v
 
 <!-- link definitions -->
 
-[Apache versão 2.2]: http://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
-[Apache versão 2.4]: http://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
+[Apache versão 2.2]: https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
+[Apache versão 2.4]: https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
 [Nova configuração de amostra]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
 [unix-stackx]: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables

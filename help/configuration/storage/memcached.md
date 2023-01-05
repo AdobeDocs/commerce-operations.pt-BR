@@ -1,7 +1,7 @@
 ---
 title: Usar memcache para armazenamento de sessão
 description: Saiba mais sobre como usar memorizado para armazenamento de sessão do Commerce.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Memcached é um sistema de armazenamento em cache de memória distribuída de uso geral. Geralmente é usado para acelerar sites orientados por bancos de dados dinâmicos armazenando em cache dados e objetos na RAM para reduzir o número de vezes que uma fonte de dados externa (como um banco de dados ou uma API) deve ser lida.
 
-Memcached fornece uma grande tabela de hash que pode ser distribuída por várias máquinas. Quando a tabela está cheia, as inserções subsequentes fazem com que os dados mais antigos sejam limpos na ordem de LRUs (LRU) usada menos recentemente. O tamanho dessa tabela de hash geralmente é muito grande. (Fonte: [memcached.org](http://memcached.org/))
+Memcached fornece uma grande tabela de hash que pode ser distribuída por várias máquinas. Quando a tabela está cheia, as inserções subsequentes fazem com que os dados mais antigos sejam limpos na ordem de LRUs (LRU) usada menos recentemente. O tamanho dessa tabela de hash geralmente é muito grande. (Fonte: [memcached.org](https://www.memcached.org/))
 
 O Commerce usa memorizado para armazenamento de sessão, mas não para armazenamento em cache de página. Para armazenamento em cache de páginas, recomendamos [Redis](../cache/redis-pg-cache.md) ou [Verniz](../cache/config-varnish.md).
 
@@ -39,7 +39,7 @@ O Commerce usa memorizado para armazenamento de sessão, mas não para armazenam
    ),
    ```
 
-   memcached tem parâmetros de inicialização opcionais que estão além do escopo deste guia. Você pode encontrar mais informações sobre eles na [em cache](https://php.net/manual/en/memcached.sessions.php) documentação, código-fonte e alterações.
+   memcached tem parâmetros de inicialização opcionais que estão além do escopo deste guia. Você pode encontrar mais informações sobre eles na [em cache](https://www.php.net/manual/en/memcached.sessions.php) documentação, código-fonte e alterações.
 
 1. Continue com a próxima seção.
 
@@ -80,5 +80,5 @@ O Commerce usa memorizado para armazenamento de sessão, mas não para armazenam
    STAT items:3:outofmemory 0
    STAT items:3:tailrepairs 0
    
-   [Look at the keys in more detail](http://www.darkcoding.net/software/memcached-list-all-keys/)
+   [Look at the keys in more detail](https://darkcoding.net/software/memcached-list-all-keys/)
    ```
