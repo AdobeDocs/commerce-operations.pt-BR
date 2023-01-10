@@ -4,7 +4,7 @@ description: Saiba onde encontrar informações para versões específicas do Ad
 source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
 workflow-type: tm+mt
 source-wordcount: '400'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 

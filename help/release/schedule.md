@@ -1,10 +1,10 @@
 ---
 title: Programação de lançamento
-description: Saiba quando versões específicas do Adobe Commerce estão programadas para beta, pré-lançamento e disponibilidade geral.
+description: Saiba quando versões específicas do Adobe Commerce estão programadas para serem disponibilizadas em beta, pré-lançamento e de maneira geral.
 source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 

@@ -1,10 +1,10 @@
 ---
 title: Política de ciclo de vida do software
-description: Saiba mais sobre as principais datas de fim do suporte de software para versões do Adobe Commerce.
+description: Saiba mais sobre as principais datas relacionadas ao fim do suporte de software de versões do Adobe Commerce.
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -48,29 +48,29 @@ Para o Adobe Commerce 2.4 e versões subsequentes:
   <tr>
     <td>Comércio</td>
     <td>PHP</td>
-    <td>T1</td>
-    <td>T2</td>
-    <td>T3</td>
-    <td>T4</td>
-    <td>T1</td>
-    <td>T2</td>
-    <td>T3</td>
-    <td>T4</td>
-    <td>T1</td>
-    <td>T2</td>
-    <td>T3</td>
-    <td>T4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
   </tr>
   <tr>
     <td>2.4.0 - 2.4.3</td>
-    <td style="text-align:center">7,4</td>
+    <td style="text-align:center">7.4</td>
     <td colspan="3" style="background-color:#67ac68;"></td>
     <td style="background-color:#cd3c3c;">Novembro</td>
     <td colspan="8" ></td>
   </tr>
   <tr>
     <td>2.4.4</td>
-    <td rowspan="2" style="text-align:center">8,1</td>
+    <td rowspan="2" style="text-align:center">8.1</td>
     <td></td>
     <td colspan="10" style="background-color:#67ac68;">Mar</td>
     <td rowspan="2" style="background-color:#cd3c3c;">Novembro</td>
