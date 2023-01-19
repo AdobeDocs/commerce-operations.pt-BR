@@ -4,7 +4,7 @@ description: Saiba como preparar seu banco de dados do Adobe Commerce para atual
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 071e88c6a07df0f74b6d4b09cce858710c9332cc
+source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Você pode converter tabelas em um nó do cluster. As alterações são replicad
 1. Identificar as tabelas a serem convertidas do formato compacto para dinâmico.
 
    ```mysql
-   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
 1. Determine os tamanhos da tabela para agendar o trabalho de conversão.
