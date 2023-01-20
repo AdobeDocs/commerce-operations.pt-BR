@@ -1,7 +1,7 @@
 ---
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -439,7 +439,7 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
       <a href="https://github.com/php-amqplib/php-amqplib.git">php-amqplib/php-amqplib</a>
     </td>
     <td>biblioteca</td>
-    <td>Anteriormente videlalvaro/php-amqplib.  Esta biblioteca é uma implementação PHP pura do protocolo AMQP. Foi testado contra [!DNL RabbitMQ].</td>
+    <td>Anteriormente videlalvaro/php-amqplib.  Esta biblioteca é uma implementação PHP pura do protocolo AMQP. Foi testado contra o RabbitMQ.</td>
   </tr>
   </tbody>
 </table>
@@ -1083,7 +1083,7 @@ magento/product-enterprise-edition: >=2.4.4 <2.4.5
       <a href="https://github.com/webonyx/graphql-php.git">webonyx/grafql-php</a>
     </td>
     <td>biblioteca</td>
-    <td>Uma porta PHP de implementação de referência GraphQL</td>
+    <td>Uma porta PHP da implementação de referência do GraphQL</td>
   </tr>
   <tr>
     <td>

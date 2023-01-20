@@ -1,5 +1,5 @@
 ---
-source-git-commit: a2747c1d62c4a22179c1177e7c4e76e028f66cea
+source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 9%
@@ -54,7 +54,7 @@ O suporte para a linha de versão 2.4.4-2.4.6 termina em 25 de novembro de 2024.
 
 ## 2.4.0-2.4.3
 
-O suporte para a linha de versão 2.4.0-2.4.3 termina em 28 de novembro de 2022.
+O suporte para a linha de versão 2.4.0-2.4.3 terminou em 28 de novembro de 2022.
 
 <table>
   <thead>
@@ -101,7 +101,7 @@ O suporte para a linha de versão 2.4.0-2.4.3 termina em 28 de novembro de 2022.
           </td>
     </tr>
     <tr>
-        <td>2.4.2.</td>
+        <td>2.4.2</td>
         <td>9 de fevereiro de 2021</td>
           <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-2.html">Notas de versão da Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html">Notas de versão do Magento Open Source</a><br>
           </td>
@@ -113,7 +113,7 @@ O suporte para a linha de versão 2.4.0-2.4.3 termina em 28 de novembro de 2022.
           </td>
     </tr>
     <tr>
-        <td>2.4.1.</td>
+        <td>2.4.1</td>
         <td>15 de outubro de 2020</td>
           <td><a href="https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html">Notas de versão da Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html">Notas de versão do Magento Open Source</a><br>
           </td>
@@ -133,7 +133,7 @@ O suporte para a linha de versão 2.4.0-2.4.3 termina em 28 de novembro de 2022.
   </tbody>
 </table>
 
-## 2,3
+## 2.3
 
 O suporte para a linha de versão 2.3 terminou em 8 de setembro de 2022.
 
@@ -206,7 +206,7 @@ O suporte para a linha de versão 2.3 terminou em 8 de setembro de 2022.
           </td>
     </tr>
     <tr>
-        <td>2.3.5.</td>
+        <td>2.3.5</td>
         <td>28 de abril de 2020</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">Notas de versão da Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-open-source.html">Notas de versão do Magento Open Source</a><br>
           </td>
@@ -236,13 +236,13 @@ O suporte para a linha de versão 2.3 terminou em 8 de setembro de 2022.
           </td>
     </tr>
     <tr>
-        <td>2.3.2.</td>
+        <td>2.3.2</td>
         <td>25 de junho de 2019</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">Notas de versão da Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2OpenSource.html">Notas de versão do Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.3.1.</td>
+        <td>2.3.1</td>
         <td>26 de março de 2019</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">Notas de versão da Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1OpenSource.html">Notas de versão do Magento Open Source</a><br>
           </td>
@@ -256,7 +256,7 @@ O suporte para a linha de versão 2.3 terminou em 8 de setembro de 2022.
   </tbody>
 </table>
 
-## 2.2.
+## 2.2
 
 O suporte para a linha de versão 2.2 terminou em 1 de dezembro de 2019.
 
@@ -323,13 +323,13 @@ O suporte para a linha de versão 2.2 terminou em 1 de dezembro de 2019.
           </td>
     </tr>
     <tr>
-        <td>2.2.2.</td>
+        <td>2.2.2</td>
         <td>12 de dezembro de 2017</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.2EE.html">Notas de versão da Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.2CE.html">Notas de versão do Magento Open Source</a><br>
           </td>
     </tr>
     <tr>
-        <td>2.2.1.</td>
+        <td>2.2.1</td>
         <td>7 de novembro de 2017</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.1EE.html">Notas de versão da Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.1CE.html">Notas de versão do Magento Open Source</a><br>
           </td>
@@ -343,7 +343,7 @@ O suporte para a linha de versão 2.2 terminou em 1 de dezembro de 2019.
   </tbody>
 </table>
 
-## 2.1.
+## 2.1
 
 O suporte para a linha de versão 2.1 terminou em 30 de junho de 2019.
 
@@ -420,11 +420,11 @@ O suporte para a linha de versão 2.1 terminou em 30 de junho de 2019.
         <td>14 de dezembro de 2016</td>
     </tr>
     <tr>
-        <td>2.1.2.</td>
+        <td>2.1.2</td>
         <td>12 de outubro de 2016</td>
     </tr>
     <tr>
-        <td>2.1.1.</td>
+        <td>2.1.1</td>
         <td>30 de agosto de 2016</td>
     </tr>
     <tr>
@@ -434,7 +434,7 @@ O suporte para a linha de versão 2.1 terminou em 30 de junho de 2019.
   </tbody>
 </table>
 
-## 2,0
+## 2.0
 
 O suporte para a linha de versão 2.0 terminou em 31 de março de 2018.
 
