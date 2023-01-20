@@ -1,9 +1,9 @@
 ---
 user-guide-title: Guia de configuração
 user-guide-description: Configure os recursos e serviços do aplicativo Adobe Commerce ou Magento Open Source.
-source-git-commit: 31f9ff21a848e248d2c3da7cfb3cfc8bfd5785be
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -145,3 +145,4 @@ ht-degree: 0%
       + [Verificar banco de dados dividido](storage/multi-master-verify.md)
       + [Replicação de banco de dados](storage/multi-master-replication.md)
       + [Reverter para banco de dados único](storage/revert-split-database.md)
++ [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

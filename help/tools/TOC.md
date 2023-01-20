@@ -1,9 +1,9 @@
 ---
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
    - [Alertas](site-wide-analysis-tool/alerts.md)
    - [Correções](site-wide-analysis-tool/patches.md)
 - Ferramenta Correções de Qualidade {#quality-patches-tool}
-   - [Ferramenta Correções de Qualidade](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+   - [Ferramenta Correções de Qualidade](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de versão](quality-patches-tool/release-notes.md)
 - Observação para o Adobe Commerce {#observation-for-adobe-commerce}
@@ -74,3 +74,4 @@ ht-degree: 0%
    - Recursos {#resources}
       - [Solução de problemas](https://support.magento.com/hc/en-us/articles/360033020451)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

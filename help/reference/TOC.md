@@ -1,9 +1,9 @@
 ---
 user-guide-title: Referência de ferramentas de linha de comando
 user-guide-description: Saiba mais sobre todos os comandos, argumentos e opções disponíveis para ferramentas de linha de comando Adobe Commerce e Magento Open Source.
-source-git-commit: bf0c1bd035880d4dd15db0af6e875aff6f9a4251
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '34'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,3 +14,4 @@ ht-degree: 0%
 - [Adobe Commerce na infraestrutura de nuvem](commerce.md)
 - [Adobe Commerce (no local)](commerce-on-premises.md)
 - [Magento Open Source](magento-open-source.md)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
