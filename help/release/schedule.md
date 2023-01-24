@@ -1,10 +1,10 @@
 ---
 title: Programação de lançamento
 description: Saiba quando versões específicas do Adobe Commerce estão programadas para serem disponibilizadas em beta, pré-lançamento e de maneira geral.
-source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
+source-git-commit: 18338316c78e9c2ef87614044e65517b1f11b16d
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 3%
+source-wordcount: '504'
+ht-degree: 2%
 
 ---
 
@@ -13,23 +13,23 @@ ht-degree: 3%
 
 O Adobe se esforça continuamente para encontrar o equilíbrio certo entre tornar as atualizações de produtos simples e previsíveis e fornecer melhorias e novos recursos aos usuários iniciais mais rapidamente. Ao longo do último ano, temos refinado como fornecemos software para suportar este equilíbrio. Para obter mais informações, consulte nossa [política de controle de versão](versioning-policy.md).
 
-O Adobe lança patches de segurança e funcionais para cada linha de lançamento compatível do Adobe Commerce e do Magento Open Source.
+O Adobe lança patches de segurança e funcionais para cada linha de lançamento compatível do Adobe Commerce.
 
 A tabela a seguir fornece as datas de lançamentos programados (as datas estão sujeitas a alterações):
 
-| Versão | Versões | Adobe Commerce Beta | Pré-lançamento do Adobe Commerce | Adobe Commerce &amp; Magento Open Source<br>Disponibilidade geral |
-|-----------------------------------------------------------------|-------------------------------------------------------|---------------------------|----------------------------------|---------------------------------------------------------------------|
-| Março de 2022<br>Recurso + liberação de patch + liberação de patch de segurança | 2.4.4<br>2.4.3-p2<br>2.3.7-p3 | Outubro de 2021 e em curso | 29 de março de 2022 | 12 de abril de 2022 |
-| Abril de 2022<br>Versão de recurso | \-\- | \-\- | \-\- | 26 de abril de 2022 |
-| Junho de 2022<br>Versão de recurso | \-\- | \-\- | \-\- | 21 de junho de 2022 |
-| Agosto de 2022<br>Recurso + liberação de patch + liberação de patch de segurança | 2.4.5<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 26 de julho de 2022 | 9 de agosto de 2022 |
-| Outubro de 2022<br>Recurso + versão de patch de segurança | 2.4.5-p1<sup>2</sup><br>2.4.4-p2 | \-\- | 27 de setembro de 2022 | 11 de outubro de 2022 |
-| Janeiro de 2023<br>Versão de recurso | \-\- | \-\- | \-\- | 17 de janeiro de 2023 |
-| Março de 2023<br>Recurso + liberação de patch + liberação de patch de segurança | 2.4.6<br>2.4.5-p2<br>2.4.4-p3 | Janeiro de 2023 | 28 de fevereiro de 2023 | 14 de março de 2023 |
+| Versão | Versões | Pré-lançamento | Disponibilidade geral |
+|--------------------------------------------------------------------|-------------------------------------------------|--------------------|----------------------|
+| Versão de recursos de janeiro de 2023 | \-\- | \-\- | 17 de janeiro de 2023 |
+| Março de 2023 Recurso + liberação de patch + lançamento de patch de segurança | 2.4.6<sup>1</sup><br>2.4.5-p2<br>2.4.4-p3 | 28 de fevereiro de 2023 | 14 de março de 2023 |
+| Versão de recursos de abril de 2023 | \-\- | \-\- | 25 de abril de 2023 |
+| junho de 2023 Recurso + versão de patch beta + lançamento de patch de segurança | 2.4.7-beta1<br>2.4.6-p1<br>2.4.5-p3<br>2.4.4-p4 | 30 de maio de 2023 | 13 de junho de 2023 |
+| Agosto de 2023 Recurso + lançamento de patch de segurança | 2.4.6-p2<br>2.4.5-p4<br>2.4.4-p5 | 25 de julho de 2023 | 8 de agosto de 2023 |
+| Outubro de 2023 Recurso + versão do patch beta + versão do patch de segurança | 2.4.7-beta2<br>2.4.6-p3<br>2.4.5-p5<br>2.4.4-p6 | 26 de setembro de 2023 | 10 de outubro de 2023 |
+
+{style=&quot;table-layout:auto&quot;}
 
 <sup>\-\- Indica itens que não se aplicam a esta versão.</sup><br>
-<sup>1 Esta é a última versão do patch para a linha de versão 2.3.x. A linha de versão 2.3.x atinge o fim do suporte (EOS) em setembro de 2022.</sup><br>
-<sup>2 Não existe a versão completa do patch em outubro de 2022.</sup><br>
+<sup>1 Beta programado para janeiro de 2023</sup><br>
 
 >[!TIP]
 >
@@ -39,12 +39,16 @@ A tabela a seguir fornece as datas de lançamentos programados (as datas estão 
 
 O pré-lançamento é o código de Disponibilidade Geral que está disponível para os comerciantes da Adobe Commerce e todos os parceiros duas semanas antes da Disponibilidade Geral. Ele permite uma implantação mais rápida do código antes da Disponibilidade Geral.
 
-Beta é um código de Disponibilidade não Geral que está disponível para todos os parceiros. Ela permite mais tempo para analisar o código e os componentes afetados.
-
 Para obter mais informações, consulte [Programa beta](beta-program.md).
 
 ## Tipos de versão
 
-- **Versões de patch**—Atualizações dos principais aplicativos Adobe Commerce e Magento Open Source que incluem correções de segurança, conformidade, desempenho e qualidade de alta prioridade.
-- **Versões de patch de segurança**—Atualizações somente para segurança no aplicativo Adobe Commerce e Magento Open Source lançado para manter os comerciantes seguros e em conformidade.
+- **Versões de patch**—Atualizações para o aplicativo principal do Adobe Commerce que incluem correções de segurança, conformidade, desempenho e qualidade de alta prioridade.
+
+   >[!IMPORTANT]
+   >
+   >O Adobe lançará versões de patches da versão beta (&quot;Versões beta&quot;), que são versões de disponibilidade pré-geral de recursos do Adobe Commerce disponibilizadas publicamente para todos os clientes da Adobe Commerce e parceiros Adobe. As versões beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot;, sem garantia de qualquer tipo. O Adobe não terá a obrigação de manter, corrigir, atualizar, alterar, modificar ou de qualquer outra forma oferecer suporte (via Serviços de Suporte Adobe ou de outra forma) às Versões Beta. Recomenda-se que o cliente tenha cautela e não se baseie de forma alguma no correto funcionamento ou desempenho das versões beta e/ou de qualquer documentação ou material que as acompanha. Dessa forma, qualquer uso das versões Beta corre todo o risco do cliente.
+
+- **Versões de patch da versão beta**—Atualizações de código de disponibilidade não geral para o aplicativo principal do Adobe Commerce que incluem correções de qualidade de alta prioridade, de segurança, conformidade, desempenho. Ela permite mais tempo para analisar o código e os componentes afetados.
+- **Versões de patch de segurança**—Atualizações somente para segurança do aplicativo Adobe Commerce liberadas para manter os comerciantes seguros e em conformidade.
 - **Versões de recursos**—Novos recursos e atualizações de recursos que são fornecidos como serviços independentes, separados das versões de patches. Os exemplos incluem serviços como o Product Recommendations e o Live Search, módulos independentes como o PWA Studio e o Inventory management (MSI) e atualizações de nossos serviços e infraestrutura em nuvem.
