@@ -2,10 +2,10 @@
 keywords: Adobe Commerce; home; tópicos populares
 title: Início
 description: Navegue por um índice da documentação operacional do produto Adobe Commerce.
-source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
+source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -119,12 +119,4 @@ Obtenha informações práticas sobre conceitos, processos, ferramentas e práti
 </tr>
 </table>
 
-## Novidades
-
-Saiba mais sobre a nova documentação e atualizações significativas da documentação existente.
-
-| Alterar | Tipo |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| Adição de um novo tópico que descreve todos os [consumidores de fila de mensagens](../configuration/queues/consumers.md). | Novo |
-| Adicionado [instruções](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) para converter o formato de armazenamento de tabela do banco de dados para projetos do Adobe Commerce on cloud Infrastructure Pro. | Atualizado |
-| Adicionado [instruções](../configuration/remote-storage/cloud-support.md) para habilitar o armazenamento remoto para o Adobe Commerce em projetos de infraestrutura em nuvem. | Atualizado |
+{{$include /help/_includes/templated/whats-new.md}}
