@@ -4,9 +4,9 @@ description: Saiba como melhorar o desempenho do armazenamento em cache usando a
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 12de523cc7ea1486c894d54efe6944d92d87ded0
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,11 @@ Para obter detalhes, consulte [Implantar variáveis > `REDIS_BACKEND`](https://d
 >[!NOTE]
 >
 > Verifique a versão das ferramentas gráficas instaladas no ambiente do Cloud local na linha de comando usando o `composer show magento/ece-tools` comando. Se necessário, [atualizar a versão das ferramentas](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+
+>[!WARNING]
+>
+>Do _not_ configurar uma conexão escrava Redis para projetos de infraestrutura em nuvem com um [arquitetura dimensionada](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Isso causa erros de conexão com o Redis. Consulte [as orientações de configuração de Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) no _Commerce on Cloud Infrastructure_ guia.
+
 
 ### Configuração para implantações locais
 
