@@ -1,7 +1,7 @@
 ---
 title: Armazenamento remoto para o Commerce na infraestrutura em nuvem
 description: Consulte as orientações sobre como configurar o armazenamento remoto para o Adobe Commerce na infraestrutura em nuvem.
-source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
+source-git-commit: 4c89ef65ffb559ad4ad3f3fc45bd73079fbacd1b
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Como alternativa, você pode usar a Interface Web do Projeto para adicionar a va
 
 1. Clique em **Adicionar variável**.
 
-1. No _Nome_ , insira `env:REMOTE_STORAGE`
+1. No _Nome_ , insira `REMOTE_STORAGE`
 
 1. No _Valor_ adicione a configuração JSON.
 
