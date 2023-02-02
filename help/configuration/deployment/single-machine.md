@@ -1,9 +1,9 @@
 ---
 title: Implantação de máquina única
 description: Saiba como implantar atualizações no Commerce em um servidor de produção usando a linha de comando.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ Este tópico fornece instruções para implantar atualizações no Commerce em u
 
 ## Pressupostos
 
-- Você instalou o Commerce usando [Composer].
+- Você instalou o Commerce usando [Composer](../../installation/composer.md).
 - Você está aplicando atualizações diretamente no servidor.
 
 >[!WARNING]
@@ -24,7 +24,7 @@ Este tópico fornece instruções para implantar atualizações no Commerce em u
 
 ## Etapas de implantação
 
-1. Faça logon no servidor de produção como, ou alterne para, o [proprietário do sistema de arquivos][file-owner].
+1. Faça logon no servidor de produção como, ou alterne para, o [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 
 1. Altere o diretório para o diretório base do Commerce:
 
@@ -92,5 +92,3 @@ Este tópico fornece instruções para implantar atualizações no Commerce em u
 <!-- link definitions -->
 
 [install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
-[composer]: ../../installation/composer.md
-[file-owner]: ../../installation/prerequisites/file-system/overview.md

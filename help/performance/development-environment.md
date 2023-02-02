@@ -1,9 +1,9 @@
 ---
 title: Ambiente de desenvolvimento Recommendations
 description: Saiba mais sobre as recomendações de desempenho para configurar seu ambiente local de desenvolvimento de Adobe Commerce ou Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Esta página fornece recomendações para ambientes de desenvolvimento de Comér
 
 ## Limpe os caches em vez de desabilitar
 
-Muitos desenvolvedores tendem a desativar todos os caches em suas instâncias de desenvolvedor. Recomendamos apenas limpar caches, sem desativar todos os caches. [!DNL Commerce] executa com mais eficiência quando você [limpe os caches] em vez de desativá-los completamente. A maioria dos tipos de caches raramente são invalidados durante o desenvolvimento.
+Muitos desenvolvedores tendem a desativar todos os caches em suas instâncias de desenvolvedor. Recomendamos apenas limpar caches, sem desativar todos os caches. [!DNL Commerce] executa com mais eficiência quando você [limpe os caches](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) em vez de desativá-los completamente. A maioria dos tipos de caches raramente são invalidados durante o desenvolvimento.
 
-Se você [desative os caches], recomendamos desativar apenas os caches Page e Block em instâncias de desenvolvimento. Lembre-se de ativar todos os caches durante os testes.
+Se você [desative os caches](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), recomendamos desativar apenas os caches Page e Block em instâncias de desenvolvimento. Lembre-se de ativar todos os caches durante os testes.
 
 ## Comandos para evitar no modo de desenvolvimento
 
@@ -44,8 +44,3 @@ No modo de desenvolvimento, não execute comandos para compilação, geração d
 ## Tempo normal de carregamento de página em uma máquina virtual
 
 Se você se desenvolver em uma VM e levar mais de 2 segundos para carregar uma página do Magento, revise as configurações do ambiente.
-
-<!-- Link definitions -->
-
-[limpe os caches]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
-[desative os caches]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types
