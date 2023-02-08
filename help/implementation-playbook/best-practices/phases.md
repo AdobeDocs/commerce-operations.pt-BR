@@ -1,7 +1,7 @@
 ---
 title: Fases de implementação
 description: Saiba mais sobre as práticas recomendadas para as fases de implementação de projetos da Adobe Commerce.
-source-git-commit: 2aa9511c4bf7c3feb6cae5e7879502b4f7cb028b
+source-git-commit: bb49e4f239d49393b5b8c82deabe15f6f53c26f7
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
@@ -59,3 +59,5 @@ Essas práticas recomendadas são organizadas por fase de implementação para q
   </td>
 </tr>
 </table>
+
+{{$include /help/_includes/templated/whats-new-bp.md}}
