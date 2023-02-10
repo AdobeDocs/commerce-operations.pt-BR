@@ -4,19 +4,19 @@ description: Saiba como preparar seu banco de dados do Adobe Commerce para atual
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
+source-git-commit: bc38dd658401d3cd4c64159b1b2b2efe89979a93
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
 
-# Pré-requisitos de atualização do Adobe Commerce 2.3.5
+# Pré-requisitos de atualização para o MariaDB
 
-Este artigo explica como preparar seu banco de dados ao atualizar para o Adobe Commerce 2.3.5 da versão 2.3.4 ou anterior.
+A atualização do Adobe Commerce 2.3.4 ou anterior para qualquer versão mais recente requer a atualização do serviço MariaDB na infraestrutura de nuvem da versão 10.0 ou 10.2 para a versão 10.3 ou 10.4. A versão 10.3 e posterior do MariaDB requer que o banco de dados use o formato de linha de tabela dinâmica e o Adobe Commerce requer o uso do mecanismo de armazenamento InnoDB para tabelas. Este artigo explica como atualizar seu banco de dados para atender a esses requisitos do MariaDB.
 
-Essa atualização requer que a equipe de suporte atualize o MariaDB na infraestrutura de nuvem de MariaDB 10.0 para 10.2 para atender aos requisitos da versão 2.3.5 e posterior do Adobe Commerce.
+Após preparar o banco de dados, envie um tíquete de suporte da Adobe Commerce para atualizar a versão do serviço MariaDB na infraestrutura de nuvem antes de prosseguir com o processo de atualização do Adobe Commerce.
 
 ## Produto e versões afetados
 
@@ -27,7 +27,7 @@ Adobe Commerce na infraestrutura de nuvem com Adobe Commerce versão 2.3.4 ou an
 Antes de a equipe de suporte da Adobe Commerce iniciar o processo de atualização, prepare o banco de dados convertendo as tabelas do banco de dados:
 
 - Converter o formato de linha de `COMPACT` para `DYNAMIC`
-- Converter o mecanismo de armazenamento de `MyISAM` para `InnoDB`
+- Alterar o mecanismo de armazenamento de `MyISAM` para `InnoDB`
 
 Lembre-se das seguintes considerações ao planejar e programar a conversão:
 
@@ -137,6 +137,12 @@ No dia anterior à atualização programada para a versão 10.2 do MariaDB, veri
 
 1. Se alguma tabela tiver sido revertida, repita as etapas para alterar o formato da linha da tabela e o mecanismo de armazenamento.
 
+## Alterar o mecanismo de armazenamento
+
+Consulte [Converter tabelas MyISAM em InnoDB](../planning/database-on-cloud.md).
+
 ## Informações adicionais
 
-[Práticas recomendadas do banco de dados para o Adobe Commerce na infraestrutura em nuvem](../planning/database-on-cloud.md)
+- [Práticas recomendadas do banco de dados para o Adobe Commerce na infraestrutura em nuvem](../planning/database-on-cloud.md)
+- [Atualização do MariaDB de 10.0 para 12.0 no Adobe Commerce na nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10.0-to-10.2-for-magento-commerce-cloud.html)
+

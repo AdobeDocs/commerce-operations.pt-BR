@@ -1,16 +1,16 @@
 ---
-user-guide-title: Manual de implementação
+user-guide-title: Playbook de implementação
 user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+source-git-commit: 5559d412ab58d392098cfff7a4cabb473c38cb0d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
 
 
-# Manual de implementação {#implementation-playbook}
+# Playbook de implementação {#implementation-playbook}
 
 - [Visão geral](overview.md)
 - Comércio {#intro}
@@ -110,6 +110,6 @@ ht-degree: 0%
       - [Agendamento de atualizações do Administrador em sites de produção](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [Serviços de atualização](best-practices/maintenance/update-services.md)
       - [Atualizar lista de verificação](best-practices/maintenance/upgrade-checklist.md)
-      - [Resolver problemas de desempenho do banco de dados &#x200B;](best-practices/maintenance/resolve-database-performance-issues.md)
-      - [Pré-requisitos de atualização do Adobe Commerce 2.3.5 para o &#x200B; do MariaDB](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+      - [Resolver problemas de desempenho do banco de dados](best-practices/maintenance/resolve-database-performance-issues.md)
+      - [Pré-requisitos de atualização para o MariaDB](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
