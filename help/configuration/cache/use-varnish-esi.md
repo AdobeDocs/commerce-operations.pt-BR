@@ -1,11 +1,10 @@
 ---
 title: Bloco ESI Varno
 description: Saiba mais sobre os Edge Side Includes e como você pode usá-los para incorporar páginas da Web.
-contributor_name: Goivvy LLC
-contributor_link: https://www.goivvy.com/magento-optimization-service
-source-git-commit: 2c12c6ea6e7b6ffeb07bbda17ded34e39de6656a
+badge: label="Contribuído por Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
+source-git-commit: 90544452f5f0834e096ead6ea3df64dcb5eaea11
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

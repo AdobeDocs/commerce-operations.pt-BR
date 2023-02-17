@@ -1,11 +1,10 @@
 ---
 title: referência system.xml
 description: Saiba como o arquivo XML do sistema gerencia a configuração do aplicativo do Commerce.
-contributor_name: David Lambauer
-contributor_link: https://github.com/DavidLambauer
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+badge: label="Contribuído por David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
+source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
