@@ -2,7 +2,7 @@
 title: Recommendations de otimização de desempenho
 description: Otimize o desempenho de sua implementação do Adobe Commerce seguindo essas recomendações.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -105,7 +105,7 @@ Os testes de desempenho antes de cada versão de produção são sempre recomend
 >
 > O Adobe Commerce na infraestrutura de nuvem já aplica todas as otimizações de infraestrutura e arquitetura acima, exceto pela pesquisa de DNS, pois está fora do escopo.
 
-### Pesquisar
+### Pesquisar {#search-heading}
 
 O Elasticsearch é necessário a partir do Adobe Commerce versão 2.4, mas também é uma prática recomendada habilitá-lo para versões anteriores à 2.4.
 
@@ -115,7 +115,7 @@ Além das recomendações de otimização de infraestrutura comum anteriormente 
 
 ### Arquitetura headless
 
-Temos uma seção separada dedicada a detalhar o que [impiedoso](../../architecture/headless/adobe-commerce.md) é e opções diferentes. Em resumo, ele separa a camada da loja da própria plataforma. Ainda é o mesmo back-end, mas a Adobe Commerce não processa mais solicitações diretamente e, em vez disso, suporta apenas vitrines personalizadas por meio da API GraphQL.
+Temos uma seção separada dedicada a detalhar o que [impiedoso](../../architecture/headless/adobe-commerce.md) é e opções diferentes. Em resumo, ele separa a camada da loja da própria plataforma. Ainda é o mesmo back-end, mas o Adobe Commerce não processa mais solicitações diretamente e, em vez disso, suporta apenas vitrines personalizadas por meio da API do GraphQL.
 
 ### Manter o Adobe Commerce atualizado
 
