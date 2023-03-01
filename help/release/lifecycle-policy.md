@@ -1,10 +1,10 @@
 ---
 title: Política de ciclo de vida do software
-description: Saiba mais sobre as principais datas relacionadas ao fim do suporte de software de versões do Adobe Commerce.
+description: Saiba mais sobre as principais datas de fim do suporte de software para versões do Adobe Commerce.
 source-git-commit: 2612405bed470c4b0e0d501ab36bcfb09ac50e92
 workflow-type: tm+mt
 source-wordcount: '318'
-ht-degree: 14%
+ht-degree: 10%
 
 ---
 

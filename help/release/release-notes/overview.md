@@ -4,7 +4,7 @@ description: Saiba onde encontrar informações para versões específicas do Ad
 source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
 workflow-type: tm+mt
 source-wordcount: '400'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ Use a tabela a seguir para encontrar notas de versão e informações importante
       </td>
     </tr>
     <tr>
-      <td><strong>Serviços para o Adobe Commerce</strong>
+      <td><strong>Serviços para Adobe Commerce</strong>
         <p>Saiba mais sobre as melhorias mais recentes para serviços inovadores do Commerce, disponíveis como extensões Adobe Commerce e Magento Open Source.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channel</a></li>
