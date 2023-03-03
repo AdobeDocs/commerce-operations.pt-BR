@@ -1,12 +1,12 @@
 ---
 title: Práticas recomendadas de escalonamento de parceiros
-description: Saiba como se preparar para encaminhar um problema de parceiro com um Gerente de sucesso do cliente do Adobe ou como evitar um escalonamento.
+description: Saiba como se preparar para escalonar um problema de parceiro com uma Equipe de conta do Adobe Adobe ou como evitar um escalonamento.
 role: User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 10d65d3453e260e105c1e90acbdfe678ca15c4e3
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -14,19 +14,19 @@ ht-degree: 0%
 
 # Práticas recomendadas de escalonamento de parceiros
 
-Abaixo estão ideias para ajudá-lo a se preparar para um escalonamento de Parceiro com um Gerente de sucesso do cliente do Adobe (CSM) ou para evitar o escalonamento por completo.
+Abaixo estão algumas ideias para ajudá-lo a se preparar para um escalonamento de Parceiro com uma Equipe de conta da Adobe ou para evitar totalmente o escalonamento.
 
 ## Produtos e versões afetados
 
 [Todas as versões compatíveis](../../../release/versions.md) de:
 
-* Adobe Commerce na infraestrutura de nuvem
+* Adobe Commerce na infraestrutura em nuvem
 * Adobe Commerce no local
 
 ## Práticas recomendadas
 
-Entendemos que cada situação é única e pode não se aplicar a alguns dos itens da lista de verificação listados abaixo. Mas descobrimos que quando os clientes se aproximam do CSM com uma compreensão desses conceitos, normalmente ele acelera esse processo e leva a resoluções mais rápidas:
+Sabemos que cada situação é única e pode não se aplicar a alguns dos itens da lista de verificação listados abaixo. Porém, descobrimos que, quando os clientes abordam sua equipe de contas Adobe com uma compreensão desses conceitos, normalmente esse processo é agilizado e resulta em resoluções mais rápidas:
 
-* **Considere o escopo**: Se você não estiver satisfeito com os resultados, ou se parecer que os resultados não foram atendidos, recomendamos que você revisite o documento de escopo fornecido pelo seu Parceiro. Da mesma forma, se os resultados tiverem sido adicionados, considere como isso pode afetar sua linha do tempo.
-* **Aborde seu parceiro com suas preocupações?** Às vezes, é melhor enfrentar os desafios diretamente com a fonte. Falou com o seu parceiro sobre as suas preocupações e deu-lhe a oportunidade de abordar as questões? Muitas vezes achamos que ser o mais aberto e transparente possível com seu parceiro pode resultar em mudanças positivas no projeto. Se você tentou resolver seus problemas com seu parceiro e eles não estão respondendo ou não têm uma resposta clara, então é melhor discutir isso com seu CSM.
-* **Ser específico**: São encorajados exemplos! Isso ajuda nossa equipe a economizar tempo filtrando detalhes entre emails, tíquetes de suporte etc. Quanto mais exemplos específicos você puder fornecer em torno de suas preocupações, melhor.
+* **Considerar o escopo**: se você não estiver satisfeito com os resultados ou achar que os resultados não foram atendidos, recomendamos que você consulte novamente o documento de escopo fornecido pelo Parceiro. Da mesma forma, se os materiais de entrega tiverem sido adicionados, considere como isso pode afetar sua linha do tempo.
+* **Aborde seu parceiro com suas preocupações?** Às vezes, é melhor enfrentar os desafios diretamente com a origem. Você conversou com seu parceiro sobre suas preocupações e deu a ele a oportunidade de resolver os problemas? Geralmente, achamos que ser o mais aberto e transparente possível com seu parceiro pode resultar em mudanças positivas no projeto. Se você tentou resolver seus problemas com seu parceiro e ele não está respondendo ou não tem uma resposta clara, é melhor discutir isso com a equipe de conta do Adobe.
+* **Ser específico**: Os exemplos são incentivados! Isso ajuda nossa equipe a economizar tempo analisando detalhes entre emails, tíquetes de suporte etc. Quanto mais exemplos específicos você puder fornecer sobre suas preocupações, melhor.
