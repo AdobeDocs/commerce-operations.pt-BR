@@ -1,0 +1,37 @@
+---
+title: Modernização de sua plataforma com o Adobe Commerce
+description: Revise as recomendações para o planejamento da atualização do Adobe Commerce.
+source-git-commit: 4a78c2d2a215d1b58b2f07b7a961849321f82318
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
+
+---
+
+
+# Caminhos de atualização recomendados
+
+A implementação do eCommerce é uma evolução — ela nunca terminou de fato. Sua empresa deve permanecer um passo à frente das tendências, apresentando os recursos e a funcionalidade mais recentes que mantêm seus clientes envolvidos. Atualizar para a versão mais recente do Adobe Commerce permite que você fique à frente com as melhores inovações da categoria e prepare seus negócios para o futuro com:
+
+- Acesso mais rápido a recursos inovadores fornecidos como serviços SaaS
+- Manutenção e atualizações mais fáceis e econômicas
+- Flexibilidade e personalização contínuas para atender às necessidades exclusivas dos negócios
+- Aumentos significativos no desempenho e na escalabilidade
+- Melhor experiência e ferramentas para desenvolvedores
+- Capacidade de integrar mais profundamente a outros aplicativos da Adobe Experience Cloud
+
+Recentemente, atualizamos o Adobe Commerce para oferecer mais flexibilidade aos nossos comerciantes durante o planejamento de atualizações [programação de lançamento](../../release/schedule.md)O, prorrogou a data de EOS (End of Support, fim do suporte) da versão 2.3 e anunciou novas opções de suporte estendido para versões selecionadas de nosso software. Para obter mais informações sobre essas atualizações, consulte [Suporte expandido para o Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
+
+Veja a seguir os caminhos de atualização recomendados pela Adobe Commerce para manter seu site seguro e com desempenho durante a atualização para uma das versões mais recentes.
+
+## Atualização da versão 2.3.7
+
+![Caminho de atualização da versão 2.3.7](../../assets/upgrade-guide/2.3.7.png)
+
+## Atualização da versão 2.4.0 para 2.4.3
+
+![Caminho de atualização de 2.4.0 para 2.4.3](../../assets/upgrade-guide/2.4.0-2.4.3.png)
+
+## Atualização das versões 2.4.4 e 2.4.5
+
+![Caminho de atualização das versões 2.4.4 e 2.4.5](../../assets/upgrade-guide/2.4.4-and-2.4.5.png)

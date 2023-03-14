@@ -1,32 +1,32 @@
 ---
-title: Migrar do Elasticsearch para o OpenSearch
-description: Saiba mais sobre a substituição do mecanismo de pesquisa usado em instalações locais do Adobe Commerce e do Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+title: Migração do Elasticsearch para o OpenSearch
+description: Saiba mais sobre como substituir o mecanismo de pesquisa usado para instalações locais do Adobe Commerce e do Magento Open Source.
+source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
 
 
-# Migrando para o OpenSearch
+# Migração para o OpenSearch
 
-O OpenSearch é uma bifurcação de fonte aberta do Elasticsearch 7.10.2 criada após uma alteração de licenciamento do Elasticsearch.
+OpenSearch é uma bifurcação de código aberto do Elasticsearch 7.10.2, criada após a alteração do licenciamento do Elasticsearch.
 
-A partir de 2.4.4, 2.4.3-p2 e 2.3.7-p3, o Adobe Commerce e o Magento Open Source suportarão o OpenSearch. As instalações locais continuam a oferecer suporte ao Elasticsearch, embora ele não seja mais compatível com o Adobe Commerce na infraestrutura em nuvem.
+A partir de 2.4.4, 2.4.3-p2 e 2.3.7-p3, o Adobe Commerce e o Magento Open Source suportam OpenSearch. As instalações locais continuam a oferecer suporte ao Elasticsearch, embora ele não seja mais compatível com o Adobe Commerce na infraestrutura em nuvem. A partir da versão 2.4.6, o OpenSearch tem seu próprio módulo e campos nas configurações de Admin.
 
 ## Caminho de migração
 
-As etapas para migrar para o OpenSearch são simples e seguem amplamente as etapas para a configuração do Elasticsearch. Essas etapas consideram que o Adobe Commerce é o único aplicativo que usa o mecanismo de pesquisa. Nos casos em que vários aplicativos usam o mecanismo de pesquisa, siga o guia de migração oficial [Transferência do Elasticsearch de código aberto para o OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
+As etapas para migrar para o OpenSearch são simples e seguem as etapas para configuração de Elasticsearch. Essas etapas pressupõem que o Adobe Commerce é o único aplicativo que usa o mecanismo de pesquisa. Nos casos em que vários aplicativos usarem o mecanismo de pesquisa, siga o guia de migração oficial [Migração do Elasticsearch de código aberto para OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
 
-1. Certifique-se de que a instalação atenda ao [pré-requisitos do mecanismo de pesquisa](../../installation/prerequisites/search-engine/overview.md).
+1. Certifique-se de que sua instalação atenda aos [pré-requisitos do mecanismo de pesquisa](../../installation/prerequisites/search-engine/overview.md).
 
-1. Coloque o site em [Modo de manutenção](../../installation/tutorials/maintenance-mode.md).
+1. Colocar o site em [Modo de manutenção](../../installation/tutorials/maintenance-mode.md).
 
-1. Como opção, desinstale o Elasticsearch.
+1. Desinstale opcionalmente o Elasticsearch.
 
 1. [Instalar o OpenSearch](https://opensearch.org/docs/latest/opensearch/install/important-settings/).
 
 1. [Configurar o mecanismo de pesquisa](../../configuration/search/configure-search-engine.md) e executar tarefas relacionadas, como limpar o cache e reindexar o índice de pesquisa do catálogo.
 
-Nenhuma outra alteração no valor de configuração é necessária.
+Não são necessárias mais alterações no valor de configuração.
