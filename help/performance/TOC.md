@@ -3,7 +3,7 @@ user-guide-title: Práticas recomendadas de desempenho
 user-guide-description: Otimize o desempenho da implantação de produção de Magento Open Source ou Adobe Commerce usando nossas recomendações.
 source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '56'
 ht-degree: 0%
 
 ---
