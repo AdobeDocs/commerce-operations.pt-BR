@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
+source-git-commit: 4117662e4b3686388d578ae3e620ee6478216a98
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 70%
@@ -78,7 +78,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.4
+            8.4, 7.17
       </td>
       <td>
             7.17
@@ -258,7 +258,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.1
+            8.1, 8.2
       </td>
       <td>
             8.1
@@ -800,8 +800,8 @@ ht-degree: 70%
 
 >[!IMPORTANT]
 >
->O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infraestrutura em nuvem é determinado pelas versões implantadas na infraestrutura em nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Software e serviços compatíveis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) no _Guia da nuvem_.
+>O suporte à versão e compatibilidade do serviço para o Adobe Commerce na infraestrutura em nuvem é determinado por versões implantadas na infraestrutura em nuvem e, às vezes, diferem das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Software e serviços compatíveis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) no _Guia da nuvem_.
 
 >[!NOTE]
 >
-><sup>*</sup>O Adobe Commerce 2.4.5 e versões anteriores são compatíveis somente com o MySQL 8.0.28 e versões anteriores.
+><sup>*</sup>O Adobe Commerce 2.4.5 e versões anteriores oferecem suporte somente ao MySQL 8.0.28 e versões anteriores.
