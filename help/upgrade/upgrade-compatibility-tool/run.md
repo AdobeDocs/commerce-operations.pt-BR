@@ -1,9 +1,9 @@
 ---
 title: "Execute o [!DNL Upgrade Compatibility Tool]"
 description: Siga estas etapas para executar o [!DNL Upgrade Compatibility Tool] em uma interface de linha de comando para seu projeto do Adobe Commerce.
-source-git-commit: e704748a7ceaa58a5a8d7004c81ac766dec4e7f1
+source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Comandos disponíveis para o [!DNL Upgrade Compatibility Tool] em uma interface 
 | `dbschema:diff` | Esse comando exibe todas as diferenças do schema do banco de dados entre duas versões especificadas do Adobe Commerce. |
 | `core:code:changes` | Este comando compara a instalação atual do Adobe Commerce com uma instalação baunilha limpa. |
 | `refactor` | Esse comando corrige automaticamente um conjunto reduzido de problemas. |
-| `graphql:compare` | Este comando fornece a opção de introspecção de dois pontos de extremidade GraphQL e comparação de seus esquemas. |
+| `graphql:compare` | Esse comando fornece a opção de introspectar dois pontos de extremidade do GraphQL e comparar seus esquemas. |
 | `list` | Esse comando retorna uma lista de todos os [!DNL Upgrade Compatibility Tool] comandos disponíveis. |
 | `help` | Este comando retorna todos os disponíveis `help`para a [!DNL Upgrade Compatibility Tool]. Esse comando pode ser executado, bem como uma opção com os comandos anteriores. |
 
@@ -182,7 +182,7 @@ Opções disponíveis para o `refactor` comando:
 
 ## Use o `graphql:compare` comando
 
-Esse comando fornece a opção para [!DNL Upgrade Compatibility Tool] para analisar dois pontos de extremidade GraphQL e comparar seus esquemas que buscam alterações perigosas e de quebra entre eles:
+Esse comando fornece a opção para [!DNL Upgrade Compatibility Tool] para analisar dois endpoints do GraphQL e comparar seus schemas que procuram alterações perigosas e de quebra entre eles:
 
 ```bash
 bin/uct graphql:compare <schema1> <schema2>
@@ -207,7 +207,7 @@ Para retornar uma lista de [!DNL Upgrade Compatibility Tool] comandos disponíve
 bin/uct list
 ```
 
-## Use o `--help` comando
+## Use o `help` comando
 
 Para ver o [!DNL Upgrade Compatibility Tool] comando opções gerais e ajuda, executar:
 
@@ -260,6 +260,7 @@ Isso retorna opções específicas que podem ser executadas para a variável `up
 - Evite ter dois módulos com o mesmo nome.
 - Seguir o Adobe Commerce [normas de codificação](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [Guia de atualização](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) práticas recomendadas.
+- Execute o [!DNL Upgrade Compatibility Tool] do [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) para [Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} projetos.
 
 ## Otimize seus resultados
 
