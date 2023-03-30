@@ -1,17 +1,17 @@
 ---
-source-git-commit: d17847a7151c5e88f763b334e1ee659ca3ca6bcf
+source-git-commit: 4b767014f325bef7e07cea11d01089206bf44caf
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 5%
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
-# Documentação do usuário do Adobe Commerce
+# Documentação técnica do Adobe Commerce
 
 Agradecemos as contribuições de nossa comunidade, bem como de Adobe funcionários de fora das equipes de documentação.
 
 ## Código de conduta de fonte aberta do Adobe
 
-Este projeto adotou o [Código de conduta de código aberto da Adobe](code-of-conduct.md) ou o [Código de conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte o artigo [Contribuição](contributing.md).
+Este projeto adotou a [Código de conduta de fonte aberta do Adobe](code-of-conduct.md) ou [Código de conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte o [Contribuição](contributing.md) artigo 10. o
 
 ## Sobre suas contribuições para o conteúdo do Adobe
 
@@ -33,7 +33,7 @@ Se fizer parte da comunidade Adobe e quiser criar um novo artigo ou enviar alter
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### Grandes mudanças dos funcionários do Adobe
+### Grandes mudanças dos funcionários da Adobe
 
 Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos de uma solução da Adobe Experience Cloud e seu trabalho for criar ou contribuir com a criação de artigos técnicos, deverá usar o repositório privado em `https://git.corp.adobe.com/AdobeDocs`.
 
@@ -51,13 +51,6 @@ Todos os artigos neste repositório usam a marcação com sabor do GitHub. Se n�
 
 * [Noções básicas do Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Página de consulta do Markdown para impressão](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## Rótulos
-
-No repositório público, os rótulos automatizados são atribuídos para extrair solicitações para nos ajudar a gerenciar o fluxo de trabalho da solicitação de pull e para ajudar você a saber o que está acontecendo com sua solicitação de pull:
-
-* **Alteração enviada ao autor**: O autor foi notificado da solicitação de pull pendente.
-* **ready-to-merge (pronto para mesclar)**: Pronto para ser revisado pela equipe de revisão da solicitação de pull.
 
 ## Modelos
 
