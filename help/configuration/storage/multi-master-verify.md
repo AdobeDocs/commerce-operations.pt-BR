@@ -1,9 +1,9 @@
 ---
 title: Verificar banco de dados dividido
 description: Saiba como verificar se uma configuração de banco de dados Split do Commerce está funcionando corretamente.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 Após a configuração, os bancos de dados principais são configurados da seguinte maneira:
 
 - Banco de dados do Comércio principal: 369 tabelas
-- Comércio [citação](https://glossary.magento.com/quote) banco de dados: 11 tabelas
+- Base de dados de cotações de comércio: 11 tabelas
 - Banco de dados de vendas de comércio: 55 tabelas
 
 Para verificar se os bancos de dados divididos estão funcionando corretamente, execute as seguintes tarefas e verifique se os dados são adicionados às tabelas do banco de dados usando uma ferramenta de banco de dados como [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):

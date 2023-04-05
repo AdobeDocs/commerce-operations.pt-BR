@@ -1,9 +1,9 @@
 ---
 title: Implantar arquivos de visualização estáticos
 description: Saiba como gravar arquivos estáticos no sistema de arquivos do Commerce durante o modo de produção.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-O comando de implantação de arquivos de visualização estáticos permite gravar [arquivos estáticos](https://glossary.magento.com/static-files) ao sistema de arquivos do Commerce quando o software Commerce estiver configurado para [modo de produção](../bootstrap/application-modes.md#production-mode).
+O comando de implantação de arquivos de visualização estática permite gravar arquivos estáticos no sistema de arquivos do Commerce quando o software Commerce estiver definido para [modo de produção](../bootstrap/application-modes.md#production-mode).
 
 O termo _arquivo de visualização estática_ refere-se ao seguinte:
 

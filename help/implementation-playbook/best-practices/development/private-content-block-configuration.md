@@ -4,9 +4,9 @@ description: Conheça as práticas recomendadas para configurar blocos de conte�
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Quando um bloco de conteúdo privado contém a variável `_isScopePrivate` , o bloco não pode ser armazenado em cache. Como o bloco privado não é armazenado em cache, a Adobe Commerce deve recuperar os mesmos dados para cada solicitação de cliente que aumenta a carga do servidor.
 
-Em vez de usar o `_isScopePrivate` para conteúdo privado, crie um bloco e um modelo para exibir dados agnósticos do usuário. Esses dados são substituídos por dados específicos do usuário pelo Adobe Commerce [componente da interface do usuário](https://glossary.magento.com/ui-component/), que lida com dados de pré-renderização de forma mais eficiente. Para obter instruções, consulte [Conteúdo privado](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) no _[!DNL Commerce PHP Extensions Guide]_.
+Em vez de usar o `_isScopePrivate` para conteúdo privado, crie um bloco e um modelo para exibir dados agnósticos do usuário. Esses dados são substituídos por dados específicos do usuário pelo componente da interface do usuário do Adobe Commerce, que lida com a pré-renderização dos dados de forma mais eficiente. Para obter instruções, consulte [Conteúdo privado](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) no _[!DNL Commerce PHP Extensions Guide]_.
 
 ## Produtos e versões afetados
 

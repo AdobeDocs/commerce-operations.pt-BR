@@ -1,9 +1,9 @@
 ---
 title: Arquivos de configuração para implantação
 description: Entenda como os arquivos de configuração funcionam para instalar o aplicativo Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ No nível superior desse storage estão _segmentos de configuração_. Um segmen
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) fornece apenas acesso a essas seções, mas não permite estendê-las.
 
-No próximo nível de hierarquia, os itens em cada segmento são ordenados de acordo com a variável [módulo](https://glossary.magento.com/module) definição de sequência, que é obtida pela união de todos os arquivos de configuração de módulos, exceto para módulos desativados.
+No próximo nível de hierarquia, os itens em cada segmento são ordenados de acordo com a definição da sequência do módulo, que é obtida ao mesclar todos os arquivos de configuração do módulo, exceto para módulos desativados.
 
 As seções a seguir discutem a estrutura e o conteúdo da configuração de implantação:
 
@@ -78,6 +78,6 @@ return array (
 
 O valor `1` ou `0` indica se um módulo está ativado ou desativado.
 
-Os módulos desativados não são reconhecidos pelo aplicativo Commerce; em outras palavras, eles não participam da mesclagem de configuração, injeção de dependência, eventos, plug-ins e assim por diante. Os módulos desativados não modificam a variável [vitrine](https://glossary.magento.com/storefront) ou [Administrador](https://glossary.magento.com/admin) e não afetam o roteamento.
+Os módulos desativados não são reconhecidos pelo aplicativo Commerce; em outras palavras, eles não participam da mesclagem de configuração, injeção de dependência, eventos, plug-ins e assim por diante. Os módulos desativados não modificam a loja ou o Administrador e não afetam o roteamento.
 
 A única diferença prática de um módulo desativado e ausente na base de código é que um módulo desativado é encontrado pelo carregador automático, e suas classes e constantes estão disponíveis para reutilização em outro código.

@@ -1,9 +1,9 @@
 ---
 title: Executar uma atualização
 description: Siga estas etapas para atualizar um projeto Adobe Commerce ou Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Você pode atualizar seu aplicativo Adobe Commerce ou Magento Open Source da linha de comando se tiver instalado o software:
 
-- Download da variável [metapackage](https://glossary.magento.com/metapackage) usando o `composer create-project` comando.
+- Download do metapackage usando o `composer create-project` comando.
 - Instalar o arquivo compactado.
 
 >[!NOTE]

@@ -1,9 +1,9 @@
 ---
 title: Configurar paradas de pesquisa
 description: Saiba como gerenciar palavras de interrupção para Adobe Commerce usando arquivos CSV.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Para obter mais informações sobre como o Elasticsearch e o OpenSearch usam pal
 
 As palavras-chave estão localizadas na variável `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` diretório. O Adobe Commerce e o Magento Open Source são fornecidos com um arquivo CSV contendo senhas para as localidades padrão e um arquivo adicional, `stopwords.csv`, que tem palavras de interrupção para qualquer local que não seja representado por outro arquivo CSV.
 
-O tempo de vida padrão do arquivo de palavras de interrupção [cache](https://glossary.magento.com/cache) é de 15 minutos.
+O tempo de vida padrão do cache de arquivos de palavras de interrupção é de 15 minutos.
 
 ### Editar palavras de interrupção para uma localidade existente
 
@@ -54,7 +54,7 @@ O tempo de vida padrão do arquivo de palavras de interrupção [cache](https://
       php <magento_root>/bin/magento cache:clean config
       ```
 
-1. Verifique os resultados pesquisando termos em seu [vitrine](https://glossary.magento.com/storefront).
+1. Verifique os resultados pesquisando termos em sua loja.
 
 ### Criar palavras de interrupção para uma nova localidade
 

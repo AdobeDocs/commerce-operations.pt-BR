@@ -1,9 +1,9 @@
 ---
 title: Replicação de banco de dados
 description: Veja os benefícios da configuração da replicação do banco de dados.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ O seguinte é mais avançado e é fornecido apenas para suas informações:
 
 ## Melhoria no desempenho
 
-Para melhorar o desempenho da replicação de escravos principais, você pode filtrar algumas tabelas em instâncias escravas. Recomendamos filtrar todas as tabelas temporárias com o padrão de nome `search\_tmp\_%` usados para [catálogo](https://glossary.magento.com/catalog) pesquisar.
+Para melhorar o desempenho da replicação de escravos principais, você pode filtrar algumas tabelas em instâncias escravas. Recomendamos filtrar todas as tabelas temporárias com o padrão de nome `search\_tmp\_%` que são usados para pesquisa de catálogo.
 
 Para fazer isso, adicione a seguinte linha em `my.cnf` nas instâncias do subordinado:
 

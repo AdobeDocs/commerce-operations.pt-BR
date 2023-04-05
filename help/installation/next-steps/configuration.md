@@ -1,9 +1,9 @@
 ---
 title: Configurar o aplicativo
 description: Saiba mais sobre a configuração pós-instalação necessária para implantações locais do Adobe Commerce e Magento Open Source.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Se você usar o servidor da Web Apache, precisará ativar as substituições de 
 
 Se você tiver vários nós da Web, *cannot* use o armazenamento em cache de arquivos padrão do aplicativo porque não há sincronização entre nós da Web. Em outras palavras, a atividade em um nó da Web é gravada somente no sistema de arquivos desse nó da Web. A atividade subsequente, se executada em outro nó da Web, pode resultar na gravação de arquivos desnecessários ou resultar em erros.
 
-Em vez disso, use [Redis](../../configuration/cache/config-redis.md) para ambas as [cache](https://glossary.magento.com/cache) e o cache da página.
+Em vez disso, use [Redis](../../configuration/cache/config-redis.md) para o cache padrão e o cache da página.
 
 ## Configurações do servidor
 

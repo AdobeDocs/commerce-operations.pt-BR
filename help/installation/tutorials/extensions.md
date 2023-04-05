@@ -1,9 +1,9 @@
 ---
 title: Instalar uma extensão
 description: Siga estas etapas para instalar uma extensão Adobe Commerce ou Magento Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,12 @@ O código que estende ou personaliza o comportamento do Adobe Commerce e do Mage
 As extensões incluem:
 
 - Módulos (estenda os recursos Adobe Commerce e Magento Open Source)
-- Temas (altere a aparência de seu [vitrine](https://glossary.magento.com/storefront) e Administrador)
+- Temas (altere a aparência da loja e do Administrador)
 - Pacotes de idioma (localize a loja e o administrador)
 
 >[!TIP]
 >
->Este tópico explica como usar a linha de comando para instalar extensões compradas no Commerce Marketplace. Você pode usar o mesmo procedimento para instalar o _any_ extensão; tudo que você precisa é do [Composer](https://glossary.magento.com/composer) nome e versão. Para encontrá-lo, abra o `composer.json` e observe os valores de `"name"` e `"version"`.
+>Este tópico explica como usar a linha de comando para instalar extensões compradas no Commerce Marketplace. Você pode usar o mesmo procedimento para instalar o _any_ extensão; tudo o que você precisa é do nome e da versão do Composer da extensão. Para encontrá-lo, abra o `composer.json` e observe os valores de `"name"` e `"version"`.
 
 Antes da instalação, você pode desejar:
 

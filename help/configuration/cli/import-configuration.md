@@ -1,9 +1,9 @@
 ---
 title: Importar dados de arquivos de configuração
 description: Importe as configurações do Adobe Commerce dos arquivos de configuração.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ As seções a seguir discutem detalhadamente quais dados importamos.
 
 O Commerce usa diretamente os valores na `system` no `config.php` ou `env.php` arquivos em vez de importá-los para o banco de dados, pois exigem algumas ações de pré e pós-processamento.
 
-Por exemplo, o valor do caminho de configuração `web/secure/base_url` deve ser validado com [backend](https://glossary.magento.com/backend) modelos.
+Por exemplo, o valor do caminho de configuração `web/secure/base_url` deve ser validado com modelos de backend.
 
 #### Modelos de backend
 
@@ -94,7 +94,7 @@ As configurações anteriores podem ser importadas nos seguintes modos:
 
 >[!INFO]
 >
->Não importamos a raiz [categoria](https://glossary.magento.com/category) associado a lojas. Você deve associar uma categoria raiz a uma loja usando o Commerce [Administrador](https://glossary.magento.com/admin).
+>Não importamos a categoria raiz associada aos armazenamentos. Você deve associar uma categoria raiz a uma loja usando o Administrador de comércio.
 
 ### Configuração do tema
 
@@ -105,7 +105,7 @@ A configuração de tema inclui todos os temas registrados em seu sistema de Com
 A chave do array é o caminho completo do tema: `area` + `theme path`
 
 Por exemplo, `frontend/Magento/luma`.
-`frontend` é área e `Magento/luma` é [tema](https://glossary.magento.com/theme) caminho.
+`frontend` é área e `Magento/luma` é o caminho do tema.
 
 O valor da matriz são dados sobre tema: código, título, caminho, id principal
 

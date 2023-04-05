@@ -1,9 +1,9 @@
 ---
 title: Configuração Varnish avançada
 description: Configure recursos avançados do Varnish, incluindo os modos de verificação de integridade, carência e saint.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ O Commerce define a seguinte verificação de integridade padrão:
     }
 ```
 
-A cada 5 segundos, essa verificação de integridade chama a função `pub/health_check.php` script. Esse script verifica a disponibilidade do servidor, cada banco de dados e Redis (se instalado). O script deve retornar uma resposta em 2 segundos. Se o script determinar que qualquer um desses recursos está inativo, retornará um código de erro HTTP 500. Se esse código de erro for recebido em seis de dez tentativas, a variável [backend](https://glossary.magento.com/backend) for considerada não saudável.
+A cada 5 segundos, essa verificação de integridade chama a função `pub/health_check.php` script. Esse script verifica a disponibilidade do servidor, cada banco de dados e Redis (se instalado). O script deve retornar uma resposta em 2 segundos. Se o script determinar que qualquer um desses recursos está inativo, retornará um código de erro HTTP 500. Se esse código de erro for recebido em seis de dez tentativas, o back-end será considerado incorreto.
 
 O `health_check.php` O script está localizado na variável `pub` diretório. Se o diretório raiz do Commerce estiver `pub`, certifique-se de alterar o caminho no `url` parâmetro de `/pub/health_check.php` para `health_check.php`.
 
@@ -39,7 +39,7 @@ Para obter mais informações, consulte o [Controlos de saúde da Varna](https:/
 
 ## Modo de carência
 
-O modo de carência permite que o Varnish mantenha um objeto em [cache](https://glossary.magento.com/cache) além do valor TTL. A Varnish pode servir o conteúdo expirado (obsoleto) enquanto busca uma nova versão. Isso melhora o fluxo do tráfego e diminui o tempo de carga. Ele é usado nas seguintes situações:
+O modo de carência permite que a Varnish mantenha um objeto em cache além do valor TTL. A Varnish pode servir o conteúdo expirado (obsoleto) enquanto busca uma nova versão. Isso melhora o fluxo do tráfego e diminui o tempo de carga. Ele é usado nas seguintes situações:
 
 - Quando o back-end do Commerce está íntegro, mas uma solicitação está demorando mais do que o normal
 - Quando o back-end do Commerce não estiver funcionando.
@@ -48,7 +48,7 @@ O `vcl_hit` subrotina define como o Varnish responde a uma solicitação para ob
 
 ### Quando o back-end do Commerce estiver íntegro
 
-Quando as verificações de integridade determinam que o backend do Commerce está íntegro, a Varnish verifica se o tempo permanece no período de carência. O período de carência padrão é de 300 segundos, mas um comerciante pode definir o valor da variável [Administrador](https://glossary.magento.com/admin) conforme descrito em [Configurar comércio para usar o Varnish](configure-varnish-commerce.md). Se o período de carência não tiver expirado, a Varnish fornecerá o conteúdo obsoleto e atualizará de forma assíncrona o objeto do servidor do Commerce. Se o período de carência tiver expirado, a Varnish exibirá o conteúdo obsoleto e atualizará de forma síncrona o objeto do back-end do Commerce.
+Quando as verificações de integridade determinam que o backend do Commerce está íntegro, a Varnish verifica se o tempo permanece no período de carência. O período de carência padrão é de 300 segundos, mas um comerciante pode definir o valor em Administração, conforme descrito em [Configurar comércio para usar o Varnish](configure-varnish-commerce.md). Se o período de carência não tiver expirado, a Varnish fornecerá o conteúdo obsoleto e atualizará de forma assíncrona o objeto do servidor do Commerce. Se o período de carência tiver expirado, a Varnish exibirá o conteúdo obsoleto e atualizará de forma síncrona o objeto do back-end do Commerce.
 
 A quantidade máxima de tempo que a Varnish serve um objeto obsoleto é a soma do período de carência (300 segundos por padrão) e do valor TTL (86400 segundos por padrão).
 
@@ -74,7 +74,7 @@ Designar uma máquina como a instalação primária. Nesta máquina, instale a i
 
 Em todas as outras máquinas, a instância do Commerce deve ter acesso ao banco de dados mySQL da máquina primária. As máquinas secundárias também devem ter acesso aos arquivos da instância principal do Commerce.
 
-Em alternativa, [arquivos estáticos](https://glossary.magento.com/static-files) o controle de versão pode ser desativado em todas as máquinas. Isso pode ser acessado em Admin em **Lojas** > Configurações > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações de arquivos estáticos** > **Assinar arquivos estáticos** = **Não**.
+Como alternativa, o controle de versão de arquivos estáticos pode ser desativado em todas as máquinas. Isso pode ser acessado em Admin em **Lojas** > Configurações > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações de arquivos estáticos** > **Assinar arquivos estáticos** = **Não**.
 
 Finalmente, todas as instâncias de Comércio devem estar no modo de produção. Antes de Varnish ser iniciado, limpe o cache em cada instância. Em Admin, acesse **Sistema** > Ferramentas > **Gerenciamento de cache** e clique em **Liberar cache Magento**. Você também pode executar o seguinte comando para limpar o cache:
 
@@ -89,7 +89,7 @@ O modo Saint não faz parte do pacote Varnish principal. É um controle de vers�
 - [Instalação do Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
 - [Instalação do Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
 
-Depois de recompilar, você pode instalar o modo Saint [módulo](https://glossary.magento.com/module). Em geral, siga estas etapas:
+Depois de recompilar, você pode instalar o módulo do modo Saint. Em geral, siga estas etapas:
 
 1. Obter o código-fonte de [Módulos variados](https://github.com/varnish/varnish-modules). Clonar a versão Git (versão principal), pois as versões 0.9.x contêm um erro de código-fonte.
 1. Crie o código-fonte com ferramentas automáticas:

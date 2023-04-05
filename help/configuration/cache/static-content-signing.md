@@ -1,9 +1,9 @@
 ---
 title: Cache de conteúdo estático
 description: Saiba mais sobre a assinatura de conteúdo estático e como ativar ou desativar o recurso.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ Definir a `Expires` em um recurso estático informa ao navegador para armazenar 
 Isso é comum [prática recomendada](https://developer.yahoo.com/performance/rules.html#expires=) para armazenar recursos estáticos em cache.
 
 Quando o navegador armazena em cache um recurso estático e esse recurso é alterado no servidor, é necessário limpar o cache do navegador para que ele possa baixar a nova versão.
-Limpar manualmente o cache do navegador funcionará se você for um [site](https://glossary.magento.com/website) administrador, mas essa não é uma solicitação apropriada para fazer de seus usuários quando você quiser que eles baixem novas versões de um recurso estático.
+A limpeza manual do cache do navegador funciona se você for um administrador de site, mas essa não é uma solicitação apropriada para fazer de seus usuários quando você quiser que eles baixem novas versões de um recurso estático.
 
 ## Assinatura de conteúdo estático
 
-[Conteúdo estático](https://glossary.magento.com/static-content) a assinatura é um recurso do Commerce que permite invalidar o cache do navegador para recursos estáticos.
-O Commerce faz isso adicionando uma versão de implantação ao URL de [arquivos estáticos](https://glossary.magento.com/static-files).
+A assinatura de conteúdo estático é um recurso do Commerce que permite invalidar o cache do navegador para recursos estáticos.
+O Commerce consegue isso adicionando uma versão de implantação ao URL dos arquivos estáticos.
 
 Este é um exemplo de um URL assinado com uma versão:
 

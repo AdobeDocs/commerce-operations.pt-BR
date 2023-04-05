@@ -1,9 +1,9 @@
 ---
 title: Verifique a instalação
 description: Siga estas etapas para confirmar que a instalação local do Adobe Commerce ou do Magento Open Source foi bem-sucedida.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Verifique a instalação
 
-Vá para o [vitrine](https://glossary.magento.com/storefront) em um navegador da Web. Por exemplo, se a base de instalação [URL](https://glossary.magento.com/url) é `http://www.example.com`, insira-o no endereço ou na barra de localização do navegador.
+Vá para a loja em um navegador da Web. Por exemplo, se o URL de base da instalação for `http://www.example.com`, insira-o no endereço ou na barra de localização do navegador.
 
 A figura a seguir mostra uma página de loja de exemplo. Se for exibido da seguinte maneira, sua instalação foi um sucesso!
 
@@ -29,9 +29,9 @@ Se a página exibir um `404 (Not Found)` ou não exibe estilos, consulte [soluç
 
 ## Verificar o administrador
 
-Vá para o [Administrador](https://glossary.magento.com/magento-admin) em um navegador da Web. Por exemplo, se o URL de base da instalação for `http://www.example.com`e o URI do administrador é `admin_au1nT`, insira `http://www.example.com/admin_au1nT` na barra de endereço ou localização do navegador.
+Vá para Admin em um navegador da Web. Por exemplo, se o URL de base da instalação for `http://www.example.com`e o URI do administrador é `admin_au1nT`, insira `http://www.example.com/admin_au1nT` na barra de endereço ou localização do navegador.
 
-(O [Administrador](https://glossary.magento.com/admin) O URI é especificado pelo valor da variável `backend-frontname` parâmetro de instalação.)
+(O URI de administrador é especificado pelo valor da variável `backend-frontname` parâmetro de instalação.)
 
 Quando solicitado, faça logon como administrador.
 

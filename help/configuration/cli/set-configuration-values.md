@@ -1,9 +1,9 @@
 ---
 title: Definir valores de configuração
 description: Saiba como definir valores de configuração e alterar valores que estão bloqueados no Administrador.
-source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Você pode definir valores nos seguintes momentos:
 
 - Antes de instalar o Commerce, você pode definir valores de configuração somente para o escopo padrão, pois esse é o único escopo válido.
 
-- Depois de instalar o Commerce, você pode definir valores de configuração para qualquer site ou [exibição de loja](https://glossary.magento.com/store-view) escopo.
+- Depois de instalar o Commerce, você pode definir valores de configuração para qualquer site ou escopo de visualização de loja.
 
 Use os seguintes comandos:
 

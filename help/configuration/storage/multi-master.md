@@ -1,9 +1,9 @@
 ---
 title: Solução de desempenho de banco de dados dividida
 description: Leia sobre a solução de banco de dados dividido para Adobe Commerce e Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ O Adobe Commerce usa três bancos de dados principais e um número configurável
 Devido ao modo como a solução de desempenho de banco de dados dividido foi criada, seu código personalizado e os componentes instalados _cannot_ siga um destes procedimentos:
 
 - Gravar diretamente no banco de dados (em vez disso, você deve usar a interface do banco de dados do Adobe Commerce)
-- Use JOINs que afetam as vendas ou [citação](https://glossary.magento.com/quote) bancos de dados
+- Usar JOINs que afetam os bancos de dados de vendas ou cotação
 - Usar chaves estrangeiras para tabelas no check-out, vendas ou bancos de dados principais
 
 >[!WARNING]
@@ -76,7 +76,7 @@ Isso também significa que é possível:
 
 O banco de dados dividido requer que você configure três bancos de dados principais do MySQL em qualquer host (todos os três no servidor do Commerce, cada banco de dados em um servidor separado e assim por diante). Estas são as _principal_ bancos de dados e são usados da seguinte maneira:
 
-- Um banco de dados principal para [checkout](https://glossary.magento.com/checkout) tabelas
+- Um banco de dados principal para tabelas de check-out
 - Um banco de dados principal para tabelas de vendas (também conhecido como _Sistema de gerenciamento de pedidos_ ou _OMS_, tabelas)
 - Um banco de dados principal para o restante das tabelas de aplicativos do Commerce 2
 

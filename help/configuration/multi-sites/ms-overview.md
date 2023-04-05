@@ -1,9 +1,9 @@
 ---
 title: Vários sites ou lojas
 description: Saiba como iniciar vários sites ou implementar visualizações de loja com diferentes opções, domínios e conteúdo.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Uma única instância do software Adobe Commerce permite iniciar vários sites o
 - Produtos
 - Moedas
 
-Essa solução flexível permite uma base de código comercial e [Administrador](https://glossary.magento.com/magento-admin) para administrar e exibir diferentes lojas. Você configura os sites, lojas e visualizações de loja no Administrador. Use determinadas variáveis em hosts virtuais para iniciar o aplicativo Commerce usando esses sites ou exibições de loja.
+Essa solução flexível permite que uma base de código do Commerce e o Administrador administrem e exibam diferentes lojas. Você configura os sites, lojas e visualizações de loja no Administrador. Use determinadas variáveis em hosts virtuais para iniciar o aplicativo Commerce usando esses sites ou exibições de loja.
 
 Um uso típico é configurar lojas com opções diferentes em domínios diferentes. Por exemplo, você pode ter um conjunto de categorias e produtos em um domínio e outro conjunto de categorias e produtos em um domínio separado em um idioma diferente.
 
-Você configura os sites, lojas e visualizações de loja no Commerce [Administrador](https://glossary.magento.com/admin). Use o `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` em hosts virtuais para iniciar o aplicativo Commerce usando esses sites ou exibições de loja.
+Você configura os sites, lojas e visualizações de loja no Administrador de comércio. Use o `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` em hosts virtuais para iniciar o aplicativo Commerce usando esses sites ou exibições de loja.
 
 Considere os seguintes termos:
 

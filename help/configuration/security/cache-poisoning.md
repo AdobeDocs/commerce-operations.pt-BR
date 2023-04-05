@@ -1,9 +1,9 @@
 ---
 title: Evitar envenenamento do cache
 description: Saiba como evitar envenenamento ao cache de página em sua loja do Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Evitar envenenamento do cache
 
-Este tópico discute como evitar [cache](https://glossary.magento.com/cache) envenenamento se você usar o servidor da Web Microsoft Internet Information Server (IIS). _Envenenamento de cache_ é um método de alterar o conteúdo do cache para incluir páginas diferentes do mesmo site. Por exemplo, é possível inserir uma página de erro HTTP 404 (Not Found) no lugar de alguma página benigna (por exemplo, a variável [vitrine](https://glossary.magento.com/storefront) página inicial), que pode levar a uma possível negação de serviço (DoS). Os URLs de página mal-intencionados são armazenados em cache pelo Varnish ou Redis, portanto, o nome _envenenamento do cache de página_.
+Este tópico discute como evitar envenenamento por cache se você usar o servidor da Web do Microsoft Internet Information Server (IIS). _Envenenamento de cache_ é um método de alterar o conteúdo do cache para incluir páginas diferentes do mesmo site. Por exemplo, é possível inserir uma página de erro HTTP 404 (Not Found) no lugar de alguma página benigna (por exemplo, a página inicial da loja), que pode levar a uma possível negação de serviço (DoS). Os URLs de página mal-intencionados são armazenados em cache pelo Varnish ou Redis, portanto, o nome _envenenamento do cache de página_.
 
 Esses tipos de ataques podem ser difíceis de detectar porque não resultam em erros nos logs do servidor da Web.
 

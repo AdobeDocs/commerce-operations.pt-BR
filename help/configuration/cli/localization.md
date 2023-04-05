@@ -1,9 +1,9 @@
 ---
 title: Dicionários de tradução e pacotes linguísticos
 description: Saiba como gerar dicionários de tradução e criar pacotes de idioma.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Consulte [Visão geral das traduções].
 
 ## Gerar um dicionário de tradução
 
-Você pode gerar um [dicionário de tradução] para personalizar strings existentes, traduzir palavras e frases em um módulo personalizado, localizar um tema ou criar [pacotes de idioma](https://glossary.magento.com/language-package).
+Você pode gerar um [dicionário de tradução] para personalizar strings existentes, traduzir palavras e frases em um módulo personalizado, localizar um tema ou criar pacotes de idioma.
 
 Para começar a traduzir, use um comando para gerar um arquivo CSV de dicionário com uma lista coletada de todas as frases e palavras existentes.
 
@@ -139,7 +139,7 @@ Para criar esses arquivos:
 
 Ao declarar um pacote de idioma no `language.xml` , você deve especificar a sequência da herança do idioma para este pacote.
 
-A herança de idioma permite criar uma tradução chamada de _criança_ com base em uma tradução existente chamada de _parent_. As traduções secundárias substituem o pai. No entanto, se a tradução secundária não conseguir carregar ou exibir ou estiver sem uma frase ou palavra, o Commerce usará o pai [locale](https://glossary.magento.com/locale). [Exemplos de herança do pacote de idioma](#example-of-language-inheritance).
+A herança de idioma permite criar uma tradução chamada de _criança_ com base em uma tradução existente chamada de _parent_. As traduções secundárias substituem o pai. No entanto, se a tradução secundária não carregar ou exibir ou estiver sem uma frase ou palavra, o Commerce usará o local pai. [Exemplos de herança do pacote de idioma](#example-of-language-inheritance).
 
 Para declarar um pacote, especifique as seguintes informações:
 

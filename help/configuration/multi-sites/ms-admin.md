@@ -1,9 +1,9 @@
 ---
 title: Configurar vários sites, lojas e visualizações de loja no Administrador
 description: Configure sites, lojas e visualizações de loja adicionais no Administrador de comércio.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Essa tarefa requer que você crie uma categoria raiz (e categorias adicionais, s
 
 ## Etapa 1: Criar categorias raiz
 
-A criação de uma categoria raiz é opcional, mas mostramos como fazer isso neste tutorial no [evento](https://glossary.magento.com/event) você deseja que cada site tenha uma categoria raiz exclusiva. É possível criar categorias adicionais, se desejar.
+Criar uma categoria raiz é opcional, mas mostramos como fazer isso neste tutorial no evento em que você deseja que cada site tenha uma categoria raiz exclusiva. É possível criar categorias adicionais, se desejar.
 
 Para criar uma categoria raiz:
 

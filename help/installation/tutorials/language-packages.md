@@ -1,9 +1,9 @@
 ---
 title: Desinstalar pacotes de idiomas
 description: Siga estas etapas para desinstalar um pacote de idioma Adobe Commerce ou Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Esta seção discute como desinstalar um ou mais pacotes de idioma, incluindo o código dos pacotes de idioma do sistema de arquivos. Você pode criar backups primeiro para restaurar os dados posteriormente.
 
-Este comando desinstala *only* pacotes de idioma especificados em `composer.json`; em outras palavras, pacotes de idiomas fornecidos como [Composer](https://glossary.magento.com/composer) pacotes. Se o seu [pacote de idiomas](https://glossary.magento.com/language-package) não for um pacote Composer, você deve desinstalá-lo manualmente removendo o código do pacote de idioma do sistema de arquivos.
+Este comando desinstala *only* pacotes de idioma especificados em `composer.json`; em outras palavras, pacotes de idioma que são fornecidos como pacotes do Composer. Se o pacote de idioma não for um pacote Composer, você deve desinstalá-lo manualmente removendo o código do pacote de idioma do sistema de arquivos.
 
 Você pode restaurar os backups a qualquer momento usando o [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
 
@@ -31,7 +31,7 @@ O comando de desinstalação do pacote de idioma executa as seguintes tarefas:
 
 1. If `--backup code` for especificado, faça backup do sistema de arquivos (excluindo `var` e `pub/static` diretórios) para `var/backups/<timestamp>_filesystem.tgz`
 1. Remove os arquivos de pacotes de idioma da base de código usando `composer remove`.
-1. Limpa o [cache](https://glossary.magento.com/cache).
+1. Limpa o cache.
 
 Por exemplo, se você tentar desinstalar um pacote de idioma do qual outro pacote de idioma depende, a seguinte mensagem será exibida:
 

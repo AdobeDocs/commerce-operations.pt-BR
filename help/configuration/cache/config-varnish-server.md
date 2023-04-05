@@ -1,9 +1,9 @@
 ---
 title: Configurar servidor da Web
 description: Saiba como configurar o servidor da Web para funcionar com a Varnish.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ backend default {
 
 ## Verificar cabeçalhos de resposta HTTP
 
-Agora você pode verificar se a Varnish está exibindo páginas observando [HTML](https://glossary.magento.com/html) cabeçalhos de resposta retornados de qualquer página.
+Agora você pode verificar se a Varnish está disponibilizando páginas observando os cabeçalhos de resposta do HTML retornados de qualquer página.
 
 Antes de poder ver os cabeçalhos, você deve definir o Commerce para o modo desenvolvedor. Há várias maneiras de fazer isso, a mais simples delas é modificar `.htaccess` na raiz do aplicativo Commerce. Também é possível usar a variável [`magento deploy:mode:set`](../cli/set-mode.md) comando.
 
@@ -235,7 +235,7 @@ Se cabeçalhos como esses _not_ exibir, parar Varnish, verifique seu `default.vc
 
 ### Examine os cabeçalhos de resposta do HTML
 
-Há várias maneiras de examinar os cabeçalhos de resposta, incluindo o uso de um navegador [plug-in](https://glossary.magento.com/plug-in) ou um inspetor de navegador.
+Há várias maneiras de examinar os cabeçalhos de resposta, incluindo o uso de um plug-in de navegador ou um inspetor de navegador.
 
 O exemplo a seguir usa `curl`. Você pode inserir este comando em qualquer máquina que possa acessar o servidor do Commerce usando HTTP.
 

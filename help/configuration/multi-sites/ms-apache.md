@@ -1,9 +1,9 @@
 ---
 title: Configurar vários sites com o Apache
 description: Siga este tutorial para configurar vários sites com o Apache.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Presumimos que:
 
-Se necessário, copie os `index.php` script do ponto de entrada para o site ou [exibição de loja](https://glossary.magento.com/store-view) e adicione o seguinte:
+Se necessário, copie os `index.php` script de ponto de entrada para o site ou exibição de loja e adicione a ele o seguinte:
 
 - Você está trabalhando em uma máquina de desenvolvimento (laptop, máquina virtual e assim por diante)
 

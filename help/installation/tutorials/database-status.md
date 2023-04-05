@@ -1,10 +1,10 @@
 ---
 title: Verificar o status do banco de dados
 description: Siga estas etapas para verificar o status do banco de dados do Adobe Commerce ou Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '108'
+ht-degree: 2%
 
 ---
 
@@ -35,4 +35,4 @@ O comando retorna um dos seguintes códigos de saída:
 |--------------|--------------|---------------|
 | 0 | Normal | Nenhum |
 | 1 | Alguns módulos usam versões de código mais recentes ou mais antigas que o banco de dados | Executar [`magento setup:upgrade`](database-upgrade.md) para atualizar o schema do banco de dados e executar `composer update` no diretório raiz do aplicativo para atualizar dependências do componente |
-| 2 | `magento setup:upgrade` é obrigatório | [`magento setup:upgrade`](database-upgrade.md) para atualizar o [esquema de banco de dados](https://glossary.magento.com/database-schema) |
+| 2 | `magento setup:upgrade` é obrigatório | [`magento setup:upgrade`](database-upgrade.md) para atualizar o schema do banco de dados |

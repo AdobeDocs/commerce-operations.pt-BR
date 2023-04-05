@@ -1,9 +1,9 @@
 ---
 title: Migrar alterações
 description: Saiba como migrar apenas dados que foram alterados desde a última migração de dados do Magento 1 com o [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 A ferramenta de migração incremental instala tabelas de diálogo (com prefixo `m2_cl_*`) e acionadores (para alterações de rastreamento) no banco de dados do Magento 1 durante a [migração de dados](data.md). Essas tabelas e acionadores de catálogo são essenciais para garantir que você migre somente as alterações feitas na Magento 1 desde a última vez que migrou dados. Essas alterações são:
 
-* Dados adicionados pelos clientes por [vitrine](https://glossary.magento.com/storefront) (pedidos criados, revisões e alterações nos perfis do cliente)
+* Dados que os clientes adicionaram por meio da loja (pedidos criados, revisões e alterações nos perfis do cliente)
 
-* Todas as operações com pedidos, produtos e categorias na [Administrador](https://glossary.magento.com/magento-admin) painel
+* Todas as operações com pedidos, produtos e categorias no painel Administração
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Em que:
 
 No `Delta` , o [!DNL Data Migration Tool] migra dados criados apenas pelos módulos próprios Magento e não é responsável pelo código ou extensões feitas por desenvolvedores de terceiros. Se essas extensões criaram dados no banco de dados da loja e o comerciante quiser ter esses dados no Magento 2 — os arquivos de configuração do [!DNL Data Migration Tool] deve ser criada e modificada de acordo.
 
-Se uma [extensão](https://glossary.magento.com/extension) O tem suas próprias tabelas e você precisa rastrear as alterações para a migração do delta. Siga estas etapas:
+Se uma extensão tiver suas próprias tabelas e você precisar rastrear as alterações para a migração do delta, siga estas etapas:
 
 1. Adicione as tabelas a serem rastreadas no `deltalog.xml` arquivo
 1. Crie uma classe delta adicional que estenda a variável `Migration\App\Step\AbstractDelta`

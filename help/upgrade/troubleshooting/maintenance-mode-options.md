@@ -1,9 +1,9 @@
 ---
 title: Opções de Modo de Manutenção para Atualização
-description: 'Crie uma página de modo de manutenção personalizado que seus clientes visualizam na loja da Adobe Commerce ou do Magento Open Source enquanto você executa uma atualização. '
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+description: Crie uma página de modo de manutenção personalizado que seus clientes visualizam na loja da Adobe Commerce ou do Magento Open Source enquanto você executa uma atualização.
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Esta seção discute como criar uma página de manutenção personalizada e como
 
 Para redirecionar o tráfego para uma página de manutenção personalizada:
 
-1. Use um editor de texto para abrir o [nginx](https://glossary.magento.com/nginx) arquivo de configuração que contém o bloco do servidor.
+1. Use um editor de texto para abrir o arquivo de configuração de nó que contém o bloco do servidor.
 1. Adicione o seguinte ao bloco do servidor (`server` é apresentada apenas para maior clareza; não adicione um segundo bloco de servidor).
 
    O seguinte lista de permissões o endereço IP 192.0.2.110 e 192.0.2.115 em um sistema em que o Magento está instalado em `/var/www/html/magento2`:

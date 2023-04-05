@@ -1,9 +1,9 @@
 ---
 title: Configurar armazenamento em cache
 description: Saiba mais sobre como armazenar em cache e configurar mecanismos de cache para o aplicativo Adobe Commerce e Magento Open Source.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 [!DNL Commerce] O permite configurar alternativas para o armazenamento em cache do sistema de arquivos padrão. Este guia discute algumas dessas alternativas. nomeadamente,
 
-- Configure o seguinte [cache](https://glossary.magento.com/cache) na [!DNL Commerce] configuração:
+- Configure os seguintes mecanismos de cache no [!DNL Commerce] configuração:
 
    - [Banco de dados](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
    - [Redis](config-redis.md)
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 - Modificação do fornecido `default` front-end de cache—
 
-   Você modifica somente o `<magento_root>/app/etc/di.xml` arquivo, o arquivo global do aplicativo Commerce [injeção de dependência](https://glossary.magento.com/dependency-injection) configuração.
+   Você modifica somente o `<magento_root>/app/etc/di.xml` arquivo, a configuração de injeção de dependência global do aplicativo Commerce.
 
 - Configuração de seu próprio front-end de cache personalizado—
 

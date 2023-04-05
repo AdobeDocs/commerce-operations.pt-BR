@@ -1,9 +1,9 @@
 ---
 title: Criar, editar ou desbloquear uma conta de administrador
 description: Siga estas etapas para gerenciar a conta de administrador do seu aplicativo Adobe Commerce ou Magento Open Source Admin.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Antes de usar esse comando, é necessário fazer o seguinte:
 
 - [Criar a configuração de implantação](deployment.md)
 - [Habilite no mínimo os módulos Magento_Authorization e Magento_User](manage-modules.md)
-- Crie o [esquema de banco de dados](https://glossary.magento.com/database-schema)
+- Criar o esquema do banco de dados
 
 >[!NOTE]
 >

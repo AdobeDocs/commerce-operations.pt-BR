@@ -1,9 +1,9 @@
 ---
 title: Modificar ponto para melhorar a segurança
 description: Impeça o acesso não autorizado baseado em navegador ao Adobe Commerce ou ao sistema de arquivos Magento Open Source no local.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ A alternância entre modos é uma etapa importante para verificar se a configura
 
 ## 5. Verifique a loja
 
-Vá para o [vitrine](https://glossary.magento.com/storefront) em um navegador da Web para verificar se tudo está funcionando.
+Acesse a loja em um navegador da Web para verificar se tudo está funcionando.
 
 1. Abra um navegador da Web e insira o nome do host ou endereço IP do seu servidor na barra de endereços. Por exemplo, `http://192.168.33.10`.
 

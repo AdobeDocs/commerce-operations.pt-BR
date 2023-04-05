@@ -1,9 +1,9 @@
 ---
 title: Configurar memória em cache no Ubuntu
 description: Instale e configure o cache em cache no Ubuntu.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Para verificar se o cache foi reconhecido pelo servidor da Web:
 
 ### Verifique se os dados em cache podem armazenar em cache
 
-Este teste usa um script PHP para verificar se o cache em cache pode armazenar e recuperar [cache](https://glossary.magento.com/cache) dados.
+Este teste usa um script PHP para verificar se o cache é capaz de armazenar e recuperar dados de cache.
 
 Para obter mais informações sobre esse teste, consulte [Tutorial Como instalar e usar o Memcache no Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 

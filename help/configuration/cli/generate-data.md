@@ -1,10 +1,10 @@
 ---
 title: Gerar dados para teste de desempenho
 description: Saiba como gerar uma grande quantidade de dados para usar em testes de desempenho.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 9%
+source-wordcount: '749'
+ht-degree: 8%
 
 ---
 
@@ -29,21 +29,21 @@ A tabela a seguir fornece detalhes sobre os perfis do gerador de dados: pequeno,
 
 | Parâmetro | Perfil pequeno | Perfil médio | Perfil médio de vários sites | Perfil grande | Perfil extra grande |
 | --- | --- | --- | --- | --- | --- |
-| `websites` | 1 | 3 | 25. | 5 | 5 |
-| `store_groups` | 1 | 3 | 25. | 5 | 5 |
-| `store_views` | 1 | 3 | 50º | 5 | 5 |
-| `simple_products` | 800 | 24.000 | 4.000 | 300.000 | 600.000 |
+| `websites` | 1 | 3 | 25 | 5 | 5 |
+| `store_groups` | 1 | 3 | 25 | 5 | 5 |
+| `store_views` | 1 | 3 | 50 | 5 | 5 |
+| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
 | `configurable_products` | 16 com 24 opções | 640 com 24 opções | 800 com 24 opções e 79 com 200 opções | 8.000 com 24 opções | 16.000 com 24 opções |
 | `product_images` | 100 imagens / 3 imagens por produto | 1000 imagens / 3 imagens por produto | 1000 imagens / 3 imagens por produto | 2000 imagens / 3 imagens por produto | 2000 imagens / 3 imagens por produto |
-| `categories` | 30º | 300 | 100 | 3.000 | 6.000 |
+| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
-| `catalog_price_rules` | 20º | 20º | 20º | 20º | 20º |
+| `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
-| `cart_price_rules` | 20º | 20º | 20º | 20º | 20º |
+| `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
-| `customers` | 200 | 2.000 | 2.000 | 5.000 | 10.000 |
-| `tax rates` | 130 | 40.000 | 40.000 | 40.000 | 40.000 |
-| `orders` | 80º | 50.000 | 50.000 | 100.000 | 150.000 |
+| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
+| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
+| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
 ### Executar o gerador de dados
 
@@ -100,7 +100,7 @@ Generating simple products...  done in <time>
 
 ### Usuários administradores
 
-Gera [administrador](https://glossary.magento.com/admin) usuários. [XML](https://glossary.magento.com/xml) nó do perfil:
+Gera usuários administradores. Nó de perfil XML:
 
 ```xml
 <!-- Number of admin users -->
@@ -124,7 +124,7 @@ Gera conjuntos de atributos com configuração especificada. Nó de perfil XML:
 
 ### Produtos do pacote
 
-Gera produtos de pacote. As seleções de pacote geradas não são exibidas individualmente no [catálogo](https://glossary.magento.com/catalog). Os produtos são distribuídos uniformemente por categorias e sites. If  `assign_entities_to_all_websites` do perfil está definido como `1`. Os produtos são atribuídos a todos os sites.
+Gera produtos de pacote. As seleções de pacote geradas não são exibidas individualmente no catálogo. Os produtos são distribuídos uniformemente por categorias e sites. If  `assign_entities_to_all_websites` do perfil está definido como `1`. Os produtos são atribuídos a todos os sites.
 
 Nó de perfil XML:
 
@@ -162,7 +162,7 @@ Gera regras de preço de catálogo. Nó de perfil XML:
 
 ### Categorias
 
-Gera categorias. If `assign_entities_to_all_websites` está definida como `0`, todas as categorias são uniformemente distribuídas por cada categoria raiz; caso contrário, todas as categorias serão atribuídas a uma raiz [categoria](https://glossary.magento.com/category).
+Gera categorias. If `assign_entities_to_all_websites` está definida como `0`, todas as categorias são uniformemente distribuídas por cada categoria raiz; caso contrário, todas as categorias serão atribuídas a uma categoria raiz.
 
 Nó de perfil XML:
 
@@ -231,7 +231,7 @@ Os seguintes formatos de nó XML são suportados:
    </configurable_products>
    ```
 
-- Gerar produtos com base em um [conjunto de atributos](https://glossary.magento.com/attribute-set) com um número especificado de atributos e opções:
+- Gere produtos com base em um conjunto de atributos criado dinamicamente com um número especificado de atributos e opções:
 
    ```xml
    <configurable_products>

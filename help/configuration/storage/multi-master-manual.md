@@ -1,9 +1,9 @@
 ---
 title: Configurar manualmente bancos de dados principais
 description: Consulte orientações sobre como configurar manualmente a solução de banco de dados dividido.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Se o aplicativo Commerce já estiver em produção ou se você já tiver instala
 
 A divisão manual de bancos de dados envolve:
 
-- Crie o [checkout](https://glossary.magento.com/checkout) e bases de dados do sistema de gestão das ordens (OMS)
+- Criar bancos de dados do sistema de check-out e gerenciamento de pedidos (OMS)
 - Execute uma série de scripts SQL que:
 
    - Eliminar chaves estrangeiras
@@ -62,7 +62,7 @@ O Adobe recomenda que você faça o backup do banco de dados e do sistema de arq
 
 ## Configurar bancos de dados principais adicionais
 
-Esta seção discute como criar instâncias de banco de dados para vendas e [citação](https://glossary.magento.com/quote) tabelas.
+Esta seção discute como criar instâncias de banco de dados para tabelas de vendas e cotações.
 
 **Criação de bancos de dados de cotação de vendas e OMS**:
 
@@ -549,7 +549,7 @@ Localize o bloco começando com `'resource'` e adicionar `'checkout'` e `'sales'
 
 ## Scripts de referência
 
-Esta seção fornece scripts que podem ser executados para imprimir uma lista completa de tabelas afetadas sem executar nenhuma ação. É possível usá-las para ver quais tabelas são afetadas antes de dividir manualmente os bancos de dados, o que pode ser útil se você usar extensões que personalizam a variável [esquema de banco de dados](https://glossary.magento.com/database-schema).
+Esta seção fornece scripts que podem ser executados para imprimir uma lista completa de tabelas afetadas sem executar nenhuma ação. É possível usá-las para ver quais tabelas são afetadas antes de dividir manualmente os bancos de dados, o que pode ser útil se você usar extensões que personalizam o esquema do banco de dados.
 
 Para usar esses scripts:
 

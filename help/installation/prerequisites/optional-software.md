@@ -1,9 +1,9 @@
 ---
 title: Software opcional
 description: Saiba mais sobre o software opcional que você pode instalar para suportar instalações locais do Adobe Commerce e Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ A seleção de servidores de pool depende de você. Se você usar servidores de 
 
 ## Criar phpinfo.php
 
-O [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) O arquivo exibe uma grande quantidade de informações sobre [PHP](https://glossary.magento.com/php) e suas extensões.
+O [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) O arquivo exibe uma grande quantidade de informações sobre PHP e suas extensões.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ phpinfo();
 
 Para obter mais informações, consulte o [página manual do phpinfo](https://www.php.net/manual/en/function.phpinfo.php).
 
-Para visualizar os resultados, insira o seguinte [URL](https://glossary.magento.com/url) no campo de local ou endereço do navegador:
+Para visualizar os resultados, insira o seguinte URL no campo de endereço ou local do navegador:
 
 ```http
 http://<web server host or IP>/phpinfo.php

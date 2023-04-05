@@ -1,15 +1,15 @@
 ---
-user-guide-title: Manual operacional
-user-guide-description: Saiba como preparar seus negócios operacionalmente para gerenciar um site de comércio eletrônico bem-sucedido.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+user-guide-title: Playbook operacional
+user-guide-description: Saiba como preparar suas empresas operacionalmente para executar um site de comércio eletrônico bem-sucedido.
+source-git-commit: ed6b9cb5acd35ce8213fafddcd00be1c32127a86
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '143'
 ht-degree: 0%
 
 ---
 
 
-# Manual operacional {#operational-playbook}
+# Playbook operacional {#operational-playbook}
 
 - [Visão geral](overview.md)
 - Comércio {#intro}
@@ -72,4 +72,5 @@ ht-degree: 0%
    - [Clique e colete](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
 - [Listas de verificação e modelos](checklists-templates/home.md)
+- [Glossário](glossary.md)
 - [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

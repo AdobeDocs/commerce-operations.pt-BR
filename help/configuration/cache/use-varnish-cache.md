@@ -1,9 +1,9 @@
 ---
 title: Limpeza de cache com Varnish
 description: Saiba como a limpeza de cache funciona com a Varnish e como usá-la como um acelerador de cache da Web para o aplicativo Adobe Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ Este tópico discute as noções básicas do uso da Varnish como acelerador de a
 
 ## Limpeza variável
 
-De acordo com [Documentação variada](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *limpeza* é o que acontece quando você escolhe um objeto do [cache](https://glossary.magento.com/cache) e descartá-lo junto com suas variantes.&quot; Uma limpeza Varna é semelhante a um comando de limpeza de cache (ou ao clicar em **Liberar cache Magento** em Admin).
+De acordo com [Documentação variada](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *limpeza* é o que acontece quando você escolhe um objeto do cache e o descarta junto com suas variantes.&quot; Uma limpeza Varna é semelhante a um comando de limpeza de cache (ou ao clicar em **Liberar cache Magento** em Admin).
 
 Na verdade, ao limpar, liberar ou atualizar o cache do Commerce, o Varnish também é eliminado.
 
 Depois de ter instalado e configurado o Varnish para funcionar com o Commerce, as seguintes ações podem resultar em uma limpeza Varnish :
 
-- Manutenção de um [site](https://glossary.magento.com/website).
+- Manutenção de um site.
 
    Por exemplo, qualquer coisa que você faça no Administrador em:
 

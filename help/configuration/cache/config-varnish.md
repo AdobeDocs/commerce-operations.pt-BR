@@ -1,9 +1,9 @@
 ---
 title: Configurar e usar o Varnish
 description: Entenda como a Varnish armazena arquivos e melhora o tráfego HTTP.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Na figura anterior, as solicitações HTTP dos usuários pela Internet resultam 
 
 Conforme o servidor da Web retorna ativos, os ativos em cache são armazenados em Varnish. Quaisquer solicitações subsequentes para esses ativos são atendidas pela Varnish (ou seja, as solicitações não chegam ao servidor da Web). A língua inglesa retorna o conteúdo em cache extremamente rapidamente. Os resultados são tempos de resposta mais rápidos para retornar o conteúdo aos usuários e um número reduzido de solicitações que devem ser atendidas pelo Commerce.
 
-Os ativos em cache pela Varnish expiram em um intervalo configurável ou são substituídos por versões mais recentes dos mesmos ativos. Você também pode limpar o cache manualmente usando o [Administrador](https://glossary.magento.com/magento-admin) ou [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) comando.
+Os ativos em cache pela Varnish expiram em um intervalo configurável ou são substituídos por versões mais recentes dos mesmos ativos. Você também pode limpar o cache manualmente usando o Administrador ou a [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) comando.
 
 ## Visão geral do processo
 
@@ -97,7 +97,7 @@ Este tópico aborda apenas as opções padrão na lista anterior. Há muitas out
 
 Na primeira solicitação do navegador, os ativos em cache são entregues ao navegador do cliente da Varnish e armazenados em cache no navegador.
 
-Além disso, a Varnish utiliza um [Entidade](https://glossary.magento.com/entity) Tag (ETag) para ativos estáticos. O ETag fornece uma maneira de determinar quando [arquivos estáticos](https://glossary.magento.com/static-files) alterar no servidor. Como resultado, os ativos estáticos são enviados ao cliente quando são alterados no servidor, seja em uma nova solicitação de um navegador ou quando o cliente atualiza o cache do navegador, normalmente pressionando F5 ou Control+F5.
+Além disso, a Varnish usa uma tag de entidade (ETag) para ativos estáticos. O ETag fornece uma maneira de determinar quando os arquivos estáticos são alterados no servidor. Como resultado, os ativos estáticos são enviados ao cliente quando são alterados no servidor, seja em uma nova solicitação de um navegador ou quando o cliente atualiza o cache do navegador, normalmente pressionando F5 ou Control+F5.
 
 Mais detalhes são fornecidos nas seções a seguir.
 

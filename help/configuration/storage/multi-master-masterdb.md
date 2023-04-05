@@ -1,9 +1,9 @@
 ---
 title: Configurar automaticamente bancos de dados principais
 description: Consulte orientações sobre como configurar automaticamente a solução de banco de dados dividido.
-source-git-commit: d029d1ac66bff2ac34b22b2d3b8aafbfc062e082
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -15,33 +15,33 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-Este tópico discute como começar a usar a solução de banco de dados dividido ao:
+Este tópico discute como começar a usar a solução de banco de dados dividido por:
 
 1. Instalação do Adobe Commerce com um único banco de dados principal (chamado de `magento`)
-1. Criação de dois bancos de dados principais adicionais para [check-out](https://glossary.magento.com/checkout) e OMS (nomeados `magento_quote` e `magento_sales`)
+1. Criação de dois bancos de dados principais adicionais para check-out e OMS (nomeado como `magento_quote` e `magento_sales`)
 1. Configuração do Adobe Commerce para usar os bancos de dados de check-out e vendas
 
 >[!INFO]
 >
->Este guia pressupõe que todos os três bancos de dados estão no mesmo host que o aplicativo Commerce e que eles sejam nomeados `magento`, `magento_quote`, e `magento_sales`. No entanto, a escolha de onde localizar os bancos de dados e seu nome depende de você. Esperamos que nossos exemplos tornem as instruções mais fáceis de seguir.
+>Este guia supõe que todos os três bancos de dados estejam no mesmo host que o aplicativo do Commerce e que sejam nomeados `magento`, `magento_quote`e `magento_sales`. No entanto, a escolha de onde localizar os bancos de dados e o nome deles é da sua responsabilidade. Esperamos que nossos exemplos facilitem as instruções.
 
-## Instale o software da Adobe Commerce
+## Instalar o software Adobe Commerce
 
-Você pode ativar bancos de dados divididos a qualquer momento depois de instalar o software Adobe Commerce; em outras palavras, você pode adicionar bancos de dados divididos a um sistema Adobe Commerce que já tenha dados de check-out e pedido. Use as instruções no arquivo LEIAME do Adobe Commerce ou no [guia de instalação](../../installation/overview.md) para instalar o software Adobe Commerce usando um único banco de dados principal.
+Você pode ativar bancos de dados divididos a qualquer momento após instalar o software Adobe Commerce; em outras palavras, é possível adicionar bancos de dados divididos a um sistema Adobe Commerce que já tenha dados de check-out e pedido. Use as instruções no Adobe Commerce README ou na [guia de instalação](../../installation/overview.md) para instalar o software Adobe Commerce usando um único banco de dados principal.
 
 ## Configurar bancos de dados principais adicionais
 
-Crie o check-out e os bancos de dados principais OMS da seguinte maneira:
+Crie bancos de dados de check-out e OMS principais da seguinte maneira:
 
 1. Faça logon no servidor de banco de dados como qualquer usuário.
-1. Digite o seguinte comando para obter um prompt de comando do MySQL:
+1. Digite o seguinte comando para chegar a um prompt de comando do MySQL:
 
    ```bash
    mysql -u root -p
    ```
 
-1. Insira o MySQL `root` senha do usuário quando solicitado.
-1. Insira os seguintes comandos na ordem mostrada para criar instâncias de banco de dados chamadas `magento_quote` e `magento_sales` com os mesmos nomes de usuário e senhas:
+1. Digite o MySQL `root` senha do usuário, quando solicitado.
+1. Insira os seguintes comandos na ordem mostrada para criar instâncias de banco de dados nomeadas `magento_quote` e `magento_sales` com os mesmos nomes de usuário e senhas:
 
    ```shell
    create database magento_quote;
@@ -63,7 +63,7 @@ Crie o check-out e os bancos de dados principais OMS da seguinte maneira:
 
 1. Verifique os bancos de dados, um de cada vez:
 
-   Fazer check-out do banco de dados:
+   Banco de dados de check-out:
 
    ```bash
    mysql -u magento_quote -p
@@ -91,7 +91,7 @@ Depois de configurar um total de três bancos de dados principais, use a linha d
 
 ### Primeiros passos
 
-Consulte [Execução de comandos](../cli/config-cli.md#running-commands) para fazer login e executar comandos da CLI.
+Consulte [Execução de comandos](../cli/config-cli.md#running-commands) para fazer logon e executar comandos CLI.
 
 ### Configurar o banco de dados de check-out
 
@@ -107,7 +107,7 @@ Por exemplo,
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
 ```
 
-A seguinte mensagem é exibida para confirmar uma configuração bem-sucedida:
+A mensagem a seguir é exibida para confirmar uma configuração bem-sucedida:
 
 ```terminal
 Migration has been finished successfully!
@@ -131,7 +131,7 @@ bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sal
 bin/magento setup:upgrade
 ```
 
-A seguinte mensagem é exibida para confirmar uma configuração bem-sucedida:
+A mensagem a seguir é exibida para confirmar uma configuração bem-sucedida:
 
 ```terminal
 Migration has been finished successfully!

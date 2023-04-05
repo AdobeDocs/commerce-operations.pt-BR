@@ -1,9 +1,9 @@
 ---
 title: Desinstalar temas
 description: Siga estas etapas para desinstalar um tema Adobe Commerce ou Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Desinstalar temas
 
-Antes de usar este comando, você deve saber o caminho relativo para seu tema. Os temas estão localizados em um subdiretório de `<magento_root>/app/design/<area name>`. Você deve especificar o caminho para o tema começando pela área, que é `frontend` (para temas de vitrine) ou `adminhtml` para [Administrador](https://glossary.magento.com/magento-admin) temas).
+Antes de usar este comando, você deve saber o caminho relativo para seu tema. Os temas estão localizados em um subdiretório de `<magento_root>/app/design/<area name>`. Você deve especificar o caminho para o tema começando pela área, que é `frontend` (para temas de vitrine) ou `adminhtml` (para temas de administração).
 
-Por exemplo, o caminho para o Luma [tema](https://glossary.magento.com/theme) fornecido com Adobe Commerce e Magento Open Source `frontend/Magento/luma`.
+Por exemplo, o caminho para o tema Luma fornecido com Adobe Commerce e Magento Open Source é `frontend/Magento/luma`.
 
 Para obter mais informações sobre temas, consulte [estrutura de temas](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -21,7 +21,7 @@ Para obter mais informações sobre temas, consulte [estrutura de temas](https:/
 
 Esta seção discute como desinstalar um ou mais temas, incluindo o código de temas do sistema de arquivos. Você pode criar backups primeiro para restaurar os dados posteriormente.
 
-Este comando desinstala *only* temas especificados em `composer.json`; em outras palavras, temas fornecidos como [Composer](https://glossary.magento.com/composer) pacotes. Se o tema não for um pacote Composer, é necessário desinstalá-lo manualmente:
+Este comando desinstala *only* temas especificados em `composer.json`; em outras palavras, temas que são fornecidos como pacotes do Composer. Se o tema não for um pacote Composer, é necessário desinstalá-lo manualmente:
 
 * Atualização do `parent` informações do nó no `theme.xml` para remover referências ao tema.
 * Removendo o código do tema do sistema de arquivos.
@@ -61,7 +61,7 @@ O comando executa as seguintes tarefas:
 
 1. Remove temas da `theme` tabela de banco de dados.
 1. Remover temas da base de código usando `composer remove`.
-1. Limpa o [cache](https://glossary.magento.com/cache).
+1. Limpa o cache.
 1. Limpa classes geradas
 1. If `--clear-static-content` é especificado, limpa [arquivos de visualização estática gerados](../../configuration/cli/static-view-file-deployment.md).
 
@@ -102,4 +102,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->Para desinstalar um [Administrador](https://glossary.magento.com/admin) tema, você também deve removê-lo do [injeção de dependência](https://glossary.magento.com/dependency-injection) configuração, `<component root directory>/etc/di.xml`.
+>Para desinstalar um tema de Administrador, deve também removê-lo da configuração de injeção de dependência do seu componente, `<component root directory>/etc/di.xml`.

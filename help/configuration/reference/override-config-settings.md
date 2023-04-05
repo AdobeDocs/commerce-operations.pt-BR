@@ -1,9 +1,9 @@
 ---
 title: Substituir configurações
 description: Saiba como usar variáveis de ambiente para substituir configurações.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Por exemplo, para localizar um site ou valor de escopo de exibição de loja no 
 
 Para obter esses valores do banco de dados:
 
-1. Faça logon no sistema de desenvolvimento como o [proprietário do sistema de arquivos](https://glossary.magento.com/magento-file-system-owner) se ainda não o fez.
+1. Faça logon no sistema de desenvolvimento como proprietário do sistema de arquivos, caso ainda não o tenha feito.
 1. Digite o seguinte comando:
 
    ```bash
