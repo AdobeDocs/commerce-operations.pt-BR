@@ -7,9 +7,9 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 66abe9f234aa44f7e07cc024607eeb6591a99d07
+source-git-commit: ab099b2a8a353c2462424831cf8100e7e281b1be
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Antes de desabilitar os módulos não utilizados, verifique se você não tem te
 
 ## Exigir que os padrões de codificação Adobe Commerce e PHP sejam seguidos para cada solicitação de pull
 
-O Adobe Commerce tem um conjunto de [Padrões de codificação](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Isso ajuda a garantir que um padrão, estilo e design esperado semelhantes sejam seguidos, independentemente do tipo de desenvolvimento de software. Sempre que isso for um requisito de solução a ser seguido é ao contribuir com a base de código do Adobe Commerce. No entanto, seguir essa metodologia para o desenvolvimento personalizado também cria uma base sólida para que todos os desenvolvedores, atuais e futuros, esperem. Ao exigir que todas as solicitações de pull passem um padrão de código, o ajuda a garantir que todos possam entender e esperar os mesmos padrões de desenvolvimento consistentes.
+O Adobe Commerce tem um conjunto de [Padrões de codificação](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Isso ajuda a garantir que um padrão, estilo e design esperado semelhantes sejam seguidos, independentemente do tipo de desenvolvimento de software. Ao contribuir com a base de código do Adobe Commerce, isso é um requisito. No entanto, caso você opte por seguir essa metodologia para o desenvolvimento personalizado, o estabelece uma base sólida para todos os desenvolvedores, atuais e futuros. Ao exigir que todas as solicitações de pull passem um padrão de código, o ajuda a garantir que todos possam entender e esperar os mesmos padrões de desenvolvimento consistentes.
 
 Para acompanhar os padrões de codificação Adobe Commerce, a outra base usada são os padrões básicos de codificação PHP. Ele deve ser claramente definido nos guias do desenvolvedor, quais padrões devem ser seguidos e quaisquer desvios são aceitáveis. No entanto, um fallback deve ser para o guia mantido publicamente em [PHP-FIG](https://www.php-fig.org){target="_blank"}.
 

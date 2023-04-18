@@ -7,7 +7,7 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 0d5c2d3ae44008142797c7ac91530a9df98ae004
+source-git-commit: cca195c20ddcba634a8fc39c0867e0ae28f43683
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Os seguintes conceitos não estão em nenhuma ordem específica. Elas são desti
 
 ## Sistema de arquivos somente leitura
 
-O conceito de sistema de arquivos somente leitura foi emprestado de [Adobe Commerce em infraestrutura avançada](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Isto elimina completamente uma área importante utilizada por um mau ator. Muitas explorações aproveitaram a alteração de um arquivo que deveria estar no aplicativo Comércio para evitar a detecção. Em vez de criar um, o ator incorreto altera o conteúdo de um arquivo existente para executar uma ação inesperada. Tornar o sistema de arquivos somente leitura reduz significativamente esse vetor de ataque.
+O conceito de sistema de arquivos somente leitura foi emprestado de [Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Isto elimina completamente uma área importante utilizada por um mau ator. Muitas explorações aproveitaram a alteração de um arquivo que deveria estar no aplicativo Comércio para evitar a detecção. Em vez de criar um, o ator incorreto altera o conteúdo de um arquivo existente para executar uma ação inesperada. Tornar o sistema de arquivos somente leitura reduz significativamente esse vetor de ataque.
 
 ## Usar dois gerentes de autenticação de fator e senha
 
