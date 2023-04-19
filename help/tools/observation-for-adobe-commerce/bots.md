@@ -1,9 +1,9 @@
 ---
 title: "O [!UICONTROL bots] tab"
 description: Saiba mais sobre o [!UICONTROL bots] guia de [!DNL Observation for Adobe Commerce].
-source-git-commit: 6523372cd5fe3219dc582123471cc85f3c47f37d
+source-git-commit: e135b8ab8b4f13de614299dd3c41c0cab52fefb2
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1657'
 ht-degree: 0%
 
 ---
@@ -30,39 +30,39 @@ Essa guia tem informações que explicam como identificar se e o que [!DNL bots]
          * Adição de bom [!DNL bot] à `robots.txt field` para restringir ou limitar a taxa de acesso ao site.
          * Gerenciamento [!DNL Bing] ou [!DNL Google bots] pelo console do mecanismo de pesquisa.
 
-## [!UICONTROL Total Bot traffic by bot name during selected time period]:
+## [!UICONTROL Total Bot traffic by bot name]:
 
 ![Tráfego total de bot por nome de bot durante o período de tempo selecionado:](../../assets/tools/observation-for-adobe-commerce/total-bot-traffic-bot-name.png)
 
-* O **[!UICONTROL Total Bot traffic by bot name during selected time period]:** a tabela contém a contagem agregada de solicitações não armazenadas em cache, onde a variável [!UICONTROL request_user_agent] tem uma string de [!DNL bots] no valor . Pode ou não ser nomeado [!DNL bot] como [!UICONTROL request_user_agent] o valor do campo pode ser falsificado. O valor sob a variável [!UICONTROL Count] é a coluna mais importante.
+* O **[!UICONTROL Total Bot traffic by bot name during selected time period]** a tabela contém a contagem agregada de solicitações não armazenadas em cache, onde a variável [!UICONTROL request_user_agent] tem uma string de [!DNL bots] no valor . Pode ou não ser nomeado [!DNL bot] como [!UICONTROL request_user_agent] o valor do campo pode ser falsificado. O valor sob a variável [!UICONTROL Count] é a coluna mais importante.
 
-## [!UICONTROL Total Bot Traffic by Bot name/IP address during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]
+## [!UICONTROL Total Bot Traffic by Bot name/IP address]
 
 ![Tráfego total de bot por nome do bot/endereço IP durante o período selecionado Como bloquear o tráfego de bot em nível rápido OU gerenciar bots por meio do arquivo robots.txt Práticas recomendadas para o Adobe Commerce robots.txt](../../assets/tools/observation-for-adobe-commerce/best-practices-adobecommerce-robots.png)
 
 * O **[!UICONTROL Total Bot Traffic by Bot name/IP address during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** mostra os mesmos dados da tabela anterior, mas adiciona endereços IP fazendo as solicitações em nome do nome [!DNL bot]. Como mal-intencionado [!DNL bots] porcaria boa [!DNL bots], o(s) endereço(s) IP(s) deve(m) ser verificado(s) através de sites que identifiquem endereços IP abusivos ou através de *whois* serviços ou [!DNL DNS lookups]. Por exemplo, [!DNL Google] publica seus [[!DNL googlebot] Endereços IP](https://developers.google.com/search/apis/ipranges/googlebot.json) e [!DNL Microsoft] tem um instrumento de verificação para [[!DNL Bingbots]](https://www.bing.com/webmasters/help/Verify-Bingbot-2195837f).
 
-## [!UICONTROL Graph - Bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]
+## [!UICONTROL Graph - Bots with HTTP status errors]
 
 ![Gráfico - Bots com erros de status HTTP durante o período selecionado Como bloquear o tráfego de bot em nível Fastly OU gerenciar bots por meio do arquivo robots.txt Práticas recomendadas para o Adobe Commerce robots.txt](../../assets/tools/observation-for-adobe-commerce/bots-with-http-status-errors.png)
 
 * O **[!UICONTROL Graph - Bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** o gráfico mostra erros em [!DNL bots] que se declaram no campo solicitar agente do usuário. Isso não significa necessariamente que o erro seja causado pelo volume da variável [!DNL bot] ou outro tráfego. Os erros podem ser que a variável [!DNL bot] O está solicitando informações que não existem ou há outro problema na solicitação.
 * Se houver um pico de erros em endereços IP durante a instabilidade ou interrupção do site, eles poderão ser suspeitos do problema do site.
 
-## [!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]
+## [!UICONTROL Table - IPs that do not identify as bots]
 
 ![Tabela - IPs que não se identificam como bots com erros de status HTTP durante o período de tempo selecionado Como bloquear o tráfego de bot no nível Fastly OU gerenciar bots por meio do arquivo robots.txt Práticas recomendadas para o Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
 
-* O **[!UICONTROL Table - IPs that do not identify as [!DNL bots] with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** a tabela mostrará solicitações de IP com códigos de status http não-200 que NÃO SE autoidentificam como [!DNL bots] no campo solicitar agente do usuário. Esses endereços IP podem ser endereços IP mal-intencionados, especialmente se as contagens forem altas para o período selecionado.
+* O **[!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** a tabela mostrará solicitações de IP com códigos de status http não-200 que NÃO SE autoidentificam como [!DNL bots] no campo solicitar agente do usuário. Esses endereços IP podem ser endereços IP mal-intencionados, especialmente se as contagens forem altas para o período selecionado.
 * Se as contagens de código de status http não-200 forem baixas e os intervalos de endereço IP não forem semelhantes, os endereços podem não estar contribuindo para os problemas do site.
 
-## [!UICONTROL Table – Cache Status 'ERROR' detail table (what are these IPs doing?) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]
+## [!UICONTROL Table – Cache Status 'ERROR']
 
 ![Tabela - Tabela de detalhes &quot;ERRO&quot; do status do cache (o que esses IPs estão fazendo?) Como bloquear o tráfego de bot em nível rápido OU gerenciar bots por meio do arquivo robots.txt Práticas recomendadas para o Adobe Commerce robots.txt](../../assets/tools/observation-for-adobe-commerce/cache-status-errors.png)
 
-* Quando os endereços IP estão gerando uma alta frequência de erros, pergunte o que eles estão fazendo? O [!UICONTROL Table – Cache Status 'ERROR' detail table (what are these IPs doing?) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt] a tabela mostrará o URL solicitado junto com o valor de status HTTP para solicitações que têm um status de cache [!UICONTROL ERROR] valor. A frequência é facetada pelo URL para que a contagem possa ser baixa. Lembre-se de que o endereço IP pode estar fazendo milhares de solicitações durante o período de tempo selecionado. Essa é uma visualização em relação a até 2000 solicitações durante o período (o limite de exibição do registro).
+* Quando os endereços IP estão gerando uma alta frequência de erros, pergunte o que eles estão fazendo? O **[!UICONTROL Table – Cache Status 'ERROR' detail table (what are these IPs doing?) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** a tabela mostrará o URL solicitado junto com o valor de status HTTP para solicitações que têm um status de cache [!UICONTROL ERROR] valor. A frequência é facetada pelo URL para que a contagem possa ser baixa. Lembre-se de que o endereço IP pode estar fazendo milhares de solicitações durante o período de tempo selecionado. Essa é uma visualização em relação a até 2000 solicitações durante o período (o limite de exibição do registro).
 
-## [!UICONTROL Show 5XX status distribution across IP addresses (top 200 addresses) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]
+## [!UICONTROL Show 5XX status distribution]
 
 ![Mostrar distribuição de status 5XX entre endereços IP (200 endereços principais) Como bloquear o tráfego de bot em nível rápido OU gerenciar bots por meio de seu arquivo robots.txt Práticas recomendadas para o Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
 
@@ -71,7 +71,7 @@ Essa guia tem informações que explicam como identificar se e o que [!DNL bots]
 * A distribuição típica seria indicada no lado direito da barra, onde os endereços IP são iguais em largura, ou haveria algumas barras largas com contagens muito baixas.
 * Se você passar o mouse sobre o segmento de barras, ele mostrará o número de erros indicados durante o período de tempo selecionado.
 
-## [!UICONTROL IP cache status (MISS, PASS, ERROR) and HTTP status during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]
+## [!UICONTROL IP cache status (MISS, PASS, ERROR) and HTTP status]
 
 ![Status do cache de IP (MISS, PASS, ERROR) e status http durante o período selecionado Como bloquear o tráfego de bot em nível rápido OU gerenciar bots por meio do arquivo robots.txt Práticas recomendadas para o Adobe Commerce robots.txt](../../assets/tools/observation-for-adobe-commerce/ip-cache-status-miss-pass-error.png)
 
@@ -85,37 +85,37 @@ Essa guia tem informações que explicam como identificar se e o que [!DNL bots]
 
 ![Verificação de erro rápido](../../assets/tools/observation-for-adobe-commerce/compare-fastly.png)
 
-## [!UICONTROL Graph - IPs that do not identify as bots without error during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]
+## [!UICONTROL Graph - IPs that do not identify as bots]
 
 ![IPs que não se identificam como bots sem erro durante o período de tempo selecionado Como bloquear o tráfego de bot em nível rápido OU gerenciar bots por meio do arquivo robots.txt Práticas recomendadas para o Adobe Commerce robots.txt](../../assets/tools/observation-for-adobe-commerce/ips-that-do-not-identify-as-bots.png)
 
 * O **[!UICONTROL Graph - IPs that do not identify as bots without error during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** quadro mostra o campo agente do usuário da solicitação, o endereço IP e o código de status das solicitações em que o campo agente do usuário da solicitação não indica um [!DNL bot]. Esse quadro pode mostrar solicitações de alta frequência de qualquer endereço IP, mas prestar atenção a solicitações de alta frequência, especialmente durante um período em que o site pode ter problemas.
 
-## [!UICONTROL Graph - Suspicious Non-Bot traffic during selected time period]
+## [!UICONTROL Graph - Suspicious Non-Bot traffic]
 
 ![Tráfego não bot suspeito durante o período selecionado](../../assets/tools/observation-for-adobe-commerce/suspicious-non-bot-traffic.png)
 
 * O **[!UICONTROL Graph - Suspicious Non-Bot traffic during selected time period]** O gráfico procura um valor de agente de usuário de solicitação de Go-http-client, mas será estendido para examinar outros valores suspeitos do agente de usuário de solicitação. Este valor de agente de usuário de solicitação é usado por sites para conexão a partir de serviços e pode ser válido, mas também é usado por mal-intencionado [!DNL bots].
 
-## [!UICONTROL Graph - Bot traffic by Bot name during selected time period]
+## [!UICONTROL Graph - Bot traffic by Bot name]
 
 ![Gráfico - Tráfego de bot por nome de bot durante o período de tempo selecionado)](../../assets/tools/observation-for-adobe-commerce/bot-traffic-bot-name.png)
 
 * O **[!UICONTROL Graph - Bot traffic by Bot name during selected time period]** O quadro está mostrando os mesmos dados que o tráfego total de bot por [!DNL Bot] durante a tabela do período de tempo selecionado na parte superior da guia . Ela está mostrando os dados através da linha do tempo para que você possa ver quando as solicitações do [!DNL bots] estão a ser feitas e as suas distribuições.
 
-## [!UICONTROL Graph - Top 250 Bot Names and IP addresses during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]
+## [!UICONTROL Graph - Top 250 Bot Names and IP addresses]
 
 ![Os 250 principais nomes de bots e endereços IP durante o período selecionado Como bloquear o tráfego de bot no nível de Fastly OU gerenciar bots por meio do arquivo robots.txt Práticas recomendadas para o Adobe Commerce robots.txt](../../assets/tools/observation-for-adobe-commerce/top-250-bot-names-ip-addresses.png)
 
 * O **[!UICONTROL Graph - Top 250 Bot Names and IP addresses during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** O quadro está mostrando os mesmos dados do Total [!DNL Bot] Tráfego por nome do robô/endereço IP durante a tabela do período de tempo selecionado na parte superior da guia . Ela está mostrando os dados pela linha do tempo e os lapidando por endereço IP. Isso mostra quando as solicitações da [!DNL bots] são feitas, qual IP está fazendo solicitações e a distribuição das solicitações.
 
-## [!UICONTROL Blocked Bot name / IP addresses (in Fastly) during selected time period. This graph displays bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]
+## [!UICONTROL Blocked Bot name / IP addresses (in Fastly)]
 
 ![Nome do robô/endereços IP bloqueados (em Fastly) durante o período de tempo selecionado. Este gráfico exibe o tráfego de bot e os IPs que retornaram um código de status 403 Forbidden HTTP](../../assets/tools/observation-for-adobe-commerce/blocked-bot-name-ip-addresses-403-code2.png)
 
-* O **[!UICONTROL IP address in the Graph - Top 250 Bot Names and IP addresses during selected time period]** gráfico foi bloqueado. Você pode ver neste gráfico como todas as solicitações são bloqueadas no [!DNL Fastly] Avançar.
+* O **[!UICONTROL Blocked Bot name / IP addresses (in Fastly) during selected time period. This graph displays bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** frame mostra o nome do bot e os endereços IP que estão bloqueados. Você pode ver neste gráfico como todas as solicitações são bloqueadas no [!DNL Fastly] Avançar.
 
-## [!UICONTROL Blocked non-Bot name / IP addresses (in Fastly) during selected time period. This graph displays non-bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]
+## [!UICONTROL Blocked non-Bot name / IP addresses (in Fastly)]
 
 ![Nome não-bot/endereços IP bloqueados (em Fastly) durante o período de tempo selecionado. Este gráfico exibe o tráfego de não bot e os IPs que retornaram um código de status 403 HTTP proibido ](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)
 
@@ -127,7 +127,7 @@ Essa guia tem informações que explicam como identificar se e o que [!DNL bots]
 
 * Malicioso [!DNL bots] frequentemente falsa [!DNL bots] através do valor da variável [!UICONTROL Request User Agent] campo. Esta tabela mostra quantos valores únicos o endereço IP tem nesse campo. Quanto maior o valor na variável [!UICONTROL Request User Agent] , quanto mais suspeito for o endereço IP.
 
-## [!UICONTROL IP with non-200 status errors – without 403 status]
+## [!UICONTROL IP with non-200 status errors]
 
 ![IP com erros de status não-200 - sem status 403](../../assets/tools/observation-for-adobe-commerce/ip-non-200-status-errors.png)
 
@@ -139,13 +139,13 @@ Essa guia tem informações que explicam como identificar se e o que [!DNL bots]
 
 * O **[!UICONTROL IP with 403 status codes]** quadro mostra solicitações não armazenadas em cache sem [!UICONTROL cache_status=ERROR] que têm um status HTTP 403. Isso pode mostrar que o servidor de origem é a fonte do 403 (não autorizado) em vez de um bloco de [!DNL Fastly].
 
-## [!UICONTROL Top 5 with non-200 status codes showing cache_status:]
+## [!UICONTROL Top 5 with non-200 status codes]
 
 ![Os 5 principais com códigos de status não 200 mostrando cache_status:](../../assets/tools/observation-for-adobe-commerce/top-5-non-200-status-code-status.png)
 
-* O **[!UICONTROL Top 5 with non-200 status codes showing cache_status:]** A tabela está mostrando em um nível de IP / status as contagens de cada um com a variável [!UICONTROL cache_status] valor.
+* O **[!UICONTROL Top 5 with non-200 status codes showing cache_status]** A tabela está mostrando em um nível de IP / status as contagens de cada um com a variável [!UICONTROL cache_status] valor.
 
-## [!UICONTROL Pageview Latency will show as spikes on this graph:]
+## [!UICONTROL Pageview Latency will show as spikes]
 
 ![A Latência da visualização de página será exibida como picos neste gráfico:](../../assets/tools/observation-for-adobe-commerce/pageview-latency.png)
 
