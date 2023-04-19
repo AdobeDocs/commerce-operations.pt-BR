@@ -1,9 +1,9 @@
 ---
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
-source-git-commit: ef501b34947f24f8028bd5876bd4a167551e03ec
+source-git-commit: ab9d80140833e2d21feffe04a73fcd8ac5f1e980
 workflow-type: tm+mt
-source-wordcount: '11914'
+source-wordcount: '11946'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) O fo
 * **ACSD-50276** (para Adobe Commerce >=2.4.0 &lt;2.4.7) - Corrige o problema em que o formulário de registro do cliente não funciona na loja se um atributo de cliente de seleção múltipla for criado.
 * **ACSD-50527** (para Adobe Commerce >=2.3.7 &lt;2.4.7) - Corrige o erro que ocorre ao salvar uma página com um bloco dinâmico vazio.
 * **ACSD-49973** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.5) - Melhora o desempenho da busca de produtos empacotados por meio do GraphQL.
+* **ACSD-51114** (para Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.7) - Corrige o problema em que um produto aleatório desaparece de catálogos grandes quando a indexação assíncrona está ativada. Melhora o desempenho da reindexação assíncrona para catálogos grandes.
 * **BB2B-2598** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Adicione o recurso de armazenamento em cache ao [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency]e [!UICONTROL storeConfig] Consultas do GraphQL.
 * Adição de novas versões para MDVA-42806, ACSD-48627, ACSD-46815.
 * Atualização dos metadados de patches para ACSD-49773, ACSD-47179, ACSD-48300.
