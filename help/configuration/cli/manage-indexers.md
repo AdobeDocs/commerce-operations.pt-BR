@@ -2,7 +2,7 @@
 title: Gerenciar os indexadores
 description: Veja exemplos de como visualizar e gerenciar indexadores do Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: beee479caeb4145d759c105012ffc8b6b55a6e39
+source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 0%
@@ -39,7 +39,7 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> Os comerciantes da Adobe Commerce que usam o Live Search, o Catalog Service ou o Product Recommendations têm a opção de usar [Indexação de preço baseada em SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-index/index.html).
+> Os comerciantes da Adobe Commerce que usam o Live Search, o Catalog Service ou o Product Recommendations têm a opção de usar [Indexação de preço baseada em SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
 
 ## Exibir status do indexador
 
