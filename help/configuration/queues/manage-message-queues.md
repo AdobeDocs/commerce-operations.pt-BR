@@ -1,13 +1,13 @@
 ---
 title: Gerenciar filas de mensagens
 description: Saiba como gerenciar filas de mensagens na linha de comando do Adobe Commerce.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
+source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # Gerenciar filas de mensagens
 
@@ -74,7 +74,7 @@ Edite o `/app/etc/env.php` arquivo para configurar o trabalho do cron `consumers
 - `cron_run` - Um valor booleano que ativa ou desativa a variável `consumers_runner` trabalho cron (padrão = `true`).
 - `max_messages` - O número máximo de mensagens que cada consumidor deve processar antes de terminar (padrão = `10000`). Embora não o recomendemos, você pode usar 0 para impedir que o consumidor termine. Consulte [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) para configurar como os consumidores processam mensagens da fila de mensagens.
 - `consumers` - Uma matriz de strings especificando quais consumidores serão executados. Uma matriz vazia é executada *all* consumidores.
-- `multiple_processes` - Uma matriz de pares de valores-chave que especifica o consumidor que deve ser executado em quantos processos.
+- `multiple_processes` - Uma matriz de pares de valores-chave que especifica o consumidor que deve ser executado em quantos processos. Suportado no Commerce 2.4.4 ou superior.
 
    >[!INFO]
    >
