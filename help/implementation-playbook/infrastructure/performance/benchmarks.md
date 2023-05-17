@@ -2,9 +2,9 @@
 title: Referências de desempenho
 description: Analise os resultados do benchmark de desempenho para implementações Adobe Commerce hospedadas na infraestrutura de nuvem de Adobe.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: 09a42dc68836b34eab2c9d90879b897729cd1b09
+source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ Para o benchmark de desempenho, o Adobe Commerce 2.4.5 foi implantado em um [inf
    - vCPU 216 (72 x 3 nós)
    - Memória 432 GiB (144 x 3 nós)
    - Largura de banda de rede 768 Gbps (256 x 3 nós)
+   - Largura de banda EBS 57000 Mbps (19000 x 3 nós)
    - Armazenamento provisionado 100 GB
 
 - **Especificações do nó de serviço**
