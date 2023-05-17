@@ -1,13 +1,13 @@
 ---
 title: Arquivos de configuração para implantação
 description: Entenda como os arquivos de configuração funcionam para instalar o aplicativo Commerce.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
+source-git-commit: dd990800551dd2ba35ebc7d2bc04edeb1b183d6f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
-
 
 # Arquivos de configuração para implantação
 
@@ -17,9 +17,6 @@ O Adobe Commerce fornece arquivos de configuração que permitem personalizar fa
 Este arquivo contém a lista de módulos, temas e pacotes de idioma instalados; e configurações compartilhadas.
 
    Verifique este arquivo para obter o controle e usá-lo em seus sistemas de desenvolvimento, armazenamento temporário e produção.
-
-   A partir da versão 2.2, a variável `app/etc/config.php` O arquivo não é mais uma entrada no `.gitignore` arquivo.
-Isso foi feito para facilitar [implantação de pipeline](../deployment/technical-details.md).
 
 - `app/etc/env.php` contém configurações específicas do ambiente de instalação.
 
