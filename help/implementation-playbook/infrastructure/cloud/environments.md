@@ -1,5 +1,5 @@
 ---
-title: Ambientes da infraestrutura em nuvem
+title: Ambientes de infraestrutura em nuvem
 description: Use os ambientes certos para os casos de uso corretos.
 exl-id: 0c36145f-8de2-45e5-9050-9acbc9fb6100
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -11,22 +11,22 @@ ht-degree: 0%
 
 # Ambientes
 
-A arquitetura Adobe Commerce on cloud Infrastructure Pro suporta ambientes que você pode usar para desenvolver, testar e iniciar sua loja. Cada ambiente contém um banco de dados e um servidor da Web. Os quatro ambientes aproveitados pelo Adobe Commerce são:
+A arquitetura Pro do Adobe Commerce na infraestrutura em nuvem é compatível com ambientes que você pode usar para desenvolver, testar e iniciar sua loja. Cada ambiente contém um banco de dados e um servidor Web. Os quatro ambientes aproveitados pelo Adobe Commerce são:
 
-- **Integração**—Fornece uma única ramificação de ambiente e você pode criar até quatro ramificações de ambiente adicionais. Isso permite no máximo cinco ramificações ativas implantadas em contêineres de Plataforma como Serviço (PaaS).
+- **Integração**— fornece uma única ramificação de ambiente e você pode criar até quatro ramificações de ambiente adicionais. Isso permite um máximo de cinco ramificações ativas implantadas em contêineres PaaS (Platform-as-a-Service).
 
-- **Estágios**—Fornece uma única ramificação de ambiente implantada em contêineres dedicados de infraestrutura como serviço (IaaS).
+- **Estágios**— fornece uma única ramificação de ambiente implantada em contêineres IaaS (Infrastructure-as-a-Service, infraestrutura como serviço) dedicados.
 
-- **Produção**—Fornece uma única ramificação de ambiente implantada em contêineres dedicados de infraestrutura como serviço (IaaS).
+- **Produção**— fornece uma única ramificação de ambiente implantada em contêineres IaaS (Infrastructure-as-a-Service, infraestrutura como serviço) dedicados.
 
-- **Global Principal**—Fornece uma ramificação principal implantada em contêineres de Plataforma como Serviço (PaaS).
+- **Principal global**— Fornece uma ramificação principal implantada em contêineres PaaS (Platform-as-a-Service).
 
-![Diagrama que mostra a relação entre os ambientes de nuvem do Adobe Commerce](../../../assets/playbooks/environment-diagram.svg)
+![Diagrama que mostra a relação entre ambientes de nuvem do Adobe Commerce](../../../assets/playbooks/environment-diagram.svg)
 
 ## Ramificações Git
 
-O Ambiente de integração fornece uma única ramificação de integração básica que contém seu código Adobe Commerce implantado em contêineres de Plataforma como Serviço (PaaS).
+O ambiente de integração fornece uma ramificação de integração de base única contendo seu código Adobe Commerce implantado em contêineres PaaS (Platform-as-a-Service).
 
-Os ambientes de infraestrutura em nuvem do Adobe Commerce oferecem suporte a um processo de integração flexível e contínuo. Comece clonando a ramificação de integração para a pasta do projeto local. Crie uma nova ramificação ou várias ramificações para desenvolver novos recursos, configurar alterações e adicionar extensões. Com uma ramificação de código desenvolvida e os arquivos de configuração correspondentes, suas alterações de código estão prontas para se mesclar à ramificação de integração para testes mais abrangentes.
+O Adobe Commerce em ambientes de infraestrutura em nuvem oferece suporte a um processo de integração flexível e contínuo. Comece clonando a ramificação de integração na pasta local do projeto. Crie uma nova ramificação ou várias ramificações para desenvolver novos recursos, configurar alterações e adicionar extensões. Com uma ramificação de código desenvolvida e os arquivos de configuração correspondentes, as alterações de código estão prontas para serem mescladas à ramificação de integração para testes mais abrangentes.
 
-![Diagrama que mostra a estratégia de ramificação baseada em git para ambientes de nuvem do Adobe Commerce](../../../assets/playbooks/branching-diagram.svg)
+![Diagrama que mostra a estratégia de ramificação baseada em Git para ambientes de nuvem do Adobe Commerce](../../../assets/playbooks/branching-diagram.svg)

@@ -1,29 +1,29 @@
 ---
 title: Pré-requisitos para implantação
-description: Consulte uma lista de pré-requisitos para implantar o Commerce em um sistema de desenvolvimento, criação ou produção.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: Consulte uma lista de pré-requisitos para implantar o Commerce em um sistema de desenvolvimento, compilação ou produção.
+exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
 
+# Pré-requisitos para sistemas de desenvolvimento, compilação e produção
 
-# Pré-requisitos para sistemas de desenvolvimento, criação e produção
-
-As permissões e a propriedade de arquivo devem ser consistentes em todos os sistemas de desenvolvimento, criação e produção. Para fazer isso funcionar, você deve:
+As permissões e a propriedade de arquivos devem ser consistentes em todos os sistemas de desenvolvimento, compilação e produção. Para fazer isso funcionar, você deve:
 
 - Todos os itens a seguir:
 
    - Configurar o mesmo nome de usuário do proprietário do sistema de arquivos em todos os sistemas
-   - Certifique-se de que o servidor da Web seja executado como o mesmo usuário em todos os sistemas
-   - Certifique-se de que o proprietário do sistema de arquivos esteja no grupo de servidores da Web em todos os sistemas
+   - Verifique se o servidor Web é executado como o mesmo usuário em todos os sistemas
+   - Verifique se o proprietário do sistema de arquivos está no grupo de servidores Web em todos os sistemas
 
 - Altere as permissões e a propriedade do sistema de arquivos do Commerce em cada sistema, conforme necessário, usando as seguintes diretrizes:
 
-   - Desenvolvimento e construção: [Definir a propriedade e as permissões de pré-instalação (dois usuários)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - Produção: [Propriedade comercial e permissões em desenvolvimento e produção](file-system-permissions.md)
+   - Desenvolvimento e criação: [Definir propriedade e permissões de pré-instalação (dois usuários)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+   - Produção: [Propriedade e permissões de comércio no desenvolvimento e na produção](file-system-permissions.md)
 
 >[!INFO]
 >
->Se você escolher essa abordagem, deverá definir as permissões e a propriedade do sistema de arquivos toda vez que obter o código do sistema de build (se o proprietário do sistema de arquivos ou o usuário do servidor da Web for diferente no sistema de build).
+>Se você escolher essa abordagem, deverá definir as permissões e a propriedade do sistema de arquivos sempre que extrair o código do sistema de compilação (se o proprietário do sistema de arquivos ou o usuário do servidor Web for diferente no sistema de compilação).

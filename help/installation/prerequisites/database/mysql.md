@@ -1,13 +1,13 @@
 ---
 title: Diretrizes do MySQL
 description: Siga estas etapas para instalar e configurar MySQL e MariaDB para instalações locais de Adobe Commerce e Magento Open Source.
-source-git-commit: c65217cd277be5226681ef239d6a3cf34c251a9f
+exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
 
 ---
-
 
 # Diretrizes gerais do MySQL
 

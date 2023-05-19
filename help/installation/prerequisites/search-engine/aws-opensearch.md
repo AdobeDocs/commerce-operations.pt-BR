@@ -1,48 +1,48 @@
 ---
 title: AWS OpenSearch
-description: Siga estas etapas para configurar o serviço Web AWS OpenSearch para instalações locais do Adobe Commerce e do Magento Open Source.
-source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
+description: Siga estas etapas para configurar o serviço Web AWS OpenSearch para instalações locais do Adobe Commerce e Magento Open Source.
+exl-id: 39ca7fd0-e21f-4f14-bda6-ff00a61a1a4d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
 
 ---
 
-
 # AWS OpenSearch
 
-O Adobe Commerce e o Magento Open Source 2.4.5 são compatíveis com o uso de clusters do Amazon OpenSearch Service. Esse serviço é o sucessor do Amazon Elasticsearch Service. Este tópico descreve como configurar o Commerce para usar o AWS OpenSearch e como migrar dados de um Elasticsearch local ou instância OpenSearch para um cluster AWS OpenSearch.
+O Adobe Commerce e o Magento Open Source 2.4.5 são compatíveis com o uso de clusters do Amazon OpenSearch Service. Este serviço é o sucessor do Amazon Elasticsearch Service. Este tópico descreve como configurar o Commerce para usar o AWS OpenSearch e como migrar dados de um Elasticsearch local ou instância OpenSearch para um cluster AWS OpenSearch.
 
-## Criar um domínio de serviço AWS OpenSearch
+## Criar um domínio do serviço AWS OpenSearch
 
-Primeiro, você deve estabelecer uma instância OpenSearch no AWS.
+Primeiro, é necessário estabelecer uma instância OpenSearch no AWS.
 Ler [Criação e gerenciamento de domínios do Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) para obter instruções detalhadas.
 
 ## Obter dados para o AWS OpenSearch
 
-Quando tudo estiver preparado no AWS, é hora de preenchê-lo com dados.
+Depois que tudo estiver preparado no AWS, é hora de preenchê-lo com dados.
 
 Para instalações menores, recomendamos que você crie índices diretamente na instância do AWS pelos seguintes motivos:
 
 * Recriar os índices é uma operação rápida.
-* Pode haver incompatibilidades de versão entre a instância antiga e a instância do AWS, e elas podem ser evitadas ao criar diretamente na instância do AWS.
+* Pode haver incompatibilidades de versão entre a instância antiga e a instância do AWS e elas podem ser evitadas ao criar diretamente na instância do AWS.
 
-Instalações maiores podem considerar a migração de seus índices de dados da instância existente para o AWS. Embora isso possa reduzir o tempo de inatividade, ainda há um pequeno risco de problemas de incompatibilidade devido às diferentes versões entre o servidor Elasticsearch antigo e o AWS.
+Instalações maiores podem considerar a migração de seus índices de dados da instância existente para o AWS. Embora isso possa reduzir o tempo de inatividade, ainda há um pequeno risco de problemas de incompatibilidade devido a versões diferentes entre o servidor de Elasticsearch antigo e o AWS.
 
 Não há necessidade de migrar índices, pois eles podem ser facilmente recriados na instância do AWS.
 No entanto, ao migrar índices de dados, verifique se as versões do Elasticsearch/OpenSearch são compatíveis.
 
-Consulte Amazon [Migrando para o Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) instruções para obter mais informações.
+Consulte o site da Amazon [Migração para o Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) instruções para obter mais informações.
 
-### Configurar comércio para OpenSearch
+### Configurar o Commerce para o OpenSearch
 
-As etapas para configurar o OpenSearch são abordadas na seção [Instalação avançada](../../advanced.md) tópico.
+As etapas para configurar o OpenSearch são abordadas no [Instalação avançada](../../advanced.md) tópico.
 
-Para testar se a nova configuração está funcionando, teste o ponto de extremidade OpenSearch diretamente:
+Para testar se a nova configuração está funcionando, teste o endpoint do OpenSearch diretamente:
 
-1. Crie um produto no Administrador (por exemplo: sku=&quot;testproduct1&quot;).
-1. Reindexe pelo Administrador.
-1. Consulte o ponto de extremidade OpenSearch (encontrado na interface do usuário do AWS):
+1. Crie um produto no Administrador (Por exemplo: sku=&quot;testproduct1&quot;).
+1. Reindexe por meio do Administrador.
+1. Consulte o endpoint do OpenSearch (encontrado na interface do usuário do AWS):
 
    Para obter índices, anexe: `/_cat/indices/*?v=true` ao URL:
    `<AWS OS endpoint>/_cat/indices/*?v=true`
@@ -52,4 +52,4 @@ Para obter produtos do índice, anexe: `/magento2docker_product_1/_search?q=*` a
 
 ## Recursos adicionais
 
-Para obter mais informações, consulte o [Documentação do OpenSearch AWS](https://docs.aws.amazon.com/opensearch-service/index.html).
+Para obter informações adicionais, consulte a seção [Documentação do OpenSearch AWS](https://docs.aws.amazon.com/opensearch-service/index.html).

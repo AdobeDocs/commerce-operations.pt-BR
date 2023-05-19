@@ -1,6 +1,6 @@
 ---
 title: Controle de qualidade
-description: Saiba mais sobre os processos de controle de qualidade da Adobe Commerce relacionados a projetos de implementação.
+description: Saiba mais sobre os processos de controle de qualidade do Adobe Commerce relacionados aos projetos de implementação.
 exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 ![Diagrama do processo de controle de qualidade](../../assets/playbooks/quality-control-diagram.svg)
 
-O processo de controlo de qualidade no diagrama anterior pode ser descrito resumidamente da seguinte forma:
+O processo de controle de qualidade no diagrama anterior pode ser descrito resumidamente da seguinte maneira.
 
 <table>
 <thead>
   <tr>
     <th>Processo de desenvolvimento de software</th>
-    <th>Fluxo de trabalho QC</th>
+    <th>Fluxo de trabalho de QC</th>
     <th>QC</th>
-    <th>Líder QC</th>
+    <th>Líder de controle de qualidade</th>
   </tr>
 </thead>
 <tbody>
@@ -29,7 +29,7 @@ O processo de controlo de qualidade no diagrama anterior pode ser descrito resum
     <td>Desenvolvimento</td>
     <td>Planejamento</td>
     <td></td>
-    <td>Rever e contribuir para os planos de ensaio</td>
+    <td>Revisar e contribuir com planos de teste</td>
   </tr>
   <tr>
     <td></td>
@@ -45,69 +45,69 @@ O processo de controlo de qualidade no diagrama anterior pode ser descrito resum
   </tr>
   <tr>
     <td></td>
-    <td>Análise e design de teste</td>
-    <td>Rever e contribuir para os planos de ensaio</td>
+    <td>Análise e projeto de teste</td>
+    <td>Revisar e contribuir com planos de teste</td>
     <td>Iniciar a preparação, especificações</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
     <td>Criar especificações de teste (casos de teste/cenários de teste)</td>
-    <td>Escrever ou analisar uma estratégia de teste para o projeto</td>
+    <td>Escrever ou revisar uma estratégia de teste para o projeto</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
     <td>Preparar e adquirir dados de teste</td>
-    <td> Líder, orientar e monitorar a análise e o design</td>
+    <td> Liderar, orientar e monitorar a análise, o design</td>
   </tr>
   <tr>
     <td>Teste interno</td>
-    <td>Testar implementação e execução</td>
+    <td>Implementação e execução de teste</td>
     <td>Implementa testes, executa e registra os testes</td>
-    <td>Acompanhamento da execução e execução dos ensaios</td>
+    <td>Acompanhamento da implementação e execução dos testes</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td>Verificar o desempenho e verificar a segurança - Avalie os resultados e os desvios dos resultados esperados</td>
-    <td>Assegurar a rastreabilidade dos testes até à base de ensaio e controlar os bugs no sistema de controlo de bugs</td>
+    <td>Verificar o desempenho e a segurança da verificação - Avalie os resultados e os desvios dos resultados esperados</td>
+    <td>Garantir a rastreabilidade dos testes para a base de teste e rastrear os bugs no sistema de rastreamento de bugs</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td>Postar bugs no sistema de rastreamento de bugs (Jira/Redmine/Trello)</td>
+    <td>Publicar bugs no sistema de rastreamento de erros (Jira/Redmine/Trello)</td>
     <td>Priorizar/programar testes para alinhar-se ao planejamento do projeto definido pelo PM</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td>Testar novamente (teste de confirmação) após a correção de erros</td>
+    <td>Repetir o teste (teste de confirmação) após a correção de erros</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
-    <td>Avaliação e criação de relatórios</td>
-    <td>Reportar o progresso do teste para QC lead e PM</td>
-    <td>Avaliação dos resultados e do progresso dos testes</td>
+    <td>Avaliação e geração de relatórios</td>
+    <td>Relatar o progresso do teste ao lead e PM do QC</td>
+    <td>Avaliar os resultados e o progresso do teste</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
     <td></td>
-    <td>Escreva relatórios resumidos do teste com base nas informações coletadas durante o teste</td>
+    <td>Escrever relatórios de resumo de teste com base nas informações coletadas durante o teste</td>
   </tr>
   <tr>
     <td>UAT</td>
     <td>UAT</td>
-    <td>Verificar Feedbacks de cliente ou Solicitações de alteração (CRs)</td>
+    <td>Verificar Comentários do Cliente ou Solicitações de Alteração (CRs)</td>
     <td>Acompanhamento</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td>Realizar testes de redefinição e de regressão após alterar o código-fonte</td>
-    <td>Controlar</td>
+    <td>Realizar novos testes e testes de regressão após alterar o código-fonte</td>
+    <td>Controlando</td>
   </tr>
   <tr>
     <td></td>
@@ -118,70 +118,70 @@ O processo de controlo de qualidade no diagrama anterior pode ser descrito resum
   <tr>
     <td>Manutenção</td>
     <td>Manutenção</td>
-    <td>Rever e contribuir para tarefas</td>
-    <td>Revisar e estimar o tempo de tarefas</td>
+    <td>Revisar e contribuir com tarefas</td>
+    <td>Revisar e estimar o tempo para tarefas</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
     <td>Criar/atualizar especificações de teste</td>
-    <td>Progressos dos testes de acompanhamento</td>
+    <td>Progresso do teste de acompanhamento</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td>Executar testes para essas tarefas</td>
+    <td>Executar testes para estas tarefas</td>
     <td></td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td>Executar teste de regressão</td>
+    <td>Realizar teste de regressão</td>
     <td></td>
   </tr>
 </tbody>
 </table>
 
-Semelhante ao [ferramentas](project-management-tools.md) identificamos o processo de desenvolvimento, selecionamos algumas soluções e plataformas de escolha que muitas vezes utilizamos para testes de controle de qualidade.
+Semelhante ao [ferramentas](project-management-tools.md) identificamos para o processo de desenvolvimento, selecionamos algumas soluções e plataformas de escolha que costumamos utilizar para testes de controle de qualidade.
 
 | Finalidade | Ferramenta |
 |---------------------------|---------------------------------------------------|
 | Índice de desempenho do site | Google PageSpeed, Webpagetest, JMeter |
-| Segurança | Ferramenta Adobe Commerce Security Scan, SonarQube, ZAP |
-| Sistema de gestão de problemas | JIRA |
-| Teste da interface do usuário | Pixel perfeito, BrowserStack |
+| Segurança | Ferramenta de verificação de segurança Adobe Commerce, SonarQube, ZAP |
+| Sistema de gerenciamento de problemas | JIRA |
+| Teste da interface do usuário | Perfect Pixel, Pilha de navegador |
 | Teste de API | Postman, SoapUI |
 | Teste de automação | Selênio |
 
 
 ## Índice de desempenho do site
 
-O GooglePageSpeed relata o desempenho de uma página em dispositivos móveis e de desktop e fornece sugestões sobre como essa página pode ser melhorada.
+O GooglePageSpeed relata o desempenho de uma página em dispositivos móveis e desktop e fornece sugestões sobre como essa página pode ser melhorada.
 
 WebPageTest é uma ferramenta de desempenho da Web que usa navegadores reais para acessar páginas da Web e coletar métricas de tempo.
 
-O JMeter é um projeto do Apache que pode ser usado como uma ferramenta de teste de carga para analisar e medir o desempenho de uma variedade de serviços, com foco em aplicações Web.
+JMeter é um projeto Apache que pode ser usado como uma ferramenta de teste de carga para analisar e medir o desempenho de uma variedade de serviços, com foco em aplicações web.
 
 ## Segurança
 
-O SonarQube e o ZAP foram introduzidos no processo de desenvolvimento, mas também estamos a incluí-los aqui com mais informações sobre a forma como estão envolvidos no processo de QC.
+SonarQube e ZAP foram introduzidos no processo de desenvolvimento, mas também estamos incluindo-o aqui com mais informações sobre como ele está envolvido no processo de QC.
 
-O SonarQube também é usado para inspeção contínua da qualidade do código para executar revisões automáticas com análise estática do código para detectar bugs, cheiros de código e vulnerabilidades de segurança.
+O SonarQube também é usado para inspeção contínua da qualidade do código para executar revisões automáticas com análise estática do código para detectar bugs, code smells e vulnerabilidades de segurança.
 
-O OWASPipAP (Zed Attack Proxy) deve ser usado por ambos os novos usuários para segurança de aplicativos, bem como por testadores profissionais de penetração. Alguns dos recursos incorporados incluem interceptação de servidor proxy, rastreadores Web tradicionais e AJAX, scanner automatizado, scanner passivo, navegação forçada, Fuzzier, suporte WebSocket, linguagens de script e suporte a Plug-n-Hack.
+OWASPZAP (Zed Attack Proxy) é destinado a ser usado por aqueles novos na segurança de aplicativos, bem como testadores de penetração profissional. Alguns dos recursos incorporados incluem interceptação de servidor proxy, rastreadores da Web tradicionais e AJAX, scanner automatizado, scanner passivo, navegação forçada, Fuzzier, suporte a WebSocket, linguagens de script e suporte a Plug-n-Hack.
 
 ## Teste da interface do usuário
 
-O Pixel perfeito permite que desenvolvedores e designers de marcação coloquem uma sobreposição de imagem semitransparente sobre o HTML desenvolvido e executem uma comparação perfeita em pixels entre eles.
+O Perfect Pixel permite que desenvolvedores e designers de marcação coloquem uma sobreposição de imagem semitransparente sobre o HTML desenvolvido e executem uma comparação pixel-perfeita entre eles.
 
-O BrowserStack é uma plataforma de teste móvel e da Web em nuvem que permite aos desenvolvedores testar seus sites e aplicativos móveis em navegadores sob demanda, sistemas operacionais e dispositivos móveis reais.
+BrowserStack é uma plataforma de teste móvel e da Web em nuvem que permite aos desenvolvedores testar seus sites e aplicativos móveis em navegadores sob demanda, sistemas operacionais e dispositivos móveis reais.
 
 ## Teste de API
 
-O Postman é a plataforma de colaboração para desenvolvimento de API. O Postman simplifica cada etapa da criação de uma API e simplifica a colaboração para que você possa criar APIs melhores.
+O Postman é a plataforma de colaboração para o desenvolvimento de API. O Postman simplifica cada etapa da criação de uma API e simplifica a colaboração para que você possa criar APIs melhores.
 
-SoapUI é um aplicativo de teste de serviço da Web de código aberto para SOAP (Simple Object Access Protocol) e REST (Representational State Transfer). A sua funcionalidade abrange a inspeção de serviços Web; invocar, desenvolver, simular e zombar; ensaio funcional; ensaio de carga e conformidade.
+O SoapUI é um aplicativo de teste de serviço Web de código aberto para SOAP (Simple Object Access Protocol) e REST (Representational State Transfer). Sua funcionalidade abrange inspeção de serviços da Web; invocação, desenvolvimento, simulação e zombaria; teste funcional; teste de carga e conformidade.
 
 ## Teste de automação
 
-O Selenium é composto de vários componentes (API cliente Selenium, Selenium WebDriver), cada um assumindo uma função específica para ajudar o desenvolvimento da automação de teste de aplicações web.
+O Selenium é composto por vários componentes (API do cliente Selenium, Selenium WebDriver), cada um assumindo uma função específica em ajudar no desenvolvimento da automação de testes de aplicações Web.

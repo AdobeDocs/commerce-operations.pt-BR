@@ -11,27 +11,27 @@ ht-degree: 0%
 
 # Sobre o Adobe Commerce
 
-O Adobe Commerce é a plataforma líder em inovação de comércio aberto. Todos os anos, a Adobe Commerce lida com mais de US$ 100 bilhões em volume bruto de mercadorias. O Adobe Commerce oferece aos clientes o poder de criar experiências de compras exclusivas e envolventes, recursos prontos para uso e a capacidade ilimitada de personalizar, uma arquitetura flexível e sem periféricos e integrações ininterruptas de terceiros.
+O Adobe Commerce é a plataforma líder para inovação no comércio aberto. Todos os anos, a Adobe Commerce lida com mais de US$ 100 bilhões em volume bruto de mercadorias. O Adobe Commerce oferece aos clientes o poder de criar experiências de compra exclusivas e envolventes, recursos prontos para uso e capacidade ilimitada de personalização, uma arquitetura headless flexível e integrações perfeitas de terceiros.
 
 Há duas versões de [!DNL Commerce]:
 
-_Magento Open Source_ é a versão gratuita, anteriormente chamada de Comunidade do Magento. Você pode baixar, personalizar e executar a plataforma em seu próprio servidor ou provedor de hospedagem de sua escolha.
+_Magento Open Source_ é a versão gratuita, anteriormente chamada de Comunidade Magento. Você pode baixar, personalizar e executar a plataforma em seu próprio servidor ou provedor de hospedagem de sua escolha.
 
-A maioria dos comerciantes usa o Magento Open Source por causa do baixo custo e da natureza aberta. Para desenvolvedores, não importa se eles se desenvolvem no Magento Open Source ou Adobe Commerce. No entanto, o Adobe Commerce tem mais recursos integrados que podem ser usados imediatamente.
+A maioria dos comerciantes usam o Magento Open Source por causa do baixo custo e da natureza aberta. Para desenvolvedores, não importa se eles se desenvolvem no Magento Open Source ou no Adobe Commerce. No entanto, o Adobe Commerce tem mais recursos incorporados que podem ser usados imediatamente.
 
-_Adobe Commerce_ é a versão paga, anteriormente conhecida como Magento Enterprise. Sendo a versão premium, há muitos recursos adicionais.
+_Adobe Commerce_ é a versão paga, anteriormente conhecida como Magento Enterprise. Por ser a versão premium, há vários recursos adicionais.
 
-O Adobe Commerce pode ser hospedado no local. Assim, você hospeda e desenvolve localmente em seu próprio servidor ou pode escolher um provedor de hospedagem. Como alternativa, há o Adobe Commerce na infraestrutura de nuvem, a solução hospedada na nuvem do Adobe. Na seção Solução , analisamos mais profundamente as diferenças entre as soluções hospedadas (por exemplo, SaaS, no local) e as soluções de hospedagem de PaaS.
+O Adobe Commerce pode ser hospedado no local. Para hospedar e desenvolver localmente em seu próprio servidor ou escolher um provedor de hospedagem. Como alternativa, há o Adobe Commerce na infraestrutura em nuvem, a solução hospedada em nuvem da Adobe. Na seção Solução, analisamos em mais detalhes as diferenças entre as soluções de hospedagem hospedadas (por exemplo, SaaS, no local) e PaaS.
 
-O Adobe Commerce é uma solução de comércio eletrônico completa que vem com os seguintes recursos adicionais:
+O Adobe Commerce é uma solução completa de comércio eletrônico que vem com os seguintes recursos adicionais:
 
-- Funcionalidade B2B, como cotação, catálogos personalizados e gerenciamento de funções e permissões de comprador
+- Funcionalidade B2B, como cotação, catálogos personalizados e gerenciar funções e permissões do comprador
 - Painéis de relatórios do Adobe Commerce com visualização e construtor de relatórios personalizado
-- Magento Chat (fornecido por dotdigital)
-- Ferramentas avançadas de marketing
-- [!DNL Product Recommendations] Com a tecnologia Adobe Sensei
-- WYSIWYG Page Builder
+- Magento Chat (ativado por dotdigital)
+- Ferramentas de marketing avançadas
+- [!DNL Product Recommendations] ativado por Adobe Sensei
+- Page Builder WYSIWYG
 - Segmentação de cliente
 - Ferramentas de fidelidade do cliente, como cupons fáceis de resgatar
-- Preparação e visualização de conteúdo para hospedagem
-- Comercialização visual
+- Preparo e visualização de conteúdo para hospedagem
+- Merchandising visual

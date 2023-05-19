@@ -1,19 +1,19 @@
 ---
 title: Gerenciar módulos e extensões (desenvolvedor)
 description: Gerencie módulos e extensões Adobe Commerce e Magento Open Source usando a interface de linha de comando e o gerenciador de pacotes do Composer.
-source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
+exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
-
 # Gerenciar módulos e extensões
 
-Contribuição de desenvolvedores para atualizar módulos e extensões especificando suas versões no Adobe Commerce ou no Magento Open Source `composer.json` arquivo. Se você não for um desenvolvedor contribuidor, consulte [Executar uma atualização](../implementation/perform-upgrade.md).
+Os desenvolvedores colaboradores atualizam módulos e extensões especificando suas versões no Adobe Commerce ou no Magento Open Source `composer.json` arquivo. Se você não for um desenvolvedor do contributing, consulte [Executar uma atualização](../implementation/perform-upgrade.md).
 
-Você pode adicionar uma `require` para `composer.json` ou você pode usar o `composer require` comando como segue:
+Você pode adicionar um `require` para a `composer.json` ou você pode usar o `composer require` comando da seguinte maneira:
 
 {{$include /help/_includes/server-login.md}}
 
@@ -49,11 +49,11 @@ composer require example/module:1.0.0
 
 Aguarde enquanto o Composer atualiza as dependências e instala o módulo.
 
-## Adicione um `require` seção para o arquivo composer.json
+## Adicionar um `require` seção para o arquivo composer.json
 
 1. Abra o `composer.json` em um editor de texto.
 
-1. Adicione um `require` seção.
+1. Adicionar um `require` seção.
 
    ```json
    "require": {
@@ -64,7 +64,7 @@ Aguarde enquanto o Composer atualiza as dependências e instala o módulo.
 
 1. Salve as alterações no `composer.json` e saia do editor de texto.
 
-1. Resolva as dependências e grave as versões exatas no `composer.lock` arquivo.
+1. Resolva as dependências e grave versões exatas no `composer.lock` arquivo.
 
    ```bash
    composer update

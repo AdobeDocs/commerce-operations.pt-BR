@@ -1,25 +1,25 @@
 ---
-title: Segurança das instalações no local
-description: Saiba mais sobre como melhorar a postura de segurança de sua instalação do Adobe Commerce ou Magento Open Source no local.
-source-git-commit: 46302eb8e8fd9bb7c9e7fbf990abb149bedd0ff4
+title: Segurança de instalação local
+description: Saiba mais sobre maneiras de melhorar a postura de segurança da instalação local do Adobe Commerce ou Magento Open Source.
+exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
+# Segurança de instalação local
 
-# Segurança das instalações no local
-
-[Linux aprimorado de segurança (SELinux)](https://selinuxproject.org/page/Main_Page) permite que os administradores do CentOS e do Ubuntu tenham maior controle de acesso sobre seus servidores. Se você estiver usando o SELinux *e* O Apache deve iniciar uma conexão com outro host. Você deve executar os comandos discutidos nesta seção.
+[Linux com segurança aprimorada (SELinux)](https://selinuxproject.org/page/Main_Page) permite que os administradores CentOS e Ubuntu tenham maior controle de acesso sobre seus servidores. Se você estiver usando o SELinux *e* O Apache deve iniciar uma conexão com outro host. Você deve executar os comandos discutidos nesta seção.
 
 >[!NOTE]
 >
->O Adobe não tem nenhuma recomendação sobre o uso do SELinux; você pode usá-lo para segurança aprimorada, se desejar. Se você usar o SELinux, deverá configurá-lo corretamente ou o Adobe Commerce e o Magento Open Source poderão funcionar de maneira imprevisível. Se você optar por usar o SELinux, consulte um recurso como o [Wiki do CentOS](https://wiki.centos.org/HowTos/SELinux) para configurar regras para permitir a comunicação.
+>O Adobe não tem nenhuma recomendação sobre o uso do SELinux; você pode usá-lo para melhorar a segurança, se desejar. Se você usa o SELinux, é necessário configurá-lo corretamente ou o Adobe Commerce e o Magento Open Source podem funcionar de forma imprevisível. Se você optar por usar o SELinux, consulte um recurso como o [CentOS wiki](https://wiki.centos.org/HowTos/SELinux) para configurar regras para habilitar a comunicação.
 
 ## Sugestão para instalar com o Apache
 
-Se você optar por habilitar o SELinux, poderá ter problemas ao executar o instalador, a menos que altere o *contexto de segurança* de alguns diretórios como segue:
+Se optar por ativar o SELinux, você poderá ter problemas ao executar o instalador, a menos que altere o *contexto de segurança* de alguns diretórios da seguinte maneira:
 
 ```bash
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
@@ -43,15 +43,15 @@ chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 
 Os comandos anteriores funcionam somente com o servidor Web Apache. Devido à variedade de configurações e requisitos de segurança, não garantimos que esses comandos funcionem em todas as situações. Para obter mais informações, consulte:
 
-* [página principal](https://linux.die.net/man/8/httpd_selinux)
-* [Laboratório de servidor](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
+* [página do manual](https://linux.die.net/man/8/httpd_selinux)
+* [Laboratório de servidores](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
 
-## Ativar comunicação entre servidores
+## Habilitar comunicação entre servidores
 
-Se o Apache e o servidor de banco de dados estiverem no mesmo host, use o seguinte comando se planeja usar integrações que usam `curl` (ex. Paypal e USPS).
-Para permitir que o Apache inicie uma conexão com outro host com o SELinux habilitado:
+Se o Apache e o servidor de banco de dados estiverem no mesmo host, use o seguinte comando se planejar usar integrações que usam `curl` (por exemplo, Paypal e USPS).
+Para permitir que o Apache inicie uma conexão com outro host com o SELinux ativado:
 
-1. Para determinar se o SELinux está ativado, use o seguinte comando:
+1. Para determinar se o SELinux está habilitado, use o seguinte comando:
 
    ```bash
    getenforce
@@ -62,9 +62,9 @@ Para permitir que o Apache inicie uma conexão com outro host com o SELinux habi
    * CentOS: `setsebool -P httpd_can_network_connect=1`
    * Ubuntu: `setsebool -P apache2_can_network_connect=1`
 
-## Abrir portas no firewall
+## Abrindo portas no firewall
 
-Dependendo dos requisitos de segurança, talvez seja necessário abrir a porta 80 e outras portas no firewall. Devido à natureza sensível da segurança de rede, o Adobe recomenda que você consulte o departamento de TI antes de continuar. A seguir, algumas referências sugeridas:
+Dependendo dos requisitos de segurança, talvez você precise abrir a porta 80 e outras portas do firewall. Devido à natureza confidencial da segurança de rede, a Adobe recomenda que você consulte seu departamento de TI antes de continuar. A seguir estão algumas referências sugeridas:
 
-* Ubuntu: [Página de documentação do Ubuntu](https://help.ubuntu.com/community/IptablesHowTo)
-* CentOS: [Tutorial do CentOS](https://wiki.centos.org/HowTos/Network/IPTables).
+* Ubuntu: [Página da documentação do Ubuntu](https://help.ubuntu.com/community/IptablesHowTo)
+* CentOS: [Como fazer do CentOS](https://wiki.centos.org/HowTos/Network/IPTables).

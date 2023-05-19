@@ -1,46 +1,47 @@
 ---
 title: Otimizar arquivos de recursos CSS e JS
-description: Saiba como mesclar e minificar arquivos CSS e JavaScript (JS) para projetos do Adobe Commerce pelo Administrador ou pela linha de comando.
+description: Saiba como mesclar e minificar arquivos CSS e JavaScript (JS) para projetos Adobe Commerce do Administrador ou da linha de comando.
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: e6e8a2d7ef059265dbcbfcd6be117828a639f6d6
+exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
 
-# Otimizar arquivos de recursos
+# Otimizar arquivos de recurso
 
-Para um site de Comércio mais responsivo, otimize os arquivos de recursos de CSS e JavaScript (JS) e elimine os recursos de bloqueio de renderização.
+Para um site do Commerce mais responsivo, otimize os arquivos de recursos CSS e JavaScript (JS) e elimine os recursos de bloqueio de renderização.
 
-- **Otimizar arquivos CSS e JS**—Reduza o tempo necessário para carregar arquivos CSS e JavaScript (JS) configurando o Adobe Commerce para mesclar, diminuir e agrupar arquivos separados em um único arquivo.
-- **Eliminar recursos de bloqueio de renderização**—Considere fornecer recursos críticos de JS e CSS em linha e adiar todos os estilos não críticos de JS/CSS. Para obter orientação, consulte [Eliminar recursos de bloqueio de renderização](https://web.dev/render-blocking-resources/).
+- **Otimizar arquivos CSS e JS**—Reduza o tempo necessário para carregar arquivos CSS e JavaScript (JS) configurando o Adobe Commerce para mesclar, minificar e agrupar arquivos separados em um único arquivo.
+- **Eliminar recursos de bloqueio de renderização**—Considere fornecer recursos críticos de JS e CSS em linha e adiar todos os estilos de JS/CSS não críticos. Para obter orientação, consulte [Eliminar recursos de bloqueio de renderização](https://web.dev/render-blocking-resources/).
 
 ## Produtos e versões afetados
 
 [Todas as versões compatíveis, 2.3 e posteriores](../../../release/versions.md) de:
 
-- Adobe Commerce na infraestrutura de nuvem
+- Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
 - Magento Open Source
 
 ## Mesclar ou minificar arquivos CSS
 
-O tempo necessário para carregar arquivos CSS e JavaScript (JS) pode ser reduzido ao mesclar, minificar e agrupar arquivos separados em um único arquivo.
+O tempo necessário para carregar arquivos CSS e JavaScript (JS) pode ser reduzido com a mesclagem, minificação e agrupamento de arquivos separados em um único arquivo.
 
 >[!IMPORTANT]
 >
->O Adobe Commerce na infraestrutura em nuvem sempre é executado no modo Produção e não é possível configurá-lo de outra forma, portanto, você deve usar o método de linha de comando para habilitar a mesclagem, a minificação e o agrupamento.
+>A infraestrutura do Adobe Commerce na nuvem sempre é executada no modo de Produção e não é possível defini-la de outra forma. Portanto, você deve usar o método de linha de comando para habilitar a mesclagem, a minificação e o agrupamento.
 
-### Uso de Admin
+### Uso do Admin
 
-Para ativar a mesclagem ou minificação de CSS, acesse a [!UICONTROL **Administrador** > **Lojas** > **Configuração** > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações de CSS**].
+Para habilitar a mesclagem ou minificação de CSS, acesse o [!UICONTROL **Admin** > **Lojas** > **Configuração** > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações de CSS**].
 
-### Uso da linha de comando
+### Usando a linha de comando
 
-Para habilitar a mesclagem de CSS no Adobe Commerce na infraestrutura de nuvem:
+Para habilitar a mesclagem de CSS no Adobe Commerce na infraestrutura em nuvem:
 
 1. Execute este comando localmente:
 
@@ -48,9 +49,9 @@ Para habilitar a mesclagem de CSS no Adobe Commerce na infraestrutura de nuvem:
    bin/magento config:set --lock-config dev/css/merge_css_files 1
    ```
 
-1. Confirmar alterações no `app/etc/config.php` e reimplante.
+1. Confirme as alterações no `app/etc/config.php` arquivo e reimplantar.
 
-Para habilitar a minificação de CSS no Adobe Commerce na infraestrutura de nuvem:
+Para ativar a minificação CSS no Adobe Commerce na infraestrutura em nuvem:
 
 1. Execute este comando localmente:
 
@@ -58,17 +59,17 @@ Para habilitar a minificação de CSS no Adobe Commerce na infraestrutura de nuv
    bin/magento config:set --lock-config dev/css/minify_files 1
    ```
 
-1. Confirmar alterações no `app/etc/config.php` e reimplante.
+1. Confirme as alterações no `app/etc/config.php` arquivo e reimplantar.
 
-## Minimizar arquivos JS
+## Minificar arquivos JS
 
-### Uso de Admin
+### Uso do Admin
 
-No *Administrador* barra lateral, vá para **Lojas** > **Configurações** > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações do JavaScript**.
+No *Admin* barra lateral, vá para **Lojas** > **Configurações** > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações do JavaScript**.
 
-### Uso da linha de comando
+### Usando a linha de comando
 
-Para ativar a minificação de JS no Adobe Commerce na infraestrutura de nuvem:
+Para ativar a minificação de JS no Adobe Commerce na infraestrutura em nuvem:
 
 1. Execute este comando localmente:
 
@@ -76,13 +77,13 @@ Para ativar a minificação de JS no Adobe Commerce na infraestrutura de nuvem:
    bin/magento config:set --lock-config dev/js/minify_files 1
    ```
 
-1. Confirmar alterações no `app/etc/config.php` e reimplante.
+1. Confirme as alterações no `app/etc/config.php` arquivo e reimplantar.
 
 ## Mesclar e agrupar arquivos JS
 
-Você pode ativar a mesclagem ou o empacotamento no Administrador de comércio (a mesclagem e o empacotamento não podem ser habilitados ao mesmo tempo): [!UICONTROL **Lojas** > **Configurações** > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações do JavaScript**].
+Você pode ativar a mesclagem ou o agrupamento no Administrador do Commerce (a mesclagem e o agrupamento não podem ser habilitados ao mesmo tempo): [!UICONTROL **Lojas** > **Configurações** > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações do JavaScript**].
 
-Você também pode habilitar o pacote integrado do Adobe Commerce (pacote básico) na linha de comando:
+Você também pode ativar o agrupamento Adobe Commerce incorporado (agrupamento básico) na linha de comando:
 
 ```bash
 php -f bin/magento config:set dev/js/enable_js_bundling 1
@@ -91,7 +92,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## Informações adicionais
 
 - [Configurações de otimização do lado do cliente](../../../performance/configuration.md#client-side-optimization-settings)
-- [Guia do usuário: Otimização de arquivos de recursos](https://docs.magento.com/user-guide/system/file-optimization.html)
-- [Guia do desenvolvedor do Front-end: Mesclagem de CSS, minificação e desempenho do site](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
-- [Pacote avançado de JavaScript](../../../performance/advanced-js-bundling.md)
-
+- [Guia do usuário: otimizar arquivos de recursos](https://docs.magento.com/user-guide/system/file-optimization.html)
+- [Guia do desenvolvedor de front-end: mesclagem de CSS, minificação e desempenho do site](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [Empacotamento avançado de JavaScript](../../../performance/advanced-js-bundling.md)

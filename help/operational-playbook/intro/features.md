@@ -11,8 +11,8 @@ ht-degree: 0%
 
 # Recursos de comércio
 
-Fornecer as melhores experiências de comércio do mundo requer o suporte de cada ponto de contato, modelo de negócios e cenário de implantação.
+Para fornecer as melhores experiências comerciais do mundo, é necessário oferecer suporte a todos os pontos de contato, modelos de negócios e cenários de implantação.
 
-## Uma plataforma aberta para suportar sua evolução
+## Uma plataforma aberta para apoiar sua evolução
 
 ![O valor da tecnologia comercial](../../assets/playbooks/commerce-features.png)

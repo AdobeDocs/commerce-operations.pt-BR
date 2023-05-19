@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Gerenciar filas de mensagens
 
-Você pode gerenciar filas de mensagens da linha de comando usando tarefas cron ou um gerenciador de processos externo para garantir que os consumidores estejam recuperando mensagens.
+Você pode gerenciar filas de mensagens a partir da linha de comando usando tarefas cron ou um gerenciador de processo externo para garantir que os consumidores estejam recuperando mensagens.
 
 ## Gerenciamento de processos
 
-Empregos Cron são o mecanismo padrão para reiniciar os consumidores. Processos iniciados por `cron` consumir o número especificado de mensagens e depois terminar. Executando novamente `cron` reinicia o consumidor.
+Os trabalhos do Cron são o mecanismo padrão para reiniciar os consumidores. Processos iniciados por `cron` consomem o número especificado de mensagens e terminam. Executando novamente `cron` reinicia o consumidor.
 
-O exemplo a seguir mostra o `crontab` configuração para executar consumidores:
+O exemplo a seguir mostra o `crontab` configuração para consumidores em execução:
 
 > /app/code/Magento/MessageQueue/etc/crontab.xml
 
@@ -31,13 +31,13 @@ O exemplo a seguir mostra o `crontab` configuração para executar consumidores:
 
 >[!INFO]
 >
->A frequência com que você verifica as filas de mensagens pode depender da lógica comercial e dos recursos disponíveis do sistema. Em geral, você pode querer verificar se há novos clientes e enviar emails de boas-vindas com mais frequência do que um processo que consome muitos recursos, como atualizar o catálogo. Você deve definir `cron` programações de acordo com suas necessidades comerciais.
+>A frequência com que você verifica as filas de mensagens pode depender da lógica de negócios e dos recursos de sistema disponíveis. Em geral, você pode verificar se há novos clientes e enviar emails de boas-vindas com mais frequência do que um processo que consome mais recursos, como a atualização do catálogo. Você deve definir `cron` de acordo com suas necessidades comerciais.
 >
->Ele pode ser configurado nas opções de configuração Admin Stores > Configurações > Configuração > Avançado > Sistema > Cron para o grupo: consumidores.
+>Ele pode ser configurado nas Admin Stores > Settings > Configuration > Advanced > System > Cron configuration options for group: consumer.
 >
->Consulte [Configurar e executar o cron](../cli/configure-cron-jobs.md) para obter mais informações sobre como usar `cron` com Comércio.
+>Consulte [Configurar e executar o cron](../cli/configure-cron-jobs.md) para obter mais informações sobre como usar o `cron` com o Commerce.
 
-Você também pode usar um gerenciador de processos como [Supervisor](http://supervisord.org/index.html) para monitorar o status dos processos. O gerente pode usar a linha de comando para reiniciar os processos, conforme necessário.
+Também é possível usar um gerenciador de processos, como [Supervisor](http://supervisord.org/index.html) para monitorar o status dos processos. O gerenciador pode usar a linha de comando para reiniciar os processos conforme necessário.
 
 ## Configuração
 
@@ -45,15 +45,15 @@ Você também pode usar um gerenciador de processos como [Supervisor](http://sup
 
 - Trabalho Cron `consumers_runner` está ativado
 - Trabalho Cron `consumers_runner` executa todos os consumidores definidos
-- Cada consumidor processa 10000 mensagens e depois finaliza
+- Cada consumidor processa 10.000 mensagens e depois finaliza
 
 >[!INFO]
 >
->Se a loja da Adobe Commerce estiver hospedada na plataforma do Cloud, use a [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) para configurar o `consumers_runner` trabalho do cron.
+>Se sua loja da Adobe Commerce estiver hospedada na plataforma da Cloud, use o [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) para configurar o `consumers_runner` trabalho cron.
 
 ### Configuração específica
 
-Edite o `/app/etc/env.php` arquivo para configurar o trabalho do cron `consumers_runner`.
+Edite o `/app/etc/env.php` arquivo para configurar o trabalho cron `consumers_runner`.
 
 ```php
 ...
@@ -72,16 +72,16 @@ Edite o `/app/etc/env.php` arquivo para configurar o trabalho do cron `consumers
 ```
 
 - `cron_run` - Um valor booleano que ativa ou desativa a variável `consumers_runner` trabalho cron (padrão = `true`).
-- `max_messages` - O número máximo de mensagens que cada consumidor deve processar antes de terminar (padrão = `10000`). Embora não o recomendemos, você pode usar 0 para impedir que o consumidor termine. Consulte [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) para configurar como os consumidores processam mensagens da fila de mensagens.
-- `consumers` - Uma matriz de strings especificando quais consumidores serão executados. Uma matriz vazia é executada *all* consumidores.
-- `multiple_processes` - Uma matriz de pares de valores-chave que especifica o consumidor que deve ser executado em quantos processos. Suportado no Commerce 2.4.4 ou superior.
+- `max_messages` - O número máximo de mensagens que cada consumidor deve processar antes de terminar (padrão = `10000`). Embora não o recomendemos, você pode usar 0 para impedir que o consumidor seja encerrado. Consulte [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) para configurar como os consumidores processam mensagens da fila de mensagens.
+- `consumers` - Uma matriz de strings especificando quais consumidores executar. Uma matriz vazia é executada *all* consumidores.
+- `multiple_processes` - Uma matriz de pares de valores chave que especifica qual consumidor executar em quantos processos. Compatível com o Commerce 2.4.4 ou posterior.
 
    >[!INFO]
    >
-   >Não é recomendado executar vários consumidores em uma fila operada pelo MySQL. Consulte [Alterar fila de mensagens do MySQL para AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) para obter mais informações.
+   >Não é recomendável executar vários consumidores em uma fila operada pelo MySQL. Consulte [Alterar fila de mensagens de MySQL para AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) para obter mais informações.
 
    >[!INFO]
    >
-   >Se a loja da Adobe Commerce estiver hospedada na plataforma do Cloud, use a [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) para configurar como os consumidores processam mensagens da fila de mensagens.
+   >Se sua loja da Adobe Commerce estiver hospedada na plataforma da Cloud, use o [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) para configurar como os consumidores processam mensagens da fila de mensagens.
 
-Consulte [Iniciar consumidores de fila de mensagens](../cli/start-message-queues.md).
+Consulte [Iniciar consumidores da fila de mensagens](../cli/start-message-queues.md).

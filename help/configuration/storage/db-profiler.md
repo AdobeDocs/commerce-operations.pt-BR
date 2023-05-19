@@ -1,22 +1,22 @@
 ---
-title: Configurar o criador de perfis do banco de dados
-description: Veja um exemplo de como configurar a saída para o criador de perfis do banco de dados.
-badge: label="Contribuído por Goswami em Abritânico" type="Informative" url="https://github.com/atishgoswami" tooltip="Goswami em Atiche"
-source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
+title: Configurar o profiler do banco de dados
+description: Consulte um exemplo de como configurar a saída para o profiler do banco de dados.
+badge: label="Contribuição de Atish Goswami" type="Informativo" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
+# Configurar o profiler do banco de dados
 
-# Configurar o criador de perfis do banco de dados
+O criador de perfil do banco de dados do Commerce exibe todas as consultas implementadas em uma página, incluindo o tempo para cada consulta e quais parâmetros foram aplicados.
 
-O criador de perfil do banco de dados do Commerce exibe todas as consultas implementadas em uma página, incluindo o tempo de cada query e quais parâmetros foram aplicados.
+## Etapa 1: Modificar a configuração de implantação
 
-## Etapa 1: Modificar a configuração da implantação
-
-Modificar `<magento_root>/app/etc/env.php` para adicionar a seguinte referência ao [classe profiler do banco de dados](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+Modificar `<magento_root>/app/etc/env.php` para adicionar a seguinte referência à [classe profiler do banco de dados](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
 
 ```php?start_inline=1
         'profiler' => [
@@ -25,7 +25,7 @@ Modificar `<magento_root>/app/etc/env.php` para adicionar a seguinte referência
         ],
 ```
 
-Um exemplo:
+Um exemplo é o seguinte:
 
 ```php?start_inline=1
  'db' =>
@@ -52,15 +52,15 @@ Um exemplo:
   ),
 ```
 
-## Etapa 2: Configurar a saída
+## Etapa 2: configurar a saída
 
-Configure a saída no arquivo de inicialização do aplicativo Commerce; isso pode ser `<magento_root>/pub/index.php` ou pode estar localizado em uma configuração de host virtual do servidor da Web.
+Configure a saída no arquivo de inicialização do aplicativo do Commerce. Pode ser `<magento_root>/pub/index.php` ou ele pode estar localizado em uma configuração de host virtual do servidor da web.
 
 O exemplo a seguir exibe resultados em uma tabela de três colunas:
 
-- Tempo total (exibe a quantidade total de tempo para executar todas as consultas na página)
-- SQL (exibe todas as consultas SQL; o cabeçalho da linha exibe a contagem de queries)
-- Params de Consulta (exibe os parâmetros de cada consulta SQL)
+- Tempo total (exibe o tempo total para executar todas as consultas na página)
+- SQL (exibe todas as consultas SQL; o cabeçalho da linha exibe a contagem de consultas)
+- Parâmetros de consulta (exibe os parâmetros de cada consulta SQL)
 
 Para configurar a saída, adicione o seguinte após a variável `$bootstrap->run($app);` no arquivo de inicialização:
 
@@ -86,8 +86,8 @@ foreach ($profiler->getQueryProfiles() as $query) {
 echo "</table>";
 ```
 
-## Etapa 3: Visualizar os resultados
+## Etapa 3: exibir os resultados
 
-Acesse qualquer página da loja ou do Administrador para visualizar os resultados. Uma amostra:
+Vá para qualquer página na loja ou no Administrador para visualizar os resultados. A seguir, há uma amostra:
 
-![Resultados do perfil do banco de dados de exemplo](../../assets/configuration/db-profiler-results.png)
+![Resultados do criador de perfil de banco de dados de exemplo](../../assets/configuration/db-profiler-results.png)

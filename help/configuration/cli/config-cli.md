@@ -1,31 +1,31 @@
 ---
-title: Ferramenta Linha de comando
+title: Ferramenta de linha de comando
 description: Use a ferramenta de linha de comando do Commerce para executar tarefas de instalação e configuração.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
 
+# Ferramenta de linha de comando
 
-# Ferramenta Linha de comando
+O Commerce tem uma interface de linha de comando (CLI) —`<magento_root>/bin/magento`—que executa tarefas de instalação e configuração, incluindo:
 
-O Commerce tem uma interface de linha de comando (CLI)—`<magento_root>/bin/magento`—que executa tarefas de instalação e configuração, incluindo:
-
-- Instalar o Commerce (e tarefas relacionadas, como atualizar o esquema do banco de dados, criar uma configuração de implantação)
-- Limpar o cache
-- Gerenciamento de índices, incluindo reindexação
+- Instalação do Commerce (e tarefas relacionadas, como atualizar o esquema do banco de dados, criar uma configuração de implantação)
+- Limpeza do cache
+- Gerenciamento de índices, incluindo a reindexação
 - Criação de dicionários de tradução e pacotes de tradução
-- Geração de classes inexistentes, como fábricas e interceptores para plug-ins, gerando a configuração de injeção de dependência para o gerenciador de objetos
+- Gerando classes inexistentes, como fábricas e interceptores para plug-ins, gerando a configuração de injeção de dependência para o gerenciador de objetos
 - Implantação de arquivos de visualização estáticos
-- Criando CSS de Menos
+- Criação de CSS a partir de menos
 
 Os benefícios adicionais incluem:
 
 - Um único comando (`<magento_root>/bin/magento list`) lista todos os comandos de instalação e configuração disponíveis.
-- Interface de usuário consistente com base em Simfonia.
-- A CLI é extensível para que desenvolvedores de terceiros possam &quot;conectar-se&quot; a ela. Isso tem o benefício adicional de eliminar a curva de aprendizado dos usuários.
+- Interface de usuário consistente com base no Symfony.
+- A CLI é extensível para que desenvolvedores de terceiros possam se &quot;conectar&quot; a ela. Isso tem o benefício adicional de eliminar a curva de aprendizado dos usuários.
 - Os comandos para módulos desativados não são exibidos.
 
 Este tópico discute a configuração do software Adobe Commerce e Magento Open Source usando a CLI. Para obter informações sobre como instalar o Commerce, consulte [Fluxo de instalação](../../installation/overview.md) no _Guia de instalação_.
@@ -34,13 +34,13 @@ Este tópico discute a configuração do software Adobe Commerce e Magento Open 
 
 Antes de começar a usar a CLI, verifique se:
 
-1. Seu sistema atende aos requisitos discutidos no [Requisitos do sistema](../../installation/system-requirements.md) no _Guia de instalação_.
+1. Seu sistema atende aos requisitos discutidos em [Requisitos do sistema](../../installation/system-requirements.md) no _Guia de instalação_.
 1. Você concluiu todas as tarefas de pré-requisito discutidas em [Pré-requisitos](../../installation/prerequisites/overview.md) no _Guia de instalação_.
-1. Depois de fazer logon no servidor do Commerce, mude para um usuário com permissões para gravar no sistema de arquivos do Commerce. Consulte [mudar para o proprietário do sistema de ficheiros](../../installation/prerequisites/file-system/overview.md) no _Guia de instalação_.
+1. Depois de fazer logon no servidor do Commerce, alterne para um usuário que tenha permissões para gravar no sistema de arquivos do Commerce. Consulte [alternar para o proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md) no _Guia de instalação_.
 
 ## Execução de comandos
 
-Para o shell bash, use a seguinte sintaxe para alternar para o proprietário do sistema de arquivos e inserir o comando ao mesmo tempo:
+Para o shell bash, use a seguinte sintaxe para alternar para o proprietário do sistema de arquivos e insira o comando ao mesmo tempo:
 
 ```bash
 su <file system owner> -s /bin/bash -c <command>
@@ -64,6 +64,6 @@ export PATH=$PATH:/var/www/html/magento2/bin
 
 Como opção, você pode executar o seguinte:
 
-- `cd <magento_root>/bin` e execute-os como `./magento <command name>`
+- `cd <magento_root>/bin` e executá-los como `./magento <command name>`
 - `<magento_root>/bin/magento <command name>`
-- `<magento_root>` é um subdiretório do docroot do servidor da Web
+- `<magento_root>` é um subdiretório do docroot do seu servidor Web

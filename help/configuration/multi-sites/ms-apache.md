@@ -1,50 +1,50 @@
 ---
 title: Configurar vários sites com o Apache
 description: Siga este tutorial para configurar vários sites com o Apache.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 0%
 
 ---
 
-
 # Configurar vários sites com o Apache
 
 Presumimos que:
 
-Se necessário, copie os `index.php` script de ponto de entrada para o site ou exibição de loja e adicione a ele o seguinte:
+Se necessário, copie o existente `index.php` script de ponto de entrada para o site ou exibição de loja e adicione o seguinte a ele:
 
-- Você está trabalhando em uma máquina de desenvolvimento (laptop, máquina virtual e assim por diante)
+- Você está trabalhando em uma máquina de desenvolvimento (laptop, máquina virtual etc.)
 
-   Podem ser necessárias tarefas adicionais para implantar vários sites em um ambiente hospedado; consulte seu provedor de hospedagem para obter mais informações.
+   Tarefas adicionais podem ser necessárias para implantar vários sites em um ambiente hospedado; verifique com seu provedor de hospedagem para obter mais informações.
 
-   Tarefas adicionais são necessárias para configurar o Adobe Commerce na infraestrutura de nuvem. Após concluir as tarefas discutidas neste tópico, consulte [Configurar vários sites da Web ou lojas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) no _Guia do Commerce on Cloud Infrastructure_.
+   Tarefas adicionais são necessárias para configurar a Adobe Commerce na infraestrutura em nuvem. Após concluir as tarefas discutidas neste tópico, consulte [Configurar vários sites ou lojas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) no _Guia do Commerce na infraestrutura em nuvem_.
 
 - Você usa um host virtual por site; o arquivo de configuração do host virtual é `/etc/httpd/httpd.conf`
 
-   Diferentes versões do Apache em diferentes sistemas operacionais configuram hosts virtuais de forma diferente. Consulte o [Documentação do Apache](https://httpd.apache.org/docs/2.4/vhosts) ou um administrador de rede, caso não tenha certeza de como configurar um host virtual.
+   Diferentes versões do Apache em diferentes sistemas operacionais configuram hosts virtuais de forma diferente. Consulte o [Documentação do Apache](https://httpd.apache.org/docs/2.4/vhosts) ou um administrador de rede se não tiver certeza de como configurar um host virtual.
 
-- O software Commerce está instalado em `/var/www/html/magento2`
+- O software Commerce é instalado em `/var/www/html/magento2`
 - Você tem dois sites diferentes do padrão:
 
-   - `french.mysite.mg` com código de site `french` e armazenar código de exibição `fr`
-   - `german.mysite.mg` com código de site `german` e armazenar código de exibição `de`
+   - `french.mysite.mg` com código de site `french` e código de exibição de loja `fr`
+   - `german.mysite.mg` com código de site `german` e código de exibição de loja `de`
 
 ## Roteiro para configurar vários sites com o Apache
 
-Configurar vários armazenamentos consiste nas seguintes tarefas:
+A configuração de vários armazenamentos consiste nas seguintes tarefas:
 
 1. [Configurar sites, lojas e visualizações de loja](ms-admin.md) em Admin.
-1. Criar um [Host virtual do Apache](#step-2-create-apache-virtual-hosts) por site do Commerce.
+1. Criar um [Host virtual Apache](#step-2-create-apache-virtual-hosts) por site do Commerce.
 
-## Etapa 1: Criar sites, lojas e visualizações de loja no Administrador
+## Etapa 1: criar sites, lojas e visualizações de loja no Administrador
 
 Consulte [Configurar vários sites, lojas e visualizações de loja no Administrador](ms-admin.md).
 
-## Etapa 2: Criar hosts virtuais Apache
+## Etapa 2: Criar hosts virtuais do Apache
 
-Esta seção discute como definir valores para `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` uso da variável do servidor Apache `SetEnvIf` em um host virtual.
+Esta seção discute como definir valores para `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` uso da variável de servidor Apache `SetEnvIf` em um host virtual.
 
 Para obter mais informações sobre `SetEnvIf`, consulte:
 
@@ -53,9 +53,9 @@ Para obter mais informações sobre `SetEnvIf`, consulte:
 
 **Para criar hosts virtuais Apache**:
 
-1. Como um usuário com `root` , abra o arquivo de configuração do host virtual em um editor de texto.
+1. Como usuário com `root` privilégios, abra o arquivo de configuração do host virtual em um editor de texto.
 
-   Por exemplo, abra `/etc/httpd/conf/httpd.conf`
+   Por exemplo, abrir `/etc/httpd/conf/httpd.conf`
 
 1. Localize a seção que começa com `<VirtualHost *:80>`.
 1. Crie os seguintes hosts virtuais após qualquer host virtual existente:
@@ -81,25 +81,25 @@ Para obter mais informações sobre `SetEnvIf`, consulte:
    </VirtualHost>
    ```
 
-1. Salve as alterações em `httpd.conf` e saia do editor de texto.
-1. Reinicie o Apache:
+1. Salvar as alterações em `httpd.conf` e saia do editor de texto.
+1. Reiniciar o Apache:
 
    - CentOS: `service httpd restart`
    - Ubuntu: `service apache2 restart`
 
-## Verificar o site
+## Verifique seu site
 
-A menos que você tenha o DNS configurado para os URLs das suas lojas, é necessário adicionar uma rota estática ao host em seu `hosts` arquivo:
+A menos que tenha o DNS configurado para os URLs dos armazenamentos, você deve adicionar uma rota estática ao host em seu `hosts` arquivo:
 
 1. Localize seu sistema operacional `hosts` arquivo.
-1. Adicione a rota estática no formato :
+1. Adicione a rota estática no formato:
 
    ```conf
    <ip-address> french.mysite.mg
    <ip-address> german.mysite.mg
    ```
 
-1. Vá para um dos seguintes URLs em seu navegador:
+1. Vá para um dos seguintes URLs no seu navegador:
 
    ```http
    http://mysite.mg/admin
@@ -109,12 +109,12 @@ A menos que você tenha o DNS configurado para os URLs das suas lojas, é necess
 
 >[!INFO]
 >
->- Podem ser necessárias tarefas adicionais para implantar vários sites em um ambiente hospedado; consulte seu provedor de hospedagem para obter mais informações.
->- Tarefas adicionais são necessárias para configurar o Adobe Commerce na infraestrutura em nuvem; see [Configurar vários sites da nuvem ou armazenamentos](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) no _Guia do Commerce on Cloud Infrastructure_.
+>- Tarefas adicionais podem ser necessárias para implantar vários sites em um ambiente hospedado; verifique com seu provedor de hospedagem para obter mais informações.
+>- Tarefas adicionais são necessárias para configurar o Adobe Commerce na infraestrutura em nuvem; consulte [Configurar vários sites ou lojas na nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) no _Guia do Commerce na infraestrutura em nuvem_.
 
 
 ### Solução de problemas
 
-- Se seus sites em francês e alemão retornarem 404s, mas seu administrador carregar, certifique-se de concluir [Etapa 6: Adicionar o código de armazenamento ao URL base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
-- Se todos os URLs retornarem 404s, certifique-se de reiniciar seu servidor da Web.
-- Se o Administrador não funcionar corretamente, certifique-se de configurar seus hosts virtuais corretamente.
+- Se os sites em francês e alemão retornarem o 404s, mas o administrador carregar, verifique se você concluiu [Etapa 6: adicionar o código de armazenamento ao URL base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Se todos os URLs retornarem 404s, reinicie o servidor da Web.
+- Se o Admin não funcionar corretamente, certifique-se de configurar os hosts virtuais corretamente.

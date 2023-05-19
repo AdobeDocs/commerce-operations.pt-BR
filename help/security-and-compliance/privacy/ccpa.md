@@ -1,52 +1,52 @@
 ---
 title: Lei de Privacidade do Consumidor da Califórnia (CCPA)
-description: Saiba mais sobre a California Consumer Privacy Act (CCPA), que expande os direitos dos consumidores da Califórnia para determinar como suas informações pessoais são coletadas, armazenadas e usadas.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+description: Saiba mais sobre a California Consumer Privacy Act (CCPA), que amplia os direitos dos consumidores na Califórnia para determinar como suas informações pessoais são coletadas, armazenadas e usadas.
+exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
-
 # Lei de Privacidade do Consumidor da Califórnia (CCPA)
 
 >[!NOTE]
 >
->Este é um tópico em uma série de tópicos para ajudar os comerciantes e desenvolvedores de Magento Open Source e Adobe Commerce a compreender as implicações da California Consumer Privacy Act (CCPA). As informações destinam-se apenas a fins informativos e não devem ser interpretadas como aconselhamento jurídico. Consulte seu departamento jurídico para determinar se e como sua empresa deve cumprir quaisquer obrigações legais.
+>Este é um tópico de uma série para ajudar os comerciantes e desenvolvedores da Adobe Commerce e do Magento Open Source a compreender as implicações da California Consumer Privacy Act (CCPA). As informações destinam-se apenas a fins informativos e não devem ser interpretadas como aconselhamento jurídico. Consulte seu advogado para determinar se e como sua empresa deve cumprir quaisquer obrigações legais.
 
-O [CCPA](https://oag.ca.gov/privacy/ccpa) amplia os direitos dos consumidores da Califórnia para determinar como suas informações pessoais são coletadas, armazenadas e usadas, com ênfase na proteção dos consumidores da venda ou troca não autorizadas ou de suas informações pessoais. A CCPA foi aprovada em 2018 e entrará em vigor em 1º de janeiro de 2020.
+A variável [CCPA](https://oag.ca.gov/privacy/ccpa) A amplia os direitos dos consumidores na Califórnia para determinar como suas informações pessoais são coletadas, armazenadas e usadas, com ênfase na proteção dos consumidores contra a venda ou troca não autorizadas ou suas informações pessoais. A CCPA foi promulgada em 2018 e entrou em vigor em 1º de janeiro de 2020.
 
 A CCPA concede os seguintes novos direitos aos consumidores:
 
-- **Direito de saber** as categorias de informações pessoais sobre elas que foram coletadas, usadas, compartilhadas ou vendidas nos últimos 12 meses.
-- **Direito de exclusão** certos tipos de informações pessoais na posse de uma empresa e/ou dos seus prestadores de serviços.
+- **Direito de saber** as categorias de informações pessoais sobre eles coletadas, usadas, compartilhadas ou vendidas nos últimos 12 meses.
+- **Direito de exclusão** determinados tipos de informações pessoais detidas por uma empresa e/ou seus provedores de serviços.
 - **Direito de não participação** da venda das suas informações pessoais.
-- **Direito à não discriminação** em termos de preço ou de serviço por ter exercido um direito de privacidade ao abrigo da CCPA.
+- **Direito à não discriminação** em termos de preço ou serviço por ter exercido um direito de privacidade nos termos da CCPA.
 
 ## Conformidade com a CCPA
 
-O desenvolvimento e a implementação de um plano de conformidade da CCPA requer um esforço coordenado. Incentivamos os comerciantes a montar uma equipe multifuncional e a seguir o roteiro descrito em [Guia de conformidade com a CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) para que a sua empresa cumpra o regulamento. Como desenvolvedor, você pode ser convidado a participar como parte interessada, com ênfase nas etapas 2 a 5 do processo. Consulte a [Guia de conformidade com a CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) para obter mais informações.
+O desenvolvimento e a implementação de um plano de conformidade com a CCPA exigem um esforço coordenado. Recomendamos que os comerciantes montem uma equipe multifuncional e sigam o roteiro descrito em [Guia de conformidade da CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) a sua empresa em conformidade com o regulamento. Como desenvolvedor, você pode ser convidado a participar como parte interessada, com ênfase nas etapas de 2 a 5 do processo. Consulte a [Guia de conformidade da CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) para obter mais informações.
 
-1. Monte uma equipe multifuncional para atender à conformidade com a CCPA.
+1. Montar uma equipe multifuncional para abordar a conformidade com a CCPA.
 
 1. **Faça o inventário das propriedades digitais.**
 
 1. **Mapeie a jornada do cliente e os processos de coleta de dados.**
 
-1. **Estabelecer procedimentos e mecanismos para responder às solicitações dos clientes.**
+1. **Estabeleça procedimentos e mecanismos para responder às solicitações do cliente.**
 
-1. **Escreva o conteúdo para as notificações necessárias do cliente da CCPA.**
+1. **Grave o conteúdo para as notificações de clientes da CCPA necessárias.**
 
-1. Revise contratos com provedores de serviços.
+1. Analisar contratos com provedores de serviços.
 
 1. Atualize a política de privacidade.
 
-1. Documente todos os procedimentos relacionados à CCPA e mantenha registros.
+1. Documentar todos os procedimentos relacionados à CCPA e manter registros.
 
 ## Referência de informações pessoais
 
-Para obter informações técnicas, consulte os diagramas de fluxo de dados e os mapeamentos de entidade de banco de dados na Referência de informações pessoais que se aplica a cada versão do Adobe Commerce ou do Magento Open Source compatível.
+Para obter informações técnicas, consulte os diagramas de fluxo de dados e os mapeamentos de entidade de banco de dados na Referência de informações pessoais que se aplica a cada versão do Adobe Commerce ou Magento Open Source que você aceita.
 
 - [Referência de informações pessoais do cliente (versão 2.x)](data-m2.md)
-- [Referência de informações pessoais do cliente (versão) 1.x](data-m1.md)
+- [Referência de informações pessoais do cliente (versão) 1.x)](data-m1.md)

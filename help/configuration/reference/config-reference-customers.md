@@ -1,232 +1,232 @@
 ---
 title: Referência de caminhos de configuração de clientes
 description: Consulte uma lista de valores de configuração de clientes.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
 
-
 # Referência de caminhos de configuração de clientes
 
-Esta seção lista os nomes das variáveis e os caminhos de configuração disponíveis para as opções em Admin em **Lojas** > Configurações > **Configuração** > **Clientes**.
+Esta seção lista nomes de variáveis e caminhos de configuração disponíveis para opções no Administrador, em **Lojas** > Configurações > **Configuração** > **Clientes**.
 
-O [`magento app:config:dump` comando](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem. Como opção, para substituir qualquer configuração ou definir configurações confidenciais, consulte [Usar variáveis de ambiente para substituir configurações](override-config-settings.md#environment-variables). Este tópico faz _not_ lista [valores sensíveis e específicos do sistema](config-reference-sens.md).
+A variável [`magento app:config:dump` comando](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem. Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir as definições de configuração](override-config-settings.md#environment-variables). Este tópico não _não_ lista [valores confidenciais e específicos do sistema](config-reference-sens.md).
 
-## Caminhos de boletim informativo
+## Caminhos do informativo
 
-Esses valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Informativo**.
+Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Informativo**.
 
 | Nome | Caminho de configuração | Somente comércio? |
 |--------------|--------------|--------------|
-| Permitir assinatura de convidado | `newsletter/subscription/allow_guest_subscribe` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Precisa confirmar | `newsletter/subscription/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente de email de confirmação | `newsletter/subscription/confirm_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Modelo de email de confirmação | `newsletter/subscription/confirm_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente de email bem-sucedido | `newsletter/subscription/success_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Modelo de email bem-sucedido | `newsletter/subscription/success_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente de email de cancelamento de assinatura | `newsletter/subscription/un_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Cancelar assinatura do modelo de email | `newsletter/subscription/un_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Permitir Assinatura de Convidado | `newsletter/subscription/allow_guest_subscribe` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| É necessário confirmar | `newsletter/subscription/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do e-mail de confirmação | `newsletter/subscription/confirm_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modelo de e-mail de confirmação | `newsletter/subscription/confirm_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do email de sucesso | `newsletter/subscription/success_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modelo de e-mail de sucesso | `newsletter/subscription/success_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Cancelar assinatura do remetente de email | `newsletter/subscription/un_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modelo de email de cancelamento de assinatura | `newsletter/subscription/un_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Caminhos de configuração do cliente
 
-Esses valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Configuração do cliente**.
+Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Configuração do cliente**.
 
 | Nome | Caminho de configuração | Somente comércio? |
 |--------------|--------------|--------------|
 | Intervalo de Minutos Online | `customer/online_customers/online_minutes_interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Compartilhar contas de cliente | `customer/account_share/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ativar Atribuição Automática ao Grupo de Clientes | `customer/create_account/auto_group_assign` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Cálculo De Imposto Baseado Em | `customer/create_account/tax_calculation_address_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Compartilhar contas de clientes | `customer/account_share/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Habilitar Atribuição Automática ao Grupo de Clientes | `customer/create_account/auto_group_assign` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Cálculo de Imposto Baseado em | `customer/create_account/tax_calculation_address_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Grupo padrão | `customer/create_account/default_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Grupo para ID de IVA Válido - Nacional | `customer/create_account/viv_domestic_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Grupo para ID de IVA Válido - IntraUnião | `customer/create_account/viv_intra_union_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Grupo para ID de IVA Inválido | `customer/create_account/viv_invalid_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Grupo de Erros de Validação | `customer/create_account/viv_error_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Validar em cada transação | `customer/create_account/viv_on_each_transaction` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Valor Padrão para Desativar Alterações Automáticas de Grupo Baseadas em ID de IVA | `customer/create_account/viv_disable_auto_group_assign_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Mostrar Número de IVA na Loja | `customer/create_account/vat_frontend_visibility` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Grupo para ID de IVA válida - Doméstico | `customer/create_account/viv_domestic_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Grupo para ID de IVA válida - IntraUnion | `customer/create_account/viv_intra_union_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Grupo para ID de IVA inválida | `customer/create_account/viv_invalid_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Grupo de erros de validação | `customer/create_account/viv_error_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Validar em Cada Transação | `customer/create_account/viv_on_each_transaction` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Valor Padrão para Desabilitar Alterações Automáticas do Grupo com Base na ID de IVA | `customer/create_account/viv_disable_auto_group_assign_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Mostrar número IVA na vitrine eletrônica | `customer/create_account/vat_frontend_visibility` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Email de boas-vindas padrão | `customer/create_account/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Email de boas-vindas padrão sem senha | `customer/create_account/email_no_password_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente de email | `customer/create_account/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Solicitar confirmação de emails | `customer/create_account/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Email do link de confirmação | `customer/create_account/email_confirmation_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Email De Boas-Vindas Padrão Sem Senha | `customer/create_account/email_no_password_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do e-mail | `customer/create_account/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Exigir confirmação de e-mails | `customer/create_account/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| E-mail do link de confirmação | `customer/create_account/email_confirmation_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Email de boas-vindas | `customer/create_account/email_confirmed_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Gerar ID de cliente compatível com o ser humano | `customer/create_account/generate_human_friendly_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Tipo de Proteção de Redefinição de Senha | `customer/password/password_reset_protection_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Número Máximo de Solicitações de Redefinição de Senha | `customer/password/max_number_password_reset_requests` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Gerar ID do cliente compatível com humanos | `customer/create_account/generate_human_friendly_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Tipo de Proteção contra Redefinição de Senha | `customer/password/password_reset_protection_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Número máximo de solicitações de redefinição de senha | `customer/password/max_number_password_reset_requests` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Tempo Mínimo Entre Solicitações De Redefinição De Senha | `customer/password/min_time_between_password_reset_requests` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Esqueceu o modelo de email | `customer/password/forgot_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Lembrar modelo de email | `customer/password/remind_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Redefinir Modelo de Senha | `customer/password/reset_password_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Esqueceu o modelo de e-mail | `customer/password/forgot_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Lembrar Modelo de Email | `customer/password/remind_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Redefinir modelo de senha | `customer/password/reset_password_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Remetente de email do modelo de senha | `customer/password/forgot_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Período de Expiração do Link de Recuperação (horas) | `customer/password/reset_link_expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Habilitar Preenchimento Automático no login/Esqueceu os formulários de senha | `customer/password/autocomplete_on_storefront` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Número de classes de caracteres obrigatórias | `customer/password/required_character_classes_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Período de expiração do link de recuperação (horas) | `customer/password/reset_link_expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Habilitar preenchimento automático em formulários de senha de logon/esquecimento | `customer/password/autocomplete_on_storefront` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Número de classes de caracteres necessárias | `customer/password/required_character_classes_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Máximo de Falhas de Logon para Bloquear Conta | `customer/password/lockout_failures` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Tamanho mínimo da senha | `customer/password/minimum_password_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Comprimento mínimo da senha | `customer/password/minimum_password_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Tempo de Bloqueio (minutos) | `customer/password/lockout_threshold` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Número de linhas em um endereço de rua | `customer/address/street_lines` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Número de linhas em um endereço | `customer/address/street_lines` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar prefixo | `customer/address/prefix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Opções de lista suspensa de prefixos | `customer/address/prefix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Opções da lista suspensa Prefixo | `customer/address/prefix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar nome do meio (inicial) | `customer/address/middlename_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Mostrar sufixo | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Opções Suspensas de Sufixo | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Mostrar data de nascimento | `customer/address/dob_show`<br>Ao manter as práticas recomendadas atuais de segurança e privacidade, esteja ciente de possíveis riscos legais e de segurança associados ao armazenamento da data de nascimento completa dos clientes (mês, dia, ano) juntamente com outros identificadores pessoais, como o nome completo, antes de coletar ou processar esses dados. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Mostrar número de imposto/IVA | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Mostrar gênero | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Habilitar funcionalidade de crédito de armazenamento | `customer/magento_customerbalance/is_enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Mostrar Histórico de Crédito da Loja aos Clientes | `customer/magento_customerbalance/show_history` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Crédito do Repositório de Restituições Automaticamente | `customer/magento_customerbalance/refund_automatically` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Mostrar Sufixo | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Opções da lista suspensa Sufixo | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Mostrar data de nascimento | `customer/address/dob_show`<br>Ao manter as práticas recomendadas atuais de segurança e privacidade, esteja ciente de possíveis riscos legais e de segurança associados ao armazenamento da data de nascimento completa do cliente (mês, dia, ano) juntamente com outros identificadores pessoais, como nome completo, antes de coletar ou processar esses dados. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Mostrar Número de Imposto/IVA | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Mostrar Sexo | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Habilitar a Funcionalidade de Crédito da Loja | `customer/magento_customerbalance/is_enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Mostrar Histórico de Crédito da Loja para Clientes | `customer/magento_customerbalance/show_history` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Reembolsar Crédito da Loja Automaticamente | `customer/magento_customerbalance/refund_automatically` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 | Remetente de Email de Atualização de Crédito da Loja | `customer/magento_customerbalance/email_identity` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Modelo de Email de Atualização de Crédito da Loja | `customer/magento_customerbalance/email_template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Redirecionar cliente para o painel de conta após fazer logon | `customer/startup/redirect_dashboard` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modelo de email de atualização de crédito da loja | `customer/magento_customerbalance/email_template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Redirecionar cliente para o painel da conta após fazer logon | `customer/startup/redirect_dashboard` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Texto | `customer/address_templates/text` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Texto Uma Linha | `customer/address_templates/oneline` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Texto em uma linha | `customer/address_templates/oneline` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | HTML | `customer/address_templates/html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PDF | `customer/address_templates/pdf` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ativar a funcionalidade de segmento do cliente | `customer/magento_customersegment/is_enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Ativar CAPTCHA na vitrine | `customer/captcha/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Habilitar CAPTCHA na loja | `customer/captcha/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Fonte | `customer/captcha/font` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Forms | `customer/captcha/forms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modo de exibição | `customer/captcha/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Número de Tentativas de Logon sem Êxito | `customer/captcha/failed_attempts_login` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Tempo limite do CAPTCHA (minutos) | `customer/captcha/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Número de tentativas de logon malsucedidas | `customer/captcha/failed_attempts_login` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Tempo Limite de CAPTCHA (minutos) | `customer/captcha/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Número de símbolos | `customer/captcha/length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Símbolos usados em CAPTCHA | `customer/captcha/symbols` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Diferenciação de maiúsculas e minúsculas | `customer/captcha/case_sensitive` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Caminhos de lista de desejos
+## Caminhos da lista de desejos
 
-Esses valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Lista de desejos**.
+Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Lista de desejos**.
 
 | Nome | Caminho de configuração | Somente comércio? |
 |--------------|--------------|--------------|
 | Ativado | `wishlist/general/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Habilitar várias listas de desejos | `wishlist/general/multiple_enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Número de Várias Listas de Desejos | `wishlist/general/multiple_wishlist_number` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Remetente de email | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Modelo de email | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Ativar várias listas de desejos | `wishlist/general/multiple_enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Número de várias listas de desejos | `wishlist/general/multiple_wishlist_number` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Remetente do e-mail | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modelo de e-mail | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Máximo de emails permitidos para envio | `wishlist/email/number_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Limite de comprimento do texto do email | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Exibir Resumo de Listas de Desejo | `wishlist/wishlist_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Exibir resumo das listas de desejos | `wishlist/wishlist_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Caminhos de convites
+## Caminhos dos convites
 
-Esses valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Convites**.
+Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Convites**.
 
 | Nome | Caminho de configuração | Somente comércio? |
 |--------------|--------------|--------------|
-| Ativar funcionalidade de convites | `magento_invitation/general/enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Ativar convites na vitrine | `magento_invitation/general/enabled_on_front` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Grupo de clientes referenciados | `magento_invitation/general/registration_use_inviter_group` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Novo Registro de Contas | `magento_invitation/general/registration_required_invitation` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Permitir que os clientes adicionem mensagens personalizadas ao email de convite | `magento_invitation/general/allow_customer_message` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Máximo de convites permitidos para serem enviados ao mesmo tempo | `magento_invitation/general/max_invitation_amount_per_send` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Remetente de email de convite do cliente | `magento_invitation/email/identity` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Modelo de Email de Convite do Cliente | `magento_invitation/email/template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Ativar a funcionalidade de convites | `magento_invitation/general/enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Habilitar Convites na Loja | `magento_invitation/general/enabled_on_front` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Grupo de Clientes Referenciado | `magento_invitation/general/registration_use_inviter_group` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Registro de novas contas | `magento_invitation/general/registration_required_invitation` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Permitir que os clientes adicionem uma mensagem personalizada ao email de convite | `magento_invitation/general/allow_customer_message` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Número máximo de convites permitidos para envio único | `magento_invitation/general/max_invitation_amount_per_send` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Remetente do Email de Convite do Cliente | `magento_invitation/email/identity` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Modelo de e-mail de convite do cliente | `magento_invitation/email/template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Caminhos de pontos de redirecionamento
+## Caminhos de pontos de premiação
 
-Esses valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Pontos de premiação**.
+Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Pontos de recompensa**.
 
 | Nome | Caminho de configuração | Somente comércio? |
 |--------------|--------------|--------------|
 | Ativar a funcionalidade de pontos de recompensa | `magento_reward/general/is_enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Ativar a funcionalidade de pontos de recompensa na vitrine | `magento_reward/general/is_enabled_on_front` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Os Clientes Podem Ver O Histórico De Pontos De Recompensa | `magento_reward/general/publish_history` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Pontos de Recompensa Limite de Restituição de Saldo | `magento_reward/general/min_points_balance` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Equilíbrio de Pontos de Retorno de Cap a | `magento_reward/general/max_points_balance` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Pontos de recompensa expiram em (dias) | `magento_reward/general/expiration_days` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Cálculo de Expiração de Pontos de Recompensa | `magento_reward/general/expiry_calculation` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Reembolsar Pontos de Reembolso Automaticamente | `magento_reward/general/refund_automatically` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Deduzir Pontos de Recompensa da Quantia de Reembolso Automaticamente | `magento_reward/general/deduct_automatically` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Página de aterrissagem | `magento_reward/general/landing_page` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Compra | `magento_reward/points/order` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Ativar a funcionalidade de pontos de recompensa na loja | `magento_reward/general/is_enabled_on_front` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Clientes podem ver o histórico de pontos de recompensa | `magento_reward/general/publish_history` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Limite de Resgate de Saldo de Pontos de Recompensa | `magento_reward/general/min_points_balance` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Limitar Saldo De Pontos De Recompensa Em | `magento_reward/general/max_points_balance` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Pontos de premiação expiram em (dias) | `magento_reward/general/expiration_days` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Cálculo da expiração dos pontos de premiação | `magento_reward/general/expiry_calculation` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Reembolsar pontos de recompensa automaticamente | `magento_reward/general/refund_automatically` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Deduzir automaticamente os pontos de premiação do valor do reembolso | `magento_reward/general/deduct_automatically` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Landing Page | `magento_reward/general/landing_page` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Comprar | `magento_reward/points/order` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 | Registro | `magento_reward/points/register` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Inscrição em boletim informativo | `magento_reward/points/newsletter` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Convertendo Convite para Cliente | `magento_reward/points/invitation_customer` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Inscrição no informativo | `magento_reward/points/newsletter` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Convertendo convite para cliente | `magento_reward/points/invitation_customer` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 | Limite de Quantidade de Conversões de Convite para Cliente | `magento_reward/points/invitation_customer_limit` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Convertendo Convite em Ordem | `magento_reward/points/invitation_order` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Convertendo convite em pedido | `magento_reward/points/invitation_order` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 | Limite de Quantidade de Conversões de Convite para Ordem | `magento_reward/points/invitation_order_limit` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Conversão de Convite para Reembolso de Pedidos | `magento_reward/points/invitation_order_frequency` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Rever Envio | `magento_reward/points/review` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Respostas Recomendadas Limite de Quantidade de Envio | `magento_reward/points/review_limit` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Remetente de email | `magento_reward/notification/email_sender` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Assinar clientes por padrão | `magento_reward/notification/subscribe_by_default` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Email de Atualização do Saldo | `magento_reward/notification/balance_update_template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| E-mail de aviso de expiração de pontos de recompensa | `magento_reward/notification/expiry_warning_template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Aviso de expiração antes (dias) | `magento_reward/notification/expiry_day_before` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Conversão de convite para recompensa de pedido | `magento_reward/points/invitation_order_frequency` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Revisar envio | `magento_reward/points/review` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Limite de Quantidade de Envio de Revisões Premiadas | `magento_reward/points/review_limit` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Remetente do e-mail | `magento_reward/notification/email_sender` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Assinar Clientes por Padrão | `magento_reward/notification/subscribe_by_default` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| E-mail de atualização de saldo | `magento_reward/notification/balance_update_template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Email de aviso de expiração de pontos de premiação | `magento_reward/notification/expiry_warning_template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Aviso de Expiração Antes de (dias) | `magento_reward/notification/expiry_day_before` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Caminhos de promoções
 
-Esses valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Promoções**.
+Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Promoções**.
 
 | Nome | Caminho de configuração | Somente comércio? |
 |--------------|--------------|--------------|
-| Ativar Emails de Lembrete | `promo/magento_reminder/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Ativar emails de lembrete | `promo/magento_reminder/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Frequência | `promo/magento_reminder/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Intervalo | `promo/magento_reminder/interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Interval | `promo/magento_reminder/interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Minuto da hora | `promo/magento_reminder/minutes` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 | Hora de início | `promo/magento_reminder/time` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Máximo de Emails por Uma Execução | `promo/magento_reminder/limit` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Limite de Falha de Envio de Email | `promo/magento_reminder/threshold` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Remetente de email do lembrete | `promo/magento_reminder/identity` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Tamanho do código | `promo/auto_generated_coupon_codes/length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Formato de código | `promo/auto_generated_coupon_codes/format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Prefixo de código | `promo/auto_generated_coupon_codes/prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Sufixo de código | `promo/auto_generated_coupon_codes/suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Traçar Cada X Caracteres | `promo/auto_generated_coupon_codes/dash` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Máximo de emails por execução | `promo/magento_reminder/limit` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Limite de falha de envio de email | `promo/magento_reminder/threshold` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Lembrete de remetente de email | `promo/magento_reminder/identity` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Comprimento do código | `promo/auto_generated_coupon_codes/length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Formato do código | `promo/auto_generated_coupon_codes/format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Prefixo do código | `promo/auto_generated_coupon_codes/prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Sufixo do código | `promo/auto_generated_coupon_codes/suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Traço a cada X caracteres | `promo/auto_generated_coupon_codes/dash` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Caminhos de registro de presente
+## Caminhos do Registro de presentes
 
-Esses valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Registro do Presente**.
+Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Registro de presentes**.
 
 | Nome | Caminho de configuração | Somente comércio? |
 |--------------|--------------|--------------|
-| Habilitar Registro de Presente | `magento_giftregistry/general/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Máximo de Registros | `magento_giftregistry/general/max_registrant` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Modelo de email | `magento_giftregistry/owner_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente de email | `magento_giftregistry/owner_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Modelo de email | `magento_giftregistry/sharing_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente de email | `magento_giftregistry/sharing_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Ativar Registro de presentes | `magento_giftregistry/general/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Máximo de inscritos | `magento_giftregistry/general/max_registrant` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modelo de e-mail | `magento_giftregistry/owner_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do e-mail | `magento_giftregistry/owner_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modelo de e-mail | `magento_giftregistry/sharing_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do e-mail | `magento_giftregistry/sharing_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Limite máximo de emails enviados | `magento_giftregistry/sharing_email/send_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Modelo de email | `magento_giftregistry/update_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente de email | `magento_giftregistry/update_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Modelo de e-mail | `magento_giftregistry/update_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do e-mail | `magento_giftregistry/update_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-## Caminhos persistentes do carrinho de compras
+## Caminhos do carrinho de compras persistentes
 
-Esses valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Carrinho de compras persistente**.
+Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Carrinho de compras persistente**.
 
 | Nome | Caminho de configuração | Somente comércio? |
 |--------------|--------------|--------------|
 | Ativar persistência | `persistent/options/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Duração da persistência (segundos) | `persistent/options/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ativar &quot;Lembre-se de mim&quot; | `persistent/options/remember_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Valor padrão &quot;Lembrar-me&quot; | `persistent/options/remember_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Limpar persistência ao sair | `persistent/options/logout_clear` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Manter carrinho de compras | `persistent/options/shopping_cart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Manter Lista de Desejos | `persistent/options/wishlist` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Manter itens pedidos recentemente | `persistent/options/recently_ordered` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Persistir Produtos Comparados Atualmente | `persistent/options/compare_current` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Histórico de comparação persistente | `persistent/options/compare_history` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Valor padrão &quot;Lembre-se de mim&quot; | `persistent/options/remember_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Limpar Persistência ao Sair | `persistent/options/logout_clear` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Persistir carrinho de compras | `persistent/options/shopping_cart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Lista de desejos persistente | `persistent/options/wishlist` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Manter itens solicitados recentemente | `persistent/options/recently_ordered` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Persistir Produtos Atualmente Comparados | `persistent/options/compare_current` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Histórico de Comparação de Persistência | `persistent/options/compare_history` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Manter produtos visualizados recentemente | `persistent/options/recently_viewed` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Persistir associação e segmentação do grupo de clientes | `persistent/options/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Persistência da associação e da segmentação do grupo do cliente | `persistent/options/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

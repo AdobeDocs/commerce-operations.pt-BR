@@ -1,13 +1,13 @@
 ---
 title: Versões Beta
 description: Saiba mais sobre as versões beta do Adobe Commerce e como participar.
-source-git-commit: 1ce0ff87291c5c3f0fd130aa351bc975f42501e3
+exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
 
 ---
-
 
 # Versões beta do Adobe Commerce
 

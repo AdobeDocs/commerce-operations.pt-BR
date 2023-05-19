@@ -1,17 +1,17 @@
 ---
 title: Comandos comuns
-description: Visualize uma amostra de comandos e uso comuns da CLI do Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+description: Exibir uma amostra de comandos e uso comuns da CLI do Commerce.
+exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
 
-
 # Comandos comuns
 
-O seguinte resume alguns dos comandos disponíveis.
+Veja a seguir um resumo de alguns dos comandos disponíveis.
 
 **Para exibir uma lista completa de comandos**:
 
@@ -29,36 +29,36 @@ bin/magento help <command>
 bin/magento help cache:enable
 ```
 
-Os comandos são mostrados apenas na forma de resumo; para obter mais informações sobre um comando, clique no link na coluna Comando .
+Os comandos são exibidos somente na forma de resumo; para obter mais informações sobre um comando, clique no link na coluna Comando.
 
 | Comando | Descrição |
 |--- |--- |
 | [`magento cache:{enable/disable/clean/flush/status}`](../cli/manage-cache.md) | Gerencia o cache |
 | [`magento indexer:{status/show-mode/set-mode/reindex/info/reset/show-dimensions-mode/set-dimensions-mode}`](../cli/manage-indexers.md) | Gerencia os indexadores |
-| [`magento cron:run`](../cli/configure-cron-jobs.md) | Executa trabalhos de cron do Commerce |
-| [`magento setup:di:compile`](../cli/code-compiler.md) | Compila todos os proxies e fábricas inexistentes; O e pré-compila definições de classe, informações de herança e definições de plug-in para uma loja e site. |
-| [`magento info:dependencies:{show-modules/show-modules-circular/show-framework}`](../cli/dependency-reports.md) | Dependências do módulo, dependências circulares e dependências da estrutura do Commerce. |
+| [`magento cron:run`](../cli/configure-cron-jobs.md) | Executa trabalhos Commerce cron |
+| [`magento setup:di:compile`](../cli/code-compiler.md) | Compila todos os proxies e fábricas não existentes e pré-compila definições de classe, informações de herança e definições de plug-in para uma loja e um site. |
+| [`magento info:dependencies:{show-modules/show-modules-circular/show-framework}`](../cli/dependency-reports.md) | Dependências de módulo, dependências circulares e dependências de estrutura de comércio. |
 | [`magento i18n:{collect-phrases/pack/uninstall}`](../cli/localization.md) | Cria um dicionário de tradução ou um pacote de tradução |
 | [`magento setup:static-content:deploy`](../cli/static-view-file-deployment.md) | Implanta arquivos de visualização estáticos |
-| [`magento dev:source-theme:deploy`](../cli/create-symlinks.md) | Cria CSS de MENOS |
-| [`magento dev:tests:run`](../cli/unit-tests.md) | Executa testes automatizados |
+| [`magento dev:source-theme:deploy`](../cli/create-symlinks.md) | Cria CSS a partir de MENOS |
+| [`magento dev:tests:run`](../cli/unit-tests.md) | Executa testes automáticos |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | Atualize seus arquivos XML de layout para corresponder à nova folha de estilos XSLT (Extensible Stylesheet Language Transformations) |
-| [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | Gere dados para usar em testes de desempenho. |
-| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Instala os dados de amostra opcionais após a instalação do aplicativo Commerce.<br><br>Para obter mais detalhes sobre dados de amostra, consulte [Dados de amostra opcionais](../../installation/sample-data/overview.md). |
-| [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Gerencia configurações de back-end |
+| [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | Gerar dados para usar em testes de desempenho. |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Instala dados de amostra opcionais após a instalação do aplicativo Commerce.<br><br>Para obter mais detalhes sobre dados de amostra, consulte [Dados de amostra opcionais](../../installation/sample-data/overview.md). |
+| [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Gerencia configurações de backend |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Cria/edita/desbloqueia usuários administradores. |
-| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Ativa/desativa as dicas do modelo do desenvolvedor. |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Habilita/desabilita as dicas do modelo de desenvolvedor. |
 
 ## Argumentos comuns
 
-Os argumentos a seguir são comuns a todos os comandos. Esses comandos podem ser executados antes ou depois da instalação do software Commerce:
+Os argumentos a seguir são comuns a todos os comandos. Esses comandos podem ser executados antes ou depois que o software Commerce for instalado:
 
 | Versão longa | Versão curta | Significado |
 |--- |--- |--- |
 | `--help` | `-h` | Obtenha ajuda para qualquer comando. Por exemplo, `./magento help setup:install` ou `./magento help setup:config:set`. |
 | `--quiet` | `-q` | Modo silencioso; sem saída. |
 | `--no-interaction` | `-n` | Sem perguntas interativas. |
-| `--verbose=1,2,3` | `-v, -vv, -vvv` | Nível de verbosidade. Por exemplo, `--verbose=3` ou `-vvv` exibe a verbosidade de depuração, que é a saída mais detalhada. O padrão é `--verbose=1` ou `-v`. |
+| `--verbose=1,2,3` | `-v, -vv, -vvv` | Nível de detalhamento. Por exemplo, `--verbose=3` ou `-vvv` exibe o detalhamento de depuração, que é a saída mais detalhada. O padrão é `--verbose=1` ou `-v`. |
 | `--version` | `-V` | Exibir esta versão do aplicativo |
 | `--ansi` | n/d | Forçar saída ANSI |
-| `--no-ansi` | n/d | Desativar saída ANSI |
+| `--no-ansi` | n/d | Desabilitar saída ANSI |

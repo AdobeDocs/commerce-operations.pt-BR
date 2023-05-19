@@ -1,23 +1,23 @@
 ---
-title: Configurar a fila de mensagens do Amazon
+title: Configurar Fila de Mensagens do Amazon
 description: Saiba como configurar o Commerce para usar o serviço AWS MQ.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
+# Configurar Fila de Mensagens do Amazon
 
-# Configurar a fila de mensagens do Amazon
-
-A partir do Commerce 2.4.3, o Amazon Message Queue (MQ) estará disponível como uma substituição pronta para nuvem para instâncias de fila de mensagens no local.
+A partir do Commerce 2.4.3, o Amazon Message Queue (MQ) está disponível como uma substituição pronta para nuvem para instâncias de fila de mensagens locais.
 
 Para criar uma fila de mensagens no AWS, consulte [Configuração do Amazon MQ](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-setting-up.html) no _Documentação do AWS_.
 
-## Configurar o Commerce para AWS MQ
+## Configurar o Commerce para o AWS MQ
 
-Para se conectar ao serviço AWS MQ, configure a variável `queue.amqp` na `env.php` arquivo.
+Para se conectar ao serviço AWS MQ, configure o `queue.amqp` objeto no `env.php` arquivo.
 A Fila de mensagens do AWS requer uma conexão SSL/TLS.
 
 ```php
@@ -35,17 +35,17 @@ A Fila de mensagens do AWS requer uma conexão SSL/TLS.
 ],
 ```
 
-Em que:
+Onde:
 
-- `host`—O url do ponto de extremidade AMQP; disponível clicando no nome do agente no AWS (remova &quot;https://&quot; e o número da porta à direita)
-- `user`—O valor do nome de usuário inserido ao criar o AWS MQ broker
-- `password`—O valor da senha inserido ao criar o AWS MQ broker
+- `host`—O url para o endpoint AMQP; disponível ao clicar no nome do broker no AWS (remova &quot;https://&quot; e o número da porta à direita)
+- `user`—O valor do nome de usuário inserido ao criar o broker do AWS MQ
+- `password`—O valor de senha inserido ao criar o AWS MQ Broker
 
 >[!INFO]
 >
->O Amazon MQ é compatível somente com conexões TLS. Não há suporte para verificação de mesmo nível.
+>O Amazon MQ oferece suporte somente a conexões TLS. A verificação de mesmo nível não é suportada.
 
-Depois de editar o `env.php` execute o seguinte comando para concluir a configuração:
+Após editar o `env.php` execute o seguinte comando para concluir a configuração:
 
 ```bash
 bin/magento setup:upgrade
@@ -53,9 +53,9 @@ bin/magento setup:upgrade
 
 ## Como o Commerce usa o serviço AWS MQ
 
-O `async.operations.all` o consumidor da fila de mensagens usa a conexão AMQP.
+A variável `async.operations.all` O consumidor da fila de mensagens usa a conexão AMQP.
 
-Esse consumidor encaminha qualquer nome de tópico prefixado com `async` por meio da conexão AWS MQ.
+Esse consumidor encaminha qualquer nome de tópico com o prefixo `async` por meio da conexão AWS MQ.
 
 Por exemplo, em `InventoryCatalog` há:
 
@@ -65,20 +65,20 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-A configuração padrão para `InventoryCatalog` não publica mensagens no [!DNL RabbitMQ]; o comportamento padrão é executar a ação no mesmo thread do usuário. Para dizer `InventoryCatalog` para publicar mensagens, habilite `cataloginventory/bulk_operations/async`. No administrador, acesse **Lojas** > Configuração > **Catálogo** > **Inventário** > Administração de operações em massa e conjunto  `Run asynchronously`para **Sim**.
+A configuração padrão para `InventoryCatalog` não publica mensagens no [!DNL RabbitMQ]; o comportamento padrão é executar a ação no mesmo thread do usuário. Para saber `InventoryCatalog` para publicar mensagens, ative `cataloginventory/bulk_operations/async`. No admin, acesse **Lojas** > Configuração > **Catálogo** > **Inventário** > Administração de operações em massa e definir  `Run asynchronously`para **Sim**.
 
 ## Teste da fila de mensagens
 
-Para testar o envio de mensagens do Commerce para [!DNL RabbitMQ]:
+Para testar o envio de mensagens do Commerce para o [!DNL RabbitMQ]:
 
-1. Faça logon no [!DNL RabbitMQ] console da Web no AWS para monitorar as filas.
-1. No Administrador, crie um produto.
-1. Crie uma fonte de inventário.
-1. Habilitar **Lojas** > Configuração > **Catálogo** > **Inventário** > Operações de administração em massa > Executar de forma assíncrona.
-1. Ir para **Catálogo** > Produtos. Na grade, selecione o produto criado acima e clique em **Atribuir Origem de Inventário**.
+1. Faça logon no [!DNL RabbitMQ] console da web no AWS para monitorar filas.
+1. Em Admin, crie um produto.
+1. Criar uma origem de Inventário.
+1. Ativar **Lojas** > Configuração > **Catálogo** > **Inventário** > Administração de operações em massa > Executar de forma assíncrona.
+1. Ir para **Catálogo** > Produtos. Na grade, selecione o produto criado acima e clique em **Atribuir Origem do Inventário**.
 1. Clique em **Salvar e fechar** para concluir o processo.
 
-   Agora, você deve ver as mensagens serem exibidas no [!DNL RabbitMQ] console da Web.
+   Agora você deverá ver mensagens aparecendo no [!DNL RabbitMQ] console da web.
 
 1. Inicie o `async.operations.all` consumidor da fila de mensagens.
 
@@ -86,5 +86,5 @@ Para testar o envio de mensagens do Commerce para [!DNL RabbitMQ]:
    bin/magento queue:consumers:start async.operations.all
    ```
 
-Agora, você deve ver a mensagem na fila ser processada no [!DNL RabbitMQ] console da Web.
-Verifique se as fontes de inventário foram alteradas no produto em Admin.
+Agora você deve ver a mensagem em fila ser processada no [!DNL RabbitMQ] console da web.
+Verifique se as origens do inventário foram alteradas no produto na Admin.

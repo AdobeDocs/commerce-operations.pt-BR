@@ -1,28 +1,29 @@
 ---
-title: "O [!UICONTROL Deploy] tab"
+title: A variável [!UICONTROL Deploy] guia
 description: Saiba mais sobre o [!UICONTROL Deploy] guia de [!DNL Observation for Adobe Commerce].
-source-git-commit: 27ebd472dc4e81e58b36bf5fac529461beae4be1
+exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
-# O [!UICONTROL Deploy] guia
+# A variável [!UICONTROL Deploy] guia
 
-Esta guia é uma tentativa de isolar rapidamente os problemas e as causas dos problemas de implantação.
+Essa guia é uma tentativa de isolar rapidamente os problemas e as causas dos problemas de implantação.
 
 ## [!UICONTROL Deploy log Deployment Troubleshooter]
 
-![Implantar Solução de problemas de implantação de log](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
+![Solução de Problemas de Implantação de Log](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
 
-O **[!UICONTROL Deploy log Deployment Troubleshooter]** quadro mostra uma contagem de eventos de log de implantação que ocorreram no período selecionado. O objetivo é fornecer uma visualização instantânea da atividade de implantação e determinar a complexidade da implantação pela contagem. Quanto mais mensagens registradas, mais complexa a implantação normalmente é.
+A variável **[!UICONTROL Deploy log Deployment Troubleshooter]** O quadro mostra uma contagem de eventos de log de implantação que ocorreram ao longo do período selecionado. O objetivo é fornecer uma visualização rápida da atividade de implantação e determinar a complexidade da implantação pela contagem. Quanto mais mensagens forem registradas, mais complexa será a implantação normalmente.
 
 ## [!UICONTROL Deploy State]
 
-![Estado de implantação](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
+![Implantar Estado](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
 
-O **[!UICONTROL Deploy State]** quadro mostra os eventos de implantação que ocorreram ao longo do período selecionado. O analisador deste quadro está procurando estes sinais específicos:
+A variável **[!UICONTROL Deploy State]** quadro mostra os eventos de implantação que ocorreram no período selecionado. O analisador deste quadro está procurando por estes sinais específicos:
 
 * &#39;`%NOTICE: Starting generate command%`&#39;) como &#39;`start_gen`&#39;
 * &#39;`%git apply /app/vendor/magento/ece-tools/patches%`&#39;) como &#39;`apply_patches`&#39;
@@ -36,9 +37,9 @@ O **[!UICONTROL Deploy State]** quadro mostra os eventos de implantação que oc
 
 ## [!UICONTROL Deploy Log Detail]
 
-![Detalhes do Log de Implantação](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
+![Implantar detalhes de log](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
 
-O **[!UICONTROL Deploy Log Detail]** quadro mostra os detalhes resumidos da mensagem de log de implantação que ocorreram ao longo do período selecionado. O quadro está analisando as seguintes strings nos logs de implantação:
+A variável **[!UICONTROL Deploy Log Detail]** quadro mostra os detalhes do resumo da mensagem de log de implantação que ocorreram no período selecionado. O quadro está analisando as seguintes strings nos logs de implantação:
 
 * &#39;`%NOTICE: Starting deploy.%`&#39;) como &#39;`start_dply`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/deploy.xml%`&#39;) como &#39;`start_scenario`&#39;
@@ -77,9 +78,9 @@ O **[!UICONTROL Deploy Log Detail]** quadro mostra os detalhes resumidos da mens
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![Detalhes do log de pós-implantação](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![Detalhes do log pós-implantação](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
-O **[!UICONTROL Post Deploy Log Detail]** quadro mostra os detalhes do log pós-implantação que ocorreram ao longo do período selecionado. Esse quadro está focado em mensagens de log específicas que contêm as seguintes strings:
+A variável **[!UICONTROL Post Deploy Log Detail]** O quadro mostra os detalhes do log pós-implantação que ocorreram no período selecionado. Esse quadro focaliza mensagens de log específicas que contêm as seguintes strings:
 
 * &#39;`%Disabled maintenance mode%`&#39;) como &#39;`disabled_maint_mode`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/post-deploy.xml%`&#39;) como &#39;`start_pstdply_scenario`&#39;
@@ -95,9 +96,9 @@ O **[!UICONTROL Post Deploy Log Detail]** quadro mostra os detalhes do log pós-
 
 ## [!UICONTROL Cloud Log Detail]
 
-![Detalhes do registro na nuvem](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
+![Detalhes do log da nuvem](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
-O **[!UICONTROL Cloud Log Detail]** quadro mostra os detalhes do log de nuvem que ocorreram ao longo do período selecionado. As strings a seguir são analisadas e retornadas com o rótulo &#39;AS&#39; abaixo:
+A variável **[!UICONTROL Cloud Log Detail]** O quadro mostra os detalhes do log de nuvem que ocorreram no período selecionado. As seguintes cadeias de caracteres são analisadas e retornadas com o rótulo &quot;AS&quot; abaixo:
 
 * &#39;`%DEBUG: /bin/bash -c "set -o pipefail; php ./bin/magento setup:upgrade%`&#39;) como &#39;`start_update`&#39;
 * &#39;`%Schema creation/updates:%`&#39;) como &#39;`schema_updates`&#39;
@@ -151,11 +152,10 @@ O **[!UICONTROL Cloud Log Detail]** quadro mostra os detalhes do log de nuvem qu
 
 ![Contagem de módulos importados durante a implantação](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
 
-O **[!UICONTROL Count of modules imported during deploy]** frame mostra o número de módulos importados durante a implantação no período selecionado.
+A variável **[!UICONTROL Count of modules imported during deploy]** quadro mostra o número de módulos importados durante a implantação no período selecionado.
 
 ## [!UICONTROL Deployed module list]
 
 ![Lista de módulos implantados](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
-O **[!UICONTROL Deployed module list]** quadro mostra os módulos implantados no período selecionado.
-
+A variável **[!UICONTROL Deployed module list]** mostra módulos implantados durante o período selecionado.

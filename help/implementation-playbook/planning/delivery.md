@@ -1,6 +1,6 @@
 ---
-title: Abordagem de Entrega e Planejamento
-description: Use nossa abordagem recomendada para planejar e fornecer sua implementação do Adobe Commerce.
+title: Abordagem de entrega e planejamento
+description: Use nossa abordagem recomendada para planejar e fornecer a implementação do Adobe Commerce.
 exl-id: ee2918d6-0d97-4f02-8e8f-b88bc999cd22
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -9,45 +9,45 @@ ht-degree: 0%
 
 ---
 
-# Abordagem de delivery e planejamento
+# Abordagem de entrega e planejamento
 
-Compreender o escopo completo de um projeto antes de iniciar a implementação é tão importante quanto ter um plano para fornecer uma solução a tempo, em orçamento e que atenda às suas necessidades. Isso requer a identificação de um blueprint à prova de falhas para o design e a implementação da solução e a execução desse blueprint, além de medir o sucesso.
+Entender o escopo completo de um projeto antes de iniciar a implementação é tão essencial quanto ter um plano para fornecer uma solução no prazo, dentro do orçamento e que atenda às suas necessidades. Isso requer a identificação de um blueprint infalível para o design e a implementação da solução e a execução desse blueprint enquanto avalia o sucesso.
 
-É um compromisso da equipe inteira que começa na ideação inicial e não termina até após o lançamento. E embora este seja um aspecto orientado para detalhes e, por vezes, tedioso do processo, o trabalho que você coloca no plano e na governança torna os obstáculos muito mais fáceis de navegar e superar.
+É um compromisso de toda a equipe que começa na ideação inicial e não termina até o lançamento. E embora este seja um aspecto do processo orientado para detalhes e, às vezes, tedioso, o trabalho que você coloca no plano e na governança torna os obstáculos muito mais fáceis de navegar e superá-los.
 
-Os projetos estratégicos de comércio podem ser fornecidos com várias abordagens e diferentes metodologias de gerenciamento de projetos. No entanto, recomendamos uma abordagem híbrida do Agile para o delivery bem-sucedido e a execução ideal.
+Os projetos de comércio estratégico podem ser fornecidos com várias abordagens e diferentes metodologias de gerenciamento de projetos. No entanto, recomendamos uma abordagem ágil híbrida para uma entrega bem-sucedida e uma execução ideal.
 
-Esta abordagem consiste nas seguintes etapas:
+Essa abordagem consiste nas seguintes etapas:
 
-- Definir fases para planejar, arquitetar e estrategizar
+- Definir fases para planejar, arquitetar e criar estratégias
 
-- Impressões ágeis para criar e projetar a solução
+- Sprints Agile para criar e projetar a solução
 
-- Integração, desempenho e teste de aceitação do usuário para piloto
+- Teste de integração, desempenho e aceitação do usuário para piloto
 
-- Rolagens da equipe de simulação para sites de marca e comércio
+- Implantações de equipe de scrum para sites de marca e comércio
 
 ![Exemplo de modelo de abordagem de planejamento](../../assets/playbooks/planning-model.svg)
 
-O modelo híbrido permite aproveitar o poder da metodologia Agile, mantendo o target da linha do tempo, do custo e da qualidade. O plano inteiro é dividido em duas fases distintas, seguidas por atividades de lançamento, otimização e manutenção.
+O modelo híbrido permite aproveitar o potencial da metodologia Agile, mantendo a meta de cronograma, custo e qualidade. Todo o plano está dividido em duas fases distintas, seguidas pelas atividades de lançamento, otimização e manutenção.
 
-- **Conseguir a ideia correta**—Esta é uma fase de pré-implementação para garantir que os requisitos, o design e a solução tecnológica sejam estrategizados, documentados e colaborados entre as partes interessadas. O backlog para implementação é agrupado e criado, as marcas de desenvolvimento são planejadas e uma estratégia sequencial para a criação do produto é finalizada.
+- **Ter a ideia certa**— esta é uma fase de pré-implementação para garantir que os requisitos, o projeto e a solução de tecnologia sejam estrategizados, documentados e colaborados entre as partes interessadas. O backlog para implementação é removido e criado, sprints de desenvolvimento são planejados e uma estratégia sequencial para criação do produto é finalizada.
 
-- **Entender a ideia corretamente**—Esta é a fase de implementação para criar o produto iterativamente, testar completamente e lançar adequadamente. O primeiro passo é desenvolver o código por meio de várias gravuras; cada impressora contém desenvolvimento e testes na impressora, seguidos por testes de integração do sistema, testes de desempenho e segurança, testes de aceitação do usuário e atividades de lançamento.
+- **Acertando a ideia**— esta é a fase de implementação para criar o produto de forma iterativa, testar completamente e liberar adequadamente. O primeiro passo é desenvolver o código por meio de vários sprints; cada sprint contém desenvolvimento e testes no sprint, seguidos por testes de integração do sistema, testes de desempenho e segurança, testes de aceitação do usuário e atividades de lançamento.
 
-O planejamento de projetos é uma atividade crítica. Ele orienta as partes interessadas, as equipes, os patrocinadores e os gerentes de projeto sobre como monitorar, gerenciar e controlar as fases do projeto. Também ajuda a identificar metas, evitar prazos ausentes, priorizar tarefas essenciais, reduzir riscos e fornecer os resultados desejados.
+O planejamento de projetos é uma atividade crítica. Ele orienta as partes interessadas, as equipes, os patrocinadores e os gerentes de projeto sobre como monitorar, gerenciar e controlar as fases do projeto. Também ajuda a identificar objetivos, evitar a falta de prazos, priorizar tarefas essenciais, reduzir riscos e fornecer os resultados desejados.
 
-O plano de projeto consiste, em geral, em quatro fases:
+O plano de projeto geralmente consiste em quatro fases:
 
 - Início e planejamento
 - Execução
 - Launch
 - Pós-lançamento
 
-Cada fase pode ser entregue por meio de várias gravuras menores, gerenciando assim o progresso e os resultados por meio de incrementos menores e com um maior grau de agilidade. No entanto, o planeamento é único, na medida em que faz normalmente parte das outras três fases. Fornecemos um detalhamento detalhado de cada fase e um exemplo de plano de projeto para uma implementação bem-sucedida do Adobe Commerce:
+Cada fase pode ser fornecida por meio de vários sprints menores, gerenciando assim o progresso e os resultados por meio de incrementos menores e com um grau mais alto de agilidade. No entanto, o planejamento é único, na medida em que geralmente faz parte das outras três fases. Fornecemos um detalhamento de cada fase e um exemplo de um plano de projeto para uma implementação bem-sucedida do Adobe Commerce:
 
 ![Gráfico de Gantt de planejamento de projeto](../../assets/playbooks/gantt-chart.svg)
 
-A abordagem que definimos mostra diferentes fases do projeto unidas para permitir a execução bem-sucedida do projeto. O Gabinete de Gestão de Projetos (PMO) fornece uma supervisão estreita a vários níveis e garante o sucesso em cada fase (e transição) até uma execução atempada e bem-sucedida com qualidade e custo ideais.
+A abordagem que definimos mostra diferentes fases do projeto se unindo para permitir uma execução bem-sucedida do projeto. O PMO (Project Management Office, escritório de gestão de projetos) fornece uma supervisão rigorosa em vários níveis e garante o sucesso em cada fase (e sprint), gerando uma execução bem-sucedida e oportuna com qualidade e custo ideais.
 
-![Método de planejamento de amostra infográfico](../../assets/playbooks/planning-approach-sample.svg)
+![Infográfico da abordagem de planejamento de amostra](../../assets/playbooks/planning-approach-sample.svg)

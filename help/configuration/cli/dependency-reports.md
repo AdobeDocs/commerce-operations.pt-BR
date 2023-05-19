@@ -1,13 +1,13 @@
 ---
 title: Relatórios de dependência
-description: Crie relatórios que mostram os totais das dependências de módulo, circular e estrutura.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+description: Crie relatórios que mostrem os totais das dependências de módulo, circular e estrutura.
+exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
 
 ---
-
 
 # Relatórios de dependência
 
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Você pode executar os seguintes tipos de relatórios:
 
-- **Dependências do módulo**: Mostra o número total de dependências entre módulos e se as dependências são permanentes ou suaves.
-- **Dependências circulares**: Mostra o número total de cadeias de dependência e o número e a lista de dependências circulares para cada módulo.
-- **Dependências de estrutura**: Mostra o número total de dependências na estrutura do Commerce por módulo (incluindo o número total de entradas da estrutura para cada biblioteca).
+- **Dependências do módulo**: mostra o número total de dependências entre módulos e se as dependências são permanentes ou temporárias.
+- **Dependências circulares**: mostra o número total de cadeias de dependência e o número e a lista de dependências circulares para cada módulo.
+- **Dependências da estrutura**: mostra o número total de dependências na estrutura do Commerce por módulo (incluindo o número total de entradas da estrutura para cada biblioteca).
 
 Uma dependência em um comentário também é uma dependência.
 
-## Executar relatórios de dependência
+## Executar relatórios de dependências
 
 Opções de comando:
 
@@ -29,17 +29,17 @@ Opções de comando:
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
-A tabela a seguir explica as opções, parâmetros e valores desse comando.
+A tabela a seguir explica as opções, os parâmetros e os valores desse comando.
 
 | Parâmetro | Valor | Obrigatório? |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
 | `show-modules` | Relatório de dependências do módulo. | Sim |
 | `show-modules-circular` | Relatório de dependências circulares. | Sim |
 | `show-framework` | Relatório de dependências de estrutura. | Sim |
-| `-d --directory` | Caminho para o diretório base para iniciar a pesquisa de dados do relatório. | Não |
-| `-o --output` | Especifica o caminho absoluto do sistema de arquivos e o nome do arquivo de saída do valor separado por vírgulas (csv) para o relatório. | Não |
+| `-d --directory` | Caminho para o diretório base para iniciar a pesquisa de dados de relatório. | Não |
+| `-o --output` | Especifica o caminho absoluto do sistema de arquivos e o nome do arquivo de saída do valor separado por vírgula (csv) do relatório. | Não |
 
-Se nenhum diretório ou nome de arquivo for passado como um argumento, a seguinte raiz de aplicativo será usada como o diretório padrão e os seguintes nomes de arquivo padrão serão usados:
+Se nenhum diretório ou nome de arquivo for passado como argumento, a seguinte raiz do aplicativo será usada como o diretório padrão e os seguintes nomes de arquivo padrão serão usados:
 
 | Comando | Nome do arquivo |
 | ----------------------------------------------------- | ----------------------------------- |
@@ -47,9 +47,9 @@ Se nenhum diretório ou nome de arquivo for passado como um argumento, a seguint
 | `bin/magento info:dependencies:show-modules-circular` | `modules-circular-dependencies.csv` |
 | `bin/magento info:dependencies:show-framework` | `framework-dependencies.csv` |
 
-### Relatório de dependências do módulo de exemplo
+### Exemplo de relatório de dependências do módulo
 
-A seguir, uma parte da saída de um exemplo de relatório de dependências do módulo:
+A seguir, uma parte da saída de um relatório de dependências de módulo de amostra:
 
 ```terminal
 "","All","Hard","Soft"
@@ -71,9 +71,9 @@ A seguir, uma parte da saída de um exemplo de relatório de dependências do m�
 " -- magento/module-import-export","","1","0"
 ```
 
-### Relatório de dependências circulares de exemplo
+### Exemplo de relatório de dependências circulares
 
-A seguir, uma parte da saída de um exemplo de relatório de dependências circulares:
+A seguir, uma parte da saída para um exemplo de relatório de dependências circulares:
 
 ```terminal
 "Circular dependencies:","Total number of chains"
@@ -97,9 +97,9 @@ A seguir, uma parte da saída de um exemplo de relatório de dependências circu
 "magento/module-config->magento/module-backend->magento/module-sales->magento/module-checkout->magento/module-customer->magento/module-review->magento/module-catalog->magento/module-catalog-rule->magento/module-rule->magento/module-eav->magento/module-config"
 ```
 
-### Relatório de dependências da estrutura de exemplo
+### Exemplo de relatório de dependências da estrutura
 
-A seguir, uma parte da saída de um exemplo de relatório de dependências de estrutura:
+A seguir, uma parte da saída de um relatório de dependências de estrutura de exemplo:
 
 ```terminal
 "Dependencies of framework:","Total number"

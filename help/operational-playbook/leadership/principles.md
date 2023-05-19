@@ -1,6 +1,6 @@
 ---
-title: Princípios do comércio
-description: Use esses princípios de liderança importantes para ajudar a garantir que seu projeto do Adobe Commerce funcione de maneira eficaz.
+title: Princípios do Commerce
+description: Use esses importantes princípios de liderança para ajudar a garantir que seu projeto do Adobe Commerce funcione com eficiência.
 exl-id: 70b7346a-8536-428f-a980-b240bd5eb5ab
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -16,145 +16,145 @@ Recomendamos seguir alguns princípios fundamentais de liderança ao operar um p
 ## Patrocínio
 
 ![Coração dobrável da mão](../../assets/playbooks/sponsorship.png)
-Ter um patrocinador executivo eficaz ajuda o projeto a obter o máximo de sucesso. Para ser verdadeiramente eficaz, este patrocinador executivo interno deve ter senioridade e influência suficientes no seio da empresa para ter uma participação de outros interessados em toda a organização. Devem igualmente ter um elevado nível de interesse próprio no sucesso da loja em linha e uma paixão pela transformação digital e pelo comércio eletrônico; acreditar verdadeiramente em como a Adobe Commerce vai transformar os negócios também é fundamental.
+Ter um patrocinador executivo eficaz ajuda o projeto a alcançar o máximo de sucesso. Para ser realmente eficaz, esse patrocinador executivo interno deve ter prioridade e influência suficientes na empresa para obter a adesão de outras partes interessadas em toda a organização. Eles também devem ter um alto nível de interesse no sucesso da loja online e uma paixão pela transformação digital e pelo comércio eletrônico; realmente acreditar em como a Adobe Commerce vai transformar os negócios também é essencial.
 
-Um patrocinador executivo eficaz deve garantir que a gestão, o roteiro e o crescimento contínuo da plataforma de comércio eletrônico permaneçam em conformidade com a estratégia empresarial; protegendo-o de iniciativas conflitantes ou políticas internas e ajudando a lidar com fatores limitantes, como recursos, escassez de competências ou restrições orçamentárias.
+Um patrocinador executivo eficaz deve garantir que o gerenciamento, o roteiro e o crescimento contínuo da plataforma de comércio eletrônico permaneçam alinhados com a estratégia corporativa; protegendo-a contra iniciativas conflitantes ou políticas internas e ajudando a resolver quaisquer fatores limitantes, como recursos, falta de habilidades ou restrições orçamentárias.
 
-## Comprar
+## Entrada
 
-![Tíquete retirado da máquina](../../assets/playbooks/buyin.png)
-Alcançar o ingresso de gerenciamento em sua equipe de liderança também é fundamental. Ter vários agentes de alteração para impulsionar o crescimento ajuda você a aumentar o crescimento de forma mais fácil e rápida. A responsabilidade pelo gerenciamento bem-sucedido da Adobe Commerce precisa ser compartilhada por toda a equipe de liderança. É então responsabilidade do patrocinador executivo conquistar a equipe executiva compartilhando exemplos que provem o valor do Adobe Commerce em geral. Normalmente, isso se concentra em fornecer uma melhor experiência do cliente e benefícios subsequentes para os negócios.
+![Ticket saindo da máquina](../../assets/playbooks/buyin.png)
+Alcançar a adesão do gerenciamento em toda a equipe de liderança também é fundamental. Ter vários agentes de alteração para impulsionar o crescimento ajuda a impulsionar o crescimento com mais facilidade e rapidez. A responsabilidade pelo gerenciamento bem-sucedido do Adobe Commerce precisa ser compartilhada por toda a equipe de liderança. É então a responsabilidade do patrocinador executivo conquistar a equipe executiva compartilhando exemplos que comprovam o valor da Adobe Commerce em geral. Normalmente, isso se concentra em fornecer uma melhor experiência ao cliente e benefícios subsequentes para os negócios.
 
-Ao gerenciar sites de comércio eletrônico ou ao implementar projetos digitais como o Adobe Commerce, os líderes são responsáveis por monitorar diferentes departamentos e equipes responsáveis por diferentes partes das iniciativas de comércio eletrônico. É fundamental assegurar que todos os grupos partilhem uma estratégia comum para alcançar objetivos comuns. Fazer uma apresentação interna para obter o suporte dos executivos ajuda a aumentar a conscientização, alinhar as equipes e obter os recursos necessários para uma implementação ideal.
+Ao gerenciar sites de comércio eletrônico ou implementar projetos digitais como o Adobe Commerce, os líderes são responsáveis por monitorar diferentes departamentos e equipes que possuem diferentes partes das iniciativas de comércio eletrônico. É essencial garantir que todos os grupos compartilhem uma estratégia comum para atingir objetivos comuns. Ter uma apresentação interna para obter o suporte de executivos ajuda a aumentar a conscientização, alinhar equipes e obter os recursos necessários para uma implementação ideal.
 
 ## Responsabilidade
 
-![números em torno de uma tabela](../../assets/playbooks/accountability.png)
-A liderança de projetos é o ato de liderar uma equipe com vista à realização bem-sucedida de um objetivo-alvo. Muitas vezes, pode ser uma das áreas mais críticas para se dar bem a fim de realizar com sucesso um projeto de comércio eletrônico. Uma liderança bem sucedida no projeto requer competências tanto em termos de gestão como de liderança, a fim de garantir a adesão das pessoas certas, ao mesmo tempo que lidera a equipe na direção certa.
+![figuras reunidas ao redor de uma tabela](../../assets/playbooks/accountability.png)
+Liderança de projeto é o ato de liderar uma equipe para a conclusão bem-sucedida de uma meta. Muitas vezes, pode ser uma das áreas mais críticas para se obter o certo a fim de entregar com sucesso um projeto de comércio eletrônico. A liderança de projetos bem-sucedida requer habilidades de gestão e liderança, a fim de garantir a adesão das pessoas certas, enquanto lidera a equipe na direção certa.
 
 ## Nível C
 
-![Figura cercada por estrelas](../../assets/playbooks/c-level.png)
-Os executivos de nível C desempenham um papel estratégico em uma organização. Eles ocupam cargos de chefia e têm impacto nas decisões de toda a empresa. C significa &quot;Chefe&quot;, portanto, um executivo de nível C é geralmente responsável por um departamento ou unidade de negócios inteira, como Finanças, TI ou Vendas. Dado que estes indivíduos são importantes partes interessadas na organização, é importante assegurar que estão conscientes dos benefícios que o projeto de comércio eletrônico traz para a organização.
+![Figura rodeada por estrelas](../../assets/playbooks/c-level.png)
+Os executivos de nível C desempenham um papel estratégico em uma organização. Eles ocupam cargos superiores e afetam as decisões de toda a empresa. C significa &quot;Chefe&quot;, portanto, um executivo de nível C geralmente é responsável por todo o departamento ou unidade de negócios, como Finanças, TI ou Vendas. Como esses indivíduos são participantes importantes na organização, é importante garantir que eles estejam cientes dos benefícios que o projeto de comércio eletrônico traz para a organização.
 
-Mais especificamente, pode ser útil identificar os benefícios específicos que o projeto traz para o seu departamento, pois isso pode ser um fator de motivação importante. Vincular métricas tangíveis à entrega bem-sucedida do projeto pode motivar e transformar seus participantes de nível C para se tornarem apoiadores ativos do projeto de transformação digital.
+Mais especificamente, pode ser útil identificar os benefícios específicos que o projeto traz para o seu departamento, pois isso pode ser um fator motivador importante. Vincular métricas tangíveis à entrega bem-sucedida do projeto pode motivar e transformar suas partes interessadas de nível C para que se tornem apoiadores ativos do projeto de transformação digital.
 
-Em organizações menores, os executivos de nível C tendem a estar muito envolvidos, ou pelo menos muito próximos do projeto de transformação. No entanto, à medida que começamos a observar os grandes comerciantes, é natural que o envolvimento executivo diminua à medida que o tamanho da empresa aumenta. Como tal, é fundamental manter essas partes interessadas envolvidas e informadas durante todo o projeto para garantir que a compra e o suporte permaneçam intactos.
+Em organizações menores, os executivos de nível C tendem a estar fortemente envolvidos ou, pelo menos, muito próximos do projeto de transformação. No entanto, à medida que começamos a observar comerciantes maiores, é natural que o envolvimento do executivo diminua à medida que o tamanho da empresa aumenta. Sendo assim, é fundamental manter essas partes interessadas envolvidas e informadas durante todo o projeto para garantir que a adesão e o suporte permaneçam intactos.
 
 ## Partes interessadas
 
-![Dois algarismos](../../assets/playbooks/stakeholders.png)
-As partes interessadas são aquelas que têm interesse no resultado do seu projeto. Normalmente, são membros da equipe do projeto, gerentes do projeto, executivos, patrocinadores do projeto e, por fim, usuários finais. É importante garantir a aquisição de todas as partes interessadas para garantir uma mudança efetiva. Se você não conseguir o apoio de principais partes interessadas que contribuem para a decisão final, os projetos frequentemente falham.
+![Duas figuras](../../assets/playbooks/stakeholders.png)
+As partes interessadas são aquelas que têm interesse no resultado do seu projeto. Normalmente, eles são membros da equipe do projeto, gerentes de projeto, executivos, patrocinadores de projeto e, finalmente, usuários finais. É importante garantir a adesão de todas as partes interessadas relevantes para garantir uma mudança efetiva. Se você não conseguir o apoio das principais partes interessadas que contribuem para a decisão final, os projetos geralmente falham.
 
-Também é importante garantir que você tenha um processo eficaz em vigor para treinar e ativar usuários nos novos sistemas ou plataformas. As pessoas podem frequentemente ser um forte obstáculo à mudança, especialmente quando desconhecem um novo sistema e o impacto que isso pode ter nos processos e fluxos de trabalho dentro do seu ambiente. Ter processos eficazes de gerenciamento e treinamento de mudanças pode ajudar a mitigar isso. Além disso, a requalificação de usuários garante que você obtenha o máximo do sistema. Equipes que conhecem bem a plataforma podem otimizar a plataforma para fins de eficácia, garantindo que você obtenha o máximo proveito.
+Também é importante garantir que você tenha um processo eficiente em vigor para treinar e aprimorar os usuários nos novos sistemas ou plataformas. As pessoas podem, muitas vezes, ser uma forte barreira à mudança, especialmente quando não estão familiarizadas com um novo sistema e o impacto que isso pode ter nos processos e fluxos de trabalho dentro de seu ambiente. Ter um gerenciamento de alterações e processos de treinamento eficazes pode ajudar a reduzir isso. Além disso, usuários com mais habilidades garantem que você aproveite ao máximo o sistema. As equipes familiarizadas com a plataforma podem otimizá-la para obter eficiência, garantindo que você obtenha o máximo de retorno pelo seu investimento.
 
-## Comitê Diretor
+## Comitê diretor
 
 ![Envelope com marcador](../../assets/playbooks/steering-committee.png)
-Os comitês de direção são órgãos consultivos compostos por principais partes interessadas ou peritos. Fornecem orientação sobre uma série de fatores que podem afetar um projeto. O objetivo do comitê diretor é garantir o êxito do projeto, incluindo a maximização dos benefícios do projeto e a garantia de que são seguidos processos e controlos adequados de gestão dos projetos.
+Os comitês diretores são órgãos consultivos compostos por partes interessadas ou peritos de alto nível. Eles fornecem orientação sobre uma variedade de fatores que podem afetar um projeto. O objetivo do comitê diretor é assegurar a boa execução do projeto, incluindo a maximização dos benefícios do projeto e a garantia de que os processos e controlos de gestão do projeto são respeitados.
 
 ### Funções e responsabilidades comuns
 
-As funções e responsabilidades de alto nível a seguir se baseiam em práticas padrão do setor para comitês diretivos.
+As funções e responsabilidades de alto nível a seguir indicadas baseiam-se em práticas padrão do setor para os comitês diretores.
 
-#### Patrocinador comercial ou tecnológico
+#### Patrocinador de negócios ou tecnologia
 
-Em última análise, prestar contas dos resultados do projeto e ser responsável por assegurar a autoridade responsável pelas despesas e os recursos para o projeto.
+Responsável, em última instância, pelo resultado do projeto e responsável por garantir a autoridade e os recursos financeiros do projeto.
 
 - Vocal e campeão visível
-- Legitima e dá credibilidade aos objetivos e objetivos estratégicos
-- É o ponto de escalonamento para alterações e questões fora das tolerâncias acordadas?
-- Auxilia na participação das partes interessadas, sempre que necessário
+- Legitima e dá credibilidade às metas e aos objetivos estratégicos
+- É o ponto de escalonamento para alterações e problemas fora das tolerâncias acordadas?
+- Auxilia no envolvimento das partes interessadas quando necessário
 
-#### Executivos empresariais
+#### Executivos de negócios
 
-Responsável por garantir que o projeto se concentre em atingir seus objetivos e segue uma abordagem baseada em custos, fornecendo um produto que atinja os benefícios previstos e fazendo análise de custo-benefício para os negócios.
+Responsável por garantir que o projeto se concentre em atingir seus objetivos e siga uma abordagem de custo-consciência, fornecendo um produto que atinja os benefícios previstos e fazendo uma análise de custo-benefício para a empresa.
 
-- Projeta e nomeia as equipes de gerenciamento de projetos
-- Acompanha o desenvolvimento do caso comercial, garantindo o alinhamento estratégico corporativo
-- Acompanha e controla os progressos a nível estratégico, em particular revendo regularmente o caso
-- Escalada problemas e riscos (é o ponto de escalonamento para problemas e riscos e garante que todos os riscos associados ao caso comercial sejam identificados, avaliados e controlados)
-- Toma decisões em problemas escalados com foco especial na justificação contínua dos negócios
-- Garante a garantia geral dos negócios do projeto e garante que ele permaneça no target para fornecer produtos que alcancem os benefícios esperados dos negócios
+- Cria e nomeia as equipes de gerenciamento de projetos
+- Supervisiona o desenvolvimento do business case, garantindo o alinhamento estratégico da empresa
+- Monitora e controla os progressos a nível estratégico, em especial analisando regularmente o business case
+- Escala problemas e riscos (é o ponto de escalonamento para problemas e riscos e garante que todos os riscos associados ao business case sejam identificados, avaliados e controlados)
+- Tome decisões sobre questões escaladas com foco especial na justificativa de continuidade de negócios
+- Garante a garantia geral dos negócios do projeto e garante que ele permaneça no objetivo para fornecer produtos que alcancem os benefícios comerciais esperados
 
 #### Proprietário da empresa
 
-Representa os interesses de todos aqueles que usam o produto (incluindo operações e manutenção), aqueles para os quais o produto atinge um objetivo ou aqueles que usam o produto para fornecer os benefícios e os drivers de valor.
+Representa os interesses de todos aqueles que usam o produto (incluindo operações e manutenção), aqueles para os quais o produto atinge um objetivo ou aqueles que usam o produto para fornecer os benefícios e impulsionadores de valor.
 
 - Fornece as expectativas de qualidade e define os critérios de aceitação
 - Garante que o resultado desejado seja especificado
 - Garante que os produtos forneçam os resultados desejados e atendam aos requisitos do usuário
-- Garante que os benefícios esperados sejam realizados
-- Fornece uma declaração de benefícios reais versus previstos nas revisões de benefícios
-- Resolve os requisitos e conflitos do usuário
+- Garante a obtenção dos benefícios esperados
+- Fornece um demonstrativo de benefícios reais versus previstos nas revisões de benefícios
+- Soluciona requisitos e conflitos do usuário
 
 #### Proprietário técnico ou diretor técnico
 
-Representa os interesses dos que projetam, desenvolvem, facilitam, compram e implementam o produto. Esta função é responsável pela qualidade do(s) produto(s) fornecido(s) pelos fornecedores e é responsável pela integridade técnica do projeto.
+Representa os interesses das pessoas que projetam, desenvolvem, facilitam, adquirem e implementam o produto. Essa função é responsável pela qualidade do(s) produto(s) entregue(s) pelos fornecedores e é responsável pela integridade técnica do projeto.
 
 - Avalia e confirma a viabilidade da abordagem
-- Garante que as propostas de concepção e desenvolvimento do produto sejam realistas
-- Aconselha sobre a seleção de métodos de concepção, desenvolvimento e aceitação
-- Garante que os procedimentos de qualidade sejam utilizados corretamente, de modo a que os produtos cumpram os requisitos
+- Assegura que as propostas de concepção e desenvolvimento do produto sejam realistas
+- Fornece recomendações sobre a seleção de métodos de design, desenvolvimento e aceitação
+- Garante que os procedimentos de qualidade sejam usados corretamente, para que os produtos cumpram os requisitos
 
-#### Chefe do Digital
+#### Chefe da Digital
 
-Abrange os principais interesses das partes interessadas da empresa, dos utilizadores e dos fornecedores técnicos, finais.
+Abrange os principais interesses das partes interessadas da empresa, dos usuários técnicos, dos usuários finais e dos fornecedores.
 
-- Garante que as pessoas certas participem na inspeção de qualidade nos pontos corretos do desenvolvimento do produto
-- Assegura que o pessoal receba formação adequada em métodos de qualidade
+- Garante que as pessoas certas estejam envolvidas na inspeção de qualidade nos pontos corretos no desenvolvimento do produto
+- Garante que a equipe tenha treinamento adequado em métodos de qualidade
 - Verifica se os métodos de qualidade estão sendo seguidos corretamente
-- Garante que as ações de acompanhamento do controlo de qualidade sejam tratadas corretamente
-- Avaliações regulares para assegurar o desenvolvimento de uma solução aceitável
-- Certifique-se de que o âmbito do projeto não esteja a mudar sem aviso prévio adequado
+- Assegura que as ações de acompanhamento do controlo da qualidade são tratadas corretamente
+- Revisões regulares para garantir o desenvolvimento de uma solução aceitável
+- Garante que o escopo do projeto não seja alterado sem o aviso prévio adequado
 - Verifica se as comunicações internas e externas estão funcionando
-- Garante a utilização das normas aplicáveis
-- Assegura o respeito das necessidades de interesses especiais (por exemplo, segurança)
+- Garante que os padrões aplicáveis estejam sendo usados
+- Garante que as necessidades de interesses especiais (por exemplo, segurança) estejam sendo observadas
 
-Responsabilidades de garantia de negócios:
+Responsabilidades de garantia das empresas:
 
-- Ajuda a desenvolver o plano de análise de negócios e benefícios
-- Revisa o caso comercial de conformidade com os padrões corporativos
-- Verifica o caso comercial em relação a eventos externos
-- Verifica se o caso comercial está sendo seguido em todo o projeto
-- Verifica se o projeto permanece alinhado com a estratégia corporativa e continua a fornecer valor para o dinheiro Responsabilidades de garantia do usuário
+- Ajuda a desenvolver o plano de análise de benefícios e business case
+- Analisa o business case quanto à conformidade com os padrões corporativos
+- Verifica o business case em relação a eventos externos
+- Verifica se o business case está sendo seguido em todo o projeto
+- Verifica se o projeto permanece alinhado à estratégia corporativa e continua a oferecer valor para as responsabilidades de garantia do usuário
 - Garante que a especificação das necessidades dos usuários seja precisa, completa e inequívoca
-- Avalia se a solução atende às necessidades dos usuários e está progredindo em direção a essa meta
+- Avalia se a solução atende às necessidades dos usuários e está progredindo na direção dessa meta
 - Aconselha sobre o impacto de possíveis alterações do ponto de vista dos usuários
-- Garante que as atividades de qualidade relacionadas com os produtos em todas as fases tenham uma representação adequada dos utilizadores
-- Garante que os procedimentos de controlo de qualidade sejam utilizados corretamente para garantir que os produtos satisfazem os requisitos dos utilizadores
+- Garante que as atividades de qualidade relacionadas com produtos em todos os estágios tenham uma representação adequada do usuário
+- Garante que os procedimentos de controle de qualidade sejam usados corretamente para garantir que os produtos atendam aos requisitos do usuário
 
 Responsabilidades de garantia do fornecedor:
 
-- Revisa as descrições do produto (recursos e recursos) e se alinha à entrega
-- Aconselha sobre a seleção da estratégia de desenvolvimento, da concepção e dos métodos
-- Garante que todos os fornecedores e normas operacionais definidos para o projeto sejam cumpridos e utilizados de forma eficaz
-- Aconselha sobre possíveis alterações e seu impacto na exatidão, integridade e integridade dos produtos em relação à sua descrição do produto do ponto de vista do fornecedor
-- Avalia se os procedimentos de controlo de qualidade são utilizados corretamente, de modo a que os produtos cumpram os requisitos.
+- Analisa as descrições do produto (recursos e funcionalidades) e se alinha à entrega
+- Aconselha sobre a seleção da estratégia de desenvolvimento, design e métodos
+- Garante que qualquer fornecedor e padrões operacionais definidos para o projeto sejam atendidos e usados com eficácia
+- Aconselha sobre possíveis alterações e seu impacto na correção, integridade e integridade dos produtos em relação à descrição dos produtos de uma perspectiva do fornecedor
+- Avalia se os procedimentos de controle de qualidade são usados corretamente, de modo que os produtos adiram aos requisitos.
 
 #### Gerente de comércio eletrônico
 
 Tem autoridade para executar as operações diárias com a principal responsabilidade de garantir que o resultado produza os produtos necessários dentro das tolerâncias especificadas de tempo, custo, qualidade, escopo, risco e benefícios.
 
-A gestão eficaz de um sítio de comércio eletrônico exige que a equipe de gestão do projeto possua e aplique conhecimentos em várias áreas:
+O gerenciamento eficaz de um site de comércio eletrônico requer que a equipe de gerenciamento de projetos possua e aplique conhecimento em várias áreas:
 
 - Gerenciamento de projetos
-- Conhecimento de domínio comercial e industrial específico ao produto e à plataforma
-- Conhecimentos tecnológicos exigidos pelo produto
+- Conhecimento de domínio empresarial e setorial específico para o produto e a plataforma
+- Conhecimento tecnológico exigido pelo produto
 - Competências interpessoais e de comunicação
-- O quadro de gestão de projetos consiste em cinco grupos de atividades principais:
+- A estrutura de gestão de projetos consiste em cinco grupos de atividades principais:
 
-   - Início
+   - Iniciação
    - Planejamento
    - Execução
-   - Monitorização e controlo
-   - Fechamento
+   - Monitoramento e controle
+   - Fechando
 
 - Esses são os processos ou atividades para gerenciar as tarefas e são diferentes do ciclo de vida do projeto.
-- As atividades do ciclo de vida do projeto são geralmente sequenciais, enquanto as atividades de gestão do projeto são executadas simultaneamente, porque as atividades de gestão do projeto podem sobrepor-se e repetir-se ao longo do calendário, dependendo dos riscos (por exemplo, as atividades de controlo podem levar ao planeamento para rever os objetivos ou o plano em resultado de alterações).
+- As atividades do ciclo de vida do projeto geralmente são sequenciais, enquanto as atividades de gerenciamento do projeto são executadas simultaneamente, porque as atividades de gerenciamento do projeto podem se sobrepor e se repetir ao longo do tempo, dependendo dos riscos (por exemplo, as atividades de controle podem levar ao planejamento para revisar as metas ou o plano como resultado de alterações).
 
 ## Comunicação
 
-Para integrar a organização, é sempre uma boa ideia compartilhar a visão e reforçar repetidamente o motivo pelo qual sua empresa está investindo em tecnologia de comércio eletrônico, articulando os benefícios do cliente e os benefícios dos negócios.
+Para integrar a organização, é sempre uma boa ideia compartilhar a visão e reforçar repetidamente o motivo pelo qual sua empresa está investindo em tecnologia de comércio eletrônico, articulando os benefícios para o cliente e os benefícios para os negócios.
 
-O compartilhamento de documentação, como estudos de caso de sucesso de implementações digitais, ajuda você a validar por que e como esse investimento leva a organização a um novo nível. Se você quiser que a organização aceite a transformação digital, é importante informar aos funcionários que essa é uma prioridade.
+O compartilhamento de documentação, como estudos de caso de sucesso de implementações digitais, ajuda a validar por que e como esse investimento leva a organização a um novo nível. Se você quiser que a organização adote a transformação digital, é importante informar aos funcionários que essa é uma prioridade.

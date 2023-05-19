@@ -1,37 +1,37 @@
 ---
-title: Pré-requisitos de atualização do Adobe Commerce 2.3.5 para o MariaDB
+title: Pré-requisitos de atualização do Adobe Commerce 2.3.5 para MariaDB
 description: Saiba como preparar seu banco de dados do Adobe Commerce para atualizar do Adobe Commerce 2.3.5.
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: bc38dd658401d3cd4c64159b1b2b2efe89979a93
+exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
-
 # Pré-requisitos de atualização para o MariaDB
 
-A atualização do Adobe Commerce 2.3.4 ou anterior para qualquer versão mais recente requer a atualização do serviço MariaDB na infraestrutura de nuvem da versão 10.0 ou 10.2 para a versão 10.3 ou 10.4. A versão 10.3 e posterior do MariaDB requer que o banco de dados use o formato de linha de tabela dinâmica e o Adobe Commerce requer o uso do mecanismo de armazenamento InnoDB para tabelas. Este artigo explica como atualizar seu banco de dados para atender a esses requisitos do MariaDB.
+A atualização do Adobe Commerce 2.3.4 ou anterior para qualquer versão mais recente requer a atualização do serviço MariaDB na infraestrutura de nuvem da versão 10.0 ou 10.2 para a versão 10.3 ou 10.4. O MariaDB versão 10.3 e posterior requer que o banco de dados use o formato de linha de tabela dinâmica, e o Adobe Commerce requer o uso do mecanismo de armazenamento InnoDB para tabelas. Este artigo explica como atualizar seu banco de dados para cumprir esses requisitos do MariaDB.
 
-Após preparar o banco de dados, envie um tíquete de suporte da Adobe Commerce para atualizar a versão do serviço MariaDB na infraestrutura de nuvem antes de prosseguir com o processo de atualização do Adobe Commerce.
+Depois de preparar o banco de dados, envie um tíquete de suporte do Adobe Commerce para atualizar a versão do serviço MariaDB na infraestrutura de nuvem antes de prosseguir com o processo de atualização do Adobe Commerce.
 
 ## Produto e versões afetados
 
-Adobe Commerce na infraestrutura de nuvem com Adobe Commerce versão 2.3.4 ou anterior e MariaDB versão 10.0 ou anterior.
+Adobe Commerce na infraestrutura em nuvem com o Adobe Commerce versão 2.3.4 ou anterior e o MariaDB versão 10.0 ou anterior.
 
 ## Preparar seu banco de dados para a atualização
 
-Antes de a equipe de suporte da Adobe Commerce iniciar o processo de atualização, prepare o banco de dados convertendo as tabelas do banco de dados:
+Antes que a equipe de Suporte da Adobe Commerce inicie o processo de atualização, prepare o banco de dados convertendo as tabelas do banco de dados:
 
 - Converter o formato de linha de `COMPACT` para `DYNAMIC`
-- Alterar o mecanismo de armazenamento de `MyISAM` para `InnoDB`
+- Altere o mecanismo de armazenamento de `MyISAM` para `InnoDB`
 
-Lembre-se das seguintes considerações ao planejar e programar a conversão:
+Lembre-se das seguintes considerações ao planejar e agendar a conversão:
 
-- Conversão de `COMPACT` para `DYNAMIC` tabelas podem levar várias horas com um banco de dados grande.
+- Conversão de `COMPACT` para `DYNAMIC` as tabelas podem levar várias horas com um banco de dados grande.
 
 - Para evitar a corrupção de dados, não conclua o trabalho de conversão em um site ativo.
 
@@ -41,27 +41,27 @@ Lembre-se das seguintes considerações ao planejar e programar a conversão:
 
 ### Converter formato de linha da tabela do banco de dados
 
-Você pode converter tabelas em um nó do cluster. As alterações são replicadas automaticamente para os outros nós de serviço.
+Você pode converter tabelas em um nó no cluster. As alterações são replicadas automaticamente para os outros nós de serviço.
 
-1. No ambiente de infraestrutura em nuvem do Adobe Commerce, use SSH para se conectar ao nó 1.
+1. No ambiente de infraestrutura em nuvem do Adobe Commerce, use o SSH para se conectar ao nó 1.
 
-1. Efetue login no MariaDB.
+1. Faça logon no MariaDB.
 
-1. Identificar as tabelas a serem convertidas do formato compacto para dinâmico.
+1. Identifique as tabelas a serem convertidas do formato compacto para o dinâmico.
 
    ```mysql
    SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
-1. Determine os tamanhos da tabela para agendar o trabalho de conversão.
+1. Determine os tamanhos da tabela para poder agendar o trabalho de conversão.
 
    ```mysql
    SELECT table_schema as 'Database', table_name AS 'Table', round(((data_length + index_length) / 1024 / 1024), 2) 'Size in MB' FROM information_schema.TABLES ORDER BY (data_length + index_length) DESC;
    ```
 
-   Tabelas maiores demoram mais para serem convertidas. Revise as tabelas e agrupe o trabalho de conversão em lote por prioridade e tamanho da tabela para ajudar a planejar as janelas de manutenção necessárias.
+   Tabelas maiores demoram mais para serem convertidas. Revise as tabelas e coloque o trabalho de conversão em lote por prioridade e tamanho da tabela para ajudar a planejar as janelas de manutenção necessárias.
 
-1. Converta todas as tabelas em formato dinâmico, uma de cada vez.
+1. Converter todas as tabelas em formato dinâmico, uma de cada vez.
 
    ```mysql
    ALTER TABLE [ table name here ] ROW_FORMAT=DYNAMIC;
@@ -69,12 +69,12 @@ Você pode converter tabelas em um nó do cluster. As alterações são replicad
 
 ### Converter formato de armazenamento de tabela de banco de dados
 
-Você pode converter tabelas em um nó do cluster. As alterações são replicadas automaticamente para os outros nós de serviço.
+Você pode converter tabelas em um nó no cluster. As alterações são replicadas automaticamente para os outros nós de serviço.
 
-O processo para converter o formato de armazenamento é diferente para projetos Adobe Commerce Starter e Adobe Commerce Pro.
+O processo para converter o formato de armazenamento é diferente para projetos do Adobe Commerce Starter e do Adobe Commerce Pro.
 
-- Para arquitetura Inicial, use o MySQL `ALTER` para converter o formato.
-- Na arquitetura Pro, use o MySQL `CREATE` e `SELECT` comandos para criar uma tabela de banco de dados com `InnoDB` e copie os dados da tabela existente para a nova tabela. Esse método garante que as alterações sejam replicadas para todos os nós no cluster.
+- Para arquitetura de Início, use o MySQL `ALTER` para converter o formato.
+- Na arquitetura Pro, use o MySQL `CREATE` e `SELECT` comandos para criar uma tabela de banco de dados com `InnoDB` armazenar e copiar os dados da tabela existente na nova tabela. Esse método garante que as alterações sejam replicadas em todos os nós do cluster.
 
 **Converter formato de armazenamento de tabela para projetos do Adobe Commerce Pro**
 
@@ -92,7 +92,7 @@ O processo para converter o formato de armazenamento é diferente para projetos 
       RENAME TABLE <existing_table> <table_old>;
       ```
 
-   - Crie uma tabela que use `InnoDB` armazenamento usando os dados da tabela existente.
+   - Criar uma tabela que use `InnoDB` armazenamento usando os dados da tabela existente.
 
       ```mysql
       CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
@@ -103,7 +103,7 @@ O processo para converter o formato de armazenamento é diferente para projetos 
    - Exclua a tabela original que você renomeou.
 
 
-**Converter formato de armazenamento de tabela para projetos Adobe Commerce Starter**
+**Converter formato de armazenamento de tabela para projetos do Adobe Commerce Starter**
 
 1. Identificar tabelas que usam `MyISAM` armazenamento.
 
@@ -117,13 +117,13 @@ O processo para converter o formato de armazenamento é diferente para projetos 
    ALTER TABLE [ table name here ] ENGINE=InnoDB;
    ```
 
-### Verificar a conversão do banco de dados
+### Verifique a conversão do banco de dados
 
-No dia anterior à atualização programada para a versão 10.2 do MariaDB, verifique se todas as tabelas têm o formato de linha e mecanismo de armazenamento corretos. A verificação é necessária porque implantações de código feitas após a conclusão da conversão podem fazer com que algumas tabelas sejam revertidas para a configuração original.
+Um dia antes da atualização programada para o MariaDB versão 10.2, verifique se todas as tabelas têm o formato de linha e o mecanismo de armazenamento corretos. A verificação é necessária porque as implantações de código feitas após a conclusão da conversão podem fazer com que algumas tabelas sejam revertidas para a configuração original.
 
 1. Faça logon no banco de dados.
 
-1. Verifique se há tabelas que ainda tenham a variável `COMPACT` formato de linha.
+1. Verifique se há tabelas que ainda tenham o `COMPACT` formato da linha.
 
    ```mysql
    SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
@@ -143,6 +143,5 @@ Consulte [Converter tabelas MyISAM em InnoDB](../planning/database-on-cloud.md).
 
 ## Informações adicionais
 
-- [Práticas recomendadas do banco de dados para o Adobe Commerce na infraestrutura em nuvem](../planning/database-on-cloud.md)
-- [Atualização do MariaDB de 10.0 para 12.0 no Adobe Commerce na nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10.0-to-10.2-for-magento-commerce-cloud.html)
-
+- [Práticas recomendadas de banco de dados para o Adobe Commerce na infraestrutura em nuvem](../planning/database-on-cloud.md)
+- [Atualização do MariaDB de 10.0 para 12.0 para Adobe Commerce na nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10.0-to-10.2-for-magento-commerce-cloud.html)

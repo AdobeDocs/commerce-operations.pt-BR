@@ -1,6 +1,6 @@
 ---
 title: Manutenção de projeto do Commerce
-description: Definir padrões de qualidade elevados e estabelecer mecanismos para manter esses padrões ao longo do tempo.
+description: Estabeleça padrões de alta qualidade e mecanismos para manter esses padrões ao longo do tempo.
 exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -9,52 +9,52 @@ ht-degree: 0%
 
 ---
 
-# Atualizações, backups e manutenção
+# Upgrades, backups e manutenção
 
-Manter uma base de código forte, recursos e funcionalidades e manter uma postura de segurança forte são cruciais para ter uma loja de comércio eletrônico competitiva.
+Manter uma base de código, recursos e funcionalidade sólidos e manter uma postura de segurança forte são cruciais para ter uma loja de comércio eletrônico competitiva.
 
-Há várias maneiras de atualizar com eficiência um site de comércio eletrônico dependendo da infraestrutura disponível, mas esse processo varia de negócios para negócios. Dependendo da maturidade técnica da empresa, isso pode ser um exercício muito desafiador e caro.
+Há várias maneiras de atualizar com eficiência um site de comércio eletrônico, dependendo da infraestrutura disponível, mas esse processo varia de acordo com os negócios. Dependendo da maturidade técnica da empresa, isso pode ser um exercício muito desafiador e dispendioso.
 
 >[!NOTE]
 >
 >Sempre faça backup dos arquivos antes de executar uma atualização.
 
-## Por que atualizar faz sentido
+## Por que a atualização faz sentido
 
-Como a mudança e a adaptação a novos comportamentos de clientes é a norma, estar em uma plataforma mais antiga torna a acomodação ou imitação de novas tecnologias e comportamentos mais caros e demorados, ou simplesmente não é possível. Além disso, à medida que cada vez mais desenvolvedores mudam o foco para novas tecnologias, a programação e o custo de remontagem de projetos podem ser proibitivos.
+Como a mudança e a adaptação aos novos comportamentos dos clientes são a norma, estar em uma plataforma mais antiga torna a adaptação ou a imitação de novas tecnologias e comportamentos mais caros e demorados, ou simplesmente não é possível. Além disso, à medida que mais e mais desenvolvedores mudam seu foco para novas tecnologias, a programação e o custo de projetos de adaptação podem ser proibitivos.
 
-Ao atualizar, você está protegendo seus negócios no futuro e se capacitando para melhorar as necessidades dos clientes.
+Com a atualização, você está protegendo seus negócios e oferecendo a si mesmo a capacidade de atender melhor às necessidades dinâmicas dos clientes.
 
-## Planejamento da atualização
+## Planejando sua atualização
 
-Veja uma lista rápida de perguntas que você deve fazer enquanto planeja sua atualização:
+Esta é uma lista rápida de perguntas que você deve fazer ao planejar sua atualização:
 
-- **Limpeza do site**—O que posso manter e o que pode mudar? Quais novidades eu quero implementar? Por exemplo, que alterações eu desejo fazer na taxonomia e na estrutura do produto ou alterações no conteúdo?
+- **Limpeza do site**— O que posso guardar e o que posso mudar? Que novidades quero implementar? Por exemplo, que alterações devo fazer na taxonomia e na estrutura do produto ou alterações no conteúdo?
 
-- **Verificação do Analytics**—Quais são meus KPIs atuais? O que meus dados me dizem sobre como meu site pode ser melhorado? Existem novos KPIs que eu quero implementar para o meu novo site?
+- **Verificação do Analytics**—Quais são meus KPIs atuais? O que meus dados me dizem sobre como meu site pode ser melhorado? Existem novos KPIs que eu desejo implementar para meu novo site?
 
-- **Extensões**—Ainda preciso delas? Quais extensões de terceiros atendem às minhas necessidades?
+- **Extensões**- Ainda preciso deles? Quais extensões de terceiros atendem às minhas necessidades?
 
-- **Integrações**—Quais sistemas de terceiros, como ERP e contabilidade, eu preciso integrar? Eles têm conectores específicos ou são necessárias integrações personalizadas?
+- **Integrações**— quais sistemas de terceiros, como ERP e contabilidade, precisam ser integrados? Eles têm conectores específicos ou são necessárias integrações personalizadas?
 
-- **Treinamento**—A equipe de upgrade tem o conhecimento e o treinamento adequados? Qual é meu plano para treinar usuários finais sobre como usar o novo administrador antes que ele entre em funcionamento?
+- **Treinamento**— a equipe de atualização tem o conhecimento e o treinamento corretos? Qual é meu plano para treinar os usuários finais sobre como usar o novo administrador antes que ele entre em funcionamento?
 
-- **Equipe de atualização**—Quem é dedicado ao projeto de atualização (especialistas internos e externos)? Têm o apoio necessário da liderança e de outras equipes internas?
+- **Equipe de atualização**— Quem é dedicado ao projeto de upgrade (especialistas internos e externos)? Eles têm o apoio necessário da liderança e de outras equipes internas?
 
 ## Perguntas comuns sobre atualização
 
 P: Quanto tempo leva uma atualização típica?
 
-A: Depende da plataforma e da arquitetura. Há muitas variáveis, e se você também estiver fazendo um novo design, ele leva mais tempo. Após a conclusão do processo de descoberta, a equipe de implementação pode fornecer um período mais preciso para o seu projeto.
+R: Depende da plataforma e da arquitetura. Há muitas variáveis, e se você também estiver fazendo um redesenho, leva mais tempo. Após a conclusão do processo de descoberta, sua equipe de implementação poderá fornecer um período mais preciso para o projeto.
 
 
-P: Quanto custa para atualizar?
+P: Quanto custa atualizar?
 
-A: Novamente, depende da sua situação atual e dos requisitos para o novo site. A boa notícia é que, geralmente, como parceiros e desenvolvedores se tornaram mais familiarizados e compatíveis com sua plataforma de Comércio, os custos de atualização e a duração dos projetos diminuíram. Recomendamos consultar seu Parceiro de soluções para obter uma estimativa.
+R: Novamente, depende da sua situação atual e das suas necessidades para o novo site. A boa notícia é que, geralmente, à medida que parceiros e desenvolvedores se tornaram mais familiares e hábeis com sua plataforma do Commerce, os custos de atualização e a duração dos projetos diminuíram. Recomendamos consultar seu parceiro de soluções para obter uma estimativa.
 
-P: As versões do Adobe Commerce 2 das minhas extensões do Adobe Commerce 1 estão disponíveis?
+P: Há versões do Adobe Commerce 2 das minhas extensões do Adobe Commerce 1 disponíveis?
 
-A: Praticamente todas as necessidades críticas para os negócios são contempladas. Desde conteúdo e personalizações, envio e cumprimento até a otimização do site, temos visto um aumento dramático no número e na diversidade de extensões no Commerce Marketplace como a adoção comercial da Adobe Commerce e a familiaridade com parceiros cresceram.
+R: Praticamente todas as necessidades críticas para os negócios são atendidas. Desde conteúdo e personalizações e envio e fornecimento até a otimização do site, vimos um aumento drástico no número e na diversidade de extensões no Commerce Marketplace, à medida que a adoção pelo comerciante e a familiaridade do parceiro com o Adobe Commerce cresceram.
 
 Exemplos das principais empresas globais de tecnologia que criaram extensões incluem:
 
@@ -63,27 +63,27 @@ Exemplos das principais empresas globais de tecnologia que criaram extensões in
 - TaxJar
 - Nosto
 - Adobe
-- Rápido
-- Vertex
-- Amarela
-- Celebrações
+- Fastly
+- Vértice
+- Amasty
+- Celebros
 - Logicbroker
 
-Além disso, as verificações de garantia de qualidade implementadas para todas as extensões garantem consistentemente alta qualidade do produto, de modo que há uma probabilidade muito alta de que sua extensão ou uma alternativa de alta qualidade para sua extensão já esteja no Commerce Marketplace.
+Além disso, as verificações de garantia de qualidade implementadas para todas as extensões garantem consistentemente a alta qualidade do produto, portanto, há uma probabilidade muito alta de que sua extensão ou uma alternativa de alta qualidade para sua extensão já esteja em Commerce Marketplace.
 
-Muitos comerciantes descobriram que os recursos nativos no Adobe Commerce reduziram a necessidade e a dependência em extensões, simplificando as operações de desenvolvimento e manutenção e melhorando o desempenho geral. Caso ainda não o tenha feito, recomendamos que você se envolva no planejamento completo da atualização para descobrir esses tipos de oportunidades.
+Muitos comerciantes descobriram que os recursos nativos no Adobe Commerce reduziram a necessidade e a dependência em relação às extensões, simplificando as operações de desenvolvimento e manutenção e melhorando o desempenho geral. Caso ainda não o tenha feito, recomendamos que você faça um planejamento detalhado de atualização para descobrir esses tipos de oportunidades.
 
 P: E se minhas extensões e integrações não forem compatíveis com a plataforma?
 
-A: Dependendo da flexibilidade da plataforma e da solução de hospedagem, diferentes opções de personalização podem ser uma opção para a maioria dos softwares e sistemas. Essas personalizações podem ser desenvolvidas durante o processo de atualização.
+R: Dependendo da flexibilidade da plataforma e da solução de hospedagem, opções de personalização diferentes podem ser uma opção para a maioria dos softwares e sistemas. Essas personalizações podem ser desenvolvidas durante o processo de atualização.
 
 
 P: Como minha SEO será afetada?
 
-A: Com o planejamento adequado, sua SEO deve ser aprimorada. Nosso parceiro Corra recomenda:
+R: Com um planejamento adequado, seu SEO deve ser melhorado. Nosso parceiro Corra recomenda:
 
-- Criação de um plano de redirecionamento sucinto 301
-- Criar uma estratégia em torno da taxonomia de URL
-- Fazendo uma verificação do mapa de site XML
-- Trabalhar com o Tag Management (Google)
-- Discussão em detalhes com a equipe de implementação
+- Criação de um plano de redirecionamento 301 sucinto
+- Criação de uma estratégia em torno da taxonomia de URL
+- Fazendo uma verificação XML do mapa de site
+- Trabalhar com gerenciamento de tags (Google)
+- Discutindo detalhadamente com sua equipe de implementação

@@ -1,6 +1,6 @@
 ---
 title: Progressive Web Application (PWA)
-description: Saiba mais sobre o padrão de tecnologia da Web de próxima geração para sites de comércio eletrônico.
+description: Saiba mais sobre o padrão de tecnologia da próxima geração na Web para sites de comércio eletrônico.
 exl-id: aa968642-bf8b-4b3d-8f1d-7ced5973f331
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,25 +11,25 @@ ht-degree: 0%
 
 # Aplicativo web progressivo (PWA)
 
-Os aplicativos web progressivos (PWA) representam o futuro das experiências de compras. O PWA é o padrão de tecnologia da Web de próxima geração que oferece experiências de compra semelhantes a aplicativos em dispositivos móveis e para desktop. Usando o PWA, os comerciantes podem criar seus próprios PWA de alto desempenho em cima de sua plataforma de Comércio, o que comprovadamente aumenta a participação do usuário, aumenta as taxas de conversão e diversifica os fluxos de receita.
+Os aplicativos web progressivos (PWA) representam o futuro das experiências de compra. Os PWA são o padrão de tecnologia da Web da próxima geração, que oferece experiências de compra semelhantes a aplicativos em dispositivos móveis e desktop. Com o PWA, os comerciantes podem criar seus próprios PWA de alto desempenho na plataforma Commerce, o que comprovadamente aumenta o engajamento do usuário, aumenta as taxas de conversão e diversifica os fluxos de receita.
 
 ## Recursos
 
-O PWA é executado em um navegador, mas oferece aos usuários a experiência de um aplicativo nativo por meio de recursos principais, incluindo:
+Os PWA são executados em um navegador, mas oferecem aos usuários a experiência de um aplicativo nativo por meio de recursos principais, incluindo:
 
-- Acesso ao aplicativo através da tela inicial móvel
-- Acesso offline
+- Acesso ao aplicativo através da tela inicial do dispositivo móvel
+- Acesso off-line
 - Notificações por push
 
-Grandes empresas usam PWA para aumentar as taxas de conversão e as receitas, mas pequenas e médias empresas também podem aproveitar as mesmas tecnologias para criar uma experiência semelhante a aplicativos para seus clientes e expandir seu público-alvo.
+As grandes empresas usam os PWA para aumentar as taxas de conversão e a receita, mas as pequenas e médias empresas também podem aproveitar as mesmas tecnologias para criar uma experiência semelhante a um aplicativo para seus clientes e expandir seu público-alvo.
 
 ## Importância
 
-Por que o PWA é tão importante para as plataformas de comércio eletrônico?
+Por que os PWA são tão importantes para as plataformas de comércio eletrônico?
 
-- Alcance um público-alvo maior
+- Alcance um público maior
 
-- Reduza os custos e o tempo de desenvolvimento
+- Reduzir os custos e o tempo de desenvolvimento
 
 - Velocidade e acessibilidade
 

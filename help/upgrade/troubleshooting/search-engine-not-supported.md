@@ -1,13 +1,13 @@
 ---
 title: Mecanismo de pesquisa atual não suportado
 description: Solucione problemas com a atualização do Adobe Commerce ou do Magento Open Source após encontrar um erro sobre um mecanismo de pesquisa não compatível.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # Mecanismo de pesquisa atual não suportado
 

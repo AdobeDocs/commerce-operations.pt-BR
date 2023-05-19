@@ -1,63 +1,63 @@
 ---
-title: Use Redis para armazenamento de sessão
+title: Usar Redis para armazenamento de sessão
 description: Saiba como configurar o Redis para armazenamento de sessão.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
 
 ---
 
-
-# Use Redis para armazenamento de sessão
+# Usar Redis para armazenamento de sessão
 
 >[!IMPORTANT]
 >
 >Você deve [instalar o Redis](config-redis.md#install-redis) antes de continuar.
 
 
-O Commerce agora fornece opções de linha de comando para configurar o armazenamento de sessão Redis. Em versões anteriores, você editava o `<Commerce install dir>app/etc/env.php` arquivo. A linha de comando fornece validação e é o método de configuração recomendado, mas você ainda pode editar a variável `env.php` arquivo.
+O Commerce agora fornece opções de linha de comando para configurar o armazenamento de sessão Redis. Em versões anteriores, você editava o `<Commerce install dir>app/etc/env.php` arquivo. A linha de comando fornece validação e é o método de configuração recomendado, mas ainda é possível editar o `env.php` arquivo.
 
-Execute o `setup:config:set` e especifique parâmetros específicos de Redis.
+Execute o `setup:config:set` e especifique parâmetros específicos do Redis.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
-em que
+onde
 
-`--session-save=redis` habilita o armazenamento da sessão Redis. Se esse recurso já tiver sido ativado, omita esse parâmetro.
+`--session-save=redis` habilita o armazenamento de sessão Redis. Se esse recurso já tiver sido ativado, omita esse parâmetro.
 
-`--session-save-redis-<parameter_name>=<parameter_value>` é uma lista de pares de parâmetros/valores que configuram o armazenamento de sessão:
+`--session-save-redis-<parameter_name>=<parameter_value>` é uma lista de pares de parâmetro/valor que configuram o armazenamento da sessão:
 
 | Parâmetro de linha de comando | Nome do parâmetro | Significado | Valor padrão |
 |--- |--- |--- |--- |
-| session-save-redis-host | host | Nome do host, endereço IP ou caminho absoluto totalmente qualificado, se estiver usando soquetes UNIX. | localhost |
-| session-save-redis-port | porta | Redis porta de escuta do servidor. | 6379 |
-| session-save-redis-password | senha | Especifica uma senha se o servidor Redis requer autenticação. | empty |
-| session-save-redis-timeout | timeout | Tempo limite da conexão, em segundos. | 2,5 |
+| session-save-redis-host | host | Nome de host totalmente qualificado, endereço IP ou caminho absoluto, se estiver usando soquetes UNIX. | localhost |
+| session-save-redis-port | porta | Porta de escuta do servidor Redis. | 6379 |
+| session-save-redis-password | senha | Especifica uma senha se o servidor Redis exigir autenticação. | vazio |
+| session-save-redis-timeout | timeout | Tempo limite da conexão, em segundos. | 2.5 |
 | session-save-redis-persistent-id | persistent_identifier | Sequência de caracteres exclusiva para ativar conexões persistentes (por exemplo, sess-db0).<br>[Problemas conhecidos com phpredis e php-fpm](https://github.com/phpredis/phpredis/issues/70). |
-| session-save-redis-db | banco de dados | Número exclusivo do banco de dados Redis, recomendado para proteção contra perda de dados.<br><br>**Importante**: Se você usar Redis para mais de um tipo de armazenamento em cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número padrão do banco de dados de armazenamento em cache a 0, o número do banco de dados de armazenamento em cache de página a 1 e o número do banco de dados de armazenamento de sessão a 2. | 0 |
-| session-save-redis-compression-threshold | compression_threshold | Defina como 0 para desativar a compactação (recomendado quando `suhosin.session.encrypt = On`).<br>[Problema conhecido com strings de mais de 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-redis-db | banco de dados | Número exclusivo do banco de dados Redis, recomendado para proteção contra perda de dados.<br><br>**Importante**: Se você usar Redis para mais de um tipo de cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número do banco de dados de cache padrão a 0, o número do banco de dados de cache da página a 1 e o número do banco de dados de armazenamento da sessão a 2. | 0 |
+| session-save-redis-compression-threshold | compression_threshold | Defina como 0 para desativar a compactação (recomendado quando `suhosin.session.encrypt = On`).<br>[Problema conhecido com sequências de mais de 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Opções: gzip, lzf, lz4 ou snappy. | gzip |
-| session-save-redis-log-level | log_level | Defina como qualquer um dos seguintes, listado em ordem de menos detalhado a mais detalhado:<ul><li>0 (emergência: apenas os erros mais graves)<li>1 (alerta: ação imediata necessária)<li>2 (crítico: componente de aplicativo indisponível)<li>3 (erro: erros de tempo de execução, não críticos, mas devem ser monitorados)<li>4 (aviso: informações adicionais, recomendado)<li>5 (anúncio: estado normal, mas significativo)<li>6 (informações: mensagens informativas)<li>7 (depurar: as mais informações somente para desenvolvimento ou teste)</ul> | 1 |
-| session-save-redis-max-concurrency | max_concurrency | Número máximo de processos que podem aguardar um bloqueio em uma sessão. Para grandes clusters de produção, defina isso como pelo menos 10% do número de processos PHP. | 6 |
-| session-save-redis-break-after-frontend | break_after_frontend | Número de segundos para aguardar antes de tentar quebrar o bloqueio para a sessão de frontend (ou seja, vitrine). | 5 |
-| session-save-redis-break-after-adminhtml | break_after_adminhtml | Número de segundos para aguardar antes de tentar quebrar o bloqueio de uma sessão de adminhtml (ou seja, Admin). | 30º |
-| session-save-redis-first-lifetime | first_lifetime | Duração, em segundos, da sessão para não bots na primeira gravação ou use 0 para desativar. | 600 |
-| session-save-redis-bot-first-lifetime | bot_first_lifetime | Duração, em segundos, da sessão para bots na primeira gravação ou use 0 para desativar. | 60º |
-| session-save-redis-bot-lifetime | bot_lifetime | Duração, em segundos, da sessão para bots em gravações subsequentes ou use 0 para desativar. | 7200 |
-| session-save-redis-disable-locking | disable_locking | Desative totalmente o bloqueio de sessão. | 0 (false) |
-| session-save-redis-min-lifetime | min_lifetime | Duração mínima da sessão, em segundos. | 60º |
-| session-save-redis-max-lifetime | max_lifetime | Duração máxima da sessão, em segundos. | 2592000 (720 horas) |
-| session-save-redis-sentinel-principal | sentinel_principal | Nome principal de Redis Sentinel | empty |
-| session-save-redis-sentinel-servers | sentinel_servers | Lista de servidores Redis Sentinel, separados por vírgulas | empty |
-| session-save-redis-sentinel-verify-principal | sentinel_verify_principal | Verificar sinalizador de status principal do Redis Sentinel | 0 (false) |
+| session-save-redis-log-level | log_level | Defina como qualquer um dos itens a seguir, listados na ordem do menos detalhado ao mais detalhado:<ul><li>0 (emergência: apenas os erros mais graves)<li>1 (alerta: ação imediata necessária)<li>2 (crítico: componente do aplicativo indisponível)<li>3 (erro: erros de tempo de execução, não críticos, mas que devem ser monitorados)<li>4 (aviso: informações adicionais, recomendado)<li>5 (aviso: condição normal, mas significativa)<li>6 (informações: mensagens informativas)<li>7 (depurar: o máximo de informações somente para desenvolvimento ou teste)</ul> | 1 |
+| session-save-redis-max-concurrency | max_concurrency | Número máximo de processos que podem aguardar um bloqueio em uma sessão. Para grandes clusters de produção, defina como pelo menos 10% do número de processos PHP. | 6 |
+| session-save-redis-break-after-frontend | break_after_frontend | Número de segundos a aguardar antes de tentar interromper o bloqueio para uma sessão de front-end (ou seja, loja). | 5 |
+| session-save-redis-break-after-adminhtml | break_after_adminhtml | Número de segundos a aguardar antes de tentar interromper o bloqueio de uma sessão adminhtml (ou seja, Admin). | 30 |
+| session-save-redis-first-lifetime | first_lifetime | Tempo de vida, em segundos, da sessão para não bots na primeira gravação ou use 0 para desativar. | 600 |
+| session-save-redis-bot-first-lifetime | bot_first_lifetime | Tempo de vida, em segundos, da sessão para bots na primeira gravação ou use 0 para desativar. | 60 |
+| session-save-redis-bot-lifetime | bot_lifetime | Tempo de vida, em segundos, da sessão para bots em gravações subsequentes ou use 0 para desativar. | 7200 |
+| session-save-redis-disable-locking | disable_locking | Desabilita completamente o bloqueio de sessão. | 0 (falso) |
+| session-save-redis-min-lifetime | min_lifetime | Tempo de vida mínimo da sessão, em segundos. | 60 |
+| session-save-redis-max-lifetime | max_lifetime | Tempo de vida máximo da sessão, em segundos. | 2592000 (720 horas) |
+| session-save-redis-sentinel-principal | sentinel_principal | Nome principal do Sentinela Redis | vazio |
+| session-save-redis-sentinel-servers | sentinel_servers | Lista de servidores do Redis Sentinel, separados por vírgulas | vazio |
+| session-save-redis-sentinel-verify-principal | sentinel_verify_principal | Verificar sinalizador de status principal do Sentinel do Redis | 0 (falso) |
 | session-save-redis-sentinel-connect-retries | sentinel_connect_retries | Tentativas de conexão para sentinelas | 5 |
 
 ## Exemplo
 
-O exemplo a seguir define Redis como armazenamento de dados da sessão, define o host como `127.0.0.1`, define o nível de log como 4 e define o número do banco de dados como 2. Todos os outros parâmetros são definidos com o valor padrão.
+O exemplo a seguir define Redis como o armazenamento de dados da sessão, define o host como `127.0.0.1`, define o nível de log como 4 e define o número do banco de dados como 2. Todos os outros parâmetros são definidos com o valor padrão.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -97,13 +97,13 @@ O Commerce adiciona linhas semelhantes às seguintes a `<magento_root>app/etc/en
 
 >[!INFO]
 >
->O TTL para registros de sessão usa o valor para Vida útil do cookie, que é configurado no Administrador. Se a Vida útil do cookie estiver definida como 0 (o padrão é 3600), as sessões de Redis expirarão no número de segundos especificado em min_lifetime (o padrão é 60). Essa discrepância se deve às diferenças em como o Redis e os cookies de sessão interpretam um valor vitalício de 0. Se esse comportamento não for desejado, aumente o valor de min_lifetime.
+>O TTL para registros de sessão usa o valor para a Vida útil do cookie, que é configurada no Administrador. Se a Vida útil do cookie for definida como 0 (o padrão é 3600), as sessões Redis expirarão no número de segundos especificado em min_lifetime (o padrão é 60). Essa discrepância se deve às diferenças em como os Redis e os cookies de sessão interpretam um valor de tempo de vida igual a 0. Se esse comportamento não for o desejado, aumente o valor de min_lifetime.
 
-## Verifique a conexão Redis
+## Verificar conexão Redis
 
-Para verificar se o Redis e o Commerce estão funcionando juntos, faça logon no servidor que executa o Redis, abra um terminal e use o comando Redis monitor ou o comando ping.
+Para verificar se o Redis e o Commerce estão trabalhando juntos, faça login no servidor executando o Redis, abra um terminal e use o comando Redis monitor ou o comando ping.
 
-### comando Redis monitor
+### Comando do monitor Redis
 
 ```bash
 redis-cli monitor
@@ -120,17 +120,16 @@ Exemplo de saída de armazenamento de sessão:
 ... more ...
 ```
 
-### comando ping Redis
+### comando Redis ping
 
 ```bash
 redis-cli ping
 ```
 
-`PONG` deve ser a resposta.
+`PONG` A deve ser a resposta.
 
-Se ambos os comandos tiverem êxito, o Redis será configurado corretamente.
+Se ambos os comandos forem bem-sucedidos, o Redis será configurado corretamente.
 
-### Como inspecionar dados compactados
+### Inspeção de dados compactados
 
-Para inspecionar os dados compactados da Sessão e o Cache da Página, a variável [RESP.app](https://flathub.org/apps/details/app.resp.RESP) O suporta a descompactação automática do Cache de Sessão e Página do Commerce 2 e exibe os dados de sessão PHP em um formulário legível.
-
+Para inspecionar dados de Sessão compactados e Cache de Página, a variável [RESP.app](https://flathub.org/apps/details/app.resp.RESP) O suporta a descompactação automática do cache de sessão e página do Commerce 2 e exibe os dados de sessão do PHP em um formato legível.

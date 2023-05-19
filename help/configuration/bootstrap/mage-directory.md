@@ -1,26 +1,26 @@
 ---
-title: Personalizar caminhos do diretório base
+title: Personalizar caminhos de diretório base
 description: Use a variável MAGE_DIRS para definir uma matriz de caminhos absolutos.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
+# Caminhos de diretório base
 
-# Caminhos do diretório base
-
-O `MAGE_DIRS` A variável de ambiente permite especificar caminhos de diretório base personalizados e fragmentos de URLs base usados pelo aplicativo Commerce para criar caminhos absolutos para vários arquivos ou para gerar URLs.
+A variável `MAGE_DIRS` A variável de ambiente permite especificar caminhos de diretório base personalizados e fragmentos de URLs base que são usados pelo aplicativo Commerce para construir caminhos absolutos para vários arquivos ou para gerar URLs.
 
 ## Definir MAGE_DIRS
 
 Especificar uma matriz associativa de onde as chaves são constantes [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] Os valores e são caminhos absolutos de diretórios ou seus caminhos de URL, respectivamente.
 
-Você pode definir `MAGE_DIRS` de qualquer uma das seguintes maneiras:
+Você pode definir `MAGE_DIRS` de qualquer uma das seguintes formas:
 
 - [Definir o valor dos parâmetros de inicialização](../bootstrap/set-parameters.md)
-- Use um script de ponto de entrada personalizado, como o seguinte:
+- Use um script de ponto de entrada personalizado como o seguinte:
 
    ```php
    <?php

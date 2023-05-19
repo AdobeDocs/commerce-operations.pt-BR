@@ -1,17 +1,17 @@
 ---
 title: Fases de implementação
-description: Saiba mais sobre as práticas recomendadas para as fases de implementação de projetos da Adobe Commerce.
-source-git-commit: bb49e4f239d49393b5b8c82deabe15f6f53c26f7
+description: Saiba mais sobre as práticas recomendadas para as fases de implementação dos projetos do Adobe Commerce.
+exl-id: c5272f79-7315-46dc-a191-a40004aaa812
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
 
 ---
 
-
 # Práticas recomendadas de implementação
 
-Há muitas maneiras de implementar um projeto do Adobe Commerce. As práticas recomendadas fornecidas nesta seção descrevem a maneira como o Adobe espera que os clientes e parceiros implementem casos de uso específicos. Essas recomendações foram criadas para ajudar a evitar problemas comuns e possíveis problemas relacionados à configuração e personalização do site, implantação, operações, desempenho e atualizações.
+Há muitas maneiras de implementar um projeto do Adobe Commerce. As práticas recomendadas fornecidas nesta seção descrevem como a Adobe espera que os clientes e parceiros implementem casos de uso específicos. Essas recomendações foram projetadas para ajudar a evitar problemas comuns e possíveis problemas relacionados à configuração e personalização do site, implantação, operações, desempenho e atualizações.
 
 Essas práticas recomendadas são organizadas por fase de implementação para que você possa encontrar as recomendações que se aplicam ao seu caso de uso.
 
@@ -24,7 +24,7 @@ Essas práticas recomendadas são organizadas por fase de implementação para q
     <div>
     <a href="planning/overview.md"><strong>Planejamento</strong></a>
     </div>
-    Agrupamento de requisitos, design arquitetônico, design de catálogo, escopo do projeto, provisionamento de conta, acesso do usuário, compra de extensão
+    Coleta de requisitos, projeto de arquitetura, projeto de catálogo, escopo do projeto, provisionamento de conta, acesso do usuário, compra de extensão
     <br>
   </td>
   <td>
@@ -34,7 +34,7 @@ Essas práticas recomendadas são organizadas por fase de implementação para q
     <div>
     <a href="development/overview.md"><strong>Desenvolvimento</strong></a>
     </div>
-    Configuração do ambiente local e de preparo, solução de problemas, gerenciamento de código, planejamento de primavera, revisão de impressão, teste de aceitação e aprovação do cliente
+    Configuração de ambientes de preparo e locais, solução de problemas, gerenciamento de código, planejamento de sprint, análise de sprint, teste de aceitação e aprovação do cliente
     <br>
   </td>
   <td>
@@ -44,7 +44,7 @@ Essas práticas recomendadas são organizadas por fase de implementação para q
     <div>
     <a href="launch/overview.md"><strong>Launch</strong></a>
     </div>
-    Revisões finais da lista de verificação pré e pós-lançamento, implantação de produção, configuração de segurança, verificação de serviços e monitoramento de desempenho  
+    Revisões finais das listas de verificação pré e pós-lançamento, implantação de produção, configuração de segurança, verificação de serviços e monitoramento de desempenho  
     <br>
   </td>
   <td>

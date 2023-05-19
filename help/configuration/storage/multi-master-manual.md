@@ -1,13 +1,13 @@
 ---
 title: Configurar manualmente bancos de dados principais
 description: Consulte orientações sobre como configurar manualmente a solução de banco de dados dividido.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 0%
 
 ---
-
 
 # Configurar manualmente bancos de dados principais
 
@@ -15,27 +15,27 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-Se o aplicativo Commerce já estiver em produção ou se você já tiver instalado um código personalizado ou componentes, talvez seja necessário configurar os bancos de dados divididos manualmente. Antes de continuar, entre em contato com o Suporte da Adobe Commerce para ver se isso é necessário no seu caso.
+Se o aplicativo Commerce já estiver em produção ou se você já tiver instalado o código personalizado ou os componentes, talvez seja necessário configurar bancos de dados divididos manualmente. Antes de continuar, entre em contato com o Suporte da Adobe Commerce para ver se isso é necessário no seu caso.
 
 A divisão manual de bancos de dados envolve:
 
-- Criar bancos de dados do sistema de check-out e gerenciamento de pedidos (OMS)
+- Criar os bancos de dados do sistema de gerenciamento de pedidos e check-out (OMS)
 - Execute uma série de scripts SQL que:
 
-   - Eliminar chaves estrangeiras
-   - Fazer backup de tabelas de banco de dados de vendas e cotação
+   - Soltar chaves estrangeiras
+   - Fazer backup de tabelas de banco de dados de vendas e cotações
    - Mover tabelas do banco de dados principal para os bancos de dados de vendas e cotações
 
 >[!WARNING]
 >
->Se qualquer código personalizado usar JOINs com tabelas nos bancos de dados de vendas e cotação, você _cannot_ use bancos de dados divididos. Em caso de dúvida, entre em contato com os autores de qualquer código personalizado ou extensões para garantir que seu código não use JOINs.
+>Se qualquer código personalizado usar JOINs com tabelas nos bancos de dados de vendas e cota, você _não é possível_ usar bancos de dados divididos. Em caso de dúvida, entre em contato com os autores de qualquer código personalizado ou extensão para garantir que seu código não use JOINs.
 
 Este tópico usa as seguintes convenções de nomenclatura:
 
 - O nome do banco de dados principal é `magento` e seu nome de usuário e senha são `magento`
 - O nome do banco de dados de aspas é `magento_quote` e seu nome de usuário e senha são `magento_quote`
 
-   O banco de dados de cotação também é conhecido como _checkout_ banco de dados.
+   O banco de dados de cotações também é chamado de _check-out_ banco de dados.
 
 - O nome do banco de dados de vendas é `magento_sales` e seu nome de usuário e senha são `magento_sales`
 
@@ -43,38 +43,38 @@ Este tópico usa as seguintes convenções de nomenclatura:
 
 >[!INFO]
 >
->Este guia pressupõe que todos os três bancos de dados estejam no mesmo host que o aplicativo Commerce. No entanto, a escolha de onde localizar os bancos de dados e o nome deles é da sua responsabilidade. Esperamos que nossos exemplos facilitem as instruções.
+>Este guia pressupõe que todos os três bancos de dados estejam no mesmo host que o aplicativo Commerce. No entanto, a escolha de onde localizar os bancos de dados e seu nome depende de você. Esperamos que nossos exemplos tornem as instruções mais fáceis de seguir.
 
-## Faça o backup do sistema Commerce
+## Fazer backup do sistema Commerce
 
-O Adobe recomenda que você faça o backup do banco de dados e do sistema de arquivos atuais para restaurá-lo em caso de problemas durante o processo.
+A Adobe recomenda que você faça backup do banco de dados e do sistema de arquivos atuais para poder restaurá-los caso tenha problemas durante o processo.
 
-**Para fazer backup do sistema**:
+**Para fazer backup do seu sistema**:
 
-1. Faça logon no seu servidor do Commerce como, ou alterne para, a variável [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
-1. Insira os seguintes comandos:
+1. Faça logon no servidor do Commerce como ou alterne para a [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
+1. Digite os seguintes comandos:
 
    ```bash
    magento setup:backup --code --media --db
    ```
 
-1. Continue com a próxima seção.
+1. Prossiga para a próxima seção.
 
 ## Configurar bancos de dados principais adicionais
 
 Esta seção discute como criar instâncias de banco de dados para tabelas de vendas e cotações.
 
-**Criação de bancos de dados de cotação de vendas e OMS**:
+**Para criar bancos de dados de vendas e cotações OMS**:
 
 1. Faça logon no servidor de banco de dados como qualquer usuário.
-1. Digite o seguinte comando para chegar a um prompt de comando do MySQL:
+1. Digite o seguinte comando para obter um prompt de comando do MySQL:
 
    ```bash
    mysql -u root -p
    ```
 
-1. Digite o MySQL `root` senha do usuário, quando solicitado.
-1. Insira os seguintes comandos na ordem mostrada para criar instâncias de banco de dados nomeadas `magento_quote` e `magento_sales` com os mesmos nomes de usuário e senhas:
+1. Insira o MySQL `root` senha do usuário quando solicitado.
+1. Insira os seguintes comandos na ordem mostrada para criar instâncias de banco de dados chamadas `magento_quote` e `magento_sales` com os mesmos nomes de usuário e senhas:
 
    ```shell
    create database magento_quote;
@@ -90,7 +90,7 @@ Esta seção discute como criar instâncias de banco de dados para tabelas de ve
 
 1. Verifique os bancos de dados, um de cada vez:
 
-   banco de dados de cotação:
+   banco de dados quote:
 
    ```bash
    mysql -u magento_quote -p
@@ -114,37 +114,37 @@ Esta seção discute como criar instâncias de banco de dados para tabelas de ve
 
    Se o monitor MySQL for exibido, você criou o banco de dados corretamente. Se um erro for exibido, repita os comandos anteriores.
 
-1. Continue com a próxima seção.
+1. Prossiga para a próxima seção.
 
 ## Configurar o banco de dados de vendas
 
-Esta seção discute como criar e executar scripts SQL que alteram tabelas de banco de dados de aspas e fazer backup dos dados dessas tabelas.
+Esta seção discute como criar e executar scripts SQL que alteram tabelas de banco de dados de cotas e fazer backup dos dados dessas tabelas.
 
-Nomes de tabela do banco de dados de vendas começam com:
+Os nomes das tabelas do banco de dados de vendas começam com:
 
 - `salesrule_`
 - `sales_`
 - `magento_sales_`
-- O `magento_customercustomattributes_sales_flat_order` tabela também é afetada
+- A variável `magento_customercustomattributes_sales_flat_order` a tabela também é afetada
 
 >[!INFO]
 >
->Esta seção contém scripts com nomes de tabela de banco de dados específicos. Se você tiver executado personalizações ou se quiser ver uma lista completa de tabelas antes de executar ações sobre elas, consulte [Scripts de referência](#reference-scripts).
+>Esta seção contém scripts com nomes de tabela de banco de dados específicos. Se você tiver executado personalizações ou se quiser ver uma lista completa de tabelas antes de executar ações nelas, consulte [Scripts de referência](#reference-scripts).
 
 Para obter mais informações, consulte:
 
-- [Criar scripts SQL de banco de dados de vendas](#create-sales-database-sql-scripts)
+- [Criar scripts SQL do banco de dados de vendas](#create-sales-database-sql-scripts)
 - [Fazer backup dos dados de vendas](#back-up-sales-data)
 
-### Criar scripts SQL de banco de dados de vendas
+### Criar scripts SQL do banco de dados de vendas
 
-Crie os seguintes scripts SQL em um local acessível pelo usuário, ao qual você faz logon no servidor do Commerce. Por exemplo, se você fizer logon ou executar comandos como `root`, é possível criar os scripts na `/root/sql-scripts` diretório.
+Crie os seguintes scripts SQL em um local acessível ao usuário como quem você fez logon no servidor do Commerce. Por exemplo, se você efetuar login ou executar comandos como `root`, é possível criar os scripts na variável `/root/sql-scripts` diretório.
 
 #### Remover chaves estrangeiras
 
-Esse script remove chaves estrangeiras que se referem a tabelas que não são de vendas do banco de dados de vendas.
+Esse script remove chaves estrangeiras que se referem a tabelas não relacionadas a vendas do banco de dados de vendas.
 
-Crie o script a seguir e dê a ele um nome como `1_foreign-sales.sql`. Substituir `<your main DB name>` com o nome do banco de dados.
+Crie o script a seguir e dê um nome como `1_foreign-sales.sql`. Substituir `<your main DB name>` com o nome do banco de dados.
 
 ```sql
 use <your main DB name>;
@@ -199,13 +199,13 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 Execute o script anterior:
 
-1. Faça logon no banco de dados do MySQL como o `root` ou utilizador administrativo:
+1. Faça logon no banco de dados MySQL como o `root` ou usuário administrativo:
 
    ```bash
    mysql -u root -p
    ```
 
-1. Na `mysql>` , execute o script da seguinte maneira:
+1. No `mysql>` execute o script da seguinte maneira:
 
    ```shell
    source <path>/<script>.sql
@@ -221,16 +221,16 @@ Execute o script anterior:
 
 ### Fazer backup dos dados de vendas
 
-Esta seção discute como fazer backup das tabelas de vendas do banco de dados principal do Commerce, para que você possa restaurá-las no banco de dados de vendas separado.
+Esta seção discute como fazer backup das tabelas de vendas do banco de dados principal do Commerce para que você possa restaurá-las no banco de dados de vendas separado.
 
-Se você estiver no `mysql>` prompt, digite `exit` para retornar ao shell de comando.
+Se você estiver no `mysql>` , digite `exit` para retornar ao shell de comando.
 
-Execute o seguinte `mysqldump` comandos, um de cada vez, do shell de comando. Em cada um, substitua o seguinte:
+Execute o seguinte `mysqldump` comandos, um de cada vez, no shell de comandos. Em cada um, substitua o seguinte:
 
 - `<your database root username>` com o nome do usuário raiz do banco de dados
 - `<your database root user password>` com a senha do usuário
 - `<your main Commerce DB name>` com o nome do banco de dados do Commerce
-- `<path>` com um caminho do sistema de arquivos gravável
+- `<path>` com um caminho de sistema de arquivos gravável
 
 #### Script 1
 
@@ -258,19 +258,19 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> seque
 
 ### Restaurar dados de vendas
 
-Esse script restaura os dados de vendas no banco de dados de cotação.
+Esse script restaura os dados de vendas no banco de dados de cotações.
 
 #### Requisito NDB
 
-Se estiver usando um [Banco de Dados de Rede (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) cluster:
+Se você estiver usando um [Banco de Dados de Rede (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) cluster:
 
-1. Converta tabelas de InnoDb para o tipo NDB em arquivos de despejo:
+1. Converter tabelas do InnoDb para o tipo NDB em arquivos de despejo:
 
    ```bash
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
-1. Remova linhas com uma chave FULLTEXT dos despejos porque as tabelas NDB não são compatíveis com FULLTEXT.
+1. Remova linhas com uma chave FULLTEXT dos despejos porque as tabelas do NDB não oferecem suporte a FULLTEXT.
 
 #### Restaurar os dados
 
@@ -294,29 +294,29 @@ mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattribu
 
 Onde
 
-- `<your sales DB name>` com o nome do banco de dados de vendas.
+- `<your sales DB name>` com o nome do seu banco de dados de vendas.
 
    Neste tópico, o nome do banco de dados de amostra é `magento_sales`.
 
 - `<root username>` com seu nome de usuário raiz do MySQL
 - `<root user password>` com a senha do usuário
-- Verifique o local dos arquivos de backup criados anteriormente (por exemplo, `/var/sales.sql`)
+- Verificar o local dos arquivos de backup criados anteriormente (por exemplo, `/var/sales.sql`)
 
-## Configurar o banco de dados de cotação
+## Configurar o banco de dados de cotações
 
-Esta seção discute as tarefas necessárias para soltar chaves estrangeiras das tabelas do banco de dados de vendas e mover tabelas para o banco de dados de vendas.
+Esta seção discute as tarefas necessárias para eliminar chaves estrangeiras das tabelas do banco de dados de vendas e mover tabelas para o banco de dados de vendas.
 
 >[!INFO]
 >
->Esta seção contém scripts com nomes de tabela de banco de dados específicos. Se você tiver executado personalizações ou se quiser ver uma lista completa de tabelas antes de executar ações sobre elas, consulte [Scripts de referência](#reference-scripts).
+>Esta seção contém scripts com nomes de tabela de banco de dados específicos. Se você tiver executado personalizações ou se quiser ver uma lista completa de tabelas antes de executar ações nelas, consulte [Scripts de referência](#reference-scripts).
 
-Citar nomes de tabela de banco de dados iniciar com `quote`. O `magento_customercustomattributes_sales_flat_quote` e `magento_customercustomattributes_sales_flat_quote_address` tabelas também são afetadas
+Os nomes das tabelas do banco de dados de cotações começam com `quote`. A variável `magento_customercustomattributes_sales_flat_quote` e `magento_customercustomattributes_sales_flat_quote_address` as tabelas também são afetadas
 
-### Soltar chaves estrangeiras de tabelas de aspas
+### Remover chaves estrangeiras de tabelas de cotações
 
-Esse script remove as chaves estrangeiras que se referem a tabelas sem aspas das tabelas de aspas. Substituir `<your main Commerce DB name>` com o nome do banco de dados do Commerce.
+Esse script remove as chaves estrangeiras que se referem a tabelas de não-aspas das tabelas de aspas. Substituir `<your main Commerce DB name>` com o nome do banco de dados do Commerce.
 
-Crie o script a seguir e dê a ele um nome como `2_foreign-key-quote.sql`:
+Crie o script a seguir e dê um nome como `2_foreign-key-quote.sql`:
 
 ```sql
 use <your main DB name>;
@@ -327,13 +327,13 @@ ALTER TABLE quote_item DROP FOREIGN KEY QUOTE_ITEM_STORE_ID_STORE_STORE_ID;
 
 Execute o script da seguinte maneira:
 
-1. Faça logon no banco de dados do MySQL como o usuário raiz ou administrativo:
+1. Faça logon no banco de dados MySQL como o usuário raiz ou administrativo:
 
    ```bash
    mysql -u root -p
    ```
 
-1. Na `mysql >` , execute o script da seguinte maneira:
+1. No `mysql >` execute o script da seguinte maneira:
    `source <path>/<script>.sql`
 
    Por exemplo,
@@ -344,11 +344,11 @@ Execute o script da seguinte maneira:
 
 1. Depois que o script for executado, insira `exit`.
 
-### Fazer backup de tabelas de aspas
+### Fazer backup de tabelas de cotações
 
-Esta seção discute como fazer backup das tabelas de aspas do banco de dados principal e restaurá-las no banco de dados de aspas.
+Esta seção discute como fazer backup das tabelas de cotações do banco de dados principal e restaurá-las no banco de dados de cotações.
 
-Execute o seguinte comando a partir de um prompt de comando:
+Execute o seguinte comando em um prompt de comando:
 
 ```bash
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_customercustomattributes_sales_flat_quote magento_customercustomattributes_sales_flat_quote_address quote quote_address quote_address_item quote_item quote_item_option quote_payment quote_shipping_rate quote_id_mask > /<path>/quote.sql;
@@ -356,27 +356,27 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### Requisito NDB
 
-Se estiver usando um [Banco de Dados de Rede (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) cluster:
+Se você estiver usando um [Banco de Dados de Rede (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) cluster:
 
-1. Converta tabelas de InnoDb para o tipo NDB em arquivos de despejo:
+1. Converter tabelas do InnoDb para o tipo NDB em arquivos de despejo:
 
    ```bash
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
-1. Remova linhas com uma chave FULLTEXT dos despejos porque as tabelas NDB não são compatíveis com FULLTEXT.
+1. Remova linhas com uma chave FULLTEXT dos despejos porque as tabelas do NDB não oferecem suporte a FULLTEXT.
 
-### Restaurar tabelas para o banco de dados de aspas
+### Restaurar tabelas para o banco de dados de cotações
 
 ```bash
 mysql -u root -p magento_quote < /<path>/quote.sql
 ```
 
-## Eliminar tabelas de vendas e cotações do banco de dados
+## Excluir tabelas de vendas e cotações do banco de dados
 
-Esse script vende e cota tabelas do banco de dados do Commerce. Substituir `<your main DB name>` com o nome do banco de dados do Commerce.
+Esse script fornece tabelas de vendas e cotações do banco de dados do Commerce. Substituir `<your main DB name>` com o nome do banco de dados do Commerce.
 
-Crie o script a seguir e dê a ele um nome como `3_drop-tables.sql`:
+Crie o script a seguir e dê um nome como `3_drop-tables.sql`:
 
 ```sql
 use <your main DB name>;
@@ -450,13 +450,13 @@ SET foreign_key_checks = 1;
 
 Execute o script da seguinte maneira:
 
-1. Faça logon no banco de dados do MySQL como o usuário raiz ou administrativo:
+1. Faça logon no banco de dados MySQL como o usuário raiz ou administrativo:
 
    ```bash
    mysql -u root -p
    ```
 
-1. Na `mysql>` , execute o script da seguinte maneira:
+1. No `mysql>` execute o script da seguinte maneira:
 
    ```shell
    source <path>/<script>.sql
@@ -472,22 +472,22 @@ Execute o script da seguinte maneira:
 
 ## Atualizar a configuração de implantação
 
-A etapa final na divisão manual de bancos de dados é adicionar informações de conexão e recursos à configuração de implantação do Commerce, `env.php`.
+A etapa final na divisão manual dos bancos de dados é adicionar informações de conexão e recursos à configuração de implantação do Commerce, `env.php`.
 
 Para atualizar a configuração de implantação:
 
-1. Faça logon no seu servidor do Commerce como, ou alterne para, a variável [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
+1. Faça logon no servidor do Commerce como ou alterne para a [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 1. Faça backup da configuração de implantação:
 
    ```bash
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 
-1. Abrir `<magento_root>/app/etc/env.php` em um editor de texto e atualize-o usando as diretrizes discutidas nas seções a seguir.
+1. Abertura `<magento_root>/app/etc/env.php` em um editor de texto e atualizá-lo usando as diretrizes discutidas nas seções a seguir.
 
-### Atualizar conexões do banco de dados
+### Atualizar conexões de banco de dados
 
-Localize o bloco começando com `'default'` (em `'connection'`) e adicione `'checkout'` e `'sales'` seções. Substitua os valores de amostra por valores adequados para seu site.
+Localize o bloco que começa com `'default'` (em `'connection'`) e adicione `'checkout'` e `'sales'` seções. Substitua os valores de amostra por valores apropriados para o seu site.
 
 ```php
  'default' =>
@@ -528,7 +528,7 @@ Localize o bloco começando com `'default'` (em `'connection'`) e adicione `'che
 
 ### Atualizar recursos
 
-Localize o bloco começando com `'resource'` e adicionar `'checkout'` e `'sales'` as seguintes seções:
+Localize o bloco que começa com `'resource'` e adicionar `'checkout'` e `'sales'` seções, como se segue:
 
 ```php
 'resource' =>
@@ -549,7 +549,7 @@ Localize o bloco começando com `'resource'` e adicionar `'checkout'` e `'sales'
 
 ## Scripts de referência
 
-Esta seção fornece scripts que podem ser executados para imprimir uma lista completa de tabelas afetadas sem executar nenhuma ação. É possível usá-las para ver quais tabelas são afetadas antes de dividir manualmente os bancos de dados, o que pode ser útil se você usar extensões que personalizam o esquema do banco de dados.
+Esta seção fornece scripts que você pode executar e que imprimem uma lista completa de tabelas afetadas sem executar nenhuma ação nelas. Você pode usá-las para ver quais tabelas são afetadas antes de dividir os bancos de dados manualmente, o que pode ser útil se você usar extensões que personalizam o esquema do banco de dados.
 
 Para usar esses scripts:
 
@@ -558,16 +558,16 @@ Para usar esses scripts:
 
    Neste tópico, o nome do banco de dados de amostra é `magento`.
 
-1. Execute cada script do `mysql>` solicitar como `source <script name>`
+1. Execute cada script a partir do `mysql>` solicitar como `source <script name>`
 1. Examine a saída.
 1. Copie o resultado de cada script para outro script SQL, removendo os caracteres de barra vertical (`|`).
-1. Execute cada script do `mysql>` solicitar como `source <script name>`.
+1. Execute cada script a partir do `mysql>` solicitar como `source <script name>`.
 
-   A execução deste segundo script executa as ações no banco de dados principal do Commerce.
+   A execução desse segundo script executa as ações no banco de dados principal do Commerce.
 
 ### Remover chaves estrangeiras (tabelas de vendas)
 
-Esse script remove chaves estrangeiras que se referem a tabelas que não são de vendas do banco de dados de vendas.
+Esse script remove chaves estrangeiras que se referem a tabelas não relacionadas a vendas do banco de dados de vendas.
 
 ```sql
 select concat(
@@ -596,7 +596,7 @@ where for_name like  '<your main DB name>/|magento_sales|_%' escape '|'
 
 ### Remover chaves estrangeiras (tabelas de aspas)
 
-Esse script remove as chaves estrangeiras que se referem a tabelas sem aspas das tabelas de aspas.
+Esse script remove as chaves estrangeiras que se referem a tabelas de não-aspas das tabelas de aspas.
 
 ```sql
 select concat(
@@ -634,9 +634,9 @@ where for_name like '<your main DB name>/%'
 ;
 ```
 
-### Eliminar tabelas de vendas
+### Descartar tabelas de vendas
 
-Esse script descarta tabelas de vendas do banco de dados do Commerce.
+Esse script remove as tabelas de vendas do banco de dados do Commerce.
 
 ```sql
 use <your main DB name>;
@@ -669,6 +669,6 @@ union all
 select 'SET foreign_key_checks = 1;';
 ```
 
-### Tabelas de aspas soltas
+### Tabelas de citação
 
-Solte todas as tabelas que começam com `quote_`.
+Descartar todas as tabelas que comecem com `quote_`.

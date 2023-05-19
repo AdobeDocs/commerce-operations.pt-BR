@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Promoções
 
-Com a maior parte da população migrando para compras online, os varejistas precisam estar um passo à frente para fornecer a melhor experiência do cliente. Os revendedores precisam pensar nas melhores maneiras de tirar seus produtos do mercado. É aqui que a estratégia de marketing entra em cena. De um modo geral, a estratégia de marketing consiste em seis P:
+Com a maioria da população passando para as compras on-line, os varejistas precisam estar um passo à frente para fornecer a melhor experiência ao cliente. Os varejistas precisam pensar nas melhores maneiras de colocar seus produtos no mercado. É aqui que a estratégia de marketing entra em cena. Em um aspecto geral, a estratégia de marketing consiste em seis Ps:
 
 - Produto
 - Preço
@@ -20,27 +20,27 @@ Com a maior parte da população migrando para compras online, os varejistas pre
 - Pessoas
 - Processos
 
-Cada um dos seis Ps é igualmente importante, mas para comercializar produtos os varejistas precisam usar promoções como uma tática para aumentar o tráfego no local e levar a taxas de conversão mais altas. As promoções ajudam a comercializar produtos e serviços oferecidos pela marca. Há vários níveis promocionais, como envio, produto e pedido.
+Cada um dos seis P&#39;s é igualmente importante, mas para comercializar produtos, os varejistas precisam usar promoções como uma tática para aumentar o tráfego no site e levar a taxas de conversão mais altas. As promoções ajudam a comercializar produtos e serviços oferecidos pela marca. Há vários níveis promocionais, como envio, produto e pedido.
 
 ![exemplo de anúncio promocional](../../assets/playbooks/promotion-example.png)
 
 ## Tipos de promoção
 
-Cada um destes níveis de promoção tem diferentes tipos de promoções, incluindo:
+Cada um desses níveis de promoção tem diferentes tipos de promoções, incluindo:
 
-- Giveaways
-- vendas em flash
+- Prêmios
+- vendas rápidas
 - Amostras gratuitas
-- Comprar X para o total
-- Compre 1 e ganhe 1 gratuitamente
-- Produtos de bônus
-- Compra múltipla
+- Comprar X no total
+- Compre 1 e obtenha 1 grátis
+- Produtos extra
+- Várias compras
 - Venda cruzada
 - Pacotes
 - Conjuntos de produtos
 - Cupons
 - Emails promocionais
-- Transporte gratuito
-- Desconto no frete
+- Frete gratuito
+- Desconto na remessa
 
-Os retalhistas enfrentam uma intensa concorrência. Para ter uma vantagem competitiva, os varejistas precisam aplicar estratégias de marketing como promoções. Cada varejista precisa analisar quais promoções funcionam melhor para elas.
+Os varejistas enfrentam intensa concorrência. Para ter uma vantagem competitiva, os varejistas precisam aplicar estratégias de marketing como promoções. Cada varejista precisa analisar quais promoções funcionam melhor para ele.

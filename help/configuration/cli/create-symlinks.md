@@ -1,19 +1,19 @@
 ---
-title: Criar links simbólicos para arquivos MENOS
-description: Saiba como criar links simbólicos para arquivos MENOS.
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+title: Criar ligações simbólicas para MENOS arquivos
+description: Saiba como criar symlinks para arquivos LESS.
+exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
 
-
-# Criar links simbólicos para arquivos MENOS
+# Criar ligações simbólicas para MENOS arquivos
 
 {{file-system-owner}}
 
-Para criar links simbólicos para arquivos MENOS:
+Para criar symlinks para arquivos LESS:
 
 Opções de comando:
 
@@ -23,19 +23,19 @@ bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="...
 
 >[!INFO]
 >
->Durante o desenvolvimento, esse comando cria links simbólicos para arquivos MENOS no `var/view_preprocessed` e `pub/static` pastas. Esse processo não compila arquivos LESS em arquivos CSS.
+>Durante o desenvolvimento, esse comando cria symlinks para arquivos LESS no `var/view_preprocessed` e `pub/static` pastas. Esse processo não compila MENOS arquivos em arquivos CSS.
 
 A tabela a seguir explica os parâmetros e valores desse comando.
 
 | Parâmetro | Valor | Obrigatório? |
 | --------- | ----- | --------- |
-| `--type` | Tipo de arquivos de origem: [less] (padrão: &quot;less&quot;)<br>Atualmente, LESS é o único tipo de arquivo suportado. | Não |
-| `--locale` | Código de localidade.<br>Para exibir a lista de códigos de localidade, insira `bin/magento info:language:list` | Não |
-| `--area` | Área (`adminhtml` para o domínio administrativo, `frontend` para a loja). | Não |
+| `--type` | Tipo de arquivos de origem: [menos] (padrão: &quot;less&quot;)<br>Atualmente, HESS é o único tipo de arquivo aceito. | Não |
+| `--locale` | Código da localidade.<br>Para exibir a lista de códigos de localidade, informe `bin/magento info:language:list` | Não |
+| `--area` | Área (`adminhtml` para a área administrativa, `frontend` para a loja). | Não |
 | `--theme` | Nome do tema em `<VendorName>/<theme-name>` formato. Por exemplo, `Magento/blank` ou `Magento/backend`. | Não |
-| `<file>` | Lista de arquivos CSS separados por espaços para conversão em MENOS sem a extensão CSS. (O padrão é `css/styles-m css/styles-l`, para tipo adminhtml `css/styles css/styles-old`) | Não |
+| `<file>` | Lista separada por espaços de arquivos CSS para conversão em LESS sem a extensão CSS. (O padrão é `css/styles-m css/styles-l`, para tipo adminhtml `css/styles css/styles-old`) | Não |
 
-Por exemplo, para criar arquivos MENOS para o tema de primeiro plano chamado `VendorName/themeName` no `en_US` localidade usando um arquivo CSS chamado `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`, digite o seguinte comando:
+Por exemplo, para criar MENOS arquivos para o tema de front-end chamado `VendorName/themeName` no `en_US` localidade usando um arquivo CSS chamado `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`, digite o seguinte comando:
 
 ```bash
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l
@@ -49,7 +49,7 @@ Processed Area: frontend, Locale: en_US, Theme: VendorName/themeName, File type:
 Successfully processed.
 ```
 
-Para criar arquivos MENOS para o adminhtml:
+Para criar MENOS arquivos para o adminhtml:
 
 ```bash
 bin/magento dev:source-theme:deploy --locale="en_US" --area="adminhtml" --theme="Magento/backend" css/styles css/styles-old

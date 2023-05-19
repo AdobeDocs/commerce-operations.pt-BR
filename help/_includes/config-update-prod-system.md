@@ -22,7 +22,7 @@ ht-degree: 0%
 
    Para obter opções adicionais, como a capacidade de definir uma lista de permissões de endereço IP, consulte [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
-1. Interrompa todos os trabalhadores da fila em execução definindo `cron_run` para `false` em `app/etc/env.php` como se segue:
+1. Interromper todos os trabalhadores em execução configurando `cron_run` para `false` in `app/etc/env.php` do seguinte modo:
 
    ```php?start_inline=1
    'cron_consumers_runner' => [
@@ -36,19 +36,19 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. Por último, `kill` Qualquer processo ativo do consumidor.
+1. Por último, `kill` quaisquer processos ativos do consumidor.
 
    ```bash
    kill <PID>
    ```
 
-   Onde `PID` é a ID do processo que deve ser eliminada, por exemplo:
+   Onde `PID` é a ID do processo a ser eliminada, por exemplo:
 
    ```bash
    kill 1234
    ```
 
-1. Puxe o código do controle de origem.
+1. Extrair código do controle de origem.
 
    ```bash
    git pull mconfig m2.2_deploy
@@ -66,7 +66,7 @@ ht-degree: 0%
    bin/magento cache:clean
    ```
 
-1. Encerre o modo de manutenção.
+1. Encerrar modo de manutenção.
 
    ```bash
    bin/magento maintenance:disable

@@ -1,32 +1,32 @@
 ---
 title: Instalar uma extensão
 description: Siga estas etapas para instalar uma extensão Adobe Commerce ou Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
-
 # Instalar uma extensão
 
-O código que estende ou personaliza o comportamento do Adobe Commerce e do Magento Open Source é chamado de extensão. Opcionalmente, é possível empacotar e distribuir extensões no [Commerce Marketplace](https://marketplace.magento.com) ou outro sistema de distribuição de extensões.
+O código que estende ou personaliza o comportamento Adobe Commerce e Magento Open Source é chamado de extensão. Opcionalmente, é possível empacotar e distribuir extensões na [Commerce Marketplace](https://marketplace.magento.com) ou outro sistema de distribuição de extensões.
 
 As extensões incluem:
 
-- Módulos (estenda os recursos Adobe Commerce e Magento Open Source)
-- Temas (altere a aparência da loja e do Administrador)
-- Pacotes de idioma (localize a loja e o administrador)
+- Módulos (estenda os recursos do Adobe Commerce e do Magento Open Source)
+- Temas (altere a aparência da loja e do administrador)
+- Pacotes de idioma (localize a loja e o Administrador)
 
 >[!TIP]
 >
->Este tópico explica como usar a linha de comando para instalar extensões compradas no Commerce Marketplace. Você pode usar o mesmo procedimento para instalar o _any_ extensão; tudo o que você precisa é do nome e da versão do Composer da extensão. Para encontrá-lo, abra o `composer.json` e observe os valores de `"name"` e `"version"`.
+>Este tópico explica como usar a linha de comando para instalar extensões compradas do Commerce Marketplace. Você pode usar o mesmo procedimento para instalar o _qualquer_ extensão; tudo o que você precisa é do nome e da versão do Compositor da extensão. Para encontrá-la, abra a extensão do `composer.json` arquivo e observe os valores de `"name"` e `"version"`.
 
-Antes da instalação, você pode desejar:
+Antes da instalação, talvez você queira:
 
 1. Faça backup do banco de dados.
-1. Ativar o modo de manutenção:
+1. Habilitar modo de manutenção:
 
    ```bash
    bin/magento maintenance:enable
@@ -35,7 +35,7 @@ Antes da instalação, você pode desejar:
 Para instalar uma extensão, você deve:
 
 1. Obtenha uma extensão do Commerce Marketplace ou de outro desenvolvedor de extensão.
-1. Se você instalar uma extensão do Commerce Marketplace, verifique se a variável `repo.magento.com` o repositório existe em seu `composer.json` arquivo:
+1. Se você instalar uma extensão do Commerce Marketplace, verifique se `repo.magento.com` o repositório existe em seu `composer.json` arquivo:
 
    ```bash
    "repositories": [
@@ -46,18 +46,18 @@ Para instalar uma extensão, você deve:
    ]
    ```
 
-1. Obtenha o nome e a versão do Composer da extensão.
-1. Atualize o `composer.json` no seu projeto com o nome e a versão da extensão .
+1. Obtenha o nome e a versão do Compositor da extensão.
+1. Atualize o `composer.json` arquivo no seu projeto com o nome e a versão da extensão.
 1. Verifique se a extensão foi instalada corretamente.
-1. Habilite e configure a extensão.
+1. Ative e configure a extensão.
 
-## Obter o nome e a versão da extensão Composer
+## Obter o nome e a versão do Compositor da extensão
 
-Se você já sabe o nome e a versão da extensão do Composer, pule esta etapa e continue com [Atualize seu `composer.json` arquivo](#update-your-composer-file).
+Se você já sabe o nome e a versão do Composer da extensão, ignore esta etapa e continue em [Atualize seu `composer.json` arquivo](#update-your-composer-file).
 
-Para obter o nome e a versão do Composer da extensão do Commerce Marketplace:
+Para obter o nome e a versão do Compositor da extensão do Commerce Marketplace:
 
-1. Faça logon em [Commerce Marketplace](https://marketplace.magento.com) com o nome de usuário e a senha usados para comprar a extensão do .
+1. Efetue logon no [Commerce Marketplace](https://marketplace.magento.com) com o nome de usuário e a senha que você usou para comprar a extensão.
 
 1. No canto superior direito, clique em **Seu nome** > **Meu perfil**.
 
@@ -67,19 +67,19 @@ Para obter o nome e a versão do Composer da extensão do Commerce Marketplace:
 
    ![Histórico de compras do Marketplace](../../assets/installation//marketplace-my-purchases.png)
 
-1. Encontre a extensão que deseja instalar e clique em **Detalhes técnicos**.
+1. Localize a extensão que deseja instalar e clique em **Detalhes técnicos**.
 
-   ![Detalhes técnicos mostram o nome do Composer da extensão](../../assets/installation/marketplace-extension-technical-details.png)
+   ![Detalhes técnicos mostra o nome do Compositor da extensão](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
->Como alternativa, você pode encontrar o nome e a versão do Composer _any_ extensão (se você a comprou no Commerce Marketplace ou em outro lugar) no `composer.json` arquivo.
+>Como alternativa, você pode encontrar o nome do Compositor e a versão de _qualquer_ extensão (independentemente de você tê-la comprado no Commerce Marketplace ou em outro lugar) no `composer.json` arquivo.
 
 ## Atualizar o arquivo do Composer
 
-Adicione o nome e a versão da extensão ao `composer.json` arquivo:
+Adicione o nome e a versão da extensão à `composer.json` arquivo:
 
-1. Navegue até o diretório do projeto e atualize seu `composer.json` arquivo.
+1. Navegue até o diretório do projeto e atualize o `composer.json` arquivo.
 
    ```bash
    composer require <component-name>:<version>
@@ -111,13 +111,13 @@ Para verificar se a extensão foi instalada corretamente, execute o seguinte com
 bin/magento module:status J2t_Payplug
 ```
 
-Por padrão, a extensão provavelmente está desabilitada:
+Por padrão, a extensão provavelmente está desativada:
 
 ```terminal
 Module is disabled
 ```
 
-O nome da extensão está no formato `<VendorName>_<ComponentName>`; este é um formato diferente do nome do Composer. Use esse formato para ativar a extensão. Se não tiver certeza do nome da extensão, execute:
+O nome da extensão está no formato `<VendorName>_<ComponentName>`; este é um formato diferente do nome do Compositor. Use esse formato para habilitar a extensão. Se não tiver certeza do nome da extensão, execute:
 
 ```bash
 bin/magento module:status
@@ -125,11 +125,11 @@ bin/magento module:status
 
 E procure a extensão em &quot;Lista de módulos desativados&quot;.
 
-## Habilitar a extensão
+## Ativar a extensão
 
-Algumas extensões não funcionam corretamente a menos que você limpe os arquivos de visualização estática gerados primeiro. Use o `--clear-static-content` para limpar arquivos de visualização estáticos ao ativar uma extensão.
+Algumas extensões não funcionam corretamente, a menos que você limpe primeiro os arquivos de exibição estáticos gerados. Use o `--clear-static-content` opção para limpar arquivos de visualização estáticos quando estiver ativando uma extensão.
 
-1. Habilite a extensão e limpe os arquivos de visualização estática:
+1. Habilite a extensão e limpe os arquivos de exibição estáticos:
 
    ```bash
    bin/magento module:enable J2t_Payplug --clear-static-content
@@ -153,7 +153,7 @@ Algumas extensões não funcionam corretamente a menos que você limpe os arquiv
    bin/magento setup:upgrade
    ```
 
-1. Recompile seu projeto: No modo Produção, você pode receber uma mensagem para &quot;Execute novamente o comando Magento compilar&quot;. O aplicativo não solicita que você execute o comando de compilação no modo Desenvolvedor.
+1. Recompile o projeto: no modo de Produção, você pode receber uma mensagem para &quot;Execute novamente o comando Magento compile&quot;. O aplicativo não solicita que você execute o comando compile no modo de Desenvolvedor.
 
    ```bash
    bin/magento setup:di:compile
@@ -165,7 +165,7 @@ Algumas extensões não funcionam corretamente a menos que você limpe os arquiv
    bin/magento module:status J2t_Payplug
    ```
 
-   Você deve ver a saída verificando se a extensão não está mais desabilitada:
+   Você deve ver a saída verificando se a extensão não está mais desativada:
 
    ```terminal
    Module is enabled
@@ -177,7 +177,7 @@ Algumas extensões não funcionam corretamente a menos que você limpe os arquiv
    bin/magento cache:clean
    ```
 
-1. Configure a extensão em Admin, conforme necessário.
+1. Configure a extensão no Admin conforme necessário.
 
 >[!TIP]
 >
@@ -185,13 +185,13 @@ Algumas extensões não funcionam corretamente a menos que você limpe os arquiv
 
 ## Atualizar uma extensão
 
-Para atualizar ou atualizar um módulo ou extensão:
+Para atualizar ou atualizar um módulo ou uma extensão:
 
 1. Baixe o arquivo atualizado do Marketplace ou de outro desenvolvedor de extensão. Anote o nome e a versão do módulo.
 
 1. Exporte o conteúdo para o diretório raiz do aplicativo.
 
-1. Se houver um pacote Composer para o módulo, execute um dos seguintes procedimentos.
+1. Se existir um pacote do Composer para o módulo, execute um dos procedimentos a seguir.
 
    Atualizar por nome de módulo:
 

@@ -9,14 +9,14 @@ ht-degree: 0%
 
 ---
 
-# Hospedagem no local
+# Hospedagem local
 
 As soluções de hospedagem baseadas em nuvem são extremamente populares e certamente desempenham um papel importante em muitas organizações. No entanto, a infraestrutura local ainda é uma opção adequada para algumas organizações e comerciantes.
 
-Você precisa considerar vários fatores antes de escolher a hospedagem no local, incluindo custos irrelevantes, um pool de conhecimento competente/econômico em TI e o fato de que os aplicativos no local geralmente podem ser mais prontamente adaptados às necessidades de uma organização.
+Você precisa considerar vários fatores antes de escolher a hospedagem no local, incluindo custos irrecuperáveis significativos, um pool prontamente disponível de especialistas de TI competentes/econômicos e o fato de que os aplicativos no local geralmente podem ser mais prontamente adaptados e adaptados às necessidades de uma organização.
 
-Quando as regulamentações de conformidade, como quando os dados devem ser armazenados em uma localização geográfica específica, as soluções de hospedagem no local são mais aconselháveis. Muitas organizações têm maior probabilidade de aderir à hospedagem local quando ainda estão amortizando seus custos de hardware e software e não têm motivos técnicos ou econômicos convincentes para mudar.
+Quando as regulamentações de conformidade, como quando os dados devem ser armazenados em um local geográfico específico, as soluções de hospedagem local são mais aconselháveis. Muitas organizações têm mais probabilidade de continuar com a hospedagem local quando ainda estão depreciando seus custos de hardware e software e não têm nenhuma razão técnica ou econômica convincente para mudar.
 
 >[!NOTE]
 >
->Lembre-se de que, para aproveitar tudo o que a nuvem tem a oferecer, as empresas geralmente precisam reescrever os aplicativos tradicionais projetados em uma arquitetura de microsserviços. Na maioria das instâncias, um &quot;aumento e mudança&quot; para a nuvem não resulta em grandes economias.
+>Lembre-se de que, para aproveitar efetivamente tudo o que a nuvem tem a oferecer, as empresas geralmente precisam reescrever aplicativos tradicionais projetados em uma arquitetura de microsserviços. Na maioria dos casos, um &quot;lift and shift&quot; para a nuvem não resulta em uma enorme economia.

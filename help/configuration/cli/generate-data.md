@@ -1,15 +1,15 @@
 ---
 title: Gerar dados para teste de desempenho
 description: Saiba como gerar uma grande quantidade de dados para usar em testes de desempenho.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '749'
 ht-degree: 8%
 
 ---
 
-
-# Dados dos testes de desempenho
+# Dados de teste de desempenho
 
 Para usar o [Kit de ferramentas de desempenho](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) ou outra ferramenta para testes de desempenho, você deve gerar uma grande quantidade de dados, como lojas, categorias e produtos.
 
@@ -17,24 +17,24 @@ Para usar o [Kit de ferramentas de desempenho](https://github.com/magento/magent
 
 ## Perfis
 
-É possível ajustar a quantidade de dados criados usando _perfis_ (pequeno, médio, grande e muito grande). Os perfis estão localizados na seção `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` diretório.
+É possível ajustar a quantidade de dados criados usando o _perfis_ (pequeno, médio, grande e extra grande). Os perfis estão localizados na `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` diretório.
 
 Por exemplo, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-A figura a seguir mostra como um produto é exibido na loja usando o _small_ perfil:
+A figura a seguir mostra como um produto é exibido na vitrine usando o _pequeno_ perfil:
 
 ![Loja de exemplo com dados gerados](../../assets/configuration/generate-data.png)
 
-A tabela a seguir fornece detalhes sobre os perfis do gerador de dados: pequeno, médio, grande e extra grande.
+A tabela a seguir fornece detalhes sobre os perfis do gerador de dados: pequeno, médio, grande e extragrande.
 
-| Parâmetro | Perfil pequeno | Perfil médio | Perfil médio de vários sites | Perfil grande | Perfil extra grande |
+| Parâmetro | Perfil pequeno | Perfil médio | Perfil médio de vários sites | Perfil grande | Perfil extragrande |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
 | `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
 | `configurable_products` | 16 com 24 opções | 640 com 24 opções | 800 com 24 opções e 79 com 200 opções | 8.000 com 24 opções | 16.000 com 24 opções |
-| `product_images` | 100 imagens / 3 imagens por produto | 1000 imagens / 3 imagens por produto | 1000 imagens / 3 imagens por produto | 2000 imagens / 3 imagens por produto | 2000 imagens / 3 imagens por produto |
+| `product_images` | 100 imagens/3 imagens por produto | 1000 imagens/3 imagens por produto | 1000 imagens/3 imagens por produto | 2.000 imagens/3 imagens por produto | 2.000 imagens/3 imagens por produto |
 | `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
@@ -45,13 +45,13 @@ A tabela a seguir fornece detalhes sobre os perfis do gerador de dados: pequeno,
 | `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
 | `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
-### Executar o gerador de dados
+### Execute o gerador de dados
 
 >[!WARNING]
 >
->Antes de executar o gerador de dados, desative todas as tarefas cron em execução no servidor. Desativar trabalhos do cron impede que o gerador de dados execute ações que entrem em conflito com trabalhos do cron ativos e evite erros desnecessários.
+>Antes de executar o gerador de dados, desative todos os trabalhos cron em execução no servidor. A desativação dos trabalhos cron impede que o gerador de dados execute ações que entrem em conflito com os trabalhos cron ativos e evita erros desnecessários.
 
-Execute o comando conforme discutido nesta seção. Depois que o comando for executado, é necessário [reindexar todos os indexadores](../cli/manage-indexers.md).
+Execute o comando conforme discutido nesta seção. Depois que o comando for executado, você deverá [reindexar todos os indexadores](../cli/manage-indexers.md).
 
 Opções de comando:
 
@@ -96,7 +96,7 @@ Generating simple products...  done in <time>
 ... more ...
 ```
 
-## Correções de desempenho
+## Dispositivos de desempenho
 
 ### Usuários administradores
 
@@ -109,7 +109,7 @@ Gera usuários administradores. Nó de perfil XML:
 
 ### Conjuntos de atributos
 
-Gera conjuntos de atributos com configuração especificada. Nó de perfil XML:
+Gera conjuntos de atributos com a configuração especificada. Nó de perfil XML:
 
 ```xml
 <!-- Number of product attribute sets -->
@@ -124,7 +124,7 @@ Gera conjuntos de atributos com configuração especificada. Nó de perfil XML:
 
 ### Produtos do pacote
 
-Gera produtos de pacote. As seleções de pacote geradas não são exibidas individualmente no catálogo. Os produtos são distribuídos uniformemente por categorias e sites. If  `assign_entities_to_all_websites` do perfil está definido como `1`. Os produtos são atribuídos a todos os sites.
+Gera produtos agrupados. As seleções de conjunto geradas não são exibidas individualmente no catálogo. Os produtos são distribuídos uniformemente por categorias e sites. Se  `assign_entities_to_all_websites` do perfil estiver definido como `1`. Os produtos são atribuídos a todos os sites.
 
 Nó de perfil XML:
 
@@ -151,7 +151,7 @@ Gera regras de preço do carrinho. Nó de perfil XML:
 <cart_price_rules_floor>{int}</cart_price_rules_floor>
 ```
 
-### Regras de preço do catálogo
+### Regras de preço de catálogo
 
 Gera regras de preço de catálogo. Nó de perfil XML:
 
@@ -162,7 +162,7 @@ Gera regras de preço de catálogo. Nó de perfil XML:
 
 ### Categorias
 
-Gera categorias. If `assign_entities_to_all_websites` está definida como `0`, todas as categorias são uniformemente distribuídas por cada categoria raiz; caso contrário, todas as categorias serão atribuídas a uma categoria raiz.
+Gera categorias. Se `assign_entities_to_all_websites` está definida como `0`, todas as categorias são distribuídas uniformemente por categorias raiz; caso contrário, todas as categorias são atribuídas a uma categoria raiz.
 
 Nó de perfil XML:
 
@@ -194,18 +194,18 @@ Define valores para campos de configuração. Nó de perfil XML:
 
 ### Produtos configuráveis
 
-Gera produtos configuráveis. As opções configuráveis geradas não são exibidas individualmente no catálogo. Os produtos são distribuídos uniformemente por categorias e sites. If `assign_entities_to_all_websites` está definida como `1`, os produtos são atribuídos a todos os sites.
+Gera produtos configuráveis. As opções configuráveis geradas não são exibidas individualmente no catálogo. Os produtos são distribuídos uniformemente por categorias e sites. Se `assign_entities_to_all_websites` está definida como `1`, os produtos são atribuídos a todos os sites.
 
-Os seguintes formatos de nó XML são suportados:
+Os seguintes formatos de nó XML são compatíveis:
 
-- Distribuição por padrão e conjuntos de atributos predefinidos:
+- Distribuição por Padrão e conjuntos de atributos predefinidos:
 
    ```xml
    <!-- Number of configurable products -->
    <configurable_products>{int}</configurable_products>
    ```
 
-- Gere produtos com base em um conjunto de atributos existente:
+- Gerar produtos com base em um conjunto de atributos existente:
 
    ```xml
    <configurable_products>
@@ -260,7 +260,7 @@ Os seguintes formatos de nó XML são suportados:
    </configurable_products>
    ```
 
-- Gere produtos com base em um conjunto de atributos criado dinamicamente com uma configuração especificada por cada atributo:
+- Gerar produtos com base em um conjunto de atributos criado dinamicamente com uma configuração especificada para cada atributo:
 
    ```xml
    <configurable_products>
@@ -299,7 +299,7 @@ Os seguintes formatos de nó XML são suportados:
 
 ### Clientes
 
-Gera clientes. Os clientes têm uma distribuição normal em todos os sites disponíveis. Cada cliente tem os mesmos dados, exceto email do cliente, grupo de clientes e endereços de cliente.
+Gera clientes. Os clientes têm uma distribuição normal em todos os sites disponíveis. Cada cliente tem os mesmos dados, exceto email do cliente, grupo de clientes e endereços de clientes.
 
 Nó de perfil XML:
 
@@ -319,7 +319,7 @@ Você pode usar o seguinte XML para alterar a configuração do cliente:
 
 ### Imagens do produto
 
-Gera imagens de produto. Geração não inclui redimensionamento.
+Gera imagens de produtos. A geração não inclui o redimensionamento.
 
 Nó de perfil XML:
 
@@ -333,7 +333,7 @@ Nó de perfil XML:
 </product-images>
 ```
 
-### Estado dos índices
+### Estado dos indexadores
 
 Atualiza o estado dos indexadores. Nó de perfil XML:
 
@@ -347,7 +347,7 @@ Atualiza o estado dos indexadores. Nó de perfil XML:
 
 ### Pedidos
 
-Gera ordens com número configurável de diferentes tipos de itens de ordem. Gera aspas inativas para ordens geradas.
+Gera pedidos com o número configurável de diferentes tipos de itens de pedido. Opcionalmente, gera cotas inativas para ordens geradas.
 
 Nó de perfil XML:
 
@@ -379,9 +379,9 @@ Nó de perfil XML:
 
 ### Produtos simples
 
-Gera produtos simples. Os produtos são distribuídos por conjunto de atributos padrão e predefinido. Se conjuntos de atributos extras forem especificados no perfil como: `<product_attribute_sets>{int}</product_attribute_sets>`, os produtos também são distribuídos por conjuntos de atributos adicionais.
+Gera produtos simples. Os produtos são distribuídos por conjuntos de atributos padrão e predefinidos. Se conjuntos de atributos extras forem especificados no perfil como: `<product_attribute_sets>{int}</product_attribute_sets>`, os produtos também são distribuídos por conjuntos de atributos adicionais.
 
-Os produtos são distribuídos uniformemente por categorias e sites. If `assign_entities_to_all_websites` está definida como `1`, os produtos são atribuídos a todos os sites.
+Os produtos são distribuídos uniformemente por categorias e sites. Se `assign_entities_to_all_websites` está definida como `1`, os produtos são atribuídos a todos os sites.
 
 Nó de perfil XML:
 
@@ -399,9 +399,9 @@ Gera sites. Nó de perfil XML:
 <websites>{int}</websites>
 ```
 
-### Grupos de armazenamento
+### Armazenar grupos
 
-Gera grupos de armazenamento (referido em Admin como _lojas_). Os grupos de armazenamento são distribuídos normalmente entre sites.
+Gera grupos de armazenamento (referidos no Administrador como _lojas_). Os grupos de lojas são distribuídos normalmente entre sites.
 
 Nó de perfil XML:
 
@@ -412,7 +412,7 @@ Nó de perfil XML:
 
 ### Visualizações da loja
 
-Gera exibições de armazenamento. As visualizações da loja são distribuídas normalmente entre os grupos da loja. Nó de perfil XML:
+Gera exibições de loja. As exibições de loja são distribuídas normalmente entre grupos de loja. Nó de perfil XML:
 
 ```xml
 <!-- Number of store views to be generated -->
@@ -422,9 +422,9 @@ Gera exibições de armazenamento. As visualizações da loja são distribuídas
 <assign_entities_to_all_websites>{0|1}<assign_entities_to_all_websites/>
 ```
 
-### Taxas de imposto
+### Alíquotas de imposto
 
-Gera taxas de imposto. Nó de perfil XML:
+Gera alíquotas de imposto. Nó de perfil XML:
 
 ```xml
 <!-- Accepts name of CSV file with tax rates (<path to Commerce folder>/setup/src/Magento/Setup/Fixtures/_files) -->
@@ -435,14 +435,14 @@ Gera taxas de imposto. Nó de perfil XML:
 
 - `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml`—Conjuntos de atributos padrão
 
-- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`—Configuração do cliente
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`— Configuração do cliente
 
-- `<Commerce root dir>/setup/performance-toolkit/config/description.xml`—Configuração de descrição completa do produto
+- `<Commerce root dir>/setup/performance-toolkit/config/description.xml`—Configuração da descrição completa do produto
 
-- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`—Configuração de descrição curta do produto
+- `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`—Configuração da descrição curta do produto
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`—Configuração para descrição curta e completa do produto. Essa implementação mais antiga é fornecida para compatibilidade com versões anteriores.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`— Configuração para descrição curta e completa do produto. Esta implementação mais antiga é fornecida para compatibilidade com versões anteriores.
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`—Pequeno número de termos de pesquisa para descrições curtas e completas
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`—Pequeno número de termos de pesquisa em descrições resumidas e completas
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`—Maior número de termos de pesquisa para usar em descrição curta e completa.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`—Maior número de termos de pesquisa para usar em uma descrição curta e completa.

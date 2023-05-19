@@ -1,6 +1,6 @@
 ---
 title: Foco
-description: Use métricas fundamentais para que você possa tomar decisões orientadas por dados.
+description: Adote métricas fundamentais para tomar decisões orientadas por dados.
 exl-id: 5b946cce-25cd-4a69-b565-235acb16cad4
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -18,7 +18,7 @@ As equipes de comércio eletrônico mais bem-sucedidas seguem e adotam métricas
 A lista a seguir inclui as métricas de comércio eletrônico mais importantes que todas as empresas devem rastrear para B2C:
 
 - Taxa de conversão de vendas
-- Tráfego do site
+- Tráfego no site
 - Valor vitalício do cliente
 - Taxa de aceitação de email
 - Valor médio de pedido
@@ -27,7 +27,7 @@ A lista a seguir inclui as métricas de comércio eletrônico mais importantes q
 
 ## Métricas B2B
 
-A lista a seguir inclui as métricas de comércio eletrônico mais importantes que todas as empresas devem rastrear para B2B:
+A lista a seguir inclui as métricas mais importantes de comércio eletrônico que todas as empresas devem rastrear para B2B:
 
 - Custo de aquisição do cliente (CAC)
 - Conversões
@@ -36,20 +36,20 @@ A lista a seguir inclui as métricas de comércio eletrônico mais importantes q
 - Clientes recorrentes
 - Páginas exibidas
 - Ações do cliente
-- Períodos máximos
+- Períodos de pico
 
-## Indicador principal de desempenho (KPI)
+## Indicador chave de desempenho (KPI)
 
-À medida que as empresas passam pelo mapeamento de sua estratégia digital, um marcador comum de sucesso é atender KPIs definidos ao medir a eficácia do esforço da equipe.
+À medida que as empresas passam pelo mapeamento de sua estratégia digital, um marcador comum de sucesso é atender aos KPIs definidos ao medir a eficácia do esforço da equipe.
 
 - É mais construtivo ter vários KPIs que informam algo sobre os visitantes e seu comportamento
-- Gaste tempo com sua equipe definindo KPIs significativos que não estão centrados apenas em taxas de conversa
+- Passe tempo com sua equipe definindo KPIs significativos que não são centralizados puramente em taxas de conversa
 - Meça a eficácia do conteúdo, não apenas as exibições de página
 - Defina um pequeno número de KPIs alcançáveis que inspirarão a equipe
-- Os KPIs de curto e longo prazo são mais alcançáveis
+- Os KPIs de curto e longo prazo são mais viáveis
 
-Obviamente, a conversão é um KPI importante em qualquer ambiente de comércio digital. Mas variáveis como o tempo gasto no site, o número de visitas antes da conversão e até mesmo o tipo de conteúdo que os visitantes estão consumindo também podem fornecer insights valiosos na jornada geral e na disponibilidade do visitante para conversão.
+Obviamente, a conversão é um KPI importante em qualquer ambiente de comércio digital. Mas variáveis como tempo gasto no site, número de visitas antes da conversão e até mesmo o tipo de conteúdo que os visitantes estão consumindo também podem fornecer insights valiosos na jornada geral e a disposição do visitante para converter.
 
 ### Exemplo de KPI
 
-Clientes que visualizam a página de cancelamento de um provedor de celular podem ser clientes existentes que procuram cancelar sua assinatura. No entanto, ao analisar a jornada e o comportamento geral do cliente, é possível identificar se ele também visualizou as páginas da loja. Pode ser que os visitantes estejam preocupados com sua capacidade de cancelar facilmente, mas ainda estejam dispostos a se inscrever e comprar.
+Os clientes que visualizam a página de cancelamento de um provedor de telefone celular podem ser clientes existentes que desejam cancelar sua assinatura. No entanto, observando a jornada e o comportamento gerais do cliente, é possível identificar se ele também visualizou as páginas da loja. Pode ser que os visitantes estejam preocupados com sua capacidade de cancelar facilmente, mas ainda estejam dispostos a se inscrever e comprar.

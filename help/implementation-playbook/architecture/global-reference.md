@@ -1,10 +1,10 @@
 ---
 title: Arquitetura de referência global da Adobe Commerce
-description: Aproveite ao máximo a sua implementação do Adobe Commerce aproveitando uma arquitetura de referência global.
+description: Aproveite ao máximo a nossa implementação do Adobe Commerce utilizando uma arquitetura de referência global.
 exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
 source-git-commit: f713e07b57705e8720c773f9f762a357c173e29d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -13,38 +13,38 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410528/?quality=12&learn=on)
 
-Ao executar empresas que têm vários sites para várias marcas em vários mercados locais (com moedas, idiomas, mídia, catálogos compartilhados e carrinhos únicos localizados) e que desejam evitar custos desnecessários para implementar o mesmo recurso e integrações. A Arquitetura de Referência Global (GRA) é sempre uma boa opção.
+Ao administrar empresas com vários sites para várias marcas em vários mercados locais (com moedas, idiomas, mídia, catálogos compartilhados e carrinhos únicos localizados) e que desejam evitar custos desnecessários para implementar os mesmos recursos e integrações, a Arquitetura de Referência Global (GRA) é sempre uma boa opção.
 
-![Quadro que explica o custo da divergência na arquitetura](../../assets/playbooks/divergent-architecture.svg)
+![Tabela explicando o custo da divergência na arquitetura](../../assets/playbooks/divergent-architecture.svg)
 
-![Quadro que explica o custo da arquitetura consolidada](../../assets/playbooks/consolidated-architecture.svg)
+![Tabela explicando o custo da consolidação na arquitetura](../../assets/playbooks/consolidated-architecture.svg)
 
-O GRA é:
+GRA é:
 
 - Uma abordagem de implementação
 - Uma estratégia de implantação
 - Um modelo de governança de processos
 
-A ARG não é:
+A GRA não é:
 
-- Um &quot;recurso&quot; de produto
+- Um &quot;recurso&quot; do produto
 - Exclusivo de qualquer plataforma de comércio
 - Somente para casos de uso de negócios globais
 
-Impactos da GRA:
+Impactos do GRA:
 
-- Como o código é fornecido
+- Como o código é entregue
 
-   - Criado em repositórios de código específicos à finalidade, que fornecem experiências diferentes.
+   - Construídos em torno de repositórios de código específicos por finalidade, que fornecem experiências diferentes.
 
-- Como os sistemas empresariais são integrados
+- Como os sistemas de negócios são integrados
 
    - Consolida conexões com sistemas de negócios por marca e/ou região.
 
 - Como a personalização é desenvolvida e mantida
 
-   - Garante que as personalizações sejam centralizadas e específicas por domínio, para que todo o esforço de personalização seja feito de um ponto de vista holístico para os negócios.
+   - Garante que as personalizações sejam centralizadas e específicas de domínio para que todo o esforço de personalização seja feito de um ponto de vista holístico para os negócios.
 
-- Como novos mercados são ativados
+- Como novos mercados são viabilizados
 
-   - Simplifica o lançamento de vários canais e mercados que, de outra forma, custariam consideravelmente mais tempo e dinheiro.
+   - Simplifica o lançamento de vários canais e mercados que, de outra forma, custaria muito mais tempo e dinheiro.

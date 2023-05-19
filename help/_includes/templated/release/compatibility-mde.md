@@ -12,9 +12,9 @@ template and the "_data/release/mde.yml" data file. To update the content,
 add new information to the data file. Follow the instructions in the README instructions to generate
 the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
 
-**Suportado** - versão que foi totalmente testada pelo Adobe e é compatível.
+**Compatível** - versão que foi totalmente testada pelo Adobe e é compatível.
 
-**Compatível** - versão confirmada como compatível com Adobe Commerce ou Magento Open Source, mas não compatível.
+**Compatível** - versão confirmada como compatível com Adobe Commerce ou Magento Open Source, mas sem suporte.
 
 **Não suportado** - versão que não é compatível com uma versão Adobe Commerce ou Magento Open Source.
 
@@ -37,18 +37,18 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">Sales Channel Amazon</th>
     </tr>
     <tr>
-      <td>Amazon Sales Channel 4.4.4</td>
-      <td>Suportado</span>
+      <td>Sales Channel Amazon 4.4.4</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -56,18 +56,18 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Amazon Sales Channel 4.4.3</td>
-      <td>Suportado</span>
+      <td>Sales Channel Amazon 4.4.3</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -75,18 +75,18 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Amazon Sales Channel 4.4.2</td>
-      <td>Suportado</span>
+      <td>Sales Channel Amazon 4.4.2</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -94,18 +94,18 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Amazon Sales Channel 4.4.1</td>
-      <td>Suportado</span>
+      <td>Sales Channel Amazon 4.4.1</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -113,18 +113,18 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Amazon Sales Channel 4.4.0</td>
-      <td>Suportado</span>
+      <td>Sales Channel Amazon 4.4.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -132,18 +132,18 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Amazon Sales Channel 4.3.0</td>
-      <td>Suportado</span>
+      <td>Sales Channel Amazon 4.3.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -151,9 +151,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Amazon Sales Channel 4.2.0</td>
-      <td>Suportado</span>
-      </td>
+      <td>Sales Channel Amazon 4.2.0</td>
       <td>Compatível</span>
       </td>
       <td>Compatível</span>
@@ -162,7 +160,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -170,8 +170,8 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Amazon Sales Channel 4.1.0</td>
-      <td>Suportado</span>
+      <td>Sales Channel Amazon 4.1.0</td>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -195,7 +195,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>B2B 1.3.5</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -216,7 +216,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>B2B 1.3.4</td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -237,7 +237,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -258,7 +258,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -279,7 +279,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -300,7 +300,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -321,7 +321,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -342,7 +342,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
     </tr>
   </tbody>
@@ -352,11 +352,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviço de catálogo 1.7</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -371,11 +371,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviço de catálogo 1.6</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -390,11 +390,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviço de catálogo 1.5</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -409,11 +409,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviço de catálogo 1.4</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -428,11 +428,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviço de catálogo 1.3</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -447,11 +447,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviço de catálogo 1.1</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -466,11 +466,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviço de catálogo 1.0</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -489,20 +489,20 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">Gerenciador de canais</th>
     </tr>
     <tr>
-      <td>Gerenciador de canal 2.0.0</td>
-      <td>Suportado</span>
+      <td>Gerenciador de canais 2.0.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -511,36 +511,36 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Gerenciador de canais 1.1.0</td>
       <td>Não suportado</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
     </tr>
     <tr>
-      <td>Gerenciador de canal 1.0.0</td>
-      <td>Suportado</span>
+      <td>Gerenciador de canais 1.0.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -552,7 +552,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Inventory management 1.2.6</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -573,7 +573,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Inventory management 1.2.5</td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -594,7 +594,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -615,7 +615,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -636,7 +636,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -657,7 +657,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -678,7 +678,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -699,7 +699,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
     </tr>
   </tbody>
@@ -709,11 +709,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Live Search 3.0.1</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -728,11 +728,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Live Search 2.0.5</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -747,11 +747,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Live Search 2.0.4</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -766,11 +766,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Live Search 2.0.3</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -785,11 +785,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Live Search 2.0.0</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -866,7 +866,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Page Builder 1.7.3</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -887,7 +887,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Page Builder 1.7.2</td>
       <td>Não suportado</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -908,7 +908,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Não suportado</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -929,7 +929,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Não suportado</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -950,7 +950,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Não suportado</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -971,7 +971,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Não suportado</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -992,7 +992,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Não suportado</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -1019,15 +1019,15 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Serviços de pagamento</th>
+      <th colspan="9">Payment Services</th>
     </tr>
     <tr>
-      <td>Serviços de pagamento 2.0.0</td>
-      <td>Suportado</span>
+      <td>Payment Services 2.0.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não compatível</span>
       </td>
@@ -1041,12 +1041,12 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Serviços de pagamento 1.6.0</td>
+      <td>Payment Services 1.6.0</td>
       <td>Não suportado</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1061,11 +1061,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviços de pagamento 1.5.4</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1080,11 +1080,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviços de pagamento 1.5.3</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1099,11 +1099,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviços de pagamento 1.5.2</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1118,11 +1118,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviços de pagamento 1.5.1</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1136,12 +1136,12 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Serviços de pagamento 1.5.0</td>
-      <td>Suportado</span>
+      <td>Payment Services 1.5.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1156,11 +1156,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Serviços de pagamento 1.4.1</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1174,12 +1174,12 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Serviços de pagamento 1.4.0</td>
-      <td>Suportado</span>
+      <td>Payment Services 1.4.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1198,12 +1198,12 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">Check-out rápido</th>
     </tr>
     <tr>
-      <td>Check-out Rápido 1.8.0</td>
-      <td>Suportado</span>
+      <td>Check-out rápido 1.8.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1217,12 +1217,12 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Check-out Rápido 1.7.0</td>
-      <td>Suportado</span>
+      <td>Check-out rápido 1.7.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1237,11 +1237,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Check-out rápido 1.6.0</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1256,11 +1256,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Check-out rápido 1.5.0</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1275,11 +1275,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Check-out rápido 1.4.0</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1294,30 +1294,11 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Check-out rápido 1.3.0</td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
       <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
       <td>Compatível</span>
-      </td>
-      <td>Compatível</span>
-      </td>
-      <td>Não suportado</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Check-out Rápido 1.2.0</td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1331,18 +1312,37 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Check-out Rápido 1.1.0</td>
-      <td>Suportado</span>
+      <td>Check-out rápido 1.2.0</td>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Não suportado</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Check-out rápido 1.1.0</td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -1351,17 +1351,17 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Check-out Rápido 1.0.0</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -1371,99 +1371,99 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="9">Armazenar o fornecimento para o Adobe Commerce</th>
+      <th colspan="9">Abastecimento de loja para o Adobe Commerce</th>
     </tr>
     <tr>
-      <td>Cumprimento do armazenamento para o Adobe Commerce 1.4.0</td>
-      <td>Suportado</span>
+      <td>Abastecimento de loja para o Adobe Commerce 1.4.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
-      </td>
-      <td>Não suportado</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Cumprimento do armazenamento para o Adobe Commerce 1.3.0</td>
-      <td>Não suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
     </tr>
     <tr>
-      <td>Cumprimento do armazenamento para o Adobe Commerce 1.2.0</td>
+      <td>Abastecimento de loja para o Adobe Commerce 1.3.0</td>
       <td>Não suportado</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
-      </td>
-      <td>Não suportado</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Cumprimento do armazenamento para o Adobe Commerce 1.1.0</td>
-      <td>Não suportado</span>
-      </td>
-      <td>Não suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
-      </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
     </tr>
     <tr>
-      <td>Cumprimento do armazenamento para o Adobe Commerce 1.1.0</td>
+      <td>Abastecimento de loja para o Adobe Commerce 1.2.0</td>
+      <td>Não suportado</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Não suportado</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Abastecimento de loja para o Adobe Commerce 1.1.0</td>
       <td>Não suportado</span>
       </td>
       <td>Não suportado</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
+      </td>
+      <td>Não suportado</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Abastecimento de loja para o Adobe Commerce 1.1.0</td>
+      <td>Não suportado</span>
+      </td>
+      <td>Não suportado</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
+      </td>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -1475,13 +1475,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
     </tr>
     <tr>
       <td>Conector Experience Platform 1.0.0</td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Não suportado</span>
       </td>
@@ -1498,10 +1498,10 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">Recommendations do produto</th>
     </tr>
     <tr>
-      <td>Product Recommendations 5.0</td>
-      <td>Suportado</span>
+      <td>Produto Recommendations 5.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1517,10 +1517,10 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Product Recommendations 4.0.1</td>
-      <td>Suportado</span>
+      <td>Produto Recommendations 4.0.1</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1536,10 +1536,10 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Product Recommendations 4.0.0</td>
-      <td>Suportado</span>
+      <td>Produto Recommendations 4.0.0</td>
+      <td>Compatível</span>
       </td>
-      <td>Suportado</span>
+      <td>Compatível</span>
       </td>
       <td>Compatível</span>
       </td>
@@ -1555,7 +1555,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Product Recommendations 3.3.7</td>
+      <td>Produto Recommendations 3.3.7</td>
       <td>Compatível</span>
       </td>
       <td>Compatível</span>
@@ -1574,7 +1574,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Product Recommendations 3.3.6</td>
+      <td>Produto Recommendations 3.3.6</td>
       <td>Compatível</span>
       </td>
       <td>Compatível</span>
@@ -1593,7 +1593,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Product Recommendations 3.3.5</td>
+      <td>Produto Recommendations 3.3.5</td>
       <td>Compatível</span>
       </td>
       <td>Compatível</span>
@@ -1612,7 +1612,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Product Recommendations 3.3.3</td>
+      <td>Produto Recommendations 3.3.3</td>
       <td>Compatível</span>
       </td>
       <td>Compatível</span>
@@ -1631,7 +1631,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Product Recommendations 3.3.2</td>
+      <td>Produto Recommendations 3.3.2</td>
       <td>Compatível</span>
       </td>
       <td>Compatível</span>
@@ -1650,7 +1650,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Product Recommendations 3.3.1</td>
+      <td>Produto Recommendations 3.3.1</td>
       <td>Compatível</span>
       </td>
       <td>Compatível</span>

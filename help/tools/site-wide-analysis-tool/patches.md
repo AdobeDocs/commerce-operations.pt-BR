@@ -1,28 +1,28 @@
 ---
-title: '"[!DNL Patches]"'
-description: Saiba mais sobre o [!UICONTROL Patches] na guia no [!DNL Site-Wide Analysis Tool], quando usá-lo e seus benefícios.
-source-git-commit: 9ee2e49de83c23386de624eff9515fd59923e987
+title: '[!DNL Patches]'
+description: Saiba mais sobre o [!UICONTROL Patches] na guia [!DNL Site-Wide Analysis Tool], quando usá-lo e seus benefícios.
+exl-id: 40bc9b38-2a70-40ec-8278-231c78193248
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---
 
 # [!DNL Patches]
 
-O [!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches] exibe todos os patches disponíveis para a sua loja da Adobe Commerce. Esses patches ajudam a resolver problemas que você pode enfrentar com o Adobe Commerce. Consulte a [Ferramenta Correções de Qualidade lançada: nova ferramenta para autoatendimento de patches de qualidade](https://support.magento.com/hc/en-us/articles/360047139492) artigo em nossa [!DNL support knowledge base].
+A variável [!DNL Site-Wide Analysis Tool's] [!UICONTROL Patches] exibe todos os patches disponíveis para sua loja Adobe Commerce. Esses patches ajudam a resolver problemas que você possa ter com o Adobe Commerce. Consulte a [Ferramenta de correções de qualidade lançada: nova ferramenta para autoatendimento de correções de qualidade](https://support.magento.com/hc/en-us/articles/360047139492) artigo em nosso [!DNL support knowledge base].
 
 >[!NOTE]
 >
->Alguns dos patches recomendados são opcionais e exigem que você investigue se um patch específico precisa ser aplicado.
+>Alguns dos patches recomendados são opcionais e requerem que você investigue se um patch específico precisa ser aplicado.
 
 ## Quando usar
 
-Use o [!UICONTROL Patches] para ver os patches disponíveis para sua instância do Adobe Commerce. Essa guia exibe todos os patches, seus detalhes e seu status.
+Use o [!UICONTROL Patches] para ver os patches disponíveis para sua instância do Adobe Commerce. Esta guia exibe todos os patches, seus detalhes e seus status.
 
 ## Benefícios
 
 * Obtenha todas as informações relevantes sobre patches em um único local.
 
-* Correção de problemas usando os patches disponíveis no [!UICONTROL Patches] guia .
-
+* Corrija problemas usando os patches disponíveis no [!UICONTROL Patches] guia.

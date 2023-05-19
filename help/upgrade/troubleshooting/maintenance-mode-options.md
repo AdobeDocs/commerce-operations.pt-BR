@@ -1,27 +1,27 @@
 ---
-title: Opções de Modo de Manutenção para Atualização
-description: Crie uma página de modo de manutenção personalizado que seus clientes visualizam na loja da Adobe Commerce ou do Magento Open Source enquanto você executa uma atualização.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Opções de modo de manutenção para atualização
+description: Crie uma página de modo de manutenção personalizada que seus clientes verão em sua loja Adobe Commerce ou Magento Open Source enquanto você executa uma atualização.
+exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
-
 # Opções de modo de manutenção para atualização
 
-Este tópico discute como você pode criar uma página de manutenção personalizada para exibir aos usuários enquanto seu aplicativo Magento está sendo atualizado. Criar uma página personalizada é opcional, mas recomendado, pois seu site pode ser acessado durante parte da atualização.
+Este tópico discute como criar uma página de manutenção personalizada para exibir aos usuários enquanto seu aplicativo Magento está sendo atualizado. A criação de uma página personalizada é opcional, mas recomendada, pois seu site está acessível durante parte da atualização.
 
 Criar uma página personalizada para redirecionar usuários impede qualquer acesso ao site e também informa aos usuários que o site está em manutenção.
 
 >[!NOTE]
 >
->Você deve executar as tarefas desta seção como um usuário com `root` privilégios. As páginas de manutenção personalizadas não podem ser definidas no modo de desenvolvedor.
+>Você deve executar as tarefas desta seção como um usuário com `root` privilégios. Páginas de manutenção personalizadas não podem ser definidas enquanto estiverem no modo de desenvolvedor.
 
 ## Criar a página de manutenção personalizada
 
-Para criar uma página de manutenção e redirecionar para ela, primeiro crie uma página de manutenção chamada:
+Para criar uma página de manutenção e redirecioná-la, primeiro crie uma página de manutenção chamada:
 
 - Apache: `<web server docroot>/maintenance.html`
 - nginx: `<magento_root>/maintenance.html`
@@ -52,11 +52,11 @@ body
 </html>
 ```
 
-## Página de manutenção personalizada para o Apache
+## Página de manutenção personalizada do Apache
 
 Esta seção discute como criar uma página de manutenção personalizada e como redirecionar o tráfego para ela.
 
-O exemplo nesta seção mostra como modificar os seguintes arquivos, que é uma maneira de configurar sua página de manutenção:
+O exemplo nesta seção mostra como modificar os seguintes arquivos, o que é uma maneira de configurar sua página de manutenção:
 
 - Apache 2.4: `/etc/apache2/sites-available/000-default.conf`
 - Apache 2.2: `/etc/apache2/sites-available/default` (Ubuntu), `/etc/httpd/conf/httpd.conf` (CentOS)
@@ -66,9 +66,9 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
 1. Atualize sua configuração do Apache para fazer o seguinte:
 
    - Redirecionar todo o tráfego para a página de manutenção
-   - lista de permissões determinados IPs para que um administrador possa atualizar o software Magento.
+   - executar a Inclui na lista de permissões de determinados IPs para que um administrador possa atualizar o software Magento.
 
-   O exemplo a seguir lista de permissões 192.0.2.110.
+   O exemplo a seguir inclui na lista de permissões 192.0.2.110.
 
    Adicione o seguinte ao final do arquivo de configuração do Apache:
 
@@ -83,7 +83,7 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
    Header Set Cache-Control "max-age=0, no-store"
    ```
 
-1. Reinicie o Apache:
+1. Reiniciar o Apache:
 
    - CentOS: `service httpd restart`
    - Ubuntu: `service apache2 restart`
@@ -94,20 +94,20 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [Atualize seu sistema](../implementation/perform-upgrade.md).
-1. Teste seu site para verificar se ele funciona corretamente.
-1. Após concluir a atualização, exclua `maintenance.enable`.
+1. [Atualizar o sistema](../implementation/perform-upgrade.md).
+1. Teste o site para verificar se ele funciona corretamente.
+1. Depois que a atualização estiver concluída, exclua `maintenance.enable`.
 
-## Página de manutenção personalizada para o nó
+## Página de manutenção personalizada para nginx
 
 Esta seção discute como criar uma página de manutenção personalizada e como redirecionar o tráfego para ela.
 
 Para redirecionar o tráfego para uma página de manutenção personalizada:
 
-1. Use um editor de texto para abrir o arquivo de configuração de nó que contém o bloco do servidor.
-1. Adicione o seguinte ao bloco do servidor (`server` é apresentada apenas para maior clareza; não adicione um segundo bloco de servidor).
+1. Use um editor de texto para abrir o arquivo de configuração nginx que contém o bloco do servidor.
+1. Adicione o seguinte ao bloco do servidor (`server` é exibido apenas para maior clareza; não adicione um segundo bloco de servidor).
 
-   O seguinte lista de permissões o endereço IP 192.0.2.110 e 192.0.2.115 em um sistema em que o Magento está instalado em `/var/www/html/magento2`:
+   Lista de permissões A seguinte mensagem exibe o endereço IP 192.0.2.110 e 192.0.2.115 em um sistema no qual o Magento está instalado `/var/www/html/magento2`:
 
    ```conf
    server {
@@ -148,16 +148,16 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
    touch <magento_root>/maintenance.enable
    ```
 
-1. Recarregue a configuração do nó:
+1. Recarregue a configuração do nginx:
 
    ```bash
    service nginx reload
    ```
 
-1. [Atualize seu sistema](../implementation/perform-upgrade.md).
-1. Teste seu site para verificar se ele funciona corretamente.
-1. Depois que a atualização for concluída, exclua ou renomeie `maintenance.enable`
-1. Recarregue a configuração do nó:
+1. [Atualizar o sistema](../implementation/perform-upgrade.md).
+1. Teste o site para verificar se ele funciona corretamente.
+1. Depois que a atualização estiver concluída, exclua ou renomeie `maintenance.enable`
+1. Recarregue a configuração do nginx:
 
    ```bash
    service nginx reload

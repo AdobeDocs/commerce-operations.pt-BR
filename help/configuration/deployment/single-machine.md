@@ -1,26 +1,27 @@
 ---
-title: Implantação de máquina única
-description: Saiba como implantar atualizações no Commerce em um servidor de produção usando a linha de comando.
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+title: Implantação de computador único
+description: Saiba como implantar atualizações ao Commerce em um servidor de produção usando a linha de comando.
+exl-id: ca73309c-7584-4506-99de-dd933651eeb6
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
-# Implantação em uma única máquina
+# Implantação em um único computador
 
-Este tópico fornece instruções para implantar atualizações no Commerce em um servidor de produção usando a linha de comando. Esse processo se aplica a usuários técnicos responsáveis por lojas em uma única máquina com alguns temas e localidades instalados.
+Este tópico fornece instruções para implantar atualizações para o Commerce em um servidor de produção usando a linha de comando. Esse processo se aplica aos usuários técnicos responsáveis pelas lojas em execução em uma única máquina com alguns temas e localidades instalados.
 
-## Pressupostos
+## Suposições
 
-- Você instalou o Commerce usando [Composer](../../installation/composer.md).
-- Você está aplicando atualizações diretamente no servidor.
+- Você instalou o Commerce usando o [Compositor](../../installation/composer.md).
+- Você está aplicando atualizações diretamente ao servidor.
 
 >[!WARNING]
 >
->Este guia não se aplica se você tiver usado `git clone` para instalar o Commerce.
->A contribuição dos desenvolvedores deve usar [este guia][install] para atualizar a instalação do Commerce.
+>Este guia não se aplica se você usou `git clone` para instalar o Commerce.
+>Os desenvolvedores colaboradores devem usar [este guia][install] para atualizar a instalação do Commerce.
 
 ## Etapas de implantação
 
@@ -44,14 +45,14 @@ Este tópico fornece instruções para implantar atualizações no Commerce em u
    composer require-commerce <package> <version> --no-update
    ```
 
-   **pacote**: O nome do pacote que você deseja atualizar.
+   **pacote**: o nome do pacote que você deseja atualizar.
 
    Por exemplo:
 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
 
-   **version**: A versão de destino do pacote que você deseja atualizar.
+   **version**: a versão de destino do pacote que você deseja atualizar.
 
 1. Atualizar componentes com o Composer:
 
@@ -59,7 +60,7 @@ Este tópico fornece instruções para implantar atualizações no Commerce em u
    composer update
    ```
 
-1. Atualize o schema e os dados do banco de dados:
+1. Atualize o esquema do banco de dados e os dados:
 
    ```bash
    bin/magento setup:upgrade

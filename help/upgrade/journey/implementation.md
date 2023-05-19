@@ -1,13 +1,13 @@
 ---
 title: Implementação de atualização
 description: Saiba mais sobre as diferentes fases da implementação de atualização para projetos do Adobe Commerce.
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 1%
 
 ---
-
 
 # Atualizar implementação
 

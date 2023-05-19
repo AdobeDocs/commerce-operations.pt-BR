@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # O que é B2B e B2C?
 
-B2B significa &quot;empresa a empresa&quot;, enquanto B2C significa &quot;empresa a consumidor&quot;. Em geral, as empresas B2B vendem produtos e serviços diretamente para outras empresas (mais especificamente, vendem para os tomadores de decisão em qualquer empresa). Isso pode incluir tudo, desde a fabricação até o consumidor.
+B2B significa &quot;empresa-a-empresa&quot;, enquanto B2C significa &quot;empresa-a-consumidor&quot;. Em geral, as empresas B2B vendem produtos e serviços diretamente a outras empresas (mais especificamente, vendem aos tomadores de decisão em qualquer empresa). Isso pode incluir tudo, desde a fabricação até o consumidor.
 
 Isso contrasta com os modelos B2C, que geralmente vendem produtos para uso pessoal diretamente para clientes individuais. Isso pode incluir viagens, roupas, carros e muito mais.
 
@@ -19,39 +19,39 @@ As empresas B2B precisam se concentrar em:
 
 - Guias de compra
 - Detalhes do produto, incluindo imagens e vídeos
-- Publicações de blog específicas do produto
-- Forneça suporte 24 horas por dia, 7 dias por semana ao cliente
+- Publicações específicas do produto no blog
+- Fornecer suporte ao cliente 24 horas por dia, 7 dias por semana
 - Fornecer estudos de caso para referência
 
-As empresas B2C devem concentrar-se em:
+As empresas B2C precisam se concentrar em:
 
-- Fornecer revisões e classificações
-- Imagens e vídeos de produtos de alta resolução
+- Fornecer análises e classificações
+- Imagens e vídeos de alta resolução do produto
 - Produtos em destaque
 
-A página inicial do B2B deve incluir:
+A página inicial de B2B deve incluir:
 
 - Demonstração do produto
-- Carrossel do produto
-- Conteúdo para público-alvo
+- Carrossel de produtos
+- Conteúdo para o público-alvo
 
-A página inicial do B2C deve incluir:
+A página inicial para B2C deve incluir:
 
 - Exibição de promoções
-- Carrossel do produto
+- Carrossel de produtos
 - Check-out simples
 
-Serviço de atendimento ao cliente para B2B:
+Atendimento ao cliente para B2B:
 
-- atendimento ao cliente 24 horas por dia, 7 dias por semana
+- Atendimento ao cliente 24 horas
 - Bate-papos ao vivo
 - Perguntas frequentes
-- Após as vendas
+- Após problemas de vendas
 - Reordenar
 
-Serviço de atendimento ao cliente para B2C:
+Atendimento ao cliente para B2C:
 
-- atendimento ao cliente 24 horas por dia, 7 dias por semana
+- Atendimento ao cliente 24 horas
 - Devoluções pós-venda
 - Troca pós-venda
 - Problemas pós-venda
@@ -64,7 +64,7 @@ Serviço de atendimento ao cliente para B2C:
 | Público | Empresas | Consumidores individuais |
 | Partes interessadas envolvidas na tomada de decisões | Representantes de vendas, gerentes | Consumidores finais individuais |
 | Volume de compra | Pedidos em massa | Volume pequeno |
-| Preço | As alterações dinâmicas de preço de acordo com o cliente, a quantidade do produto e/ou as linhas do tempo de pagamento | Preços consistentes |
-| Atendimento ao cliente | Suporte 24 horas por dia, 7 dias por semana em todo o processo de compra | Suporte 24 horas por dia, 7 dias por semana, antes e depois da compra. Geralmente, por vezes é necessário |
-| Detalhes do produto | Imagens do produto, vídeos, guia, estudos de caso, demonstração | Vídeos de produtos, imagens, recursos, promoções |
-| CTA | Orientado para empresas | Orientado ao usuário |
+| Preço | Alterações dinâmicas de preço de acordo com o cliente, quantidade do produto e/ou prazos de pagamento | Preços consistentes |
+| Atendimento ao cliente | Suporte 24 horas por dia, 7 dias por semana, durante todo o processo de compra | Suporte 24 horas por dia, 7 dias por semana, antes e depois da compra. Normalmente necessário às vezes |
+| Detalhes do produto | Imagens de produtos, vídeos, guia, estudos de caso, demonstração | Vídeos, imagens, recursos e promoções de produtos |
+| CTA | Voltado para empresas | Orientado ao usuário |

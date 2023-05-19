@@ -1,25 +1,25 @@
 ---
 title: referência config.php
-description: Consulte uma lista de valores no arquivo config.php.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+description: Veja uma lista de valores no arquivo config.php.
+exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
 
-
 # referência config.php
 
-O `config.php` O arquivo contém as seguintes seções:
+A variável `config.php` O arquivo contém as seguintes seções:
 
 | Nome | Descrição |
 | --------- | -------------------|
 | `i18n` | Todos os dados de tradução em linha. A leitura desta seção não é suportada. |
-| `modules` | A lista de módulos ativados e desativados. |
+| `modules` | A lista de módulos habilitados e desabilitados. |
 | `scopes` | A lista de lojas, grupos de lojas e sites com informações relacionadas. |
 | `system` | As configurações do sistema necessárias para a implantação de conteúdo estático. |
-| `themes` | A configuração de temas instalados. |
+| `themes` | A configuração dos temas instalados. |
 
 ## módulos
 
@@ -44,7 +44,7 @@ Contém uma matriz de valores de configuração de escopo. Ele tem os seguintes 
 | ---------- | -----------------------------------|
 | `websites` | Configuração do site |
 | `groups` | Armazena a configuração |
-| `stores` | Configuração de visualizações de loja |
+| `stores` | Configuração de exibições de loja |
 
 ```conf
 'scopes' => [
@@ -82,7 +82,7 @@ Contém uma matriz de valores de configuração de escopo. Ele tem os seguintes 
 ]
 ```
 
-Saiba mais sobre [Escopos de Comércio][scopes].
+Saiba mais sobre [Escopos do Commerce][scopes].
 
 ## sistema
 
@@ -104,7 +104,7 @@ Saiba mais sobre [Configurações específicas do sistema](config-reference-sens
 
 ## temas
 
-Contém uma matriz de valores para configuração de tema.
+Contém uma matriz de valores para a configuração do tema.
 
 ```conf
 'themes' => [

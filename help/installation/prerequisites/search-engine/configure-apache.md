@@ -1,13 +1,13 @@
 ---
 title: Configurar o Apache para seu mecanismo de pesquisa
 description: Siga estas etapas para configurar um mecanismo de pesquisa com o Apache Web Server para instalações locais do Adobe Commerce e do Magento Open Source.
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
 
 ---
-
 
 # Configurar o Apache para seu mecanismo de pesquisa
 

@@ -1,6 +1,6 @@
 ---
 user-guide-title: Informações da versão
-user-guide-description: Acesse todas as informações da versão para patches e serviços da Adobe Commerce em um único lugar.
+user-guide-description: Acesse todas as informações da versão de patches e serviços da Adobe Commerce em um único local.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 source-git-commit: 3ecac271a4c86162c07ce89b9e5664c2293ad07b
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 - Notas de versão {#notes}
    - [Visão geral](release-notes/overview.md)
-   - [Alterações retroativas incompatíveis](backward-incompatible-changes.md)
+   - [Alterações incompatíveis com versões anteriores](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
       - [2.4.6](release-notes/commerce/2-4-6.md)
       - [2.4.5](release-notes/commerce/2-4-5.md)
@@ -45,13 +45,13 @@ ht-degree: 15%
 - [Versões lançadas](versions.md)
 - [Recursos por versão](features.md)
 - [Disponibilidade do produto](product-availability.md)
-- [Versões beta](beta.md)
+- [Versões Beta](beta.md)
 - Planejamento e políticas {#planning}
    - [Política de ciclo de vida](lifecycle-policy.md)
    - [Política de controle de versão](versioning-policy.md)
    - [Programação de lançamento](schedule.md)
 - Pacotes {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
-   - [Pacotes do Cloud para Adobe Commerce](packages/cloud.md)
+   - [Pacotes na nuvem do Adobe Commerce](packages/cloud.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

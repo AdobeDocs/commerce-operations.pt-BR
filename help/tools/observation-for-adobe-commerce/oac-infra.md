@@ -1,56 +1,56 @@
 ---
-title: "O [!DNL Infra] tab"
-description: O [!DNL Infra] A guia isola problemas e causas de problemas de infraestrutura.
-source-git-commit: 5e4ab9e62f395b0967c3a632659c70a22770e9db
+title: A variável [!DNL Infra] guia
+description: A variável [!DNL Infra] A guia isola os problemas e as causas dos problemas de infraestrutura.
+exl-id: 45f24177-3264-4848-99bc-951be32c1f7b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
+# A variável [!DNL Infra] guia
 
-# O [!DNL Infra] guia
-
-O **[!DNL Infra]** A guia isola problemas e causas de problemas de infraestrutura. Além disso, estão descritos os quadros que podem ser vistos na guia .
+A variável **[!DNL Infra]** A guia isola os problemas e as causas dos problemas de infraestrutura. Além disso, são descritos os quadros que você pode ver na guia.
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
 ![Alertas de serviço](../../assets/tools/observation-for-adobe-commerce/service-alerts.jpg)
 
-O **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]** gráfico mostra os alertas de serviço coletados pelo [!DNL New Relic] agente de infraestrutura. Isso mostrará reinicializações de serviço, muitas associadas às implantações.
+A variável **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]** O gráfico mostra os alertas de serviço coletados pelo [!DNL New Relic] agente de infraestrutura. Isso mostrará reinicializações do serviço, muitas associadas a implantações.
 
 ## [!UICONTROL Inode usage by mount]
 
-![Uso do nó por montagem](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
+![Uso do Inode por montagem](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
-O **[!UICONTROL Inode usage by mount]** exibições de quadro [!DNL inode] uso por montagem no período selecionado. Embora possa haver bastante armazenamento livre, se um nó ficar sem [!DNL inodes], mostrará falta de armazenamento disponível. A remoção de arquivos (especialmente os pequenos) liberará espaço e criará [!DNL inodes] disponível.
+A variável **[!UICONTROL Inode usage by mount]** mostra quadros [!DNL inode] uso por montagem durante o período selecionado. Embora possa haver muito armazenamento livre, se um nó ficar sem [!DNL inodes], isso mostrará uma falta de armazenamento disponível. A remoção de arquivos (especialmente os pequenos) liberará espaço e tornará [!DNL inodes] disponíveis.
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 
-![Visualização da camada da vCPU na linha do tempo MAIOR 2 semanas](../../assets/tools/observation-for-adobe-commerce/vCPU-tier.jpg)
+![Visualização da camada do vCPU na linha do tempo MAIOR que 2 semanas](../../assets/tools/observation-for-adobe-commerce/vCPU-tier.jpg)
 
-O **[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** quadro mostra a exibição da camada da vCPU no período de mais de duas semanas selecionado. Este quadro observa o número de vCPUs atribuídas ao [!DNL New Relic] nome do aplicativo mostrado.
+A variável **[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** O quadro mostra a exibição de camada do vCPU no período selecionado de mais de duas semanas. Esse quadro verifica o número de vCPUs atribuídas ao [!DNL New Relic] nome do aplicativo mostrado.
 
 ## [!UICONTROL vCPU tier view over timeline]
 
-![Exibição da camada da vCPU na linha do tempo](../../assets/tools/observation-for-adobe-commerce/vcpu-tier-24.jpg)
+![Visualização da camada do vCPU na linha do tempo](../../assets/tools/observation-for-adobe-commerce/vcpu-tier-24.jpg)
 
-O **[!UICONTROL vCPU tier view over timeline]** quadro mostra a exibição da camada da vCPU no período de tempo selecionado de mais de 24 horas. Este quadro observa o número de vCPUs atribuídas ao [!DNL New Relic] nome do aplicativo mostrado. Ele mostrará os tamanhos de atualização e downloads do cluster.
+A variável **[!UICONTROL vCPU tier view over timeline]** O quadro mostra a exibição de camada do vCPU no período selecionado de mais de 24 horas. Esse quadro verifica o número de vCPUs atribuídas ao [!DNL New Relic] nome do aplicativo mostrado. Ele mostrará tanto upsizing quanto downsizes do cluster.
 
 ## [!UICONTROL vCPU tier view over timeline BY NODE]
 
-![Visualização da camada da vCPU na linha do tempo pelo NÓ](../../assets/tools/observation-for-adobe-commerce/infra_by_node.png)
+![Visualização da camada do vCPU na linha do tempo por NÓ](../../assets/tools/observation-for-adobe-commerce/infra_by_node.png)
 
-O **[!UICONTROL vCPU tier view over timeline BY NODE]** quadro mostra visualizações da camada da vCPU no período selecionado por nó. Esse quadro é útil para detectar a perda do(s) nó(s) ou quando os nós são atualizados ou baixados. A exibição da camada da vCPU na linha do tempo POR NÓ deve examinar a linha do tempo MENOS de 24 horas.
+A variável **[!UICONTROL vCPU tier view over timeline BY NODE]** O quadro mostra as visualizações de camada do vCPU através do período selecionado por nó. Esse quadro é útil para detectar a perda de nó(s) ou quando os nós são submetidos a upsizing ou downsizing. A visualização do nível da vCPU em relação à linha do tempo POR NÓ deve observar a linha do tempo MENOS de 24 horas.
 
 ## [!UICONTROL Instance details]
 
 ![Detalhes da instância](../../assets/tools/observation-for-adobe-commerce/instance-details.jpg)
 
-O **[!UICONTROL Instance details]** tabela mostra detalhes da instância de cada [!DNL New Relic] aplicativo.
+A variável **[!UICONTROL Instance details]** A tabela mostra os detalhes da instância de cada [!DNL New Relic] aplicação.
 
 ## [!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period]
 
 ![nó não responsivo](../../assets/tools/observation-for-adobe-commerce/non-responsive-node.jpg)
 
-O **[!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period]** quadro mostra nós não responsivos em um período de tempo.
+A variável **[!UICONTROL Logging, if there is a broken line for a node, it indicates non-responsive node during that time period]** mostra nós não responsivos durante um período.

@@ -1,6 +1,6 @@
 ---
-title: Estrutura Organizacional
-description: Veja um exemplo de uma estrutura organizacional típica para um projeto de comércio eletrônico.
+title: Estrutura organizacional
+description: Veja um exemplo de uma estrutura organizacional típica de um projeto de comércio eletrônico.
 exl-id: f82da314-a168-4d16-8679-827a44375769
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Estrutura organizacional
 
-Para projetos de implementação digital, geralmente há uma estrutura de equipe centralizada que é implementada. Há equipes individuais que têm um líder de equipe e, em seguida, informam o chefe de produto digital, de comércio eletrônico ou o proprietário do produto.
+Para projetos de implementação digital, geralmente há uma estrutura de equipe centralizada que é implementada. Há equipes individuais que têm um líder de equipe que, em seguida, se reporta ao chefe do digital, líder de comércio eletrônico ou o proprietário do produto.
 
-O diagrama a seguir mostra um exemplo de como a estrutura organizacional seria:
+O diagrama a seguir mostra um exemplo de como seria a estrutura organizacional:
 
 ![Diagrama da estrutura organizacional](../../assets/playbooks/org-structure.png)
 
@@ -21,11 +21,11 @@ Os benefícios dessa forma de modelo centralizado em um projeto de implementaç�
 
 - Promove o controle e a consistência
 - Unifica orçamento e estratégia
-- Ajuda a escalabilidade
+- Ajuda na escalabilidade
 - Oferece suporte a negócios mais amplos
 
-## Estrutura baseada em projetos
+## Estrutura baseada em projeto
 
-O diagrama a seguir mostra um exemplo de uma estrutura organizacional recomendada baseada em projeto:
+O diagrama a seguir mostra um exemplo de uma estrutura organizacional baseada em projetos recomendada:
 
-![Diagrama de estrutura da organização baseado em projeto](../../assets/playbooks/org-structure-project.png)
+![Diagrama da estrutura da organização baseada em projeto](../../assets/playbooks/org-structure-project.png)

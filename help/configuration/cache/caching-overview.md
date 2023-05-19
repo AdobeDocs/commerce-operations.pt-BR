@@ -1,7 +1,8 @@
 ---
 title: Configurar armazenamento em cache
-description: Saiba mais sobre como armazenar em cache e configurar mecanismos de cache para o aplicativo Adobe Commerce e Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: Saiba mais sobre armazenamento em cache e como configurar mecanismos de cache para o aplicativo Adobe Commerce e Magento Open Source.
+exl-id: 6effa069-c043-411a-b161-01210be17391
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -10,39 +11,39 @@ ht-degree: 0%
 
 # Configurar armazenamento em cache
 
-[!DNL Commerce] O permite configurar alternativas para o armazenamento em cache do sistema de arquivos padrão. Este guia discute algumas dessas alternativas. nomeadamente,
+[!DNL Commerce] O permite configurar alternativas para o cache padrão do sistema de arquivos. Este guia discute algumas dessas alternativas, a saber:
 
 - Configure os seguintes mecanismos de cache no [!DNL Commerce] configuração:
 
    - [Banco de dados](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
    - [Redis](config-redis.md)
-   - Sistema de arquivos (padrão): Nenhuma configuração é necessária para usar o armazenamento em cache padrão do sistema de arquivos.
+   - Sistema de arquivos (padrão): nenhuma configuração é necessária para usar o cache padrão do sistema de arquivos.
 
-- Configure o [Verniz](config-varnish.md) sem modificar o [!DNL Commerce] configuração.
+- Configurar o [Verniz](config-varnish.md) sem modificar o [!DNL Commerce] configuração.
 
-## Terminologia do armazenamento em cache
+## Terminologia de cache
 
 [!DNL Commerce] O usa a seguinte terminologia de armazenamento em cache:
 
-- **Fronteira**—Semelhante a uma interface ou gateway para armazenar em cache, implementado por [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
-- **Tipos de cache**—Pode ser um dos tipos fornecidos com [!DNL Commerce] ou você pode [crie seu próprio](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
-- **Back-end**—Especifica detalhes sobre [armazenamento em cache](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implementado por [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend)
-- **Back-end de dois níveis**—Armazena registros de cache em dois backends: mais rápido e mais lento.
+- **Front-end**— semelhante a uma interface ou gateway para armazenamento em cache, implementado pelo [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
+- **Tipos de cache**—Pode ser um dos tipos fornecidos com [!DNL Commerce] ou você pode [crie o seu próprio](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
+- **Infraestrutura**—Especifica detalhes sobre [armazenamento em cache](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implementado por [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend)
+- **Infraestrutura de dois níveis**—Armazena registros de cache em dois back-ends: um mais rápido e um mais lento.
 
    >[!INFO]
    >
-   >A configuração de cache de back-end de dois níveis está além do escopo deste guia.
+   >A configuração do cache de back-end de dois níveis está fora do escopo deste guia.
 
 ## Opções de configuração
 
-- Modificação do fornecido `default` front-end de cache—
+- Modificação das informações fornecidas `default` front-end do cache—
 
    Você modifica somente o `<magento_root>/app/etc/di.xml` arquivo, a configuração de injeção de dependência global do aplicativo Commerce.
 
-- Configuração de seu próprio front-end de cache personalizado—
+- Configurar seu próprio front-end de cache personalizado—
 
-   Você modifica somente o `<magento_root>/app/etc/env.php` porque substitui a configuração equivalente no `di.xml` arquivo.
+   Você modifica somente o `<magento_root>/app/etc/env.php` arquivo porque substitui a configuração equivalente no `di.xml` arquivo.
 
 >[!TIP]
 >
->O verniz não requer alterações na variável [!DNL Commerce] configuração. Consulte [Configurar e usar o Varnish](config-varnish.md).
+>O verniz não requer alterações no [!DNL Commerce] configuração. Consulte [Configurar e usar verniz](config-varnish.md).

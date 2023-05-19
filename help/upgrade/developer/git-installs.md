@@ -1,25 +1,25 @@
 ---
 title: Atualizar uma instalação baseada em Git
-description: Atualize uma instalação do Adobe Commerce ou Magento Open Source que você clonou de um repositório Git.
-source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
+description: Atualize uma instalação Adobe Commerce ou Magento Open Source clonada de um repositório Git.
+exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
 
 ---
 
+# Atualizar uma instalação baseada em Git
 
-# Atualizar uma instalação baseada em git
+Este tópico discute como um desenvolvedor contribuinte pode atualizar o Adobe Commerce ou o Magento Open Source sem reinstalá-lo. Se você não for um desenvolvedor do contributing, consulte [Executar uma atualização](../implementation/perform-upgrade.md).
 
-Este tópico discute como um desenvolvedor contribuinte pode atualizar o Adobe Commerce ou o Magento Open Source sem reinstalá-lo. Se você não for um desenvolvedor contribuidor, consulte [Executar uma atualização](../implementation/perform-upgrade.md).
-
-Para atualizar se você for um desenvolvedor contribuidor:
+Para atualizar se você for um desenvolvedor contribuinte:
 
 {{$include /help/_includes/server-login.md}}
 
-1. Salve as alterações feitas no `composer.json` porque as próximas etapas o substituem.
+1. Salve todas as alterações feitas na `composer.json` porque as próximas etapas o substituem.
 
-1. Crie um backup do `composer.json` arquivo.
+1. Crie um backup do seu `composer.json` arquivo.
 
    ```bash
    cp composer.json composer.json.old
@@ -33,11 +33,11 @@ Para atualizar se você for um desenvolvedor contribuidor:
 
    >[!NOTE]
    >
-   >If `git pull origin develop` falha, consulte [solução de problemas](https://support.magento.com/hc/en-us/articles/360034229872).
+   >Se `git pull origin develop` falha, consulte [solução de problemas](https://support.magento.com/hc/en-us/articles/360034229872).
 
-1. Compare e mescle seu `composer.json.old` com o `composer.json` arquivo.
+1. Comparar e mesclar seu `composer.json.old` arquivo com o `composer.json` arquivo.
 
-1. Resolva as dependências e grave as versões exatas no `composer.lock` arquivo.
+1. Resolva as dependências e grave versões exatas no `composer.lock` arquivo.
 
    ```bash
    composer update

@@ -1,54 +1,54 @@
 ---
 title: Referência de informações pessoais do cliente (versão 1.x)
-description: Saiba mais sobre o fluxo de dados e os mapeamentos de entidades de banco de dados para informações pessoais de clientes no Magento 1.x.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+description: Saiba mais sobre os mapeamentos de entidade de banco de dados e fluxo de dados para informações pessoais do cliente no Magento 1.x.
+exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
 
 ---
 
-
 # Referência de informações pessoais do cliente (versão 1.x)
 
 >[!NOTE]
 >
->Este é um tópico em uma série de tópicos para ajudar os comerciantes e desenvolvedores de Magento Open Source e Adobe Commerce a se prepararem para cumprir as regras de privacidade. Consulte seu departamento jurídico para determinar se e como sua empresa deve cumprir quaisquer obrigações legais.
+>Este é um de uma série de tópicos para ajudar os comerciantes e desenvolvedores da Adobe Commerce e do Magento Open Source a se prepararem para o cumprimento das regras de privacidade. Consulte seu advogado para determinar se e como sua empresa deve cumprir quaisquer obrigações legais.
 
 Use os seguintes diagramas de fluxo de dados e mapeamentos de entidade de banco de dados para referência ao desenvolver programas de conformidade para regulamentos de privacidade, como:
 
-- [RGPD](gdpr.md)
+- [GDPR](gdpr.md)
 - [CCPA](ccpa.md)
 
 ## Diagramas de fluxo de dados
 
-Os diagramas de fluxo de dados mostram os tipos de dados que os clientes e administradores podem inserir e recuperar na loja e no Administrador.
+Os diagramas de fluxo de dados mostram os tipos de dados que clientes e administradores podem inserir e recuperar na loja e no Administrador.
 
-### Pontos de entrada de dados de fronteira
+### Pontos de entrada de dados de front-end
 
-Um usuário pode inserir informações sobre o cliente, endereço e pagamento ao se registrar em uma conta, durante o check-out e eventos semelhantes.
+Um usuário pode inserir informações de cliente, endereço e pagamento ao se registrar em uma conta, durante a finalização da compra e eventos semelhantes.
 
-![Pontos de entrada de dados de fronteira](../../assets/security-compliance/frontend-data-entry-points.svg)
+![Pontos de entrada de dados de front-end](../../assets/security-compliance/frontend-data-entry-points.svg)
 
-### Pontos de acesso dos dados de fronteira
+### Pontos de acesso de dados de front-end
 
-O Commerce carrega as informações do cliente quando ele faz logon e exibe várias páginas ou check-out diferentes.
+O Commerce carrega as informações do cliente quando ele faz logon e visualiza várias páginas diferentes ou faz check-out.
 
-![Pontos de acesso dos dados de fronteira](../../assets/security-compliance/frontend-data-access-points.svg)
+![Pontos de acesso de dados de front-end](../../assets/security-compliance/frontend-data-access-points.svg)
 
-### Pontos de entrada de dados de backend
+### Pontos de entrada de dados de back-end
 
-Um comerciante pode inserir informações sobre o cliente, o endereço e o pagamento no Administrador para criar um cliente ou uma ordem.
+Um comerciante pode especificar informações sobre cliente, endereço e pagamento a partir do Administrador para criar um cliente ou ordem.
 
-![Pontos de entrada de dados de backend](../../assets/security-compliance/backend-data-entry-points.svg)
+![Pontos de entrada de dados de back-end](../../assets/security-compliance/backend-data-entry-points.svg)
 
-### Pontos de acesso de dados de backend
+### Pontos de acesso de dados de back-end
 
-O Commerce carrega informações do cliente quando um comerciante exibe vários tipos de grades, clica em uma grade para ver informações detalhadas e executa várias outras tarefas.
+O Commerce carrega as informações do cliente quando um comerciante exibe vários tipos de grades, clica em uma grade para ver informações detalhadas e executa várias outras tarefas.
 
-![Pontos de acesso de dados de backend](../../assets/security-compliance/backend-data-access-points.svg)
+![Pontos de acesso de dados de back-end](../../assets/security-compliance/backend-data-access-points.svg)
 
-## Entidades do banco de dados
+## Entidades de banco de dados
 
 O Magento 1 armazena informações do cliente em tabelas de clientes, vendas e outros bancos de dados.
 
@@ -58,13 +58,13 @@ O Magento 1 armazena informações do cliente na `customer_entity` e `customer_a
 
 #### `customer_entity` e tabelas de referência
 
-As seguintes colunas na variável `customer_entity`tabela contém informações do cliente:
+As seguintes colunas na `customer_entity`A tabela contém informações do cliente:
 
 | Coluna | Tipo de dados |
 | --- | --- |
 | `email` | varchar(255) |
 
-Estes quadros fazem referência a `customer_entity` e podem conter atributos personalizados do cliente:
+Estas tabelas fazem referência a `customer_entity` e podem conter atributos personalizados do cliente:
 
 | Tabela | Coluna | Tipo de dados |
 | --- | --- | --- |
@@ -76,7 +76,7 @@ Estes quadros fazem referência a `customer_entity` e podem conter atributos per
 
 #### `customer_address_entity` e tabelas de referência
 
-As tabelas a seguir fazem referência `customer_address_entity` e podem conter atributos personalizados do cliente:
+As tabelas a seguir fazem referência a `customer_address_entity` e podem conter atributos personalizados do cliente:
 
 | Tabela | Coluna | Tipo de dados |
 | --- | --- | --- |
@@ -88,11 +88,11 @@ As tabelas a seguir fazem referência `customer_address_entity` e podem conter a
 
 ### Dados do pedido
 
-O `sales_flat_order` e tabelas relacionadas contêm o nome do cliente, endereços de faturamento e envio e informações relacionadas.
+A variável `sales_flat_order` As tabelas relacionadas contêm o nome do cliente, os endereços de cobrança e de entrega e as informações relacionadas.
 
 #### `sales_flat_order` tabela
 
-As seguintes colunas na variável `sales_order` tabela contém informações do cliente:
+As seguintes colunas na `sales_order` A tabela contém informações do cliente:
 
 | Coluna | Tipo de dados |
 | --- | --- |
@@ -109,7 +109,7 @@ As seguintes colunas na variável `sales_order` tabela contém informações do 
 
 #### `sales_flat_order_address` tabela
 
-O `sales_flat_order_address` contém o endereço do cliente.
+A variável `sales_flat_order_address` A tabela contém o endereço do cliente.
 
 | Coluna | Tipo de dados |
 | --- | --- |
@@ -131,7 +131,7 @@ O `sales_flat_order_address` contém o endereço do cliente.
 
 #### `sales_flat_order_grid` tabela
 
-As seguintes colunas na variável `sales_flat_order_grid` tabela contém informações do cliente:
+As seguintes colunas na `sales_flat_order_grid` A tabela contém informações do cliente:
 
 | Coluna | Tipo de dados |
 | --- | --- |
@@ -141,7 +141,7 @@ As seguintes colunas na variável `sales_flat_order_grid` tabela contém informa
 
 #### `sales_flat_order_payment` tabela
 
-As seguintes colunas na variável `sales_flat_order_payment` tabela contém informações do cliente:
+As seguintes colunas na `sales_flat_order_payment` A tabela contém informações do cliente:
 
 | Coluna | Tipo de dados |
 | --- | --- |
@@ -161,7 +161,7 @@ As cotações contêm o nome, email, endereço e informações relacionadas de u
 
 #### `sales_flat_quote` tabela
 
-As seguintes colunas na variável `sales_flat_quote` tabela contém informações do cliente:
+As seguintes colunas na `sales_flat_quote` A tabela contém informações do cliente:
 
 | Coluna | Tipo de dados |
 | --- | --- |
@@ -181,7 +181,7 @@ As seguintes colunas na variável `sales_flat_quote` tabela contém informaçõe
 
 #### `sales_flat_quote_address` tabela
 
-As seguintes colunas na variável `sales_flat_quote_address` tabela contém informações do cliente:
+As seguintes colunas na `sales_flat_quote_address` A tabela contém informações do cliente:
 
 | Coluna | Tipo de dados |
 | --- | --- |
@@ -200,7 +200,7 @@ As seguintes colunas na variável `sales_flat_quote_address` tabela contém info
 
 #### `sales_flat_quote_payment` tabela
 
-O `sales_flat_quote_payment` O quadro inclui informações sobre cartões de crédito e outras informações transacionais.
+A variável `sales_flat_quote_payment` A tabela inclui informações de cartão de crédito e outras informações transacionais.
 
 | Coluna | Tipo de dados |
 | --- | --- |
@@ -214,7 +214,7 @@ O `sales_flat_quote_payment` O quadro inclui informações sobre cartões de cr�
 
 ### Arquivar dados
 
-As tabelas e colunas a seguir contêm informações sobre o cliente:
+As tabelas e colunas a seguir contêm informações do cliente:
 
 | Tabela | Coluna | Tipo de dados |
 | --- | --- | --- |
@@ -227,7 +227,7 @@ As tabelas e colunas a seguir contêm informações sobre o cliente:
 
 ### Dados de vendas
 
-As tabelas e colunas a seguir contêm informações sobre o cliente:
+As tabelas e colunas a seguir contêm informações do cliente:
 
 | Tabela | Coluna | Tipo de dados |
 | --- | --- | --- |
@@ -236,7 +236,7 @@ As tabelas e colunas a seguir contêm informações sobre o cliente:
 
 ### Dados de RMA
 
-As seguintes tabelas e colunas de RMA contêm informações sobre o cliente:
+As tabelas e colunas de RMA a seguir contêm informações do cliente:
 
 | Tabela | Coluna | Tipo de dados |
 | --- | --- | --- |
@@ -246,7 +246,7 @@ As seguintes tabelas e colunas de RMA contêm informações sobre o cliente:
 
 ### Dados diversos
 
-As tabelas e colunas a seguir contêm informações sobre o cliente:
+As tabelas e colunas a seguir contêm informações do cliente:
 
 | Tabela | Coluna | Tipo de dados |
 | --- | --- | --- |

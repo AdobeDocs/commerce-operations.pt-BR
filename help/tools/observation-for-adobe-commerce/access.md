@@ -1,25 +1,24 @@
 ---
-title: '"Acessar o [!DNL Observation for Adobe Commerce] nerdlet"'
+title: Acessar o [!DNL Observation for Adobe Commerce] nerdlet
 description: Saiba como acessar o [!DNL Observation for Adobe Commerce] nerdlet.
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+exl-id: 4b6f554e-685b-465d-8676-b70e790606c6
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%
 
 ---
 
-# Acessar o [!DNL Observation for Adobe Commerce] nerd
+# Acessar o [!DNL Observation for Adobe Commerce] nerdlet
 
-Para usar o [!DNL New Relic Observation for Adobe Commerce] nerdlet, certifique-se de ter acesso ao [!DNL New Relic].
+Para usar o [!DNL New Relic Observation for Adobe Commerce] nerdlet, verifique se você tem acesso a [!DNL New Relic].
 
-1. Vá para o [!UICONTROL Okta] página inicial (somente para usuários internos do Adobe).
-1. Selecione o [!UICONTROL New Relic applet] (somente para usuários internos do Adobe).
+1. Vá para a [!UICONTROL Okta] página inicial (somente para usuários de Adobe internos).
+1. Selecione o [!UICONTROL New Relic applet] (somente para usuários de Adobe interno).
 
-   ![Novo miniaplicativo Relic](../../assets/tools/observation-for-adobe-commerce/new-relic-applet.jpeg)
+   ![Miniaplicativo New Relic](../../assets/tools/observation-for-adobe-commerce/new-relic-applet.jpeg)
 
-1. Autenticar por [!UICONTROL Okta] (somente para usuários internos do Adobe).
-1. No [!DNL New Relic] página inicial, selecione o item de menu Aplicativos .
+1. Autenticar por meio de [!UICONTROL Okta] (somente para usuários de Adobe interno).
+1. No [!DNL New Relic] selecione o item de menu Aplicativos.
 
-   ![Nova página inicial do Relic](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)
-
-
+   ![Página inicial do New Relic](../../assets/tools/observation-for-adobe-commerce/new-relic-homepage.jpeg)

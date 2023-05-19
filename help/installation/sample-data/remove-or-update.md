@@ -1,21 +1,21 @@
 ---
 title: Remover ou atualizar módulos de dados de amostra
 description: Siga estas etapas para gerenciar módulos de dados de amostra Adobe Commerce e Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: d23f999f-18bf-449b-be23-bdf392dda539
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
-
 
 # Remover ou atualizar módulos de dados de amostra
 
 Este tópico discute como:
 
-* [Remover módulos de dados de amostra](#remove-sample-data-modules) de uma instalação Adobe Commerce ou Magento Open Source `composer.json`. Essa opção faz *not* remover dados de amostra do banco de dados.
+* [Remover módulos de dados de amostra](#remove-sample-data-modules) de uma instalação Adobe Commerce ou Magento Open Source `composer.json`. Essa opção não *não* remover dados de amostra do banco de dados.
 
-* [Preparar para atualizar os dados de amostra](#prepare-to-update-sample-data) (por exemplo, antes de atualizar o aplicativo Magento).
+* [Preparação para atualizar dados de amostra](#prepare-to-update-sample-data) (por exemplo, antes de atualizar o aplicativo Magento).
 
 ## Remover módulos de dados de amostra
 
@@ -25,7 +25,7 @@ Digite o seguinte comando:
 bin/magento sampledata:remove
 ```
 
-A lista completa de módulos de dados de amostra é a seguinte:
+A lista completa de módulos de dados de exemplo é a seguinte:
 
 Adobe Commerce e Magento Open Source:
 
@@ -59,9 +59,9 @@ Somente Adobe Commerce:
 * `magento/module-multiple-wishlist-sample-data`
 * `magento/module-target-rule-sample-data`
 
-## Preparar para atualizar os dados de amostra
+## Preparação para atualizar dados de amostra
 
-Esse comando permite atualizar os dados de amostra antes de atualizar o Adobe Commerce ou o Magento Open Source.
+Esse comando permite atualizar dados de amostra antes de atualizar o Adobe Commerce ou o Magento Open Source.
 
 Para preparar dados de amostra para atualização, insira o seguinte comando:
 

@@ -1,13 +1,13 @@
 ---
 title: Práticas recomendadas de configuração
 description: Otimize o tempo de resposta de sua implantação do Adobe Commerce ou Magento Open Source usando essas práticas recomendadas.
-source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
+exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas de configuração
 
@@ -122,4 +122,3 @@ A limitação da grade de produtos afeta apenas as coleções de produtos usadas
 * Página Criar pedido do administrador
 
 Se você não quiser que a grade de produtos seja limitada, recomendamos usar filtros mais precisamente para que a coleção de resultados tenha menos itens do que **[!UICONTROL Records Limit]**.
-

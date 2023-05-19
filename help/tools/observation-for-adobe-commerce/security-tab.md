@@ -1,79 +1,79 @@
 ---
-title: "O [!UICONTROL Security] tab"
+title: A variável [!UICONTROL Security] guia
 description: Saiba mais sobre o [!UICONTROL Security] guia de [!DNL Observation for Adobe Commerce].
-source-git-commit: 5e4ab9e62f395b0967c3a632659c70a22770e9db
+exl-id: b567e4a4-534e-4151-b6f6-bf59b1bd4028
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%
 
 ---
 
+# A variável [!UICONTROL Security] guia
 
-# O [!UICONTROL Security] guia
-
-O **[!UICONTROL Security]** A guia explica os problemas de segurança e isola as possíveis causas. Além disso, os quadros da guia são descritos.
+A variável **[!UICONTROL Security]** A guia explica os problemas de segurança e isola suas possíveis causas. Além disso, os quadros da guia são descritos.
 
 ## [!UICONTROL API calls by IP, details by URL]
 
-O **[!UICONTROL API calls by IP, details by URL]** mostra um número de chamadas de API por IP em um período selecionado. Este quadro exibe o endereço IP e o URL da API acessado por esse endereço IP.
+A variável **[!UICONTROL API calls by IP, details by URL]** O quadro mostra várias chamadas de API por IP em um período selecionado. Esse quadro exibe o endereço IP e o URL da API que foi acessado por esse endereço IP.
 
 ![Chamadas de API por IP](../../assets/tools/observation-for-adobe-commerce/calls-by-ip.jpg)
 
 ## [!UICONTROL Forgot Password]
 
-O **[!UICONTROL Forgot Password]** quadro de acesso mostra o número de tentativas de senha esquecidas em um período selecionado. A alta atividade contra um endereço IP pode ser um ataque no site.
+A variável **[!UICONTROL Forgot Password]** quadro de acesso mostra o número de tentativas de senhas esquecidas em um período selecionado. A alta atividade em relação a um endereço IP pode ser um ataque ao site.
 
 ![Esqueceu a senha](../../assets/tools/observation-for-adobe-commerce/forgot-password.jpg)
 
 ## [!UICONTROL Create Account access]
 
-O **[!UICONTROL Create Account access]** quadro mostra o número de novas atividades de conta em um período selecionado. A alta atividade de um único endereço IP pode indicar um ataque.
+A variável **[!UICONTROL Create Account access]** quadro mostra o número de novas atividades de conta em um período selecionado. A alta atividade de um único endereço IP pode indicar um ataque.
 
 ![create-account-access](../../assets/tools/observation-for-adobe-commerce/create-account-access.png)
 
 ## [!UICONTROL POST activities]
 
-O **[!UICONTROL POST activities]** quadro mostra o `POST` atividades para o site, facetadas em `client_ip` do [!DNL Fastly] logs. Também mostra o URL que é acessado pelo endereço IP.
+A variável **[!UICONTROL POST activities]** o quadro mostra o `POST` atividades do site, facetadas em `client_ip` do [!DNL Fastly] logs. Ele também mostra o URL que é acessado pelo endereço IP.
 
 ![POST-activities](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-O **[!UICONTROL POST activities summary table]** quadro mostra o resumo `POST` atividades para o site, facetadas em `client_ip` do [!DNL Fastly] logs. Também mostra a contagem do URL que é acessado pelo endereço IP. A contagem é para o período de tempo selecionado.
+A variável **[!UICONTROL POST activities summary table]** o quadro mostra o resumo `POST` atividades do site, facetadas em `client_ip` do [!DNL Fastly] logs. Ele também mostra a contagem do URL que é acessado pelo endereço IP. A contagem é para o período selecionado.
 
 ![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-O **[!UICONTROL POST activities details table]** quadro mostra o `POST` atividades para o site a partir do [!DNL Fastly] logs. Também mostra todos os detalhes da [!DNL Fastly] registre essas solicitações. Limita-se aos últimos 2000 pedidos.
+A variável **[!UICONTROL POST activities details table]** o quadro mostra o `POST` atividades para o site a partir de [!DNL Fastly] logs. Ele também mostra todos os detalhes do [!DNL Fastly] registro para essas solicitações. Está limitado às últimas 2000 solicitações.
 ![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 
-O **[!UICONTROL Guest Carts activities]** quadro mostra o número de atividades do carrinho de hóspedes em um período selecionado, faceado pelo endereço IP e URL acessado. Carrinhos convidados podem ser usados em um ataque de cardado. Este quadro mostra o número total de solicitações em que os URLs dos carrinhos de convidado são acessados.
+A variável **[!UICONTROL Guest Carts activities]** O quadro mostra o número de atividades do carrinho de convidado em um período selecionado, facetado pelo endereço IP e URL acessado. Os carrinhos convidados podem ser usados em um ataque de cardamento. Este quadro mostra o número total de solicitações nas quais os URLs dos carrinhos convidados são acessados.
 
-![atividades de carrinhos de visitas](../../assets/tools/observation-for-adobe-commerce/guest-carts-activities.jpg)
+![guest-carts-activities](../../assets/tools/observation-for-adobe-commerce/guest-carts-activities.jpg)
 
 ## [!UICONTROL API – forgot password, create account by Countries]
 
-O **[!UICONTROL API – forgot password, create account by Countries]** frame mostra o número de contas criadas e de solicitações para redefinir uma senha esquecida em um período selecionado. O fato é que também mostra o país de origem do pedido. Esse quadro está focado no país de origem da solicitação.
+A variável **[!UICONTROL API – forgot password, create account by Countries]** quadro mostra o número de contas criadas e solicitações para redefinir uma senha esquecida em um período selecionado. Também é facetado mostrar o país de origem do pedido. Esse quadro focaliza o país de origem da solicitação.
 
-![países esquecidos da api](../../assets/tools/observation-for-adobe-commerce/api-forgot-countries.jpg)
+![api-esqueci-países](../../assets/tools/observation-for-adobe-commerce/api-forgot-countries.jpg)
 
 ## [!UICONTROL API - forgot password, create account by Countries and IP address]
 
-O **[!UICONTROL API - forgot password, create account by Countries and IP address]** frame mostra o número de contas criadas e de solicitações para redefinir uma senha esquecida em um período selecionado. Ele é facetado para mostrar o endereço IP, o URL acessado e o país de origem da solicitação também. Esse quadro está focado na contagem de IP.
+A variável **[!UICONTROL API - forgot password, create account by Countries and IP address]** quadro mostra o número de contas criadas e solicitações para redefinir uma senha esquecida em um período selecionado. Também é facetado mostrar o endereço IP, o URL acessado e o país de origem da solicitação. Esse quadro focaliza a contagem de IP.
 
-![api-esqueceu-países-ip](../../assets/tools/observation-for-adobe-commerce/api-forgot-countries-ip.png)
+![api-esqueci-países-ip](../../assets/tools/observation-for-adobe-commerce/api-forgot-countries-ip.png)
 
 ## [!UICONTROL Guest cart activities by IP]
 
-O **[!UICONTROL Guest cart activities by IP]** quadro mostra atividades de carrinho de convidado por IP em um período selecionado.
+A variável **[!UICONTROL Guest cart activities by IP]** O quadro mostra as atividades do carrinho de convidado por IP em um período selecionado.
 
-![convidado-cart-ip](../../assets/tools/observation-for-adobe-commerce/guest-cart-ip.png)
+![guest-cart-ip](../../assets/tools/observation-for-adobe-commerce/guest-cart-ip.png)
 
 ## [!UICONTROL Guest cart activities by Countries]
 
-O **[!UICONTROL Guest cart activities by Countries]** mostra as atividades do carrinho de hóspedes por países ao longo de um período selecionado.
+A variável **[!UICONTROL Guest cart activities by Countries]** O quadro mostra as atividades do carrinho de convidado por países em um período selecionado.
 
-![país do carrinho de hóspedes](../../assets/tools/observation-for-adobe-commerce/guest-cart-country.png)
+![guest-cart-country](../../assets/tools/observation-for-adobe-commerce/guest-cart-country.png)

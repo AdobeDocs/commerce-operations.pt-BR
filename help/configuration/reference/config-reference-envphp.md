@@ -1,42 +1,42 @@
 ---
 title: referência env.php
-description: Consulte uma lista de valores para o arquivo env.php.
-source-git-commit: fe5e16d44213d1864a62230029e9e206eecd1717
+description: Veja uma lista de valores para o arquivo env.php.
+exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
 
 ---
 
-
 # referência env.php
 
-O `env.php` O arquivo contém as seguintes seções:
+A variável `env.php` O arquivo contém as seguintes seções:
 
 | Nome | Descrição |
 |-------------------------------|-----------------------------------------------------------------|
-| `backend` | Configurações da área de Administração |
-| `cache` | Configurar página de redirecionamento e cache padrão |
-| `cache_types` | Configurações de armazenamento de cache |
+| `backend` | Configurações para a área de administração |
+| `cache` | Configurar página redis e cache padrão |
+| `cache_types` | Configurações de armazenamento em cache |
 | `consumers_wait_for_messages` | Configurar como os consumidores processam mensagens da fila de mensagens |
-| `cron` | Ative ou desative as tarefas do cron |
+| `cron` | Habilitar ou desabilitar os trabalhos cron |
 | `crypt` | A chave de criptografia para funções criptográficas |
 | `db` | Configurações de conexão de banco de dados |
-| `default_connection` | Conexão padrão das filas de mensagens |
+| `default_connection` | Conexão padrão de filas de mensagens |
 | `directories` | Configurações de mapeamento de diretórios de comércio |
 | `downloadable_domains` | Lista de domínios baixáveis |
 | `install` | A data de instalação |
 | `lock` | Bloquear configurações do provedor |
-| `MAGE_MODE` | O [modo de aplicativo](../bootstrap/application-modes.md) |
+| `MAGE_MODE` | A variável [modo do aplicativo](../bootstrap/application-modes.md) |
 | `queue` | [Filas de mensagens](../queues/manage-message-queues.md) configurações |
 | `resource` | Mapeamento do nome do recurso para uma conexão |
 | `session` | Dados de armazenamento da sessão |
-| `system` | Desativa o campo para edição no administrador |
-| `x-frame-options` | Configuração de [x-frame-options][x-frame-options] |
+| `system` | Desabilita o campo para edição no administrador |
+| `x-frame-options` | Configuração para [x-frame-options][x-frame-options] |
 
-## backend
+## back-end
 
-Configure o **frontName** para o url de administração do Commerce usando o `backend` nó em env.php.
+Configure o **frontName** para o url de administrador do Commerce usando o `backend` no env.php.
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ Configure o **frontName** para o url de administração do Commerce usando o `ba
 
 ## cache
 
-Configure a página de revisão e o armazenamento em cache padrão usando `cache` no nó `env.php` arquivo.
+Configurar o cache padrão e da página redis usando o `cache` no nó `env.php` arquivo.
 
 ```conf
 'cache' => [
@@ -72,7 +72,7 @@ Configure a página de revisão e o armazenamento em cache padrão usando `cache
 ]
 ```
 
-Saiba mais em [Configuração de Redis](../cache/redis-pg-cache.md).
+Saiba mais em [Configuração Redis](../cache/redis-pg-cache.md).
 
 ## tipos_de_cache
 
@@ -98,11 +98,11 @@ Todas as configurações de tipos de cache estão disponíveis neste nó.
 ]
 ```
 
-Saiba mais sobre diferentes [Tipos de cache](../cli/manage-cache.md).
+Saiba mais sobre [Tipos de cache](../cli/manage-cache.md).
 
 ## consumer_wait_for_messages
 
-Especifique se os consumidores devem continuar a pesquisa de mensagens se o número de mensagens processadas for menor que a variável `max_messages` valor. O valor padrão é `1`.
+Especifique se os consumidores devem continuar a sondar mensagens se o número de mensagens processadas for menor que `max_messages` valor. O valor padrão é `1`.
 
 ```conf
 'queue' => [
@@ -112,17 +112,17 @@ Especifique se os consumidores devem continuar a pesquisa de mensagens se o núm
 
 As seguintes opções estão disponíveis:
 
-- `1`—Os consumidores continuam a processar mensagens da fila de mensagens até atingirem o `max_messages` valor especificado na variável `env.php` antes de fechar a conexão TCP e encerrar o processo do consumidor. Se a fila ficar vazia antes de chegar à `max_messages` , o consumidor aguarda mais mensagens para chegar.
+- `1`—Os consumidores continuam a processar mensagens da fila de mensagens até chegar ao `max_messages` valor especificado na variável `env.php` antes de fechar a conexão TCP e encerrar o processo do consumidor. Se a fila ficar vazia antes de atingir o `max_messages` , o consumidor aguarda mais mensagens chegarem.
 
-   Recomendamos essa configuração para grandes comerciantes, pois um fluxo de mensagem constante é esperado e os atrasos no processamento não são desejados.
+   Recomendamos essa configuração para grandes comerciantes, pois é esperado um fluxo de mensagens constante e não são desejáveis atrasos no processamento.
 
-- `0`—Consumidores processam mensagens disponíveis na fila, fecham a conexão TCP e encerram. Os consumidores não esperam mensagens adicionais para entrar na fila, mesmo se o número de mensagens processadas for menor que o `max_messages` valor especificado na variável `env.php` arquivo. Isso pode ajudar a evitar problemas com trabalhos cron causados por longos atrasos no processamento da fila de mensagens.
+- `0`—Os consumidores processam as mensagens disponíveis na fila, fecham a conexão TCP e terminam. Os consumidores não esperam que mensagens adicionais entrem na fila, mesmo se o número de mensagens processadas for menor que o `max_messages` valor especificado na variável `env.php` arquivo. Isso pode ajudar a evitar problemas com tarefas cron causados por longos atrasos no processamento da fila de mensagens.
 
-   Recomendamos essa configuração para comerciantes menores que não esperam um fluxo de mensagens constante e preferem conservar recursos de computação em troca de atrasos menores de processamento quando não houver mensagens por dias.
+   Recomendamos essa configuração para comerciantes menores que não esperam um fluxo constante de mensagens e preferem conservar recursos de computação em troca de pequenos atrasos de processamento, quando não poderia haver mensagens por dias.
 
 ## cron
 
-Ative ou desative trabalhos do cron para o aplicativo Commerce. Por padrão, as tarefas cron são ativadas. Para desativá-los, adicione o `cron` para a `env.php` e defina o valor como `0`.
+Ative ou desative os trabalhos cron para o aplicativo Commerce. Por padrão, os trabalhos cron são ativados. Para desativá-los, adicione a variável `cron` configuração para o `env.php` arquivo e defina o valor como `0`.
 
 ```conf
 'cron' => [
@@ -132,11 +132,11 @@ Ative ou desative trabalhos do cron para o aplicativo Commerce. Por padrão, as 
 
 >[!WARNING]
 >
->Tenha cuidado ao desativar trabalhos do cron. Quando estiverem desativados, os processos essenciais exigidos pelo aplicativo Commerce não serão executados.
+>Tenha cuidado ao desativar tarefas cron. Quando desativados, os processos essenciais exigidos pelo aplicativo Commerce não serão executados.
 
 Saiba mais sobre [Crons](../cli/configure-cron-jobs.md).
 
-## criptografia
+## criptografar
 
 O Commerce usa uma chave de criptografia para proteger senhas e outros dados confidenciais. Essa chave é gerada durante o processo de instalação.
 
@@ -148,7 +148,7 @@ O Commerce usa uma chave de criptografia para proteger senhas e outros dados con
 
 Saiba mais sobre [Chave de criptografia](https://docs.magento.com/user-guide/system/encryption-key.html) no _Guia do usuário do Commerce_.
 
-## db
+## bd
 
 Todas as configurações de banco de dados estão disponíveis neste nó.
 
@@ -172,7 +172,7 @@ Todas as configurações de banco de dados estão disponíveis neste nó.
 
 ## default_connection
 
-Define a conexão padrão para filas de mensagens. O valor pode ser `db`, `amqp`ou um sistema de fila personalizado como `redismq`. Se você especificar qualquer valor diferente de `db`, o software da fila de mensagens deve ser instalado e configurado primeiro. Caso contrário, as mensagens não serão processadas corretamente.
+Define a conexão padrão para filas de mensagens. O valor pode ser `db`, `amqp`ou um sistema de fila personalizado, como `redismq`. Se você especificar qualquer valor diferente de `db`, o software de fila de mensagens deve ser instalado e configurado primeiro. Caso contrário, as mensagens não serão processadas corretamente.
 
 ```conf
 'queue' => [
@@ -180,12 +180,12 @@ Define a conexão padrão para filas de mensagens. O valor pode ser `db`, `amqp`
 ]
 ```
 
-If `queue/default_connection` é especificado no sistema `env.php` , essa conexão é usada para todas as filas de mensagens pelo sistema, a menos que uma conexão específica seja definida em um `queue_topology.xml`, `queue_publisher.xml` ou `queue_consumer.xml` arquivo.
-Por exemplo, se `queue/default_connection` é `amqp` em `env.php` mas um `db` conexão especificada nos arquivos XML de configuração de fila de um módulo, o módulo usará o MySQL como um mediador de mensagens.
+Se `queue/default_connection` está especificado no sistema `env.php` arquivo, essa conexão é usada para todas as filas de mensagens por meio do sistema, a menos que uma conexão específica seja definida em um `queue_topology.xml`, `queue_publisher.xml` ou `queue_consumer.xml` arquivo.
+Por exemplo, se `queue/default_connection` é `amqp` in `env.php` mas um `db` for especificada nos arquivos XML de configuração de fila de um módulo, o módulo usará MySQL como um agente de mensagens.
 
 ## diretórios
 
-Opções opcionais de mapeamento de diretório que precisam ser definidas quando o servidor da Web estiver configurado para servir o aplicativo do Commerce na `/pub` diretório para [segurança aprimorada](../../installation/tutorials/docroot.md).
+Opções opcionais de mapeamento de diretório que precisam ser definidas quando o servidor Web é configurado para atender ao aplicativo Commerce pelo `/pub` diretório para [segurança aprimorada](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -193,9 +193,9 @@ Opções opcionais de mapeamento de diretório que precisam ser definidas quando
 ]
 ```
 
-## domínios_baixáveis
+## downloadable_domains
 
-Uma lista de domínios baixáveis disponíveis neste nó. Domínios adicionais podem ser adicionados, removidos ou listados usando comandos CLI.
+Uma lista de domínios para download disponíveis neste nó. Domínios adicionais podem ser adicionados, removidos ou listados usando comandos CLI.
 
 ```conf
 'downloadable_domains' => [
@@ -203,7 +203,7 @@ Uma lista de domínios baixáveis disponíveis neste nó. Domínios adicionais p
 ]
 ```
 
-Saiba mais sobre [Domínios Baixáveis](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
+Saiba mais sobre [Domínios baixáveis](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
 
 ## instalar
 
@@ -215,11 +215,11 @@ A data de instalação do aplicativo Commerce.
 ]
 ```
 
-## bloqueio
+## bloquear
 
-As configurações de bloqueio do provedor são configuradas usando o `lock` nó .
+As configurações do provedor de bloqueio são definidas usando o `lock` nó.
 
-Saiba mais sobre [Bloquear configuração do provedor](../../installation/tutorials/lock-provider.md).
+Saiba mais sobre [Configuração do Provedor de Bloqueio](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -233,7 +233,7 @@ Saiba mais sobre [Modos de aplicativo](../cli/set-mode.md).
 
 ## fila
 
-As configurações de fila de mensagens estão disponíveis neste nó.
+As configurações da fila de mensagens estão disponíveis neste nó.
 
 ```conf
 'queue' => [
@@ -244,11 +244,11 @@ As configurações de fila de mensagens estão disponíveis neste nó.
 ]
 ```
 
-Saiba mais sobre [Fila de Mensagens][message-queue].
+Saiba mais sobre [Fila de mensagens][message-queue].
 
 ## recurso
 
-As configurações de recursos estão disponíveis neste nó.
+As configurações de recurso estão disponíveis neste nó.
 
 ```conf
 'resource' => [
@@ -258,9 +258,9 @@ As configurações de recursos estão disponíveis neste nó.
 ]
 ```
 
-## sessão
+## session
 
-As configurações de sessão são armazenadas na variável `session` nó .
+As configurações de sessão são armazenadas no `session` nó.
 
 ```conf
 'session' => [
@@ -268,7 +268,7 @@ As configurações de sessão são armazenadas na variável `session` nó .
 ],
 ```
 
-Saiba mais sobre [Sessão](../storage/sessions.md).
+Saiba mais sobre [Session](../storage/sessions.md).
 
 ## x-frame-options
 
@@ -282,7 +282,7 @@ Saiba mais sobre [x-frame-options](../security/xframe-options.md).
 
 ## sistema
 
-Usando esse nó, o Commerce bloqueia os valores de configuração no `env.php` e então desativa o campo no administrador.
+Ao usar esse nó, o Commerce bloqueia os valores de configuração na variável `env.php` e desabilita o campo no campo de administração.
 
 ```conf
 'system' => [

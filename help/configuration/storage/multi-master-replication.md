@@ -1,13 +1,13 @@
 ---
 title: Replicação de banco de dados
-description: Veja os benefícios da configuração da replicação do banco de dados.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: Veja os benefícios de configurar a replicação de banco de dados.
+exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
-
 
 # Replicação de banco de dados
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-A configuração da replicação do banco de dados oferece os seguintes benefícios:
+A configuração da replicação de banco de dados oferece os seguintes benefícios:
 
 - Fornece backup de dados
 - Permite a análise de dados sem afetar o banco de dados principal
@@ -25,14 +25,14 @@ Os bancos de dados MySQL são replicados de forma assíncrona, o que significa q
 
 ## Configurar replicação de banco de dados
 
-Uma discussão detalhada sobre replicação de banco de dados está além do escopo desse guia. Para configurá-lo, consulte um recurso como:
+Uma discussão detalhada sobre replicação de banco de dados está além do escopo deste guia. Para configurá-lo, você pode consultar um recurso como:
 
 - [Documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Como configurar a replicação Principal de escravos no MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Como configurar a replicação do Slave Principal no MySQL (digitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-O Commerce fornece exemplos de configurações do MySQL para seus bancos de dados escravos. Uma configuração simples é fornecida com a variável `ResourceConnections` classe `README.md`.
+O Commerce fornece configurações MySQL de exemplo para seus bancos de dados subordinados. Uma configuração simples é fornecida com o `ResourceConnections` classe `README.md`.
 
-O seguinte é mais avançado e é fornecido apenas para suas informações:
+O item a seguir está mais avançado e é fornecido apenas para fins informativos:
 
 ```php
    return array (
@@ -119,11 +119,11 @@ O seguinte é mais avançado e é fornecido apenas para suas informações:
    //.......
 ```
 
-## Melhoria no desempenho
+## Aprimoramento de desempenho
 
-Para melhorar o desempenho da replicação de escravos principais, você pode filtrar algumas tabelas em instâncias escravas. Recomendamos filtrar todas as tabelas temporárias com o padrão de nome `search\_tmp\_%` que são usados para pesquisa de catálogo.
+Para melhorar o desempenho da replicação principal-escrava, você pode filtrar algumas tabelas em instâncias escravas. Recomendamos filtrar todas as tabelas temporárias com padrão de nome `search\_tmp\_%` que são usados para pesquisa no catálogo.
 
-Para fazer isso, adicione a seguinte linha em `my.cnf` nas instâncias do subordinado:
+Para fazer isso, adicione a seguinte linha na `my.cnf` arquivo nas instâncias subordinadas:
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

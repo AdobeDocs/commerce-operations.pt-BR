@@ -1,7 +1,8 @@
 ---
-title: "Comece a usar: Selecionar a conta e o período"
-description: Saiba como começar a usar o [!DNL Observation for Adobe Commerce] ao selecionar a conta e o período.
-source-git-commit: 86e990e18955cce8ed0917c72ddbe99d8cb3f333
+title: "Começar a usar: seleção da conta e do período"
+description: Saiba como começar a usar o [!DNL Observation for Adobe Commerce] nerdlet selecionando a conta e o período.
+exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -10,18 +11,18 @@ ht-degree: 0%
 
 # Selecionar a conta e o período:
 
-Ao clicar no [!UICONTROL Observation for Adobe Commerce] ícone , o [!DNL Observation for Adobe Commerce] o nerdlet abrirá.
+Ao clicar no botão [!UICONTROL Observation for Adobe Commerce] ícone, o [!DNL Observation for Adobe Commerce] o nerdlet abrirá.
 
-1. Clique no botão **Selecionar uma conta** lista suspensa. Se você não vir a variável **Selecionar uma conta** na lista suspensa, talvez você não tenha acesso a . Clique em [here](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) para solicitar acesso.
+1. Clique no link **Selecione uma conta** lista suspensa. Se você não vir a variável **Selecione uma conta** , talvez você não tenha acesso. Clique em [aqui](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) para solicitar acesso.
 
-   ![Selecionar uma conta](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
+   ![Selecione uma conta](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
 
-1. Você pode colar o project_id, digitar no [!DNL New Relic] número da conta ou nome da conta, ou navegue pela lista de contas.
+1. Você pode colar a project_id, digite o [!DNL New Relic] número da conta ou nome da conta, ou navegue pela lista de contas.
 
-   ![Navegue pela lista de contas](../../assets/tools/observation-for-adobe-commerce/start-using-2.jpg)
+   ![Navegar pela lista de contas](../../assets/tools/observation-for-adobe-commerce/start-using-2.jpg)
 
-1. Clique no botão **azul claro** (em direção à parte superior direita da janela do nerdlet) menu suspenso com o ícone do relógio.
+1. Clique no link **azul claro** (na parte superior direita da janela do nerdlet) com o ícone de relógio.
 
    ![Clique no menu suspenso](../../assets/tools/observation-for-adobe-commerce/start-using-3.jpg)
 
-1. Você deve definir o tempo antes da data e hora do tíquete para ver se havia eventos/dados anteriores. Você pode usar os intervalos de tempo predefinidos à esquerda ou definir um período de tempo personalizado selecionando **Definir personalizado**.
+1. Você deve definir a hora antes da data e hora do ticket para ver se houve eventos/dados anteriores. Você pode usar os intervalos de tempo predefinidos à esquerda ou definir um período personalizado selecionando **Definir personalizado**.

@@ -306,7 +306,7 @@ O suporte para a linha de versão 2.3 terminou em 8 de setembro de 2022.
 
 ## 2.2
 
-O suporte para a linha de versão 2.2 terminou em 1 de dezembro de 2019.
+O suporte para a linha de versão 2.2 terminou em 1º de dezembro de 2019.
 
 <table>
   <thead>

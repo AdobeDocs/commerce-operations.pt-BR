@@ -1,5 +1,5 @@
 ---
-title: Estratégia comercial
+title: Estratégia de comércio
 description: Desbloqueie os principais recursos de comércio eletrônico usando nossa estrutura de estratégia sugerida.
 exl-id: 0efb424b-9026-439d-a50c-d2d935c07c8c
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -9,25 +9,25 @@ ht-degree: 0%
 
 ---
 
-# Estratégia comercial
+# Estratégia de comércio
 
-O comércio digital é uma força que evolui rapidamente a cada ano. Embora isso possa ser excitante para os indivíduos, também vem com muitos desafios para organizações que tentam navegar pela terra que é comércio eletrônico.
+O comércio digital é uma força em rápida evolução que evolui rapidamente a cada ano. Embora isso possa ser empolgante para os indivíduos, também traz muitos desafios para as organizações que tentam navegar pela paisagem que é o comércio eletrônico.
 
-À medida que o comércio eletrônico continua a evoluir tanto na empresa como na empresa B2B, as empresas estão a observar mudanças drásticas nos comportamentos e expectativas dos clientes; desde o modo como pesquisam um produto/serviço, consideram e concluem uma compra ou mostram fidelidade a uma marca, até a forma como comunicam tudo isso aos seus pares. Os comportamentos e as expectativas dos clientes podem mudar instantaneamente e as empresas podem se esforçar para se adaptar às novas tendências do mercado e criar uma estratégia digital realista e alcançável.
+À medida que o comércio eletrônico continua a evoluir em B2B e B2C, as empresas estão observando mudanças drásticas nos comportamentos e expectativas dos clientes; desde a maneira como pesquisam um produto/serviço, consideram e concluem uma compra ou demonstram fidelidade a uma marca, até a maneira como comunicam tudo isso aos seus colegas. Os comportamentos e as expectativas dos clientes podem mudar instantaneamente e as empresas podem se esforçar para se adaptar às novas tendências do mercado e criar uma estratégia digital que seja realista e realizável.
 
 Portanto, a execução e o planejamento de qualquer estratégia digital são fundamentais para qualquer negócio de comércio eletrônico bem-sucedido.
 
-A estratégia geral de comércio eletrônico de cada empresa é de natureza única e depende da maturidade, do tamanho da equipe e dos recursos. As seções a seguir descrevem as estratégias para desbloquear seus principais recursos de comércio, incluindo:
+A estratégia geral de comércio eletrônico de cada empresa é exclusiva por natureza, dependendo da maturidade, do tamanho da equipe e dos recursos. As seções a seguir descrevem estratégias para desbloquear os principais recursos de comércio, incluindo:
 
-- Consciência
+- Percepção
 - Consideração
-- Compra
+- Comprar
 - Suporte
 
-## Consciência
+## Percepção
 
-- Gerenciamento de catálogo de produtos
-- Comparação entre produtos
+- Gerenciamento do catálogo de produtos
+- Comparação de produtos
 - Pesquisa e navegação do produto
 - Informações do produto
 - Experiência personalizada
@@ -36,32 +36,32 @@ A estratégia geral de comércio eletrônico de cada empresa é de natureza úni
 
 ## Consideração
 
-- Suporte e recomendações para a seleção de produtos
-- Preços específicos do cliente Disponibilidade e inventário do produto
-- Identificação de preços e gestão de listas de preços
-- Solicitação de cotação de autoatendimento/RFQ
+- Suporte e recomendações para seleção de produtos
+- Preço específico do cliente Disponibilidade e inventário do produto
+- Identificação de preços e gerenciamento de listas de preços
+- Solicitação/SDC de cotação de autoatendimento
 - Configurar, preço, cotação
 - Preços dinâmicos
 
-## Compra
+## Comprar
 
-- Criação de pedidos
-- Carrinho de compras e mercado de check-out
-- Cotação para conversão de pedido
+- Criação de pedido
+- Carrinho de compras e marketplace de check-out
+- Conversão de cotação em pedido
 - Serviços de assinatura
-- Transação de OC on-line e fatura de pagamento on-line
-- Ordenação integrada NextGen B2B (por exemplo, Punchout)
-- Fluxo de trabalho de aquisição e integração
+- Transação de OC online e fatura de pagamento online
+- Ordem integrada B2B NextGen (por exemplo, Punchout)
+- Fluxo de trabalho e integração de compras
 
 ## Suporte
 
 - Status e rastreamento do gerenciamento de pedidos
 - Status de remessa e entrega
 - Recuperar faturas (histórico do pedido)
-- Reorganização com um clique
+- Reordenação com um clique
 - Gerenciamento de devoluções
 - Exibir faturas e créditos de demonstrativos de contas
-- Renovações e reposição automatizadas
+- Renovações e reabastecimento automatizados
 - Registro/ativação do produto
 
 ## Objetivos
@@ -69,13 +69,13 @@ A estratégia geral de comércio eletrônico de cada empresa é de natureza úni
 A lista a seguir inclui os principais objetivos a serem considerados ao planejar a estratégia digital para sua empresa:
 
 - A consistência é importante
-- Revisar regularmente a análise do cliente
-- Melhore o online
-- Visualização de produto interativa
-- Aproveite as novas tecnologias, quando aplicável
-- Inteligência artificial (AI)
+- Analisar regularmente a análise do cliente
+- Melhorar o acesso online
+- Visualização interativa do produto
+- Utilizar nova tecnologia onde aplicável
+- Inteligência artificial (IA)
 - Mais opções de entrega
-- Planejar adequadamente atualizações e manutenção do local
+- Planejar adequadamente atualizações e manutenção do site
 
 Consulte o diagrama a seguir para obter uma estrutura de estratégia de comércio eletrônico sugerida:
 

@@ -1,13 +1,13 @@
 ---
 title: Visão geral da migração
-description: Saiba como começar a migrar dados do Magento 1 para o Magento 2 com o [!DNL Data Migration Tool].
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: Saiba como iniciar a migração de dados do Magento 1 para o Magento 2 com o [!DNL Data Migration Tool].
+exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # Visão geral da migração
 
@@ -15,13 +15,13 @@ Antes de iniciar a migração, pare todos os trabalhos de cron do Magento 1.
 
 Durante o processo de migração, siga estas regras gerais para uma migração bem-sucedida:
 
-1. **Não** faça alterações no Administrador do Magento 1, exceto para o gerenciamento de pedidos (remessa, criação de fatura e avisos de crédito)
+1. **Não** fazer alterações no Magento 1 Admin, exceto para gerenciamento de ordens (entrega, criação de NFFs e avisos de crédito)
 1. **Não** alterar qualquer código
 1. **Não** faça alterações no administrador e na loja do Magento 2
 
 >[!TIP]
 >
->Todas as operações na loja do Magento 1 são permitidas.
+>Todas as operações na loja de Magento 1 são permitidas.
 
 ## Execute o [!DNL Data Migration Tool]
 
@@ -29,7 +29,7 @@ Esta seção mostra como executar o [!DNL Data Migration Tool] para migrar confi
 
 ### Primeiros passos
 
-1. Faça logon no servidor de aplicativos como, ou alterne para, um usuário com permissões para gravar no sistema de arquivos. Consulte [mudar para o proprietário do sistema de ficheiros](../../../installation/prerequisites/file-system/overview.md).
+1. Efetue login no servidor de aplicativos como, ou alterne para, um usuário com permissões para gravar no sistema de arquivos. Consulte [alternar para o proprietário do sistema de arquivos](../../../installation/prerequisites/file-system/overview.md).
 
    Se você usar o shell bash, poderá usar a seguinte sintaxe para alternar para o proprietário do sistema de arquivos e inserir o comando ao mesmo tempo:
 
@@ -55,9 +55,9 @@ Esta seção mostra como executar o [!DNL Data Migration Tool] para migrar confi
 
    Como opção, você pode executar os comandos das seguintes maneiras:
 
-   - `cd <magento_root>/bin` e execute-os como `./magento <command name>`
+   - `cd <magento_root>/bin` e executá-los como `./magento <command name>`
    - `<magento_root>/bin/magento <command name>`
-   - `<magento_root>` é um subdiretório do docroot do servidor da Web.
+   - `<magento_root>` é um subdiretório do docroot do seu servidor Web.
 
 ### Sintaxe de comando
 
@@ -67,16 +67,16 @@ Abaixo está um exemplo típico de comando:
 bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
-Em que:
+Onde:
 
 - `<mode>` pode ser: [`settings`](settings.md), [`data`](data.md)ou [`delta`](delta.md)
 - `[-r|--reset]` é um argumento opcional que inicia a migração desde o início. Você pode usar esse argumento para testar a migração.
-- `[-a|--auto]` é um argumento opcional que impede a interrupção da migração quando encontra erros de verificação de integridade.
-- `{<path to config.xml>}` é o caminho absoluto do sistema de arquivos para `config.xml`; esse argumento é obrigatório.
+- `[-a|--auto]` é um argumento opcional que impede que a migração pare quando encontrar erros de verificação de integridade.
+- `{<path to config.xml>}` é o caminho absoluto do sistema de arquivos para `config.xml`; este argumento é obrigatório.
 
 >[!NOTE]
 >
->Os logs são gravados no `<magento_root>/var/` diretório.
+>Os logs são gravados na `<magento_root>/var/` diretório.
 
 
 ## Ordem de migração
@@ -87,4 +87,4 @@ Quando criamos o [!DNL Data Migration Tool], assumimos a seguinte sequência de 
 1. [Dados](data.md)
 1. [Alterações](delta.md)
 
-É altamente recomendável migrar dados na mesma ordem.
+É altamente recomendável migrar os dados na mesma ordem.

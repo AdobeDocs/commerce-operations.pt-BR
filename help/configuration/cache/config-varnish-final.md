@@ -1,23 +1,23 @@
 ---
 title: Verificação final
-description: Verifique se a configuração Varnish está configurada corretamente para funcionar com o aplicativo Adobe Commerce.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: Verifique se a configuração de verniz está definida corretamente para funcionar com o aplicativo do Adobe Commerce.
+exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%
 
 ---
 
+# Verificação final da configuração do verniz
 
-# Verificação final da configuração da Varnish
-
-Agora que você está usando a variável `default.vcl` gerado para você pelo Commerce, você pode realizar algumas verificações finais para garantir que o Varnish esteja funcionando.
+Agora que você está usando o `default.vcl` gerado para você pelo Commerce, você pode executar algumas verificações finais para garantir que o verniz esteja funcionando.
 
 ## Verificar cabeçalhos de resposta HTTP
 
-Use `curl` ou outro utilitário para exibir cabeçalhos de resposta HTTP quando você visita qualquer página do Commerce em um navegador da Web.
+Uso `curl` ou outro utilitário para exibir cabeçalhos HTTP de resposta quando você visitar qualquer página do Commerce em um navegador da Web.
 
-Primeiro, verifique se você está usando [modo desenvolvedor](../cli/set-mode.md#change-to-developer-mode); caso contrário, você não verá os cabeçalhos.
+Primeiro, verifique se você está usando [modo de desenvolvedor](../cli/set-mode.md#change-to-developer-mode); caso contrário, você não verá os cabeçalhos.
 
 Por exemplo,
 
@@ -35,36 +35,36 @@ X-Magento-Cache-Debug: MISS
 
 >[!INFO]
 >
->Este valor também é aceitável: `X-Magento-Cache-Debug: HIT`.
+>Esse valor também é aceitável: `X-Magento-Cache-Debug: HIT`.
 
-## Verificar tempos de carregamento de página
+## Verificar tempos de carregamento da página
 
-Se a Varnish estiver funcionando, qualquer página do Commerce com blocos armazenáveis em cache deverá carregar em menos de 150 ms. Exemplos dessas páginas são as páginas da porta frontal e da categoria da loja.
+Se o Verniz estiver funcionando, qualquer página do Commerce com blocos que podem ser armazenados em cache deverá ser carregada em menos de 150 ms. Exemplos dessas páginas são as páginas de categoria da porta frontal e da loja.
 
-Use um inspetor de navegador para medir o tempo de carregamento da página.
+Use um inspetor de navegador para medir os tempos de carregamento da página.
 
-Por exemplo, para usar o Inspetor do Chrome:
+Por exemplo, para usar o inspetor do Chrome:
 
-1. Acesse qualquer página de Comércio em cache no Chrome.
+1. Acesse qualquer página do Commerce que possa ser armazenada em cache no Chrome.
 1. Clique com o botão direito do mouse em qualquer lugar da página.
 1. No menu pop-up, clique em **[!UICONTROL Inspect Element]**
-1. No painel do inspetor, clique no **[!UICONTROL Network]** guia .
+1. No painel do inspetor, clique no botão **[!UICONTROL Network]** guia.
 1. Atualize a página.
-1. Role até a parte superior do painel do inspetor, para que você possa ver o URL da página que está visualizando.
+1. Role até a parte superior do painel do inspetor para que você possa ver o URL da página que está visualizando.
 
    A figura a seguir mostra um exemplo de carregamento da variável `magento2` página de índice.
 
    ![Clique na página que você está visualizando](../../assets/configuration/varnish-inspector.png)
 
-   O tempo de carregamento da página é exibido ao lado do URL da página. Nesse caso, o tempo de carregamento é de 5 ms. Isso ajuda a confirmar que a Varnish armazenou a página em cache.
+   O tempo de carregamento da página é exibido ao lado do URL da página. Nesse caso, o tempo de carga é de 5 ms. Isso ajuda a confirmar se o Varnish armazenou a página em cache.
 
-1. Para exibir cabeçalhos de resposta HTTP, clique no URL da página (na coluna Nome ).
+1. Para exibir cabeçalhos HTTP de resposta, clique no URL da página (na coluna Name ).
 
-   Você pode exibir cabeçalhos HTTP que são discutidos com mais detalhes na seção Verificar cabeçalhos de resposta HTTP .
+   Você pode exibir cabeçalhos HTTP discutidos com mais detalhes na seção Verificar cabeçalhos de resposta HTTP.
 
 ## Verificar o cache do Commerce
 
-Certifique-se de que o `<magento_root>/var/page_cache` o diretório está vazio:
+Verifique se `<magento_root>/var/page_cache` o diretório está vazio:
 
 1. Faça logon no servidor do Commerce ou alterne para o proprietário do sistema de arquivos.
 1. Digite o seguinte comando:
@@ -76,10 +76,10 @@ Certifique-se de que o `<magento_root>/var/page_cache` o diretório está vazio:
 1. Acesse uma ou mais páginas do Commerce que podem ser armazenadas em cache.
 1. Verifique a `var/page_cache/` diretório.
 
-   Se o diretório estiver vazio, parabéns! Você configurou o Varnish e o Commerce com êxito para trabalharem juntos!
+   Se o diretório estiver vazio, parabéns! Você configurou com êxito o Varnish e o Commerce para trabalharem juntos!
 
-1. Se você limpou o `var/page_cache/` diretório, reinicie o Varnish.
+1. Se você tiver limpado a variável `var/page_cache/` reinicie o Verniz.
 
 >[!TIP]
 >
->Se encontrar erros 503 (Falha na Busca de Backend), consulte [Solução de problemas de erros 503 (serviço indisponível)](https://support.magento.com/hc/en-us/articles/360034631211) no _Central de ajuda da Adobe Commerce_.
+>Se encontrar erros 503 (Falha na busca do backend), consulte [Solução de problemas de erros 503 (Serviço indisponível)](https://support.magento.com/hc/en-us/articles/360034631211) no _Centro de ajuda do Adobe Commerce_.

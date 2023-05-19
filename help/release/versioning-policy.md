@@ -1,93 +1,93 @@
 ---
 title: Política de lançamento
-description: Saiba mais sobre os diferentes tipos de versões do Adobe Commerce, incluindo menor importância, patch, patch de segurança, recurso, hotfix, patch individual e patch personalizado.
-source-git-commit: 1705e930b7ab0176722c4f911dd06f448f992373
+description: Saiba mais sobre os diferentes tipos de versões do Adobe Commerce, incluindo versões secundárias, patches, patches de segurança, recursos, hotfixes, patches individuais e patches personalizados.
+exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
 
 ---
 
-
 # Política de versão do Adobe Commerce
 
-Adobe Commerce e Magento Open Source use [controle de versão semântico](https://semver.org/) no nível do módulo individual (por exemplo, `magento/framework 101.1.1`), mas não para o número da versão de marketing. Por exemplo:
+Adobe Commerce e Magento Open Source usam [controle de versão semântico](https://semver.org/) no nível de módulo individual (por exemplo, `magento/framework 101.1.1`), mas não para o número da versão de marketing. Por exemplo:
 
-- **Versão IMPORTANTE**—2
-- **Versão MENOR**—2.4
-- **Versão do PATCH**—2.4.5
-   - **Versão de patch de SEGURANÇA**—2.4.5-p1
+- **Versão principal**—2
+- **Versão SECUNDÁRIA**—2.4
+- **versão do PATCH**—2.4.5
+   - **Versão de correção de SEGURANÇA**—2.4.5-p1
       - Correção de erro de segurança
       - Aprimoramento de segurança
 - **Versão de patch BETA**—2.4.7-beta1
-- **Versão de recurso**
+- **Lançamento de recurso**
 - **Hotfix**
 - **Patch individual**
-- **Patch personalizado**
+- **Correção personalizada**
 
-## Versão MENOR
+## Versão SECUNDÁRIA
 
 As seguintes diretrizes se aplicam a versões secundárias:
 
-- É possível alterar a quebra; o código gravado para Adobe Commerce 2.2.x pode não funcionar mais com o Adobe Commerce 2.3.x. Por exemplo, versões secundárias podem introduzir suporte para os principais requisitos e dependências do sistema, como o PHP.
+- É possível que ocorram alterações importantes; o código escrito para o Adobe Commerce 2.2.x pode não funcionar mais com o Adobe Commerce 2.3.x. Por exemplo, versões secundárias podem apresentar suporte para os principais requisitos e dependências do sistema, como o PHP.
 - As versões dos módulos podem variar. Por exemplo, algumas alterações de módulo são introduzidas em um novo patch, enquanto outras são introduzidas em uma versão secundária.
-- As versões secundárias podem incluir novos recursos que podem exigir trabalho adicional de você ou de seu parceiro de solução durante a atualização para garantir a compatibilidade.
-- Versões secundárias podem incluir correções para problemas de segurança e qualidade.
+- Versões secundárias podem incluir novos recursos que podem exigir trabalho adicional de você ou de seu parceiro de soluções durante a atualização para garantir a compatibilidade.
+- As versões secundárias podem incluir correções para problemas de segurança e qualidade.
 
-## Versão do PATCH
+## versão do PATCH
 
-As versões de patches têm como foco principal o fornecimento de segurança, desempenho, conformidade e correções de qualidade de alta prioridade para ajudar você a manter o desempenho de seus sites no auge.
+As versões de patches se concentram principalmente no fornecimento de correções de segurança, desempenho, conformidade e qualidade de alta prioridade para ajudar você a manter o desempenho máximo de seus sites.
 
 As seguintes diretrizes se aplicam às versões de patch:
 
-- A versão secundária compatível mais recente recebe correções e aprimoramentos de qualidade funcional completos.
-- As alterações que podem quebrar extensões ou a compatibilidade do código são evitadas. Por exemplo, o código gravado para a versão 2.2.0 ainda deve funcionar na versão 2.2.7.
-- Excepcionalmente, podem ser lançadas alterações ou patches ou hotfixes adicionais para solucionar problemas de segurança ou conformidade e problemas de qualidade de alto impacto. No nível do módulo, trata-se principalmente de alterações no nível do PATCH; às vezes, alterações de nível MINOR.
+- A versão secundária com suporte mais recente recebe correções e melhorias completas de qualidade funcional.
+- São evitadas alterações que poderiam quebrar as extensões ou a compatibilidade de código. Por exemplo, o código escrito para a versão 2.2.0 ainda deve funcionar na versão 2.2.7.
+- Excepcionalmente, mudanças intensas ou patches ou hotfixes adicionais podem ser lançados para resolver problemas de segurança ou conformidade e problemas de qualidade de alto impacto. No nível do módulo, essas são, em sua maioria, alterações no nível de PATCH; às vezes, alterações de nível MENOR.
 
-### Versão de patch de SEGURANÇA
+### Versão de correção de SEGURANÇA
 
-**Correção de erros de segurança**: Uma alteração de código de software que resolve um problema de segurança identificado e fornece os resultados esperados em uma área de produto afetada. Essas correções geralmente são compatíveis com versões anteriores.
+**Correção de erros de segurança**: uma alteração de código de software que resolve um problema de segurança identificado e fornece os resultados esperados em uma área de produto afetada. Essas correções geralmente são compatíveis com versões anteriores.
 
-**Aprimoramento de segurança**: Uma melhoria ou alteração na configuração do software para melhorar proativamente a segurança no aplicativo. Esses aprimoramentos de segurança ajudam a lidar com riscos de segurança que afetam a postura de segurança do aplicativo Adobe Commerce, mas podem ser incompatíveis com versões anteriores.
+**Aprimoramento de segurança**: melhoria ou alteração de configuração do software para melhorar proativamente a segurança no aplicativo. Esses aprimoramentos de segurança ajudam a lidar com riscos de segurança que afetam a postura de segurança do aplicativo do Adobe Commerce, mas que podem ser incompatíveis com versões anteriores.
 
-Com as versões de patches de segurança, você pode manter seu site mais seguro sem aplicar correções de qualidade adicionais e aprimoramentos contidos em uma versão de patch completo. As versões de patch de segurança são anexadas com &#39;-pN&#39;, onde N é a versão de patch incremental que começa com 1 (por exemplo, 2.3.5-p1). As versões de patch de segurança também podem incluir hotfixes necessários para solucionar problemas críticos que afetam o aplicativo Adobe Commerce.
+Com as versões de patch de segurança, você pode manter seu site mais seguro sem aplicar correções de qualidade e aprimoramentos adicionais contidos em uma versão de patch completa. As versões de patch de segurança são anexadas com &quot;-pN&quot;, onde N é a versão de patch incremental que começa com 1 (por exemplo, 2.3.5-p1). As versões de patch de segurança também podem incluir hotfixes necessários para resolver problemas críticos que afetam o aplicativo Adobe Commerce.
 
-Cada liberação de patch de segurança é baseada na liberação de patch completa anterior. Ele contém correções de qualidade e segurança da versão de patch anterior e correções de segurança criadas entre a versão de patch completa anterior e a versão de patch de segurança.
+Cada versão de patch de segurança é baseada na versão anterior de patch completo. Ele contém correções de qualidade e segurança da versão anterior do patch e correções de segurança criadas entre a versão anterior do patch completo e a versão do patch de segurança.
 
-Para obter instruções sobre como baixar e aplicar patches de segurança, consulte [Instalação do início rápido](../installation/composer.md#example---security-patch).
+Para obter instruções sobre como baixar e aplicar patches de segurança, consulte [Instalação de início rápido](../installation/composer.md#example---security-patch).
 
 ## Versão de patch BETA
 
-As versões de disponibilidade pré-geral dos recursos do Adobe Commerce são disponibilizadas publicamente para todos os clientes da Adobe Commerce e parceiros de Adobe. Ele permite mais tempo antes da Disponibilidade Geral para analisar o código e os componentes afetados.
+As versões de disponibilidade pré-geral dos recursos do Adobe Commerce são disponibilizadas publicamente para todos os clientes e parceiros Adobe da Adobe Commerce. Ele permite um tempo extra antes que a Disponibilidade Geral analise o código e os componentes afetados.
 
-As versões beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot;, sem garantia de qualquer tipo. O Adobe não terá a obrigação de manter, corrigir, atualizar, alterar, modificar ou de qualquer outra forma oferecer suporte (via Serviços de Suporte Adobe ou de outra forma) às Versões Beta. Os clientes são aconselhados a ter cautela e a não confiar de forma alguma no funcionamento correto ou no desempenho das versões Beta e/ou de qualquer documentação ou material que as acompanha. Dessa forma, qualquer uso das versões Beta corre todo o risco do cliente.
+As versões beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. O Adobe não terá nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte Adobe ou de outra forma) às versões Beta. Os clientes são aconselhados a ter cuidado e não depender de forma alguma do funcionamento ou desempenho correto das versões Beta e/ou de qualquer documentação ou material que as acompanhe. Portanto, qualquer uso das Versões Beta é totalmente de responsabilidade do Cliente.
 
-## Versão de recurso
+## Lançamento de recurso
 
-As versões de recursos contêm novos recursos e atualizações de recursos que são fornecidos como serviços independentes, separados das versões de patches. Os exemplos incluem serviços como o Product Recommendations e o Live Search, módulos independentes como o PWA Studio e o Inventory management (MSI) e atualizações de nossos serviços e infraestrutura em nuvem.
+As versões de recursos contêm novos recursos e atualizações de recursos fornecidos como serviços independentes, separados das versões de patches. Os exemplos incluem serviços como o Recommendations de produto e o Live Search, módulos independentes como o PWA Studio e o Inventory management (MSI), além de atualizações em nossos serviços e infraestrutura em nuvem.
 
 ## Hotfix
 
-Hotfixes são patches que contêm correções de alta segurança ou qualidade, como correções para vulnerabilidades de zero dias, que afetam muitos comerciantes. O Adobe lança hotfixes para versões Adobe Commerce que ainda são suportadas e afetadas por problemas críticos de segurança ou qualidade, conforme necessário. Os hotfixes são publicados no [Seção Problemas conhecidos](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) da nossa Base de Conhecimento. Essas correções estão incluídas na próxima versão de patch planejada.
+Hotfixes são patches que contêm correções de segurança ou qualidade de alto impacto, como correções para vulnerabilidades &quot;zero-day&quot;, que afetam muitos comerciantes. O Adobe lança hotfixes para versões do Adobe Commerce que ainda são compatíveis e afetadas por problemas críticos de segurança ou qualidade, conforme necessário. Hotfixes são publicados no [seção Problemas conhecidos](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) da nossa Knowledge Base. Essas correções estão incluídas na próxima versão de patch planejada.
 
 >[!NOTE]
 >
->Os hotfixes podem conter alterações incompatíveis com o passado.
+>Hotfixes podem conter alterações incompatíveis com versões anteriores.
 
 ## Patch individual
 
-Os patches individuais contêm correções de qualidade de baixo impacto para um problema específico. Essas correções são aplicadas às versões secundárias compatíveis com o Adobe Commerce. O Adobe lança patches individuais conforme necessário para o Adobe Commerce de acordo com nossa [Política de ciclo de vida do software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+Patches individuais contêm correções de qualidade de baixo impacto para um problema específico. Essas correções são aplicadas às versões secundárias compatíveis do Adobe Commerce. O Adobe lança patches individuais conforme necessário para o Adobe Commerce, de acordo com nossas [Política de ciclo de vida do software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 >[!NOTE]
 >
->Os patches individuais não contêm alterações incompatíveis com o passado.
+>Os patches individuais não contêm alterações incompatíveis com versões anteriores.
 
-## Patch personalizado
+## Correção personalizada
 
-Criado por não Adobe pessoal para corrigir um problema ou modificar o código Adobe Commerce por vários motivos. Os patches personalizados são entregues por meio do [Ferramenta Correções de Qualidade](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código Adobe Commerce por vários motivos. Os patches personalizados são fornecidos por meio do [Ferramenta Correções de qualidade](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
 
 ## Tópicos relacionados
 
 - [Controle de versão](https://developer.adobe.com/commerce/php/development/versioning/)
-- [Próximas versões](schedule.md)
+- [Versões futuras](schedule.md)
 - [Política de ciclo de vida do software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)

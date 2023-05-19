@@ -1,21 +1,21 @@
 ---
 title: Exibir ou alterar o URI do administrador
-description: Siga estas etapas para visualizar e modificar o URI do seu aplicativo Adobe Commerce ou Magento Open Source Admin.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+description: Siga estas etapas para exibir e modificar o URI do aplicativo Adobe Commerce ou Magento Open Source Admin.
+exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
 
 ---
 
-
 # Exibir ou alterar o URI do administrador
 
-Antes de executar este comando, é necessário [Criar ou atualizar a configuração de implantação](deployment.md).
+Antes de executar este comando, você deve [Criar ou atualizar a configuração de implantação](deployment.md).
 
 ## Exibir o URI do administrador
 
-Esta seção discute como usar a linha de comando para exibir o Identificador de Recurso Uniforme de Administrador ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+Esta seção discute como usar a linha de comando para exibir o Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
 
 Opções de comando:
 
@@ -29,7 +29,7 @@ Um exemplo de resultado é o seguinte:
 Admin Panel URI: /admin_1wgrah
 ```
 
-Você também pode visualizar o URI do administrador em `<magento_root>/app/etc/env.php`. Um trecho segue:
+Você também pode exibir o URI do administrador no `<magento_root>/app/etc/env.php`. Segue um trecho:
 
 ```php?start_inline=1
   'backend' =>
@@ -38,6 +38,6 @@ Você também pode visualizar o URI do administrador em `<magento_root>/app/etc/
   ),
 ```
 
-## Alterar o URL de administrador
+## Alterar o URL do administrador
 
 Para alterar o URI do administrador, use o [`magento setup:config:set`](deployment.md) comando.

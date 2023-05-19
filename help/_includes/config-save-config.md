@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Para atualizar a configuração**:
 
-1. Faça logon no seu sistema de desenvolvimento como ou alterne para o proprietário do sistema de arquivos.
+1. Faça logon no sistema de desenvolvimento como ou alterne para o proprietário do sistema de arquivos.
 
 1. Altere para a raiz do aplicativo e execute o comando dump.
 
@@ -18,7 +18,7 @@ ht-degree: 0%
    php bin/magento app:config:dump
    ```
 
-   Por exemplo, se o Commerce estiver instalado em `/var/www/html/magento2`, digite:
+   Por exemplo, se o Commerce estiver instalado no `/var/www/html/magento2`, insira:
 
    ```bash
    cd /var/www/html/magento2
@@ -31,7 +31,7 @@ ht-degree: 0%
    git status
    ```
 
-   Resposta de exemplo:
+   Exemplo de resposta:
 
    ```terminal
    On branch m2.2_deploy
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >Do _not_ enviar alterações ao `generated`, `pub/media`ou `pub/static` diretórios para controle de origem. Você gera esses arquivos no sistema de build. O sistema de desenvolvimento provavelmente tem código, temas e assim por diante, que não estão prontos para uso no sistema produtivo.
+   >Fazer _não_ enviar alterações para o `generated`, `pub/media`ou `pub/static` diretórios para controle de origem. Você gera esses arquivos no sistema de build. O sistema de desenvolvimento deve ter código, temas e assim por diante que não estão prontos para uso no sistema de produção.
 
-1. Verifique as alterações para `app/etc/config.php` somente para controle de origem.
+1. Fazer check-in das alterações em `app/etc/config.php` somente para controle de origem.
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

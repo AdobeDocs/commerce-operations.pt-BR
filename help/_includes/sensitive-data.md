@@ -9,13 +9,13 @@ ht-degree: 0%
 
 O Adobe Commerce e o Magento Open Source usam sua chave de criptografia para criptografar o seguinte:
 
-* Informações do cartão de crédito
-* Nomes de usuários e senhas especificados na configuração de Administração (por exemplo, logons em gateways de pagamento)
-* Valores CAPTCHA enviados pela rede
+* Informações de cartão de crédito
+* Nomes de usuários e senhas especificados na configuração do Administrador (por exemplo, logons em gateways de pagamento)
+* Valores de CAPTCHA enviados pela rede
 
-Adobe Commerce e Magento Open Source do *not* encrypt:
+Adobe Commerce e Magento Open Source do *não* criptografia:
 
-* Nomes de usuários e senhas administrativos e de clientes (essas senhas estão com hash)
+* Nomes de usuário e senhas administrativos e de clientes (essas senhas têm hash)
 * Endereço
 * Número de telefone
-* Outros tipos de informações pessoalmente identificáveis, exceto números de cartão de crédito
+* Outros tipos de informações pessoalmente identificáveis, exceto para números de cartão de crédito

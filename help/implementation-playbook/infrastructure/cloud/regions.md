@@ -1,6 +1,6 @@
 ---
-title: Regiões da infraestrutura em nuvem
-description: Analise diagramas que mostram as regiões do AWS e do Azure disponíveis para o Adobe Commerce.
+title: Regiões de infraestrutura em nuvem
+description: Revise os diagramas que mostram as regiões do AWS e do Azure disponíveis para o Adobe Commerce.
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
 source-git-commit: d387ca9f3c7ce3b0c8ce254cc1c056e5b244ed34
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# Regiões da nuvem
+# Regiões em nuvem
 
 As seções a seguir fornecem detalhes sobre as diferentes regiões do AWS e do Azure disponíveis para o Adobe Commerce na infraestrutura em nuvem.
 
@@ -19,12 +19,12 @@ As seções a seguir fornecem detalhes sobre as diferentes regiões do AWS e do 
 
 >[!NOTE]
 >
-> Apenas nas instalações da China e da Rússia.
+> Somente no local na China e na Rússia.
 
 ## Regiões do Azure
 
-![Diagrama que mostra as regiões do Azure](../../../assets/playbooks/azure-regions.png)
+![Diagrama mostrando as regiões do Azure](../../../assets/playbooks/azure-regions.png)
 
 >[!NOTE]
 >
-> Apenas nas instalações da China e da Rússia. Todos os comerciantes que exigem ambientes de Integração devem usar regiões dos EUA.
+> Somente no local na China e na Rússia. Todos os comerciantes que exigem ambientes de integração devem usar regiões dos EUA.

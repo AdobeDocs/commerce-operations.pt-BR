@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Ferramentas
 
-O objetivo deste guia é fornecer as ferramentas necessárias para executar um site do Adobe Commerce bem-sucedido, otimizado e íntegro.
+O objetivo deste guia é fornecer as ferramentas necessárias para executar um site do Adobe Commerce bem-sucedido, otimizado e saudável.
 
-## Para quem é este guia?
+## Para quem este guia se destina?
 
-Este guia foi projetado para comerciantes, desenvolvedores e integradores para facilitar o desempenho ideal da Adobe Commerce Store.
+Este guia foi projetado para comerciantes, desenvolvedores e integradores para facilitar o desempenho ideal da loja da Adobe Commerce.
 
 ## O que há no guia?
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
-* [[!DNL Quality Patches Tool]: Pesquisar por patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+* [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 * [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
 * [[!DNL Data Migration Tool]](data-migration-tool/how-migration-works.md)

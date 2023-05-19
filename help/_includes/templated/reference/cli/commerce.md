@@ -5,23 +5,23 @@ source-wordcount: '29783'
 ht-degree: 0%
 
 ---
-# magento-cloud (Adobe Commerce na infraestrutura de nuvem)
+# magento-cloud (Adobe Commerce na infraestrutura em nuvem)
 
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Versão**: 1,42,0
+**Versão**: 1.42.0
 
 Esta referência contém 134 comandos disponíveis através do `magento-cloud` ferramenta de linha de comando.
-A lista inicial é gerada automaticamente usando o `magento-cloud list` na edição.
+A lista inicial é gerada automaticamente usando o `magento-cloud list` comando na edição.
 
 >[!NOTE]
 >
->Essa referência é gerada a partir da base de código do aplicativo. Para alterar o conteúdo, você pode atualizar o código-fonte para a implementação do comando correspondente no [base de código](https://github.com/magento) e envie suas alterações para análise. Outra maneira de _Fornecer feedback_ (localize o link no canto superior direito). Para obter as diretrizes de contribuição, consulte [Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Essa referência é gerada a partir da base de código do aplicativo. Para alterar o conteúdo, você pode atualizar o código-fonte para a implementação do comando correspondente no [codebase](https://github.com/magento) repositório e enviar suas alterações para revisão. Outra maneira é _Envie seus comentários_ (localize o link no canto superior direito). Para obter diretrizes de contribuição, consulte [Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_completion`
 
-Gancho de conclusão da BASH.
+Gancho de conclusão BASH.
 
 ```bash
 _completion [-g|--generate-hook] [-p|--program PROGRAM] [-m|--multiple] [--shell-type [SHELL-TYPE]]
@@ -29,7 +29,7 @@ _completion [-g|--generate-hook] [-p|--program PROGRAM] [-m|--multiple] [--shell
 
 ### `--generate-hook`, `-g`
 
-Gere o código BASH que configura a conclusão deste aplicativo.
+Gerar código BASH que configura a conclusão para este aplicativo.
 
 - Padrão: `false`
 - Não aceita um valor
@@ -56,7 +56,7 @@ Defina o tipo de shell (zsh ou bash). Caso contrário, isso será determinado au
 
 ## `bot`
 
-O bot Magento Cloud
+O Magento Cloud Bot
 
 ```bash
 magento-cloud bot [--party] [--parrot]
@@ -99,14 +99,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -120,21 +120,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -142,7 +142,7 @@ Não gerar nenhuma mensagem
 
 ## `clear-cache`
 
-Limpar o cache da CLI
+Limpe o cache da CLI
 
 ```bash
 magento-cloud clear-cache
@@ -181,14 +181,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -202,21 +202,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -224,7 +224,7 @@ Não gerar nenhuma mensagem
 
 ## `decode`
 
-Decodificar uma string codificada, como MAGENTO_CLOUD_VARIABLES
+Decodifique uma string codificada como MAGENTO_CLOUD_VARIABLES
 
 ```bash
 magento-cloud decode [-P|--property PROPERTY] [--] <value>
@@ -266,14 +266,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -287,21 +287,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -309,7 +309,7 @@ Não gerar nenhuma mensagem
 
 ## `docs`
 
-Abra a documentação online
+Abrir a documentação online
 
 ```bash
 magento-cloud docs [--browser BROWSER] [--pipe] [--] [<search>]...
@@ -326,13 +326,13 @@ Pesquisar termo(s)
 
 ### `--browser`
 
-O navegador a ser usado para abrir o URL. Defina 0 como nenhum.
+O navegador a ser usado para abrir o URL. Defina 0 para nenhum.
 
 - Requer um valor
 
 ### `--pipe`
 
-Coloque o URL como stdout.
+Transfira o URL para o stdout.
 
 - Padrão: `false`
 - Não aceita um valor
@@ -360,14 +360,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -381,21 +381,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -403,7 +403,7 @@ Não gerar nenhuma mensagem
 
 ## `help`
 
-Exibe a ajuda de um comando
+Exibe a ajuda para um comando
 
 ```bash
 magento-cloud help [--format FORMAT] [--raw] [--] [<command_name>]
@@ -426,7 +426,7 @@ O formato de saída (txt, xml, json ou md)
 
 ### `--raw`
 
-Para gerar a ajuda do comando bruto
+Para gerar a ajuda do comando raw
 
 - Padrão: `false`
 - Não aceita um valor
@@ -454,14 +454,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -475,21 +475,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -497,7 +497,7 @@ Não gerar nenhuma mensagem
 
 ## `legacy-migrate`
 
-Migrar da estrutura de arquivos herdada
+Migrar da estrutura de arquivo herdada
 
 ```bash
 magento-cloud legacy-migrate [--no-backup]
@@ -533,14 +533,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -554,21 +554,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -576,7 +576,7 @@ Não gerar nenhuma mensagem
 
 ## `list`
 
-Comandos Lists
+Comandos de Listas
 
 ```bash
 magento-cloud list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
@@ -596,7 +596,7 @@ O nome do namespace
 
 ### `--raw`
 
-Para exibir a lista de comandos brutos
+Para gerar a lista de comandos raw
 
 - Padrão: `false`
 - Não aceita um valor
@@ -638,14 +638,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -659,21 +659,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -705,7 +705,7 @@ Uma lista de IDs de projeto, separadas por vírgulas e/ou espaço em branco
 
 ### `--continue`
 
-Continue executando comandos mesmo se uma exceção for encontrada
+Continuar executando comandos mesmo se uma exceção for encontrada
 
 - Padrão: `false`
 - Não aceita um valor
@@ -747,14 +747,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -768,21 +768,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -790,7 +790,7 @@ Não gerar nenhuma mensagem
 
 ## `web`
 
-Abra a interface do usuário da Web
+Abrir a interface do usuário da Web
 
 ```bash
 magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
@@ -798,13 +798,13 @@ magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--envi
 
 ### `--browser`
 
-O navegador a ser usado para abrir o URL. Defina 0 como nenhum.
+O navegador a ser usado para abrir o URL. Defina 0 para nenhum.
 
 - Requer um valor
 
 ### `--pipe`
 
-Coloque o URL como stdout.
+Transfira o URL para o stdout.
 
 - Padrão: `false`
 - Não aceita um valor
@@ -850,14 +850,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -871,21 +871,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -922,14 +922,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -943,21 +943,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -994,14 +994,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1015,21 +1015,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1051,14 +1051,14 @@ A ID da atividade. O padrão é a atividade cancelável mais recente.
 
 ### `--type`
 
-Filtrar por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco. O caractere % pode ser usado como curinga para o tipo, por exemplo &#39;%var%&#39; para selecionar atividades relacionadas à variável.
+Filtrar por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco. O caractere % pode ser usado como um curinga para o tipo, por exemplo, &#39;%var%&#39; para selecionar atividades relacionadas à variável.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--exclude-type`
 
-Excluir por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco. O caractere % pode ser usado como curinga para excluir tipos.
+Excluir por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco. O caractere % pode ser usado como um curinga para excluir tipos.
 
 - Padrão: `[]`
 - Requer um valor
@@ -1111,14 +1111,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1132,21 +1132,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1174,21 +1174,21 @@ A propriedade a ser exibida
 
 ### `--type`
 
-Filtrar por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco. O caractere % pode ser usado como curinga para o tipo, por exemplo &#39;%var%&#39; para selecionar atividades relacionadas à variável.
+Filtrar por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco. O caractere % pode ser usado como um curinga para o tipo, por exemplo, &#39;%var%&#39; para selecionar atividades relacionadas à variável.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--exclude-type`
 
-Excluir por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco. O caractere % pode ser usado como curinga para excluir tipos.
+Excluir por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco. O caractere % pode ser usado como um curinga para excluir tipos.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--state`
 
-Filtrar por estado (ao selecionar uma atividade padrão): in_progress, pendente, concluído ou cancelado. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Filtrar por estado (ao selecionar uma atividade padrão): in_progress, pending, complete ou canceled. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
@@ -1201,7 +1201,7 @@ Filtrar por resultado (ao selecionar uma atividade padrão): sucesso ou falha
 
 ### `--incomplete`, `-i`
 
-Inclua apenas atividades incompletas (ao selecionar uma atividade padrão). Este é um encurtador para &lt;info>—state=in_progress,pending&lt;/info>
+Incluir somente atividades incompletas (ao selecionar uma atividade padrão). Esta é uma abreviação de &lt;info>—state=em_andamento,pendente&lt;/info>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1233,28 +1233,28 @@ A ID do ambiente
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -1282,14 +1282,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1303,21 +1303,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1343,34 +1343,34 @@ act
 
 ### `--type`, `-t`
 
-Filtrar atividades por tipo Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco. O caractere % pode ser usado como curinga para o tipo, por exemplo &#39;%var%&#39; para selecionar atividades relacionadas à variável.
+Filtrar atividades por tipo Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco. O caractere % pode ser usado como um curinga para o tipo, por exemplo, &#39;%var%&#39; para selecionar atividades relacionadas à variável.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--exclude-type`, `-x`
 
-Excluir atividades por tipo. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco. O caractere % pode ser usado como curinga para excluir tipos.
+Excluir atividades por tipo. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco. O caractere % pode ser usado como um curinga para excluir tipos.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--limit`
 
-Limite o número de resultados exibidos
+Limitar o número de resultados exibidos
 
 - Padrão: `10`
 - Requer um valor
 
 ### `--start`
 
-Somente as atividades criadas antes dessa data serão listadas
+Somente atividades criadas antes desta data serão listadas
 
 - Requer um valor
 
 ### `--state`
 
-Filtrar atividades por estado: in_progress, pendente, concluído ou cancelado. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Filtrar atividades por estado: in_progress, pending, complete ou canceled. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
@@ -1397,28 +1397,28 @@ Listar atividades em todos os ambientes
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: id*, criada*, descrição*, progresso*, estado*, resultado*, concluído, ambientes, tipo (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: id*, created*, description*, progress*, state*, result*, completed, ambientes, type (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -1464,14 +1464,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1485,21 +1485,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1535,21 +1535,21 @@ Exibir um carimbo de data e hora ao lado de cada mensagem
 
 ### `--type`
 
-Filtrar por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco. O caractere % pode ser usado como curinga para o tipo, por exemplo &#39;%var%&#39; para selecionar atividades relacionadas à variável.
+Filtrar por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco. O caractere % pode ser usado como um curinga para o tipo, por exemplo, &#39;%var%&#39; para selecionar atividades relacionadas à variável.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--exclude-type`
 
-Excluir por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco. O caractere % pode ser usado como curinga para excluir tipos.
+Excluir por tipo (ao selecionar uma atividade padrão). Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco. O caractere % pode ser usado como um curinga para excluir tipos.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--state`
 
-Filtrar por estado (ao selecionar uma atividade padrão): in_progress, pendente, concluído ou cancelado. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Filtrar por estado (ao selecionar uma atividade padrão): in_progress, pending, complete ou canceled. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
@@ -1562,7 +1562,7 @@ Filtrar por resultado (ao selecionar uma atividade padrão): sucesso ou falha
 
 ### `--incomplete`, `-i`
 
-Inclua apenas atividades incompletas (ao selecionar uma atividade padrão). Este é um encurtador para &lt;info>—state=in_progress,pending&lt;/info>
+Incluir somente atividades incompletas (ao selecionar uma atividade padrão). Esta é uma abreviação de &lt;info>—state=em_andamento,pendente&lt;/info>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1576,7 +1576,7 @@ Verificar atividades recentes em todos os ambientes (ao selecionar uma atividade
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -1622,14 +1622,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1643,21 +1643,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1685,13 +1685,13 @@ O método de solicitação a ser usado
 
 ### `--data`, `-d`
 
-Dados para enviar
+Dados a enviar
 
 - Requer um valor
 
 ### `--json`
 
-Dados JSON para enviar
+Dados JSON a enviar
 
 - Requer um valor
 
@@ -1704,21 +1704,21 @@ Incluir cabeçalhos na saída
 
 ### `--head`, `-I`
 
-Buscar somente cabeçalhos
+Buscar cabeçalhos somente
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--disable-compression`
 
-Não use o curl - sinalizador compactado
+Não usar o sinalizador curl — compressed
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--enable-glob`
 
-Ativar a globalização do curl (remover o sinalizador —globoff)
+Habilitar curl globbing (remover o sinalizador — globoff)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1732,7 +1732,7 @@ Falha sem saída em uma resposta de erro
 
 ### `--header`, `-H`
 
-Cabeçalho(s) extra
+Cabeçalho(s) extra(s)
 
 - Padrão: `[]`
 - Requer um valor
@@ -1760,14 +1760,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1781,21 +1781,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1817,7 +1817,7 @@ A propriedade de configuração a ser exibida
 
 ### `--refresh`
 
-Se deseja atualizar o cache
+Se o cache deve ser atualizado
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1875,14 +1875,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1896,21 +1896,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1931,7 +1931,7 @@ apps
 
 ### `--refresh`
 
-Se deseja atualizar o cache
+Se o cache deve ser atualizado
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1956,21 +1956,21 @@ A ID do ambiente
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: name*, type*, disk, path, size (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: nome*, tipo*, disco, caminho, tamanho (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1998,14 +1998,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2019,21 +2019,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2041,7 +2041,7 @@ Não gerar nenhuma mensagem
 
 ## `auth:api-token-login`
 
-Faça logon no Magento Cloud usando um token de API
+Fazer logon na Magento Cloud usando um token de API
 
 ```bash
 magento-cloud auth:api-token-login
@@ -2070,14 +2070,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2091,21 +2091,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2113,7 +2113,7 @@ Não gerar nenhuma mensagem
 
 ## `auth:browser-login`
 
-Faça logon no Magento Cloud por meio de um navegador
+Fazer logon na Magento Cloud por meio de um navegador
 
 ```bash
 magento-cloud login [-f|--force] [--browser BROWSER] [--pipe]
@@ -2126,20 +2126,20 @@ login
 
 ### `--force`, `-f`
 
-Faça logon novamente, mesmo que já tenha feito logon
+Fazer logon novamente, mesmo que já tenha feito logon
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--browser`
 
-O navegador a ser usado para abrir o URL. Defina 0 como nenhum.
+O navegador a ser usado para abrir o URL. Defina 0 para nenhum.
 
 - Requer um valor
 
 ### `--pipe`
 
-Coloque o URL como stdout.
+Transfira o URL para o stdout.
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2167,14 +2167,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2188,21 +2188,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2210,7 +2210,7 @@ Não gerar nenhuma mensagem
 
 ## `auth:info`
 
-Exibir suas informações de conta
+Exibir as informações da sua conta
 
 ```bash
 magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--] [<property>]
@@ -2224,7 +2224,7 @@ A propriedade da conta a ser exibida
 
 ### `--no-auto-login`
 
-Ignora o logon automático. Nada será emitido se não estiver conectado e o código de saída será 0, supondo nenhum outro erro.
+Ignora o logon automático. Nada será gerado se não estiver conectado e o código de saída será 0, assumindo que não há outros erros.
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2237,28 +2237,28 @@ A propriedade da conta a ser exibida (sintaxe alternativa)
 
 ### `--refresh`
 
-Se deseja atualizar o cache
+Se o cache deve ser atualizado
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2286,14 +2286,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2307,21 +2307,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2329,7 +2329,7 @@ Não gerar nenhuma mensagem
 
 ## `auth:logout`
 
-Saia do Magento Cloud
+Faça logout da Magento Cloud
 
 ```bash
 magento-cloud logout [-a|--all] [--other]
@@ -2377,14 +2377,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2398,21 +2398,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2420,7 +2420,7 @@ Não gerar nenhuma mensagem
 
 ## `auth:password-login`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Faça logon no Magento Cloud usando um nome de usuário e senha
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Faça logon na Magento Cloud usando um nome de usuário e senha
 
 ```bash
 magento-cloud auth:password-login
@@ -2454,14 +2454,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2475,21 +2475,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2497,7 +2497,7 @@ Não gerar nenhuma mensagem
 
 ## `auth:token`
 
-Obter um token de acesso OAuth 2 para solicitações de APIs da Magento Cloud
+Obter um token de acesso OAuth 2 para solicitações às APIs da Magento Cloud
 
 ```bash
 magento-cloud auth:token [-H|--header] [-W|--no-warn]
@@ -2505,14 +2505,14 @@ magento-cloud auth:token [-H|--header] [-W|--no-warn]
 
 ### `--header`, `-H`
 
-Coloque o token no prefixo &quot;Autorização: Portador &quot; para criar um cabeçalho RFC 6750
+Coloque o prefixo &quot;Authorization: Bearer&quot; no token para criar um cabeçalho RFC 6750
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-warn`, `-W`
 
-Suprima o aviso que é impresso por padrão para stderr. Essa opção é preferível ao redirecionamento do padrão, pois ocultaria outras mensagens potencialmente úteis.
+Suprime o aviso impresso por padrão no &#39;stderr&#39;. Essa opção é preferível ao redirecionamento do stderr, pois ocultaria outras mensagens potencialmente úteis.
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2540,14 +2540,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2561,21 +2561,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2622,7 +2622,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2650,14 +2650,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2671,21 +2671,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2740,14 +2740,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2761,21 +2761,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2837,14 +2837,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2858,21 +2858,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2934,14 +2934,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2955,21 +2955,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3023,7 +3023,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3051,14 +3051,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3072,21 +3072,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3103,7 +3103,7 @@ magento-cloud certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] 
 
 ### `id`
 
-A ID do certificado (ou o seu início)
+A ID do certificado (ou o início dela)
 
 - Obrigatório
 
@@ -3128,7 +3128,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3156,14 +3156,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3177,21 +3177,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3208,19 +3208,19 @@ magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p
 
 ### `id`
 
-A ID do certificado (ou o seu início)
+A ID do certificado (ou o início dela)
 
 - Obrigatório
 
 ### `--property`, `-P`
 
-A propriedade de certificado a ser exibida
+A propriedade do certificado a ser exibida
 
 - Requer um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -3260,14 +3260,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3281,21 +3281,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3321,13 +3321,13 @@ certs
 
 ### `--domain`
 
-Filtrar por nome de domínio (pesquisa não diferencia maiúsculas de minúsculas)
+Filtrar por nome de domínio (pesquisa que não diferencia maiúsculas de minúsculas)
 
 - Requer um valor
 
 ### `--exclude-domain`
 
-Excluir certificados, correspondendo por nome de domínio (pesquisa que não diferencia maiúsculas de minúsculas)
+Excluir certificados, correspondendo pelo nome de domínio (pesquisa que não diferencia maiúsculas de minúsculas)
 
 - Requer um valor
 
@@ -3339,7 +3339,7 @@ Filtrar por emissor
 
 ### `--only-auto`
 
-Mostrar somente certificados provisionados automaticamente
+Mostrar apenas certificados autoprovisionados
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3367,7 +3367,7 @@ Mostrar apenas certificados expirados
 
 ### `--no-expired`
 
-Mostrar somente certificados não expirados (padrão)
+Mostrar apenas certificados não expirados (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3381,28 +3381,28 @@ Retornar apenas uma lista de nomes de domínio cobertos pelos certificados
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: criado, domínios, expira, id, emissor. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: criado, domínios, expires, id, emissor. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3442,14 +3442,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3463,21 +3463,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3494,7 +3494,7 @@ magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--e
 
 ### `commit`
 
-O SHA de confirmação. Isso também pode aceitar os sufixos &quot;HEAD&quot; e sinal de interpolação (^) ou til (~) para confirmações principais.
+O SHA de confirmação. Isso também pode aceitar os sufixos &quot;HEAD&quot; e acento circunflexo (^) ou til (~) para confirmações principais.
 
 - Padrão: `HEAD`
 
@@ -3525,7 +3525,7 @@ A ID do ambiente
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -3573,14 +3573,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3594,21 +3594,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3616,7 +3616,7 @@ Não gerar nenhuma mensagem
 
 ## `commit:list`
 
-Comentários da lista
+Listar confirmações
 
 ```bash
 magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
@@ -3630,7 +3630,7 @@ commits
 
 ### `commit`
 
-O Git inicial confirma SHA. Isso também pode aceitar os sufixos &quot;HEAD&quot; e sinal de interpolação (^) ou til (~) para confirmações principais.
+O SHA de Git commit inicial. Isso também pode aceitar os sufixos &quot;HEAD&quot; e acento circunflexo (^) ou til (~) para confirmações principais.
 
 
 ### `--limit`
@@ -3660,28 +3660,28 @@ A ID do ambiente
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: autor, data, sha, resumo. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: author, date, sha, summary. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -3709,14 +3709,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3730,21 +3730,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3752,7 +3752,7 @@ Não gerar nenhuma mensagem
 
 ## `db:dump`
 
-Criar um despejo local do banco de dados remoto
+Criar um dump local do banco de dados remoto
 
 ```bash
 magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
@@ -3770,7 +3770,7 @@ environment:sql-dump
 
 ### `--schema`
 
-O esquema a ser despejado. Omitir para usar o schema padrão (geralmente &quot;principal&quot;).
+O esquema a ser descarregado. Omitir o uso do schema padrão (geralmente &quot;principal&quot;).
 
 - Requer um valor
 
@@ -3788,7 +3788,7 @@ Um diretório personalizado para o despejo
 
 ### `--gzip`, `-z`
 
-Compacte o despejo usando gzip
+Compactar o despejo usando gzip
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3809,14 +3809,14 @@ Saída para STDOUT em vez de um arquivo
 
 ### `--table`
 
-Tabela(s) a incluir
+Tabela(s) a serem incluídas
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--exclude-table`
 
-Tabela(s) a excluir
+Tabela(s) a ser excluída(s)
 
 - Padrão: `[]`
 - Requer um valor
@@ -3860,7 +3860,7 @@ O nome do aplicativo remoto
 
 ### `--relationship`, `-r`
 
-A relação de serviço a utilizar
+O relacionamento de serviço a ser usado
 
 - Requer um valor
 
@@ -3893,14 +3893,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3914,21 +3914,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3936,7 +3936,7 @@ Não gerar nenhuma mensagem
 
 ## `db:size`
 
-Estimativa do uso de disco de um banco de dados
+Estimar o uso do disco de um banco de dados
 
 ```bash
 magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
@@ -3951,7 +3951,7 @@ Mostrar tamanhos em bytes.
 
 ### `--cleanup`, `-C`
 
-Verifique se as tabelas podem ser removidas e me mostrar recomendações (somente InnoDb).
+Verificar se as tabelas podem ser limpas e mostrar recomendações (somente InnoDb).
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3982,27 +3982,27 @@ O nome do aplicativo remoto
 
 ### `--relationship`, `-r`
 
-A relação de serviço a utilizar
+O relacionamento de serviço a ser usado
 
 - Requer um valor
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: max, percent_used, usado. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: max, percent_used, used. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4036,14 +4036,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4057,21 +4057,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4103,14 +4103,14 @@ Uma instrução SQL a ser executada
 
 ### `--raw`
 
-Produzir saída bruta e não tabular
+Produzir saída bruta, não tabular
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--schema`
 
-O schema a ser usado. Omitir para usar o schema padrão (geralmente &quot;principal&quot;). Passe uma string vazia para não usar nenhum schema.
+O esquema a ser usado. Omitir o uso do schema padrão (geralmente &quot;principal&quot;). Transmita uma string vazia para não usar nenhum esquema.
 
 - Requer um valor
 
@@ -4140,7 +4140,7 @@ O nome do aplicativo remoto
 
 ### `--relationship`, `-r`
 
-A relação de serviço a utilizar
+O relacionamento de serviço a ser usado
 
 - Requer um valor
 
@@ -4173,14 +4173,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4194,21 +4194,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4231,7 +4231,7 @@ O nome do domínio
 
 ### `--cert`
 
-O caminho para o arquivo de certificado para este domínio
+O caminho para o arquivo de certificado deste domínio
 
 - Requer um valor
 
@@ -4243,7 +4243,7 @@ O caminho para o arquivo de chave privada do certificado fornecido.
 
 ### `--chain`
 
-O caminho para o arquivo ou arquivos da cadeia de certificados para o certificado fornecido
+O caminho para o(s) arquivo(s) da cadeia de certificados do certificado fornecido
 
 - Padrão: `[]`
 - Requer um valor
@@ -4269,7 +4269,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4297,14 +4297,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4318,21 +4318,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4374,7 +4374,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4402,14 +4402,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4423,21 +4423,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4465,28 +4465,28 @@ A propriedade de domínio a ser exibida
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -4526,14 +4526,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4547,21 +4547,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4582,21 +4582,21 @@ domains
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: name*, ssl*, created_at*, update_at (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: name*, ssl*, created_at*, updated_at (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4636,14 +4636,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4657,21 +4657,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4694,7 +4694,7 @@ O nome do domínio
 
 ### `--cert`
 
-O caminho para o arquivo de certificado para este domínio
+O caminho para o arquivo de certificado deste domínio
 
 - Requer um valor
 
@@ -4706,7 +4706,7 @@ O caminho para o arquivo de chave privada do certificado fornecido.
 
 ### `--chain`
 
-O caminho para o arquivo ou arquivos da cadeia de certificados para o certificado fornecido
+O caminho para o(s) arquivo(s) da cadeia de certificados do certificado fornecido
 
 - Padrão: `[]`
 - Requer um valor
@@ -4732,7 +4732,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4760,14 +4760,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4781,21 +4781,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4820,7 +4820,7 @@ Os ambientes a serem ativados
 
 ### `--parent`
 
-Definir um novo pai de ambiente antes de ativar
+Definir um novo ambiente principal antes da ativação
 
 - Requer um valor
 
@@ -4851,7 +4851,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4879,14 +4879,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4900,21 +4900,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4922,7 +4922,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:branch`
 
-Ramificação de um ambiente
+Ramificar um ambiente
 
 ```bash
 magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
@@ -4958,14 +4958,14 @@ O tipo do novo ambiente
 
 ### `--force`
 
-Criar o novo ambiente mesmo que a ramificação não possa ser dada por check-out localmente
+Criar o novo ambiente mesmo se não for possível fazer check-out da ramificação localmente
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-clone-parent`
 
-Não clonar os dados da ramificação principal
+Não clonar os dados da ramificação pai
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4997,7 +4997,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5031,14 +5031,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5052,21 +5052,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5074,7 +5074,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:checkout`
 
-Verificar um ambiente
+Confira um ambiente
 
 ```bash
 magento-cloud checkout [-i|--identity-file IDENTITY-FILE] [--] [<id>]
@@ -5088,7 +5088,7 @@ checkout
 
 ### `id`
 
-A ID do ambiente para check-out. Por exemplo: &quot;sprint2&quot;
+A ID do ambiente a ser verificado. Por exemplo: &quot;sprint2&quot;
 
 
 ### `--identity-file`, `-i`
@@ -5120,14 +5120,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5141,21 +5141,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5163,7 +5163,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:curl`
 
-Execute uma solicitação cURL autenticada na API de um ambiente
+Executar uma solicitação de cURL autenticada na API de um ambiente
 
 ```bash
 magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
@@ -5183,13 +5183,13 @@ O método de solicitação a ser usado
 
 ### `--data`, `-d`
 
-Dados para enviar
+Dados a enviar
 
 - Requer um valor
 
 ### `--json`
 
-Dados JSON para enviar
+Dados JSON a enviar
 
 - Requer um valor
 
@@ -5202,21 +5202,21 @@ Incluir cabeçalhos na saída
 
 ### `--head`, `-I`
 
-Buscar somente cabeçalhos
+Buscar cabeçalhos somente
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--disable-compression`
 
-Não use o curl - sinalizador compactado
+Não usar o sinalizador curl — compressed
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--enable-glob`
 
-Ativar a globalização do curl (remover o sinalizador —globoff)
+Habilitar curl globbing (remover o sinalizador — globoff)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5230,7 +5230,7 @@ Falha sem saída em uma resposta de erro
 
 ### `--header`, `-H`
 
-Cabeçalho(s) extra
+Cabeçalho(s) extra(s)
 
 - Padrão: `[]`
 - Requer um valor
@@ -5276,14 +5276,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5297,21 +5297,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5333,7 +5333,7 @@ environment:deactivate
 
 ### `environment`
 
-Os ambientes a serem excluídos. O caractere % pode ser usado como curinga. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Os ambientes a serem excluídos. O caractere % pode ser usado como curinga. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 
@@ -5348,49 +5348,49 @@ Excluir ramificações Git (ambientes inativos)
 
 ### `--no-delete-branch`
 
-Não exclua ramificações Git (ambientes inativos)
+Não excluir ramificações Git (ambientes inativos)
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--type`
 
-Excluir todos os ambientes de um tipo (adicionar a qualquer outro selecionado) Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Excluir todos os ambientes de um tipo (adicionando a qualquer outro selecionado) Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaço em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--only-type`, `-t`
 
-Excluir apenas ambientes de um tipo específico Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Excluir apenas ambientes de um tipo específico Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaço em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--exclude`
 
-Ambiente(s) a não excluir. O caractere % pode ser usado como curinga. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Ambiente(s) a não excluir. O caractere % pode ser usado como curinga. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--exclude-type`
 
-Tipo(s) de ambiente(s) do(s) qual(is) não excluir Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Tipos de ambiente que não devem ser excluídos Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--inactive`
 
-Excluir todos os ambientes inativos (adicionar a qualquer outro ambiente selecionado)
+Excluir todos os ambientes inativos (adicionando a quaisquer outros selecionados)
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--merged`
 
-Excluir todos os ambientes mesclados (adicionando a todos os outros selecionados)
+Excluir todos os ambientes mesclados (adicionando a qualquer outro selecionado)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5422,7 +5422,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5450,14 +5450,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5471,21 +5471,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5513,7 +5513,7 @@ Restrição de acesso no formato &quot;permissão:endereço&quot;. Use 0 para li
 
 ### `--auth`
 
-Credenciais de autenticação do HTTP Basic no formato &quot;nome de usuário:senha&quot;. Use 0 para limpar todas as credenciais.
+Credenciais de autenticação Básicas do HTTP no formato &quot;nome de usuário:senha&quot;. Use 0 para limpar todas as credenciais.
 
 - Padrão: `[]`
 - Requer um valor
@@ -5551,7 +5551,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5579,14 +5579,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5600,21 +5600,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5622,7 +5622,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:info`
 
-Ler ou definir propriedades para um ambiente
+Ler ou definir propriedades de um ambiente
 
 ```bash
 magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
@@ -5646,35 +5646,35 @@ Definir um novo valor para a propriedade
 
 ### `--refresh`
 
-Se deseja atualizar o cache
+Se o cache deve ser atualizado
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5706,7 +5706,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5734,14 +5734,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5755,21 +5755,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5777,7 +5777,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:init`
 
-Inicializar um ambiente de um repositório Git público
+Inicializar um ambiente a partir de um repositório Git público
 
 ```bash
 magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
@@ -5823,7 +5823,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5851,14 +5851,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5872,21 +5872,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5919,7 +5919,7 @@ Não mostrar ambientes inativos
 
 ### `--pipe`
 
-Coloque uma lista simples de IDs de ambiente.
+Gerar uma lista simples de IDs de ambiente.
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5940,35 +5940,35 @@ Uma propriedade para classificar por
 
 ### `--reverse`
 
-Classificar em ordem inversa (decrescente)
+Classificar em ordem inversa (descendente)
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--type`
 
-Filtre a lista por tipo(s) de ambiente. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Filtrar a lista por tipos de ambiente. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: id*, title*, status*, tipo*, criado, nome_da_máquina, atualizado (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: id*, title*, status*, type*, created, machine_name, updated (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6008,14 +6008,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6029,21 +6029,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6051,7 +6051,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:logs`
 
-Ler os registros de um ambiente
+Ler logs de um ambiente
 
 ```bash
 magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
@@ -6070,12 +6070,12 @@ logs
 
 ### `type`
 
-O tipo de log, por exemplo &quot;access&quot; ou &quot;error&quot;
+O tipo de log, por exemplo, &quot;acesso&quot; ou &quot;erro&quot;
 
 
 ### `--lines`
 
-O número de linhas a serem mostradas
+O número de linhas a serem exibidas
 
 - Padrão: `100`
 - Requer um valor
@@ -6146,14 +6146,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6167,21 +6167,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6233,7 +6233,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6261,14 +6261,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6282,21 +6282,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6338,47 +6338,47 @@ Permitir atualizações não rápidas
 
 ### `--force-with-lease`
 
-Permitir atualizações não rápidas, se a ramificação de rastreamento remoto estiver atualizada
+Permitir atualizações não rápidas se a ramificação de rastreamento remoto estiver atualizada
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--set-upstream`, `-u`
 
-Definir o ambiente de destino como o upstream para a ramificação de origem
+Definir o ambiente de destino como upstream para a ramificação de origem
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--activate`
 
-Ative o ambiente antes de enviar
+Ativar o ambiente antes de enviar
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--branch`
 
-OBSOLETO: alias de —ativate
+DEPRECATED: alias do — ativate
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--parent`
 
-Definir o novo ambiente pai (usado apenas com —ativate)
+Definir o novo ambiente principal (usado somente com — ativate)
 
 - Requer um valor
 
 ### `--type`
 
-Defina o tipo de ambiente (usado apenas com —ativate )
+Definir o tipo de ambiente (usado somente com —ativate )
 
 - Requer um valor
 
 ### `--no-clone-parent`
 
-Não clonar os dados da ramificação pai (usada apenas com —ativate)
+Não clonar os dados da ramificação pai (usados somente com — ativate)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6392,7 +6392,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6444,14 +6444,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6465,21 +6465,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6487,7 +6487,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:redeploy`
 
-Reimplantar um ambiente
+Reimplantação de um ambiente
 
 ```bash
 magento-cloud redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
@@ -6525,7 +6525,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6553,14 +6553,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6574,21 +6574,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6596,7 +6596,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:relationships`
 
-Mostrar as relações de um ambiente
+Mostrar relações de um ambiente
 
 ```bash
 magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
@@ -6679,14 +6679,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6700,21 +6700,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6722,7 +6722,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:scp`
 
-Copiar arquivos de e para o ambiente atual usando o scp
+Copiar arquivos de e para o ambiente atual usando scp
 
 ```bash
 magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
@@ -6736,7 +6736,7 @@ scp
 
 ### `files`
 
-Arquivos a serem copiados. Use o controle remoto: para definir locais remotos.
+Arquivos para copiar. Use o prefixo remote: para definir locais remotos.
 
 - Padrão: `[]`
 
@@ -6744,7 +6744,7 @@ Arquivos a serem copiados. Use o controle remoto: para definir locais remotos.
 
 ### `--recursive`, `-r`
 
-Copiar recursivamente todos os diretórios
+Copiar recursivamente diretórios inteiros
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6814,14 +6814,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6835,21 +6835,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6857,7 +6857,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:set-remote`
 
-Definir o ambiente remoto para mapear para uma ramificação
+Definir o ambiente remoto a ser mapeado para uma ramificação
 
 ```bash
 magento-cloud environment:set-remote <environment> [<branch>]
@@ -6898,14 +6898,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6919,21 +6919,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6955,7 +6955,7 @@ ssh
 
 ### `cmd`
 
-Um comando para executar no ambiente.
+Um comando a ser executado no ambiente.
 
 - Padrão: `[]`
 
@@ -6963,14 +6963,14 @@ Um comando para executar no ambiente.
 
 ### `--pipe`
 
-Coloque o URL do SSH somente.
+Saída somente do URL SSH.
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--all`
 
-Coloque todos os URLs SSH (para cada aplicativo).
+Saída de todos os URLs SSH (para cada aplicativo).
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7040,14 +7040,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7061,21 +7061,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7083,7 +7083,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:synchronize`
 
-Sincronizar o código e/ou os dados de um ambiente do pai
+Sincronizar o código e/ou os dados de um ambiente a partir de seu pai
 
 ```bash
 magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
@@ -7097,7 +7097,7 @@ sync
 
 ### `synchronize`
 
-O que sincronizar: &quot;code&quot;, &quot;data&quot; ou ambos
+O que sincronizar: &quot;código&quot;, &quot;dados&quot; ou ambos
 
 - Padrão: `[]`
 
@@ -7105,7 +7105,7 @@ O que sincronizar: &quot;code&quot;, &quot;data&quot; ou ambos
 
 ### `--rebase`
 
-Sincronize o código rebaseando em vez de mesclar
+Sincronizar código rebaseando em vez de mesclar
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7137,7 +7137,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7165,14 +7165,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7186,21 +7186,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7221,20 +7221,20 @@ url
 
 ### `--primary`, `-1`
 
-Retorna somente o URL da rota primária
+Retornar apenas o URL da rota principal
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--browser`
 
-O navegador a ser usado para abrir o URL. Defina 0 como nenhum.
+O navegador a ser usado para abrir o URL. Defina 0 para nenhum.
 
 - Requer um valor
 
 ### `--pipe`
 
-Coloque o URL como stdout.
+Transfira o URL para o stdout.
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7280,14 +7280,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7301,21 +7301,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7323,7 +7323,7 @@ Não gerar nenhuma mensagem
 
 ## `environment:xdebug`
 
-Abra um túnel para Xdebug no ambiente
+Abrir um túnel para o Xdebug no ambiente
 
 ```bash
 magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
@@ -7406,14 +7406,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7427,21 +7427,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7458,7 +7458,7 @@ magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PR
 
 ### `integration`
 
-Uma ID de integração. Deixe em branco para escolher de uma lista.
+Uma ID de integração. Deixe em branco para escolher em uma lista.
 
 
 ### `activity`
@@ -7492,28 +7492,28 @@ Opção obsoleta, não é mais usada
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -7541,14 +7541,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7562,21 +7562,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7603,39 +7603,39 @@ integration:activities
 
 ### `id`
 
-Uma ID de integração. Deixe em branco para escolher de uma lista.
+Uma ID de integração. Deixe em branco para escolher em uma lista.
 
 
 ### `--type`
 
-Filtrar atividades por tipo. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Filtrar atividades por tipo. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--exclude-type`, `-x`
 
-Excluir atividades por tipo. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco. O caractere % pode ser usado como curinga para excluir tipos.
+Excluir atividades por tipo. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco. O caractere % pode ser usado como um curinga para excluir tipos.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--limit`
 
-Limite o número de resultados exibidos
+Limitar o número de resultados exibidos
 
 - Padrão: `10`
 - Requer um valor
 
 ### `--start`
 
-Somente as atividades criadas antes dessa data serão listadas
+Somente atividades criadas antes desta data serão listadas
 
 - Requer um valor
 
 ### `--state`
 
-Filtrar atividades por estado. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Filtrar atividades por estado. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
@@ -7655,28 +7655,28 @@ Listar apenas atividades incompletas
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: id*, criada*, descrição*, tipo*, estado*, resultado*, concluído (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: id*, created*, description*, type*, state*, result*, completed (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -7722,14 +7722,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7743,21 +7743,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7774,7 +7774,7 @@ magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [
 
 ### `integration`
 
-Uma ID de integração. Deixe em branco para escolher de uma lista.
+Uma ID de integração. Deixe em branco para escolher em uma lista.
 
 
 ### `activity`
@@ -7791,7 +7791,7 @@ Exibir um carimbo de data e hora ao lado de cada mensagem
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -7837,14 +7837,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7858,21 +7858,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7888,19 +7888,19 @@ magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username US
 
 ### `--type`
 
-O tipo de integração (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pagerduty&#39;, &#39;health.slack&#39;, &#39;health.webhook&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;)
+O tipo de integração (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pagerDuty&#39;, &#39;health.slack&#39;, &#39;health.webhook&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;)
 
 - Requer um valor
 
 ### `--base-url`
 
-O URL básico da instalação do servidor
+O URL de base da instalação do servidor
 
 - Requer um valor
 
 ### `--username`
 
-O nome de usuário do servidor de bucket
+O nome de usuário do servidor Bitbucket
 
 - Requer um valor
 
@@ -7912,31 +7912,31 @@ Um token de autenticação ou acesso para a integração
 
 ### `--key`
 
-Uma chave de consumidor Bitbucket OAuth
+Uma chave de consumidor OAuth de Bitbucket
 
 - Requer um valor
 
 ### `--secret`
 
-Um segredo do consumidor Bitbucket OAuth
+Um segredo do consumidor OAuth do Bitbucket
 
 - Requer um valor
 
 ### `--license-key`
 
-A chave de licença dos Logs do New Relic
+A chave de licença dos logs do New Relic
 
 - Requer um valor
 
 ### `--server-project`
 
-O projeto (por exemplo, &#39;namespace/repo&#39;)
+O projeto (por exemplo, &quot;namespace/repo&quot;)
 
 - Requer um valor
 
 ### `--repository`
 
-O repositório a ser rastreado (por exemplo, &#39;owner/repository&#39;)
+O repositório a ser rastreado (por exemplo, &quot;proprietário/repositório&quot;)
 
 - Requer um valor
 
@@ -7963,7 +7963,7 @@ Criar solicitações de pull de rascunho
 
 ### `--build-pull-requests-post-merge`
 
-Criar solicitações de pull com base em seu estado pós-mesclagem
+Criar solicitações pull com base em seu estado pós-mesclagem
 
 - Padrão: `false`
 - Requer um valor
@@ -7998,21 +7998,21 @@ Sincronizar novamente os dados do ambiente de solicitação de pull em cada buil
 
 ### `--fetch-branches`
 
-Buscar todas as ramificações do remoto (como ambientes inativos)
+Buscar todas as ramificações remotas (como ambientes inativos)
 
 - Padrão: `true`
 - Requer um valor
 
 ### `--prune-branches`
 
-Exclua ramificações que não existem no remoto
+Excluir ramificações que não existem no local remoto
 
 - Padrão: `true`
 - Requer um valor
 
 ### `--url`
 
-O terminal de URL ou API da integração
+O endpoint do URL ou da API para a integração
 
 - Requer um valor
 
@@ -8030,14 +8030,14 @@ O nome de um arquivo local que contém o script a ser carregado
 
 ### `--events`
 
-Uma lista de eventos para agir, por exemplo, environment.push
+Uma lista de eventos nos quais agir, por exemplo, environment.push
 
 - Padrão: `*`
 - Requer um valor
 
 ### `--states`
 
-Uma lista de estados para agir, por exemplo, pendente, em_andamento, concluído
+Uma lista de estados nos quais agir; por exemplo, pendente, em_andamento, concluído
 
 - Padrão: `complete`
 - Requer um valor
@@ -8051,20 +8051,20 @@ As IDs de ambiente a serem incluídas
 
 ### `--excluded-environments`
 
-As IDs de ambiente a serem excluídas
+As IDs de ambiente a serem excluídos
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--from-address`
 
-[Opcional] Personalizar endereço De para emails de alerta
+[Opcional] Personalizar do endereço para emails de alerta
 
 - Requer um valor
 
 ### `--recipients`
 
-O(s) endereço(s) de email do recipient
+Os endereços de email dos destinatários
 
 - Padrão: `[]`
 - Requer um valor
@@ -8077,19 +8077,19 @@ O canal Slack
 
 ### `--routing-key`
 
-A chave de roteamento Pagerduty
+A chave de roteamento PagerDuty
 
 - Requer um valor
 
 ### `--category`
 
-A categoria Resumo lógico, usada para filtrar
+A categoria Lógica Sumo, usada para filtragem
 
 - Requer um valor
 
 ### `--index`
 
-O índice Splunk
+O índice do Splunk
 
 - Requer um valor
 
@@ -8101,40 +8101,40 @@ O tipo de origem do evento Splunk
 
 ### `--protocol`
 
-Protocolo de transporte Syslog (&#39;tcp&#39;, &#39;udp&#39;, &#39;tls&#39;)
+Protocolo de transporte do Syslog (&#39;tcp&#39;, &#39;udp&#39;, &#39;tls&#39;)
 
 - Padrão: `tls`
 - Requer um valor
 
 ### `--syslog-host`
 
-Syslog relay/collector host
+Host Syslog relay/collector
 
 - Requer um valor
 
 ### `--syslog-port`
 
-Porta Syslog relay/collector
+Porta de relé/coletor do Syslog
 
 - Requer um valor
 
 ### `--facility`
 
-Instalação de Syslog
+Instalação do Syslog
 
 - Padrão: `1`
 - Requer um valor
 
 ### `--message-format`
 
-Formato de mensagem Syslog (&#39;rfc3164&#39; ou &#39;rfc5424&#39;)
+Formato de mensagem do Syslog (&#39;rfc3164&#39; ou &#39;rfc5424&#39;)
 
 - Padrão: `rfc5424`
 - Requer um valor
 
 ### `--auth-mode`
 
-Modo de autenticação (&#39;prefixo&#39; ou &#39;structured_data&#39;)
+Modo de autenticação (&quot;prefix&quot; ou &quot;structured_data&quot;)
 
 - Padrão: `prefix`
 - Requer um valor
@@ -8147,7 +8147,7 @@ Token de autenticação
 
 ### `--verify-tls`
 
-Se a verificação de certificado HTTPS deve ser ativada (recomendada)
+Se a verificação do certificado HTTPS deve ser habilitada (recomendado)
 
 - Padrão: `true`
 - Requer um valor
@@ -8173,7 +8173,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8201,14 +8201,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8222,21 +8222,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8253,7 +8253,7 @@ magento-cloud integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] 
 
 ### `id`
 
-A ID de integração. Deixe em branco para escolher de uma lista.
+A ID de integração. Deixe em branco para escolher em uma lista.
 
 
 ### `--project`, `-p`
@@ -8277,7 +8277,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8305,14 +8305,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8326,21 +8326,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8357,7 +8357,7 @@ magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|-
 
 ### `id`
 
-Uma ID de integração. Deixe em branco para escolher de uma lista.
+Uma ID de integração. Deixe em branco para escolher em uma lista.
 
 
 ### `--property`, `-P`
@@ -8368,21 +8368,21 @@ A propriedade de integração a ser exibida
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8422,14 +8422,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8443,21 +8443,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8465,7 +8465,7 @@ Não gerar nenhuma mensagem
 
 ## `integration:list`
 
-Exibir uma lista de integração(ões) de projeto
+Exibir uma lista de integrações de projeto
 
 ```bash
 magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
@@ -8478,21 +8478,21 @@ integrations
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: id, resumo, tipo. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: id, resumo, tipo. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8532,14 +8532,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8553,21 +8553,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8589,19 +8589,19 @@ A ID da integração a ser atualizada
 
 ### `--type`
 
-O tipo de integração (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pagerduty&#39;, &#39;health.slack&#39;, &#39;health.webhook&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;)
+O tipo de integração (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pagerDuty&#39;, &#39;health.slack&#39;, &#39;health.webhook&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;)
 
 - Requer um valor
 
 ### `--base-url`
 
-O URL básico da instalação do servidor
+O URL de base da instalação do servidor
 
 - Requer um valor
 
 ### `--username`
 
-O nome de usuário do servidor de bucket
+O nome de usuário do servidor Bitbucket
 
 - Requer um valor
 
@@ -8613,31 +8613,31 @@ Um token de autenticação ou acesso para a integração
 
 ### `--key`
 
-Uma chave de consumidor Bitbucket OAuth
+Uma chave de consumidor OAuth de Bitbucket
 
 - Requer um valor
 
 ### `--secret`
 
-Um segredo do consumidor Bitbucket OAuth
+Um segredo do consumidor OAuth do Bitbucket
 
 - Requer um valor
 
 ### `--license-key`
 
-A chave de licença dos Logs do New Relic
+A chave de licença dos logs do New Relic
 
 - Requer um valor
 
 ### `--server-project`
 
-O projeto (por exemplo, &#39;namespace/repo&#39;)
+O projeto (por exemplo, &quot;namespace/repo&quot;)
 
 - Requer um valor
 
 ### `--repository`
 
-O repositório a ser rastreado (por exemplo, &#39;owner/repository&#39;)
+O repositório a ser rastreado (por exemplo, &quot;proprietário/repositório&quot;)
 
 - Requer um valor
 
@@ -8664,7 +8664,7 @@ Criar solicitações de pull de rascunho
 
 ### `--build-pull-requests-post-merge`
 
-Criar solicitações de pull com base em seu estado pós-mesclagem
+Criar solicitações pull com base em seu estado pós-mesclagem
 
 - Padrão: `false`
 - Requer um valor
@@ -8699,21 +8699,21 @@ Sincronizar novamente os dados do ambiente de solicitação de pull em cada buil
 
 ### `--fetch-branches`
 
-Buscar todas as ramificações do remoto (como ambientes inativos)
+Buscar todas as ramificações remotas (como ambientes inativos)
 
 - Padrão: `true`
 - Requer um valor
 
 ### `--prune-branches`
 
-Exclua ramificações que não existem no remoto
+Excluir ramificações que não existem no local remoto
 
 - Padrão: `true`
 - Requer um valor
 
 ### `--url`
 
-O terminal de URL ou API da integração
+O endpoint do URL ou da API para a integração
 
 - Requer um valor
 
@@ -8731,14 +8731,14 @@ O nome de um arquivo local que contém o script a ser carregado
 
 ### `--events`
 
-Uma lista de eventos para agir, por exemplo, environment.push
+Uma lista de eventos nos quais agir, por exemplo, environment.push
 
 - Padrão: `*`
 - Requer um valor
 
 ### `--states`
 
-Uma lista de estados para agir, por exemplo, pendente, em_andamento, concluído
+Uma lista de estados nos quais agir; por exemplo, pendente, em_andamento, concluído
 
 - Padrão: `complete`
 - Requer um valor
@@ -8752,20 +8752,20 @@ As IDs de ambiente a serem incluídas
 
 ### `--excluded-environments`
 
-As IDs de ambiente a serem excluídas
+As IDs de ambiente a serem excluídos
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--from-address`
 
-[Opcional] Personalizar endereço De para emails de alerta
+[Opcional] Personalizar do endereço para emails de alerta
 
 - Requer um valor
 
 ### `--recipients`
 
-O(s) endereço(s) de email do recipient
+Os endereços de email dos destinatários
 
 - Padrão: `[]`
 - Requer um valor
@@ -8778,19 +8778,19 @@ O canal Slack
 
 ### `--routing-key`
 
-A chave de roteamento Pagerduty
+A chave de roteamento PagerDuty
 
 - Requer um valor
 
 ### `--category`
 
-A categoria Resumo lógico, usada para filtrar
+A categoria Lógica Sumo, usada para filtragem
 
 - Requer um valor
 
 ### `--index`
 
-O índice Splunk
+O índice do Splunk
 
 - Requer um valor
 
@@ -8802,40 +8802,40 @@ O tipo de origem do evento Splunk
 
 ### `--protocol`
 
-Protocolo de transporte Syslog (&#39;tcp&#39;, &#39;udp&#39;, &#39;tls&#39;)
+Protocolo de transporte do Syslog (&#39;tcp&#39;, &#39;udp&#39;, &#39;tls&#39;)
 
 - Padrão: `tls`
 - Requer um valor
 
 ### `--syslog-host`
 
-Syslog relay/collector host
+Host Syslog relay/collector
 
 - Requer um valor
 
 ### `--syslog-port`
 
-Porta Syslog relay/collector
+Porta de relé/coletor do Syslog
 
 - Requer um valor
 
 ### `--facility`
 
-Instalação de Syslog
+Instalação do Syslog
 
 - Padrão: `1`
 - Requer um valor
 
 ### `--message-format`
 
-Formato de mensagem Syslog (&#39;rfc3164&#39; ou &#39;rfc5424&#39;)
+Formato de mensagem do Syslog (&#39;rfc3164&#39; ou &#39;rfc5424&#39;)
 
 - Padrão: `rfc5424`
 - Requer um valor
 
 ### `--auth-mode`
 
-Modo de autenticação (&#39;prefixo&#39; ou &#39;structured_data&#39;)
+Modo de autenticação (&quot;prefix&quot; ou &quot;structured_data&quot;)
 
 - Padrão: `prefix`
 - Requer um valor
@@ -8848,7 +8848,7 @@ Token de autenticação
 
 ### `--verify-tls`
 
-Se a verificação de certificado HTTPS deve ser ativada (recomendada)
+Se a verificação do certificado HTTPS deve ser habilitada (recomendado)
 
 - Padrão: `true`
 - Requer um valor
@@ -8874,7 +8874,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8902,14 +8902,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8923,21 +8923,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8954,7 +8954,7 @@ magento-cloud integration:validate [-p|--project PROJECT] [--] [<id>]
 
 ### `id`
 
-Uma ID de integração. Deixe em branco para escolher de uma lista.
+Uma ID de integração. Deixe em branco para escolher em uma lista.
 
 
 ### `--project`, `-p`
@@ -8992,14 +8992,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9013,21 +9013,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9049,7 +9049,7 @@ build
 
 ### `app`
 
-Especificar aplicativos para criar
+Especificar aplicativos a serem compilados
 
 - Padrão: `[]`
 
@@ -9070,41 +9070,41 @@ O diretório de origem. O padrão é a raiz do projeto atual.
 
 ### `--destination`, `-d`
 
-O destino, ao qual a raiz da Web de cada aplicativo será vinculada simbolicamente. Padrão: _www
+O destino, ao qual a raiz da Web de cada aplicativo será vinculada. Padrão: _www
 
 - Requer um valor
 
 ### `--copy`, `-c`
 
-Copiar para um diretório de compilação, em vez de vincular simbólico a partir da origem
+Copie para um diretório de build, em vez de criar symlinking a partir da origem
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--clone`
 
-Use o Git para clonar o HEAD atual para o diretório de compilação
+Usar o Git para clonar o HEAD atual no diretório de compilação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--run-deploy-hooks`
 
-Executar ganchos de implantação e/ou pós-implantação
+Executar ganchos deploy e/ou post_deploy
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-clean`
 
-Não remover criações antigas
+Não remover compilações antigas
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-archive`
 
-Não criar ou usar um arquivo de build
+Não criar ou usar um arquivo morto de compilação
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9132,28 +9132,28 @@ Não executar ganchos pós-compilação
 
 ### `--no-deps`
 
-Não instale as dependências de build localmente
+Não instalar as dependências de compilação localmente
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--working-copy`
 
-Empurrar: use o git para clonar um repositório de cada módulo Drupal em vez de simplesmente baixar uma versão
+Drush: use o Git para clonar um repositório de cada módulo Drupal em vez de simplesmente baixar uma versão
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--concurrency`
 
-Empurrar: definir o número de projetos simultâneos que serão processados ao mesmo tempo
+Drush: defina o número de projetos simultâneos que serão processados ao mesmo tempo
 
 - Padrão: `4`
 - Requer um valor
 
 ### `--lock`
 
-Empurrar: criar ou atualizar um arquivo de bloqueio (disponível somente com o Drush versão 7+)
+Drush: criar ou atualizar um arquivo de bloqueio (disponível somente com a versão 7+ do Drush)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9181,14 +9181,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9202,21 +9202,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9224,7 +9224,7 @@ Não gerar nenhuma mensagem
 
 ## `local:clean`
 
-Remover criações de projeto antigas
+Remover compilações de projeto antigas
 
 ```bash
 magento-cloud clean [--keep KEEP] [--max-age MAX-AGE] [--include-active]
@@ -9237,20 +9237,20 @@ clean
 
 ### `--keep`
 
-O número máximo de builds a serem mantidas
+O número máximo de builds a serem mantidos
 
 - Padrão: `5`
 - Requer um valor
 
 ### `--max-age`
 
-A idade máxima das criações, em segundos. Ignorado se não estiver definido.
+A idade máxima das builds, em segundos. Ignorado se não estiver definido.
 
 - Requer um valor
 
 ### `--include-active`
 
-Excluir as criações ativas também
+Excluir build(s) ativa(s) também
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9278,14 +9278,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9299,21 +9299,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9321,7 +9321,7 @@ Não gerar nenhuma mensagem
 
 ## `local:dir`
 
-Localizar a raiz do projeto local
+Encontrar a raiz do projeto local
 
 ```bash
 magento-cloud dir [<subdir>]
@@ -9335,7 +9335,7 @@ dir
 
 ### `subdir`
 
-O subdiretório a ser encontrado (&#39;local&#39;, &#39;web&#39; ou &#39;shared&#39;)
+O subdiretório a ser localizado (&quot;local&quot;, &quot;web&quot; ou &quot;compartilhado&quot;)
 
 
 ### `--help`, `-h`
@@ -9361,14 +9361,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9382,21 +9382,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9423,25 +9423,25 @@ O nome do serviço
 
 ### `--type`
 
-O tipo de serviço (se o nome do serviço não for fornecido), por exemplo, mysql, pgsql, mongodb, etc. A versão do tipo não é necessária.
+O tipo de serviço (se o nome do serviço não for fornecido), por exemplo mysql, pgsql, mongodb, etc. A versão do tipo não é necessária.
 
 - Requer um valor
 
 ### `--range`, `-r`
 
-O intervalo de tempo. As métricas serão carregadas por essa duração até o tempo final (—to). É possível especificar unidades: horas (h), minutos (m) ou segundos (s). Mínimo &lt;comment>5 m&lt;/comment>, máximo &lt;comment>8 h&lt;/comment> ou mais (dependendo do projeto), o padrão &lt;comment>10m&lt;/comment>.
+O intervalo de tempo. As métricas serão carregadas por essa duração até a hora de término (—para). Você pode especificar unidades: horas (h), minutos (m) ou segundos (s). Mínimo &lt;comment>5m&lt;/comment>, máximo &lt;comment>8h&lt;/comment> ou mais (dependendo do projeto), padrão &lt;comment>10m&lt;/comment>.
 
 - Requer um valor
 
 ### `--interval`, `-i`
 
-O intervalo de tempo. O padrão é uma divisão do intervalo. É possível especificar unidades: horas (h), minutos (m) ou segundos (s). Mínimo &lt;comment>1 m&lt;/comment>, máximo &lt;comment>1h&lt;/comment>.
+O intervalo. O padrão é uma divisão do intervalo. Você pode especificar unidades: horas (h), minutos (m) ou segundos (s). Mínimo &lt;comment>1m&lt;/comment>, máximo &lt;comment>1h&lt;/comment>.
 
 - Requer um valor
 
 ### `--to`
 
-A hora de término. O padrão é agora.
+A hora final. O padrão é agora.
 
 - Requer um valor
 
@@ -9454,7 +9454,7 @@ Mostrar tamanhos em bytes
 
 ### `--latest`, `-1`
 
-Mostrar apenas o ponto de dados único mais recente
+Mostrar apenas o último ponto de dados único
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9479,28 +9479,28 @@ A ID do ambiente
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: timestamp*, usado*, limite*, percentual*, percentual*, limite, intervalo, usado (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: carimbo de data e hora*, usado*, limite*, percentual*, ipercent*, limite, intervalo, iused (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -9528,14 +9528,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9549,21 +9549,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9571,7 +9571,7 @@ Não gerar nenhuma mensagem
 
 ## `mount:download`
 
-Baixar arquivos de uma montagem usando o rsync
+Baixar arquivos de uma montagem, usando o &#39;rsync&#39;
 
 ```bash
 magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
@@ -9592,20 +9592,20 @@ A montagem (como um caminho relativo ao aplicativo)
 
 ### `--target`
 
-O diretório no qual os arquivos serão baixados. Se —all for usado, o caminho de montagem será anexado
+O diretório no qual os arquivos serão baixados. Se — all for usado, o caminho de montagem será anexado
 
 - Requer um valor
 
 ### `--source-path`
 
-Use o caminho de origem da montagem (em vez do caminho de montagem) como um subdiretório do destino, quando —all for usado
+Use o caminho de origem da montagem (em vez do caminho de montagem) como um subdiretório do destino, quando — all for usado
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--delete`
 
-Se deseja excluir arquivos irrelevantes no diretório de destino
+Se os arquivos irrelevantes devem ser excluídos no diretório de destino
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9626,7 +9626,7 @@ Arquivos a serem incluídos no download (padrão)
 
 ### `--refresh`
 
-Se deseja atualizar o cache
+Se o cache deve ser atualizado
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9696,14 +9696,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9717,21 +9717,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9752,35 +9752,35 @@ mounts
 
 ### `--paths`
 
-Saia apenas dos caminhos de montagem (um por linha)
+Saída somente dos caminhos de montagem (um por linha)
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--refresh`
 
-Se deseja atualizar o cache
+Se o cache deve ser atualizado
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: definição, caminho. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: definição, caminho. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9844,14 +9844,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9865,21 +9865,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9887,7 +9887,7 @@ Não gerar nenhuma mensagem
 
 ## `mount:size`
 
-Verifique o uso de montagens no disco
+Verificar o uso de montagens no disco
 
 ```bash
 magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
@@ -9909,21 +9909,21 @@ Atualizar o cache
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: disponível, máximo, montagens, percentual_usado, tamanhos, usados. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: disponível, máx, montagens, percent_used, tamanhos, usados. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9993,14 +9993,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10014,21 +10014,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10036,7 +10036,7 @@ Não gerar nenhuma mensagem
 
 ## `mount:upload`
 
-Fazer upload de arquivos para uma montagem usando rsync
+Carregar arquivos para uma montagem, usando o &#39;rsync&#39;
 
 ```bash
 magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
@@ -10056,7 +10056,7 @@ A montagem (como um caminho relativo ao aplicativo)
 
 ### `--delete`
 
-Se deseja excluir arquivos irrelevantes na montagem
+Se os arquivos irrelevantes devem ser excluídos na montagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10077,7 +10077,7 @@ Arquivos a serem incluídos no upload (padrão)
 
 ### `--refresh`
 
-Se deseja atualizar o cache
+Se o cache deve ser atualizado
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10147,14 +10147,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10168,21 +10168,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10190,7 +10190,7 @@ Não gerar nenhuma mensagem
 
 ## `project:clear-build-cache`
 
-Limpar o cache de build de um projeto
+Limpar o cache de criação de um projeto
 
 ```bash
 magento-cloud project:clear-build-cache [-p|--project PROJECT]
@@ -10231,14 +10231,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10252,21 +10252,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10294,13 +10294,13 @@ O método de solicitação a ser usado
 
 ### `--data`, `-d`
 
-Dados para enviar
+Dados a enviar
 
 - Requer um valor
 
 ### `--json`
 
-Dados JSON para enviar
+Dados JSON a enviar
 
 - Requer um valor
 
@@ -10313,21 +10313,21 @@ Incluir cabeçalhos na saída
 
 ### `--head`, `-I`
 
-Buscar somente cabeçalhos
+Buscar cabeçalhos somente
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--disable-compression`
 
-Não use o curl - sinalizador compactado
+Não usar o sinalizador curl — compressed
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--enable-glob`
 
-Ativar a globalização do curl (remover o sinalizador —globoff)
+Habilitar curl globbing (remover o sinalizador — globoff)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10341,7 +10341,7 @@ Falha sem saída em uma resposta de erro
 
 ### `--header`, `-H`
 
-Cabeçalho(s) extra
+Cabeçalho(s) extra(s)
 
 - Padrão: `[]`
 - Requer um valor
@@ -10381,14 +10381,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10402,21 +10402,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10443,18 +10443,18 @@ A ID do projeto
 
 ### `directory`
 
-O diretório para o qual clonar. Padrões para o título do projeto
+O diretório para o qual clonar. O padrão é o título do projeto
 
 
 ### `--environment`, `-e`
 
-A ID do ambiente para clonar. O padrão do projeto é ou o primeiro ambiente disponível
+A ID de ambiente a ser clonada. O padrão é o padrão do projeto ou o primeiro ambiente disponível
 
 - Requer um valor
 
 ### `--depth`
 
-Criar um clone superficial: limitar o número de commits no histórico
+Criar um clone superficial: limite o número de confirmações no histórico
 
 - Requer um valor
 
@@ -10506,14 +10506,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10527,21 +10527,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10549,7 +10549,7 @@ Não gerar nenhuma mensagem
 
 ## `project:info`
 
-Ler ou definir propriedades para um projeto
+Ler ou definir propriedades de um projeto
 
 ```bash
 magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
@@ -10573,35 +10573,35 @@ Definir um novo valor para a propriedade
 
 ### `--refresh`
 
-Se deseja atualizar o cache
+Se o cache deve ser atualizado
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10627,7 +10627,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10655,14 +10655,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10676,21 +10676,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10716,33 +10716,33 @@ pro
 
 ### `--pipe`
 
-Coloque uma lista simples de IDs de projeto. Desativa a paginação.
+Gerar uma lista simples de IDs de projeto. Desativa a paginação.
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--host`
 
-Filtrar por nome de host da região (correspondência exata)
+Filtrar por nome de host de região (correspondência exata)
 
 - Requer um valor
 
 ### `--title`
 
-Filtrar por título (pesquisa não diferencia maiúsculas de minúsculas)
+Filtrar por título (pesquisa que não diferencia maiúsculas de minúsculas)
 
 - Requer um valor
 
 ### `--my`
 
-Exibir somente os projetos que você possui
+Exibir somente seus projetos
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--refresh`
 
-Se a lista deve ser atualizada
+Atualizar ou não a lista
 
 - Padrão: `1`
 - Requer um valor
@@ -10756,47 +10756,47 @@ Uma propriedade para classificar por
 
 ### `--reverse`
 
-Classificar em ordem inversa (decrescente)
+Classificar em ordem inversa (descendente)
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--page`
 
-Número da página. Isso permite a paginação, apesar da configuração ou —count. Ignorado se —pipe for especificado.
+Número da página. Isto ativa a paginação, apesar da configuração ou — count. Ignorado se o — pipe for indicado.
 
 - Requer um valor
 
 ### `--count`, `-c`
 
-O número de projetos a serem exibidos por página. Use 0 para desativar a paginação. Ignorado se —page for especificada.
+O número de projetos a serem exibidos por página. Use 0 para desativar a paginação. Ignorado se o — page for especificado.
 
 - Requer um valor
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`
 
-Colunas a serem exibidas. Colunas disponíveis: id*, title*, region*, created_at, endpoint, organization_id, org_label, nome_da_organização, region_label, status, ui_url (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: id*, título*, região*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -10824,14 +10824,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10845,21 +10845,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10902,14 +10902,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10923,21 +10923,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10979,7 +10979,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11007,14 +11007,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11028,21 +11028,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11050,7 +11050,7 @@ Não gerar nenhuma mensagem
 
 ## `project:variable:get`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Exibir variáveis de um projeto
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Exibir variáveis para um projeto
 
 ```bash
 magento-cloud project:variable:get [--pipe] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<name>]
@@ -11079,28 +11079,28 @@ O nome da variável
 
 ### `--pipe`
 
-Coloque o valor total da variável somente (um &quot;nome&quot; deve ser especificado)
+Gerar somente o valor completo da variável (um &quot;nome&quot; deve ser especificado)
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11140,14 +11140,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11161,21 +11161,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11216,14 +11216,14 @@ Marcar o valor como JSON
 
 ### `--no-visible-build`
 
-Não exponha essa variável no momento da criação
+Não expor essa variável no momento da criação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-visible-runtime`
 
-Não exponha essa variável no tempo de execução
+Não expor essa variável no tempo de execução
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11249,7 +11249,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11277,14 +11277,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11298,21 +11298,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11335,7 +11335,7 @@ O caminho para o arquivo
 
 ### `--commit`, `-c`
 
-O SHA de confirmação. Isso também pode aceitar os sufixos &quot;HEAD&quot; e sinal de interpolação (^) ou til (~) para confirmações principais.
+O SHA de confirmação. Isso também pode aceitar os sufixos &quot;HEAD&quot; e acento circunflexo (^) ou til (~) para confirmações principais.
 
 - Requer um valor
 
@@ -11380,14 +11380,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11401,21 +11401,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11458,7 +11458,7 @@ Saída de estilo semelhante a &quot;git ls-tree&quot;
 
 ### `--commit`, `-c`
 
-O SHA de confirmação. Isso também pode aceitar os sufixos &quot;HEAD&quot; e sinal de interpolação (^) ou til (~) para confirmações principais.
+O SHA de confirmação. Isso também pode aceitar os sufixos &quot;HEAD&quot; e acento circunflexo (^) ou til (~) para confirmações principais.
 
 - Requer um valor
 
@@ -11503,14 +11503,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11524,21 +11524,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11565,7 +11565,7 @@ O caminho para o diretório ou arquivo
 
 ### `--commit`, `-c`
 
-O SHA de confirmação. Isso também pode aceitar os sufixos &quot;HEAD&quot; e sinal de interpolação (^) ou til (~) para confirmações principais.
+O SHA de confirmação. Isso também pode aceitar os sufixos &quot;HEAD&quot; e acento circunflexo (^) ou til (~) para confirmações principais.
 
 - Requer um valor
 
@@ -11610,14 +11610,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11631,21 +11631,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11653,7 +11653,7 @@ Não gerar nenhuma mensagem
 
 ## `route:get`
 
-Exibir informações detalhadas sobre uma rota
+Exibir informações detalhadas sobre um roteiro
 
 ```bash
 magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
@@ -11667,13 +11667,13 @@ O URL original da rota
 
 ### `--id`
 
-Um ID de rota para selecionar
+Uma ID de rota para selecionar
 
 - Requer um valor
 
 ### `--primary`, `-1`
 
-Selecione a rota primária
+Selecionar a rota principal
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11693,7 +11693,7 @@ Ignorar o cache de rotas
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -11751,14 +11751,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11772,21 +11772,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11794,7 +11794,7 @@ Não gerar nenhuma mensagem
 
 ## `route:list`
 
-Listar todas as rotas para um ambiente
+Listar todas as rotas de um ambiente
 
 ```bash
 magento-cloud routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
@@ -11825,21 +11825,21 @@ Ignorar o cache de rotas
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: route*, type*, to*, url (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: route*, type*, to*, url (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11885,14 +11885,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11906,21 +11906,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11941,7 +11941,7 @@ local:install
 
 ### `--shell-type`
 
-O tipo de shell para autopreenchimento (bash ou zsh)
+O tipo de shell para preenchimento automático (bash ou zsh)
 
 - Requer um valor
 
@@ -11968,14 +11968,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11989,21 +11989,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12011,7 +12011,7 @@ Não gerar nenhuma mensagem
 
 ## `self:stats`
 
-Visualizar estatísticas nos downloads de pacotes do GitHub
+Exibir estatísticas de downloads de pacotes do GitHub
 
 ```bash
 magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
@@ -12033,28 +12033,28 @@ Resultados por página (máx.: 100)
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`
 
-Colunas a serem exibidas. Colunas disponíveis: ativo, data, downloads, versão. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: ativo, data, downloads, versão. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -12082,14 +12082,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12103,21 +12103,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12143,14 +12143,14 @@ update
 
 ### `--no-major`
 
-Atualizar apenas entre versões secundárias ou de patch
+Atualizar somente entre versões secundárias ou de patch
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--unstable`
 
-Atualizar para uma nova versão instável, se disponível
+Atualização para uma nova versão instável, se disponível
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12197,14 +12197,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12218,21 +12218,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12253,7 +12253,7 @@ services
 
 ### `--refresh`
 
-Se deseja atualizar o cache
+Se o cache deve ser atualizado
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12278,21 +12278,21 @@ A ID do ambiente
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: disco, nome, tamanho, tipo. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: disco, nome, tamanho, tipo. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12320,14 +12320,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12341,21 +12341,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12363,7 +12363,7 @@ Não gerar nenhuma mensagem
 
 ## `service:mongo:dump`
 
-Crie um despejo de dados de arquivo binário do MongoDB
+Criar um despejo de arquivo binário de dados do MongoDB
 
 ```bash
 magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
@@ -12376,13 +12376,13 @@ mongodump
 
 ### `--collection`, `-c`
 
-A coleção a ser despejada
+A coleção para despejo
 
 - Requer um valor
 
 ### `--gzip`, `-z`
 
-Compacte o despejo usando gzip
+Compactar o despejo usando gzip
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12396,7 +12396,7 @@ Saída para STDOUT em vez de um arquivo
 
 ### `--relationship`, `-r`
 
-A relação de serviço a utilizar
+O relacionamento de serviço a ser usado
 
 - Requer um valor
 
@@ -12453,14 +12453,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12474,21 +12474,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12522,7 +12522,7 @@ Exportar dados como uma única matriz JSON
 
 ### `--type`
 
-O tipo de exportação, por exemplo &quot;csv&quot;
+O tipo de exportação, por exemplo, &quot;csv&quot;
 
 - Requer um valor
 
@@ -12535,7 +12535,7 @@ Os campos a serem exportados
 
 ### `--relationship`, `-r`
 
-A relação de serviço a utilizar
+O relacionamento de serviço a ser usado
 
 - Requer um valor
 
@@ -12592,14 +12592,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12613,21 +12613,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12648,13 +12648,13 @@ mongorestore
 
 ### `--collection`, `-c`
 
-A coleção a ser restaurada
+A coleção a restaurar
 
 - Requer um valor
 
 ### `--relationship`, `-r`
 
-A relação de serviço a utilizar
+O relacionamento de serviço a ser usado
 
 - Requer um valor
 
@@ -12711,14 +12711,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12732,21 +12732,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12754,7 +12754,7 @@ Não gerar nenhuma mensagem
 
 ## `service:mongo:shell`
 
-Usar o shell do MongoDB
+Usar o shell MongoDB
 
 ```bash
 magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
@@ -12767,13 +12767,13 @@ mongo
 
 ### `--eval`
 
-Envio de um fragmento JavaScript para o shell
+Passar um fragmento de JavaScript para o shell
 
 - Requer um valor
 
 ### `--relationship`, `-r`
 
-A relação de serviço a utilizar
+O relacionamento de serviço a ser usado
 
 - Requer um valor
 
@@ -12830,14 +12830,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12851,21 +12851,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12873,7 +12873,7 @@ Não gerar nenhuma mensagem
 
 ## `service:redis-cli`
 
-Acesso à CLI de Redis
+Acesse a CLI Redis
 
 ```bash
 magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
@@ -12887,12 +12887,12 @@ redis
 
 ### `args`
 
-Argumentos para adicionar ao comando Redis
+Argumentos a serem adicionados ao comando Redis
 
 
 ### `--relationship`, `-r`
 
-A relação de serviço a utilizar
+O relacionamento de serviço a ser usado
 
 - Requer um valor
 
@@ -12949,14 +12949,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -12970,21 +12970,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13027,14 +13027,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13048,21 +13048,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13099,7 +13099,7 @@ O ambiente
 
 ### `--live`
 
-Backup em tempo real: não pare o ambiente. Se definido, isso deixará o ambiente em execução e aberto às conexões durante o backup. Isso reduz o tempo de inatividade, correndo o risco de fazer backup de dados em um estado inconsistente.
+Live backup: não interrompa o ambiente. Se definido, o ambiente estará em execução e aberto a conexões durante o backup. Isso reduz o tempo de inatividade, correndo o risco de fazer backup dos dados em um estado inconsistente.
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13131,14 +13131,14 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--unsafe`
 
-Opção obsoleta: use —live em vez disso
+Opção obsoleta: use — live em alternativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13166,14 +13166,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13187,21 +13187,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13244,28 +13244,28 @@ backup:list
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -13311,14 +13311,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13332,21 +13332,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13354,7 +13354,7 @@ Não gerar nenhuma mensagem
 
 ## `snapshot:restore`
 
-Restaurar um instantâneo de ambiente
+Restaurar um instantâneo do ambiente
 
 ```bash
 magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
@@ -13373,18 +13373,18 @@ backup:restore
 
 ### `snapshot`
 
-O nome do instantâneo. O padrão é o mais recente
+O nome do snapshot. O padrão é o mais recente
 
 
 ### `--target`
 
-O ambiente para o qual restaurar. O padrão é o ambiente atual do instantâneo
+O ambiente para o qual restaurar. Define como padrão o ambiente atual do snapshot
 
 - Requer um valor
 
 ### `--branch-from`
 
-Se o —target ainda não existir, isso especifica o pai do novo ambiente
+Se o — target ainda não existir, isto especifica o pai do novo ambiente
 
 - Requer um valor
 
@@ -13415,7 +13415,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13443,14 +13443,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13464,21 +13464,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13533,7 +13533,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13561,14 +13561,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13582,21 +13582,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13619,13 +13619,13 @@ Não atualize o certificado se ele for inválido
 
 ### `--property`, `-P`
 
-A propriedade certificate a ser exibida
+A propriedade do certificado a ser exibida
 
 - Requer um valor
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
@@ -13653,14 +13653,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13674,21 +13674,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13704,7 +13704,7 @@ magento-cloud ssh-cert:load [--refresh-only] [--new] [--new-key]
 
 ### `--refresh-only`
 
-Atualize somente o certificado, se necessário (não gravar a configuração SSH)
+Somente atualize o certificado, se necessário (não grave a configuração SSH)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13718,7 +13718,7 @@ Forçar a atualização do certificado
 
 ### `--new-key`
 
-[Obsoleto] Use —new em vez disso
+[Obsoleto] Em vez disso, use — new
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13746,14 +13746,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13767,21 +13767,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13830,14 +13830,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13851,21 +13851,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13908,14 +13908,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13929,21 +13929,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -13964,21 +13964,21 @@ ssh-keys
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: id*, título*, caminho*, impressão digital (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: id*, title*, path*, impressão digital (* = colunas padrão). O caractere &quot;+&quot; pode ser usado como um espaço reservado para as colunas padrão. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14006,14 +14006,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14027,21 +14027,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14074,28 +14074,28 @@ A ID da assinatura
 
 ### `--date-fmt`
 
-O formato de data (como uma string de formato de data PHP)
+O formato de data (como uma string de formato de data do PHP)
 
 - Padrão: `c`
 - Requer um valor
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14135,14 +14135,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14156,21 +14156,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14238,14 +14238,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14259,21 +14259,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14326,21 +14326,21 @@ O nome do aplicativo remoto
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14368,14 +14368,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14389,21 +14389,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14424,7 +14424,7 @@ tunnels
 
 ### `--all`, `-a`
 
-Ver todos os túneis
+Exibir todos os túneis
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14455,21 +14455,21 @@ O nome do aplicativo remoto
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14497,14 +14497,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14518,21 +14518,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14540,7 +14540,7 @@ Não gerar nenhuma mensagem
 
 ## `tunnel:open`
 
-Abrir túneis SSH para as relações de um aplicativo
+Abrir túneis SSH para os relacionamentos de um aplicativo
 
 ```bash
 magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
@@ -14606,14 +14606,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14627,21 +14627,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14649,7 +14649,7 @@ Não gerar nenhuma mensagem
 
 ## `tunnel:single`
 
-Abra um único túnel SSH para um relacionamento de aplicativo
+Abrir um único túnel SSH para uma relação de aplicativo
 
 ```bash
 magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
@@ -14694,7 +14694,7 @@ O nome do aplicativo remoto
 
 ### `--relationship`, `-r`
 
-A relação de serviço a utilizar
+O relacionamento de serviço a ser usado
 
 - Requer um valor
 
@@ -14727,14 +14727,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14748,21 +14748,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14770,7 +14770,7 @@ Não gerar nenhuma mensagem
 
 ## `user:add`
 
-Adicionar usuário ao projeto
+Adicionar um usuário ao projeto
 
 ```bash
 magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
@@ -14784,7 +14784,7 @@ O endereço de email do usuário
 
 ### `--role`, `-r`
 
-A função de projeto do usuário (&#39;admin&#39; ou &#39;viewer&#39;) ou a função de tipo de ambiente (por exemplo, &#39;staging:contributor&#39; ou &#39;production:viewer&#39;). Para remover um usuário de um tipo de ambiente, defina a função como &quot;nenhum&quot;. O caractere % pode ser usado como curinga para o tipo de ambiente, por exemplo &#39;%:viewer&#39; para atribuir ao usuário a função &quot;visualizador&quot; em todos os tipos. A função pode ser abreviada, por exemplo &#39;production:v&#39;.
+A função do projeto do usuário (&quot;administrador&quot; ou &quot;visualizador&quot;) ou a função do tipo de ambiente (por exemplo, &quot;preparo:colaborador&quot; ou &quot;produção:visualizador&quot;). Para remover um usuário de um tipo de ambiente, defina a função como &quot;nenhum&quot;. O caractere % pode ser usado como curinga para o tipo de ambiente, por exemplo, &#39;%:viewer&#39; para conceder ao usuário a função &#39;viewer&#39; em todos os tipos. A função pode ser abreviada. Por exemplo, &quot;produção:v&quot;.
 
 - Padrão: `[]`
 - Requer um valor
@@ -14810,7 +14810,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14838,14 +14838,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14859,21 +14859,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14915,7 +14915,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14943,14 +14943,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -14964,21 +14964,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15005,13 +15005,13 @@ O endereço de email do usuário
 
 ### `--level`, `-l`
 
-O nível da função (&#39;projeto&#39; ou &#39;ambiente&#39;)
+O nível de função (&quot;projeto&quot; ou &quot;ambiente&quot;)
 
 - Requer um valor
 
 ### `--pipe`
 
-Coloque a função em stdout (após fazer qualquer alteração)
+Transmitir a função para stdout (após fazer quaisquer alterações)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15043,14 +15043,14 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--role`, `-r`
 
-[Obsoleto: usar user:atualizar para alterar as funções de um usuário]
+[Obsoleto: use user:update para alterar a(s) função(ões) de um usuário]
 
 - Requer um valor
 
@@ -15077,14 +15077,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15098,21 +15098,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15133,21 +15133,21 @@ users
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: email, id, nome, função. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: email, id, nome, função. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15187,14 +15187,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15208,21 +15208,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15244,7 +15244,7 @@ O endereço de email do usuário
 
 ### `--role`, `-r`
 
-A função de projeto do usuário (&#39;admin&#39; ou &#39;viewer&#39;) ou a função de tipo de ambiente (por exemplo, &#39;staging:contributor&#39; ou &#39;production:viewer&#39;). Para remover um usuário de um tipo de ambiente, defina a função como &quot;nenhum&quot;. O caractere % pode ser usado como curinga para o tipo de ambiente, por exemplo &#39;%:viewer&#39; para atribuir ao usuário a função &quot;visualizador&quot; em todos os tipos. A função pode ser abreviada, por exemplo &#39;production:v&#39;.
+A função do projeto do usuário (&quot;administrador&quot; ou &quot;visualizador&quot;) ou a função do tipo de ambiente (por exemplo, &quot;preparo:colaborador&quot; ou &quot;produção:visualizador&quot;). Para remover um usuário de um tipo de ambiente, defina a função como &quot;nenhum&quot;. O caractere % pode ser usado como curinga para o tipo de ambiente, por exemplo, &#39;%:viewer&#39; para conceder ao usuário a função &#39;viewer&#39; em todos os tipos. A função pode ser abreviada. Por exemplo, &quot;produção:v&quot;.
 
 - Padrão: `[]`
 - Requer um valor
@@ -15270,7 +15270,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15298,14 +15298,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15319,21 +15319,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15355,7 +15355,7 @@ O nome da variável
 
 ### `--level`, `-l`
 
-O nível no qual definir a variável (&#39;projeto&#39; ou &#39;ambiente&#39;)
+O nível no qual a variável será definida (&quot;projeto&quot; ou &quot;ambiente&quot;)
 
 - Requer um valor
 
@@ -15373,7 +15373,7 @@ O valor da variável
 
 ### `--json`
 
-Se a variável está formatada com JSON
+Se a variável está formatada em JSON
 
 - Padrão: `false`
 - Requer um valor
@@ -15387,7 +15387,7 @@ Se a variável é sensível
 
 ### `--prefix`
 
-O prefixo do nome da variável (por exemplo, &#39;none&#39; ou &#39;env:&#39;)
+O prefixo do nome da variável (por exemplo, &quot;none&quot; ou &quot;env:&quot;)
 
 - Padrão: `none`
 - Requer um valor
@@ -15401,7 +15401,7 @@ Se a variável deve ser ativada
 
 ### `--inheritable`
 
-Se a variável é herdada por ambientes filhos
+Se a variável é herdável por ambientes secundários
 
 - Padrão: `true`
 - Requer um valor
@@ -15446,7 +15446,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15474,14 +15474,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15495,21 +15495,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15563,7 +15563,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15591,14 +15591,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15612,21 +15612,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15674,7 +15674,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15702,14 +15702,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15723,21 +15723,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15785,7 +15785,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15813,14 +15813,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15834,21 +15834,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15887,21 +15887,21 @@ O nível da variável (&#39;project&#39;, &#39;environment&#39;, &#39;p&#39; ou 
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15926,7 +15926,7 @@ A ID do ambiente
 
 ### `--pipe`
 
-[Opção obsoleta] Coloque o valor da variável somente
+[Opção obsoleta] Gerar somente o valor da variável
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15954,14 +15954,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -15975,21 +15975,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16021,21 +16021,21 @@ O nível da variável (&#39;project&#39;, &#39;environment&#39;, &#39;p&#39; ou 
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: is_enabled, level, name, value. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: is_enabled, level, name, value. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16081,14 +16081,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16102,21 +16102,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16157,7 +16157,7 @@ Marcar o valor como JSON
 
 ### `--disabled`
 
-Marque a variável como desabilitada
+Marcar a variável como desativada
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16189,7 +16189,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16217,14 +16217,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16238,21 +16238,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16287,7 +16287,7 @@ O valor da variável
 
 ### `--json`
 
-Se a variável está formatada com JSON
+Se a variável está formatada em JSON
 
 - Padrão: `false`
 - Requer um valor
@@ -16308,7 +16308,7 @@ Se a variável deve ser ativada
 
 ### `--inheritable`
 
-Se a variável é herdada por ambientes filhos
+Se a variável é herdável por ambientes secundários
 
 - Padrão: `true`
 - Requer um valor
@@ -16353,7 +16353,7 @@ Não aguarde a conclusão da operação
 
 ### `--wait`
 
-Aguarde a conclusão da operação (padrão)
+Aguardar a conclusão da operação (padrão)
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16381,14 +16381,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16402,21 +16402,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16424,7 +16424,7 @@ Não gerar nenhuma mensagem
 
 ## `version:list`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALFA ]&lt;/> Listar versões do ambiente
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALFA ]&lt;/> Listar versões de ambientes
 
 ```bash
 magento-cloud versions [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
@@ -16455,21 +16455,21 @@ A ID do ambiente
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16497,14 +16497,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16518,21 +16518,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16553,7 +16553,7 @@ workers
 
 ### `--refresh`
 
-Se deseja atualizar o cache
+Se o cache deve ser atualizado
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16578,21 +16578,21 @@ A ID do ambiente
 
 ### `--format`
 
-O formato de saída: tabela, csv, tsv ou simples
+O formato de saída: table, csv, tsv ou plain
 
 - Padrão: `table`
 - Requer um valor
 
 ### `--columns`, `-c`
 
-Colunas a serem exibidas. Colunas disponíveis: comandos, nome, tipo. Se uma lista for fornecida como um único valor (por exemplo, &quot;a,b,c&quot;) será dividido por vírgulas e/ou espaço em branco.
+Colunas a serem exibidas. Colunas disponíveis: comandos, nome, tipo. Se uma lista for fornecida como um valor único (por exemplo, &quot;a,b,c&quot;) ela será dividida por vírgulas e/ou espaços em branco.
 
 - Padrão: `[]`
 - Requer um valor
 
 ### `--no-header`
 
-Não produzir saída do cabeçalho da tabela
+Não gerar saída do cabeçalho da tabela
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16620,14 +16620,14 @@ Exibir esta versão do aplicativo
 
 ### `--yes`, `-y`
 
-Responder &quot;sim&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;sim&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-interaction`
 
-Não faça perguntas interativas; aceitar valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+Não faça perguntas interativas; aceite valores padrão. Equivalente ao uso da variável de ambiente: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Padrão: `false`
 - Não aceita um valor
@@ -16641,21 +16641,21 @@ Forçar saída ANSI
 
 ### `--no-ansi`
 
-Desativar saída ANSI
+Desabilitar saída ANSI
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no`, `-n`
 
-Responder &quot;não&quot; às perguntas de confirmação; aceitar o valor padrão para outras perguntas; desativar interação
+Responda &quot;não&quot; às perguntas de confirmação; aceite o valor padrão para outras perguntas; desative a interação
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--quiet`, `-q`
 
-Não gerar nenhuma mensagem
+Não enviar nenhuma mensagem
 
 - Padrão: `false`
 - Não aceita um valor

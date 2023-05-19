@@ -1,28 +1,29 @@
 ---
-title: Configurar o bucket do AWS S3 para armazenamento remoto
+title: Configurar bucket do AWS S3 para armazenamento remoto
 description: Configure seu projeto do Commerce para usar o serviço de armazenamento AWS S3 para armazenamento remoto.
-source-git-commit: 31078c836fb088a10712c8c4cf4430a38d1962f2
+exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
-# Configurar o bucket do AWS S3 para armazenamento remoto
+# Configurar bucket do AWS S3 para armazenamento remoto
 
-O [Serviço de Armazenamento Simples da Amazon (Amazon S3)][AWS S3] é um serviço de armazenamento de objetos que oferece escalabilidade, disponibilidade, segurança e desempenho líderes do setor. O serviço AWS S3 usa buckets, ou containers, para o armazenamento de dados. Essa configuração exige que você crie uma _private_ balde. Para obter informações sobre a infraestrutura em nuvem do Adobe Commerce, consulte [Configurar o armazenamento remoto para o Commerce on Cloud Infrastructure](cloud-support.md).
+A variável [Serviço de armazenamento simples da Amazon (Amazon S3)][AWS S3] O é um serviço de armazenamento de objetos que oferece escalabilidade, disponibilidade de dados, segurança e desempenho líderes do setor. O serviço AWS S3 usa buckets ou containers para armazenamento de dados. Essa configuração exige que você crie um _privado_ balde. Para o Adobe Commerce na infraestrutura em nuvem, consulte [Configurar o armazenamento remoto para a infraestrutura do Commerce na nuvem](cloud-support.md).
 
 >[!WARNING]
 >
->A Adobe desencoraja fortemente a utilização de baldes públicos, uma vez que representa um sério risco para a segurança.
+>A Adobe desencoraja muito o uso de baldes públicos porque representa um sério risco à segurança.
 
 **Para habilitar o armazenamento remoto com o adaptador AWS S3**:
 
-1. Faça logon no painel do Amazon S3 e crie uma _private_ balde.
+1. Faça logon no painel do Amazon S3 e crie um _privado_ balde.
 
-1. Configurar [AWS IAM] funções. Como alternativa, gere acesso e chaves secretas.
+1. Configurar [AWS IAM] funções. Como alternativa, gere as chaves de acesso e secreta.
 
-1. Desative o armazenamento padrão do banco de dados.
+1. Desabilitar o armazenamento de banco de dados padrão.
 
    ```bash
    bin/magento config:set system/media_storage_configuration/media_database 0
@@ -34,7 +35,7 @@ O [Serviço de Armazenamento Simples da Amazon (Amazon S3)][AWS S3] é um servi�
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
-1. Sincronize arquivos de mídia com o armazenamento remoto.
+1. Sincronizar arquivos de mídia com o armazenamento remoto.
 
    ```bash
    bin/magento remote-storage:sync
@@ -42,7 +43,7 @@ O [Serviço de Armazenamento Simples da Amazon (Amazon S3)][AWS S3] é um servi�
 
 ## Configurar Nginx
 
-O Nginx requer configuração adicional para executar a Autenticação com o `proxy_pass` diretiva. Adicione as seguintes informações de proxy à `nginx.conf` arquivo:
+O Nginx requer configuração adicional para executar a autenticação com o `proxy_pass` diretiva. Adicione as seguintes informações de proxy à `nginx.conf` arquivo:
 
 >nginx.conf
 
@@ -65,15 +66,15 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### Autenticação
 
-Se você usar chaves de acesso e secretas em vez de [AWS IAM] , você deve incluir a variável [`ngx_aws_auth` Módulo próximo][ngx repo].
+Se você usar chaves de acesso e secretas em vez de [AWS IAM] funções, você deve incluir o [`ngx_aws_auth` Módulo Nginx][ngx repo].
 
 ### Permissões
 
-A integração S3 depende da capacidade de gerar e armazenar imagens em cache no sistema de arquivos local. Portanto, permissões de pasta para `pub/media` e diretórios semelhantes são iguais para S3 como ao usar armazenamento local.
+A integração S3 depende da capacidade de gerar e armazenar imagens em cache no sistema de arquivos local. Portanto, as permissões de pasta para `pub/media` e diretórios semelhantes são os mesmos para S3 como são ao usar o armazenamento local.
 
 ### Operações de arquivo
 
-É altamente recomendável usar [!DNL Commerce] métodos de adaptador de arquivo em sua codificação ou desenvolvimento de extensão, independentemente do tipo de armazenamento de arquivo. Ao usar S3 para armazenamento, não use operações de I/O de arquivo PHP nativo, como `copy`, `rename`ou `file_put_contents`, pois os arquivos S3 não estão localizados no sistema de arquivos. Consulte [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) para exemplos de código.
+É altamente recomendável usar [!DNL Commerce] métodos de adaptador de arquivo no desenvolvimento de codificação ou extensão, independentemente do tipo de armazenamento de arquivo. Ao usar S3 para armazenamento, não use operações de E/S de arquivo PHP nativo, como `copy`, `rename`ou `file_put_contents`, pois os arquivos S3 não estão localizados no sistema de arquivos. Consulte [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) para obter exemplos de código.
 
 <!-- link definitions -->
 

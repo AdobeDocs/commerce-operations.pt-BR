@@ -1,26 +1,26 @@
 ---
 title: Security.txt
 description: Saiba como fornecer informações para ajudar pesquisadores de segurança a relatar vulnerabilidades.
-badge: label="Contribuído por Kalpesh Mehta de Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
-source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
+badge: label="Contribuição de Kalpesh Mehta do Corra" type="Informativo" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
+exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
 
-
 # Arquivo TXT de segurança
 
-Quando as vulnerabilidades de segurança são descobertas por pesquisadores, os canais de relatórios adequados geralmente não têm acesso. Como resultado, algumas vulnerabilidades não são relatadas. O objetivo da `security.txt` [formato de arquivo](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) O ficheiro destina-se a fornecer aos investigadores de segurança as informações que podem utilizar para comunicar os seus resultados.
+Quando vulnerabilidades de segurança são descobertas pelos pesquisadores, geralmente faltam canais de relatórios adequados. Como resultado, algumas vulnerabilidades não são relatadas. O objetivo da `security.txt` [formato de arquivo](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) O arquivo é para fornecer aos pesquisadores de segurança as informações que eles podem usar para relatar suas conclusões.
 
-Os comerciantes podem inserir suas informações de contato para [relatório de problemas de segurança](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) do Commerce _Administrador_. Para desenvolvedores, a variável `Magento_Securitytxt` O módulo fornece a seguinte funcionalidade:
+Os comerciantes podem inserir suas informações de contato para [relatório de problemas de segurança](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) do Commerce _Admin_. Para desenvolvedores, a variável `Magento_Securitytxt` O módulo de fornece a seguinte funcionalidade:
 
-- Permite que as configurações de segurança sejam salvas do _Administrador_.
-- Contém um roteador para corresponder à classe de ação do aplicativo para solicitações ao `.well-known/security.txt` e `.well-known/security.txt.sig` arquivos.
-- Aplica o conteúdo da variável `.well-known/security.txt` e `.well-known/security.txt.sig` arquivos.
+- Permite que as configurações de segurança sejam salvas do _Admin_.
+- Contém um roteador para corresponder a classe de ação do aplicativo para solicitações ao `.well-known/security.txt` e `.well-known/security.txt.sig` arquivos.
+- Atende ao conteúdo do `.well-known/security.txt` e `.well-known/security.txt.sig` arquivos.
 
-Um `security.txt` pode ser semelhante ao seguinte:
+Um válido `security.txt` O arquivo pode ter a seguinte aparência:
 
 ```text
 Contact: mailto:security@example.com
@@ -31,7 +31,7 @@ Policy: https://example.com/security-policy.html
 Signature: https://example.com/.well-known/security.txt.sig
 ```
 
-Para criar o `security.txt` assinatura (`security.txt.sig`) arquivo :
+Para criar o `security.txt` assinatura (`security.txt.sig`) arquivo:
 
 ```bash
 gpg -u KEYID --output security.txt.sig --armor --detach-sig security.txt

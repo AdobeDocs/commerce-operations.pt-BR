@@ -1,43 +1,43 @@
 ---
-title: Práticas recomendadas de configuração de variações do produto
+title: Práticas recomendadas de configuração de variações de produto
 description: Saiba como otimizar o desempenho do Adobe Commerce limitando o número de variações de produto configuradas.
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+exl-id: a19dd8b4-23b8-498f-be51-a0adfcd12a11
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
+# Práticas recomendadas para configurar variações de produtos
 
-# Práticas recomendadas para configurar variações do produto
-
-Para melhor desempenho, configure um máximo de 50 variações por produto.
+Para obter o melhor desempenho, configure no máximo 50 variações por produto.
 
 ## Produtos e versões afetados
 
 [Todas as versões compatíveis](../../../release/versions.md) de:
 
-- Adobe Commerce na infraestrutura de nuvem
+- Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
 
-## Reduza o número de variações do produto
+## Reduzir o número de variações de produtos
 
-Para obter o melhor desempenho do site, use as seguintes estratégias para reduzir o número de variações de produto:
+Para obter o melhor desempenho do site, use as seguintes estratégias para reduzir o número de variações de produtos:
 
 - Reestruturar o catálogo distribuindo o número de variações entre diferentes produtos.
 - Remova as opções de atributo configuráveis que não estão em estoque.
 - Gerencie variações por meio de recursos alternativos, como opções personalizadas, categorias, produtos relacionados, agrupados e pacotes.
 
-## Potencial impacto no desempenho
+## Possível impacto no desempenho
 
-Exceder o número recomendado de variações de produto pode afetar o desempenho do site das seguintes maneiras:
+Exceder o número recomendado de variações de produtos pode afetar o desempenho do site das seguintes maneiras:
 
 - Longos tempos de solicitação e renderização em detalhes do produto e páginas de categoria contendo produtos complexos.
-- Aumento do tempo de resposta para concluir as operações de Salvar no Administrador.
-- Aumento do tempo para renderizar o formulário de Edição de produto.
+- Maior tempo de resposta para concluir as operações de Salvar no Administrador.
+- Mais tempo para renderizar o formulário Edição de produto.
 - Check-out lento.
 
 ## Informações adicionais
@@ -45,4 +45,4 @@ Exceder o número recomendado de variações de produto pode afetar o desempenho
 - [Criar produtos configuráveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
 - [Criar um produto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
 
-- Formação—[Gerencie catálogos e produtos usando o Adobe Commerce](https://learning.adobe.com/catalog/adobe_commerce/cours000000000098643.html)
+- Treinamento—[Gerenciar catálogos e produtos usando o Adobe Commerce](https://learning.adobe.com/catalog/adobe_commerce/cours000000000098643.html)

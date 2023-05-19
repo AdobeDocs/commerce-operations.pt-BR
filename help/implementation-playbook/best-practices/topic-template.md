@@ -1,13 +1,13 @@
 ---
 title: Título do tópico de práticas recomendadas
-description: Saiba como ...
+description: Saiba como...
 role: Developer
 feature: Best Practices
 hide: true
 hidefromtoc: true
 source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -36,18 +36,18 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 [Todas as versões compatíveis](../../../release/versions.md) de:
 
-- Adobe Commerce na infraestrutura de nuvem
-- Adobe Commerce nas instalações
+- Adobe Commerce na infraestrutura em nuvem
+- Adobe Commerce no local
 
 <!-- Example 2: -->
 
-Adobe Commerce na infraestrutura de nuvem com Adobe Commerce versão 2.3.4 ou anterior e MariaDB versão 10.0 ou anterior.
+Adobe Commerce na infraestrutura em nuvem com o Adobe Commerce versão 2.3.4 ou anterior e o MariaDB versão 10.0 ou anterior.
 
-<!-- Business type: B2C and B2B -- specify only if needed/)-->
+&lt;!— Tipo de negócio: B2C e B2B — especificar apenas se necessário/)—>
 
 ## Cabeçalho ...
 
-Divida o conteúdo em seções para facilitar a leitura. O conteúdo deve incluir chamadas para ação com exemplos (bom vs. ruim) e links para a documentação, quando aplicável
+Dividir o conteúdo em seções para facilitar a leitura. O conteúdo deve incluir planos de ação com exemplos (bom ou ruim) e links para a documentação, quando aplicável
 
 ## Cabeçalho ...
 

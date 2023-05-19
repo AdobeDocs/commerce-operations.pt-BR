@@ -1,42 +1,41 @@
 ---
 title: Tamanho do cache do Realpath
-description: Saiba como otimizar o desempenho do Adobe Commerce atualizando a configuração do cache do readlpath PHP para usar as configurações recomendadas.
+description: Saiba como otimizar o desempenho do Adobe Commerce atualizando a configuração do cache readlpath do PHP para usar as configurações recomendadas.
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
 
 ---
 
+# Práticas recomendadas de configuração do cache Realpath
 
-# Práticas recomendadas de configuração do cache do Realpath
+O cache do Realpath armazena em cache os caminhos reais do sistema de arquivos dos nomes de arquivos referenciados, em vez de pesquisá-los sempre. Toda vez que várias funções de arquivo são executadas ou requerem um arquivo e usar um caminho relativo, o PHP tem que procurar onde esse arquivo realmente existe.
 
-O cache do Realpath armazena em cache os caminhos reais do sistema de arquivos dos nomes de arquivo referenciados, em vez de pesquisá-los sempre. Toda vez que várias funções de arquivo são executadas ou exigem um arquivo e usam um caminho relativo, o PHP precisa procurar onde esse arquivo realmente existe.
+Para melhorar o desempenho do Commerce, use as seguintes configurações recomendadas para configurar o `realpath_cache` configurações no `php.ini` arquivo:
 
-Para melhorar o desempenho do Commerce, use as seguintes configurações recomendadas para definir a variável `realpath_cache` nas `php.ini` arquivo:
+- Defina o tamanho do cache como 10 MB (`realpath cache_size=10M`)
+- Defina a vida útil (ttl) como 7.200 segundos (`realpath_cache_ttl=7200`)
 
-- Defina o tamanho do cache para 10 MB (`realpath cache_size=10M`)
-- Defina o tempo de vida (ttl) como 7200 segundos (`realpath_cache_ttl=7200`)
-
-Para obter instruções de configuração, consulte [Como definir opções PHP](../../../installation/prerequisites/php-settings.md#how-to-set-php-options).
+Para obter instruções de configuração, consulte [Como definir opções do PHP](../../../installation/prerequisites/php-settings.md#how-to-set-php-options).
 
 ## Produtos e versões afetados
 
-- Adobe Commerce no local, todas as versões 2.3.x e superior
-- Adobe Commerce na infraestrutura de nuvem, todas as versões 2.3.x e superior
+- Adobe Commerce no local, todas as versões 2.3.x e posteriores
+- Adobe Commerce na infraestrutura em nuvem, todas as versões 2.3.x e posteriores
 
-## Potencial impacto no desempenho
+## Possível impacto no desempenho
 
-Se os valores de configuração do cache do Realpath forem muito baixos ou muito altos, ele adicionará uma sobrecarga adicional durante a geração do cache, o que retardará o desempenho.
+Se os valores de configuração do cache do Realpath forem muito baixos ou muito altos, isso adicionará uma sobrecarga adicional durante a geração do cache, o que torna o desempenho lento.
 
 ## Informações adicionais
 
-- [No local: configurações PHP](../../../performance/software.md#php-settings)
-- Na infraestrutura de nuvem:
-   - [Práticas recomendadas para bancos de dados](database-on-cloud.md)
-   - [Problemas mais comuns do banco de dados no Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
-- [Os indexadores &quot;Atualizar conforme o agendamento&quot; otimizam o desempenho do Magento](../maintenance/indexer-configuration.md)
-
+- [Local: configurações de PHP](../../../performance/software.md#php-settings)
+- Em infraestrutura de nuvem:
+   - [Práticas recomendadas do banco de dados](database-on-cloud.md)
+   - [Problemas mais comuns de banco de dados no Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
+- [A &quot;Atualização programada&quot; dos indexadores otimiza o desempenho do Magento](../maintenance/indexer-configuration.md)

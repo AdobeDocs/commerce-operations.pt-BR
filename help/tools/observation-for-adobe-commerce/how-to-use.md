@@ -1,47 +1,48 @@
 ---
-title: "Como usar o [!DNL Observation for Adobe Commerce] nerdlet"
+title: Como usar o [!DNL Observation for Adobe Commerce] nerdlet
 description: Saiba como usar o [!DNL Observation for Adobe Commerce] nerdlet.
-source-git-commit: e6038d6f0add9d01d650914b35a1daba885fa7f8
+exl-id: 3c368814-0786-4e8f-ac81-9a77cec94677
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 0%
 
 ---
 
-# Como usar o [!DNL Observation for Adobe Commerce] nerd
+# Como usar o [!DNL Observation for Adobe Commerce] nerdlet
 
-## Abordagem geral para analisar questões
+## Abordagem geral para analisar problemas
 
 Verifique os estados dos recursos do ambiente:
 
-* Examine a % de **[!UICONTROL Storage Free and MySQL % free storage by node]** quadros.
+* Examinar a % de **[!UICONTROL Storage Free and MySQL % free storage by node]** quadros.
 
-   * Siga os links no cabeçalho do quadro, caso veja pouco armazenamento.
+   * Siga os links no cabeçalho do quadro se houver pouco armazenamento.
 
-* Examine a % de **[!UICONTROL free system memory and Swap memory free in bytes]** quadros.
+* Examinar a % de **[!UICONTROL free system memory and Swap memory free in bytes]** quadros.
 
-   * Se eles exibirem estados de memória muito baixos, eles podem ser contribuidores para problemas.
+   * Se esses estados exibirem uma memória muito baixa, eles poderão causar problemas.
 
-* Examine a **[!UICONTROL Alerts during the timeframe]** quadro.
+* Examine o **[!UICONTROL Alerts during the timeframe]** quadro.
 
-   * O Adobe Commerce na infraestrutura de nuvem fornece [!DNL Managed alerts]. Você pode clicar no link no cabeçalho para ver [!DNL Support Knowledge Base] artigos que ajudarão a determinar ações de sua parte para alertas específicos.
+   * O Adobe Commerce na infraestrutura em nuvem oferece [!DNL Managed alerts]. Você pode clicar no link no cabeçalho para ver [!DNL Support Knowledge Base] artigos que ajudarão a determinar ações de sua parte para alertas específicos.
 
-* Examine a **[!UICONTROL CPU % by host]** quadro: Se estiver exibindo alto uso da CPU, verifique a [!DNL Support Knowledge Base] artigo no cabeçalho do quadro. Além disso, verifique se as importações/exportações ou backups do banco de dados não estão sendo realizados durante os períodos de pico de tráfego.
+* Examine o **[!UICONTROL CPU % by host]** frame: se ele estiver exibindo alta utilização da CPU, verifique o [!DNL Support Knowledge Base] no cabeçalho do quadro. Além disso, verifique se as importações/exportações ou os backups do banco de dados não estão sendo feitos durante períodos de pico de tráfego.
 
-* Verifique a **[!UICONTROL Web Traffic volume compared to one week ago]** quadro: Se o tráfego for muito maior do que a semana anterior durante o mesmo período, pode ser explicado (campanha de venda ou novos produtos que foram comercializados, por exemplo)?
-   * Se um aumento no tráfego não puder ser explicado, verifique o Tempo médio de resposta (milissegundos) para o ambiente de produção. O tráfego maior está contribuindo para um tempo de resposta diferente do normal? Expanda o período para ver se é uma anomalia.
-   * O aumento no tráfego afeta as transações da Web? Verifique a **[!UICONTROL Response Code]** quadro para erros. Se o site estiver inativo, você pode clicar no link `Site Down?` link no cabeçalho do quadro. O quadro identificará os erros que estão ocorrendo e sua frequência.
-   * Alguém implantou alterações em seu site? O **[!UICONTROL Deployment Log Entries]** O quadro indicará se alguma implantação foi feita durante o período de problema. Se o problema for imediatamente após a implantação, pode ser que as atividades de implantação estejam adicionando carga adicional ao site (caches limpos, serviços reiniciados, etc.).
-   * Ocorreu um tamanho de atualização ou de inatividade? Se seu site foi atualizado temporariamente, ele pode ter retornado ao tamanho original do cluster. Se uma solicitação foi feita para aumentar a capacidade do site, pode ocorrer um aumento. Verifique a **[!UICONTROL Upsize/Downsize – vCPU view over the timeline]** quadro. Esse quadro às vezes detecta uma interrupção em um nó específico. Se o tamanho diminuir, isso pode indicar um problema com um ou mais nós.
+* Verifique a **[!UICONTROL Web Traffic volume compared to one week ago]** quadro: se o tráfego for muito maior do que a semana anterior durante o mesmo período, ele pode ser explicado (campanha de venda ou novos produtos que foram comercializados, por exemplo)?
+   * Se um aumento no tráfego não puder ser explicado, verifique o Tempo médio de resposta (milissegundos) para o ambiente de produção. O tráfego mais alto está contribuindo para um tempo de resposta diferente do normal? Expanda o período para ver se é uma anomalia.
+   * O aumento no tráfego está afetando as transações da Web? Verifique a **[!UICONTROL Response Code]** quadro para erros. Se o site estiver inativo, você pode clicar no link `Site Down?` no cabeçalho do quadro. O quadro identificará quaisquer erros que estejam ocorrendo e sua frequência.
+   * Alguém implantou alterações no seu site? A variável **[!UICONTROL Deployment Log Entries]** indicará se alguma implantação foi feita durante o período do problema. Se o problema ocorrer imediatamente após a implantação, pode ser que as atividades de implantação estejam adicionando mais carga ao site (caches limpos, serviços reiniciados etc.).
+   * Ocorreu um upsize ou downsize? Se o site foi submetido a upsizing temporariamente, ele pode ter retornado ao tamanho de cluster original. Se uma solicitação foi feita para aumentar a capacidade do site, talvez ocorra um upsize. Verifique a **[!UICONTROL Upsize/Downsize – vCPU view over the timeline]** quadro. Esse quadro às vezes detecta uma interrupção em um determinado nó. Se o tamanho diminuir, isso pode indicar um problema com um ou mais nós.
 
-* O **[!UICONTROL IP Frequency]** A guia identifica a frequência da solicitação de endereços IP que são feitos em relação aos servidores de origem (o que significa que a solicitação não pôde ser veiculada [!DNL Fastly] como 74, não foi armazenado em cache).
+* A variável **[!UICONTROL IP Frequency]** A guia identifica a frequência de solicitação de endereços IP feitos nos servidores de origem (o que significa que a solicitação não pôde ser atendida a partir do [!DNL Fastly] como 74, não foi armazenado em cache).
 
-   * Para qualquer [!DNL Fastly] problemas relacionados, verifique a **[!UICONTROL Fastly Cache]** e selecione a faceta Erro para ver a porcentagem de solicitações que são erros. Eles podem indicar um problema de backend se coincidirem com uma carga que não é da Web.
-   * Se a carga não parecer ser devido ao tráfego da Web, pode haver erros ou uma build de solicitações que não sejam da Web, como consultas lentas ou [!DNL crons].
+   * Para qualquer [!DNL Fastly] problemas relacionados, verifique a **[!UICONTROL Fastly Cache]** e selecione a faceta Erro para ver a porcentagem de solicitações que são erros. Eles podem indicar um problema de backend se coincidirem com um carregamento que não seja da Web.
+   * Se a carga não parecer ser devido ao tráfego da Web, pode haver erros ou um acúmulo de solicitações que não sejam da Web, como consultas lentas ou [!DNL crons].
 
-* Verifique a **[!UICONTROL Database Errors]** quadro para erros que podem coincidir com a linha do tempo do problema/problema.
-* Verifique a **[!UICONTROL Database mysql-slow.log]** quadro para identificar instruções SQL que estão ocorrendo. `INSERT`, `UPDATE`e `DELETE` os comandos podem levar algum tempo se o query não estiver otimizado. Mesmo `SELECT` instruções podem ser muito ineficientes se feitas em tabelas grandes.
-* **[!UICONTROL PHP States]** e **[!UICONTROL PHP Errors]** os quadros mostrarão possíveis problemas com o PHP. O **[!UICONTROL PHP States]** o quadro mostrará terminações do processo PHP, inicializações e quando o serviço atingir o estado pronto por nó. O **[!UICONTROL PHP Errors]** pode ajudar a isolar onde o problema está no PHP, como tamanho da memória, trabalhadores ou o número de servidores.
-* Para ver a latência nas transações, a tabela Transactions - Avg, Max, Min pode ser classificada por coluna para mostrar a duração da transação mais longa. Um cluster sobrecarregado terá durações latentes em transações, mas também mostrará anomalias que podem identificar um problema com um método ou [!DNL cron].
-* O **[!UICONTROL Cron error]** quadro será exibido [!DNL cron] bloqueios, erros de SQL que podem estar associados a [!DNL cron] logs e preparo compartilhado [!DNL crons] que pode estar em execução em ambientes de produção quando houver um ambiente de preparo dedicado.
-* O [!UICONTROL ElasticSearch Errors] o quadro mostra erros que podem indicar grandes problemas com [!DNL Elasticsearch] consultas, dados ou índices.
+* Verifique a **[!UICONTROL Database Errors]** quadro para erros que podem coincidir com a linha do tempo de problema/problema.
+* Verifique a **[!UICONTROL Database mysql-slow.log]** quadro para identificar instruções SQL que estão ocorrendo. `INSERT`, `UPDATE`, e `DELETE` Os comandos podem demorar um pouco se a consulta não for otimizada. Par `SELECT` as instruções podem ser muito ineficientes se feitas em tabelas grandes.
+* **[!UICONTROL PHP States]** e **[!UICONTROL PHP Errors]** os quadros mostrarão possíveis problemas com o PHP. A variável **[!UICONTROL PHP States]** frame mostrará terminações de processo PHP, inicializações e quando o serviço atingir o estado pronto por nó. A variável **[!UICONTROL PHP Errors]** frame pode ajudar a isolar onde o problema está com o PHP, como tamanho da memória, workers ou o número de servidores.
+* Para ver a latência nas transações, a tabela Transações - Média, Máx, Mín. pode ser classificada por coluna para mostrar a duração da transação de execução mais longa. Um cluster sobrecarregado terá durações latentes nas transações, mas também mostrará anomalias que podem apontar um problema com um método ou [!DNL cron].
+* A variável **[!UICONTROL Cron error]** o quadro será exibido [!DNL cron] bloqueios, erros de SQL que podem estar associados a [!DNL cron] logs e estágios compartilhados [!DNL crons] que pode estar sendo executado em ambientes de produção quando há um ambiente de preparo dedicado.
+* A variável [!UICONTROL ElasticSearch Errors] mostra erros que podem indicar problemas graves com [!DNL Elasticsearch] consultas, dados ou índices.

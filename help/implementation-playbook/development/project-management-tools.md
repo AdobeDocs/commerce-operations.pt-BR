@@ -1,6 +1,6 @@
 ---
 title: Ferramentas de gerenciamento de projetos
-description: Escolha as ferramentas recomendadas de gerenciamento de projeto para a implementação do Adobe Commerce.
+description: Escolha as ferramentas de gerenciamento de projeto recomendadas para sua implementação do Adobe Commerce.
 exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -9,53 +9,53 @@ ht-degree: 0%
 
 ---
 
-# Ferramentas de gestão de projetos
+# Ferramentas de gerenciamento de projetos
 
-Sair do ambiente Adobe Commerce real, mas igualmente importante, são as ferramentas e soluções que tornam a colaboração e todo o processo de desenvolvimento o mais suave possível.
+Sair do ambiente real do Adobe Commerce, mas igualmente importante, são as ferramentas e soluções que tornam a colaboração e todo o processo de desenvolvimento o mais simples possível.
 
-A tabela a seguir inclui as ferramentas recomendadas de gerenciamento de projetos:
+A tabela a seguir inclui ferramentas recomendadas para o gerenciamento de projetos:
 
 | Finalidade | Ferramenta |
 |------------------------------------------------------|--------------------------------------|
-| Gerenciamento de ingressos | Atlassiano JIRA |
-| Gerenciamento de SLA | Gerenciamento de Serviço JIRA Atlassiano |
-| Gerenciamento de documentos | Confluência Atlassiana |
-| Gerenciamento do código-fonte | Balde de Bits Atlassiano, GitHub |
+| Gerenciamento de tíquetes | Atlassian JIRA |
+| Gerenciamento de SLA | Atlassian JIRA Service Management |
+| Gestão de documentos | Confluência Atlassiana |
+| Gerenciamento de código-fonte | Atlassian Bitbucket, GitHub |
 | Integração contínua (CI)/entrega contínua (CD) | Jenkins |
 | Comunicação | Email, Microsoft Teams, Telefone, Slack |
-| Reunião | Zoom, Microsoft Teams |
+| Encontro | Zoom, Microsoft Teams |
 
 ## Gerenciamento de SLA
 
-O Jira Service Management capacita equipes de desenvolvimento e operações a colaborarem em altas velocidades para que possam responder às mudanças comerciais e proporcionar experiências excelentes de atendimento ao cliente e aos funcionários com rapidez.
+O Jira Service Management permite que as equipes de desenvolvimento e operações colaborem em alta velocidade para que possam responder às mudanças nos negócios e fornecer experiências excelentes de atendimento ao cliente e ao funcionário com rapidez.
 
-## Gerenciamento de documentos
+## Gestão de Documentos
 
-A influência é uma ótima ferramenta para criar, organizar e colaborar no trabalho em um único lugar, de praticamente qualquer lugar. A influência vem equipada com modelos de práticas recomendadas, de modo que não é necessário reinventar a roda. Comece facilmente e mantenha a consistência entre equipes e projetos.
+A confluência é uma excelente ferramenta para criar, organizar e colaborar no trabalho em um único local, praticamente em qualquer lugar. O Confluence vem equipado com modelos de práticas recomendadas para que você não precise reinventar a roda. Comece facilmente e mantenha a consistência entre equipes e projetos.
 
-## Gerenciamento de tíquete
+## Gerenciamento de tíquetes
 
-Jira é um sistema de gerenciamento e rastreamento de bilhetes (incluindo gerenciamento de versões e versões) com recursos avançados, como:
+O Jira é um sistema de rastreamento e gerenciamento de tíquetes (incluindo gerenciamento de versão e lançamento) com recursos avançados, como:
 
-- Fluxo de trabalho de restrição para evitar erros
-- Estimativa e rastreamento de folha de tempo no nível do tíquete
-- Visualização fácil de bilhetes e movimentação com ágil/crum
+- Restringir o fluxo de trabalho para evitar erros
+- Estimativa e rastreamento de planilha de horas no nível do ticket
+- Fácil visualização e movimentação de tíquetes com o Agile/Scrum
 - Informações transparentes entre a equipe do cliente e a equipe de desenvolvimento
 
-## Gerenciamento do código-fonte
+## Gerenciamento de código-fonte
 
-O bucket de bits é mais do que apenas o gerenciamento de código Git. O Bitbucket oferece às equipes um local para planejar projetos, colaborar em código, testar e implantar. Usando o Bitbucket, você pode aprovar revisões de código de forma mais eficiente com solicitações de pull. Você também pode criar uma lista de verificação mesclada com aprovadores designados e manter discussões diretamente no código-fonte com comentários em linha.
+O Bitbucket é mais do que apenas o gerenciamento de código Git. O Bitbucket oferece às equipes um local para planejar projetos, colaborar em código, testar e implantar. Usando o Bitbucket, você pode aprovar revisões de código com mais eficiência com solicitações de pull. Você também pode criar uma lista de verificação mesclada com aprovadores designados e manter discussões diretamente no código-fonte com comentários em linha.
 
 O GitHub é semelhante ao Bitbucket, que também é usado em alguns projetos.
 
 ## Comunicação
 
-Para clientes diferentes, podemos usar uma variedade de ferramentas para comunicação: email, Microsoft Teams e Slack são ferramentas comuns que utilizamos para comunicações relacionadas a projetos.
+Para clientes diferentes, podemos usar uma variedade de ferramentas para comunicação: email, Microsoft Teams e Slack são ferramentas comuns que usamos para comunicações relacionadas ao projeto.
 
-## Reunião
+## Encontro
 
 Microsoft Teams e Zoom são as ferramentas mais comuns para configurar reuniões online.
 
 ## Integração contínua (CI)/entrega contínua (CD)
 
-O Jenkins é a principal solução de automação de código aberto e fornece centenas de plug-ins para suportar a criação, implantação e automatização de qualquer projeto. Jenkins pode ser usado como um servidor de CI simples ou transformado em hub de CD para qualquer projeto.
+O Jenkins é a solução líder em automação de código aberto e fornece centenas de plug-ins para oferecer suporte à criação, implantação e automatização de qualquer projeto. O Jenkins pode ser usado como um simples servidor CI ou transformado no hub de CD para qualquer projeto.

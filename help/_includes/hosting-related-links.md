@@ -10,10 +10,10 @@ ht-degree: 0%
 
 # Links relacionados à auto-hospedagem
 
-## Recursos de hospedagem própria
+## Recursos de auto hospedagem
 
 * [Visão geral](/help/implementation-playbook/infrastructure/self-hosting/overview.md)
-* [Infraestrutura no local](/help/implementation-playbook/infrastructure/self-hosting/on-premises.md)
+* [Infraestrutura local](/help/implementation-playbook/infrastructure/self-hosting/on-premises.md)
 * [Conceitos de segurança](/help/implementation-playbook/infrastructure/self-hosting/security-concepts.md)
 * [Monitoramento de telemetria e ferramentas](/help/implementation-playbook/infrastructure/self-hosting/monitoring-tools.md)
 * [Ideias de recuperação de desastres](/help/implementation-playbook/infrastructure/self-hosting/disaster-recovery-ideas.md)

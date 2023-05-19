@@ -1,44 +1,44 @@
 ---
-title: Processamento de Ordem de Alta Throughput
-description: Otimize a experiência de posicionamento e check-out do pedido para sua implantação do Adobe Commerce ou Magento Open Source.
-source-git-commit: 45ffa6487d94feba3d6c2a6d5d938108b1fef91d
+title: Processamento de pedido de alta capacidade
+description: Otimize a experiência de posicionamento de pedidos e finalização para a implantação do Adobe Commerce ou Magento Open Source.
+exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
+# Processamento de pedidos com alto rendimento
 
-# Processamento de pedidos com alta taxa de transferência
+Você pode otimizar a experiência de posicionamento de pedidos e check-out configurando o seguinte conjunto de módulos para **processamento de pedido com alto rendimento**:
 
-Você pode otimizar a experiência de posicionamento do pedido e check-out configurando o seguinte conjunto de módulos para **processamento de pedidos de alta taxa de transferência**:
+- [AsyncOrder](#asynchronous-order-placement)—Processar pedidos de forma assíncrona usando uma fila.
+- [Cálculo do Total Diferido](#deferred-total-calculation)—Adia cálculos para totais de pedido até o início do check-out.
+- [Verificação De Estoque Na Carga Da Cotação](#disable-inventory-check)—Opte por ignorar a validação de inventário dos itens do carrinho.
 
-- [AsyncOrder](#asynchronous-order-placement)—Processa pedidos de forma assíncrona usando uma fila.
-- [Cálculo Total Diferido](#deferred-total-calculation)—Oferece cálculos para totais de pedidos até o início do check-out.
-- [Verificação de Inventário no Carregamento da Cotação](#disable-inventory-check)—Escolha ignorar a validação de inventário dos itens do carrinho.
+Todos os recursos - AsyncOrder, Cálculo Total Diferido e Verificação de Inventário - funcionam independentemente. Você pode usar todos os três recursos simultaneamente ou ativar e desativar recursos em qualquer combinação.
 
-Todos os recursos — AsyncOrder, Cálculo Total Diferido e Verificação de Inventário — funcionam de forma independente. Você pode usar todos os três recursos simultaneamente ou ativar e desativar recursos em qualquer combinação.
+## Posicionamento assíncrono de pedidos
 
-## Colocação assíncrona de pedido
+A variável _Ordem assíncrona_ permite a colocação assíncrona de pedidos, o que marca o pedido como `received`O coloca o pedido em uma fila e processa os pedidos da fila em uma base de primeiro a entrar, primeiro a sair. AsyncOrder é **desabilitado** por padrão.
 
-O _Ordem assíncrona_ o módulo permite o posicionamento assíncrono do pedido, o que marca o pedido como `received`, coloca o pedido em uma fila e processa pedidos da fila na primeira saída. AsyncOrder é **desativado** por padrão.
+Por exemplo, um cliente adiciona um produto ao carrinho de compras e seleciona **[!UICONTROL Proceed to Checkout]**. Eles preenchem o **[!UICONTROL Shipping Address]** formulário, selecione sua preferência **[!UICONTROL Shipping Method]**, selecione um método de pagamento e faça o pedido. O carrinho de compras está desmarcado, a ordem é marcada como **[!UICONTROL Received]**, mas a quantidade do Produto ainda não foi ajustada, nem um email de vendas foi enviado ao cliente. O pedido é recebido, mas os detalhes do pedido ainda não estão disponíveis porque o pedido não foi totalmente processado. Ele permanece na fila até que o `placeOrderProcess` O consumidor começa, verifica a ordem com o [verificação de inventário](#disable-inventory-check) (ativado por padrão) e atualiza a ordem da seguinte maneira:
 
-Por exemplo, um cliente adiciona um produto ao carrinho e seleciona **[!UICONTROL Proceed to Checkout]**. Eles preenchem a **[!UICONTROL Shipping Address]** , selecione o formulário preferido **[!UICONTROL Shipping Method]**, selecione um método de pagamento e coloque a ordem. O carrinho de compras é limpo, o pedido é marcado como **[!UICONTROL Received]**, mas a quantidade do Produto ainda não foi ajustada, nem um email de venda é enviado ao cliente. O pedido é recebido, mas os detalhes do pedido ainda não estão disponíveis porque o pedido não foi totalmente processado. Permanece na fila até a `placeOrderProcess` O consumidor inicia, verifica o pedido com a variável [verificação de inventário](#disable-inventory-check) (ativado por padrão) e atualiza a ordem da seguinte maneira:
+- **Produto disponível**—o status do pedido muda para _Pending_, a quantidade do produto é ajustada, um email com detalhes do pedido é enviado ao cliente e os detalhes do pedido bem-sucedido ficam disponíveis para visualização na **Pedidos e Devoluções** com opções acionáveis, como reordenar.
+- **Produto sem estoque ou com pouca oferta**—o status do pedido muda para _Rejeitado_, a quantidade do Produto não é ajustada, um email com detalhes do pedido sobre o problema é enviado ao cliente e os detalhes do pedido rejeitado ficam disponíveis no **Pedidos e Devoluções** sem opções acionáveis.
 
-- **Produto disponível**—o status do pedido muda para _Pending_, a quantidade do produto é ajustada, um email com detalhes do pedido é enviado ao cliente e os detalhes do pedido bem-sucedido ficam disponíveis para visualização no **Pedidos e devoluções** lista com opções acionáveis, como reordenar.
-- **Produto esgotado ou pouco fornecido**—o status do pedido muda para _Rejeitada_, a quantidade do produto não é ajustada, um email com detalhes do pedido sobre o problema é enviado ao cliente e os detalhes do pedido rejeitado ficam disponíveis na **Pedidos e devoluções** lista sem opções acionáveis.
+Use a interface de linha de comando para habilitar esses recursos ou edite o `app/etc/env.php` de acordo com os arquivos README correspondentes definidos no [_Guia de referência de módulo_][mrg].
 
-Use a interface da linha de comando para ativar esses recursos ou edite o `app/etc/env.php` de acordo com os arquivos README correspondentes definidos no [_Guia de referência do módulo_][mrg].
+**Para habilitar AsyncOrder**:
 
-**Para ativar o AsyncOrder**:
-
-Você pode ativar o AsyncOrder usando a interface da linha de comando:
+Você pode habilitar a AsyncOrder usando a interface de linha de comando:
 
 ```bash
 bin/magento setup:config:set --checkout-async 1
 ```
 
-O `set` grava o seguinte no `app/etc/env.php` arquivo:
+A variável `set` O comando grava o seguinte no `app/etc/env.php` arquivo:
 
 ```conf
 ...
@@ -47,21 +47,21 @@ O `set` grava o seguinte no `app/etc/env.php` arquivo:
    ]
 ```
 
-Consulte [AsyncOrder] no _Guia de referência do módulo_.
+Consulte [AsyncOrder] no _Guia de referência de módulo_.
 
-**Para desativar o AsyncOrder**:
+**Para desativar AsyncOrder**:
 
 >[!WARNING]
 >
->Antes de desabilitar o módulo AsyncOrder , você deve verificar se _all_ os processos de pedido assíncronos estão concluídos.
+>Antes de desabilitar o módulo AsyncOrder, você deve verificar se _all_ os processos de pedido assíncrono estão concluídos.
 
-Você pode desativar o AsyncOrder usando a interface da linha de comando:
+Você pode desativar a AsyncOrder usando a interface de linha de comando:
 
 ```bash
 bin/magento setup:config:set --checkout-async 0
 ```
 
-O `set` grava o seguinte no `app/etc/env.php` arquivo:
+A variável `set` O comando grava o seguinte no `app/etc/env.php` arquivo:
 
 ```conf
 ...
@@ -72,23 +72,23 @@ O `set` grava o seguinte no `app/etc/env.php` arquivo:
 
 ### Compatibilidade com AsyncOrder
 
-AsyncOrder suporta um conjunto limitado de [!DNL Commerce] recursos.
+O AsyncOrder oferece suporte a um conjunto limitado de [!DNL Commerce] recursos.
 
 | Categoria | Recurso suportado |
 |------------------|--------------------------------------------------------------------------|
 | Tipos de check-out | Check-out do OnePage<br>Check-out padrão<br>Cotação Negociável B2B |
-| Métodos de pagamento | Pedido de cheque/dinheiro<br>Dinheiro na entrega<br>Braintree<br>PayPal PayFlow Pro |
-| Métodos de envio | Todos os métodos de envio são suportados. |
+| Métodos de pagamento | Cheque/Ordem de pagamento<br>Dinheiro na entrega<br>Braintree<br>PayPal PayFlow Pro |
+| Métodos de envio | Todos os métodos de envio são compatíveis. |
 
-Os seguintes recursos são **not** suportado pelo AsyncOrder, mas continua a funcionar de forma síncrona:
+Os seguintes recursos são **não** suportado pelo AsyncOrder, mas continua a funcionar de forma síncrona:
 
-- Métodos de pagamento não incluídos na lista de recursos suportados
-- Check-out de vários endereços
-- Criação da ordem de administração
+- Métodos de pagamento não incluídos na lista de recursos compatíveis
+- Check-out de Vários Endereços
+- Criação do pedido do administrador
 
 #### Suporte à API da Web
 
-Quando o módulo AsyncOrder é ativado, os seguintes pontos de extremidade REST e mutações GraphQL são executados de forma assíncrona:
+Quando o módulo AsyncOrder está habilitado, os seguintes endpoints REST e mutações GraphQL são executados de forma assíncrona:
 
 **REST:**
 
@@ -103,31 +103,31 @@ Quando o módulo AsyncOrder é ativado, os seguintes pontos de extremidade REST 
 
 >[!INFO]
 >
->GraphQL não oferece suporte para colocar pedidos de cotação negociáveis de forma assíncrona.
+>O GraphQL não oferece suporte a pedidos de cotação negociáveis de forma assíncrona.
 
-#### Excluir métodos de pagamento
+#### Excluindo métodos de pagamento
 
-Os desenvolvedores podem excluir explicitamente determinados métodos de pagamento do posicionamento de pedidos assíncronos, adicionando-os ao `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` matriz. As ordens que usam métodos de pagamento excluídos são processadas de forma síncrona.
+Os desenvolvedores podem excluir explicitamente determinados métodos de pagamento do posicionamento assíncrono do pedido adicionando-os ao `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` matriz. Os pedidos que usam métodos de pagamento excluídos são processados de forma síncrona.
 
-### Ordem Assíncrona da Cotação Negociável
+### Ordem Assíncrona de Cotação Negociável
 
-O _Ordem Assíncrona da Cotação Negociável_ O módulo B2B permite que você salve itens de ordem de forma assíncrona para o `NegotiableQuote` funcionalidade. Você deve ter AsyncOrder e NegotiableQuote ativadas.
+A variável _Ordem Assíncrona de Cotação Negociável_ O módulo B2B permite salvar itens de pedido de forma assíncrona para o `NegotiableQuote` funcionalidade. Você deve ter AsyncOrder e NegotiableQuote ativadas.
 
-## Cálculo Total Diferido
+## Cálculo do Total Diferido
 
-O _Cálculo Total Diferido_ O módulo otimiza o processo de check-out adiando o cálculo total até que seja solicitado para o carrinho de compras ou durante as etapas de check-out final. Quando ativado, somente o subtotal é calculado como um cliente que adiciona produtos ao carrinho de compras.
+A variável _Cálculo do Total Diferido_ O módulo otimiza o processo de check-out adiando o cálculo total até que ele seja solicitado para o carrinho de compras ou durante as etapas finais de check-out. Quando ativado, somente o subtotal é calculado conforme um cliente adiciona produtos ao carrinho de compras.
 
-DeferredTotalCalculation é **desativado** por padrão. Use a interface da linha de comando para ativar esses recursos ou edite o `app/etc/env.php` de acordo com os arquivos README correspondentes definidos no [_Guia de referência do módulo_][mrg].
+DeferredTotalCalculation é **desabilitado** por padrão. Use a interface de linha de comando para habilitar esses recursos ou edite o `app/etc/env.php` de acordo com os arquivos README correspondentes definidos no [_Guia de referência de módulo_][mrg].
 
-**Para ativar DeferredTotalCalculation**:
+**Para habilitar DeferredTotalCalculation**:
 
-Você pode ativar DeferredTotalCalculation usando a interface da linha de comando:
+Você pode habilitar DeferredTotalCalculation usando a interface de linha de comando:
 
 ```bash
 bin/magento setup:config:set --deferred-total-calculating 1
 ```
 
-O `set` grava o seguinte no `app/etc/env.php` arquivo:
+A variável `set` O comando grava o seguinte no `app/etc/env.php` arquivo:
 
 ```conf
 ...
@@ -136,15 +136,15 @@ O `set` grava o seguinte no `app/etc/env.php` arquivo:
    ]
 ```
 
-**Desabilitar DeferredTotalCalculation**:
+**Para desativar o DeferredTotalCalculation**:
 
-Você pode desativar DeferredTotalCalculation usando a interface da linha de comando:
+Você pode desabilitar DeferredTotalCalculation usando a interface de linha de comando:
 
 ```bash
 bin/magento setup:config:set --deferred-total-calculating 0
 ```
 
-O `set` grava o seguinte no `app/etc/env.php` arquivo:
+A variável `set` O comando grava o seguinte no `app/etc/env.php` arquivo:
 
 ```conf
 ...
@@ -153,27 +153,27 @@ O `set` grava o seguinte no `app/etc/env.php` arquivo:
    ]
 ```
 
-Consulte [DeferredTotalCalculating] no _Guia de referência do módulo_.
+Consulte [CálculoTotalDiferido] no _Guia de referência de módulo_.
 
-### Imposto fixo sobre o produto
+### Imposto Fixo do Produto
 
-Quando DeferredTotalCalculation está ativado, o FPT (Imposto fixo do produto) não é incluído no preço do produto e no subtotal do carrinho do minicarrinho após adicionar o produto ao carrinho de compras. O cálculo de FPT é adiado ao adicionar um produto ao minicarrinho. O FPT é exibido corretamente no carrinho de compras depois de prosseguir para o check-out final.
+Quando DeferredTotalCalculation está habilitado, o Fixed Product Tax (FPT) não é incluído no preço do produto e no subtotal do carrinho do minicarrinho depois de adicionar o produto ao carrinho de compras. O cálculo do FPT é adiado ao adicionar um produto ao minicarrinho. O FPT é exibido corretamente no carrinho de compras após prosseguir para a finalização.
 
-## Desativar verificação de inventário
+## Desabilitar verificação de estoque
 
-O _Ativar Inventário No Carregamento Do Carrinho_ a configuração global determina se é necessário executar uma verificação de inventário ao carregar um produto no carrinho. Desativar o processo de verificação de inventário melhora o desempenho de todas as etapas de finalização, especialmente quando se trata de produtos em massa no carrinho.
+A variável _Ativar inventário ao carregar o carrinho_ a configuração global determina se deve ser executada uma verificação de inventário ao carregar um produto no carrinho. Desativar o processo de verificação de inventário melhora o desempenho de todas as etapas de check-out, principalmente ao lidar com produtos em massa no carrinho.
 
-Quando desativado, a verificação de inventário não ocorre ao adicionar um produto ao carrinho de compras. Se essa verificação de inventário for ignorada, alguns cenários indisponíveis poderão gerar outros tipos de erros. Uma verificação de inventário _always_ ocorre na etapa de posicionamento do pedido, mesmo quando desabilitado.
+Quando desativada, a verificação de inventário não ocorre ao adicionar um produto ao carrinho. Se essa verificação de inventário for ignorada, alguns cenários sem estoque poderão gerar outros tipos de erros. Uma verificação de inventário _sempre_ ocorre na etapa de colocação do pedido, mesmo quando desativado.
 
-**Ativar Verificação de Inventário No Carregamento Do Carrinho** estiver ativado (definido como Sim) por padrão. Para desativar a verificação de inventário ao carregar o carrinho, defina **[!UICONTROL Enable Inventory Check On Cart Load]** para `No` na interface do usuário do administrador **Lojas** > **Configuração** > **Catálogo** > **Inventário** > **Opções de Estoque** seção. Consulte [Configurar opções globais][global] e [Inventário do catálogo][inventory] no _Guia do usuário_.
+**Habilitar Verificação De Inventário Na Carga Do Carrinho** está ativado (definido como Sim) por padrão. Para desativar a verificação de inventário ao carregar o carrinho, defina **[!UICONTROL Enable Inventory Check On Cart Load]** para `No` na interface do usuário do administrador **Lojas** > **Configuração** > **Catálogo** > **Inventário** > **Opções de estoque** seção. Consulte [Configurar opções globais][global] e [Inventário do catálogo][inventory] no _Guia do usuário_.
 
 ## Balanceamento de carga
 
-Você pode ajudar a equilibrar a carga em diferentes nós, habilitando conexões secundárias para o banco de dados MySQL e a instância Redis.
+Você pode ajudar a balancear a carga em diferentes nós, habilitando conexões secundárias para o banco de dados MySQL e a instância Redis.
 
-O Adobe Commerce pode ler vários bancos de dados ou instâncias do Redis de forma assíncrona. Se você estiver usando o Commerce on cloud Infrastructure, poderá configurar as conexões secundárias editando o [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) na `.magento.env.yaml` arquivo. Somente um nó precisa lidar com o tráfego de leitura e gravação, portanto, defina as variáveis como `true` resulta na criação de uma conexão secundária para o tráfego somente leitura. Defina os valores como `false` para remover qualquer matriz de conexão somente leitura existente do `env.php` arquivo.
+O Adobe Commerce pode ler vários bancos de dados ou instâncias Redis de forma assíncrona. Se você estiver usando o Commerce na infraestrutura em nuvem, poderá configurar as conexões secundárias editando o [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) valores no `.magento.env.yaml` arquivo. Somente um nó precisa lidar com tráfego de leitura-gravação, portanto, definir as variáveis como `true` resulta na criação de uma conexão secundária para tráfego somente leitura. Defina os valores como `false` para remover qualquer matriz de conexão somente leitura existente do `env.php` arquivo.
 
-Exemplo da variável `.magento.env.yaml` arquivo:
+Exemplo de `.magento.env.yaml` arquivo:
 
 ```yaml
 stage:
@@ -188,4 +188,4 @@ stage:
 [inventory]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html
 [mrg]: https://developer.adobe.com/commerce/php/module-reference/
 [AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
-[DeferredTotalCalculating]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/
+[CálculoTotalDiferido]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/
