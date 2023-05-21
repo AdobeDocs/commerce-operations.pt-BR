@@ -50,7 +50,7 @@ A variável **[!UICONTROL POST activities details table]** o quadro mostra o `PO
 
 ## [!UICONTROL Guest Carts activities]
 
-A variável **[!UICONTROL Guest Carts activities]** O quadro mostra o número de atividades do carrinho de convidado em um período selecionado, facetado pelo endereço IP e URL acessado. Os carrinhos convidados podem ser usados em um ataque de cardamento. Este quadro mostra o número total de solicitações nas quais os URLs dos carrinhos convidados são acessados.
+A variável **[!UICONTROL Guest Carts activities]** O quadro mostra o número de atividades do carrinho de convidado em um período selecionado, facetado pelo endereço IP e URL acessado. Carrinhos convidados podem ser usados em um ataque de cartão. Este quadro mostra o número total de solicitações nas quais os URLs dos carrinhos convidados são acessados.
 
 ![guest-carts-activities](../../assets/tools/observation-for-adobe-commerce/guest-carts-activities.jpg)
 
