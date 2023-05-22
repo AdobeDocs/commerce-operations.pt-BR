@@ -2,8 +2,9 @@
 title: Bloco ESI de verniz
 description: Saiba mais sobre as Inclusões do Edge Side e como você pode usá-las para incorporar páginas da Web.
 badge: label="Contribuição de Konstantin G." type="Informativo" url="https://github.com/goivvy" tooltip="Konstantin G."
+feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 0%

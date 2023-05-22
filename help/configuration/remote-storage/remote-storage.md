@@ -1,8 +1,9 @@
 ---
 title: Configurar o armazenamento remoto
 description: Saiba como configurar o módulo de Armazenamento remoto para o aplicativo de comércio local.
+feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%

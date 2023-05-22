@@ -1,10 +1,11 @@
 ---
 title: Verificação final
 description: Verifique se a configuração de verniz está definida corretamente para funcionar com o aplicativo do Adobe Commerce.
+feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -82,4 +83,4 @@ Verifique se `<magento_root>/var/page_cache` o diretório está vazio:
 
 >[!TIP]
 >
->Se encontrar erros 503 (Falha na busca do backend), consulte [Solução de problemas de erros 503 (Serviço indisponível)](https://support.magento.com/hc/en-us/articles/360034631211) no _Centro de ajuda do Adobe Commerce_.
+>Se encontrar erros 503 (Falha na busca do backend), consulte [Solução de problemas de erros 503 (Serviço indisponível)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) no _Centro de ajuda do Adobe Commerce_.

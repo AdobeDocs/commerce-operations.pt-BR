@@ -1,8 +1,9 @@
 ---
 title: Arquivos de configuração para implantação
 description: Entenda como os arquivos de configuração funcionam para instalar o aplicativo Commerce.
+feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: dd990800551dd2ba35ebc7d2bc04edeb1b183d6f
+source-git-commit: b40d2bd4d466782ba5bc1b29ee8681756d9e85cc
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%

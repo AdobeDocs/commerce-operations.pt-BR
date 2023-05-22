@@ -1,8 +1,9 @@
 ---
 title: Armazenamento remoto para Commerce em infraestrutura em nuvem
 description: Consulte orientações sobre como configurar o armazenamento remoto para o Adobe Commerce na infraestrutura em nuvem.
+feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%

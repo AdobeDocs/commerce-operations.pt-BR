@@ -1,8 +1,9 @@
 ---
 title: Caminhos sensíveis e específicos do sistema
 description: Consulte uma lista de valores de configuração confidenciais e específicos do sistema.
+feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '3702'
 ht-degree: 0%

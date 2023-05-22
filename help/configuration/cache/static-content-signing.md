@@ -1,8 +1,9 @@
 ---
 title: Cache de conteúdo estático
 description: Entenda sobre a assinatura de conteúdo estático e como ativar ou desativar o recurso.
+feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
