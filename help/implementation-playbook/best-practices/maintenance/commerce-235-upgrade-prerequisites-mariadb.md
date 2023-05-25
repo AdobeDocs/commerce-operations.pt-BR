@@ -1,26 +1,26 @@
 ---
-title: Pré-requisitos de atualização do Adobe Commerce 2.3.5 para MariaDB
-description: Saiba como preparar seu banco de dados do Adobe Commerce para atualizar do Adobe Commerce 2.3.5.
+title: Pré-requisitos de atualização do Adobe Commerce para MariaDB
+description: Saiba como preparar seu banco de dados do Adobe Commerce para atualizar o MariaDB de uma versão anterior.
 role: Developer
 feature-set: Commerce
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 73663659dd1b3305bf8c9a167852b24dc1016e7d
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
 # Pré-requisitos de atualização para o MariaDB
 
-A atualização do Adobe Commerce 2.3.4 ou anterior para qualquer versão mais recente requer a atualização do serviço MariaDB na infraestrutura de nuvem da versão 10.0 ou 10.2 para a versão 10.3 ou 10.4. O MariaDB versão 10.3 e posterior requer que o banco de dados use o formato de linha de tabela dinâmica, e o Adobe Commerce requer o uso do mecanismo de armazenamento InnoDB para tabelas. Este artigo explica como atualizar seu banco de dados para cumprir esses requisitos do MariaDB.
+Atualização do serviço MariaDB na infraestrutura em nuvem da versão 10.0 ou 10.2 para a versão 10.3, 10.4 ou 10.5. A versão 10.3 e posterior da MariaDB exige que o banco de dados use o formato de linha de tabela dinâmica, e a Adobe Commerce exige o uso do mecanismo de armazenamento InnoDB para tabelas. Este artigo explica como atualizar seu banco de dados para cumprir esses requisitos do MariaDB.
 
 Depois de preparar o banco de dados, envie um tíquete de suporte do Adobe Commerce para atualizar a versão do serviço MariaDB na infraestrutura de nuvem antes de prosseguir com o processo de atualização do Adobe Commerce.
 
 ## Produto e versões afetados
 
-Adobe Commerce na infraestrutura em nuvem com o Adobe Commerce versão 2.3.4 ou anterior e o MariaDB versão 10.0 ou anterior.
+Adobe Commerce na infraestrutura em nuvem com MariaDB versão 10.3 ou anterior.
 
 ## Preparar seu banco de dados para a atualização
 
@@ -119,7 +119,7 @@ O processo para converter o formato de armazenamento é diferente para projetos 
 
 ### Verifique a conversão do banco de dados
 
-Um dia antes da atualização programada para o MariaDB versão 10.2, verifique se todas as tabelas têm o formato de linha e o mecanismo de armazenamento corretos. A verificação é necessária porque as implantações de código feitas após a conclusão da conversão podem fazer com que algumas tabelas sejam revertidas para a configuração original.
+No dia anterior à atualização programada para o MariaDB versão 10.3, 10.4 ou 10.6, verifique se todas as tabelas têm o formato de linha e o mecanismo de armazenamento corretos. A verificação é necessária porque as implantações de código feitas após a conclusão da conversão podem fazer com que algumas tabelas sejam revertidas para a configuração original.
 
 1. Faça logon no banco de dados.
 
