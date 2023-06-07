@@ -2,9 +2,9 @@
 title: Guia de instalação
 description: Use este guia para instalar [!DNL Site-Wide Analysis Tool] para o seu site
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 4210746509be99bb3c943906c99f70ea420ba74a
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Se você não quiser usar nosso [script de shell](https://github.com/magento-swa
    1. Baixe o arquivo iniciador.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-amd64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
    1. Descompacte o arquivo iniciador.
@@ -197,7 +197,7 @@ Se você não quiser usar nosso [script de shell](https://github.com/magento-swa
    1. Baixe o arquivo iniciador.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
    1. Descompacte o arquivo iniciador.
@@ -390,7 +390,7 @@ Você pode observar o seguinte erro se as chaves de acesso não forem analisadas
 
 ```terminal
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
-FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```
 
 Para resolver esse erro, tente as seguintes etapas:
@@ -403,6 +403,12 @@ Para resolver esse erro, tente as seguintes etapas:
 1. Execute o scheduler e veja se você ainda recebe o mesmo erro.
 1. Se você ainda receber o mesmo erro, aumente o nível de log no `config.yaml` para depurar e abrir um tíquete de suporte.
 
+### *SIGFAULT* Erro
+
+Se você vir um *SIGFAULT* erro ao executar o binário, você provavelmente não o executa como proprietário dos arquivos do Adobe Commerce e do Agente.
+Para resolver, verifique se todos os arquivos dentro do diretório do agente que têm o mesmo usuário que o proprietário do arquivo que os arquivos Adobe Commerce têm, e se o binário também deve ser executado nesse usuário.
+Você pode usar o `chown` comando para alterar o proprietário dos arquivos e alternar para o usuário apropriado.
+Certifique-se de que seu mecanismo de daemonização (Cron ou System.d) execute o processo no usuário apropriado.
 
 >[!INFO]
 >
