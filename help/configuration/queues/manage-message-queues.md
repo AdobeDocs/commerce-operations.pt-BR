@@ -2,9 +2,9 @@
 title: Gerenciar filas de mensagens
 description: Saiba como gerenciar filas de mensagens na linha de comando do Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
+source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ O exemplo a seguir mostra o `crontab` configuração para consumidores em execu�
 >
 >Consulte [Configurar e executar o cron](../cli/configure-cron-jobs.md) para obter mais informações sobre como usar o `cron` com o Commerce.
 
-Também é possível usar um gerenciador de processos, como [Supervisor](http://supervisord.org/index.html) para monitorar o status dos processos. O gerenciador pode usar a linha de comando para reiniciar os processos conforme necessário.
+Também é possível usar um gerenciador de processos, como [Supervisor](https://supervisord.readthedocs.io/en/latest/) para monitorar o status dos processos. O gerenciador pode usar a linha de comando para reiniciar os processos conforme necessário.
 
 ## Configuração
 
@@ -76,12 +76,12 @@ Edite o `/app/etc/env.php` arquivo para configurar o trabalho cron `consumers_ru
 - `consumers` - Uma matriz de strings especificando quais consumidores executar. Uma matriz vazia é executada *all* consumidores.
 - `multiple_processes` - Uma matriz de pares de valores chave que especifica qual consumidor executar em quantos processos. Compatível com o Commerce 2.4.4 ou posterior.
 
-   >[!INFO]
-   >
-   >Não é recomendável executar vários consumidores em uma fila operada pelo MySQL. Consulte [Alterar fila de mensagens de MySQL para AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) para obter mais informações.
+  >[!INFO]
+  >
+  >Não é recomendável executar vários consumidores em uma fila operada pelo MySQL. Consulte [Alterar fila de mensagens de MySQL para AMQP](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) para obter mais informações.
 
-   >[!INFO]
-   >
-   >Se sua loja da Adobe Commerce estiver hospedada na plataforma da Cloud, use o [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) para configurar como os consumidores processam mensagens da fila de mensagens.
+  >[!INFO]
+  >
+  >Se sua loja da Adobe Commerce estiver hospedada na plataforma da Cloud, use o [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) para configurar como os consumidores processam mensagens da fila de mensagens.
 
 Consulte [Iniciar consumidores da fila de mensagens](../cli/start-message-queues.md).
