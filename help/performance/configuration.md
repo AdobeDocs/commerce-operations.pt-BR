@@ -2,9 +2,9 @@
 title: Práticas recomendadas de configuração
 description: Otimize o tempo de resposta de sua implantação do Adobe Commerce ou Magento Open Source usando essas práticas recomendadas.
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 1d7f5f58f8c21013c2ab0d68ab93a125ba0f3764
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,31 @@ Pode haver momentos em que as vendas intensas em uma loja ocorram ao mesmo tempo
 >[!WARNING]
 >
 >A variável **[!UICONTROL Developer]** A guia e as opções só estão disponíveis em [Modo de desenvolvedor](../configuration/cli/set-mode.md). [Adobe Commerce na infraestrutura em nuvem](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) não suporta `Developer` modo.
+
+## Salvamento assíncrono de configuração [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponível somente na versão 2.4.7-beta1"}
+
+Para projetos com um grande número de configurações no nível da loja, salvar uma configuração de loja pode levar um tempo excessivo ou resultar em um tempo limite. A variável _Configuração assíncrona_ O módulo permite salvamentos assíncronos de configuração executando um trabalho cron que usa um consumidor para processar o salvamento em uma fila de mensagens. AsyncConfig está **desabilitado** por padrão.
+
+Você pode ativar o AsyncConfig usando a interface de linha de comando:
+
+```bash
+bin/magento setup:config:set --config-async 1
+```
+
+A variável `set` O comando grava o seguinte no `app/etc/env.php` arquivo:
+
+```conf
+...
+   'config' => [
+       'async' => 1
+   ]
+```
+
+Inicie o seguinte Consumidor para começar a processar as mensagens na fila na base primeiro a entrar primeiro a sair:
+
+```bash
+bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
+```
 
 ## Atualização de estoque adiada
 

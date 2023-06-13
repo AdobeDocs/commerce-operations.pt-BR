@@ -2,9 +2,9 @@
 title: Notas de versão do Adobe Commerce e Magento Open Source
 description: Saiba onde encontrar informações para versões específicas do Adobe Commerce e Magento Open Source.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 073eec9ce841febf7653c82543eac57068576d03
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Use a tabela a seguir para localizar notas de versão e informações importante
         <p>Saiba mais sobre as melhorias mais recentes feitas no Adobe Commerce e no Magento Open Source, incluindo aprimoramentos, segurança, correções de erros e problemas conhecidos.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Alterações incompatíveis com versões anteriores</a></li>
-            <li><a href="commerce/2-4-6.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-6.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-5-p2.md">Patches de segurança</a></li>
+            <li><a href="commerce/2-4-7.md">Adobe Commerce</a></li>
+            <li><a href="open-source/2-4-7.md">Magento Open Source</a></li>
+            <li><a href="security/2-4-6-p1.md">Patches de segurança</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Boletim de segurança do Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B para Adobe Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>
@@ -47,6 +47,7 @@ Use a tabela a seguir para localizar notas de versão e informações importante
       <td><strong>Serviços para o Adobe Commerce</strong>
         <p>Saiba mais sobre as melhorias mais recentes para Commerce services inovadores que estão disponíveis como Adobe Commerce e extensões Magento Open Source.</p>
           <ul>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Serviço de catálogo</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Gerente de canal (vendas do Walmart Marketplace)</a></li>
@@ -64,6 +65,7 @@ Use a tabela a seguir para localizar notas de versão e informações importante
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Malha de API para desenvolvedores do Adobe APP Builder</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Eventos Adobe I/O para Adobe Commerce</a></li>
+            <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">SDK da interface do usuário do administrador</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Ferramenta Correções de qualidade</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">Ferramenta de análise do site</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Ferramenta de compatibilidade de atualização</a></li>
