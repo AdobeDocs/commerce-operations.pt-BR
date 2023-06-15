@@ -1,8 +1,9 @@
 ---
 title: Mecanismo de pesquisa atual não suportado
 description: Solucione problemas com a atualização do Adobe Commerce ou do Magento Open Source após encontrar um erro sobre um mecanismo de pesquisa não compatível.
+feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -34,13 +35,11 @@ O erro ocorre se o valor retornado for `mysql`, `elasticsearch`ou `elasticsearch
 >
 >Caso tenha recebido esse erro, sua instalação está em um estado inconsistente e você não pode acessar o Administrador. Recomendamos que você reverta para sua versão anterior enquanto resolve esse erro. Para fazer isso, execute um dos seguintes comandos:
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
