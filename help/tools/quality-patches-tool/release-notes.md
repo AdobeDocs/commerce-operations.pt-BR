@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
+source-git-commit: 28358ee2ebadfcbf12c67e667cbbd27599a28a80
 workflow-type: tm+mt
-source-wordcount: '12426'
+source-wordcount: '12912'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,29 @@ A variável [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte a [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.33 {#v1-1-33}
+
+* **ACSD-50478** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.5) - Corrige o comando de reversão de banco de dados para um caso em que o despejo de banco de dados contém acionadores e um *delimitador* Comando SQL.
+* **ACSD-50512** (para Adobe Commerce >=2.4.5 &lt;2.4.7) - Corrige a *Erro: o link disponível para download não está relacionado ao produto. Verifique o link e tente novamente.* erro que ocorre ao atualizar a data de início de uma atualização de preparo de produto baixável.
+* **ACSD-50949** (para Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.7) - Corrige o problema em que o filtro de preço na pesquisa avançada não retorna resultados adequados quando usado com o filtro SKU.
+* **ACSD-51645** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige o erro lançado ao salvar uma nova Regra de preço do carrinho se a extensão `Magento_OfflineShipping` está desativado.
+* **ACSD-50895** (para Adobe Commerce >=2.4.5 &lt;2.4.7) - Corrige o problema em que [!DNL Google Analytics] 3 tags GTM não são acionadas se [!DNL Google Analytics] 4 GTM não está configurado.
+* **ACSD-51102** (para Adobe Commerce >=2.4.2 &lt;2.4.7) - Corrige o problema em que uma regra de catálogo aplicada a um grande número de produtos não é indexada corretamente quando a regra é habilitada por uma atualização agendada.
+* **ACSD-50368** (para Adobe Commerce e Magento Open Source >= 2.4.3 &lt;2.4.5) - Corrige o problema em que a `group_id` é ignorado quando um cliente é criado por meio da API REST assíncrona ou da API REST assíncrona em massa.
+* **ACSD-51497** (para Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.0 || >= 2.4.1 &lt;2.4.7) - Corrige o problema em que um cliente não pode classificar uma página de catálogo por Atributo personalizado do tipo de lista suspensa.
+* **ACSD-51408** (para Adobe Commerce e Magento Open Source >=2.3.7 &lt; 2.4.7) - Corrige o problema em que o status do item do pedido é definido incorretamente como *[!UICONTROL Backordered]*.
+* **ACSD-51735** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.5) - Corrige o problema em que o status do item do pedido é definido incorretamente como *[!UICONTROL Ordered]* quando o estoque do produto é *0*.
+* **ACSD-51792** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.6) - Corrige o problema em que uma página não tem o evento de impressão quando [!DNL Google Tag Manager] 4 está ativado.
+* **ACSD-51471** (para Adobe Commerce >=2.4.3 &lt;2.4.7) - Corrige o problema em que um usuário administrador não pode salvar uma atualização agendada para um produto agrupado que usa um produto simples que tem uma atualização agendada.
+* **ACSD-51700** (para Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.7) - Corrige o erro que ocorre ao alternar as exibições da loja em uma página de edição de produto baixável no administrador.
+* **ACSD-51120** (para Adobe Commerce >=2.3.7 &lt;2.4.3) - Corrige o problema em que o cache de solicitações do GraphQL GET não é limpo para páginas CMS que contêm blocos CMS atualizados por meio de uma atualização de preparo.
+* **ACSD-51240** (para Adobe Commerce >=2.4.4 &lt;2.4.6) - Corrige o problema em que o arquivo carregado estava ausente se o registro fosse feito por meio do formulário de registro da empresa.
+* **ACSD-51907** (para Adobe Commerce >=2.4.2 &lt;2.4.3) - Corrige o problema em que um usuário administrador restrito não consegue criar um memorando de crédito com um reembolso offline.
+* **ACSD-52148** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.4) - Corrige o problema em que a variável [!DNL Google V3 reCAPTCHA] Ocasionalmente, o logon do administrador falha.
+* **ACSD-51431** (para Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7) - Corrige o problema em que o status de um indexador é *trabalhando* mesmo se não houver novas entradas no changelog.
+* **ACSD-51892** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige o problema de desempenho em que os arquivos de configuração são carregados várias vezes durante a implantação.
+* ACSD-51114 obsoleto.
 
 ## v1.1.32 {#v1-1-32}
 
