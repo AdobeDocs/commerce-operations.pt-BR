@@ -1,5 +1,5 @@
 ---
-source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '17239'
 ht-degree: 0%
@@ -59,7 +59,7 @@ A versão do script de conclusão
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -129,7 +129,7 @@ Analisar o log de depuração da conclusão
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -208,7 +208,7 @@ Para gerar a ajuda do comando raw
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -292,7 +292,7 @@ Para ignorar a descrição dos argumentos dos comandos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -349,7 +349,7 @@ bin/magento admin:adobe-ims:disable
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -430,7 +430,7 @@ Verifique se 2FA está ativado para Organização na Adobe Admin Console. Obriga
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -487,7 +487,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -544,7 +544,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -637,7 +637,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -701,7 +701,7 @@ O nome de usuário do administrador a ser desbloqueado
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -767,7 +767,7 @@ Lista separada por espaços de tipos de configuração ou omitir para despejar t
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -824,7 +824,7 @@ bin/magento app:config:import
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -881,7 +881,7 @@ bin/magento app:config:status
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -962,7 +962,7 @@ Senha
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1034,7 +1034,7 @@ adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1106,7 +1106,7 @@ adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1178,7 +1178,7 @@ adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1250,7 +1250,7 @@ adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1313,7 +1313,7 @@ adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1384,7 +1384,7 @@ Não processar imagens marcadas como ocultas da página do produto
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1441,7 +1441,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1505,7 +1505,7 @@ y\n
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1594,7 +1594,7 @@ Código de escopo para configuração, cadeia de caracteres vazia por padrão
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1698,7 +1698,7 @@ Obsoleto, use a opção — lock- env.
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1775,7 +1775,7 @@ Código do escopo (necessário somente se o escopo não for `default`)
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1846,7 +1846,7 @@ Instalar somente as tarefas não opcionais (padrão)
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1903,7 +1903,7 @@ bin/magento cron:remove
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1972,7 +1972,7 @@ Adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2029,7 +2029,7 @@ bin/magento customer:hash:upgrade
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2100,7 +2100,7 @@ Ignora a limpeza e a regeneração de conteúdo estático (código gerado, CSS p
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2157,7 +2157,7 @@ bin/magento deploy:mode:show
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2221,7 +2221,7 @@ Nome da classe
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2278,7 +2278,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2335,7 +2335,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2392,7 +2392,7 @@ bin/magento dev:profiler:disable
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2455,7 +2455,7 @@ Tipo de profiler
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2512,7 +2512,7 @@ bin/magento dev:query-log:disable
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2590,7 +2590,7 @@ Incluir pilha de chamadas. [true\|false]
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2684,7 +2684,7 @@ Tema: [Fornecedor/tema]
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2741,7 +2741,7 @@ bin/magento dev:template-hints:disable
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2798,7 +2798,7 @@ bin/magento dev:template-hints:enable
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2855,7 +2855,7 @@ bin/magento dev:template-hints:status
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2927,7 +2927,7 @@ Argumentos adicionais para PHPUnit. Exemplo: &quot;-c&#39;—filter=MeuTeste&#39
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2998,7 +2998,7 @@ Formato no qual o catálogo será gerado. Compatível: [phpstorm, vscode]
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3075,7 +3075,7 @@ Substituir arquivo XML
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3141,7 +3141,7 @@ Nome dos domínios
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3207,7 +3207,7 @@ Nomes de domínio
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3264,7 +3264,7 @@ bin/magento downloadable:domains:show
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3321,7 +3321,7 @@ bin/magento encryption:payment-data:update
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3397,7 +3397,7 @@ Use o parâmetro —magento para analisar a base de código do Magento atual. Om
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3481,7 +3481,7 @@ Use o parâmetro —allow-duplicates para permitir o salvamento de duplicatas de
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3555,7 +3555,7 @@ Fazer backup de arquivos de código e configuração (excluindo arquivos tempor�
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3612,7 +3612,7 @@ bin/magento indexer:info
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3678,7 +3678,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3744,7 +3744,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3812,7 +3812,7 @@ Modos de dimensão do indexador catalog_product_price none,website,customer_grou
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3883,7 +3883,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3949,7 +3949,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4015,7 +4015,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4081,7 +4081,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4138,7 +4138,7 @@ bin/magento info:adminuri
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4195,7 +4195,7 @@ bin/magento info:backups:list
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4252,7 +4252,7 @@ bin/magento info:currency:list
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4316,7 +4316,7 @@ Nome do arquivo do relatório
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4380,7 +4380,7 @@ Nome do arquivo do relatório
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4444,7 +4444,7 @@ Nome do arquivo do relatório
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4501,7 +4501,7 @@ bin/magento info:language:list
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4558,7 +4558,7 @@ bin/magento info:timezone:list
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4616,7 +4616,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `compensations`
 
-Lista de argumentos de compensação no formato &quot;&lt;order_increment_id>:&lt;sku>:&lt;quantity>:&lt;stock-id>&quot;
+Lista de argumentos de compensação no formato &quot;\&lt;order_increment_id>:\&lt;sku>:\&lt;quantity>:\&lt;stock-id>&quot;
 
 - Padrão: `[]`
 
@@ -4631,7 +4631,7 @@ Saída bruta
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4716,7 +4716,7 @@ Saída bruta
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4783,7 +4783,7 @@ Lista de códigos de país a serem importados
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4869,7 +4869,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4939,7 +4939,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5009,7 +5009,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5072,7 +5072,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5129,7 +5129,7 @@ bin/magento media-content:sync
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5186,7 +5186,7 @@ bin/magento media-gallery:sync
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5243,7 +5243,7 @@ bin/magento module:config:status
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5336,7 +5336,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5429,7 +5429,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5515,7 +5515,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5630,7 +5630,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5710,7 +5710,7 @@ Revisão
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5767,7 +5767,7 @@ bin/magento queue:consumers:list
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5824,7 +5824,7 @@ bin/magento queue:consumers:restart
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5925,7 +5925,7 @@ O caminho do arquivo para salvar o PID (Esta opção está obsoleta, use — sin
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5982,7 +5982,7 @@ bin/magento remote-storage:sync
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6046,7 +6046,7 @@ Atualizar composer.json sem executar a atualização do composer
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6110,7 +6110,7 @@ Atualizar composer.json sem executar a atualização do composer
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6167,7 +6167,7 @@ bin/magento sampledata:reset
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6224,7 +6224,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6281,7 +6281,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6351,7 +6351,7 @@ Segredo
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6408,7 +6408,7 @@ bin/magento security:tfa:providers
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6478,7 +6478,7 @@ Código do provedor
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6562,7 +6562,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7134,7 +7134,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7197,7 +7197,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7281,7 +7281,7 @@ Descubra que tipo de patch deve ser gerado. Valores disponíveis: `data`, `schem
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7345,7 +7345,7 @@ Nome do módulo onde a lista de permissões será gerada
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7415,7 +7415,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7478,7 +7478,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7535,7 +7535,7 @@ bin/magento setup:di:compile
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8346,7 +8346,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8417,7 +8417,7 @@ Ignorar reindexação
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8498,7 +8498,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8724,7 +8724,7 @@ Não compile temas principais. Compatível somente com estratégias rápidas e p
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8841,7 +8841,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8904,7 +8904,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9000,7 +9000,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9057,7 +9057,7 @@ bin/magento store:list
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9114,7 +9114,7 @@ bin/magento store:website:list
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9195,7 +9195,7 @@ Limpar arquivos de visualização estáticos gerados.
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9293,7 +9293,7 @@ Caminho para o arquivo para gravar vcl
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor

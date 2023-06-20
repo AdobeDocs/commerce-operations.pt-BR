@@ -1,5 +1,5 @@
 ---
-source-git-commit: adb585771fb1353614ea600117f18ba8b55b65f0
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -56,7 +56,7 @@ A versão do script de conclusão
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -126,7 +126,7 @@ Analisar o log de depuração da conclusão
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -205,7 +205,7 @@ Para gerar a ajuda do comando raw
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -289,7 +289,7 @@ Para ignorar a descrição dos argumentos dos comandos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -353,7 +353,7 @@ Caminho para resolver problemas no.
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -428,7 +428,7 @@ Caminho do arquivo onde a saída será exportada (Formato Json)
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -499,7 +499,7 @@ versão de destino (por exemplo, 2.4.5).
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -575,7 +575,7 @@ Caminho do arquivo onde a saída será exportada (formato JSON)
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
@@ -683,7 +683,7 @@ Contexto de execução. Essa opção é para fins de integração e não afeta o
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o &lt;info>lista&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
 
 - Padrão: `false`
 - Não aceita um valor
