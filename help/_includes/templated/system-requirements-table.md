@@ -1,15 +1,11 @@
 ---
-source-git-commit: 0167c2dc9862c88cc26acf820058e7ed300d6582
+source-git-commit: e790327231f6d6ad97a03460f361e5fb63b27a37
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 70%
+source-wordcount: '287'
+ht-degree: 86%
 
 ---
 # Requisitos do sistema
-
->[!IMPORTANT]
->
->O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infraestrutura em nuvem é determinado pelas versões implantadas na infraestrutura em nuvem e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Consulte [Software e serviços compatíveis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) no _Guia da nuvem_. Por exemplo, o Elasticsearch 7.17 é compatível com a versão 2.4.4 para implantações locais, mas o Open Search 1.2 é compatível com a infraestrutura da nuvem.
 
 >[!NOTE]
 >
