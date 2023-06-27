@@ -1,8 +1,9 @@
 ---
 title: Pré-requisitos do mecanismo de pesquisa
 description: Siga estas etapas para instalar e configurar o software de mecanismo de pesquisa compatível para as instalações locais do Adobe Commerce e do Magento Open Source.
+feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
@@ -40,15 +41,15 @@ O diagrama anterior mostra:
 
 * O aplicativo Commerce e o mecanismo de pesquisa são instalados em hosts diferentes.
 
-   A execução em hosts separados requer proxy para funcionar. (O agrupamento do mecanismo de pesquisa está além do escopo deste guia, mas você pode encontrar mais informações no [Documentação de cluster do Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  A execução em hosts separados requer proxy para funcionar. (O agrupamento do mecanismo de pesquisa está além do escopo deste guia, mas você pode encontrar mais informações no [Documentação de cluster do Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * Cada host tem seu próprio servidor da Web; os servidores da Web não precisam ser iguais.
 
-   Por exemplo, o aplicativo Commerce pode executar o Apache e o mecanismo de pesquisa pode executar o nginx.
+  Por exemplo, o aplicativo Commerce pode executar o Apache e o mecanismo de pesquisa pode executar o nginx.
 
 * Ambos os servidores da Web usam o protocolo TLS.
 
-   A configuração do TLS está fora do escopo de nossa documentação.
+  A configuração do TLS está fora do escopo de nossa documentação.
 
 As solicitações de pesquisa são processadas da seguinte maneira:
 

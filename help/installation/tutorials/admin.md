@@ -1,8 +1,9 @@
 ---
 title: Criar, editar ou desbloquear uma conta de administrador
 description: Siga estas etapas para gerenciar a conta de administrador do seu aplicativo Adobe Commerce ou Magento Open Source Admin.
+feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%

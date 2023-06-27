@@ -1,8 +1,9 @@
 ---
 title: Desinstalar temas
 description: Siga estas etapas para desinstalar um tema Adobe Commerce ou Magento Open Source.
+feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Este comando desinstala o *somente* temas especificados em `composer.json`; em o
 * Atualização do `parent` informações do nó em `theme.xml` para remover referências ao tema.
 * Removendo código de tema do sistema de arquivos.
 
-   [Mais informações sobre herança de tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [Mais informações sobre herança de tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## Desinstalar temas
 
