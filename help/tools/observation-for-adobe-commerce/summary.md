@@ -2,7 +2,8 @@
 title: A variável [!UICONTROL Summary] guia
 description: Saiba mais sobre o [!UICONTROL Summary] guia de [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 0%
@@ -260,7 +261,7 @@ A variável **[!UICONTROL Database mysql-slow.log]** quadro faz uma contagem de 
 
 **[!DNL Redis]erros e mensagens:**
 
-* &#39;%Sincronização SLAVE: sem espaço restante no dispositivo (%SLAVE) como &#39;espaço&#39;
+* &#39;%Sincronização SLAVE: sem espaço restante no dispositivo (%SLAVE synchronization: No space left on device%) as &#39;space&#39;
 * &#39;%Server started, Redis version%&#39;) como &#39;serv_start&#39;
 * &#39;%O servidor está pronto para aceitar conexões&#39;) como &#39;pronto&#39;
 * &#39;%Conexão com principal perdida.%&#39;) como &#39;mstr_lost&#39;

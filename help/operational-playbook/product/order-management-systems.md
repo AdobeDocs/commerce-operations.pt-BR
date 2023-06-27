@@ -2,7 +2,8 @@
 title: Sistemas do Order Management
 description: Conclua seu projeto de comércio eletrônico com um sistema para embalagem, envio e devoluções.
 exl-id: 2a5f19fa-e8fe-452b-9ab6-65428dda691d
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Orders
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -62,7 +63,7 @@ O gerenciamento de pedidos em negócios B2B é complexo em comparação com os n
 
 ## Processo para B2B
 
-- O representante de vendas informa os detalhes da ordem do cliente no OMS ou o cliente também pode colocar uma ordem on-line, o que enviará os detalhes da ordem para o OMS
+- O representante de vendas informa os detalhes da ordem do cliente no OMS ou o cliente também pode colocar uma ordem on-line, o que enviará os detalhes da ordem ao OMS
 
 - O cliente recebe a confirmação do pedido
 

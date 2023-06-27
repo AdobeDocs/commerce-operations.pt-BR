@@ -2,7 +2,8 @@
 title: '[!DNL Data Migration Tool] pré-requisitos'
 description: Saiba o que é necessário fazer antes de começar a usar o [!DNL Data Migration Tool] para transferir dados entre Magento 1 e Magento 2.
 exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -17,7 +18,7 @@ Antes de iniciar a migração, verifique se os seguintes requisitos foram atendi
 
 * Configure seu sistema Magento 2 para que ele atenda às [requisitos do sistema](../../installation/system-requirements.md).
 
-   Use uma topologia e um design que correspondam pelo menos ao seu sistema Magento 1 existente.
+  Use uma topologia e um design que correspondam pelo menos ao seu sistema Magento 1 existente.
 
 * [Instalar o Magento 2](../../installation/overview.md).
 
@@ -31,7 +32,7 @@ Não inicie os trabalhos de cron do Magento 2.
 
 * Verifique se [!DNL Data Migration Tool] tem acesso de rede para conectar os bancos de dados Magento 1 e Magento 2.
 
-   Abra portas no firewall para que a Ferramenta de Migração possa se comunicar com os bancos de dados.
+  Abra portas no firewall para que a Ferramenta de Migração possa se comunicar com os bancos de dados.
 
 * Certifique-se de que suas contas MySQL tenham todos os privilégios necessários para acessar bancos de dados Magento.
 

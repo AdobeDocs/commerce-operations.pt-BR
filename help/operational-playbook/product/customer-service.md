@@ -2,7 +2,8 @@
 title: Atendimento ao cliente
 description: Um bom atendimento ao cliente pode ser uma vantagem competitiva na área de comércio eletrônico.
 exl-id: ef798b1b-96d0-493e-b125-1d67aa7644a1
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Customers
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -15,9 +16,9 @@ O comércio eletrônico é digital e a única equipe que interage com o cliente 
 
 ![Gráfico de barras do atendimento ao cliente](../../assets/playbooks/customer-service-chart.png)
 
-Os varejistas precisam ser pró-ativos em termos de atendimento ao cliente, pois não apenas a marca está em jogo, mas principalmente sua fidelidade. Para que os varejistas sejam bem-sucedidos no fornecimento da melhor experiência do cliente, há algumas práticas recomendadas que eles podem seguir:
+Os varejistas precisam ser proativos em termos de atendimento ao cliente, pois não apenas o nome da marca está em jogo, mas, mais importante, sua fidelidade ao cliente. Para que os varejistas sejam bem-sucedidos no fornecimento da melhor experiência do cliente, há algumas práticas recomendadas que eles podem seguir:
 
-- **Canal de suporte múltiplo**— Fornecer serviço somente por e-mail ou telefone não é suficiente na era atual. O atendimento ao cliente precisa ser fornecido em vários canais, como bate-papos ao vivo, emails, telefonemas, redes sociais e/ou mensagens de texto. Cada um deles tem seus próprios prós e contras que os varejistas precisam analisar.
+- **Canal de suporte múltiplo**— A oferta de serviços somente por e-mail ou telefone não é suficiente na era atual. O atendimento ao cliente precisa ser fornecido em vários canais, como bate-papos ao vivo, emails, telefonemas, redes sociais e/ou mensagens de texto. Cada um deles tem seus próprios prós e contras que os varejistas precisam analisar.
 
 - **Serviço personalizado**— todas as atividades do cliente são feitas on-line, que os varejistas podem rastrear para entender o comportamento do cliente. Por exemplo, quando um cliente entra em contato com a equipe de Atendimento ao cliente, a equipe terá suas informações antecipadamente, como nome, endereço de email, histórico de pedidos e devoluções. Isso ajuda o Serviço de atendimento ao cliente a fornecer um serviço rápido e preciso, além de fornecer aos clientes um serviço personalizado.
 

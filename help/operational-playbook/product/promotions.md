@@ -2,7 +2,8 @@
 title: Promoções
 description: Crie uma estratégia de marketing para promover seus produtos aos clientes.
 exl-id: 3b1cf7ab-6a24-40eb-b504-c19e3a064231
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Promotions/Events
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
@@ -20,7 +21,7 @@ Com a maioria da população passando para as compras on-line, os varejistas pre
 - Pessoas
 - Processos
 
-Cada um dos seis P&#39;s é igualmente importante, mas para comercializar produtos, os varejistas precisam usar promoções como uma tática para aumentar o tráfego no site e levar a taxas de conversão mais altas. As promoções ajudam a comercializar produtos e serviços oferecidos pela marca. Há vários níveis promocionais, como envio, produto e pedido.
+Cada um dos seis Ps é igualmente importante, mas para comercializar produtos, os varejistas precisam usar promoções como uma tática para aumentar o tráfego no site e levar a taxas de conversão mais altas. As promoções ajudam a comercializar produtos e serviços oferecidos pela marca. Há vários níveis promocionais, como envio, produto e pedido.
 
 ![exemplo de anúncio promocional](../../assets/playbooks/promotion-example.png)
 

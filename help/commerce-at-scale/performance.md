@@ -2,7 +2,9 @@
 title: Otimização do desempenho do AEM
 description: Otimize sua configuração padrão do Adobe Experience Manager para oferecer suporte a cargas altas no Adobe Commerce.
 exl-id: 923a709f-9048-4e67-a5b0-ece831d2eb91
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Integration, Cache
+topic: Commerce, Performance
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '2248'
 ht-degree: 0%
@@ -89,7 +91,7 @@ A solicitação, incluindo todos os cabeçalhos http personalizados e variáveis
 As opções de armazenamento em cache acima podem ser definidas usando o console de configuração do OSGi do AEM em &quot;GraphQL Client Configuration Fatory&quot;. Cada entrada de configuração de cache pode ser especificada com o seguinte formato:
 
 ```
-• NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
+* NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
     › NAME (String): name of the cache
     › ENABLE (true|false): enables or disables that cache entry
     › MAXSIZE (Integer): maximum size of the cache (in number of entries)
