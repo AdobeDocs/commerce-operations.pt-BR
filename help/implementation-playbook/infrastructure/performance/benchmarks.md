@@ -2,7 +2,8 @@
 title: Benchmarks de desempenho
 description: Analise os resultados do benchmark de desempenho para implementações do Adobe Commerce hospedadas na infraestrutura de nuvem do Adobe.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -49,13 +50,13 @@ As avaliações de desempenho são baseadas em atividades simuladas de lojas cot
    - 3000 usuários simultâneos na loja
    - Definir para taxa de acertos do cache CDN de 30%
 
-      O uso efetivo da camada de cache aumenta o número de exibições de página por hora.
+     O uso efetivo da camada de cache aumenta o número de exibições de página por hora.
 
 - **API do GraphQL**
    - 250 threads simultâneas
    - Defina como 0% da taxa de acertos do cache do CDN
 
-      Os tempos de resposta melhoram significativamente com uma camada de cache na frente do GraphQL.
+     Os tempos de resposta melhoram significativamente com uma camada de cache na frente do GraphQL.
 
 - **Web do administrador**
    - 500 usuários simultâneos

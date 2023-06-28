@@ -2,7 +2,8 @@
 title: Recursos do Adobe Commerce
 description: Saiba como os recursos do Adobe Commerce nos diferenciam dos concorrentes.
 exl-id: 6d2196b4-56ee-4048-b5e5-930811e7e50b
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Paas
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Recursos do Adobe Commerce
 
-O Adobe Commerce é uma das plataformas de comércio eletrônico mais confiáveis e confiáveis do mercado. Essa confiança e confiabilidade foram comprovadas no crescimento das empresas que a utilizam. De acordo[Hosting Tribunal](https://hostingtribunal.com/blog/magento-statistics/#gref), as marcas que usam o Adobe Commerce à medida que sua plataforma de comércio eletrônico crescem três vezes mais rápido em comparação às marcas em outras plataformas.
+O Adobe Commerce é uma das plataformas de comércio eletrônico mais confiáveis e confiáveis do mercado. Essa confiança e confiabilidade foram comprovadas no crescimento das empresas que a utilizam. De acordo [Hosting Tribunal](https://hostingtribunal.com/blog/magento-statistics/#gref), as marcas que usam o Adobe Commerce à medida que sua plataforma de comércio eletrônico crescem três vezes mais rápido em comparação às marcas em outras plataformas.
 
 A capacidade da Adobe Commerce de lidar com qualquer complexidade que sua marca possa enfrentar tornou-a uma escolha popular, à medida que as empresas aprimoram sua sofisticação. Independentemente de as marcas estarem focadas em um único site em uma região ou precisarem conectar vários sites ou lojas em todo o mundo, a Adobe Commerce tem a infraestrutura para criar uma experiência contínua e conectada. Como parceiro, aproveitamos nossa experiência para personalizar o site de acordo com suas necessidades exclusivas.
 

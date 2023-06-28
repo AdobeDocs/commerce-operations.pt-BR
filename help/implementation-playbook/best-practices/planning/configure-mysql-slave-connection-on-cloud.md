@@ -2,10 +2,9 @@
 title: Prática recomendada para configurar a conexão slave do MySQL
 description: Saiba como configurar a conexão do escravo do MySQL para sites do Adobe Commerce implantados na infraestrutura de nuvem.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: d65bc80a-c4ec-4ea4-aff1-110592838201
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%

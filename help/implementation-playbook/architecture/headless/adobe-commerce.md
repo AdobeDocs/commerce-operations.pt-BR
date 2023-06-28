@@ -2,7 +2,8 @@
 title: Arquitetura headless do Adobe Commerce
 description: Saiba mais sobre o que torna exclusiva a abordagem de arquitetura headless do Adobe Commerce.
 exl-id: eac9d5b1-4917-4d2a-a8af-7f85c825fa0d
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
@@ -23,7 +24,7 @@ O GraphQL é um padrão do setor para APIs de alto desempenho, usado por muitas 
 
 Embora o Adobe Commerce tenha uma vitrine acoplada como opção, não é necessário que um comerciante use essa front-end herdada do Adobe Commerce. Um comerciante pode aproveitar os melhores serviços comerciais da Adobe Commerce para lidar com os processos de negócios de back-end e, usando nossas APIs de vitrine, integrar sua própria vitrine dissociada para impulsionar a experiência de front-end.
 
-Agora, vamos analisar as várias opções headless.
+Agora, vejamos as várias opções headless.
 
 ## PWA Studio
 

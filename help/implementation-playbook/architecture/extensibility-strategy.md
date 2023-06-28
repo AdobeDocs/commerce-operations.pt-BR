@@ -2,7 +2,8 @@
 title: Estratégia de extensibilidade do Adobe Commerce
 description: Saiba como o modelo de extensibilidade do Adobe Commerce permite personalizar sua implementação.
 exl-id: fac4630d-8a41-40dc-899a-01eabceaa61e
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Extensibility
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%

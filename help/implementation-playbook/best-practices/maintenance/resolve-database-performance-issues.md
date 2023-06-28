@@ -2,10 +2,9 @@
 title: Práticas recomendadas para resolver problemas de desempenho do banco de dados
 description: Saiba como corrigir problemas de banco de dados que reduzem o desempenho em sites do Adobe Commerce implantados em infraestrutura em nuvem.
 role: Developer, Admin
-feature-set: Commerce
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%

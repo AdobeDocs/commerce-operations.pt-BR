@@ -3,9 +3,8 @@ title: Agendando atualizações de administrador em sites de produção
 description: Conheça as práticas recomendadas para agendar atualizações críticas para o Adobe Commerce a fim de evitar desempenho lento e interrupções.
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%

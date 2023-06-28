@@ -2,10 +2,9 @@
 title: Pré-requisitos de atualização do Adobe Commerce para MariaDB
 description: Saiba como preparar seu banco de dados do Adobe Commerce para atualizar o MariaDB de uma versão anterior.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: b86e471f-e81f-416b-a321-7aa1ac73d27c
-source-git-commit: 73663659dd1b3305bf8c9a167852b24dc1016e7d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 0%
@@ -88,15 +87,15 @@ O processo para converter o formato de armazenamento é diferente para projetos 
 
    - Renomeie a tabela existente para evitar conflitos de nome.
 
-      ```mysql
-      RENAME TABLE <existing_table> <table_old>;
-      ```
+     ```mysql
+     RENAME TABLE <existing_table> <table_old>;
+     ```
 
    - Criar uma tabela que use `InnoDB` armazenamento usando os dados da tabela existente.
 
-      ```mysql
-      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
-      ```
+     ```mysql
+     CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
+     ```
 
    - Verifique se a nova tabela tem todos os dados necessários.
 

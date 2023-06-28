@@ -2,7 +2,8 @@
 title: Segurança da infraestrutura em nuvem
 description: Saiba mais sobre como mantemos a segurança do Adobe Commerce na infraestrutura em nuvem.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
+feature: Cloud, Security
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 0%
@@ -23,7 +24,7 @@ O Fastly fornece uma proteção de CDN e DDoS (negação de serviço distribuíd
 
 ## Firewall para aplicativo web (WAF)
 
-O Fastly Web Application Firewall (WAF) é usado para fornecer proteção adicional. O WAF da Fastly usa regras de terceiros de fontes comerciais e de código aberto, como o Conjunto de Regras Principal OWASP. Além disso, são empregadas regras específicas do Adobe Commerce. Os clientes estão protegidos contra os principais ataques de camada de aplicativo, incluindo ataques de injeção e entradas mal-intencionadas, script entre sites, exfiltração de dados, violações de protocolo HTTP e outras 10 principais ameaças da OWASP.
+O Fastly Web Application Firewall (WAF) é usado para fornecer proteção adicional. O WAF baseado em nuvem da Fastly usa regras de terceiros de fontes comerciais e de código aberto, como o Conjunto de Regras Principal OWASP. Além disso, são empregadas regras específicas do Adobe Commerce. Os clientes estão protegidos contra os principais ataques de camada de aplicativo, incluindo ataques de injeção e entradas mal-intencionadas, script entre sites, exfiltração de dados, violações de protocolo HTTP e outras 10 principais ameaças da OWASP.
 
 As regras do WAF são atualizadas pelo Adobe Commerce caso novas vulnerabilidades sejam detectadas, permitindo que o Managed Services &quot;corrija virtualmente&quot; problemas de segurança antes dos patches de software. O Fastly WAF não fornece serviços de limitação de taxa ou detecção de bot. Se desejar, os clientes podem licenciar um serviço de detecção de bot de terceiros compatível com o Fastly.
 

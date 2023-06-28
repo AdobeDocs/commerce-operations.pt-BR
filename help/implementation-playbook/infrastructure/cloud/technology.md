@@ -2,7 +2,8 @@
 title: Tecnologias de infraestrutura em nuvem
 description: Veja mais de perto a coleção de tecnologias que usamos para o Adobe Commerce na infraestrutura em nuvem.
 exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
-source-git-commit: 683ce0a72aca0319ade2e4ccfd7a8e541a228156
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # Tecnologias
 
-Como mencionamos, a Adobe Commerce aproveita várias soluções de software para dar suporte à plataforma. Especificamente, como se refere à produção, analisamos algumas das soluções e recursos técnicos incluídos no Adobe Commerce na infraestrutura em nuvem que ajudam a aproveitar ao máximo seu ambiente de produção.
+Como já mencionamos, a Adobe Commerce utiliza várias soluções de software para oferecer suporte à plataforma. Especificamente, como se refere à produção, analisamos algumas das soluções e recursos técnicos incluídos no Adobe Commerce na infraestrutura em nuvem que ajudam a aproveitar ao máximo seu ambiente de produção.
 
 ![Diagrama que mostra a Adobe Commerce sobre a tecnologia de infraestrutura em nuvem](../../../assets/playbooks/infrastructure-technology.svg)
 

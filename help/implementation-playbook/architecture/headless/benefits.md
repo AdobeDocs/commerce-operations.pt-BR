@@ -2,7 +2,8 @@
 title: Comércio headless
 description: Saiba o que significa comércio headless e como o Adobe Commerce oferece suporte a arquiteturas headless.
 exl-id: acf66714-c10e-4c8b-b7ca-04cb2ca2fcf9
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -21,7 +22,7 @@ O comércio headless é baseado em API. Ele dissocia a lógica de negócios, bem
 
 A arquitetura headless é a separação técnica do head do restante do aplicativo comercial. O Adobe Commerce é totalmente headless com uma arquitetura dissociada que fornece todos os serviços e dados de comércio por meio de uma camada de API do GraphQL. Essa arquitetura permite que as equipes de front-end desenvolvam seus front-ends independentemente da Adobe Commerce, fornecendo agilidade para criar e testar rapidamente novos pontos de contato com tecnologias emergentes.
 
-As APIs do Adobe Commerce GraphQL também podem ser estendidas com microsserviços implantados na I/O Runtime do Adobe. Isso proporciona agilidade inigualável para integrar, estender e personalizar processos de negócios omnicanal sem exigir personalizações de código no back-end, o que garante que a plataforma principal possa ser facilmente atualizada sem afetar os pontos de contato de front-end. As APIs do Adobe Commerce GraphQL são de código aberto e fazem parte de nosso programa de engenharia da comunidade, com contribuições e supervisão significativas por parte de nossa comunidade de desenvolvedores.
+As APIs do Adobe Commerce GraphQL também podem ser estendidas com microsserviços implantados no Adobe I/O Runtime. Isso proporciona agilidade inigualável para integrar, estender e personalizar processos de negócios omnicanal sem exigir personalizações de código no back-end, o que garante que a plataforma principal possa ser facilmente atualizada sem afetar os pontos de contato de front-end. As APIs do Adobe Commerce GraphQL são de código aberto e fazem parte de nosso programa de engenharia da comunidade, com contribuições e supervisão significativas por parte de nossa comunidade de desenvolvedores.
 
 ![Diagrama da arquitetura de comércio headless](../../../assets/playbooks/headless-diagram.svg)
 

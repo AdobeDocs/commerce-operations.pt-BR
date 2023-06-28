@@ -3,9 +3,8 @@ title: Práticas recomendadas de escalonamento de parceiros
 description: Saiba como se preparar para escalonar um problema de parceiro com uma Equipe de conta do Adobe Adobe ou como evitar um escalonamento.
 role: User
 feature: Best Practices
-feature-set: Commerce
 exl-id: 9ead032b-93f5-4327-9f01-5320270025ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
