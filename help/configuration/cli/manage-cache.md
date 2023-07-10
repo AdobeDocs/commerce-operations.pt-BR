@@ -2,9 +2,9 @@
 title: Gerenciar o cache
 description: Gerenciar tipos de cache e exibir status do cache.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -119,15 +119,19 @@ Exemplo de resultado:
 
 ## Limpar e liberar tipos de cache
 
+>[!NOTE]
+>
+>O cache de várias páginas pode ser invalidado simultânea e automaticamente **_sem_** edição dessas entidades. Por exemplo, quando qualquer produto no catálogo é atribuído a qualquer categoria ou quando qualquer [!UICONTROL related product rule] foi modificado.
+
 Para limpar itens desatualizados do cache, você pode _limpar_ ou _liberar_ tipos de cache:
 
 - A limpeza de um tipo de cache exclui todos os itens somente dos tipos de cache do Commerce ativados. Em outras palavras, essa opção não afeta outros processos ou aplicativos porque ela limpa somente o cache que o Commerce usa.
 
-   Os tipos de cache desativados não são limpos.
+  Os tipos de cache desativados não são limpos.
 
-   >[!TIP]
-   >
-   >Sempre limpe o cache após atualizar as versões do Magento Open Source ou do Adobe Commerce, atualizar do Magento Open Source para o Adobe Commerce ou instalar B2B para o Adobe Commerce ou qualquer módulo.
+  >[!TIP]
+  >
+  >Sempre limpe o cache após atualizar as versões do Magento Open Source ou do Adobe Commerce, atualizar do Magento Open Source para o Adobe Commerce ou instalar B2B para o Adobe Commerce ou qualquer módulo.
 
 - A limpeza de um tipo de cache limpa o armazenamento em cache, o que pode afetar outros aplicativos de processos que estejam usando o mesmo armazenamento.
 
