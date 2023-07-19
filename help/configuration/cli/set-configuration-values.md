@@ -2,9 +2,9 @@
 title: Definir valores de configuração
 description: Saiba como definir valores de configuração e alterar valores bloqueados no Administrador.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 064be78a16142fc18bf64256eafde4b14c3ad529
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Para definir um valor de configuração, você deve saber pelo menos um dos segu
 - O caminho de configuração
 - Para definir um valor de configuração para um escopo específico, você deve saber o código do escopo.
 
-   Para definir um valor de configuração para o escopo padrão, não é necessário fazer nada.
+  Para definir um valor de configuração para o escopo padrão, não é necessário fazer nada.
 
 ### Encontrar o caminho de configuração
 
@@ -289,3 +289,8 @@ Resultado:
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>O código do escopo pode incluir somente letras (a-z ou A-Z), números (0-9) e sublinhados (_). Além disso, o primeiro caractere deve ser uma letra. Se forem usadas maiúsculas ou minúsculas como camelo ao criar uma nova visualização de site ou loja, internamente, a correspondência não diferencia maiúsculas de minúsculas para acomodar a substituição das definições de configuração por meio de variáveis de ambiente. Consulte [Usar variáveis de ambiente para substituir as definições de configuração](../reference/override-config-settings.md#environment-variables).
+

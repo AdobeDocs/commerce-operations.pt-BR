@@ -2,9 +2,9 @@
 title: Configurar vários sites, lojas e visualizações de loja no Administrador
 description: Configure sites, lojas e visualizações de loja adicionais no Administrador do Commerce.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 5860f5327003372909c425c13c6d03166288d903
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -172,3 +172,8 @@ Para alterar o URL de base da exibição de loja padrão:
    >Se você estiver configurando um URL de base para o Adobe Commerce na infraestrutura em nuvem, substitua o primeiro período por três traços. Por exemplo, se o URL base for `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, insira `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
 
 1. Clique em **Salvar configuração**.
+
+
+>[!INFO]
+>
+>O código de exibição do site, da loja e da loja pode incluir somente letras (a-z ou A-Z), números (0-9) e sublinhados (_). Além disso, o primeiro caractere deve ser uma letra. Se forem usadas maiúsculas e minúsculas ou camelcase, internamente, a correspondência não diferenciará maiúsculas de minúsculas para acomodar a substituição das definições de configuração por meio de variáveis de ambiente. Consulte [Usar variáveis de ambiente para substituir as definições de configuração](../reference/override-config-settings.md#environment-variables).
