@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 7649f4ffb0a04053d9a674aae7c29eb09ed02006
+source-git-commit: aa52895b45363ca0fb3585f603bfe66a73803427
 workflow-type: tm+mt
-source-wordcount: '13737'
+source-wordcount: '13735'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ A variável [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 * **ACSD-51907** (para Adobe Commerce >=2.4.2 &lt;2.4.3) - Corrige o problema em que um usuário administrador restrito não consegue criar um memorando de crédito com um reembolso offline.
 * **ACSD-52148** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.4) - Corrige o problema em que a variável [!DNL Google V3 reCAPTCHA] Ocasionalmente, o logon do administrador falha.
 * **ACSD-51431** (para Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7) - Corrige o problema em que o status de um indexador é *trabalhando* mesmo se não houver novas entradas no changelog.
-* **ACSD-51892** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige o problema de desempenho em que os arquivos de configuração são carregados várias vezes durante a implantação.
+* **ACSD-51892** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige o problema de desempenho em que os arquivos de configuração são carregados várias vezes.
 * ACSD-51114 obsoleto.
 
 ## v1.1.32 {#v1-1-32}
