@@ -3,9 +3,9 @@ title: Modifique docroot para melhorar a segurança
 description: Impeça o acesso não autorizado baseado em navegador ao sistema de arquivos local Adobe Commerce ou Magento Open Source.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ server {
 
 ## Antes de começar
 
-Para concluir este tutorial, você precisa acessar uma instalação em execução em um [LÂMPADA](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) pilha:
+Para concluir este tutorial, você precisa acessar uma instalação em funcionamento em uma pilha de LAMP:
 
 - Linux
 - Apache (2.4+)
