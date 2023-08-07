@@ -3,9 +3,9 @@ title: Segurança da infraestrutura em nuvem
 description: Saiba mais sobre como mantemos a segurança do Adobe Commerce na infraestrutura em nuvem.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: d05629ef21608a017cfbbfcf05e9507375689fa2
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Os clientes podem usar túneis SSH para proteger as comunicações com o aplicat
 O EBS (Elastic Block Store) da Amazon é usado para armazenamento. Todos os volumes EBS são criptografados usando o algoritmo AES-265. Isso significa que os dados serão criptografados em repouso. O sistema também criptografa dados em trânsito entre a CDN e a origem e entre os servidores de origem. As senhas do cliente são armazenadas como hashes. As credenciais confidenciais, incluindo as do gateway de pagamento, são criptografadas usando o algoritmo SHA-256.
 
 O aplicativo Adobe Commerce não oferece suporte à criptografia no nível da coluna ou da linha quando os dados não estão em repouso ou não estão em trânsito entre servidores. O cliente pode gerenciar chaves de criptografia no aplicativo. As chaves usadas pelo sistema são armazenadas no Sistema de Gerenciamento de Chaves da AWS e devem ser gerenciadas pela Managed Services para fornecer partes do serviço.
+
+## Detecção e resposta de endpoint
+
+[!DNL CrowdStrike Falcon], um agente leve de detecção e resposta de endpoint (EDR) de última geração que é instalado em todos os endpoints (incluindo servidores) no Adobe, protege nossos dados e nossos sistemas com monitoramento e coleta contínuos em tempo real, o que nos permite identificar e responder rapidamente às ameaças.
 
 ## Teste de penetração
 
