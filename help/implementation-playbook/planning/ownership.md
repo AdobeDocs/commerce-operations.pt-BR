@@ -3,7 +3,7 @@ title: Responsabilidade e propriedade
 description: Defina as funções e responsabilidades do projeto para garantir uma implementação bem-sucedida do Adobe Commerce.
 exl-id: 206b6e3b-6dee-442e-a2ba-7867b2494b75
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 87c1570e8d215d6eaf233d50fc7e3432f66290fc
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -15,7 +15,6 @@ ht-degree: 0%
 Ao executar um grande projeto, tudo parece estar indo bem no início. O roteiro do projeto é detalhado e abrangente, com marcos claros. Os planos de recursos e os compromissos das partes interessadas estão em vigor. No entanto, em breve as coisas podem começar a desmoronar com prazos errados e tarefas esquecidas.
 
 Isso acontece frequentemente devido à falta de clareza sobre as funções e responsabilidades do projeto. Funções e responsabilidades claras são um fator crítico de sucesso para qualquer projeto. Sem eles, os projetos podem descarrilar rapidamente e as partes interessadas ficam tentando administrar por métodos excepcionais com excesso de tempo/orçamento.
-
 
 ## Como nós colaboramos coletivamente?
 
