@@ -2,9 +2,9 @@
 title: Como funcionam os patches
 description: Saiba mais sobre os diferentes tipos de patches para Adobe Commerce e Magento Open Source e como eles funcionam.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 915cac8c8d436105c4ae25f95bcaefbe19cc50c1
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/com
 
 Às vezes demora um pouco para a Equipe de engenharia de Adobe incluir uma correção de erro feita no GitHub em uma versão do Adobe Commerce ou do Magento Open Source Composer. Enquanto isso, você pode criar um patch do GitHub e usar o [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) para aplicá-lo à sua instalação baseada no Composer.
 
-Use o [linha de comando] ou [Compositor] para aplicar patches personalizados.
+Use o [linha de comando](apply.md#command-line) ou [Compositor](apply.md#composer) para aplicar patches personalizados.
 
 Há muitas maneiras de criar arquivos de patch personalizados. O exemplo a seguir se concentra na criação de um patch a partir de uma Git Commit conhecida.
 
@@ -96,4 +96,4 @@ Você pode aplicar patches usando qualquer um dos métodos a seguir:
 
 >[!NOTE]
 >
->Para aplicar um patch a um projeto do Adobe Commerce na infraestrutura em nuvem, consulte [Aplicar patches](https://devdocs.magento.com/cloud/project/project-patch.html) no _Guia da nuvem_.
+>Para aplicar um patch a um projeto do Adobe Commerce na infraestrutura em nuvem, consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no _Guia do Commerce na nuvem_.
