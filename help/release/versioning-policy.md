@@ -2,9 +2,9 @@
 title: Política de lançamento
 description: Saiba mais sobre os diferentes tipos de versões do Adobe Commerce, incluindo versões secundárias, patches, patches de segurança, recursos, hotfixes, patches individuais e patches personalizados.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Commerce e Magento Open Source usam [controle de versão semântico](https
       - Correção de erro de segurança
       - Aprimoramento de segurança
 - **Versão de patch BETA**—2.4.7-beta1
-- **Lançamento de recurso**
+- **Extensibilidade, infraestrutura e versão de serviços**
 - **Hotfix**
 - **Patch individual**
 - **Correção personalizada**
@@ -48,7 +48,7 @@ As seguintes diretrizes se aplicam às versões de patch:
 
 **Correção de erros de segurança**: uma alteração de código de software que resolve um problema de segurança identificado e fornece os resultados esperados em uma área de produto afetada. Essas correções geralmente são compatíveis com versões anteriores.
 
-**Aprimoramento de segurança**: melhoria ou alteração de configuração do software para melhorar proativamente a segurança no aplicativo. Esses aprimoramentos de segurança ajudam a lidar com riscos de segurança que afetam a postura de segurança do aplicativo do Adobe Commerce, mas que podem ser incompatíveis com versões anteriores.
+**Aprimoramento de segurança**: melhoria ou alteração de configuração do software para melhorar proativamente a segurança no aplicativo. Esses aprimoramentos de segurança ajudam a tratar de riscos de segurança que afetam a postura de segurança do aplicativo do Adobe Commerce, mas que podem ser incompatíveis com versões anteriores.
 
 Com as versões de patch de segurança, você pode manter seu site mais seguro sem aplicar correções de qualidade e aprimoramentos adicionais contidos em uma versão de patch completa. As versões de patch de segurança são anexadas com &quot;-pN&quot;, onde N é a versão de patch incremental que começa com 1 (por exemplo, 2.3.5-p1). As versões de patch de segurança também podem incluir hotfixes necessários para resolver problemas críticos que afetam o aplicativo Adobe Commerce.
 
@@ -62,9 +62,9 @@ As versões de disponibilidade pré-geral dos recursos do Adobe Commerce são di
 
 As versões beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. O Adobe não terá nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte Adobe ou de outra forma) às versões Beta. Os clientes são aconselhados a ter cuidado e não depender de forma alguma do funcionamento ou desempenho correto das versões Beta e/ou de qualquer documentação ou material que as acompanhe. Portanto, qualquer uso das Versões Beta é totalmente de responsabilidade do Cliente.
 
-## Lançamento de recurso
+## Extensibilidade, infraestrutura e versão de serviços
 
-As versões de recursos contêm novos recursos e atualizações de recursos fornecidos como serviços independentes, separados das versões de patches. Os exemplos incluem serviços como o Recommendations de produto e o Live Search, módulos independentes como o PWA Studio e o Inventory management (MSI), além de atualizações em nossos serviços e infraestrutura em nuvem.
+Versões de recursos que contêm novos recursos e atualizações de recursos fornecidos como serviços independentes, separados das versões de patches. Exemplos incluem tecnologia de extensibilidade, como malha de API e evento, produtos SaaS, como Recommendations de produto e Live Search, módulos independentes, como B2B e PWA Studio, e atualizações em nossos serviços e infraestrutura de hospedagem em nuvem.
 
 ## Hotfix
 
