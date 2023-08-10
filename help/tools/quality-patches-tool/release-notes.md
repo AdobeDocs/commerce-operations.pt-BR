@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: aa52895b45363ca0fb3585f603bfe66a73803427
+source-git-commit: da0c85a9f1b0ac0a3176ca5f6ef5904834e8d37e
 workflow-type: tm+mt
-source-wordcount: '13735'
+source-wordcount: '13965'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ A variável [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte a [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.36 {#v1-1-36}
+
+* **ACSD-53239** (para Adobe Commerce e Magento Open Source >=2.4.3 &lt; 2.4.6) - Corrige o problema em que o indexador de inventário limpa todos os caches no modo Atualização programada.
+* **ACSD-50887** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.7) - Corrige o problema em que a propriedade de atributo do produto *[!UICONTROL Use in Search Results Layered Navigation]* pode ser definido como *Sim* sem o *[!UICONTROL Use in search]* opção definida como *Sim*.
+* **ACSD-51846** (para Adobe Commerce e Magento Open Source >=2.4.3-p2 &lt;2.4.6) - Corrige a *Erro interno* Problema que ocorre porque nem todos os níveis de carga da API REST são validados.
+* **ACSD-52906** (para Adobe Commerce >=2.3.7 &lt;2.4.7) - Corrige o problema em que o cookie X-Magento-Vary é definido incorretamente para clientes conectados que pertencem ao mesmo segmento de cliente, causando cache inadequado para algumas páginas.
+* **ACSD-52736** (para Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.6) - Corrige o problema em que uma *Regra de preço do carrinho* que inclui requisitos para a quantidade configurável do produto não funciona conforme esperado.
+* **ACSD-47875** (para Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7) - Corrige o problema em que os usuários administradores não conseguem adicionar um produto a um carrinho do cliente do Administrador para um escopo de exibição de loja específico com gerenciamento de inventário.
+* **ACSD-53176** (para Adobe Commerce >=2.3.7 &lt;2.4.5) - Corrige o problema em que *Regra de produto relacionada* com *é um de* A condição não corresponde aos produtos.
+* **ACSD-51666** (para Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7) - Corrige o erro *A sessão expirou. Faça logon novamente.* isso acontece depois que um cliente tenta fazer logon.
+* Adição de novas versões para MDVA-39305-v2.
+* Atualização dos requisitos para o ACSD-19640.
 
 ## v1.1.35 {#v1-1-35}
 
