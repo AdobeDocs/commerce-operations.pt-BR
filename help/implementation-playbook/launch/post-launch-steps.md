@@ -1,6 +1,6 @@
 ---
 title: Etapas pós-lançamento
-description: Use nossa lista de verificação pós-lançamento para garantir uma implementação perfeita do site do Adobe Commerce.
+description: Use nossa lista de verificação pós-lançamento para garantir uma implementação tranquila do site do Adobe Commerce.
 exl-id: 0c3162d9-6475-4b34-9278-e5aea39bd0f9
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9

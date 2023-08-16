@@ -33,12 +33,12 @@ As seções a seguir fornecem recomendações e considerações para cada seçã
 
 * A [!DNL Varnish] cluster pode ser dimensionado para o tráfego de um site
 * Ajuste o tamanho da instância com base no número de páginas de cache necessárias
-* Em um site de alto tráfego, use um [!DNL Varnish] Principal para garantir a liberação de uma solicitação (no máximo) por camada da Web no cache
+* Em um site de alto tráfego, use um [!DNL Varnish] Mestre para garantir a liberação de uma solicitação (no máximo) por camada da Web no cache
 
 ### Web
 
 * Ativar escala de nós para tráfego e redundância
-* Um nó é principal e executa o cron
+* Um nó é mestre e executa cron
 * Como alternativa, use nós de administrador e trabalhador dedicados
 
 ### Cache

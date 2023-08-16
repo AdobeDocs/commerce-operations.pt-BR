@@ -19,7 +19,7 @@ ht-degree: 0%
 
 O Adobe Commerce pode ler vários bancos de dados de forma assíncrona. Se você espera uma carga alta para o banco de dados MySQL de um site do Commerce implantado na arquitetura Pro da infraestrutura em nuvem, o Adobe recomenda habilitar a conexão slave MYSQL.
 
-Quando você ativa a conexão slave do MYSQL, o Adobe Commerce usa uma conexão somente leitura com o banco de dados para receber tráfego somente leitura em um nó não principal. O desempenho melhora por meio do balanceamento de carga quando apenas um nó lida com o tráfego de leitura-gravação.
+Quando você ativa a conexão slave do MYSQL, o Adobe Commerce usa uma conexão somente leitura com o banco de dados para receber tráfego somente leitura em um nó não mestre. O desempenho melhora por meio do balanceamento de carga quando apenas um nó lida com o tráfego de leitura-gravação.
 
 ## Versões afetadas
 

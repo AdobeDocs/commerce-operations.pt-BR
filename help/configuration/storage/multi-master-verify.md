@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-Após a configuração, os bancos de dados principais são configurados da seguinte maneira:
+Após a configuração, os bancos de dados mestres são configurados da seguinte maneira:
 
 - Banco de dados principal do Commerce: 369 tabelas
 - Banco de dados de cotação do Commerce: 11 tabelas

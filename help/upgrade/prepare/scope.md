@@ -72,9 +72,9 @@ Algumas outras opções para usar com este comando são:
 
 - `--vanilla-dir`—Permite verificar o código principal para qualquer implementação não padrão de recursos ou personalizações. É importante que estes sejam limpos antecipadamente. Uma instância padrão da sua versão é baixada automaticamente para referência.
 
-   >[!NOTE]
-   >
-   > Isso também pode ser feito com o `core:code:changes` na ferramenta).
+  >[!NOTE]
+  >
+  > Isso também pode ser feito com o `core:code:changes` na ferramenta).
 
 ### Analisar a saída
 

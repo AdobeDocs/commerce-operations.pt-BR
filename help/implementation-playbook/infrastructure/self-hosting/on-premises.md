@@ -39,7 +39,7 @@ Vamos nos aprofundar nas funções de cada aspecto da infraestrutura mostrada ac
 
 1. O Amazon ElastiCache for Redis fornece uma camada de cache para o banco de dados.
 
-1. Use o Amazon Aurora ou AmazonRDS para simplificar a administração do banco de dados (incluindo alta disponibilidade e configuração multiprincipal).
+1. Use o Amazon Aurora ou AmazonRDS para simplificar a administração do banco de dados (incluindo alta disponibilidade e configuração multimestre).
 
 1. O EFSMount Target facilita o mapeamento do Amazon Elastic File System (AmazonEFS) para instâncias de Verniz e Adobe Commerce.
 

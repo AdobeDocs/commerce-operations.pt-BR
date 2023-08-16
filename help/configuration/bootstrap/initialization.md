@@ -101,7 +101,7 @@ Quando a solicitação é redirecionada para o ponto de entrada, o aplicativo Co
 - Entrada [desenvolvedor](application-modes.md#developer-mode) , o conteúdo do arquivo é retornado para que, sempre que o recurso for solicitado, o conteúdo retornado esteja atualizado.
 - Entrada [padrão](application-modes.md#default-mode) , o recurso recuperado é publicado para ser acessível pela URL solicitada anteriormente.
 
-   Todas as solicitações futuras do recurso estático são processadas pelo servidor da mesma forma que os arquivos estáticos; ou seja, sem envolver o ponto de entrada. Se for necessário sincronizar os arquivos publicados com os originais, a variável `pub/static` O diretório deve ser removido; como resultado, os arquivos são automaticamente republicados com a próxima solicitação.
+  Todas as solicitações futuras do recurso estático são processadas pelo servidor da mesma forma que os arquivos estáticos; ou seja, sem envolver o ponto de entrada. Se for necessário sincronizar os arquivos publicados com os originais, a variável `pub/static` O diretório deve ser removido; como resultado, os arquivos são automaticamente republicados com a próxima solicitação.
 
 ### Ponto de entrada do recurso de mídia
 

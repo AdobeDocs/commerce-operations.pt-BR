@@ -16,7 +16,7 @@ Os recursos do Redis incluem:
 
 - Armazenamento de sessão PHP
 - Limpeza do cache com base em tags sem `foreach` loops
-- Salvamentos no disco e replicação principal/escrava
+- Salvamentos no disco e replicação mestre/escravo
 
 ## Instalar Redis
 

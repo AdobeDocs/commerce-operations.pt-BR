@@ -20,7 +20,7 @@ Um OMS fornece integração e automação por meio da jornada de pedidos do clie
 
 Um OMS é importante para um site de comércio eletrônico porque ajuda as marcas a crescerem. Os clientes têm altas expectativas, o que não deixa espaço para erros. Alguns motivos pelos quais um OMS é essencial incluem:
 
-- **Fornece entrega mais rápida**— Em uma era de envio no próximo dia ou em 2 dias, as empresas precisam procurar maneiras de enviar seus pedidos mais rapidamente à medida que a janela para concluir pedidos está se tornando menor. Um OMS é notificado imediatamente quando um pedido é feito, e o OMS pode escolher o depósito mais próximo do destino do pedido para ajudar a acelerar a entrega. O OMS envia informações automatizadas da ordem para a equipe do depósito para preparar e embalar a ordem para entrega usando um método de entrega econômico.
+- **Fornece entrega mais rápida**— Em uma era de envio no próximo dia ou em 2 dias, as empresas precisam procurar maneiras de enviar seus pedidos mais rapidamente à medida que a janela para concluir pedidos está se tornando mais estreita. Um OMS é notificado imediatamente quando um pedido é feito, e o OMS pode escolher o depósito mais próximo do destino do pedido para ajudar a acelerar a entrega. O OMS envia informações automatizadas da ordem para a equipe do depósito para preparar e embalar a ordem para entrega usando um método de entrega econômico.
 
 - **Erros limitados**: um OMS ajuda a reduzir os erros humanos. Esses erros podem ser demorados e caros. Um OMS notifica a equipe quando os níveis de inventário estão baixos, quando um produto não está sendo vendido ou qual produto tem a maior taxa de devolução. Isso ajuda a empresa a corrigir erros de entrega e analisar o motivo das devoluções.
 

@@ -114,11 +114,11 @@ As seguintes opções estão disponíveis:
 
 - `1`—Os consumidores continuam a processar mensagens da fila de mensagens até chegar ao `max_messages` valor especificado na variável `env.php` antes de fechar a conexão TCP e encerrar o processo do consumidor. Se a fila ficar vazia antes de atingir o `max_messages` , o consumidor aguarda mais mensagens chegarem.
 
-   Recomendamos essa configuração para grandes comerciantes, pois é esperado um fluxo de mensagens constante e não são desejáveis atrasos no processamento.
+  Recomendamos essa configuração para grandes comerciantes, pois é esperado um fluxo de mensagens constante e não são desejáveis atrasos no processamento.
 
 - `0`—Os consumidores processam as mensagens disponíveis na fila, fecham a conexão TCP e terminam. Os consumidores não esperam que mensagens adicionais entrem na fila, mesmo se o número de mensagens processadas for menor que o `max_messages` valor especificado na variável `env.php` arquivo. Isso pode ajudar a evitar problemas com tarefas cron causados por longos atrasos no processamento da fila de mensagens.
 
-   Recomendamos essa configuração para comerciantes menores que não esperam um fluxo constante de mensagens e preferem conservar recursos de computação em troca de pequenos atrasos de processamento, quando não poderia haver mensagens por dias.
+  Recomendamos essa configuração para comerciantes menores que não esperam um fluxo constante de mensagens e preferem conservar recursos de computação em troca de pequenos atrasos de processamento, quando não poderia haver mensagens por dias.
 
 ## cron
 

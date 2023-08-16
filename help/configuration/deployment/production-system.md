@@ -69,7 +69,7 @@ Esta seção discute como definir valores confidenciais no sistema de produção
 Para definir valores confidenciais:
 
 1. Encontre um valor para definir usando o [referência de valor sensível](../reference/config-reference-sens.md).
-1. Observe o caminho de configuração da configuração.
+1. Anote o caminho de configuração para a configuração.
 1. Faça logon no sistema de produção como proprietário do sistema de arquivos ou alterne para ele.
 1. Altere para o diretório de instalação do Commerce.
 1. Digite o seguinte comando:

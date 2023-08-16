@@ -100,20 +100,20 @@ Para definir as configurações confidenciais e específicas do sistema usando v
 
 - Escopo para cada configuração
 
-   Se você seguiu as instruções na Etapa 1, o escopo para Enviar emails para é global (ou seja, o escopo Configuração padrão) e o escopo para Domínio de email padrão é site.
+  Se você seguiu as instruções na Etapa 1, o escopo para Enviar emails para é global (ou seja, o escopo Configuração padrão) e o escopo para Domínio de email padrão é site.
 
-   Você deve saber o código do site para definir o valor de configuração do Domínio de email padrão. Consulte [Usar variáveis de ambiente para substituir as definições de configuração](../reference/override-config-settings.md#environment-variables) para obter mais informações sobre como encontrá-lo.
+  Você deve saber o código do site para definir o valor de configuração do Domínio de email padrão. Consulte [Usar variáveis de ambiente para substituir as definições de configuração](../reference/override-config-settings.md#environment-variables) para obter mais informações sobre como encontrá-lo.
 
 - Caminho de configuração para cada configuração
 
-   Os caminhos de configuração usados neste exemplo seguem:
+  Os caminhos de configuração usados neste exemplo seguem:
 
-   | Nome da configuração | Caminho de configuração |
-   |--------------|--------------|
-   | Enviar Emails Para | `contact/email/recipient_email` |
-   | Domínio de email padrão | `customer/create_account/email_domain` |
+  | Nome da configuração | Caminho de configuração |
+  |--------------|--------------|
+  | Enviar Emails Para | `contact/email/recipient_email` |
+  | Domínio de email padrão | `customer/create_account/email_domain` |
 
-   Você pode encontrar todos os caminhos de configuração confidenciais e específicos do sistema em [Referência de caminhos de configuração sensíveis e específicos do sistema](../reference/config-reference-sens.md).
+  Você pode encontrar todos os caminhos de configuração confidenciais e específicos do sistema em [Referência de caminhos de configuração sensíveis e específicos do sistema](../reference/config-reference-sens.md).
 
 #### Converter caminhos de configuração em nomes de variáveis
 

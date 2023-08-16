@@ -1,11 +1,11 @@
 ---
 title: Programação de lançamento
-description: Saiba quando a Adobe planeja anunciar o lançamento de novos recursos substanciais para o Adobe Commerce.
+description: Saiba quando a Adobe planeja anunciar o lançamento de novos recursos importantes para o Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -63,7 +63,7 @@ A tabela a seguir fornece as datas das versões programadas (as datas estão suj
   </tr>
   <tr>
     <td>19 de março de 2024</td>
-    <td>--</td>
+    <td>—</td>
     <td><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Patch beta</a>: 2.4.7-beta3</td>
   </tr>
   <tr>

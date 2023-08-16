@@ -5,7 +5,7 @@ exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,6 @@ A tabela a seguir discute os parâmetros de inicialização que você pode defin
 >
 >- Nem todos os parâmetros de inicialização estão documentados.
 >- Agora, defina o modo do aplicativo (desenvolvedor, padrão, produção) usando a variável [`magento deploy:mode:set {mode}`](../cli/set-mode.md) comando.
-
 
 ## Definir parâmetros usando uma variável de ambiente
 

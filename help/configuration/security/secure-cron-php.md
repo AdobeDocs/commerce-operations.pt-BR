@@ -6,7 +6,7 @@ exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -299,7 +299,7 @@ Onde:
 - `<your hostname or IP>` é o nome do host ou endereço IP da sua instalação do Commerce
 - `<Commerce root>` é o diretório relativo ao docroot do servidor Web no qual você instalou o software Commerce
 
-   O URL exato que você usa para executar o aplicativo Commerce depende de como você configurou o servidor Web e o host virtual.
+  O URL exato que você usa para executar o aplicativo Commerce depende de como você configurou o servidor Web e o host virtual.
 
 - `<group name>` é qualquer nome de grupo cron válido (opcional)
 

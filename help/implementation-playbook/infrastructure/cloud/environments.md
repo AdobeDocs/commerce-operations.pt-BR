@@ -14,13 +14,13 @@ ht-degree: 0%
 
 A arquitetura Pro do Adobe Commerce na infraestrutura em nuvem é compatível com ambientes que você pode usar para desenvolver, testar e iniciar sua loja. Cada ambiente contém um banco de dados e um servidor Web. Os quatro ambientes aproveitados pelo Adobe Commerce são:
 
-- **Integração**— fornece uma única ramificação de ambiente e você pode criar até quatro ramificações de ambiente adicionais. Isso permite um máximo de cinco ramificações ativas implantadas em contêineres PaaS (Platform-as-a-Service).
+- **Integração**— fornece uma única ramificação de ambiente e você pode criar até quatro ramificações de ambiente adicionais. Isso permite um máximo de cinco ramificações ativas implantadas em contêineres de Plataforma como serviço (PaaS).
 
 - **Estágios**— fornece uma única ramificação de ambiente implantada em contêineres IaaS (Infrastructure-as-a-Service, infraestrutura como serviço) dedicados.
 
 - **Produção**— fornece uma única ramificação de ambiente implantada em contêineres IaaS (Infrastructure-as-a-Service, infraestrutura como serviço) dedicados.
 
-- **Principal global**— Fornece uma ramificação principal implantada em contêineres PaaS (Platform-as-a-Service).
+- **Mestre Global**—Fornece uma ramificação mestre implantada em contêineres PaaS (Platform-as-a-Service).
 
 ![Diagrama que mostra a relação entre ambientes de nuvem do Adobe Commerce](../../../assets/playbooks/environment-diagram.svg)
 

@@ -87,7 +87,7 @@ Created Magento administrator user named j.doe
 
 ## Desbloquear uma conta de administrador
 
-Use este comando para desbloquear a conta de um administrador que foi bloqueada, normalmente devido a várias tentativas de login incorretas.
+Use esse comando para desbloquear a conta de um administrador que foi bloqueada, normalmente devido a várias tentativas de logon incorretas.
 
 ```bash
 bin/magento admin:user:unlock {username}

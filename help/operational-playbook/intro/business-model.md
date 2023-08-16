@@ -61,7 +61,7 @@ Atendimento ao cliente para B2C:
 
 | Variável | B2B | B2C |
 |----------|-----|-----|
-| Público | Empresas | Consumidores individuais |
+| Público-alvo | Empresas | Consumidores individuais |
 | Partes interessadas envolvidas na tomada de decisões | Representantes de vendas, gerentes | Consumidores finais individuais |
 | Volume de compra | Pedidos em massa | Volume pequeno |
 | Preço | Alterações dinâmicas de preço de acordo com o cliente, quantidade do produto e/ou prazos de pagamento | Preços consistentes |

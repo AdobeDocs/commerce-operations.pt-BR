@@ -29,19 +29,19 @@ Como resultado da execução do comando, os seguintes arquivos de configuração
 
 - `app/etc/config.php`
 
-   Esse é o arquivo de configuração compartilhado para todas as instâncias do Commerce.
+  Esse é o arquivo de configuração compartilhado para todas as instâncias do Commerce.
 Inclua isso no controle de origem para que ele possa ser compartilhado entre os sistemas de desenvolvimento, compilação e produção.
 
-   Consulte [referência config.php](../reference/config-reference-configphp.md).
+  Consulte [referência config.php](../reference/config-reference-configphp.md).
 
 - `app/etc/env.php`
 
-   Este é o arquivo de configuração específico do ambiente.
+  Este é o arquivo de configuração específico do ambiente.
 Ele contém configurações confidenciais e específicas do sistema para ambientes individuais.
 
-   Fazer _não_ incluir este arquivo no controle de origem.
+  Fazer _não_ incluir este arquivo no controle de origem.
 
-   Consulte [referência env.php](../reference/config-reference-envphp.md).
+  Consulte [referência env.php](../reference/config-reference-envphp.md).
 
 ## Configurações sensíveis ou específicas do sistema
 

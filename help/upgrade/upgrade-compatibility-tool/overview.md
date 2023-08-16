@@ -27,7 +27,7 @@ Você pode usar o [!DNL Upgrade Compatibility Tool] via:
 - Integrando o [!DNL Upgrade Compatibility Tool] com o [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
 - Uma configuração de execução dentro do [Plug- in PHPStorm para o MagentoName](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
-## Fluxo de trabalho
+## Fluxo de trabalho (WRK)
 
 O diagrama a seguir mostra os workflows possíveis ao executar o [!DNL Upgrade Compatibility Tool]:
 

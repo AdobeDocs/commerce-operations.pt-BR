@@ -15,13 +15,13 @@ Com a criação de perfil do Commerce, você pode:
 
 - Ative um profiler integrado.
 
-   Você pode usar um profiler integrado com o Commerce para executar tarefas, como analisar o desempenho. A natureza da criação de perfil depende das ferramentas analíticas que você usa. Oferecemos suporte para múltiplos formatos, inclusive o HTML. Quando você ativa o profiler, uma variável `var/profiler.flag` o arquivo é gerado indicando que o profiler está ativado e as configurações. Quando desativado, este arquivo é excluído.
+  Você pode usar um profiler integrado com o Commerce para executar tarefas, como analisar o desempenho. A natureza da criação de perfil depende das ferramentas analíticas que você usa. Oferecemos suporte para múltiplos formatos, inclusive o HTML. Quando você ativa o profiler, uma variável `var/profiler.flag` o arquivo é gerado indicando que o profiler está ativado e as configurações. Quando desativado, este arquivo é excluído.
 
 - Exiba gráficos de dependência em uma página do Commerce.
 
-   A _gráfico de dependências_ é uma lista de dependências de objetos e todas as suas dependências, todas as dependências para essas dependências e assim por diante.
+  A _gráfico de dependências_ é uma lista de dependências de objetos e todas as suas dependências, todas as dependências para essas dependências e assim por diante.
 
-   Você deve estar particularmente interessado na lista de _dependências não utilizadas_, que são objetos criados porque foram solicitados em algum construtor, mas nunca foram usados (ou seja, nenhum de seus métodos foi chamado). Como resultado, o tempo e a memória do processador gastos para criar essas dependências são desperdiçados.
+  Você deve estar particularmente interessado na lista de _dependências não utilizadas_, que são objetos criados porque foram solicitados em algum construtor, mas nunca foram usados (ou seja, nenhum de seus métodos foi chamado). Como resultado, o tempo e a memória do processador gastos para criar essas dependências são desperdiçados.
 
 O Commerce fornece a funcionalidade básica do [`Magento\Framework\Profiler`][profiler].
 
@@ -35,16 +35,16 @@ Você pode ativar e configurar o profiler usando uma variável MAGE_PROFILER ou 
 
 - `1` para ativar a saída de um profiler específico.
 
-   Você pode usar um dos valores a seguir para ativar um profiler específico:
+  Você pode usar um dos valores a seguir para ativar um profiler específico:
 
    - `csvfile` que usa [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
    - Qualquer outro valor (exceto `2`), incluindo um valor vazio, que usa [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
 
 - `2` para ativar gráficos de dependência.
 
-   Os gráficos de dependência normalmente são exibidos na parte inferior de uma página. A figura a seguir mostra parte da saída:
+  Os gráficos de dependência normalmente são exibidos na parte inferior de uma página. A figura a seguir mostra parte da saída:
 
-   ![Gráficos de dependência](../../assets/configuration/depend-graphs.png)
+  ![Gráficos de dependência](../../assets/configuration/depend-graphs.png)
 
 ## Comandos da CLI
 

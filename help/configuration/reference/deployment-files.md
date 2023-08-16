@@ -17,7 +17,7 @@ O Adobe Commerce fornece arquivos de configuração que permitem personalizar fa
 - `app/etc/config.php` é o _compartilhado_ arquivo de configuração.
 Esse arquivo contém a lista de módulos, temas e pacotes de idioma instalados e as configurações compartilhadas.
 
-   Inclua esse arquivo no controle de origem e use-o em seus sistemas de desenvolvimento, preparo e produção.
+  Inclua esse arquivo no controle de origem e use-o em seus sistemas de desenvolvimento, preparo e produção.
 
 - `app/etc/env.php` contém configurações específicas para o ambiente de instalação.
 
@@ -27,7 +27,7 @@ Juntos, `config.php` e `env.php` são designados por comércio _configuração d
 >
 >A variável [!DNL Commerce 2] a configuração de implantação substitui `local.xml` in [!DNL Magento 1.x].
 
-Ao contrário de outras [arquivos de configuração do módulo](../reference/module-files.md), a configuração de implantação do Commerce é carregada na memória quando, durante a inicialização, não é mesclada com outros arquivos e não pode ser estendida. (`config.php` e `env.php` são mesclados, no entanto.)
+Ao contrário de outras [arquivos de configuração do módulo](../reference/module-files.md), a configuração de implantação do Commerce é carregada na memória quando, durante a inicialização, não é mesclada com outros arquivos e não pode ser estendida. (`config.php` e `env.php` são mesclados uns com os outros, no entanto.)
 
 ## Detalhes sobre a configuração de implantação
 

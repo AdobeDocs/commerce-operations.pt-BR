@@ -49,17 +49,17 @@ O formato geral dos nomes das variáveis de configurações do sistema é o segu
 
 - Escopo global (ou seja, a configuração global para _all_ escopos)
 
-   As variáveis de escopo globais têm o seguinte formato:
+  As variáveis de escopo globais têm o seguinte formato:
 
-   `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
 
 - Um escopo específico (ou seja, a configuração afeta apenas uma exibição de loja ou site especificado)
 
-   As variáveis de escopo de visualização de armazenamento, por exemplo, têm o seguinte formato:
+  As variáveis de escopo de visualização de armazenamento, por exemplo, têm o seguinte formato:
 
-   `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
 
-   Para obter mais informações sobre escopos, consulte:
+  Para obter mais informações sobre escopos, consulte:
 
    - [Etapa 1: Localizar o valor do escopo de exibição do site ou da loja](#step-1-find-the-website-or-store-view-scope-value)
    - [Tópico do Guia do usuário do Commerce sobre escopo](https://docs.magento.com/user-guide/configuration/scope.html)
@@ -97,11 +97,11 @@ Como ler a tabela:
 
 - `Path in Admin` coluna
 
-   Os valores antes da vírgula são caminhos na navegação de Admin. Os valores depois da vírgula são opções no painel direito.
+  Os valores antes da vírgula são caminhos na navegação de Admin. Os valores depois da vírgula são opções no painel direito.
 
 - `Variable name` column é o nome da variável de ambiente correspondente.
 
-   Você tem a opção de especificar valores do sistema para esses parâmetros de configuração como variáveis de ambiente, se desejar.
+  Você tem a opção de especificar valores do sistema para esses parâmetros de configuração como variáveis de ambiente, se desejar.
 
    - O nome inteiro da variável é sempre ALL CAPS
    - Iniciar um nome de variável com `CONFIG__` (observe dois caracteres sublinhados)

@@ -6,7 +6,7 @@ exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
@@ -98,7 +98,7 @@ Obtenha informações práticas sobre conceitos, processos, ferramentas e práti
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>Manual de implementação</strong></a>
-      <p>Saiba mais sobre as estratégias de planejamento e implementação de um site de Adobe Commerce bem-sucedido.</p>
+      <p>Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -106,7 +106,7 @@ Obtenha informações práticas sobre conceitos, processos, ferramentas e práti
        <img alt="Operações" src="../assets/icons/refresh.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>Playbook operacional</strong></a>
+      <a href="../operational-playbook/overview.md"><strong>Manual operacional</strong></a>
       <p>Saiba como preparar seus negócios operacionalmente para gerenciar um site de comércio eletrônico bem-sucedido.</p>
     </div>
   </td>

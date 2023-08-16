@@ -17,13 +17,13 @@ Se necessário, copie o existente `index.php` script de ponto de entrada para o 
 
 - Você está trabalhando em uma máquina de desenvolvimento (laptop, máquina virtual etc.)
 
-   Tarefas adicionais podem ser necessárias para implantar vários sites em um ambiente hospedado; verifique com seu provedor de hospedagem para obter mais informações.
+  Tarefas adicionais podem ser necessárias para implantar vários sites em um ambiente hospedado; verifique com seu provedor de hospedagem para obter mais informações.
 
-   Tarefas adicionais são necessárias para configurar a Adobe Commerce na infraestrutura em nuvem. Após concluir as tarefas discutidas neste tópico, consulte [Configurar vários sites ou lojas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) no _Guia do Commerce na infraestrutura em nuvem_.
+  Tarefas adicionais são necessárias para configurar a Adobe Commerce na infraestrutura em nuvem. Após concluir as tarefas discutidas neste tópico, consulte [Configurar vários sites ou lojas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) no _Guia do Commerce na infraestrutura em nuvem_.
 
 - Você usa um host virtual por site; o arquivo de configuração do host virtual é `/etc/httpd/httpd.conf`
 
-   Diferentes versões do Apache em diferentes sistemas operacionais configuram hosts virtuais de forma diferente. Consulte o [Documentação do Apache](https://httpd.apache.org/docs/2.4/vhosts) ou um administrador de rede se não tiver certeza de como configurar um host virtual.
+  Diferentes versões do Apache em diferentes sistemas operacionais configuram hosts virtuais de forma diferente. Consulte o [Documentação do Apache](https://httpd.apache.org/docs/2.4/vhosts) ou um administrador de rede se não tiver certeza de como configurar um host virtual.
 
 - O software Commerce é instalado em `/var/www/html/magento2`
 - Você tem dois sites diferentes do padrão:
@@ -111,7 +111,6 @@ A menos que tenha o DNS configurado para os URLs dos armazenamentos, você deve 
 >
 >- Tarefas adicionais podem ser necessárias para implantar vários sites em um ambiente hospedado; verifique com seu provedor de hospedagem para obter mais informações.
 >- Tarefas adicionais são necessárias para configurar o Adobe Commerce na infraestrutura em nuvem; consulte [Configurar vários sites ou lojas na nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) no _Guia do Commerce na infraestrutura em nuvem_.
-
 
 ### Solução de problemas
 

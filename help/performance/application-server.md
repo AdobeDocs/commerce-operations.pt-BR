@@ -2,9 +2,10 @@
 title: Servidor de aplicativos para APIs do GraphQL
 description: Siga estas instruções para habilitar o Servidor de Aplicativos para APIs do GraphQL na implantação do Adobe Commerce.
 badgeCoreBeta: label="2.4.7-beta1" type="informative"
-source-git-commit: 28bfc54e0f15ba4f4f941acc7d1fb4825702cdf3
+exl-id: 346cc722-131e-4ed0-bc8c-23c3a1e58258
+source-git-commit: f085c0a77fe59ff3b2d76abbd6965b6bc8ee69db
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -131,4 +132,3 @@ pecl install openswoole-22.0.0
 #### Resolver problemas com pcre2.h
 
 Para resolver problemas relacionados ao `pcre2.h`, symlink para o `pcre2.h` caminho para o diretório de extensão PHP instalado. Sua versão específica instalada do PHP e `pcr2.h` determina a versão específica do comando que deve ser usada.
-

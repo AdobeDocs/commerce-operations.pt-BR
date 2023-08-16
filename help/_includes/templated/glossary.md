@@ -988,11 +988,11 @@ _Atributos de termo:_
 * _Campo: negócios, programação_
 * _Sinônimos: Markdown_
 
-### ambiente principal
+### ambiente mestre
 
 _substantivo_
 
-No Adobe Commerce na infraestrutura em nuvem, os projetos Pro usam um ambiente ativo da Platform as a Service (PaaS) chamado principal, que inclui uma cópia do banco de dados do ambiente de produção e do servidor Web.
+No Adobe Commerce na infraestrutura em nuvem, os projetos Pro usam um ambiente ativo da Platform as a Service (PaaS) chamado mestre que inclui uma cópia do banco de dados do ambiente de produção e do servidor Web.
 
 _Atributos de termo:_
 

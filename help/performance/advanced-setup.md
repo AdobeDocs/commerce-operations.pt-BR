@@ -58,7 +58,7 @@ MAGENTO OPEN SOURCE e ADOBE [!DNL Commerce] filas de mensagens de suporte implem
 >
 >O recurso de banco de dados dividido foi [obsoleto](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) na versão 2.4.2 do Adobe Commerce. Consulte [Reverter de um banco de dados dividido para um único banco de dados](../configuration/storage/revert-split-database.md).
 
-O Adobe Commerce permite configurar o armazenamento de banco de dados escalável para atender às necessidades de uma empresa em crescimento. Você pode configurar três bancos de dados principais separados que atendem a domínios específicos:
+O Adobe Commerce permite configurar o armazenamento de banco de dados escalável para atender às necessidades de uma empresa em crescimento. Você pode configurar três bancos de dados mestres separados que atendem a domínios específicos:
 
 * Banco de Dados Principal (Catálogo)
 * Fazer check-out do banco de dados
@@ -66,13 +66,13 @@ O Adobe Commerce permite configurar o armazenamento de banco de dados escalável
 
 Para configurar bancos de dados adicionais, você deve criar um banco de dados vazio e executar um dos seguintes comandos:
 
-Para o BD Principal de check-out
+Para o BD Mestre de Check-out
 
 ```bash
 bin/magento setup:db-schema:split-quote
 ```
 
-Para OMS Principal DB
+Para OMS Master DB
 
 ```bash
 bin/magento setup:db-schema:split-sales
@@ -82,7 +82,7 @@ Esses comandos migram tabelas de domínio específicas do banco de dados princip
 
 Com bancos de dados separados para checkout e Order Management, é possível distribuir a carga entre os servidores de banco de dados. Você pode fazer mais check-outs e processar mais pedidos por segundo sem afetar a disponibilidade do catálogo e de outras operações. Recomendamos dividir bancos de dados por períodos de vendas rápidas ou ativas ou usá-los permanentemente para projetos naturalmente de alta carga. A migração de dados atuais entre bancos de dados deve ser executada sob a supervisão do administrador do sistema.  Não divida os bancos de dados enquanto estiver no modo de Produção.
 
-Além de bancos de dados principais, [!DNL Commerce] permite configurar vários bancos de dados subordinados (um para cada recurso de dados declarado no sistema). Um banco de dados subordinado serve como uma réplica completa do banco de dados principal ou de um dos bancos de dados principais do domínio. É emitido para operações de leitura em um recurso específico.
+Além dos bancos de dados mestre, [!DNL Commerce] permite configurar vários bancos de dados subordinados (um para cada recurso de dados declarado no sistema). Um banco de dados subordinado serve como uma réplica completa do banco de dados principal ou de um dos bancos de dados mestre do domínio. É emitido para operações de leitura em um recurso específico.
 
 Você pode adicionar um banco de dados subordinado executando o seguinte comando:
 
@@ -92,9 +92,9 @@ bin/magento setup:db-schema:add-slave
 
 Esse comando executa alterações de configuração, mas não configura a própria replicação. Isso deve ser feito manualmente.
 
-Depois de dividir seu banco de dados principal e definir bancos de dados escravos, [!DNL Commerce] O regula automaticamente as conexões com um banco de dados específico, tomando decisões com base no tipo de solicitação (POST, PUT, GET etc.) e no recurso de dados. Se [!DNL Commerce] No caso de suas extensões executarem operações de gravação em uma solicitação GET, o sistema alterna automaticamente a conexão do banco de dados escravo para o principal. Funciona da mesma forma com bancos de dados principais: assim que você trabalha com uma tabela relacionada a check-out, o sistema redireciona todas as consultas para um banco de dados específico. Enquanto isso, todas as consultas relacionadas ao catálogo irão para o banco de dados principal.
+Depois de dividir o banco de dados mestre e definir bancos de dados escravos, [!DNL Commerce] O regula automaticamente as conexões com um banco de dados específico, tomando decisões com base no tipo de solicitação (POST, PUT, GET etc.) e no recurso de dados. Se [!DNL Commerce] Para que suas extensões executem operações de gravação em uma solicitação GET, o sistema alterna automaticamente a conexão do banco de dados escravo para o mestre. Funciona da mesma forma com bancos de dados mestres: assim que você trabalha com uma tabela relacionada a check-out, o sistema redireciona todas as consultas para um banco de dados específico. Enquanto isso, todas as consultas relacionadas ao catálogo irão para o banco de dados principal.
 
-Para obter mais detalhes sobre a configuração e os benefícios de várias configurações principais/secundárias, consulte
+Para obter mais detalhes sobre a configuração e os benefícios de várias configurações mestre/escravo, consulte
 [Solução de desempenho de banco de dados dividido](../configuration/storage/multi-master.md).
 
 ## Veicular conteúdo de mídia

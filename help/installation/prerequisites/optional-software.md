@@ -126,9 +126,9 @@ Se um erro 404 (Não encontrado) for exibido, verifique o seguinte:
 * Inicie o servidor Web, se necessário.
 * Verifique se o firewall permite o tráfego na porta 80.
 
-   [Ajuda do Ubuntu](https://help.ubuntu.com/community/UFW)
+  [Ajuda do Ubuntu](https://help.ubuntu.com/community/UFW)
 
-   [Ajuda do CentOS](https://wiki.centos.org/HowTos/Network/IPTables)
+  [Ajuda do CentOS](https://wiki.centos.org/HowTos/Network/IPTables)
 
 ## phpMyAdmin
 

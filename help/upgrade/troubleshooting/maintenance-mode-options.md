@@ -107,7 +107,7 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
 1. Use um editor de texto para abrir o arquivo de configuração nginx que contém o bloco do servidor.
 1. Adicione o seguinte ao bloco do servidor (`server` é exibido apenas para maior clareza; não adicione um segundo bloco de servidor).
 
-   Lista de permissões A seguinte mensagem exibe o endereço IP 192.0.2.110 e 192.0.2.115 em um sistema no qual o Magento está instalado `/var/www/html/magento2`:
+   Incluir na lista de permissões A seguinte mensagem exibe o endereço IP 192.0.2.110 e 192.0.2.115 em um sistema no qual o Magento está instalado `/var/www/html/magento2`:
 
    ```conf
    server {

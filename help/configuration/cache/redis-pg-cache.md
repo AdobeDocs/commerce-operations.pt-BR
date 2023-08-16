@@ -35,7 +35,7 @@ Com os seguintes parâmetros:
 | `cache-backend-redis-server` | server | Nome de host totalmente qualificado, endereço IP ou um caminho absoluto para um soquete UNIX. O valor padrão de 127.0.0.1 indica que o Redis está instalado no servidor do Commerce. | `127.0.0.1` |
 | `cache-backend-redis-port` | porta | Porta de escuta do servidor Redis | `6379` |
 | `cache-backend-redis-db` | banco de dados | Obrigatório se você usar Redis para o cache padrão e de página inteira. Você deve especificar o número do banco de dados de um dos caches; o outro cache usa 0 por padrão.<br><br>**Importante**: Se você usar Redis para mais de um tipo de cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número do banco de dados de cache padrão a 0, o número do banco de dados de cache da página a 1 e o número do banco de dados de armazenamento da sessão a 2. | `0` |
-| `cache-backend-redis-password` | senha | A configuração de uma senha Redis habilita um de seus recursos de segurança incorporados: o `auth` , que exige que os clientes se autentiquem para acessar o banco de dados. A senha é configurada diretamente no arquivo de configuração do Redis: `/etc/redis/redis.conf` |  |
+| `cache-backend-redis-password` | senha | A configuração de uma senha Redis habilita um de seus recursos de segurança incorporados: o `auth` , que exige que os clientes se autentiquem para acessar o banco de dados. A senha é configurada diretamente no arquivo de configuração do Redis: `/etc/redis/redis.conf` | |
 
 ### Exemplo de comando
 
@@ -64,7 +64,7 @@ Com os seguintes parâmetros:
 | `page-cache-redis-server` | server | Nome de host totalmente qualificado, endereço IP ou um caminho absoluto para um soquete UNIX. O valor padrão de 127.0.0.1 indica que o Redis está instalado no servidor do Commerce. | `127.0.0.1` |
 | `page-cache-redis-port` | porta | Porta de escuta do servidor Redis | `6379` |
 | `page-cache-redis-db` | banco de dados | Obrigatório se você usar Redis para o cache de página padrão e completo. Você deve especificar o número do banco de dados de um dos caches; o outro cache usa 0 por padrão.<br/>**Importante**: Se você usar Redis para mais de um tipo de cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número do banco de dados de cache padrão a 0, o número do banco de dados de cache da página a 1 e o número do banco de dados de armazenamento da sessão a 2. | `0` |
-| `page-cache-redis-password` | senha | A configuração de uma senha Redis habilita um de seus recursos de segurança incorporados: o `auth` , que exige que os clientes se autentiquem para acessar o banco de dados. Configure a senha no arquivo de configuração Redis: `/etc/redis/redis.conf` |  |
+| `page-cache-redis-password` | senha | A configuração de uma senha Redis habilita um de seus recursos de segurança incorporados: o `auth` , que exige que os clientes se autentiquem para acessar o banco de dados. Configure a senha no arquivo de configuração Redis: `/etc/redis/redis.conf` | |
 
 ### Exemplo de comando
 
@@ -120,17 +120,17 @@ Depois [configuração de um cluster Redis no AWS](https://aws.amazon.com/gettin
    - Abra uma conexão SSH com sua instância EC2
    - Na instância EC2, instale o cliente Redis:
 
-      ```bash
-      sudo apt-get install redis
-      ```
+     ```bash
+     sudo apt-get install redis
+     ```
 
    - Adicionar uma regra de entrada ao grupo de segurança EC2: tipo `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Adicionar uma regra de entrada ao grupo de segurança de Cluster ElastiCache: Tipo `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Conecte-se à CLI Redis:
 
-      ```bash
-      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
-      ```
+     ```bash
+     redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
+     ```
 
 ### Configurar o Commerce para usar o cluster
 

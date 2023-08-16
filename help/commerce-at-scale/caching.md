@@ -16,7 +16,7 @@ A entrega de uma experiência de compra em carga exigirá uma estratégia de arm
 
 A etapa inicial da estratégia de armazenamento em cache deve, por conseguinte, consistir em definir, com as partes interessadas pertinentes, uma matriz de prazos de armazenamento em cache aceitáveis para as diferentes áreas do site, por exemplo:
 
-| Área de armazenamento em cache | Com que frequência o muda? | Impacto se o conteúdo obsoleto veiculado a partir do cache | Tempo de vida (TTL) aceitável para armazenamento em cache? |
+| Área de armazenamento em cache | Com que frequência o muda? | Impacto se o conteúdo obsoleto veiculado a partir do cache | Tempo de vida (TTL) de cache aceitável? |
 |---------------------------------------------------------------|--------------------|-------------------------------------------|-----------------------------------------------------|
 | Páginas de HTML de conteúdo do site, atualizadas via CMS | Raramente | Baixa | 1 dia |
 | Mídia/ativos do modelo de conteúdo do site - logotipo, design de CSS, imagens | Raramente | Baixa | 1 semana |

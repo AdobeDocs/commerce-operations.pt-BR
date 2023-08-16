@@ -20,7 +20,7 @@ O aplicativo detecta o modo de manutenção da seguinte maneira:
 * Se `var/.maintenance.flag` não existir, o modo de manutenção estiver desativado e o aplicativo funcionar normalmente.
 * Caso contrário, o modo de manutenção será ativado, a menos que `var/.maintenance.ip` existe.
 
-   `var/.maintenance.ip` pode conter uma lista de endereços IP. Se um ponto de entrada for acessado usando HTTP e o endereço IP do cliente corresponder a uma das entradas nessa lista, o modo de manutenção estará desativado.
+  `var/.maintenance.ip` pode conter uma lista de endereços IP. Se um ponto de entrada for acessado usando HTTP e o endereço IP do cliente corresponder a uma das entradas nessa lista, o modo de manutenção estará desativado.
 
 ## Instalar o aplicativo
 

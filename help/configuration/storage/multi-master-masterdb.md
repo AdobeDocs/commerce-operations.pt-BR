@@ -1,16 +1,16 @@
 ---
-title: Configurar automaticamente bancos de dados principais
+title: Configurar automaticamente os bancos de dados mestres
 description: Consulte orientações sobre como configurar automaticamente a solução de banco de dados dividido.
 recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Configurar automaticamente bancos de dados principais
+# Configurar automaticamente os bancos de dados mestres
 
 {{ee-only}}
 
@@ -18,8 +18,8 @@ ht-degree: 0%
 
 Este tópico discute como começar a usar a solução de banco de dados dividido ao:
 
-1. Instalação do Adobe Commerce com um único banco de dados principal (chamado de `magento`)
-1. Criação de dois bancos de dados principais adicionais para checkout e OMS (nomeados como `magento_quote` e `magento_sales`)
+1. Instalação do Adobe Commerce com um único banco de dados mestre (chamado de `magento`)
+1. Criando dois bancos de dados mestres adicionais para checkout e OMS (nomeados como `magento_quote` e `magento_sales`)
 1. Configuração do Adobe Commerce para usar os bancos de dados de check-out e vendas
 
 >[!INFO]
@@ -28,11 +28,11 @@ Este tópico discute como começar a usar a solução de banco de dados dividido
 
 ## Instale o software da Adobe Commerce
 
-Você pode ativar bancos de dados divididos a qualquer momento depois de instalar o software Adobe Commerce; em outras palavras, você pode adicionar bancos de dados divididos a um sistema Adobe Commerce que já tenha dados de check-out e pedido. Use as instruções no arquivo LEIAME do Adobe Commerce ou no [guia de instalação](../../installation/overview.md) para instalar o software Adobe Commerce usando um único banco de dados principal.
+Você pode ativar bancos de dados divididos a qualquer momento depois de instalar o software Adobe Commerce; em outras palavras, você pode adicionar bancos de dados divididos a um sistema Adobe Commerce que já tenha dados de check-out e pedido. Use as instruções no arquivo LEIAME do Adobe Commerce ou no [guia de instalação](../../installation/overview.md) para instalar o software Adobe Commerce usando um único banco de dados mestre.
 
-## Configurar bancos de dados principais adicionais
+## Configurar bancos de dados mestres adicionais
 
-Crie o check-out e os bancos de dados principais OMS da seguinte maneira:
+Crie o checkout e os bancos de dados mestres OMS da seguinte maneira:
 
 1. Faça logon no servidor de banco de dados como qualquer usuário.
 1. Digite o seguinte comando para obter um prompt de comando do MySQL:
@@ -86,9 +86,9 @@ Crie o check-out e os bancos de dados principais OMS da seguinte maneira:
 
    Se o monitor MySQL for exibido, você criou o banco de dados corretamente. Se um erro for exibido, repita os comandos anteriores.
 
-## Configurar o Commerce para usar os bancos de dados principais
+## Configurar o Commerce para usar os bancos de dados mestres
 
-Depois de configurar um total de três bancos de dados principais, use a linha de comando para configurar o Commerce para usá-los. (O comando configura conexões de banco de dados e distribui tabelas entre os bancos de dados principais.)
+Depois de configurar um total de três bancos de dados mestres, use a linha de comando para configurar o Commerce para usá-los. (O comando configura conexões de banco de dados e distribui tabelas entre os bancos de dados mestres.)
 
 ### Primeiros passos
 

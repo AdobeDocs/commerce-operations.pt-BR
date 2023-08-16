@@ -67,15 +67,15 @@ Descreva admin_user no mysql 8.19
 | Campo | Tipo | Null | Chave | Padrão | Extra |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | user\_id | `int unsigned` | NÃO | PRI | `NULL` | `auto_increment` |
-| `firstname` | `varchar(32)` | SIM |  | `NULL` |  |
-| `lastname` | `varchar(32`) | SIM |  | `NULL` |  |
-| `email` | `varchar(128)` | SIM |  | `NULL` |  |
-| `username` | `varchar(40)` | SIM | UNI | `NULL` |  |
-| `password` | `varchar(255)` | NÃO |  | `NULL` |  |
-| `created` | `timestamp` | NÃO |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
-| `modified` | `timestamp` | NÃO |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` ao atualizar `CURRENT_TIMESTAMP` |
-| `logdate` | `timestamp` | SIM |  | `NULL` |  |
-| `lognum` | `smallint unsigned` | NÃO |  | `0` |  |
+| `firstname` | `varchar(32)` | SIM | | `NULL` | |
+| `lastname` | `varchar(32`) | SIM | | `NULL` | |
+| `email` | `varchar(128)` | SIM | | `NULL` | |
+| `username` | `varchar(40)` | SIM | UNI | `NULL` | |
+| `password` | `varchar(255)` | NÃO | | `NULL` | |
+| `created` | `timestamp` | NÃO | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
+| `modified` | `timestamp` | NÃO | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` ao atualizar `CURRENT_TIMESTAMP` |
+| `logdate` | `timestamp` | SIM | | `NULL` | |
+| `lognum` | `smallint unsigned` | NÃO | | `0` | |
 
 Exceto por _TINYINT( 1)_, todo o preenchimento de números inteiros (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) deve ser removido do `db_schema.xml` arquivo.
 

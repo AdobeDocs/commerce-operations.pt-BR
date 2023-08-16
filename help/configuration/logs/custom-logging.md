@@ -22,9 +22,9 @@ O Adobe recomenda o uso de registro de aplicativo centralizado pelos seguintes m
 
 - Ele torna o processamento de dados de registros mais eficiente usando ferramentas especiais, como [Logstash], [Logplex]ou [fluente]— sem impacto em um servidor de produção.
 
-   >[!INFO]
-   >
-   >O Adobe não recomenda ou endossa nenhuma solução de registro específica.
+  >[!INFO]
+  >
+  >O Adobe não recomenda ou endossa nenhuma solução de registro específica.
 
 ## Conformidade com a PSR-3
 

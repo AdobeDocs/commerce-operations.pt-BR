@@ -36,7 +36,7 @@ O processo de CI/CD no diagrama anterior pode ser descrito resumidamente da segu
 - O Bitbucket hospeda o repositório Git.
 - As imagens do Docker são replicadas das configurações da pilha de tecnologia de produção.
 - Os contêineres Docker são usados para todos os ambientes de desenvolvimento e teste. Outros ambientes podem aproveitar essas configurações, se necessário.
-- Os desenvolvedores executam uma finalização da ramificação de código relevante para cada nova tarefa/tíquete.
+- Os desenvolvedores executam um check-out da ramificação de código relevante para cada nova tarefa/tíquete.
 - Para todas as ramificações de confirmação, automaticamente:
    - Execute uma verificação de código padrão.
    - Execute um teste de compilação de código.

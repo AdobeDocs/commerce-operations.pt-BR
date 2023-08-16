@@ -128,4 +128,3 @@ Exemplo completo:
 >
 >- _Registro de tema_. Se os dados de um tema forem definidos em `config.php` mas o código-fonte do tema não estiver presente no sistema de arquivos, o tema será ignorado (ou seja, não será registrado).
 >- _Remoção do tema_. Se um tema não estiver presente no `config.php` mas o código-fonte estiver presente no sistema de arquivos, o tema não será removido.
-

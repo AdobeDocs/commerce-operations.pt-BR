@@ -22,7 +22,6 @@ Para obter direito de acesso a pacotes Adobe Commerce e Magento Open Source, voc
 >* Se você for a pessoa de contato principal na conta, verifique se não há nenhuma fatura pendente listada na conta.
 >* Se as chaves fornecidas pelo contato principal não estiverem funcionando e não houver faturas pendentes na conta, entre em contato com [Suporte ao Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obter assistência usando a MAGEID do contato principal.
 
-
 Para criar chaves de autenticação:
 
 1. Faça logon no [Commerce Marketplace](https://marketplace.magento.com). Se você não tiver uma conta, clique em **Registrar**.

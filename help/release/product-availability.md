@@ -5,7 +5,7 @@ exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 source-git-commit: aadccd57794e5e1b07f6d863c2627f2a771509fc
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
@@ -30,7 +30,7 @@ A tabela a seguir mostra o suporte à versão para cada extensão relativa à ve
 | _Gerenciador de canais_ | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [Notas de versão](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
 | _Sales Channel Amazon_ | - | 4.1.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [Notas de versão](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
 | _Conector Experience Platform_ | 3.0.0-beta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[Notas de versão](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
-| _Abastecimento de loja para o Adobe Commerce_ | - | 1.4.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [Notas de versão](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
+| _Processamento na loja para o Adobe Commerce_ | - | 1.4.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [Notas de versão](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
 
 ## Commerce Services
 

@@ -29,17 +29,17 @@ Considere os seguintes termos:
 
 - **Site**—é o contêiner de nível superior para sites, métodos de entrega, métodos de pagamento e muito mais. Para criar sites completamente separados que não compartilhem carrinho, métodos de entrega ou outros, você deve criar sites separados.
 
-   As contas de cliente do site podem ser compartilhadas entre vários sites em uma única instância do Commerce. Um site contém pelo menos uma loja. Os preços dos catálogos devem ser geridos ao nível do sítio Web.
+  As contas de cliente do site podem ser compartilhadas entre vários sites em uma única instância do Commerce. Um site contém pelo menos uma loja. Os preços dos catálogos devem ser geridos ao nível do sítio Web.
 
 - **Loja**—está contido em um site. Por sua vez, uma loja contém pelo menos um *exibição de loja*.
 
-   Várias lojas podem compartilhar carrinho, sessões de usuários, gateways de pagamento e muito mais, mas têm estruturas de catálogo separadas e preço de catálogo.
+  Várias lojas podem compartilhar carrinho, sessões de usuários, gateways de pagamento e muito mais, mas têm estruturas de catálogo separadas e preço de catálogo.
 
-   A Quantidade do Catálogo (inventário) não pode ser gerenciada no nível da loja. O inventário é gerenciado somente no nível do Site ou Global.
+  A Quantidade do Catálogo (inventário) não pode ser gerenciada no nível da loja. O inventário é gerenciado somente no nível do Site ou Global.
 
-   As visualizações da loja mudam a forma como as páginas são apresentadas e são normalmente usadas para exibir uma loja com layouts ou idiomas diferentes. É possível gerenciar moedas diferentes por exibição de loja.
+  As visualizações da loja mudam a forma como as páginas são apresentadas e são normalmente usadas para exibir uma loja com layouts ou idiomas diferentes. É possível gerenciar moedas diferentes por exibição de loja.
 
-   Cada site e exibição de loja deve ter um identificador exclusivo. Esse identificador é necessário para usar o `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` variáveis da seguinte forma:
+  Cada site e exibição de loja deve ter um identificador exclusivo. Esse identificador é necessário para usar o `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` variáveis da seguinte forma:
 
 - `MAGE_RUN_TYPE` pode ser `store` ou `website`
 

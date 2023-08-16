@@ -77,7 +77,7 @@ O C-level e outras compras de executivos de alto nível são essenciais para o s
 
 Como os projetos de comércio eletrônico geralmente começam com a tecnologia e não com os negócios, é raro que eles sejam originados no nível C. É por isso que é importante envolver o nível C o mais rápido possível e mantê-los envolvidos até o final. Isso ajuda a definir expectativas em toda a organização e informa as partes interessadas.
 
-Ao iniciar um projeto de comércio eletrônico, lembre-se do nível C e dos negócios. Eles estão principalmente interessados nos KPIs e no ROI, mas trazê-los para a jornada desde o início os ajuda a entender a meta e o que a organização significa ganhar.
+Ao iniciar um projeto de comércio eletrônico, lembre-se do nível C e dos negócios. Eles estão principalmente interessados nos KPIs e no ROI, mas trazê-los para a jornada desde o início os ajuda a entender a meta e o que a organização ganha com isso.
 
 >[!NOTE]
 >

@@ -7395,7 +7395,7 @@ bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-d
 
 ### `--backend-frontname`
 
-Nome da frente de backend (será gerado automaticamente se estiver faltando)
+Nome de frente de backend (será gerado automaticamente se estiver faltando)
 
 - Requer um valor
 
@@ -7759,7 +7759,7 @@ Tempo de vida máximo da sessão do Redis, em segundos
 
 ### `--session-save-redis-sentinel-master`
 
-Redis Sentinel principal
+Redis Sentinel master
 
 - Requer um valor
 
@@ -7771,7 +7771,7 @@ Servidores Redis Sentinel, separados por vírgula
 
 ### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel verifique principal. Valores: falso (padrão), verdadeiro
+Redis Sentinel verifica o mestre. Valores: falso (padrão), verdadeiro
 
 - Requer um valor
 
@@ -8752,7 +8752,7 @@ bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debu
 
 ### `--backend-frontname`
 
-Nome da frente de backend (será gerado automaticamente se estiver faltando)
+Nome de frente de backend (será gerado automaticamente se estiver faltando)
 
 - Requer um valor
 
@@ -9116,7 +9116,7 @@ Tempo de vida máximo da sessão do Redis, em segundos
 
 ### `--session-save-redis-sentinel-master`
 
-Redis Sentinel principal
+Redis Sentinel master
 
 - Requer um valor
 
@@ -9128,7 +9128,7 @@ Servidores Redis Sentinel, separados por vírgula
 
 ### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel verifique principal. Valores: falso (padrão), verdadeiro
+Redis Sentinel verifica o mestre. Valores: falso (padrão), verdadeiro
 
 - Requer um valor
 

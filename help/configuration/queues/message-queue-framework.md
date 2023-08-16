@@ -21,7 +21,7 @@ O diagrama a seguir ilustra a Estrutura da fila de mensagens:
 
 - Um Exchange recebe mensagens de editores e as envia para filas. Embora [!DNL RabbitMQ] O oferece suporte a vários tipos de trocas, o Commerce usa somente trocas de tópicos. Um tópico inclui uma chave de roteamento, que contém strings de texto separadas por pontos. O formato para um nome de tópico é `string1.string2`: por exemplo, `customer.created` ou `customer.sent.email`.
 
-   O broker permite usar curingas ao definir regras para o encaminhamento de mensagens. Você pode usar um asterisco (`*`) para substituir _um_ sequência de caracteres ou um sinal de libra (`#`) para substituir 0 ou mais strings. Por exemplo, `customer.*` filtraria em `customer.create` e `customer.delete`, mas não `customer.sent.email`. No entanto `customer.#` filtraria em `customer.create`,  `customer.delete`, e `customer.sent.email`.
+  O broker permite usar curingas ao definir regras para o encaminhamento de mensagens. Você pode usar um asterisco (`*`) para substituir _um_ sequência de caracteres ou um sinal de libra (`#`) para substituir 0 ou mais strings. Por exemplo, `customer.*` filtraria em `customer.create` e `customer.delete`, mas não `customer.sent.email`. No entanto `customer.#` filtraria em `customer.create`,  `customer.delete`, e `customer.sent.email`.
 
 - Uma fila é um buffer que armazena mensagens.
 

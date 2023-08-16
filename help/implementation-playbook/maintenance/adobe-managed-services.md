@@ -1,6 +1,6 @@
 ---
 title: Adobe Managed Services
-description: Saiba como o Adobe Managed Services pode ajudar a apoiar e manter a implementação do Adobe Commerce.
+description: Saiba como o Adobe Managed Services pode ajudar a oferecer suporte e manter a implementação do Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 O Adobe Commerce é uma plataforma para fornecer recursos de comércio eletrônico que inclui recursos robustos prontos para uso, amplas opções de personalização e integrações de terceiros.
 
-O Adobe Managed Services fornece aplicativos e infraestrutura hospedados e gerenciados para os planos profissionais do Adobe Commerce em infraestrutura em nuvem.
+O Adobe Managed Services fornece aplicativos e infraestrutura hospedados e gerenciados para Adobe Commerce em planos profissionais de infraestrutura em nuvem.
 
 ## Benefícios
 
@@ -374,7 +374,7 @@ A pilha de segurança de Adobe para o Managed Services cria segurança em todos 
 
 Parceiros de plataforma, como Amazon Web Services e Microsoft Azure, garantem cobertura máxima de segurança ao aplicar personalizações de plataforma, enquanto a equipe do Adobe Managed Services fornece serviços principais de segurança, como conformidade, registro, autenticação, verificação e monitoramento, segurança do servidor e configuração de aplicativo seguro. Consulte [Segurança do Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) para obter mais informações.
 
-O diagrama a seguir mostra a pilha de tecnologia de segurança do Adobe Managed Services:
+O diagrama a seguir mostra a pilha da tecnologia de segurança Adobe Managed Services:
 
 ![Diagrama mostrando a pilha de segurança do Adobe Managed Services](../../assets/playbooks/managed-services-security-stack.svg)
 

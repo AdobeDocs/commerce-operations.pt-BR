@@ -27,19 +27,19 @@ No modo de desenvolvimento, não execute comandos para compilação, geração d
 
 * `setup:di:compile` gera classes geradas automaticamente e caches de configuração otimizados.
 
-   ```bash
-   bin/magento setup:di:compile
-   ```
+  ```bash
+  bin/magento setup:di:compile
+  ```
 
-   No modo de desenvolvimento, o Magento executa a geração sob demanda; não é necessário executá-la. Se você modificou uma assinatura de uma classe e precisa gerar novamente sua `factories/proxies/interceptors`, remova essas classes ou a variável _gerado_ pasta.
+  No modo de desenvolvimento, o Magento executa a geração sob demanda; não é necessário executá-la. Se você modificou uma assinatura de uma classe e precisa gerar novamente sua `factories/proxies/interceptors`, remova essas classes ou a variável _gerado_ pasta.
 
 * `setup:static-content:deploy` implanta conteúdo estático para um armazenamento.
 
-   ```bash
-   bin/magento setup:static-content:deploy
-   ```
+  ```bash
+  bin/magento setup:static-content:deploy
+  ```
 
-   No modo de desenvolvimento, o Magento o executa sob demanda; não é necessário executá-lo.
+  No modo de desenvolvimento, o Magento o executa sob demanda; não é necessário executá-lo.
 
 ## Tempo normal de carregamento de página em uma máquina virtual
 

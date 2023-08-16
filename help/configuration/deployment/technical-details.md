@@ -76,15 +76,15 @@ O Administrador exibe o seguinte comportamento enquanto está no modo de produç
    - Conforme discutido anteriormente, qualquer definição de configuração em `config.php` ou `env.php` O está bloqueado e não pode ser editado no Administrador.
    - Você pode alterar a localidade do administrador somente para idiomas usados por temas implantados
 
-      A figura a seguir mostra um exemplo de **Configuração da conta** > **Localidade da interface** no Administrador mostrando apenas dois locais implantados:
+     A figura a seguir mostra um exemplo de **Configuração da conta** > **Localidade da interface** no Administrador mostrando apenas dois locais implantados:
 
-      ![Você pode alterar a localidade do administrador somente para localidades implantadas](../../assets/configuration/split-deploy-admin-locale.png)
+     ![Você pode alterar a localidade do administrador somente para localidades implantadas](../../assets/configuration/split-deploy-admin-locale.png)
 
 - Não é possível alterar as configurações de local de nenhum escopo usando o Administrador.
 
-   Recomendamos fazer essas alterações antes de alternar para o modo de Produção.
+  Recomendamos fazer essas alterações antes de alternar para o modo de Produção.
 
-   Você ainda pode configurar o local usando variáveis de ambiente ou o `config:set` Comando CLI com o caminho `general/locale/code`.
+  Você ainda pode configurar o local usando variáveis de ambiente ou o `config:set` Comando CLI com o caminho `general/locale/code`.
 
 ## Instalar e remover o cron
 
@@ -167,7 +167,7 @@ Fornecemos os seguintes comandos para ajudá-lo a gerenciar a configuração:
 - [`magento app:config:dump`](../cli/export-configuration.md) para gravar as definições de configuração do administrador em `config.php` e `env.php` (exceto para configurações confidenciais)
 - [`magento config:set`](../cli/set-configuration-values.md) para definir os valores das configurações específicas do sistema no sistema de produção.
 
-   Use o opcional `--lock` opção para bloquear a opção no Administrador (ou seja, tornar a configuração não editável). Se uma configuração já estiver bloqueada, use o `--lock` opção para alterar a configuração.
+  Use o opcional `--lock` opção para bloquear a opção no Administrador (ou seja, tornar a configuração não editável). Se uma configuração já estiver bloqueada, use o `--lock` opção para alterar a configuração.
 
 - [`magento config:sensitive:set`](../cli/set-configuration-values.md) para definir os valores de configurações confidenciais no sistema de produção.
 - [`magento app:config:import`](../cli/import-configuration.md) para importar alterações de configuração do `config.php` e `env.php` ao sistema de produção.

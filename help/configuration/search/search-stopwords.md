@@ -51,9 +51,9 @@ O tempo de vida padrão para o cache do arquivo stopwords é de 15 minutos.
 
    - Linha de comando: Como proprietário do sistema de arquivos, digite o seguinte comando:
 
-      ```bash
-      php <magento_root>/bin/magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento cache:clean config
+     ```
 
 1. Verifique os resultados procurando termos na loja.
 
@@ -89,9 +89,9 @@ O tempo de vida padrão para o cache do arquivo stopwords é de 15 minutos.
 
    - Linha de comando: Como proprietário do sistema de arquivos, digite o seguinte comando:
 
-      ```bash
-      php <magento_root>/bin/magento magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento magento cache:clean config
+     ```
 
 1. Verifique os resultados procurando termos na loja.
 

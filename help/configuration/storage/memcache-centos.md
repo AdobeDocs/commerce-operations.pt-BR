@@ -23,11 +23,11 @@ Como o PHP não tem suporte nativo para memcache, você deve instalar uma extens
 - `memcache` (_não d_) — uma extensão mais antiga, mas popular, que não é mantida regularmente.
 A variável `memcache` extensão atual _não_ trabalhar com o PHP 7. Consulte [Documentação do PHP para memcache](https://www.php.net/manual/en/book.memcache.php).
 
-   O nome exato é `php-pecl-memcache` para CentOS.
+  O nome exato é `php-pecl-memcache` para CentOS.
 
 - `memcached` (_com um`d`_)—uma extensão nova e mantida que é compatível com o PHP 7. Consulte [Documentação do PHP para memcached](https://www.php.net/manual/en/book.memcached.php).
 
-   O nome exato é `php-pecl-memcached` para CentOS.
+  O nome exato é `php-pecl-memcached` para CentOS.
 
 ## Instalar e configurar o memcached no CentOS
 

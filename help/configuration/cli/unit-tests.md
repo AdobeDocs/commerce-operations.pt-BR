@@ -21,11 +21,11 @@ Antes de executar este comando, faça o seguinte _deve_ ser verdadeiro:
 
 - A variável `Magento_Developer` o módulo deve ser habilitado. Você pode ativá-la da seguinte maneira:
 
-   ```bash
-   bin/magento module:enable [--force] Magento_Developer
-   ```
+  ```bash
+  bin/magento module:enable [--force] Magento_Developer
+  ```
 
-   Use o `--force` opção apenas se for necessário.
+  Use o `--force` opção apenas se for necessário.
 
 - Seu sistema deve estar configurado para executar os testes desejados.
 

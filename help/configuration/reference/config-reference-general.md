@@ -32,28 +32,28 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 | Países da União Europeia | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Principais destinos | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | O estado é obrigatório para | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Permitir Escolher Estado se for Opcional para País | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Fuso horário | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Localidade | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Unidade de Peso | `general/locale/weight_unit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Primeiro Dia da Semana | `general/locale/firstday` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Dias do fim de semana | `general/locale/weekend` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Restrição de acesso | `general/restriction/is_active` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |  |
-| Modo de restrição | `general/restriction/mode` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |  |
-| Página de inicialização | `general/restriction/http_redirect` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |  |
-| Landing Page | `general/restriction/cms_page` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |  |
-| Resposta HTTP | `general/restriction/http_status` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |  |
-| Nome do armazenamento | `general/store_information/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Número de telefone da loja | `general/store_information/phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Armazenar horas de operação | `general/store_information/hours` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| País | `general/store_information/country_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Região/Estado | `general/store_information/region_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| CEP | `general/store_information/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Cidade | `general/store_information/city` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Endereço | `general/store_information/street_line1` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Rua Endereço Linha 2 | `general/store_information/street_line2` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Número IVA | `general/store_information/merchant_vat_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Ativar modo de armazenamento único | `general/single_store_mode/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
+| Permitir Escolher Estado se for Opcional para País | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Fuso horário | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Localidade | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Unidade de Peso | `general/locale/weight_unit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Primeiro Dia da Semana | `general/locale/firstday` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Dias do fim de semana | `general/locale/weekend` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Restrição de acesso | `general/restriction/is_active` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) | |
+| Modo de restrição | `general/restriction/mode` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) | |
+| Página de inicialização | `general/restriction/http_redirect` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) | |
+| Landing Page | `general/restriction/cms_page` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) | |
+| Resposta HTTP | `general/restriction/http_status` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) | |
+| Nome do armazenamento | `general/store_information/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Número de telefone da loja | `general/store_information/phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Armazenar horas de operação | `general/store_information/hours` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| País | `general/store_information/country_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Região/Estado | `general/store_information/region_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| CEP | `general/store_information/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Cidade | `general/store_information/city` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Endereço | `general/store_information/street_line1` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Rua Endereço Linha 2 | `general/store_information/street_line2` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Número IVA | `general/store_information/merchant_vat_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Ativar modo de armazenamento único | `general/single_store_mode/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 
 {style="table-layout:auto"}
 
@@ -98,9 +98,9 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 | Moeda de base | `currency/options/base` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Moeda de Exibição Padrão | `currency/options/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Moedas permitidas | `currency/options/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Yahoo Finance Exchange | `TBD` |  |
-| Fixer.io | `TBD` |  |
-| Webservicex | `TBD` |  |
+| Yahoo Finance Exchange | `TBD` | |
+| Fixer.io | `TBD` | |
+| Webservicex | `TBD` | |
 | Tempo limite da conexão em segundos | `currency/yahoofinance/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Tempo limite da conexão em segundos | `currency/fixerio/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Tempo limite da conexão em segundos | `currency/webservicex/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -122,7 +122,7 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 |--------------|--------------|--------------|
 | Ativar Entre Em Contato Conosco | `contact/contact/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Enviar Emails Para | `contact/email/recipient_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente do e-mail | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do email | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modelo de e-mail | `contact/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}

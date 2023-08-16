@@ -92,7 +92,7 @@ No Adobe Commerce versão 2.2.8 e posterior, é possível criar o usuário admin
 | Nome | Valor | Obrigatório? |
 |--- |--- |--- |
 | `--base-url` | URL base a ser usado para acessar seu administrador e vitrine em qualquer um dos seguintes formatos:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** O esquema (http:// ou https://) e uma barra à direita são necessários.<br><br>`<your install dir>` é o caminho relativo ao docroot no qual instalar o aplicativo. Dependendo de como você configura o servidor Web e os hosts virtuais, o caminho pode ser magento2 ou pode estar em branco.<br><br>Para acessar o aplicativo no host local, você pode usar `http://127.0.0.1/<your install dir>/` ou `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` que representa um URL de base definido por uma configuração de host virtual ou por um ambiente de virtualização como o Docker. Por exemplo, se você configurar um host virtual com o nome de host commerce.example.com, poderá instalar o aplicativo com `--base-url={{base_url}}` e acesse o Administrador com um URL como `http://commerce.example.com/admin`. | Sim |
-| `--backend-frontname` | URI (Uniform Resource Identifier) para acessar o Administrador. Você pode omitir esse parâmetro para permitir que o aplicativo gere um URI aleatório para você com o seguinte padrão admin_jkhgdfq</code>.<br><br>Recomendamos um URI aleatório para fins de segurança. Um URI aleatório é mais difícil de ser explorado por hackers ou softwares mal-intencionados.<br><br>O URI é exibido no final da instalação. É possível exibi-lo posteriormente a qualquer momento usando a `magento info:adminuri` comando.<br><br>Se você optar por inserir um valor, recomendamos que não use uma palavra comum como admin, backend. O URI do Administrador pode conter valores alfanuméricos e o caractere de sublinhado (`_`) somente. | Não |
+| `--backend-frontname` | URI (Uniform Resource Identifier) para acessar o Administrador. Você pode omitir esse parâmetro para permitir que o aplicativo gere um URI aleatório para você com o seguinte padrão <code>admin_jkhgdfq</code>.<br><br>Recomendamos um URI aleatório para fins de segurança. Um URI aleatório é mais difícil de ser explorado por hackers ou softwares mal-intencionados.<br><br>O URI é exibido no final da instalação. É possível exibi-lo posteriormente a qualquer momento usando a `magento info:adminuri` comando.<br><br>Se você optar por inserir um valor, recomendamos que não use uma palavra comum como admin, backend. O URI do Administrador pode conter valores alfanuméricos e o caractere de sublinhado (`_`) somente. | Não |
 | `--db-host` | Use qualquer um dos seguintes:<br><br>- O nome de host ou endereço IP totalmente qualificado do servidor de banco de dados.<br><br>- `localhost` (padrão) ou `127.0.0.1` se o servidor de banco de dados estiver no mesmo host que o servidor da web.localhost significa que a biblioteca do cliente MySQL usa soquetes UNIX para se conectar ao banco de dados. `127.0.0.1` faz com que a biblioteca do cliente use o protocolo TCP. Para obter mais informações sobre soquetes, consulte [Documentação do PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** Opcionalmente, você pode especificar a porta do servidor de banco de dados em seu nome de host, como www.example.com:9000 | Sim |
 | `--db-name` | Nome da instância do banco de dados em que você deseja instalar as tabelas do banco de dados.<br><br>O padrão é `magento2`. | Sim |
 | `--db-user` | Nome de usuário do proprietário da instância do banco de dados.<br><br>O padrão é `root`. | Sim |
@@ -187,11 +187,11 @@ O exemplo a seguir instala o aplicativo com as seguintes opções:
 
 * O aplicativo é instalado no `magento2` diretório relativo ao docroot do servidor Web em `localhost` e o caminho para o Administrador é `admin`; por conseguinte:
 
-   O URL da vitrine está `http://127.0.0.1`
+  O URL da vitrine está `http://127.0.0.1`
 
 * O servidor de banco de dados está no mesmo host que o servidor Web.
 
-   O nome do banco de dados é `magento`, e o nome de usuário e a senha são `magento`
+  O nome do banco de dados é `magento`, e o nome de usuário e a senha são `magento`
 
 * Usa regravações de servidor
 
@@ -257,11 +257,11 @@ O exemplo a seguir instala o aplicativo com as seguintes opções:
 
 * O aplicativo Magestá instalado no `magento2` diretório relativo ao docroot do servidor Web em `localhost` e o caminho para o Administrador é `admin`; por conseguinte:
 
-   O URL da vitrine está `http://127.0.0.1`
+  O URL da vitrine está `http://127.0.0.1`
 
 * O servidor de banco de dados está no mesmo host que o servidor Web.
 
-   O nome do banco de dados é `magento`, e o nome de usuário e a senha são `magento`
+  O nome do banco de dados é `magento`, e o nome de usuário e a senha são `magento`
 
 * O administrador tem as seguintes propriedades:
 

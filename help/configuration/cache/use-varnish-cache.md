@@ -24,21 +24,21 @@ Depois de instalar e configurar o Verniz para funcionar com o Commerce, as segui
 
 - Manutenção de um site.
 
-   Por exemplo, qualquer coisa que você fizer no Administrador do:
+  Por exemplo, qualquer coisa que você fizer no Administrador do:
 
    - **LOJAS** > **Configurações** > **Configuração** > GERAL > **Geral**
    - **LOJAS** > **Configurações** > **Configuração** > GERAL > **Configuração de moeda**
    - **LOJAS** > **Configurações** > **Configuração** > GERAL > **Armazenar endereços de email**
 
-   Quando o Commerce detectar essa alteração, uma mensagem será exibida informando para atualizar o cache.
+  Quando o Commerce detectar essa alteração, uma mensagem será exibida informando para atualizar o cache.
 
 - Manutenção de uma loja (por exemplo, adição ou edição de categorias, preços, produtos e regras de precificação promocional).
 
-   O verniz é removido automaticamente quando você executa qualquer uma dessas tarefas.
+  O verniz é removido automaticamente quando você executa qualquer uma dessas tarefas.
 
 - Mantendo código-fonte.
 
-   Você deve atualizar o cache e também excluir periodicamente tudo no `generated/code` e `generated/metadata` diretórios. Para obter informações sobre como atualizar o cache, consulte a próxima seção.
+  Você deve atualizar o cache e também excluir periodicamente tudo no `generated/code` e `generated/metadata` diretórios. Para obter informações sobre como atualizar o cache, consulte a próxima seção.
 
 ## Configurar o Commerce para limpar o verniz
 

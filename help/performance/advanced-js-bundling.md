@@ -72,7 +72,7 @@ Com uma abordagem mais avançada [!DNL JavaScript] empacotamento, podemos melhor
 
 ## Agrupamento avançado
 
-Lembre-se, o objetivo de [!DNL JavaScript] o pacote reduz o número e o tamanho dos ativos solicitados para cada página carregada no navegador. Para fazer isso, queremos criar nossos pacotes para que cada página em nossa loja só precise baixar um pacote comum e um pacote específico da página para cada página acessada.
+Lembre-se, o objetivo de [!DNL JavaScript] o agrupamento é para reduzir o número e o tamanho dos ativos solicitados para cada página carregada no navegador. Para fazer isso, queremos criar nossos pacotes para que cada página em nossa loja só precise baixar um pacote comum e um pacote específico da página para cada página acessada.
 
 Uma maneira de fazer isso é definir seus pacotes por tipos de página. Você pode categorizar [!DNL Commerce]As páginas do em vários tipos de página, incluindo Categoria, Produto, CMS, Cliente, Carrinho e Check-out. Cada página categorizada em um desses tipos de página tem um conjunto diferente de dependências do módulo RequireJS. Ao agrupar os módulos RequireJS por tipo de página, você acabará com apenas alguns pacotes que cobrem as dependências de qualquer página em sua loja.
 
@@ -80,7 +80,7 @@ Por exemplo, você pode acabar com um pacote para as dependências comuns a toda
 
 Você também pode criar pacotes por finalidade: para recursos comuns, recursos relacionados ao produto, recursos de envio, recursos de check-out, impostos e validações de formulário. A forma como você define os pacotes depende de você e da estrutura da loja. Você pode descobrir que algumas estratégias de agrupamento funcionarão melhor do que outras.
 
-Uma limpeza [!DNL Commerce] a instalação do permite atingir um desempenho bom o suficiente dividindo pacotes por tipos de página, mas algumas personalizações podem exigir uma análise mais profunda e outras distribuições de ativos.
+Uma limpeza [!DNL Commerce] a instalação do permite atingir um desempenho suficiente dividindo pacotes por tipos de página, mas algumas personalizações podem exigir uma análise mais profunda e outras distribuições de ativos.
 
 ### Ferramentas necessárias
 

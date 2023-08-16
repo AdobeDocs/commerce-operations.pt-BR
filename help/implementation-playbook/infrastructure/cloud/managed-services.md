@@ -1,6 +1,6 @@
 ---
 title: Managed Services
-description: Revise as responsabilidades do Adobe Managed Services, dos clientes e dos provedores de serviços em nuvem para a implementação da infraestrutura em nuvem do Adobe Commerce.
+description: Analise as responsabilidades do Adobe Managed Services, dos clientes e dos provedores de serviços em nuvem com relação à implementação da infraestrutura em nuvem do Adobe Commerce.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
 feature: Cloud, Services
 source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
@@ -22,7 +22,7 @@ Os planos do Adobe Commerce Pro dependem de um modelo de segurança de responsab
 
 ![Diagrama que mostra o modelo de responsabilidade compartilhada do Adobe Commerce](../../../assets/playbooks/shared-responsibility.svg)
 
-### Responsabilidades do Adobe Managed Services
+### responsabilidades do Adobe Managed Services
 
 O Adobe Managed Services é responsável pela segurança e disponibilidade do ambiente de nuvem do Adobe Commerce Pro, do código principal do aplicativo Adobe Commerce Pro e dos sistemas de comércio interno. Isso inclui, mas não está limitado a:
 

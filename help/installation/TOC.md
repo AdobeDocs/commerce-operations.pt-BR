@@ -5,7 +5,7 @@ feature: Install
 source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 0%
       - [Baixar pacotes do Composer](sample-data/composer-packages.md)
       - [Clonar repositórios Git](sample-data/git-repositories.md)
       - [Remover ou atualizar módulos](sample-data/remove-or-update.md)
-- Tutorials {#tutorials}
+- Tutoriais do {#tutorials}
    - [Fazer backup e reverter o sistema de arquivos, a mídia e o banco de dados](tutorials/backup.md)
    - [Verificar o status do banco de dados](tutorials/database-status.md)
    - [Configurar o comportamento do consumidor de mensagens](tutorials/message-consumers.md)

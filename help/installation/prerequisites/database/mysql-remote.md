@@ -50,7 +50,7 @@ Use as diretrizes a seguir para configurar conexões de banco de dados remoto se
 * Você deve configurar uma conexão para cada nó do servidor Web.
 * Normalmente, você configura uma conexão de banco de dados para o balanceador de carga de banco de dados; no entanto, o clustering de banco de dados pode ser complexo e a configuração depende de você. O Adobe não faz recomendações específicas para clustering de banco de dados.
 
-   Para obter mais informações, consulte [Documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Para obter mais informações, consulte [Documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Resolução de problemas de conexão
 
@@ -97,6 +97,7 @@ Para criar uma conexão remota:
    * CentOS: `service mysqld restart`
 
    * Ubuntu: `service mysql restart`
+
    >[!NOTE]
    >
    >Se o MySQL não for iniciado, procure no syslog a origem do problema. Resolva o problema usando [Documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) ou outra fonte autorizada.

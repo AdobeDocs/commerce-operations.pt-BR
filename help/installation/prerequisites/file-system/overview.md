@@ -21,16 +21,17 @@ Há dois tipos de proprietários de sistemas de arquivos:
 
 - **Hospedagem compartilhada com um único usuário**
 
-   Os provedores de hospedagem compartilhada permitem fazer logon no servidor de aplicativos como um usuário. Como usuário único, você pode fazer logon, transferir arquivos por FTP e executar o servidor Web. Você tem a opção de configurar um [`umask`](#restrict-access-with-a-umask) para restringir ainda mais o acesso, especialmente em um ambiente de produção.
+  Os provedores de hospedagem compartilhada permitem fazer logon no servidor de aplicativos como um usuário. Como usuário único, você pode fazer logon, transferir arquivos por FTP e executar o servidor Web. Você tem a opção de configurar um [`umask`](#restrict-access-with-a-umask) para restringir ainda mais o acesso, especialmente em um ambiente de produção.
 
 - **Hospedagem privada com dois usuários**
 
-   A hospedagem privada é útil se você gerenciar um servidor de aplicativos. Cada usuário tem uma responsabilidade específica:
+  A hospedagem privada é útil se você gerenciar um servidor de aplicativos. Cada usuário tem uma responsabilidade específica:
 
    - A variável _usuário do servidor da web_ O executa o Administrador e a loja.
 
    - A variável _usuário da linha de comando_ executa tarefas cron e utilitários de linha de comando.
-   Ambos os usuários exigem as mesmas permissões para o sistema de arquivos, portanto, é melhor usar um [grupo compartilhado](configure-permissions.md#set-ownership-and-permissions-for-two-users) e defina uma [`umask`](#restrict-access-with-a-umask).
+
+  Ambos os usuários exigem as mesmas permissões para o sistema de arquivos, portanto, é melhor usar um [grupo compartilhado](configure-permissions.md#set-ownership-and-permissions-for-two-users) e defina uma [`umask`](#restrict-access-with-a-umask).
 
 ### Restringir o acesso com uma máscara
 

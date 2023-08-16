@@ -46,9 +46,9 @@ Onde
 * `-f` ou `--force` para forçar um módulo a ser ativado ou desativado apesar das dependências. Antes de usar essa opção, consulte [Sobre a ativação e desativação de módulos](#about-enabling-and-disabling-modules).
 * `-c` ou `--clear-static-content` limpa [arquivos de visualização estáticos gerados](../../configuration/cli/static-view-file-deployment.md).
 
-   A falha na limpeza de arquivos de exibição estáticos pode resultar em problemas se houver vários arquivos com o mesmo nome e você não limpar todos eles.
+  A falha na limpeza de arquivos de exibição estáticos pode resultar em problemas se houver vários arquivos com o mesmo nome e você não limpar todos eles.
 
-   Por outras palavras, devido à [fallback de arquivo estático](../../configuration/cli/static-view-file-deployment.md) regras, se você não limpar arquivos estáticos e houver mais de um arquivo chamado `logo.svg` que são diferentes, o fallback pode fazer com que o arquivo errado seja exibido.
+  Por outras palavras, devido à [fallback de arquivo estático](../../configuration/cli/static-view-file-deployment.md) regras, se você não limpar arquivos estáticos e houver mais de um arquivo chamado `logo.svg` que são diferentes, o fallback pode fazer com que o arquivo errado seja exibido.
 
 Por exemplo, para desativar o `Magento_Weee` módulo, insira:
 

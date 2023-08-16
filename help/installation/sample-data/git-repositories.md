@@ -153,8 +153,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
 >
 >Se estiver instalando dados de amostra *após* ao instalar o Adobe Commerce ou o Magento Open Source, você também deve executar o seguinte comando para atualizar o banco de dados e o schema:
 >
->
-```bash
+>```bash
 ><magento_root>/bin/magento setup:upgrade
 >```
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 O Dispatcher do AEM é um proxy reverso, que ajuda a fornecer um ambiente rápido e dinâmico. Ele funciona como parte de um servidor de HTML estático, como o Apache HTTP Server, com o objetivo de armazenar (ou &quot;armazenar em cache&quot;) o máximo possível do conteúdo do site, na forma de recursos estáticos. Essa abordagem tem como objetivo minimizar a necessidade de acessar a funcionalidade de renderização de página do AEM e o serviço Adobe Commerce GraphQL o máximo possível. O resultado de servir grande parte das páginas como HTML estático, CSS e JS oferece benefícios de desempenho aos usuários e reduz os requisitos de infraestrutura no ambiente. Qualquer página ou consulta que provavelmente será repetida de forma idêntica de usuário para usuário deve ser considerada para armazenamento em cache.
 
-As seções a seguir mostram em alto nível a área de enfoque técnico recomendada a ser revisada para permitir o armazenamento em cache eficaz do AEM em um ambiente da CIF/Adobe Commerce.
+As seções a seguir mostram em alto nível a área de enfoque técnico recomendada a ser revisada para permitir o armazenamento em cache eficaz do AEM em um ambiente CIF/Adobe Commerce.
 
 ## Armazenamento em cache com base em TTL em dispatchers de AEM
 

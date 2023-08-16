@@ -52,9 +52,10 @@ O processo pode ser resumido da seguinte forma:
    Se não houver nada em seu `<magento_root>/var/page_cache` diretório, você configurou com sucesso o Varnish com o Commerce!
 
 >[!NOTE]
+>
 - Exceto quando observado, você deve inserir todos os comandos discutidos neste tópico como um usuário com `root` privilégios.
+>
 - Este tópico foi escrito para Verniz no CentOS e Apache 2.4. Se você estiver configurando o Verniz em um ambiente diferente, alguns comandos poderão ser diferentes. Consulte a documentação do Verniz para obter mais informações.
-
 
 ## Problemas conhecidos
 
@@ -62,28 +63,28 @@ Sabemos dos seguintes problemas com o verniz:
 
 - [O verniz não é compatível com SSL]
 
-   Como alternativa, use a terminação SSL ou um proxy de terminação SSL.
+  Como alternativa, use a terminação SSL ou um proxy de terminação SSL.
 
 - Se você excluir manualmente o conteúdo da variável `<magento_root>/var/cache` diretório, você deve reiniciar o Varnish.
 
 - Possível erro ao instalar o Commerce:
 
-   ```terminal
-   Error 503 Service Unavailable
-   Service Unavailable
-   XID: 303394517
-   Varnish cache server
-   ```
+  ```terminal
+  Error 503 Service Unavailable
+  Service Unavailable
+  XID: 303394517
+  Varnish cache server
+  ```
 
-   Se você receber esse erro, edite `default.vcl` e adicione um tempo limite à variável `backend` estrofe do seguinte modo:
+  Se você receber esse erro, edite `default.vcl` e adicione um tempo limite à variável `backend` estrofe do seguinte modo:
 
-   ```conf
-   backend default {
-       .host = "127.0.0.1";
-       .port = "8080";
-       .first_byte_timeout = 600s;
-   }
-   ```
+  ```conf
+  backend default {
+      .host = "127.0.0.1";
+      .port = "8080";
+      .first_byte_timeout = 600s;
+  }
+  ```
 
 ## Visão geral do armazenamento em cache do Vernish
 
@@ -94,6 +95,7 @@ O armazenamento em cache de verniz funciona com o Commerce usando:
 - `default.vcl` configuração para Verniz gerado usando o [Admin](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
+>
 Este tópico aborda somente as opções padrão na lista anterior. Há muitas outras maneiras de configurar o armazenamento em cache em cenários complexos (por exemplo, usando uma Rede de entrega de conteúdo); esses métodos estão além do escopo deste guia.
 
 Na primeira solicitação do navegador, os ativos armazenáveis em cache são entregues ao navegador do cliente do Vernish e armazenados em cache no navegador.
@@ -117,6 +119,7 @@ A figura a seguir mostra um exemplo de uso de um inspetor de navegador:
 O exemplo anterior mostra uma solicitação para a página principal da loja (`m2_ce_my`). Os ativos CSS e JavaScript são armazenados em cache no navegador do cliente.
 
 >[!NOTE]
+>
 A maioria dos ativos estáticos tem um código de status HTTP 200 (OK), indicando que o ativo foi recuperado do servidor.
 
 ### Segunda solicitação do navegador

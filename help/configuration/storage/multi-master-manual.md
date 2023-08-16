@@ -1,5 +1,5 @@
 ---
-title: Configurar manualmente bancos de dados principais
+title: Configurar manualmente bancos de dados mestres
 description: Consulte orientações sobre como configurar manualmente a solução de banco de dados dividido.
 recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Configurar manualmente bancos de dados principais
+# Configurar manualmente bancos de dados mestres
 
 {{ee-only}}
 
@@ -36,11 +36,11 @@ Este tópico usa as seguintes convenções de nomenclatura:
 - O nome do banco de dados principal é `magento` e seu nome de usuário e senha são `magento`
 - O nome do banco de dados de aspas é `magento_quote` e seu nome de usuário e senha são `magento_quote`
 
-   O banco de dados de cotações também é chamado de _check-out_ banco de dados.
+  O banco de dados de cotações também é chamado de _check-out_ banco de dados.
 
 - O nome do banco de dados de vendas é `magento_sales` e seu nome de usuário e senha são `magento_sales`
 
-   O banco de dados de vendas também é conhecido como banco de dados OMS.
+  O banco de dados de vendas também é conhecido como banco de dados OMS.
 
 >[!INFO]
 >
@@ -61,7 +61,7 @@ A Adobe recomenda que você faça backup do banco de dados e do sistema de arqui
 
 1. Prossiga para a próxima seção.
 
-## Configurar bancos de dados principais adicionais
+## Configurar bancos de dados mestres adicionais
 
 Esta seção discute como criar instâncias de banco de dados para tabelas de vendas e cotações.
 
@@ -297,7 +297,7 @@ Onde
 
 - `<your sales DB name>` com o nome do seu banco de dados de vendas.
 
-   Neste tópico, o nome do banco de dados de amostra é `magento_sales`.
+  Neste tópico, o nome do banco de dados de amostra é `magento_sales`.
 
 - `<root username>` com seu nome de usuário raiz do MySQL
 - `<root user password>` com a senha do usuário

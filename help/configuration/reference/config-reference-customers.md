@@ -53,7 +53,7 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 | Mostrar número IVA na vitrine eletrônica | `customer/create_account/vat_frontend_visibility` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Email de boas-vindas padrão | `customer/create_account/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Email De Boas-Vindas Padrão Sem Senha | `customer/create_account/email_no_password_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente do e-mail | `customer/create_account/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do email | `customer/create_account/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Exigir confirmação de e-mails | `customer/create_account/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-mail do link de confirmação | `customer/create_account/email_confirmation_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Email de boas-vindas | `customer/create_account/email_confirmed_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -112,7 +112,7 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 | Ativado | `wishlist/general/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ativar várias listas de desejos | `wishlist/general/multiple_enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 | Número de várias listas de desejos | `wishlist/general/multiple_wishlist_number` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Remetente do e-mail | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do email | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modelo de e-mail | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Máximo de emails permitidos para envio | `wishlist/email/number_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Limite de comprimento do texto do email | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -163,7 +163,7 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 | Conversão de convite para recompensa de pedido | `magento_reward/points/invitation_order_frequency` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 | Revisar envio | `magento_reward/points/review` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 | Limite de Quantidade de Envio de Revisões Premiadas | `magento_reward/points/review_limit` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Remetente do e-mail | `magento_reward/notification/email_sender` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Remetente do email | `magento_reward/notification/email_sender` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 | Assinar Clientes por Padrão | `magento_reward/notification/subscribe_by_default` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 | E-mail de atualização de saldo | `magento_reward/notification/balance_update_template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
 | Email de aviso de expiração de pontos de premiação | `magento_reward/notification/expiry_warning_template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
@@ -202,12 +202,12 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 | Ativar Registro de presentes | `magento_giftregistry/general/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Máximo de inscritos | `magento_giftregistry/general/max_registrant` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modelo de e-mail | `magento_giftregistry/owner_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente do e-mail | `magento_giftregistry/owner_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do email | `magento_giftregistry/owner_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modelo de e-mail | `magento_giftregistry/sharing_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente do e-mail | `magento_giftregistry/sharing_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do email | `magento_giftregistry/sharing_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Limite máximo de emails enviados | `magento_giftregistry/sharing_email/send_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modelo de e-mail | `magento_giftregistry/update_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Remetente do e-mail | `magento_giftregistry/update_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Remetente do email | `magento_giftregistry/update_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
 

@@ -49,7 +49,7 @@ Os comandos anteriores funcionam somente com o servidor Web Apache. Devido à va
 
 ## Habilitar comunicação entre servidores
 
-Se o Apache e o servidor de banco de dados estiverem no mesmo host, use o seguinte comando se planejar usar integrações que usam `curl` (por exemplo, Paypal e USPS).
+Se o Apache e o servidor de banco de dados estiverem no mesmo host, use o seguinte comando se você planejar usar integrações que usam `curl` (por exemplo, Paypal e USPS).
 Para permitir que o Apache inicie uma conexão com outro host com o SELinux ativado:
 
 1. Para determinar se o SELinux está habilitado, use o seguinte comando:

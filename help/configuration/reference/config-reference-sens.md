@@ -92,7 +92,7 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 | Nome | Caminho de configuração | Somente comércio? | Criptografado? | Específico do sistema? | Sensível? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Enviar Emails Para | `contact/email/recipient_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensível](/help/assets/configuration/cloud-sens.png) |
-| Remetente do e-mail | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensível](/help/assets/configuration/cloud-sens.png) |
+| Remetente do email | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Modelo de e-mail | `contact/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 
 {style="table-layout:auto"}
@@ -263,7 +263,7 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 | URL XML de Gateway | `carriers/ups/gateway_xml_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Número do Remetente | `carriers/ups/shipper_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Depurar | `carriers/ups/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensível](/help/assets/configuration/cloud-sens.png) |
-| ID da conta | `carriers/fedex/account` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Criptografado](/help/assets/configuration/cloud-enc.png) | | ![Sensível](/help/assets/configuration/cloud-sens.png) |
+| ID da Conta | `carriers/fedex/account` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Criptografado](/help/assets/configuration/cloud-enc.png) | | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Chave | `carriers/fedex/key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Criptografado](/help/assets/configuration/cloud-enc.png) | | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Número do Medidor | `carriers/fedex/meter_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Criptografado](/help/assets/configuration/cloud-enc.png) | | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Senha | `carriers/fedex/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Criptografado](/help/assets/configuration/cloud-enc.png) | | ![Sensível](/help/assets/configuration/cloud-sens.png) |

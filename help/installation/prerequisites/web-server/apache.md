@@ -73,7 +73,6 @@ O Adobe Commerce e o Magento Open Source usam regravações e `.htaccess` para f
    >- Se você atualizou de uma versão anterior do Apache, primeiro procure `<Directory "/var/www/html">` ou `<Directory "/var/www">` in `000-default.conf`.
    >- Você deve alterar o valor de `AllowOverride` na diretiva para o diretório no qual você espera instalar o software Adobe Commerce ou Magento Open Source. Por exemplo, para instalar no docroot do servidor Web, edite a diretiva em `<Directory /var/www>`.
 
-
 >[!NOTE]
 >
 >A falha em ativar essas configurações normalmente resulta na não exibição de estilos na loja ou no Administrador.

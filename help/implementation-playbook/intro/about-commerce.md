@@ -6,7 +6,7 @@ feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Deli
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ O crescimento do comércio é alimentado pelo atendimento às necessidades de se
 - Comércio eletrônico B2B
 - PWA Studio
 - Expansão global
-- Canal de vendas do Amazon
+- Canal de vendas da Amazon
 - Integração de ERP
 - Arquitetura comercial headless
 

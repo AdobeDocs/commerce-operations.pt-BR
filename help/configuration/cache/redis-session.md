@@ -51,9 +51,9 @@ onde
 | session-save-redis-disable-locking | disable_locking | Desabilita completamente o bloqueio de sessão. | 0 (falso) |
 | session-save-redis-min-lifetime | min_lifetime | Tempo de vida mínimo da sessão, em segundos. | 60 |
 | session-save-redis-max-lifetime | max_lifetime | Tempo de vida máximo da sessão, em segundos. | 2592000 (720 horas) |
-| session-save-redis-sentinel-principal | sentinel_principal | Nome principal do Sentinela Redis | vazio |
+| session-save-redis-sentinel-master | sentinel_master | Nome mestre do Sentinel Redis | vazio |
 | session-save-redis-sentinel-servers | sentinel_servers | Lista de servidores do Redis Sentinel, separados por vírgulas | vazio |
-| session-save-redis-sentinel-verify-principal | sentinel_verify_principal | Verificar sinalizador de status principal do Sentinel do Redis | 0 (falso) |
+| session-save-redis-sentinel-verify-master | sentinel_verify_master | Verificar sinalizador de status mestre do Sentinel do Redis | 0 (falso) |
 | session-save-redis-sentinel-connect-retries | sentinel_connect_retries | Tentativas de conexão para sentinelas | 5 |
 
 ## Exemplo

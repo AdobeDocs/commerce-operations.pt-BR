@@ -31,19 +31,19 @@ ht-degree: 0%
 - **Infraestrutura**—Especifica detalhes sobre [armazenamento em cache](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implementado por [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend)
 - **Infraestrutura de dois níveis**—Armazena registros de cache em dois back-ends: um mais rápido e um mais lento.
 
-   >[!INFO]
-   >
-   >A configuração do cache de back-end de dois níveis está fora do escopo deste guia.
+  >[!INFO]
+  >
+  >A configuração do cache de back-end de dois níveis está fora do escopo deste guia.
 
 ## Opções de configuração
 
 - Modificação das informações fornecidas `default` front-end do cache—
 
-   Você modifica somente o `<magento_root>/app/etc/di.xml` arquivo, a configuração de injeção de dependência global do aplicativo Commerce.
+  Você modifica somente o `<magento_root>/app/etc/di.xml` arquivo, a configuração de injeção de dependência global do aplicativo Commerce.
 
 - Configurar seu próprio front-end de cache personalizado—
 
-   Você modifica somente o `<magento_root>/app/etc/env.php` arquivo porque substitui a configuração equivalente no `di.xml` arquivo.
+  Você modifica somente o `<magento_root>/app/etc/env.php` arquivo porque substitui a configuração equivalente no `di.xml` arquivo.
 
 >[!TIP]
 >

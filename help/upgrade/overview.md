@@ -63,6 +63,6 @@ Alguns dos fatores gerais que afetam o nível de esforço para atualizar seu pro
 | Extensão das personalizações | Clareza dos requisitos, decisões flutuantes e deformação do escopo |
 | Número de extensões | Sua frequência de atualização |
 | Número de integrações com terceiros (OMS, ERP) | Sua estratégia de teste |
-| Codificação para práticas recomendadas |  |
+| Codificação para práticas recomendadas |                                                              |
 
 O crescimento contínuo no espaço de comércio digital tem exercido uma maior pressão sobre as empresas para que evoluam mais rápido, com mais frequência e de maneiras imprevisíveis. A incapacidade de acompanhar e antecipar o comportamento de compra do cliente nivelou o campo de jogo até mesmo para as maiores marcas mais estabelecidas. Você deve ser capaz de fornecer experiências robustas e personalizadas em todos os pontos de contato, sem interrupções no desempenho e no tempo de atividade. Você deve ser capaz de inovar mais rápido, sem limites, para ficar à frente dos concorrentes globais. Ao atualizar, você está preparando seus negócios para o futuro e se preparando para atender melhor às necessidades dinâmicas dos clientes.

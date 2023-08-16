@@ -79,7 +79,7 @@ Consulte [Exportar a configuração](../cli/export-configuration.md).
 O procedimento para desativar a saída do módulo em uma única instância do Commerce é mais fácil, pois as alterações não precisam ser distribuídas.
 
 1. Arquivar o original `<Magento_install_dir>/app/etc/config.php` arquivo.
-1. Adicione o `advanced` e `modules_disable_output` seções para a `config.php` arquivo (se eles não existirem):
+1. Adicione o `advanced` e `modules_disable_output` seções para a `config.php` arquivo (se não existirem):
 
    ```php
    'system' =>

@@ -17,7 +17,7 @@ Para obter o melhor desempenho do site, configure no máximo 50 sites, 50 lojas 
 
 >[!NOTE]
 >
->Para o Adobe Commerce em infraestrutura em nuvem, as práticas recomendadas se aplicam especificamente ao ambiente de produção (e possivelmente à arquitetura Staging on Pro, sujeito a restrições de recursos) que teria mais recursos do que os ambientes de integração e desenvolvimento. Para integração (Pro e Starter) e ambientes de preparo (Starter), reduza o número de visualizações da loja para menos de 5 ou 10 (sujeito a revisão técnica).
+>Para o Adobe Commerce em infraestrutura em nuvem, as práticas recomendadas se aplicam especificamente ao ambiente de produção (e possivelmente à arquitetura Staging on Pro, sujeita a restrições de recursos) que teria mais recursos do que os ambientes de integração e desenvolvimento. Para integração (Pro e Starter) e ambientes de preparo (Starter), reduza o número de visualizações da loja para menos de 5 ou 10 (sujeito a revisão técnica).
 
 ## Produtos e versões afetados
 

@@ -92,7 +92,7 @@ O modo Saint não faz parte do pacote principal de vernizes. É uma versão sepa
 
 Depois de recompilar, você pode instalar o módulo Saint mode. Em geral, siga estas etapas:
 
-1. Obter o código-fonte de [Módulos de verniz](https://github.com/varnish/varnish-modules). Clonar a versão do Git (versão principal), pois as versões 0.9.x contêm um erro de código-fonte.
+1. Obter o código-fonte de [Módulos de verniz](https://github.com/varnish/varnish-modules). Clonar a versão do Git (versão mestre) desde que as versões 0.9.x contenham um erro de código-fonte.
 1. Crie o código-fonte com as ferramentas automáticas:
 
    ```bash

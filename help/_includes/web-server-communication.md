@@ -21,13 +21,13 @@ Recomendamos o seguinte:
 
 * Seu servidor da Web usa TLS.
 
-   O TLS está fora do escopo desse tópico; no entanto, recomendamos que você use um certificado real na produção e não um certificado autoassinado.
+  O TLS está fora do escopo desse tópico; no entanto, recomendamos que você use um certificado real na produção e não um certificado autoassinado.
 
 * Seu mecanismo de pesquisa é executado no mesmo host que um servidor da Web. A execução do mecanismo de pesquisa e do servidor Web em hosts diferentes está além do escopo deste tópico.
 
-   A vantagem de colocar o mecanismo de busca e o servidor Web no mesmo host é que isso torna impossível a interceptação de comunicações criptografadas. O servidor Web do mecanismo de pesquisa não precisa ser o mesmo que o servidor Web Adobe Commerce ou Magento Open Source; por exemplo, o Adobe Commerce pode executar o Apache e o Elasticsearch/OpenSearch pode executar nginx.
+  A vantagem de colocar o mecanismo de busca e o servidor Web no mesmo host é que isso torna impossível a interceptação de comunicações criptografadas. O servidor Web do mecanismo de pesquisa não precisa ser o mesmo que o servidor Web Adobe Commerce ou Magento Open Source; por exemplo, o Adobe Commerce pode executar o Apache e o Elasticsearch/OpenSearch pode executar nginx.
 
-   Se o mecanismo de pesquisa for exposto à Web pública, você deverá configurar a autenticação. Se a instância do mecanismo de pesquisa estiver protegida na rede, isso pode não ser necessário. Trabalhe com seu provedor de hospedagem para determinar quais medidas de segurança você deve implementar para proteger sua instância.
+  Se o mecanismo de pesquisa for exposto à Web pública, você deverá configurar a autenticação. Se a instância do mecanismo de pesquisa estiver protegida na rede, isso pode não ser necessário. Trabalhe com seu provedor de hospedagem para determinar quais medidas de segurança você deve implementar para proteger sua instância.
 
 ## Mais informações sobre TLS
 

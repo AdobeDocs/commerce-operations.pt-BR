@@ -1,11 +1,11 @@
 ---
 title: Leitura recomendada para atualizações
-description: Leia novamente as recomendações de planejamento para a atualização do Adobe Commerce.
+description: Revise a documentação recomendada para planejar sua atualização do Adobe Commerce.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
 source-git-commit: 83ee645269b4fb0b63bb11f6d2255ef7fa52bc4f
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 

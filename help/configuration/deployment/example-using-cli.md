@@ -18,15 +18,15 @@ Este exemplo usa as seguintes definições de configuração:
 
 - **Número De Iva** e **Nome do armazenamento** para as definições de configuração compartilhadas.
 
-   Eles são encontrados em **Lojas** > Configurações > **Configuração** > Geral > **Geral**.
+  Eles são encontrados em **Lojas** > Configurações > **Configuração** > Geral > **Geral**.
 
 - **Enviar Emails Para** para o valor de configuração confidencial.
 
-   Isso é encontrado em **Lojas** > Configurações > **Configuração** > Geral > **Contatos**.
+  Isso é encontrado em **Lojas** > Configurações > **Configuração** > Geral > **Contatos**.
 
 - **Domínio de email padrão** para o valor de configuração específico do sistema.
 
-   Isso é encontrado em **Lojas** > Configurações > **Configuração** > Clientes > **Configuração do cliente** > **Criar novas opções de conta**.
+  Isso é encontrado em **Lojas** > Configurações > **Configuração** > Clientes > **Configuração do cliente** > **Criar novas opções de conta**.
 
 Você pode usar o mesmo procedimento mostrado neste exemplo para definir qualquer configuração nas seguintes referências:
 
@@ -108,20 +108,20 @@ Para definir as configurações confidenciais e específicas do sistema usando v
 
 - Escopo para cada configuração
 
-   Se você seguiu as instruções da Etapa 1, o escopo para **Enviar Emails Para** é o site e o escopo para **Domínio de email padrão** é global (ou seja, o escopo de Configuração padrão).
+  Se você seguiu as instruções da Etapa 1, o escopo para **Enviar Emails Para** é o site e o escopo para **Domínio de email padrão** é global (ou seja, o escopo de Configuração padrão).
 
-   É necessário o código do site para definir a variável **Enviar Emails Para** valor de configuração.
+  É necessário o código do site para definir a variável **Enviar Emails Para** valor de configuração.
 
-   Para obter mais informações sobre como descobrir esse valor, consulte: [Usar variáveis de ambiente para substituir as definições de configuração](../reference/override-config-settings.md#environment-variables).
+  Para obter mais informações sobre como descobrir esse valor, consulte: [Usar variáveis de ambiente para substituir as definições de configuração](../reference/override-config-settings.md#environment-variables).
 
 - Caminhos de configuração para as configurações usadas neste exemplo:
 
-   | Nome da configuração | Caminho de configuração |
-   | -------------------- | -------------------------------------- |
-   | Enviar Emails Para | `contact/email/recipient_email` |
-   | Domínio de email padrão | `customer/create_account/email_domain` |
+  | Nome da configuração | Caminho de configuração |
+  | -------------------- | -------------------------------------- |
+  | Enviar Emails Para | `contact/email/recipient_email` |
+  | Domínio de email padrão | `customer/create_account/email_domain` |
 
-   Para todos os caminhos de configuração confidenciais e específicos do sistema, consulte: [Referência de caminhos de configuração sensíveis e específicos do sistema](../reference/config-reference-sens.md).
+  Para todos os caminhos de configuração confidenciais e específicos do sistema, consulte: [Referência de caminhos de configuração sensíveis e específicos do sistema](../reference/config-reference-sens.md).
 
 ### Defina as variáveis usando comandos CLI
 

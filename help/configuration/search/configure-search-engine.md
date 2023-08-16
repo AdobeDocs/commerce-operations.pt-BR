@@ -67,17 +67,17 @@ Em caso afirmativo, tente o seguinte:
 - Verifique o valor do **[!UICONTROL Server Hostname]** campo. Verifique se o servidor está disponível. Em vez disso, você pode tentar o endereço IP do servidor.
 - Use o `netstat -an | grep <listen-port>` para verificar se a porta especificada na variável **[!UICONTROL Server Port]** O campo não está sendo usado por outro processo.
 
-   Por exemplo, para ver se o mecanismo de pesquisa está em execução na porta padrão, use o seguinte comando:
+  Por exemplo, para ver se o mecanismo de pesquisa está em execução na porta padrão, use o seguinte comando:
 
-   ```bash
-   netstat -an | grep 9200
-   ```
+  ```bash
+  netstat -an | grep 9200
+  ```
 
-   Se estiver sendo executado na porta 9200, será exibido de modo semelhante ao seguinte:
+  Se estiver sendo executado na porta 9200, será exibido de modo semelhante ao seguinte:
 
-   ```terminal
-   `tcp        0      0 :::9200            :::-         LISTEN`
-   ```
+  ```terminal
+  `tcp        0      0 :::9200            :::-         LISTEN`
+  ```
 
 ## Reindexe a pesquisa de catálogo e atualize o cache de página inteira
 

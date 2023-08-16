@@ -53,7 +53,7 @@ Se o Adobe Commerce for executado sem periféricos, as solicitações serão ate
 
 Por padrão, as conexões MySQL e Redis Slave não são ativadas no Adobe Commerce na nuvem. Isso ocorre porque essas configurações só são adequadas para clientes que estão esperando uma carga muito alta. A latência entre AZ (zonas de disponibilidade cruzada) é mais alta com conexões escravas ativadas e, portanto, essa configuração reduz o desempenho de uma instância do Adobe Commerce na nuvem caso a instância esteja recebendo apenas níveis de carga regulares.
 
-Se a instância do Adobe Commerce estiver esperando carga extrema, a ativação do principal-slave para MySQL e Redis ajudará no desempenho, distribuindo a carga no banco de dados MySQL ou Redis em diferentes nós.
+Se a instância do Adobe Commerce estiver esperando carga extrema, a ativação do master-slave para MySQL e Redis ajudará no desempenho, distribuindo a carga no banco de dados MySQL ou Redis em diferentes nós.
 
 Como guia, em ambientes com carga normal, ativar Conexões Escravas reduzirá o desempenho em 10-15%. Mas em clusters com carga e tráfego pesados, há um aumento de desempenho de cerca de 10 a 15%. Portanto, é importante testar a carga do seu ambiente com os níveis de tráfego esperados para avaliar se essa configuração seria benéfica para os tempos de desempenho sob carga.
 

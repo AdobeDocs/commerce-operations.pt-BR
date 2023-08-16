@@ -1,11 +1,11 @@
 ---
 user-guide-title: Manual de implementação
-user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site de Adobe Commerce bem-sucedido.
+user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
 source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 

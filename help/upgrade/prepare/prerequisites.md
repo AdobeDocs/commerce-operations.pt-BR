@@ -92,7 +92,7 @@ OpenSearch requer JDK 1.8 ou superior. Consulte [Instalar o Java Software Develo
 
 #### Atualizar o Elasticsearch
 
-O suporte para o Elasticsearch 8.x foi introduzido no Adobe Commerce 2.4.6. As instruções a seguir mostram um exemplo de upgrade do Elasticsearch de 7.x para 8.x:
+O suporte para o Elasticsearch 8.x foi introduzido no Adobe Commerce 2.4.6. As instruções a seguir mostram um exemplo de atualização do Elasticsearch de 7.x para 8.x:
 
 1. Atualize o servidor Elasticsearch 7.x para 8.x e certifique-se de que o esteja funcionando. Consulte a [Documentação do Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 

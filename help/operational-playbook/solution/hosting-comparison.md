@@ -52,7 +52,7 @@ A tabela a seguir descreve as vantagens e desvantagens das soluções em nuvem e
             <td>Segurança</td>
             <td>A organização pode controlar todos os dados localmente.</td>
             <td>Os recursos internos exigem competências e conhecimentos específicos da infraestrutura.</td>
-            <td>A segurança de dados avançada está disponível e pode ser facilmente gerenciada pelas organizações.</td>
+            <td>A segurança avançada de dados está disponível e pode ser facilmente gerenciada pelas organizações.</td>
             <td>Atingido agressivamente por hackers</td>
         </tr>
         <tr>

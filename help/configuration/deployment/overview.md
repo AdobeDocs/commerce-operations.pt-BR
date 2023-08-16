@@ -40,7 +40,7 @@ Usamos os termos a seguir para descrever os sistemas envolvidos na implantação
 
 - **Criar sistema**— Um sistema no qual você implanta ativos estáticos e compila o código para seu sistema de produção. Como você cria esses ativos em um sistema que não está em produção, o tempo de inatividade do sistema de produção é minimizado.
 
-   Seu sistema de build não precisa ter o Commerce instalado. Ele precisa apenas do código do Commerce, mas nenhuma conexão de banco de dados é necessária. Além disso, o sistema de build não precisa ser um servidor separado fisicamente.
+  Seu sistema de build não precisa ter o Commerce instalado. Ele precisa apenas do código do Commerce, mas nenhuma conexão de banco de dados é necessária. Além disso, o sistema de build não precisa ser um servidor separado fisicamente.
 
 - **Sistema de preparo**—_Opcional_. Opcionalmente, é possível configurar um sistema de preparo para usar no teste final de todo o código integrado, incluindo o Teste de aceitação do usuário (UAT). Configure um sistema de preparo da mesma forma que configura um sistema de produção. Exceto pelo fato de que o armazenamento temporário não é sua loja ao vivo e não processa pedidos de clientes, ele é idêntico à produção.
 
@@ -62,15 +62,15 @@ Fornecemos uma maneira de sincronizar a configuração de seus sistemas:
 
 - **Configuração compartilhada**—Configurações que não são específicas do sistema nem confidenciais.
 
-   As configurações compartilhadas são configurações que você deseja manter consistentes nos sistemas de desenvolvimento e produção. Defina a configuração compartilhada no Administrador em sua infraestrutura de desenvolvimento (ou Adobe Commerce on cloud) _integração_).
+  As configurações compartilhadas são configurações que você deseja manter consistentes nos sistemas de desenvolvimento e produção. Defina a configuração compartilhada no Administrador em sua infraestrutura de desenvolvimento (ou Adobe Commerce on cloud) _integração_).
 
-   O arquivo de configuração compartilhado, `app/etc/config.php`, deve ser incluído no controle do código-fonte para que possa ser compartilhado entre os sistemas de desenvolvimento, compilação e produção.
+  O arquivo de configuração compartilhado, `app/etc/config.php`, deve ser incluído no controle do código-fonte para que possa ser compartilhado entre os sistemas de desenvolvimento, compilação e produção.
 
 - **Configuração específica do sistema**—Configurações que variam de acordo com o sistema, como nomes de host e portas de mecanismos de pesquisa.
 
 - **Configuração sensível**—Configurações que devem _não_ estar no controle do código-fonte porque eles expõem informações de identificação pessoal (PII) ou configurações como chaves de API ou senhas.
 
-   O arquivo de configuração específico do sistema, `app/etc/env.php`, deve _não_ ser incluídos no controle de origem ou compartilhados entre sistemas. Use o botão [`magento config:set` e `magento:sensitive:set` comandos](../cli/set-configuration-values.md) para fornecer valores para essas configurações no sistema de produção.
+  O arquivo de configuração específico do sistema, `app/etc/env.php`, deve _não_ ser incluídos no controle de origem ou compartilhados entre sistemas. Use o botão [`magento config:set` e `magento:sensitive:set` comandos](../cli/set-configuration-values.md) para fornecer valores para essas configurações no sistema de produção.
 
 >[!INFO]
 >
