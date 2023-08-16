@@ -28,7 +28,7 @@ Continue a saber mais sobre o Adobe Commerce e as atualizações de Magento Open
           </ul>
         </td>
       <td><strong>Ferramentas</strong>
-        <p>Ferramentas de navegação projetadas para facilitar a localização e o uso do software Adobe Commerce e Magento Open Source.</p>
+        <p>Procure ferramentas projetadas para facilitar a localização e o uso do software Adobe Commerce e Magento Open Source.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">Ferramenta de compatibilidade de atualização do plug-in PhpStorm</a> (vídeo)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Ferramenta de compatibilidade de atualização</a></li>
