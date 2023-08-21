@@ -2,11 +2,11 @@
 title: Práticas recomendadas de configuração de atributos do produto
 description: Saiba como otimizar o desempenho do Adobe Commerce limitando o número de atributos de produto, opções de atributo e conjuntos de atributos
 role: User, Admin
-feature: Best Practices, Catalogs
+feature: Best Practices, Catalog Management
 exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
