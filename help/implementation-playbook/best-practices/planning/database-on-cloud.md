@@ -4,9 +4,9 @@ description: Saiba como definir configurações de banco de dados e aplicativo p
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Os acionadores são usados para registrar alterações em tabelas de auditoria. 
 - Os acionadores são interpretados como código e o MySQL não os pré-compila. Conectando o espaço de transação do query, eles adicionam o overhead a um analisador e interpretador para cada query executada com a tabela.
 - Os acionadores compartilham o mesmo espaço de transação que as consultas originais e, enquanto essas consultas competem por bloqueios na tabela, os acionadores competem independentemente em bloqueios em outra tabela.
 
-Para saber mais sobre alternativas ao uso de acionadores personalizados, consulte [Usar acionadores MySQL com eficiência](mysql-triggers-usage.md) em nossa base de conhecimento de suporte.
+Para saber mais sobre alternativas ao uso de acionadores personalizados, consulte [Gatilhos MySQL](mysql-configuration.md#triggers).
 
 ## Atualizar [!DNL ECE-Tools] para a versão 2002.0.21 ou superior {#ece-tools-version}
 

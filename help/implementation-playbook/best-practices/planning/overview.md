@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de implementação para 
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 - **Configuração do banco de dados**
    - [Práticas recomendadas de configuração de banco de dados para implantações em nuvem&#x200B;](database-on-cloud.md)
-   - [Configuração da conexão slave do MySQL&#x200B;](configure-mysql-slave-connection-on-cloud.md)
-   - [Uso de gatilhos MySQL](mysql-triggers-usage.md)
+   - [Configuração do MySQL&#x200B;](mysql-configuration.md)
 
 - **Configuração de serviços**
    - [Configurar o Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
@@ -57,17 +56,17 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 Os tópicos a seguir descrevem as práticas recomendadas de otimização de desempenho para configurar o catálogo do Adobe Commerce, incluindo os máximos recomendados para o número de categorias, SKUs eficazes do produto, variações do produto, atributos e opções do produto e muito mais.
 
-- [Configuração de categoria](category-limits.md)
-- [Configuração do produto&#x200B;](product-sku-limits.md)
-- [Configuração da variação do produto](product-variations.md)
-- [Configuração das opções do produto](product-options.md)
-- [Configuração dos atributos do produto&#x200B;](product-attributes-and-options.md)
-- [Configuração de paginação para listagens de produtos](product-listing-pagination.md)
+- [Configuração de categoria](catalog-management.md#category-limits)
+- [Configuração do produto&#x200B;](catalog-management.md#product-sku-limits)
+- [Configuração da variação do produto](catalog-management.md#product-variations)
+- [Configuração das opções do produto](catalog-management.md#product-options)
+- [Configuração dos atributos do produto&#x200B;](catalog-management.md#product-attributes)
+- [Configuração de paginação para listagens de produtos](catalog-management.md#product-listing-pagination)
 
 ## **Vendas e marketing**
 
-- [Práticas recomendadas para limite do carrinho de produtos](product-cart.md)
-- [Práticas recomendadas para configurar promoções](product-cart-promotions.md)
+- [Práticas recomendadas para limite do carrinho de produtos](catalog-management.md#cart-limits)
+- [Práticas recomendadas para configurar promoções](catalog-management.md#promotions)
 
 ## **Escopo do projeto**
 
