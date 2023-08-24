@@ -3,9 +3,9 @@ title: Fase de manutenção da implementação
 description: Saiba mais sobre as práticas recomendadas de implementação para a fase de manutenção de projetos do Adobe Commerce.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: d0cb3b81ee50ebd7cbf65a4dddbf5c58acf04f0d
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -73,5 +73,6 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 ### Atualizações
 
+- [Patches em escala](patching-at-scale.md)
 - [Atualizar serviços e componentes para a versão mais recente&#x200B;](update-services.md)
 - [Lista de verificação de atualização do Adobe Commerce&#x200B;](upgrade-checklist.md)
