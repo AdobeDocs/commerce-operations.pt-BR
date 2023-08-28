@@ -4,7 +4,7 @@ description: Saiba como o patch centralizado para o Adobe Commerce pode ajudar v
 role: Developer
 feature: Best Practices
 badge: label="Contribuição de Anton Evers, arquiteto técnico sênior, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Contribuição de Anton Evers"
-source-git-commit: d8ee656b4b1741b39f2eef1f5628a299377e774c
+source-git-commit: 9cda88a4aeb4cc58d8ec9c4417e3107885a6cdb8
 workflow-type: tm+mt
 source-wordcount: '1309'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Práticas recomendadas para distribuição de patches do Adobe Commerce em escala
 
-Se você gerenciar várias instalações do Adobe Commerce, [aplicação de patches](../../../upgrade/patches/apply.md) pode ser um processo complexo. _Patch centralizado_ é uma parte essencial do [arquitetura de referência global](../../architecture/global-reference.md) e uma prática recomendada para as empresas. Ele ajuda a aplicar os patches corretos em todas as instalações do Adobe Commerce. Este tópico explica como obter a distribuição centralizada de patches para todos os tipos de Adobe Commerce [patches](../../../upgrade/patches/overview.md).
+Se você gerenciar várias instalações do Adobe Commerce, [aplicação de patches](../../../upgrade/patches/apply.md) pode ser um processo complexo. _Patch centralizado_ é uma parte essencial do [arquitetura de referência global](../../architecture/global-reference/overview.md) e uma prática recomendada para as empresas. Ele ajuda a aplicar os patches corretos em todas as instalações do Adobe Commerce. Este tópico explica como obter a distribuição centralizada de patches para todos os tipos de Adobe Commerce [patches](../../../upgrade/patches/overview.md).
 
 >[!NOTE]
 >
