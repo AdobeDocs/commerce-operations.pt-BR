@@ -2,9 +2,9 @@
 user-guide-title: Manual de implementação
 user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
-source-git-commit: d33d1e24c38984d0abf0c7f8f5ad2eb804ff621d
+source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 10%
 
 ---
@@ -63,8 +63,6 @@ ht-degree: 10%
       - [Visão geral](infrastructure/cloud/overview.md)
       - [Regiões](infrastructure/cloud/regions.md)
       - [Tecnologias](infrastructure/cloud/technology.md)
-      - [Ambientes](infrastructure/cloud/environments.md)
-      - [Managed Services](infrastructure/cloud/managed-services.md)
       - [Segurança e conformidade](infrastructure/cloud/security.md)
    - Otimização do desempenho {#performance}
       - [Problemas típicos](infrastructure/performance/optimization.md)
