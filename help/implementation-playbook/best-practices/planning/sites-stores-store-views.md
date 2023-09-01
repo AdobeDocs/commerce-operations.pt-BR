@@ -4,20 +4,16 @@ description: Conheça as práticas recomendadas para configurar sites, lojas e e
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
 # Prática recomendada para configurar sites, lojas e visualizações de loja
 
-Para obter o melhor desempenho do site, configure no máximo 50 sites, 50 lojas e 50 visualizações de loja para o Adobe Commerce em projetos de infraestrutura em nuvem.
-
->[!NOTE]
->
->Para o Adobe Commerce em infraestrutura em nuvem, as práticas recomendadas se aplicam especificamente ao ambiente de produção (e possivelmente à arquitetura Staging on Pro, sujeita a restrições de recursos) que teria mais recursos do que os ambientes de integração e desenvolvimento. Para integração (Pro e Starter) e ambientes de preparo (Starter), reduza o número de visualizações da loja para menos de 5 ou 10 (sujeito a revisão técnica).
+Para o Adobe Commerce em infraestrutura em nuvem, as práticas recomendadas se aplicam especificamente ao ambiente de produção (e possivelmente à arquitetura Staging on Pro, sujeita a restrições de recursos) que teria mais recursos do que os ambientes de integração e desenvolvimento.
 
 ## Produtos e versões afetados
 
