@@ -3,10 +3,10 @@ title: Fase de lançamento da implementação
 description: Saiba mais sobre as práticas recomendadas de implementação para a fase de lançamento de projetos do Adobe Commerce.
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
-source-git-commit: 7ab0342e3897e2804f5a43876197308c69ac1bb7
+source-git-commit: 48ed42e69c5786a10de3426d581e35030412c001
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 0%
+source-wordcount: '165'
+ht-degree: 1%
 
 ---
 
@@ -24,13 +24,16 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 ## Configuração de segurança
 
-- [Serviço de notificação de segurança do Adobe&#x200B;](https://www.adobe.com/subscription/adbeSecurityNotifications.html)
-- [Prevenir e responder a incidentes de segurança](prevent-respond-security-incident.md)
-- [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html)
-- [Práticas recomendadas para o Adobe Commerce robots.txt&#x200B;](robots-txt.md)
-<!-- - [Install the latest security patches](https://helpx.adobe.com/security/products/magento/apsb22-12.html) - CTAG deck -->
-- [Verificar a configuração de segurança em projetos de infraestrutura em nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
+| Prática recomendada | Descrição |
+|------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| [Serviço de notificação de segurança do Adobe&#x200B;](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Inscrever-se nas notificações de segurança do Adobe. |
+| [Prevenir e responder a incidentes de segurança](prevent-respond-security-incident.md) | Evite e responda a incidentes de segurança para seu Adobe Commerce em projetos de infraestrutura em nuvem. |
+| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | Configure o Google reCAPTCHA para acesso de Administrador e várias ações de loja iniciadas por clientes registrados. |
+| [Configure o `robots.txt&#x200B;` arquivo](robots-txt.md) | Envie instruções sobre o site do Adobe Commerce para rastreadores da Web. |
+| [Verificar configuração de segurança](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html) | Revise os itens da lista de verificação antes de iniciar um Adobe Commerce no site de infraestrutura em nuvem. |
 
 ## Monitoramento de desempenho
 
-- [Use a ferramenta SWAT para garantir a segurança e a operabilidade do Adobe Commerce](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools)
+| Prática recomendada | Descrição |
+|------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| [Use o [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Veja insights importantes sobre seu site do Adobe Commerce em um só lugar. |
