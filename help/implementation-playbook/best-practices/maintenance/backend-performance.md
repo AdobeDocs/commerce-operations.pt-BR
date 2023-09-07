@@ -4,9 +4,9 @@ description: Saiba como otimizar o desempenho de back-end de sites do Adobe Comm
 badge: label="Contribuição de objectsource" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 2416357d8cacb5627fd24f92b16c2d9839f91082
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Saiba mais sobre como testar projetos do Adobe Commerce:
 
 ### Identificar e resolver problemas de desempenho
 
-Resolva problemas de desempenho usando várias ferramentas, como o New Relic e o Observation for Adobe Commerce, para detectar gargalos e otimizar sites do Commerce de maneira eficaz. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) está incluído com o Adobe Commerce na infraestrutura em nuvem e [Observação para Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) O está incluído para implantações em nuvem e locais.
+Resolva problemas de desempenho usando várias ferramentas, como o New Relic e o Observation for Adobe Commerce, para detectar gargalos e otimizar sites do Commerce de maneira eficaz. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) está incluído com o Adobe Commerce na infraestrutura em nuvem e [Observação para Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) O está incluído para implantações em nuvem e locais.
 
 Use essas ferramentas para analisar o desempenho do site e identificar problemas de desempenho relacionados a:
 
