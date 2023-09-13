@@ -3,12 +3,13 @@ title: Configurações do PHP
 description: Siga estas etapas para instalar as extensões necessárias do PHP e definir as configurações necessárias do PHP para instalações locais do Adobe Commerce e do Magento Open Source.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: aacc4332cecec0cb9b0f5c23d60b7abd1c63feea
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
+
 
 # Configurações do PHP
 
@@ -16,11 +17,11 @@ Este tópico discute como definir as opções necessárias do PHP.
 
 >[!NOTE]
 >
->Consulte [requisitos do sistema](../system-requirements.md) para versões suportadas do PHP.
+>A versão mais recente do Adobe Commerce e do Magento Open Source requer no mínimo o PHP 8.1. Consulte [requisitos do sistema](../system-requirements.md) para todas as versões suportadas do PHP.
 
 ## Verificar se o PHP está instalado
 
-A maioria dos tipos de Linux tem o PHP instalado por padrão. Este tópico assume que você já instalou o PHP. Para verificar se o PHP já está instalado, na linha de comando, digite:
+O PHP é instalado por padrão na maioria das distribuições Linux. Este tópico assume que você já instalou o PHP. Para verificar se o PHP está instalado, digite o seguinte na linha de comando:
 
 ```bash
 php -v
@@ -29,19 +30,17 @@ php -v
 Se o PHP estiver instalado, uma mensagem similar à seguinte será exibida:
 
 ```terminal
-PHP 7.4.0 (cli) (built: Aug 14 2019 16:42:46) ( NTS )
-Copyright (c) 1997-2018 The PHP Group
-Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies with Zend OPcache v7.1.6, Copyright (c) 1999-2018, by Zend Technologies
+PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.1.2, Copyright (c) Zend Technologies
+    with Zend OPcache v8.1.2-1ubuntu2.14, Copyright (c), by Zend Technologies
 ```
 
-Adobe Commerce e Magento Open Source 2.4 são compatíveis com o PHP 7.3, mas nós testamos e recomendamos o uso do PHP 7.4.
-
-Se o PHP não estiver instalado, ou se uma atualização de versão for necessária, instale-o seguindo as instruções para o seu tipo específico de Linux.
-No CentOS, [etapas adicionais podem ser necessárias](https://wiki.centos.org/HowTos/php7).
+Se o PHP não estiver instalado (ou necessitar de uma atualização), instale-o seguindo as instruções para a sua distribuição Linux.
 
 ## Verificar extensões instaladas
 
-O Adobe Commerce e o Magento Open Source exigem que um conjunto de extensões seja instalado.
+Adobe Commerce e Magento Open Source requerem determinadas extensões PHP. As listas a seguir especificam as extensões necessárias para cada edição do Commerce. As listas são geradas automaticamente a partir de uma implantação que executa a versão mais recente de cada edição.
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -54,11 +53,7 @@ Para verificar as extensões instaladas:
    ```
 
 1. Verifique se todas as extensões necessárias estão instaladas.
-1. Adicione quaisquer módulos ausentes usando o mesmo workflow usado para instalar o PHP. Por exemplo, se você usar `yum` para instalar o PHP, os módulos do PHP 7.4 podem ser adicionados com:
-
-   ```bash
-    yum -y install php74u-pdo php74u-mysqlnd php74u-opcache php74u-xml php74u-gd php74u-devel php74u-mysql php74u-intl php74u-mbstring php74u-bcmath php74u-json php74u-iconv php74u-soap
-   ```
+1. Adicione quaisquer módulos ausentes usando o mesmo workflow usado para instalar o PHP.
 
 ## Verificar configurações do PHP
 
@@ -74,7 +69,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Defina o limite de memória do PHP.
 
-  Nossas recomendações detalhadas são:
+  Adobe recomenda o seguinte:
 
    - Compilação de código ou implantação de ativos estáticos, `1G`
    - Depuração, `2G`
@@ -87,17 +82,17 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
   realpath_cache_ttl=7200
   ```
 
-  Essas configurações permitem que os processos PHP armazenem em cache os caminhos para os arquivos, em vez de pesquisá-los sempre que uma página é carregada. Consulte [Ajuste de desempenho](https://www.php.net/manual/en/ini.core.php) na documentação do PHP.
+  Estas configurações permitem que processos PHP armazenem em cache caminhos para arquivos em vez de pesquisá-los no carregamento da página. Consulte [Ajuste de desempenho](https://www.php.net/manual/en/ini.core.php) na documentação do PHP.
 
 - Ativar [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), que é necessário para o Adobe Commerce e o Magento Open Source 2.1 e posteriores.
 
-  Recomendamos que você ative o [OPcache do PHP](https://www.php.net/manual/en/book.opcache.php) por motivos de desempenho. O OPcache está habilitado em muitas distribuições PHP.
+  O Adobe recomenda ativar o [OPcache do PHP](https://www.php.net/manual/en/book.opcache.php) por motivos de desempenho. O OPcache está habilitado em muitas distribuições PHP.
 
   Adobe Commerce e Magento Open Source 2.1 e posterior usam comentários de código PHP para geração de código.
 
 >[!NOTE]
 >
->Para evitar problemas durante a instalação e atualização, recomendamos que você aplique as mesmas configurações do PHP tanto para a configuração da linha de comando do PHP quanto para a configuração do plug-in do servidor Web PHP. Para obter mais informações, consulte a próxima seção.
+>Para evitar problemas durante a instalação e o upgrade, o Adobe recomenda que você aplique as mesmas configurações do PHP tanto para a configuração da linha de comando do PHP quanto para a configuração do plug-in do servidor Web PHP. Para obter mais informações, consulte a próxima seção.
 
 ## Localizar arquivos de configuração do PHP
 
@@ -117,7 +112,7 @@ php --ini | grep "Loaded Configuration File"
 
 >[!NOTE]
 >
->Se você tiver apenas um `php.ini` faça as alterações nesse arquivo. Se você tiver dois `php.ini` arquivos, faça as alterações em *all* arquivos. Se isso não for feito, o desempenho poderá ser imprevisível.
+>Se você tiver apenas um `php.ini` arquivo, altere esse arquivo. Se você tiver dois `php.ini` arquivos, alterar *ambos* arquivos. Se isso não for feito, o desempenho poderá ser imprevisível.
 
 ### Localizar definições de configuração do OPcache
 
@@ -137,7 +132,7 @@ Use as diretrizes a seguir para encontrá-la:
   sudo find / -name 'opcache.ini'
   ```
 
-- nginx web server com PHP-FPM: `/etc/php/7.2/fpm/php.ini`
+- nginx web server com PHP-FPM: `/etc/php/8.1/fpm/php.ini`
 
 Se tiver mais de um `opcache.ini`, modifique todos eles.
 
@@ -189,7 +184,7 @@ Para definir `opcache.ini` opções:
 
    - `opcache.ini` (CentOS)
    - `php.ini` (Ubuntu)
-   - `/etc/php/7.2/fpm/php.ini` (servidor Web nginx (CentOS ou Ubuntu))
+   - `/etc/php/8.1/fpm/php.ini` (servidor Web nginx (CentOS ou Ubuntu))
 
 1. Localizar `opcache.save_comments` e deixe de comentar, se necessário.
 1. Verifique se o valor está definido como `1`.
@@ -204,7 +199,7 @@ Para definir `opcache.ini` opções:
 
 Consulte os seguintes artigos de suporte do Adobe Commerce para obter ajuda com a solução de problemas do PHP:
 
-- [Erro de versão do PHP ou erro 404 ao acessar o Adobe Commerce no navegador](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
+- [Erro de versão do PHP ou erro 404 ao acessar o Adobe Commerce em um navegador](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
 - [Erros de configurações de PHP](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
 - [Extensão mcrypt do PHP não instalada corretamente](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
 - [Problemas de verificação de preparação da versão do PHP](https://support.magento.com/hc/en-us/articles/360033546411)
