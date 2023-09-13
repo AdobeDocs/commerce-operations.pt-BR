@@ -4,9 +4,9 @@ description: Saiba como o arquivo XML do sistema gerencia a configuração do ap
 feature: Configuration, System
 badge: label="Contribuição de David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
+source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,6 @@ A `<field>`-Tag pode ter os seguintes filhos:
 | `more_url` | Não extensível. Veja abaixo. | `typeUrl` |
 | `demo_url` | Não extensível. Veja abaixo. | `typeUrl` |
 | `hide_in_single_store_mode` | Se o grupo deve estar visível no modo de armazenamento único. `1` oculta o grupo; `0` mostra o grupo. | `int` |
-| `source_service` | Serviço usado para preencher as opções selecionadas. | `complexType` |
 | `options` | Não usado. Potencialmente obsoleto. | `complexType` |
 | `depends` | Pode ser usado para declarar dependências a outros campos. É usado para mostrar apenas campos/grupos específicos quando um determinado campo tem um valor de `1`. Este nó espera uma `section/group/field`-string. | `complexType` |
 | `attribute` | Atributos personalizados podem ser usados por modelos de front-end. Normalmente usado para tornar um determinado modelo de front-end mais dinâmico. | `complexType` |
