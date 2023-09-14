@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 19d41495f95ae707be1db8446ac77eb5ead6375e
+source-git-commit: 7e6e8f1ed15d88fc79e9a3ad5a4505b612564f71
 workflow-type: tm+mt
-source-wordcount: '14327'
+source-wordcount: '14539'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ A variável [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte a [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.38 {#v1-1-38}
+
+* **ACSD-53098** (para Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.4) - corrige o problema em que os produtos atribuídos a um catálogo compartilhado não aparecem na loja quando um índice parcial é executado.
+* **ACSD-54018** (para Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.6) - Corrige os problemas de desempenho com o [!UICONTROL Product List] widget que usa um atributo não global na condição do widget.
+* **ACSD-54111** (para Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.6) - corrige o problema em que as imagens em miniatura do produto não são exibidas na loja quando a proporção da imagem da marca d&#39;água não corresponde à imagem do produto.
+* **ACSD-47669** (para Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.6) - Correções *Violação de restrição de integridade: 1452 Não é possível adicionar ou atualizar uma linha filha: falha em uma restrição de chave estrangeira* erro ao importar produtos CSV.
+* **ACSD-53347** (para Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7) - Corrige o problema em que o indexador de preços leva muito tempo para ser executado.
+* **ACSD-52287** (para Adobe Commerce >=2.3.7 &lt;2.4.7) - Corrige o problema com o status de pedido incorreto na grade de ordem arquivada quando a indexação de grade assíncrona está ativada.
+* **ACSD-52929** (para Adobe Commerce e Magento Open Source >=2.3.7 &lt;2.4.7) - Corrige o problema com solicitações redundantes para reindexar itens de origem padrão quando o indexador de inventário é configurado no modo assíncrono.
+* **ACSD-53824** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Corrige o problema em que `UpdateMultiselectAttributesBackendTypes` patch de dados de migração excede limite de tamanho de transação de banco de dados durante `setup:upgrade`.
 
 ## v1.1.37 {#v1-1-37}
 
