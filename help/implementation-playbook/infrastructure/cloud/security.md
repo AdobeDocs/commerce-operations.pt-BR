@@ -3,7 +3,7 @@ title: Segurança da infraestrutura em nuvem
 description: Saiba mais sobre como o Adobe mantém segura a infraestrutura em nuvem do Adobe Commerce.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: afe70569796c056cd0ecab82898f0dec016e7a3f
+source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Os clientes podem usar túneis SSH para proteger as comunicações com o aplicat
 
 ## Criptografia
 
-O EBS (Elastic Block Store) da Amazon é usado para armazenamento. Todos os volumes EBS são criptografados usando o algoritmo AES-265, o que significa que os dados são criptografados em repouso. O sistema também criptografa dados em trânsito entre a CDN e a origem e entre os servidores de origem. As senhas do cliente são armazenadas como hashes. As credenciais confidenciais, incluindo as credenciais do gateway de pagamento, são criptografadas usando o algoritmo SHA-256.
+O EBS (Elastic Block Store) da Amazon é usado para armazenamento. Todos os volumes EBS são criptografados usando o algoritmo AES-256, o que significa que os dados são criptografados em repouso. O sistema também criptografa dados em trânsito entre a CDN e a origem e entre os servidores de origem. As senhas do cliente são armazenadas como hashes. As credenciais confidenciais, incluindo as credenciais do gateway de pagamento, são criptografadas usando o algoritmo SHA-256.
 
 O aplicativo Adobe Commerce não oferece suporte à criptografia no nível da coluna ou da linha quando os dados não estão em repouso ou não estão em trânsito entre servidores. O cliente pode gerenciar chaves de criptografia no aplicativo. As chaves usadas pelo sistema são armazenadas no Sistema de Gerenciamento de Chaves da AWS e devem ser gerenciadas pela Managed Services para fornecer partes do serviço.
 
