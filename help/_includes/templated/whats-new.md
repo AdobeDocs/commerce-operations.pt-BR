@@ -1,7 +1,7 @@
 ---
-source-git-commit: 366180602621742c40184192633863c5ce9a8e9f
+source-git-commit: 578b3a7813151406d6e12e5ebed4761f5edb6b49
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 1%
 ## Novidades
 
 Saiba mais sobre a nova documentação e as atualizações importantes na documentação existente.
+
+### 14 de setembro de 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Origem</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Publicado <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notas de versão</a> para a versão do pacote da Ferramenta de correções de qualidade (QPT) 1.1.38.</p>
+</td>
+      <td>atualização importante</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1d1fac956ceb8f869b60accfe0180c593d659ec1">1d1fac</a> (confirmação)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 11 de setembro de 2023
 
