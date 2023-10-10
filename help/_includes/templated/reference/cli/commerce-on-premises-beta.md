@@ -1,7 +1,7 @@
 ---
-source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
+source-git-commit: d720b64f315d1e4b6fb7868d911eb3af089e3fa4
 workflow-type: tm+mt
-source-wordcount: '19899'
+source-wordcount: '20131'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versão**: 2.4.7-beta1
+**Versão**: 2.4.7-beta2
 
-Esta referência contém 132 comandos disponíveis através do `bin/magento` ferramenta de linha de comando.
+Esta referência contém 134 comandos disponíveis através do `bin/magento` ferramenta de linha de comando.
 A lista inicial é gerada automaticamente usando o `bin/magento list` comando no Adobe Commerce.
 Use o [&quot;Adicionar comandos CLI&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) guia para adicionar um comando CLI personalizado.
 
@@ -3756,6 +3756,120 @@ Não faça nenhuma pergunta interativa
 - Não aceita um valor
 
 
+## `events:provider:info`
+
+Retorna detalhes sobre o provedor de eventos configurado
+
+```bash
+bin/magento events:provider:info
+```
+
+### `--help`, `-h`
+
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+
+- Padrão: `false`
+- Não aceita um valor
+
+### `--quiet`, `-q`
+
+Não enviar nenhuma mensagem
+
+- Padrão: `false`
+- Não aceita um valor
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
+
+- Padrão: `false`
+- Não aceita um valor
+
+### `--version`, `-V`
+
+Exibir esta versão do aplicativo
+
+- Padrão: `false`
+- Não aceita um valor
+
+### `--ansi`
+
+Forçar (ou desativar — no- ansi) a saída ANSI
+
+- Não aceita um valor
+
+### `--no-ansi`
+
+Negar a opção &quot;—ansi&quot;
+
+- Padrão: `false`
+- Não aceita um valor
+
+### `--no-interaction`, `-n`
+
+Não faça nenhuma pergunta interativa
+
+- Padrão: `false`
+- Não aceita um valor
+
+
+## `events:registrations:list`
+
+Lista registros de eventos no projeto do App Builder
+
+```bash
+bin/magento events:registrations:list
+```
+
+### `--help`, `-h`
+
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+
+- Padrão: `false`
+- Não aceita um valor
+
+### `--quiet`, `-q`
+
+Não enviar nenhuma mensagem
+
+- Padrão: `false`
+- Não aceita um valor
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
+
+- Padrão: `false`
+- Não aceita um valor
+
+### `--version`, `-V`
+
+Exibir esta versão do aplicativo
+
+- Padrão: `false`
+- Não aceita um valor
+
+### `--ansi`
+
+Forçar (ou desativar — no- ansi) a saída ANSI
+
+- Não aceita um valor
+
+### `--no-ansi`
+
+Negar a opção &quot;—ansi&quot;
+
+- Padrão: `false`
+- Não aceita um valor
+
+### `--no-interaction`, `-n`
+
+Não faça nenhuma pergunta interativa
+
+- Padrão: `false`
+- Não aceita um valor
+
+
 ## `events:subscribe`
 
 Inscreve-se no evento
@@ -7221,7 +7335,7 @@ Não faça nenhuma pergunta interativa
 Executar servidor de aplicativos
 
 ```bash
-bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]]
+bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]]
 ```
 
 ### `--port`, `-p`
@@ -7250,6 +7364,13 @@ sinalizador de modo de plano de fundo
 parâmetros de inicialização do magento bootstrap
 
 - Padrão: &quot;
+- Aceita um valor
+
+### `--maxWaitTime`, `-mwt`
+
+quanto tempo esperar pelos trabalhadores após o recarregamento (por exemplo, alteração de configuração) antes de matá-los
+
+- Padrão: `3600`
 - Aceita um valor
 
 ### `--help`, `-h`
@@ -9417,7 +9538,7 @@ Sobrenome do administrador
 
 ### `--search-engine`
 
-Mecanismo de pesquisa. Valores: elasticsearch5, elasticsearch7, elasticsearch8, opensearch
+Mecanismo de pesquisa. Valores: elasticsearch7, elasticsearch8, opensearch
 
 - Requer um valor
 

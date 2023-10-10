@@ -3,9 +3,9 @@ title: Configurar verniz para o Commerce
 description: Saiba como atualizar e gerenciar o arquivo de configuração de verniz para o aplicativo Commerce.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,8 @@ Para configurar o Commerce para usar o verniz:
    | Lista de acesso | Insira o nome do host, endereço IP ou [Roteamento interdomínio sem classe (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) intervalo de endereços IP da notação para o qual o conteúdo será invalidado. Consulte [Limpeza do cache de verniz](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
    | Host de back-end | Insira o nome do host ou endereço IP totalmente qualificado e a porta de escuta do Verniz _back-end_ ou _servidor de origem_; ou seja, o servidor que fornece o conteúdo Verniz acelera. Normalmente, esse é o seu servidor Web. Consulte [Servidores de back-end com cache verniz](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Porta de back-end | Porta de escuta do servidor de origem. |
-   | Período de carência | O período de carência determina por quanto tempo o verniz fornecerá conteúdo obsoleto se o back-end não for responsivo. O valor padrão é de 300 segundos. |
+   | Período de carência | Determina por quanto tempo o Verniz fornecerá conteúdo obsoleto se o back-end não for responsivo. O valor padrão é de 300 segundos. |
+   | Gerencia o tamanho dos parâmetros  [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponível somente na versão 2.4.7 beta"} | Especifica o número máximo de [alças de layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) para processar no [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) Endpoint HTTP para cache de página inteira. Restringir o tamanho pode melhorar a segurança e o desempenho. O padrão é 100. |
 
 1. Clique em **Salvar configuração**.
 

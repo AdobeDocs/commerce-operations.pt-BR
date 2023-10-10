@@ -2,7 +2,7 @@
 title: Consumidores da fila de mensagens
 description: Saiba mais sobre o Adobe Commerce e os consumidores de fila de mensagens Magento Open Source, incluindo os recursos e as configurações do sistema associados a eles.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 1d7f5f58f8c21013c2ab0d68ab93a125ba0f3764
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 0%
@@ -65,7 +65,7 @@ A tabela a seguir identifica todos os consumidores de fila de mensagens, descrev
 | Envia emails de ordem de compra. Obrigatório quando a variável [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) está habilitada nas configurações do Admin System. |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
 | Valida a ordem de compra em relação aos itens relevantes [regras de aprovação](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). Obrigatório quando a variável [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) está habilitada nas configurações do Admin System. |                |                         |                     |
-| `saveConfigProcessor` [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponível somente na versão 2.4.7-beta1"} | + |                         | + |
+| `saveConfigProcessor` [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponível somente na versão 2.4.7 beta"} | + |                         | + |
 | Salva de forma assíncrona as alterações na configuração do armazenamento, colocando trabalhos de salvamento em uma fila de mensagens, o que pode melhorar o desempenho em implantações que contêm um grande número de configurações no nível do armazenamento. Obrigatório para usar o [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) módulo. |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
 | Impede que o [problema](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) onde os cupons de uso único podem ser usados várias vezes. |                |                         |                     |
