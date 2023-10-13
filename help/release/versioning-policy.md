@@ -2,7 +2,7 @@
 title: Política de lançamento
 description: Saiba mais sobre os diferentes tipos de versões do Adobe Commerce, incluindo versões secundárias, patches, patches de segurança, recursos, hotfixes, patches individuais e patches personalizados.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Adobe Commerce e Magento Open Source usam [controle de versão semântico](https
    - **Versão de correção de SEGURANÇA**—2.4.5-p1
       - Correção de erro de segurança
       - Aprimoramento de segurança
-- **Versão de patch BETA**—2.4.7-beta1
+- **Versão de patch BETA**—2.4.7-beta2
 - **Extensibilidade, infraestrutura e versão de serviços**
 - **Hotfix**
 - **Patch individual**
