@@ -2,9 +2,9 @@
 title: Gerenciar o cache
 description: Gerenciar tipos de cache e exibir status do cache.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
+source-git-commit: 9476a8ee2ce49e635e17fbb25c74656ba30bf930
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,7 @@ O Commerce 2 tem os seguintes tipos de cache:
 | Configuração da API de integração | config_integration_api | Configuração das APIs de integração compiladas das integrações da loja. |
 | Configuração de serviços da Web | config_webservice | Armazenamento em cache da estrutura da API da Web. |
 | Notificação de Cliente | customer_notification | Notificações temporárias exibidas na interface do usuário. |
+| Cache do SDK da interface do administrador | admin_ui_sdk | Armazena em cache personalizações de administradores que foram adicionadas com o [SDK da interface do administrador do Adobe Commerce](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
 
 ## Exibir o status do cache
 
