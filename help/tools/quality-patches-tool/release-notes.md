@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 67d4f2dd6b3aedae51c9b81268f2ced12369becc
+source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
 workflow-type: tm+mt
-source-wordcount: '14811'
+source-wordcount: '15145'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ A variável [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte a [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.40 {#v1-1-40}
+
+* **ACSD-54680** (para Adobe Commerce >=2.4.0 &lt;2.4.6) - Corrige o problema em que não é possível processar uma Cotação B2B enviada para um produto com Várias Fontes Atribuídas.
+* **ACSD-54040** (para Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6) - Corrige o problema em que a *[!UICONTROL Created]* O campo está em branco para exibir detalhes da ordem quando os módulos B2B estão ativados.
+* **ACSD-54319** (para Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.6) - Corrige o problema em que o preço do produto mostra zero no *[!UICONTROL Product in Cart]* relatório.
+* **ACSD-53378** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.7) - Melhora o tempo de carregamento da página de check-out para clientes com catálogos de endereços grandes.
+* **ACSD-52657** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.7) - Corrige o problema em que o minicart não é atualizado na loja secundária, que usa um subdomínio.
+* **ACSD-53414** (para Adobe Commerce >=2.4.6 &lt;2.4.7) - corrige o problema em que um usuário administrador restrito pode ver páginas do CMS fora do escopo de suas permissões.
+* **ACSD-54472** (para Adobe Commerce >=2.4.6 &lt;2.4.7) - Corrige o problema em que os clientes de uma empresa rejeitada ainda podem se autenticar e os clientes de uma empresa bloqueada e rejeitada ainda podem fazer pedidos. O patch adiciona validação adicional para endpoints do GraphQL.
+* **ACSD-52801** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Adiciona a opção de fazer uma correspondência parcial ao pesquisar produtos no GraphQL.
+* **ACSD-55004** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige o problema em que o validador falha ao fazer upload de um arquivo de importação maior do que o valor configurado no `php.ini`.
+* **ACSD-54989** (para Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) - Corrige o problema em que um administrador de empresa não pode fazer um pedido quando *[!UICONTROL Enable Purchase Orders]* está definida como *[!UICONTROL Yes]* e *[!UICONTROL Purchase Order]* está definida como *[!UICONTROL No]*.
+* **ACSD-54007** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.7) - Corrige o erro *&quot;Chave de matriz &quot;_scope&quot; indefinida&quot;* sobre a importação de dados do cliente.
+* **ACSD-55031** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.6) - Corrige a *O tipo &quot;misto&quot; não pode ser anulável* erro durante a compilação.
+* **ACSD-54961** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.7) - Corrige o problema em que um usuário administrador restrito não consegue atualizar em massa o *Análise do produto* status.
+* **ACSD-55256** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige o problema em que somente a primeira imagem é exibida com êxito no controle deslizante de imagem.
+* Patches atualizados: ACSD-52041, ACSD-54106
 
 ## v1.1.39 {#v1-1-39}
 
