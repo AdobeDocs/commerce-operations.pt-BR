@@ -4,9 +4,9 @@ description: Saiba como processar e armazenar com segurança os detalhes de paga
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Um dos princípios fundamentais para manter [Conformidade com o PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) A está tendo uma estratégia para processar e armazenar corretamente os pagamentos com cartão de crédito.
 
-O armazenamento de dados de titulares de cartão no Adobe Commerce é **estritamente proibido** e fazer isso pode ser uma violação de suas obrigações como comerciante, de acordo com o PCI-DSS (Payment Card Industry Data Security Standard, padrão de segurança de dados do setor de cartões de pagamento). Mais informações sobre nosso modelo de responsabilidade compartilhada e as diretrizes para obrigações do comerciante podem ser encontradas em nosso [guia de responsabilidade compartilhada do Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) no Centro de confiança Adobe.
+O armazenamento de dados de titulares de cartão no Adobe Commerce é **estritamente proibido** e fazer isso pode ser uma violação de suas obrigações como comerciante, de acordo com o PCI-DSS (Payment Card Industry Data Security Standard, padrão de segurança de dados do setor de cartões de pagamento). Mais informações sobre o modelo de responsabilidade compartilhada e as diretrizes para obrigações do comerciante estão disponíveis na [Guia do modelo de responsabilidade compartilhada da Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) no Centro de confiança Adobe.
 
-Recomendamos seguir as práticas recomendadas abaixo para ajudar a garantir que você esteja processando corretamente as informações de pagamento em seu site de comércio eletrônico. Orientações adicionais sobre as práticas recomendadas gerais de segurança podem ser encontradas em nossa [guia de práticas recomendadas de segurança para o Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) no Centro de confiança Adobe
+Siga as práticas recomendadas abaixo para garantir o processamento correto das informações de pagamento no seu site de comércio eletrônico. Orientações adicionais sobre as práticas recomendadas gerais de segurança podem ser encontradas em nossa [guia de práticas recomendadas de segurança para o Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) no Centro de confiança Adobe
 
 ## Produtos e versões afetados
 
@@ -28,11 +28,11 @@ Recomendamos seguir as práticas recomendadas abaixo para ajudar a garantir que 
 
 ## Protegendo dados de titulares de cartão
 
-Se o armazenamento dos dados de titulares de cartão for necessário, os dados devem ser armazenados fora da Adobe Commerce com proteções de armazenamento. Ter salvaguardas de armazenamento em vigor para detalhes de pagamento, como dados de titulares de cartão de crédito, ajuda a evitar fraudes e outros possíveis problemas de segurança. De acordo com outros padrões PCI, ter proteções é a primeira linha de defesa. Alguns métodos preferidos para aprimorar as proteções dos dados armazenados incluem criptografia, truncamento, geração de tokens, hash unidirecional e mascaramento.
+Se o armazenamento dos dados de titulares de cartão for necessário, os dados devem ser armazenados fora da Adobe Commerce com proteções de armazenamento. Ter salvaguardas de armazenamento em vigor para detalhes de pagamento, como dados de titulares de cartão de crédito, ajuda a evitar fraudes e outros possíveis problemas de segurança. De acordo com outros padrões PCI, ter proteções é a primeira linha de defesa. Alguns métodos preferidos para melhorar a proteção dos dados armazenados incluem criptografia, truncamento, geração de tokens, hash unidirecional e mascaramento.
 
 As proteções para chaves criptográficas são vitais para as estratégias de proteção de dados. É essencial ter custodiantes qualificados e confiáveis supervisionando essas chaves.
 
-Por fim, um número de conta principal (PAN) deve estar ilegível durante o armazenamento (por exemplo, mascarado como XXX). Isso inclui mídias portáteis de armazenamento e backup, como unidades flash, USB e discos rígidos externos, e até mesmo registros de auditoria.
+Por fim, um número de conta principal (PAN) deve estar ilegível durante o armazenamento, por exemplo, mascarado com `XXX`. Isso inclui mídias portáteis de armazenamento e backup, como unidades flash, USB e discos rígidos externos, e até mesmo registros de auditoria.
 
 ## Criptografar a transmissão de dados de titulares de cartão
 
@@ -49,7 +49,7 @@ Transmitir dados de titulares de cartão usando protocolos e práticas de transm
 * Restringir o acesso aos dados de titulares de cartão
 * O acesso a informações sensíveis deve ser limitado com base no princípio da &quot;necessidade de conhecer&quot; e concedido apenas a pessoal autorizado com necessidades comerciais
 
-O método recomendado para lidar com os dados do titular do cartão é não armazenar o número de conta principal (PAN), mas criar um token do cartão com um provedor de processamento de pagamento específico e armazenar o token, o tipo de cartão e a data de expiração criptografada. Você pode usar o token como uma credencial no arquivo para uso futuro, pois ele é exclusivo somente para cada comerciante. Como o token é exclusivo, se houver um problema de segurança, o token será invalidado, o que ajuda a evitar atividades fraudulentas
+O método recomendado para lidar com dados de titulares de cartão é criar um token dos dados, em vez de armazená-los. Crie um token do cartão com um provedor de processamento de pagamento específico e armazene o token, o tipo de cartão e a data de expiração criptografada. Você pode usar o token como uma credencial no arquivo para uso futuro, pois ele é exclusivo somente para cada comerciante. Como o token é exclusivo, se houver um problema de segurança, o token será invalidado, o que ajuda a evitar atividades fraudulentas.
 
 ## Informações adicionais
 
