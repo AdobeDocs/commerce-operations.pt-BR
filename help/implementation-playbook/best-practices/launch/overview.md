@@ -3,9 +3,9 @@ title: Fase de lançamento da implementação
 description: Saiba mais sobre as práticas recomendadas de implementação para a fase de lançamento de projetos do Adobe Commerce.
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
-source-git-commit: 48ed42e69c5786a10de3426d581e35030412c001
+source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '168'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 | [Serviço de notificação de segurança do Adobe&#x200B;](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Inscrever-se nas notificações de segurança do Adobe. |
 | [Prevenir e responder a incidentes de segurança](prevent-respond-security-incident.md) | Evite e responda a incidentes de segurança para seu Adobe Commerce em projetos de infraestrutura em nuvem. |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | Configure o Google reCAPTCHA para acesso de Administrador e várias ações de loja iniciadas por clientes registrados. |
-| [Configure o `robots.txt&#x200B;` arquivo](robots-txt.md) | Envie instruções sobre o site do Adobe Commerce para rastreadores da Web. |
+| [Configurar rastreadores da Web](robots-txt.md) | Envie instruções sobre o site do Adobe Commerce para rastreadores da Web usando `robots.txt` e `sitemap.xml` arquivos. |
 | [Verificar configuração de segurança](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html) | Revise os itens da lista de verificação antes de iniciar um Adobe Commerce no site de infraestrutura em nuvem. |
 
 ## Monitoramento de desempenho

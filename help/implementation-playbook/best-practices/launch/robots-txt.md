@@ -1,19 +1,20 @@
 ---
-title: Práticas recomendadas para configurar os arquivos "robots.txt" e "sitemap.xml"
-description: Saiba como transmitir instruções sobre o site do Adobe Commerce para rastreadores da Web.
+title: Práticas recomendadas para configurar crawlers da Web
+description: Saiba como transmitir instruções sobre o site do Adobe Commerce para rastreadores da Web usando os arquivos "robots.txt" e "sitemap.xml".
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
 
-# Práticas recomendadas para configuração `robots.txt` e `sitemap.xml` arquivos
 
-Este artigo fornece práticas recomendadas para usar o `robots.txt` e `sitemap.xml` arquivos no Adobe Commerce, incluindo configuração e segurança. Esses arquivos instruem os robôs da Web (geralmente robôs de mecanismo de pesquisa) a rastrear páginas em um site. A configuração desses arquivos pode melhorar o desempenho do site e a otimização do mecanismo de pesquisa.
+# Práticas recomendadas para configurar crawlers da Web
+
+Este artigo fornece práticas recomendadas para usar o `robots.txt` e `sitemap.xml` arquivos no Adobe Commerce, incluindo configuração e segurança. Esses arquivos instruem os rastreadores da Web (geralmente robôs de mecanismo de pesquisa) a rastrear páginas em um site. A configuração desses arquivos pode melhorar o desempenho do site e a otimização do mecanismo de pesquisa.
 
 >[!NOTE]
 >
