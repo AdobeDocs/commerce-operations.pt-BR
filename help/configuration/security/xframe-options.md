@@ -1,20 +1,20 @@
 ---
-title: Cabeçalho X-Frame-Options
-description: Use X-Frame-Options para controlar a renderização da página.
+title: Evitar explorações de clickjacking
+description: Evite explorações de clickjacking usando o cabeçalho "X-Frame-Options" para controlar as renderizações da página.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# Cabeçalho X-Frame-Options
+# Evitar explorações de clickjacking
 
-Para ajudar a evitar [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) explorações, adicionamos uma opção para usar o [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) Cabeçalho de solicitação HTTP em solicitações para a loja.
+Impedir [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) explorações, incluindo a [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) Cabeçalho de solicitação HTTP em solicitações para a loja.
 
-A variável `X-Frame-Options` cabeçalho permite especificar se um navegador deve ter permissão para renderizar uma página em um `<frame>`, `<iframe>`ou `<object>` do seguinte modo:
+A variável `X-Frame-Options` permite especificar se um navegador pode renderizar uma página em um `<frame>`, `<iframe>`ou `<object>` do seguinte modo:
 
 - `DENY`: a página não pode ser exibida em um quadro.
 - `SAMEORIGIN`: (padrão) a página pode ser exibida somente em um quadro na mesma origem da própria página.

@@ -2,9 +2,9 @@
 user-guide-title: Manual de implementação
 user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '277'
 ht-degree: 11%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 11%
    - Launch {#launch}
       - [Visão geral](best-practices/launch/overview.md)
       - [Configurar rastreadores da Web](best-practices/launch/robots-txt.md)
-      - [Prevenir e responder a incidentes de segurança](best-practices/launch/prevent-respond-security-incident.md)
+      - [Proteger seu site e sua infraestrutura](best-practices/launch/security-best-practices.md)
    - Manutenção {#maintenance}
       - [Visão geral](best-practices/maintenance/overview.md)
       - [Auditoria de desempenho de front-end](best-practices/maintenance/frontend-performance.md)
@@ -118,6 +118,7 @@ ht-degree: 11%
       - [Patches em escala](best-practices/maintenance/patching-at-scale.md)
       - [Processamento do pedido](best-practices/maintenance/order-processing-configuration.md)
       - [Resolver problemas de desempenho do banco de dados](best-practices/maintenance/resolve-database-performance-issues.md)
+      - [Responder a incidentes de segurança](best-practices/maintenance/respond-to-security-incident.md)
       - [Agendando atualizações de administrador em sites de produção](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [Serviços de atualização](best-practices/maintenance/update-services.md)
       - [Lista de verificação de atualização](best-practices/maintenance/upgrade-checklist.md)
