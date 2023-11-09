@@ -4,9 +4,9 @@ description: Saiba como mesclar e minificar arquivos CSS e JavaScript (JS) para 
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 409bd4795704b9daec7773459e5a1f9f42ef5128
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,8 @@ O tempo necessário para carregar arquivos CSS e JavaScript (JS) pode ser reduzi
 >[!IMPORTANT]
 >
 >A infraestrutura do Adobe Commerce na nuvem sempre é executada no modo de Produção e não é possível defini-la de outra forma. Portanto, você deve usar o método de linha de comando para habilitar a mesclagem, a minificação e o agrupamento.
+
+Não mescle ou agrupe arquivos se a implantação usar HTTP2. HTTP2 baixa arquivos estáticos de forma assíncrona. Os navegadores devem baixar um arquivo mesclado inteiro antes de processar o conteúdo do arquivo.
 
 ### Uso do Admin
 
