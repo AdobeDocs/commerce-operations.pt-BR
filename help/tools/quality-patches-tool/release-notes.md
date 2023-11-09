@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
+source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
 workflow-type: tm+mt
-source-wordcount: '15145'
+source-wordcount: '15346'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,18 @@ A variável [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte a [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.41 {#v1-1-41}
+
+* **ACSD-54376** (para Adobe Commerce >=2.4.2 &lt;2.4.7) - Corrige o problema que ocorre no carrinho de compras quando um produto é removido do catálogo compartilhado depois de já ter sido adicionado ao carrinho.
+* **ACSD-53722** (para Adobe Commerce >=2.4.4 &lt;2.4.7) - corrige o problema em que o preço das opções de produto agrupadas muda para $0 quando atualizações programadas para escopos diferentes são ativadas.
+* **ACSD-53643** (para Adobe Commerce >=2.4.3 &lt;2.4.7) - corrige o problema em que o pedido tem um total incorreto ao fazer um pedido com produtos desativados ou indisponíveis. É corrigido ocultando o *[!UICONTROL Place Order]* para essas ordens de compra.
+* **ACSD-54067** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.7) - Corrige o problema em que um vídeo de produto não é reproduzido em um dispositivo móvel.
+* **ACSD-55414** (para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6) - Melhora o desempenho quando o MariaDB tenta converter a entity_id de EAV de string em inteiro.
+* **ACSD-51819** (para Adobe Commerce >=2.4.4 &lt;2.4.4-p4) - Corrige o problema em que vários pedidos podem ser feitos com a mesma ID de cotação.
+* **ACSD-53118** (para Adobe Commerce >=2.4.0 &lt;2.4.7) - Corrige o problema em que a variável *[!UICONTROL Cart Price Rule]* é aplicado usando o código do cupom enquanto o produto tem um atributo vazio.
+* **ACSD-54324** (para Adobe Commerce >=2.4.5 &lt;2.4.7) - Corrige o problema em que a solicitação requisition_lists do GraphQL não considera configurações de paginação e retorna todos os resultados.
+* Patches atualizados: MDVA-42855-v2
 
 ## v1.1.40 {#v1-1-40}
 
