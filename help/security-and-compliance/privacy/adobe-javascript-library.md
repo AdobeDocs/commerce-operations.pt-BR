@@ -4,9 +4,9 @@ description: Saiba como usar ferramentas personalizadas para acessar e excluir i
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-A variável [Biblioteca JavaScript de Privacidade Adobe](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) O é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados.
+A variável [Biblioteca JavaScript de Privacidade Adobe](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) O é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados.
 
 Os serviços de rastreamento de dados Adobe Commerce e Magento Open Source podem armazenar informações privadas aplicáveis a regulamentos de privacidade, como o [Regulamento Geral sobre a Proteção de Dados (GDPR)](gdpr.md) e [Lei de Privacidade do Consumidor da Califórnia (CCPA)](ccpa.md).
 
@@ -43,7 +43,7 @@ A Biblioteca JS do Adobe Privacy fornece várias funções para gerenciar dados 
 `retrieveThenRemoveIdentities()`
 : Essa função é semelhante a `removeIdentities()` na medida em que recupera uma matriz de identidades e as remove do navegador.
 
-Para obter mais informações e exemplos para usar essas funções, consulte a [documentação oficial da biblioteca](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html).
+Para obter mais informações e exemplos para usar essas funções, consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Inicialização
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 O construtor aceita um objeto de configuração com parâmetros durante a instância.
-Consulte a [documentação oficial da biblioteca](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) para obter uma lista desses parâmetros de configuração.
+Consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) para obter uma lista desses parâmetros de configuração.
