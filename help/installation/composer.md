@@ -2,9 +2,9 @@
 title: Instalação de início rápido local
 description: Siga estas etapas para instalar o Adobe Commerce ou o Magento Open Source na infraestrutura que você possui.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 3c6527e5936438d6f1f52b32082cc7dde5f87f22
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,10 @@ Para obter o pacote Adobe Commerce ou Magento Open Source:
    ```
 
    Quando solicitado, insira suas chaves de autenticação. Chaves públicas e privadas são criadas e configuradas no [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+
+   >[!NOTE]
+   >
+   > Ao usar um Compositor `auth.json` arquivo ou variável de ambiente, você não será solicitado a inserir suas chaves de autenticação.
 
    Se você encontrar erros, como `Could not find package...` ou `...no matching package found`, verifique se não há erros de digitação no comando. Se ainda encontrar erros, talvez você não esteja autorizado a baixar o Adobe Commerce. Contato [Suporte ao Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
 
