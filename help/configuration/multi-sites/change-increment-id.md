@@ -2,9 +2,9 @@
 title: Alterar ID de incremento
 description: Alterar a ID de incremento de uma entidade de banco de dados do Commerce.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Talvez seja necessário alterar a ID de incremento para novas entidades de BD ne
 
 >[!INFO]
 >
->Você também pode corrigir o problema do gateway de pagamento para PayPal, permitindo vários pagamentos por ID de fatura nas Preferências de Recebimento de Pagamento do PayPal. Consulte [Solicitação rejeitada do gateway do PayPal - problema de fatura duplicado] no _Knowledge base_.
+>Você também pode corrigir o problema do gateway de pagamento para PayPal, permitindo vários pagamentos por ID de fatura nas Preferências de Recebimento de Pagamento do PayPal. Consulte [Solicitação rejeitada do gateway do PayPal - problema de fatura duplicado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) no _Knowledge base_.
 
 ## Etapas de pré-requisito
 
@@ -55,7 +55,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 
 >[!INFO]
 >
-Importante: o novo valor de incremento deve ser maior que o atual.
+>Importante: o novo valor de incremento deve ser maior que o atual.
 
 Após executar a seguinte query:
 
@@ -74,6 +74,6 @@ Antes de executar o `ALTER TABLE` em um ambiente de produção do Adobe Commerce
 
 <!-- Link Definitions -->
 
-[Solicitação rejeitada do gateway do PayPal - problema de fatura duplicado]: https://support.magento.com/hc/en-us/articles/115002457473
+[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
 [Criar um backup de BD]: https://support.magento.com/hc/en-us/articles/360003254334
 [qualquer versão compatível]
