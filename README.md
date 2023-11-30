@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2727ddb18995ac2163276a0aa8573161add48971
+source-git-commit: 580a15c908fc8ac4ef5d62582dfdd87d75dde994
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '766'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ A forma como você contribui depende de quem você é e do tipo de alterações 
 
 ### Pequenas alterações
 
-Se você estiver contribuindo com pequenas atualizações, visite o artigo e clique no link **Editar** no artigo que vai para a origem GitHub do artigo. Em seguida, use a interface do usuário do GitHub para fazer suas atualizações. Consulte as [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais informações.
+Se você estiver contribuindo com pequenas atualizações, visite o artigo e clique na área de feedback que aparece na parte inferior do artigo, clique em **Opções de feedback detalhadas** e clique em **Sugerir uma edição** para acessar o arquivo de origem do Markdown no GitHub. Use a interface do GitHub para fazer suas atualizações. Consulte as [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais informações.
 
 As pequenas correções ou esclarecimentos que você envia para documentação e exemplos de código neste repositório são cobertos pelos termos de uso do Adobe.
 
