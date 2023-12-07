@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de implementação para 
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 ## Otimização de arquivos
 
 | Prática recomendada | Descrição |
-|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [Redimensionamento da imagem do catálogo](catalog-image-resizing.md) | Fornece orientação sobre o redimensionamento de imagens antes que um armazenamento entre em produção para garantir o desempenho ideal |
 | [CSS e JS](optimize-css-js-files.md) | Mesclar e minificar arquivos de folha de estilos em cascata (CSS) e JavaScript (JS) do Administrador ou da linha de comando |
 | [Imagens](image-optimization.md) | Otimizar imagens e usar o Fastly para otimizar o tempo de resposta |
@@ -62,10 +62,11 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 ## Desenvolvimento em PHP
 
 | Prática recomendada | Descrição |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Tratamento de exceções](exception-handling.md) | Descreve os métodos recomendados para registrar exceções |
 | [Extensões](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Descreve padrões de desenvolvimento para ajudar a garantir a compatibilidade entre sua extensão, versões futuras do Adobe Commerce e outras extensões personalizadas |
 | [Blocos de conteúdo privado](private-content-block-configuration.md) | Configurar blocos de conteúdo privado para otimizar o desempenho da loja |
+| [Modificar código PHP principal e de terceiros](modifying-core-and-third-party-code.md) | Modifique a funcionalidade, o resultado ou a entrada de qualquer código que você não criou ou não controla diretamente |
 
 ## Plataforma e serviços
 
