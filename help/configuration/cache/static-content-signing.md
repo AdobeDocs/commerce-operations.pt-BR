@@ -3,9 +3,9 @@ title: Cache de conteúdo estático
 description: Entenda sobre a assinatura de conteúdo estático e como ativar ou desativar o recurso.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,10 @@ Isso altera o URL dos arquivos estáticos e força o navegador a carregar a nova
 
 O Commerce ativa esse recurso por padrão, e a Adobe recomenda mantê-lo ativado para evitar problemas relacionados a navegadores que servem recursos estáticos antigos.
 
-Você pode encontrar a configuração desse recurso em [**[!UICONTROL Stores]**> Configurações > Configuração >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+A configuração para assinatura de conteúdo estático está em [**[!UICONTROL Stores]**> Configurações > Configuração >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+
+- **Somente no local**: essa configuração estará disponível se o site for **não** in [Modo de produção](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **Nuvem**: essa configuração está oculta porque o modo de Produção é estritamente aplicado; portanto, você deve usar a linha de comando, conforme mostrado abaixo.
 
 ![Configurações de arquivos estáticos](../../assets/configuration/static-files-settings.png)
 
