@@ -2,9 +2,9 @@
 title: Requisitos do sistema
 description: Use esta referência para identificar as dependências de software necessárias que foram testadas com versões Adobe Commerce e Magento Open Source.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ad715d1581442fa447e394d88d496ec52519a1c3
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,10 @@ Para obter orientação sobre a configuração na nuvem, consulte [Configuraçõ
 Para verificar se o PHP OPcache está instalado, consulte [Configurações do PHP](prerequisites/php-settings.md). Ou, para obter orientação específica sobre configurações de desempenho, consulte as recomendações de software para [Configurações do PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) no _Práticas recomendadas de desempenho_ guia.
 
 Se precisar instalar o OPcache separadamente, consulte a [Documentação do PHP OPcache](https://www.php.net/manual/en/opcache.setup.php).
+
+### Controle do processo PHP
+
+{{php-process-control}}
 
 ### PHPUnit
 

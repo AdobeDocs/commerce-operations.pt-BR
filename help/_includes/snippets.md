@@ -1,7 +1,7 @@
 ---
-source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Embora o código para aprimoramentos e correções de erros descritos nestas notas de versão esteja incluído no Adobe Commerce, vários desses projetos (por exemplo, B2B, Page Builder e Progressive Web Application (PWA) Studio) também são lançados de forma independente. As correções de erros para esses projetos estão documentadas nas informações de versão separadas e específicas do projeto, disponíveis na documentação de cada projeto. Consulte [visão geral da versão do produto](/help/release/release-notes/overview.md).
+
+## Controle do processo PHP {#php-process-control}
+
+Antes de executar indexadores no modo paralelo, você deve habilitar o suporte ao Controle do processo (`pcntl`) no PHP. Consulte [Instalação](https://www.php.net/manual/en/pcntl.installation.php) na documentação do PHP.

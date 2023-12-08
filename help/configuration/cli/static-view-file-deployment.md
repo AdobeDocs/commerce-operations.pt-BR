@@ -2,9 +2,9 @@
 title: Implantar arquivos de exibição estáticos
 description: Saiba como gravar arquivos estáticos no sistema de arquivos do Commerce durante o modo de produção.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0a72bc492dfec0a9014a518282a97ab21e59f96d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ A tabela a seguir explica os parâmetros e valores desse comando.
 | `--exclude-theme <theme>` | Temas a serem excluídos ao implantar conteúdo estático. O valor padrão é **nenhum**.<br>Por exemplo, `--exclude-theme Magento/blank` | Não |
 | `--area (-a)` | Gera arquivos somente para as áreas especificadas. O padrão, sem opção especificada, é gerar arquivos para todas as áreas. Os valores válidos são `adminhtml` e `frontend`. O valor padrão é **all**.<br>Por exemplo: `--area adminhtml` | Não |
 | `--exclude-area` | Não gerar arquivos para as áreas especificadas. O padrão, sem nenhuma opção especificada, é não excluir nada. O valor padrão é **nenhum**. | Não |
-| `--jobs (-j)` | Habilite o processamento paralelo usando o número especificado de trabalhos. O padrão é 0 (não executar em processos paralelos). O valor padrão é **0**. | Não |
+| `--jobs (-j)` | Ativar [processamento paralelo](manage-indexers.md#reindexing-in-parallel-mode) usando o número especificado de trabalhos. O padrão é 0 (não executar em processos paralelos). O valor padrão é **0**. | Não |
 | `--symlink-locale` | Crie symlinks para os arquivos dessas localidades, que são transmitidos para implantação, mas não têm personalizações. | Não |
 | `--content-version=CONTENT-VERSION` | A versão personalizada do conteúdo estático pode ser usada se a implantação estiver em execução em vários nós para garantir que a versão do conteúdo estático seja idêntica e o armazenamento em cache funcione corretamente. | Não |
 | `--no-javascript` | Não implantar arquivos JavaScript | Não |
