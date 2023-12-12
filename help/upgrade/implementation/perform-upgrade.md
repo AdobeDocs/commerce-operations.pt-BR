@@ -1,26 +1,28 @@
 ---
 title: Executar uma atualização
-description: Siga estas etapas para atualizar um projeto Adobe Commerce ou Magento Open Source.
+description: Siga estas etapas para atualizar as implantações locais do Adobe Commerce.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
 
+
 # Executar uma atualização
 
-Você pode fazer o upgrade do aplicativo Adobe Commerce ou Magento Open Source a partir da linha de comando se tiver instalado o software da seguinte maneira:
+Você pode atualizar _no local_ implantações do aplicativo Adobe Commerce ou Magento Open Source a partir da linha de comando, se você instalou o software ao:
 
-- Baixar o metapackage usando o `composer create-project` comando.
+- Baixando o metapackage do Composer usando o `composer create-project` comando.
 - Instalando o arquivo compactado.
 
 >[!NOTE]
 >
->Não use esse método para atualizar se você clonou o repositório GitHub. Em vez disso, consulte [Atualizar uma instalação baseada em Git](../developer/git-installs.md) para obter instruções de atualização.
+>- Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Atualizar versão do Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) no Guia da nuvem.
+>- Não use esse método para atualizar se você clonou o repositório GitHub. Consulte [Atualizar uma instalação baseada em Git](../developer/git-installs.md).
 
-As instruções a seguir mostram como atualizar usando o Composer. O Adobe Commerce 2.4.2 introduziu o suporte para o Composer 2. Se você estiver tentando atualizar do &lt;2.4.1, é necessário primeiro atualizar para uma versão compatível com o Composer 2 (por exemplo, 2.4.2) usando o Composer 1 _antes_ atualização para o Composer 2 para atualizações >2.4.2. Além disso, você deve executar um [versão compatível](../../installation/system-requirements.md) do PHP.
+As instruções a seguir mostram como atualizar usando o gerenciador de pacotes do Composer. O Adobe Commerce 2.4.2 introduziu o suporte para o Composer 2. Se você estiver tentando atualizar do &lt;2.4.1, é necessário primeiro atualizar para uma versão compatível com o Composer 2 (por exemplo, 2.4.2) usando o Composer 1 _antes_ atualização para o Composer 2 para atualizações >2.4.2. Além disso, você deve executar um [versão compatível](../../installation/system-requirements.md) do PHP.
 
 >[!WARNING]
 >
@@ -34,7 +36,7 @@ Você deve concluir o [pré-requisitos de atualização](../prepare/prerequisite
 
 >[!NOTE]
 >
->Consulte os exemplos no final desta seção para obter ajuda com a especificação de diferentes níveis de versão. Por exemplo, versão secundária, patch de qualidade e patch de segurança. Os clientes da Adobe Commerce podem acessar os patches duas semanas antes da data de disponibilidade geral. Os pacotes de pré-lançamento estão disponíveis somente no Composer. Você não pode encontrá-los no Portal de downloads ou no GitHub até a data de disponibilidade geral. Se não conseguir encontrar esses pacotes no Composer, entre em contato com o Suporte da Adobe Commerce.
+>Consulte os exemplos no final desta seção para obter ajuda com a especificação de diferentes níveis de versão. Por exemplo, patches de qualidade e patches de segurança. Se não conseguir encontrar esses pacotes no Composer, entre em contato com o Suporte da Adobe Commerce.
 
 1. Alterne para o modo de manutenção para impedir o acesso ao seu armazenamento durante o processo de atualização.
 
@@ -114,7 +116,7 @@ Você deve concluir o [pré-requisitos de atualização](../prepare/prerequisite
 
    - `--interactive-root-conflicts` —(Opcional) Permite exibir e atualizar interativamente quaisquer valores desatualizados de versões anteriores ou quaisquer valores personalizados que não correspondam à versão para a qual você está atualizando.
 
-   - `--force-root-updates` —(Opcional) Substitui todos os valores personalizados conflitantes pelos valores de Magento esperados.
+   - `--force-root-updates` —(Opcional) Substitui todos os valores personalizados conflitantes pelos valores esperados do Commerce.
 
    - `--help` —(Opcional) Fornece detalhes de uso sobre o plug-in.
 
@@ -142,58 +144,36 @@ _Adobe Commerce_:
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
-### Exemplo - Versão secundária
-
-As versões secundárias contêm novos recursos, correções de qualidade e correções de segurança. Use o Composer para especificar uma versão secundária. Por exemplo, para especificar o metapackage do Magento Open Source 2.4.3:
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.0 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
-```
-
 ### Exemplo - Correção de qualidade
 
-Os remendos de qualidade contêm principalmente _e_ correções de segurança. No entanto, às vezes eles podem conter recursos novos e compatíveis com versões anteriores. Use o Composer para baixar um patch de qualidade. Por exemplo, para especificar o metapackage do Magento Open Source 2.4.1:
+Os remendos de qualidade contêm principalmente _e_ correções de segurança. No entanto, às vezes eles podem conter recursos novos e compatíveis com versões anteriores. Use o Composer para baixar um patch de qualidade.
+
+_Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3 --no-update
+composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
 ### Exemplo - Correção de segurança
 
-Os patches de segurança contêm apenas correções de segurança. Elas foram projetadas para tornar o processo de atualização mais rápido e fácil.
-
-Os patches de segurança usam a convenção de nomenclatura do Composer `2.4.x-px`. Use o Composer para especificar um patch.
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.3-p1 --no-update
-```
+Os patches de segurança contêm apenas correções de segurança. Elas foram projetadas para tornar o processo de atualização mais rápido e fácil. Os patches de segurança usam a convenção de nomenclatura do Composer `2.4.x-px`.
 
 _Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
+```
+
+_Magento Open Source_:
+
+```bash
+composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
 ## Atualizar metadados
@@ -250,7 +230,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 ## Verifique o seu trabalho
 
-Abra o URL da loja em um navegador da Web para verificar se a atualização foi bem-sucedida. Se a atualização não tiver sido bem-sucedida, a loja não será carregada corretamente.
+Para verificar se a atualização foi bem-sucedida, abra o URL da loja em um navegador da web. Se a atualização não tiver sido bem-sucedida, a loja não será carregada corretamente.
 
 Se o aplicativo falhar com uma  `We're sorry, an error has occurred while generating this email.` erro:
 
