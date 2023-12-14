@@ -2,9 +2,9 @@
 title: Gerenciar os indexadores
 description: Consulte exemplos de como exibir e gerenciar indexadores do Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 41082413e24733dde34542a2c9cb3cabbfdd4a35
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -225,11 +225,17 @@ Product Price:                                     Update on Save
 Catalog Search:                                    Update on Save
 ```
 
-### Configurar indexadores
+### Definir o modo do indexador
+
+>[!IMPORTANT]
+>
+>Certifique-se de definir a variável [!DNL Customer Grid] com `realtime` em vez de `schedule`. A variável [!DNL Customer Grid] só pode ser reindexado usando o [!UICONTROL Update on Save] opção. Este índice não oferece suporte a `Update by Schedule` opção. Use a linha de comando a seguir para definir este indexador para atualização ao salvar: `php bin/magento indexer:set-mode realtime customer_grid`
+>
+>Consulte [Práticas recomendadas para configuração do indexador](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) no _Manual de implementação_.
 
 >[!INFO]
 >
->Antes de alternar os modos do indexador, recomendamos colocar seu site no [manutenção](../../installation/tutorials/maintenance-mode.md) e [desabilitar trabalhos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Isso garante que você não seja afetado por bloqueios no banco de dados.
+>Antes de alternar os modos do indexador, configure seu site para [manutenção](../../installation/tutorials/maintenance-mode.md) e [desabilitar trabalhos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Isso garante que você não seja afetado por bloqueios no banco de dados.
 
 Para especificar a configuração do indexador:
 
