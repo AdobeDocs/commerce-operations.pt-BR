@@ -4,9 +4,9 @@ description: Saiba como melhorar o desempenho do cache usando a implementação 
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 156e6412b9f94b74bad040b698f466808b0360e3
+source-git-commit: 6772c4fe31cfcd18463b9112f12a2dc285b39324
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,49 @@ Para instalações locais, consulte [Configurar cache de página Redis](../../..
 >[!NOTE]
 >
 >Verifique se você está usando a versão mais recente do `ece-tools` pacote. Caso contrário, [atualizar para a versão mais recente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). Você pode verificar a versão instalada em seu ambiente local usando o `composer show magento/ece-tools` comando CLI.
+
+
+### Dimensionamento da memória cache L2 (Adobe Commerce Cloud)
+
+O cache L2 usa um [sistema de arquivos temporário](https://en.wikipedia.org/wiki/Tmpfs) como um mecanismo de armazenamento. Comparado com sistemas de banco de dados de valores-chave especializados, um sistema de arquivos temporário não tem uma política de remoção de chaves para controlar o uso de memória.
+
+A falta de controle do uso da memória pode fazer com que o uso da memória cache L2 cresça com o tempo, acumulando o cache obsoleto.
+
+Para evitar o esgotamento da memória das implementações de cache L2, o Adobe Commerce limpa o armazenamento quando um determinado limite é atingido. O valor de limite padrão é 95%.
+
+É importante ajustar o uso máximo da memória cache L2 com base nos requisitos do projeto para armazenamento em cache. Use um dos seguintes métodos para configurar o dimensionamento do cache de memória:
+
+- Crie um tíquete de suporte para solicitar alterações de tamanho do `/dev/shm` montagem.
+- Ajuste a variável `cleanup_percentage` no nível do aplicativo para limitar a porcentagem máxima de preenchimento do armazenamento. A memória livre restante pode ser usada por outros serviços.
+Você pode ajustar a configuração na configuração de implantação no grupo de configuração de cache `cache/frontend/default/backend_options/cleanup_percentage`.
+
+>[!NOTE]
+>
+>A variável `cleanup_percentage` a opção configurável foi introduzida no Adobe Commerce 2.4.4.
+
+O código a seguir mostra um exemplo de configuração na variável `.magento.env.yaml` arquivo:
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+Os requisitos de cache podem variar com base na configuração do projeto e no código personalizado de terceiros. O escopo de dimensionamento da memória cache L2 permite que o cache L2 funcione sem muitas ocorrências de limite.
+Idealmente, o uso da memória cache L2 deve estabilizar em um determinado nível abaixo do limite, apenas para evitar a limpeza frequente do armazenamento.
+
+Você pode verificar o uso da memória de armazenamento em cache L2 em cada nó do cluster usando o seguinte comando da CLI e procurando a `/dev/shm` linha.
+O uso pode variar em diferentes nós, mas deve convergir para o mesmo valor.
+
+```bash
+df -h
+```
 
 ## Habilitar conexão Redis slave
 
