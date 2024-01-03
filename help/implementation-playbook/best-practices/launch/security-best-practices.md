@@ -2,13 +2,13 @@
 title: Proteger o site e a infraestrutura do Commerce
 description: Mantenha a segurança implementando práticas recomendadas de segurança ao instalar, configurar e atualizar instalações do Adobe Commerce.
 feature: Best Practices
-source-git-commit: cea5868ee37317ae9adfd8b580cd38c33c19761e
+exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
+source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
-
 
 # Proteger o site e a infraestrutura do Commerce
 
@@ -148,14 +148,15 @@ No entanto, a Adobe descobriu que a maioria dos comprometimentos do site não se
 Nos ataques mais comuns, um código mal-intencionado é inserido no cabeçalho ou rodapé absoluto de uma loja de clientes. Lá, o código coleta dados de formulário que um cliente insere na loja, incluindo credenciais de logon do cliente e dados de formulário de check-out. Em seguida, esses dados são enviados para outro local para fins mal-intencionados, em vez de para o back-end do Commerce. Além disso, o malware pode comprometer o administrador a executar o código que substitui o formulário de pagamento original por um formulário falso que substitui qualquer proteção definida pelo provedor de pagamento.
 
 As escumadeiras de cartão de crédito do lado do cliente são um tipo de malware que incorpora código no conteúdo do site do comerciante que pode ser executado no navegador de um usuário, como mostrado na figura a seguir.
-Depois que determinadas ações ocorrem, como um usuário enviar um formulário ou modificar um valor de campo, o skimmer serializa os dados e os envia para endpoints de terceiros. Normalmente, esses endpoints são outros sites comprometidos que atuam como uma retransmissão para enviar os dados ao destino final.
 
 ![Fluxo de dados para ataques de malware direcionados a sites de comércio eletrônico](../../../assets/playbooks/malware-data-flow.svg)
 
 Depois que determinadas ações ocorrem, como um usuário enviar um formulário ou modificar um valor de campo, o skimmer serializa os dados e os envia para endpoints de terceiros. Normalmente, esses endpoints são outros sites comprometidos que atuam como uma retransmissão para enviar os dados ao destino final.
 
 
-Se o site do Commerce tiver sido atacado, siga as práticas recomendadas da Adobe Commerce para [respondendo a um incidente de segurança](../maintenance/respond-to-security-incident.md).
+>[!TIP]
+>
+>Se um site de comércio for afetado por um ataque de malware, siga as práticas recomendadas da Adobe Commerce para [respondendo a um incidente de segurança](../maintenance/respond-to-security-incident.md).
 
 ### Conhecer os ataques mais comuns
 
