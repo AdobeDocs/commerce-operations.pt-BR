@@ -1,7 +1,7 @@
 ---
-source-git-commit: e6bce0f8e9244d1a7c31f23687474a7dc4586c5d
+source-git-commit: ef734b35490a3aa37a81557119642a90af87a138
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '60'
 ht-degree: 1%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 Esta página contém alterações recentes que achamos que você gostaria de ver. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
 
-### 7 de novembro de 2023
+### 3 de janeiro de 2024
 
 <table style="table-layout:auto;">
   <thead>
@@ -23,76 +23,10 @@ Esta página contém alterações recentes que achamos que você gostaria de ver
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de um <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/launch/security-best-practices.html">práticas recomendadas de segurança</a> tópico para o <em>Manual de implementação</em>.</p>
+      <td><p>Adição de detalhes sobre o <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">Opções de configuração de dimensionamento de memória cache L2</a> para Adobe Commerce na infraestrutura em nuvem.</p>
 </td>
       <td>práticas recomendadas</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2ffda8afd118184f314e8e329a678605ac241007">2ffda8</a> (confirmação)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 28 de agosto de 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Origem</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição dos seguintes novos tópicos:<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/catalog-image-resizing.html">Práticas recomendadas de redimensionamento de imagem de catálogo</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-management.html">Práticas recomendadas de gerenciamento de código</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-review.html">Práticas recomendadas de revisão do código</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/debugging.html">Práticas recomendadas de depuração</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/exception-handling.html">Práticas recomendadas de tratamento de exceções</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/general.html">Práticas recomendadas de desenvolvimento geral</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/git-branching.html">Práticas recomendadas de ramificação Git</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/examples.html">Exemplos de arquitetura de referência global (GRA)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/overview.html">Desenvolvimento de compositor para GRA</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/project-structure.html">Estrutura de projeto do compositor para GRA</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/tips-and-tricks.html">Dicas e truques do compositor para GRA</a></p>
-</td>
-      <td>práticas recomendadas</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd708ce4c1ab69f2d6e3a3b10dcd2387ae829368">fd708c</a> (confirmação)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 25 de agosto de 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Origem</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição de um <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/backend-performance.html">novo tópico</a> sobre a otimização do desempenho de back-end do Adobe Commerce Sites.</p>
-</td>
-      <td>práticas recomendadas</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ecbb71ad8745e4589856c6cbf283212ed61a3664">bce71</a> (confirmação)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 de agosto de 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Origem</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Consolidou todos os tópicos de práticas recomendadas relacionadas ao produto em um único <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/catalog-management.html">gerenciamento de catálogos</a> e adicionou redirecionamentos relevantes.</p>
-</td>
-      <td>práticas recomendadas</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ec5a695002df98646c602f6f9ddb2cc11a79bad8">ec5a69</a> (confirmação)</td>
-    </tr>
-    <tr>
-      <td><p>Adição de um <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale.html">novo tópico</a> sobre a implementação de uma estratégia de patch centralizada para projetos do Adobe Commerce.</p>
-</td>
-      <td>práticas recomendadas</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03cb50be0cb18b6079c5c69aafc74c6099610fb0">03cb50</a> (confirmação)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> (confirmação)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
