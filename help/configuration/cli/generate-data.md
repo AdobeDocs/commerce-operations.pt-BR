@@ -3,10 +3,10 @@ title: Gerar dados para teste de desempenho
 description: Saiba como gerar uma grande quantidade de dados para usar em testes de desempenho.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 9%
+source-wordcount: '788'
+ht-degree: 8%
 
 ---
 
@@ -33,24 +33,26 @@ A tabela a seguir fornece detalhes sobre os perfis do gerador de dados: pequeno,
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
-| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
+| `simple_products` | 800 | 24.000 | 4.000 | 300.000 | 600.000 |
 | `configurable_products` | 16 com 24 opções | 640 com 24 opções | 800 com 24 opções e 79 com 200 opções | 8.000 com 24 opções | 16.000 com 24 opções |
 | `product_images` | 100 imagens/3 imagens por produto | 1000 imagens/3 imagens por produto | 1000 imagens/3 imagens por produto | 2.000 imagens/3 imagens por produto | 2.000 imagens/3 imagens por produto |
-| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
+| `categories` | 30 | 300 | 100 | 3.000 | 6.000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
 | `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
-| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
-| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
-| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
+| `customers` | 200 | 2.000 | 2.000 | 5.000 | 10.000 |
+| `tax rates` | 130 | 40.000 | 40.000 | 40.000 | 40.000 |
+| `orders` | 80 | 50.000 | 50.000 | 100.000 | 150.000 |
 
 ### Execute o gerador de dados
 
 >[!WARNING]
 >
 >Antes de executar o gerador de dados, desative todos os trabalhos cron em execução no servidor. A desativação dos trabalhos cron impede que o gerador de dados execute ações que entrem em conflito com os trabalhos cron ativos e evita erros desnecessários.
+>
+>Se você pretende implementar eventos com o [!DNL Adobe I/O Events for Adobe Commerce] ao testar o desempenho, execute este comando antes de assinar [events](https://developer.adobe.com/commerce/extensibility/events/). A inscrição de eventos primeiro pode causar erros.
 
 Execute o comando conforme discutido nesta seção. Depois que o comando for executado, você deverá [reindexar todos os indexadores](../cli/manage-indexers.md).
 
