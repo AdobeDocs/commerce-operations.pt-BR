@@ -3,9 +3,9 @@ title: Configuração avançada de verniz
 description: Configurar recursos avançados de verniz, incluindo verificação de integridade, graça e modos santo.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 O verniz fornece vários recursos que impedem que os clientes enfrentem longos atrasos e tempos limite quando o servidor do Commerce não está funcionando corretamente. Esses recursos podem ser configurados na variável `default.vcl` arquivo. Este tópico descreve as adições que o Commerce oferece no arquivo VCL (Linguagem de configuração de verniz) que você baixa do Administrador.
 
-Consulte a [Manual de referência do verniz](https://varnish-cache.org/docs/6.3/reference/index.html) para obter detalhes sobre como usar a Linguagem de configuração do verniz.
+Consulte a [Manual de referência do verniz](https://varnish-cache.org/docs/index.html) para obter detalhes sobre como usar a Linguagem de configuração do verniz.
 
 ## Verificação de integridade
 
@@ -36,7 +36,7 @@ A cada 5 segundos, essa verificação de integridade chama a `pub/health_check.p
 
 A variável `health_check.php` O script está localizado no `pub` diretório. Se o diretório raiz do Commerce for `pub`e, em seguida, altere o caminho no campo `url` parâmetro de `/pub/health_check.php` para `health_check.php`.
 
-Para obter mais informações, consulte [Verificações de integridade do verniz](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) documentação.
+Para obter mais informações, consulte [Verificações de integridade do verniz](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) documentação.
 
 ## Modo de carência
 
@@ -85,10 +85,7 @@ bin/magento cache:flush
 
 ### Instalação
 
-O modo Saint não faz parte do pacote principal de vernizes. É uma versão separada `vmod` que devem ser baixados e instalados. Como resultado, você deve recompilar o Verniz da origem, conforme descrito nos seguintes artigos:
-
-- [Instalação do Verniz 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
-- [Instalação do Verniz 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LT)
+O modo Saint não faz parte do pacote principal de vernizes. É uma versão separada `vmod` que devem ser baixados e instalados. Como resultado, você deve recompilar o Verniz da origem, conforme descrito na seção [instruções de instalação](https://varnish-cache.org/docs/index.html) para a sua versão de Verniz.
 
 Depois de recompilar, você pode instalar o módulo Saint mode. Em geral, siga estas etapas:
 

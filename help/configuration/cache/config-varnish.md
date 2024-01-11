@@ -3,9 +3,9 @@ title: Configurar e usar verniz
 description: Entenda como o Varnish armazena arquivos e melhora o tráfego HTTP.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 [Cache de verniz] é um acelerador de aplicativo web de código aberto (também conhecido como _Acelerador HTTP_ ou _armazenamento em cache de proxy reverso HTTP_). O Varnish armazena (ou armazena em cache) arquivos ou fragmentos de arquivos na memória, o que permite que o Varnish reduza o tempo de resposta e o consumo de largura de banda da rede em solicitações futuras e equivalentes. Diferentemente de servidores Web como Apache e nginx, o Varnish foi projetado para uso exclusivo com o protocolo HTTP.
 
-O Commerce 2.4.2 é testado com o Verniz 6.4. O Commerce 2.4.x é compatível com o Varnish 6.x
+[Requisitos do sistema](../../installation/system-requirements.md) lista as versões compatíveis do verniz.
 
 >[!WARNING]
 >
->Nós _altamente recomendado_ você usa verniz na produção. O cache interno de página inteira — para o sistema de arquivos ou [banco de dados]— é muito mais lento que o Verniz e este foi projetado para acelerar o tráfego HTTP.
+>Nós _altamente recomendado_ você usa verniz na produção. O cache interno de página inteira — para o sistema de arquivos ou [banco de dados](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)— é muito mais lento que o Verniz e este foi projetado para acelerar o tráfego HTTP.
 
 Para obter mais informações sobre verniz, consulte:
 
@@ -53,9 +53,9 @@ O processo pode ser resumido da seguinte forma:
 
 >[!NOTE]
 >
-- Exceto quando observado, você deve inserir todos os comandos discutidos neste tópico como um usuário com `root` privilégios.
+>- Exceto quando observado, você deve inserir todos os comandos discutidos neste tópico como um usuário com `root` privilégios.
 >
-- Este tópico foi escrito para Verniz no CentOS e Apache 2.4. Se você estiver configurando o Verniz em um ambiente diferente, alguns comandos poderão ser diferentes. Consulte a documentação do Verniz para obter mais informações.
+>- Este tópico foi escrito para Verniz no CentOS e Apache 2.4. Se você estiver configurando o Verniz em um ambiente diferente, alguns comandos poderão ser diferentes. Consulte a documentação do Verniz para obter mais informações.
 
 ## Problemas conhecidos
 
@@ -96,7 +96,7 @@ O armazenamento em cache de verniz funciona com o Commerce usando:
 
 >[!INFO]
 >
-Este tópico aborda somente as opções padrão na lista anterior. Há muitas outras maneiras de configurar o armazenamento em cache em cenários complexos (por exemplo, usando uma Rede de entrega de conteúdo); esses métodos estão além do escopo deste guia.
+>Este tópico aborda somente as opções padrão na lista anterior. Há muitas outras maneiras de configurar o armazenamento em cache em cenários complexos (por exemplo, usando uma Rede de entrega de conteúdo); esses métodos estão além do escopo deste guia.
 
 Na primeira solicitação do navegador, os ativos armazenáveis em cache são entregues ao navegador do cliente do Vernish e armazenados em cache no navegador.
 
@@ -120,7 +120,7 @@ O exemplo anterior mostra uma solicitação para a página principal da loja (`m
 
 >[!NOTE]
 >
-A maioria dos ativos estáticos tem um código de status HTTP 200 (OK), indicando que o ativo foi recuperado do servidor.
+>A maioria dos ativos estáticos tem um código de status HTTP 200 (OK), indicando que o ativo foi recuperado do servidor.
 
 ### Segunda solicitação do navegador
 
@@ -148,7 +148,6 @@ Se o conteúdo for alterado no servidor, o cliente baixará o ativo estático co
 
 <!-- Link Definitions -->
 
-[banco de dados]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [A Grande Imagem De Verniz]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Cache de verniz]: https://varnish-cache.org
 [Opções de inicialização de verniz]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
