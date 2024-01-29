@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
+source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
 workflow-type: tm+mt
-source-wordcount: '19551'
+source-wordcount: '19799'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ A variável [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte a [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.45 {#v1-1-45}
+
+* **ACSD-56886** (para Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.7) - Corrige o problema em que um produto configurável fica indisponível quando um de dois produtos secundários é desativado por uma atualização programada.
+* **ACSD-56616** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.6) - Corrige o problema em que os produtos agrupados são exibidos como em estoque na loja quando os produtos simples estão indisponíveis.
+* **ACSD-56515** (para Adobe Commerce >=2.4.2 &lt;2.4.7) - corrige o problema em que o administrador com permissões no nível do site não pode adicionar ou editar um bloco dinâmico.
+* **ACSD-56447** (para Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.7) - corrige o problema em que adicionar o mesmo produto ao carrinho por meio de solicitações paralelas de API da Web REST resulta em dois itens separados no carrinho.
+* **ACSD-56415** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.7) - Corrige o problema em que o desempenho da indexação de preço parcial é retardado devido a uma `DELETE` consulta quando o banco de dados tiver muitos dados de preço parciais para indexar.
+* **ACSD-54965** (para Adobe Commerce >=2.4.5 &lt;2.4.6) - corrige o problema em que a grade de Merchandising visual não exibe o estoque correto quando um produto é atribuído somente a um estoque personalizado.
+* **ACSD-52824** (para Adobe Commerce >=2.4.5 &lt;2.4.7) - Corrige o problema em que os botões PayPal Express, Google Pay e Apple Pay são exibidos para clientes da empresa quando esses métodos de pagamento estão desativados nas configurações da empresa.
+* Patches atualizados: ACSD-56193
 
 ## v1.1.44 {#v1-1-44}
 
