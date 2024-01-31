@@ -2,9 +2,9 @@
 title: Modos de aplicação
 description: O aplicativo Commerce pode operar em diferentes modos, dependendo das suas necessidades. Exibir uma lista detalhada dos modos de aplicação disponíveis.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 982c478f73bdd1301210db5a89fb09edf69a6c42
+source-git-commit: 5003e8dcbb3736201ea19ebe30d5e56775096157
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Consulte [Definir o modo de operação](../cli/set-mode.md) para saber como alte
 
 ## Suporte na nuvem
 
-Não há necessidade de gerenciar os modos de aplicativo para um projeto de infraestrutura em nuvem. Devido ao sistema de arquivos somente leitura, não é possível alterar os modos nos ambientes de nuvem remotos. Não tente alterar os modos modificando o `app/etc/env.php` porque a variável `ece-tools` O pacote substitui o arquivo com base em várias fontes de configuração.
+Devido ao sistema de arquivos somente leitura, não é possível alterar os modos nos ambientes de nuvem remotos. Não tente alterar os modos modificando o `app/etc/env.php` porque a variável `ece-tools` O pacote substitui o arquivo com base em várias fontes de configuração.
 
 O Adobe Commerce na infraestrutura em nuvem executa automaticamente o aplicativo no _manutenção_ durante uma implantação, o que coloca o site offline até que a implantação seja concluída. Caso contrário, a aplicação _produção_ modo. Consulte [Processo de implantação](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) no _Guia do Commerce na infraestrutura em nuvem_.
 
