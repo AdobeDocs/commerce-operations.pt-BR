@@ -3,20 +3,20 @@ title: Entregáveis
 description: Saiba mais sobre os diferentes materiais de entrega associados a uma implementação do Adobe Commerce.
 exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 903c8bfc7c341c46d98026f0a02fbefba22c8f5d
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
 # Entregáveis
 
-O processo de descoberta identifica produtos específicos de implementação do Adobe Commerce. Consulte as seções a seguir para saber mais.
+O processo de descoberta identifica produtos específicos de implementação do Adobe Commerce. Para saber mais, consulte as seções a seguir.
 
 ## Requisitos comerciais
 
-Este documento captura as aprovações de requisitos comerciais para as especificações funcionais e a usabilidade da experiência do cliente. Ele é usado para orientar a experiência do usuário, o design visual e os planos de teste detalhados.
+Um documento de requisitos comerciais captura aprovações para especificações funcionais e a usabilidade da experiência do cliente. Ele é usado para orientar a experiência do usuário, o design visual e os planos de teste detalhados.
 
 ## Diagrama do sistema
 
@@ -24,7 +24,7 @@ Um diagrama de sistemas deve mostrar os dados (por exemplo, pedidos, produtos, i
 
 ## Especificações técnicas
 
-Este documento define a abordagem de implementação técnica e os detalhes aplicáveis sobre todas as integrações e sistemas de terceiros que precisam ser modificados. Isso pode incluir APIs que não existem no momento e precisam ser desenvolvidas.
+As especificações técnicas definem a abordagem de implementação e os detalhes aplicáveis sobre todas as integrações e sistemas de terceiros que devem ser modificados. Isso pode incluir APIs que não existem no momento e devem ser desenvolvidas.
 
 ## Mapeamento de dados
 
@@ -36,11 +36,11 @@ Mostra os fluxos de usuário para processos críticos e/ou exclusivos, especialm
 
 ## Escopo e fornecedores
 
-Esta é uma lista finalizada de fornecedores terceirizados a serem integrados à solução da Adobe Commerce.
+Um documento de escopo e fornecedores deve conter uma lista abrangente de fornecedores de terceiros nomeados para ser integrado à solução da Adobe Commerce.
 
 ## Dados do produto
 
-Uma revisão dos produtos, preços e dados de inventário existentes de uma organização, bem como um plano para mapear atributos de dados usados para preencher o Adobe Commerce.
+Uma revisão dos produtos, preços e dados de inventário existentes de uma organização e um plano para mapear atributos de dados usados para preencher o Adobe Commerce.
 
 ## Plano do projeto
 
