@@ -4,9 +4,9 @@ description: Mantenha e otimize o desempenho do site seguindo as práticas recom
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O Adobe Commerce tem dois tipos de modos indexadores: [!UICONTROL Update on Save
 
 - **[!UICONTROL Update on Save]** O modo atualiza os índices imediatamente sempre que o catálogo ou outros dados são alterados. Por exemplo, se um usuário administrador adicionar novos produtos a uma categoria, o índice de produtos da categoria será reindexado imediatamente quando a atualização for salva.
 
-- **[!UICONTROL Update on Schedule]** O modo armazena informações sobre atualizações de dados, e as operações de reindexação e atualizações de índice são gerenciadas por um trabalho cron que é executado em segundo plano em intervalos programados.
+- **[!UICONTROL Update on Schedule]** O modo armazena informações sobre atualizações de dados, e as operações de reindexação e atualizações de índice são gerenciadas por um trabalho cron que é executado em segundo plano em intervalos programados. O trabalho cron nem sempre executa uma reindexação toda vez que é executado. Ele reindexa somente quando há novas entradas nos logs de alteração do indexador (por exemplo, há um backlog nos indexadores).
 
 Ter um grande armazenamento com vários Administradores trabalhando no back-end ou ter muitas importações e exportações aciona atualizações de índice frequentes. Se a configuração do índice do site estiver definida como [!UICONTROL Update on Save] , a reindexação frequente reduz o desempenho do banco de dados, o que torna o desempenho do site lento e causa longos atrasos no processo de reindexação, especialmente para grandes lojas.
 
