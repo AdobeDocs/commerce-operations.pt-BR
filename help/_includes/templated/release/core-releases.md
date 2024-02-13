@@ -1,8 +1,8 @@
 ---
-source-git-commit: ac8be2ccb192765ab4633e9fce8684547a9363ac
+source-git-commit: 9f80bf4de9112cc986708266565c96515e85554c
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 11%
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 # Versões lançadas
@@ -48,6 +48,12 @@ O suporte para a linha de versão 2.4.6 termina em 14 de março de 2026.
   <tbody>
     <tr>
         <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p4.html">2.4.6-p4</a>
+        </td>
+        <td>13 de fevereiro de 2024</td>
+    </tr>
+    <tr>
+        <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p3.html">2.4.6-p3</a>
         </td>
         <td>10 de outubro de 2023</td>
@@ -85,6 +91,12 @@ O suporte para a linha de versão 2.4.5 termina em 9 de agosto de 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p6.html">2.4.5-p6</a>
+        </td>
+        <td>13 de fevereiro de 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p5.html">2.4.5-p5</a>
@@ -138,6 +150,12 @@ O suporte para a linha de versão 2.4.4 termina em 12 de abril de 2025.
   <tbody>
     <tr>
         <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p7.html">2.4.4-p7</a>
+        </td>
+        <td>13 de fevereiro de 2024</td>
+    </tr>
+    <tr>
+        <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p6.html">2.4.4-p6</a>
         </td>
         <td>10 de outubro de 2023</td>
@@ -181,7 +199,7 @@ O suporte para a linha de versão 2.4.4 termina em 12 de abril de 2025.
   </tbody>
 </table>
 
-## 2.4.0-2.4.3
+## 2.4.0 - 2.4.3
 
 O suporte para a linha de versão 2.4.0-2.4.3 terminou em 28 de novembro de 2022.
 
@@ -262,7 +280,7 @@ O suporte para a linha de versão 2.4.0-2.4.3 terminou em 28 de novembro de 2022
   </tbody>
 </table>
 
-## 2.3
+## 2,3
 
 O suporte para a linha de versão 2.3 terminou em 8 de setembro de 2022.
 
@@ -385,7 +403,7 @@ O suporte para a linha de versão 2.3 terminou em 8 de setembro de 2022.
   </tbody>
 </table>
 
-## 2.2
+## 2,2
 
 O suporte para a linha de versão 2.2 terminou em 1º de dezembro de 2019.
 
@@ -472,7 +490,7 @@ O suporte para a linha de versão 2.2 terminou em 1º de dezembro de 2019.
   </tbody>
 </table>
 
-## 2.1
+## 2,1
 
 O suporte para a linha de versão 2.1 terminou em 30 de junho de 2019.
 
@@ -601,7 +619,7 @@ O suporte para a linha de versão 2.1 terminou em 30 de junho de 2019.
   </tbody>
 </table>
 
-## 2.0
+## 2,0
 
 O suporte para a linha de versão 2.0 terminou em 31 de março de 2018.
 
