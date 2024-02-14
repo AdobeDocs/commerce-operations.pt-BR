@@ -2,7 +2,7 @@
 user-guide-title: Manual de implementação
 user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
-source-git-commit: a547653046fd1926c7fd587df19cb2209e263114
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 11%
@@ -123,5 +123,5 @@ ht-degree: 11%
       - [Agendando atualizações de administrador em sites de produção](best-practices/maintenance/scheduling-admin-updates-in-production.md)
       - [Serviços de atualização](best-practices/maintenance/update-services.md)
       - [Lista de verificação de atualização](best-practices/maintenance/upgrade-checklist.md)
-      - [Pré-requisitos de atualização para o MariaDB](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+      - [Pré-requisitos de atualização para o MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
