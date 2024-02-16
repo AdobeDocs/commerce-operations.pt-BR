@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
+source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
 workflow-type: tm+mt
-source-wordcount: '19799'
+source-wordcount: '19990'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ A variável [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte a [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.46 {#v1-1-46}
+
+* **ACSD-46767** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Corrige o problema em que os caches da página de categoria são invalidados quando a quantidade em estoque é alterada, mesmo se o produto ainda estiver em estoque.
+* **ACSD-54656** (para Adobe Commerce >=2.4.5 &lt;2.4.6) - Corrige o problema em que o Recaptcha invisível falha durante o checkout, impedindo que um pedido seja feito.
+* **ACSD-55100** (para Adobe Commerce >=2.4.6 &lt;2.4.7) - Corrige o problema em que o GraphQL não retorna mais de 10.000 produtos nos resultados da pesquisa.
+* **ACSD-56621** (para Adobe Commerce >=2.4.2 &lt;2.4.7) - Corrige o problema em que o nome e o sobrenome atualizados não são refletidos na seção de cabeçalho de saudações do usuário administrador da empresa.
+* **ACSD-56842** (para Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.7) - Corrige o problema em que os proxies adiados e as fábricas de proxy adiadas estão ausentes após a execução `setup:di:compile`.
+* **ACSD-57003** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige o problema em que o status do pedido é alterado para *[!UICONTROL Complete]* em vez de ser alterado para *[!UICONTROL Processing]* quando uma ordem é parcialmente reembolsada e parcialmente entregue.
+* Patches atualizados: ACSD-50260-v2, ACSD-54966
 
 ## v1.1.45 {#v1-1-45}
 
