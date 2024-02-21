@@ -3,9 +3,9 @@ title: Entrega e Atendimento
 description: Determine os métodos de envio e o custo antes de concluir seu projeto de comércio eletrônico.
 exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
 feature: Best Practices, Shipping/Delivery
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 766bd4e4e6a31157836770270cc3ba310f142161
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
