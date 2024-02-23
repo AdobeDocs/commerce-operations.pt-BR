@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
+source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
 workflow-type: tm+mt
-source-wordcount: '19990'
+source-wordcount: '20136'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ A variável [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte a [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.47 {#v1-1-47}
+
+* **ACSD-55241** (para Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.7) - Corrige o problema em que *[!UICONTROL Used]* e *[!UICONTROL Times Used]* Os atributos do exibem valores incorretos para cupons gerados quando usados durante o check-out com vários endereços.
+* **ACSD-56760** (para Adobe Commerce >=2.4.6 &lt;2.4.7) - corrige o problema em que um usuário administrador restrito a um site específico não pode classificar ou adicionar novos produtos dentro de uma categoria, caso a loja da Web tenha sua própria categoria raiz.
+* **ACSD-56858** (para Adobe Commerce >=2.4.2 &lt;2.4.7) - Corrige o problema em que as permissões da função de empresa B2B são exibidas incorretamente para um administrador de empresa restrita.
+* **ACSD-57074** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige o problema em que a variável *Sim/Não* atributo personalizado com `attrbute_code` começando com `price_` O não funciona corretamente com indexação e os produtos com esses atributos não estão disponíveis no front-end.
+* Patches atualizados: ACSD-53378, ACSD-51819
 
 ## v1.1.46 {#v1-1-46}
 
