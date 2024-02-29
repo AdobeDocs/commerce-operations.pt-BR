@@ -2,9 +2,9 @@
 title: Ativar ou desativar módulos
 description: Siga estas etapas para gerenciar módulos Adobe Commerce ou Magento Open Source.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6e87d68df97adf47b5a61e8b6683ac11f600806c
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Onde
 * `--enabled` lista todos os módulos habilitados.
 * `--disabled` lista todos os módulos desativados.
 * `<module-list>` é uma lista de módulos delimitada por espaços para verificar o status. Se qualquer nome de módulo contiver caracteres especiais, coloque o nome entre aspas simples ou duplas.
+
+>[!NOTE]
+>
+>Não é possível habilitar ou desabilitar módulos diretamente em projetos na nuvem. Você deve executar esses comandos localmente e depois enviar as alterações para o `app/etc/config.php` arquivo para um ambiente. Consulte [Fluxo de trabalho de projeto Pro: Fluxo de trabalho de implantação](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Módulo ativar, desativar
 
