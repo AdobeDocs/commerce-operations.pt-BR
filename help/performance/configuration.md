@@ -3,9 +3,9 @@ title: Práticas recomendadas de configuração
 description: Otimize o tempo de resposta de sua implantação do Adobe Commerce ou Magento Open Source usando essas práticas recomendadas.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 2fa587557db214ed2fbeb5e6c175a9a209883f94
+source-git-commit: 5a49aff28f1a7c87cd6135ca19b4436da41cbb1b
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Todas as operações assíncronas no [!DNL Commerce] são executados usando o Li
 
 ## Indexadores
 
-Um indexador pode ser executado em **[!UICONTROL Update on Save]** ou **[!UICONTROL Update on Schedule]** modo. A variável **[!UICONTROL Update on Save]** O modo de indexação indexa imediatamente sempre que o catálogo ou outros dados são alterados. Esse modo assume uma baixa intensidade de operações de atualização e navegação na loja. Isso pode levar a atrasos significativos e indisponibilidade de dados durante cargas altas. Recomendamos usar **Atualização programada** em produção, porque armazena informações sobre atualizações de dados e executa a indexação por partes no plano de fundo por meio de um trabalho cron específico. É possível alterar o modo de cada [!DNL Commerce] indexador separadamente no  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** página de configuração.
+Um indexador pode ser executado em **[!UICONTROL Update on Save]** ou **[!UICONTROL Update on Schedule]** modo. A variável **[!UICONTROL Update on Save]** O modo de indexação indexa imediatamente sempre que o catálogo ou outros dados são alterados. Esse modo assume uma baixa intensidade de operações de atualização e navegação na loja. Isso pode levar a atrasos significativos e indisponibilidade de dados durante cargas altas. Recomendamos usar **Atualização programada** para fins de desempenho, porque armazena informações sobre atualizações de dados e executa a indexação por partes no plano de fundo por meio de um trabalho cron específico. É possível alterar o modo de cada [!DNL Commerce] indexador separadamente no  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** página de configuração. A variável [!UICONTROL Customer Grid] o índice deve ser sempre definido como **[!UICONTROL Update on Save]** modo.
 
 >[!TIP]
 >
