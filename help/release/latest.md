@@ -4,7 +4,7 @@ description: Saiba mais sobre as mais recentes ferramentas de desenvolvimento co
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: b0cfe0ae73a2d65f205bfe874e080d56f195601b
+source-git-commit: a4738e58d8c17c17426765d6f975a2af0ce11c80
 workflow-type: tm+mt
 source-wordcount: '3076'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Anúncios de produto do Adobe Commerce em fevereiro
+# Anúncios de produto da Adobe Commerce em fevereiro
 
 A Adobe Commerce tem trabalhado em conjunto com os clientes para desenvolver novos recursos de comércio baseados em experiência que os capacitam a agilizar e acelerar as vendas. Clientes como a Hanesbrand já estão se beneficiando com sites mais rápidos, taxas de conversão mais altas e campanhas com melhor desempenho que usam esses novos recursos. E a Nestle Purina está simplificando o desenvolvimento combinável com nossa experiência de desenvolvedor unificada. Saiba mais sobre esses novos recursos e como começar nesta visão geral do lançamento do produto em fevereiro.
 
