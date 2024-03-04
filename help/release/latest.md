@@ -4,9 +4,9 @@ description: Saiba mais sobre as mais recentes ferramentas de desenvolvimento co
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: a4738e58d8c17c17426765d6f975a2af0ce11c80
+source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
 workflow-type: tm+mt
-source-wordcount: '3076'
+source-wordcount: '3078'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ Além disso, também estamos hospedando uma experiência prática [sessão de la
 
 A Adobe tem ampla experiência na implantação de serviços prontos para HIPAA com clientes de assistência médica de todos os portes. De pagadores a provedores e fornecedores de tecnologia farmacêutica e médica, o Adobe define o padrão para o gerenciamento responsável de dados do consumidor. Essa experiência está se estendendo agora ao mercado de comércio digital da área de saúde, que está em rápido crescimento, com uma versão pronta para HIPAA da plataforma de nuvem do Adobe Commerce.
 
-A oferta pronta para HIPAA está disponível para clientes do Adobe Commerce Managed Services. Ele inclui controles adicionais de segurança e privacidade para garantir a proteção de ePHI (Electronic Personal Health Information, informações eletrônicas de saúde pessoal) para que as organizações de saúde e ciências biomédicas possam cumprir mais facilmente suas obrigações de conformidade. A solução oferece suporte a uma variedade de casos de uso, incluindo vendas on-line rápidas e convenientes de cobertura da área de saúde, prescrições, dispositivos médicos prescritos e suprimentos médicos. O Adobe Commerce agora entra na [Adobe Experience Cloud para a área de saúde](https://business.adobe.com/solutions/industries/healthcare.html) conjunto de soluções, permitindo que os clientes ofereçam experiências seguras e excepcionais para os pacientes e, ao mesmo tempo, atendam às preferências dos consumidores.
+A oferta pronta para HIPAA está disponível para clientes de serviços gerenciados e em nuvem da Adobe Commerce. Ele inclui controles adicionais de segurança e privacidade para garantir a proteção de ePHI (Electronic Personal Health Information, informações eletrônicas de saúde pessoal) para que as organizações de saúde e ciências biomédicas possam cumprir mais facilmente suas obrigações de conformidade. A solução oferece suporte a uma variedade de casos de uso, incluindo vendas on-line rápidas e convenientes de cobertura da área de saúde, prescrições, dispositivos médicos prescritos e suprimentos médicos. O Adobe Commerce agora entra na [Adobe Experience Cloud para a área de saúde](https://business.adobe.com/solutions/industries/healthcare.html) conjunto de soluções, permitindo que os clientes ofereçam experiências seguras e excepcionais para os pacientes e, ao mesmo tempo, atendam às preferências dos consumidores.
 
 >[!TIP]
 >
