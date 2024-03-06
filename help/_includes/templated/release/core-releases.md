@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9f80bf4de9112cc986708266565c96515e85554c
+source-git-commit: 93ec4b59b4c26e31ee117bc13f98d21ce23d586f
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.7
 
-O suporte para a linha de versão 2.4.7 termina em 19 de abril de 2027.
+O suporte para a linha de versão 2.4.7 termina em 9 de abril de 2027.
 
 <table>
   <thead>
@@ -138,7 +138,7 @@ O suporte para a linha de versão 2.4.5 termina em 9 de agosto de 2025.
 
 ## 2.4.4
 
-O suporte para a linha de versão 2.4.4 termina em 12 de abril de 2025.
+O suporte para a linha de versão 2.4.4 termina em 24 de abril de 2025.
 
 <table>
   <thead>
