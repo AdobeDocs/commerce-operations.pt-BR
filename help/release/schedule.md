@@ -2,7 +2,7 @@
 title: Programação de lançamento
 description: Saiba quando a Adobe planeja anunciar o lançamento de novos recursos do Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: cbcc688fb5b356b99d103259e85117bda82f36b9
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -31,7 +31,7 @@ A tabela a seguir fornece as datas das versões programadas (as datas estão suj
 </thead>
 <tfoot>
    <tr>
-      <td colspan="3"><strong>Legenda</strong>:
+      <td colspan="3"><strong>Legenda:</strong>
          <ul>
             <li><strong><img alt="Ícone de recurso B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Novos recursos, melhorias e correções de bugs para a extensão B2B do Adobe Commerce.</li>
             <li><strong><img alt="Ícone de recurso de extensibilidade" src="../assets/icons/brackets.svg"></img> Extensibilidade</strong>— novas ferramentas e serviços de desenvolvedor para extensibilidade fora do processo, fornecidos independentemente das versões de patches. Por exemplo, SDK da interface do usuário do administrador, Eventos do Adobe I/O para Commerce e API Mesh.</li>

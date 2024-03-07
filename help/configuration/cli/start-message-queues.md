@@ -2,9 +2,9 @@
 title: Iniciar consumidores da fila de mensagens
 description: Saiba como iniciar um consumidor de fila de mensagens.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Depois de consumir todas as mensagens disponíveis, o comando é encerrado. Voc�
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-Consulte [fila:consumers:start](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#queueconsumersstart) na seção Comércio do _Referência de ferramentas de linha de comando_ para obter detalhes sobre as opções, os parâmetros e os valores do comando.
+Consulte [`queue:consumers:start`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#queueconsumersstart) na seção Comércio do _Referência de ferramentas de linha de comando_ para obter detalhes sobre as opções, os parâmetros e os valores do comando.
 
 >[!INFO]
 >

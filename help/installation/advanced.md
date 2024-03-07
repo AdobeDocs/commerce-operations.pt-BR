@@ -2,9 +2,9 @@
 title: Instalação avançada local
 description: Saiba mais sobre cenários avançados de instalação para Adobe Commerce ou Magento Open Source na infraestrutura que você possui.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2383'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,9 @@ Você pode executar os seguintes comandos para localizar valores para alguns arg
 
 | Argumento do instalador | Comando |
 | ------------------ | ------------------------------- |
-| Idioma | informações do bin/magento:language:lista |
-| Moeda | informações do bin/magento:currency:lista |
-| Fuso horário | informações do bin/magento:timezone:lista |
+| Idioma | `bin/magento info:language:list` |
+| Moeda | `bin/magento info:currency:list` |
+| Fuso horário | `bin/magento info:timezone:list` |
 
 >[!NOTE]
 >
