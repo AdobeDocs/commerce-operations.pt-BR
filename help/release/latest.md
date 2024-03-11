@@ -4,13 +4,13 @@ description: Saiba mais sobre as mais recentes ferramentas de desenvolvimento co
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
+exl-id: 176886bc-733a-48d9-94dc-58fd8b24f54e
+source-git-commit: 1f2c2ca98ba7076cdc3512e30fdd7a8c76f86200
 workflow-type: tm+mt
 source-wordcount: '3078'
 ht-degree: 0%
 
 ---
-
 
 # Anúncios de produto da Adobe Commerce em fevereiro
 
@@ -22,7 +22,7 @@ A Adobe Commerce tem trabalhado em conjunto com os clientes para desenvolver nov
 
 Junte-se a nós nestes eventos presenciais e virtuais para saber mais sobre o Adobe Commerce com líderes e profissionais de comércio eletrônico:
 
-- **15 de março de 2024**: Adobe Commerce: Construção da plataforma de comércio liderada pela experiência, 10h PDT / 18h GMT. [Inscreva-se para o webinário em tempo real](https://engage.adobe.com/BdgxpComWBR-register.html).
+- **14 de março de 2024**: Adobe Commerce: Construção da plataforma de comércio liderada pela experiência, 10h PDT / 17h GMT. [Inscreva-se para o webinário em tempo real](https://engage.adobe.com/BdgxpComWBR-register.html).
 
 - **26 a 28 de março de 2024**: Junte-se a milhares de líderes e profissionais de comércio eletrônico que vivem no Adobe Summit em Las Vegas. Saiba mais sobre [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html) e a variável [Rastreamento do Commerce](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search.track=1601680652403006TXuG) com alto-falantes de [Hanesbrand](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S435), [Coca-Cola](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S434), [Unilever](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=s430), e [Nestle Purina](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S437).
 
@@ -116,7 +116,7 @@ Além disso, também estamos hospedando uma experiência prática [sessão de la
 
 [!BADGE Disponível agora]{type=Informative tooltip="Disponível agora"}
 
-A Adobe tem ampla experiência na implantação de serviços prontos para HIPAA com clientes de assistência médica de todos os portes. De pagadores a provedores e fornecedores de tecnologia farmacêutica e médica, o Adobe define o padrão para o gerenciamento responsável de dados do consumidor. Essa experiência está se estendendo agora ao mercado de comércio digital da área de saúde, que está em rápido crescimento, com uma versão pronta para HIPAA da plataforma de nuvem do Adobe Commerce.
+A Adobe tem ampla experiência na implantação de serviços prontos para HIPAA com clientes de assistência médica de todos os portes. De pagadores a provedores e fornecedores de tecnologia farmacêutica e médica, o Adobe define o padrão para o gerenciamento responsável de dados do consumidor. Essa experiência está se estendendo agora ao mercado de comércio digital da área de saúde, que está em rápido crescimento, com uma versão pronta para HIPAA da plataforma de nuvem da Adobe Commerce.
 
 A oferta pronta para HIPAA está disponível para clientes de serviços gerenciados e em nuvem da Adobe Commerce. Ele inclui controles adicionais de segurança e privacidade para garantir a proteção de ePHI (Electronic Personal Health Information, informações eletrônicas de saúde pessoal) para que as organizações de saúde e ciências biomédicas possam cumprir mais facilmente suas obrigações de conformidade. A solução oferece suporte a uma variedade de casos de uso, incluindo vendas on-line rápidas e convenientes de cobertura da área de saúde, prescrições, dispositivos médicos prescritos e suprimentos médicos. O Adobe Commerce agora entra na [Adobe Experience Cloud para a área de saúde](https://business.adobe.com/solutions/industries/healthcare.html) conjunto de soluções, permitindo que os clientes ofereçam experiências seguras e excepcionais para os pacientes e, ao mesmo tempo, atendam às preferências dos consumidores.
 
