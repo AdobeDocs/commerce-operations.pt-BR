@@ -2,7 +2,7 @@
 title: Gerenciar o cache
 description: Gerenciar tipos de cache e exibir status do cache.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 604e2a1461e2cbbcc498dfed6018ba640efe8cde
+source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ## Tipos de cache
 
-O Commerce 2 tem os seguintes tipos de cache:
+O Commerce tem os seguintes tipos de cache:
 
 | Nome &quot;amigável&quot; do tipo de cache | Nome do código do tipo de cache | Descrição |
-|--- |--- |--- |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Configuração | config | O Commerce coleta a configuração de todos os módulos, mescla-a e salva o resultado mesclado no cache. Esse cache também contém configurações específicas do armazenamento armazenadas no sistema de arquivos e no banco de dados. Limpar ou liberar esse tipo de cache após modificar os arquivos de configuração. |
 | Layout | layout | Layouts de página compilados (ou seja, os componentes de layout de todos os componentes). Limpar ou liberar este tipo de cache após modificar arquivos de layout. |
 | Bloquear saída de HTML | block_html | HTML fragmentos de página por bloco. Limpe ou limpe esse tipo de cache após modificar a camada de exibição. |
@@ -31,10 +31,9 @@ O Commerce 2 tem os seguintes tipos de cache:
 | Traduções | traduzir | Depois de mesclar as traduções de todos os módulos, o cache de fusão será limpo. |
 | Configuração de integração | config_integration | Integrações compiladas. Limpe ou limpe esse cache após alterar ou adicionar integrações. |
 | Configuração da API de integração | config_integration_api | Configuração das APIs de integração compiladas das integrações da loja. |
+| Resultados do GraphQL Query Resolver [!BADGE 2.4.7-beta]{type=Informative url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;Disponível somente na versão 2.4.7-beta&quot;} | graphql_query_resolver_result | Armazena em cache os resultados dos resolvedores de consultas do GraphQL para entidades de galeria de mídia de clientes, páginas do CMS, blocos do CMS e produtos. Mantenha esse cache ativado para melhorar o desempenho do GraphQL. |
 | Configuração de serviços da Web | config_webservice | Armazenamento em cache da estrutura da API da Web. |
 | Notificação de Cliente | customer_notification | Notificações temporárias exibidas na interface do usuário. |
-| Cache do SDK da interface do administrador | admin_ui_sdk | Armazena em cache personalizações de administradores que foram adicionadas com o [SDK da interface do administrador do Adobe Commerce](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
-| Cache de resposta Webhooks | webhooks_response | Armazena respostas em cache para [solicitações do webhook](https://developer.adobe.com/commerce/extensibility/webhooks/). |
 
 ## Exibir o status do cache
 
@@ -63,6 +62,7 @@ Current status:
             config_integration: 1
         config_integration_api: 1
                    target_rule: 1
+ graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
@@ -171,6 +171,7 @@ Exemplo de resultado:
    config_integration
    config_integration_api
    full_page
+   graphql_query_resolver_results
    config_webservice
    translate
 ```
