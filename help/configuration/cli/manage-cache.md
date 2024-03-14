@@ -31,7 +31,7 @@ O Commerce tem os seguintes tipos de cache:
 | Traduções | traduzir | Depois de mesclar as traduções de todos os módulos, o cache de fusão será limpo. |
 | Configuração de integração | config_integration | Integrações compiladas. Limpe ou limpe esse cache após alterar ou adicionar integrações. |
 | Configuração da API de integração | config_integration_api | Configuração das APIs de integração compiladas das integrações da loja. |
-| Resultados do GraphQL Query Resolver [!BADGE 2.4.7-beta]{type=Informative url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;Disponível somente na versão 2.4.7-beta&quot;} | graphql_query_resolver_result | Armazena em cache os resultados dos resolvedores de consultas do GraphQL para entidades de galeria de mídia de clientes, páginas do CMS, blocos do CMS e produtos. Mantenha esse cache ativado para melhorar o desempenho do GraphQL. |
+| Resultados do GraphQL Query Resolver [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponível somente na versão 2.4.7-beta"} | graphql_query_resolver_result | Armazena em cache os resultados dos resolvedores de consultas do GraphQL para entidades de galeria de mídia de clientes, páginas do CMS, blocos do CMS e produtos. Mantenha esse cache ativado para melhorar o desempenho do GraphQL. |
 | Configuração de serviços da Web | config_webservice | Armazenamento em cache da estrutura da API da Web. |
 | Notificação de Cliente | customer_notification | Notificações temporárias exibidas na interface do usuário. |
 
