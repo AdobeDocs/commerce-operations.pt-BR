@@ -4,9 +4,9 @@ description: Otimize o desempenho da sua implementação do Adobe Commerce segui
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
 feature: Cloud
 topic: Performance
-source-git-commit: 31c71af854a59381c7793f26ed9b121cd9bcac83
+source-git-commit: 8b09d734d8ac4490cd88af5673acd0a41b6cdf66
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Além das recomendações comuns de otimização de infraestrutura mencionadas a
 
 ### Arquitetura headless
 
-Há uma seção separada dedicada ao [headless](../../architecture/headless/adobe-commerce.md). Em resumo, ela separa a camada da loja da própria plataforma. Ainda é o mesmo back-end, mas o Adobe Commerce não processa mais solicitações diretamente e, em vez disso, oferece suporte somente a vitrines personalizadas por meio da API do GraphQL.
+Há uma seção separada dedicada ao [headless](../../architecture/enterprise-blueprint.md#headless-storefront). Em resumo, ela separa a camada da loja da própria plataforma. Ainda é o mesmo back-end, mas o Adobe Commerce não processa mais solicitações diretamente e, em vez disso, oferece suporte somente a vitrines personalizadas por meio da API do GraphQL.
 
 ### Manter o Adobe Commerce atualizado
 
