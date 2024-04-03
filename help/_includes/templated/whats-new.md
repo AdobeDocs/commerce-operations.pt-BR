@@ -1,7 +1,7 @@
 ---
-source-git-commit: 489cafa5fc2bc736ac873d1dd3008463c00b638a
+source-git-commit: febd2aa57434ec9b959a4aff6179ae00fe0ccba8
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '181'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 2%
 ## Novidades
 
 Saiba mais sobre a nova documentação e as atualizações importantes na documentação existente.
+
+### 24 de março de 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Origem</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição de um <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint.html">blueprint de arquitetura</a> para implementações empresariais do Commerce.</p>
+</td>
+      <td>novo tópico</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d33294d02b4431d4aa473aa5d0ab42e297cfed14">d33294</a> (confirmação)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 12 de março de 2024
 
@@ -22,6 +42,12 @@ Saiba mais sobre a nova documentação e as atualizações importantes na docume
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>Atualização dos seguintes tópicos da versão 2.4.7-beta3:<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Adobe Commerce CLI (no local, Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">CLI do Magento Open Source (Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Pacotes do Adobe Commerce (Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Pacotes Magento Open Source (Beta)</a></p>
+</td>
+      <td>atualização importante</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/28029603b0a23eb161480363b5106142beda4180">280296</a> (confirmação)</td>
+    </tr>
     <tr>
       <td><p>Instruções de configuração da para o <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html">Servidor de aplicativos para APIs do GraphQL</a> recurso.</p>
 </td>
