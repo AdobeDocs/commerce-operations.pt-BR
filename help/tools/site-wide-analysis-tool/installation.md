@@ -3,7 +3,7 @@ title: Guia de instalação
 description: Use este guia para instalar [!DNL Site-Wide Analysis Tool] para o seu site
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: 2501630bdbeb9a80c247fd39dcbe57c327b3244d
+source-git-commit: f72316b3baee52ef6b000afa281a2e146f560ead
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->A partir de 23 de abril de 2024, a [!DNL Site-Wide Analysis Tool] será descontinuado para todos os clientes do Adobe Commerce no local.
+>A partir de 23 de abril de 2024, a [!DNL Site-Wide Analysis Tool] será descontinuado para todos os clientes locais do Adobe Commerce.
 
 A variável [!DNL Site-Wide Analysis Tool] O fornece monitoramento, relatórios e recomendações de desempenho em tempo real 24 horas por dia, 7 dias por semana, para garantir a segurança e a operabilidade do Adobe Commerce nas instalações da infraestrutura em nuvem. Ela também fornece informações detalhadas sobre patches disponíveis e instalados, extensões de terceiros e a instalação do Adobe Commerce.
 
