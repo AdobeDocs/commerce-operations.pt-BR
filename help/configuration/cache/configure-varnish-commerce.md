@@ -3,9 +3,9 @@ title: Configurar verniz para o Commerce
 description: Saiba como atualizar e gerenciar o arquivo de configuração de verniz para o aplicativo Commerce.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Para configurar o Commerce para usar o verniz:
    | Host de back-end | Insira o nome do host ou endereço IP totalmente qualificado e a porta de escuta do Verniz _back-end_ ou _servidor de origem_; ou seja, o servidor que fornece o conteúdo Verniz acelera. Normalmente, esse é o seu servidor Web. Consulte [Servidores de back-end com cache verniz](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Porta de back-end | Porta de escuta do servidor de origem. |
    | Período de carência | Determina por quanto tempo o Verniz fornecerá conteúdo obsoleto se o back-end não for responsivo. O valor padrão é de 300 segundos. |
-   | Gerencia o tamanho dos parâmetros  [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponível somente na versão 2.4.7 beta"} | Especifica o número máximo de [alças de layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) para processar no [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) Endpoint HTTP para cache de página inteira. Restringir o tamanho pode melhorar a segurança e o desempenho. O padrão é 100. |
+   | Gerencia o tamanho dos parâmetros | Especifica o número máximo de [alças de layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) para processar no [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) Endpoint HTTP para cache de página inteira. Restringir o tamanho pode melhorar a segurança e o desempenho. O padrão é 100. |
 
 1. Clique em **Salvar configuração**.
 

@@ -3,9 +3,9 @@ title: Práticas recomendadas de configuração
 description: Otimize o tempo de resposta de sua implantação do Adobe Commerce ou Magento Open Source usando essas práticas recomendadas.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 5a49aff28f1a7c87cd6135ca19b4436da41cbb1b
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1425'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Pode haver momentos em que as vendas intensas em uma loja ocorram ao mesmo tempo
 >
 >A variável **[!UICONTROL Developer]** A guia e as opções só estão disponíveis em [Modo de desenvolvedor](../configuration/cli/set-mode.md). [Adobe Commerce na infraestrutura em nuvem](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) não suporta `Developer` modo.
 
-## Salvamento assíncrono de configuração [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponível somente na versão 2.4.7 beta"}
+## Salvamento assíncrono de configuração
 
 Para projetos com um grande número de configurações no nível da loja, salvar uma configuração de loja pode levar um tempo excessivo ou resultar em um tempo limite. A variável _Configuração assíncrona_ O módulo permite salvamentos assíncronos de configuração executando um trabalho cron que usa um consumidor para processar o salvamento em uma fila de mensagens. AsyncConfig está **desabilitado** por padrão.
 

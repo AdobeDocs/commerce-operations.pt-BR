@@ -2,9 +2,9 @@
 title: Gerenciar os indexadores
 description: Consulte exemplos de como exibir e gerenciar indexadores do Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: a8f845813971eb32053cc5b2e390883abf3a104e
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -264,7 +264,7 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 
 Os gatilhos de banco de dados relacionados a indexadores são adicionados quando o modo do indexador é definido como `schedule` e removido quando o modo indexador estiver configurado para `realtime`. Se os acionadores estiverem ausentes no banco de dados enquanto os indexadores estiverem definidos como `schedule`, altere os indexadores para `realtime` e altere-as de volta para `schedule`. Isso redefine os acionadores.
 
-### Definir status do indexador [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponível somente na versão 2.4.7 beta"}
+### Definir status do indexador
 
 Esse comando permite que os administradores modifiquem o status operacional de um ou mais indexadores, otimizando o desempenho do sistema durante operações extensas, como importações, atualizações ou manutenção de dados.
 

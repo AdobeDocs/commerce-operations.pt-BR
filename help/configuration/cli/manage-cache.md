@@ -1,10 +1,10 @@
 ---
 title: Gerenciar o cache
-description: Gerenciar tipos de cache e exibir status do cache.
+description: Gerencie tipos de cache e visualize o status do cache na linha de comando usando a CLI do Commerce
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
+source-git-commit: 1070291396144f866cadd5e42ebca3e77a484a9b
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -15,29 +15,17 @@ ht-degree: 0%
 
 ## Tipos de cache
 
-O Commerce tem os seguintes tipos de cache:
+Você pode usar o sistema de gerenciamento de cache do Adobe Commerce para melhorar o desempenho do site. Este tópico explica como os administradores de sistema ou desenvolvedores com acesso ao servidor de aplicativos do Commerce podem gerenciar caches na linha de comando.
 
-| Nome &quot;amigável&quot; do tipo de cache | Nome do código do tipo de cache | Descrição |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configuração | config | O Commerce coleta a configuração de todos os módulos, mescla-a e salva o resultado mesclado no cache. Esse cache também contém configurações específicas do armazenamento armazenadas no sistema de arquivos e no banco de dados. Limpar ou liberar esse tipo de cache após modificar os arquivos de configuração. |
-| Layout | layout | Layouts de página compilados (ou seja, os componentes de layout de todos os componentes). Limpar ou liberar este tipo de cache após modificar arquivos de layout. |
-| Bloquear saída de HTML | block_html | HTML fragmentos de página por bloco. Limpe ou limpe esse tipo de cache após modificar a camada de exibição. |
-| Dados das coleções | coleções | Resultados de consultas ao banco de dados. Se necessário, o Commerce limpa esse cache automaticamente, mas desenvolvedores de terceiros podem colocar quaisquer dados em qualquer segmento do cache. Limpe ou limpe esse tipo de cache se o módulo personalizado usar uma lógica que resulte em entradas de cache que o Commerce não pode limpar. |
-| DDL | db_ddl | Esquema de banco de dados. Se necessário, o Commerce limpa esse cache automaticamente, mas desenvolvedores de terceiros podem colocar quaisquer dados em qualquer segmento do cache. Limpe ou limpe esse tipo de cache depois de fazer alterações personalizadas no esquema do banco de dados. (Em outras palavras, atualizações que o Commerce não cria.) Uma maneira de atualizar o esquema do banco de dados automaticamente é usando o `magento setup:db-schema:upgrade` comando. |
-| Configuração compilada | compilation_config | Configuração de compilação |
-| Valor do atributo de entidade (EAV) | eav | Metadados relacionados a atributos EAV (por exemplo, rótulos de armazenamento, links para código PHP relacionado, renderização de atributo, configurações de pesquisa e assim por diante). Normalmente, não é necessário limpar ou liberar esse tipo de cache. |
-| Cache de página | full_page | Páginas de HTML geradas. Se necessário, o Commerce limpa esse cache automaticamente, mas desenvolvedores de terceiros podem colocar quaisquer dados em qualquer segmento do cache. Limpe ou limpe esse tipo de cache após modificar o nível de código que afeta a saída de HTML. É recomendável manter esse cache habilitado, pois o HTML de cache melhora significativamente o desempenho. |
-| Reflexo | reflexão | Remove uma dependência entre o módulo Webapi e o módulo Cliente. |
-| Traduções | traduzir | Depois de mesclar as traduções de todos os módulos, o cache de fusão será limpo. |
-| Configuração de integração | config_integration | Integrações compiladas. Limpe ou limpe esse cache após alterar ou adicionar integrações. |
-| Configuração da API de integração | config_integration_api | Configuração das APIs de integração compiladas das integrações da loja. |
-| Resultados do GraphQL Query Resolver [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponível somente na versão 2.4.7-beta"} | graphql_query_resolver_result | Armazena em cache os resultados dos resolvedores de consultas do GraphQL para entidades de galeria de mídia de clientes, páginas do CMS, blocos do CMS e produtos. Mantenha esse cache ativado para melhorar o desempenho do GraphQL. |
-| Configuração de serviços da Web | config_webservice | Armazenamento em cache da estrutura da API da Web. |
-| Notificação de Cliente | customer_notification | Notificações temporárias exibidas na interface do usuário. |
+>[!NOTE]
+>
+>
+>Os administradores de site de comércio podem gerenciar o cache do Administrador usando a ferramenta Sistema de gerenciamento de cache. Consulte [Gerenciamento de cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) no _Guia de sistemas do administrador_.
+
 
 ## Exibir o status do cache
 
-Para exibir o status do cache, informe
+Na linha de comando do servidor de aplicativos do Commerce, exiba o status do cache usando o `cache:status` Comando da CLI do Commerce.
 
 ```bash
    bin/magento cache:status
@@ -56,16 +44,23 @@ Current status:
                     reflection: 1
                         db_ddl: 1
                compiled_config: 1
+             webhooks_response: 1
                            eav: 1
          customer_notification: 1
-                     full_page: 1
+ graphql_query_resolver_result: 1
             config_integration: 1
         config_integration_api: 1
+                  admin_ui_sdk: 1
+                     full_page: 1
                    target_rule: 1
- graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
+
+>[!TIP]
+>
+>Para obter uma descrição detalhada dos tipos de cache padrão compatíveis com o Adobe Commerce, consulte [Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) no _Guia de sistemas do administrador_.
+
 
 ## Habilitar ou desabilitar tipos de cache
 
