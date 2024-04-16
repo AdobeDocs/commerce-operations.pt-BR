@@ -2,9 +2,9 @@
 title: Executar uma atualização
 description: Siga estas etapas para atualizar as implantações locais do Adobe Commerce.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ As instruções a seguir mostram como atualizar usando o gerenciador de pacotes 
 
 >[!WARNING]
 >
->O procedimento para atualizar o Adobe Commerce e o Magento Open Source foi alterado. Você deve instalar uma nova versão do `magento/composer-root-update-plugin` pacote (consulte [pré-requisitos](../prepare/prerequisites.md)). Além disso, os comandos para atualização foram alterados de `composer require magento/<package_name>` para `composer require-commerce magento/<package_name>`.
+>O procedimento para atualizar o Adobe Commerce foi alterado. Você deve instalar uma nova versão do `magento/composer-root-update-plugin` pacote (consulte [pré-requisitos](../prepare/prerequisites.md)). Além disso, os comandos para atualização foram alterados de `composer require magento/<package_name>` para `composer require-commerce magento/<package_name>`.
 
 ## Antes de começar
 

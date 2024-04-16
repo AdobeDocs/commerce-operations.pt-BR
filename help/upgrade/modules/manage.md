@@ -1,18 +1,18 @@
 ---
 title: Gerenciar módulos e extensões
-description: Use a interface de linha de comando para ativar, desativar e desinstalar módulos e extensões Adobe Commerce e Magento Open Source.
+description: Use a interface de linha de comando para ativar, desativar e desinstalar módulos e extensões do Adobe Commerce.
 feature: Upgrade, Extensions
 exl-id: a71de7c6-395a-4734-b3ad-b2879809be0b
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '76'
+source-wordcount: '68'
 ht-degree: 0%
 
 ---
 
 # Gerenciar módulos e extensões
 
-Você deve usar a linha de comando para gerenciar módulos e extensões Adobe Commerce e Magento Open Source.
+Você deve usar a linha de comando para gerenciar módulos e extensões do Adobe Commerce.
 
 ## Ativar ou desativar um módulo
 

@@ -1,11 +1,11 @@
 ---
 title: Configurar o Nginx para seu mecanismo de pesquisa
-description: Siga estas etapas para configurar um mecanismo de pesquisa com o servidor Web Nginx para instalações locais do Adobe Commerce e Magento Open Source.
+description: Siga estas etapas para configurar um mecanismo de pesquisa com o servidor Web Nginx para instalações locais do Adobe Commerce.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---

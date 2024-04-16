@@ -1,10 +1,10 @@
 ---
 title: Consumidores da fila de mensagens
-description: Saiba mais sobre o Adobe Commerce e os consumidores de fila de mensagens Magento Open Source, incluindo os recursos e as configurações do sistema associados a eles.
+description: Saiba mais sobre os consumidores da fila de mensagens do Adobe Commerce, incluindo os recursos e as configurações do sistema associados a eles.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---

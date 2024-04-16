@@ -2,9 +2,9 @@
 title: Segurança e conformidade
 description: Saiba mais sobre segurança, privacidade e recursos de conformidade do setor para o seu projeto Adobe Commerce ou Magento Open Source.
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Esta seção contém informações sobre segurança, privacidade e conformidade 
 
 Os comerciantes são obrigados a atender às diretrizes do setor para manter um ambiente seguro, requisitos legais em sua jurisdição e práticas recomendadas para o comércio online. Para saber mais de uma perspectiva comercial, consulte a [Política de privacidade da loja](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
 
-Esta documentação de conformidade fornece as informações técnicas para garantir que as instalações do Adobe Commerce e do Magento Open Source estejam em conformidade com os requisitos de legislação específica de privacidade. Alguns desses requisitos exigem que os comerciantes concluam um trabalho de desenvolvimento adicional para atingir a conformidade. Consulte os seguintes tópicos para obter detalhes:
+Esta documentação de conformidade fornece as informações técnicas para garantir que as instalações do Adobe Commerce cumpram com os requisitos de legislação de privacidade específica. Alguns desses requisitos exigem que os comerciantes concluam um trabalho de desenvolvimento adicional para atingir a conformidade. Consulte os seguintes tópicos para obter detalhes:
 
 - [Lei de Privacidade do Consumidor da Califórnia (CCPA)](privacy/ccpa.md)
 - [Regulamento Geral sobre a Proteção de Dados (GDPR)](privacy/gdpr.md)

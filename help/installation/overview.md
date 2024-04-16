@@ -1,10 +1,10 @@
 ---
 title: Visão geral da instalação local
-description: Saiba mais sobre o processo de instalação de implantações locais de Adobe Commerce e Magento Open Source.
+description: Saiba mais sobre o processo de instalação de implantações locais do Adobe Commerce.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->O diagrama a seguir fornece uma visão geral de alto nível do _**no local**_ instalações do Adobe Commerce e do Magento Open Source:
+>O diagrama a seguir fornece uma visão geral de alto nível do _**no local**_ instalações do Adobe Commerce:
 
 ![Como a instalação funciona](../assets/installation/install-diagram-24.svg)
 

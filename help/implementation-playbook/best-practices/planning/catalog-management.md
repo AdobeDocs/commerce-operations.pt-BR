@@ -3,13 +3,13 @@ title: Práticas recomendadas de gerenciamento de catálogo
 description: Saiba mais sobre as recomendações para configurar limites de carrinho e atributos de produto, listando paginação, opções, promoções e variações.
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
+exl-id: 9a672017-9122-4841-a67b-a183224b67dc
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas de gerenciamento de catálogo
 
@@ -25,7 +25,7 @@ As práticas recomendadas de gerenciamento de catálogo descritas aqui abordam v
 
 ## Limites do carrinho
 
-Para obter o melhor desempenho, use as diretrizes a seguir para gerenciar os limites de carrinho do Adobe Commerce e do Magento Open Source.
+Para obter o melhor desempenho, use as diretrizes a seguir para gerenciar os limites do carrinho para o Adobe Commerce.
 
 ### Produtos e versões afetados
 
@@ -262,4 +262,3 @@ Ter mais do que o número máximo recomendado de regras de preço do carrinho ou
 - Aumento do tempo para carregar e renderizar o minicart.
 - Mais tempo para renderizar a página do carrinho.
 - Maior tempo para renderizar o **Totais** na página Check-out.
-

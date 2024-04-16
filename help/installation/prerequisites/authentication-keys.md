@@ -1,19 +1,19 @@
 ---
 title: Obter suas chaves de autenticação
-description: Siga estas etapas para recuperar credenciais para acessar os pacotes do Adobe Commerce e do Magento Open Source Composer em repo.magento.com.
+description: Siga estas etapas para recuperar credenciais para acessar os pacotes do Adobe Commerce Composer em repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
 # Obter suas chaves de autenticação
 
-A variável `repo.magento.com` O repositório do é onde os pacotes do Adobe Commerce e do Magento Open Source e de terceiros do Composer são armazenados e exigem autenticação. Use a conta Commerce Marketplace para gerar um par de 32 caracteres *chaves de autenticação* para acessar o repositório.
+A variável `repo.magento.com` O repositório do é onde os pacotes do Adobe Commerce e de terceiros do Composer são armazenados e exigem autenticação. Use a conta Commerce Marketplace para gerar um par de 32 caracteres *chaves de autenticação* para acessar o repositório.
 
-Para obter direito de acesso a pacotes Adobe Commerce e Magento Open Source, você deve usar chaves associadas a uma MAGEID que recebeu acesso a esses pacotes. Normalmente, a MAGEID é o contato principal na conta da Adobe Commerce e nem sempre é o proprietário do projeto Adobe Commerce na infraestrutura em nuvem.
+Para obter direito de acesso a pacotes do Adobe Commerce, você deve usar chaves associadas a uma MAGEID que recebeu acesso a esses pacotes. Normalmente, a MAGEID é o contato principal na conta da Adobe Commerce e nem sempre é o proprietário do projeto Adobe Commerce na infraestrutura em nuvem.
 
 >[!TIP]
 >
@@ -46,7 +46,7 @@ Você também pode desativar ou excluir chaves de autenticação. Por exemplo, v
 
 ### Gerenciar token de acesso SSH
 
-Para baixar versões do Adobe Commerce e do Magento Open Source usando SSH, você deve gerar um token de acesso de download. Para gerar um token:
+Para baixar versões do Adobe Commerce usando SSH, você deve gerar um token de acesso de download. Para gerar um token:
 
 1. Faça logon no [Conta do magento.com](https://account.magento.com/customer/account/login).
 1. Clique em **Minha conta** na parte superior da página.

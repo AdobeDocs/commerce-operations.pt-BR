@@ -1,10 +1,10 @@
 ---
 title: Agente de mensagens
-description: Siga estas etapas para instalar e configurar o software de agente de mensagens necessário (como [!DNL RabbitMQ]) para instalações locais de Adobe Commerce e Magento Open Source.
+description: Siga estas etapas para instalar e configurar o software de agente de mensagens necessário (como [!DNL RabbitMQ]) para instalações locais do Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Consulte a [[!DNL RabbitMQ]Matriz de versão /Erlang](https://www.rabbitmq.com/w
 
 A variável [!DNL RabbitMQ] O servidor do está incluído no CentOS, mas a versão do é geralmente antiga. [!DNL RabbitMQ] A recomenda instalar o pacote do site.
 
-Consulte a [!DNL RabbitMQ] página de instalação para obter a versão mais recente compatível. Suporte para Adobe Commerce e Magento Open Source 2.3 e 2.4 [!DNL RabbitMQ] 3.8.x.
+Consulte a [!DNL RabbitMQ] página de instalação para obter a versão mais recente compatível. Suporte para Adobe Commerce 2.3 e 2.4 [!DNL RabbitMQ] 3.8.x.
 
 Consulte [Instalação no Linux baseado em RPM](https://www.rabbitmq.com/install-rpm.html) para obter mais informações.
 

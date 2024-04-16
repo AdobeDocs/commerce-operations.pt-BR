@@ -1,10 +1,10 @@
 ---
 title: Biblioteca JavaScript de privacidade
-description: Saiba como usar ferramentas personalizadas para acessar e excluir informações pessoais do cliente coletadas pelo Adobe Commerce e pelo Magento Open Source.
+description: Saiba como usar ferramentas personalizadas para acessar e excluir informações pessoais do cliente coletadas pelo Adobe Commerce.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Biblioteca JavaScript de privacidade
 
-A Biblioteca JavaScript de privacidade é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados coletados pelo Adobe Commerce e pelo Magento Open Source.
+A Biblioteca JavaScript de privacidade é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados coletados pela Adobe Commerce.
 
-Os serviços de rastreamento de dados do Commerce podem armazenar informações privadas aplicáveis a regulamentos de privacidade, como o [Regulamento Geral sobre a Proteção de Dados (GDPR)](gdpr.md) e [Lei de Privacidade do Consumidor da Califórnia (CCPA)](ccpa.md).
+Os serviços de rastreamento de dados da Commerce podem armazenar informações privadas aplicáveis a regulamentos de privacidade, como o [Regulamento Geral sobre a Proteção de Dados (GDPR)](gdpr.md) e [Lei de Privacidade do Consumidor da Califórnia (CCPA)](ccpa.md).
 
-Essa biblioteca fornece um conjunto de funções para criar solicitações de dados de privacidade e coletar suas respostas. Use essa biblioteca para recuperar e remover os dados armazenados no navegador pelos serviços de rastreamento de dados Adobe Commerce e Magento Open Source.
+Essa biblioteca fornece um conjunto de funções para criar solicitações de dados de privacidade e coletar suas respostas. Use essa biblioteca para recuperar e remover os dados armazenados no navegador pelos serviços de rastreamento de dados da Adobe Commerce.
 
 >[!NOTE]
 >
->Se [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) estiver ativado, o Commerce não coletará dados comportamentais até que o comprador dê o seu consentimento. Se [!UICONTROL **Modo de restrição de cookies**] estiver desativado, o Commerce coletará dados comportamentais por padrão.
+>Se [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) estiver ativado, a Commerce não coletará dados comportamentais até que o comprador dê o seu consentimento. Se [!UICONTROL **Modo de restrição de cookies**] estiver desativado, o Commerce coletará dados comportamentais por padrão.
 
 ## Instalação
 

@@ -1,10 +1,10 @@
 ---
 title: Propriedade e permissões do arquivo
-description: Saiba mais sobre a importância das permissões do sistema de arquivos ao trabalhar com instalações locais do Adobe Commerce e do Magento Open Source.
+description: Saiba mais sobre a importância das permissões do sistema de arquivos ao trabalhar com instalações locais do Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Para aumentar a segurança, principalmente em um ambiente de produção em um si
 >
 >A segurança do sistema de arquivos é complexa e importante. É altamente recomendável que você consulte um administrador de sistema ou administrador de rede experiente antes de decidir o nível de permissões a serem definidas. Fornecemos um mecanismo para você usar, mas criar uma estratégia de permissões é sua responsabilidade.
 
-O Adobe Commerce e o Magento Open Source usam uma máscara padrão de três bits: `002`. Subtraia a máscara padrão dos padrões UNIX de 666 para arquivos e 777 para diretórios.
+O Adobe Commerce usa uma máscara padrão de três bits: `002`. Subtraia a máscara padrão dos padrões UNIX de 666 para arquivos e 777 para diretórios.
 
 Por exemplo:
 
@@ -53,7 +53,7 @@ Para obter mais informações sobre como criar uma `magento_umask` arquivo, cons
 
 ## Modos de permissões, propriedade e aplicativo
 
-Recomendamos permissões e propriedade diferentes quando você usa os diferentes modos de aplicativo Adobe Commerce e Magento Open Source:
+Recomendamos permissões e propriedade diferentes ao usar os diferentes modos de aplicativo do Adobe Commerce:
 
 - Padrão
 - Desenvolvedor

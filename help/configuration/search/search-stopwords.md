@@ -3,9 +3,9 @@ title: Configurar palavras irrelevantes de pesquisa
 description: Saiba como gerenciar palavras de interrupção para o Adobe Commerce usando arquivos CSV.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Para obter mais informações sobre como o Elasticsearch e o OpenSearch usam pal
 
 ## Configurar palavras irrelevantes
 
-As palavras de interrupção estão localizadas no `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` diretório. O Adobe Commerce e o Magento Open Source são enviados com um arquivo CSV contendo palavras irrelevantes para os locais padrão e um arquivo adicional, `stopwords.csv`, que tem palavras de interrupção para qualquer local que não seja representado por outro arquivo CSV.
+As palavras de interrupção estão localizadas no `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` diretório. O Adobe Commerce vem com um arquivo CSV contendo palavras irrelevantes para os locais padrão e um arquivo adicional, `stopwords.csv`, que tem palavras de interrupção para qualquer local que não seja representado por outro arquivo CSV.
 
 O tempo de vida padrão para o cache do arquivo stopwords é de 15 minutos.
 

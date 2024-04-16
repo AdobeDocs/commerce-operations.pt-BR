@@ -1,11 +1,11 @@
 ---
 title: Solução de desempenho de banco de dados dividido
-description: Leia sobre a solução de banco de dados dividido para Adobe Commerce e Magento Open Source.
+description: Leia sobre a solução de banco de dados dividido para o Adobe Commerce.
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Os dados de check-out, pedidos e produtos podem usar um banco de dados mestre se
 >
 >A Adobe Commerce na infraestrutura em nuvem _não_ oferecem suporte a esse recurso.
 
-A variável `ResourceConnections` A classe fornece a conexão unificada do banco de dados MySQL com o aplicativo Commerce. Para consultas aos bancos de dados mestres, implementamos o padrão de banco de dados Command Query Responsibility Segregation (CQRS). Esse padrão lida com a lógica do roteamento de consultas de leitura e gravação para os bancos de dados apropriados. Os desenvolvedores não precisam saber qual configuração está sendo usada e não há conexões separadas de banco de dados de leitura e gravação.
+A variável `ResourceConnections` A classe fornece a conexão unificada do banco de dados MySQL com o aplicativo do Commerce. Para consultas aos bancos de dados mestres, implementamos o padrão de banco de dados Command Query Responsibility Segregation (CQRS). Esse padrão lida com a lógica do roteamento de consultas de leitura e gravação para os bancos de dados apropriados. Os desenvolvedores não precisam saber qual configuração está sendo usada e não há conexões separadas de banco de dados de leitura e gravação.
 
 Se você configurar a replicação opcional do banco de dados, obterá as seguintes vantagens:
 
@@ -66,7 +66,7 @@ Isso também significa que você pode:
 
 - [Configurar manualmente](multi-master-manual.md) a solução de banco de dados dividido.
 
-  Você deve executar essa tarefa se já tiver instalado componentes ou se o Commerce já estiver em produção. (_Não_ atualizar um sistema de produção; fazer as atualizações em um sistema de desenvolvimento e sincronizar as alterações depois de testá-las.)
+  Execute essa tarefa se já tiver instalado componentes ou se o Commerce já estiver em produção. (_Não_ atualizar um sistema de produção; fazer as atualizações em um sistema de desenvolvimento e sincronizar as alterações depois de testá-las.)
 
   >[!WARNING]
   >

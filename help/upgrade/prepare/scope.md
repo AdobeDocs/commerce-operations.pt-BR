@@ -2,9 +2,9 @@
 title: Entender o escopo de atualização
 description: Saiba mais sobre alterações incompatíveis com versões anteriores em uma versão que pode afetar o Adobe Commerce, os módulos personalizados do Magento Open Source ou extensões de terceiros.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Revise o [notas de versão](https://devdocs.magento.com/guides/v2.4/release-note
 
 ## Alterações incompatíveis com versões anteriores
 
-As versões do Adobe Commerce e do Magento Open Source podem conter alterações incompatíveis com versões anteriores. Revise nossa documentação de alterações incompatíveis com versões anteriores. Consulte o seguinte:
+As versões do Adobe Commerce podem conter alterações incompatíveis com versões anteriores. Revise nossa documentação de alterações incompatíveis com versões anteriores. Consulte o seguinte:
 
 - **[Destaques de grandes alterações](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**— alterações que têm grande impacto e exigem explicação detalhada e instruções especiais para garantir que os módulos de terceiros continuem funcionando.
 - **[Referência de pequena alteração](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**— Documentação de referência gerada a partir da base de código que descreve pequenas alterações em classes, associação a API, banco de dados, injeção de dependência, interfaces, layouts, sistema e XSD.

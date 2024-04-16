@@ -1,11 +1,11 @@
 ---
 title: Usar Redis para cache padrão
-description: Saiba como configurar o Redis como cache padrão para o Adobe Commerce e o Magento Open Source.
+description: Saiba como configurar o Redis como cache padrão para o Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 ## Configurar cache de página Redis
 
-Para configurar o armazenamento em cache da página Redis no Commerce, execute o `setup:config:set` com parâmetros adicionais.
+Para configurar o cache da página Redis no Commerce, execute o `setup:config:set` com parâmetros adicionais.
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
@@ -104,7 +104,7 @@ Como resultado dos dois comandos de exemplo, o Commerce adiciona linhas semelhan
 
 ## Utilização do AWS ElastiCache com sua instância EC2
 
-A partir do Commerce 2.4.3, as instâncias hospedadas no Amazon EC2 podem usar um ElastiCache do AWS no lugar de uma instância Redis local.
+A partir do Commerce 2.4.3, as instâncias hospedadas no Amazon EC2 podem usar um AWS ElastiCache no lugar de uma instância local do Redis.
 
 >[!WARNING]
 >
@@ -134,7 +134,7 @@ Depois [configuração de um cluster Redis no AWS](https://aws.amazon.com/gettin
 
 ### Configurar o Commerce para usar o cluster
 
-O Commerce oferece suporte a vários tipos de configurações de armazenamento em cache. Geralmente, as configurações de armazenamento em cache são divididas entre front-end e back-end. O armazenamento em cache de front-end é classificado como `default`, usado para qualquer tipo de cache. Você pode personalizar ou dividir em caches de nível inferior para obter melhor desempenho. Uma configuração comum do Redis é separar o cache padrão e o cache de página em seu próprio banco de dados Redis (RDB).
+O Commerce oferece suporte a vários tipos de configurações de cache. Geralmente, as configurações de armazenamento em cache são divididas entre front-end e back-end. O armazenamento em cache de front-end é classificado como `default`, usado para qualquer tipo de cache. Você pode personalizar ou dividir em caches de nível inferior para obter melhor desempenho. Uma configuração comum do Redis é separar o cache padrão e o cache de página em seu próprio banco de dados Redis (RDB).
 
 Executar `setup` comandos para especificar os pontos finais Redis.
 
@@ -144,7 +144,7 @@ Para configurar o Commerce para Redis como cache padrão:
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
 ```
 
-Para configurar o Commerce para o armazenamento em cache de página Redis:
+Para configurar o Commerce para o cache de página Redis:
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
@@ -160,19 +160,19 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
 
 **Para verificar se o Commerce está se comunicando com o ElastiCache**:
 
-1. Abra uma conexão SSH com a instância Commerce EC2.
+1. Abra uma conexão SSH com a instância do Commerce EC2.
 1. Inicie o monitor Redis.
 
    ```bash
    redis-cli -h <ElastiCache-Primary-Endpoint-host> -p <ElastiCache-Primary-Endpoint-port> monitor
    ```
 
-1. Abra uma página na interface do usuário do Commerce.
+1. Abra uma página na interface do Commerce.
 1. Verifique se [saída do cache](#verify-redis-connection) no terminal.
 
 ## Nova implementação do cache Redis
 
-A partir da versão 2.3.5 do Commerce, é recomendável usar a implementação de cache Redis estendido: `\Magento\Framework\Cache\Backend\Redis`.
+A partir do Commerce 2.3.5, é recomendável usar a implementação do cache Redis estendido: `\Magento\Framework\Cache\Backend\Redis`.
 
 ```php
 'cache' => [
@@ -316,4 +316,4 @@ Se ambos os comandos forem bem-sucedidos, o Redis será configurado corretamente
 
 ### Inspeção de dados compactados
 
-Para inspecionar dados de Sessão compactados e Cache de Página, a variável [RESP.app](https://flathub.org/apps/details/app.resp.RESP) O suporta a descompactação automática do cache de sessão e página do Commerce 2 e exibe os dados de sessão do PHP em um formato legível.
+Para inspecionar dados de Sessão compactados e Cache de Página, a variável [RESP.app](https://flathub.org/apps/details/app.resp.RESP) O suporta a descompactação automática do cache de sessão e página do Commerce 2 e exibe os dados da sessão PHP em um formato legível.

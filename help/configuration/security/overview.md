@@ -1,11 +1,11 @@
 ---
 title: Visão geral da segurança
-description: Leia uma breve visão geral das configurações de segurança para o aplicativo Adobe Commerce e Magento Open Source.
+description: Leia uma breve visão geral das configurações de segurança para o aplicativo do Adobe Commerce.
 feature: Configuration, Security
 exl-id: e596d03f-8428-4ad7-a563-8b7f371ed5b4
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ A seção Segurança inclui configurações para recursos relacionados à segura
 
 ## Recursos de segurança
 
-Os tópicos na seção Segurança do guia Configuração não são abrangentes em todas as funcionalidades do Commerce. Há muitos tópicos importantes relacionados à segurança em outros guias do Commerce, como:
+Os tópicos na seção Segurança do guia Configuração não são abrangentes em toda a funcionalidade do Commerce. Há muitos tópicos importantes relacionados à segurança em outros guias do Commerce, como:
 
-- [Guia do desenvolvedor de PHP](https://developer.adobe.com/commerce/php/development/security/) para obter informações que os desenvolvedores do Adobe Commerce e do Magento Open Source podem usar para melhorar a segurança dos componentes que eles criam.
+- [Guia do desenvolvedor de PHP](https://developer.adobe.com/commerce/php/development/security/) para obter informações que os desenvolvedores do Adobe Commerce podem usar para melhorar a segurança dos componentes que criam.
 - [Guia de segurança e conformidade](https://devdocs.magento.com/security/security-and-compliance.html) para obter informações sobre segurança, privacidade e conformidade normativa, com links para recursos técnicos.
 
 Vários tópicos relacionados à segurança que foram incluídos no guia Configuração de uma vez, agora estão localizados nos seguintes guias:

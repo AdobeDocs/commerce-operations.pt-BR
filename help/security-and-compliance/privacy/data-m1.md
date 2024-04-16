@@ -2,9 +2,9 @@
 title: Referência de informações pessoais do cliente (versão 1.x)
 description: Saiba mais sobre os mapeamentos de entidade de banco de dados e fluxo de dados para informações pessoais do cliente no Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este é um de uma série de tópicos para ajudar os comerciantes e desenvolvedores da Adobe Commerce e do Magento Open Source a se prepararem para o cumprimento das regras de privacidade. Consulte seu advogado para determinar se e como sua empresa deve cumprir quaisquer obrigações legais.
+>Este é um tópico de uma série para ajudar os comerciantes e desenvolvedores da Adobe Commerce a se preparar para a conformidade com as regulamentações de privacidade. Consulte seu advogado para determinar se e como sua empresa deve cumprir quaisquer obrigações legais.
 
 Use os seguintes diagramas de fluxo de dados e mapeamentos de entidade de banco de dados para referência ao desenvolver programas de conformidade para regulamentos de privacidade, como:
 
@@ -44,7 +44,7 @@ Um comerciante pode especificar informações sobre cliente, endereço e pagamen
 
 ### Pontos de acesso de dados de back-end
 
-O Commerce carrega as informações do cliente quando um comerciante exibe vários tipos de grades, clica em uma grade para ver informações detalhadas e executa várias outras tarefas.
+O Commerce carrega informações do cliente quando um comerciante exibe vários tipos de grades, clica em uma grade para ver informações detalhadas e executa várias outras tarefas.
 
 ![Pontos de acesso de dados de back-end](../../assets/security-compliance/backend-data-access-points.svg)
 

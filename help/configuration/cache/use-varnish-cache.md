@@ -3,22 +3,22 @@ title: Limpeza de cache com verniz
 description: Saiba como a limpeza de cache funciona com o Vernish e como um acelerador de cache da Web para o aplicativo do Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
 
 # Limpeza de cache com verniz
 
-Este tópico discute as noções básicas do uso do Varnish como acelerador de cache da Web para o Adobe Commerce e o Magento Open Source.
+Este tópico discute as noções básicas do uso do Varnish como acelerador de cache da Web para o Adobe Commerce.
 
 ## Purging de verniz
 
 De acordo [Documentação de verniz](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *limpar* é o que acontece quando você seleciona um objeto do cache e o descarta junto com suas variantes.&quot; Uma limpeza de Verniz é semelhante a um comando de limpeza de cache (ou clique em **Liberar cache de Magento** em Admin).
 
-Na verdade, quando você limpa, limpa ou atualiza o cache do Commerce, o Varnish também é limpo.
+Na verdade, ao limpar, liberar ou atualizar o cache do Commerce, o Varnish também é limpo.
 
 Depois de instalar e configurar o Verniz para funcionar com o Commerce, as seguintes ações podem resultar em uma limpeza de Verniz:
 
@@ -30,7 +30,7 @@ Depois de instalar e configurar o Verniz para funcionar com o Commerce, as segui
    - **LOJAS** > **Configurações** > **Configuração** > GERAL > **Configuração de moeda**
    - **LOJAS** > **Configurações** > **Configuração** > GERAL > **Armazenar endereços de email**
 
-  Quando o Commerce detectar essa alteração, uma mensagem será exibida informando para atualizar o cache.
+  Quando o Commerce detecta essa alteração, uma mensagem é exibida informando que você atualize o cache.
 
 - Manutenção de uma loja (por exemplo, adição ou edição de categorias, preços, produtos e regras de precificação promocional).
 
@@ -54,7 +54,7 @@ Por exemplo,
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-Em seguida, você pode expurgar hosts Verniz ao atualizar o cache de Comércio (também conhecido como *limpeza* o cache) no Admin ou usando a linha de comando.
+Em seguida, você pode expurgar hosts do Vernish ao atualizar o cache do Commerce (também conhecido como *limpeza* o cache) no Admin ou usando a linha de comando.
 
 Para atualizar o cache usando o Administrador, clique em **[!UICONTROL SYSTEM]** > Ferramentas > **Gerenciamento de cache** e, em seguida, clique em **Liberar cache de Magento** na parte superior da página. (Você também pode atualizar tipos de cache individuais.)
 

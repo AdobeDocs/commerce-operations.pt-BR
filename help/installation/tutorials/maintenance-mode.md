@@ -2,9 +2,9 @@
 title: Ativar ou desativar modo de manutenção
 description: Siga estas etapas para personalizar o que os clientes verão quando a implantação do Adobe Commerce ou Magento Open Source estiver inativa para manutenção.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 O guia a seguir se refere a uma página de modo de manutenção padrão. Se precisar usar uma página de manutenção personalizada, consulte [Criar a página de manutenção personalizada](../../upgrade/troubleshooting/maintenance-mode-options.md) tópico.
 
-Adobe Commerce e Magento Open Source usam [modo de manutenção](../../configuration/bootstrap/application-modes.md#maintenance-mode) para desativar a inicialização. Desativar a inicialização é útil enquanto você mantém, atualiza ou reconfigura o site.
+O Adobe Commerce usa [modo de manutenção](../../configuration/bootstrap/application-modes.md#maintenance-mode) para desativar a inicialização. Desativar a inicialização é útil enquanto você mantém, atualiza ou reconfigura o site.
 
 O aplicativo detecta o modo de manutenção da seguinte maneira:
 

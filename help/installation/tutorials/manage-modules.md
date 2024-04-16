@@ -2,9 +2,9 @@
 title: Ativar ou desativar módulos
 description: Siga estas etapas para gerenciar módulos Adobe Commerce ou Magento Open Source.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 6e87d68df97adf47b5a61e8b6683ac11f600806c
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ bin/magento cache:clean
 
 ## Sobre a ativação e desativação de módulos
 
-O Adobe Commerce e o Magento Open Source permitem ativar ou desativar módulos disponíveis no momento; em outras palavras, qualquer módulo fornecido por Adobe ou qualquer módulo de terceiros disponível no momento.
+O Adobe Commerce permite ativar ou desativar os módulos disponíveis no momento; em outras palavras, qualquer módulo fornecido por Adobe ou qualquer módulo de terceiros disponível no momento.
 
 Determinados módulos têm dependências em outros módulos, nesse caso, você não pode ativar ou desativar um módulo porque ele tem dependências em outros módulos.
 
@@ -92,7 +92,7 @@ Exemplos:
 
 * O módulo A está em conflito com o módulo B. Você pode desativar os Módulos A e B ou pode desativar os módulos, mas *não é possível* Ative os módulos A e B ao mesmo tempo.
 
-* As dependências são declaradas no `require` no Adobe Commerce e no Magento Open Source `composer.json` para cada módulo. Os conflitos são declarados no `conflict` campo em módulos&#39; `composer.json` arquivos. Usamos essas informações para criar um gráfico de dependências: `A->B` o módulo A depende do módulo B.
+* As dependências são declaradas no `require` no Adobe Commerce `composer.json` para cada módulo. Os conflitos são declarados no `conflict` campo em módulos&#39; `composer.json` arquivos. Usamos essas informações para criar um gráfico de dependências: `A->B` o módulo A depende do módulo B.
 
 * A *cadeia de dependências* é o caminho de um módulo para outro. Por exemplo, se o módulo A depende do módulo B, e o módulo B depende do módulo C, a cadeia de dependência é `A->B->C`.
 

@@ -1,21 +1,21 @@
 ---
 title: Requisitos do sistema
-description: Use esta referência para identificar as dependências de software necessárias que foram testadas com versões Adobe Commerce e Magento Open Source.
+description: Use esta referência para identificar as dependências de software necessárias que foram testadas com as versões do Adobe Commerce.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 4087d5f5de0bc11ce120d61a539800a3533893f0
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
 
 # Requisitos do sistema
 
-A seguir é apresentado um resumo das dependências de software e dos serviços testados para Adobe Commerce e Magento Open Source.
+A seguir é apresentado um resumo das dependências de software e dos serviços testados para Adobe Commerce.
 
 Existem algumas diferenças nas dependências do Commerce na infraestrutura em nuvem. O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infraestrutura em nuvem é determinado por serviços testados e implantados nos ambientes de nuvem hospedados e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Por exemplo, o Elasticsearch 7.17 é compatível com o Commerce 2.4.4 para implantações locais, mas o OpenSearch 1.2 é compatível com o Commerce 2.4.4 na infraestrutura em nuvem.
 
-As tabelas a seguir mostram versões de dependências de software de terceiros que o Adobe testou com versões específicas do Adobe Commerce e do Magento Open Source.
+As tabelas a seguir mostram versões de dependências de software de terceiros que o Adobe testou com versões específicas do Adobe Commerce.
 
 O Adobe suporta apenas a combinação dos requisitos de sistema descritos nas tabelas a seguir. Por exemplo, 2.4.5 é totalmente testado com MariaDB 10.4. A Adobe recomenda que você atualize para MariaDB 10.4 antes de atualizar para a versão 2.4.5.
 
@@ -52,7 +52,7 @@ Consulte [Configurar serviços](https://experienceleague.adobe.com/docs/commerce
 
 ## Configurações do PHP
 
-Há definições específicas de configuração do PHP, como a variável `memory_limit` , que pode ajudá-lo a evitar problemas comuns ao usar o Adobe Commerce e o Magento Open Source. Consulte [Configurações necessárias do PHP](prerequisites/php-settings.md).
+Há definições específicas de configuração do PHP, como a variável `memory_limit` configuração, que pode ajudá-lo a evitar problemas comuns ao usar o Adobe Commerce. Consulte [Configurações necessárias do PHP](prerequisites/php-settings.md).
 
 Para obter orientação sobre a configuração na nuvem, consulte [Configurações do PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) no _Commerce na infraestrutura em nuvem_ guia.
 
@@ -102,7 +102,7 @@ Esta seção descreve o suporte e a compatibilidade para todos os outros tipos d
 
 >[!NOTE]
 >
->Os requisitos a seguir se aplicam à versão mais recente do patch 2.4.x do Adobe Commerce e Magento Open Source. Quando pertinente, são fornecidas orientações sobre a infraestrutura do Commerce on Cloud.
+>Os seguintes requisitos se aplicam à versão de patch 2.4.x mais recente do Adobe Commerce. Quando pertinente, são fornecidas orientações sobre a infraestrutura do Commerce on Cloud.
 
 ### Navegadores
 
@@ -127,7 +127,7 @@ A atualização dos aplicativos e extensões obtidos do Commerce Marketplace e d
 
 Distribuições Linux, como RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian e similares. O Microsoft Windows e o macOS não são compatíveis.
 
-O Adobe Commerce e o Magento Open Source exigem as seguintes ferramentas do sistema para algumas operações:
+O Adobe Commerce requer as seguintes ferramentas do sistema para algumas operações:
 
 - [[!DNL bash]](https://www.gnu.org/software/bash/)
 - [[!DNL gzip]](https://www.gzip.org/)
@@ -149,7 +149,7 @@ Para a infraestrutura do Commerce na nuvem, consulte [Configuração do Fastly](
 
 ### Xdebug
 
-Para Adobe Commerce e Magento Open Source, use [php_xdebug 2.5.x](https://xdebug.org/download) ou posterior (somente ambientes de desenvolvimento; pode ter um efeito adverso no desempenho).
+Para o Adobe Commerce, use [php_xdebug 2.5.x](https://xdebug.org/download) ou posterior (somente ambientes de desenvolvimento; pode ter um efeito adverso no desempenho).
 
 Para o Adobe Commerce na nuvem, consulte [Configurar Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) no _Commerce na infraestrutura em nuvem_ guia.
 

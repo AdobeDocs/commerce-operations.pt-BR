@@ -1,10 +1,10 @@
 ---
 title: Diretrizes do MySQL
-description: Siga estas etapas para instalar e configurar MySQL e MariaDB para instalações locais de Adobe Commerce e Magento Open Source.
+description: Siga estas etapas para instalar e configurar o MySQL e o MariaDB para instalações locais do Adobe Commerce.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Consulte [Requisitos do sistema](../../system-requirements.md) para versões com
 
 Adobe _forte_ A recomenda que você observe o seguinte padrão ao configurar seu banco de dados:
 
-* Adobe Commerce e Magento Open Source usam [Acionadores do banco de dados MySQL](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) para melhorar o acesso ao banco de dados durante a reindexação. Elas são criadas quando o modo do indexador é definido como [programação](../../../configuration/cli/manage-indexers.md#configure-indexers). O aplicativo não oferece suporte a acionadores personalizados no banco de dados porque esses acionadores podem introduzir incompatibilidades com versões futuras do Adobe Commerce e do Magento Open Source.
+* O Adobe Commerce usa [Acionadores do banco de dados MySQL](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) para melhorar o acesso ao banco de dados durante a reindexação. Elas são criadas quando o modo do indexador é definido como [programação](../../../configuration/cli/manage-indexers.md#configure-indexers). O aplicativo não oferece suporte a acionadores personalizados no banco de dados porque esses acionadores podem introduzir incompatibilidades com versões futuras do Adobe Commerce.
 * Familiarize-se com [essas limitações potenciais do acionador MySQL](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) antes de continuar.
 * Para aprimorar a postura de segurança do banco de dados, ative a opção [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) Modo SQL para impedir o armazenamento de valores de dados inválidos, o que pode causar interações indesejadas no banco de dados.
-* Adobe Commerce e Magento Open Source do _não_ suporta replicação baseada em instruções MySQL. Certifique-se de usar _somente_ [replicação baseada em linha](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
+* A Adobe Commerce faz _não_ suporta replicação baseada em instruções MySQL. Certifique-se de usar _somente_ [replicação baseada em linha](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
 
 >[!WARNING]
 >
@@ -30,7 +30,7 @@ Adobe _forte_ A recomenda que você observe o seguinte padrão ao configurar seu
 
 ## Instalação do MySQL no Ubuntu
 
-O Adobe Commerce e o Magento Open Source 2.4 exigem uma instalação limpa do MySQL 8.0. Siga os links abaixo para obter instruções sobre como instalar o MySQL em sua máquina.
+O Adobe Commerce 2.4 requer uma instalação limpa do MySQL 8.0. Siga os links abaixo para obter instruções sobre como instalar o MySQL em sua máquina.
 
 * [Ubuntu](https://ubuntu.com/server/docs/databases-mysql)
 * [CentOS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
@@ -53,7 +53,7 @@ Em seguida, [Configurar a instância do banco de dados](#configuring-the-databas
 
 ## Alterações no MySQL 8
 
-Para Adobe Commerce e Magento Open Source 2.4, adicionamos suporte para MySQL 8.
+Para o Adobe Commerce 2.4, adicionamos suporte para MySQL 8.
 Esta seção descreve as principais alterações no MySQL 8 que os desenvolvedores devem estar cientes.
 
 ### Largura removida para tipos inteiros (preenchimento)
@@ -92,11 +92,11 @@ A partir do MySQL 8.0.13, o `ASC` ou `DESC` qualificadores para `GROUP BY` cláu
 
 ## Commerce e MySQL 8
 
-Houve algumas alterações no Adobe Commerce e no Magento Open Source para oferecer suporte adequado ao MySQL 8.
+Houve algumas alterações no Adobe Commerce para oferecer suporte adequado ao MySQL 8.
 
 ### Comportamento de consulta e inserção
 
-O Adobe Commerce e o Magento Open Source desativaram o comportamento de validação regular definindo SET SQL_MODE=&#39;&#39; em `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. Com a validação desativada, é possível que o MySQL trunca os dados. No MySQL, o comportamento do Query foi alterado: `Select * on my_table where IP='127.0.0.1'` O não retorna mais os resultados porque o endereço IP agora é visto corretamente como uma cadeia de caracteres, em vez de um número inteiro.
+O Adobe Commerce desativou o comportamento de validação regular definindo SET SQL_MODE=&#39;&#39; em `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. Com a validação desativada, é possível que o MySQL trunca os dados. No MySQL, o comportamento do Query foi alterado: `Select * on my_table where IP='127.0.0.1'` O não retorna mais os resultados porque o endereço IP agora é visto corretamente como uma cadeia de caracteres, em vez de um número inteiro.
 
 ## Atualização do MySQL 5.7 para MySQL 8
 

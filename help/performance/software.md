@@ -1,11 +1,11 @@
 ---
 title: Recommendations de software
-description: Revise uma lista de softwares recomendados relacionados ao desempenho ideal das implantações de Adobe Commerce e Magento Open Source.
+description: Revise uma lista de softwares recomendados relacionados ao desempenho ideal das implantações do Adobe Commerce.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ Foram realizadas muitas melhorias no [!DNL MySQL] 5.7.9 Estamos confiantes de qu
 | Parâmetro | Padrão | Descrição |
 |--- | --- | ---|
 | `innodb_buffer_pool_instances` | 8 | O valor padrão é definido como 8 para evitar problemas com várias threads tentando acessar a mesma instância. |
-| `innodb_buffer_pool_size` | 128MB | Combinado com as várias instâncias de pool descritas acima, isso significa uma alocação de memória padrão de 1024 MB. O tamanho total é dividido entre todos os pools de buffer. Para maior eficiência, especifique uma combinação de `innodb_buffer_pool_instances` e `innodb_buffer_pool_size` para que cada instância do pool de buffers tenha pelo menos 1 GB. |
+| `innodb_buffer_pool_size` | 128 MB | Combinado com as várias instâncias de pool descritas acima, isso significa uma alocação de memória padrão de 1024 MB. O tamanho total é dividido entre todos os pools de buffer. Para maior eficiência, especifique uma combinação de `innodb_buffer_pool_instances` e `innodb_buffer_pool_size` para que cada instância do pool de buffers tenha pelo menos 1 GB. |
 | `max_connections` | 150 | O valor de `max_connections` deve estar correlacionado com o número total de threads do PHP configurados no servidor de aplicativo. Uma recomendação geral seria de 300 para um ambiente pequeno e de 1.000 para um ambiente médio. |
 | `innodb_thread_concurrency` | 0 | O melhor valor para essa configuração deve ser calculado pela fórmula: `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
 
