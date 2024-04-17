@@ -3,9 +3,9 @@ title: A variável [!UICONTROL Redis] guia
 description: Saiba mais sobre o [!UICONTROL Redis] guia de [!DNL Observation for Adobe Commerce].
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ A variável **[!UICONTROL Redis used memory]** O quadro mostra o uso de memória
 
 ![Resgata as alterações desde o último salvamento do banco de dados](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] O reside na memória e salva as informações no armazenamento. A variável **[!UICONTROL Redis changes since last db save]** quadro indica o número de alterações na memória ocorridas desde que o último banco de dados foi salvo no armazenamento. Consulte [Persistência de Redis](https://redis.io/docs/manual/persistence/) para obter mais explicações sobre [!DNL Redis's] persistência.
+[!DNL Redis] O reside na memória e salva as informações no armazenamento. A variável **[!UICONTROL Redis changes since last db save]** quadro indica o número de alterações na memória ocorridas desde que o último banco de dados foi salvo no armazenamento. Consulte [Persistência de Redis](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) para obter mais explicações sobre [!DNL Redis's] persistência.
 
 ## [!UICONTROL Redis synchronization from Log]
 
