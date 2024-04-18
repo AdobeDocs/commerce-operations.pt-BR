@@ -3,9 +3,9 @@ title: Proteger o site e a infraestrutura da Commerce
 description: Mantenha a segurança implementando práticas recomendadas de segurança ao instalar, configurar e atualizar instalações do Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: a00b7b66beb6499f7fb19fda2dfd450799f73728
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2006'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Embora não seja possível eliminar todos os riscos de segurança, a aplicação
 
 >[!NOTE]
 >
->Para obter informações sobre as funções e responsabilidades para proteger e manter projetos do Adobe Commerce na infraestrutura em nuvem, consulte [Guia de responsabilidade compartilhada](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) no Centro de confiança do Adobe.
+>Para obter informações sobre as funções e responsabilidades para proteger e manter projetos do Adobe Commerce na infraestrutura em nuvem, consulte [Modelo de responsabilidade compartilhada](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)) no _Guia de segurança e conformidade da Adobe Commerce_.
 
 [Todas as versões compatíveis](../../../release/versions.md) de:
 
