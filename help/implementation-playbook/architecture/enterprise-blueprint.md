@@ -3,7 +3,7 @@ title: Arquitetura de referência corporativa
 description: Saiba como implementar o Adobe Commerce usando a tecnologia de comércio combinável mais recente da Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
+source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 O Adobe Commerce é a plataforma baseada em experiência que combina flexibilidade técnica com facilidade de uso, tudo isso em um serviço de criação de experiências excepcionais que geram resultados comerciais.
 
-O comércio evoluiu para atender aos requisitos corporativos de desempenho, dimensionamento e segurança. A adoção de uma abordagem de implementação moderna que usa as soluções comerciais combináveis mais recentes do Adobe é essencial para o sucesso dos negócios corporativos. Esta página descreve a abordagem moderna de implementação do Commerce em detalhes técnicos.
+A Commerce evoluiu para atender aos requisitos corporativos de desempenho, dimensionamento e segurança. A adoção de uma abordagem de implementação moderna que usa as soluções comerciais combináveis mais recentes do Adobe é essencial para o sucesso dos negócios corporativos. Esta página descreve a abordagem moderna de implementação do Commerce em detalhes técnicos.
 
 O diagrama de arquitetura a seguir ilustra o fluxo de dados entre o Adobe Commerce e todas as soluções da Adobe Experience Cloud.
 
-![Diagrama da arquitetura que mostra como o Adobe Commerce se conecta às soluções Experience Cloud](../../assets/playbooks/commerce-architecture-v2.svg){zoom=&quot;yes&quot;}
+![Diagrama da arquitetura que mostra como o Adobe Commerce se conecta às soluções Experience Cloud](../../assets/playbooks/commerce-architecture-v3.svg){zoom=&quot;yes&quot;}
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ O diagrama de arquitetura a seguir ilustra o fluxo de dados entre o Adobe Commer
 
 ## Cloud Foundation
 
-[Adobe Commerce na infraestrutura em nuvem](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) O é a base da implementação do Commerce. Fornece uma [seguro](../../security-and-compliance/shared-responsibility.md) plataforma de hospedagem automatizada com uma abordagem de autoatendimento para criar, implantar, monitorar e gerenciar seu aplicativo do Commerce em um ambiente nativo em nuvem.
+[Adobe Commerce na infraestrutura em nuvem](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) O é a base da implementação do Commerce. Fornece uma [seguro](../../security-and-compliance/shared-responsibility.md) plataforma de hospedagem automatizada com uma abordagem de autoatendimento para criar, implantar, monitorar e gerenciar seu aplicativo da Commerce em um ambiente nativo em nuvem.
 
 Consulte os seguintes detalhes técnicos do Cloud Foundation:
 
@@ -62,7 +62,7 @@ O Adobe fornece as seguintes ferramentas de desenvolvedor para criar integraçõ
 - [**Construtor de aplicativos**](https://developer.adobe.com/app-builder/docs/overview/)— crie e implante aplicativos Web seguros e dimensionáveis que ampliem a funcionalidade do Commerce e integrem-se a soluções de terceiros.
 - [**Eventos**](https://developer.adobe.com/commerce/extensibility/events/)—Use acionadores de eventos personalizados para interagir com outras ferramentas de desenvolvimento extensíveis.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Use webhooks para acionar automaticamente interações entre o Commerce e sistemas de terceiros.
-- [**SDK da interface do usuário do administrador**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Personalize e aprimore o Administrador do Commerce com novas páginas e recursos para seus comerciantes.
+- [**SDK da interface do usuário do administrador**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Personalize e aprimore o administrador do Commerce com novas páginas e recursos para seus comerciantes.
 
 ## Serviços de vitrine
 
