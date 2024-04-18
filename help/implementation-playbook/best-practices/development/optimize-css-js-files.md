@@ -4,9 +4,9 @@ description: Saiba como mesclar e minificar arquivos CSS e JavaScript (JS) para 
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,6 @@ Para um site do Commerce mais responsivo, otimize os arquivos de recursos CSS e 
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
-- Magento Open Source
 
 ## Mesclar ou minificar arquivos CSS
 
@@ -82,7 +81,7 @@ Para ativar a minificação de JS no Adobe Commerce na infraestrutura em nuvem:
 
 ## Mesclar e agrupar arquivos JS
 
-Você pode ativar a mesclagem ou o agrupamento no Administrador do Commerce (a mesclagem e o agrupamento não podem ser habilitados ao mesmo tempo): [!UICONTROL **Lojas** > **Configurações** > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações do JavaScript**].
+Você pode ativar a mesclagem ou o agrupamento no Administrador do Commerce (a mesclagem e o agrupamento não podem ser ativados ao mesmo tempo): [!UICONTROL **Lojas** > **Configurações** > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações do JavaScript**].
 
 Você também pode ativar o agrupamento Adobe Commerce incorporado (agrupamento básico) na linha de comando:
 

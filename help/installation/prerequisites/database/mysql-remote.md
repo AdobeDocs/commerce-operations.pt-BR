@@ -2,9 +2,9 @@
 title: Configurar uma conexão remota com o banco de dados MySQL
 description: Siga estas etapas para configurar uma conexão de banco de dados remota para instalações locais do Adobe Commerce.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Antes de começar, você deve:
 
 * [Instalar servidor MySQL](mysql.md) no servidor de banco de dados.
 * [Criar uma instância de banco de dados](mysql.md#configuring-the-database-instance) no servidor de banco de dados.
-* Instale o cliente MySQL no nó da Web Adobe Commerce ou Magento Open Source. Consulte a documentação do MySQL para obter detalhes.
+* Instale o cliente MySQL no nó da Web do Adobe Commerce. Consulte a documentação do MySQL para obter detalhes.
 
 ### Alta disponibilidade
 
@@ -136,7 +136,7 @@ No host do nó da Web, digite o seguinte comando para verificar se a conexão fu
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-Se o monitor MySQL for exibido da seguinte maneira, o banco de dados estará pronto para Adobe Commerce ou Magento Open Source:
+Se o monitor MySQL for exibido da seguinte maneira, o banco de dados estará pronto para o Adobe Commerce:
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -151,9 +151,9 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 Se o servidor Web estiver clusterizado, insira o comando em cada host do servidor Web.
 
-## Instale o Adobe Commerce ou o Magento Open Source
+## Instalar o Adobe Commerce
 
-Ao instalar o Adobe Commerce ou o Magento Open Source, você deve especificar o seguinte:
+Ao instalar o Adobe Commerce, você deve especificar o seguinte:
 
 * O URL de base (também conhecido como *endereço da loja*) especifica o nome do host ou endereço IP do *nó da web*
 * O host do banco de dados é o *servidor de banco de dados remoto* Endereço IP (ou balanceador de carga se o servidor de banco de dados estiver clusterizado)

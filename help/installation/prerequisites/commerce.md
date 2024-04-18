@@ -2,9 +2,9 @@
 title: Obtenha o software Adobe Commerce
 description: Saiba como baixar o software Adobe Commerce.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Você está entre os 240.000 comerciantes em todo o mundo que confiam em nosso s
 
 Verifique a disponibilidade de novos recursos e versões interessantes e saiba como obtê-los em nossos [página de disponibilidade do produto](https://devdocs.magento.com/release/availability.html).
 
-Consulte a tabela a seguir para começar a instalar o Adobe Commerce ou o Magento Open Source.
+Consulte a tabela a seguir para começar a instalar o Adobe Commerce.
 
 <table>
     <tbody>

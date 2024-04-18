@@ -1,24 +1,24 @@
 ---
 title: Mecanismo de pesquisa atual não suportado
-description: Solucione problemas com a atualização do Adobe Commerce ou do Magento Open Source após encontrar um erro sobre um mecanismo de pesquisa não compatível.
+description: Solucione o problema da atualização do Adobe Commerce depois de encontrar um erro sobre um mecanismo de pesquisa não compatível.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 # Mecanismo de pesquisa atual não suportado
 
-A seguinte mensagem de erro indica que a versão do Adobe Commerce ou do Magento Open Source que você está atualizando está configurada para usar um mecanismo de pesquisa de catálogo que não é compatível na versão para a qual você está atualizando:
+A seguinte mensagem de erro indica que a versão do Adobe Commerce da qual você está atualizando está configurada para usar um mecanismo de pesquisa de catálogo que não é compatível na versão para a qual você está atualizando:
 
 ```terminal
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 
-Esse erro significa que uma das seguintes condições é verdadeira na versão de nível inferior do Adobe Commerce ou Magento Open Source:
+Esse erro significa que uma das seguintes condições é verdadeira na versão de nível inferior do Adobe Commerce:
 
 - O mecanismo de pesquisa é definido como MySQL.
 - O mecanismo de pesquisa está definido como uma versão do Elasticsearch que não é mais suportada.
@@ -62,11 +62,11 @@ Após configurar o mecanismo de pesquisa e reindexar, você estará pronto para 
 
 O Elasticsearch 6 e anterior não são mais compatíveis.
 
-Um valor de `elasticsearch` indica que sua versão de nível inferior do Adobe Commerce ou Magento Open Source está configurada para usar o Elasticsearch 2.x. Esta versão do Elasticsearch não é mais suportada.
+Um valor de `elasticsearch` indica que sua versão de nível inferior do Adobe Commerce está configurada para usar o Elasticsearch 2.x. Esta versão do Elasticsearch não é mais suportada.
 
 Você deve executar as seguintes tarefas antes de atualizar para a versão 2.4:
 
-1. Atualização para uma versão do Elasticsearch compatível com o Commerce. Consulte [Atualizando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obter instruções completas sobre como fazer backup dos dados, detectar possíveis problemas de migração e testar atualizações antes de implantar na produção. Dependendo da sua versão atual do Elasticsearch, uma reinicialização completa do cluster pode ou não ser necessária.
+1. Atualização para uma versão do Elasticsearch compatível com Commerce. Consulte [Atualizando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obter instruções completas sobre como fazer backup dos dados, detectar possíveis problemas de migração e testar atualizações antes de implantar na produção. Dependendo da sua versão atual do Elasticsearch, uma reinicialização completa do cluster pode ou não ser necessária.
 
    >[!NOTE]
    >

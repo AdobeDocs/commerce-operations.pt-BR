@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de implementação para 
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
   </tr>
   <tr>
     <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Armazenamento em cache de página inteira</a></td>
-    <td>Saiba como trabalhar com dados públicos ao implementar o armazenamento em cache na sua extensão Adobe Commerce ou Magento Open Source.</td>
+    <td>Saiba como trabalhar com dados públicos ao implementar o armazenamento em cache na extensão do Adobe Commerce.</td>
   </tr>
   <tr>
     <td><a href="opcache-memory-size.md">Tamanho da memória do OPcache</a></td>

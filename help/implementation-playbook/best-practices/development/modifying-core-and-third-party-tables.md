@@ -5,9 +5,9 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Para obter mais informações sobre como usar a malha de API com o GraphQL, cons
 Se você determinar que os dados herdados exigem migração ou que os novos dados precisam ser salvos em [!DNL Adobe Commerce], o Adobe recomenda usar [atributos de extensão](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. A utilização de atributos de extensão para salvar dados adicionais oferece as seguintes vantagens:
 
 - Você pode controlar os dados que estão sendo mantidos e a estrutura do banco de dados, o que garante que os dados sejam salvos com o tipo de coluna correto e índices adequados.
-- Maioria das entidades em [!DNL Adobe Commerce] e [!DNL Magento Open Source] oferecem suporte ao uso de atributos de extensão.
+- Maioria das entidades em [!DNL Adobe Commerce] oferecem suporte ao uso de atributos de extensão.
 - Os atributos de extensão são um mecanismo agnóstico em armazenamento que oferece flexibilidade para salvar os dados no local ideal para o seu projeto.
 
 Dois exemplos de locais de armazenamento são tabelas de banco de dados e [!DNL Redis]. Os principais aspectos a serem considerados ao escolher um local são se o local apresenta complexidade extra ou se afeta o desempenho.

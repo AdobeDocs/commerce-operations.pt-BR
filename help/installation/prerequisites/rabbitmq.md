@@ -2,9 +2,9 @@
 title: Agente de mensagens
 description: Siga estas etapas para instalar e configurar o software de agente de mensagens necessário (como [!DNL RabbitMQ]) para instalações locais do Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ O Adobe Commerce usa o [!DNL RabbitMQ] agente de mensagens de código aberto. El
 
 As filas de mensagens fornecem um mecanismo de comunicação assíncrono no qual o remetente e o destinatário de uma mensagem não entram em contato entre si. Eles também não precisam se comunicar com a fila de mensagens ao mesmo tempo. Quando um remetente coloca uma mensagem em uma fila, ela é armazenada até que o destinatário a receba.
 
-O sistema de fila de mensagens deve ser estabelecido antes da instalação do Adobe Commerce ou Magento Open Source. A sequência básica é:
+O sistema de fila de mensagens deve ser estabelecido antes da instalação do Adobe Commerce. A sequência básica é:
 
 1. Instalar [!DNL RabbitMQ] e qualquer pré-requisito.
-1. Conectar [!DNL RabbitMQ] para Adobe Commerce ou Magento Open Source.
+1. Conectar [!DNL RabbitMQ] para o Adobe Commerce.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Revise o oficial [!DNL RabbitMQ] documentação para configurar e gerenciar [!DN
 
 ## Instalar com o [!DNL RabbitMQ] e conectar
 
-Se você instalar o Adobe Commerce ou o Magento Open Source _após_ instalar [!DNL RabbitMQ], adicione os seguintes parâmetros de linha de comando durante a instalação:
+Se você instalar o Adobe Commerce _após_ instalar [!DNL RabbitMQ], adicione os seguintes parâmetros de linha de comando durante a instalação:
 
 ```bash
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
@@ -90,7 +90,7 @@ Onde:
 
 ## Conectar [!DNL RabbitMQ]
 
-Se você já tiver o Adobe Commerce ou o Magento Open Source instalado e quiser conectá-lo ao [!DNL RabbitMQ], adicionar um `queue` na seção `<install_directory>/app/etc/env.php` para que seja semelhante ao seguinte:
+Se você já tiver o Adobe Commerce instalado e quiser conectá-lo ao [!DNL RabbitMQ], adicionar um `queue` na seção `<install_directory>/app/etc/env.php` para que seja semelhante ao seguinte:
 
 ```php
 'queue' =>

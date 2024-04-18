@@ -2,9 +2,9 @@
 title: Como funcionam os patches
 description: Saiba mais sobre os diferentes tipos de patches para o Adobe Commerce e como eles funcionam.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/com
 
 ## Patches personalizados
 
-Às vezes demora um pouco para a Equipe de engenharia de Adobe incluir uma correção de erro feita no GitHub em uma versão do Adobe Commerce ou do Magento Open Source Composer. Enquanto isso, você pode criar um patch do GitHub e usar o [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) para aplicá-lo à sua instalação baseada no Composer.
+Às vezes demora um pouco para a Equipe de engenharia de Adobe incluir uma correção de erro feita no GitHub em uma versão do Adobe Commerce Composer. Enquanto isso, você pode criar um patch do GitHub e usar o [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) para aplicá-lo à sua instalação baseada no Composer.
 
 Use o [linha de comando](apply.md#command-line) ou [Compositor](apply.md#composer) para aplicar patches personalizados.
 

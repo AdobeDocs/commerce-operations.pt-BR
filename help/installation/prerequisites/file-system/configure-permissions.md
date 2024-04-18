@@ -2,16 +2,16 @@
 title: Configurar a propriedade e as permissões do arquivo
 description: Siga estas etapas para configurar permissões do sistema de arquivos para instalações locais do Adobe Commerce.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
 
 # Configurar a propriedade e as permissões do arquivo
 
-Este tópico discute como definir permissões de leitura e gravação para o grupo de servidores Web antes de instalar o Adobe Commerce ou o Magento Open Source. Isso é necessário para que a linha de comando possa gravar arquivos no sistema de arquivos.
+Este tópico discute como definir permissões de leitura e gravação para o grupo de servidores Web antes de instalar o Adobe Commerce. Isso é necessário para que a linha de comando possa gravar arquivos no sistema de arquivos.
 
 O procedimento usado é diferente, dependendo se você usa [hospedagem compartilhado](#set-permissions-for-one-user-on-shared-hosting) e tiver um usuário ou se você usar um [servidor privado](#set-ownership-and-permissions-for-two-users) e têm dois usuários.
 

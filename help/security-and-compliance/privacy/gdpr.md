@@ -2,9 +2,9 @@
 title: Regulamento Geral sobre a Proteção de Dados (GDPR)
 description: Saiba mais sobre o Regulamento Geral sobre a Proteção de Dados (GDPR), que é uma legislação que regula a proteção de dados e a privacidade de todos os indivíduos na União Europeia e no Espaço Econômico Europeu.
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Os integradores de sistemas podem usar os diagramas de fluxo de dados e as infor
 
 ## Referência de informações pessoais
 
-Para obter informações técnicas, consulte os diagramas de fluxo de dados e os mapeamentos de entidade de banco de dados na Referência de informações pessoais que se aplica a cada versão do Adobe Commerce ou Magento Open Source que você aceita.
+Para obter informações técnicas, consulte os diagramas de fluxo de dados e os mapeamentos de entidade de banco de dados na Referência de informações pessoais que se aplica a cada versão do Adobe Commerce compatível.
 
 - [Referência de informações pessoais do cliente (versão 2.x)](data-m2.md)
 - [Referência de informações pessoais do cliente (versão) 1.x)](data-m1.md)

@@ -1,10 +1,10 @@
 ---
 title: Visão geral da política de segurança de conteúdo
-description: Saiba como melhorar a postura de segurança do Adobe Commerce ou do armazenamento de Magento Open Source usando uma política de segurança de conteúdo.
+description: Saiba como melhorar a postura de segurança da loja do Adobe Commerce usando uma política de segurança de conteúdo.
 exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Instalação de início rápido local
-description: Siga estas etapas para instalar o Adobe Commerce ou o Magento Open Source na infraestrutura que você possui.
+description: Siga estas etapas para instalar o Adobe Commerce na sua infraestrutura.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Usos do Adobe [Compositor](https://getcomposer.org/) para gerenciar componentes 
 - Reduza os conflitos de extensão e os problemas de compatibilidade usando uma arquitetura baseada em componentes com um gerenciamento robusto de dependências
 - Aderir a [Grupo de interoperabilidade de estrutura PHP (FIG)](https://www.php-fig.org/) padrões
 - Reempacotar o Magento Open Source com outros componentes
-- Uso do software Adobe Commerce ou Magento Open Source em um ambiente de produção
+- Usar o software Adobe Commerce em um ambiente de produção
 
 >[!NOTE]
 >
@@ -71,11 +71,11 @@ Para alternar para o proprietário do sistema de arquivos:
 
 ## Obter o metapackage
 
-Para obter o pacote Adobe Commerce ou Magento Open Source:
+Para obter o metappackage do Adobe Commerce:
 
 1. Efetue login no servidor de aplicativos como, ou alterne para, o [proprietário do sistema de arquivos](prerequisites/file-system/overview.md).
 1. Altere para o diretório docroot do servidor Web ou um diretório que você configurou como docroot do host virtual.
-1. Crie um projeto do Composer usando o Adobe Commerce ou o metapackage Magento Open Source.
+1. Crie um projeto do Composer usando um metapackage do Commerce.
 
    **Magento Open Source**
 
@@ -127,7 +127,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ## Definir permissões de arquivo
 
-Você deve definir permissões de leitura e gravação para o grupo de servidores Web antes de instalar o Adobe Commerce ou o Magento Open Source. Isso é necessário para que a linha de comando possa gravar arquivos no sistema de arquivos.
+Você deve definir permissões de leitura e gravação para o grupo de servidores Web antes de instalar o Adobe Commerce. Isso é necessário para que a linha de comando possa gravar arquivos no sistema de arquivos.
 
 ```terminal
 cd /var/www/html/<magento install directory>
@@ -139,7 +139,7 @@ chmod u+x bin/magento
 
 ## Instalar o aplicativo
 
-Você deve usar a linha de comando para instalar o Adobe Commerce ou o Magento Open Source.
+Você deve usar a linha de comando para instalar o Adobe Commerce.
 
 Este exemplo assume que o diretório de instalação é nomeado como `magento2ee`, o `db-host` está na mesma máquina (`localhost`) e que o `db-name`, `db-user`, e `db-password` são todos `magento`:
 

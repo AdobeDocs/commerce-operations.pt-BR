@@ -1,11 +1,11 @@
 ---
 title: Processamento de pedido de alta capacidade
-description: Otimize a experiência de posicionamento de pedidos e finalização para a implantação do Adobe Commerce ou Magento Open Source.
+description: Otimize a experiência de posicionamento de pedidos e check-out para a implantação do Adobe Commerce.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Quando desativada, a verificação de inventário não ocorre ao adicionar um pr
 
 Você pode ajudar a balancear a carga em diferentes nós, habilitando conexões secundárias para o banco de dados MySQL e a instância Redis.
 
-O Adobe Commerce pode ler vários bancos de dados ou instâncias Redis de forma assíncrona. Se você estiver usando o Commerce na infraestrutura em nuvem, poderá configurar as conexões secundárias editando o [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) valores no `.magento.env.yaml` arquivo. Somente um nó precisa lidar com tráfego de leitura-gravação, portanto, definir as variáveis como `true` resulta na criação de uma conexão secundária para tráfego somente leitura. Defina os valores como `false` para remover qualquer matriz de conexão somente leitura existente do `env.php` arquivo.
+O Adobe Commerce pode ler vários bancos de dados ou instâncias Redis de forma assíncrona. Se estiver usando o Commerce na infraestrutura em nuvem, você poderá configurar as conexões secundárias editando o [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) valores no `.magento.env.yaml` arquivo. Somente um nó precisa lidar com tráfego de leitura-gravação, portanto, definir as variáveis como `true` resulta na criação de uma conexão secundária para tráfego somente leitura. Defina os valores como `false` para remover qualquer matriz de conexão somente leitura existente do `env.php` arquivo.
 
 Exemplo de `.magento.env.yaml` arquivo:
 

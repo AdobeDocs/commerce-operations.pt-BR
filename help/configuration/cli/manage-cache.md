@@ -2,9 +2,9 @@
 title: Gerenciar o cache
 description: Gerencie tipos de cache e visualize o status do cache na linha de comando usando a CLI do Commerce
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 1070291396144f866cadd5e42ebca3e77a484a9b
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Para limpar itens desatualizados do cache, você pode _limpar_ ou _liberar_ tipo
 
   >[!TIP]
   >
-  >Sempre limpe o cache após atualizar as versões do Magento Open Source ou do Adobe Commerce, atualizar do Magento Open Source para o Adobe Commerce ou instalar B2B para o Adobe Commerce ou qualquer módulo.
+  >Sempre limpe o cache após atualizar as versões do Adobe Commerce, atualizar do Magento Open Source para o Adobe Commerce ou instalar B2B para o Adobe Commerce ou qualquer módulo.
 
 - A limpeza de um tipo de cache limpa o armazenamento em cache, o que pode afetar outros aplicativos de processos que estejam usando o mesmo armazenamento.
 

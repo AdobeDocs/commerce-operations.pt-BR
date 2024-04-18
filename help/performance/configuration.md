@@ -1,11 +1,11 @@
 ---
 title: Práticas recomendadas de configuração
-description: Otimize o tempo de resposta de sua implantação do Adobe Commerce ou Magento Open Source usando essas práticas recomendadas.
+description: Otimize o tempo de resposta de sua implantação do Adobe Commerce usando essas práticas recomendadas.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ Ao iniciar sua loja na produção, ative todos os caches do **[!UICONTROL System
 
 ## Notificações de email assíncronas
 
-A ativação da configuração &quot;Notificações de email assíncronas&quot; move processos que lidam com notificações de email de check-out e processamento de pedidos para o segundo plano. Para ativar esse recurso, vá para **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Consulte [Emails de vendas](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) no _Guia do usuário do Magento Open Source_ para obter mais informações.
+A ativação da configuração &quot;Notificações de email assíncronas&quot; move processos que lidam com notificações de email de check-out e processamento de pedidos para o segundo plano. Para ativar esse recurso, vá para **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Consulte [Emails de vendas](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) no _Guia do usuário de administração_ para obter mais informações.
 
 ## Processamento assíncrono de dados de pedido
 
-Pode haver momentos em que as vendas intensas em uma loja ocorram ao mesmo tempo em que [!DNL Commerce] O está executando um processamento intensivo de pedidos. Você pode configurar [!DNL Commerce] distinguir esses dois padrões de tráfego no nível do banco de dados para evitar conflitos entre operações de leitura e gravação nas tabelas correspondentes. Você pode armazenar e indexar dados de pedido de maneira assíncrona. Os pedidos são colocados em armazenamento temporário e movidos em massa para a grade do Order Management sem colisões. É possível ativar essa opção em **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Consulte [Atualizações de Grade Agendadas](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) no _Guia do usuário do Magento Open Source_ para obter mais informações.
+Pode haver momentos em que as vendas intensas em uma loja ocorram ao mesmo tempo em que [!DNL Commerce] O está executando um processamento intensivo de pedidos. Você pode configurar [!DNL Commerce] distinguir esses dois padrões de tráfego no nível do banco de dados para evitar conflitos entre operações de leitura e gravação nas tabelas correspondentes. Você pode armazenar e indexar dados de pedido de maneira assíncrona. Os pedidos são colocados em armazenamento temporário e movidos em massa para a grade do Order Management sem colisões. É possível ativar essa opção em **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Consulte [Atualizações de Grade Agendadas](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) no _Guia do usuário de administração_ para obter mais informações.
 
 >[!WARNING]
 >

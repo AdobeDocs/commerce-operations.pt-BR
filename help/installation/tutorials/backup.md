@@ -1,10 +1,10 @@
 ---
 title: Fazer backup e reverter o sistema de arquivos, a mídia e o banco de dados
-description: Siga estas etapas para fazer backup e restaurar o aplicativo Adobe Commerce ou Magento Open Source.
+description: Siga estas etapas para fazer backup e restaurar seu aplicativo do Adobe Commerce.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---

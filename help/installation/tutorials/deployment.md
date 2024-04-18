@@ -1,11 +1,11 @@
 ---
 title: Criar ou atualizar a configuração de implantação
-description: Siga estas etapas para gerenciar a configuração de implantação do Adobe Commerce ou Magento Open Source.
+description: Siga estas etapas para gerenciar a configuração de implantação do Adobe Commerce.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ A tabela a seguir discute os significados dos parâmetros e valores da instalaç
 | `--db-name` | Nome da instância do banco de dados em que você deseja instalar as tabelas do banco de dados.<br><br>O padrão é `magento2`. | Não |
 | `--db-user` | Nome de usuário do proprietário da instância do banco de dados.<br><br>O padrão é `root`. | Não |
 | `--db-password` | Senha do proprietário da instância do banco de dados. | Não |
-| `--db-prefix` | Use apenas se estiver instalando as tabelas do banco de dados em uma instância do banco de dados que já tenha tabelas do Adobe Commerce.<br><br>Nesse caso, use um prefixo para identificar as tabelas dessa instalação. Alguns clientes têm mais de uma instância Adobe Commerce ou Magento Open Source em execução em um servidor com todas as tabelas no mesmo banco de dados.<br><br>O prefixo pode ter no máximo cinco caracteres. Ela deve começar com uma letra e pode incluir apenas letras, números e caracteres sublinhados.<br><br>Essa opção permite que esses clientes compartilhem o servidor de banco de dados com mais de uma instalação Adobe Commerce ou Magento Open Source. | Não |
+| `--db-prefix` | Use apenas se estiver instalando as tabelas do banco de dados em uma instância do banco de dados que já tenha tabelas do Adobe Commerce.<br><br>Nesse caso, use um prefixo para identificar as tabelas dessa instalação. Alguns clientes têm mais de uma instância do Adobe Commerce em execução em um servidor com todas as tabelas no mesmo banco de dados.<br><br>O prefixo pode ter no máximo cinco caracteres. Ela deve começar com uma letra e pode incluir apenas letras, números e caracteres sublinhados.<br><br>Essa opção permite que esses clientes compartilhem o servidor de banco de dados com mais de uma instalação do Adobe Commerce. | Não |
 | `--session-save` | Use qualquer um dos seguintes:<br><br>- `db` para armazenar dados de sessão na [banco de dados](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Escolha armazenamento de banco de dados se você tiver um banco de dados clusterizado; caso contrário, pode não haver muito benefício sobre o armazenamento baseado em arquivo.<br><br>- `files` para armazenar dados de sessão no sistema de arquivos. O armazenamento de sessão baseado em arquivo é apropriado, a menos que o acesso ao sistema de arquivos seja lento, você tenha um banco de dados clusterizado ou deseje armazenar dados de sessão em Redis.<br><br>- `redis` para armazenar dados da sessão em [Usar Redis para armazenamento de sessão](../../configuration/cache/config-redis.md). Se você estiver usando Redis para cache padrão ou de página, Redis já deve estar instalado. | Não |
 | `--key` | Se você tiver uma, especifique uma chave para criptografar [dados confidenciais](#sensitive-data) no banco de dados. Se você não tiver um, o aplicativo gera um para você. | Não |
 | `--db-init-statements` | Parâmetro de configuração avançado do MySQL. Usa instruções de inicialização de banco de dados a serem executadas ao conectar-se ao banco de dados MySQL.<br><br>O padrão é `SET NAMES utf8;`.<br><br>Consulte uma referência semelhante a [este](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) antes de definir quaisquer valores. | Não |

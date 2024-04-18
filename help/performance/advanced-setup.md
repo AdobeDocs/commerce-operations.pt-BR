@@ -2,9 +2,9 @@
 title: Configuração avançada
 description: Analise as práticas recomendadas e as recomendações para sistemas de grandes empresas projetados para processar grandes volumes de dados.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Você também pode usar um cluster Redis que executa operações paralelas de le
 
 ## Configurar [!DNL RabbitMQ]
 
-MAGENTO OPEN SOURCE e ADOBE [!DNL Commerce] filas de mensagens de suporte implementadas por meio do [!DNL RabbitMQ]. [!DNL Commerce] O usa esse serviço para executar várias operações assíncronas, incluindo operações de catálogo B2B e atualizações de estoque assíncronas. Todas as interfaces para adicionar mais trabalhos ao servidor de trabalhos são distribuídas com o produto e estão disponíveis para implementação de lógica assíncrona personalizada no escopo de extensões de terceiros. Como em qualquer outra integração, [!DNL Commerce] O fornece um exemplo de arquivo de configuração para [!DNL RabbitMQ] que contém todas as configurações recomendadas e está totalmente pronto para uso de produção.
+O Adobe Commerce oferece suporte a filas de mensagens implementadas por meio do [!DNL RabbitMQ]. [!DNL Commerce] O usa esse serviço para executar várias operações assíncronas, incluindo operações de catálogo B2B e atualizações de estoque assíncronas. Todas as interfaces para adicionar mais trabalhos ao servidor de trabalhos são distribuídas com o produto e estão disponíveis para implementação de lógica assíncrona personalizada no escopo de extensões de terceiros. Como em qualquer outra integração, [!DNL Commerce] O fornece um exemplo de arquivo de configuração para [!DNL RabbitMQ] que contém todas as configurações recomendadas e está totalmente pronto para uso de produção.
 
 ## Dividir o banco de dados
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 475dbc056ac3e6a00c8f794259bb0fbf04143687
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Recomendamos o seguinte:
 
 * Seu mecanismo de pesquisa é executado no mesmo host que um servidor da Web. A execução do mecanismo de pesquisa e do servidor Web em hosts diferentes está além do escopo deste tópico.
 
-  A vantagem de colocar o mecanismo de busca e o servidor Web no mesmo host é que isso torna impossível a interceptação de comunicações criptografadas. O servidor Web do mecanismo de pesquisa não precisa ser o mesmo que o servidor Web Adobe Commerce ou Magento Open Source; por exemplo, o Adobe Commerce pode executar o Apache e o Elasticsearch/OpenSearch pode executar nginx.
+  A vantagem de colocar o mecanismo de busca e o servidor Web no mesmo host é que isso torna impossível a interceptação de comunicações criptografadas. O servidor Web do mecanismo de pesquisa não precisa ser o mesmo que o servidor Web do Adobe Commerce; por exemplo, o Adobe Commerce pode executar o Apache e o Elasticsearch/OpenSearch pode executar o nginx.
 
   Se o mecanismo de pesquisa for exposto à Web pública, você deverá configurar a autenticação. Se a instância do mecanismo de pesquisa estiver protegida na rede, isso pode não ser necessário. Trabalhe com seu provedor de hospedagem para determinar quais medidas de segurança você deve implementar para proteger sua instância.
 

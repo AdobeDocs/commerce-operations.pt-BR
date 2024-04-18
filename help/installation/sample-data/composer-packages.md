@@ -3,16 +3,16 @@ title: Baixar pacotes de dados de amostra do Composer
 description: Siga estas etapas para instalar dados de amostra do Adobe Commerce usando o Gerenciador de pacotes PHP do Composer.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # Baixar pacotes de dados de amostra do Composer
 
-Esta seção discute como instalar dados de amostra se você tiver o software Adobe Commerce ou Magento Open Source de qualquer uma das seguintes maneiras:
+Esta seção discute como instalar dados de amostra se você tiver o software Adobe Commerce de qualquer uma das seguintes maneiras:
 
 * Baixado um arquivo compactado de `https://magento.com/tech-resources/download`.
 

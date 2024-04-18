@@ -1,10 +1,10 @@
 ---
 title: Instalar o Adobe Commerce
-description: Siga estas etapas para instalar o Adobe Commerce ou o Magento Open Source na infraestrutura que você possui.
+description: Siga estas etapas para instalar o Adobe Commerce na sua infraestrutura.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2094'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ No Adobe Commerce versão 2.2.8 e posterior, é possível criar o usuário admin
 | `--db-name` | Nome da instância do banco de dados em que você deseja instalar as tabelas do banco de dados.<br><br>O padrão é `magento2`. | Sim |
 | `--db-user` | Nome de usuário do proprietário da instância do banco de dados.<br><br>O padrão é `root`. | Sim |
 | `--db-password` | Senha do proprietário da instância do banco de dados. | Sim |
-| `--db-prefix` | Use apenas se estiver instalando as tabelas do banco de dados em uma instância do banco de dados que já tenha tabelas Adobe Commerce ou Magento Open Source.<br><br>Nesse caso, use um prefixo para identificar as tabelas dessa instalação. Alguns clientes têm mais de uma instância do Adobe Commerce em execução em um servidor com todas as tabelas no mesmo banco de dados.<br><br>O prefixo pode ter no máximo cinco caracteres. Ela deve começar com uma letra e pode incluir apenas letras, números e caracteres sublinhados.<br><br>Essa opção permite que esses clientes compartilhem o servidor de banco de dados com mais de uma instalação. | Não |
+| `--db-prefix` | Use apenas se estiver instalando as tabelas do banco de dados em uma instância do banco de dados que já tenha tabelas do Adobe Commerce.<br><br>Nesse caso, use um prefixo para identificar as tabelas dessa instalação. Alguns clientes têm mais de uma instância do Adobe Commerce em execução em um servidor com todas as tabelas no mesmo banco de dados.<br><br>O prefixo pode ter no máximo cinco caracteres. Ela deve começar com uma letra e pode incluir apenas letras, números e caracteres sublinhados.<br><br>Essa opção permite que esses clientes compartilhem o servidor de banco de dados com mais de uma instalação. | Não |
 | `--db-ssl-key` | Caminho para a chave do cliente. | Não |
 | `--db-ssl-cert` | Caminho para o certificado do cliente. | Não |
 | `--db-ssl-ca` | Caminho para o certificado do servidor. | Não |

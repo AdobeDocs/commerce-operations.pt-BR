@@ -1,17 +1,17 @@
 ---
 title: Visão geral do guia de configuração
-description: Saiba mais sobre todos os recursos e serviços configuráveis para seu aplicativo Adobe Commerce ou Magento Open Source.
+description: Saiba mais sobre todos os recursos e serviços configuráveis para seu aplicativo do Adobe Commerce.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
 
 # Guia de configuração
 
-A variável _Configuração_ O guia fornece material de referência e orientação limitada para gerenciar os recursos e serviços configuráveis do aplicativo do Commerce. Os usuários técnicos responsáveis pela configuração do aplicativo Commerce podem encontrar orientação para as seguintes áreas:
+A variável _Configuração_ O guia fornece material de referência e orientação limitada para gerenciar os recursos e serviços configuráveis do aplicativo Commerce. Os usuários técnicos responsáveis pela configuração do aplicativo Commerce podem encontrar orientação para as seguintes áreas:
 
 - [Instalação](../configuration/bootstrap/initialization.md)
 - [Métodos de implantação](../configuration/deployment/overview.md)
@@ -23,9 +23,9 @@ A variável _Configuração_ O guia fornece material de referência e orientaç�
 - [Configurações do mecanismo de pesquisa](../configuration/search/configure-search-engine.md)
 - [Métodos de armazenamento](../configuration/storage/memcached.md)
 
-## Configuração de administrador do Commerce
+## Configuração de administração do Commerce
 
-Há tópicos correspondentes no [Guia do usuário do Commerce](https://docs.magento.com/user-guide/stores/configuration.html) que podem ajudá-lo a entender as descrições de campo para cada definição de configuração no Administrador do Commerce.
+Há tópicos correspondentes no [Guia do usuário do Commerce](https://docs.magento.com/user-guide/stores/configuration.html) que podem ajudar você a entender as descrições de campo para cada definição de configuração no Administrador do Commerce.
 
 ## Configuração na nuvem
 

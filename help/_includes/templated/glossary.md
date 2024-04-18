@@ -1,7 +1,7 @@
 ---
-source-git-commit: 405c1d7073e5936aefc7fb3c6eb1d5dd4d69a066
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '6574'
+source-wordcount: '6363'
 ht-degree: 0%
 
 ---
@@ -128,13 +128,13 @@ _Atributos de termo:_
 _substantivo_
 
 Uma característica ou propriedade de um produto que descreve algum aspecto do produto.
-Os usuários do Adobe Commerce ou do Magento Open Source podem criar atributos personalizados para adicionar ao conjunto de atributos padrão ou a um conjunto de atributos personalizado.
+Os usuários do Adobe Commerce podem criar atributos personalizados para adicionar ao conjunto de atributos padrão ou a um conjunto de atributos personalizado.
 Crie esses atributos por meio do Administrador ou de forma programática.
 Exemplos: cor, tamanho, peso, preço, idade, gênero e assim por diante.
 
 Os atributos personalizados são um tipo de atributo de Entidade-Atributo-Valor (EAV).
 
-Para integrações como o Canal de anúncios de compras do Google e o Sales Channel do Amazon, mapeie os atributos do Commerce para atributos de terceiros, a fim de exibir e vender produtos e exibir anúncios corretamente.
+Para integrações como o Canal de anúncios do Google Shopping e o Sales Channel do Amazon, mapeie os atributos do Commerce a atributos no terceiro para exibir e vender corretamente os produtos e exibir os anúncios.
 
 Saiba mais: [Atributos de extensão de EAV e extensão](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
@@ -392,7 +392,7 @@ _substantivo_
 Para comerciantes, o catálogo representa o inventário de produtos.
 Na arquitetura do Adobe Commerce, o catálogo consiste em categorias, produtos e atributos de produto.
 
-Cada loja de Commerce tem apenas um catálogo de produtos, que é compartilhado por todas as exibições da loja.
+Cada loja do Commerce tem apenas um catálogo de produtos, que é compartilhado por todas as visualizações da loja.
 Em uma instalação com várias lojas, cada loja pode ter um catálogo separado ou compartilhar o catálogo.
 O catálogo da loja atual é determinado pela categoria raiz padrão, visível para o usuário na navegação superior (menu principal) da loja.
 (O termo &quot;categoria raiz&quot; pode ser confuso, porque a &quot;categoria raiz&quot; não é realmente uma categoria, mas um container para o menu, que consiste em categorias e subcategorias.)
@@ -686,7 +686,7 @@ _Atributos de termo:_
 
 _substantivo_
 
-Um conjunto de scripts e ferramentas projetados para gerenciar e implantar o aplicativo do Commerce. Esse pacote simplifica muitos processos do Adobe Commerce na infraestrutura em nuvem, incluindo implantação em um ambiente Docker, gerenciamento de crons, verificação da configuração do projeto e aplicação de patches de Adobe.
+Um conjunto de scripts e ferramentas projetado para gerenciar e implantar o aplicativo do Commerce. Esse pacote simplifica muitos processos do Adobe Commerce na infraestrutura em nuvem, incluindo implantação em um ambiente Docker, gerenciamento de crons, verificação da configuração do projeto e aplicação de patches de Adobe.
 
 Saiba mais: [pacote ece-tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
@@ -781,7 +781,7 @@ Em um aplicativo cliente-servidor, há o back-end e o front-end.
 O componente de front-end, ou cliente, é uma interface que permite aos usuários manipular ou interagir com o código de back-end subjacente.
 O código de backend é executado em um servidor.
 Um usuário não pode acessar diretamente o código de backend.
-Um usuário interage com a loja, que, por sua vez, usa o código em execução no servidor do Commerce.
+Um usuário interage com a loja, que por sua vez usa o código em execução no servidor do Commerce.
 
 Observação: antigamente, a loja era chamada de &quot;front-end&quot; e o administrador era chamado de &quot;back-end&quot;. Não há mais suporte para este uso.
 
@@ -913,7 +913,7 @@ _Atributos de termo:_
 
 _substantivo_
 
-Na construção de uma página de comércio, um layout é uma série de blocos montados em uma hierarquia, representando a estrutura da página.
+Na construção de uma página do Commerce, um layout é uma série de blocos montados em uma hierarquia, representando a estrutura da página.
 
 Os arquivos de layout de página se concentram no nível mais alto da estrutura da página (cabeçalho, rodapé, área de conteúdo principal, barra lateral esquerda e assim por diante).
 Os arquivos de layout montam o conteúdo (blocos) nessas diferentes áreas da página.
@@ -1013,7 +1013,7 @@ _Atributos de termo:_
 _substantivo_
 
 O MFTF é um [Estrutura de testes funcional](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
-Ele fornece uma estrutura de teste para desenvolvedores de comércio e engenheiros de software, como especialistas em controle de qualidade, desenvolvedores de PHP e integradores de sistema.
+Ele fornece uma estrutura de teste para desenvolvedores e engenheiros de software do Commerce, como especialistas em controle de qualidade, desenvolvedores de PHP e integradores de sistema.
 Os desenvolvedores e o controle de qualidade podem gravar testes para tentar interações do usuário com aplicativos da Web, verificar a funcionalidade e automatizar testes de regressão.
 
 _Atributos de termo:_
@@ -1085,7 +1085,7 @@ _Atributos de termo:_
 
 _substantivo_
 
-O Page Builder é uma extensão do Commerce para a criação de páginas ricas em conteúdo, pois arrasta e solta controles pré-criados para definir layouts personalizados.
+O Page Builder é uma extensão do Commerce para a criação de páginas ricas em conteúdo ao arrastar e soltar controles pré-criados para definir layouts personalizados.
 Esses controles também são conhecidos como &quot;tipos de conteúdo&quot;.
 Os comerciantes podem criar layouts e páginas sem experiência de codificação.
 O suporte à extensão é fornecido para desenvolvedores que ampliam o Page Builder.
@@ -1313,7 +1313,7 @@ _Atributos de termo:_
 
 _substantivo_
 
-O nível de escopo de comércio de &quot;loja&quot; é o segundo nível da hierarquia do site, que é a seguinte: site > loja > exibição de loja.
+O nível de escopo do Commerce de &quot;loja&quot; é o segundo nível da hierarquia do site, que é a seguinte: site > loja > visualização de loja.
 As lojas podem ser organizadas em uma ou várias. Cada loja, possivelmente, tem sua própria categoria raiz e todos compartilham catálogos e dados de clientes.
 
 Cada loja pode ter várias visualizações de loja, que normalmente são usadas para apresentar a loja em um local e idioma diferentes.
@@ -1327,7 +1327,7 @@ _Atributos de termo:_
 
 _substantivo_
 
-O nível de escopo de comércio de &quot;exibição de loja&quot; refere-se ao terceiro nível na hierarquia de sites, lojas e visualizações de loja.
+O nível de escopo do Commerce de &quot;exibição de loja&quot; refere-se ao terceiro nível na hierarquia de sites, lojas e visualizações de loja.
 As visualizações de loja normalmente apresentam a loja em um local e idioma diferentes.
 Para alterar exibições de loja, use o seletor de loja no cabeçalho.
 
@@ -1380,7 +1380,7 @@ Contém informações de gráficos e aparência.
 Personaliza a aparência da loja.
 O Adobe Commerce pode enviar temas em pacotes (Composer).
 Mas os temas podem ser colocados em um aplicativo/design, que não é enviado em um pacote.
-Os pacotes são a unidade de download do Composer e — via Commerce Marketplace — os usuários do Commerce podem baixar CE ou EE como uma série de pacotes, em que os pacotes contêm módulos, temas ou pacotes de idiomas.
+Os pacotes são a unidade de download do Composer e, via Commerce Marketplace, os usuários do Commerce podem baixar CE ou EE como uma série de pacotes, em que os pacotes contêm módulos, temas ou pacotes de idiomas.
 
 _Atributos de termo:_
 
@@ -1438,7 +1438,7 @@ _Atributos de termo:_
 _substantivo_
 
 O código produzido pelo fornecedor que estende ou personaliza o comportamento do Commerce e opera como uma extensão de terceiros é considerado uma Extensão agrupada do fornecedor (VBE).
-Os VBEs são totalmente testados e incluídos em cada versão suportada do Magento Open Source e do Adobe Commerce.
+Os VBEs são totalmente testados e incluídos em cada versão compatível do Adobe Commerce.
 Um VBE pode incluir módulos, temas e pacotes de idiomas.
 
 Saiba mais na [Tópico sobre Extensão Agrupada por Fornecedor](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).

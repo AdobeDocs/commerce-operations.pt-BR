@@ -3,22 +3,22 @@ title: Uso
 description: Saiba como usar o [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
 
 # Uso
 
-A variável [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) O fornece patches individuais desenvolvidos pela Adobe e pela comunidade Magento Open Source. Ela permite aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para a versão instalada do Adobe Commerce ou Magento Open Source. Você pode aplicar patches a projetos Adobe Commerce, independentemente de quem os desenvolveu. Por exemplo, você pode aplicar uma correção desenvolvida pela comunidade para projetos do Adobe Commerce.
+A variável [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) O fornece patches individuais desenvolvidos pela Adobe e pela comunidade Magento Open Source. Ela permite aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para a versão instalada do Adobe Commerce. Você pode aplicar patches a projetos Adobe Commerce, independentemente de quem os desenvolveu. Por exemplo, você pode aplicar uma correção desenvolvida pela comunidade para projetos do Adobe Commerce.
 
 Assista a isto [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) e saiba como usar a Ferramenta de correções de qualidade para Adobe Commerce.
 
 >[!INFO]
 >
->Consulte [Aplicar patches individuais](#apply-individual-patches) para obter instruções sobre como aplicar patches aos projetos Adobe Commerce ou Magento Open Source. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar uma lista completa de patches lançados.
+>Consulte [Aplicar patches individuais](#apply-individual-patches) para obter instruções sobre como aplicar patches aos projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar uma lista completa de patches lançados.
 
 >[!WARNING]
 >
@@ -36,7 +36,7 @@ composer require magento/quality-patches
 
 ## Exibir patches individuais
 
-Para exibir a lista de patches individuais disponíveis para a sua versão do Adobe Commerce ou Magento Open Source:
+Para exibir a lista de patches individuais disponíveis para a sua versão do Adobe Commerce:
 
 ```bash
 ./vendor/bin/magento-patches status
@@ -76,7 +76,7 @@ A tabela de status inclui:
 
 >[!INFO]
 >
->Depois de atualizar para uma nova versão do Adobe Commerce ou Magento Open Source, você deverá reaplicar os patches se eles não estiverem incluídos na nova versão. Consulte [Reaplicar patches após um upgrade](#re-apply-patches-after-an-upgrade).
+>Depois de atualizar para uma nova versão do Adobe Commerce, você deverá reaplicar os patches se eles não estiverem incluídos na nova versão. Consulte [Reaplicar patches após um upgrade](#re-apply-patches-after-an-upgrade).
 
 ## Aplicar patches individuais {#apply-individual-patches}
 
@@ -104,7 +104,7 @@ Você deve limpar o cache após aplicar os patches para ver as alterações no a
 
 >[!INFO]
 >
->Considere manter uma lista de patches aplicados em um local separado. Talvez seja necessário reaplicar alguns deles após atualizar para uma nova versão do Adobe Commerce ou Magento Open Source. Consulte [Reaplicar patches após um upgrade](#re-apply-patches-after-an-upgrade).
+>Considere manter uma lista de patches aplicados em um local separado. Talvez seja necessário reaplicar alguns deles após atualizar para uma nova versão do Adobe Commerce. Consulte [Reaplicar patches após um upgrade](#re-apply-patches-after-an-upgrade).
 
 ## Reverter patches individuais
 
@@ -156,7 +156,7 @@ Exibir os patches adicionados:
 
 ## Reaplicar patches após um upgrade {#re-apply-patches-after-an-upgrade}
 
-Quando você atualiza para uma nova versão do Adobe Commerce ou Magento Open Source, deve reaplicar patches se eles não estiverem incluídos na nova versão.
+Quando você atualiza para uma nova versão do Adobe Commerce, deve reaplicar patches se eles não estiverem incluídos na nova versão.
 
 Para reaplicar patches:
 

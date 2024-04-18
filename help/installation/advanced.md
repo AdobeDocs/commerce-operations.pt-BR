@@ -2,9 +2,9 @@
 title: Instalação avançada local
 description: Saiba mais sobre cenários avançados de instalação do Adobe Commerce na sua infraestrutura.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2314'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Outros benefícios:
 * A CLI é extensível para que desenvolvedores de terceiros possam se &quot;conectar&quot; a ela. Isso tem o benefício adicional de eliminar a curva de aprendizado dos usuários.
 * Os comandos para módulos desativados não são exibidos.
 
-Este tópico discute a instalação do software Adobe Commerce ou Magento Open Source usando a CLI. Para obter informações sobre configuração, consulte [Guia de configuração](../configuration/overview.md).
+Este tópico discute a instalação do software Adobe Commerce usando a CLI. Para obter informações sobre configuração, consulte [Guia de configuração](../configuration/overview.md).
 
 O instalador pode ser executado várias vezes, se necessário, para que você possa:
 
@@ -47,7 +47,7 @@ O instalador pode ser executado várias vezes, se necessário, para que você po
   Por exemplo, depois de configurar seu servidor Web para SSL (Secure Sockets Layer), você pode executar o instalador para definir as opções de SSL.
 
 * Corrigir erros em instalações anteriores
-* Instale o Adobe Commerce ou o Magento Open Source em uma instância de banco de dados diferente
+* Instalar o Adobe Commerce em uma instância de banco de dados diferente
 
 ## Antes de iniciar a instalação
 
@@ -65,7 +65,7 @@ Antes de começar, conclua as seguintes etapas:
 
 >[!NOTE]
 >
->Você deve instalar o Adobe Commerce ou o Magento Open Source a partir da `bin` subdiretório.
+>Você deve instalar o Adobe Commerce a partir da `bin` subdiretório.
 
 Você pode executar o instalador várias vezes com opções diferentes para concluir tarefas de instalação como as seguintes:
 
@@ -73,7 +73,7 @@ Você pode executar o instalador várias vezes com opções diferentes para conc
 
 * Corrigir erros em instalações anteriores.
 
-* Instale o Adobe Commerce ou o Magento Open Source em uma instância de banco de dados diferente.
+* Instale o Adobe Commerce em uma instância de banco de dados diferente.
 
 >[!NOTE]
 >
@@ -133,13 +133,13 @@ As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalaç
 
 | Nome | Valor | Obrigatório? |
 |--- |--- |--- |
-| `--base-url` | URL base a ser usado para acessar seu administrador e vitrine em qualquer um dos seguintes formatos:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** O esquema (http:// ou https://) e uma barra à direita são necessários.<br><br>`<your install dir>` é o caminho relativo ao docroot no qual instalar o software Adobe Commerce ou Magento Open Source. Dependendo de como você configura o servidor Web e os hosts virtuais, o caminho pode ser magento2 ou pode estar em branco.<br><br>Para acessar o Adobe Commerce ou o Magento Open Source no host local, você pode usar `http://127.0.0.1/<your install dir>/` ou `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` que representa um URL de base definido por uma configuração de host virtual ou por um ambiente de virtualização como o Docker. Por exemplo, se você configurar um host virtual com o nome do host `magento.example.com`, você pode instalar o software com `--base-url={{base_url}}` e acesse o Administrador com um URL como `http://magento.example.com/admin`. | Sim |
+| `--base-url` | URL base a ser usado para acessar seu administrador e vitrine em qualquer um dos seguintes formatos:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** O esquema (http:// ou https://) e uma barra à direita são necessários.<br><br>`<your install dir>` é o caminho relativo ao docroot no qual instalar o software Adobe Commerce. Dependendo de como você configura o servidor Web e os hosts virtuais, o caminho pode ser magento2 ou pode estar em branco.<br><br>Para acessar o Adobe Commerce ou o MagenAdobe Commerce, use `http://127.0.0.1/<your install dir>/` ou `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` que representa um URL de base definido por uma configuração de host virtual ou por um ambiente de virtualização como o Docker. Por exemplo, se você configurar um host virtual com o nome do host `magento.example.com`, você pode instalar o software com `--base-url={{base_url}}` e acesse o Administrador com um URL como `http://magento.example.com/admin`. | Sim |
 | `--backend-frontname` | URI (Uniform Resource Identifier) para acessar o Administrador. Você pode omitir esse parâmetro para permitir que o aplicativo gere um URI aleatório para você com o seguinte padrão <code>admin_jkhgdfq</code>.<br><br>Recomendamos um URI aleatório para fins de segurança. Um URI aleatório é mais difícil de ser explorado por hackers ou softwares mal-intencionados.<br><br>O URI é exibido no final da instalação. É possível exibi-lo posteriormente a qualquer momento usando a `bin/magento info:adminuri` comando.<br><br>Se você optar por inserir um valor, recomendamos que não use uma palavra comum como admin, backend. O URI do Administrador pode conter valores alfanuméricos e o caractere de sublinhado (`_`) somente. | Não |
 | `--db-host` | Use qualquer um dos seguintes:<br><br>- O nome de host ou endereço IP totalmente qualificado do servidor de banco de dados.<br><br>- `localhost` (padrão) ou `127.0.0.1` se o servidor de banco de dados estiver no mesmo host que o servidor da web.localhost significa que a biblioteca do cliente MySQL usa soquetes UNIX para se conectar ao banco de dados. `127.0.0.1` faz com que a biblioteca do cliente use o protocolo TCP. Para obter mais informações sobre soquetes, consulte [Documentação do PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** Opcionalmente, você pode especificar a porta do servidor de banco de dados em seu nome de host, como www.example.com:9000 | Sim |
 | `--db-name` | Nome da instância do banco de dados em que você deseja instalar as tabelas do banco de dados.<br><br>O padrão é `magento2`. | Sim |
 | `--db-user` | Nome de usuário do proprietário da instância do banco de dados.<br><br>O padrão é `root`. | Sim |
 | `--db-password` | Senha do proprietário da instância do banco de dados. | Sim |
-| `--db-prefix` | Use apenas se estiver instalando as tabelas do banco de dados em uma instância do banco de dados que já tenha tabelas Adobe Commerce ou Magento Open Source.<br><br>Nesse caso, use um prefixo para identificar as tabelas dessa instalação. Alguns clientes têm mais de uma instância Adobe Commerce ou Magento Open Source em execução em um servidor com todas as tabelas no mesmo banco de dados.<br><br>O prefixo pode ter no máximo cinco caracteres. Ela deve começar com uma letra e pode incluir apenas letras, números e caracteres sublinhados.<br><br>Essa opção permite que esses clientes compartilhem o servidor de banco de dados com mais de uma instalação Adobe Commerce ou Magento Open Source. | Não |
+| `--db-prefix` | Use apenas se estiver instalando as tabelas do banco de dados em uma instância do banco de dados que já tenha tabelas do Adobe Commerce.<br><br>Nesse caso, use um prefixo para identificar as tabelas dessa instalação. Alguns clientes têm mais de um Adobe Commerce ou MagenAdobe Commerce Server com todas as tabelas no mesmo banco de dados.<br><br>O prefixo pode ter no máximo cinco caracteres. Ela deve começar com uma letra e pode incluir apenas letras, números e caracteres sublinhados.<br><br>Essa opção permite que esses clientes compartilhem o servidor de banco de dados com mais de uma instalação do Adobe Commerce |
 | `--db-ssl-key` | Caminho para a chave do cliente. | Não |
 | `--db-ssl-cert` | Caminho para o certificado do cliente. | Não |
 | `--db-ssl-ca` | Caminho para o certificado do servidor. | Não |
@@ -153,7 +153,7 @@ As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalaç
 | `--admin-use-security-key` | 1 faz com que o aplicativo use um valor de chave gerado aleatoriamente para acessar páginas no Admin e em formulários. Esses valores principais ajudam a impedir ataques de falsificação de script entre sites. Este é o padrão.<br><br>`0` desativa o uso da chave. | Não |
 | `--session-save` | Use qualquer um dos seguintes:<br><br>- `db` para armazenar dados da sessão no banco de dados. Escolha armazenamento de banco de dados se você tiver um banco de dados clusterizado; caso contrário, pode não haver muito benefício sobre o armazenamento baseado em arquivo.<br><br>- `files` para armazenar dados de sessão no sistema de arquivos. O armazenamento de sessão baseado em arquivo é apropriado, a menos que o acesso ao sistema de arquivos seja lento, você tenha um banco de dados clusterizado ou deseje armazenar dados de sessão em Redis.<br><br>- `redis` para armazenar dados de sessão em Redis. Se você estiver usando Redis para cache padrão ou de página, Redis já deve estar instalado. Consulte Usar Redis para armazenamento de sessão para obter informações adicionais sobre a configuração do suporte para Redis. | Não |
 | `--key` | Se você tiver uma, especifique uma chave para criptografar dados confidenciais no banco de dados. Se você não tiver um, o aplicativo gera um para você. | Sim |
-| `--cleanup-database` | Para eliminar tabelas de banco de dados antes de instalar o Adobe Commerce ou o Magento Open Source, especifique esse parâmetro sem um valor. Caso contrário, o banco de dados será deixado intacto. | Não |
+| `--cleanup-database` | Para eliminar tabelas de banco de dados antes de instalar o Adobe Commerce, especifique esse parâmetro sem um valor. Caso contrário, o banco de dados será deixado intacto. | Não |
 | `--db-init-statements` | Parâmetro de configuração avançado do MySQL. Usa instruções de inicialização de banco de dados a serem executadas ao conectar-se ao banco de dados MySQL. Consulte uma referência semelhante a esta antes de definir quaisquer valores.<br><br>O padrão é `SET NAMES utf8;`. | Não |
 | `--sales-order-increment-prefix` | Especifique um valor da cadeia de caracteres a ser usada como prefixo para ordens de venda. Normalmente, isso é usado para garantir números de pedido exclusivos para processadores de pagamento. | Não |
 
@@ -205,7 +205,7 @@ As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalaç
 
 >[!NOTE]
 >
->Para ativar ou desativar módulos após a instalação do Adobe Commerce ou Magento Open Source, consulte [Ativar e desativar módulos](tutorials/manage-modules.md).
+>Para ativar ou desativar módulos após a instalação do Adobe Commerce, consulte [Ativar e desativar módulos](tutorials/manage-modules.md).
 
 **Dados sensíveis:**
 
@@ -217,7 +217,7 @@ Os exemplos a seguir mostram os comandos para instalar o Adobe Commerce localmen
 
 #### Exemplo 1 — Instalação básica com conta de usuário administrador
 
-O exemplo a seguir instala o Adobe Commerce ou o Magento Open Source com as seguintes opções:
+O exemplo a seguir instala o Adobe Commerce com as seguintes opções:
 
 * O aplicativo é instalado no `magento2` diretório relativo ao docroot do servidor Web em `localhost` e o caminho para o Administrador é `admin`; por conseguinte:
 
@@ -262,7 +262,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 #### Exemplo 2— Instalação básica sem conta de usuário administrador
 
-Você pode instalar o Adobe Commerce ou o Magento Open Source sem criar o usuário administrador, conforme mostrado no exemplo a seguir.
+Você pode instalar o Adobe Commerce sem criar o usuário administrador, conforme mostrado no exemplo a seguir.
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -287,7 +287,7 @@ Após a instalação, é possível criar um usuário administrador usando o `adm
 
 #### Exemplo 3 — Instalação com opções adicionais
 
-O exemplo a seguir instala o Adobe Commerce ou o Magento Open Source com as seguintes opções:
+O exemplo a seguir instala o Adobe Commerce com as seguintes opções:
 
 * O aplicativo é instalado no `magento2` diretório relativo ao docroot do servidor Web em `localhost` e o caminho para o Administrador é `admin`; por conseguinte:
 

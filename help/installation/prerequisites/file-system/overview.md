@@ -2,16 +2,16 @@
 title: Propriedade e permissões do arquivo
 description: Saiba mais sobre a importância das permissões do sistema de arquivos ao trabalhar com instalações locais do Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
 # Propriedade e permissões do arquivo
 
-É importante proteger sua instalação do Adobe Commerce ou do Magento Open Source em um ambiente de desenvolvimento para ajudar a evitar problemas relacionados a pessoas ou processos não autorizados que acessam o sistema e podem prejudicá-lo. Use as seguintes diretrizes de propriedade e permissões do sistema de arquivos para proteger sua instalação.
+É importante proteger a instalação do Adobe Commerce em um ambiente de desenvolvimento para ajudar a evitar problemas relacionados a pessoas ou processos não autorizados que acessam o sistema e podem prejudicá-lo. Use as seguintes diretrizes de propriedade e permissões do sistema de arquivos para proteger sua instalação.
 
 ## Proprietário do sistema de arquivos
 
@@ -65,4 +65,4 @@ Abordamos ainda mais as recomendações de permissões no [Permissões de acesso
 
 >[!TIP]
 >
->Antes de instalar o Adobe Commerce ou o Magento Open Source, consulte [Configurar a propriedade e as permissões do arquivo](configure-permissions.md).
+>Antes de instalar o Adobe Commerce, revise [Configurar a propriedade e as permissões do arquivo](configure-permissions.md).

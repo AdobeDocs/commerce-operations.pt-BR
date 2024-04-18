@@ -1,12 +1,12 @@
 ---
 user-guide-title: Práticas recomendadas de desempenho
-user-guide-description: Otimize o desempenho de sua implantação de produção Adobe Commerce ou Magento Open Source usando nossas recomendações.
+user-guide-description: Otimize o desempenho da implantação de produção do Adobe Commerce usando nossas recomendações.
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
-source-git-commit: 51a86a24561e2c21b895dd59b3d784313b52d186
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 1%
+source-wordcount: '50'
+ht-degree: 2%
 
 ---
 

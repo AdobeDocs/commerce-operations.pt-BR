@@ -1,10 +1,10 @@
 ---
 title: Verificar o status do banco de dados
-description: Siga estas etapas para verificar o status do banco de dados Adobe Commerce ou Magento Open Source.
+description: Siga estas etapas para verificar o status do banco de dados do Adobe Commerce.
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '104'
 ht-degree: 3%
 
 ---
