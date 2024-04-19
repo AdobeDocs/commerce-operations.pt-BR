@@ -2,9 +2,9 @@
 title: Servidor de aplicativos GraphQL
 description: Siga estas instruções para habilitar o GraphQL Application Server na implantação do Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: a1e548c1b1bffd634e0d5b1df0a77ef65c5997f8
+source-git-commit: b89ed5ddb4c6361de22d4a4439ffcfcc3ec8d474
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -360,3 +360,40 @@ Executar `GraphQlStateTest` executando `vendor/bin/phpunit -c $(pwd)/dev/tests/i
 ### Teste funcional
 
 Os desenvolvedores de extensão devem executar testes funcionais de WebAPI para o GraphQL, bem como quaisquer testes funcionais automatizados ou manuais personalizados para o GraphQL, ao implantar o GraphQL Application Server. Esses testes funcionais ajudam os desenvolvedores a identificar possíveis erros ou problemas de compatibilidade.
+
+#### Modo de Monitor de Estado
+
+Durante a execução de testes funcionais (ou testes manuais), o servidor de aplicativos pode ser executado com `--state-monitor mode` habilitado para ajudar a encontrar classes em que o estado está sendo reutilizado involuntariamente. Inicie o Servidor de Aplicativos normalmente, exceto adicionar o `--state-monitor` parâmetro.
+
+```
+bin/magento server:run --state-monitor
+```
+
+Após cada solicitação ser processada, um novo arquivo é adicionado à `tmp` diretório, por exemplo: `var/tmp/StateMonitor-thread-output-50-6nmxiK`. Quando terminar o teste, esses arquivos poderão ser mesclados com o `bin/magento server:state-monitor:aggregate-output` que cria dois arquivos mesclados, um em `XML` e um em `JSON`.
+
+Exemplos:
+
+```
+/var/workspace/var/tmp/StateMonitor-json-2024-04-10T18:50:39Z-hW0ucN.json
+/var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
+```
+
+Esses arquivos podem ser inspecionados com qualquer ferramenta usada para exibir XML ou JSON, que mostrará as propriedades modificadas dos objetos de serviço, como o GraphQlStateTest. A variável `--state-monitor` O modo usa a mesma lista de salto e lista de filtro que GraphQlStateTest.
+
+>[!NOTE]
+>
+>Não use o `--state-monitor` em produção. Ele é projetado apenas para desenvolvimento e teste. Ele cria muitos arquivos de saída e será executado mais lentamente do que o normal.
+
+>[!NOTE]
+>
+>`--state-monitor` não é compatível com versões do PHP `8.3.0` - `8.3.4` devido a um erro no coletor de lixo do PHP. Se você está usando o PHP 8.3, você deve atualizar para `8.3.5` ou mais recente para usar esse recurso.
+
+## Problemas conhecidos
+
+### Solicitações sendo perdidas em casos de término de thread de trabalho.
+
+Se houver um problema com um thread de trabalho que faça com que o thread de trabalho termine, qualquer solicitação HTTP que já esteja enfileirada para esse mesmo thread de trabalho obterá uma redefinição de conexão do soquete TCP. Com um proxy reverso, como NGINX, na frente do servidor, esses erros aparecerão como `502` erros. Os trabalhadores podem morrer por falha, perda de memória ou erros de PHP em extensões de terceiros. O comportamento padrão do servidor HTTP do Swoole causa esse problema. Por padrão, o Servidor HTTP é iniciado em `SWOOLE_BASE` modo. Nesse modo, as solicitações HTTP recebidas são atribuídas às threads de trabalho em uma fila, mesmo que a thread de trabalho ainda esteja processando uma solicitação anterior. Se você alterar isso para a variável `SWOOLE_PROCESS` , as conexões são mantidas pelo processo principal e ele usa significativamente mais comunicação entre processos. A desvantagem de `SWOOLE_PROCESS` é que ele não suporta PHP ZTS. Leia o [Documentação do Swoole](https://wiki.swoole.com/en/#/learn?id=swoole_process) para obter mais informações.
+
+### O Servidor de Aplicativos pode usar a configuração de atributos anterior em determinadas condições.
+
+A variável `CatalogGraphQl\Model\Config\AttributeReader` in `2.4.7` O contém um bug raro que pode fazer com que uma solicitação do GraphQL obtenha uma resposta usando o estado anterior da configuração de atributos. Uma correção para isso foi fornecida em `2.4-develop`, mas não a tempo para `2.4.7` versão.
