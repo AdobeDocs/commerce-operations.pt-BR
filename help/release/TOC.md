@@ -3,7 +3,7 @@ user-guide-title: Informações da versão
 user-guide-description: Acesse todas as informações da versão de patches e serviços da Adobe Commerce em um único local.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: d0304f4060080f70c079fb571210cd015407f1cf
+source-git-commit: 5b294d586b58689a576f411b33d95e4dfa76076e
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 3%
@@ -63,14 +63,14 @@ ht-degree: 3%
       - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
       - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
       - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
-- [Versões lançadas](versions.md)
-- [Recursos por versão](features.md)
 - [Disponibilidade do produto](product-availability.md)
 - [Versões Beta](beta.md)
 - Planejamento e políticas {#planning}
    - [Política de ciclo de vida](lifecycle-policy.md)
    - [Política de controle de versão](versioning-policy.md)
    - [Programação de lançamento](schedule.md)
+- [Recursos por versão](features.md)
+- [Versões lançadas](versions.md)
 - Pacotes {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [B2B para Adobe Commerce](packages/adobe-commerce-b2b.md)
