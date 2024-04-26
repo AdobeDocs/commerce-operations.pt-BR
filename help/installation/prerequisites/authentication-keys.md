@@ -2,9 +2,9 @@
 title: Obter suas chaves de autenticação
 description: Siga estas etapas para recuperar credenciais para acessar os pacotes do Adobe Commerce Composer em repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: fc63ca58cd2ff7c5ec597751980a39bfbe68aa5f
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Para obter direito de acesso a pacotes do Adobe Commerce, você deve usar chaves
 >Se você encontrar [erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), talvez você não tenha autorização para acessar o pacote ou o direito de acesso tenha expirado devido a uma fatura pendente em sua conta.
 >
 >* Se você for a pessoa de contato principal na conta, verifique se não há nenhuma fatura pendente listada na conta.
->* Se as chaves fornecidas pelo contato principal não estiverem funcionando e não houver faturas pendentes na conta, entre em contato com [Suporte ao Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obter assistência usando a MAGEID do contato principal.
+>* Se as chaves fornecidas pelo contato principal não estiverem funcionando e não houver faturas pendentes na conta, o contato principal deve entrar em contato com [Suporte ao Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obter assistência.
 
 Para criar chaves de autenticação:
 
