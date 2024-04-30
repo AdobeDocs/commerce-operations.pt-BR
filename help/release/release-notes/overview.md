@@ -2,10 +2,10 @@
 title: Notas de versão do Adobe Commerce
 description: Saiba onde encontrar informações para versões específicas do Adobe Commerce.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
+source-git-commit: 466256a0dfd915fe0f0c02d377ce724cd311463c
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 0%
+source-wordcount: '291'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,8 @@ Use a tabela a seguir para localizar notas de versão e informações importante
 
 >[!TIP]
 >
->Para obter informações sobre atualizações, consulte [leitura recomendada](../../upgrade/resources/recommended-reading.md).
+>- Se você é novo no Adobe Commerce, consulte a [arquitetura corporativa](../../implementation-playbook/architecture/enterprise-blueprint.md) e [sobre o Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) para obter orientação.
+>- Para obter informações sobre atualizações, consulte [leitura recomendada](../../upgrade/resources/recommended-reading.md).
 
 <table>
   <tbody>

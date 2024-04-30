@@ -2,10 +2,10 @@
 user-guide-title: Guias operacionais
 user-guide-description: Saiba mais sobre os aspectos operacionais de manutenção do aplicativo do Adobe Commerce.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
-source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
+source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 4%
+ht-degree: 27%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 4%
 # Guias operacionais do Adobe Commerce {#operational-guides}
 
 - [Início: Guias Operacionais](home.md)
-- [Informações da versão](https://experienceleague.adobe.com/en/docs/commerce-operations/release/latest)
+- [Informações da versão](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
 - [Desempenho](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
 - [Segurança e conformidade](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
 - [Manual de implementação](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
