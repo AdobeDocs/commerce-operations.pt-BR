@@ -1,7 +1,7 @@
 ---
-source-git-commit: 68ea73d407dd3e6daf880a66de8ef4b7bbef2360
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,12 @@ Saiba mais sobre a ferramenta em [Visão geral](/help/upgrade/upgrade-compatibil
 
 ## `_complete`
 
-Comando interno para fornecer sugestões de conclusão de shell
-
 ```bash
 bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
 ```
+
+Comando interno para fornecer sugestões de conclusão de shell
+
 
 ### `--shell`, `-s`
 
@@ -56,7 +57,7 @@ A versão do script de conclusão
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -105,10 +106,40 @@ Não faça nenhuma pergunta interativa
 
 ## `completion`
 
-Despejar o script de conclusão do shell
-
 ```bash
 bin/uct completion [--debug] [--] [<shell>]
+```
+
+Despejar o script de conclusão do shell
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently only bash completion is supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    uct/bin/uct completion bash | sudo tee /etc/bash_completion.d/uct
+
+Or dump the script to a local file and source it:
+
+    uct/bin/uct completion bash > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion bash)"
 ```
 
 
@@ -126,7 +157,7 @@ Analisar o log de depuração da conclusão
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -175,10 +206,23 @@ Não faça nenhuma pergunta interativa
 
 ## `help`
 
-Exibir a ajuda de um comando
-
 ```bash
 bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+Exibir a ajuda de um comando
+
+
+```
+The help command displays help for a given command:
+
+  uct/bin/uct help list
+
+You can also output the help in other formats by using the --format option:
+
+  uct/bin/uct help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -205,7 +249,7 @@ Para gerar a ajuda do comando raw
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -254,10 +298,29 @@ Não faça nenhuma pergunta interativa
 
 ## `list`
 
-Listar comandos
-
 ```bash
 bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+Listar comandos
+
+
+```
+The list command lists all commands:
+
+  uct/bin/uct list
+
+You can also display the commands for a specific namespace:
+
+  uct/bin/uct list test
+
+You can also output the information in other formats by using the --format option:
+
+  uct/bin/uct list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  uct/bin/uct list --raw
 ```
 
 
@@ -289,7 +352,7 @@ Para ignorar a descrição dos argumentos dos comandos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -338,11 +401,12 @@ Não faça nenhuma pergunta interativa
 
 ## `refactor`
 
-Resolve os problemas que podem ser corrigidos automaticamente. O código no caminho fornecido será atualizado.
-
 ```bash
 bin/uct refactor <path>
 ```
+
+Resolve os problemas que podem ser corrigidos automaticamente. O código no caminho fornecido será atualizado.
+
 
 
 ### `path`
@@ -353,7 +417,7 @@ Caminho para resolver problemas no.
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -402,11 +466,12 @@ Não faça nenhuma pergunta interativa
 
 ## `core:code:changes`
 
-A Ferramenta de compatibilidade de atualização é uma ferramenta de linha de comando que verifica uma instância do Adobe Commerce em relação a uma versão específica analisando todos os módulos que não são da Adobe Commerce instalados nela. Retorna uma lista de erros e avisos que você deve corrigir antes de atualizar para uma nova versão do código Adobe Commerce.
-
 ```bash
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 ```
+
+A Ferramenta de compatibilidade de atualização é uma ferramenta de linha de comando que verifica uma instância do Adobe Commerce em relação a uma versão específica analisando todos os módulos que não são da Adobe Commerce instalados nela. Retorna uma lista de erros e avisos que você deve corrigir antes de atualizar para uma nova versão do código Adobe Commerce.
+
 
 
 ### `dir`
@@ -428,7 +493,7 @@ Caminho do arquivo onde a saída será exportada (Formato Json)
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -477,11 +542,12 @@ Não faça nenhuma pergunta interativa
 
 ## `dbschema:diff`
 
-Permite listar as diferenças de esquema do Adobe Commerce DB entre duas versões selecionadas. Versões disponíveis: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8
-
 ```bash
 bin/uct dbschema:diff <current-version> <target-version>
 ```
+
+Permite listar as diferenças de esquema do Adobe Commerce DB entre duas versões selecionadas. Versões disponíveis: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8
+
 
 
 ### `current-version`
@@ -498,7 +564,7 @@ versão de destino (por exemplo, 2.4.5).
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -547,11 +613,12 @@ Não faça nenhuma pergunta interativa
 
 ## `graphql:compare`
 
-Verificação de compatibilidade de esquema do GraphQL
-
 ```bash
 bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 ```
+
+Verificação de compatibilidade de esquema do GraphQL
+
 
 
 ### `schema1`
@@ -574,7 +641,7 @@ Caminho do arquivo onde a saída será exportada (formato JSON)
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -623,11 +690,12 @@ Não faça nenhuma pergunta interativa
 
 ## `upgrade:check`
 
-A Ferramenta de compatibilidade de atualização é uma ferramenta de linha de comando que verifica uma instância personalizada do Adobe Commerce em relação a uma versão específica, analisando todos os módulos instalados nela. Retorna uma lista de erros e avisos que devem ser resolvidos antes de atualizar para a versão mais recente do Adobe Commerce.
-
 ```bash
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
 ```
+
+A Ferramenta de compatibilidade de atualização é uma ferramenta de linha de comando que verifica uma instância personalizada do Adobe Commerce em relação a uma versão específica, analisando todos os módulos instalados nela. Retorna uma lista de erros e avisos que devem ser resolvidos antes de atualizar para a versão mais recente do Adobe Commerce.
+
 
 
 ### `dir`
@@ -682,7 +750,7 @@ Contexto de execução. Essa opção é para fins de integração e não afeta o
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor

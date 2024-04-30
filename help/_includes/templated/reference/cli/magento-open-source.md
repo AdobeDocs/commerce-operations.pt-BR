@@ -1,7 +1,7 @@
 ---
-source-git-commit: 755ea50a75924cc16f690ff888367abd305565e9
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '18031'
+source-wordcount: '17795'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,12 @@ Use o [&quot;Adicionar comandos CLI&quot;](https://developer.adobe.com/commerce/
 
 ## `_complete`
 
-Comando interno para fornecer sugestões de conclusão de shell
-
 ```bash
 bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
+
+Comando interno para fornecer sugestões de conclusão de shell
+
 
 ### `--shell`, `-s`
 
@@ -65,7 +66,7 @@ obsoleto
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -114,10 +115,40 @@ Não faça nenhuma pergunta interativa
 
 ## `completion`
 
-Despejar o script de conclusão do shell
-
 ```bash
 bin/magento completion [--debug] [--] [<shell>]
+```
+
+Despejar o script de conclusão do shell
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently, bash, fish, zsh completion are supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    bin/magento completion  | sudo tee /etc/bash_completion.d/magento
+
+Or dump the script to a local file and source it:
+
+    bin/magento completion  > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/www/html/magento2/bin/magento completion )"
 ```
 
 
@@ -135,7 +166,7 @@ Analisar o log de depuração da conclusão
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -184,10 +215,23 @@ Não faça nenhuma pergunta interativa
 
 ## `help`
 
-Exibir a ajuda de um comando
-
 ```bash
 bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+Exibir a ajuda de um comando
+
+
+```
+The help command displays help for a given command:
+
+  bin/magento help list
+
+You can also output the help in other formats by using the --format option:
+
+  bin/magento help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -214,7 +258,7 @@ Para gerar a ajuda do comando raw
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -263,10 +307,29 @@ Não faça nenhuma pergunta interativa
 
 ## `list`
 
-Listar comandos
-
 ```bash
 bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+Listar comandos
+
+
+```
+The list command lists all commands:
+
+  bin/magento list
+
+You can also display the commands for a specific namespace:
+
+  bin/magento list test
+
+You can also output the information in other formats by using the --format option:
+
+  bin/magento list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  bin/magento list --raw
 ```
 
 
@@ -298,7 +361,7 @@ Para ignorar a descrição dos argumentos dos comandos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -347,15 +410,16 @@ Não faça nenhuma pergunta interativa
 
 ## `admin:adobe-ims:disable`
 
-Desabilitar o módulo Adobe IMS
-
 ```bash
 bin/magento admin:adobe-ims:disable
 ```
 
+Desabilitar o módulo Adobe IMS
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -404,11 +468,12 @@ Não faça nenhuma pergunta interativa
 
 ## `admin:adobe-ims:enable`
 
-Ativar o módulo Adobe IMS.
-
 ```bash
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
+
+Ativar o módulo Adobe IMS.
+
 
 ### `--organization-id`, `-o`
 
@@ -436,7 +501,7 @@ Verifique se 2FA está ativado para Organização na Adobe Admin Console. Obriga
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -485,15 +550,16 @@ Não faça nenhuma pergunta interativa
 
 ## `admin:adobe-ims:info`
 
-Informações de configuração do módulo Adobe IMS
-
 ```bash
 bin/magento admin:adobe-ims:info
 ```
 
+Informações de configuração do módulo Adobe IMS
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -542,15 +608,16 @@ Não faça nenhuma pergunta interativa
 
 ## `admin:adobe-ims:status`
 
-Status do módulo IMS da Adobe
-
 ```bash
 bin/magento admin:adobe-ims:status
 ```
 
+Status do módulo IMS da Adobe
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -599,11 +666,12 @@ Não faça nenhuma pergunta interativa
 
 ## `admin:user:create`
 
-Cria um administrador
-
 ```bash
 bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-PASSWORD] [--admin-email ADMIN-EMAIL] [--admin-firstname ADMIN-FIRSTNAME] [--admin-lastname ADMIN-LASTNAME] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Cria um administrador
+
 
 ### `--admin-user`
 
@@ -643,7 +711,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -692,10 +760,17 @@ Não faça nenhuma pergunta interativa
 
 ## `admin:user:unlock`
 
-Desbloquear Conta de Administrador
-
 ```bash
 bin/magento admin:user:unlock <username>
+```
+
+Desbloquear Conta de Administrador
+
+
+```
+This command unlocks an admin account by its username.
+To unlock:
+      bin/magento admin:user:unlock username
 ```
 
 
@@ -707,7 +782,7 @@ O nome de usuário do administrador a ser desbloqueado
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -756,11 +831,12 @@ Não faça nenhuma pergunta interativa
 
 ## `app:config:dump`
 
-Criar despejo de aplicativo
-
 ```bash
 bin/magento app:config:dump [<config-types>...]
 ```
+
+Criar despejo de aplicativo
+
 
 
 ### `config-types`
@@ -773,7 +849,7 @@ Lista separada por espaços de tipos de configuração ou omitir para despejar t
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -822,15 +898,16 @@ Não faça nenhuma pergunta interativa
 
 ## `app:config:import`
 
-Importar dados de arquivos de configuração compartilhados para o armazenamento de dados apropriado
-
 ```bash
 bin/magento app:config:import
 ```
 
+Importar dados de arquivos de configuração compartilhados para o armazenamento de dados apropriado
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -879,15 +956,16 @@ Não faça nenhuma pergunta interativa
 
 ## `app:config:status`
 
-Verifica se a propagação de configuração requer atualização
-
 ```bash
 bin/magento app:config:status
 ```
 
+Verifica se a propagação de configuração requer atualização
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -936,11 +1014,12 @@ Não faça nenhuma pergunta interativa
 
 ## `braintree:migrate`
 
-Migrar cartões armazenados de um banco de dados Magento 1
-
 ```bash
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
+
+Migrar cartões armazenados de um banco de dados Magento 1
+
 
 ### `--host`
 
@@ -968,7 +1047,7 @@ Senha
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1017,11 +1096,12 @@ Não faça nenhuma pergunta interativa
 
 ## `cache:clean`
 
-Limpa os tipos de cache
-
 ```bash
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Limpa os tipos de cache
+
 
 
 ### `types`
@@ -1040,7 +1120,7 @@ adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1089,11 +1169,12 @@ Não faça nenhuma pergunta interativa
 
 ## `cache:disable`
 
-Desabilita os tipos de cache
-
 ```bash
 bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Desabilita os tipos de cache
+
 
 
 ### `types`
@@ -1112,7 +1193,7 @@ adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1161,11 +1242,12 @@ Não faça nenhuma pergunta interativa
 
 ## `cache:enable`
 
-Habilita o(s) tipo(s) de cache
-
 ```bash
 bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Habilita o(s) tipo(s) de cache
+
 
 
 ### `types`
@@ -1184,7 +1266,7 @@ adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1233,11 +1315,12 @@ Não faça nenhuma pergunta interativa
 
 ## `cache:flush`
 
-Libera o armazenamento em cache usado pelo(s) tipo(s) de cache
-
 ```bash
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
+
+Libera o armazenamento em cache usado pelo(s) tipo(s) de cache
+
 
 
 ### `types`
@@ -1256,7 +1339,7 @@ adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1305,11 +1388,12 @@ Não faça nenhuma pergunta interativa
 
 ## `cache:status`
 
-Verifica o status do cache
-
 ```bash
 bin/magento cache:status [--bootstrap BOOTSTRAP]
 ```
+
+Verifica o status do cache
+
 
 ### `--bootstrap`
 
@@ -1319,7 +1403,7 @@ adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1368,11 +1452,12 @@ Não faça nenhuma pergunta interativa
 
 ## `catalog:images:resize`
 
-Cria imagens de produtos redimensionadas
-
 ```bash
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
+
+Cria imagens de produtos redimensionadas
+
 
 ### `--async`, `-a`
 
@@ -1390,7 +1475,7 @@ Não processar imagens marcadas como ocultas da página do produto
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1439,15 +1524,16 @@ Não faça nenhuma pergunta interativa
 
 ## `catalog:product:attributes:cleanup`
 
-Remove atributos de produto não utilizados.
-
 ```bash
 bin/magento catalog:product:attributes:cleanup
 ```
 
+Remove atributos de produto não utilizados.
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1496,11 +1582,12 @@ Não faça nenhuma pergunta interativa
 
 ## `cms:wysiwyg:restrict`
 
-Defina se deseja impor a validação do conteúdo HTML do usuário ou mostrar um aviso
-
 ```bash
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
+
+Defina se deseja impor a validação do conteúdo HTML do usuário ou mostrar um aviso
+
 
 
 ### `restrict`
@@ -1511,7 +1598,7 @@ y\n
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1560,11 +1647,12 @@ Não faça nenhuma pergunta interativa
 
 ## `config:sensitive:set`
 
-Definir valores de configuração confidenciais
-
 ```bash
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
 ```
+
+Definir valores de configuração confidenciais
+
 
 
 ### `path`
@@ -1600,7 +1688,7 @@ Código de escopo para configuração, cadeia de caracteres vazia por padrão
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1649,11 +1737,12 @@ Não faça nenhuma pergunta interativa
 
 ## `config:set`
 
-Alterar configuração do sistema
-
 ```bash
 bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env] [-c|--lock-config] [-l|--lock] [--] <path> <value>
 ```
+
+Alterar configuração do sistema
+
 
 
 ### `path`
@@ -1704,7 +1793,7 @@ Obsoleto, use a opção — lock- env.
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1753,11 +1842,12 @@ Não faça nenhuma pergunta interativa
 
 ## `config:show`
 
-Mostra o valor de configuração para determinado caminho. Se o caminho não for especificado, todos os valores salvos serão mostrados
-
 ```bash
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
+
+Mostra o valor de configuração para determinado caminho. Se o caminho não for especificado, todos os valores salvos serão mostrados
+
 
 
 ### `path`
@@ -1781,7 +1871,7 @@ Código do escopo (necessário somente se o escopo não for `default`)
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1830,11 +1920,12 @@ Não faça nenhuma pergunta interativa
 
 ## `cron:install`
 
-Gera e instala o crontab para o usuário atual
-
 ```bash
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
+
+Gera e instala o crontab para o usuário atual
+
 
 ### `--force`, `-f`
 
@@ -1852,7 +1943,7 @@ Instalar somente as tarefas não opcionais (padrão)
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1901,15 +1992,16 @@ Não faça nenhuma pergunta interativa
 
 ## `cron:remove`
 
-Remove tarefas do crontab
-
 ```bash
 bin/magento cron:remove
 ```
 
+Remove tarefas do crontab
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1958,11 +2050,12 @@ Não faça nenhuma pergunta interativa
 
 ## `cron:run`
 
-Executa trabalhos por agendamento
-
 ```bash
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
+
+Executa trabalhos por agendamento
+
 
 ### `--group`
 
@@ -1985,7 +2078,7 @@ Adicionar ou substituir parâmetros da inicialização
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2034,15 +2127,16 @@ Não faça nenhuma pergunta interativa
 
 ## `customer:hash:upgrade`
 
-Atualize o hash do cliente de acordo com o algoritmo mais recente
-
 ```bash
 bin/magento customer:hash:upgrade
 ```
 
+Atualize o hash do cliente de acordo com o algoritmo mais recente
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2091,11 +2185,12 @@ Não faça nenhuma pergunta interativa
 
 ## `deploy:mode:set`
 
-Defina o modo do aplicativo.
-
 ```bash
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
+
+Defina o modo do aplicativo.
+
 
 
 ### `mode`
@@ -2113,7 +2208,7 @@ Ignora a limpeza e a regeneração de conteúdo estático (código gerado, CSS p
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2162,15 +2257,16 @@ Não faça nenhuma pergunta interativa
 
 ## `deploy:mode:show`
 
-Exibe o modo de aplicação atual.
-
 ```bash
 bin/magento deploy:mode:show
 ```
 
+Exibe o modo de aplicação atual.
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2219,11 +2315,12 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:di:info`
 
-Fornece informações sobre a configuração da Injeção de Dependência para o Comando.
-
 ```bash
 bin/magento dev:di:info <class>
 ```
+
+Fornece informações sobre a configuração da Injeção de Dependência para o Comando.
+
 
 
 ### `class`
@@ -2234,7 +2331,7 @@ Nome da classe
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2283,15 +2380,16 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:email:newsletter-compatibility-check`
 
-Verifica modelos de boletim informativo em busca de possíveis problemas de compatibilidade com o uso de variáveis
-
 ```bash
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
+Verifica modelos de boletim informativo em busca de possíveis problemas de compatibilidade com o uso de variáveis
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2340,15 +2438,16 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:email:override-compatibility-check`
 
-Verifica substituições de modelos de e-mail em busca de possíveis problemas de compatibilidade com o uso de variáveis
-
 ```bash
 bin/magento dev:email:override-compatibility-check
 ```
 
+Verifica substituições de modelos de e-mail em busca de possíveis problemas de compatibilidade com o uso de variáveis
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2397,15 +2496,16 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:profiler:disable`
 
-Desative o profiler.
-
 ```bash
 bin/magento dev:profiler:disable
 ```
 
+Desative o profiler.
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2454,11 +2554,12 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:profiler:enable`
 
-Ative o profiler.
-
 ```bash
 bin/magento dev:profiler:enable [<type>]
 ```
+
+Ative o profiler.
+
 
 
 ### `type`
@@ -2468,7 +2569,7 @@ Tipo de profiler
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2517,15 +2618,16 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:query-log:disable`
 
-Desabilitar log de consultas do BD
-
 ```bash
 bin/magento dev:query-log:disable
 ```
 
+Desabilitar log de consultas do BD
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2574,11 +2676,12 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:query-log:enable`
 
-Habilitar log de consultas do BD
-
 ```bash
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
 ```
+
+Habilitar log de consultas do BD
+
 
 ### `--include-all-queries`
 
@@ -2603,7 +2706,7 @@ Incluir pilha de chamadas. [true\|false]
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2652,11 +2755,12 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:source-theme:deploy`
 
-Coleta e publica arquivos de origem para o tema.
-
 ```bash
 bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA] [--theme THEME] [--] [<file>...]
 ```
+
+Coleta e publica arquivos de origem para o tema.
+
 
 
 ### `file`
@@ -2697,7 +2801,7 @@ Tema: [Fornecedor/tema]
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2746,15 +2850,16 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:template-hints:disable`
 
-Desative as dicas de modelo de front-end. Uma liberação de cache pode ser necessária.
-
 ```bash
 bin/magento dev:template-hints:disable
 ```
 
+Desative as dicas de modelo de front-end. Uma liberação de cache pode ser necessária.
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2803,15 +2908,16 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:template-hints:enable`
 
-Ativar dicas de modelo de front-end. Uma liberação de cache pode ser necessária.
-
 ```bash
 bin/magento dev:template-hints:enable
 ```
 
+Ativar dicas de modelo de front-end. Uma liberação de cache pode ser necessária.
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2860,15 +2966,16 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:template-hints:status`
 
-Mostrar status das dicas do modelo de front-end.
-
 ```bash
 bin/magento dev:template-hints:status
 ```
 
+Mostrar status das dicas do modelo de front-end.
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2917,11 +3024,12 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:tests:run`
 
-Executa testes
-
 ```bash
 bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 ```
+
+Executa testes
+
 
 
 ### `type`
@@ -2940,7 +3048,7 @@ Argumentos adicionais para PHPUnit. Exemplo: &quot;-c&#39;—filter=MeuTeste&#39
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2989,11 +3097,12 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:urn-catalog:generate`
 
-Gera o catálogo de URNs para mapeamentos *.xsd para que o IDE destaque o xml.
-
 ```bash
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 ```
+
+Gera o catálogo de URNs para mapeamentos *.xsd para que o IDE destaque o xml.
+
 
 
 ### `path`
@@ -3011,7 +3120,7 @@ Formato no qual o catálogo será gerado. Compatível: [phpstorm, vscode]
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3060,11 +3169,12 @@ Não faça nenhuma pergunta interativa
 
 ## `dev:xml:convert`
 
-Converte arquivo XML usando folhas de estilos XSL
-
 ```bash
 bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 ```
+
+Converte arquivo XML usando folhas de estilos XSL
+
 
 
 ### `xml-file`
@@ -3088,7 +3198,7 @@ Substituir arquivo XML
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3137,11 +3247,12 @@ Não faça nenhuma pergunta interativa
 
 ## `downloadable:domains:add`
 
-Adicionar domínios à lista de permissões de domínios baixáveis
-
 ```bash
 bin/magento downloadable:domains:add [<domains>...]
 ```
+
+Adicionar domínios à lista de permissões de domínios baixáveis
+
 
 
 ### `domains`
@@ -3154,7 +3265,7 @@ Nome dos domínios
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3203,11 +3314,12 @@ Não faça nenhuma pergunta interativa
 
 ## `downloadable:domains:remove`
 
-Remover domínios da lista de permissões de domínios baixáveis
-
 ```bash
 bin/magento downloadable:domains:remove [<domains>...]
 ```
+
+Remover domínios da lista de permissões de domínios baixáveis
+
 
 
 ### `domains`
@@ -3220,7 +3332,7 @@ Nomes de domínio
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3269,15 +3381,16 @@ Não faça nenhuma pergunta interativa
 
 ## `downloadable:domains:show`
 
-Exibir lista de permissões de domínios baixáveis
-
 ```bash
 bin/magento downloadable:domains:show
 ```
 
+Exibir lista de permissões de domínios baixáveis
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3326,15 +3439,16 @@ Não faça nenhuma pergunta interativa
 
 ## `encryption:payment-data:update`
 
-Criptografa novamente os dados criptografados do cartão de crédito com a cifra de criptografia mais recente.
-
 ```bash
 bin/magento encryption:payment-data:update
 ```
 
+Criptografa novamente os dados criptografados do cartão de crédito com a cifra de criptografia mais recente.
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3383,11 +3497,12 @@ Não faça nenhuma pergunta interativa
 
 ## `i18n:collect-phrases`
 
-Descobre frases na base de código
-
 ```bash
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
+
+Descobre frases na base de código
+
 
 
 ### `directory`
@@ -3410,7 +3525,7 @@ Use o parâmetro —magento para analisar a base de código do Magento atual. Om
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3459,11 +3574,12 @@ Não faça nenhuma pergunta interativa
 
 ## `i18n:pack`
 
-Salva o pacote de idioma
-
 ```bash
 bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <locale>
 ```
+
+Salva o pacote de idioma
+
 
 
 ### `source`
@@ -3494,7 +3610,7 @@ Use o parâmetro —allow-duplicates para permitir o salvamento de duplicatas de
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3543,11 +3659,12 @@ Não faça nenhuma pergunta interativa
 
 ## `i18n:uninstall`
 
-Desinstala pacotes de idiomas
-
 ```bash
 bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 ```
+
+Desinstala pacotes de idiomas
+
 
 
 ### `package`
@@ -3568,7 +3685,7 @@ Fazer backup de arquivos de código e configuração (excluindo arquivos tempor�
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3617,15 +3734,16 @@ Não faça nenhuma pergunta interativa
 
 ## `indexer:info`
 
-Mostra os Indexadores permitidos
-
 ```bash
 bin/magento indexer:info
 ```
 
+Mostra os Indexadores permitidos
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3674,11 +3792,12 @@ Não faça nenhuma pergunta interativa
 
 ## `indexer:reindex`
 
-Reindexa dados
-
 ```bash
 bin/magento indexer:reindex [<index>...]
 ```
+
+Reindexa dados
+
 
 
 ### `index`
@@ -3691,7 +3810,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3740,11 +3859,12 @@ Não faça nenhuma pergunta interativa
 
 ## `indexer:reset`
 
-Redefine o status do indexador para inválido
-
 ```bash
 bin/magento indexer:reset [<index>...]
 ```
+
+Redefine o status do indexador para inválido
+
 
 
 ### `index`
@@ -3757,7 +3877,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3806,11 +3926,12 @@ Não faça nenhuma pergunta interativa
 
 ## `indexer:set-dimensions-mode`
 
-Definir modo de indexador Dimension
-
 ```bash
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
+
+Definir modo de indexador Dimension
+
 
 
 ### `indexer`
@@ -3825,7 +3946,7 @@ Modos de dimensão do indexador catalog_product_price none,website,customer_grou
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3874,11 +3995,12 @@ Não faça nenhuma pergunta interativa
 
 ## `indexer:set-mode`
 
-Define o tipo de modo de índice
-
 ```bash
 bin/magento indexer:set-mode [<mode> [<index>...]]
 ```
+
+Define o tipo de modo de índice
+
 
 
 ### `mode`
@@ -3896,7 +4018,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3945,11 +4067,12 @@ Não faça nenhuma pergunta interativa
 
 ## `indexer:set-status`
 
-Define o status do indexador especificado
-
 ```bash
 bin/magento indexer:set-status <status> [<index>...]
 ```
+
+Define o status do indexador especificado
+
 
 
 ### `status`
@@ -3968,7 +4091,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4017,11 +4140,12 @@ Não faça nenhuma pergunta interativa
 
 ## `indexer:show-dimensions-mode`
 
-Mostra o modo de Dimension do indexador
-
 ```bash
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
+
+Mostra o modo de Dimension do indexador
+
 
 
 ### `indexer`
@@ -4034,7 +4158,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4083,11 +4207,12 @@ Não faça nenhuma pergunta interativa
 
 ## `indexer:show-mode`
 
-Mostra o modo de índice
-
 ```bash
 bin/magento indexer:show-mode [<index>...]
 ```
+
+Mostra o modo de índice
+
 
 
 ### `index`
@@ -4100,7 +4225,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4149,11 +4274,12 @@ Não faça nenhuma pergunta interativa
 
 ## `indexer:status`
 
-Mostra o status do Indexador
-
 ```bash
 bin/magento indexer:status [<index>...]
 ```
+
+Mostra o status do Indexador
+
 
 
 ### `index`
@@ -4166,7 +4292,7 @@ Lista separada por espaços de tipos de índice ou omissão para aplicar a todos
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4215,15 +4341,16 @@ Não faça nenhuma pergunta interativa
 
 ## `info:adminuri`
 
-Exibe o URI do administrador de Magento
-
 ```bash
 bin/magento info:adminuri
 ```
 
+Exibe o URI do administrador de Magento
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4272,15 +4399,16 @@ Não faça nenhuma pergunta interativa
 
 ## `info:backups:list`
 
-Imprime a lista de arquivos de backup disponíveis
-
 ```bash
 bin/magento info:backups:list
 ```
 
+Imprime a lista de arquivos de backup disponíveis
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4329,15 +4457,16 @@ Não faça nenhuma pergunta interativa
 
 ## `info:currency:list`
 
-Exibe a lista de moedas disponíveis
-
 ```bash
 bin/magento info:currency:list
 ```
 
+Exibe a lista de moedas disponíveis
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4386,11 +4515,12 @@ Não faça nenhuma pergunta interativa
 
 ## `info:dependencies:show-framework`
 
-Mostra o número de dependências na estrutura Magento
-
 ```bash
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
+
+Mostra o número de dependências na estrutura Magento
+
 
 ### `--output`, `-o`
 
@@ -4401,7 +4531,7 @@ Nome do arquivo do relatório
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4450,11 +4580,12 @@ Não faça nenhuma pergunta interativa
 
 ## `info:dependencies:show-modules`
 
-Mostra o número de dependências entre módulos
-
 ```bash
 bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 ```
+
+Mostra o número de dependências entre módulos
+
 
 ### `--output`, `-o`
 
@@ -4465,7 +4596,7 @@ Nome do arquivo do relatório
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4514,11 +4645,12 @@ Não faça nenhuma pergunta interativa
 
 ## `info:dependencies:show-modules-circular`
 
-Mostra o número de dependências circulares entre módulos
-
 ```bash
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 ```
+
+Mostra o número de dependências circulares entre módulos
+
 
 ### `--output`, `-o`
 
@@ -4529,7 +4661,7 @@ Nome do arquivo do relatório
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4578,15 +4710,16 @@ Não faça nenhuma pergunta interativa
 
 ## `info:language:list`
 
-Exibe a lista de localidades de idioma disponíveis
-
 ```bash
 bin/magento info:language:list
 ```
 
+Exibe a lista de localidades de idioma disponíveis
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4635,15 +4768,16 @@ Não faça nenhuma pergunta interativa
 
 ## `info:timezone:list`
 
-Exibe a lista de fusos horários disponíveis
-
 ```bash
 bin/magento info:timezone:list
 ```
 
+Exibe a lista de fusos horários disponíveis
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4692,16 +4826,17 @@ Não faça nenhuma pergunta interativa
 
 ## `inventory:reservation:create-compensations`
 
-Criar reservas por argumentos de remuneração fornecidos
-
 ```bash
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
 ```
 
+Criar reservas por argumentos de remuneração fornecidos
+
+
 
 ### `compensations`
 
-Lista de argumentos de compensação no formato &quot;\&lt;order_increment_id>:\&lt;sku>:\&lt;quantity>:\&lt;stock-id>&quot;
+Lista de argumentos de compensação no formato &quot;::&quot;
 
 - Padrão: `[]`
 
@@ -4716,7 +4851,7 @@ Saída bruta
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4765,11 +4900,12 @@ Não faça nenhuma pergunta interativa
 
 ## `inventory:reservation:list-inconsistencies`
 
-Mostrar todos os pedidos e produtos com inconsistências de quantidade vendável
-
 ```bash
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
 ```
+
+Mostrar todos os pedidos e produtos com inconsistências de quantidade vendável
+
 
 ### `--complete-orders`, `-c`
 
@@ -4801,7 +4937,7 @@ Saída bruta
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4850,11 +4986,12 @@ Não faça nenhuma pergunta interativa
 
 ## `inventory-geonames:import`
 
-Baixar e importar nomes geográficos para o algoritmo de seleção de origem
-
 ```bash
 bin/magento inventory-geonames:import <countries>...
 ```
+
+Baixar e importar nomes geográficos para o algoritmo de seleção de origem
+
 
 
 ### `countries`
@@ -4868,7 +5005,7 @@ Lista de códigos de país a serem importados
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4917,11 +5054,12 @@ Não faça nenhuma pergunta interativa
 
 ## `maintenance:allow-ips`
 
-Define IPs isentos do modo de manutenção
-
 ```bash
 bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<ip>...]
 ```
+
+Define IPs isentos do modo de manutenção
+
 
 
 ### `ip`
@@ -4954,7 +5092,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5003,11 +5141,12 @@ Não faça nenhuma pergunta interativa
 
 ## `maintenance:disable`
 
-Desabilita o modo de manutenção
-
 ```bash
 bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Desabilita o modo de manutenção
+
 
 ### `--ip`
 
@@ -5024,7 +5163,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5073,11 +5212,12 @@ Não faça nenhuma pergunta interativa
 
 ## `maintenance:enable`
 
-Ativa o modo de manutenção
-
 ```bash
 bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Ativa o modo de manutenção
+
 
 ### `--ip`
 
@@ -5094,7 +5234,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5143,11 +5283,12 @@ Não faça nenhuma pergunta interativa
 
 ## `maintenance:status`
 
-Exibe o status do modo de manutenção
-
 ```bash
 bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Exibe o status do modo de manutenção
+
 
 ### `--magento-init-params`
 
@@ -5157,7 +5298,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5206,15 +5347,16 @@ Não faça nenhuma pergunta interativa
 
 ## `media-content:sync`
 
-Sincronizar conteúdo com ativos
-
 ```bash
 bin/magento media-content:sync
 ```
 
+Sincronizar conteúdo com ativos
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5263,15 +5405,16 @@ Não faça nenhuma pergunta interativa
 
 ## `media-gallery:sync`
 
-Sincronizar armazenamento de mídia e ativos de mídia no banco de dados
-
 ```bash
 bin/magento media-gallery:sync
 ```
 
+Sincronizar armazenamento de mídia e ativos de mídia no banco de dados
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5320,15 +5463,16 @@ Não faça nenhuma pergunta interativa
 
 ## `module:config:status`
 
-Verifica a configuração dos módulos no arquivo &#39;app/etc/config.php&#39; e relata se eles estão atualizados ou não
-
 ```bash
 bin/magento module:config:status
 ```
 
+Verifica a configuração dos módulos no arquivo &#39;app/etc/config.php&#39; e relata se eles estão atualizados ou não
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5377,11 +5521,12 @@ Não faça nenhuma pergunta interativa
 
 ## `module:disable`
 
-Desativa módulos especificados
-
 ```bash
 bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+Desativa módulos especificados
+
 
 
 ### `module`
@@ -5421,7 +5566,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5470,11 +5615,12 @@ Não faça nenhuma pergunta interativa
 
 ## `module:enable`
 
-Habilita módulos especificados
-
 ```bash
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
+
+Habilita módulos especificados
+
 
 
 ### `module`
@@ -5514,7 +5660,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5563,11 +5709,12 @@ Não faça nenhuma pergunta interativa
 
 ## `module:status`
 
-Exibe o status dos módulos
-
 ```bash
 bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module-names>...]
 ```
+
+Exibe o status dos módulos
+
 
 
 ### `module-names`
@@ -5600,7 +5747,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5649,11 +5796,12 @@ Não faça nenhuma pergunta interativa
 
 ## `module:uninstall`
 
-Desinstala módulos instalados pelo compositor
-
 ```bash
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
 ```
+
+Desinstala módulos instalados pelo compositor
+
 
 
 ### `module`
@@ -5715,7 +5863,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5764,11 +5912,12 @@ Não faça nenhuma pergunta interativa
 
 ## `newrelic:create:deploy-marker`
 
-Verifique se há entradas na fila de implantação e crie um marcador de implantação apropriado.
-
 ```bash
 bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revision>]]
 ```
+
+Verifique se há entradas na fila de implantação e crie um marcador de implantação apropriado.
+
 
 
 ### `message`
@@ -5795,7 +5944,7 @@ Revisão
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5844,15 +5993,20 @@ Não faça nenhuma pergunta interativa
 
 ## `queue:consumers:list`
 
-Lista de consumidores do MessageQueue
-
 ```bash
 bin/magento queue:consumers:list
 ```
 
+Lista de consumidores do MessageQueue
+
+
+```
+This command shows list of MessageQueue consumers.
+```
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5901,15 +6055,20 @@ Não faça nenhuma pergunta interativa
 
 ## `queue:consumers:restart`
 
-Reiniciar consumidores do MessageQueue
-
 ```bash
 bin/magento queue:consumers:restart
 ```
 
+Reiniciar consumidores do MessageQueue
+
+
+```
+Command put poison pill for MessageQueue consumers and force to restart them after next status check.
+```
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5958,10 +6117,43 @@ Não faça nenhuma pergunta interativa
 
 ## `queue:consumers:start`
 
-Iniciar consumidor MessageQueue
-
 ```bash
 bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BATCH-SIZE] [--area-code AREA-CODE] [--single-thread] [--multi-process [MULTI-PROCESS]] [--pid-file-path PID-FILE-PATH] [--] <consumer>
+```
+
+Iniciar consumidor MessageQueue
+
+
+```
+This command starts MessageQueue consumer by its name.
+
+To start consumer which will process all queued messages and terminate execution:
+
+    bin/magento queue:consumers:start someConsumer
+
+To specify the number of messages which should be processed by consumer before its termination:
+
+    bin/magento queue:consumers:start someConsumer --max-messages=50
+
+To specify the number of messages per batch for the batch consumer:
+
+    bin/magento queue:consumers:start someConsumer --batch-size=500
+
+To specify the preferred area:
+
+    bin/magento queue:consumers:start someConsumer --area-code='adminhtml'
+
+To do not run multiple copies of one consumer simultaneously:
+
+    bin/magento queue:consumers:start someConsumer --single-thread
+
+To save PID enter path (This option is deprecated, use --single-thread instead):
+
+    bin/magento queue:consumers:start someConsumer --pid-file-path='/var/someConsumer.pid'
+
+To define the number of processes per consumer:
+
+    bin/magento queue:consumers:start someConsumer --multi-process=4
 ```
 
 
@@ -6010,7 +6202,7 @@ O caminho do arquivo para salvar o PID (Esta opção está obsoleta, use — sin
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6059,15 +6251,16 @@ Não faça nenhuma pergunta interativa
 
 ## `remote-storage:sync`
 
-Sincronizar arquivos de mídia com o armazenamento remoto.
-
 ```bash
 bin/magento remote-storage:sync
 ```
 
+Sincronizar arquivos de mídia com o armazenamento remoto.
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6116,11 +6309,12 @@ Não faça nenhuma pergunta interativa
 
 ## `saas:resync`
 
-Sincroniza novamente os dados do feed com o serviço SaaS.
-
 ```bash
 bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
 ```
+
+Sincroniza novamente os dados do feed com o serviço SaaS.
+
 
 ### `--feed`
 
@@ -6170,7 +6364,7 @@ Continuar a ressincronizar a partir da última posição armazenada (essa opçã
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6219,11 +6413,12 @@ Não faça nenhuma pergunta interativa
 
 ## `sampledata:deploy`
 
-Implantar módulos de dados de amostra para instalações de Magento com base no compositor
-
 ```bash
 bin/magento sampledata:deploy [--no-update]
 ```
+
+Implantar módulos de dados de amostra para instalações de Magento com base no compositor
+
 
 ### `--no-update`
 
@@ -6234,7 +6429,7 @@ Atualizar composer.json sem executar a atualização do composer
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6283,11 +6478,12 @@ Não faça nenhuma pergunta interativa
 
 ## `sampledata:remove`
 
-Remover todos os pacotes de dados de amostra do composer.json
-
 ```bash
 bin/magento sampledata:remove [--no-update]
 ```
+
+Remover todos os pacotes de dados de amostra do composer.json
+
 
 ### `--no-update`
 
@@ -6298,7 +6494,7 @@ Atualizar composer.json sem executar a atualização do composer
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6347,15 +6543,16 @@ Não faça nenhuma pergunta interativa
 
 ## `sampledata:reset`
 
-Redefina todos os módulos de dados de amostra para reinstalação
-
 ```bash
 bin/magento sampledata:reset
 ```
 
+Redefina todos os módulos de dados de amostra para reinstalação
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6404,15 +6601,16 @@ Não faça nenhuma pergunta interativa
 
 ## `security:recaptcha:disable-for-user-forgot-password`
 
-Desativar o reCAPTCHA para o formulário de senha esquecida do usuário administrador
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
+Desativar o reCAPTCHA para o formulário de senha esquecida do usuário administrador
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6461,15 +6659,16 @@ Não faça nenhuma pergunta interativa
 
 ## `security:recaptcha:disable-for-user-login`
 
-Desabilitar reCAPTCHA para o formulário de logon de usuário administrador
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
+Desabilitar reCAPTCHA para o formulário de logon de usuário administrador
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6518,11 +6717,12 @@ Não faça nenhuma pergunta interativa
 
 ## `security:tfa:google:set-secret`
 
-Defina o segredo usado para a geração de OTP do Google.
-
 ```bash
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
+
+Defina o segredo usado para a geração de OTP do Google.
+
 
 
 ### `user`
@@ -6539,7 +6739,7 @@ Segredo
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6588,15 +6788,16 @@ Não faça nenhuma pergunta interativa
 
 ## `security:tfa:providers`
 
-Listar todos os provedores disponíveis
-
 ```bash
 bin/magento security:tfa:providers
 ```
 
+Listar todos os provedores disponíveis
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6645,11 +6846,12 @@ Não faça nenhuma pergunta interativa
 
 ## `security:tfa:reset`
 
-Redefinir configuração para um usuário
-
 ```bash
 bin/magento security:tfa:reset <user> <provider>
 ```
+
+Redefinir configuração para um usuário
+
 
 
 ### `user`
@@ -6666,7 +6868,7 @@ Código do provedor
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6715,11 +6917,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:backup`
 
-Faz backup de Magento Base de código de aplicativo, mídia e banco de dados
-
 ```bash
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Faz backup de Magento Base de código de aplicativo, mídia e banco de dados
+
 
 ### `--code`
 
@@ -6750,7 +6953,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -6799,11 +7002,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:config:set`
 
-Cria ou modifica a configuração de implantação
-
 ```bash
 bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Cria ou modifica a configuração de implantação
+
 
 ### `--backend-frontname`
 
@@ -7388,7 +7592,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7437,11 +7641,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:db-data:upgrade`
 
-Instala e atualiza dados no BD
-
 ```bash
 bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Instala e atualiza dados no BD
+
 
 ### `--magento-init-params`
 
@@ -7451,7 +7656,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7500,11 +7705,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:db-declaration:generate-patch`
 
-Gere o patch e coloque-o na pasta específica.
-
 ```bash
 bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--type [TYPE]] [--] <module> <patch>
 ```
+
+Gere o patch e coloque-o na pasta específica.
+
 
 
 ### `module`
@@ -7535,7 +7741,7 @@ Descubra que tipo de patch deve ser gerado. Valores disponíveis: `data`, `schem
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7584,11 +7790,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:db-declaration:generate-whitelist`
 
-Gerar lista de permissões de tabelas e colunas que podem ser editadas pelo instalador de declarações
-
 ```bash
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
 ```
+
+Gerar lista de permissões de tabelas e colunas que podem ser editadas pelo instalador de declarações
+
 
 ### `--module-name`
 
@@ -7599,7 +7806,7 @@ Nome do módulo onde a lista de permissões será gerada
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7648,11 +7855,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:db-schema:upgrade`
 
-Instala e atualiza o esquema do BD
-
 ```bash
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Instala e atualiza o esquema do BD
+
 
 ### `--convert-old-scripts`
 
@@ -7669,7 +7877,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7718,11 +7926,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:db:status`
 
-Verifica se o esquema ou os dados do banco de dados exigem atualização
-
 ```bash
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Verifica se o esquema ou os dados do banco de dados exigem atualização
+
 
 ### `--magento-init-params`
 
@@ -7732,7 +7941,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7781,15 +7990,16 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:di:compile`
 
-Gera a configuração de ID e todas as classes ausentes que podem ser geradas automaticamente
-
 ```bash
 bin/magento setup:di:compile
 ```
 
+Gera a configuração de ID e todas as classes ausentes que podem ser geradas automaticamente
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7838,11 +8048,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:install`
 
-Instala o aplicativo Magento
-
 ```bash
 bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Instala o aplicativo Magento
+
 
 ### `--backend-frontname`
 
@@ -8666,7 +8877,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8715,11 +8926,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:performance:generate-fixtures`
 
-Gera luminárias
-
 ```bash
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
 ```
+
+Gera luminárias
+
 
 
 ### `profile`
@@ -8737,7 +8949,7 @@ Ignorar reindexação
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8786,11 +8998,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:rollback`
 
-Reverte a base de código, a mídia e o banco de dados do aplicativo Magento
-
 ```bash
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Reverte a base de código, a mídia e o banco de dados do aplicativo Magento
+
 
 ### `--code-file`, `-c`
 
@@ -8818,7 +9031,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -8867,11 +9080,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:static-content:deploy`
 
-Implanta arquivos de visualização estáticos
-
 ```bash
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
+
+Implanta arquivos de visualização estáticos
+
 
 
 ### `languages`
@@ -9044,7 +9258,7 @@ Não compile temas principais. Compatível somente com estratégias rápidas e p
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9093,11 +9307,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:store-config:set`
 
-Instala a configuração de armazenamento. Obsoleto desde 2.2.0. Use config:set
-
 ```bash
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Instala a configuração de armazenamento. Obsoleto desde 2.2.0. Use config:set
+
 
 ### `--base-url`
 
@@ -9161,7 +9376,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9210,11 +9425,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:uninstall`
 
-Desinstala o aplicativo Magento
-
 ```bash
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Desinstala o aplicativo Magento
+
 
 ### `--magento-init-params`
 
@@ -9224,7 +9440,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9273,11 +9489,12 @@ Não faça nenhuma pergunta interativa
 
 ## `setup:upgrade`
 
-Atualiza o aplicativo Magento, os dados do banco de dados e o esquema
-
 ```bash
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Atualiza o aplicativo Magento, os dados do banco de dados e o esquema
+
 
 ### `--keep-generated`
 
@@ -9320,7 +9537,7 @@ Adicione a qualquer comando para personalizar parâmetros de inicialização de 
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9369,15 +9586,16 @@ Não faça nenhuma pergunta interativa
 
 ## `store:list`
 
-Exibe a lista de armazenamentos
-
 ```bash
 bin/magento store:list
 ```
 
+Exibe a lista de armazenamentos
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9426,15 +9644,16 @@ Não faça nenhuma pergunta interativa
 
 ## `store:website:list`
 
-Exibe a lista de sites
-
 ```bash
 bin/magento store:website:list
 ```
 
+Exibe a lista de sites
+
+
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9483,11 +9702,12 @@ Não faça nenhuma pergunta interativa
 
 ## `theme:uninstall`
 
-Desinstala o tema
-
 ```bash
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
+
+Desinstala o tema
+
 
 
 ### `theme`
@@ -9515,7 +9735,7 @@ Limpar arquivos de visualização estáticos gerados.
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
@@ -9564,11 +9784,12 @@ Não faça nenhuma pergunta interativa
 
 ## `varnish:vcl:generate`
 
-Gera um VCL verniz e o ecoa na linha de comando
-
 ```bash
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
+
+Gera um VCL verniz e o ecoa na linha de comando
+
 
 ### `--access-list`
 
@@ -9619,7 +9840,7 @@ Caminho para o arquivo para gravar vcl
 
 ### `--help`, `-h`
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para \&lt;info>lista\&lt;/info> comando
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
 
 - Padrão: `false`
 - Não aceita um valor
