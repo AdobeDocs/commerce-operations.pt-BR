@@ -1,6 +1,6 @@
 ---
 title: Política de ciclo de vida do software
-description: Saiba mais sobre as principais datas relacionadas ao fim do suporte de software de versões do Adobe Commerce.
+description: Saiba mais sobre as principais datas relacionadas ao fim do suporte de software das versões do Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 source-git-commit: 01e926e3cf36f27f5292a0b9ce7a6209d4960cc2
 workflow-type: tm+mt
