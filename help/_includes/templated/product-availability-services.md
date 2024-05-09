@@ -1,11 +1,11 @@
 ---
-source-git-commit: 8ec54f9a62c0afbbbb332ba23a9a97f9ce2a3187
+source-git-commit: 7edf0d26be64b4583d0a4d6ce313d25077662637
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '129'
 ht-degree: 6%
 
 ---
-# Disponibilidade do produto dos Commerce Services
+# Disponibilidade do produto dos serviços da Commerce
 
 
 <table style="table-layout:auto">
@@ -83,17 +83,6 @@ ht-degree: 6%
           <td>6.0.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Notas de versão</a><br/>
-          </td>
-      </tr>
-      <tr>
-          <td>Check-out rápido</td>
-          <td>-</td>
-          <td>1.0.0+</td>
-          <td>1.2.0+</td>
-          <td>1.0.0+</td>
-          <td>
-              <a href="https://commercemarketplace.adobe.com/magento-quick-checkout.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Notas de versão</a><br/>
           </td>
       </tr>
