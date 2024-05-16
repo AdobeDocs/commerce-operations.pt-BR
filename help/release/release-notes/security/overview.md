@@ -1,9 +1,10 @@
 ---
 title: Notas de versão de correção de segurança
 description: Revise as notas de versão para patches de segurança do Adobe Commerce.
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+exl-id: a3d78211-41ff-4df2-ad29-21465c096027
+source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
 workflow-type: tm+mt
-source-wordcount: '33'
+source-wordcount: '47'
 ht-degree: 0%
 
 ---
@@ -11,8 +12,9 @@ ht-degree: 0%
 
 # Notas de versão de correção de segurança
 
-Saiba mais sobre as melhorias de segurança mais recentes no produto Adobe Commerce e na base de código Magento Open Source.
+As Notas de versão do Adobe Commerce Security Patch fornecem informações sobre as melhorias de segurança mais recentes na base de código de produto do Adobe Commerce para versões compatíveis do Adobe Commerce.
 
-{{other-release-info}}
+## Sobre lançamentos de patch de segurança
 
-{{bics}}
+{{$include /help/_includes/security-patch-release-overview.md}}
+
