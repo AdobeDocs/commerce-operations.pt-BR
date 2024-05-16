@@ -2,7 +2,7 @@
 title: Programação de lançamento
 description: Saiba quando a Adobe planeja anunciar o lançamento de novos recursos do Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 4d57c979e8e65e1463f4f16829104cfbde730cb2
+source-git-commit: 1eac85dd1cf90f6cb064dc68a4622a6343c84b4d
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 2%
@@ -33,7 +33,7 @@ A tabela a seguir fornece as datas das versões programadas (as datas estão suj
    <tr>
       <td colspan="3"><strong>Legenda</strong>
          <ul>
-           <li><strong><img alt="Ícone de recurso B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Novos recursos, melhorias e correções de bugs para a extensão B2B do Adobe Commerce. Para obter detalhes sobre versões da extensão B2B, consulte [Notas de versão B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).</li>
+           <li><strong><img alt="Ícone de recurso B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Novos recursos, melhorias e correções de bugs para a extensão B2B do Adobe Commerce. Para obter detalhes sobre versões da extensão B2B, consulte [Notas de versão B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html).</li>
             <li><strong><img alt="Ícone de recurso de extensibilidade" src="../assets/icons/brackets.svg"></img> Extensibilidade</strong>— novas ferramentas e serviços de desenvolvedor para extensibilidade fora do processo, fornecidos independentemente das versões de patches. Por exemplo, SDK da interface do usuário do administrador, Eventos do Adobe I/O para Commerce e API Mesh.</li>
             <li><strong><img alt="Ícone de recurso de infraestrutura" src="../assets/icons/servers.svg"></img> Infraestrutura</strong>— novos recursos e melhorias na infraestrutura em nuvem do Adobe Commerce e nos pacotes do Cloud Tools Suite for Commerce, que foram projetados para implantar e gerenciar instalações e atualizações do Adobe Commerce na plataforma da nuvem.</li>
             <li><strong><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> Correções</strong>—Atualizações do aplicativo Adobe Commerce PHP principal que incluem correções de segurança, conformidade, desempenho e qualidade de alta prioridade.</li>
