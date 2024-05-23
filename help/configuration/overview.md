@@ -1,11 +1,11 @@
 ---
 title: Visão geral do guia de configuração
-description: Saiba mais sobre todos os recursos e serviços configuráveis para seu aplicativo do Adobe Commerce.
+description: Saiba mais sobre todos os recursos e serviços configuráveis no aplicativo do Adobe Commerce.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
