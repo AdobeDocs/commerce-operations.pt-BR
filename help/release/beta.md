@@ -2,9 +2,9 @@
 title: Versões Beta
 description: Saiba mais sobre as versões beta do Adobe Commerce e como participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 1dd4b44c6aa685795e16dccebfaf073dcc0062f2
+source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -47,15 +47,6 @@ Compartilhamento de dados expandido entre o Adobe Commerce e o Adobe Experience 
 - Suporte a vários conjuntos de dados e fluxos de dados
 
 Para participar deste beta, envie uma solicitação por email para [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
-
-### Kit Inicial De Integração Do Backoffice (Beta Privado)
-
-O backoffice [kit inicial de integração](https://developer-stage.adobe.com/commerce/extensibility/app-development/starter-kit/) O fornece aos desenvolvedores um acelerador para criar integrações orientadas por eventos com sistemas como ERPs, CRMs e OMSs. Com o kit inicial, você pode reduzir os custos de desenvolvimento em até 50%. O kit inicial também segue as práticas recomendadas da Adobe Commerce que reduzem significativamente o custo de manutenção. Os destaques do Starter kit incluem:
-- Sincronização de dados para objetos usados com frequência, como produto, pedido, cliente, estoque e remessa
-- Esquemas de arquitetura seguindo as práticas recomendadas
-- Integração de scripts para acelerar o desenvolvimento
-
-Para participar deste beta, conclua o [formulário de inscrição](https://forms.office.com/r/YbYArqE3DT).
 
 ### Adobe Commerce Foundation (Beta público)
 
