@@ -2,9 +2,9 @@
 title: '[!DNL Site-Wide Analysis Tool]'
 description: Saiba mais sobre o [!DNL Site-Wide Analysis] a ferramenta, seus usos, o processo de instalação e como obter acesso
 exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
-source-git-commit: 7b6413c4fdc26b73dda74bcf7cd3a3acdd587abc
+source-git-commit: 5f39a2d8440225b3a2e463894e2bd866196fbac2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,10 @@ Ele também inclui um gráfico histórico para rastrear como a integridade do si
 
 - **Informações** - Fornece informações de contato do cliente e um resumo dos tíquetes atuais, com informações detalhadas sobre cada produto Adobe Commerce instalado.
 
-- **Recommendations** - Lista recomendações com base nas práticas recomendadas para resolver problemas detectados no site.
+- **Recommendations** - Lista recomendações com base nas práticas recomendadas para resolver problemas detectados no site:
+   - Para alterações que exijam uma atualização de infraestrutura, envie uma solicitação de suporte.
+   - Para alterações que exigem uma atualização de aplicativo, faça você mesmo as alterações.
+   - Para alterações que exigem intervenção manual, como [implantação de código](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow), peça ajuda ao administrador ou desenvolvedores do sistema.
 
 - **Exceções** - Lista os erros lançados pelo aplicativo causados por condições anormais sem um manipulador de erros.
 
