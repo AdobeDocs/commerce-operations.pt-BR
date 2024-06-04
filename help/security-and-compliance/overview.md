@@ -2,9 +2,9 @@
 title: Segurança e conformidade
 description: Saiba mais sobre segurança, privacidade e recursos de conformidade do setor para o seu projeto do Adobe Commerce.
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f5bcf5c875234875a61664214e50806cc6ba2119
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,9 @@ Esta seção contém informações sobre segurança, privacidade e conformidade 
 
 ## Segurança
 
-- [Segurança de produto Adobe](https://helpx.adobe.com/security.html): os patches, as atualizações de segurança e as práticas recomendadas mais recentes para o Adobe Commerce.
-- [Centro de confiança Adobe](https://www.adobe.com/trust.html): as informações mais recentes disponíveis sobre a integridade operacional, a segurança, a privacidade e a conformidade dos serviços em nuvem do Adobe.
+- [Segurança de produto Adobe](https://helpx.adobe.com/security.html): saiba mais sobre os patches mais recentes, atualizações de segurança e práticas recomendadas do Adobe Commerce.
+- [Centro de confiança Adobe](https://www.adobe.com/trust.html): acesse as informações mais recentes disponíveis sobre a integridade operacional, a segurança, a privacidade e a conformidade de todos os serviços em nuvem do Adobe.
+- [Ferramenta de análise do site](../tools/site-wide-analysis-tool/dashboard.md): visualize insights de segurança simplificados sobre o site do Adobe Commerce, incluindo verificações de segurança, serviços de fim de vida útil e recomendações de segurança.
 
 ## Conformidade
 

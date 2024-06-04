@@ -2,9 +2,9 @@
 title: Implementação de atualização
 description: Saiba mais sobre as diferentes fases da implementação de atualização para projetos do Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: a81d2c0b6526c2c8c8c5c4652c83595667985543
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,10 @@ A seguir estão itens que talvez você queira incluir em uma análise completa:
    - Versão instalada atual
    - Atualizar versão de destino
    - Número e detalhes de erros críticos encontrados
+
+  >[!TIP]
+  >
+  >Todas essas informações (e muito mais) estão disponíveis na Ferramenta de análise do site [painel](../../tools/site-wide-analysis-tool/dashboard.md).
 
 - Atualização de serviços para suportar a versão de destino. Use o modelo de tabela a seguir para mapear quais serviços você deve atualizar. Use o [requisitos do sistema](../../installation/system-requirements.md) para determinar o que adicionar à variável _Atualizar para_ coluna.
 
