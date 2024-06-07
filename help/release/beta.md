@@ -2,9 +2,9 @@
 title: Versões Beta
 description: Saiba mais sobre as versões beta do Adobe Commerce e como participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
+source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,22 @@ O acesso antecipado aos recursos que o Adobe está desenvolvendo oferece aos cli
 ## Programas Beta Atuais
 
 Consulte as seções a seguir para obter uma lista de programas beta ativos.
+
+### Integração do Experience Manager Assets para o Commerce (Beta privado)
+
+A Experience Manager Assets Integration for Commerce permite o gerenciamento e o fornecimento eficientes de um grande volume de imagens de produtos da Experience Manager Assets para a Adobe Commerce, com pouco ou nenhum esforço operacional necessário.
+
+Principais recursos:
+
+- Integração Plug and Play — forneça uma integração alimentada por Adobe, pronta para uso, entre o Experience Manager Assets e o Adobe Commerce para permitir que os comerciantes se concentrem no que é mais importante, com custos operacionais reduzidos e maior eficiência.
+
+- Personalizar imagens do produto em escala - Use o Experience Manager Assets para gerar milhões de variações de produtos para experiências personalizadas do Commerce com ferramentas de edição fáceis baseadas na interface, criação de conteúdo generativo usando o Adobe Firefly e fluxos de trabalho de ativos atribuídos para garantir a consistência da marca. Quando estiver satisfeito com os ativos, forneça-os perfeitamente às suas lojas Commerce usando a Integração do Experience Manager Assets.
+
+- Fácil integração - simplifique a integração ao comerciante com um processo de sincronização configurável que permite a sincronização completa entre o repositório da Experience Manager Assets e o catálogo da Commerce.
+
+- Estratégia de correspondência flexível — a integração inclui algoritmos padrão de correspondência de ativos com base em SKUs de produtos que sincronizam imagens entre o AEM Assets e o Commerce, além de ser extensível usando o Construtor de aplicativos do Adobe Developer. Trabalhe com seu parceiro de soluções para criar uma estratégia de correspondência de ativos personalizada sobre a integração para acomodar qualquer estrutura do repositório de gerenciamento de ativos.
+
+Para participar da versão beta, envie uma solicitação por email para [Shaun McCran](mailto:mccran@adobe.com).
 
 ### Integração do sistema IBM Sterling Order Management (Beta privado)
 
