@@ -1,17 +1,18 @@
 ---
-title: Instalar uma extensão
-description: Siga estas etapas para instalar uma extensão do Adobe Commerce.
+title: Gerenciar extensões de terceiros
+description: Siga estas etapas para instalar, habilitar, atualizar e desinstalar extensões de Adobe Commerce.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 6da0e70acc77d2171d6336ab632e6a9a8dd16c67
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
-# Instalar uma extensão
 
-O código que estende ou personaliza o comportamento do Adobe Commerce é chamado de extensão. Opcionalmente, é possível empacotar e distribuir extensões na [Commerce Marketplace](https://marketplace.magento.com) ou outro sistema de distribuição de extensões.
+# Gerenciar extensões de terceiros
+
+O código que estende ou personaliza o comportamento do Adobe Commerce é chamado de extensão. Opcionalmente, é possível empacotar e distribuir extensões na [Commerce Marketplace](https://commercemarketplace.adobe.com/) ou outro sistema de distribuição de extensões.
 
 As extensões incluem:
 
@@ -21,7 +22,9 @@ As extensões incluem:
 
 >[!TIP]
 >
->Este tópico explica como usar a linha de comando para instalar extensões compradas do Commerce Marketplace. Você pode usar o mesmo procedimento para instalar o _qualquer_ extensão; tudo o que você precisa é do nome e da versão do Compositor da extensão. Para encontrá-la, abra a extensão do `composer.json` arquivo e observe os valores de `"name"` e `"version"`.
+>Este tópico explica como usar a interface de linha de comando para gerenciar extensões de terceiros adquiridas no Commerce Marketplace. Você pode usar o mesmo procedimento para instalar o _qualquer_ extensão; tudo o que você precisa é do nome e da versão do Compositor da extensão. Para encontrá-la, abra a extensão do `composer.json` arquivo e observe os valores de `"name"` e `"version"`.
+
+## Instalar
 
 Antes da instalação, talvez você queira:
 
@@ -51,13 +54,13 @@ Para instalar uma extensão, você deve:
 1. Verifique se a extensão foi instalada corretamente.
 1. Ative e configure a extensão.
 
-## Obter o nome e a versão do Compositor da extensão
+### Obter informações de extensão
 
-Se você já sabe o nome e a versão do Composer da extensão, ignore esta etapa e continue em [Atualize seu `composer.json` arquivo](#update-your-composer-file).
+Se você já sabe o nome e a versão do Composer da extensão, ignore esta etapa e continue em [Atualize seu `composer.json` arquivo](#update-composer-dependencies).
 
 Para obter o nome e a versão do Compositor da extensão do Commerce Marketplace:
 
-1. Efetue logon no [Commerce Marketplace](https://marketplace.magento.com) com o nome de usuário e a senha que você usou para comprar a extensão.
+1. Efetue logon no [Commerce Marketplace](https://commercemarketplace.adobe.com/) com o nome de usuário e a senha que você usou para comprar a extensão.
 
 1. No canto superior direito, clique em **Seu nome** > **Meu perfil**.
 
@@ -75,7 +78,7 @@ Para obter o nome e a versão do Compositor da extensão do Commerce Marketplace
 >
 >Como alternativa, você pode encontrar o nome do Compositor e a versão de _qualquer_ extensão (independentemente de você tê-la comprado no Commerce Marketplace ou em outro lugar) no `composer.json` arquivo.
 
-## Atualizar o arquivo do Composer
+### Atualizar dependências do Composer
 
 Adicione o nome e a versão da extensão à `composer.json` arquivo:
 
@@ -103,7 +106,7 @@ Adicione o nome e a versão da extensão à `composer.json` arquivo:
    Generating autoload files
    ```
 
-## Verificar a extensão
+### Verificar instalação
 
 Para verificar se a extensão foi instalada corretamente, execute o seguinte comando:
 
@@ -125,7 +128,7 @@ bin/magento module:status
 
 E procure a extensão em &quot;Lista de módulos desativados&quot;.
 
-## Ativar a extensão
+### Ativar
 
 Algumas extensões não funcionam corretamente, a menos que você limpe primeiro os arquivos de exibição estáticos gerados. Use o `--clear-static-content` opção para limpar arquivos de visualização estáticos quando estiver ativando uma extensão.
 
@@ -183,7 +186,7 @@ Algumas extensões não funcionam corretamente, a menos que você limpe primeiro
 >
 >Se encontrar erros ao carregar a loja em um navegador, use o seguinte comando para limpar o cache: `bin/magento cache:flush`.
 
-## Atualizar uma extensão
+## Atualizar
 
 Para atualizar ou atualizar um módulo ou uma extensão:
 
@@ -218,3 +221,39 @@ Para atualizar ou atualizar um módulo ou uma extensão:
    ```bash
    bin/magento cache:clean
    ```
+
+## Desinstalar
+
+Você deve entrar em contato com o fornecedor da extensão para obter instruções sobre como remover uma extensão de terceiros. As instruções devem fornecer as seguintes informações:
+
+- Como reverter alterações na tabela do banco de dados
+- Como reverter alterações de dados do banco de dados
+- Quais arquivos devem ser removidos ou revertidos
+
+>[!CAUTION]
+>
+>Execute etapas de desinstalação em um ambiente de não produção _primeiro_ e teste completamente antes de implantar em seu ambiente de produção.
+
+As instruções a seguir fornecem informações gerais para a desinstalação de extensões de terceiros:
+
+1. Remova a extensão do repositório de projetos do Adobe Commerce.
+
+   - Para extensões baseadas no Composer, remova a extensão do Adobe Commerce `composer.json` arquivo.
+
+     ```bash
+     composer remove <package-name>
+     ```
+
+   - Para extensões não baseadas no Composer, remova os arquivos físicos do repositório do projeto do Adobe Commerce.
+
+     ```bash
+     rm -rf app/code/<vendor-name>/<module-name>
+     ```
+
+1. Se a variável `config.php` o arquivo estiver sob controle do código-fonte no repositório de projetos do Adobe Commerce, remova a extensão do `config.php` arquivo.
+
+1. Teste o banco de dados local para garantir que as instruções fornecidas pelo fornecedor funcionem conforme esperado.
+
+1. Verifique se a extensão está desativada corretamente e se o site funciona conforme esperado em seu ambiente de preparo.
+
+1. Implante as alterações no ambiente de produção.
