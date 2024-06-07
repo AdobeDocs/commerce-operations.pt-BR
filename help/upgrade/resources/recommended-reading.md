@@ -2,7 +2,7 @@
 title: Leitura recomendada para atualizações
 description: Revise a documentação recomendada para planejar sua atualização do Adobe Commerce.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 9542084e6ed1a4ebbbb33373d9c7bc9b463b9d5d
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 4%
@@ -42,7 +42,7 @@ Continue aprendendo sobre as atualizações do Adobe Commerce usando os recursos
         <p>Revise os detalhes sobre as versões e políticas da Adobe Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Perguntas frequentes sobre o fim do suporte ao software Adobe Commerce</a></li>
-            <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">política de Commerce Marketplace</a></li>
+            <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements/">política de Commerce Marketplace</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">Perguntas frequentes sobre a nova estratégia de lançamento do Adobe Commerce, política de ciclo de vida atualizada e suporte estendido</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Política de ciclo de vida</a></li>
             <li><a href="../../release/schedule.md">Programação de lançamento</a></li>
