@@ -1,8 +1,8 @@
 ---
-source-git-commit: ccc1c6451556ac721d331adebf02db8226e75699
+source-git-commit: 050fa7a35bb5f6f87d364e4c381062ca12baecc7
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 1%
+source-wordcount: '80'
+ht-degree: 3%
 
 ---
 # Modelo de novidades
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 Saiba mais sobre a nova documentação e as atualizações importantes na documentação existente.
 
-### 29 de abril de 2024
+### 11 de junho de 2024
 
 <table style="table-layout:auto;">
   <thead>
@@ -23,15 +23,15 @@ Saiba mais sobre a nova documentação e as atualizações importantes na docume
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização do <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/uct">Referência da CLI do UCT</a>.</p>
+      <td><p>Atualização do <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">Referência da CLI do UCT</a>.</p>
 </td>
       <td>técnico</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ae9b29601953f25ca28f253f557d547b200616a0">ae9b29</a> (confirmação)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1fbddf4ea05511c1aefe0cd0d8e8b2ebde7e00dd">1fbddf</a> (confirmação)</td>
     </tr>
   </tbody>
 </table>
 
-### 26 de abril de 2024
+### 7 de junho de 2024
 
 <table style="table-layout:auto;">
   <thead>
@@ -43,85 +43,21 @@ Saiba mais sobre a nova documentação e as atualizações importantes na docume
   </thead>
   <tbody>
     <tr>
-      <td><p>Reorganizou o <em>Guias operacionais</em> página inicial (esta página) e moveu a <em><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises">Referência de ferramentas de linha de comando</a></em> guia para a <em><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview">Ferramentas</a></em> guia.</p>
+      <td><p>Adicionado <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">informações do beta</a> para integração do Experience Manager Assets para Commerce (beta privado).</p>
 </td>
       <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/839b4e26a7c5d662093c7c1eec3fd5883ed7706a">839b4e</a> (confirmação)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d51937e25049f636a3b69f072a3fe4ba135766c2">d51937</a> (confirmação)</td>
     </tr>
     <tr>
-      <td><p>Adição de um novo <a href="https://experienceleague.adobe.com/docs/commerce-operations/events/summit/2024.html">página de resumo</a> para Adobe Summit.</p>
-</td>
-      <td>novo tópico</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1c2c75da7cda0e3c38ea904c98932472b618a3e5">1c2c75</a> (confirmação)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 15 de abril de 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Origem</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização do <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">beta</a> página para incluir informações sobre todas as beta disponíveis para o Adobe Commerce.</p>
+      <td><p>Adição de instruções para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions">desinstalando</a> extensões de terceiros.</p>
 </td>
       <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a362cad66d38a89bacda656d1520047e22262179">a362ca</a> (confirmação)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 9 de abril de 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Origem</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualizado <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">Versões lançadas</a>.</p>
-</td>
-      <td>técnico</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/efd2fc4285a5cdc7ee20ead299ee16e54f9bcb83">efd2fc</a> (confirmação)</td>
-    </tr>
-    <tr>
-      <td><p>Atualização dos tópicos dos pacotes de versão para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/magento-open-source">Magento Open Source</a>.<br /> Adição de um tópico sobre pacotes de versão para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce-b2b">B2B para Commerce</a>.</p>
-</td>
-      <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aad4b904ba95142d1d848f934c9d3702cc37ec16">aad4b9</a> (confirmação)</td>
-    </tr>
-    <tr>
-      <td><p>Atualização do <em>bin/magento</em> Documentação de referência da CLI para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/commerce-on-premises">Adobe Commerce</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/reference/magento-open-source">Magento Open Source</a>.</p>
-</td>
-      <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b81dc87a261f128cdb572a30ff5538dae2087c49">b81dc8</a> (confirmação)</td>
-    </tr>
-    <tr>
-      <td><p>Publicado 2.4.7 GA <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-7">notas de versão</a>.</p>
-</td>
-      <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35b7caafbef5ced52ef6e4907e0634dfb2a61e4f">35b7ca</a> (confirmação)</td>
-    </tr>
-    <tr>
-      <td><p>Adiciona notas de versão das versões de segurança do Adobe Commerce de abril de 2024 (2.4.6-p5, 2.4.5-p7, 2.4.4-p8). Consulte <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Notas de versão para Adobe Commerce e Magento Open Source</a></p>
-</td>
-      <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7acab1d8d3f7b11cc1387b5558521f282ba0873f">7acab1</a> (confirmação)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a623002b366ae07eaabe9711946d7f8ceb3b9132">a62300</a> (confirmação)</td>
     </tr>
   </tbody>
 </table><!-- date_group -->
 
-### 24 de março de 2024
+### 21 de maio de 2024
 
 <table style="table-layout:auto;">
   <thead>
@@ -133,54 +69,10 @@ Saiba mais sobre a nova documentação e as atualizações importantes na docume
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de um <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint.html">blueprint de arquitetura</a> para implementações empresariais do Commerce.</p>
-</td>
-      <td>novo tópico</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d33294d02b4431d4aa473aa5d0ab42e297cfed14">d33294</a> (confirmação)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 de março de 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Origem</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização dos seguintes tópicos da versão 2.4.7-beta3:<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises-beta.html">Adobe Commerce CLI (no local, Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/magento-open-source-beta.html">CLI do Magento Open Source (Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/adobe-commerce-beta.html">Pacotes do Adobe Commerce (Beta)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/packages/magento-open-source-beta.html">Pacotes Magento Open Source (Beta)</a></p>
+      <td><p>Esclarecimento sobre o suporte a dependências de terceiros no <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">política de ciclo de vida do software</a>.</p>
 </td>
       <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/28029603b0a23eb161480363b5106142beda4180">280296</a> (confirmação)</td>
-    </tr>
-    <tr>
-      <td><p>Instruções de configuração da para o <a href="https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/performance-best-practices/application-server.html">Servidor de aplicativos para APIs do GraphQL</a> recurso.</p>
-</td>
-      <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a4f907a793b4384cb7c162c032a153fafbbc6ff3">a4f907</a> (confirmação)</td>
-    </tr>
-    <tr>
-      <td><p>Notas de versão publicadas para <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">Adobe Commerce 2.4.7-beta3</a>.</p>
-</td>
-      <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d5bd6e1e9af78b24c687554261a50d4dce9483d6">d5bd6e</a> (confirmação)</td>
-    </tr>
-    <tr>
-      <td><p>Adição do 2.4.7-beta3 ao <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">requisitos do sistema</a>.</p>
-</td>
-      <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4c622c47862c61fc9e6587ff95b3ac45142c2318">4c622c</a> (confirmação)</td>
-    </tr>
-    <tr>
-      <td><p>Adição de informações sobre o novo <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html"><code class="language-plaintext highlighter-rouge">indexer:set-status</code></a> comando CLI.</p>
-</td>
-      <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/acacc285f8b977b33bb27af76c971bc4015a2b45">acacc2</a> (confirmação)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5459488d4b512447aff810dca8d3b32a074d5c1e">545948</a> (confirmação)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
