@@ -2,23 +2,23 @@
 title: Notas de versão para Patches de segurança do Adobe Commerce 2.4.3
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
 
-# Notas de versão do patch de segurança do Adobe Commerce 2.4.3
+
+# Notas de versão de patches de segurança do Adobe Commerce 2.4.3
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
-A versão de segurança 2.4.3-p3 do Adobe Commerce fornece correções de segurança para vulnerabilidades identificadas na versão anterior (Adobe Commerce 2.4.3 e Magento Open Source 2.4.3). Esta versão também inclui aprimoramentos de segurança que melhoram a conformidade com as práticas recomendadas de segurança mais recentes.
+A versão de segurança 2.4.3-p3 do Adobe Commerce fornece correções de segurança para vulnerabilidades que foram identificadas em versões anteriores da 2.4.3. Esta versão também inclui aprimoramentos de segurança que melhoram a conformidade com as práticas recomendadas de segurança mais recentes.
 
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte [Boletim de segurança do Adobe APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
-
 
 ### Aplicar `AC-3022.patch` continuar a oferecer a DHL como transportadora
 
@@ -39,7 +39,6 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 ### Aplicar `AC-3022.patch` continuar a oferecer a DHL como transportadora
 
 A DHL apresentou o schema versão 6.2 e descontinuará o schema versão 6.0 em breve. Adobe Commerce 2.4.4 e versões anteriores que suportam a integração DHL suportam apenas a versão 6.0. Os comerciantes que implantarem essas versões devem aplicar `AC-3022.patch` continuar a oferecer a DHL como transportadora. Consulte a [Aplique um patch para continuar oferecendo a DHL como transportadora](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Artigo da Base de conhecimento para obter informações sobre como baixar e instalar o patch.
-
 
 ### Destaques da segurança
 
@@ -65,7 +64,6 @@ A versão de segurança 2.4.3-p1 do Adobe Commerce fornece correções de bugs d
 
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte [Boletim de segurança do Adobe APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). A versão de patch também fornece correções de erros para o [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html), e [Vértice](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) extensões desenvolvidas pelo fornecedor.
 
-
 ### Aplicar `AC-3022.patch` continuar a oferecer a DHL como transportadora
 
 A DHL apresentou o schema versão 6.2 e descontinuará o schema versão 6.0 em breve. Adobe Commerce 2.4.4 e versões anteriores que suportam a integração DHL suportam apenas a versão 6.0. Os comerciantes que implantarem essas versões devem aplicar `AC-3022.patch` continuar a oferecer a DHL como transportadora. Consulte a [Aplique um patch para continuar oferecendo a DHL como transportadora](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Artigo da Base de conhecimento para obter informações sobre como baixar e instalar o patch.
@@ -87,4 +85,3 @@ Esta versão inclui o seguinte hotfix e todos os hotfixes que foram lançados pa
 **Vulnerabilidades recentes nos testes de penetração** foram corrigidas nesta versão. <!-- MC-42431-->
 
 A expressão de origem sem suporte `unsafe-inline` foi removido da Política de segurança de conteúdo `frame-ancestors` diretiva. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
-

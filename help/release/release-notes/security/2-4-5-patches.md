@@ -2,17 +2,27 @@
 title: Notas de versão do patch de segurança do Adobe Commerce 2.4.5
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.5.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
 
 
-# Notas de versão para Patches de segurança do Adobe Commerce 2.4.5
+# Notas de versão de patches de segurança do Adobe Commerce 2.4.5
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.5-p8
+
+A versão de segurança 2.4.5-p7 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.5.
+
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte [Boletim de segurança do Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Atualizações da plataforma
+
+* **Suporte para MariaDB 10.5**. Esta versão de patch apresenta compatibilidade com o MariaDB versão 10.5. O Adobe Commerce ainda é compatível com a versão 10.4 do MariaDB, mas o Adobe recomenda usar o Adobe Commerce 2.4.5-p8 e todas as próximas versões de patch somente de segurança 2.4.5 somente com a versão 10.5 do MariaDB, pois a manutenção do MariaDB 10.4 termina em 18 de junho de 2024. <!--AC-11530-->
 
 ## Adobe Commerce 2.4.5-p7
 
@@ -107,5 +117,3 @@ A versão de segurança 2.4.5-p1 do Adobe Commerce fornece correções de bugs d
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte [Boletim de segurança do Adobe APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
 Uma das correções de bugs de segurança incluiu a criação de uma nova configuração. A variável **Exigir confirmação por email se o email tiver sido alterado** A configuração do permite que os administradores exijam a confirmação por email quando um usuário administrador alterar seu endereço de email. <!-- AC-6292-->
-
-

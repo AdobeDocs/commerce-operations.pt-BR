@@ -1,5 +1,5 @@
 ---
-source-git-commit: 7dd6322370b976d8edea51fd94099e6dc4c082b7
+source-git-commit: 0709cd6510adce0f513894fdecb2de5ac88d0e87
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 3%
@@ -7,7 +7,7 @@ ht-degree: 3%
 ---
 # Documentação técnica do Adobe Commerce
 
-Agradecemos as contribuições de nossa comunidade, bem como de funcionários da Adobe de fora das equipes de documentação.
+Agradecemos as contribuições da comunidade e de funcionários da Adobe de fora das equipes de documentação.
 
 ## Código de conduta de código aberto do Adobe
 
@@ -67,7 +67,7 @@ Os exemplos de conteúdo de modelo incluem, entre outros, os seguintes:
 
 ### Gerar conteúdo em modelo
 
-Em geral, a maioria dos autores só precisa adicionar uma versão de lançamento às tabelas de disponibilidade de produtos e requisitos do sistema. A manutenção de todos os outros conteúdos em modelos é automatizada ou gerenciada por um membro dedicado da equipe. Estas instruções destinam-se à &quot;maioria&quot; dos autores.
+Em geral, a maioria dos autores só precisa adicionar uma versão de lançamento às tabelas de disponibilidade de produtos e requisitos do sistema. A manutenção de todos os outros conteúdos em modelos é automatizada ou gerenciada por um membro dedicado da equipe. Estas instruções são destinadas para a maioria dos escritores.
 
 >**NOTA:**
 >
