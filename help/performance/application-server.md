@@ -2,9 +2,9 @@
 title: Servidor de aplicativos GraphQL
 description: Siga estas instruções para habilitar o GraphQL Application Server na implantação do Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 70d86569bef5c656fff3a8c6b4af142c81c81f10
+source-git-commit: c2f48db87f40498a84b2bf41569bb46202565701
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2088'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Servidor de aplicativos GraphQL
 
-O servidor de aplicativos Commerce GraphQL permite que o Adobe Commerce mantenha o estado entre as solicitações de API do Commerce GraphQL. O GraphQL Application Server, que é criado na extensão Swoole, opera como um processo com threads de trabalho que lidam com o processamento de solicitações. Ao preservar um estado de aplicativo inicializado entre as solicitações de API do GraphQL, o GraphQL Application Server aprimora o manuseio de solicitações e o desempenho geral do produto. As solicitações de API tornam-se significativamente mais eficientes.
+O Commerce GraphQL Application Server permite que o Adobe Commerce mantenha o estado entre as solicitações de API do Commerce GraphQL. O GraphQL Application Server, que é criado na extensão Swoole, opera como um processo com threads de trabalho que lidam com o processamento de solicitações. Ao preservar um estado de aplicativo inicializado entre as solicitações de API do GraphQL, o GraphQL Application Server aprimora o manuseio de solicitações e o desempenho geral do produto. As solicitações de API tornam-se significativamente mais eficientes.
 
 O GraphQL Application Server está disponível somente para o Adobe Commerce. Não está disponível para o Magento Open Source. Você deve [enviar um Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) tíquete para habilitar o GraphQL Application Server em projetos Pro.
 
@@ -66,6 +66,12 @@ Depois que o recurso Servidor de aplicativos for ativado em seu projeto Pro, con
            protocol: http
        commands:
            start: ./application-server/start.sh > var/log/application-server-status.log 2>&1
+   ```
+
+1. Assegure que `/application-server/start.sh` é executável executando o seguinte comando:
+
+   ```bash
+   chmod +x application-server/start.sh
    ```
 
 1. Adicione arquivos atualizados ao índice Git com este comando:
