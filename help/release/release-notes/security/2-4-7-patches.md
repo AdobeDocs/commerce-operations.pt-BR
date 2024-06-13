@@ -1,9 +1,9 @@
 ---
 title: Notas de versão do patch de segurança do Adobe Commerce 2.4.7
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.7.
-source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
+source-git-commit: 4ed23e2a8319ff97f8206f752cf1cbe2e73ea5c5
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,6 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 ### Realce de segurança
 
 Esta versão inclui uma atualização da [configurações de senha ocasional (OTP)](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) para que o Google Authenticator resolva um erro introduzido por um [alteração incompatível com versões anteriores](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) em 2.4.7. A descrição do **[!UICONTROL OTP Window]** agora fornece uma explicação precisa da configuração e o valor padrão foi alterado de `1` para `29`.
-
-### Aprimoramentos adicionais de segurança
-
-{{$include /help/_includes/release-notes/2-4-7-security.md}}
 
 ### Hotfixes incluídos nesta versão
 
