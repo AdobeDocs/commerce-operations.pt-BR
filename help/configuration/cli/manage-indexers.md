@@ -2,9 +2,9 @@
 title: Gerenciar os indexadores
 description: Consulte exemplos de como exibir e gerenciar indexadores do Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 5e1684d4d910f2ea52e12eeccdc291a54372f8d6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -266,7 +266,7 @@ Os gatilhos de banco de dados relacionados a indexadores são adicionados quando
 
 ### Definir status do indexador
 
-Esse comando permite que os administradores modifiquem o status operacional de um ou mais indexadores, otimizando o desempenho do sistema durante operações extensas, como importações, atualizações ou manutenção de dados.
+A variável `bin/magento indexer:set-status` foi introduzido no Adobe Commerce 2.4.7. Ele permite que os administradores modifiquem o status operacional de um ou mais indexadores, otimizando o desempenho do sistema durante operações extensas, como importações, atualizações ou manutenção de dados.
 
 Sintaxe de comando:
 
