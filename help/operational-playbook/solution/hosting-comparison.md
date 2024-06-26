@@ -1,9 +1,11 @@
 ---
-title: Comparação de hospedagem de comércio
+title: Comparação de hospedagem do Commerce
 description: Tome a melhor decisão sobre hospedagem para seu projeto de comércio eletrônico revisando esta tabela de comparação.
 exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
 feature: Best Practices, Cloud, Paas
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+hide: true
+hidefromtoc: true
+source-git-commit: 26284eea58151929c9ac5e72b0fb6cd5b02a3384
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
