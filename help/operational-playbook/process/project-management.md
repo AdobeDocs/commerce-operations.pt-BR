@@ -4,7 +4,7 @@ description: Aplique estruturas conhecidas para gerenciar seu projeto de comérc
 exl-id: 514e2317-f409-4079-bdee-1596f6635467
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ O gerenciamento de projetos é a aplicação de conhecimento, habilidades, ferra
 
 O diagrama a seguir descreve as cinco fases do gerenciamento de projetos e o ciclo de vida do gerenciamento de projetos:
 
-![Diagrama do ciclo de vida de gerenciamento de projetos](../../assets/playbooks/project-management-lifecycle.png)
+![Diagrama do ciclo de vida de gerenciamento do projeto](../../assets/playbooks/project-management-lifecycle.png)
 
 O ciclo de vida do gerenciamento de projetos fornece um processo de entrega pontual e controlado que beneficia as partes interessadas do projeto. O primeiro passo para fornecer um projeto de comércio eletrônico bem-sucedido é o gerenciamento de projetos. A abordagem e a metodologia corretas são necessárias para permitir que a equipe entregue o projeto de forma eficaz e eficiente.
 
@@ -28,7 +28,7 @@ Algumas equipes escolhem a metodologia de gerenciamento de projetos Scrum para s
 - Sessão de planejamento para cada sprint
 - Retrospectivas Sprint
 
-![Diagrama de ciclo de vida ágil do Scrum](../../assets/playbooks/scrum-lifecycle.png)
+![Diagrama de ciclo de vida Agile de Scrum](../../assets/playbooks/scrum-lifecycle.png)
 
 O Scrum ajuda a gerenciar alterações durante o projeto, permite que as equipes mostrem resultados rápidos, é flexível e aumenta a colaboração.
 
@@ -36,17 +36,17 @@ O Scrum ajuda a gerenciar alterações durante o projeto, permite que as equipes
 
 Um plano básico de gerenciamento de projeto de comércio eletrônico inclui:
 
-- **Análise**— no estágio inicial de um projeto, a empresa precisa realizar análises, inclusive de mercado e de concorrentes, para compreender os pontos fortes e fracos da organização.
+- **Análise**—No estágio inicial de um projeto, a empresa precisa realizar análises, inclusive de mercado e de concorrentes, para entender os pontos fortes e fracos da organização.
 
-- **Requisitos**— defina requisitos detalhados do que a empresa deseja no final do projeto em termos de aprimoramento das habilidades existentes e/ou implementação de novos recursos e/ou integrações.
+- **Requisitos**—Defina os requisitos detalhados do que a organização deseja ao final do projeto em termos de aprimoramento das habilidades existentes e/ou implementação de novos recursos e/ou integrações.
 
-- **Provedores de terceiros**—Neste estágio, mapeie as integrações de terceiros necessárias (por exemplo, pagamento, envio, classificações e revisões).
+- **Provedores de terceiros**—Neste estágio, mapeie as integrações de terceiros necessárias (por exemplo, pagamento, envio, classificações e análises).
 
-- **Design**— Elabore os requisitos específicos do projeto do Brainstorm para modelos e o livro de marcas da empresa.
+- **Design**—Elabore os requisitos específicos do projeto do Brainstorm para modelos e o livro de marcas da empresa.
 
-- **Migração**— planeje as etapas de migração de conteúdo e dados.
+- **Migração** — planeje as etapas de migração de conteúdo e dados.
 
-- **Plataforma de comércio eletrônico**— analise e finalize a plataforma necessária para que os negócios atendam aos requisitos.
+- **Plataforma de comércio eletrônico**—Analise e finalize a plataforma necessária para que a empresa atenda aos requisitos.
 
 ## Práticas recomendadas
 

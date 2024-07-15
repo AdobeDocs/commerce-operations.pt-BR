@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # Biblioteca JavaScript de privacidade
 
-A Biblioteca JavaScript de privacidade é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados coletados pela Adobe Commerce.
+A Biblioteca de privacidade da JavaScript é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados coletados pela Adobe Commerce.
 
-Os serviços de rastreamento de dados da Commerce podem armazenar informações privadas aplicáveis a regulamentos de privacidade, como o [Regulamento Geral sobre a Proteção de Dados (GDPR)](gdpr.md) e [Lei de Privacidade do Consumidor da Califórnia (CCPA)](ccpa.md).
+Os serviços de rastreamento de dados da Commerce podem armazenar informações privadas aplicáveis a regulamentos de privacidade, como o [Regulamento Geral sobre a Proteção de Dados (GDPR)](gdpr.md) e a [Lei de Privacidade do Consumidor da Califórnia (CCPA)](ccpa.md).
 
 Essa biblioteca fornece um conjunto de funções para criar solicitações de dados de privacidade e coletar suas respostas. Use essa biblioteca para recuperar e remover os dados armazenados no navegador pelos serviços de rastreamento de dados da Adobe Commerce.
 
 >[!NOTE]
 >
->Se [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) estiver ativado, a Commerce não coletará dados comportamentais até que o comprador dê o seu consentimento. Se [!UICONTROL **Modo de restrição de cookies**] estiver desativado, o Commerce coletará dados comportamentais por padrão.
+>Se o [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) estiver habilitado, a Commerce não coletará dados comportamentais até que o comprador dê o seu consentimento. Se o [!UICONTROL **Modo de restrição de cookies**] estiver desativado, a Commerce coletará dados comportamentais por padrão.
 
 ## Instalação
 
-A Biblioteca JavaScript de privacidade está disponível no seguinte local CDN: `commerce.adobe.net/magentoprivacy.js`
+A Biblioteca JavaScript de Privacidade está disponível no seguinte local CDN: `commerce.adobe.net/magentoprivacy.js`
 
-Após ter o arquivo, será necessário adicioná-lo a um módulo personalizado ou tema instalado em sua instância do Adobe Commerce. Siga as instruções descritas em [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) tópico para realizar esta tarefa.
+Após ter o arquivo, será necessário adicioná-lo a um módulo personalizado ou tema instalado em sua instância do Adobe Commerce. Siga as instruções descritas no tópico [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) para realizar esta tarefa.
 
 ### Inicialização
 
-Importar e instanciar um novo `MagentoPrivacy` objeto ou use o `window` para acessar as funções de privacidade do JavaScript.
+Importe e instancie um novo objeto `MagentoPrivacy` ou use o objeto `window` para acessar as funções de Privacidade e JavaScript.
 
 Exemplo usando `import`:
 
@@ -52,7 +52,7 @@ const magePriv = new window.MagentoPrivacy()
 A Biblioteca JS de privacidade fornece várias funções para gerenciar dados de identidade armazenados no navegador.
 
 `retrieveIdentity()`
-: retorna uma promessa JavaScript para um objeto de identidade de um serviço no navegador.
+: retorna uma promessa do JavaScript para um objeto de identidade de um serviço no navegador.
 
 ```js
 magePriv.retrieveIdentity().then((ids)=>console.log(ids))
@@ -61,7 +61,7 @@ magePriv.retrieveIdentity().then((ids)=>console.log(ids))
 
 `removeIdentity()`
 : remove os dados de identidade de um serviço no navegador.
-Esta função retorna uma promessa JavaScript para um objeto de identidade com uma `isDeleted` propriedade booleana para indicar se os dados foram excluídos.
+Esta função retorna uma promessa JavaScript para um objeto de identidade com uma propriedade booleana `isDeleted` para indicar se os dados foram excluídos.
 
 ```js
 magePriv.removeIdentity().then((ids)=>console.log(ids))

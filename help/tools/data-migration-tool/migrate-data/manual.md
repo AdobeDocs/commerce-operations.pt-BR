@@ -5,7 +5,7 @@ exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,9 @@ Esta seção se aplica a você *somente* se você armazenar arquivos de mídia n
 
 1. Clique em **Sistema** > **Configuração** > AVANÇADO > **Sistema**.
 
-1. No painel direito, role até **Configuração de armazenamento para mídia**.
+1. No painel direito, role até **Configuração de Armazenamento para Mídia**.
 
-1. No **Selecionar banco de dados de mídia** clique no nome do banco de dados de armazenamento de mídia.
+1. Na lista **Selecionar Banco de Dados de Mídia**, clique no nome do banco de dados de armazenamento de mídia.
 
 1. Clique em **Sincronizar**.
 
@@ -49,9 +49,9 @@ Em seguida, repita as mesmas etapas no painel Administrador do Magento 2.
 
 ### Arquivos de mídia no sistema de arquivos
 
-Todos os arquivos de mídia (imagens de produtos, categorias, o editor WYSIWYG e assim por diante) devem ser copiados manualmente do `<your Magento 1 install dir>/media` para `<your Magento 2 install dir>/pub/media`.
+Todos os arquivos de mídia (imagens de produtos, categorias, o editor WYSIWYG etc.) devem ser copiados manualmente do `<your Magento 1 install dir>/media` para o `<your Magento 2 install dir>/pub/media`.
 
-No entanto, *não* copie o `.htaccess` arquivos localizados no Magento 1 `media` pasta. Magento 2 tem o seu próprio `.htaccess` que devem ser preservadas.
+No entanto, *não* copie os arquivos `.htaccess` localizados na pasta Magento 1 `media`. Magento 2 tem seu próprio `.htaccess` que deve ser preservado.
 
 ## Design de vitrine
 
@@ -69,4 +69,4 @@ Você deve recriar manualmente todos os:
 
 >[!NOTE]
 >
->Você pode ajustar o fuso horário de uma entidade de banco de dados usando o `\Migration\Handler\Timezone` manipulador. Consulte a [acompanhamento](follow-up.md) para obter mais detalhes.
+>Você pode ajustar o fuso horário de uma entidade de banco de dados usando o manipulador `\Migration\Handler\Timezone`. Consulte a seção [acompanhamento](follow-up.md) para obter mais detalhes.

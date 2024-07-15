@@ -19,10 +19,10 @@ ht-degree: 2%
    - Sistema de arquivos {#file-system}
       - [Visão geral](prerequisites/file-system/overview.md)
       - [Configurar permissões](prerequisites/file-system/configure-permissions.md)
-   - Servidor da Web {#web-server}
+   - Servidor Web {#web-server}
       - [Nginx](prerequisites/web-server/nginx.md)
       - [Apache](prerequisites/web-server/apache.md)
-   - Servidor de banco de dados {#database-server}
+   - Servidor do banco de dados {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [Conexões remotas](prerequisites/database/mysql-remote.md)
    - Mecanismo de pesquisa {#search-engine}
@@ -38,11 +38,11 @@ ht-degree: 2%
    - [Software opcional](prerequisites/optional-software.md)
 - [Instalação de início rápido](composer.md)
 - [Instalação avançada](advanced.md)
-- Etapas de pós-instalação {#next-steps}
+- Etapas de instalação do Post {#next-steps}
    - [Verificar a instalação](next-steps/verify.md)
    - [Configurar o aplicativo](next-steps/configuration.md)
    - [Definir uma máscara (opcional)](next-steps/set-umask.md)
-   - Instalar dados de amostra (opcional) {#sample-data}
+   - Instalar dados de exemplo (opcional) {#sample-data}
       - [Visão geral](sample-data/overview.md)
       - [Baixar pacotes do Composer](sample-data/composer-packages.md)
       - [Clonar repositórios Git](sample-data/git-repositories.md)
@@ -67,4 +67,4 @@ ht-degree: 2%
    - [Desinstalar ou reinstalar o Commerce](tutorials/uninstall.md)
    - [Desinstalar temas](tutorials/themes.md)
    - [Atualizar o esquema do banco de dados](tutorials/database-upgrade.md)
-- [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

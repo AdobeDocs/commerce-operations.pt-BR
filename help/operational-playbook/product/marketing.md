@@ -5,7 +5,7 @@ exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,13 @@ O email com curadoria é uma das melhores formas de email, pois permite que os a
 
 Os clientes podem facilmente ignorar os emails, mas se os emails forem enviados como emails de engajamento, a probabilidade de um cliente excluí-los sem observá-los será menor. Emails de engajamento podem estar no formato de uma campanha que fornece aos usuários uma promoção, como frete gratuito.
 
-![Exemplo de email de marketing de envolvimento](../../assets/playbooks/marketing-email-engagement.png)
+![Exemplo de email de marketing de engajamento](../../assets/playbooks/marketing-email-engagement.png)
 
 ## Email de referência
 
 O boca a boca é uma das melhores estratégias de marketing. Por exemplo, enviar email de referência para um cliente existente. Por exemplo, &quot;Indique um Amigo e Receba US$ 10!&quot; O email de referência motiva os clientes a espalhar a palavra de forma orgânica, o que ajuda a ganhar mais clientes.
 
-![Exemplo de email de marketing de referência](../../assets/playbooks/marketing-email-referral.png)
+![Exemplo de email de marketing para indicação](../../assets/playbooks/marketing-email-referral.png)
 
 ## Email de desconto
 
@@ -64,7 +64,7 @@ Os clientes abandonam seus carrinhos por vários motivos, incluindo altos custos
 
 Os emails de confirmação de pedido não apenas ajudam a aumentar as vendas, mas também dão aos clientes a confiança de que fizeram o pedido, o que aumenta a experiência e a fidelidade do cliente.
 
-![Exemplo de email de marketing de confirmação de pedido](../../assets/playbooks/marketing-email-order-confirmation.png)
+![Exemplo de email de marketing para confirmação de pedido](../../assets/playbooks/marketing-email-order-confirmation.png)
 
 ## Email da pesquisa
 

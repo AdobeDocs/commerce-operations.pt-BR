@@ -19,7 +19,7 @@ Este tópico discute comandos de configuração avançados que podem ser usados 
 - Opcionalmente, bloqueie qualquer opção de configuração para que seu valor não possa ser alterado no Administrador
 - Alterar uma opção de configuração que esteja bloqueada no Administrador
 
-Você pode usar esses comandos para definir a configuração do Commerce manualmente ou usando scripts. Defina as opções de configuração usando um _caminho de configuração_, que é uma `/`-uma string delimitada que identifica exclusivamente essa opção de configuração. Você pode encontrar caminhos de configuração nas seguintes referências:
+Você pode usar esses comandos para definir a configuração do Commerce manualmente ou usando scripts. Você define opções de configuração usando um _caminho de configuração_, que é uma cadeia de caracteres delimitada por `/` que identifica exclusivamente essa opção de configuração. Você pode encontrar caminhos de configuração nas seguintes referências:
 
 - [Referência de caminhos de configuração sensíveis e específicos do sistema](../reference/config-reference-sens.md)
 - [Referência de caminhos de configuração de pagamento](../reference/config-reference-payment.md)
@@ -30,13 +30,13 @@ Você pode definir valores nos seguintes horários:
 
 - Antes de instalar o Commerce, você pode definir valores de configuração somente para o escopo padrão, pois ele é o único escopo válido.
 
-- Depois de instalar o Commerce, você pode definir os valores de configuração para qualquer escopo de exibição de site ou loja.
+- Após instalar o Commerce, é possível definir valores de configuração para qualquer escopo de exibição de site ou loja.
 
 Use os seguintes comandos:
 
 - `bin/magento config:set` define qualquer valor de configuração não confidencial por seu caminho de configuração
 - `bin/magento config:sensitive:set` define qualquer valor de configuração confidencial por seu caminho de configuração
-- `bin/magento config:show` mostra os valores de configuração salvos; os valores das configurações criptografadas são exibidos como asteriscos
+- `bin/magento config:show` mostra valores de configuração salvos; valores de configurações criptografadas são exibidos como asteriscos
 
 ## Pré-requisitos
 
@@ -58,9 +58,9 @@ Consulte as seguintes referências:
 
 ### Localizar o código do escopo
 
-Você pode encontrar o código do escopo no banco de dados do Commerce ou no Administrador do Commerce.
+Você pode encontrar o código do escopo no banco de dados do Commerce ou no Commerce Admin.
 
-**Para encontrar o código do escopo no Administrador**:
+**Para localizar o código do escopo no Admin**:
 
 1. Faça logon no Administrador como um usuário que pode exibir sites e armazenar visualizações.
 1. Clique em **[!UICONTROL Stores]** > Configurações > **[!UICONTROL All Stores]**.
@@ -72,9 +72,9 @@ Você pode encontrar o código do escopo no banco de dados do Commerce ou no Adm
 
 1. Continuar com [Definir valores](#set-values).
 
-**Para encontrar o código do escopo no banco de dados**:
+**Para localizar o código do escopo no banco de dados**:
 
-Os códigos de escopo para sites e exibições de loja são armazenados no banco de dados do Commerce na `store_website` e `store` tabelas, respectivamente.
+Os códigos de escopo para sites e exibições de armazenamento são armazenados no banco de dados do Commerce nas tabelas `store_website` e `store`, respectivamente.
 
 1. Conecte-se ao banco de dados do Commerce.
 
@@ -109,7 +109,7 @@ Os códigos de escopo para sites e exibições de loja são armazenados no banco
    +------------+-------+--------------+------------+------------------+------------+
    ```
 
-   Use o valor na variável `code` coluna.
+   Use o valor na coluna `code`.
 
 1. Prossiga para a próxima seção.
 
@@ -127,22 +127,22 @@ bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [
 bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
 ```
 
-A tabela a seguir descreve as `set` parâmetros de comando:
+A tabela a seguir descreve os parâmetros do comando `set`:
 
 | Parâmetro | Descrição |
 | --- | --- |
-| `--scope` | O escopo da configuração. Os valores possíveis são `default`, `website`ou `store`. O padrão é `default`. |
+| `--scope` | O escopo da configuração. Os valores possíveis são `default`, `website` ou `store`. O padrão é `default`. |
 | `--scope-code` | O código de escopo da configuração (código de site ou código de exibição de loja) |
-| `-e or --lock-env` | O bloqueia o valor para que ele não possa ser editado no Administrador ou altera uma configuração que já está bloqueada no Administrador. O comando grava o valor na variável `<Commerce base dir>/app/etc/env.php` arquivo. |
-| `-c or --lock-config` | O bloqueia o valor para que ele não possa ser editado no Administrador ou altera uma configuração que já está bloqueada no Administrador. O comando grava o valor na variável `<Commerce base dir>/app/etc/config.php` arquivo. A variável `--lock-config` a opção substitui `--lock-env` se você especificar ambas as opções. |
+| `-e or --lock-env` | O bloqueia o valor para que ele não possa ser editado no Administrador ou altera uma configuração que já está bloqueada no Administrador. O comando grava o valor no arquivo `<Commerce base dir>/app/etc/env.php`. |
+| `-c or --lock-config` | O bloqueia o valor para que ele não possa ser editado no Administrador ou altera uma configuração que já está bloqueada no Administrador. O comando grava o valor no arquivo `<Commerce base dir>/app/etc/config.php`. A opção `--lock-config` substitui `--lock-env` se você especificar ambas as opções. |
 | `path` | _Obrigatório_. O caminho de configuração |
 | `value` | _Obrigatório_. O valor da configuração |
 
 >[!INFO]
 >
->A partir do Commerce 2.2.4, o `--lock-env` e `--lock-config` as opções substituem o `--lock` opção.
+>A partir do Commerce 2.2.4, as opções `--lock-env` e `--lock-config` substituem a opção `--lock`.
 >
->Se você usar o `--lock-env` ou `--lock-config` para definir ou alterar um valor, você deve usar a opção [`bin/magento app:config:import` comando](../cli/import-configuration.md) para importar a configuração antes de acessar o Admin ou a loja.
+>Se você usar a opção `--lock-env` ou `--lock-config` para definir ou alterar um valor, deverá usar o comando [`bin/magento app:config:import` ](../cli/import-configuration.md) para importar a configuração antes de acessar o Administrador ou a loja.
 
 Se você inserir um caminho de configuração incorreto, esse comando retornará um erro
 
@@ -157,7 +157,7 @@ Consulte uma das seguintes seções para obter mais informações:
 
 ### Defina os valores de configuração que podem ser editados no painel
 
-Uso `bin/magento config:set` _sem_ `--lock-env` ou `--lock-config` para gravar o valor no banco de dados. Os valores definidos dessa maneira podem ser editados no Administrador.
+Use `bin/magento config:set` _sem_ `--lock-env` ou `--lock-config` para gravar o valor no banco de dados. Os valores definidos dessa maneira podem ser editados no Administrador.
 
 A seguir, alguns exemplos para definir um URL de base de armazenamento:
 
@@ -167,13 +167,13 @@ Defina o URL base para o escopo padrão:
 bin/magento config:set web/unsecure/base_url http://example.com/
 ```
 
-Defina o URL de base para a variável `base` site:
+Defina a URL de base para o site `base`:
 
 ```bash
 bin/magento config:set --scope=websites --scope-code=base web/unsecure/base_url http://example2.com/
 ```
 
-Defina o URL de base para a variável `test` exibição de loja:
+Defina a URL de base para a exibição de armazenamento `test`:
 
 ```bash
 bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url http://example3.com/
@@ -181,29 +181,29 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 ### Definir valores de configuração que não podem ser editados no Administrador
 
-Se você usar o `--lock-env`  da seguinte maneira, o comando salva o valor de configuração em `<Commerce base dir>/app/etc/env.php` e desativa o campo para editar esse valor no campo Admin.
+Se você usar a opção `--lock-env` da seguinte maneira, o comando salva o valor de configuração em `<Commerce base dir>/app/etc/env.php` e desabilita o campo para edição desse valor no Administrador.
 
 ```bash
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
 ```
 
-Você pode usar o `--lock-env` opção para definir valores de configuração se o Commerce não estiver instalado. No entanto, é possível definir valores somente para o escopo padrão.
+Você pode usar a opção `--lock-env` para definir valores de configuração se o Commerce não estiver instalado. No entanto, é possível definir valores somente para o escopo padrão.
 
 >[!INFO]
 >
->A variável `env.php` O arquivo é específico do sistema. Você não deve transferi-lo para outro sistema. Você pode usá-lo para substituir valores de configuração do banco de dados. Por exemplo, você pode pegar um dump de banco de dados de outro sistema e substituir o `base_url` e outros valores para que você não precise modificar o banco de dados.
+>O arquivo `env.php` é específico do sistema. Você não deve transferi-lo para outro sistema. Você pode usá-lo para substituir valores de configuração do banco de dados. Por exemplo, você pode pegar um despejo de banco de dados de outro sistema e substituir o `base_url` e outros valores para que não seja necessário modificar o banco de dados.
 
-Se você usar o `--lock-config` da seguinte maneira, o valor de configuração é salvo em `<Commerce base dir>/app/etc/config.php`. O campo para editar esse valor no Admin está desativado.
+Se você usar a opção `--lock-config` da seguinte maneira, o valor de configuração será salvo em `<Commerce base dir>/app/etc/config.php`. O campo para editar esse valor no Admin está desativado.
 
 ```bash
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1
 ```
 
-Você pode usar `--lock-config` para definir os valores de configuração se o Commerce não estiver instalado. No entanto, é possível definir valores somente para o escopo padrão.
+Você pode usar `--lock-config` para definir valores de configuração se o Commerce não estiver instalado. No entanto, é possível definir valores somente para o escopo padrão.
 
 >[!INFO]
 >
->Você pode transferir `config.php` para outro sistema para usar os mesmos valores de configuração. Por exemplo, se você tiver um sistema de teste, usando o mesmo `config.php` significa que não é necessário definir os mesmos valores de configuração novamente.
+>Você pode transferir `config.php` para outro sistema para usar os mesmos valores de configuração. Por exemplo, se você tiver um sistema de teste, usar o mesmo `config.php` significa que não é necessário definir os mesmos valores de configuração novamente.
 
 ## Exibir o valor das definições de configuração
 
@@ -215,13 +215,13 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 onde
 
-- `--scope` é o escopo da configuração (padrão, site, loja). O valor padrão é `default`
-- `--scope-code` é o código de escopo da configuração (código de site ou código de exibição de loja)
-- `path` é o caminho de configuração no formato primeira_parte/segunda_parte/terceira_parte/etc (_obrigatório_)
+- `--scope` é o escopo da configuração (padrão, site, armazenamento). O valor padrão é `default`
+- `--scope-code` é o código de escopo da configuração (código de site ou código de exibição de armazenamento)
+- `path` é o caminho de configuração no formato primeira_parte/segunda_parte/terceira_parte/etc (_necessário_)
 
 >[!INFO]
 >
->A variável `bin/magento config:show` exibe os valores de qualquer [valores codificados](../reference/config-reference-sens.md) como uma série de asteriscos: `******`.
+>O comando `bin/magento config:show` exibe os valores de quaisquer [valores criptografados](../reference/config-reference-sens.md) como uma série de asteriscos: `******`.
 
 ### Exemplos
 
@@ -241,7 +241,7 @@ catalog/category/root_id - 2
 analytics/subscription/enabled - 1
 ```
 
-**Para mostrar todas as configurações salvas para o `base` site**:
+**Para mostrar todas as configurações salvas do site `base`**:
 
 ```bash
 bin/magento config:show --scope=websites --scope-code=base
@@ -254,7 +254,7 @@ web/unsecure/base_url - http://example-for-website.com/
 general/region/state_required - AT,BR,CA
 ```
 
-**Para mostrar o URL base do escopo padrão**:
+**Para mostrar a URL base do escopo padrão**:
 
 ```bash
 bin/magento config:show web/unsecure/base_url
@@ -266,7 +266,7 @@ Resultado:
 web/unsecure/base_url - http://example.com/
 ```
 
-**Para mostrar o URL base da variável `base` site**:
+**Para mostrar a URL base do site `base`**:
 
 ```bash
 bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
@@ -278,7 +278,7 @@ Resultado:
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
-**Para mostrar o URL base da variável `default` loja**:
+**Para mostrar a URL base do `default` armazenamento**:
 
 ```bash
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url
@@ -292,5 +292,5 @@ web/unsecure/base_url - http://example-for-store.com/
 
 >[!INFO]
 >
->O código do escopo pode incluir somente letras (a-z ou A-Z), números (0-9) e sublinhados (_). Além disso, o primeiro caractere deve ser uma letra. Se forem usadas maiúsculas ou minúsculas como camelo ao criar uma visualização de site ou loja, internamente, a correspondência não diferencia maiúsculas de minúsculas para acomodar a substituição das definições de configuração por meio de variáveis de ambiente. Consulte [Usar variáveis de ambiente para substituir as definições de configuração](../reference/override-config-settings.md#environment-variables).
+>O código do escopo pode incluir somente letras (a-z ou A-Z), números (0-9) e sublinhados (_). Além disso, o primeiro caractere deve ser uma letra. Se forem usadas maiúsculas ou minúsculas como camelo ao criar uma visualização de site ou loja, internamente, a correspondência não diferencia maiúsculas de minúsculas para acomodar a substituição das definições de configuração por meio de variáveis de ambiente. Consulte [Usar variáveis de ambiente para substituir as configurações](../reference/override-config-settings.md#environment-variables).
 

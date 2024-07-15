@@ -16,7 +16,8 @@ A maioria das empresas entende que muitas estratégias e processos únicos preci
 
 A maioria das necessidades operacionais pode ser atendida usando diferentes plataformas de software, incluindo ERP, marketplace, ferramentas de business intelligence, software de contabilidade, conjuntos de relatórios e muito mais. O software adicional é selecionado para reduzir o tempo e o esforço da organização, enquanto otimiza a experiência do cliente e as operações de negócios.
 
-Ao selecionar um provedor de terceiros, as empresas devem usar uma abordagem simples e eficaz para a integração que atenda às suas necessidades. Depois de entender as necessidades do cliente, decida sobre um plano detalhado com a ajuda das partes interessadas. Depois de decidir sobre o plano, configure um documento de especificação que defina como o sistema se comunica e que tipo de dados é necessário e passado para terceiros.
+Ao selecionar um provedor de terceiros, as empresas devem usar um
+uma abordagem eficaz e adaptada às suas necessidades. Depois de entender as necessidades do cliente, decida sobre um plano detalhado com a ajuda das partes interessadas. Depois de decidir sobre o plano, configure um documento de especificação que defina como o sistema se comunica e que tipo de dados é necessário e passado para terceiros.
 
 >[!NOTE]
 >

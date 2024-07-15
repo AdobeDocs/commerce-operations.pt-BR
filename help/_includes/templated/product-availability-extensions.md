@@ -82,7 +82,7 @@ ht-degree: 0%
           <td>1.7.2</td>
           <td>1.7.1</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html">Guia do usuário</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html">Guia do Usuário</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Notas de versão</a><br/>
           </td>
       </tr>

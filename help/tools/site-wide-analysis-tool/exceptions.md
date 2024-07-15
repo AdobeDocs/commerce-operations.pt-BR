@@ -1,23 +1,23 @@
 ---
 title: '[!DNL Exceptions]'
-description: Saiba mais sobre o [!UICONTROL Exceptions] na guia [!DNL Site-Wide Analysis Tool], quando usá-lo, seus benefícios e práticas recomendadas.
+description: Saiba mais sobre a guia [!UICONTROL Exceptions] no  [!DNL Site-Wide Analysis Tool], quando usá-la, seus benefícios e práticas recomendadas.
 exl-id: bd793536-b95c-47db-9372-33c00be8e144
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
 # [!DNL Exceptions]
 
-A variável [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] exibe erros/exceções do arquivo de log do site. As exceções são condições anormais que podem ou não ter uma solução conhecida.
+A página [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] exibe erros/exceções do arquivo de log do site. As exceções são condições anormais que podem ou não ter uma solução conhecida.
 
-As informações exibidas nesta página incluem [!UICONTROL Last Detected] (Data/hora em UTC), [!UICONTROL Exception Detail], e [!UICONTROL Count] (número de ocorrências) em que a exceção ocorreu nessa data.
+As informações exibidas nesta página incluem [!UICONTROL Last Detected] (Data/Hora em UTC), [!UICONTROL Exception Detail] e [!UICONTROL Count] (número de ocorrências) que a exceção ocorreu naquela data.
 
 ## Quando usar
 
-Use o [!UICONTROL Exceptions] página para ver os logs de erros/exceções do arquivo de log de projetos do Adobe Commerce. Eles são úteis para solucionar problemas relacionados à criação e implantação de ganchos do Adobe Commerce, serviços em nuvem e ao aplicativo do Adobe Commerce.
+Use a página [!UICONTROL Exceptions] para ver os logs de erros/exceções do arquivo de log de projetos do Adobe Commerce. Eles são úteis para solucionar problemas relacionados à criação e implantação de ganchos do Adobe Commerce, serviços em nuvem e ao aplicativo do Adobe Commerce.
 
 ## Benefícios
 
@@ -27,4 +27,4 @@ Use o [!UICONTROL Exceptions] página para ver os logs de erros/exceções do ar
 
 ## Práticas recomendadas
 
-Monitore o [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] para ver quais exceções ocorrem. Para obter mais informações, consulte [Exibir e gerenciar logs](https://devdocs.magento.com/cloud/project/log-locations.html) na documentação do desenvolvedor.
+Monitore a página [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] para ver quais exceções ocorrem. Para obter mais informações, consulte [Exibir e gerenciar logs](https://devdocs.magento.com/cloud/project/log-locations.html) na documentação do desenvolvedor.

@@ -5,7 +5,7 @@ exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ A transferência de conhecimento ocorre ao longo de todo o projeto e uma abordag
 
 O diagrama a seguir mostra as fases e atividades que seriam incluídas em um resultado de transição bem-sucedido:
 
-![Diagrama das fases do processo de transição](../../assets/playbooks/transition-diagram.svg)
+![Diagrama mostrando fases do processo de transição](../../assets/playbooks/transition-diagram.svg)
 
 >[!NOTE]
 >
@@ -33,5 +33,5 @@ O diagrama a seguir mostra as fases e atividades que seriam incluídas em um res
 Identificar o modelo de suporte correto para sua empresa continuar aprimorando e otimizando sua plataforma — e a prática comercial como um todo — é uma etapa essencial para manter todo o trabalho árduo que foi feito durante o processo de implementação. Com um plano de suporte abrangente e contínuo em vigor, seu site de comércio pode acompanhar as expectativas de seus clientes e você pode continuar atingindo seus objetivos.
 
 Ao implantar o Adobe Commerce, é importante pensar no que incluir em sua estratégia de manutenção e suporte.
-O suporte de especialistas está incluído em uma licença do Adobe Commerce. Para obter mais informações sobre suporte de especialistas e planos de suporte para Adobe, consulte [Planos de suporte para o Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
+O suporte de especialistas está incluído em uma licença do Adobe Commerce. Para obter mais informações sobre suporte de especialistas e planos de suporte para Adobe, consulte [Planos de suporte para Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
 Além dos planos de suporte para Adobe, há termos de suporte para Magento legados. Para entender quais serviços de suporte se aplicam a você, consulte seu contrato para saber qual é o contrato de suporte que você tem ou fale com a equipe de conta da Adobe.

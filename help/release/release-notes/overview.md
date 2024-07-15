@@ -16,7 +16,7 @@ Use a tabela a seguir para localizar notas de versão e informações importante
 
 >[!TIP]
 >
->- Se você é novo no Adobe Commerce, consulte a [arquitetura corporativa](../../implementation-playbook/architecture/enterprise-blueprint.md) e [sobre o Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) para obter orientação.
+>- Se você é novo no Adobe Commerce, consulte os tópicos [arquitetura corporativa](../../implementation-playbook/architecture/enterprise-blueprint.md) e [sobre o Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) para obter orientação.
 >- Para obter informações sobre atualizações, consulte [leitura recomendada](../../upgrade/resources/recommended-reading.md).
 
 <table>
@@ -37,8 +37,8 @@ Use a tabela a seguir para localizar notas de versão e informações importante
           <ul>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/backward-incompatible-changes.html">Alterações incompatíveis com versões anteriores</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html">Patches da nuvem para o Commerce</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcd-release-notes.html">Cloud Docker for Commerce</a></li>
-            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcc-release-notes.html">Componentes da nuvem para o Commerce</a></li>
+            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcd-release-notes.html">Cloud Docker para Commerce</a></li>
+            <li><a href="https://devdocs.magento.com/cloud/release-notes/mcc-release-notes.html">Componentes na nuvem do Commerce</a></li>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html">ece-tools</a></li>
           </ul>
       </td>
@@ -62,7 +62,7 @@ Use a tabela a seguir para localizar notas de versão e informações importante
       <td><strong>Ferramentas</strong>
         <p>Saiba mais sobre as últimas melhorias nas ferramentas projetadas para facilitar a localização e o uso do software Adobe Commerce.</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Malha de API para desenvolvedores do Adobe APP Builder</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Malha de API para desenvolvedores do Adobe App Builder</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Eventos Adobe I/O para Adobe Commerce</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">SDK da interface do usuário do administrador</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Ferramenta Correções de qualidade</a></li>

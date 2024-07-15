@@ -4,8 +4,8 @@ user-guide-description: Saiba como preparar seus negócios operacionalmente para
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 13%
+source-wordcount: '138'
+ht-degree: 14%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 13%
    - [Adobe Commerce](intro/commerce.md)
    - [O que é comércio eletrônico?](intro/ecommerce.md)
    - [Modelo de negócios](intro/business-model.md)
-   - [Operações de comércio](intro/operations.md)
-   - [Recursos de comércio](intro/features.md)
+   - [Operações do Commerce](intro/operations.md)
+   - [Recursos do Commerce](intro/features.md)
 - Liderança {#leadership}
    - [Princípios](leadership/principles.md)
    - [Metas](leadership/goals.md)
@@ -32,7 +32,7 @@ ht-degree: 13%
    - [Integrações de terceiros](solution/integrations.md)
    - [Upgrades, backups e manutenção](solution/maintenance.md)
 - Estratégia {#strategy}
-   - [Estratégia de comércio](strategy/commerce.md)
+   - [Estratégia do Commerce](strategy/commerce.md)
    - [Foco](strategy/focus.md)
    - [Estratégia de conteúdo](strategy/content.md)
    - [Maturidade](strategy/maturity.md)
@@ -74,4 +74,4 @@ ht-degree: 13%
    - [PWA](product/progressive-web-app.md)
 - [Listas de verificação e modelos](checklists-templates/home.md)
 - [Glossário](glossary.md)
-- [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

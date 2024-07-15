@@ -1,11 +1,11 @@
 ---
 title: Visão geral da migração
-description: Saiba como iniciar a migração de dados do Magento 1 para o Magento 2 com o [!DNL Data Migration Tool].
+description: Saiba como iniciar a migração de dados do Magento 1 para o Magento 2 com o  [!DNL Data Migration Tool].
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,15 @@ Antes de iniciar a migração, pare todos os trabalhos de cron do Magento 1.
 
 Durante o processo de migração, siga estas regras gerais para uma migração bem-sucedida:
 
-1. **Não** fazer alterações no Magento 1 Admin, exceto para gerenciamento de ordens (entrega, criação de NFFs e avisos de crédito)
-1. **Não** alterar qualquer código
-1. **Não** faça alterações no administrador e na loja do Magento 2
+1. **Não** fazer alterações no Administrador do Magento 1, exceto para gerenciamento de pedidos (remessa, criação de fatura e avisos de crédito)
+1. **Não** altere qualquer código
+1. **Não** fazer alterações no administrador e na vitrine do Magento 2
 
 >[!TIP]
 >
 >Todas as operações na loja de Magento 1 são permitidas.
 
-## Execute o [!DNL Data Migration Tool]
+## Executar o [!DNL Data Migration Tool]
 
 Esta seção mostra como executar o [!DNL Data Migration Tool] para migrar configurações, dados ou alterações incrementais.
 
@@ -44,7 +44,7 @@ Esta seção mostra como executar o [!DNL Data Migration Tool] para migrar confi
    sudo -u <file system owner>  <command>
    ```
 
-1. Para executar comandos Magento de qualquer diretório, adicione `<magento_root>/bin` ao seu sistema `PATH`.
+1. Para executar comandos Magento de qualquer diretório, adicione `<magento_root>/bin` ao sistema `PATH`.
 
    Como os shells têm sintaxe diferente, consulte uma referência como [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
@@ -70,14 +70,14 @@ bin/magento migrate:<mode> [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 Onde:
 
-- `<mode>` pode ser: [`settings`](settings.md), [`data`](data.md)ou [`delta`](delta.md)
+- `<mode>` pode ser: [`settings`](settings.md), [`data`](data.md), ou [`delta`](delta.md)
 - `[-r|--reset]` é um argumento opcional que inicia a migração desde o início. Você pode usar esse argumento para testar a migração.
 - `[-a|--auto]` é um argumento opcional que impede que a migração pare quando encontrar erros de verificação de integridade.
 - `{<path to config.xml>}` é o caminho absoluto do sistema de arquivos para `config.xml`; este argumento é obrigatório.
 
 >[!NOTE]
 >
->Os logs são gravados na `<magento_root>/var/` diretório.
+>Os logs são gravados no diretório `<magento_root>/var/`.
 
 
 ## Ordem de migração

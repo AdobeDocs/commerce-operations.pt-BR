@@ -16,7 +16,7 @@ A governança do projeto é uma função de supervisão alinhada à estrutura de
 
 O modelo de governança define, documenta e comunica práticas personalizadas e eficazes para fornecer um método abrangente de controle do projeto e fornecer visibilidade periódica em todos os níveis para garantir o sucesso. Ele contém uma estrutura para a tomada de decisões; define funções, responsabilidades e responsabilidades para a realização do projeto; e controla a eficácia. A estrutura de governança é acumulada desde a equipe de execução até a gerência executiva, definindo as atividades, a geração de relatórios, o escalonamento e o fluxo de informações.
 
-![Infográfico de governança de projetos](../../assets/playbooks/project-governance.svg)
+![Infográfico de governança do projeto](../../assets/playbooks/project-governance.svg)
 
 Em vários níveis, as equipes examinam métricas específicas de velocidade e projeto para entender o progresso e tomar medidas corretivas conforme necessário. Essas métricas de nível de velocidade podem incluir a velocidade e o burndown de cada velocidade.
 
@@ -66,7 +66,7 @@ Além das métricas de sprint, também é essencial medir KPIs de desempenho de 
 
 ## Sprint e burndown de lançamento
 
-![Exemplo de gráfico de burndown de sprint e lançamento](../../assets/playbooks/sprint-release-burndown.svg)
+![Exemplo de gráfico de sprint e burndown de lançamento](../../assets/playbooks/sprint-release-burndown.svg)
 
 Desafios ou alterações ocorrem durante a duração de qualquer projeto. Capacitar as pessoas certas em sua organização com a capacidade de rastrear, medir e girar quando um desafio for atingido aumentará a probabilidade de você sair do projeto tendo atingido suas metas e estiver satisfeito com o resultado.
 

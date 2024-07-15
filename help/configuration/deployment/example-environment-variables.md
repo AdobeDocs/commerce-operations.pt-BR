@@ -4,18 +4,18 @@ description: Veja um exemplo de como definir valores compartilhados, específico
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
 
 # Exemplo usando variáveis de ambiente
 
-Esse exemplo mostra como definir valores compartilhados, específicos do sistema e confidenciais no sistema de desenvolvimento e, em seguida, definir todos os valores no sistema de produção usando uma combinação da configuração compartilhada, `config.php`, e variáveis de ambiente PHP.
+Este exemplo mostra como definir valores compartilhados, específicos do sistema e confidenciais no sistema de desenvolvimento e, em seguida, definir todos os valores no sistema de produção usando uma combinação das variáveis de ambiente de configuração compartilhada, `config.php` e PHP.
 
 Essas configurações podem ser compartilhadas entre os sistemas de desenvolvimento e produção:
 
-Número IVA e Nome da Loja de **Lojas** > Configurações > **Configuração** > Geral > **Geral**
+Número VAT e Nome do Repositório de **Lojas** > Configurações > **Configuração** > Geral > **Geral**
 
 Essas configurações são específicas do sistema ou confidenciais, conforme indicado:
 
@@ -41,7 +41,7 @@ Para os fins deste exemplo, pressupomos o seguinte:
 
 - Você usa o controle de origem do Git
 - O sistema de desenvolvimento está disponível em um repositório remoto Git chamado `mconfig`
-- Sua ramificação de trabalho Git é chamada de `m2.2_deploy`
+- Sua ramificação de trabalho Git é chamada `m2.2_deploy`
 
 ## Etapa 1: definir a configuração no sistema de desenvolvimento
 
@@ -49,26 +49,26 @@ Para definir o local padrão e as unidades de peso no sistema de desenvolvimento
 
 1. Faça logon no Administrador.
 1. Clique em **Lojas** > Configurações > **Configuração** > Geral > **Geral**.
-1. Se você tiver mais de um site disponível, use o **Exibição da loja** no canto superior esquerdo para alternar para um site diferente, como mostra a figura a seguir.
+1. Se você tiver mais de um site disponível, use a lista **Exibição da Loja** no canto superior esquerdo para alternar para um site diferente, como mostra a figura a seguir.
 
    ![Alternar sites](../../assets/configuration/split-deploy-switch-website.png)
 
-1. No painel direito, expanda **Armazenar informações**.
-1. Se necessário, limpe a **Usar padrão** ao lado da caixa de seleção **Número IVA** campo.
+1. No painel direito, expanda **Armazenar Informações**.
+1. Se necessário, desmarque a caixa de seleção **Usar padrão** ao lado do campo **Número VAT**.
 1. Insira um número no campo (por exemplo, `12345`).
-1. No **Nome do armazenamento** insira um valor (como `My Store`).
+1. No campo **Nome do Repositório**, insira um valor (como `My Store`).
 1. Clique em **Salvar configuração**.
-1. Use o **Exibição da loja** para selecionar o **Configuração padrão** como mostra a figura a seguir.
+1. Use a lista **Exibição de Loja** para selecionar a **Configuração Padrão**, conforme mostrado na figura a seguir.
 
    ![Alternar para a configuração padrão](../../assets/configuration/split-deploy-default-config.png)
 
 1. Na navegação à esquerda, em Geral, clique em **Contatos**.
-1. Limpe a **Usar padrão** ao lado da caixa de seleção **Enviar Emails Para** campo.
+1. Desmarque a caixa de seleção **Usar padrão** ao lado do campo **Enviar emails para**.
 1. Insira um endereço de email no campo.
 1. Clique em **Salvar configuração**.
-1. No painel esquerdo, clique em Clientes > **Configuração do cliente**.
-1. No painel direito, expanda **Criar novas opções de conta**.
-1. Limpe a **Usar valor do sistema** ao lado da caixa de seleção **Domínio de email padrão** campo.
+1. No painel esquerdo, clique em Clientes > **Configuração do Cliente**.
+1. No painel direito, expanda **Criar Novas Opções de Conta**.
+1. Desmarque a caixa de seleção **Usar valor do sistema** ao lado do campo **Domínio de email padrão**.
 1. Insira um nome de domínio no campo.
 1. Clique em **Salvar configuração**.
 1. Se solicitado, limpe o cache.
@@ -79,7 +79,7 @@ Agora que você alterou a configuração no Admin, grave a configuração compar
 
 {{$include /help/_includes/config-save-config.md}}
 
-Observe que, mesmo que `app/etc/env.php` (a configuração específica do sistema) foi atualizada, não faça check-in dela no controle de origem. Você criará as mesmas configurações no sistema de produção posteriormente neste procedimento.
+Observe que mesmo que `app/etc/env.php` (a configuração específica do sistema) tenha sido atualizada, não faça o check-in dela no controle de origem. Você criará as mesmas configurações no sistema de produção posteriormente neste procedimento.
 
 ## Etapa 3: atualizar o sistema de compilação e gerar arquivos
 
@@ -102,7 +102,7 @@ Para definir as configurações confidenciais e específicas do sistema usando v
 
   Se você seguiu as instruções na Etapa 1, o escopo para Enviar emails para é global (ou seja, o escopo Configuração padrão) e o escopo para Domínio de email padrão é site.
 
-  Você deve saber o código do site para definir o valor de configuração do Domínio de email padrão. Consulte [Usar variáveis de ambiente para substituir as definições de configuração](../reference/override-config-settings.md#environment-variables) para obter mais informações sobre como encontrá-lo.
+  Você deve saber o código do site para definir o valor de configuração do Domínio de email padrão. Consulte [Usar variáveis de ambiente para substituir as definições de configuração](../reference/override-config-settings.md#environment-variables) para obter mais informações sobre como encontrá-las.
 
 - Caminho de configuração para cada configuração
 
@@ -113,7 +113,7 @@ Para definir as configurações confidenciais e específicas do sistema usando v
   | Enviar Emails Para | `contact/email/recipient_email` |
   | Domínio de email padrão | `customer/create_account/email_domain` |
 
-  Você pode encontrar todos os caminhos de configuração confidenciais e específicos do sistema em [Referência de caminhos de configuração sensíveis e específicos do sistema](../reference/config-reference-sens.md).
+  Você pode encontrar todos os caminhos de configuração sensíveis e específicos do sistema na [Referência de caminhos de configuração sensíveis e específicos do sistema](../reference/config-reference-sens.md).
 
 #### Converter caminhos de configuração em nomes de variáveis
 
@@ -123,9 +123,9 @@ Conforme discutido em [Usar variáveis de ambiente para substituir as definiçõ
 <SCOPE>__<SYSTEM__VARIABLE__NAME>
 ```
 
-O valor de `<SCOPE>` é `CONFIG__DEFAULT__` para escopo global ou `CONFIG__WEBSITES__<WEBSITE CODE>` para escopo de site.
+O valor de `<SCOPE>` é `CONFIG__DEFAULT__` para o escopo global ou `CONFIG__WEBSITES__<WEBSITE CODE>` para o escopo de site.
 
-Para encontrar o valor de `<SYSTEM__VARIABLE__NAME>`, substitua cada `/` caractere no caminho de configuração com dois sublinhados.
+Para encontrar o valor de `<SYSTEM__VARIABLE__NAME>`, substitua cada `/` caractere no caminho de configuração por dois sublinhados.
 
 Os nomes das variáveis são os seguintes:
 
@@ -136,11 +136,11 @@ Os nomes das variáveis são os seguintes:
 
 >[!INFO]
 >
->A tabela anterior tem um código de site de exemplo, `BASE`, para a definição de configuração Domínio de email padrão. Substituir `BASE` com o código de site apropriado para sua loja.
+>A tabela anterior tem um código de site de exemplo, `BASE`, para a definição de configuração Domínio de Email Padrão. Substitua `BASE` pelo código de site apropriado para sua loja.
 
 #### Definir as variáveis usando variáveis de ambiente
 
-É possível definir os valores da variável nas `index.php` usando o seguinte formato:
+Você pode definir os valores da variável no `index.php` usando o seguinte formato:
 
 ```php
 $_ENV['VARIABLE'] = 'value';
@@ -149,15 +149,15 @@ $_ENV['VARIABLE'] = 'value';
 **Para definir valores de variáveis**:
 
 1. Faça logon no sistema de produção como proprietário do sistema de arquivos ou alterne para ele.
-1. Abertura `<Commerce root dir>/pub/index.php` em um editor de texto.
-1. Em qualquer lugar no `index.php`, defina valores para as variáveis semelhantes ao seguinte:
+1. Abra `<Commerce root dir>/pub/index.php` em um editor de texto.
+1. Em qualquer lugar em `index.php`, defina valores para as variáveis semelhantes ao seguinte:
 
    ```php
    $_ENV['CONFIG__DEFAULT__CONTACT__EMAIL__RECIPIENT_EMAIL'] = 'myname@example.com';
    $_ENV['CONFIG__WEBSITES__BASE__CUSTOMER__CREATE_ACCOUNT__EMAIL_DOMAIN'] = 'magento.com';
    ```
 
-1. Salvar as alterações em `pub/index.php` e saia do editor de texto.
+1. Salve as alterações em `pub/index.php` e saia do editor de texto.
 1. Prossiga para a próxima seção.
 
 ### Atualizar as configurações compartilhadas
@@ -170,11 +170,11 @@ Esta seção discute como obter todas as alterações feitas nos sistemas de des
 
 Esta seção discute como você pode verificar as configurações no Administrador do sistema de produção.
 
-**Para verificar as definições de configuração**:
+**Para verificar as configurações**:
 
 1. Faça logon no Administrador do sistema de produção.
 1. Clique em **Lojas** > Configurações > **Configuração** > Geral > **Geral**.
-1. Use o **Exibição da loja** no canto superior esquerdo para alternar para um site diferente.
+1. Use a lista **Exibição de Loja** no canto superior esquerdo para alternar para um site diferente.
 
    As opções de configuração compartilhada definidas no sistema de desenvolvimento são exibidas de forma semelhante às seguintes.
 
@@ -182,18 +182,18 @@ Esta seção discute como você pode verificar as configurações no Administrad
 
    >[!INFO]
    >
-   >A variável **Nome do armazenamento** O campo é editável no escopo do site, mas se você alternar para o escopo Configuração padrão, ele não será editável. Esse é o resultado de como você define as opções no sistema de desenvolvimento. O valor de **Número IVA** não é editável no escopo do site.
+   >O campo **Nome da Loja** é editável no escopo do site, mas se você alternar para o escopo de Configuração Padrão, ele não será editável. Esse é o resultado de como você define as opções no sistema de desenvolvimento. O valor de **Número de IVA** não é editável no escopo do site.
 
 1. Se ainda não tiver feito isso, alterne para o Escopo de configuração padrão.
 1. Na navegação à esquerda, em Geral, clique em **Contatos**.
 
-   A variável **Enviar Emails Para** não é editável, como mostra a figura a seguir. Essa é uma configuração delicada.
+   O campo **Enviar Emails para** não é editável, como mostra a figura a seguir. Essa é uma configuração delicada.
 
    ![Verificar configurações no sistema de produção](../../assets/configuration/split-deploy-verify-contacts.png)
 
-1. No painel esquerdo, clique em Clientes > **Configuração do cliente**.
-1. No painel direito, expanda **Criar novas opções de conta**.
+1. No painel esquerdo, clique em Clientes > **Configuração do Cliente**.
+1. No painel direito, expanda **Criar Novas Opções de Conta**.
 
-   O valor de **Domínio de email padrão** é exibido da seguinte maneira: Esta é uma configuração específica do sistema.
+   O valor do campo **Domínio de email padrão** é exibido da seguinte maneira: Esta é uma configuração específica do sistema.
 
    ![Verificar configurações no sistema de produção](../../assets/configuration/split-default-domain.png)

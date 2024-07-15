@@ -4,7 +4,7 @@ description: Avalie em que estágio está sua empresa com base nesse modelo de m
 exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Considere um modelo de maturidade como um relatório robusto que ajuda a determi
 
 O diagrama a seguir resume as diferentes necessidades entre os níveis de maturidade:
 
-![Diagrama das necessidades entre níveis de maturidade](../../assets/playbooks/maturity-levels.png)
+![Necessidades no diagrama de níveis de maturidade](../../assets/playbooks/maturity-levels.png)
 
 ## Níveis de maturidade
 

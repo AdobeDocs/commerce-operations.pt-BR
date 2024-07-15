@@ -4,7 +4,7 @@ description: Alinhe sua infraestrutura Adobe Commerce e Adobe Experience Manager
 exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Supondo que haja um balanceador de carga de aplicativo do AWS na infraestrutura 
 
    ![Captura de tela mostrando as verificações de integridade do balanceador de carga AEM](../assets/commerce-at-scale/health-checks.png)
 
-1. A adesão ao grupo de destino do Dispatcher pode ser desativada e o algoritmo de balanceamento de carga Round Robin pode ser usado. Isso pressupõe que não haja nenhuma funcionalidade específica do AEM ou sessões de usuário do AEM usadas que exijam a definição da adesão à sessão. Ele pressupõe que o logon do usuário e o gerenciamento de sessão estejam somente no Adobe Commerce por meio do GraphQL.
+1. A aderência do grupo de destino do Dispatcher pode ser desativada e o algoritmo de balanceamento de carga Round Robin pode ser usado. Isso pressupõe que não haja nenhuma funcionalidade específica do AEM ou sessões de usuário do AEM usadas que exijam a definição da adesão à sessão. Ele pressupõe que o logon do usuário e o gerenciamento de sessão estejam somente no Adobe Commerce por meio do GraphQL.
 
    ![Captura de tela mostrando atributos de adesão à sessão AEM](../assets/commerce-at-scale/session-stickiness.png)
 
@@ -49,8 +49,8 @@ O tempo limite da conexão http e o tempo limite do soquete http devem ser defin
 
 A imagem a seguir mostra o Magento CIF GraphQL Client Configuration Fatory. As configurações mostradas aqui são apenas exemplos e precisam ser ajustadas caso a caso:
 
-![Captura de tela das configurações da estrutura de integração do Commerce](../assets/commerce-at-scale/cif-config.png)
+![Captura de tela das configurações de Commerce integration framework](../assets/commerce-at-scale/cif-config.png)
 
 As imagens a seguir mostram as configurações de back-end do Fastly. As configurações mostradas aqui são apenas exemplos e precisam ser ajustadas caso a caso:
 
-![Captura de tela das configurações de administrador do Commerce para o Fastly](../assets/commerce-at-scale/cif-config-advanced.png)
+![Captura de tela das definições de configuração do administrador do Commerce para o Fastly](../assets/commerce-at-scale/cif-config-advanced.png)

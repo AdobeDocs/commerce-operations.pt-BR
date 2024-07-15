@@ -23,4 +23,4 @@ Se a atualização do módulo falhar, mensagens semelhantes às seguintes serão
 
 No exemplo anterior, não há versão de componente para a qual reverter. Entre em contato com o fornecedor do componente ou tente resolver o problema sozinho.
 
-Enquanto isso, você pode reverter para uma versão anterior clicando em **Reversão**, que recupera os dados mesmo que você não tenha feito backup anteriormente.
+Enquanto isso, você pode reverter para uma versão anterior clicando em **Reverter**, que recupera os dados mesmo que não tenha feito backup anteriormente.

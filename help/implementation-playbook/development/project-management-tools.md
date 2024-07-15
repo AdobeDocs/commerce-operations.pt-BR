@@ -5,7 +5,7 @@ exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
 feature: System
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ A tabela a seguir inclui ferramentas recomendadas para o gerenciamento de projet
 | Gerenciamento de tíquetes | Atlassian JIRA |
 | Gerenciamento de SLA | Atlassian JIRA Service Management |
 | Gestão de documentos | Confluência Atlassiana |
-| Gerenciamento de código-fonte | Atlassian Bitbucket, GitHub |
+| Gerenciamento de código Source | Atlassian Bitbucket, GitHub |
 | Integração contínua (CI)/entrega contínua (CD) | Jenkins |
 | Comunicação | Email, Microsoft Teams, Telefone, Slack |
 | Encontro | Zoom, Microsoft Teams |
@@ -43,7 +43,7 @@ O Jira é um sistema de rastreamento e gerenciamento de tíquetes (incluindo ger
 - Fácil visualização e movimentação de tíquetes com o Agile/Scrum
 - Informações transparentes entre a equipe do cliente e a equipe de desenvolvimento
 
-## Gerenciamento de código-fonte
+## Gerenciamento de código Source
 
 O Bitbucket é mais do que apenas o gerenciamento de código Git. O Bitbucket oferece às equipes um local para planejar projetos, colaborar em código, testar e implantar. Usando o Bitbucket, você pode aprovar revisões de código com mais eficiência com solicitações de pull. Você também pode criar uma lista de verificação mesclada com aprovadores designados e manter discussões diretamente no código-fonte com comentários em linha.
 

@@ -18,16 +18,16 @@ A partir das versões 2.4.4, 2.4.3-p2 e 2.3.7-p3, o Adobe Commerce é compatíve
 
 ## Caminho de migração
 
-As etapas para migrar para o OpenSearch são simples e seguem as etapas para configuração de Elasticsearch. Essas etapas pressupõem que o Adobe Commerce é o único aplicativo que usa o mecanismo de pesquisa. Nos casos em que vários aplicativos usarem o mecanismo de pesquisa, siga o guia de migração oficial [Migração do Elasticsearch de código aberto para OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
+As etapas para migrar para o OpenSearch são simples e seguem as etapas para configuração de Elasticsearch. Essas etapas pressupõem que o Adobe Commerce é o único aplicativo que usa o mecanismo de pesquisa. Nos casos em que vários aplicativos usam o mecanismo de pesquisa, siga o guia de migração oficial [Migração do Elasticsearch de código aberto para OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
 
 1. Certifique-se de que sua instalação atenda aos [pré-requisitos do mecanismo de pesquisa](../../installation/prerequisites/search-engine/overview.md).
 
-1. Colocar o site em [Modo de manutenção](../../installation/tutorials/maintenance-mode.md).
+1. Coloque o site em [Modo de Manutenção](../../installation/tutorials/maintenance-mode.md).
 
 1. Desinstale opcionalmente o Elasticsearch.
 
-1. [Instalar o OpenSearch](https://opensearch.org/docs/latest/opensearch/install/important-settings/).
+1. [Instalar OpenSearch](https://opensearch.org/docs/latest/opensearch/install/important-settings/).
 
-1. [Configurar o mecanismo de pesquisa](../../configuration/search/configure-search-engine.md) e executar tarefas relacionadas, como limpar o cache e reindexar o índice de pesquisa do catálogo.
+1. [Configure o mecanismo de pesquisa](../../configuration/search/configure-search-engine.md) e execute tarefas relacionadas, como a liberação do cache e a reindexação do índice de pesquisa do catálogo.
 
 Não são necessárias mais alterações no valor de configuração.

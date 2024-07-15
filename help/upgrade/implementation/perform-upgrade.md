@@ -12,25 +12,25 @@ ht-degree: 0%
 
 # Executar uma atualização
 
-Você pode atualizar _no local_ implantações do aplicativo Adobe Commerce a partir da linha de comando, se você instalou o software ao:
+Você pode atualizar _implantações locais_ do aplicativo Adobe Commerce a partir da linha de comando se tiver instalado o software por:
 
-- Baixando o metapackage do Composer usando o `composer create-project` comando.
+- Baixando o metapackage do Compositor usando o comando `composer create-project`.
 - Instalando o arquivo compactado.
 
 >[!NOTE]
 >
->- Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Atualizar versão do Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) no Guia da nuvem.
+>- Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Atualizar versão do Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) no Guia da Nuvem.
 >- Não use esse método para atualizar se você clonou o repositório GitHub. Consulte [Atualizar uma instalação baseada em Git](../developer/git-installs.md).
 
-As instruções a seguir mostram como atualizar usando o gerenciador de pacotes do Composer. O Adobe Commerce 2.4.2 introduziu o suporte para o Composer 2. Se você estiver tentando atualizar do &lt;2.4.1, é necessário primeiro atualizar para uma versão compatível com o Composer 2 (por exemplo, 2.4.2) usando o Composer 1 _antes_ atualização para o Composer 2 para atualizações >2.4.2. Além disso, você deve executar um [versão compatível](../../installation/system-requirements.md) do PHP.
+As instruções a seguir mostram como atualizar usando o gerenciador de pacotes do Composer. O Adobe Commerce 2.4.2 introduziu o suporte para o Composer 2. Se você estiver tentando atualizar do &lt;2.4.1, é necessário primeiro atualizar para uma versão que seja compatível com o Composer 2 (por exemplo, 2.4.2) usando o Composer 1 _antes_ de atualizar para o Composer 2 para atualizações >2.4.2. Além disso, você deve estar executando uma [versão suportada](../../installation/system-requirements.md) do PHP.
 
 >[!WARNING]
 >
->O procedimento para atualizar o Adobe Commerce foi alterado. Você deve instalar uma nova versão do `magento/composer-root-update-plugin` pacote (consulte [pré-requisitos](../prepare/prerequisites.md)). Além disso, os comandos para atualização foram alterados de `composer require magento/<package_name>` para `composer require-commerce magento/<package_name>`.
+>O procedimento para atualizar o Adobe Commerce foi alterado. Você deve instalar uma nova versão do pacote `magento/composer-root-update-plugin` (consulte [pré-requisitos](../prepare/prerequisites.md)). Além disso, os comandos para atualização foram alterados de `composer require magento/<package_name>` para `composer require-commerce magento/<package_name>`.
 
 ## Antes de começar
 
-Você deve concluir o [pré-requisitos de atualização](../prepare/prerequisites.md) para preparar seu ambiente antes de iniciar o processo de atualização.
+Você deve concluir os [pré-requisitos de atualização](../prepare/prerequisites.md) para preparar seu ambiente antes de iniciar o processo de atualização.
 
 ## Gerenciar pacotes
 
@@ -44,7 +44,7 @@ Você deve concluir o [pré-requisitos de atualização](../prepare/prerequisite
    bin/magento maintenance:enable
    ```
 
-   Consulte [Ativar ou desativar modo de manutenção](../../installation/tutorials/maintenance-mode.md) para obter opções adicionais. Como opção, você pode criar um [página de modo de manutenção personalizado](../troubleshooting/maintenance-mode-options.md).
+   Consulte [Habilitar ou desabilitar o modo de manutenção](../../installation/tutorials/maintenance-mode.md) para obter opções adicionais. Como opção, você pode criar uma [página de modo de manutenção personalizado](../troubleshooting/maintenance-mode-options.md).
 
 1. Iniciar o processo de atualização enquanto processos assíncronos, como consumidores de fila de mensagens, estiverem em execução pode causar corrupção de dados. Para evitar a corrupção de dados, desative todos os trabalhos cron.
 
@@ -66,9 +66,9 @@ Você deve concluir o [pré-requisitos de atualização](../prepare/prerequisite
    bin/magento cron:run --group=consumers
    ```
 
-   Aguarde a conclusão do trabalho cron. É possível monitorar o status do processo com um visualizador de processos ou executando o `ps aux | grep 'bin/magento queue'` comando várias vezes até que todos os processos sejam concluídos.
+   Aguarde a conclusão do trabalho cron. Você pode monitorar o status do trabalho com um visualizador de processos ou executando o comando `ps aux | grep 'bin/magento queue'` várias vezes até que todos os processos sejam concluídos.
 
-1. Crie um backup do `composer.json` arquivo.
+1. Crie um backup do arquivo `composer.json`.
 
    ```bash
    cp composer.json composer.json.bak
@@ -100,7 +100,7 @@ Você deve concluir o [pré-requisitos de atualização](../prepare/prerequisite
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
      ```
 
-1. Atualize sua instância usando o seguinte `composer require-commerce` sintaxe do comando:
+1. Atualize sua instância usando a seguinte sintaxe de comando `composer require-commerce`:
 
    ```bash
    composer require-commerce magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
@@ -112,15 +112,15 @@ Você deve concluir o [pré-requisitos de atualização](../prepare/prerequisite
 
    - `<version>` —(Obrigatório) A versão do Adobe Commerce para a qual você está atualizando. Por exemplo, `2.4.3`.
 
-   - `--no-update` — (Obrigatório) Desabilita a atualização automática das dependências.
+   - `--no-update` —(Obrigatório) Desabilita a atualização automática das dependências.
 
-   - `--interactive-root-conflicts` —(Opcional) Permite exibir e atualizar interativamente quaisquer valores desatualizados de versões anteriores ou quaisquer valores personalizados que não correspondam à versão para a qual você está atualizando.
+   - `--interactive-root-conflicts` —(Opcional) Permite exibir e atualizar interativamente quaisquer valores desatualizados das versões anteriores ou quaisquer valores personalizados que não correspondam à versão para a qual você está atualizando.
 
-   - `--force-root-updates` —(Opcional) Substitui todos os valores personalizados conflitantes pelos valores esperados do Commerce.
+   - `--force-root-updates` —(Opcional) Substitui todos os valores personalizados conflitantes pelos valores Commerce esperados.
 
    - `--help` —(Opcional) Fornece detalhes de uso sobre o plug-in.
 
-   Se nenhuma delas `--interactive-root-conflicts` nem `--force-root-updates` forem especificados, o comando manterá os valores existentes que estiverem em conflito e exibirá uma mensagem de aviso. Para saber mais sobre o plug-in, consulte a [LEIAME de uso do plug-in](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
+   Se nem `--interactive-root-conflicts` nem `--force-root-updates` forem especificados, o comando manterá os valores existentes que estão em conflito e exibirá uma mensagem de aviso. Para saber mais sobre o plug-in, consulte o [README de Uso do Plug-in](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
 
 1. Atualize as dependências.
 
@@ -146,7 +146,7 @@ composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 v
 
 ### Exemplo - Correção de qualidade
 
-Os remendos de qualidade contêm principalmente _e_ correções de segurança. No entanto, às vezes eles podem conter recursos novos e compatíveis com versões anteriores. Use o Composer para baixar um patch de qualidade.
+Os patches de qualidade contêm principalmente correções de segurança _e_ funcionais. No entanto, às vezes eles podem conter recursos novos e compatíveis com versões anteriores. Use o Composer para baixar um patch de qualidade.
 
 _Adobe Commerce_:
 
@@ -178,11 +178,11 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 ## Atualizar metadados
 
-1. Atualize o `"name"`, `"version"`, e `"description"` campos no `composer.json` conforme necessário.
+1. Atualize os campos `"name"`, `"version"` e `"description"` no arquivo `composer.json`, conforme necessário.
 
    >[!NOTE]
    >
-   >Atualização dos metadados no `composer.json` O arquivo é totalmente superficial, não funcional.
+   >A atualização dos metadados no arquivo `composer.json` é totalmente superficial, não funcional.
 
 1. Aplique atualizações.
 
@@ -190,7 +190,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
    composer update
    ```
 
-1. Limpe a `var/` e `generated/` subdiretórios:
+1. Limpar os subdiretórios `var/` e `generated/`:
 
    ```bash
    rm -rf var/cache/*
@@ -220,7 +220,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
    bin/magento maintenance:disable
    ```
 
-1. _(Opcional)_ Reinicie o Varnish.
+1. _(Opcional)_ Reiniciar Verniz.
 
    Se você usar o Varnish para armazenamento em cache de página, reinicie-o:
 
@@ -232,9 +232,9 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 Para verificar se a atualização foi bem-sucedida, abra o URL da loja em um navegador da web. Se a atualização não tiver sido bem-sucedida, a loja não será carregada corretamente.
 
-Se o aplicativo falhar com uma  `We're sorry, an error has occurred while generating this email.` erro:
+Se o aplicativo falhar com um erro `We're sorry, an error has occurred while generating this email.`:
 
-1. Redefinir [propriedade e permissões do sistema de arquivos](../../installation/prerequisites/file-system/configure-permissions.md) como usuário com `root` privilégios.
+1. Redefina [a propriedade e as permissões do sistema de arquivos](../../installation/prerequisites/file-system/configure-permissions.md) como um usuário com `root` privilégios.
 1. Limpe os seguintes diretórios:
    - `var/cache/`
    - `var/page_cache/`

@@ -4,7 +4,7 @@ description: Saiba como usar variáveis de ambiente para substituir as configura
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 Este tópico discute como derivar um nome de variável de ambiente conhecendo um caminho de configuração. Você pode substituir as definições de configuração do Adobe Commerce usando variáveis de ambiente. Por exemplo, você pode substituir o valor do URL ativo de um processador de pagamento em seu sistema de produção.
 
-É possível substituir o valor de _qualquer_ configuração usando variáveis de ambiente; no entanto, o Adobe recomenda que você mantenha configurações consistentes usando o arquivo de configuração compartilhado, `config.php`e o arquivo de configuração específico do sistema, `env.php`, conforme discutido em [Visão geral da implantação](../deployment/overview.md).
+Você pode substituir o valor de _qualquer_ definição de configuração usando variáveis de ambiente; no entanto, o Adobe recomenda que você mantenha configurações consistentes usando o arquivo de configuração compartilhado, `config.php`, e o arquivo de configuração específico do sistema, `env.php`, conforme discutido em [Visão geral da implantação](../deployment/overview.md).
 
 >[!TIP]
 >
->Confira o [Configurar ambientes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) tópico no _Guia do Commerce na infraestrutura em nuvem_.
+>Confira o tópico [Configurar ambientes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) no _guia do Commerce sobre a infraestrutura na nuvem_.
 
 ## Variáveis de ambiente
 
@@ -25,12 +25,12 @@ Um nome de variável de ambiente consiste em seu escopo seguido por seu caminho 
 
 É possível usar variáveis para qualquer um dos seguintes:
 
-- [Valores sensíveis](config-reference-sens.md) deve ser definido usando as variáveis de ambiente ou a variável [`magento config:sensitive:set`](../cli/set-configuration-values.md) comando.
+- [Valores confidenciais](config-reference-sens.md) devem ser definidos usando variáveis de ambiente ou o comando [`magento config:sensitive:set`](../cli/set-configuration-values.md).
 - Os valores específicos do sistema devem ser definidos usando:
 
    - Variáveis de ambiente
-   - A variável [`magento config:set`](../cli/set-configuration-values.md) comando
-   - O Administrador seguido pela [`magento app:config:dump` comando](../cli/export-configuration.md)
+   - O comando [`magento config:set`](../cli/set-configuration-values.md)
+   - O Administrador seguido pelo comando [`magento app:config:dump` ](../cli/export-configuration.md)
 
 Os caminhos de configuração podem ser encontrados em:
 
@@ -47,7 +47,7 @@ O formato geral dos nomes das variáveis de configurações do sistema é o segu
 
 `<SCOPE>` pode ser:
 
-- Escopo global (ou seja, a configuração global para _all_ escopos)
+- Escopo global (isto é, a configuração global de _todos_ escopos)
 
   As variáveis de escopo globais têm o seguinte formato:
 
@@ -62,16 +62,16 @@ O formato geral dos nomes das variáveis de configurações do sistema é o segu
   Para obter mais informações sobre escopos, consulte:
 
    - [Etapa 1: Localizar o valor do escopo de exibição do site ou da loja](#step-1-find-the-website-or-store-view-scope-value)
-   - [Tópico do Guia do usuário do Commerce sobre escopo](https://docs.magento.com/user-guide/configuration/scope.html)
+   - [Tópico do Guia do Usuário do Commerce sobre o escopo](https://docs.magento.com/user-guide/configuration/scope.html)
    - [Referência rápida do escopo](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
 
 `<SYSTEM__VARIABLE__NAME>` é o caminho de configuração com caracteres de sublinhado duplo substituído por `/`. Para obter mais informações, consulte [Etapa 2: definir variáveis do sistema](#step-2-set-global-website-or-store-view-variables).
 
 ### Formato da variável
 
-`<SCOPE>` é separado de `<SYSTEM__VARIABLE__NAME>` por dois caracteres sublinhados.
+`<SCOPE>` está separado de `<SYSTEM__VARIABLE__NAME>` por dois caracteres sublinhados.
 
-`<SYSTEM__VARIABLE__NAME>` é derivado de uma configuração do _caminho de configuração_, que é uma `/` string delimitada que identifica exclusivamente uma configuração específica. Substituir cada `/` caractere no caminho de configuração com dois caracteres sublinhados para criar a variável de sistema.
+`<SYSTEM__VARIABLE__NAME>` é derivado do _caminho de configuração_ de uma definição de configuração, que é uma cadeia de caracteres delimitada por `/` que identifica exclusivamente uma configuração específica. Substitua cada `/` caractere no caminho de configuração por dois caracteres sublinhados para criar a variável de sistema.
 
 Se um caminho de configuração contiver um caractere de sublinhado, ele permanecerá na variável.
 
@@ -84,12 +84,12 @@ Uma lista completa de caminhos de configuração pode ser encontrada em:
 
 ## Etapa 1: Localizar o valor do escopo de exibição do site ou da loja
 
-Esta seção discute como você pode encontrar e definir valores de configuração do sistema por _escopo_ (visualização de loja ou site). Para definir variáveis de escopo globais, consulte [Etapa 2: definir variáveis de exibição globais, de site ou de loja](#step-2-set-global-website-or-store-view-variables).
+Esta seção discute como você pode encontrar e definir valores de configuração do sistema por _escopo_ (exibição de loja ou site). Para definir variáveis de escopo globais, consulte [Etapa 2: Definir variáveis de exibição globais, de site ou de repositório](#step-2-set-global-website-or-store-view-variables).
 
-Os valores de escopo vêm da variável `store`, `store_group`, e `store_website` tabelas.
+Os valores de escopo vêm das tabelas `store`, `store_group` e `store_website`.
 
-- A variável `store` a tabela especifica nomes e códigos de exibição da loja
-- A variável `store_website` a tabela especifica nomes e códigos de sites
+- A tabela `store` especifica nomes e códigos de exibição de armazenamento
+- A tabela `store_website` especifica nomes e códigos de sites
 
 Você também pode encontrar os valores do código usando o Admin.
 
@@ -99,14 +99,14 @@ Como ler a tabela:
 
   Os valores antes da vírgula são caminhos na navegação de Admin. Os valores depois da vírgula são opções no painel direito.
 
-- `Variable name` column é o nome da variável de ambiente correspondente.
+- A coluna `Variable name` é o nome da variável de ambiente correspondente.
 
   Você tem a opção de especificar valores do sistema para esses parâmetros de configuração como variáveis de ambiente, se desejar.
 
    - O nome inteiro da variável é sempre ALL CAPS
    - Iniciar um nome de variável com `CONFIG__` (observe dois caracteres sublinhados)
-   - Você pode encontrar o `<STORE_VIEW_CODE>` ou `<WEBSITE_CODE>` parte de um nome de variável no banco de dados de Administração ou Comércio, conforme indicado nas seções a seguir.
-   - Você pode encontrar `<SYSTEM__VARIABLE__NAME>` conforme discutido em [Etapa 2: definir variáveis de exibição globais, de site ou de loja](#step-2-set-global-website-or-store-view-variables).
+   - Você pode encontrar a parte `<STORE_VIEW_CODE>` ou `<WEBSITE_CODE>` de um nome de variável no banco de dados de Administração ou Commerce, conforme indicado nas seções a seguir.
+   - Você pode encontrar `<SYSTEM__VARIABLE__NAME>` conforme discutido em [Etapa 2: definir variáveis de exibição globais, de site ou de repositório](#step-2-set-global-website-or-store-view-variables).
 
 ### Localizar um escopo de exibição de site ou loja no Administrador
 
@@ -127,8 +127,8 @@ Por exemplo, para localizar um site ou um valor de escopo de exibição de loja 
 
    ![Localizar um código de site](../../assets/configuration/website-code.png)
 
-1. O nome do escopo é exibido no campo **[!UICONTROL Code]** campo.
-1. Continuar com [Etapa 2: definir variáveis de exibição globais, de site ou de loja](#step-2-set-global-website-or-store-view-variables).
+1. O nome do escopo é exibido no campo **[!UICONTROL Code]**.
+1. Continuar com [Etapa 2: definir variáveis de exibição globais, de site ou de repositório](#step-2-set-global-website-or-store-view-variables).
 
 ### Localizar um escopo de exibição de site ou loja no banco de dados
 
@@ -141,7 +141,7 @@ Para obter esses valores do banco de dados:
    mysql -u <database-username> -p
    ```
 
-1. No `mysql>` digite os seguintes comandos na ordem mostrada:
+1. No prompt `mysql>`, digite os seguintes comandos na ordem mostrada:
 
    ```shell
    use <database-name>;
@@ -167,7 +167,7 @@ Para obter esses valores do banco de dados:
    +------------+-------+--------------+------------+------------------+------------+
    ```
 
-1. Use o valor do `code` como o nome do escopo, não a `name` valor.
+1. Use o valor da coluna `code` como o nome do escopo, não o valor `name`.
 
    Por exemplo, para definir uma variável de configuração para o Site de teste, use o seguinte formato:
 
@@ -181,9 +181,9 @@ Para obter esses valores do banco de dados:
 
 Esta seção discute como definir variáveis do sistema.
 
-- Para definir valores para o escopo global (ou seja, todos os sites, lojas e visualizações de loja), inicie o nome da variável com `CONFIG__DEFAULT__`.
+- Para definir valores para o escopo global (ou seja, todos os sites, lojas e exibições de loja), inicie o nome da variável com `CONFIG__DEFAULT__`.
 
-- Para definir um valor para uma exibição de loja ou site específico, inicie o nome da variável, conforme discutido em [Etapa 1: encontrar o valor do escopo](#step-1-find-the-website-or-store-view-scope-value):
+- Para definir um valor para uma exibição de loja ou site específico, inicie o nome da variável conforme discutido em [Etapa 1: Localize o valor do escopo](#step-1-find-the-website-or-store-view-scope-value):
 
    - `CONFIG__WEBSITES`
    - `CONFIG__STORES`
@@ -194,13 +194,13 @@ Esta seção discute como definir variáveis do sistema.
 
 A tabela a seguir mostra alguns exemplos de variáveis.
 
-| Descrição | Caminho no Administrador (omissão) **Lojas** > **Configurações** > **Configuração**) | Nome da variável |
+| Descrição | Caminho no Administrador (omitindo **Lojas** > **Configurações** > **Configuração**) | Nome da variável |
 |--------------|--------------|----------------------|
-| nome de host do servidor Elasticsearch | Catálogo > **Catálogo**, **Nome de host do servidor Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
+| nome de host do servidor Elasticsearch | Catálogo > **Catálogo**, **Nome de Host do Servidor Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME` |
 | porta do servidor Elasticsearch | Catálogo > **Catálogo**, **Porta do servidor Elasticsearch** | `<SCOPE>__CATALOG__SEARCH__ELASTICSEARCH_SERVER_PORT` |
 | Origem do país de remessa | Vendas > **Configurações de envio** | `<SCOPE>__SHIPPING__ORIGIN__COUNTRY_ID` |
-| URL de administração personalizada | Avançado > **Admin** | `<SCOPE>__ADMIN__URL__CUSTOM` |
-| Caminho de administração personalizado | Avançado > **Admin** | `<SCOPE>__ADMIN__URL__CUSTOM_PATH` |
+| URL de administração personalizada | Avançado > **Administrador** | `<SCOPE>__ADMIN__URL__CUSTOM` |
+| Caminho de administração personalizado | Avançado > **Administrador** | `<SCOPE>__ADMIN__URL__CUSTOM_PATH` |
 
 ## Exemplos
 
@@ -212,7 +212,7 @@ Para localizar o nome da variável para a minificação do HTML global:
 
 1. Determine o escopo.
 
-   É o escopo global, portanto, o nome da variável começa com `CONFIG__DEFAULT__`
+   É o escopo global, então o nome da variável começa com `CONFIG__DEFAULT__`
 
 1. O restante do nome da variável é `CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME`.
 
@@ -224,7 +224,7 @@ Para localizar o nome da variável para a origem do país de entrega:
 
 1. Determine o escopo.
 
-   Encontre o escopo na [banco de dados](#find-a-website-or-store-view-scope-in-the-database) conforme discutido na Etapa 1: Encontre o valor do escopo de exibição do site ou da loja. (Você também pode encontrar o valor no Administrador, como mostrado na [tabela na Etapa 2: definir variáveis de exibição globais, de site ou de loja](#step-2-set-global-website-or-store-view-variables.
+   Localize o escopo no [banco de dados](#find-a-website-or-store-view-scope-in-the-database) conforme discutido na Etapa 1: encontre o valor do escopo de exibição do site ou do repositório. (Você também pode encontrar o valor no Administrador como mostrado na [tabela da Etapa 2: definir variáveis de exibição globais, de site ou de armazenamento](#step-2-set-global-website-or-store-view-variables.
 
    Por exemplo, o escopo pode ser `CONFIG__WEBSITES__DEFAULT`.
 
@@ -234,25 +234,25 @@ Para localizar o nome da variável para a origem do país de entrega:
 
 ## Como usar variáveis de ambiente
 
-Defina os valores de configuração como variáveis usando o PHP [`$_ENV`](https://php.net/manual/en/reserved.variables.environment.php) matriz associada. Você pode definir os valores em qualquer script PHP executado quando o Commerce é executado.
+Defina os valores de configuração como variáveis usando a matriz associada [`$_ENV`](https://php.net/manual/en/reserved.variables.environment.php) do PHP. Você pode definir os valores em qualquer script PHP executado quando o Commerce é executado.
 
 >[!TIP]
 >
->Configuração de valores de variáveis no `index.php` ou `pub/index.php` nem sempre funciona como esperado, pois diferentes pontos de entrada de aplicativo podem ser usados, dependendo da configuração do servidor Web. Ao colocar `$_ENV` diretivas na `app/bootstrap.php` independentemente dos diferentes pontos de entrada do aplicativo, a variável `$_ENV` as diretivas sempre são executadas desde que `app/bootstrap.php` O arquivo é carregado como parte da arquitetura do Commerce.
+>A definição de valores de variável em `index.php` ou `pub/index.php` nem sempre funciona como esperado, pois diferentes pontos de entrada de aplicativo podem ser usados, dependendo da configuração do servidor Web. Ao colocar diretivas `$_ENV` no arquivo `app/bootstrap.php`, independentemente dos diferentes pontos de entrada do aplicativo, as diretivas `$_ENV` sempre são executadas, pois o arquivo `app/bootstrap.php` é carregado como parte da arquitetura do Commerce.
 
-Um exemplo de configuração de dois `$_ENV` valores:
+Este é um exemplo de configuração de dois valores `$_ENV`:
 
 ```php
 $_ENV['CONFIG__DEFAULT__CATALOG__SEARCH__ELASTICSEARCH_SERVER_HOSTNAME'] = 'http://search.example.com';
 $_ENV['CONFIG__DEFAULT__GENERAL__STORE_INFORMATION__MERCHANT_VAT_NUMBER'] = '1234';
 ```
 
-Um exemplo passo a passo é mostrado na [Definir valores de configuração usando variáveis de ambiente](../deployment/example-environment-variables.md).
+Um exemplo passo a passo é mostrado em [Definir valores de configuração usando variáveis de ambiente](../deployment/example-environment-variables.md).
 
 >[!WARNING]
 >
->- Para usar os valores definidos na variável `$_ENV` , você deve definir `variables_order = "EGPCS"`(Ambiente, Obter, Publicar, Cookie e Servidor) no seu `php.ini` arquivo. Para obter detalhes, consulte [Documentação do PHP](https://www.php.net/manual/en/ini.core.php).
+>- Para usar os valores definidos na matriz `$_ENV`, você deve definir `variables_order = "EGPCS"`(Ambiente, Obtenção, Post, Cookie e Servidor) no arquivo `php.ini`. Para obter detalhes, consulte [documentação sobre PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Para o Adobe Commerce na infraestrutura em nuvem, se você estiver tentando substituir as definições de configuração usando o [Interface da Web do Project](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), você deve anexar o nome da variável como `env:`. Por exemplo:
+>- Para o Adobe Commerce na infraestrutura em nuvem, se você estiver tentando substituir as definições de configuração usando a [Interface da Web do Project](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), você deve anexar o nome da variável a `env:` como prefixo. Por exemplo:
 >
 >![Exemplo de variável de ambiente](../../assets/configuration/cloud-console-envvariable.png)

@@ -1,7 +1,7 @@
 ---
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
@@ -9,10 +9,10 @@ ht-degree: 1%
 
 Esta seção discute duas maneiras de verificar se a autenticação básica de HTTP está funcionando:
 
-* Uso de um `curl` comando para verificar é necessário digitar um nome de usuário e senha para obter o status do cluster
+* Usando um comando `curl` para verificar, você deve inserir um nome de usuário e uma senha para obter o status do cluster
 * Configuração da autenticação básica de HTTP no Admin
 
-## Use um `curl` comando para verificar o status do cluster
+## Use um comando `curl` para verificar o status do cluster
 
 Digite o seguinte comando:
 
@@ -68,7 +68,7 @@ Connection: keep-alive
 
 ## Configurar a autenticação básica de HTTP no Admin
 
-Execute as mesmas tarefas discutidas em [Configuração do mecanismo de pesquisa](../configuration/search/configure-search-engine.md) *exceto* click **[!UICONTROL Yes]** do **[!UICONTROL Enable HTTP Auth]** e digite seu nome de usuário e senha nos campos fornecidos.
+Execute as mesmas tarefas conforme discutido em [Configuração do mecanismo de pesquisa](../configuration/search/configure-search-engine.md) *exceto* clique em **[!UICONTROL Yes]** na lista **[!UICONTROL Enable HTTP Auth]** e insira seu nome de usuário e senha nos campos fornecidos.
 
 Clique em **[!UICONTROL Test Connection]** para verificar se funciona e clique em **[!UICONTROL Save Config]**.
 

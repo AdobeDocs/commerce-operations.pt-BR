@@ -13,17 +13,17 @@ ht-degree: 0%
 
 Esse comando permite fazer backup:
 
-* O sistema de arquivos (excluindo `var` e `pub/static` diretórios)
-* A variável `pub/media` diretório
+* O sistema de arquivos (excluindo os diretórios `var` e `pub/static`)
+* O diretório `pub/media`
 * O banco de dados
 
-Os backups são armazenados no `var/backups` e podem ser restaurados a qualquer momento usando o [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
+Os backups são armazenados no diretório `var/backups` e podem ser restaurados a qualquer momento usando o comando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
-Após o backup, é possível [reversão](#rollback) posteriormente.
+Depois do backup, você pode [reverter](#rollback) mais tarde.
 
 >[!TIP]
 >
->Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Gerenciamento de snapshots e backup](https://devdocs.magento.com/cloud/project/project-webint-snap.html) no _Guia da nuvem_.
+>Para obter informações sobre projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Gerenciamento de instantâneos e backup](https://devdocs.magento.com/cloud/project/project-webint-snap.html) no _Guia da nuvem_.
 
 ## Habilitar backups
 
@@ -35,12 +35,12 @@ bin/magento config:set system/backup/functionality_enabled 1
 
 >[!WARNING]
 >
->**Aviso de desativação:**
+>**Aviso de descontinuação:**
 >A funcionalidade de backup está obsoleta a partir das versões 2.1.16, 2.2.7 e 2.3.0. Recomendamos investigar tecnologias adicionais de backup e ferramentas binárias de backup (como o Percona XtraBackup).
 
 ## Definir o limite de arquivos abertos
 
-A reversão para um backup anterior pode falhar silenciosamente, resultando na gravação de dados incompletos no sistema de arquivos ou no banco de dados usando o [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
+A reversão para um backup anterior pode falhar silenciosamente, resultando em dados incompletos sendo gravados no sistema de arquivos ou banco de dados usando o comando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
 Às vezes, uma longa sequência de consulta faz com que o espaço de memória alocado do usuário fique sem memória devido a muitas chamadas recursivas.
 
@@ -62,23 +62,23 @@ Você pode alterá-la para um valor maior, se necessário.
 
 >[!NOTE]
 >
->A sintaxe para arquivos abertos `ulimit` depende do shell UNIX usado. A configuração anterior deve funcionar com CentOS e Ubuntu com o shell Bash. No entanto, para o macOS, a configuração correta é `ulimit -S 65532`. Consulte uma página de manual ou referência de sistema operacional para obter mais informações.
+>A sintaxe para arquivos abertos `ulimit` depende do shell UNIX que você usa. A configuração anterior deve funcionar com CentOS e Ubuntu com o shell Bash. No entanto, para o macOS, a configuração correta é `ulimit -S 65532`. Consulte uma página de manual ou referência de sistema operacional para obter mais informações.
 
 Para definir opcionalmente o valor no shell Bash do usuário:
 
-1. Se ainda não tiver feito isso, alterne para a guia [proprietário do sistema de arquivos](../prerequisites/file-system/overview.md).
-1. Abertura `/home/<username>/.bashrc` em um editor de texto.
+1. Se ainda não tiver feito isso, alterne para o [proprietário do sistema de arquivos](../prerequisites/file-system/overview.md).
+1. Abra `/home/<username>/.bashrc` em um editor de texto.
 1. Adicione a seguinte linha:
 
    ```bash
    ulimit -s 65536
    ```
 
-1. Salvar as alterações em `.bashrc` e saia do editor de texto.
+1. Salve as alterações em `.bashrc` e saia do editor de texto.
 
 >[!WARNING]
 >
->Recomendamos que você evite definir um valor para [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) no `php.ini` porque pode resultar em reversões incompletas sem aviso de falha.
+>Recomendamos que você evite definir um valor para [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) no arquivo `php.ini` porque isso pode resultar em reversões incompletas sem aviso de falha.
 
 ## Fazendo backup
 
@@ -140,7 +140,7 @@ Para efetuar rollback para um backup anterior, informe:
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
-Por exemplo, para restaurar um backup de mídia chamado `1440611839_filesystem_media.tgz`, insira
+Por exemplo, para restaurar um backup de mídia chamado `1440611839_filesystem_media.tgz`, digite
 
 ```bash
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz

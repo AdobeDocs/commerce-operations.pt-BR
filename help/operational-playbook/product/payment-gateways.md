@@ -5,7 +5,7 @@ exl-id: eab50191-0744-41da-99ba-2e06ea61da27
 feature: Best Practices, Payments
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,8 @@ Quando uma empresa decide integrar um gateway de pagamento à sua plataforma, é
 
 As empresas B2B e B2C têm sistemas de pagamento semelhantes, mas as empresas B2B têm mais regras, regulamentos e processos. As empresas B2B tendem a negociar em maiores volumes em comparação com as empresas B2C.
 
-Os clientes B2C compram produtos ou serviços para uso individual. Os clientes geralmente pagam o mesmo preço que os outros clientes e não há negociação envolvida. Os clientes B2B incluem várias partes interessadas, o que torna a aprovação mais complexa e cara.
+Os clientes B2C compram produtos ou serviços para uso individual. Os clientes geralmente pagam o mesmo preço que os outros clientes e não há negociação envolvida. Os clientes B2B incluem vários
+partes interessadas, o que torna a aprovação mais complexa e cara.
 
 Os clientes B2B têm diferentes pedidos e requisitos, que precisam ser processados e aprovados pelo representante de vendas ou um representante de vendas precisa ser envolvido quando um cliente compra online usando uma solicitação de proposta (RFP) ou ordem de compra (OC).
 

@@ -5,7 +5,7 @@ exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
 feature: Cloud
 source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Tecnologias
 
-O Adobe Commerce na infraestrutura em nuvem usa várias soluções de software para oferecer suporte à plataforma. Consulte os seguintes tópicos no _Guia da nuvem_ para obter mais detalhes:
+O Adobe Commerce na infraestrutura em nuvem usa várias soluções de software para oferecer suporte à plataforma. Consulte os seguintes tópicos no _Guia da Nuvem_ para obter mais detalhes:
 
 - [Arquitetura de ambiente Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#production-technology-stack)
 - [Arquitetura do ambiente inicial](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html#production-and-staging-technology-stack)

@@ -12,9 +12,9 @@ A reindexação no MariaDB 10.4 e 10.6 leva mais tempo em comparação com as ve
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
 
-Se ocorrer degradação de desempenho não relacionada à indexação após a atualização para o MariaDB 10.6, considere ativar o [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) configuração. Por exemplo, `--query-cache-type=ON`.
+Se você sofrer degradação de desempenho não relacionada à indexação após a atualização para MariaDB 10.6, considere habilitar a configuração [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type). Por exemplo, `--query-cache-type=ON`.
 
-Antes de atualizar o Adobe Commerce em projetos de infraestrutura em nuvem, também pode ser necessário atualizar o MariaDB ([consulte Práticas recomendadas de atualização do MariaDB](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)).
+Antes de atualizar o Adobe Commerce em projetos de infraestrutura em nuvem, talvez também seja necessário atualizar o MariaDB ([consulte práticas recomendadas de atualização do MariaDB](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)).
 
 Por exemplo:
 

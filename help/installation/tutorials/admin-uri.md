@@ -16,7 +16,7 @@ Antes de executar este comando, você deve [Criar ou atualizar a configuração 
 
 ## Exibir o URI do administrador
 
-Esta seção discute como usar a linha de comando para exibir o Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+Esta seção discute como usar a linha de comando para exibir o Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) do Administrador.
 
 Opções de comando:
 
@@ -30,7 +30,7 @@ Um exemplo de resultado é o seguinte:
 Admin Panel URI: /admin_1wgrah
 ```
 
-Você também pode exibir o URI do administrador no `<magento_root>/app/etc/env.php`. Segue um trecho:
+Você também pode exibir o URI do Administrador em `<magento_root>/app/etc/env.php`. Segue um trecho:
 
 ```php?start_inline=1
   'backend' =>
@@ -41,4 +41,4 @@ Você também pode exibir o URI do administrador no `<magento_root>/app/etc/env.
 
 ## Alterar o URL do administrador
 
-Para alterar o URI do administrador, use o [`magento setup:config:set`](deployment.md) comando.
+Para alterar o URI do Administrador, use o comando [`magento setup:config:set`](deployment.md).

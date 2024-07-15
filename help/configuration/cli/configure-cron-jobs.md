@@ -4,7 +4,7 @@ description: Saiba como gerenciar trabalhos cron.
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -30,34 +30,34 @@ Vários recursos do Commerce exigem pelo menos um trabalho cron, que agenda ativ
 
 >[!INFO]
 >
->O comércio depende da configuração adequada do trabalho cron para muitas funções importantes do sistema, incluindo a indexação. Se não for configurado corretamente, significa que o Commerce não funcionará conforme esperado.
+>O Commerce depende da configuração adequada do trabalho cron para muitas funções importantes do sistema, incluindo a indexação. Se não for configurado corretamente, o Commerce não funcionará conforme esperado.
 
-Os sistemas UNIX programam tarefas a serem executadas por usuários específicos utilizando um _crontab_, que é um arquivo que contém instruções para o daemon cron que informam o daemon em vigor para &quot;executar este comando neste momento nesta data&quot;. Cada usuário tem seu próprio crontab, e os comandos em qualquer crontab são executados como o usuário que o possui.
+Os sistemas UNIX agendam tarefas a serem executadas por usuários específicos usando um _crontab_, que é um arquivo que contém instruções para o daemon cron que instruem o daemon a &quot;executar este comando neste momento nesta data&quot;. Cada usuário tem seu próprio crontab, e os comandos em qualquer crontab são executados como o usuário que o possui.
 
-Para executar o cron em um navegador da Web, consulte [Proteger cron.php para ser executado em um navegador](../security/secure-cron-php.md).
+Para executar o cron em um navegador da Web, consulte [Secure cron.php para executar em um navegador](../security/secure-cron-php.md).
 
-## Criar ou remover o crontab Comércio
+## Criar ou remover o crontab do Commerce
 
-Esta seção discute como criar ou remover o crontab de Commerce (ou seja, a configuração para jobs cron de Commerce).
+Esta seção discute como criar ou remover o crontab do Commerce (ou seja, a configuração dos trabalhos cron do Commerce).
 
-A variável _crontab_ é a configuração usada para executar os trabalhos cron.
+O _crontab_ é a configuração usada para executar tarefas cron.
 
 O aplicativo Commerce usa tarefas cron que podem ser executadas com configurações diferentes. A configuração da linha de comando do PHP controla o trabalho cron geral que reindexa indexadores, gera e-mails, gera o mapa do site e assim por diante.
 
 >[!WARNING]
 >
->- Para evitar problemas durante a instalação e atualização, recomendamos que você aplique as mesmas configurações do PHP tanto para a configuração da linha de comando do PHP quanto para a configuração do plug-in do servidor Web PHP. Para obter mais informações, consulte [Configurações necessárias do PHP](../../installation/prerequisites/php-settings.md).
+>- Para evitar problemas durante a instalação e atualização, recomendamos que você aplique as mesmas configurações do PHP tanto para a configuração da linha de comando do PHP quanto para a configuração do plug-in do servidor Web PHP. Para obter mais informações, consulte [Configurações PHP necessárias](../../installation/prerequisites/php-settings.md).
 >- Em um sistema de vários nós, o crontab pode ser executado em apenas um nó. Isso se aplica somente se você configurar mais de um nó da Web por motivos relacionados ao desempenho ou à escalabilidade.
 
-### Criar o crontab Comércio
+### Crie o crontab do Commerce
 
-A partir da versão 2.2, o Commerce cria um crontab para você. Adicionamos o crontab Comércio a qualquer crontab configurado para o proprietário do sistema de arquivos do Commerce. Em outras palavras, se você já configurou crontabs para outras extensões ou aplicativos, adicionamos o crontab Commerce a ele.
+A partir da versão 2.2, o Commerce cria um crontab para você. Adicionamos o crontab Commerce a qualquer crontab configurado para o proprietário do sistema de arquivos Commerce. Em outras palavras, se você já configurou crontabs para outras extensões ou aplicativos, nós adicionamos o crontab Commerce a ele.
 
-O crontab Comércio está dentro `#~ MAGENTO START` e `#~ MAGENTO END` comentários no crontab.
+O crontab Commerce está dentro de `#~ MAGENTO START` e `#~ MAGENTO END` comentários no crontab.
 
-Para criar o crontab Comércio:
+Para criar o crontab do Commerce:
 
-1. Efetue login como, ou alterne para, o [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
+1. Faça logon como ou alterne para o [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 1. Altere para o diretório de instalação do Commerce.
 1. Digite o seguinte comando:
 
@@ -65,11 +65,11 @@ Para criar o crontab Comércio:
    bin/magento cron:install [--force]
    ```
 
-Uso `--force` para reescrever um crontab existente.
+Use `--force` para reescrever um crontab existente.
 
 >[!INFO]
 >
->- `magento cron:install` não reescreve um crontab existente dentro `#~ MAGENTO START` e `#~ MAGENTO END` comentários no crontab.
+>- `magento cron:install` não reescreve um crontab existente dentro de comentários `#~ MAGENTO START` e `#~ MAGENTO END` em seu crontab.
 >- `magento cron:install --force` não tem efeito em nenhum trabalho cron fora dos comentários do Commerce.
 
 Para ver o crontab, digite o seguinte comando como o proprietário do sistema de arquivos:
@@ -88,17 +88,17 @@ A seguir, há uma amostra:
 
 >[!INFO]
 >
->A variável `update/cron.php` O arquivo foi removido no Commerce 2.4.0. Caso ele exista na instalação, é possível removê-lo com segurança.
+>O arquivo `update/cron.php` foi removido no Commerce 2.4.0. Se ele existir na sua instalação, poderá ser removido com segurança.
 >
->Qualquer referência a `update/cron.php` e `bin/magento setup:cron:run` também deve ser removido do crontab
+>Qualquer referência a `update/cron.php` e `bin/magento setup:cron:run` também deve ser removida do crontab
 
-### Remova o crontab Comércio
+### Remova o crontab do Commerce
 
-Você deve remover o crontab Comércio somente antes de desinstalar o aplicativo Comércio.
+Você deve remover o crontab Commerce somente antes de desinstalar o aplicativo Commerce.
 
-Para remover o crontab Comércio:
+Para remover o crontab do Commerce:
 
-1. Faça logon como ou alterne para a [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
+1. Faça logon como ou alterne para o [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 1. Altere para o diretório de instalação do Commerce.
 1. Digite o seguinte comando:
 
@@ -108,7 +108,7 @@ Para remover o crontab Comércio:
 
 >[!INFO]
 >
->Este comando não tem efeito em trabalhos cron fora do `#~ MAGENTO START` e `#~ MAGENTO END` comentários no crontab.
+>Este comando não tem efeito nos trabalhos cron fora dos comentários `#~ MAGENTO START` e `#~ MAGENTO END` em seu crontab.
 
 ## Executar cron a partir da linha de comando
 
@@ -136,25 +136,25 @@ Para configurar trabalhos e grupos cron personalizados, consulte [Configurar tra
 
 >[!INFO]
 >
->Você deve executar o cron duas vezes: a primeira vez que descobrir tarefas a serem executadas e a segunda vez — para executar as próprias tarefas. A segunda execução de cron deve ocorrer em ou após a `scheduled_at` hora para cada tarefa.
+>Você deve executar o cron duas vezes: a primeira vez que descobrir tarefas a serem executadas e a segunda vez — para executar as próprias tarefas. A segunda execução de cron deve ocorrer em ou após `scheduled_at` hora para cada tarefa.
 
 ## Logs
 
-Todos `cron` as informações do trabalho foram movidas de `system.log` em um `cron.log`.
-Por padrão, as informações do cron podem ser encontradas em `<install_directory>/var/log/cron.log`.
+Todas as informações do trabalho `cron` foram movidas de `system.log` para uma `cron.log` separada.
+Por padrão, as informações de cron podem ser encontradas em `<install_directory>/var/log/cron.log`.
 Todas as exceções dos trabalhos cron são registradas por `\Magento\Cron\Observer\ProcessCronQueueObserver::execute`.
 
-Além de estar conectado `cron.log`:
+Além de estar conectado em `cron.log`:
 
-- Trabalhos com falha com `ERROR` e `MISSED` Os status são registrados na variável `<install_directory>/var/log/support_report.log`.
+- Trabalhos com falha com status `ERROR` e `MISSED` são registrados no `<install_directory>/var/log/support_report.log`.
 
-- Trabalhos com um `ERROR` Os status são sempre registrados como `CRITICAL` in `<install_directory>/var/log/exception.log`.
+- Os trabalhos com status `ERROR` sempre são registrados como `CRITICAL` em `<install_directory>/var/log/exception.log`.
 
-- Trabalhos com um `MISSED` status são registrados como `INFO` no `<install_directory>/var/log/debug.log` diretório (somente modo de desenvolvedor).
+- Os trabalhos com status `MISSED` são registrados como `INFO` no diretório `<install_directory>/var/log/debug.log` (somente modo de desenvolvedor).
 
 >[!INFO]
 >
->Todos os dados CRON também são gravados na `cron_schedule` tabela no banco de dados do Commerce. A tabela fornece um histórico de tarefas cron, incluindo:
+>Todos os dados CRON também são gravados na tabela `cron_schedule` no banco de dados do Commerce. A tabela fornece um histórico de tarefas cron, incluindo:
 >
 >- ID da tarefa e código
 >- Status
@@ -163,4 +163,4 @@ Além de estar conectado `cron.log`:
 >- Data de execução
 >- Data de término
 >
->Para ver os registros na tabela, faça logon no banco de dados do Commerce na linha de comando e insira `SELECT * from cron_schedule;`.
+>Para ver registros na tabela, faça logon no banco de dados do Commerce na linha de comando e digite `SELECT * from cron_schedule;`.

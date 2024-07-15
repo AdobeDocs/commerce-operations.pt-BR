@@ -3,13 +3,13 @@ title: Práticas recomendadas de redimensionamento de imagem de catálogo
 description: Saiba como evitar a degradação do desempenho antes de uma inicialização de produção do site do Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas de redimensionamento de imagem de catálogo
 
@@ -64,14 +64,14 @@ Há outra maneira de redimensionar imagens usando o front-end.
 As vantagens dessa abordagem incluem:
 
 - O processo é multithread
-- O processo é multiservidor (se você tiver vários nós da Web, um balanceador de carga e o espaço em disco compartilhado para o `media/` diretory)
+- O processo é multiservidor (se você tiver vários nós da Web, um balanceador de carga e espaço em disco compartilhado para o diretório `media/`)
 - O processo ignora imagens que já foram redimensionadas
 
 Essa abordagem redimensiona 100.000 imagens em menos de 8 horas, enquanto o comando da CLI leva 6 dias para ser concluído.
 
 1. Faça logon no servidor.
-1. Navegue até `pub/media/catalog/product` e anote uma das hashes (por exemplo, 0047d83143a5a3a4683afdf1116df680).
-1. Nos exemplos a seguir, substitua `www.example.com` com o domínio de sua loja e substitua o hash pelo que você anotou.
+1. Navegue até `pub/media/catalog/product` e anote um dos hashes (por exemplo, 0047d83143a5a3a4683afdf1116df680).
+1. Nos exemplos a seguir, substitua `www.example.com` pelo domínio de seu armazenamento e substitua o hash pelo que você anotou.
 
 >[!BEGINTABS]
 
@@ -84,7 +84,7 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 >[!TAB cerco]
 
-A desvantagem da `siege` é que visita todos os URLs no 10 vezes se a simultaneidade estiver definida como 10.
+A desvantagem de `siege` é que ele visita todas as URLs em 10 vezes se a simultaneidade estiver definida como 10.
 
 ```bash
 siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser --concurrent=10 --reps=once
@@ -96,25 +96,25 @@ siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser -
 xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n" < <(tr \\n \\0 <images.txt)
 ```
 
-A variável `-P` determina o número de threads.
+O argumento `-P` determina o número de threads.
 
 >[!TAB bash one-liner]
 
-O revestimento único para o `find/curl` exemplo, caso você possa executar `curl` na mesma máquina em que estão as imagens:
+A linha única para o exemplo de `find/curl`, caso você possa executar `curl` a partir da mesma máquina em que as imagens estão:
 
 ```bash
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' | xargs -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n"
 ```
 
-Novamente, substitua `www.example.com` com o domínio do seu site e defina `-P` ao número de threads que o servidor pode manipular sem travar.
+Novamente, substitua `www.example.com` pelo domínio do seu site e defina `-P` como o número de threads que seu servidor pode manipular sem falhas.
 
 >[!ENDTABS]
 
-A saída retorna uma lista de todas as imagens de produtos na loja. Você pode rastrear as imagens (com `siege` ou qualquer outro crawler) usando todos os servidores e núcleos de processador disponíveis para você e gerar o cache de redimensionamento em velocidade significativamente maior do que outras abordagens.
+A saída retorna uma lista de todas as imagens de produtos na loja. Você pode rastrear as imagens (com `siege` ou qualquer outro rastreador) usando todos os servidores e núcleos de processador disponíveis para você e gerar o cache de redimensionamento em velocidade significativamente maior do que outras abordagens.
 
 Visitar um URL de cache de imagem gera todos os tamanhos de imagem em segundo plano se eles ainda não existirem. Além disso, ignora os arquivos que já foram redimensionados.
 
 >[!NOTE]
 >
->- O Adobe Commerce em projetos de infraestrutura em nuvem pode descarregar o redimensionamento de imagem do produto para o serviço Fastly. Consulte [Otimização profunda de imagem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) no _Guia da nuvem_.
->- Se você usar o módulo de armazenamento remoto, também poderá tentar descarregar o redimensionamento da imagem para nginx. Consulte [Configurar redimensionamento de imagem para armazenamento remoto](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) no _Guia de configuração_.
+>- O Adobe Commerce em projetos de infraestrutura em nuvem pode descarregar o redimensionamento de imagem do produto para o serviço Fastly. Consulte [Otimização de imagem profunda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) no _Guia da Nuvem_.
+>- Se você usar o módulo de armazenamento remoto, também poderá tentar descarregar o redimensionamento da imagem para nginx. Consulte [Configurar redimensionamento de imagem para armazenamento remoto](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) no _Guia de Configuração_.

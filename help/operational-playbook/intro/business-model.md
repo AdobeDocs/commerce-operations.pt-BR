@@ -1,11 +1,11 @@
 ---
 title: O que é B2B e B2C?
-description: Saiba mais sobre os diferentes modelos de negócios do Commerce.
+description: Saiba mais sobre os diferentes modelos de negócios da Commerce.
 exl-id: d66b4a7f-d54b-4902-8791-7a8f67fa4b43
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
 
@@ -52,9 +52,9 @@ Atendimento ao cliente para B2B:
 Atendimento ao cliente para B2C:
 
 - Atendimento ao cliente 24 horas
-- Devoluções pós-venda
-- Troca pós-venda
-- Problemas pós-venda
+- Devoluções de venda de Post
+- Post-sale exchange
+- Problemas de venda do Post
 - Disponibilidade
 
 ## Resumo das diferenças entre B2B e B2C

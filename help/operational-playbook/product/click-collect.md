@@ -4,7 +4,7 @@ description: Siga estas dez dicas para fornecer um clique delicioso e coletar ex
 exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,13 @@ As empresas devem seguir estas dez dicas para fornecer um bom clique e coletar o
 
 Ao decidir implementar o click and collect, as empresas devem considerar como planejam fornecer click e coletar para os clientes, como tipos de serviço:
 
-- **Pagamento online e coleta na loja**—O usuário paga pelo produto online e, após a confirmação do pagamento, a loja notifica o cliente quando o produto está pronto para ser coletado com base na seleção da loja dos clientes. A coleta de pagamento primeiro ajuda a reservar o produto.
+- **Pagamento online e coleta na loja**—O usuário paga pelo produto online e, após a confirmação do pagamento, a loja notifica o cliente quando o produto está pronto para ser coletado com base na seleção da loja do cliente. A coleta de pagamento primeiro ajuda a reservar o produto.
 
-- **Reservar o produto online, o pagamento e a coleta na loja**— Nesse tipo de serviço, o cliente não paga on-line ao reservar um produto. Nesse tipo de serviço, o cliente pode mudar de ideia e talvez não compre o produto.
+- **Reservar produto online, pagamento e cobrança na loja**—Neste tipo de serviço, o cliente não paga online ao reservar um produto. Nesse tipo de serviço, o cliente pode mudar de ideia e talvez não compre o produto.
 
-- **Integração**— Após selecionar o tipo de delivery, as empresas precisam decidir sobre a estrutura de integração (para onde os pedidos são enviados, onde os pedidos são atendidos). O estoque pode ser preenchido a partir de um depósito central ou diretamente de armazenamentos individuais.
+- **Integração**—Depois que o tipo de entrega é selecionado, as empresas precisam decidir sobre a estrutura de integração (para onde os pedidos são enviados, onde os pedidos são atendidos). O estoque pode ser preenchido a partir de um depósito central ou diretamente de armazenamentos individuais.
 
-- **Devoluções**—As devoluções podem ser complexas. As empresas precisam ter uma estratégia clara para gerenciar devoluções de produtos entregues e produtos solicitados usando o clique e a coleta. As empresas precisam permitir que os clientes devolvam os produtos solicitados através de cliques e coleta para fornecer atendimento ao cliente completo.
+- **Retornos** — Os retornos podem ser complexos. As empresas precisam ter uma estratégia clara para gerenciar devoluções de produtos entregues e produtos solicitados usando o clique e a coleta. As empresas precisam permitir que os clientes devolvam os produtos solicitados através de cliques e coleta para fornecer atendimento ao cliente completo.
 
 ## Promoção
 

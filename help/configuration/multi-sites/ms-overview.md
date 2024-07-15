@@ -23,7 +23,7 @@ Essa solução flexível permite que uma base de código do Commerce e um Admini
 
 Um uso típico é configurar lojas com diferentes opções em domínios diferentes. Por exemplo, você pode ter um conjunto de categorias e produtos em um domínio e outro conjunto de categorias e produtos em um domínio separado em um idioma diferente.
 
-Você configura os sites, lojas e visualizações de loja no Administrador do Commerce. Use o `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` variáveis em hosts virtuais para iniciar o aplicativo Commerce usando esses sites ou exibições de loja.
+Você configura os sites, lojas e visualizações de loja no Administrador do Commerce. Use as variáveis `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` em hosts virtuais para iniciar o aplicativo do Commerce usando esses sites ou exibições de armazenamento.
 
 Considere os seguintes termos:
 
@@ -31,7 +31,7 @@ Considere os seguintes termos:
 
   As contas de cliente do site podem ser compartilhadas entre vários sites em uma única instância do Commerce. Um site contém pelo menos uma loja. Os preços dos catálogos devem ser geridos ao nível do sítio Web.
 
-- **Loja**—está contido em um site. Por sua vez, uma loja contém pelo menos um *exibição de loja*.
+- **Armazenamento**—está contido em um site. Uma loja contém pelo menos uma *exibição de loja*.
 
   Várias lojas podem compartilhar carrinho, sessões de usuários, gateways de pagamento e muito mais, mas têm estruturas de catálogo separadas e preço de catálogo.
 
@@ -39,17 +39,17 @@ Considere os seguintes termos:
 
   As visualizações da loja mudam a forma como as páginas são apresentadas e são normalmente usadas para exibir uma loja com layouts ou idiomas diferentes. É possível gerenciar moedas diferentes por exibição de loja.
 
-  Cada site e exibição de loja deve ter um identificador exclusivo. Esse identificador é necessário para usar o `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` variáveis da seguinte forma:
+  Cada site e exibição de loja deve ter um identificador exclusivo. Esse identificador é necessário para usar as variáveis `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` da seguinte maneira:
 
 - `MAGE_RUN_TYPE` pode ser `store` ou `website`
 
-   - Uso `website` para carregar um site na loja.
-   - Uso `store` para carregar qualquer visualização de loja em sua loja.
+   - Use o `website` para carregar um site em sua vitrine eletrônica.
+   - Use `store` para carregar qualquer exibição de loja em sua vitrine eletrônica.
 
-- `MAGE_RUN_CODE` é o código de exibição exclusivo do site ou da loja que corresponde a `MAGE_RUN_TYPE`
+- `MAGE_RUN_CODE` é o código exclusivo de exibição de site ou loja que corresponde a `MAGE_RUN_TYPE`
 
 Este é um resumo das tarefas que você deve executar:
 
 1. [Configurar sites, lojas e visualizações de loja no Administrador.](ms-admin.md)
-1. Crie um host virtual para carregar vários sites ou um host virtual por exibição de site ou loja do Commerce para permitir diretivas específicas para cada loja.
-1. Transmita os valores de `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` ao servidor Web.
+1. Crie um host virtual para carregar vários sites ou um host virtual por site ou exibição de armazenamento do Commerce para permitir diretivas específicas para cada armazenamento.
+1. Passe os valores de `MAGE_RUN_TYPE` e `MAGE_RUN_CODE` para o servidor Web.

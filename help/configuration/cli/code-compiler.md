@@ -4,7 +4,7 @@ description: Saiba como executar o compilador de código a partir da linha de co
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ A compilação de código inclui o seguinte (sem ordem específica):
 - Geração de código de repositórios (código gerado para APIs)
 - Geração de atributos de dados de serviço (classes de extensão geradas para objetos de dados)
 
-Você pode encontrar classes de compilação de código na [\Magento\Setup\Module\Di\App\Task\Operation][operation] namespace.
+Você pode encontrar classes de compilação de código no namespace [\Magento\Setup\Module\Di\App\Task\Operation][operation].
 
 Para executar o compilador de locatário único:
 
@@ -36,7 +36,7 @@ Generated code and dependency injection configuration successfully.
 
 Para compilar o código antes de instalar o aplicativo Commerce:
 
-Em alguns casos, convém compilar o código antes de instalar o aplicativo Commerce.
+Em alguns casos, convém compilar o código antes de instalar o aplicativo do Commerce.
 
 1. Habilite os módulos.
 
@@ -44,9 +44,9 @@ Em alguns casos, convém compilar o código antes de instalar o aplicativo Comme
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   Use o `[-c|--clear-static-content]` opção para limpar o conteúdo estático. Isso é necessário se você tiver ativado ou desativado módulos anteriormente e precisar limpar o conteúdo estático gerado anteriormente para eles.
+   Use a opção `[-c|--clear-static-content]` para limpar o conteúdo estático. Isso é necessário se você tiver ativado ou desativado módulos anteriormente e precisar limpar o conteúdo estático gerado anteriormente para eles.
 
-   Consulte [Ativar módulos](../../installation/tutorials/manage-modules.md).
+   Consulte [Habilitar módulos](../../installation/tutorials/manage-modules.md).
 
 1. Compile o código.
 
@@ -58,7 +58,7 @@ Em alguns casos, convém compilar o código antes de instalar o aplicativo Comme
    Generated code and dependency injection configuration successfully.
    ```
 
-Para compilar o código sem um banco de dados, consulte [Implantar arquivos de visualização estáticos sem instalar o Magento](../cli/static-view-file-deployment.md).
+Para compilar o código sem um banco de dados, consulte [Implantar arquivos de exibição estáticos sem instalar o Magento](../cli/static-view-file-deployment.md).
 
 <!-- link definitions -->
 

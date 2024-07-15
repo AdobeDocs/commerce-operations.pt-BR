@@ -21,7 +21,7 @@ Adobe Commerce na infraestrutura em nuvem
 
 ## Converter todas as tabelas MyISAM em InnoDB
 
-A Adobe recomenda o uso do mecanismo de banco de dados InnoDB. Em uma instalação padrão do Adobe Commerce, todas as tabelas do banco de dados são armazenadas usando o mecanismo do InnoDB. No entanto, alguns módulos de terceiros (extensões) podem introduzir tabelas no formato MyISAM. Depois de instalar um módulo de terceiros, verifique o banco de dados para identificar quaisquer tabelas em `myisam` formatar e convertê-los em `innodb` formato.
+A Adobe recomenda o uso do mecanismo de banco de dados InnoDB. Em uma instalação padrão do Adobe Commerce, todas as tabelas do banco de dados são armazenadas usando o mecanismo do InnoDB. No entanto, alguns módulos de terceiros (extensões) podem introduzir tabelas no formato MyISAM. Após instalar um módulo de terceiros, verifique o banco de dados para identificar quaisquer tabelas no formato `myisam` e convertê-las no formato `innodb`.
 
 ### Determinar se um módulo inclui tabelas MyISAM
 
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### Alterar o mecanismo de armazenamento para o InnoDB
 
-No `db_schema.xml` declarando a tabela, defina o `engine` valor do atributo para o correspondente `table` nó para `innodb`. Para referência, consulte [Configurar esquema declarativo > nó da tabela](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) na documentação do desenvolvedor.
+No arquivo `db_schema.xml` declarando a tabela, defina o valor do atributo `engine` do nó `table` correspondente como `innodb`. Para referência, consulte [Configurar esquema declarativo > nó da tabela](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) na documentação do desenvolvedor.
 
 O esquema declarativo foi introduzido no Adobe Commerce na versão 2.3 da infraestrutura em nuvem.
 
@@ -72,22 +72,22 @@ Os acionadores são usados para registrar alterações em tabelas de auditoria. 
 - Os acionadores são interpretados como código e o MySQL não os pré-compila. Conectando o espaço de transação do query, eles adicionam o overhead a um analisador e interpretador para cada query executada com a tabela.
 - Os acionadores compartilham o mesmo espaço de transação que as consultas originais e, enquanto essas consultas competem por bloqueios na tabela, os acionadores competem independentemente em bloqueios em outra tabela.
 
-Para saber mais sobre alternativas ao uso de acionadores personalizados, consulte [Gatilhos MySQL](mysql-configuration.md#triggers).
+Para saber mais sobre alternativas ao uso de acionadores personalizados, consulte [Acionadores do MySQL](mysql-configuration.md#triggers).
 
 ## Atualizar [!DNL ECE-Tools] para a versão 2002.0.21 ou superior {#ece-tools-version}
 
-Para evitar possíveis problemas com bloqueios do cron, atualize as ECE-Tools para a versão 2002.0.21 ou superior. Para obter instruções, consulte [Atualizar `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) na documentação do desenvolvedor.
+Para evitar possíveis problemas com bloqueios do cron, atualize as ECE-Tools para a versão 2002.0.21 ou superior. Para obter instruções, consulte [Atualizar `ece-tools` versão](https://devdocs.magento.com/cloud/project/ece-tools-update.html) na documentação do desenvolvedor.
 
 ## Alternar modo indexador com segurança
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
-Alternar indexadores gera [!DNL data definition language] (DDL) para criar acionadores que podem causar bloqueios no banco de dados. Você pode evitar esse problema colocando o site no modo de manutenção e desabilitando os trabalhos cron antes de alterar a configuração.
-Para obter instruções, consulte [Configurar indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) no *Guia de configuração do Adobe Commerce*.
+Alternar indexadores gera instruções [!DNL data definition language] (DDL) para criar disparadores que podem causar bloqueios de banco de dados. Você pode evitar esse problema colocando o site no modo de manutenção e desabilitando os trabalhos cron antes de alterar a configuração.
+Para obter instruções, consulte [Configurar indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) no *Guia de Configuração do Adobe Commerce*.
 
 ## Não executar instruções DDL na Produção
 
-Evite executar instruções DDL no ambiente de Produção para evitar conflitos (como modificações e criações de tabela). A variável `setup:upgrade` processo é uma exceção.
+Evite executar instruções DDL no ambiente de Produção para evitar conflitos (como modificações e criações de tabela). O processo `setup:upgrade` é uma exceção.
 
 Se você precisar executar uma instrução DDL, coloque o site no modo de manutenção e desabilite o cron (consulte as instruções para alternar índices com segurança na seção anterior).
 
@@ -95,10 +95,10 @@ Se você precisar executar uma instrução DDL, coloque o site no modo de manute
 
 Ative o arquivamento de pedidos do administrador para reduzir o espaço necessário para tabelas de vendas à medida que os dados de pedidos aumentam. O arquivamento economiza espaço em disco do MySQL e melhora o desempenho do check-out.
 
-Consulte [Ativar arquivamento](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) na documentação do Adobe Commerce Merchant.
+Consulte [Habilitar arquivamento](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) na documentação do Adobe Commerce Merchant.
 
 ## Informações adicionais
 
-- [Mecanismos de armazenamento MySQL](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
+- [Mecanismos de Armazenamento MySQL](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Pré-requisitos de atualização do Adobe Commerce 2.3.5 para MariaDB](../maintenance/mariadb-upgrade.md)
 - [Práticas recomendadas para resolver problemas de desempenho do banco de dados](../maintenance/resolve-database-performance-issues.md)

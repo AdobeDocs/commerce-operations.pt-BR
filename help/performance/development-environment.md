@@ -15,9 +15,9 @@ Esta página fornece recomendações para ambientes de desenvolvimento do Commer
 
 ## Limpar os caches em vez de desabilitar
 
-Muitos desenvolvedores tendem a desativar todos os caches em suas instâncias de desenvolvedor. Recomendamos apenas limpar caches, sem desativar todos os caches. [!DNL Commerce] O é executado com mais eficiência quando você [limpar os caches](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) em vez de desativá-los completamente. A maioria dos tipos de caches raramente é invalidada durante o desenvolvimento.
+Muitos desenvolvedores tendem a desativar todos os caches em suas instâncias de desenvolvedor. Recomendamos apenas limpar caches, sem desativar todos os caches. O [!DNL Commerce] é executado com mais eficiência quando você [limpa os caches](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) em vez de desabilitá-los completamente. A maioria dos tipos de caches raramente é invalidada durante o desenvolvimento.
 
-Se você [desativar os caches](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), recomendamos desabilitar apenas caches de Página e Bloco em instâncias de desenvolvimento. Lembre-se de ativar todos os caches durante os testes.
+Se você [desabilitar os caches](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), recomendamos desabilitar apenas caches de Página e Bloqueio em instâncias de desenvolvimento. Lembre-se de ativar todos os caches durante os testes.
 
 ## Comandos a serem evitados no modo de desenvolvimento
 
@@ -31,7 +31,7 @@ No modo de desenvolvimento, não execute comandos para compilação, geração d
   bin/magento setup:di:compile
   ```
 
-  No modo de desenvolvimento, o Magento executa a geração sob demanda; não é necessário executá-la. Se você modificou uma assinatura de uma classe e precisa gerar novamente sua `factories/proxies/interceptors`, remova essas classes ou a variável _gerado_ pasta.
+  No modo de desenvolvimento, o Magento executa a geração sob demanda; não é necessário executá-la. Se você modificou uma assinatura de uma classe e precisa gerar novamente a `factories/proxies/interceptors` gerada automaticamente, remova essas classes ou a pasta _gerada_.
 
 * `setup:static-content:deploy` implanta conteúdo estático para um armazenamento.
 

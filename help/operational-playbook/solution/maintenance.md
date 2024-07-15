@@ -1,10 +1,10 @@
 ---
-title: Manutenção de projeto do Commerce
+title: Manutenção de projetos no Commerce
 description: Estabeleça padrões de alta qualidade e mecanismos para manter esses padrões ao longo do tempo.
 exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -29,17 +29,18 @@ Com a atualização, você está protegendo seus negócios e oferecendo a si mes
 
 Esta é uma lista rápida de perguntas que você deve fazer ao planejar sua atualização:
 
-- **Limpeza do site**— O que posso guardar e o que posso mudar? Que novidades quero implementar? Por exemplo, que alterações devo fazer na taxonomia e na estrutura do produto ou alterações no conteúdo?
+- **Limpeza do site**—O que posso manter e o que posso alterar? Que novidades quero implementar? Por exemplo, que alterações devo fazer na taxonomia e na estrutura do produto ou alterações no conteúdo?
 
 - **Verificação do Analytics**—Quais são meus KPIs atuais? O que meus dados me dizem sobre como meu site pode ser melhorado? Existem novos KPIs que eu desejo implementar para meu novo site?
 
-- **Extensões**- Ainda preciso deles? Quais extensões de terceiros atendem às minhas necessidades?
+- **Extensões**—Ainda preciso delas? Quais extensões de terceiros atendem às minhas necessidades?
 
-- **Integrações**— quais sistemas de terceiros, como ERP e contabilidade, precisam ser integrados? Eles têm conectores específicos ou são necessárias integrações personalizadas?
+- **Integrações**—Com quais sistemas de terceiros, como ERP e contabilidade, preciso integrar? Eles têm conectores específicos ou são necessárias integrações personalizadas?
 
-- **Treinamento**— a equipe de atualização tem o conhecimento e o treinamento corretos? Qual é meu plano para treinar os usuários finais sobre como usar o novo administrador antes que ele entre em funcionamento?
+- **Treinamento**—A equipe de atualização tem o conhecimento e o treinamento corretos? O que é
+meu plano é treinar os usuários finais sobre como usar o novo administrador antes que ele entre no ar?
 
-- **Equipe de atualização**— Quem é dedicado ao projeto de upgrade (especialistas internos e externos)? Eles têm o apoio necessário da liderança e de outras equipes internas?
+- **Equipe de atualização** — Quem é dedicado ao projeto de atualização (especialistas internos e externos)? Eles têm o apoio necessário da liderança e de outras equipes internas?
 
 ## Perguntas comuns sobre atualização
 
@@ -50,7 +51,7 @@ R: Depende da plataforma e da arquitetura. Há muitas variáveis, e se você tam
 
 P: Quanto custa atualizar?
 
-R: Novamente, depende da sua situação atual e das suas necessidades para o novo site. A boa notícia é que, geralmente, à medida que parceiros e desenvolvedores se tornaram mais familiares e hábeis com sua plataforma do Commerce, os custos de atualização e a duração dos projetos diminuíram. Recomendamos consultar seu parceiro de soluções para obter uma estimativa.
+R: Novamente, depende da sua situação atual e das suas necessidades para o novo site. A boa notícia é que, geralmente, à medida que parceiros e desenvolvedores se tornaram mais familiares e adeptos da sua plataforma Commerce, os custos de atualização e a duração dos projetos diminuíram. Recomendamos consultar seu parceiro de soluções para obter uma estimativa.
 
 P: Há versões do Adobe Commerce 2 das minhas extensões do Adobe Commerce 1 disponíveis?
 

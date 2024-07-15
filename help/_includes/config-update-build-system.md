@@ -16,7 +16,7 @@ ht-degree: 0%
    cd <Magento root dir>
    ```
 
-1. Transfira as alterações para `app/etc/config.php` do controle de origem.
+1. Puxe as alterações para `app/etc/config.php` do controle do código-fonte.
 
    ```bash
    git pull mconfig m2.2_deploy

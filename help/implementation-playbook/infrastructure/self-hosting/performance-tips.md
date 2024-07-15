@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: 95ff0c79-21d0-4514-991c-d88f616db68f
+exl-id: bfce5c35-66c3-4d5c-a7b0-58f6d54febf8
 feature: Install
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1271'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Usar uma plataforma de comércio eletrônico flexível e poderosa não significa que você precise sacrificar o desempenho. Houve várias melhorias no aplicativo principal desde o início da Adobe Commerce. Na versão 2.5.4, a equipe de engenharia do Adobe Commerce executou um teste definido para fazer o benchmark do aplicativo. Os resultados do teste demonstraram que o Adobe Commerce é capaz de lidar com um grande catálogo de mais de 240 milhões de SKUs, os tempos de solicitação de API são excepcionais, em média, 300 ms, e o número de exibições de página e pedidos feitos por hora é fenomenal, chegando a 2 milhões de exibições de página e 208.000 pedidos por hora.
 
-Veja os resultados mais recentes do benchmark por título para [Experience League - Adobe Commerce - Manual de implementação - Benchmarks](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html){target="_blank"}.
+Veja os resultados mais recentes do teste de desempenho indo para [Experience League - Adobe Commerce - Manual de implementação - Referenciais](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/performance/benchmarks.html){target="_blank"}.
 
 Para manter as coisas o melhor possível, siga esses padrões ao adicionar personalizações e complexidade adicional ao seu projeto.
 
@@ -28,7 +28,7 @@ As seções a seguir abordam tópicos a serem considerados e conselhos sobre com
 
 ## Verniz
 
-O verniz é um proxy reverso HTTP com cache. Por mais complicado que isso pareça, o resultado são respostas rápidas para ajudar a garantir que as solicitações sejam retornadas mais rapidamente do que se tivesse que buscar o item na origem. A execução de um site do Adobe Commerce sem alguma versão do Verniz resultará em carregamentos de página mais lentos e outras métricas principais. O verniz pode ser um pouco difícil de configurar e gerenciar a si mesmo, no entanto, temos este tópico no Experience League [Configurar verniz](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish.html){target="_blank"} para entender melhor seu uso com o Adobe Commerce. Uma alternativa é usar uma solução baseada em nuvem. Embora existam muitos a serem considerados, o Fastly foi escolhido como a solução para o Adobe Commerce na nuvem. É uma versão do Fastly, baseado em nuvem, que usa VCLs e muitas facetas do verniz.
+O verniz é um proxy reverso HTTP com cache. Por mais complicado que isso pareça, o resultado são respostas rápidas para ajudar a garantir que as solicitações sejam retornadas mais rapidamente do que se tivesse que buscar o item na origem. A execução de um site do Adobe Commerce sem alguma versão do Verniz resultará em carregamentos de página mais lentos e outras métricas principais. O verniz pode ser um pouco difícil de se configurar e gerenciar, no entanto, temos este tópico no Experience League [Configurar verniz](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/varnish/config-varnish.html){target="_blank"} para obter um melhor entendimento sobre seu uso com o Adobe Commerce. Uma alternativa é usar uma solução baseada em nuvem. Embora existam muitos a serem considerados, o Fastly foi escolhido como a solução para o Adobe Commerce na nuvem. É uma versão do Fastly, baseado em nuvem, que usa VCLs e muitas facetas do verniz.
 
 Encontrar uma solução que melhor se adapte aos seus aplicativos, configurações, orçamentos e habilidades técnicas é difícil. Usar uma opção baseada em nuvem faz com que todas as partes rígidas desapareçam, desde que o gerenciamento, a configuração, os servidores e outros componentes da infraestrutura sejam considerados. Ele foi escolhido pela equipe do Adobe Commerce na nuvem como sua solução devido ao desempenho, escalabilidade, taxa de transferência e muitas outras métricas principais.
 
@@ -48,7 +48,7 @@ A desativação de um módulo que não é usado deve ser considerada, mas não d
 
 Desativar um módulo, como o &quot;boletim informativo&quot; nativo, é um evento bastante comum. Isso é verdade especialmente quando o proprietário da loja tem uma empresa de terceiros que gerencia seu boletim informativo. Isso pode ser um problema quando um módulo de terceiros é instalado e, por algum motivo, eles decidiram usar uma classe do informativo. Essa dependência acidental provavelmente será capturada durante alguma instalação inicial e teste, mas você será forçado a decidir se deseja manter esse módulo de terceiros, ativar o boletim informativo e testar a regressão no site procurando por qualquer comportamento estranho introduzido. Ou você encontra uma substituição para esse módulo de terceiros. Ambas as decisões vêm com risco, tempo e possivelmente bugs.
 
-Antes de desativar módulos não utilizados, certifique-se de que você não tenha nenhum teste, como unidade, [MFTF](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/){target="_blank"}, [Codeception testing](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/){targe="_blank"} testes de carga ou solicitações de API que podem ser afetadas.
+Antes de desabilitar módulos não utilizados, verifique se não há testes, como testes de carga de unidade, [MFTF](https://developer.adobe.com/commerce/cloud-tools/docker/test/application-testing/){target="_blank"}, [Teste de persuasão](https://developer.adobe.com/commerce/cloud-tools/docker/test/code-testing/){target=&quot;_blank&quot;} ou solicitações de API que possam ser afetadas.
 
 ## Exigir que os padrões de codificação Adobe Commerce e PHP sejam seguidos para cada solicitação pull
 
@@ -66,6 +66,6 @@ Além de detectar a degradação do desempenho pelo novo código, ter uma refer�
 
 Esses testes podem ser automatizados e fazer parte do pipeline de CI/CD. Devido a isso, você também pode ter regras em vigor que obtenham os resultados e potencialmente bloqueiem a mesclagem de recursos se ocorrer um desvio excessivo em relação à norma. O número de casos de uso para esses dados é ilimitado, mas sem iniciar esse processo, você pode nunca realizar seu potencial.
 
-A Adobe Commerce tem um bom writeup sobre este tópico encontrado no Experience League [Dicas para testes de desempenho](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/launch.html){target="_blank"} and in [Testing guidance](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html){target="_blank"}.
+A Adobe Commerce tem um bom write-up sobre este tópico encontrado na Experience League [Dicas de Teste de Desempenho](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/launch.html){target="_blank"} e em [Orientação de teste](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html){target="_blank"}.
 
 {{$include /help/_includes/hosting-related-links.md}}

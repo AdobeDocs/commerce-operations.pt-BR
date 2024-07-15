@@ -5,7 +5,7 @@ exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ O Adobe Managed Services fornece aplicativos e infraestrutura hospedados e geren
 
 O Adobe Managed Services oferece os principais benefícios em implementações de nuvem locais e não gerenciadas, incluindo:
 
-- **Metas de nível de serviço (SLT) aprimoradas**— tempos de resposta mais rápidos que o suporte Adobe Commerce padrão.
-- **Contratos de nível de serviço (SLAs) aprimorados**— 99,9% de nível de aplicativo que os clientes regulares da Adobe Commerce em infraestrutura em nuvem obtêm acima do nível de infraestrutura de 99,99%.
-- **Especialização em nuvem designada**— a Managed Services fornece aos clientes um CSE (Customer Success Engineer, Engenheiro de sucesso do cliente) designado que atua como um especialista em infraestrutura de nuvem e aplicativos. O CSE trabalha com os clientes e seus parceiros, fornecendo práticas recomendadas e orientação para acelerar o tempo de entrada no mercado, incluindo:
+- **Destinos de nível de serviço (SLT) aprimorados**—Tempos de resposta mais rápidos que o suporte padrão da Adobe Commerce.
+- **Contratos de nível de serviço (SLAs) aprimorados** — nível de aplicativo de 99,9% que os clientes regulares da Adobe Commerce em infraestrutura em nuvem obtêm acima do nível de infraestrutura de 99,99%.
+- **Especialização em nuvem designada** — a Managed Services fornece aos clientes um CSE (Engenheiro de sucesso do cliente) designado que atua como um especialista em infraestrutura de nuvem e aplicativos. O CSE trabalha com os clientes e seus parceiros, fornecendo práticas recomendadas e orientação para acelerar o tempo de entrada no mercado, incluindo:
    - Guia e suporte por meio do processo de integração
    - Gerenciar provisionamento e configuração de plataforma
    - Dar conselhos sobre princípios de arquitetura para integrações e personalizações
@@ -81,7 +81,7 @@ O Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
             <td>Proprietário</td>
         </tr>
         <tr>
-            <td>Acesso ao código-fonte do Adobe Commerce</td>
+            <td>Acesso ao código do Adobe Commerce Source</td>
             <td></td>
             <td></td>
             <td>Proprietário</td>
@@ -380,7 +380,7 @@ O diagrama a seguir mostra a pilha da tecnologia de segurança Adobe Managed Ser
 
 ## Assistência para atualização
 
-A equipe do Managed Services desempenha um papel ativo ao ajudar a planejar e auxiliar no processo de atualização. O CSE (Engenheiro de sucesso do cliente) trabalha com a equipe de atualização do projeto, incluindo gerentes de projeto e desenvolvedores (especialistas internos no assunto, parceiros certificados Adobe ou profissionais da Adobe Consulting) para ajudar a equipe a garantir o planejamento adequado e a adesão às práticas recomendadas durante a atualização.
+A equipe do Managed Services desempenha um papel ativo ao ajudar a planejar e auxiliar no processo de atualização. O CSE (Engenheiro de sucesso do cliente) trabalha com a equipe de atualização do projeto, incluindo gerentes de projeto e desenvolvedores (especialistas internos no assunto, parceiros certificados pela Adobe ou profissionais da Adobe Consulting) para ajudar a equipe a garantir o planejamento adequado e a adesão às práticas recomendadas durante a atualização.
 
 Os Managed Services CSEs trabalharam com clientes da Adobe Commerce para executar atualizações em grandes ambientes. Seu CSE pode ajudá-lo a aproveitar o conhecimento especializado para maximizar o sucesso da atualização, minimizando o tempo de inatividade e reduzindo o risco geral. Além disso, os Managed Services CSEs trabalham com seu ambiente de preparo dedicado para a atualização, de modo que os processos de produção existentes não sejam afetados ao validar a atualização.
 
@@ -402,7 +402,7 @@ O Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
     <td>Criar plano de projeto de atualização</td>
     <td>Proprietário</td>
     <td>Colaborador</td>
-    <td>Colaborador<br />O CSE fornece amostras do modelo de atualização e do plano de atualização; oferece conselhos e dicas de práticas recomendadas.</td>
+    <td>O Colaborador<br />CSE fornece amostras do modelo de atualização e do plano de atualização; oferece dicas de conselhos e práticas recomendadas.</td>
   </tr>
   <tr>
     <td>Determinar as alterações necessárias na infraestrutura</td>
@@ -414,14 +414,14 @@ O Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
     <td>Avaliar a complexidade da atualização<br />Identificar e documentar pacotes, problemas e correções e módulos de terceiros e personalizados</td>
     <td>Colaborador</td>
     <td>Proprietário</td>
-    <td>Colaborador<br />O CSE fornece relatórios e recomendações da Ferramenta de compatibilidade de atualização.</td>
+    <td>O Colaborador<br />CSE fornece relatórios e recomendações da Ferramenta de Compatibilidade de Atualização.</td>
   </tr>
   <tr>
     <td rowspan="3">Executar atualização</td>
-    <td>Atualizar serviços de infraestrutura<br />[MariaDB, Redis, Open Search e Rabbit MQ] (armazenamento temporário e produção)</td>
+    <td>Atualizar serviços de infraestrutura<br />[MariaDB, Redis, Open Search e Rabbit MQ] (Preparo e Produção)</td>
     <td></td>
     <td></td>
-    <td>Proprietário<br />O CSE coordena as atualizações do serviço de infraestrutura.<br />O CSE agenda o evento de reunião da conferência para atualizações.<br />O CSE auxilia na migração de dados da produção para o armazenamento temporário.</td>
+    <td>Proprietário<br />O CSE coordena as atualizações do serviço de infraestrutura.<br />O CSE agenda o evento de reunião de conferência para atualizações.O <br />CSE auxilia na migração de dados da produção para o armazenamento temporário.</td>
   </tr>
   <tr>
     <td>Atualizar a base de código e as personalizações do Commerce; recompilação de código e refatoração de código</td>
@@ -433,29 +433,29 @@ O Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
     <td>Executar verificações e solução de problemas após a atualização</td>
     <td></td>
     <td>Proprietário</td>
-    <td>Colaborador<br />O CSE executa o runbook pós-atualização para detectar e corrigir problemas relacionados à atualização.</td>
+    <td>O Colaborador<br />CSE executa o runbook de pós-atualização para detectar e corrigir problemas relacionados à atualização.</td>
   </tr>
   <tr>
     <td rowspan="3">UAT e Launch</td>
     <td>Executar testes de desempenho e segurança</td>
     <td>Colaborador</td>
     <td>Proprietário</td>
-    <td>Colaborador<br />O CSE auxilia no teste de carga, monitorando o desempenho do aplicativo e da infraestrutura.<br />O CSE ajuda a configurar a Commerce Security Scan Tool.</td>
+    <td>O Colaborador<br />CSE auxilia no teste de carga, monitorando o desempenho do aplicativo e da infraestrutura.O <br />CSE ajuda a configurar a Ferramenta de Verificação de Segurança da Commerce.</td>
   </tr>
   <tr>
     <td>Teste de aceitação de usuários em preparo</td>
     <td>Proprietário</td>
     <td>Colaborador</td>
-    <td>Colaborador<br />O CSE valida se o aplicativo e a infraestrutura estão funcionando corretamente após a atualização.</td>
+    <td>O colaborador<br />CSE valida se o aplicativo e a infraestrutura estão sendo executados corretamente após a atualização.</td>
   </tr>
   <tr>
     <td>Inicialização para produção</td>
     <td>Colaborador</td>
     <td>Proprietário</td>
-    <td>Colaborador<br />O CSE agenda o evento de reunião da conferência de lançamento.</td>
+    <td>Colaborador<br />O CSE agenda o evento de reunião de conferência de inicialização.</td>
   </tr>
   <tr>
-    <td>Pós-lançamento</td>
+    <td>Post-Launch</td>
     <td></td>
     <td>Colaborador</td>
     <td>Colaborador</td>

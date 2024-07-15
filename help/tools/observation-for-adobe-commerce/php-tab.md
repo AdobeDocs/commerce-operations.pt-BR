@@ -1,48 +1,48 @@
 ---
-title: A variável [!UICONTROL PHP] guia
-description: Saiba mais sobre o [!UICONTROL PHP] guia de [!DNL Observation for Adobe Commerce].
+title: A guia [!UICONTROL PHP]
+description: Saiba mais sobre a guia [!UICONTROL PHP] do  [!DNL Observation for Adobe Commerce].
 exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
 
-# A variável [!UICONTROL PHP] guia
+# A guia [!UICONTROL PHP]
 
-A variável **PHP** A aba mostra problemas do processo PHP para fornecer uma análise mais profunda dos problemas do PHP.
+A aba **PHP** mostra problemas do processo PHP para fornecer uma análise mais profunda dos problemas do PHP.
 
 ## [!UICONTROL PHP active process details]
 
 ![Detalhes do processo ativo do PHP](../../assets/tools/php-active-process-details.jpg)
 
-A variável **[!UICONTROL PHP active process details]** frame mostra os processos PHP, incluindo php-fpm, durante o período selecionado.
+O quadro **[!UICONTROL PHP active process details]** mostra os processos PHP, incluindo php-fpm, durante o período selecionado.
 
 ## [!UICONTROL PHP process load (# of PHP processes and % of CPU load)]
 
-![Carregamento do processo PHP](../../assets/tools/php-process-load.jpg)
+![carregamento do processo PHP](../../assets/tools/php-process-load.jpg)
 
-A variável **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** O quadro mostra a carga de CPU de processos PHP-FPM ao longo do período selecionado.
+O quadro **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** mostra a carga de CPU dos processos PHP-FPM ao longo do período selecionado.
 
 ## [!UICONTROL PHP Memory detail]
 
-![Detalhes da memória do PHP](../../assets/tools/php-memory-detail.jpg)
+![detalhes de memória do PHP](../../assets/tools/php-memory-detail.jpg)
 
-A variável **[!UICONTROL PHP Memory detail]** frame mostra o uso de memória de processos PHP durante o período selecionado.
+O quadro **[!UICONTROL PHP Memory detail]** mostra o uso de memória de processos PHP durante o período selecionado.
 
 ## [!UICONTROL PHP CPU Utilization]
 
-![Utilização da CPU no PHP](../../assets/tools/php-cpu-utilization.jpg)
+![Utilização de CPU do PHP](../../assets/tools/php-cpu-utilization.jpg)
 
-A variável **[!UICONTROL PHP CPU Utilization]** frame mostra a utilização percentual de CPU de processos PHP ao longo do período selecionado.
+O quadro **[!UICONTROL PHP CPU Utilization]** mostra a utilização percentual da CPU de processos PHP durante o período selecionado.
 
 ## [!UICONTROL PHP Process states]
 
 ![Estados do processo PHP](../../assets/tools/php-process-states-image-1.jpg)
 
-A variável **[!UICONTROL PHP Process states]** frame mostra os estados do processo PHP durante o período selecionado. Ele é exibido quando os processos do PHP terminam e reiniciam. Cuidado com os processos terminados do PHP que não mostram reinicializações.
+O quadro **[!UICONTROL PHP Process states]** mostra os estados do processo PHP durante o período selecionado. Ele é exibido quando os processos do PHP terminam e reiniciam. Cuidado com os processos terminados do PHP que não mostram reinicializações.
 
 * &#39;%NOTICE: Encerrando ...%&#39;) como &#39;php_term&#39;
 * &#39;% AVISO: saindo, até logo!%&#39;) como &#39;php_ exit&#39;
@@ -53,7 +53,7 @@ A variável **[!UICONTROL PHP Process states]** frame mostra os estados do proce
 
 ![Erros de PHP](../../assets/tools/php-errors-image-1.jpg)
 
-A variável **[!UICONTROL PHP Errors]** frame mostra o número de erros de processamento de PHP durante o período selecionado. As mensagens de erro analisadas e exibidas incluem:
+O quadro **[!UICONTROL PHP Errors]** mostra o número de erros de trabalho do PHP durante o período selecionado. As mensagens de erro analisadas e exibidas incluem:
 
 * &#39;%worker_connections are not insufficient%&#39;) como &#39;worker&#39;
 * Erro fatal &#39;%PHP: tamanho de memória permitido!%&#39;) como &#39;mem_size&#39;
@@ -69,15 +69,15 @@ A variável **[!UICONTROL PHP Errors]** frame mostra o número de erros de proce
 
 ## [!UICONTROL PHP processes count]
 
-![Contagem de processos do PHP](../../assets/tools/php-processes-count.jpg)
+![Contagem de processos PHP](../../assets/tools/php-processes-count.jpg)
 
-A variável **[!UICONTROL PHP processes count]** frame mostra uma contagem de processos PHP ao longo do período selecionado.
+O quadro **[!UICONTROL PHP processes count]** mostra uma contagem de processos PHP ao longo do período selecionado.
 
 ## [!UICONTROL Database Errors]
 
 ![Erros de Banco de Dados](../../assets/tools/php-tab-database-errors.jpg)
 
-A variável **[!UICONTROL Database Errors]** mostra erros de banco de dados no período selecionado. Os erros analisados incluem:
+O quadro **[!UICONTROL Database Errors]** mostra erros de banco de dados no período selecionado. Os erros analisados incluem:
 
 * &#39;%Memory size alocado para a tabela temporária é mais de 20% de innodb_buffer_pool_size%&#39;) como &#39;temp_tbl_buff_pool&#39;
 * &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) como &#39;rbr_write_fail&#39;
@@ -86,28 +86,28 @@ A variável **[!UICONTROL Database Errors]** mostra erros de banco de dados no p
 * &#39;%rollback%&#39;) como &#39;reversão&#39;
 * &#39;%Foreign key constraint falha para a tabela &#39;%&#39;) como &#39;Foreign_key_constraint&#39;
 * &#39;%Error_code: 1114%&#39;) como &#39;sql_1114_full&#39;
-* &#39;%CRÍTICO: SQLSTATE[HY000] [2006] O servidor MySQL desapareceu (%) como &quot;sql_went&quot;
-* &#39;%SQLSTATE[HY000] [1040] Muitas conexões (%) como &#39;sql_1040&#39;
-* &#39;%CRÍTICO: SQLSTATE[HY000] [2002]%&#39;) como &#39;sql_2002&#39;
+* &#39;%CRITICAL: SQLSTATE[HY000] [2006] O servidor MySQL desapareceu%&#39;) como &#39;sql_went&#39;
+* &#39;%SQLSTATE[HY000] [1040] Muitas conexões (%)&#39;) como &#39;sql_1040&#39;
+* &#39;%CRITICAL: SQLSTATE[HY000] [2002]%&#39;) como &#39;sql_2002&#39;
 * &#39;%SQLSTATE[08S01]:%&#39;) como &#39;sql_1047&#39;
-* &#39;%[Aviso] Conexão cancelada (%) como &#39;aborted_conn&#39;
+* &#39;%[Aviso] Conexão anulada%&#39;) como &#39;aborted_conn&#39;
 * &#39;%SQLSTATE[23000]: violação de restrição de integridade:%&#39;) como &#39;sql_23000&#39;
 * &#39;%1205 Tempo limite de espera de bloqueio (%1) como &#39;sql_1205&#39;
-* &#39;%SQLSTATE[HY000] [1049] Banco de dados desconhecido (%) como &#39;sql_1049&#39;
-* &#39;%SQLSTATE[42S02]: tabela ou exibição base não encontrada:%&#39;) como &#39;sql_42S02&#39;
+* &#39;%SQLSTATE[HY000] [1049] Banco de dados desconhecido%&#39;) como &#39;sql_1049&#39;
+* &#39;%SQLSTATE[42S02]: Tabela ou exibição base não encontrada:%&#39;) como &#39;sql_42S02&#39;
 * &#39;%General error: 1114%&#39;) as &#39;sql_1114&#39;
 * &#39;%SQLSTATE[40001]%&#39;) como &#39;sql_1213&#39;
-* &#39;%SQLSTATE[42S22]: Coluna não encontrada: 1054 Coluna desconhecida (%) como &#39;sq1_1054&#39;
+* &#39;%SQLSTATE[42S22]: coluna não encontrada: 1054 Coluna desconhecida%&#39;) como &#39;sq1_1054&#39;
 * &#39;%SQLSTATE[42000]: Erro de sintaxe ou violação de acesso:%&#39;) como &#39;sql_42000&#39;
 * &#39;%SQLSTATE[21000]: violação de cardinalidade:%&#39;) como &#39;sql_1241&#39;
-* &#39;%SQLSTATE[2003]:%&#39;) como &#39;sql_22003&#39;
-* &#39;%SQLSTATE[HY000] [9000] Cliente com endereço IP (%) como &#39;sql_9000&#39;
+* &#39;%SQLSTATE[22003]:%&#39;) como &#39;sql_22003&#39;
+* &#39;%SQLSTATE[HY000] [9000] Cliente com endereço IP%&#39;) como &#39;sql_9000&#39;
 * &#39;%SQLSTATE[HY000]: Erro geral: 2014%&#39;) como &#39;sql_2014&#39;
 * &#39;%1927 Conexão eliminada (%1927) como &#39;sql_1927&#39;
 * &#39;%1062 \[ERRO\] InnoDB:%&#39;) as &#39;sql_1062_e&#39;
-* &#39;%[Nota] WSREP: Liberando mapa de memória para disco...%&#39;) como &#39;mem_map_flush&#39;
+* &#39;%[Nota] WSREP: liberando mapa de memória para disco...%&#39;) como &#39;mem_map_flush&#39;
 * &#39;%Código de erro interno do MariaDB: 1146%&#39;) como &#39;sql_1146&#39;
-* &#39;%Código de erro interno do MariaDB: 1062%&#39;) como &#39;sql_1062&#39; * &#39;%1062 [Aviso] InnoDB:%&#39;) como &#39;sql_1062_w&#39;
+* &#39;%Internal MariaDB (código de erro: 1062%&#39;) as &#39;sql_1062&#39; * &#39;%1062 [Aviso] InnoDB:%&#39;) as &#39;sql_1062_w&#39;
 * &#39;%Código de erro interno do MariaDB: 1064%&#39;) como &#39;sql_1064&#39;
 * &#39;%InDB: falha de asserção no arquivo &#39;%&#39;) como &#39;assertion_err&#39;
 * &#39;%mysqld_safe Número de processos em execução agora: 0%&#39;) como &#39;mysql_oom&#39;
@@ -121,12 +121,12 @@ A variável **[!UICONTROL Database Errors]** mostra erros de banco de dados no p
 
 ## [!UICONTROL Database traces]
 
-![Rastreamentos de banco de dados](../../assets/tools/php-tab-database-traces.jpg)
+![Rastreamentos do banco de dados](../../assets/tools/php-tab-database-traces.jpg)
 
-A variável **[!UICONTROL Database traces]** quadro mostra informações de rastreamento do banco de dados. Esse quadro é alinhado à exibição do resumo de transações APM para a linha do tempo selecionada.
+O quadro **[!UICONTROL Database traces]** mostra informações de rastreamento do banco de dados. Esse quadro é alinhado à exibição do resumo de transações APM para a linha do tempo selecionada.
 
 ## [!UICONTROL Database mysql-slow.log]
 
 ![Banco de dados mysql-slow.log](../../assets/tools/php-tab-database-mysql-slow-log.jpg)
 
-A variável **[!UICONTROL Database mysql-slow.log]** quadro mostra os tipos de instrução de consulta que estavam no `mysql-slow.log` arquivo no período selecionado.
+O quadro **[!UICONTROL Database mysql-slow.log]** mostra os tipos de instrução de consulta que estavam no arquivo `mysql-slow.log` durante o período selecionado.

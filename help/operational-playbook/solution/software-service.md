@@ -1,5 +1,5 @@
 ---
-title: Serviços de software para comércio
+title: Serviços de software da Commerce
 description: Saiba mais sobre as principais diferenças entre aplicativos SaaS e outras opções de comércio eletrônico de código aberto auto-hospedadas (no local).
 exl-id: 9be70e1e-76d5-4696-862e-f2b71eb1abb0
 feature: Best Practices, Saas
@@ -50,4 +50,5 @@ Embora as plataformas de comércio eletrônico sejam o núcleo da maioria dos ne
 
 Recomendamos que os varejistas usem os melhores sistemas do setor, o que significa que eles usam o melhor sistema para cada parte de seus negócios. Na maioria das vezes, escolher uma plataforma para executar todos os aspectos e funções da sua empresa fica aquém das suas expectativas.
 
-Em vez disso, as empresas devem ser capazes de usar qualquer número de sistemas para seus sistemas de ERP, POS, 3PL e comércio eletrônico e integrar esses sistemas para sincronizar inventário, pedidos, clientes, itens e envio/rastreamento de dados para automatizar seus processos de negócios. As plataformas SaaS baseadas em nuvem geralmente acomodam esses requisitos de negócios com flexibilidade e facilidade.
+Em vez disso, as empresas devem poder utilizar qualquer
+seus sistemas de ERP, POS, 3PL e comércio eletrônico e integram esses sistemas para sincronizar dados de inventário, pedidos, clientes, itens e remessa/rastreamento automatizam seus processos de negócios. As plataformas SaaS baseadas em nuvem geralmente acomodam esses requisitos de negócios com flexibilidade e facilidade.

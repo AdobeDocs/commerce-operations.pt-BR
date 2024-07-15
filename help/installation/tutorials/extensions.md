@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Gerenciar extensões de terceiros
 
-O código que estende ou personaliza o comportamento do Adobe Commerce é chamado de extensão. Opcionalmente, é possível empacotar e distribuir extensões na [Commerce Marketplace](https://commercemarketplace.adobe.com/) ou outro sistema de distribuição de extensões.
+O código que estende ou personaliza o comportamento do Adobe Commerce é chamado de extensão. Opcionalmente, é possível empacotar e distribuir extensões no [Commerce Marketplace](https://commercemarketplace.adobe.com/) ou em outro sistema de distribuição de extensões.
 
 As extensões incluem:
 
@@ -22,7 +22,7 @@ As extensões incluem:
 
 >[!TIP]
 >
->Este tópico explica como usar a interface de linha de comando para gerenciar extensões de terceiros adquiridas no Commerce Marketplace. Você pode usar o mesmo procedimento para instalar o _qualquer_ extensão; tudo o que você precisa é do nome e da versão do Compositor da extensão. Para encontrá-la, abra a extensão do `composer.json` arquivo e observe os valores de `"name"` e `"version"`.
+>Este tópico explica como usar a interface de linha de comando para gerenciar extensões de terceiros adquiridas no Commerce Marketplace. Você pode usar o mesmo procedimento para instalar a extensão _any_. Tudo o que você precisa é o nome e a versão do Compositor da extensão. Para encontrá-lo, abra o arquivo `composer.json` da extensão e anote os valores de `"name"` e `"version"`.
 
 ## Instalar
 
@@ -38,7 +38,7 @@ Antes da instalação, talvez você queira:
 Para instalar uma extensão, você deve:
 
 1. Obtenha uma extensão do Commerce Marketplace ou de outro desenvolvedor de extensão.
-1. Se você instalar uma extensão do Commerce Marketplace, verifique se `repo.magento.com` o repositório existe em seu `composer.json` arquivo:
+1. Se você instalar uma extensão do Commerce Marketplace, verifique se o repositório `repo.magento.com` existe no arquivo `composer.json`:
 
    ```bash
    "repositories": [
@@ -50,17 +50,17 @@ Para instalar uma extensão, você deve:
    ```
 
 1. Obtenha o nome e a versão do Compositor da extensão.
-1. Atualize o `composer.json` arquivo no seu projeto com o nome e a versão da extensão.
+1. Atualize o arquivo `composer.json` em seu projeto com o nome e a versão da extensão.
 1. Verifique se a extensão foi instalada corretamente.
 1. Ative e configure a extensão.
 
 ### Obter informações de extensão
 
-Se você já sabe o nome e a versão do Composer da extensão, ignore esta etapa e continue em [Atualize seu `composer.json` arquivo](#update-composer-dependencies).
+Se você já sabe o nome e a versão do Composer da extensão, ignore esta etapa e continue com [Atualize seu arquivo `composer.json`](#update-composer-dependencies).
 
 Para obter o nome e a versão do Compositor da extensão do Commerce Marketplace:
 
-1. Efetue logon no [Commerce Marketplace](https://commercemarketplace.adobe.com/) com o nome de usuário e a senha que você usou para comprar a extensão.
+1. Faça logon em [Commerce Marketplace](https://commercemarketplace.adobe.com/) com o nome de usuário e a senha que você usou para comprar a extensão.
 
 1. No canto superior direito, clique em **Seu nome** > **Meu perfil**.
 
@@ -70,19 +70,19 @@ Para obter o nome e a versão do Compositor da extensão do Commerce Marketplace
 
    ![Histórico de compras do Marketplace](../../assets/installation//marketplace-my-purchases.png)
 
-1. Localize a extensão que deseja instalar e clique em **Detalhes técnicos**.
+1. Localize a extensão que você deseja instalar e clique em **Detalhes Técnicos**.
 
-   ![Detalhes técnicos mostra o nome do Compositor da extensão](../../assets/installation/marketplace-extension-technical-details.png)
+   ![Os detalhes técnicos mostram o nome do Compositor da extensão](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
->Como alternativa, você pode encontrar o nome do Compositor e a versão de _qualquer_ extensão (independentemente de você tê-la comprado no Commerce Marketplace ou em outro lugar) no `composer.json` arquivo.
+>Como alternativa, você pode encontrar o nome e a versão do Composer da extensão _any_ (seja na compra no Commerce Marketplace ou em outro lugar) no arquivo `composer.json` da extensão.
 
 ### Atualizar dependências do Composer
 
-Adicione o nome e a versão da extensão à `composer.json` arquivo:
+Adicione o nome e a versão da extensão ao arquivo `composer.json`:
 
-1. Navegue até o diretório do projeto e atualize o `composer.json` arquivo.
+1. Navegue até o diretório do projeto e atualize o arquivo `composer.json`.
 
    ```bash
    composer require <component-name>:<version>
@@ -94,7 +94,7 @@ Adicione o nome e a versão da extensão à `composer.json` arquivo:
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Insira seu [chaves de autenticação](../prerequisites/authentication-keys.md). Sua chave pública é seu nome de usuário; sua chave privada é sua senha.
+1. Insira suas [chaves de autenticação](../prerequisites/authentication-keys.md). Sua chave pública é seu nome de usuário; sua chave privada é sua senha.
 
 1. Aguarde até que o Composer conclua a atualização das dependências do projeto e verifique se não há erros:
 
@@ -120,7 +120,7 @@ Por padrão, a extensão provavelmente está desativada:
 Module is disabled
 ```
 
-O nome da extensão está no formato `<VendorName>_<ComponentName>`; este é um formato diferente do nome do Compositor. Use esse formato para habilitar a extensão. Se não tiver certeza do nome da extensão, execute:
+O nome da extensão está no formato `<VendorName>_<ComponentName>`; esse é um formato diferente do nome do Compositor. Use esse formato para habilitar a extensão. Se não tiver certeza do nome da extensão, execute:
 
 ```bash
 bin/magento module:status
@@ -130,7 +130,7 @@ E procure a extensão em &quot;Lista de módulos desativados&quot;.
 
 ### Ativar
 
-Algumas extensões não funcionam corretamente, a menos que você limpe primeiro os arquivos de exibição estáticos gerados. Use o `--clear-static-content` opção para limpar arquivos de visualização estáticos quando estiver ativando uma extensão.
+Algumas extensões não funcionam corretamente, a menos que você limpe primeiro os arquivos de exibição estáticos gerados. Use a opção `--clear-static-content` para limpar arquivos de exibição estáticos quando estiver habilitando uma extensão.
 
 1. Habilite a extensão e limpe os arquivos de exibição estáticos:
 
@@ -184,7 +184,7 @@ Algumas extensões não funcionam corretamente, a menos que você limpe primeiro
 
 >[!TIP]
 >
->Se encontrar erros ao carregar a loja em um navegador, use o seguinte comando para limpar o cache: `bin/magento cache:flush`.
+>Se você encontrar erros ao carregar a loja em um navegador, use o seguinte comando para limpar o cache: `bin/magento cache:flush`.
 
 ## Atualizar
 
@@ -232,13 +232,13 @@ Você deve entrar em contato com o fornecedor da extensão para obter instruçõ
 
 >[!CAUTION]
 >
->Execute etapas de desinstalação em um ambiente de não produção _primeiro_ e teste completamente antes de implantar em seu ambiente de produção.
+>Execute as etapas de desinstalação em um ambiente de não produção _first_ e teste completamente antes de implantar em seu ambiente de produção.
 
 As instruções a seguir fornecem informações gerais para a desinstalação de extensões de terceiros:
 
 1. Remova a extensão do repositório de projetos do Adobe Commerce.
 
-   - Para extensões baseadas no Composer, remova a extensão do Adobe Commerce `composer.json` arquivo.
+   - Para extensões baseadas no Composer, remova a extensão do arquivo Adobe Commerce `composer.json`.
 
      ```bash
      composer remove <package-name>
@@ -250,7 +250,7 @@ As instruções a seguir fornecem informações gerais para a desinstalação de
      rm -rf app/code/<vendor-name>/<module-name>
      ```
 
-1. Se a variável `config.php` o arquivo estiver sob controle do código-fonte no repositório de projetos do Adobe Commerce, remova a extensão do `config.php` arquivo.
+1. Se o arquivo `config.php` estiver sob controle do código-fonte no repositório de projetos do Adobe Commerce, remova a extensão do arquivo `config.php`.
 
 1. Teste o banco de dados local para garantir que as instruções fornecidas pelo fornecedor funcionem conforme esperado.
 

@@ -22,14 +22,14 @@ Um patrocinador executivo eficaz deve garantir que o gerenciamento, o roteiro e 
 
 ## Entrada
 
-![Ticket saindo da máquina](../../assets/playbooks/buyin.png)
+![Tíquete saindo do computador](../../assets/playbooks/buyin.png)
 Alcançar a adesão do gerenciamento em toda a equipe de liderança também é fundamental. Ter vários agentes de alteração para impulsionar o crescimento ajuda a impulsionar o crescimento com mais facilidade e rapidez. A responsabilidade pelo gerenciamento bem-sucedido do Adobe Commerce precisa ser compartilhada por toda a equipe de liderança. É então a responsabilidade do patrocinador executivo conquistar a equipe executiva compartilhando exemplos que comprovam o valor da Adobe Commerce em geral. Normalmente, isso se concentra em fornecer uma melhor experiência ao cliente e benefícios subsequentes para os negócios.
 
 Ao gerenciar sites de comércio eletrônico ou implementar projetos digitais como o Adobe Commerce, os líderes são responsáveis por monitorar diferentes departamentos e equipes que possuem diferentes partes das iniciativas de comércio eletrônico. É essencial garantir que todos os grupos compartilhem uma estratégia comum para atingir objetivos comuns. Ter uma apresentação interna para obter o suporte de executivos ajuda a aumentar a conscientização, alinhar equipes e obter os recursos necessários para uma implementação ideal.
 
 ## Responsabilidade
 
-![figuras reunidas ao redor de uma tabela](../../assets/playbooks/accountability.png)
+![figuras reunidas em torno de uma tabela](../../assets/playbooks/accountability.png)
 Liderança de projeto é o ato de liderar uma equipe para a conclusão bem-sucedida de uma meta. Muitas vezes, pode ser uma das áreas mais críticas para se obter o certo a fim de entregar com sucesso um projeto de comércio eletrônico. A liderança de projetos bem-sucedida requer habilidades de gestão e liderança, a fim de garantir a adesão das pessoas certas, enquanto lidera a equipe na direção certa.
 
 ## Nível C
@@ -72,8 +72,10 @@ Responsável por garantir que o projeto se concentre em atingir seus objetivos e
 
 - Cria e nomeia as equipes de gerenciamento de projetos
 - Supervisiona o desenvolvimento do business case, garantindo o alinhamento estratégico da empresa
-- Monitora e controla os progressos a nível estratégico, em especial analisando regularmente o business case
-- Escala problemas e riscos (é o ponto de escalonamento para problemas e riscos e garante que todos os riscos associados ao business case sejam identificados, avaliados e controlados)
+- Acompanhar e controlar os progressos realizados a nível estratégico, em
+analisar o business case regularmente
+- Escala problemas e riscos (é o ponto de escalonamento para problemas e
+e garante que todos os riscos associados ao business case sejam identificados, avaliados e controlados)
 - Tome decisões sobre questões escaladas com foco especial na justificativa de continuidade de negócios
 - Garante a garantia geral dos negócios do projeto e garante que ele permaneça no objetivo para fornecer produtos que alcancem os benefícios comerciais esperados
 
@@ -157,4 +159,5 @@ O gerenciamento eficaz de um site de comércio eletrônico requer que a equipe d
 
 Para integrar a organização, é sempre uma boa ideia compartilhar a visão e reforçar repetidamente o motivo pelo qual sua empresa está investindo em tecnologia de comércio eletrônico, articulando os benefícios para o cliente e os benefícios para os negócios.
 
-O compartilhamento de documentação, como estudos de caso de sucesso de implementações digitais, ajuda a validar por que e como esse investimento leva a organização a um novo nível. Se você quiser que a organização adote a transformação digital, é importante informar aos funcionários que essa é uma prioridade.
+Compartilhamento de documentação, como estudos de caso de sucesso de
+O ajuda a validar por que e como esse investimento leva a organização a um novo nível. Se você quiser que a organização adote a transformação digital, é importante informar aos funcionários que essa é uma prioridade.

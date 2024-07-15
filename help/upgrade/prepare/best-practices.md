@@ -26,7 +26,7 @@ O nível de esforço para atualizar a instância do Adobe Commerce depende deste
 
 - **Como você criou seu site?** A quantidade de trabalho personalizado e o número de módulos de terceiros instalados afetam fortemente a complexidade de uma atualização. A qualidade do trabalho e dos módulos personalizados pode determinar se uma atualização ocorre sem problemas.
 
-- **Você está ignorando várias versões?** Ignorar as versões torna a próxima atualização mais complexa, atualizar das versões subsequentes torna o processo mais fácil e barato.
+- **Você está ignorando várias versões?** Ignorar versões torna a próxima atualização mais complexa, atualizar de versões subsequentes torna o processo mais fácil e barato.
 
 - **Que tipo de atualização você está executando?** Uma atualização para uma versão secundária (de 2.3.x para 2.4.0, por exemplo) é mais extensa do que uma atualização entre versões de patch (como de 2.4.2 para 2.4.3). As atualizações de segurança são o tipo mais fácil de implementar.
 
@@ -47,11 +47,11 @@ A partir do momento em que você começa a trabalhar em um projeto, considere co
 
 Comece a adotar a plataforma Adobe Commerce Extensibility, se ainda não tiver adotado. A plataforma permite que você personalize processos, integre sistemas e implante novos recursos com eficiência, mantendo a capacidade de atualização semelhante ao SaaS. Seus recursos incluem:
 
-- **Extensibilidade da interface**. Amplie e evolua sua loja independentemente de seu back-end e middleware usando [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
+- **Extensibilidade da interface**. Estenda e desenvolva sua loja independentemente de seu back-end e middleware usando o [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **Extensibilidade de API**. Uso [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) estender a camada da API da Web evoluindo o modelo de dados do gráfico e executando funções lambda diretamente da camada do gráfico.
+- **Extensibilidade de API**. Use o [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) para estender a camada da API Web, evoluindo o modelo de dados de gráfico e executando funções lambda diretamente da camada de gráfico.
 
-- **middleware e serviços Adobe I/O**. Conecte seus sistemas com o Adobe Commerce usando o Adobe middleware e um conjunto de conexões de aplicativos incorporados [Adobe I/O](https://www.adobe.io/). Além disso, você pode estender os principais recursos da plataforma, substituindo o comportamento padrão pela sua própria lógica de negócios que é executada no Adobe I/O.
+- **middleware e serviços de Adobe I/O**. Conecte seus sistemas com o Adobe Commerce usando o Adobe middleware e um conjunto de conexões de aplicativo criado em [Adobe I/O](https://www.adobe.io/). Além disso, você pode estender os principais recursos da plataforma, substituindo o comportamento padrão pela sua própria lógica de negócios que é executada no Adobe I/O.
 
 ### Atualizações do Planning
 
@@ -61,7 +61,7 @@ Para ajudá-lo a planejar e orçar atualizações, você deve monitorar nossa [p
 
 - Use a versão de pré-lançamento para saber mais sobre cada nova versão. O pré-lançamento é o código de Disponibilidade geral disponível para os comerciantes da Adobe Commerce e todos os parceiros duas semanas antes da Disponibilidade geral. Se você tiver vários armazenamentos, use o pré-lançamento em seu armazenamento básico e verifique se os módulos e temas personalizados são compatíveis com ele.
 
-- Revise o [Lista de verificação do plano de atualização](https://support.magento.com/hc/en-us/articles/360057968951) para que o Adobe Commerce o ajude a planejar sua atualização.
+- Revise a [lista de verificação do plano de atualização](https://support.magento.com/hc/en-us/articles/360057968951) para o Adobe Commerce para ajudá-lo a planejar sua atualização.
 
 - Planeje atualizações no início do ano. Você deve reservar um orçamento e recursos para concluir cada atualização. Lembre-se, o esforço de atualização pode variar significativamente de projeto para projeto. Use suas experiências e conhecimento para fazer um plano o mais preciso possível.
 
@@ -73,16 +73,16 @@ As atualizações devem ser feitas regularmente e com um orçamento predefinido.
 
 Avaliar o trabalho a ser feito para atualização:
 
-- Revise o [notas de versão](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) para entender o escopo e o impacto da nova versão.
+- Revise as [notas de versão](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) para entender o escopo e o impacto da nova versão.
 
 - Use o [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) para identificar possíveis problemas que devem ser corrigidos em seu código personalizado antes de tentar atualizar para uma versão mais recente.
 
 - Se você estiver usando extensões de terceiros, valide a compatibilidade delas com a versão de destino para a qual você está planejando atualizar.
 
-### Teste pós-atualização
+### Teste de atualização do Post
 
-Os testes são a fase de uma atualização que requer mais tempo. Como resultado, esse processo deve ser o mais automatizado possível. Você pode se beneficiar usando as ferramentas de teste principais. A variável [Guia de teste do aplicativo](https://developer.adobe.com/commerce/testing/guide/) fornece detalhes.
+Os testes são a fase de uma atualização que requer mais tempo. Como resultado, esse processo deve ser o mais automatizado possível. Você pode se beneficiar usando as ferramentas de teste principais. O [Guia de Teste de Aplicativo](https://developer.adobe.com/commerce/testing/guide/) fornece detalhes.
 
 Use um ambiente de preparo para testar e validar sua atualização antes de passar para a produção.
 
-Utilizar um **página de manutenção**. Preparar essa página com antecedência permite que você se comunique com seus clientes, notificando-os de que o trabalho está acontecendo em segundo plano. Esta página deve ficar visível por alguns minutos, mas se houver um problema, talvez seja necessário usá-la por mais tempo. Ter o conteúdo e o design apropriados para sua página de manutenção oferece aos usuários uma boa experiência, mesmo quando sua loja não está disponível.
+Use uma **página de manutenção**. Preparar essa página com antecedência permite que você se comunique com seus clientes, notificando-os de que o trabalho está acontecendo em segundo plano. Esta página deve ficar visível por alguns minutos, mas se houver um problema, talvez seja necessário usá-la por mais tempo. Ter o conteúdo e o design apropriados para sua página de manutenção oferece aos usuários uma boa experiência, mesmo quando sua loja não está disponível.

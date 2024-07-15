@@ -1,38 +1,38 @@
 ---
 title: Permissões de acesso a sistemas de arquivos
-description: Consulte como configurar o proprietário ou os proprietários do sistema de arquivos de aplicativo do Commerce para um sistema de desenvolvimento e produção.
+description: Veja como configurar o proprietário ou proprietários do sistema de arquivos do aplicativo Commerce para um sistema de desenvolvimento e produção.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # Permissões de acesso a sistemas de arquivos
 
-Esta seção discute como configurar o proprietário ou os proprietários do sistema de arquivos do Commerce para um sistema de desenvolvimento e produção. Antes de continuar, revise os conceitos discutidos em [Visão geral da propriedade e das permissões do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
+Esta seção discute como configurar o proprietário ou os proprietários do sistema de arquivos do Commerce para um sistema de desenvolvimento e produção. Antes de continuar, analise os conceitos discutidos em [Visão geral da propriedade e das permissões do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 
-Este tópico tem como foco os sistemas de desenvolvimento e produção de comércio. Se estiver instalando o Commerce, consulte [Definir propriedade e permissões de pré-instalação](../../installation/prerequisites/file-system/configure-permissions.md).
+Este tópico tem como foco os sistemas de desenvolvimento e produção do Commerce. Se você estiver instalando o Commerce, consulte [Definir propriedade e permissões de pré-instalação](../../installation/prerequisites/file-system/configure-permissions.md).
 
 As seções a seguir discutem os requisitos para um ou dois proprietários de sistemas de arquivos. Isso significa que:
 
-- **Um usuário**—Normalmente necessário em provedores de hospedagem compartilhados, que permitem acessar apenas um usuário no servidor. Esse usuário pode fazer logon, transferir arquivos usando FTP e esse usuário também executa o servidor da Web.
+- **Um usuário** — Normalmente necessário em provedores de hospedagem compartilhados, que permitem acessar apenas um usuário no servidor. Esse usuário pode fazer logon, transferir arquivos usando FTP e também executa o servidor Web.
 
-- **Dois usuários**—Recomendamos dois usuários se você executar seu próprio servidor Commerce: um para transferir arquivos e executar utilitários de linha de comando, e um usuário separado para o software do servidor Web. Quando possível, isso é preferível porque é mais seguro.
+- **Dois usuários**—Recomendamos dois usuários se você executar o seu próprio servidor Commerce: um para transferir arquivos e executar utilitários de linha de comando, e um usuário separado para o software do servidor Web. Quando possível, isso é preferível porque é mais seguro.
 
   Em vez disso, você tem usuários separados:
 
    - O usuário do servidor Web, que executa o Administrador e a loja.
 
-   - A _usuário da linha de comando_, que é uma conta de usuário local que pode ser usada para fazer logon no servidor. Esse usuário executa tarefas cron do Commerce e utilitários de linha de comando.
+   - Um _usuário da linha de comando_, que é uma conta de usuário local que você pode usar para fazer logon no servidor. Esse usuário executa tarefas cron do Commerce e utilitários de linha de comando.
 
 ## Propriedade do sistema de arquivos de produção para hospedagem compartilhada (um usuário)
 
 Para usar a configuração de um proprietário, você deve fazer logon no servidor do Commerce como o mesmo usuário que executa o servidor Web. Isso é típico para hospedagem compartilhada.
 
-Como ter um proprietário de sistema de arquivos é menos seguro, recomendamos implantar o Commerce na produção em um servidor privado em vez de na hospedagem compartilhada, se possível.
+Como ter um proprietário de sistema de arquivos é menos seguro, recomendamos que você implante o Commerce em produção em um servidor privado em vez de em uma hospedagem compartilhada, se possível.
 
 ### Configurar um proprietário para modo padrão ou de desenvolvedor
 
@@ -104,25 +104,25 @@ Para tornar arquivos e diretórios graváveis para que você possa atualizar com
 
 ### Opcionalmente, definir `magento_umask`
 
-Consulte [Opcionalmente, definir uma máscara](../../installation/next-steps/set-umask.md) no _Guia de instalação_.
+Consulte [Definir opcionalmente uma máscara](../../installation/next-steps/set-umask.md) no _Guia de instalação_.
 
 ## Propriedade do sistema de arquivos de produção para hospedagem privada (dois usuários)
 
 Se você usar seu próprio servidor (incluindo a configuração do servidor privado de um provedor de hospedagem), há dois usuários:
 
-- A variável **usuário do servidor da web**, que executa o Administrador e a loja.
+- O **usuário do servidor Web**, que executa o Administrador e a loja.
 
-  Os sistemas Linux normalmente não fornecem um shell para esse usuário; você não pode fazer logon no servidor do Commerce como ou alternar para o usuário do servidor Web.
+  Os sistemas Linux normalmente não fornecem um shell para esse usuário; você não pode fazer login no servidor Commerce como, ou mudar para, o usuário do servidor Web.
 
-- A variável **usuário da linha de comando**, que você pode acessar o servidor do Commerce como ou alternar para.
+- O **usuário da linha de comando**, ao qual você faz logon no servidor do Commerce como ou alterna para.
 
   O Commerce usa esse usuário para executar comandos CLI e cron.
 
   >[!INFO]
   >
-  >O usuário de linha de comando também é chamado de _proprietário do sistema de arquivos_.
+  >O usuário da linha de comando também é chamado de _proprietário do sistema de arquivos_.
 
-Como esses usuários exigem acesso aos mesmos arquivos, recomendamos que você crie um [grupo compartilhado](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) a que ambos pertencem. Os procedimentos a seguir presumem que você já tenha feito isso.
+Como esses usuários exigem acesso aos mesmos arquivos, recomendamos que você crie um [grupo compartilhado](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) ao qual ambos pertencem. Os procedimentos a seguir presumem que você já tenha feito isso.
 
 Consulte uma das seguintes seções:
 
@@ -139,11 +139,11 @@ Os arquivos nos diretórios a seguir devem ser graváveis pelos usuários no mod
 - `pub/media`
 - `app/etc`
 
-Defina o [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/) bit em diretórios para que as permissões sempre herdem do diretório pai.
+Defina o bit [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/) nos diretórios para que as permissões sempre herdem do diretório pai.
 
 >[!INFO]
 >
->`setgid` aplica-se somente a diretórios, _não_ para arquivos.
+>`setgid` aplica-se somente a diretórios, _não_ a arquivos.
 
 Além disso, os diretórios devem ser graváveis pelo grupo de servidores Web. Como o conteúdo pode existir nesses diretórios, adicione as permissões recursivamente.
 
@@ -192,7 +192,7 @@ Para remover permissões graváveis para arquivos e diretórios do grupo do usu�
    bin/magento deploy:mode:set production
    ```
 
-1. Digite o seguinte comando como usuário com `root` privilégios:
+1. Digite o seguinte comando como um usuário com `root` privilégios:
 
    ```bash
    find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} + && chmod o-rwx app/etc/env.php

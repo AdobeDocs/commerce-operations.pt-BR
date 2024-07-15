@@ -4,32 +4,32 @@ description: Saiba como personalizar crons usando grupos cron.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
 # Personalizar referência de crons
 
-Este tópico ajuda a configurar crontabs e, opcionalmente, grupos de cron para módulos personalizados. Se seu módulo personalizado precisa agendar tarefas periodicamente, você deve configurar um crontab para esse módulo. A _crontab_ é uma configuração de trabalho cron.
+Este tópico ajuda a configurar crontabs e, opcionalmente, grupos de cron para módulos personalizados. Se seu módulo personalizado precisa agendar tarefas periodicamente, você deve configurar um crontab para esse módulo. Um _crontab_ é uma configuração de trabalho cron.
 
 Como opção, você pode configurar um grupo personalizado, que, entre outras coisas, permite executar trabalhos cron definidos nesse grupo independentemente de outros trabalhos cron.
 
-Para um tutorial passo a passo, consulte [Configurar tarefas cron personalizadas e grupos cron (tutorial)](custom-cron-tutorial.md).
+Para um tutorial passo a passo, consulte [Configurar trabalhos cron personalizados e grupos cron (tutorial)](custom-cron-tutorial.md).
 
-Para obter uma visão geral sobre tarefas do CRON, consulte [Configurar trabalhos cron](../cli/configure-cron-jobs.md).
+Para obter uma visão geral sobre os trabalhos cron, consulte [Configurar trabalhos cron](../cli/configure-cron-jobs.md).
 
 ## Configurar grupos cron
 
 Esta seção discute como criar opcionalmente um grupo cron para um módulo personalizado. Se não precisar fazer isso, continue com a próxima seção.
 
-A _grupo cron_ é um grupo lógico que permite executar facilmente o cron para mais de um processo por vez. A maioria dos módulos do Commerce usa o `default` grupo cron; alguns módulos usam o `index` grupo.
+Um _grupo cron_ é um grupo lógico que permite executar facilmente o cron para mais de um processo por vez. A maioria dos módulos do Commerce usa o grupo cron `default`; alguns módulos usam o grupo `index`.
 
-Se estiver implementando o cron para um módulo personalizado, você pode optar por usar o `default` grupo ou um grupo diferente.
+Se você estiver implementando o cron para um módulo personalizado, poderá optar por usar o grupo `default` ou um grupo diferente.
 
 **Para configurar um grupo cron para seu módulo**:
 
-Criar um `crontab.xml` arquivo no diretório do módulo:
+Crie um arquivo `crontab.xml` no diretório do módulo:
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/crontab.xml
@@ -58,7 +58,7 @@ Onde:
 | `method` | Método em `classpath` para chamar. |
 | `time` | Agendar em formato cron. Omita esse parâmetro se o agendamento estiver definido no banco de dados do Commerce ou em outro armazenamento. |
 
-O resultado `crontab.xml` com dois grupos pode ter esta aparência:
+O `crontab.xml` resultante com dois grupos pode ter esta aparência:
 
 ```xml
 <?xml version="1.0"?>
@@ -86,13 +86,13 @@ Como exemplo, consulte [Magento_Customer crontab.xml](https://github.com/magento
 
 ### Especificação das opções do grupo Cron
 
-Você pode declarar um novo grupo e especificar suas opções de configuração (todas são executadas no escopo de exibição de loja) por meio do `cron_groups.xml` localizado em:
+Você pode declarar um novo grupo e especificar suas opções de configuração (todas executadas no escopo de exibição de repositório) por meio do arquivo `cron_groups.xml`, localizado em:
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml
 ```
 
-Veja abaixo um exemplo da `cron_groups.xml` arquivo:
+Veja abaixo um exemplo do arquivo `cron_groups.xml`:
 
 ```xml
 <?xml version="1.0"?>
@@ -113,8 +113,8 @@ Onde:
 
 | Opção | Descrição |
 | -------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `schedule_generate_every` | Frequência (em minutos) em que os agendamentos são gravados na `cron_schedule` tabela. |
-| `schedule_ahead_for` | Hora (em minutos) com antecedência em que as programações são gravadas na `cron_schedule` tabela. |
+| `schedule_generate_every` | Frequência (em minutos) na qual os agendamentos são gravados na tabela `cron_schedule`. |
+| `schedule_ahead_for` | Tempo (em minutos) adiantado para que os agendamentos sejam gravados na tabela `cron_schedule`. |
 | `schedule_lifetime` | Janela de tempo (em minutos) em que um trabalho cron deve ser iniciado ou o trabalho cron é considerado ausente (&quot;muito tarde&quot; para ser executado). |
 | `history_cleanup_every` | Tempo (em minutos) em que o histórico do cron é mantido no banco de dados. |
 | `history_success_lifetime` | Tempo (em minutos) em que o registro de trabalhos cron concluídos com êxito é mantido no banco de dados. |
@@ -123,9 +123,9 @@ Onde:
 
 ## Desabilitar um trabalho cron
 
-Os trabalhos do Cron não têm um `disable` como temos para [observadores](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers). No entanto, um trabalho cron pode ser desativado usando a seguinte técnica: `schedule` um horário que contém uma data que nunca acontecerá.
+Os trabalhos do Cron não têm um recurso `disable` como temos para [observadores](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers). No entanto, um trabalho cron pode ser desabilitado usando a seguinte técnica: `schedule` um horário que contém uma data que nunca ocorrerá.
 
-Por exemplo, desative a variável `visitor_clean` trabalho cron definido em `Magento_Customer` módulo:
+Por exemplo, desabilite o trabalho cron `visitor_clean` que foi definido no módulo `Magento_Customer`:
 
 ```xml
 ...
@@ -137,7 +137,7 @@ Por exemplo, desative a variável `visitor_clean` trabalho cron definido em `Mag
 ...
 ```
 
-Para desativar o `visitor_clean` cron, crie um módulo personalizado e reescreva o `visitor_clean` trabalho cron `schedule`:
+Para desabilitar o trabalho do cron `visitor_clean`, crie um módulo personalizado e substitua o trabalho do cron `schedule` de `visitor_clean`:
 
 ```xml
 ...
@@ -149,4 +149,4 @@ Para desativar o `visitor_clean` cron, crie um módulo personalizado e reescreva
 ...
 ```
 
-Agora, a variável `visitor_clean` a tarefa do cron foi definida para ser executada às 00:00 do dia 30 de fevereiro, na data que nunca ocorrerá.
+Agora, o trabalho do cron `visitor_clean` foi definido para ser executado às 00:00 do dia 30 de fevereiro, na data que nunca ocorrerá.

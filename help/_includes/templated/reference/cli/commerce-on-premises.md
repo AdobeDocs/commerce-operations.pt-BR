@@ -13,17 +13,17 @@ ht-degree: 0%
 
 **Versão**: 2.4.7-p1
 
-Esta referência contém 141 comandos disponíveis através do `bin/magento` ferramenta de linha de comando.
-A lista inicial é gerada automaticamente usando o `bin/magento list` comando no Adobe Commerce.
-Use o [&quot;Adicionar comandos CLI&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) guia para adicionar um comando CLI personalizado.
+Esta referência contém 141 comandos disponíveis através da ferramenta de linha de comando `bin/magento`.
+A lista inicial é gerada automaticamente usando o comando `bin/magento list` na Adobe Commerce.
+Use o guia [&quot;Adicionar comandos CLI&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) para adicionar um comando CLI personalizado.
 
 >[!NOTE]
 >
->Você pode chamar `bin/magento` Comandos CLI usando atalhos em vez do nome completo do comando. Por exemplo, você pode chamar `bin/magento setup:upgrade` usar `bin/magento s:up`, `bin/magento s:upg`. Consulte [sintaxe de atalho](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) para entender como usar atalhos com qualquer comando da CLI.
+>Você pode chamar comandos CLI do `bin/magento` usando atalhos em vez do nome completo do comando. Por exemplo, você pode chamar `bin/magento setup:upgrade` usando `bin/magento s:up`, `bin/magento s:upg`. Consulte [sintaxe de atalho](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) para entender como usar atalhos com qualquer comando CLI.
 
 >[!NOTE]
 >
->Essa referência é gerada a partir da base de código do aplicativo. Para alterar o conteúdo, você pode atualizar o código-fonte para a implementação do comando correspondente no [codebase](https://github.com/magento) repositório e enviar suas alterações para revisão. Outra maneira é _Envie seus comentários_ (localize o link no canto superior direito). Para obter diretrizes de contribuição, consulte [Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Essa referência é gerada a partir da base de código do aplicativo. Para alterar o conteúdo, você pode atualizar o código-fonte para a implementação de comando correspondente no repositório [codebase](https://github.com/magento) e enviar suas alterações para revisão. Outra maneira é _Fornecer comentários_ (localizar o link no canto superior direito). Para obter as diretrizes de contribuição, consulte [Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 
@@ -842,7 +842,7 @@ Criar despejo de aplicativo
 
 ### `config-types`
 
-Lista separada por espaços de tipos de configuração ou omitir para despejar tudo [escopos, sistema, temas, i18n]
+Lista separada por espaços de tipos de configuração ou omissão para despejar todos os [escopos, sistema, temas, i18n]
 
 - Padrão: `[]`
 
@@ -2774,14 +2774,14 @@ Arquivos a serem pré-processados (o arquivo deve ser especificado sem a extens�
 
 ### `--type`
 
-Tipo de arquivos de origem: [menos]
+Tipo de arquivos de origem: [less]
 
 - Padrão: `less`
 - Requer um valor
 
 ### `--locale`
 
-Localidade: [pt_BR]
+Localidade: [en_US]
 
 - Padrão: `en_US`
 - Requer um valor
@@ -3114,7 +3114,7 @@ Caminho para o arquivo de saída do catálogo. Para PhpStorm, use .idea/misc.xml
 
 ### `--ide`
 
-Formato no qual o catálogo será gerado. Compatível: [phpstorm, vscode]
+Formato no qual o catálogo será gerado. Com suporte: [phpstorm, vscode]
 
 - Padrão: `phpstorm`
 - Requer um valor
@@ -3941,7 +3941,7 @@ Não faça nenhuma pergunta interativa
 bin/magento events:registrations:list
 ```
 
-Lista registros de eventos no projeto do App Builder
+Lista registros de eventos no seu projeto do App Builder
 
 
 ### `--help`, `-h`
@@ -4682,7 +4682,7 @@ Nome do indexador [catalog_product_price|catalogpermissions_category]
 
 ### `mode`
 
-Modos de dimensão do indexador catalog_product_price none,website,customer_group,website_and_customer_group catalogpermissions_category none,customer_group
+Modos de dimensão do indexador catalog_product_price          nenhum,site,customer_group,website_and_customer_group catalogpermissions_category    nenhum,customer_group
 
 
 ### `--help`, `-h`
@@ -4746,7 +4746,7 @@ Define o tipo de modo de índice
 
 ### `mode`
 
-Tipo de modo do indexador [tempo real|cronograma]
+Tipo de modo do indexador [tempo real|agenda]
 
 
 ### `index`
@@ -8355,7 +8355,7 @@ Defina como 0 para desativar a compactação (o padrão é 1, ativado)
 
 ### `--cache-backend-redis-compression-lib`
 
-Biblioteca de compactação a ser usada [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
+Biblioteca de compactação para usar [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
 
 - Requer um valor
 
@@ -8416,7 +8416,7 @@ Defina como 1 para compactar o cache de página inteira (use 0 para desativar)
 
 ### `--page-cache-redis-compression-lib`
 
-Biblioteca de compactação a ser usada [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
+Biblioteca de compactação para usar [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
 
 - Requer um valor
 
@@ -9728,7 +9728,7 @@ Defina como 0 para desativar a compactação (o padrão é 1, ativado)
 
 ### `--cache-backend-redis-compression-lib`
 
-Biblioteca de compactação a ser usada [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
+Biblioteca de compactação para usar [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
 
 - Requer um valor
 
@@ -9789,7 +9789,7 @@ Defina como 1 para compactar o cache de página inteira (use 0 para desativar)
 
 ### `--page-cache-redis-compression-lib`
 
-Biblioteca de compactação a ser usada [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
+Biblioteca de compactação para usar [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
 
 - Requer um valor
 
@@ -10447,14 +10447,14 @@ Atualizar a versão somente do conteúdo estático pode ser usado para atualizar
 
 ### `--no-javascript`
 
-Não implante arquivos JavaScript.
+Não implante arquivos do JavaScript.
 
 - Padrão: `false`
 - Não aceita um valor
 
 ### `--no-js-bundle`
 
-Não implante arquivos de pacote JavaScript.
+Não implante arquivos de pacote do JavaScript.
 
 - Padrão: `false`
 - Não aceita um valor

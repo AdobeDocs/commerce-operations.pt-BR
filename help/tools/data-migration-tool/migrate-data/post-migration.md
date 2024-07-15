@@ -1,16 +1,16 @@
 ---
-title: Etapas de migração pós-dados
-description: Saiba quais etapas seguir após usar o [!DNL Data Migration Tool] para migrar dados do Magento 1 para o Magento 2.
+title: Post - etapas de migração de dados
+description: Saiba quais etapas seguir depois de usar o [!DNL Data Migration Tool]  para migrar dados do Magento 1 para o Magento 2.
 exl-id: 00171c41-ccea-4ebe-8958-becb9aa09973
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '81'
 ht-degree: 0%
 
 ---
 
-# Etapas de migração pós-dados
+# Post - etapas de migração de dados
 
 Após concluir sua migração e testar completamente seu novo site Magento 2, execute as seguintes tarefas:
 

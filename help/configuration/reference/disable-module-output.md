@@ -4,7 +4,7 @@ description: Saiba como desativar a saída do módulo.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Por padrão, todos os módulos são configurados para que a saída do módulo possa ser gravada em uma visualização. Desativar a saída oferece uma maneira de essencialmente desativar um módulo que não pode ser desativado devido a dependências permanentes.
 
-Por exemplo, a variável `Customer` O módulo depende do `Review` módulo, para que o `Review` O módulo não pode ser desativado. No entanto, se você não quiser que os clientes forneçam análises, poderá desativar a saída do `Review` módulo.
+Por exemplo, o módulo `Customer` depende do módulo `Review`, portanto, o módulo `Review` não pode ser desabilitado. No entanto, se você não quiser que os clientes forneçam análises, poderá desativar a saída do módulo `Review`.
 
 >[!INFO]
 >
@@ -30,15 +30,15 @@ A desabilitação de saída é executada nas seguintes classes:
 
 ## Desabilitar saída do módulo em uma implantação de pipeline
 
-Para desativar a saída do módulo na implantação do pipeline ou em qualquer outra implantação, com várias instâncias do aplicativo Commerce:
+Para desativar a saída do módulo na implantação do pipeline ou qualquer outra implantação, com várias instâncias do aplicativo do Commerce:
 
-1. Edite o `Backend` do módulo `config.xml` arquivo.
+1. Edite o arquivo `config.xml` do módulo `Backend`.
 1. Exporte as alterações de configuração.
 
-### Edite o `Backend` módulo `config.xml` arquivo
+### Editar o arquivo `config.xml` do módulo `Backend`
 
-1. Arquivar o original `config.xml` arquivo.
-1. Adicione linhas semelhantes às seguintes à `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` arquivo, diretamente sob o `<default>` elemento:
+1. Arquivar o arquivo `config.xml` original.
+1. Adicione linhas semelhantes às seguintes ao arquivo `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml`, diretamente sob o elemento `<default>`:
 
    ```xml
    <advanced>
@@ -52,7 +52,7 @@ Para desativar a saída do módulo na implantação do pipeline ou em qualquer o
 
    - `<modules_disable_output>` contém uma lista de módulos.
    - `<Magento_Newsletter></Magento_Newsletter>` especifica para qual módulo desabilitar a saída.
-   - `1` é o sinalizador que desativa a saída para o `Magento_Newsletter` módulo.
+   - `1` é o sinalizador que desabilita a saída para o módulo `Magento_Newsletter`.
 
 Como resultado de exemplo dessa configuração, os clientes não podem mais se inscrever para receber boletins informativos.
 
@@ -64,7 +64,7 @@ Execute o seguinte comando para exportar as alterações de configuração:
 bin/magento app:config:dump
 ```
 
-Os resultados são gravados na `<Magento_install_dir>/app/etc/config.php` arquivo.
+Os resultados são gravados no arquivo `<Magento_install_dir>/app/etc/config.php`.
 
 Em seguida, limpe o cache para ativar a nova configuração:
 
@@ -78,8 +78,8 @@ Consulte [Exportar a configuração](../cli/export-configuration.md).
 
 O procedimento para desativar a saída do módulo em uma única instância do Commerce é mais fácil, pois as alterações não precisam ser distribuídas.
 
-1. Arquivar o original `<Magento_install_dir>/app/etc/config.php` arquivo.
-1. Adicione o `advanced` e `modules_disable_output` seções para a `config.php` arquivo (se não existirem):
+1. Arquivar o arquivo `<Magento_install_dir>/app/etc/config.php` original.
+1. Adicionar as seções `advanced` e `modules_disable_output` ao arquivo `config.php` (se elas não existirem):
 
    ```php
    'system' =>
@@ -100,5 +100,5 @@ O procedimento para desativar a saída do módulo em uma única instância do Co
      ),
    ```
 
-Neste exemplo, a saída para a variável `Magento_Review` O módulo foi desativado e os clientes não podem mais revisar os produtos.
-Para reativar a saída, defina o valor como `0`.
+Neste exemplo, a saída do módulo `Magento_Review` foi desabilitada e os clientes não podem mais revisar produtos.
+Para reabilitar a saída, defina o valor como `0`.

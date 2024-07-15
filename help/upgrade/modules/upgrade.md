@@ -47,13 +47,13 @@ Para atualizar ou atualizar um módulo ou uma extensão:
 
 ## VBEs (Vendor bundled extensions)
 
-Adobe removeu tudo [VBEs](https://devdocs.magento.com/extensions/vendor/) em 2.4.4. Os fornecedores continuam a oferecer suporte a essas extensões no Adobe Commerce Marketplace.
+O Adobe removeu todos os [VBEs](https://devdocs.magento.com/extensions/vendor/) na versão 2.4.4. Os fornecedores continuam a oferecer suporte a essas extensões no Adobe Commerce Marketplace.
 
-Se quiser continuar usando essas extensões com o Adobe Commerce 2.4.4 e posterior, atualize as dependências do pacote correspondentes no `composer.json` arquivo _antes_ atualização para 2.4.4. Entre em contato com o fornecedor para obter o nome e a versão do pacote que serão usados.
+Se quiser continuar usando essas extensões com o Adobe Commerce 2.4.4 e posterior, atualize as dependências de pacote correspondentes no arquivo `composer.json` _antes_ de atualizar para a versão 2.4.4. Entre em contato com o fornecedor para obter o nome e a versão do pacote que serão usados.
 
 Consulte as seguintes listagens do Adobe Commerce Marketplace para obter mais informações:
 
-- [Amazon Pay](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
+- [Pagamento do Amazon](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
 - [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
 - [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html)
 - [Vértice](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)

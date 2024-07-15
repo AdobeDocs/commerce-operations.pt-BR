@@ -65,7 +65,7 @@ A lista a seguir inclui maneiras de usar a JIRA em qualquer organização:
 
 O JIRA permite que as equipes criem e gravem tarefas detalhadas, gerem relatórios, personalizem fluxos de trabalho e atribuam trabalhos a indivíduos com relativa rapidez.
 
-Os gerentes de comércio, as equipes de marketing e desenvolvimento, até mesmo as partes interessadas de nível C, podem acompanhar o progresso diário, semanal, mensal e anual de qualquer tarefa ou projeto JIRA. A ferramenta de gerenciamento de projetos Atlassian vem em três versões, incluindo JIRA Align, JIRA Core e JIRA Software.
+Os gerentes da Commerce, as equipes de marketing e desenvolvimento e até mesmo as partes interessadas de nível C podem acompanhar o progresso diário, semanal, mensal e anual de qualquer tarefa ou projeto JIRA. A ferramenta de gerenciamento de projetos Atlassian vem em três versões, incluindo JIRA Align, JIRA Core e JIRA Software.
 
 Os benefícios de usar a JIRA em qualquer negócio de comércio eletrônico são a capacidade de várias equipes colaborarem usando uma única plataforma. Muitas vezes, as empresas testemunham as equipes de marketing, desenvolvimento, criação e comércio eletrônico, todas trabalhando em diferentes silos. Ter uma ferramenta de gerenciamento de projetos como a JIRA permite que cada equipe represente prioridades diferentes. Os problemas podem representar tudo que as equipes desejam rastrear e estão contidos em diferentes projetos compostos de tarefas recorrentes que as equipes precisam concluir. Cada problema passa por um processo chamado workflow.
 

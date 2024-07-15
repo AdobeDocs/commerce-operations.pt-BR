@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: cab6213b-da44-498f-b5c1-e7f89e95038e
+exl-id: cd546571-0241-4619-8696-3c5ebead9939
 feature: Install
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ O uso de um banco de dados secundário pode ser útil por alguns motivos:
 * Permitir que o mysqldump ocorra e permitir que transações normais ocorram sem bloquear o banco de dados
 * Permite o acesso de dados de uma fonte externa de dados sem reduzir a capacidade dos sites de transacionar informações para a solicitação do cliente.
 
-O banco de dados secundário pode ser usado como `warm standby`. Isso pode entrar em ação quando você estiver pensando em como se recuperar de uma falha no banco de dados principal. A promoção do banco de dados secundário para o principal tem complexidade menor do que a reconstrução e restauração de um banco de dados para uma instância Mysql recém-criada. Isso reduz o tempo de inatividade real durante uma operação de recuperação.
+O banco de dados secundário pode ser usado como um `warm standby`. Isso pode entrar em ação quando você estiver pensando em como se recuperar de uma falha no banco de dados principal. A promoção do banco de dados secundário para o principal tem complexidade menor do que a reconstrução e restauração de um banco de dados para uma instância Mysql recém-criada. Isso reduz o tempo de inatividade real durante uma operação de recuperação.
 
 Há a oportunidade de desviar algumas das solicitações para o banco de dados secundário. Se esse método for usado, é sugerido tornar o banco de dados secundário somente leitura. Permitir que o aplicativo do Adobe Commerce use esse banco de dados secundário para operações de leitura ajuda a obter algumas solicitações de leitura e permitir que o banco de dados secundário responda. No entanto, essa alteração responde por apenas 30 a 50% de todas as solicitações, mas qualquer carga que você puder retirar do banco de dados principal é uma vitória.
 

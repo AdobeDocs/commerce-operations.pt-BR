@@ -19,12 +19,12 @@ Scrum incentiva equipes auto-organizadas e multifuncionais para resolver problem
 
 Na metodologia Scrum, há várias reuniões usadas para impulsionar a transparência e o progresso em um projeto de comércio eletrônico:
 
-- **Planejamento Sprint**— Uma reunião de planejamento em que os membros da equipe se reúnem para decidir quanto trabalho pode ser concluído em um sprint.
+- **Planejamento de sprint** — Uma reunião de planejamento em que os membros da equipe se reúnem para decidir quanto trabalho pode ser concluído em um sprint.
 
-- **scrum diário**—Uma reunião de 15 minutos usada para compartilhar atualizações sobre em que cada membro da equipe está trabalhando.
+- **Escrutínio diário**—Uma reunião de 15 minutos usada para compartilhar atualizações sobre o trabalho de cada membro da equipe.
 
-- **Revisão de Sprint**— Uma reunião usada para demonstrar o progresso do sprint.
+- **Revisão de sprint**—Uma reunião usada para demonstrar o progresso do sprint.
 
-- **Sprint retrospectiva**— Uma reunião usada para refletir sobre a velocidade anterior e identificar oportunidades de melhoria.
+- **Retrospectiva de sprint** — Uma reunião usada para refletir sobre a sprint anterior e identificar oportunidades de melhoria.
 
 No final de cada sprint, um incremento de valor (por exemplo, novos recursos, correções de erros, atualizações ou atualizações de código geral) deve ser entregue e liberado para os clientes.

@@ -21,11 +21,11 @@ Use essa lista de verificação durante suas conversas anuais e trimestrais com 
 
 >[!NOTE]
 >
->Para obter uma descrição detalhada das etapas técnicas para uma atualização bem-sucedida, consulte [Concluir os pré-requisitos de atualização](../../../upgrade/prepare/prerequisites.md) em nossa documentação do usuário.
+>Para obter uma descrição detalhada das etapas técnicas para atualizar com êxito, consulte [Concluir pré-requisitos de atualização](../../../upgrade/prepare/prerequisites.md) na documentação do usuário.
 
 ## Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -46,7 +46,7 @@ Considere a substituição de qualquer extensão que não tenha um bom registro 
 
 ## Orçamento e tempo
 
-Usar o Adobe Commerce [programação de lançamento](../../../release/schedule.md) para planejar sua próxima atualização e se preparar antecipadamente.
+Use o [cronograma de lançamento](../../../release/schedule.md) do Adobe Commerce para planejar sua próxima atualização e se preparar antecipadamente.
 
 Discutir qual versão você acha que adotará (completa ou somente segurança) com base nas necessidades previstas.
 
@@ -60,14 +60,14 @@ Revise as integrações atuais de terceiros da Adobe Commerce e suas janelas de 
 
 Atividades de acesso antecipado
 
-- O parceiro participa de [Beta](../../../release/beta.md)
-- Revisão da nota de versão beta.
+- Parceiro participa do [Beta](../../../release/beta.md)
+- Revisão das notas de versão do Beta.
 
 √ Concordo em orçamento, cronograma, escopo.
 
-Executar o [Ferramenta de compatibilidade de atualização](../../../upgrade/upgrade-compatibility-tool/overview.md)
+Executar a [Ferramenta de Compatibilidade de Atualização](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-Considere usar a atualização para resolver problemas identificados pelo [Ferramenta de análise do site](../../../tools/site-wide-analysis-tool/intro.md).
+Considere usar a atualização para resolver problemas identificados pela [Ferramenta de análise abrangente do site](../../../tools/site-wide-analysis-tool/intro.md).
 
 Dependências de documentos e quaisquer alterações técnicas de pilha necessárias, como PHP ou versões Elastic Search.
 
@@ -77,17 +77,17 @@ Criar um plano de comunicação com as partes interessadas.
 
 Janela de manutenção do plano se o tempo de inatividade for antecipado.
 
-Revisar e aprovar a estratégia de testes; considere usar o Adobe Commerce [estrutura de teste](https://developer.adobe.com/commerce/testing/) ou um conjunto de automação de terceiros.
+Revise e aprove a estratégia de testes; considere usar a [estrutura de testes](https://developer.adobe.com/commerce/testing/) do Adobe Commerce ou um conjunto de automação de terceiros.
 
 Confirmar se todas as extensões e personalizações são compatíveis.
 
 Revisar e atualizar o manual de pós-lançamento; para ser usado se problemas forem descobertos durante ou após a atualização.
 
-## Pós-implantação
+## Implantação do Post
 
 Monitorar o site em busca de problemas - desempenho, processamento de pedidos, análise e outros.
 
-Executar uma Adobe Commerce [verificação de segurança](https://account.magento.com/scanner/dashboard/) ou outra varredura de terceiros e análise de possíveis vulnerabilidades de segurança.
+~ Execute uma [verificação de segurança](https://account.magento.com/scanner/dashboard/) do Adobe Commerce ou outra verificação de terceiros e revise possíveis vulnerabilidades de segurança.
 
 Faça uma retrospectiva com todas as partes interessadas e documente o que deu certo e o que não deu e como melhorar.
 

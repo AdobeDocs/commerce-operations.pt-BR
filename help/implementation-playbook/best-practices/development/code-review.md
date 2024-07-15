@@ -3,13 +3,13 @@ title: Práticas recomendadas de revisão do código
 description: Saiba mais sobre as práticas recomendadas de revisão de código para a fase de desenvolvimento de projetos do Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas de revisão do código do Adobe Commerce
 
@@ -38,7 +38,7 @@ Além disso, considere os seguintes pontos ao implementar processos de revisão 
 
 ## Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -49,7 +49,7 @@ Além disso, considere os seguintes pontos ao implementar processos de revisão 
 
 O estilo pode ser testado automaticamente executando a inspeção PhpStorm (veja abaixo).
 
-Certifique-se de configurar [PHPMD e PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) e para executar o [Padrão de codificação](https://github.com/magento/magento-coding-standard) da CLI (também abaixo). Há algumas sobreposições, mas ambas também têm testes únicos.
+Configure o [PHPMD e o PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) e execute a ferramenta [Padrão de Codificação](https://github.com/magento/magento-coding-standard) da CLI (também abaixo). Há algumas sobreposições, mas ambas também têm testes únicos.
 
 ### Convenção e estrutura
 
@@ -69,7 +69,7 @@ As análises de integridade são feitas manualmente.
 
 - O código pode ser ativado ou desativado pela configuração e todo o código necessário se comporta conforme esperado?
 - Há alguma configuração presente que seja mencionada no tíquete? Verifique o escopo, o tipo de dados, a validação, a conversão e os valores padrão.
-- A configuração é sempre recuperada no nível mais baixo possível (nível de exibição de armazenamento, nível de site ou nível global)? A recuperação da configuração deve corresponder à definição do escopo no `system.xml` arquivo.
+- A configuração é sempre recuperada no nível mais baixo possível (nível de exibição de armazenamento, nível de site ou nível global)? A recuperação da configuração deve corresponder à definição do escopo no arquivo `system.xml`.
 - São abrangidos todos os percursos do fluxograma da especificação técnica? Todas as outras especificações técnicas são abrangidas?
 - As ACLs estão definidas para a nova funcionalidade?
 - O PhpDocs está limpo? As mensagens de confirmação estão limpas?
@@ -80,14 +80,14 @@ As análises de integridade são feitas manualmente.
 As análises de desempenho são feitas manualmente, o que pode ser auxiliado pela execução do código em caso de dúvida.
 
 - As consultas são executadas em um loop? Este loop pode estar fora dos arquivos editados.
-- Você consegue detectar algum `cachable="false"` atributos? Eles são aplicados corretamente?
+- Você consegue identificar algum atributo de `cachable="false"`? Eles são aplicados corretamente?
 
 ### Segurança
 
 As análises de segurança são feitas manualmente, o que pode ser auxiliado pela pesquisa de texto. Parte da verificação de segurança é tratada por testes automatizados.
 
 - As exceções são registradas quando necessário? Os tipos corretos de exceções são usados?
-- Pode `around` plug-ins sejam evitados?
+- Os plug-ins `around` podem ser evitados?
 - Os plug-ins do retornam os tipos corretos de dados?
 - Você pode encontrar consultas SQL brutas que devem ser criadas usando a camada de abstração do banco de dados?
 - Algum novo tipo de dados é exposto a qualquer tipo de usuário, administrador ou front-end? Essa exposição é um risco de segurança?
@@ -95,7 +95,7 @@ As análises de segurança são feitas manualmente, o que pode ser auxiliado pel
 
 ### Privacidade e o RGPD
 
-Revisões sobre privacidade e [GDPR](../../../security-and-compliance/privacy/gdpr.md) são feitas manualmente.
+As revisões de privacidade e de [GDPR](../../../security-and-compliance/privacy/gdpr.md) são feitas manualmente.
 
 - O código lida com dados ou emails do cliente? Preste atenção especial.
 - Se esse código puder ser executado em um loop, ele poderá vazar dados do cliente de um ciclo de loop para outro?
@@ -131,13 +131,13 @@ Os desenvolvedores podem usar a automação para revisar a compilação de ID, o
   bin/magento deploy:mode:set developer || exit;
   ```
 
-- Esquema de banco de dados `whitelist.json`—Execute o seguinte comando da CLI e verifique se `db_schema_whitelist.json` arquivo não é adicionado ou alterado.
+- Esquema de banco de dados `whitelist.json` — Execute o seguinte comando da CLI e verifique se o arquivo `db_schema_whitelist.json` não foi adicionado ou alterado.
 
   ```bash
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
-- Validação do compositor — Validação da `composer.json` arquivo executando o seguinte comando da CLI no diretório que contém a `composer.json` arquivo.
+- Validação do Composer — Valide o arquivo `composer.json` executando o seguinte comando da CLI no diretório que contém o arquivo `composer.json`.
 
   ```bash
   composer validate

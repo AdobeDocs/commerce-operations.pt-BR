@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Ferramenta de linha de comando
 
-O Commerce tem uma interface de linha de comando (CLI) —`<magento_root>/bin/magento`—que executa tarefas de instalação e configuração, incluindo:
+O Commerce tem uma interface de linha de comando (CLI)—`<magento_root>/bin/magento`—que executa tarefas de instalação e configuração, incluindo:
 
 - Instalar o Commerce (e tarefas relacionadas, como atualizar o esquema do banco de dados, criar uma configuração de implantação)
 - Limpeza do cache
@@ -34,9 +34,9 @@ Este tópico discute a configuração do software Adobe Commerce usando a CLI. P
 
 Antes de começar a usar a CLI, verifique se:
 
-1. Seu sistema atende aos requisitos discutidos em [Requisitos do sistema](../../installation/system-requirements.md) no _Guia de instalação_.
+1. Seu sistema atende aos requisitos discutidos em [Requisitos do Sistema](../../installation/system-requirements.md) no _Guia de Instalação_.
 1. Você concluiu todas as tarefas de pré-requisito discutidas em [Pré-requisitos](../../installation/prerequisites/overview.md) no _Guia de instalação_.
-1. Depois de fazer logon no servidor do Commerce, alterne para um usuário que tenha permissões para gravar no sistema de arquivos do Commerce. Consulte [alternar para o proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md) no _Guia de instalação_.
+1. Depois de fazer logon no servidor do Commerce, alterne para um usuário que tenha permissões para gravar no sistema de arquivos do Commerce. Consulte [alternar para o proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md) no _Guia de Instalação_.
 
 ## Execução de comandos
 

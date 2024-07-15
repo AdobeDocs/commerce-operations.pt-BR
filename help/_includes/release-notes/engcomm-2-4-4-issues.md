@@ -1,7 +1,7 @@
 ---
 source-git-commit: 85e9a890f8ccb0f4d8b63c9c96971cf6e011f992
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 | DmitryFurs | [magento/magento2#33922](https://github.com/magento/magento2/pull/33922) | [magento/magento2#33924](https://github.com/magento/magento2/issues/33924) |
 | ihor-sviziev | [magento/magento2#33903](https://github.com/magento/magento2/pull/33903) | [magento/magento2#33928](https://github.com/magento/magento2/issues/33928) [magento/magento2#23324](https://github.com/magento/magento2/issues/23324) |
 | redefinir | [magento/magento2#33886](https://github.com/magento/magento2/pull/33886) | [magento/magento2#33680](https://github.com/magento/magento2/issues/33680) [magento/magento2#33755](https://github.com/magento/magento2/issues/33755) [magento/magento2#33945](https://github.com/magento/magento2/issues/33945) |
-| NetStorm84 | [magento/magento2#33874](https://github.com/magento/magento2/pull/33874) | [magento/magento2#34008](https://github.com/magento/magento2/issues/34008) [magento/merdocs#1686](https://github.com/magento/merchdocs/issues/1686) |
+| NetStorm84 | [magento/magento2#33874](https://github.com/magento/magento2/pull/33874) | [magento/magento2#34008](https://github.com/magento/magento2/issues/34008) [magento/marketdocs#1686](https://github.com/magento/merchdocs/issues/1686) |
 | vovayatsyuk | [magento/magento2#33851](https://github.com/magento/magento2/pull/33851) | [magento/magento2#34483](https://github.com/magento/magento2/issues/34483) |
 | AnnaAPak | [magento/magento2#33727](https://github.com/magento/magento2/pull/33727) | [magento/magento2#33747](https://github.com/magento/magento2/issues/33747) |
 | marvinhinz | [magento/magento2#33726](https://github.com/magento/magento2/pull/33726) | [magento/magento2#33760](https://github.com/magento/magento2/issues/33760) [magento/magento2#33908](https://github.com/magento/magento2/issues/33908) |

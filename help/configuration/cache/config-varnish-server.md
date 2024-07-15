@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -18,16 +18,16 @@ As seções a seguir usam a porta 8080 como exemplo.
 
 **Para alterar a porta de escuta do Apache 2.4**:
 
-1. Abertura `/etc/httpd/conf/httpd.conf` em um editor de texto.
-1. Localize o `Listen` diretiva.
+1. Abra `/etc/httpd/conf/httpd.conf` em um editor de texto.
+1. Localize a diretiva `Listen`.
 1. Altere o valor da porta de escuta para `8080`. (Você pode usar qualquer porta de escuta disponível.)
-1. Salvar as alterações em `httpd.conf` e saia do editor de texto.
+1. Salve as alterações em `httpd.conf` e saia do editor de texto.
 
 ## Modificar a configuração do sistema Vernish
 
 Para modificar a configuração do sistema Vernish:
 
-1. Como usuário com `root` abra o arquivo de configuração do Vanish em um editor de texto:
+1. Como usuário com privilégios `root`, abra o arquivo de configuração Vanish em um editor de texto:
 
    - CentOS 6: `/etc/sysconfig/varnish`
    - CentOS 7: `/etc/varnish/varnish.params`
@@ -40,7 +40,7 @@ Para modificar a configuração do sistema Vernish:
    VARNISH_LISTEN_PORT=80
    ```
 
-   Para o Varnish 4.x, verifique se DAEMON_OPTS contém a porta de escuta correta para o `-a` (mesmo se VARNISH_LISTEN_PORT estiver definido com o valor correto):
+   Para o Varnish 4.x, verifique se DAEMON_OPTS contém a porta de escuta correta para o parâmetro `-a` (mesmo se VARNISH_LISTEN_PORT estiver definida com o valor correto):
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -54,17 +54,17 @@ Para modificar a configuração do sistema Vernish:
 
 ### Modificar o VCL padrão
 
-Esta seção discute como fornecer configuração mínima para que o Verniz retorne cabeçalhos de resposta HTTP. Isso permite verificar se o Verniz funciona antes de configurar o [!DNL Commerce] aplicativo para usar o verniz.
+Esta seção discute como fornecer configuração mínima para que o Verniz retorne cabeçalhos de resposta HTTP. Isso permite verificar se o Verniz funciona antes de configurar o aplicativo [!DNL Commerce] para usar o Verniz.
 
 Para configurar minimamente o Verniz:
 
-1. Fazer backup `default.vcl`:
+1. Fazer backup de `default.vcl`:
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
-1. Abertura `/etc/varnish/default.vcl` em um editor de texto.
+1. Abra `/etc/varnish/default.vcl` em um editor de texto.
 1. Localize a seguinte estrofe:
 
    ```conf
@@ -74,11 +74,11 @@ Para configurar minimamente o Verniz:
    }
    ```
 
-1. Substitua o valor de `.host` com o nome do host ou endereço IP totalmente qualificado e a porta de escuta do Verniz _back-end_ ou _servidor de origem_; ou seja, o servidor que fornece o conteúdo Verniz será acelerado.
+1. Substitua o valor de `.host` pelo nome de host ou endereço IP totalmente qualificado e a porta de escuta do _back-end_ ou do _servidor de origem_ do Verniz; ou seja, o servidor que fornece o conteúdo O verniz será acelerado.
 
-   Normalmente, esse é o seu servidor Web. Consulte [Servidores de back-end](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) no _Guia de verniz_.
+   Normalmente, esse é o seu servidor Web. Consulte [Servidores backend](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) no _guia de verniz_.
 
-1. Substitua o valor de `.port` com a porta de escuta do servidor Web (8080 neste exemplo).
+1. Substitua o valor de `.port` pela porta de escuta do servidor Web (8080 neste exemplo).
 
    Exemplo: o Apache está instalado no host 192.0.2.55 e o Apache está escutando na porta 8080:
 
@@ -93,7 +93,7 @@ Para configurar minimamente o Verniz:
    >
    >Se o Varnish e o Apache estiverem em execução no mesmo host, a Adobe recomenda o uso de um endereço IP ou nome de host, em vez de `localhost`.
 
-1. Salvar as alterações em `default.vcl` e saia do editor de texto.
+1. Salve as alterações em `default.vcl` e saia do editor de texto.
 
 1. Reiniciar o verniz:
 
@@ -168,13 +168,13 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 O anterior mostra o Varnish em execução na porta 80 e o Apache em execução na porta 8080.
 
-Se você não vir saída para `varnishd`, verifique se o Verniz está em execução.
+Se você não vir a saída para `varnishd`, verifique se o Verniz está em execução.
 
 Consulte [`netstat` opções](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
-## Instalar o software Commerce
+## Instale o software da Commerce
 
-Instale o software Commerce, se ainda não tiver instalado. Quando solicitado a fornecer um URL base, use o host verniz e a porta 80 (para verniz) porque verniz recebe todas as solicitações HTTP recebidas.
+Instale o software Commerce, se ainda não tiver feito isso. Quando solicitado a fornecer um URL base, use o host verniz e a porta 80 (para verniz) porque verniz recebe todas as solicitações HTTP recebidas.
 
 Possível erro ao instalar o Commerce:
 
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-Se você receber esse erro, edite `default.vcl` e adicione um tempo limite à variável `backend` estrofe do seguinte modo:
+Se você receber esse erro, edite `default.vcl` e adicione um tempo limite à estrofe `backend` da seguinte maneira:
 
 ```conf
 backend default {
@@ -199,11 +199,11 @@ backend default {
 
 Agora é possível verificar se o Verniz está servindo páginas observando os cabeçalhos de resposta de HTML retornados de qualquer página.
 
-Antes de visualizar os cabeçalhos, é necessário definir o Commerce para o modo de desenvolvedor. Há várias maneiras de fazê-lo, a mais simples delas é modificar `.htaccess` na raiz do aplicativo Commerce. Você também pode usar a variável [`magento deploy:mode:set`](../cli/set-mode.md) comando.
+Antes de visualizar os cabeçalhos, é necessário definir o Commerce para o modo de desenvolvedor. Há várias maneiras de fazer isso, a mais simples delas é modificar `.htaccess` na raiz do aplicativo Commerce. Você também pode usar o comando [`magento deploy:mode:set`](../cli/set-mode.md).
 
-### Definir comércio para modo de desenvolvedor
+### Definir Commerce para modo de desenvolvedor
 
-Para definir o Commerce para o modo de desenvolvedor, use o [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) comando.
+Para definir o Commerce para o modo de desenvolvedor, use o comando [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode).
 
 ### Veja o log de verniz
 
@@ -232,7 +232,7 @@ Uma longa lista de cabeçalhos de resposta é exibida na janela da tela de coman
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-Se cabeçalhos como esses _não_ exibir, parar Verniz, verificar o `default.vcl`e tente novamente.
+Se cabeçalhos como estes _não_ forem exibidos, pare de Verniz, verifique seu `default.vcl` e tente novamente.
 
 ### Observar cabeçalhos de resposta de HTML
 

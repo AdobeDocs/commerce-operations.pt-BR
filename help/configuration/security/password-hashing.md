@@ -5,14 +5,14 @@ feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
 
 # Hash de senha
 
-Atualmente, o Commerce usa sua própria estratégia para hash de senha, com base em diferentes algoritmos nativos de hash do PHP. O Commerce suporta vários algoritmos, como `MD5`, `SHA256`ou `Argon 2ID13`. Se a extensão Sodium está instalada (instalada por padrão no PHP 7.3), então `Argon 2ID13` é escolhido como o algoritmo de hash padrão. Caso contrário, `SHA256` é o padrão. O Commerce pode usar o PHP nativo `password_hash` função com suporte a algoritmo Argon 2i.
+Atualmente, o Commerce usa sua própria estratégia para hash de senha, com base em diferentes algoritmos nativos de hash do PHP. O Commerce oferece suporte a vários algoritmos, como `MD5`, `SHA256` ou `Argon 2ID13`. Se a extensão Sodium estiver instalada (instalada por padrão no PHP 7.3), então `Argon 2ID13` é escolhido como o algoritmo de hash padrão. Caso contrário, `SHA256` será o padrão. O Commerce pode usar a função nativa `password_hash` do PHP com suporte ao algoritmo Argon 2i.
 
 Para evitar o comprometimento de senhas mais antigas que receberam hash com algoritmos desatualizados, como `MD5`, a implementação atual fornece um método para atualizar o hash sem alterar a senha original. Em geral, o hash da senha tem o seguinte formato:
 
@@ -20,21 +20,21 @@ Para evitar o comprometimento de senhas mais antigas que receberam hash com algo
 password_hash:salt:version<n>:version<n>
 ```
 
-Onde `version<n>`..`version<n>` representa todas as versões de algoritmos de hash usadas na senha. Além disso, o salt é sempre armazenado junto com o hash de senha, para que possamos restaurar toda a cadeia de algoritmos. Um exemplo se parece com:
+Onde `version<n>`...`version<n>` representa todas as versões de algoritmos de hash usadas na senha. Além disso, o salt é sempre armazenado junto com o hash de senha, para que possamos restaurar toda a cadeia de algoritmos. Um exemplo se parece com:
 
 ```text
 a853b06f077b686f8a3af80c98acfca763cf10c0e03597c67e756f1c782d1ab0:8qnyO4H1OYIfGCUb:1:2
 ```
 
-A primeira parte representa o hash da senha. O segundo, `8qnyO4H1OYIfGCUb` é o sal. Os dois últimos são algoritmos de hash diferentes: 1 é `SHA256` e 2 é `Argon 2ID13`. Isso significa que a senha do cliente foi originalmente enviada com um hash `SHA256` e depois disso, o algoritmo foi atualizado com `Argon 2ID13` e a hash foi refeita com argônio.
+A primeira parte representa o hash da senha. O segundo, `8qnyO4H1OYIfGCUb` é o sal. Os dois últimos são algoritmos de hash diferentes: 1 é `SHA256` e 2 é `Argon 2ID13`. Isso significa que a senha do cliente foi originalmente enviada com hash com `SHA256` e, depois disso, o algoritmo foi atualizado com `Argon 2ID13` e o hash foi enviado com o Argon.
 
 ## Atualizar estratégia de hash
 
-Considere a aparência do mecanismo de atualização de hash. Suponha que, originalmente, uma senha tenha recebido um hash com `MD5` e o algoritmo foi atualizado várias vezes com o Argon 2ID13. O diagrama a seguir mostra o fluxo de atualização de hash.
+Considere a aparência do mecanismo de atualização de hash. Suponha que, originalmente, uma senha tivesse hash com `MD5` e, em seguida, o algoritmo fosse atualizado várias vezes com o Argon 2ID13. O diagrama a seguir mostra o fluxo de atualização de hash.
 
 ![Fluxo de trabalho de atualização de hash](../../assets/configuration/hash-upgrade-algorithm.png)
 
-Cada algoritmo de hash usa o hash da senha anterior para gerar um novo hash. O Commerce não armazena a senha bruta original.
+Cada algoritmo de hash usa o hash da senha anterior para gerar um novo hash. A Commerce não armazena a senha original bruta.
 
 ![Estratégia de atualização de hash](../../assets/configuration/hash-upgrade-strategy.png)
 
@@ -61,4 +61,4 @@ Como o Commerce armazena todas as versões de hash de senha usadas junto com o h
 
 ## Implementação
 
-A variável `\Magento\Framework\Encryption\Encryptor` A classe é responsável pela geração e verificação de hash de senha. A variável [`bin/magento customer:hash:upgrade`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#customerhashupgrade) O comando atualiza um hash de senha do cliente para o algoritmo de hash mais recente.
+A classe `\Magento\Framework\Encryption\Encryptor` é responsável pela geração e verificação do hash de senha. O comando [`bin/magento customer:hash:upgrade`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#customerhashupgrade) atualiza um hash de senha do cliente para o algoritmo de hash mais recente.

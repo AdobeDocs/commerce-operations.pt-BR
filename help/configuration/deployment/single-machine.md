@@ -5,7 +5,7 @@ feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '180'
 ht-degree: 1%
 
 ---
@@ -16,17 +16,17 @@ Este tópico fornece instruções para implantar atualizações para o Commerce 
 
 ## Suposições
 
-- Você instalou o Commerce usando o [Compositor](../../installation/composer.md).
+- Você instalou o Commerce usando o [Composer](../../installation/composer.md).
 - Você está aplicando atualizações diretamente ao servidor.
 
 >[!WARNING]
 >
->Este guia não se aplica se você usou `git clone` para instalar o Commerce.
->Os desenvolvedores colaboradores devem usar [este guia][install] para atualizar a instalação do Commerce.
+>Este guia não se aplica se você usou o `git clone` para instalar o Commerce.
+>Os desenvolvedores colaboradores devem usar [este guia][install] para atualizar sua instalação do Commerce.
 
 ## Etapas de implantação
 
-1. Faça logon no servidor de produção como, ou alterne para, o [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
+1. Faça logon no servidor de produção como ou alterne para o [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 
 1. Altere o diretório para o diretório base do Commerce:
 
@@ -53,7 +53,7 @@ Este tópico fornece instruções para implantar atualizações para o Commerce 
    - `magento/product-community-edition`
    - `magento/product-enterprise-edition`
 
-   **version**: a versão de destino do pacote que você deseja atualizar.
+   **versão**: a versão de destino do pacote que você deseja atualizar.
 
 1. Atualizar componentes com o Composer:
 

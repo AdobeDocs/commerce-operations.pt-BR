@@ -5,7 +5,7 @@ exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
 feature: Integration, Cache
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ A etapa inicial da estratégia de armazenamento em cache deve, por conseguinte, 
 
 Com esse planejamento inicial concluído, a configuração técnica pode começar a ser implementada para configurar caches com base nesses requisitos.
 
-Mesmo que o conteúdo seja atualizado e precise ser colocado em funcionamento dentro do TTL de cache, na maioria dos casos, é possível limpar manualmente os caches para o [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) e [Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types) armazenar em cache de forma seletiva esse conteúdo, o que significa que as alterações urgentes serão refletidas imediatamente. O processo de limpeza manual do cache também deve ser planejado e testado antecipadamente para que, se houver necessidade de forçar manualmente uma atualização em algum conteúdo, ele seja documentado em um runbook de operações do site e limpe como e quem precisa ser envolvido para agir isso.
+Mesmo que o conteúdo seja atualizado e precise ser ativado no TTL de cache, na maioria dos casos, é possível limpar manualmente os caches do [Dispatcher do AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) e do [Adobe Commerce](../configuration//cli/manage-cache.md#clean-and-flush-cache-types) de forma seletiva para esse conteúdo, o que significa que as alterações urgentes serão refletidas imediatamente. O processo de limpeza manual do cache também deve ser planejado e testado antecipadamente para que, se houver necessidade de forçar manualmente uma atualização em algum conteúdo, ele seja documentado em um runbook de operações do site e limpe como e quem precisa ser envolvido para agir isso.

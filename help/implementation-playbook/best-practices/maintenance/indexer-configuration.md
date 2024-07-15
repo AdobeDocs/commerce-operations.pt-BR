@@ -17,7 +17,7 @@ Para otimizar e manter o desempenho do site, revise e atualize a configuração 
 
 ## Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -26,24 +26,24 @@ Para otimizar e manter o desempenho do site, revise e atualize a configuração 
 
 O Adobe Commerce tem dois tipos de modos indexadores: [!UICONTROL Update on Save] (configuração padrão) e [!DNL Update on Schedule].
 
-- **[!UICONTROL Update on Save]** O modo atualiza os índices imediatamente sempre que o catálogo ou outros dados são alterados. Por exemplo, se um usuário administrador adicionar novos produtos a uma categoria, o índice de produtos da categoria será reindexado imediatamente quando a atualização for salva.
+- O modo **[!UICONTROL Update on Save]** atualiza os índices imediatamente sempre que o catálogo ou outros dados são alterados. Por exemplo, se um usuário administrador adicionar novos produtos a uma categoria, o índice de produtos da categoria será reindexado imediatamente quando a atualização for salva.
 
-- **[!UICONTROL Update on Schedule]** O modo armazena informações sobre atualizações de dados, e as operações de reindexação e atualizações de índice são gerenciadas por um trabalho cron que é executado em segundo plano em intervalos programados. O trabalho cron nem sempre executa uma reindexação toda vez que é executado. Ele reindexa somente quando há novas entradas nos logs de alteração do indexador (por exemplo, há um backlog nos indexadores).
+- O modo **[!UICONTROL Update on Schedule]** armazena informações sobre atualizações de dados, e as operações de reindexação e atualizações de índice são gerenciadas por um trabalho cron que é executado em segundo plano em intervalos agendados. O trabalho cron nem sempre executa uma reindexação toda vez que é executado. Ele reindexa somente quando há novas entradas nos logs de alteração do indexador (por exemplo, há um backlog nos indexadores).
 
-Ter um grande armazenamento com vários Administradores trabalhando no back-end ou ter muitas importações e exportações aciona atualizações de índice frequentes. Se a configuração do índice do site estiver definida como [!UICONTROL Update on Save] , a reindexação frequente reduz o desempenho do banco de dados, o que torna o desempenho do site lento e causa longos atrasos no processo de reindexação, especialmente para grandes lojas.
+Ter um grande armazenamento com vários Administradores trabalhando no back-end ou ter muitas importações e exportações aciona atualizações de índice frequentes. Se a configuração do índice do site estiver definida para o modo [!UICONTROL Update on Save], a reindexação frequente prejudicará o desempenho do banco de dados, o que atrasará o desempenho do site e causará longos atrasos no processo de reindexação, especialmente em grandes lojas.
 
 Para maximizar o desempenho do site, siga estas práticas recomendadas para indexação:
 
 - Revise a configuração do índice.
-- Defina os indexadores como _[!UICONTROL Update on Schedule]_para sites grandes e sites com atualizações frequentes e tráfego intenso. Consulte [Gerenciamento de índice](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
-- Seguir [práticas recomendadas de desempenho](../../../performance/configuration.md) para gerenciar índices.
+- Defina os indexadores como _[!UICONTROL Update on Schedule]_para sites grandes e sites com atualizações frequentes e tráfego intenso. Consulte [Gerenciamento de Índice](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+- Siga as [práticas recomendadas de desempenho](../../../performance/configuration.md) para gerenciar índices.
 
 >[!IMPORTANT]
 >
->A variável [!DNL Customer Grid] só pode ser reindexado usando o [!UICONTROL Update on Save] opção. Este índice não oferece suporte a `Update by Schedule` opção.
+>O [!DNL Customer Grid] só pode ser reindexado usando a opção [!UICONTROL Update on Save]. Este índice não dá suporte à opção `Update by Schedule`.
 
 ## Informações adicionais
 
 - [Gerenciamento de índice para usuários administradores](../../../configuration/cli/manage-indexers.md#configure-indexers)
 - [Gerenciamento de índice usando a CLI do Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
-- [Visão geral de indexação para desenvolvedores](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [Visão geral da indexação para desenvolvedores](https://developer.adobe.com/commerce/php/development/components/indexing/)

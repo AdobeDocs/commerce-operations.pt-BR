@@ -17,7 +17,7 @@ Criar uma página personalizada para redirecionar usuários impede qualquer aces
 
 >[!NOTE]
 >
->Você deve executar as tarefas desta seção como um usuário com `root` privilégios. Páginas de manutenção personalizadas não podem ser definidas enquanto estiverem no modo de desenvolvedor.
+>Você deve executar as tarefas desta seção como um usuário com privilégios de `root`. Páginas de manutenção personalizadas não podem ser definidas enquanto estiverem no modo de desenvolvedor.
 
 ## Criar a página de manutenção personalizada
 
@@ -94,9 +94,9 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [Atualizar o sistema](../implementation/perform-upgrade.md).
+1. [Atualize seu sistema](../implementation/perform-upgrade.md).
 1. Teste o site para verificar se ele funciona corretamente.
-1. Depois que a atualização estiver concluída, exclua `maintenance.enable`.
+1. Após a atualização, exclua `maintenance.enable`.
 
 ## Página de manutenção personalizada para nginx
 
@@ -105,9 +105,9 @@ Esta seção discute como criar uma página de manutenção personalizada e como
 Para redirecionar o tráfego para uma página de manutenção personalizada:
 
 1. Use um editor de texto para abrir o arquivo de configuração nginx que contém o bloco do servidor.
-1. Adicione o seguinte ao bloco do servidor (`server` é exibido apenas para maior clareza; não adicione um segundo bloco de servidor).
+1. Adicionar o seguinte ao bloco de servidor (`server` é mostrado apenas para maior clareza; não adicione um segundo bloco de servidor).
 
-   Incluir na lista de permissões A seguinte mensagem exibe o endereço IP 192.0.2.110 e 192.0.2.115 em um sistema no qual o Magento está instalado `/var/www/html/magento2`:
+   Incluir na lista de permissões A seguinte mensagem indica o endereço IP 192.0.2.110 e 192.0.2.115 em um sistema onde o Magento está instalado em `/var/www/html/magento2`:
 
    ```conf
    server {
@@ -154,9 +154,9 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
    service nginx reload
    ```
 
-1. [Atualizar o sistema](../implementation/perform-upgrade.md).
+1. [Atualize seu sistema](../implementation/perform-upgrade.md).
 1. Teste o site para verificar se ele funciona corretamente.
-1. Depois que a atualização estiver concluída, exclua ou renomeie `maintenance.enable`
+1. Após a atualização, exclua ou renomeie `maintenance.enable`
 1. Recarregue a configuração do nginx:
 
    ```bash

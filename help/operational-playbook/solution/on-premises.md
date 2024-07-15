@@ -14,7 +14,8 @@ ht-degree: 0%
 
 # Hospedagem local
 
-As soluções de hospedagem baseadas em nuvem são extremamente populares e certamente desempenham um papel importante em muitas organizações. No entanto, a infraestrutura local ainda é uma opção adequada para algumas organizações e comerciantes.
+As soluções de hospedagem baseadas em nuvem são extremamente populares e certamente servem um
+importante papel em muitas organizações, no entanto, a infraestrutura local ainda é uma opção adequada para algumas organizações e comerciantes.
 
 Você precisa considerar vários fatores antes de escolher a hospedagem no local, incluindo custos irrecuperáveis significativos, um pool prontamente disponível de especialistas de TI competentes/econômicos e o fato de que os aplicativos no local geralmente podem ser mais prontamente adaptados e adaptados às necessidades de uma organização.
 

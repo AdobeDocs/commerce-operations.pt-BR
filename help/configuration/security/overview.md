@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Visão geral de segurança
 
-A seção Segurança inclui configurações para recursos relacionados à segurança, como hash de senha, intoxicação de cache e proteção do `cron.php` arquivo.
+A seção Segurança inclui configurações para recursos relacionados à segurança, como hash de senha, intoxicação de cache e proteção do arquivo `cron.php`.
 
 ## Recursos de segurança
 
 Os tópicos na seção Segurança do guia Configuração não são abrangentes em toda a funcionalidade do Commerce. Há muitos tópicos importantes relacionados à segurança em outros guias do Commerce, como:
 
-- [Guia do desenvolvedor de PHP](https://developer.adobe.com/commerce/php/development/security/) para obter informações que os desenvolvedores do Adobe Commerce podem usar para melhorar a segurança dos componentes que criam.
-- [Guia de segurança e conformidade](https://devdocs.magento.com/security/security-and-compliance.html) para obter informações sobre segurança, privacidade e conformidade normativa, com links para recursos técnicos.
+- [Guia do desenvolvedor do PHP](https://developer.adobe.com/commerce/php/development/security/) para obter informações que os desenvolvedores do Adobe Commerce podem usar para melhorar a segurança dos componentes que eles criam.
+- [Guia de Segurança e Conformidade](https://devdocs.magento.com/security/security-and-compliance.html) para obter informações sobre segurança, privacidade e conformidade regulamentar, com links para recursos técnicos.
 
 Vários tópicos relacionados à segurança que foram incluídos no guia Configuração de uma vez, agora estão localizados nos seguintes guias:
 
 - [Google reCAPTCHA](https://devdocs.magento.com/guides/v2.4/security/google-recaptcha.html) no _Guia de extensão_.
-- [Autenticação de dois fatores](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html) no _Guia de extensão_.
-- [Conformidade com o Regulamento Geral sobre a Proteção de Dados (GDPR)](https://devdocs.magento.com/compliance/privacy/gdpr.html) no _Guia de segurança e conformidade_.
+- [Autenticação de Dois Fatores](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html) no _Guia de Extensão_.
+- [Conformidade com o Regulamento Geral sobre a Proteção de Dados](https://devdocs.magento.com/compliance/privacy/gdpr.html) no _Guia de Segurança e Conformidade_.

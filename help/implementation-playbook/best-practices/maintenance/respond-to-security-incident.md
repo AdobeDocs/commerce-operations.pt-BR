@@ -5,7 +5,7 @@ feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
 source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1172'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,12 @@ Seguir essas práticas recomendadas pode ajudar a impedir acessos não autorizad
 
 >[!TIP]
 >
->O Adobe descobriu que a maioria dos incidentes de segurança ocorre quando os agentes de ameaça aproveitam as vulnerabilidades existentes e sem patch, senhas ruins e configurações fracas de propriedade e permissão no aplicativo e na configuração da infraestrutura do Commerce. Minimize a ocorrência de incidentes de segurança revisando e seguindo as práticas recomendadas de segurança do Adobe ao instalar, configurar e atualizar as instalações do Adobe Commerce. Consulte [Proteger o site e a infraestrutura do Commerce](../launch/security-best-practices.md).
+>O Adobe descobriu que a maioria dos incidentes de segurança ocorre quando os agentes da ameaça aproveitam as vulnerabilidades existentes e sem patch, senhas ruins e configurações fracas de propriedade e permissão na configuração do aplicativo e da infraestrutura do Commerce. Minimize a ocorrência de incidentes de segurança revisando e seguindo as práticas recomendadas de segurança do Adobe ao instalar, configurar e atualizar as instalações do Adobe Commerce. Consulte [Proteger o site e a infraestrutura do Commerce](../launch/security-best-practices.md).
 
 
 ## Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -67,18 +67,18 @@ A primeira etapa da análise de incidentes é coletar o máximo de fatos possív
 
   O Relatório de logs de ação exibe um registro detalhado de todas as ações administrativas que estão ativadas para fazer logon. Cada registro recebe o carimbo de data e hora e registra o endereço IP e o nome do usuário. Os detalhes do log incluem dados do usuário administrador e alterações relacionadas que foram feitas durante a ação.
 
-- Analisar eventos com o [Observação para a ferramenta Adobe Commerce](../../../tools/observation-for-adobe-commerce/intro.md).
+- Analise eventos com a [ferramenta Observation for Adobe Commerce](../../../tools/observation-for-adobe-commerce/intro.md).
 
   A ferramenta Observation for Adobe Commerce permite analisar problemas complexos para ajudar a identificar as causas raiz. Em vez de rastrear dados díspares, você pode gastar seu tempo correlacionando eventos e erros para obter insights mais profundos sobre as causas dos gargalos de desempenho.
 
-  Use o **Segurança** na ferramenta para obter uma visão clara dos possíveis problemas de segurança e ajudar a identificar as causas básicas e manter o desempenho ideal dos sites.
+  Use a guia **Segurança** da ferramenta para obter uma visão clara dos possíveis problemas de segurança e ajudar a identificar as causas raiz e manter os sites com desempenho ideal.
 
 - Analisar logs com [Logs do New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)
 
-  Os projetos Pro do Adobe Commerce em infraestrutura em nuvem incluem o [Logs do New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html) serviço. O serviço é pré-configurado para agregar todos os dados de log dos ambientes de preparo e produção para exibi-los em um painel de gerenciamento de log centralizado, onde você pode pesquisar e visualizar dados agregados.
+  Os projetos Pro do Adobe Commerce na infraestrutura em nuvem incluem o serviço [Logs do New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html). O serviço é pré-configurado para agregar todos os dados de log dos ambientes de preparo e produção para exibi-los em um painel de gerenciamento de log centralizado, onde você pode pesquisar e visualizar dados agregados.
 
-  Para outros projetos do Commerce, é possível configurar e usar o [Logs do New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) serviço para concluir as seguintes tarefas:
-   - Uso [consultas do New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) para pesquisar dados de log agregados.
+  Para outros projetos da Commerce, você pode configurar e usar o serviço [Logs do New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) para concluir as seguintes tarefas:
+   - Use [consultas New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) para pesquisar dados de log agregados.
    - Visualizar dados de log por meio do aplicativo New Relic Logs.
 
 ## Contas de auditoria, código e banco de dados
@@ -89,17 +89,17 @@ Continue a monitorar de perto o local após o incidente, pois muitos locais ser�
 
 ### Auditoria de contas de usuário Admin
 
-- [Revisar o acesso do usuário administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)—Remove contas antigas, não utilizadas ou suspeitas e faz a rotação de senhas para todos os usuários administradores.
+- [Revisar acesso de usuário Administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)—Remova contas antigas, não utilizadas ou suspeitas e alterne senhas para todos os usuários Administradores.
 
-- [Revisar configurações de segurança do administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html)—Verifique se as configurações de segurança do administrador seguem as práticas recomendadas de segurança.
+- [Revisar configurações de segurança do administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) — Verifique se as configurações de segurança do administrador seguem as práticas recomendadas de segurança.
 
-- [Revisar contas de usuário do Adobe Commerce em projetos de infraestrutura em nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html)—Remove contas antigas, não utilizadas ou suspeitas e gira senhas para todos os usuários administradores de projetos na nuvem. Verifique se as configurações de segurança da conta estão definidas corretamente.
+- [Revisar contas de usuário do Adobe Commerce em projetos de infraestrutura em nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html)—Remover contas antigas, não utilizadas ou suspeitas e girar senhas para todos os usuários administradores de projetos em nuvem. Verifique se as configurações de segurança da conta estão definidas corretamente.
 
-- [Chaves SSH de auditoria](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) para Adobe Commerce na infraestrutura em nuvem — revise, exclua e gire chaves SSH.
+- [Auditoria de chaves SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) para Adobe Commerce na infraestrutura em nuvem — revisão, exclusão e rotação de chaves SSH.
 
 ### Código de auditoria
 
-- Do Administrador, revise a variável [Configuração do cabeçalho e rodapé do HTML](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) em todos os níveis de escopo, incluindo `website` e `store view`. Remova qualquer código JavaScript desconhecido das configurações de scripts e folhas de estilos e HTML diversos. Reter somente código reconhecido, como trechos de rastreamento.
+- Do Administrador, examine a [configuração do Cabeçalho e Rodapé de HTML](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) em todos os níveis de escopo, incluindo `website` e `store view`. Remova qualquer código JavaScript desconhecido das configurações de scripts e folhas de estilos e de HTML diversos. Reter somente código reconhecido, como trechos de rastreamento.
 
 - Compare a base de código de produção atual com a base de código armazenada no Sistema de controle de versão (VCS).
 
@@ -111,11 +111,11 @@ Continue a monitorar de perto o local após o incidente, pois muitos locais ser�
 
 - Revise todos os procedimentos armazenados para modificações.
 
-- Verifique se o banco de dados só pode ser acessado pela instância do Commerce.
+- Verifique se o banco de dados está acessível somente pela instância do Commerce.
 
 - Verifique se não há mais malware verificando o site com ferramentas de verificação de malware publicamente disponíveis.
 
-- Proteja o painel Administrador alterando seu nome e verificando se o site `app/etc/local.xml` e `var` Os URLs não estão acessíveis publicamente.
+- Proteja o painel Administrador alterando seu nome e verificando se as URLs do site `app/etc/local.xml` e `var` não estão acessíveis publicamente.
 
 - Continue a monitorar de perto o local após o incidente, pois muitos locais serão comprometidos novamente em horas. Garanta a análise contínua de registros e o monitoramento da integridade de arquivos para detectar rapidamente qualquer sinal de novo comprometimento.
 
@@ -133,4 +133,4 @@ Ao lidar com ataques sofisticados, o melhor curso de ação é trabalhar com um 
 
 ## Informações adicionais
 
-- [Estrutura de análise de causa básica](https://sansec.io/kb/incident-response/magento-root-cause-analysis).
+- [Estrutura de Análise de Causa Raiz](https://sansec.io/kb/incident-response/magento-root-cause-analysis).

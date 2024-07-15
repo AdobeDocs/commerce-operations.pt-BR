@@ -11,19 +11,19 @@ ht-degree: 0%
 
 # Política de versão do Adobe Commerce
 
-O Adobe Commerce usa [controle de versão semântico](https://semver.org/) no nível de módulo individual (por exemplo, `magento/framework 101.1.1`), mas não para o número da versão de marketing. Por exemplo:
+O Adobe Commerce usa [controle de versão semântico](https://semver.org/) no nível de módulo individual (por exemplo, `magento/framework 101.1.1`), mas não para o número de versão de marketing. Por exemplo:
 
-- **Versão principal**—2
-- **Versão SECUNDÁRIA**—2.4
+- **VERSÃO PRINCIPAL**—2
+- **VERSÃO SECUNDÁRIA**—2.4
 - **versão do PATCH**—2.4.5
-   - **Versão de correção de SEGURANÇA**—2.4.5-p1
+   - **Versão de correção de segurança**—2.4.5-p1
       - Correção de erro de segurança
       - Aprimoramento de segurança
-- **Versão de patch BETA**—2.4.7-beta2
-- **Extensibilidade, infraestrutura e versão de serviços**
+- **versão de patch do BETA**—2.4.7-beta2
+- **Versão de Extensibilidade, Infraestrutura e Serviços**
 - **Hotfix**
 - **Patch individual**
-- **Correção personalizada**
+- **Patch personalizado**
 
 ## Versão SECUNDÁRIA
 
@@ -48,11 +48,11 @@ As seguintes diretrizes se aplicam às versões de patch:
 
 {{$include /help/_includes/security-patch-release-overview.md}}
 
-## Versão de patch BETA
+## Versão de correção do Beta
 
 As versões de disponibilidade pré-geral dos recursos do Adobe Commerce são disponibilizadas publicamente para todos os clientes e parceiros Adobe da Adobe Commerce. Ele permite um tempo extra antes que a Disponibilidade Geral analise o código e os componentes afetados.
 
-As versões beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. O Adobe não terá nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte Adobe ou de outra forma) às versões Beta. Os clientes são aconselhados a ter cuidado e não depender de forma alguma do funcionamento ou desempenho correto das versões Beta e/ou de qualquer documentação ou material que as acompanhe. Portanto, qualquer uso das Versões Beta é totalmente de responsabilidade do Cliente.
+As versões do Beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. O Adobe não terá nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte do Adobe ou de outra forma) às versões do Beta. Os clientes são aconselhados a ter cuidado e não depender, de forma alguma, do funcionamento ou do desempenho corretos das versões do Beta e/ou de qualquer documentação ou material que os acompanhe. Portanto, qualquer uso das versões do Beta é totalmente de responsabilidade do Cliente.
 
 ## Extensibilidade, infraestrutura e versão de serviços
 
@@ -60,7 +60,7 @@ Versões de recursos que contêm novos recursos e atualizações de recursos for
 
 ## Hotfix
 
-Hotfixes são patches que contêm correções de segurança ou qualidade de alto impacto, como correções para vulnerabilidades &quot;zero-day&quot;, que afetam muitos comerciantes. O Adobe lança hotfixes para versões do Adobe Commerce que ainda são compatíveis e afetadas por problemas críticos de segurança ou qualidade, conforme necessário. Hotfixes são publicados no [seção Problemas conhecidos](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) da nossa Knowledge Base. Essas correções estão incluídas na próxima versão de patch planejada.
+Hotfixes são patches que contêm correções de segurança ou qualidade de alto impacto, como correções para vulnerabilidades &quot;zero-day&quot;, que afetam muitos comerciantes. O Adobe lança hotfixes para versões do Adobe Commerce que ainda são compatíveis e afetadas por problemas críticos de segurança ou qualidade, conforme necessário. Hotfixes foram publicados na [seção Problemas conhecidos](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) da nossa Base de Dados de Conhecimento. Essas correções estão incluídas na próxima versão de patch planejada.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Hotfixes são patches que contêm correções de segurança ou qualidade de alto
 
 ## Patch individual
 
-Patches individuais contêm correções de qualidade de baixo impacto para um problema específico. Essas correções são aplicadas às versões secundárias compatíveis do Adobe Commerce. O Adobe lança patches individuais conforme necessário para o Adobe Commerce, de acordo com nossas [Política de ciclo de vida do software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+Patches individuais contêm correções de qualidade de baixo impacto para um problema específico. Essas correções são aplicadas às versões secundárias compatíveis do Adobe Commerce. O Adobe lança patches individuais conforme necessário para o Adobe Commerce de acordo com nossa [Política de ciclo de vida do software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 >[!NOTE]
 >
@@ -76,10 +76,10 @@ Patches individuais contêm correções de qualidade de baixo impacto para um pr
 
 ## Correção personalizada
 
-Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código Adobe Commerce por vários motivos. Os patches personalizados são fornecidos por meio do [Ferramenta Correções de qualidade](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código Adobe Commerce por vários motivos. Os patches personalizados são entregues por meio da [Ferramenta de Patches de Qualidade](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
 
 ## Tópicos relacionados
 
 - [Controle de versão](https://developer.adobe.com/commerce/php/development/versioning/)
 - [Versões futuras](schedule.md)
-- [Política de ciclo de vida do software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+- [Política de Ciclo de Vida de Software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)

@@ -1,6 +1,6 @@
 ---
-title: A variável [!UICONTROL Redis] guia
-description: Saiba mais sobre o [!UICONTROL Redis] guia de [!DNL Observation for Adobe Commerce].
+title: A guia [!UICONTROL Redis]
+description: Saiba mais sobre a guia [!UICONTROL Redis] do  [!DNL Observation for Adobe Commerce].
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
 source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3
@@ -10,58 +10,58 @@ ht-degree: 0%
 
 ---
 
-# A variável [!DNL Redis] guia
+# A guia [!DNL Redis]
 
 ## [!UICONTROL Redis Node summary]
 
 ![Resumo do nó Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-1.jpg)
 
-A variável **[!UICONTROL Redis Node summary]** O inclui todos os nós em um ambiente. O exemplo acima inclui os nós para preparo compartilhado. Há um primário e dois secundários na produção e também um primário e dois secundários no preparo.
+O **[!UICONTROL Redis Node summary]** inclui todos os nós em um ambiente. O exemplo acima inclui os nós para preparo compartilhado. Há um primário e dois secundários na produção e também um primário e dois secundários no preparo.
 
 ## [!UICONTROL Redis node detail]
 
 ![Detalhes do nó Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
 
-A variável **[!UICONTROL Redis node detail]** quadro indica o ambiente, [!DNL Redis] função, versão do software e tamanho do nó.
+O quadro **[!UICONTROL Redis node detail]** indica o ambiente, a função [!DNL Redis], a versão do software e o tamanho do nó.
 
 ## [!UICONTROL Redis node roles timeline]
 
 ![Linha do tempo de funções do nó Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-3.jpg)
 
-A variável **[!UICONTROL Redis node roles timeline]** quadro indica a perda de [!DNL Redis] serviço em funções específicas. Se uma linha cair, isso indica que a função específica que a linha representa perdeu um ou mais nós.
+O quadro **[!UICONTROL Redis node roles timeline]** indica a perda do serviço [!DNL Redis] em funções específicas. Se uma linha cair, isso indica que a função específica que a linha representa perdeu um ou mais nós.
 
 ## [!UICONTROL Connection to Redis]
 
-![Conexão com o Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-4.jpg)
+![Conexão com Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-4.jpg)
 
-A variável **[!UICONTROL Connection to Redis]** quadro exibe o valor net.connectedClients do [!DNL New Relic Redis] dados de exemplo. Ele exibe a contagem de conexões por [!DNL New Relic] aplicativo (ambiente) e nó.
+O quadro **[!UICONTROL Connection to Redis]** exibe o valor net.connectedClients dos dados de amostra [!DNL New Relic Redis]. Ele exibe a contagem de conexões por [!DNL New Relic] aplicativo (ambiente) e nó.
 
 ## [!UICONTROL Commands per second by node]
 
-![Comandos por segundo por nó](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
+![Comandos por segundo pelo nó](../../assets/tools/observation-for-adobe-commerce/redis-tab-5.jpg)
 
-A variável **[!UICONTROL Commands per second by node]** o quadro mostra o [!DNL Redis] por nó por segundo durante o período selecionado.
+O quadro **[!UICONTROL Commands per second by node]** mostra os comandos [!DNL Redis] por nó por segundo durante o período selecionado.
 
 ## [!UICONTROL Redis % of memory used]
 
 ![Redis % de memória usada](../../assets/tools/observation-for-adobe-commerce/redis-tab-6.jpg)
 
-A variável **[!UICONTROL Redis % of memory used]** quadro mostra a porcentagem de memória máxima usada pelo [!DNL Redis] servidores.
+O quadro **[!UICONTROL Redis % of memory used]** mostra a porcentagem de memória máxima usada pelos servidores [!DNL Redis].
 
 ## [!UICONTROL Redis used memory]
 
-![Memória usada Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-7.jpg)
+![Redis usou memória](../../assets/tools/observation-for-adobe-commerce/redis-tab-7.jpg)
 
-A variável **[!UICONTROL Redis used memory]** O quadro mostra o uso de memória do nó em GB/MB.
+O quadro **[!UICONTROL Redis used memory]** mostra o uso de memória do nó em GB/MB.
 
 ## [!UICONTROL Redis changes since last db save]
 
-![Resgata as alterações desde o último salvamento do banco de dados](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
+![Redis altera desde o último salvamento do banco de dados](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] O reside na memória e salva as informações no armazenamento. A variável **[!UICONTROL Redis changes since last db save]** quadro indica o número de alterações na memória ocorridas desde que o último banco de dados foi salvo no armazenamento. Consulte [Persistência de Redis](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) para obter mais explicações sobre [!DNL Redis's] persistência.
+[!DNL Redis] reside na memória e salva as informações no armazenamento. O quadro **[!UICONTROL Redis changes since last db save]** indica o número de alterações na memória ocorridas desde que o último banco de dados foi salvo no armazenamento. Consulte [Persistência de Redis](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) para obter mais explicações sobre a persistência [!DNL Redis's].
 
 ## [!UICONTROL Redis synchronization from Log]
 
-![Redefinir sincronização do Log](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
+![Sincronização Redis do Log](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-A variável **[!UICONTROL Redis synchronization from Log]** o quadro focaliza os erros encontrados durante [!DNL Redis] sincronização ou erros que ocorrem devido a problemas de sincronização. Para obter mais informações sobre [!DNL Redis], consulte [[!DNL Redis] Documentação](https://redis.io/docs/).
+O quadro **[!UICONTROL Redis synchronization from Log]** focaliza os erros encontrados durante a sincronização de [!DNL Redis] ou erros que ocorrem devido a problemas de sincronização. Para obter mais informações sobre [!DNL Redis], consulte [[!DNL Redis] Documentação](https://redis.io/docs/).

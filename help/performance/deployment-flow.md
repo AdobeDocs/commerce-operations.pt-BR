@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Fluxo de implantação
 
-A variável [!DNL Commerce] o fluxo de implantação de produção ajuda uma loja a alcançar o desempenho máximo.
+O fluxo de implantação de produção [!DNL Commerce] ajuda um armazenamento a alcançar o desempenho máximo.
 
 ## Instalar dependências
 
-A variável `composer.json` e `composer.lock` arquivos gerenciar [!DNL Commerce] e instale a versão apropriada para cada pacote. Você deve instalar as dependências antes de [instruções de injeção de dependência de pré-processamento](#preprocess-dependency-injection-instructions) se você planeja atualizar a variável [carregador automático](#update-the-autoloader).
+Os arquivos `composer.json` e `composer.lock` gerenciam as dependências do [!DNL Commerce] e instalam a versão apropriada para cada pacote. Você deve instalar dependências antes de [instruções de injeção de dependência de pré-processamento](#preprocess-dependency-injection-instructions) se planeja atualizar o [carregador automático](#update-the-autoloader).
 
-Para instalar [!DNL Commerce] dependências:
+Para instalar as dependências de [!DNL Commerce]:
 
 ```bash
 composer install --no-dev
@@ -41,13 +41,13 @@ bin/magento setup:di:compile
 
 ## Atualizar o carregador automático
 
-Após a conclusão da compilação, confirme se [APCu habilitado](../performance/software.md#php-settings) e atualize o carregador automático:
+Após a conclusão da compilação, confirme se [o APCu está habilitado](../performance/software.md#php-settings) e atualize o carregador automático:
 
 Para atualizar o carregador automático:
 
 >[!INFO]
 >
->A variável `-o` A opção converte o carregamento automático PSR-0/4 em classmap para obter um carregador automático mais rápido. A variável `--apcu` A opção usa APCu para armazenar em cache classes encontradas/não encontradas.
+>A opção `-o` converte o carregamento automático PSR-0/4 em classmap para obter um carregador automático mais rápido. A opção `--apcu` usa APCu para armazenar em cache classes encontradas/não encontradas.
 
 ```bash
 composer dump-autoload -o --apcu
@@ -73,7 +73,7 @@ bin/magento setup:static-content:deploy
 
 ## Implantar conteúdo estático
 
-A implantação de conteúdo estático causa [!DNL Commerce] para executar as seguintes ações:
+A implantação de conteúdo estático faz com que [!DNL Commerce] execute as seguintes ações:
 
 * Analisar todos os recursos estáticos
 * Realizar mesclagem, minimização e agrupamento de conteúdo
@@ -81,7 +81,7 @@ A implantação de conteúdo estático causa [!DNL Commerce] para executar as se
 * Analisar fallback do tema
 * Armazenar todo o conteúdo processado e materializado na pasta específica para uso adicional
 
-Se o conteúdo estático não for implantado, [!DNL Commerce] O executa todas as operações listadas em tempo real, resultando em um aumento significativo no tempo de resposta.
+Se o seu conteúdo estático não for implantado, o [!DNL Commerce] executará todas as operações listadas em tempo real, levando a um aumento significativo no tempo de resposta.
 
 Você pode usar várias opções para personalizar as operações de implantação com base no tamanho da loja e nas necessidades de atendimento. O mais comum é a estratégia de implantação compacta. Consulte [Estratégias de implantação de arquivos estáticos](../configuration/cli/static-view-file-strategy.md)
 
@@ -97,9 +97,9 @@ Esse comando permite que o Composer recrie o mapeamento para arquivos de projeto
 
 >[!INFO]
 >
->A definição do modo para produção é executada automaticamente `setup:di:compile` e `setup:static-content:deploy`.
+>A definição do modo para produção executa automaticamente `setup:di:compile` e `setup:static-content:deploy`.
 
-Por fim, é necessário colocar a loja no modo de Produção. O modo de produção é otimizado especificamente para o desempenho máximo de sua loja. Também desativa todos os recursos específicos do desenvolvedor. Isso pode ser feito em seu `.htaccess` ou `nginx.conf` arquivo:
+Por fim, é necessário colocar a loja no modo de Produção. O modo de produção é otimizado especificamente para o desempenho máximo de sua loja. Também desativa todos os recursos específicos do desenvolvedor. Isso pode ser feito no seu arquivo `.htaccess` ou `nginx.conf`:
 
 `SetEnv MAGE_MODE production`
 

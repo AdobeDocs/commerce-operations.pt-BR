@@ -55,4 +55,4 @@ Impactos do GRA:
 
 >[!TIP]
 >
->Consulte [Exemplos de GRA](examples.md).
+>Consulte [exemplos de GRA](examples.md).

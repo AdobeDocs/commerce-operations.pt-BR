@@ -3,13 +3,13 @@ title: Práticas recomendadas de desenvolvimento geral
 description: Saiba mais sobre as práticas recomendadas gerais que desenvolvem projetos do Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas de desenvolvimento geral do Adobe Commerce
 
@@ -19,7 +19,7 @@ Este tópico descreve a linha de base para um processo de desenvolvimento saudá
 >
 >Os arquitetos técnicos da Adobe usam essas práticas recomendadas como referência durante os contratos que envolvem desenvolvimento.
 
-Essas práticas recomendadas foram desenvolvidas com base em anos de experiência no desenvolvimento e na entrega de projetos do Commerce. A Adobe recomenda que as iniciativas técnicas sigam essas práticas recomendadas e que você melhore os processos e o código existentes para alinhá-los.
+Essas práticas recomendadas foram desenvolvidas com base em anos de experiência no desenvolvimento e no fornecimento de projetos do Commerce. A Adobe recomenda que as iniciativas técnicas sigam essas práticas recomendadas e que você melhore os processos e o código existentes para alinhá-los.
 
 ## Convenções de texto
 
@@ -31,7 +31,7 @@ As palavras-chave &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, 
 1. O desenvolvimento NÃO DEVE começar até que uma estratégia de ramificação para o sistema de controle de versão esteja disponível para a equipe de desenvolvimento.
 1. O desenvolvimento NÃO DEVE começar até que as especificações técnicas, as histórias de usuários e os casos de uso sejam aprovados, e a aprovação em casos de teste esteja disponível para a equipe de desenvolvimento.
 1. O desenvolvimento NÃO DEVE começar até que pelo menos um ambiente de desenvolvimento e controle de qualidade esteja disponível.
-1. Os requisitos específicos do projeto que são obrigatórios para o início do desenvolvimento PODEM ser documentados num _Definição de Pronto_.
+1. Os requisitos específicos do projeto obrigatórios para o início do desenvolvimento PODEM ser documentados em uma _Definição de Pronto_.
 1. A aprovação DEVE ser feita por um representante do cliente autorizado a aprovar os resultados do projeto.
 1. Nas metodologias de projetos Agile, requisitos adicionais PODEM vir após a aprovação. Esses requisitos DEVEM ser tratados como novos requisitos e DEVEM ser capturados, arquitetados e planejados de acordo.
 1. Todo o desenvolvimento DEVE ser funcionalmente testado pelo desenvolvedor antes do envio.
@@ -50,19 +50,19 @@ As palavras-chave &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, 
 ## Padrões de codificação
 
 1. Todos os códigos DEVEM seguir as convenções de arquitetura, metodologia e padrões de codificação. A criatividade é desejada na função, não na forma.
-1. Todos os códigos DEVEM estar em [Guia de arquitetura do Adobe Commerce](https://developer.adobe.com/commerce/php/architecture/){target="_blank}.
-1. Todos os códigos DEVEM aderir à [Padrões de codificação do Adobe Commerce](https://developer.adobe.com/commerce/php/coding-standards/).
-1. Todos os códigos DEVEM aderir à [Diretrizes técnicas do Adobe Commerce](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/).
-1. Todos os códigos DEVEM implementar a [Práticas recomendadas do Adobe Commerce](../phases.md), se aplicável.
-1. Todos os códigos DEVEM aderir à [Padrões do Grupo de interoperabilidade de estrutura PHP (FIG)](https://www.php-fig.org/).
-1. Sempre que possível, RECOMENDA-SE a [Visões técnicas do Adobe Commerce](https://developer.adobe.com/commerce/php/architecture/technical-vision/) conta.
+1. Todos os códigos DEVEM estar de acordo com o [Guia de Arquitetura do Adobe Commerce](https://developer.adobe.com/commerce/php/architecture/){target="_blank}.
+1. Todos os códigos DEVEM seguir os [Padrões de codificação do Adobe Commerce](https://developer.adobe.com/commerce/php/coding-standards/).
+1. Todos os códigos DEVEM seguir as [Diretrizes Técnicas da Adobe Commerce](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/).
+1. Todos os códigos DEVEM implementar as [Práticas recomendadas da Adobe Commerce](../phases.md), se aplicável.
+1. Todo código DEVE seguir os [padrões do Grupo de Interoperabilidade de PHP (FIG)](https://www.php-fig.org/).
+1. Sempre que possível, é RECOMENDÁVEL considerar as [Visões técnicas do Adobe Commerce](https://developer.adobe.com/commerce/php/architecture/technical-vision/).
 1. Todas as integrações com sistemas externos DEVEM ter testes de integração que validem o processo de negócios.
 1. Todos os módulos DEVEM ter cobertura de teste. O que testar exatamente DEVE ser determinado pela equipe de desenvolvimento, em colaboração com o arquiteto técnico ou o desenvolvedor principal. Essa determinação DEVE ser baseada em medidas qualitativas e não em medidas quantitativas; uma alta porcentagem de cobertura de código não é um indicador de sucesso, nem implica alta qualidade de código. Em vez disso, determine o risco de não cobrir uma parte do código avaliando a probabilidade e a gravidade das regressões nessa parte do programa.
 
 ## Controle de versão
 
-As versões do módulo DEVEM aderir à [Versão semântica 2.0.0 padrão](https://semver.org/).
-As dependências na base de código do Adobe Commerce DEVEM seguir o [Diretrizes de dependências de versão do módulo](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
+As versões de módulo DEVEM seguir o [Controle de Versão Semântico 2.0.0 padrão](https://semver.org/).
+As dependências na base de código do Adobe Commerce DEVEM seguir as [diretrizes de Dependências de Versão de Módulo](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
 
 ## CONTROLE DE REVISÃO
 
@@ -70,7 +70,7 @@ As confirmações DEVEM ser acompanhadas por mensagens de confirmação signific
 
 ## Segurança
 
-1. [Funções não seguras](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) NÃO DEVE ser usado.
-1. [Estratégias de prevenção XSS](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) DEVE ser aplicada.
-1. [Políticas de segurança de conteúdo](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) DEVE ser aplicada.
-1. As novas instâncias do Adobe Commerce DEVEM ser entregues na versão de segurança mais recente de uma versão que ainda não atingiu a data de &quot;Fim das correções de segurança&quot;. Consulte [Política de ciclo de vida do software Adobe Commerce](../../../release/lifecycle-policy.md).
+1. [Funções não seguras](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) NÃO DEVEM ser usadas.
+1. [Estratégias de prevenção XSS](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) DEVEM ser aplicadas.
+1. [Políticas de Segurança de Conteúdo](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) DEVEM ser aplicadas.
+1. As novas instâncias do Adobe Commerce DEVEM ser entregues na versão de segurança mais recente de uma versão que ainda não atingiu a data de &quot;Fim das correções de segurança&quot;. Consulte [Política de Ciclo de Vida de Software da Adobe Commerce](../../../release/lifecycle-policy.md).

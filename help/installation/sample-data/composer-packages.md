@@ -14,27 +14,27 @@ ht-degree: 0%
 
 Esta seção discute como instalar dados de amostra se você tiver o software Adobe Commerce de qualquer uma das seguintes maneiras:
 
-* Baixado um arquivo compactado de `https://magento.com/tech-resources/download`.
+* Arquivo compactado baixado de `https://magento.com/tech-resources/download`.
 
-  Se você baixou um arquivo do GitHub, esse método não funciona, pois o `composer.json` o arquivo não contém o `repo.magento.com` URL.
+  Se você baixou um arquivo do GitHub, esse método não funciona porque o arquivo `composer.json` não contém a URL `repo.magento.com`.
 
 * Usado `composer create-project`
 
-Você pode usar esse método para obter dados de amostra para o Adobe Commerce, mas deve usar o mesmo [chaves de autenticação](../prerequisites/authentication-keys.md) usado para instalar o aplicativo.
+Você pode usar este método para obter dados de amostra para o Adobe Commerce, mas deve usar as mesmas [chaves de autenticação](../prerequisites/authentication-keys.md) usadas para instalar o aplicativo.
 
 >[!NOTE]
 >
->Se você encontrar erros, como `Could not find package...` ou `...no matching package found...`, verifique se não há erros de digitação no comando. Se ainda encontrar erros, talvez você não tenha acesso aos repositórios corretos do Composer, especialmente se estiver usando o Adobe Commerce. Contato [Suporte ao Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
+>Se você encontrar erros, como `Could not find package...` ou `...no matching package found...`, verifique se não há erros de digitação no seu comando. Se ainda encontrar erros, talvez você não tenha acesso aos repositórios corretos do Composer, especialmente se estiver usando o Adobe Commerce. Contate o [Suporte da Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
 
-Você pode usar o Composer para instalar dados de amostra antes ou depois de instalar o aplicativo; no entanto, pode haver [tarefas adicionais](remove-or-update.md).
+Você pode usar o Composer para instalar dados de exemplo antes ou depois de instalar o aplicativo; no entanto, pode haver [tarefas adicionais](remove-or-update.md).
 
-Se você for um desenvolvedor contribuinte, consulte [Instalação por clonagem de repositórios](git-repositories.md).
+Se você for um desenvolvedor contribuinte, consulte [Instalar clonando repositórios](git-repositories.md).
 
 >[!WARNING]
 >
->Não instale dados de amostra se seu aplicativo estiver definido para [modo de produção](../../configuration/bootstrap/application-modes.md#production-mode). Alternar para [modo de desenvolvedor](../../configuration/bootstrap/application-modes.md#developer-mode) primeiro. Instalação de dados de amostra no modo de produção [falha](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
+>Não instale dados de amostra se seu aplicativo estiver definido como [modo de produção](../../configuration/bootstrap/application-modes.md#production-mode). Mude primeiro para o [modo de desenvolvedor](../../configuration/bootstrap/application-modes.md#developer-mode). A instalação de dados de amostra no modo de produção [falha](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
 
-Para instalar dados de amostra usando a linha de comando, digite o seguinte comando como proprietário do sistema de arquivos na `<app_root>` diretório:
+Para instalar dados de exemplo usando a linha de comando, digite o seguinte comando como proprietário do sistema de arquivos no diretório `<app_root>`:
 
 ```bash
 bin/magento sampledata:deploy
@@ -42,13 +42,13 @@ bin/magento sampledata:deploy
 
 >[!WARNING]
 >
->Se estiver instalando dados de amostra _após_ instalando o aplicativo, você também deve executar o seguinte comando para atualizar o banco de dados e o esquema no `<app_root>` diretório:
+>Se você estiver instalando dados de exemplo _após_ a instalação do aplicativo, também deverá executar o seguinte comando para atualizar o banco de dados e o esquema no diretório `<app_root>`:
 
 ```bash
 bin/magento setup:upgrade
 ```
 
-Você deve [autenticar](../prerequisites/authentication-keys.md) para concluir a ação.
+Você precisa [autenticar](../prerequisites/authentication-keys.md) para concluir a ação.
 
 ## Erro de autenticação
 
@@ -60,7 +60,7 @@ The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate
 ```
 
-Se o erro for exibido, altere para o diretório de instalação do aplicativo e execute `composer update`, que solicita o seu [chaves de autenticação](../prerequisites/authentication-keys.md).
+Se o erro for exibido, altere para o diretório de instalação do aplicativo e execute o `composer update`, que solicita as [chaves de autenticação](../prerequisites/authentication-keys.md).
 
 ## Conclua a instalação dos dados de amostra
 

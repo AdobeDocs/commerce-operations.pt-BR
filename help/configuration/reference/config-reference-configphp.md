@@ -4,14 +4,14 @@ description: Veja uma lista de valores no arquivo config.php.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
 
 # referência config.php
 
-A variável `config.php` O arquivo contém as seguintes seções:
+O arquivo `config.php` contém as seguintes seções:
 
 | Nome | Descrição |
 | --------- | -------------------|

@@ -14,17 +14,17 @@ ht-degree: 9%
 
 ## Perfis
 
-É possível ajustar a quantidade de dados criados usando o _perfis_ (pequeno, médio, grande e extra grande). Os perfis estão localizados na `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` diretório.
+Você pode ajustar a quantidade de dados que cria usando _perfis_ (pequenos, médios, grandes e extragrandes). Os perfis estão localizados no diretório `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>`.
 
 Por exemplo, `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-A figura a seguir mostra como um produto é exibido na vitrine usando o _pequeno_ perfil:
+A figura a seguir mostra como um produto é exibido na vitrine usando o perfil _small_:
 
 ![Loja de exemplo com dados gerados](../../assets/configuration/generate-data.png)
 
 A tabela a seguir fornece detalhes sobre os perfis do gerador de dados: pequeno, médio, grande e extragrande.
 
-| Parâmetro | Perfil pequeno | Perfil médio | Perfil médio de vários sites | Perfil grande | Perfil extragrande |
+| Parâmetro | Perfil pequeno | Perfil do Medium | Perfil de vários sites do Medium | Perfil grande | Perfil extragrande |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
@@ -50,9 +50,9 @@ A tabela a seguir fornece detalhes sobre os perfis do gerador de dados: pequeno,
 >
 >Antes de executar o gerador de dados, desative todos os trabalhos cron em execução no servidor. A desativação dos trabalhos cron impede que o gerador de dados execute ações que entrem em conflito com os trabalhos cron ativos e evita erros desnecessários.
 >
->Se você pretende implementar eventos com o [!DNL Adobe I/O Events for Adobe Commerce] ao testar o desempenho, execute este comando antes de assinar [events](https://developer.adobe.com/commerce/extensibility/events/). A inscrição de eventos primeiro pode causar erros.
+>Se você pretende implementar eventos com [!DNL Adobe I/O Events for Adobe Commerce] durante o teste de desempenho, execute este comando antes de assinar [eventos](https://developer.adobe.com/commerce/extensibility/events/). A inscrição de eventos primeiro pode causar erros.
 
-Execute o comando conforme discutido nesta seção. Depois que o comando for executado, você deverá [reindexar todos os indexadores](../cli/manage-indexers.md).
+Execute o comando conforme discutido nesta seção. Após a execução do comando, você deve [reindexar todos os indexadores](../cli/manage-indexers.md).
 
 Opções de comando:
 
@@ -125,7 +125,7 @@ Gera conjuntos de atributos com a configuração especificada. Nó de perfil XML
 
 ### Produtos do pacote
 
-Gera produtos agrupados. As seleções de conjunto geradas não são exibidas individualmente no catálogo. Os produtos são distribuídos uniformemente por categorias e sites. Se  `assign_entities_to_all_websites` do perfil estiver definido como `1`. Os produtos são atribuídos a todos os sites.
+Gera produtos agrupados. As seleções de conjunto geradas não são exibidas individualmente no catálogo. Os produtos são distribuídos uniformemente por categorias e sites. Se `assign_entities_to_all_websites` do perfil estiver definido como `1`. Os produtos são atribuídos a todos os sites.
 
 Nó de perfil XML:
 
@@ -163,7 +163,7 @@ Gera regras de preço de catálogo. Nó de perfil XML:
 
 ### Categorias
 
-Gera categorias. Se `assign_entities_to_all_websites` está definida como `0`, todas as categorias são distribuídas uniformemente por categorias raiz; caso contrário, todas as categorias são atribuídas a uma categoria raiz.
+Gera categorias. Se `assign_entities_to_all_websites` estiver definido como `0`, todas as categorias serão distribuídas uniformemente por categorias raiz; caso contrário, todas as categorias serão atribuídas a uma categoria raiz.
 
 Nó de perfil XML:
 
@@ -195,7 +195,7 @@ Define valores para campos de configuração. Nó de perfil XML:
 
 ### Produtos configuráveis
 
-Gera produtos configuráveis. As opções configuráveis geradas não são exibidas individualmente no catálogo. Os produtos são distribuídos uniformemente por categorias e sites. Se `assign_entities_to_all_websites` está definida como `1`, os produtos são atribuídos a todos os sites.
+Gera produtos configuráveis. As opções configuráveis geradas não são exibidas individualmente no catálogo. Os produtos são distribuídos uniformemente por categorias e sites. Se `assign_entities_to_all_websites` estiver definido como `1`, os produtos serão atribuídos a todos os sites.
 
 Os seguintes formatos de nó XML são compatíveis:
 
@@ -380,9 +380,9 @@ Nó de perfil XML:
 
 ### Produtos simples
 
-Gera produtos simples. Os produtos são distribuídos por conjuntos de atributos padrão e predefinidos. Se conjuntos de atributos extras forem especificados no perfil como: `<product_attribute_sets>{int}</product_attribute_sets>`, os produtos também são distribuídos por conjuntos de atributos adicionais.
+Gera produtos simples. Os produtos são distribuídos por conjuntos de atributos padrão e predefinidos. Se conjuntos de atributos extras forem especificados no perfil como: `<product_attribute_sets>{int}</product_attribute_sets>`, os produtos também serão distribuídos por conjuntos de atributos adicionais.
 
-Os produtos são distribuídos uniformemente por categorias e sites. Se `assign_entities_to_all_websites` está definida como `1`, os produtos são atribuídos a todos os sites.
+Os produtos são distribuídos uniformemente por categorias e sites. Se `assign_entities_to_all_websites` estiver definido como `1`, os produtos serão atribuídos a todos os sites.
 
 Nó de perfil XML:
 
@@ -402,7 +402,7 @@ Gera sites. Nó de perfil XML:
 
 ### Armazenar grupos
 
-Gera grupos de armazenamento (referidos no Administrador como _lojas_). Os grupos de lojas são distribuídos normalmente entre sites.
+Gera grupos de armazenamento (referidos no Admin como _lojas_). Os grupos de lojas são distribuídos normalmente entre sites.
 
 Nó de perfil XML:
 
@@ -434,16 +434,16 @@ Gera alíquotas de imposto. Nó de perfil XML:
 
 ## Informações adicionais de configuração:
 
-- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml`—Conjuntos de atributos padrão
+- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml` — Conjuntos de atributos padrão
 
-- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`— Configuração do cliente
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`—Configuração do cliente
 
 - `<Commerce root dir>/setup/performance-toolkit/config/description.xml`—Configuração da descrição completa do produto
 
 - `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`—Configuração da descrição curta do produto
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`— Configuração para descrição curta e completa do produto. Esta implementação mais antiga é fornecida para compatibilidade com versões anteriores.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` — Configuração para descrição curta e completa do produto. Esta implementação mais antiga é fornecida para compatibilidade com versões anteriores.
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`—Pequeno número de termos de pesquisa em descrições resumidas e completas
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` — Pequeno número de termos de pesquisa em descrições resumidas e completas
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`—Maior número de termos de pesquisa para usar em uma descrição curta e completa.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` — Maior número de termos de pesquisa a serem usados em uma descrição curta e completa.

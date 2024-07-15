@@ -1,5 +1,5 @@
 ---
-title: Recursos de comércio
+title: Recursos do Commerce
 description: Lista de recursos do Adobe Commerce
 exl-id: 58dd813d-e3bd-4a2e-a145-f1c66f849a38
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# Recursos de comércio
+# Recursos do Commerce
 
 Para fornecer as melhores experiências comerciais do mundo, é necessário oferecer suporte a todos os pontos de contato, modelos de negócios e cenários de implantação.
 

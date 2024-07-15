@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Conclua a instalação dos dados de amostra
 
-Depois de baixar os pacotes de dados de amostra, faça logon no servidor de aplicativos como proprietário do sistema de arquivos ou alterne para ele e digite o seguinte comando em `<app_root>` diretório:
+Depois de baixar os pacotes de dados de amostra, faça logon no servidor de aplicativos como proprietário do sistema de arquivos ou alterne para ele e digite o seguinte comando no diretório `<app_root>`:
 
 ```bash
 bin/magento setup:upgrade

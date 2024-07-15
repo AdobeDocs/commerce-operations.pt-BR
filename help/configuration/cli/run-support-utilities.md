@@ -4,7 +4,7 @@ description: Solucione problemas em seu projeto do Commerce usando o utilitário
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Os utilitários de suporte da Adobe Commerce, também conhecidos como [Coletor de dados](https://docs.magento.com/user-guide/system/support-data-collector.html)— permite que os usuários coletem informações de solução de problemas do seu sistema que podem ser usadas pela nossa equipe de suporte.
+Os utilitários de Suporte da Adobe Commerce, também conhecidos como [Coletor de Dados](https://docs.magento.com/user-guide/system/support-data-collector.html), permitem que os usuários coletem informações de solução de problemas do seu sistema, que podem ser usadas pela nossa equipe de suporte.
 
 O Adobe Commerce usa esses backups, também chamados de _despejos_, para analisar problemas que exigem acesso ao seu código. Um cenário típico é o seguinte:
 
-1. Você está tendo um problema com sua loja de Commerce e entra em contato com o Suporte da Adobe Commerce.
+1. Você está tendo um problema com sua loja da Commerce e entra em contato com o Suporte da Adobe Commerce.
 1. O suporte determina que eles precisam ver seu código ou banco de dados para reproduzir o problema.
-1. Você faz backup do código em um `.tar.gz` arquivo.
+1. Você faz backup do código em um arquivo `.tar.gz`.
 
    Este backup _exclui seus arquivos de mídia para acelerar o processo e resultar em um arquivo muito menor.
 
-1. Você faz backup do banco de dados em um `.tar.gz` arquivo.
+1. Você faz backup do banco de dados em um arquivo `.tar.gz`.
 
    Por padrão, os dados confidenciais recebem hash ao fazer o backup.
 
@@ -36,7 +36,7 @@ Os utilitários podem levar vários minutos para serem concluídos.
 
 ## Criar um backup de código
 
-Esse comando faz backup do código e o compacta em `tar.gz` formato.
+Este comando faz backup do código e o compacta no formato `tar.gz`.
 
 {{tip-backup-command}}
 
@@ -48,9 +48,9 @@ bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--
 
 Onde:
 
-- **`--name`** especifica o nome do arquivo de dump (opcional). Se você omitir esse parâmetro, o arquivo de despejo terá carimbo de data e hora.
+- **`--name`** especifica o nome do arquivo de despejo (opcional). Se você omitir esse parâmetro, o arquivo de despejo terá carimbo de data e hora.
 - **`-o|--output=<path>`** é o caminho absoluto do sistema de arquivos para armazenar o backup (necessário).
-- **`-l|--logs`** inclui arquivos de registro (opcional).
+- **`-l|--logs`** inclui arquivos de log (opcional).
 
 Por exemplo, para criar um backup de código chamado `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
 
@@ -62,7 +62,7 @@ Depois que o comando for concluído, forneça o backup do código para o Suporte
 
 ## Criar um backup de banco de dados
 
-Esse comando faz backup do banco de dados do Commerce e o compacta em `tar.gz` formato.
+Este comando faz backup do banco de dados Commerce e compacta-o no formato `tar.gz`.
 
 {{tip-backup-command}}
 
@@ -74,10 +74,10 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 Onde:
 
-- **`--name`** especifica o nome do arquivo de dump (opcional). Se você omitir esse parâmetro, o arquivo de despejo terá carimbo de data e hora.
+- **`--name`** especifica o nome do arquivo de despejo (opcional). Se você omitir esse parâmetro, o arquivo de despejo terá carimbo de data e hora.
 - **`-o|--output=<path>` é o caminho absoluto do sistema de arquivos para armazenar o backup (necessário).
-- **`-l|--logs`** inclui arquivos de registro (opcional).
-- **`-i|--ignore-sanitize`** significa que os dados são preservados; omita o sinalizador para aplicar hash a dados confidenciais armazenados no banco de dados ao criar o backup (opcional).
+- **`-l|--logs`** inclui arquivos de log (opcional).
+- **`-i|--ignore-sanitize`** significa que os dados são preservados; omita o sinalizador para fazer hash de dados confidenciais armazenados no banco de dados ao criar o backup (opcional).
 
 Os dados confidenciais incluem informações de clientes das seguintes tabelas de banco de dados:
 
@@ -112,7 +112,7 @@ Execute os seguintes comandos na ordem mostrada para exibir os caminhos para os 
 
    >[!INFO]
    >
-   >Os comandos são executados corretamente _somente_ do diretório de instalação.
+   >Os comandos são executados _somente_ corretamente a partir do diretório de instalação.
 
 1. `bin/magento support:utility:paths` cria `<magento_root>/var/support/Paths.php`, que lista os caminhos para todos os aplicativos usados pelo utilitário.
 1. `bin/magento support:utility:check` exibe os caminhos do sistema de arquivos.
@@ -131,4 +131,4 @@ A seguir, há uma amostra:
    mysql => /usr/bin/mysql
 ```
 
-Para resolver problemas com a execução das ferramentas, verifique se esses aplicativos estão instalados e no repositório do usuário do servidor Web `$PATH` variável de ambiente.
+Para resolver problemas com a execução das ferramentas, verifique se esses aplicativos estão instalados e se estão na variável de ambiente `$PATH` do usuário do servidor Web.

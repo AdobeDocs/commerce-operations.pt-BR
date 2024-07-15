@@ -1,10 +1,10 @@
 ---
 title: Comandos comuns
-description: Exibir uma amostra de comandos e uso comuns da CLI do Commerce.
+description: Ver uma amostra de comandos e uso comuns da Commerce CLI.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -35,23 +35,23 @@ Os comandos são exibidos somente na forma de resumo; para obter mais informaç�
 |--- |--- |
 | [`magento cache:{enable/disable/clean/flush/status}`](../cli/manage-cache.md) | Gerencia o cache |
 | [`magento indexer:{status/show-mode/set-mode/reindex/info/reset/show-dimensions-mode/set-dimensions-mode}`](../cli/manage-indexers.md) | Gerencia os indexadores |
-| [`magento cron:run`](../cli/configure-cron-jobs.md) | Executa trabalhos Commerce cron |
+| [`magento cron:run`](../cli/configure-cron-jobs.md) | Executa trabalhos cron do Commerce |
 | [`magento setup:di:compile`](../cli/code-compiler.md) | Compila todos os proxies e fábricas não existentes e pré-compila definições de classe, informações de herança e definições de plug-in para uma loja e um site. |
-| [`magento info:dependencies:{show-modules/show-modules-circular/show-framework}`](../cli/dependency-reports.md) | Dependências de módulo, dependências circulares e dependências de estrutura de comércio. |
+| [`magento info:dependencies:{show-modules/show-modules-circular/show-framework}`](../cli/dependency-reports.md) | Dependências de módulo, dependências circulares e dependências de estrutura do Commerce. |
 | [`magento i18n:{collect-phrases/pack/uninstall}`](../cli/localization.md) | Cria um dicionário de tradução ou um pacote de tradução |
 | [`magento setup:static-content:deploy`](../cli/static-view-file-deployment.md) | Implanta arquivos de visualização estáticos |
 | [`magento dev:source-theme:deploy`](../cli/create-symlinks.md) | Cria CSS a partir de MENOS |
 | [`magento dev:tests:run`](../cli/unit-tests.md) | Executa testes automáticos |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | Atualize seus arquivos XML de layout para corresponder à nova folha de estilos XSLT (Extensible Stylesheet Language Transformations) |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | Gerar dados para usar em testes de desempenho. |
-| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Instala dados de amostra opcionais após a instalação do aplicativo Commerce.<br><br>Para obter mais detalhes sobre dados de amostra, consulte [Dados de amostra opcionais](../../installation/sample-data/overview.md). |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Instala dados de amostra opcionais após a instalação do aplicativo Commerce.<br><br>Para obter mais detalhes sobre dados de exemplo, consulte [Dados de exemplo opcionais](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Gerencia configurações de backend |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Cria/edita/desbloqueia usuários administradores. |
 | [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Habilita/desabilita as dicas do modelo de desenvolvedor. |
 
 ## Argumentos comuns
 
-Os argumentos a seguir são comuns a todos os comandos. Esses comandos podem ser executados antes ou depois que o software Commerce for instalado:
+Os argumentos a seguir são comuns a todos os comandos. Esses comandos podem ser executados antes ou depois que o software Commerce é instalado:
 
 | Versão longa | Versão curta | Significado |
 |--- |--- |--- |

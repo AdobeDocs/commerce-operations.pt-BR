@@ -5,7 +5,7 @@ feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,12 @@ Esta seção fornece instruções para instalar o memcached no Ubuntu.
 
 Como o PHP não tem suporte nativo para memcache, você deve instalar uma extensão para o PHP usá-lo. Há duas extensões PHP disponíveis e é importante decodificar quais usar:
 
-- `memcache` (_não d_) — uma extensão mais antiga, mas popular, que não é mantida regularmente.
-A variável `memcache` extensão atual _não_ trabalhar com o PHP 7. Consulte [Documentação do PHP para memcache](https://www.php.net/manual/en/book.memcache.php).
+- `memcache` (_no d_) — uma extensão mais antiga, mas popular, que não é mantida regularmente.
+A extensão `memcache` atualmente _não_ funciona com o PHP 7. Consulte a documentação do [PHP para memcache](https://www.php.net/manual/en/book.memcache.php).
 
   O nome exato é `php5-memcache` para Ubuntu.
 
-- `memcached` (_com um`d`_)—uma extensão nova e mantida que é compatível com o PHP 7. Consulte [Documentação do PHP para memcached](https://www.php.net/manual/en/book.memcached.php).
+- `memcached` (_com`d`_)—uma extensão mais recente e mantida que é compatível com o PHP 7. Consulte a documentação do [PHP para memcached](https://www.php.net/manual/en/book.memcached.php).
 
   O nome exato é `php5-memcached` para Ubuntu.
 
@@ -33,7 +33,7 @@ A variável `memcache` extensão atual _não_ trabalhar com o PHP 7. Consulte [D
 
 **Para instalar e configurar o memcached no Ubuntu**:
 
-1. Como usuário com `root` insira o seguinte comando:
+1. Como um usuário com privilégios `root`, digite o seguinte comando:
 
    ```bash
    apt-get -y update
@@ -45,12 +45,12 @@ A variável `memcache` extensão atual _não_ trabalhar com o PHP 7. Consulte [D
 
 1. Alterar a definição da configuração memcached para `CACHESIZE` e `-l`:
 
-   1. Abertura `/etc/memcached.conf` em um editor de texto.
-   1. Localize o `-m` parâmetro.
+   1. Abra `/etc/memcached.conf` em um editor de texto.
+   1. Localize o parâmetro `-m`.
    1. Alterar seu valor para pelo menos `1GB`
-   1. Localize o `-l` parâmetro.
+   1. Localize o parâmetro `-l`.
    1. Alterar seu valor para `127.0.0.1` ou `localhost`
-   1. Salvar as alterações em `memcached.conf` e saia do editor de texto.
+   1. Salve as alterações em `memcached.conf` e saia do editor de texto.
    1. Reiniciar memcached.
 
       ```bash
@@ -65,13 +65,13 @@ A variável `memcache` extensão atual _não_ trabalhar com o PHP 7. Consulte [D
 
 ## Verificar trabalhos memcached antes de instalar o Magento
 
-A Adobe recomenda testar o memcached para garantir que funcione, antes de instalar o Commerce. Isso leva apenas alguns minutos e pode simplificar a solução de problemas posteriormente.
+A Adobe recomenda testar o memcached para verificar se ele funciona antes de instalar o Commerce. Isso leva apenas alguns minutos e pode simplificar a solução de problemas posteriormente.
 
 ### Verificar se o memcached é reconhecido pelo servidor Web
 
 Para verificar se o memcached é reconhecido pelo servidor Web:
 
-1. Criar um `phpinfo.php` arquivo no docroot do servidor Web:
+1. Crie um arquivo `phpinfo.php` no docroot do servidor Web:
 
    ```php
    <?php
@@ -87,19 +87,19 @@ Para verificar se o memcached é reconhecido pelo servidor Web:
 
 1. Verifique se as exibições memcached estão sendo exibidas da seguinte maneira:
 
-   ![Confirmar se o memcached é reconhecido pelo servidor Web](../../assets/configuration/memcache.png)
+   ![Confirmar que o memcached é reconhecido pelo servidor Web](../../assets/configuration/memcache.png)
 
    Verifique se você está usando a versão memcached 3.0.5 ou posterior.
 
-   Se o memcached não for exibido, reinicie o servidor Web e atualize a página do navegador. Se ainda não for exibido, verifique se você instalou o `php-pecl-memcached` extensão.
+   Se o memcached não for exibido, reinicie o servidor Web e atualize a página do navegador. Se ainda assim não for exibido, verifique se você instalou a extensão `php-pecl-memcached`.
 
 ### Verificar se o armazenamento em cache memcached pode armazenar dados em cache
 
 Este teste usa um script PHP para verificar se o memcached pode armazenar e recuperar dados do cache.
 
-Para obter mais informações sobre esse teste, consulte [Tutorial Como instalar e usar o Memcache no Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
+Para obter mais informações sobre este teste, consulte o [tutorial Como instalar e usar o Memcache no Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 
-Criar `cache-test.php` no docroot do servidor Web com o seguinte conteúdo:
+Crie `cache-test.php` no docroot do servidor Web com o seguinte conteúdo:
 
 ```php
 $meminstance = new Memcached();
@@ -116,7 +116,7 @@ if ($result) {
 }
 ```
 
-Onde `<memcached hostname or ip>` é `localhost`, `127.0.0.1`, ou o nome de host ou endereço IP do memcache. A variável `<memcached port>` é a porta de escuta; por padrão, `11211`.
+Onde `<memcached hostname or ip>` é `localhost`, `127.0.0.1`, ou o nome de host ou endereço IP do memcache. O `<memcached port>` é a porta de escuta; por padrão, `11211`.
 
 Vá para essa página em um navegador da Web. Por exemplo
 
@@ -124,9 +124,9 @@ Vá para essa página em um navegador da Web. Por exemplo
 http://192.0.2.1/cache-test.php
 ```
 
-Na primeira vez que você acessa a página, é exibido o seguinte: `No matching key found. Refresh the browser to add it!`
+Na primeira vez que você for à página, será exibido o seguinte: `No matching key found. Refresh the browser to add it!`
 
-Atualize o navegador. A mensagem muda para `Successfully retrieved the data!`
+Atualize o navegador. A mensagem foi alterada para `Successfully retrieved the data!`
 
 Finalmente, você pode visualizar as chaves de memcache usando Telnet:
 

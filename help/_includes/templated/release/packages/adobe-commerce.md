@@ -21,9 +21,9 @@ ht-degree: 0%
 
 O Adobe Commerce usa o Composer para gerenciar pacotes PHP.
 
-A variável `composer.json` arquivo declara a lista de pacotes, enquanto o `composer.lock` O arquivo armazena uma lista completa dos pacotes (uma versão completa de cada pacote e suas dependências) usados para criar uma instalação do Adobe Commerce.
+O arquivo `composer.json` declara a lista de pacotes, enquanto o arquivo `composer.lock` armazena uma lista completa dos pacotes (uma versão completa de cada pacote e suas dependências) usados para criar uma instalação do Adobe Commerce.
 
-A documentação de referência a seguir é gerada a partir do `composer.lock` e abrange os pacotes necessários incluídos no Adobe Commerce 2.4.7-p1.
+A documentação de referência a seguir é gerada a partir do arquivo `composer.lock`, e ela abrange os pacotes necessários incluídos no Adobe Commerce 2.4.7-p1.
 
 ## Dependências
 
@@ -362,7 +362,7 @@ wikimedia/less.php: ^3.2
   <tbody>
   <tr>
     <td>
-      <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_File.git">colinmollenhour/arquivo-back-end-cache</a>
+      <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_File.git">colinmollenhour/cache-backend-file</a>
     </td>
     <td>magento-module</td>
     <td>O back-end do estoque Zend_Cache_Backend_File tem desempenho extremamente baixo para limpeza por tags, tornando-o inutilizável à medida que o número de itens em cache aumenta. Esse back-end faz muitas alterações, resultando em um enorme aumento de desempenho, especialmente para a limpeza de tags.</td>
@@ -397,7 +397,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-code.git">código laminas</a>
+      <a href="https://github.com/laminas/laminas-code.git">laminas/laminas-code</a>
     </td>
     <td>biblioteca</td>
     <td>Extensões para a API de reflexão do PHP, varredura de código estático e geração de código</td>
@@ -425,17 +425,17 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-di.git">laminas/laminas</a>
+      <a href="https://github.com/laminas/laminas-di.git">laminas/laminas-di</a>
     </td>
     <td>biblioteca</td>
     <td>Injeção de dependência automatizada para contêineres PSR-11</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-escaper.git">Lâminas/laminas-escaper</a>
+      <a href="https://github.com/laminas/laminas-escaper.git">laminas/laminas-escaper</a>
     </td>
     <td>biblioteca</td>
-    <td>Evite com segurança e segurança HTML, atributos HTML, JavaScript, CSS e URLs</td>
+    <td>Escapar com segurança e segurança do HTML, atributos do HTML, JavaScript, CSS e URLs</td>
   </tr>
   <tr>
     <td>
@@ -453,7 +453,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-file.git">arquivo laminas/laminas</a>
+      <a href="https://github.com/laminas/laminas-file.git">arquivo-de-laminas/laminas</a>
     </td>
     <td>biblioteca</td>
     <td>Localizar arquivos de classe do PHP</td>
@@ -579,7 +579,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-soap.git">laminas/laminas-sabão</a>
+      <a href="https://github.com/laminas/laminas-soap.git">laminas/laminas-soap</a>
     </td>
     <td>biblioteca</td>
     <td></td>
@@ -607,7 +607,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-validator.git">lâminas/lâminas-validador</a>
+      <a href="https://github.com/laminas/laminas-validator.git">laminas/laminas-validator</a>
     </td>
     <td>biblioteca</td>
     <td>Classes de validação para uma grande variedade de domínios e a capacidade de encadear validadores para criar critérios de validação complexos</td>
@@ -740,7 +740,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/brick/varexporter.git">brick/varexporter</a>
+      <a href="https://github.com/brick/varexporter.git">exportador/brick</a>
     </td>
     <td>biblioteca</td>
     <td>Uma alternativa poderosa para var_export(), que pode exportar fechamentos e objetos sem __set_state()</td>
@@ -789,14 +789,14 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/pcre.git">composer/pcre</a>
+      <a href="https://github.com/composer/pcre.git">compositor/pcre</a>
     </td>
     <td>biblioteca</td>
     <td>Biblioteca de encapsulamento PCRE que oferece substituições preg_* seguras para tipos.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/semver.git">composer/semver</a>
+      <a href="https://github.com/composer/semver.git">compositor/semver</a>
     </td>
     <td>biblioteca</td>
     <td>Biblioteca de servidor que oferece utilitários, análise de restrição de versão e validação.</td>
@@ -859,21 +859,21 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/jsonrainbow/json-schema.git">justinrain/json-schema</a>
+      <a href="https://github.com/jsonrainbow/json-schema.git">justinarco-íris/json-schema</a>
     </td>
     <td>biblioteca</td>
     <td>Uma biblioteca para validar um esquema json.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/thephpleague/flysystem.git">league/flysystem</a>
+      <a href="https://github.com/thephpleague/flysystem.git">liga/flysystem</a>
     </td>
     <td>biblioteca</td>
     <td>Abstração de armazenamento de arquivo para PHP</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/thephpleague/flysystem-aws-s3-v3.git">league/flysystem-aws-s3-v3</a>
+      <a href="https://github.com/thephpleague/flysystem-aws-s3-v3.git">liga/flysystem-aws-s3-v3</a>
     </td>
     <td>biblioteca</td>
     <td>Adaptador de sistema de arquivos AWS S3 para Flysystem.</td>
@@ -915,7 +915,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/MyIntervals/emogrifier.git">pelago/emogrificador</a>
+      <a href="https://github.com/MyIntervals/emogrifier.git">pelago/emotificador</a>
     </td>
     <td>biblioteca</td>
     <td>Converte estilos CSS em atributos de estilo em linha no seu código HTML</td>
@@ -992,7 +992,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/php-fig/http-factory.git">psr/http-fábrica</a>
+      <a href="https://github.com/php-fig/http-factory.git">psr/http-fatory</a>
     </td>
     <td>biblioteca</td>
     <td>PSR-17: interfaces comuns para fábricas de mensagens HTTP PSR-7</td>
@@ -1034,7 +1034,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/reactphp/promise.git">react/promise</a>
+      <a href="https://github.com/reactphp/promise.git">reação/promessa</a>
     </td>
     <td>biblioteca</td>
     <td>Uma implementação leve do CommonJS Promises/A para PHP</td>
@@ -1062,7 +1062,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/Seldaek/signal-handler.git">seld/signal-handler</a>
+      <a href="https://github.com/Seldaek/signal-handler.git">seld/manipulador de sinal</a>
     </td>
     <td>biblioteca</td>
     <td>Manipulador simples de sinais Unix que falha silenciosamente quando os sinais não são suportados para um fácil desenvolvimento entre plataformas</td>
@@ -1216,7 +1216,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/polyfill-intl-normalizer.git">symfony/polyfill-intl-normalização</a>
+      <a href="https://github.com/symfony/polyfill-intl-normalizer.git">symfony/polyfill-intl-normalizer</a>
     </td>
     <td>biblioteca</td>
     <td>Symfony polyfill para a classe Normalizer da intl e funções relacionadas</td>

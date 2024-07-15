@@ -21,4 +21,4 @@ O diagrama a seguir resume as diferentes estruturas de equipe encontradas nas or
 >
 >Como parte de um fluxo de trabalho de comércio eletrônico típico, uma equipe centralizada é o mais comum dos cinco tipos exibidos abaixo. A estrutura em forma de favo de mel se alinha melhor aos fluxos de trabalho ágeis.
 
-![Diagramas da estrutura da equipe](../../assets/playbooks/team-structure.png)
+![Diagramas de estrutura de equipe](../../assets/playbooks/team-structure.png)

@@ -4,7 +4,7 @@ user-guide-description: Saiba mais sobre a conformidade regulamentar e as respon
 feature: Security
 source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '53'
 ht-degree: 1%
 
 ---
@@ -23,4 +23,4 @@ ht-degree: 1%
 - Referência {#reference}
    - [Informações pessoais do cliente (versão 2.x)](privacy/data-m2.md)
    - [Informações pessoais do cliente (versão 1.x)](privacy/data-m1.md)
-- [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

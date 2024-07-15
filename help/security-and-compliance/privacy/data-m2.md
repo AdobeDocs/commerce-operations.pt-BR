@@ -40,13 +40,13 @@ O Adobe Commerce carrega as informações do cliente quando ele faz logon e visu
 
 Um comerciante pode especificar informações do cliente, dados de endereço e dados de pagamento ao criar um cliente ou ordem do Administrador.
 
-![Pontos de entrada de dados de back-end](../../assets/security-compliance/backend-data-entry-points.svg)
+![Pontos de entrada de dados back-end](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### Pontos de acesso de dados de back-end
 
 O Adobe Commerce carrega informações do cliente quando um comerciante exibe vários tipos de grades, clica em uma grade para ver informações detalhadas e executa várias outras tarefas.
 
-![Pontos de acesso de dados de back-end](../../assets/security-compliance/backend-data-access-points.svg)
+![Pontos de acesso a dados de back-end](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Entidades de banco de dados
 
@@ -69,9 +69,9 @@ O Adobe Commerce pode ser configurado para armazenar os seguintes atributos do c
 >
 >Ao manter as práticas recomendadas atuais de segurança e privacidade, esteja ciente de possíveis riscos legais e de segurança associados ao armazenamento da data de nascimento completa do cliente (mês, dia, ano) juntamente com outros identificadores pessoais, como nome completo, antes de coletar ou processar esses dados.
 
-#### `customer_entity` e referências de &quot;customer_entity&quot;
+#### Referências de `customer_entity` e &#39;customer_entity&#39;
 
-As seguintes colunas na `customer_entity` A tabela contém informações do cliente:
+As seguintes colunas da tabela `customer_entity` contêm informações do cliente:
 
 | Coluna | Tipo de dados |
 | ------------ | ------------ |
@@ -94,9 +94,9 @@ Estas tabelas fazem referência a `customer_entity` e podem conter atributos per
 | `customer_entity_text` | `value` | texto |
 | `customer_entity_varchar` | `value` | varchar(255) |
 
-#### `customer_grid_flat` tabela
+#### Tabela `customer_grid_flat`
 
-As seguintes colunas na `customer_grid_flat` A tabela contém informações do cliente:
+As seguintes colunas da tabela `customer_grid_flat` contêm informações do cliente:
 
 | Coluna | Tipo de dados |
 | -------------------- | ------------ |
@@ -139,7 +139,7 @@ O Adobe Commerce armazena os seguintes atributos do cliente:
 
 #### `customer_address_entity` e `customer_address_entity` referências
 
-As seguintes colunas na `customer_address_entity` A tabela contém informações do cliente:
+As seguintes colunas da tabela `customer_address_entity` contêm informações do cliente:
 
 | Coluna | Tipo de dados |
 | ------------ | ------------ |
@@ -170,11 +170,11 @@ Estas tabelas fazem referência a `customer_address_entity` e podem conter atrib
 
 ### Dados do pedido
 
-A variável `sales_order` As tabelas relacionadas contêm o nome do cliente, os endereços de cobrança e de entrega e os dados relacionados.
+O `sales_order` e as tabelas relacionadas contêm o nome do cliente, os endereços de cobrança e de envio e os dados relacionados.
 
-#### `sales_order` tabela
+#### Tabela `sales_order`
 
-As seguintes colunas na `sales_order` A tabela contém informações do cliente:
+As seguintes colunas da tabela `sales_order` contêm informações do cliente:
 
 | Coluna | Tipo de dados |
 | --------------------- | ------------ |
@@ -193,9 +193,9 @@ As seguintes colunas na `sales_order` A tabela contém informações do cliente:
 | `remote_ip` | varchar(32) |
 | `x_forwarded_for` | varchar(32) |
 
-#### `sales_order_address` tabela
+#### Tabela `sales_order_address`
 
-A variável `sales_order_address` A tabela contém o endereço do cliente.
+A tabela `sales_order_address` contém o endereço do cliente.
 
 | Coluna | Tipo de dados |
 | --------------------- | ------------ |
@@ -216,9 +216,9 @@ A variável `sales_order_address` A tabela contém o endereço do cliente.
 | `suffix` | varchar(255) |
 | `company` | varchar(255) |
 
-#### `sales_order_grid` tabela
+#### Tabela `sales_order_grid`
 
-As seguintes colunas na `sales_order_grid` A tabela contém informações do cliente:
+As seguintes colunas da tabela `sales_order_grid` contêm informações do cliente:
 
 | Coluna | Tipo de dados |
 | ---------------------- | ------------ |
@@ -235,9 +235,9 @@ As seguintes colunas na `sales_order_grid` A tabela contém informações do cli
 
 As cotações contêm o nome, email, endereço e informações relacionadas de um cliente.
 
-#### `quote` tabela
+#### Tabela `quote`
 
-As seguintes colunas na `quote` A tabela contém informações do cliente:
+As seguintes colunas da tabela `quote` contêm informações do cliente:
 
 | Coluna | Tipo de dados |
 | --------------------- | ------------ |
@@ -252,9 +252,9 @@ As seguintes colunas na `quote` A tabela contém informações do cliente:
 | `customer_taxvat` | varchar(255) |
 | `customer_gender` | varchar(255) |
 
-#### `quote_address` tabela
+#### Tabela `quote_address`
 
-As seguintes colunas na `quote_address` A tabela contém informações do cliente:
+As seguintes colunas da tabela `quote_address` contêm informações do cliente:
 
 | Coluna | Tipo de dados |
 | ------------- | ------------ |
@@ -277,7 +277,7 @@ As seguintes colunas na `quote_address` A tabela contém informações do client
 
 ### Dados de pagamento
 
-A variável `sales_order_payment` A tabela inclui informações de cartão de crédito e outras informações transacionais.
+A tabela `sales_order_payment` inclui informações de cartão de crédito e outras informações transacionais.
 
 | Coluna | Tipo de dados |
 | ------------------------ | ------------ |
@@ -297,9 +297,9 @@ A variável `sales_order_payment` A tabela inclui informações de cartão de cr
 
 O Adobe Commerce pode ser configurado para que os clientes possam enviar convites para vendas e eventos privados.
 
-#### `magento_invitation` tabela
+#### Tabela `magento_invitation`
 
-A variável `magento_invitation` A tabela contém a ID do cliente, o email e a ID de referência.
+A tabela `magento_invitation` contém a ID do cliente, o email e a ID de referência.
 
 | Coluna | Tipo de dados |
 | ------------- | ------------ |
@@ -307,9 +307,9 @@ A variável `magento_invitation` A tabela contém a ID do cliente, o email e a I
 | `email` | varchar(255) |
 | `referral_id` | int(10) |
 
-#### `magento_invitation_track` tabela
+#### Tabela `magento_invitation_track`
 
-A variável `magento_invitation_track` A tabela também contém informações do cliente.
+A tabela `magento_invitation_track` também contém informações do cliente.
 
 | Coluna | Tipo de dados |
 | ------------- | --------- |
@@ -318,7 +318,7 @@ A variável `magento_invitation_track` A tabela também contém informações do
 
 ### Tabelas diversas que fazem referência ao cliente
 
-As tabelas a seguir contêm um `customer_id` coluna:
+As tabelas a seguir contêm uma coluna `customer_id`:
 
 - `catalog_compare_item`
 - `catalog_product_frontend_action`

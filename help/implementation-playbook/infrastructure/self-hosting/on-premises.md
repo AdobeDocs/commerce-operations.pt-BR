@@ -17,7 +17,7 @@ As motivações para iniciar uma nova implementação do Adobe Commerce ou mover
 
 O diagrama a seguir mostra a arquitetura de referência para implantar o Adobe Commerce no local na infraestrutura do AWS. Outros provedores de nuvem, como Azure, Google Cloud e Alibaba Cloud, compartilham um design de infraestrutura semelhante e serviços homólogos.
 
-![Diagrama que mostra a infraestrutura do Adobe Commerce de auto-hospedagem em serviços em nuvem de terceiros](/help/assets/playbooks/on-premises-infrastructure.svg)
+![Diagrama mostrando a infraestrutura do Adobe Commerce de auto-hospedagem em serviços de nuvem de terceiros](/help/assets/playbooks/on-premises-infrastructure.svg)
 
 Vamos nos aprofundar nas funções de cada aspecto da infraestrutura mostrada acima:
 

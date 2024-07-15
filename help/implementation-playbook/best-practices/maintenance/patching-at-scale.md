@@ -4,25 +4,25 @@ description: Saiba como o patch centralizado para o Adobe Commerce pode ajudar v
 role: Developer
 feature: Best Practices
 badge: label="Contribuição de Anton Evers, arquiteto técnico sênior, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Contribuição de Anton Evers"
-source-git-commit: 9cda88a4aeb4cc58d8ec9c4417e3107885a6cdb8
+exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
-
 # Práticas recomendadas para distribuição de patches do Adobe Commerce em escala
 
-Se você gerenciar várias instalações do Adobe Commerce, [aplicação de patches](../../../upgrade/patches/apply.md) pode ser um processo complexo. _Patch centralizado_ é uma parte essencial do [arquitetura de referência global](../../architecture/global-reference/overview.md) e uma prática recomendada para as empresas. Ele ajuda a aplicar os patches corretos em todas as instalações do Adobe Commerce. Este tópico explica como obter a distribuição centralizada de patches para todos os tipos de Adobe Commerce [patches](../../../upgrade/patches/overview.md).
+Se você gerencia várias instalações do Adobe Commerce, o [patch](../../../upgrade/patches/apply.md) pode ser um processo complexo. _A aplicação centralizada de patches_ é uma parte essencial da [arquitetura de referência global](../../architecture/global-reference/overview.md) e uma prática recomendada para empresas. Ele ajuda a aplicar os patches corretos em todas as instalações do Adobe Commerce. Este tópico explica como obter a distribuição centralizada de patches para todos os tipos de [patches](../../../upgrade/patches/overview.md) do Adobe Commerce.
 
 >[!NOTE]
 >
->O conteúdo a seguir foi publicado originalmente no [Distribuindo patches do Adobe Commerce em escala](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) publicação no Blog da Adobe Tech. Ela foi modificada para se concentrar nas etapas e amostras de código para implementar uma estratégia de patch centralizada. Consulte a publicação original para obter mais detalhes sobre os diferentes tipos de correções descritos aqui.
+>O conteúdo a seguir foi publicado originalmente na publicação [Distributing Adobe Commerce Patches at Scale](https://blog.developer.adobe.com/distributing-adobe-commerce-patches-at-scale-137412e05a20) no Blog da Adobe Tech. Ela foi modificada para se concentrar nas etapas e amostras de código para implementar uma estratégia de patch centralizada. Consulte a publicação original para obter mais detalhes sobre os diferentes tipos de correções descritos aqui.
 
 ## Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -32,60 +32,60 @@ Se você gerenciar várias instalações do Adobe Commerce, [aplicação de patc
 Como há vários tipos diferentes de patches e muitas maneiras de aplicá-los, como você sabe qual patch é aplicado primeiro? Quanto mais patches você tiver, maior a chance de eles serem aplicados no mesmo arquivo ou na mesma linha de código. Os patches são aplicados na seguinte ordem:
 
 1. **Patches de segurança** fazem parte da base de código estático de uma versão do Adobe Commerce.
-1. **Patches do compositor** até `composer install` e `composer update` plug-ins como [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
-1. Todos **patches necessários** incluído na [Patches da nuvem para o Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html) pacote.
-1. Selecionado **correções de qualidade** incluído na [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
-1. **Patches personalizados** e os patches de suporte do Adobe Commerce na `/m2-hotfixes` diretório em ordem alfabética por nome de patch.
+1. **Patches do compositor** por meio de `composer install` e `composer update` plug-ins, como [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
+1. Todos os **patches necessários** incluídos no pacote [Patches da Nuvem para o Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
+1. **patches de qualidade** selecionados incluídos em [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
+1. **Patches personalizados** e patches do Suporte da Adobe Commerce no diretório `/m2-hotfixes` em ordem alfabética por nome de patch.
 
    >[!IMPORTANT]
    >
    >Quanto mais patches você aplicar, mais complexo será o código. Códigos complexos podem dificultar a atualização para uma nova versão do Adobe Commerce e aumentar seu custo total de propriedade.
 
-Se você for responsável por manter várias instalações do Adobe Commerce, garantir que todas as instâncias tenham o mesmo conjunto de patches instalados pode ser desafiador. Cada instalação tem seu próprio repositório Git, `/m2-hotfixes` diretório e `composer.json` arquivo. A única garantia que você tem é que o **patches de segurança** e **patches necessários** para usuários da nuvem são instalados como parte da sua versão principal do Adobe Commerce.
+Se você for responsável por manter várias instalações do Adobe Commerce, garantir que todas as instâncias tenham o mesmo conjunto de patches instalados pode ser desafiador. Cada instalação tem seu próprio repositório Git, diretório `/m2-hotfixes` e arquivo `composer.json`. A única garantia que você tem é que os **patches de segurança** e os **patches necessários** para usuários da nuvem estejam todos instalados como parte da sua versão principal do Adobe Commerce.
 
-Atualmente, não há uma solução única centralizada para esse problema, mas o Composer oferece uma maneira de preencher a lacuna. A variável [`cweagans/composer-patches`](https://packagist.org/packages/cweagans/composer-patches) permite que você [aplicar patches de dependências](https://github.com/cweagans/composer-patches/tree/1.x#allowing-patches-to-be-applied-from-dependencies). Você pode criar um pacote do Composer que instale todos os seus patches e, em seguida, exigir esse pacote em todos os seus projetos.
+Atualmente, não há uma solução única centralizada para esse problema, mas o Composer oferece uma maneira de preencher a lacuna. O pacote [`cweagans/composer-patches`](https://packagist.org/packages/cweagans/composer-patches) permite [aplicar patches de dependências](https://github.com/cweagans/composer-patches/tree/1.x#allowing-patches-to-be-applied-from-dependencies). Você pode criar um pacote do Composer que instale todos os seus patches e, em seguida, exigir esse pacote em todos os seus projetos.
 
-Isso abrange **patches de segurança**, **patches necessários**, e **Patches do compositor**, mas e os patches de qualidade e o conteúdo do `/m2-hotfixes` diretório?
+Isso abrange **patches de segurança**, **patches necessários** e **patches de compositor**, mas e os patches de qualidade e o conteúdo do diretório `/m2-hotfixes`?
 
 ## Aplicar patches e hotfixes de qualidade
 
-Você pode instalar patches de qualidade na infraestrutura de nuvem e em instalações locais usando o `vendor/bin/magento-patches apply` comando. Você deve garantir que a variável `vendor/bin/magento-patches apply` comando é executado depois de `composer install` operações.
+Você pode instalar patches de qualidade na infraestrutura de nuvem e em instalações locais usando o comando `vendor/bin/magento-patches apply`. Você deve garantir que o comando `vendor/bin/magento-patches apply` seja executado após `composer install` operações.
 
 >[!NOTE]
 >
->Na infraestrutura em nuvem, você também pode instalar patches de qualidade, listando-os no `.magento.env.yaml` arquivo. O exemplo descrito aqui requer o uso de `vendor/bin/magento-patches apply` comando.
+>Na infraestrutura em nuvem, você também pode instalar patches de qualidade listando-os no arquivo `.magento.env.yaml` do seu projeto. O exemplo descrito aqui requer o uso do comando `vendor/bin/magento-patches apply`.
 
-Você pode especificar os patches a serem aplicados na `composer.json` arquivo de um pacote de componente Composer personalizado, em seguida, crie um pacote de plug-in que execute o comando depois de `composer install` operações.
+Você pode especificar os patches a serem aplicados no arquivo `composer.json` de um pacote de componente Composer personalizado e, em seguida, criar um pacote de plug-in que execute o comando após `composer install` operações.
 
 Em resumo, este exemplo de patch centralizado requer a criação de dois pacotes personalizados do Composer:
 
-- **Pacote do componente:** `centralized-patcher`
+- **Pacote de componentes:** `centralized-patcher`
 
-   - Define a lista de patches de qualidade e `m2-hotfixes` para instalar
-   - Exige o `centralized-patcher-composer-plugin` pacote, que executa o `vendor/bin/magento-patches apply` comando depois `composer install` operações
+   - Define a lista de patches de qualidade e o `m2-hotfixes` a ser instalado
+   - Requer o pacote `centralized-patcher-composer-plugin`, que executa o comando `vendor/bin/magento-patches apply` após `composer install` operações
 
 - **Pacote de plug-ins:** `centralized-patcher-composer-plugin`
 
-   - Define um `CentralizedPatcher` Classe PHP que lê a lista de correções de qualidade do `centralized-patcher` pacote
-   - Executa o `vendor/bin/magento-patches apply` comando para instalar a lista de patches de qualidade após `composer install` operações
+   - Define uma classe PHP `CentralizedPatcher` que lê a lista de patches de qualidade do pacote `centralized-patcher`
+   - Executa o comando `vendor/bin/magento-patches apply` para instalar a lista de patches de qualidade após `composer install` operações
 
 ### `centralized-patcher`
 
-Você pode criar um pacote de componente do Composer (`centralized-patcher`) para gerenciar centralmente todos os patches de qualidade e `/m2-hotfixes` em todas as instalações do Adobe Commerce.
+Você pode criar um pacote de componentes do Composer (`centralized-patcher`) para gerenciar centralmente todos os patches de qualidade e o `/m2-hotfixes` em todas as instalações do Adobe Commerce.
 
 O pacote de componentes deve:
 
-- Copie o conteúdo de `/m2-hotfixes` em todas as suas instalações durante a implantação.
+- Copie o conteúdo do diretório `/m2-hotfixes` em todas as suas instalações durante a implantação.
 - Defina a lista de patches de qualidade a serem instalados.
-- Execute o `vendor/bin/magento-patches` comando para instalar a mesma lista de patches de qualidade em todas as instalações (usando o [`centralized-patcher-composer-plugin`](#centralized-patcher-composer-plugin) pacote de plug-in como uma dependência).
+- Execute o comando `vendor/bin/magento-patches` para instalar a mesma lista de patches de qualidade em todas as instalações (usando o pacote de plug-in [`centralized-patcher-composer-plugin`](#centralized-patcher-composer-plugin) como uma dependência).
 
-Para criar o `centralized-patcher` pacote do componente:
+Para criar o pacote do componente `centralized-patcher`:
 
-1. Criar um `composer.json` arquivo com o seguinte conteúdo:
+1. Criar um arquivo `composer.json` com o seguinte conteúdo:
 
    >[!NOTE]
    >
-   >A variável `require` o atributo no exemplo a seguir mostra um `require` dependência do [pacote de plug-in](#centralized-patcher-composer-plugin) que você deve criar posteriormente neste exemplo.
+   >O atributo `require` no exemplo a seguir mostra uma dependência `require` no [pacote de plug-in](#centralized-patcher-composer-plugin) que você deve criar posteriormente neste exemplo.
 
    ```json
    {
@@ -109,7 +109,7 @@ Para criar o `centralized-patcher` pacote do componente:
    }
    ```
 
-1. Criar um `/m2-hotfixes` diretório dentro do pacote e adicione-o ao `map` atributo no seu `composer.json` arquivo. A variável `map` O atributo contém arquivos a serem copiados deste pacote para a raiz do projeto de destino do qual você deseja aplicar patch.
+1. Crie um diretório `/m2-hotfixes` dentro do pacote e adicione-o ao atributo `map` em seu arquivo `composer.json`. O atributo `map` contém arquivos a serem copiados deste pacote na raiz do projeto de destino do qual você deseja aplicar patch.
 
    ```json
    {
@@ -126,9 +126,9 @@ Para criar o `centralized-patcher` pacote do componente:
 
    >[!NOTE]
    >
-   >A variável `centralized-patcher` o pacote copia o conteúdo do `/m2-hotfixes` no diretório m2-hotfixes do projeto target em `composer install`.  Como os scripts de implantação em nuvem aplicam hotfixes m2 após `composer install`, todos os hotfixes são instalados pelo mecanismo de implantação.
+   >O pacote `centralized-patcher` copia o conteúdo do diretório `/m2-hotfixes` para o diretório m2-hotfixes do projeto de destino em `composer install`.  Como os scripts de implantação em nuvem aplicam hotfixes m2 após `composer install`, todos os hotfixes são instalados pelo mecanismo de implantação.
 
-1. Defina os patches de qualidade a serem instalados no `quality-patches` atributo.
+1. Defina os patches de qualidade a serem instalados no atributo `quality-patches`.
 
    ```json
    {
@@ -148,13 +148,13 @@ Para criar o `centralized-patcher` pacote do componente:
    ```
 
 
-A variável `quality-patches` atributo na amostra de código anterior contém dois patches da variável [lista completa de patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) como exemplo.  Esses patches de qualidade são instalados em todos os projetos que exigem o `centralized-patcher` pacote usando o `vendor/bin/magento-patches apply` comando.
+O atributo `quality-patches` na amostra de código anterior contém dois patches da [lista completa de patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html), por exemplo.  Esses patches de qualidade são instalados em todos os projetos que exigem o pacote `centralized-patcher` usando o comando `vendor/bin/magento-patches apply`.
 
 Para fins de teste, você pode criar um exemplo de patch (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
 >[!NOTE]
 >
->Você deve colocar seus próprios patches no `m2-hotfixes` diretório junto com os patches recebidos diretamente do Suporte da Adobe Commerce.
+>Você deve colocar seus próprios patches no diretório `m2-hotfixes`, juntamente com os patches recebidos diretamente do Suporte da Adobe Commerce.
 
 Um exemplo de arquivo de patch (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`):
 
@@ -175,11 +175,11 @@ index 03a3bf9..681e0b0 100644
 
 ### `centralized-patcher-composer-plugin`
 
-Como este exemplo usa o método local para instalar patches de qualidade, você deve garantir que o `vendor/bin/magento-patches apply` comando é executado depois de `composer install` operações. Este plug-in é acionado depois de `composer install` operações, que executa o `vendor/bin/magento-patches apply` comando.
+Como este exemplo usa o método local para instalar patches de qualidade, você deve garantir que o comando `vendor/bin/magento-patches apply` seja executado após `composer install` operações. Este plug-in é acionado após `composer install` operações, que executam o comando `vendor/bin/magento-patches apply`.
 
-Para criar o `centralized-patcher-compose-plugin` pacote do componente:
+Para criar o pacote do componente `centralized-patcher-compose-plugin`:
 
-1. Criar um `composer.json` arquivo com o seguinte conteúdo:
+1. Criar um arquivo `composer.json` com o seguinte conteúdo:
 
    ```json
    {
@@ -214,7 +214,7 @@ Para criar o `centralized-patcher-compose-plugin` pacote do componente:
    }
    ```
 
-1. Crie um arquivo PHP e defina um `CentralizedPatcher` classe para ler a lista de patches de qualidade no [`centralized-patcher`](#centralized-patcher) pacote de componentes e instale-os imediatamente após cada `composer install` operação.
+1. Crie um arquivo PHP e defina uma classe `CentralizedPatcher` para ler a lista de patches de qualidade do pacote de componentes [`centralized-patcher`](#centralized-patcher) e instale-os imediatamente após cada operação `composer install`.
 
    ```php
    <?php
@@ -331,37 +331,37 @@ Para criar o `centralized-patcher-compose-plugin` pacote do componente:
 
 >[!TIP]
 >
->Consulte a [exemplos de código](#code-examples) para ver os dois pacotes descritos neste exemplo em ação.
+>Consulte os [exemplos de código](#code-examples) para ver os dois pacotes descritos neste exemplo em ação.
 
 
 ## O que fazer com patches específicos de projetos
 
-Você pode ter um cenário em que apenas 95% dos patches são necessários em todos os projetos, enquanto alguns patches se aplicam apenas a uma instância específica. A forma regular de aplicar patches ainda funciona. Você pode manter patches específicos do projeto na `/m2-hotfixes` patches de qualidade de diretório e instalação por projeto.
+Você pode ter um cenário em que apenas 95% dos patches são necessários em todos os projetos, enquanto alguns patches se aplicam apenas a uma instância específica. A forma regular de aplicar patches ainda funciona. Você pode manter patches específicos do projeto no diretório `/m2-hotfixes` e instalar patches de qualidade por projeto.
 
-Se você usar essa abordagem, **não** confirmar todos os patches no `/m2-hotfixes` diretório que foi copiado para o projeto pelo `centralized-patcher` pacote de componentes. Você pode evitar confirmações acidentais adicionando `/m2-hotfixes` ao seu `.gitignore` arquivo. Depois de atualizar o `.gitignore` arquivo, lembre-se de que qualquer `/m2-hotfixes` deve ser adicionado usando o `git add –force` comando.
+Se você usar esta abordagem, **não** confirme patches no diretório `/m2-hotfixes` que foram copiados para o seu projeto pelo pacote de componentes `centralized-patcher`. Você pode evitar confirmações acidentais adicionando `/m2-hotfixes` ao arquivo `.gitignore`. Depois de atualizar o arquivo `.gitignore`, lembre-se de que qualquer `/m2-hotfixes` específico do projeto deve ser adicionado usando o comando `git add –force`.
 
 ## Execução de diferentes versões do Adobe Commerce
 
-Defina a dependência correta no `centralized-patcher` pacote de componentes. Por exemplo, talvez você precise do Adobe Commerce 2.4.5-p2 para uma versão específica do seu pacote, que só fornece patches compatíveis com o Adobe Commerce 2.4.5-p2. Você pode ter outra versão deste pacote compatível com o Adobe Commerce 2.4.4.
+Defina a dependência correta no pacote de componentes `centralized-patcher`. Por exemplo, talvez você precise do Adobe Commerce 2.4.5-p2 para uma versão específica do seu pacote, que só fornece patches compatíveis com o Adobe Commerce 2.4.5-p2. Você pode ter outra versão deste pacote compatível com o Adobe Commerce 2.4.4.
 
 ## Compreender o resultado
 
-Assim como com o Adobe Commerce na infraestrutura em nuvem, este artigo presume que o processo de implantação usa o `composer install` e não `composer update` ou `git pull` para implantar o novo código em seus servidores. O fluxo da instalação de patch centralizada terá a seguinte aparência:
+Assim como com o Adobe Commerce na infraestrutura em nuvem, este artigo presume que o processo de implantação usa o comando `composer install` e não o `composer update` ou o `git pull` para implantar o novo código em seus servidores. O fluxo da instalação de patch centralizada terá a seguinte aparência:
 
 1. Instalação do Composer
 
    - Instala o Adobe Commerce, incluindo segurança -p1 ou -p2 e patches funcionais
-   - Combina centralizado `/m2-hotfixes` e suporte a patches com informações específicas de `/m2-hotfixes` e patches de suporte
-   - Aplica todos os patches instalados com o `cweagans/composer-patches` Pacote do compositor
+   - Combina `/m2-hotfixes` centralizado e patches de suporte com `/m2-hotfixes` específicos do projeto e patches de suporte
+   - Aplica todas as correções instaladas com o pacote do Composer `cweagans/composer-patches`
 
-1. Depois `composer install`
+1. Depois de `composer install`
 
    - O plug-in do Composer instala correções de qualidade centralizadas
 
 1. Implantação
 
-   - Os patches necessários e os patches de qualidade específicos do projeto são instalados com base no `.magento.env.yaml` (Adobe Commerce somente em projetos de infraestrutura em nuvem).
-   - Patches personalizados e patches de suporte do `/m2-hotfixes` Os diretórios são instalados em ordem alfabética pelo nome do patch.
+   - Os patches necessários e os patches de qualidade específicos do projeto são instalados com base no arquivo `.magento.env.yaml` (Adobe Commerce somente em projetos de infraestrutura em nuvem).
+   - Os patches personalizados e os patches de suporte do diretório `/m2-hotfixes` são instalados em ordem alfabética pelo nome do patch.
 
 Dessa forma, você pode gerenciar centralmente todos os patches de todas as suas instalações e pode garantir melhor a segurança e a estabilidade das lojas Adobe Commerce. Use os seguintes métodos para verificar o status do patch:
 
@@ -372,5 +372,5 @@ Dessa forma, você pode gerenciar centralmente todos os patches de todas as suas
 
 - [Patches centralizados no Magento Open Source](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
 - [Patches centralizados no Adobe Commerce na infraestrutura em nuvem](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
-- [Plug-in do Compositor do patcher centralizado](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
+- [Plug-in do Compositor do Patcher Centralizado](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
 - [Componente de correção centralizado](https://github.com/AntonEvers/centralized-patcher)

@@ -13,17 +13,17 @@ ht-degree: 1%
 
 Antes de instalar o Adobe Commerce, é necessário fazer o seguinte:
 
-* Configurar um ou mais hosts que atendam aos [requisitos do sistema](../system-requirements.md).
-* Se você estiver configurando mais de um nó da Web com balanceamento de carga, configure e teste essa parte do sistema _antes_ instale o aplicativo.
+* Configure um ou mais hosts que atendam aos [requisitos de sistema](../system-requirements.md).
+* Se você estiver configurando mais de um nó da Web com balanceamento de carga, configure e teste essa parte do sistema _antes_ de instalar o aplicativo.
 * Certifique-se de poder fazer backup de todo o sistema em vários pontos durante a instalação para que você possa revertê-lo em caso de problemas.
 
 >[!NOTE]
 >
->Supomos que você esteja instalando o Adobe Commerce em um **ambiente de desenvolvimento**, que você tem acesso de usuário raiz à máquina, **e** que a máquina não precisa ser altamente segura. Se você estiver configurando uma máquina mais segura, recomendamos consultar um administrador de rede para obter assistência adicional.
+>Presumimos que você esteja instalando o Adobe Commerce em um **ambiente de desenvolvimento**, que você tenha acesso de usuário raiz ao computador, **e** que o computador não precisa ser altamente seguro. Se você estiver configurando uma máquina mais segura, recomendamos consultar um administrador de rede para obter assistência adicional.
 
-É altamente recomendável atualizar e atualizar o software do sistema operacional. Essas atualizações podem fornecer correções de segurança e software que podem evitar problemas futuros. Não sabe o que isso significa? Confira o nosso [página de visão geral da instalação](../overview.md).
+É altamente recomendável atualizar e atualizar o software do sistema operacional. Essas atualizações podem fornecer correções de segurança e software que podem evitar problemas futuros. Não sabe o que isso significa? Confira nossa [página de visão geral da instalação](../overview.md).
 
-Insira os seguintes comandos como um usuário com `root` privilégios:
+Digite os seguintes comandos como um usuário com privilégios de `root`:
 
 * Ubuntu
 
@@ -66,11 +66,11 @@ Para instalar ou atualizar o Apache, consulte [Apache](web-server/apache.md).
 
 ### PHP
 
-Consulte [requisitos do sistema](../system-requirements.md) para versões suportadas do PHP e [PHP](../system-requirements.md#php-settings) para requisitos do PHP.
+Consulte [requisitos do sistema](../system-requirements.md) para versões compatíveis do PHP e [PHP](../system-requirements.md#php-settings) para requisitos do PHP.
 
 ### MySQL
 
-Verifique se você tem uma versão compatível do MySQL com a versão do Adobe Commerce que está instalando. Consulte [Requisitos do sistema](../system-requirements.md) para versões compatíveis.
+Verifique se você tem uma versão compatível do MySQL com a versão do Adobe Commerce que está instalando. Consulte [Requisitos do sistema](../system-requirements.md) para obter as versões com suporte.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -96,9 +96,9 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ```
 
-Tipo `help` ou `\h` para obter ajuda. Tipo `\c` para limpar a instrução de entrada atual.
+Digite `help` ou `\h` para obter ajuda. Digite `\c` para limpar a instrução de entrada atual.
 
-Enter `exit` no `mysql>` para sair.
+Digite `exit` no prompt `mysql>` para sair.
 
 Para instalar ou atualizar o MySQL, consulte [MySQL](database/mysql.md).
 

@@ -16,7 +16,7 @@ As seções a seguir fornecem detalhes sobre as diferentes regiões do AWS e do 
 
 ## Regiões do AWS
 
-![Diagrama mostrando as regiões do AWS](../../../assets/playbooks/aws-regions.png)
+![Diagrama mostrando regiões do AWS](../../../assets/playbooks/aws-regions.png)
 
 >[!NOTE]
 >

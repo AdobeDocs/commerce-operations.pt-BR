@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ Os bancos de dados MySQL são replicados de forma assíncrona, o que significa q
 Uma discussão detalhada sobre replicação de banco de dados está além do escopo deste guia. Para configurá-lo, você pode consultar um recurso como:
 
 - [Documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Como configurar a replicação do master slave no MySQL (digitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Como configurar a replicação subordinada principal no MySQL (digitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-O Commerce fornece configurações MySQL de exemplo para seus bancos de dados subordinados. Uma configuração simples é fornecida com o `ResourceConnections` classe `README.md`.
+O Commerce fornece configurações MySQL de exemplo para seus bancos de dados subordinados. Uma configuração simples é fornecida com a classe `ResourceConnections` `README.md`.
 
 O item a seguir está mais avançado e é fornecido apenas para fins informativos:
 
@@ -122,9 +122,9 @@ O item a seguir está mais avançado e é fornecido apenas para fins informativo
 
 ## Aprimoramento de desempenho
 
-Para melhorar o desempenho da replicação master-slave, você pode filtrar algumas tabelas em instâncias slave. Recomendamos filtrar todas as tabelas temporárias com padrão de nome `search\_tmp\_%` que são usados para pesquisa no catálogo.
+Para melhorar o desempenho da replicação master-slave, você pode filtrar algumas tabelas em instâncias slave. Recomendamos filtrar todas as tabelas temporárias com o padrão de nome `search\_tmp\_%` que são usadas para pesquisa no catálogo.
 
-Para fazer isso, adicione a seguinte linha na `my.cnf` arquivo nas instâncias subordinadas:
+Para fazer isso, adicione a seguinte linha ao arquivo `my.cnf` nas instâncias subordinadas:
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

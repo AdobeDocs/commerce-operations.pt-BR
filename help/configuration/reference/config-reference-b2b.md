@@ -5,16 +5,16 @@ feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
 
 # Referência de caminhos de configuração da extensão B2B
 
-_Isso está disponível para instâncias com B2B para Adobe Commerce instalado._
+_Disponível para instâncias com B2B para Adobe Commerce instalado._
 
-Este tópico lista os caminhos de configuração para a extensão B2B do Commerce Enterprise. A variável [`magento app:config:dump` comando](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem.
+Este tópico lista os caminhos de configuração para a Extensão B2B do Commerce Enterprise. O comando [`magento app:config:dump` ](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem.
 
 >[!INFO]
 >
@@ -25,15 +25,15 @@ Para esses caminhos de configuração, consulte:
 - [Caminhos de configuração de pagamento](config-reference-payment.md)
 - [Referência de caminhos de configuração sensíveis e específicos do sistema](config-reference-sens.md)
 
-Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir as definições de configuração](override-config-settings.md#environment-variables).
+Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir definições de configuração](override-config-settings.md#environment-variables).
 
 ## Categoria geral
 
-Esta seção lista os nomes das variáveis e os caminhos de configuração disponíveis para opções no Administrador, em **[!UICONTROL Stores]** > Configurações > **[!UICONTROL Configuration]** > **[!UICONTROL General]**.
+Esta seção lista nomes de variáveis e caminhos de configuração disponíveis para opções no Administrador em **[!UICONTROL Stores]** > Configurações > **[!UICONTROL Configuration]** > **[!UICONTROL General]**.
 
 ### Caminhos de recursos B2B
 
-Esses valores de configuração estão disponíveis no Admin do **[!UICONTROL Stores]** > Configurações > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
+Esses valores de configuração estão disponíveis no Admin em **[!UICONTROL Stores]** > Configurações > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
 
 | Nome | Caminho de configuração | Criptografado? | Específico do sistema? | Sensível? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -49,11 +49,11 @@ Esses valores de configuração estão disponíveis no Admin do **[!UICONTROL St
 
 ## Categoria de clientes
 
-Esta seção lista nomes de variáveis e caminhos de configuração disponíveis para opções no Administrador, em **[!UICONTROL Stores]** > Configurações > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
+Esta seção lista nomes de variáveis e caminhos de configuração disponíveis para opções no Administrador em **[!UICONTROL Stores]** > Configurações > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
 
 ### Caminhos de configuração da empresa
 
-Esses valores de configuração estão disponíveis no Admin do **[!UICONTROL Stores]** > Configurações > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
+Esses valores de configuração estão disponíveis no Admin em **[!UICONTROL Stores]** > Configurações > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
 
 | Nome | Caminho de configuração | Criptografado? | Específico do sistema? | Sensível? |
 |--------------|--------------|--------------|--------------|--------------|
@@ -93,7 +93,7 @@ Esses valores de configuração estão disponíveis no Admin do **[!UICONTROL St
 
 ### Caminhos de listas de requisição
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Listas de Requisições**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Listas de Requisições**.
 
 | Nome | Caminho de configuração | Criptografado? | Específico do sistema? | Sensível? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -103,11 +103,11 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 
 ## Categoria de vendas
 
-Esta seção lista nomes de variáveis e caminhos de configuração disponíveis para opções no Administrador, em **Lojas** > Configurações > **Configuração** > **Vendas**.
+Esta seção lista nomes de variáveis e caminhos de configuração disponíveis para opções no Administrador em **Lojas** > Configurações > **Configuração** > **Vendas**.
 
 ### Caminhos de emails de vendas
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Vendas** > **Emails de vendas**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Vendas** > **Emails de Vendas**.
 
 | Nome | Caminho de configuração | Criptografado? | Específico do sistema? | Sensível? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -126,7 +126,7 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 
 ### Caminhos de aspas
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Vendas** > **Aspas**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Vendas** > **Cotações**.
 
 | Nome | Caminho de configuração | Criptografado? | Específico do sistema? | Sensível? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -145,7 +145,7 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 
 ## Caminhos do método de pagamento
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Vendas** > **Métodos de pagamento**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Vendas** > **Métodos de Pagamento**.
 
 >[!INFO]
 >

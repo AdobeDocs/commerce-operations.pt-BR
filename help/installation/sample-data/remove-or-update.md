@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Este tópico discute como:
 
-* [Remover módulos de dados de amostra](#remove-sample-data-modules) de uma instalação do Adobe Commerce `composer.json`. Essa opção não *não* remover dados de amostra do banco de dados.
+* [Remover módulos de dados de exemplo](#remove-sample-data-modules) de uma instalação do Adobe Commerce `composer.json`. Esta opção *não* remove dados de amostra do banco de dados.
 
-* [Preparação para atualizar dados de amostra](#prepare-to-update-sample-data) (por exemplo, antes de atualizar o aplicativo Magento).
+* [Prepare para atualizar dados de amostra](#prepare-to-update-sample-data) (por exemplo, antes de atualizar o aplicativo Magento).
 
 ## Remover módulos de dados de amostra
 
@@ -59,4 +59,4 @@ Para preparar dados de amostra para atualização, insira o seguinte comando:
 bin/magento sampledata:reset
 ```
 
-Depois disso, [atualizar o aplicativo](../tutorials/uninstall.md#update-the-application).
+Depois disso, [atualize o aplicativo](../tutorials/uninstall.md#update-the-application).

@@ -6,14 +6,14 @@ role: Developer
 exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
 source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas de tratamento de exceções
 
-Se uma exceção não for gravada na variável `exception.log` arquivo com o modelo de exceção como contexto, ele não é reconhecido e analisado corretamente no New Relic ou em outro armazenamento de log compatível com monólogo PSR-3. Registrar somente uma parte da exceção (ou registrá-la no arquivo errado) gera bugs na produção quando as exceções são ignoradas.
+Se uma exceção não for gravada no arquivo `exception.log` com o modelo de exceção como contexto, ela não será reconhecida e analisada corretamente no New Relic ou em outro armazenamento de log compatível com monólogo PSR-3. Registrar somente uma parte da exceção (ou registrá-la no arquivo errado) gera bugs na produção quando as exceções são ignoradas.
 
 ## Manuseio de exceção correto
 
@@ -31,9 +31,9 @@ try {
 }
 ```
 
-Essa abordagem salva automaticamente as `$e->getMessage` à mensagem de log e à `$e` para o contexto, seguindo o [Padrão de contexto PSR-3](https://www.php-fig.org/psr/psr-3/#13-context). Isso é feito em `\Magento\Framework\Logger\Monolog::addRecord`.
+Esta abordagem salva automaticamente o `$e->getMessage` na mensagem de log e o objeto `$e` no contexto, seguindo o [padrão de contexto PSR-3](https://www.php-fig.org/psr/psr-3/#13-context). Isso é feito em `\Magento\Framework\Logger\Monolog::addRecord`.
 
-### ![correto](../../../assets/yes.svg) Silenciar sinais
+### ![corrigir](../../../assets/yes.svg) Sinais mudos
 
 Silencie sinais ao não registrar exceções que fazem parte do fluxo de operações pretendido. Nenhuma ação de acompanhamento é necessária quando a exceção é encontrada, portanto, ela não precisa ser registrada e analisada quando ocorrer. Adicione um comentário indicando o motivo para silenciar sinais e que é intencional. Combinar com `phpcs:ignore`.
 
@@ -45,9 +45,9 @@ try {
 }
 ```
 
-### ![correto](../../../assets/yes.svg) Fazer downgrade das exceções
+### ![corrigir](../../../assets/yes.svg) exceções de downgrade
 
-Faça downgrade das exceções seguindo o [Padrão de contexto PSR-3](https://www.php-fig.org/psr/psr-3/#13-context).
+Faça downgrade das exceções seguindo o [padrão de contexto PSR-3](https://www.php-fig.org/psr/psr-3/#13-context).
 
 ```php
 try {
@@ -57,7 +57,7 @@ try {
 }
 ```
 
-### ![correto](../../../assets/yes.svg) O registro sempre vem primeiro
+### O registro ![correto](../../../assets/yes.svg) sempre vem primeiro
 
 Como prática recomendada, o registro em log sempre vem primeiro no código para evitar casos em que outra exceção ou erro fatal é lançado antes da gravação no log.
 
@@ -70,9 +70,9 @@ try {
 }
 ```
 
-### ![correto](../../../assets/yes.svg) Registrar mensagens e todo o rastreamento de exceção
+### ![corrigir](../../../assets/yes.svg) Mensagens de log e todo o rastreamento de exceção
 
-Registrar mensagens e todo o rastreamento de exceção seguindo o [Padrão de contexto PSR-3](https://www.php-fig.org/psr/psr-3/#13-context).
+Registre mensagens e todo o rastreamento de exceção seguindo o [padrão de contexto PSR-3](https://www.php-fig.org/psr/psr-3/#13-context).
 
 ```php
 try {
@@ -86,7 +86,7 @@ try {
 
 Os exemplos a seguir demonstram o tratamento incorreto de exceções.
 
-### ![incorreto](../../../assets/no.svg) Lógica antes do registro
+### Lógica ![incorreta](../../../assets/no.svg) antes de fazer logon
 
 A lógica antes do registro em log pode levar a outra exceção ou erro fatal, que impede que a exceção seja registrada e deve ser substituída por [exemplo correto](#logging-always-comes-first).
 
@@ -99,9 +99,9 @@ try {
 }
 ```
 
-### ![incorreto](../../../assets/no.svg) Empty `catch`
+### ![incorreto](../../../assets/no.svg) Vazio `catch`
 
-Empty `catch` ser um sinal de mutação não intencional e deve ser substituída pela [exemplo correto](#mute-signals).
+Blocos `catch` vazios podem ser sinal de silenciamento não intencional e devem ser substituídos pelo [exemplo correto](#mute-signals).
 
 ```php
 try {
@@ -122,7 +122,7 @@ try {
 }
 ```
 
-### ![incorreto](../../../assets/no.svg) Registrar mensagens e rastrear arquivos de log diferentes
+### ![incorreto](../../../assets/no.svg) Registra mensagens e rastreia para diferentes arquivos de registro
 
 O código a seguir registra incorretamente o rastreamento de pilha de uma exceção como uma string em um arquivo de log.
 
@@ -137,11 +137,11 @@ try {
 
 Essa abordagem introduz quebras de linha na mensagem, que não é compatível com o PSR-3. A exceção, incluindo o rastreamento de pilha, deve fazer parte do contexto da mensagem para garantir que ela seja salva corretamente com a mensagem no New Relic ou em outro armazenamento de log compatível com monólogo PSR-3.
 
-Corrija esse problema substituindo o código seguindo os exemplos corretos mostrados em [Gravar no log de exceções](#write-to-the-exception-log) ou [Fazer downgrade das exceções](#downgrade-exceptions).
+Corrija esse problema substituindo o código seguindo os exemplos corretos mostrados em [Gravar no log de exceções](#write-to-the-exception-log) ou [Baixar exceções](#downgrade-exceptions).
 
-### ![incorreto](../../../assets/no.svg) Fazer downgrade de exceções sem contexto
+### ![incorreto](../../../assets/no.svg). Rebaixar exceções sem contexto
 
-A exceção é rebaixada para um erro, que não permite que um objeto seja transmitido, mas apenas uma string, portanto a variável `getMessage()`. Isso faz com que o rastreamento seja perdido e deve ser substituído pelos exemplos corretos mostrados em [Gravar no log de exceções](#write-to-the-exception-log) ou [Fazer downgrade das exceções](#downgrade-exceptions).
+A exceção foi rebaixada para um erro, que não permite que um objeto seja passado, mas apenas uma cadeia de caracteres, portanto o `getMessage()`. Isso faz com que o rastreamento seja perdido e deve ser substituído pelos exemplos corretos mostrados em [Gravar no log de exceções](#write-to-the-exception-log) ou [Baixar exceções](#downgrade-exceptions).
 
 ```php
 try {
@@ -151,9 +151,9 @@ try {
 }
 ```
 
-### ![incorreto](../../../assets/no.svg) Registrar somente a mensagem no log de exceções
+### ![incorreto](../../../assets/no.svg) registra somente a mensagem no log de exceção
 
-Em vez de passar o objeto `$e`, somente `$e->getMessage()` é transmitido. Isso causa a perda do rastreamento e deve ser substituído pelos exemplos corretos mostrados [Gravar no log de exceções](#write-to-the-exception-log) ou [Fazer downgrade das exceções](#downgrade-exceptions).
+Em vez de passar o objeto `$e`, apenas `$e->getMessage()` é passado. Isso faz com que o rastreamento seja perdido e deve ser substituído pelos exemplos corretos mostrados [Gravar no log de exceções](#write-to-the-exception-log) ou [Baixar exceções](#downgrade-exceptions).
 
 ```php
 try {
@@ -163,9 +163,9 @@ try {
 }
 ```
 
-### ![incorreto](../../../assets/no.svg) Ausente `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
+### ![incorreto](../../../assets/no.svg) `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch` ausente(s)
 
-Omitir o `phpcs:ignore` dispara um aviso no PHPCS e não deve passar seu CI. Isso deve ser substituído pelo exemplo correto mostrado em [Silenciar sinais](#mute-signals).
+A omissão da linha `phpcs:ignore` aciona um aviso no PHPCS e não deve passar seu CI. Este deve ser substituído pelo exemplo correto mostrado em [Sinais mudos](#mute-signals).
 
 ```php
 try {

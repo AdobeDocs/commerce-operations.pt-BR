@@ -11,13 +11,13 @@ ht-degree: 2%
 
 # Programação de lançamento
 
-O Adobe se esforça continuamente para encontrar o equilíbrio certo entre fazer atualizações de produtos simples e previsíveis e, ao mesmo tempo, fornecer melhorias e novos recursos aos participantes iniciais mais rapidamente (consulte [política de controle de versão](versioning-policy.md)). O objetivo deste cronograma é fornecer datas para quando o Adobe planeja anunciar o lançamento de novos recursos substanciais. Esses recursos podem variar ao longo do ano. No entanto, o Adobe lança regularmente e continuamente melhorias para ferramentas de extensibilidade, infraestrutura e produtos SaaS (serviços) entre as datas especificadas nesta página.
+O Adobe se esforça continuamente para encontrar o equilíbrio certo entre fazer atualizações de produtos simples e previsíveis, além de fornecer melhorias e novos recursos aos participantes iniciais mais rapidamente (consulte [política de controle de versão](versioning-policy.md)). O objetivo deste cronograma é fornecer datas para quando o Adobe planeja anunciar o lançamento de novos recursos substanciais. Esses recursos podem variar ao longo do ano. No entanto, o Adobe lança regularmente e continuamente melhorias para ferramentas de extensibilidade, infraestrutura e produtos SaaS (serviços) entre as datas especificadas nesta página.
 
-Versões do Adobe [patches](versioning-policy.md#patch-release) para cada linha de versão suportada do aplicativo Adobe Commerce PHP principal. As versões de correção são oportunidades de atualizar a base de código principal para manter sua plataforma segura, confiável e eficiente. Os recursos são independentes da base de código principal e estão disponíveis por meio de [módulo externo, extensão, ferramenta ou serviço da web](versioning-policy.md#extensibility-infrastructure-and-services-release).
+Versões do Adobe [patches](versioning-policy.md#patch-release) para cada linha de versão suportada do aplicativo Adobe Commerce PHP principal. As versões de correção são oportunidades de atualizar a base de código principal para manter sua plataforma segura, confiável e eficiente. Os recursos são independentes da base de código principal e estão disponíveis por meio de [módulo externo, extensão, ferramenta ou serviço da Web](versioning-policy.md#extensibility-infrastructure-and-services-release).
 
 >[!NOTE]
 >
->A partir de 2024, o Adobe não fornecerá mais acesso de &quot;pré-lançamento&quot; aos patches. Em vez disso, para a versão 2.4.7 e posterior, os clientes do Adobe Commerce podem usar [versões beta](beta.md) para acessar o código de disponibilidade pré-geral para fins de teste e desenvolvimento.
+>A partir de 2024, o Adobe não fornecerá mais acesso de &quot;pré-lançamento&quot; aos patches. Em vez disso, para as versões 2.4.7 e posteriores, os clientes da Adobe Commerce podem usar as [versões beta](beta.md) para acessar o código de disponibilidade pré-geral para fins de teste e desenvolvimento.
 
 A tabela a seguir fornece as datas das versões programadas (as datas estão sujeitas a alterações):
 
@@ -33,11 +33,11 @@ A tabela a seguir fornece as datas das versões programadas (as datas estão suj
    <tr>
       <td colspan="3"><strong>Legenda</strong>
          <ul>
-           <li><strong><img alt="Ícone de recurso B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Novos recursos, melhorias e correções de bugs para a extensão B2B do Adobe Commerce. Para obter detalhes sobre versões da extensão B2B, consulte o <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Notas de versão B2B</a>.</li>
-            <li><strong><img alt="Ícone de recurso de extensibilidade" src="../assets/icons/brackets.svg"></img> Extensibilidade</strong>— novas ferramentas e serviços de desenvolvedor para extensibilidade fora do processo, fornecidos independentemente das versões de patches. Por exemplo, SDK da interface do usuário do administrador, Eventos do Adobe I/O para Commerce e API Mesh.</li>
-            <li><strong><img alt="Ícone de recurso de infraestrutura" src="../assets/icons/servers.svg"></img> Infraestrutura</strong>— novos recursos e melhorias na infraestrutura em nuvem do Adobe Commerce e nos pacotes do Cloud Tools Suite for Commerce, que foram projetados para implantar e gerenciar instalações e atualizações do Adobe Commerce na plataforma da nuvem.</li>
-            <li><strong><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> Correções</strong>—Atualizações do aplicativo Adobe Commerce PHP principal que incluem correções de segurança, conformidade, desempenho e qualidade de alta prioridade.</li>
-            <li><strong><img alt="Ícone de recurso de serviços" src="../assets/icons/feature.svg"></img> Serviços</strong>— Novos recursos SaaS fornecidos independentemente das versões de patches. Por exemplo, Serviço de catálogo, Live Search e Recommendations de produto.</li>
+           <li><strong><img alt="Ícone de recurso B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong> — Novos recursos, melhorias e correções de erros para a extensão B2B do Adobe Commerce. Para obter detalhes sobre versões da extensão B2B, consulte as <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Notas de versão B2B</a>.</li>
+            <li><strong><img alt="Ícone de recurso de extensibilidade" src="../assets/icons/brackets.svg"></img> Extensibilidade</strong> — Novas ferramentas e serviços de desenvolvedor para extensibilidade fora do processo que são entregues independentemente das versões de patch. Por exemplo, SDK da interface do usuário do administrador, Eventos do Adobe I/O para Commerce e API Mesh.</li>
+            <li><strong><img alt="Ícone de recurso de infraestrutura" src="../assets/icons/servers.svg"></img> Infraestrutura</strong> — Novos recursos e aprimoramentos da Adobe Commerce na infraestrutura em nuvem e dos pacotes do Cloud Tools Suite for Commerce, que foram projetados para implantar e gerenciar instalações e atualizações do Adobe Commerce na plataforma em nuvem.</li>
+            <li><strong><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> Patches</strong> — Atualizações para o aplicativo PHP principal do Adobe Commerce que incluem correções de segurança, conformidade, desempenho e qualidade de alta prioridade.</li>
+            <li><strong><img alt="Ícone de recurso de serviços" src="../assets/icons/feature.svg"></img> Serviços</strong>—Novos recursos SaaS que são entregues independentemente das versões de patch. Por exemplo, Serviço de catálogo, Live Search e Recommendations de produto.</li>
          </ul>
       </td>
    </tr>
@@ -51,7 +51,7 @@ A tabela a seguir fornece as datas das versões programadas (as datas estão suj
   <tr>
     <td>12 de março de 2024</td>
     <td>—</td>
-    <td><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Patch beta</a>: 2.4.7-beta3</td>
+    <td><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">patch do Beta</a>: 2.4.7-beta3</td>
   </tr>
   <tr>
     <td>9 de abril de 2024</td>
@@ -71,7 +71,7 @@ A tabela a seguir fornece as datas das versões programadas (as datas estão suj
   <tr>
     <td>8 de outubro de 2024</td>
     <td><img alt="Ícone de recurso de extensibilidade" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibilidade</a><br><img alt="Ícone de recurso de infraestrutura" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infraestrutura</a><br><img alt="Ícone de recurso de serviços" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Serviços</a></td>
-    <td><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Patch beta</a>: 2.4.8-beta1<br><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patches de segurança</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
+    <td><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Patch do Beta</a>: 2.4.8-beta1<br><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patches de segurança</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
   </tr>
 </tbody>
 </table>

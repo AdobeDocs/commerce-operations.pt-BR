@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Referência de caminhos de configuração de clientes
 
-Esta seção lista nomes de variáveis e caminhos de configuração disponíveis para opções no Administrador, em **Lojas** > Configurações > **Configuração** > **Clientes**.
+Esta seção lista nomes de variáveis e caminhos de configuração disponíveis para opções no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes**.
 
-A variável [`magento app:config:dump` comando](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem. Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir as definições de configuração](override-config-settings.md#environment-variables). Este tópico não _não_ lista [valores confidenciais e específicos do sistema](config-reference-sens.md).
+O comando [`magento app:config:dump` ](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem. Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir definições de configuração](override-config-settings.md#environment-variables). Este tópico _não_ lista [valores confidenciais e específicos do sistema](config-reference-sens.md).
 
 ## Caminhos do informativo
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Informativo**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Informativo**.
 
-| Nome | Caminho de configuração | Somente comércio? |
+| Nome | Caminho de configuração | Somente Commerce? |
 |--------------|--------------|--------------|
 | Permitir Assinatura de Convidado | `newsletter/subscription/allow_guest_subscribe` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | É necessário confirmar | `newsletter/subscription/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -35,9 +35,9 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 
 ## Caminhos de configuração do cliente
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Configuração do cliente**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Configuração do Cliente**.
 
-| Nome | Caminho de configuração | Somente comércio? |
+| Nome | Caminho de configuração | Somente Commerce? |
 |--------------|--------------|--------------|
 | Intervalo de Minutos Online | `customer/online_customers/online_minutes_interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Compartilhar contas de clientes | `customer/account_share/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -77,20 +77,20 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 | Mostrar nome do meio (inicial) | `customer/address/middlename_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar Sufixo | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Opções da lista suspensa Sufixo | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Mostrar data de nascimento | `customer/address/dob_show`<br>Ao manter as práticas recomendadas atuais de segurança e privacidade, esteja ciente de possíveis riscos legais e de segurança associados ao armazenamento da data de nascimento completa do cliente (mês, dia, ano) juntamente com outros identificadores pessoais, como nome completo, antes de coletar ou processar esses dados. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Mostrar data de nascimento | `customer/address/dob_show`<br>Ao manter as práticas recomendadas atuais de segurança e privacidade, verifique se você está ciente de possíveis riscos legais e de segurança associados ao armazenamento da data de nascimento completa do cliente (mês, dia, ano) juntamente com outros identificadores pessoais, como nome completo, antes de coletar ou processar esses dados. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar Número de Imposto/IVA | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar Sexo | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Habilitar a Funcionalidade de Crédito da Loja | `customer/magento_customerbalance/is_enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Mostrar Histórico de Crédito da Loja para Clientes | `customer/magento_customerbalance/show_history` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Reembolsar Crédito da Loja Automaticamente | `customer/magento_customerbalance/refund_automatically` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Remetente de Email de Atualização de Crédito da Loja | `customer/magento_customerbalance/email_identity` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Modelo de email de atualização de crédito da loja | `customer/magento_customerbalance/email_template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Habilitar a Funcionalidade de Crédito da Loja | `customer/magento_customerbalance/is_enabled` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Mostrar Histórico de Crédito da Loja para Clientes | `customer/magento_customerbalance/show_history` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Reembolsar Crédito da Loja Automaticamente | `customer/magento_customerbalance/refund_automatically` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Remetente de Email de Atualização de Crédito da Loja | `customer/magento_customerbalance/email_identity` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Modelo de email de atualização de crédito da loja | `customer/magento_customerbalance/email_template` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
 | Redirecionar cliente para o painel da conta após fazer logon | `customer/startup/redirect_dashboard` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Texto | `customer/address_templates/text` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Texto em uma linha | `customer/address_templates/oneline` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | HTML | `customer/address_templates/html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PDF | `customer/address_templates/pdf` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ativar a funcionalidade de segmento do cliente | `customer/magento_customersegment/is_enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Ativar a funcionalidade de segmento do cliente | `customer/magento_customersegment/is_enabled` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
 | Habilitar CAPTCHA na loja | `customer/captcha/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Fonte | `customer/captcha/font` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Forms | `customer/captcha/forms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -105,13 +105,13 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 
 ## Caminhos da lista de desejos
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Lista de desejos**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Lista de desejos**.
 
-| Nome | Caminho de configuração | Somente comércio? |
+| Nome | Caminho de configuração | Somente Commerce? |
 |--------------|--------------|--------------|
 | Ativado | `wishlist/general/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ativar várias listas de desejos | `wishlist/general/multiple_enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Número de várias listas de desejos | `wishlist/general/multiple_wishlist_number` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Ativar várias listas de desejos | `wishlist/general/multiple_enabled` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Número de várias listas de desejos | `wishlist/general/multiple_wishlist_number` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
 | Remetente do email | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modelo de e-mail | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Máximo de emails permitidos para envio | `wishlist/email/number_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -122,69 +122,69 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 
 ## Caminhos dos convites
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Convites**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Convites**.
 
-| Nome | Caminho de configuração | Somente comércio? |
+| Nome | Caminho de configuração | Somente Commerce? |
 |--------------|--------------|--------------|
-| Ativar a funcionalidade de convites | `magento_invitation/general/enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Habilitar Convites na Loja | `magento_invitation/general/enabled_on_front` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Grupo de Clientes Referenciado | `magento_invitation/general/registration_use_inviter_group` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Registro de novas contas | `magento_invitation/general/registration_required_invitation` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Permitir que os clientes adicionem uma mensagem personalizada ao email de convite | `magento_invitation/general/allow_customer_message` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Número máximo de convites permitidos para envio único | `magento_invitation/general/max_invitation_amount_per_send` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Remetente do Email de Convite do Cliente | `magento_invitation/email/identity` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Modelo de e-mail de convite do cliente | `magento_invitation/email/template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Ativar a funcionalidade de convites | `magento_invitation/general/enabled` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Habilitar Convites na Loja | `magento_invitation/general/enabled_on_front` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Grupo de Clientes Referenciado | `magento_invitation/general/registration_use_inviter_group` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Registro de novas contas | `magento_invitation/general/registration_required_invitation` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Permitir que os clientes adicionem uma mensagem personalizada ao email de convite | `magento_invitation/general/allow_customer_message` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Número máximo de convites permitidos para envio único | `magento_invitation/general/max_invitation_amount_per_send` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Remetente do Email de Convite do Cliente | `magento_invitation/email/identity` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Modelo de e-mail de convite do cliente | `magento_invitation/email/template` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## Caminhos de pontos de premiação
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Pontos de recompensa**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Pontos de recompensa**.
 
-| Nome | Caminho de configuração | Somente comércio? |
+| Nome | Caminho de configuração | Somente Commerce? |
 |--------------|--------------|--------------|
-| Ativar a funcionalidade de pontos de recompensa | `magento_reward/general/is_enabled` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Ativar a funcionalidade de pontos de recompensa na loja | `magento_reward/general/is_enabled_on_front` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Clientes podem ver o histórico de pontos de recompensa | `magento_reward/general/publish_history` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Limite de Resgate de Saldo de Pontos de Recompensa | `magento_reward/general/min_points_balance` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Limitar Saldo De Pontos De Recompensa Em | `magento_reward/general/max_points_balance` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Pontos de premiação expiram em (dias) | `magento_reward/general/expiration_days` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Cálculo da expiração dos pontos de premiação | `magento_reward/general/expiry_calculation` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Reembolsar pontos de recompensa automaticamente | `magento_reward/general/refund_automatically` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Deduzir automaticamente os pontos de premiação do valor do reembolso | `magento_reward/general/deduct_automatically` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Landing Page | `magento_reward/general/landing_page` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Comprar | `magento_reward/points/order` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Registro | `magento_reward/points/register` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Inscrição no informativo | `magento_reward/points/newsletter` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Convertendo convite para cliente | `magento_reward/points/invitation_customer` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Limite de Quantidade de Conversões de Convite para Cliente | `magento_reward/points/invitation_customer_limit` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Convertendo convite em pedido | `magento_reward/points/invitation_order` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Limite de Quantidade de Conversões de Convite para Ordem | `magento_reward/points/invitation_order_limit` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Conversão de convite para recompensa de pedido | `magento_reward/points/invitation_order_frequency` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Revisar envio | `magento_reward/points/review` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Limite de Quantidade de Envio de Revisões Premiadas | `magento_reward/points/review_limit` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Remetente do email | `magento_reward/notification/email_sender` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Assinar Clientes por Padrão | `magento_reward/notification/subscribe_by_default` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| E-mail de atualização de saldo | `magento_reward/notification/balance_update_template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Email de aviso de expiração de pontos de premiação | `magento_reward/notification/expiry_warning_template` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Aviso de Expiração Antes de (dias) | `magento_reward/notification/expiry_day_before` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Ativar a funcionalidade de pontos de recompensa | `magento_reward/general/is_enabled` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Ativar a funcionalidade de pontos de recompensa na loja | `magento_reward/general/is_enabled_on_front` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Clientes podem ver o histórico de pontos de recompensa | `magento_reward/general/publish_history` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Limite de Resgate de Saldo de Pontos de Recompensa | `magento_reward/general/min_points_balance` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Limitar Saldo De Pontos De Recompensa Em | `magento_reward/general/max_points_balance` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Pontos de premiação expiram em (dias) | `magento_reward/general/expiration_days` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Cálculo da expiração dos pontos de premiação | `magento_reward/general/expiry_calculation` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Reembolsar pontos de recompensa automaticamente | `magento_reward/general/refund_automatically` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Deduzir automaticamente os pontos de premiação do valor do reembolso | `magento_reward/general/deduct_automatically` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Landing Page | `magento_reward/general/landing_page` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Comprar | `magento_reward/points/order` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Registro | `magento_reward/points/register` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Inscrição no informativo | `magento_reward/points/newsletter` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Convertendo convite para cliente | `magento_reward/points/invitation_customer` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Limite de Quantidade de Conversões de Convite para Cliente | `magento_reward/points/invitation_customer_limit` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Convertendo convite em pedido | `magento_reward/points/invitation_order` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Limite de Quantidade de Conversões de Convite para Ordem | `magento_reward/points/invitation_order_limit` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Conversão de convite para recompensa de pedido | `magento_reward/points/invitation_order_frequency` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Revisar envio | `magento_reward/points/review` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Limite de Quantidade de Envio de Revisões Premiadas | `magento_reward/points/review_limit` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Remetente do email | `magento_reward/notification/email_sender` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Assinar Clientes por Padrão | `magento_reward/notification/subscribe_by_default` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| E-mail de atualização de saldo | `magento_reward/notification/balance_update_template` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Email de aviso de expiração de pontos de premiação | `magento_reward/notification/expiry_warning_template` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Aviso de Expiração Antes de (dias) | `magento_reward/notification/expiry_day_before` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## Caminhos de promoções
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Promoções**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Promoções**.
 
-| Nome | Caminho de configuração | Somente comércio? |
+| Nome | Caminho de configuração | Somente Commerce? |
 |--------------|--------------|--------------|
 | Ativar emails de lembrete | `promo/magento_reminder/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Frequência | `promo/magento_reminder/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Interval | `promo/magento_reminder/interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Minuto da hora | `promo/magento_reminder/minutes` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Hora de início | `promo/magento_reminder/time` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Máximo de emails por execução | `promo/magento_reminder/limit` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Limite de falha de envio de email | `promo/magento_reminder/threshold` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
-| Lembrete de remetente de email | `promo/magento_reminder/identity` | ![Somente comércio](/help/assets/configuration/cloud-ee.png) |
+| Minuto da hora | `promo/magento_reminder/minutes` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Hora de início | `promo/magento_reminder/time` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Máximo de emails por execução | `promo/magento_reminder/limit` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Limite de falha de envio de email | `promo/magento_reminder/threshold` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Lembrete de remetente de email | `promo/magento_reminder/identity` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
 | Comprimento do código | `promo/auto_generated_coupon_codes/length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Formato do código | `promo/auto_generated_coupon_codes/format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Prefixo do código | `promo/auto_generated_coupon_codes/prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -195,9 +195,9 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 
 ## Caminhos do Registro de presentes
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Registro de presentes**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Registro de presentes**.
 
-| Nome | Caminho de configuração | Somente comércio? |
+| Nome | Caminho de configuração | Somente Commerce? |
 |--------------|--------------|--------------|
 | Ativar Registro de presentes | `magento_giftregistry/general/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Máximo de inscritos | `magento_giftregistry/general/max_registrant` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -213,9 +213,9 @@ Esses valores de configuração estão disponíveis no Admin do **Lojas** > Conf
 
 ## Caminhos do carrinho de compras persistentes
 
-Esses valores de configuração estão disponíveis no Admin do **Lojas** > Configurações > **Configuração** > **Clientes** > **Carrinho de compras persistente**.
+Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Clientes** > **Carrinho de Compras Persistente**.
 
-| Nome | Caminho de configuração | Somente comércio? |
+| Nome | Caminho de configuração | Somente Commerce? |
 |--------------|--------------|--------------|
 | Ativar persistência | `persistent/options/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Duração da persistência (segundos) | `persistent/options/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

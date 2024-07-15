@@ -16,7 +16,7 @@ A instalação do software Vernish está fora do escopo deste guia. Para obter m
 
 - [guia de instalação](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
 - [Guias de instalação em verniz](https://www.varnish-cache.org/docs)
-- [Como instalar verniz (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
+- [Como instalar o verniz (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >
@@ -32,4 +32,4 @@ Abra um terminal e insira o seguinte comando para exibir a versão de Verniz:
 varnishd -V
 ```
 
-Verifique se [O Adobe Commerce oferece suporte](../../installation/system-requirements.md) a versão instalada do Vernish antes de continuar. Se você estiver executando uma versão sem suporte, será necessário atualizar para uma versão com suporte. Consulte a documentação de instalação do Vernish para obter mais informações.
+Verifique se o [Adobe Commerce oferece suporte](../../installation/system-requirements.md) à versão instalada do Verniz antes de continuar. Se você estiver executando uma versão sem suporte, será necessário atualizar para uma versão com suporte. Consulte a documentação de instalação do Vernish para obter mais informações.

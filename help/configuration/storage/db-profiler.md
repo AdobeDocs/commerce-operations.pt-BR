@@ -6,18 +6,18 @@ badge: label="Contribuição de Atish Goswami" type="Informative" url="https://g
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
 
 # Configurar o profiler do banco de dados
 
-O criador de perfil do banco de dados do Commerce exibe todas as consultas implementadas em uma página, incluindo o tempo para cada consulta e quais parâmetros foram aplicados.
+O profiler do banco de dados do Commerce exibe todas as consultas implementadas em uma página, incluindo o tempo para cada consulta e quais parâmetros foram aplicados.
 
 ## Etapa 1: Modificar a configuração de implantação
 
-Modificar `<magento_root>/app/etc/env.php` para adicionar a seguinte referência à [classe profiler do banco de dados](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+Modifique `<magento_root>/app/etc/env.php` para adicionar a seguinte referência à [classe do criador de perfil do banco de dados](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
 
 ```php?start_inline=1
         'profiler' => [
@@ -55,7 +55,7 @@ Um exemplo é o seguinte:
 
 ## Etapa 2: configurar a saída
 
-Configure a saída no arquivo de inicialização do aplicativo do Commerce. Pode ser `<magento_root>/pub/index.php` ou ele pode estar localizado em uma configuração de host virtual do servidor da web.
+Configure a saída no arquivo de inicialização do aplicativo Commerce; pode ser `<magento_root>/pub/index.php` ou pode estar localizado em uma configuração de host virtual de servidor Web.
 
 O exemplo a seguir exibe resultados em uma tabela de três colunas:
 
@@ -63,7 +63,7 @@ O exemplo a seguir exibe resultados em uma tabela de três colunas:
 - SQL (exibe todas as consultas SQL; o cabeçalho da linha exibe a contagem de consultas)
 - Parâmetros de consulta (exibe os parâmetros de cada consulta SQL)
 
-Para configurar a saída, adicione o seguinte após a variável `$bootstrap->run($app);` no arquivo de inicialização:
+Para configurar a saída, adicione o seguinte após a linha `$bootstrap->run($app);` no arquivo de inicialização:
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -91,4 +91,4 @@ echo "</table>";
 
 Vá para qualquer página na loja ou no Administrador para visualizar os resultados. A seguir, há uma amostra:
 
-![Resultados do criador de perfil de banco de dados de exemplo](../../assets/configuration/db-profiler-results.png)
+![Resultados do criador de perfil do banco de dados de exemplo](../../assets/configuration/db-profiler-results.png)

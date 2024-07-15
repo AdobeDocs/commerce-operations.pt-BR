@@ -4,7 +4,7 @@ description: Forneça aos clientes imagens e vídeos de alta qualidade sobre os 
 exl-id: 080f177e-f668-4154-8a05-ea4724c29c5f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -51,19 +51,19 @@ Diferentes tipos de imagens podem ser usados de acordo com os requisitos da empr
 
 ## Práticas recomendadas
 
-- **Demonstração do produto**—Se o produto tiver uma finalidade definida, mostre-o para mostrar suas funções e recursos.
+- **Demonstração do produto**—Se o produto tiver uma finalidade definida, demonstre-o para mostrar suas funções e recursos.
 
-- **Promover imagens geradas pelo usuário**— Usuários carregando suas imagens com o produto como uma revisão, o que motiva outros compradores a comprar o produto.
+- **Promover imagens geradas pelo usuário**—Os usuários carregam suas imagens com o produto como uma revisão, o que motiva outros compradores a comprar o produto.
 
-- **Visualização de 360 graus do produto**— Fazer o upload de um vídeo ou GIF de 360 graus do produto pode fornecer uma visualização detalhada ao cliente e motivá-lo a comprar o produto.
+- **exibição de 360 graus do produto**—O carregamento de um vídeo ou GIF de 360 graus do produto pode fornecer uma exibição detalhada ao cliente e motivá-lo a comprar o produto.
 
-- **Convenção de nomenclatura**—Torne uma regra seguir uma convenção de nomenclatura para a imagem do produto, o que ajuda a minimizar o erro de carregar uma imagem incorreta para um produto e ajuda a equipe a gerenciar imagens facilmente.
+- **Convenção de nomenclatura**—Torne-se uma regra seguir uma convenção de nomenclatura para a imagem do produto, o que ajuda a minimizar o erro de carregar uma imagem incorreta para um produto e ajuda a equipe a gerenciar imagens facilmente.
 
-- **Carregamento de página**—Não carregue imagens que aumentarão o tempo de carregamento da página. Se um cliente precisar aguardar a exibição da imagem, poderá sair do site.
+- **Carregar página** — Não carregue imagens que aumentem o tempo de carregamento da página. Se um cliente precisar aguardar a exibição da imagem, poderá sair do site.
 
 - **Conteúdo simples**—Não complicar demais o conteúdo. Tente manter o conteúdo simples e atraente onde o foco é o produto. Por exemplo, uma prática recomendada é ter a imagem do produto em um fundo branco para aprimorar a imagem do produto.
 
-- **Imagem real do produto**—Quando um cliente compra um produto on-line, ele espera ver o produto como ele está no site. Evite aplicar filtros ou aprimorar a imagem para alterar a aparência do produto. É importante ser transparente com o cliente, caso contrário, você pode ter uma alta taxa de retorno.
+- **Imagem de produto real**—Quando um cliente compra um produto online, ele espera vê-lo como está no site. Evite aplicar filtros ou aprimorar a imagem para alterar a aparência do produto. É importante ser transparente com o cliente, caso contrário, você pode ter uma alta taxa de retorno.
 
 >[!TIP]
 >

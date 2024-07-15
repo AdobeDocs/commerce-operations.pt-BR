@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Personalização
 
-A linha de base do crescimento dos negócios de comércio eletrônico é a fidelidade do cliente. Manter os clientes satisfeitos é uma combinação de vários fatores, como produtos, conteúdo, finalização, cliente e experiência de serviço. A personalização depende da IA, que rastreia as informações do cliente em tempo real e fornece uma experiência exclusiva e personalizada. A personalização pode não funcionar para todos os tipos de empresas, mas é um recurso adicional que pode ajudar a direcionar o tráfego para o seu site.
+A linha de base do crescimento dos negócios de comércio eletrônico é a fidelidade do cliente. Manter os clientes satisfeitos é uma combinação de vários fatores, como produtos, conteúdo, finalização, cliente e experiência de serviço. O Personalization depende da IA, que rastreia as informações do cliente em tempo real e fornece uma experiência exclusiva e personalizada. O Personalization pode não funcionar para todos os tipos de empresas, mas é um recurso adicional que pode ajudar a direcionar o tráfego para o seu site.
 
-A personalização deve incluir:
+O Personalization deve incluir:
 
 - Atenda às necessidades do cliente
 
@@ -26,21 +26,21 @@ A personalização deve incluir:
 
 Exemplos de personalização incluem:
 
-- **Interesse do cliente**—Alteração da página inicial e da navegação com base no perfil do cliente. Por exemplo, se um usuário visitou o site anteriormente e explorou a seção feminina, na próxima vez que entrar no URL, ele será navegado até a página inicial feminina.
+- **Interesse do cliente**—Alterar página inicial e navegação com base no perfil do cliente. Por exemplo, se um usuário visitou o site anteriormente e explorou a seção feminina, na próxima vez que entrar no URL, ele será navegado até a página inicial feminina.
 
 - **Produtos recomendados**—Recomende produtos com base no comportamento de navegação dos clientes.
 
-- **Pesquisar**—Exibir resultados de pesquisa personalizada com base no comportamento de pesquisa anterior dos clientes.
+- **Pesquisa** — Exibe resultados de pesquisa personalizados com base no comportamento anterior de um cliente.
 
-- **E-mail**—Envie emails personalizados sobre produtos se um cliente tiver deixado o item no carrinho ou se o produto estiver indisponível envie uma notificação quando estiver de volta ao estoque.
+- **Email** — Envie emails personalizados sobre produtos se um cliente tiver deixado o item no carrinho ou se o produto estiver indisponível, envie uma notificação quando estiver de volta ao estoque.
 
-- **Geolocalização**—Exibição de várias localizações geográficas para o site. Por exemplo, um cliente visita o site da AU, mas a opção de site dos EUA também é exibida para dar ao cliente uma escolha.
+- **Geolocalização**—Exibindo várias geolocalizações para o site. Por exemplo, um cliente visita o site da AU, mas a opção de site dos EUA também é exibida para dar ao cliente uma escolha.
 
-- **Código de desconto**—Exibir códigos de desconto de categoria específica para promover produtos de uma categoria específica.
+- **Código de desconto** — Exiba códigos de desconto de categoria específicos para promover produtos de uma categoria específica.
 
-- **Produtos complementares**—Exibir produtos complementares quando o cliente visitar um produto. Por exemplo, um cliente vê um vestido e pode ver produtos complementares como sapatos, bolsas e acessórios que acompanham o vestido.
+- **Produtos complementares** — Exiba produtos complementares quando o cliente visitar um produto. Por exemplo, um cliente vê um vestido e pode ver produtos complementares como sapatos, bolsas e acessórios que acompanham o vestido.
 
-- **Página inicial personalizada**—Exiba uma página inicial personalizada para um usuário registrado para que ele se sinta especial.
+- **Página inicial personalizada** — Exiba uma página inicial personalizada para um usuário registrado para que ele se sinta especial.
 
 ![Exemplo de produtos personalizados](../../assets/playbooks/personalization-example.png)
 

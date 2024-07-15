@@ -5,7 +5,7 @@ exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
 feature: Best Practices, Checkout
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ O check-out é uma parte essencial das compras on-line. Aqui é onde o dinheiro 
 
 O fluxo de finalização é como a linha de chegada, onde os compradores se transformam em clientes que fazem transações. Mas mesmo uma pequena dificuldade na finalização pode ter um enorme impacto negativo na taxa de conversão e no ROI, portanto, melhorar a taxa de conversão ainda que levemente pode ajudar a aumentar o ROI maciçamente. O aprimoramento de fluxos e processos de finalização de compra começa antes mesmo da página de finalização.
 
-![Fazer check-out do diagrama de fluxo do processo](../../assets/playbooks/checkout-diagram.png)
+![Fazer check-out do diagrama do fluxo do processo](../../assets/playbooks/checkout-diagram.png)
 
 ## Páginas de produto
 
@@ -107,7 +107,7 @@ Há uma diferença entre os fluxos e processos de check-out B2B e B2C.
 - Diferentes opções de pagamento, como cartão de crédito e carteira eletrônica
 - É possível adicionar o código do cupom ao check-out
 
-![Diagrama de checkout do B2C](../../assets/playbooks/checkout-b2c.png)
+![Diagrama de check-out B2C](../../assets/playbooks/checkout-b2c.png)
 
 ### B2B
 

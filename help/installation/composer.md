@@ -11,31 +11,31 @@ ht-degree: 0%
 
 # Instalação de início rápido local
 
-As instruções nesta página descrevem como instalar o Adobe Commerce no [auto-hospedado](../implementation-playbook/infrastructure/self-hosting/overview.md) infraestrutura. Para obter orientação sobre como atualizar uma instalação existente, consulte o [_Guia de atualização_](../upgrade/overview.md).
+As instruções nesta página descrevem como instalar o Adobe Commerce na infraestrutura [auto-hospedada](../implementation-playbook/infrastructure/self-hosting/overview.md). Para obter orientação sobre como atualizar uma instalação existente, consulte o [_Guia de Atualização_](../upgrade/overview.md).
 
-Usos do Adobe [Compositor](https://getcomposer.org/) para gerenciar componentes do Adobe Commerce e suas dependências. Usar o Composer para obter o metapackage do Adobe Commerce oferece as seguintes vantagens:
+O Adobe usa o [Composer](https://getcomposer.org/) para gerenciar componentes do Adobe Commerce e suas dependências. Usar o Composer para obter o metapackage do Adobe Commerce oferece as seguintes vantagens:
 
 - Reutilizar bibliotecas de terceiros sem agrupá-las com o código-fonte
 - Reduza os conflitos de extensão e os problemas de compatibilidade usando uma arquitetura baseada em componentes com um gerenciamento robusto de dependências
-- Aderir a [Grupo de interoperabilidade de estrutura PHP (FIG)](https://www.php-fig.org/) padrões
+- Siga os padrões [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)
 - Reempacotar o Magento Open Source com outros componentes
 - Usar o software Adobe Commerce em um ambiente de produção
 
 >[!NOTE]
 >
->Os desenvolvedores que contribuem com o Magento Open Source devem usar o [baseado no Git](https://developer.adobe.com/commerce/contributor/guides/install/) método de instalação.
+>Os desenvolvedores que contribuem com o Magento Open Source devem usar o método de instalação [baseado no Git](https://developer.adobe.com/commerce/contributor/guides/install/).
 
 ## Pré-requisitos
 
 Antes de continuar, faça o seguinte:
 
-- Concluir tudo [tarefas de pré-requisito](system-requirements.md).
-- [Instalar o Composer](https://getcomposer.org/download/).
-- Obter [chaves de autenticação](prerequisites/authentication-keys.md) para o repositório do Adobe Commerce Composer.
+- Conclua todas as [tarefas de pré-requisito](system-requirements.md).
+- [Instalar Compositor](https://getcomposer.org/download/).
+- Obtenha [chaves de autenticação](prerequisites/authentication-keys.md) para o repositório do Adobe Commerce Composer.
 
 ## Efetuar login como proprietário do sistema de arquivos
 
-Saiba mais sobre propriedade, permissões e o proprietário do sistema de arquivos na [Visão geral do tópico de propriedade e permissões](prerequisites/file-system/overview.md).
+Saiba mais sobre propriedade, permissões e o proprietário do sistema de arquivos no [tópico Visão geral de propriedade e permissões](prerequisites/file-system/overview.md).
 
 Para alternar para o proprietário do sistema de arquivos:
 
@@ -53,7 +53,7 @@ Para alternar para o proprietário do sistema de arquivos:
    sudo -u <file system owner>  <command>
    ```
 
-1. Para executar comandos CLI de qualquer diretório, adicione `<app_root>/bin` ao seu sistema `PATH`.
+1. Para executar comandos CLI de qualquer diretório, adicione o `<app_root>/bin` ao sistema `PATH`.
 
    Como os shells têm sintaxes diferentes, consulte uma referência como [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
@@ -73,7 +73,7 @@ Para alternar para o proprietário do sistema de arquivos:
 
 Para obter o metappackage do Adobe Commerce:
 
-1. Efetue login no servidor de aplicativos como, ou alterne para, o [proprietário do sistema de arquivos](prerequisites/file-system/overview.md).
+1. Faça logon no servidor de aplicativos como ou alterne para o [proprietário do sistema de arquivos](prerequisites/file-system/overview.md).
 1. Altere para o diretório docroot do servidor Web ou um diretório que você configurou como docroot do host virtual.
 1. Crie um projeto do Composer usando um metapackage do Commerce.
 
@@ -89,13 +89,13 @@ Para obter o metappackage do Adobe Commerce:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Quando solicitado, insira suas chaves de autenticação. Chaves públicas e privadas são criadas e configuradas no [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+   Quando solicitado, insira suas chaves de autenticação. Chaves públicas e privadas são criadas e configuradas em seu [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
 
    >[!NOTE]
    >
-   > Ao usar um Compositor `auth.json` arquivo ou variável de ambiente, você não será solicitado a inserir suas chaves de autenticação.
+   > Ao usar um arquivo do Composer `auth.json` ou uma variável de ambiente, você não será solicitado a digitar suas chaves de autenticação.
 
-   Se você encontrar erros, como `Could not find package...` ou `...no matching package found`, verifique se não há erros de digitação no comando. Se ainda encontrar erros, talvez você não esteja autorizado a baixar o Adobe Commerce. Contato [Suporte ao Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
+   Se você encontrar erros, como `Could not find package...` ou `...no matching package found`, verifique se não há erros de digitação no comando. Se ainda encontrar erros, talvez você não esteja autorizado a baixar o Adobe Commerce. Contate o [Suporte da Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
 
    Consulte [Solução de problemas](https://support.magento.com/hc/en-us/articles/360033818091) para obter ajuda com mais erros.
 
@@ -109,7 +109,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ### Exemplo - Correção de qualidade
 
-Os remendos de qualidade contêm principalmente _e_ correções de segurança. No entanto, às vezes elas também podem conter recursos novos e compatíveis com versões anteriores. Use o Composer para baixar um patch de qualidade. Por exemplo, para especificar o metappackage do Adobe Commerce 2.4.6:
+Os patches de qualidade contêm principalmente correções de segurança _e_ funcionais. No entanto, às vezes elas também podem conter recursos novos e compatíveis com versões anteriores. Use o Composer para baixar um patch de qualidade. Por exemplo, para especificar o metappackage do Adobe Commerce 2.4.6:
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
@@ -141,7 +141,7 @@ chmod u+x bin/magento
 
 Você deve usar a linha de comando para instalar o Adobe Commerce.
 
-Este exemplo assume que o diretório de instalação é nomeado como `magento2ee`, o `db-host` está na mesma máquina (`localhost`) e que o `db-name`, `db-user`, e `db-password` são todos `magento`:
+Este exemplo supõe que o diretório de instalação seja nomeado como `magento2ee`, o `db-host` esteja na mesma máquina (`localhost`) e que o `db-name`, `db-user` e `db-password` sejam todos `magento`:
 
 ```bash
 bin/magento setup:install \
@@ -168,11 +168,11 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Você pode personalizar o URI do administrador com o `--backend-frontname` opção. No entanto, o Adobe recomenda omitir essa opção e permitir que o comando de instalação gere automaticamente um URI aleatório. Um URI aleatório é mais difícil de ser explorado por hackers ou softwares mal-intencionados. O URI é exibido no console quando a instalação é concluída.
+>Você pode personalizar o URI do Administrador com a opção `--backend-frontname`. No entanto, o Adobe recomenda omitir essa opção e permitir que o comando de instalação gere automaticamente um URI aleatório. Um URI aleatório é mais difícil de ser explorado por hackers ou softwares mal-intencionados. O URI é exibido no console quando a instalação é concluída.
 
 >[!TIP]
 >
->Para obter uma descrição completa das opções de instalação da CLI, consulte [Instalar o aplicativo a partir da linha de comando](advanced.md).
+>Para obter uma descrição completa das opções de instalação da CLI, consulte [Instalar o aplicativo da linha de comando](advanced.md).
 
 ## Resumo do comando
 
@@ -212,7 +212,7 @@ A tabela a seguir resume os comandos disponíveis. Os comandos são exibidos som
 | `magento setup:db-schema:upgrade` | Atualiza o esquema do banco de dados. | Configuração de implantação |
 | `magento setup:db-data:upgrade` | Atualiza os dados do banco de dados. | Configuração de implantação |
 | `magento setup:db:status` | Verifica se o banco de dados está atualizado com o código. | Configuração de implantação |
-| `magento admin:user:create` | Cria um usuário administrador. | Você pode criar usuários para o seguinte:<br><br>Configuração de implantação<br><br>Habilite no mínimo o `Magento_User` e `Magento_Authorization` módulos<br><br>Banco de dados (a maneira mais simples é usar `bin/magento setup:upgrade`) |
+| `magento admin:user:create` | Cria um usuário administrador. | Você pode criar usuários para o seguinte:<br><br>Configuração de implantação<br><br>Habilitar no mínimo o `Magento_User` e o `Magento_Authorization` módulos<br><br>Banco de dados (a maneira mais simples é usar o `bin/magento setup:upgrade`) |
 | `magento list` | Lista todos os comandos disponíveis. | Nenhum |
 | `magento help` | Fornece ajuda para o comando especificado. | Nenhum |
 
@@ -232,4 +232,4 @@ Os argumentos a seguir são comuns a todos os comandos. Esses comandos podem ser
 
 >[!NOTE]
 >
->Parabéns! Você concluiu a instalação rápida. Precisa de ajuda mais avançada? Confira o [Instalação avançada](advanced.md) guia.
+>Parabéns! Você concluiu a instalação rápida. Precisa de ajuda mais avançada? Confira o guia [Instalação avançada](advanced.md).

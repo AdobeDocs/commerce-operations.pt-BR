@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Versões lançadas
 
-Esta página lista versões lançadas do Adobe Commerce. Ele contém datas de lançamento para todas as versões secundárias, patches e datas de lançamento e fim de suporte. Consulte [Política de ciclo de vida](lifecycle-policy.md).
+Esta página lista versões lançadas do Adobe Commerce. Ele contém datas de lançamento para todas as versões secundárias, patches e datas de lançamento e fim de suporte. Consulte [política de ciclo de vida](lifecycle-policy.md).
 
 >[!NOTE]
 >

@@ -110,7 +110,7 @@ A configuração de um site de comércio eletrônico é complexa e requer testes
 - Carregamento de página
 - Backup
 - Transações
-- Processando
+- Processamento
 - Integração
 - Logon
 - Segurança

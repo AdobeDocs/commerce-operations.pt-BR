@@ -13,13 +13,13 @@ ht-degree: 27%
 # Guias operacionais do Adobe Commerce {#operational-guides}
 
 - [Início: Guias Operacionais](home.md)
-- [Informações da versão](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
+- [Informações sobre a versão](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
 - [Desempenho](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
-- [Segurança e conformidade](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
+- [Segurança e Conformidade](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
 - [Manual de implementação](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
-- [Playbook operacional](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/overview)
-- [Comércio em escala](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
-- [Instalação (no local)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+- [Manual operacional](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/overview)
+- [Commerce em escala](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
+- [Instalação (local)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 - [Configuração](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
 - [Atualizar](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)
 - [Ferramentas](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview)

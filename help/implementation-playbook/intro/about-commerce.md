@@ -5,7 +5,7 @@ exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
 feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Delivery
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Unindo conteúdo ao comércio para atender às demandas dos clientes por intera�
 
 ## Realizando compras ininterruptas em todos os lugares
 
-O crescimento do comércio é alimentado pelo atendimento às necessidades de seus clientes. Expanda seu alcance e se transforme em novos canais, regiões geográficas e venda online para empresas e consumidores em uma única plataforma. Traga o comércio para seus clientes onde, quando e como preferirem comprar.
+O crescimento da Commerce é alimentado pelo atendimento às necessidades de seus clientes. Expanda seu alcance e se transforme em novos canais, regiões geográficas e venda online para empresas e consumidores em uma única plataforma. Traga o comércio para seus clientes onde, quando e como preferirem comprar.
 
 - Mobile commerce
 - Comércio eletrônico B2B

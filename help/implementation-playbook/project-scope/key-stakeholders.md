@@ -5,14 +5,14 @@ exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # Principais partes interessadas
 
-Muitas empresas em 2021 perceberam que se tornar &quot;à prova de pandemias&quot; está diretamente relacionado à força digital de uma organização. Com base nos dados da Forrester,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)A descobriu que o comércio eletrônico teve um crescimento de 10 anos em apenas três meses, com o crescimento sendo impulsionado pela necessidade de se conectar digitalmente com os clientes enquanto as portas tradicionais estavam fechadas.
+Muitas empresas em 2021 perceberam que se tornar &quot;à prova de pandemias&quot; está diretamente relacionado à força digital de uma organização. Com base nos dados da Forrester, a[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)descobriu que o comércio eletrônico teve um crescimento de 10 anos em apenas 3 meses, com o crescimento sendo impulsionado pela necessidade de se conectar digitalmente com os clientes enquanto as portas tradicionais estavam fechadas.
 
 Quando é tomada a decisão de investir em uma transformação do comércio, uma das etapas mais importantes é determinar quem da organização está envolvido no processo. Para empresas menores, às vezes, o comércio eletrônico ou a equipe digital é apenas um punhado de pessoas, então toda a equipe assume a tarefa. No entanto, para organizações maiores, uma abordagem é dividir isso em três áreas diferentes, incluindo:
 
@@ -39,6 +39,6 @@ A maioria das implementações comerciais exige várias plataformas diferentes p
 
 ## Quem é o patrocinador executivo?
 
-O Digital Commerce 360 relatou que o motivo número um pelo qual as organizações ainda não investiram em uma nova transformação comercial é a falta de suporte de liderança. O grau em que a equipe de liderança está envolvida é crucial para o sucesso de uma marca. Recomenda-se o suporte total das seguintes funções, incluindo reuniões recorrentes de ponto de verificação durante toda a implementação de um comércio:
+O Digital Commerce 360 relatou que o motivo número um pelo qual as organizações ainda não investiram em uma nova transformação comercial é a falta de suporte à liderança. O grau em que a equipe de liderança está envolvida é crucial para o sucesso de uma marca. Recomenda-se o suporte total das seguintes funções, incluindo reuniões recorrentes de ponto de verificação durante toda a implementação de um comércio:
 
 - O conjunto C inteiro

@@ -29,7 +29,7 @@ Use o seguinte comando para verificar o mecanismo de pesquisa atual:
 bin/magento config:show catalog/search/engine
 ```
 
-O erro ocorre se o valor retornado for `mysql`, `elasticsearch`ou `elasticsearch6`.
+O erro ocorre se o valor retornado for `mysql`, `elasticsearch` ou `elasticsearch6`.
 
 >[!WARNING]
 >
@@ -43,7 +43,7 @@ O erro ocorre se o valor retornado for `mysql`, `elasticsearch`ou `elasticsearch
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Onde `<version>` é a versão do Magento que você estava executando **antes** a atualização. Por exemplo, `2.3.5`.
+>Onde `<version>` é a versão do Magento que você estava executando **antes** da atualização. Por exemplo, `2.3.5`.
 
 Siga as diretrizes descritas nas seções a seguir para recuperar-se de um estado inconsistente.
 
@@ -66,7 +66,7 @@ Um valor de `elasticsearch` indica que sua versão de nível inferior do Adobe C
 
 Você deve executar as seguintes tarefas antes de atualizar para a versão 2.4:
 
-1. Atualização para uma versão do Elasticsearch compatível com Commerce. Consulte [Atualizando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obter instruções completas sobre como fazer backup dos dados, detectar possíveis problemas de migração e testar atualizações antes de implantar na produção. Dependendo da sua versão atual do Elasticsearch, uma reinicialização completa do cluster pode ou não ser necessária.
+1. Atualização para uma versão do Elasticsearch compatível com Commerce. Consulte [Atualizando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obter instruções completas sobre como fazer backup de seus dados, detectar possíveis problemas de migração e testar atualizações antes de implantar na produção. Dependendo da sua versão atual do Elasticsearch, uma reinicialização completa do cluster pode ou não ser necessária.
 
    >[!NOTE]
    >

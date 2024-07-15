@@ -28,7 +28,7 @@ Use este comando para criar um administrador ou editar um administrador existent
 
 >[!NOTE]
 >
->Se você estiver editando um administrador, somente o `first name`, `last name`, e `password` pode ser editado.
+>Se você estiver editando um administrador, somente os `first name`, `last name` e `password` poderão ser editados.
 
 Uso do comando:
 
@@ -45,7 +45,7 @@ Onde a tabela a seguir define parâmetros e valores:
 | `--admin-email` | Endereço de email do usuário administrador. | Sim |
 | `--admin-user` | Nome de usuário do administrador. | Sim |
 | `--admin-password` | Senha de usuário administrador. A senha deve ter pelo menos 7 caracteres e incluir pelo menos um caractere alfabético e um caractere numérico. <br><br>Recomendamos uma senha mais longa e complexa. Se a string de senha contiver caracteres especiais que exigem interpretação literal (como barras invertidas ou espaços), coloque a senha entre aspas simples. | Sim |
-| `--magento-init-params` | Adicione a qualquer comando para personalizar parâmetros de inicialização de aplicativos<br/><br/>Por exemplo: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Não |
+| `--magento-init-params` | Adicione a qualquer comando para personalizar parâmetros de inicialização de aplicativo<br/><br/>Por exemplo: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Não |
 
 Exemplo de uso:
 
@@ -75,7 +75,7 @@ Admin last name: Doe Young
 Created Magento administrator user named John
 ```
 
-O exemplo de atualizações a seguir `first name`, `last name`, e `password` de `j.doe` usuário administrador:
+O exemplo a seguir atualiza `first name`, `last name` e `password` de `j.doe` usuário administrador:
 
 ```bash
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567

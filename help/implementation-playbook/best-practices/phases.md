@@ -6,7 +6,7 @@ feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -43,7 +43,7 @@ Essas práticas recomendadas são organizadas por fase de implementação para q
       <img alt="Launch" src="../../assets/icons/launch.svg" width="80" height="80">
     </a>
     <div>
-    <a href="launch/overview.md"><strong>Launch</strong></a>
+    <a href="launch/overview.md"><strong>Iniciar</strong></a>
     </div>
     Revisões finais das listas de verificação pré e pós-lançamento, implantação de produção, configuração de segurança, verificação de serviços e monitoramento de desempenho  
     <br>

@@ -22,9 +22,9 @@ Os dados de check-out, pedidos e produtos podem usar um banco de dados mestre se
 
 >[!INFO]
 >
->A Adobe Commerce na infraestrutura em nuvem _não_ oferecem suporte a esse recurso.
+>A infraestrutura do Adobe Commerce na nuvem _não_ oferece suporte a esse recurso.
 
-A variável `ResourceConnections` A classe fornece a conexão unificada do banco de dados MySQL com o aplicativo do Commerce. Para consultas aos bancos de dados mestres, implementamos o padrão de banco de dados Command Query Responsibility Segregation (CQRS). Esse padrão lida com a lógica do roteamento de consultas de leitura e gravação para os bancos de dados apropriados. Os desenvolvedores não precisam saber qual configuração está sendo usada e não há conexões separadas de banco de dados de leitura e gravação.
+A classe `ResourceConnections` fornece a conexão de banco de dados MySQL unificada com o aplicativo Commerce. Para consultas aos bancos de dados mestres, implementamos o padrão de banco de dados Command Query Responsibility Segregation (CQRS). Esse padrão lida com a lógica do roteamento de consultas de leitura e gravação para os bancos de dados apropriados. Os desenvolvedores não precisam saber qual configuração está sendo usada e não há conexões separadas de banco de dados de leitura e gravação.
 
 Se você configurar a replicação opcional do banco de dados, obterá as seguintes vantagens:
 
@@ -44,7 +44,7 @@ O Adobe Commerce usa três bancos de dados mestre e um número configurável de 
 
 ## Opções de configuração
 
-Devido ao modo como a solução de desempenho de banco de dados dividido é projetada, o código personalizado e os componentes instalados _não é possível_ execute um dos procedimentos a seguir:
+Devido ao modo como a solução de desempenho de banco de dados dividido foi criada, o código personalizado e os componentes instalados _não podem_ executar um dos seguintes procedimentos:
 
 - Gravar diretamente no banco de dados (em vez disso, você deve usar a interface de banco de dados do Adobe Commerce)
 - Usar JOINs que afetam os bancos de dados de vendas ou cotação
@@ -60,27 +60,27 @@ Devido ao modo como a solução de desempenho de banco de dados dividido é proj
 
 Isso também significa que você pode:
 
-- Configurar a solução de banco de dados dividido _antes_ colocar o Commerce em produção.
+- Configure a solução de banco de dados dividido _antes_ de colocar o Commerce em produção.
 
   A Adobe recomenda configurar bancos de dados divididos assim que possível após a instalação do software Commerce.
 
 - [Configurar manualmente](multi-master-manual.md) a solução de banco de dados dividido.
 
-  Execute essa tarefa se já tiver instalado componentes ou se o Commerce já estiver em produção. (_Não_ atualizar um sistema de produção; fazer as atualizações em um sistema de desenvolvimento e sincronizar as alterações depois de testá-las.)
+  Execute essa tarefa se já tiver instalado componentes ou se o Commerce já estiver em produção. (_Não_ atualize um sistema de produção; faça as atualizações em um sistema de desenvolvimento e sincronize as alterações depois de testá-las.)
 
   >[!WARNING]
   >
-  >Você deve fazer backup das duas instâncias adicionais do banco de dados manualmente. O Commerce faz backup somente da instância do banco de dados principal. A variável [`magento setup:backup --db`](../../installation/tutorials/backup.md) O comando e as opções de Admin não fazem backup das tabelas adicionais.
+  >Você deve fazer backup das duas instâncias adicionais do banco de dados manualmente. O Commerce faz backup somente da instância do banco de dados principal. O comando [`magento setup:backup --db`](../../installation/tutorials/backup.md) e as opções de Admin não fazem backup das tabelas adicionais.
 
 ## Pré-requisitos
 
-O banco de dados dividido requer que você configure três bancos de dados mestre MySQL em qualquer host (todos os três no servidor Commerce, cada banco de dados em um servidor separado e assim por diante). Estas são as _master_ bancos de dados e são usados da seguinte maneira:
+O banco de dados dividido requer que você configure três bancos de dados mestre MySQL em qualquer host (todos os três no servidor Commerce, cada banco de dados em um servidor separado e assim por diante). Estes são os bancos de dados _mestre_ e são usados da seguinte maneira:
 
 - Um banco de dados mestre para tabelas de check-out
-- Um banco de dados mestre para tabelas de vendas (também conhecido como _Sistema do Order Management_ ou _OMS_, tabelas)
+- Um banco de dados mestre para tabelas de vendas (também conhecido como _Sistema Order Management_ ou _OMS_, tabelas)
 - Um banco de dados mestre para o restante das tabelas de aplicativos do Commerce 2
 
-Além disso, você pode, opcionalmente, configurar qualquer número de _slave_ bancos de dados que servem como balanceadores de carga e backups.
+Além disso, você pode, opcionalmente, configurar qualquer número de bancos de dados _escravos_ que sirvam como backups e balanceadores de carga.
 
 Este guia discute como configurar somente os bancos de dados mestres. Fornecemos exemplos de configurações e referências para que você possa configurar bancos de dados subordinados, se desejar.
 

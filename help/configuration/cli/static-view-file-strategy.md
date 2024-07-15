@@ -5,7 +5,7 @@ feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Ao implantar arquivos de visualização estáticos, você pode escolher uma das três estratégias disponíveis. Cada uma delas fornece resultados ideais de implantação para diferentes casos de uso:
 
-- [Padrão](#standard-strategy): o processo de implantação regular.
-- [Rápida](#quick-strategy) (_padrão_): minimiza o tempo necessário para a implantação quando os arquivos de mais de uma localidade são implantados.
+- [Standard](#standard-strategy): o processo de implantação normal.
+- [Rápido](#quick-strategy) (_padrão_): minimiza o tempo necessário para implantação quando os arquivos de mais de uma localidade são implantados.
 - [Compacto](#compact-strategy): minimiza o espaço ocupado pelos arquivos de exibição publicados.
 
 As seções a seguir descrevem os detalhes e os recursos de implementação de cada estratégia.
 
 ## Estratégia padrão
 
-Quando a estratégia Padrão é usada, todos os arquivos de exibição estáticos de todos os pacotes são implantados, ou seja, processados pelo [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
+Quando a estratégia Padrão é usada, todos os arquivos de exibição estáticos de todos os pacotes são implantados, ou seja, processados por [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
 
 Para obter mais informações, consulte [Implantar arquivos de exibição estáticos](../cli/static-view-file-deployment.md).
 
@@ -38,15 +38,15 @@ A estratégia rápida executa as seguintes ações:
 
 >[!INFO]
 >
->Por _semelhante_ Refere-se aos arquivos que não dependem do local, tema ou área. Esses arquivos podem incluir CSS, imagens e fontes.
+>Por _semelhante_, queremos dizer arquivos que são independentes da localidade, tema ou área. Esses arquivos podem incluir CSS, imagens e fontes.
 
 Essa abordagem minimiza o tempo de implantação necessário para várias localidades, embora muitos arquivos sejam duplicados.
 
 ## Estratégia compacta
 
-A estratégia compacta evita a duplicação de arquivos armazenando arquivos semelhantes em `base` subdiretórios.
+A estratégia compacta evita a duplicação de arquivos armazenando arquivos semelhantes em subdiretórios `base`.
 
-Para o resultado mais otimizado, três escopos para possível similaridade são alocados: área, tema e localidade. A variável `base` subdiretórios são criados para todas as combinações desses escopos.
+Para o resultado mais otimizado, três escopos para possível similaridade são alocados: área, tema e localidade. Os subdiretórios `base` são criados para todas as combinações desses escopos.
 
 Os arquivos são implantados nesses subdiretórios de acordo com os padrões a seguir.
 
@@ -66,9 +66,9 @@ A abordagem de implantação usada na estratégia compacta significa que os arqu
 - `map.php`
 - `requirejs-map.js`
 
-A variável `map.php` o arquivo é usado por [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) para criar URLs corretos.
+O arquivo `map.php` é usado por [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) para criar URLs corretas.
 
-A variável `requirejs-map.js` é usado pelo `baseUrlResolver` para RequireJS.
+O `requirejs-map.js` é usado pelo plug-in `baseUrlResolver` para RequireJS.
 
 Exemplo de `map.php`:
 
@@ -101,6 +101,6 @@ require.config({
 
 ## Dicas para desenvolvedores de extensão
 
-Para criar URLs para arquivos de visualização estáticos, use [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
+Para criar URLs para arquivos de exibição estáticos, use [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
 
 Não use concatenações de URL para evitar problemas com arquivos estáticos que não são encontrados e exibidos durante a renderização da página.

@@ -1,15 +1,15 @@
 ---
-title: Estratégia de comércio
+title: Estratégia do Commerce
 description: Desbloqueie os principais recursos de comércio eletrônico usando nossa estrutura de estratégia sugerida.
 exl-id: 0efb424b-9026-439d-a50c-d2d935c07c8c
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# Estratégia de comércio
+# Estratégia do Commerce
 
 O comércio digital é uma força em rápida evolução que evolui rapidamente a cada ano. Embora isso possa ser empolgante para os indivíduos, também traz muitos desafios para as organizações que tentam navegar pela paisagem que é o comércio eletrônico.
 
@@ -79,4 +79,4 @@ A lista a seguir inclui os principais objetivos a serem considerados ao planejar
 
 Consulte o diagrama a seguir para obter uma estrutura de estratégia de comércio eletrônico sugerida:
 
-![Diagrama de estrutura da estratégia de comércio](../../assets/playbooks/commerce-strategy-framework.png)
+![Diagrama da estrutura estratégica do Commerce](../../assets/playbooks/commerce-strategy-framework.png)

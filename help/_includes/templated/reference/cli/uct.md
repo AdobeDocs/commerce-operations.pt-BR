@@ -12,14 +12,14 @@ ht-degree: 0%
 <!-- The template to render with above values -->
 **Versão**: 3.0.17
 
-Esta referência contém 9 comandos disponíveis através do `bin/uct` ferramenta de linha de comando.
-A lista inicial é gerada automaticamente usando o `bin/uct list` comando no Adobe Commerce.
+Esta referência contém 9 comandos disponíveis através da ferramenta de linha de comando `bin/uct`.
+A lista inicial é gerada automaticamente usando o comando `bin/uct list` na Adobe Commerce.
 
 Saiba mais sobre a ferramenta em [Visão geral](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
 >[!NOTE]
 >
->Essa referência é gerada a partir da base de código do aplicativo. Para alterar o conteúdo, você pode atualizar o código-fonte para a implementação do comando correspondente no [codebase](https://github.com/magento) repositório e enviar suas alterações para revisão. Outra maneira é _Envie seus comentários_ (localize o link no canto superior direito). Para obter diretrizes de contribuição, consulte [Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Essa referência é gerada a partir da base de código do aplicativo. Para alterar o conteúdo, você pode atualizar o código-fonte para a implementação de comando correspondente no repositório [codebase](https://github.com/magento) e enviar suas alterações para revisão. Outra maneira é _Fornecer comentários_ (localizar o link no canto superior direito). Para obter as diretrizes de contribuição, consulte [Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 

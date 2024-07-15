@@ -25,15 +25,15 @@ Quando o programa de patch é executado, esse arquivo é lido e as alterações 
 
 Há três tipos de patches:
 
-- **Hotfixes**—Patches que o Adobe publica no [Central de segurança](https://magento.com/security/patches).
-- **Patches individuais**—Patches criados e distribuídos pelo suporte da Adobe Commerce individualmente.
-- **Patches personalizados**—Patches não oficiais que podem ser criados a partir de uma confirmação do Git.
+- **Hotfixes**—Patches que o Adobe publica na [Central de Segurança](https://magento.com/security/patches).
+- **Patches individuais** — Patches criados e distribuídos individualmente pelo Suporte da Adobe Commerce.
+- **Patches personalizados** — Patches não oficiais que você pode criar a partir de uma confirmação do Git.
 
 ## Hotfixes
 
 Hotfixes são patches que contêm correções de segurança ou qualidade de alto impacto que afetam muitos comerciantes. Essas correções são aplicadas à próxima versão de patch da versão secundária aplicável. O Adobe lança hotfixes conforme necessário.
 
-Você pode encontrar hotfixes no [Central de segurança](https://magento.com/security/patches). Siga as instruções na página para baixar o arquivo de patch, dependendo da sua versão e do tipo de instalação. Use o [linha de comando](../patches/apply.md#) ou [Compositor](../patches/apply.md) para aplicar patches de hot fix.
+Você pode encontrar hotfixes na [Central de Segurança](https://magento.com/security/patches). Siga as instruções na página para baixar o arquivo de patch, dependendo da sua versão e do tipo de instalação. Use a [linha de comando](../patches/apply.md#) ou o [Composer](../patches/apply.md) para aplicar patches de hot fix.
 
 >[!NOTE]
 >
@@ -51,25 +51,25 @@ Use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/com
 
 ## Patches personalizados
 
-Às vezes demora um pouco para a Equipe de engenharia de Adobe incluir uma correção de erro feita no GitHub em uma versão do Adobe Commerce Composer. Enquanto isso, você pode criar um patch do GitHub e usar o [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) para aplicá-lo à sua instalação baseada no Composer.
+Às vezes demora um pouco para a Equipe de engenharia de Adobe incluir uma correção de erro feita no GitHub em uma versão do Adobe Commerce Composer. Enquanto isso, você pode criar uma correção do GitHub e usar o plug-in [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) para aplicá-la à instalação baseada no Composer.
 
-Use o [linha de comando](apply.md#command-line) ou [Compositor](apply.md#composer) para aplicar patches personalizados.
+Use a [linha de comando](apply.md#command-line) ou o [Composer](apply.md#composer) para aplicar patches personalizados.
 
 Há muitas maneiras de criar arquivos de patch personalizados. O exemplo a seguir se concentra na criação de um patch a partir de uma Git Commit conhecida.
 
 Para criar um patch personalizado:
 
-1. Criar um `patches/composer` no seu projeto local.
-1. Identifique a solicitação de confirmação ou extração do GitHub a ser usada para o patch. Este exemplo usa o [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) confirmação, vinculado ao problema do GitHub [#6474](https://github.com/magento/magento2/issues/6474).
-1. Anexe o `.patch` ou o `.diff` extensões para o URL de confirmação. Uso `.diff` para um tamanho de arquivo menor. Por exemplo: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. Salve a página como um arquivo na `patches/composer` diretório. Por exemplo, `github-issue-6474.diff`.
-1. Editar o arquivo e remover `app/code/<VENDOR>/<PACKAGE>` de todos os caminhos para que sejam relativos ao `vendor/<VENDOR>/<PACKAGE>` diretório.
+1. Crie um diretório `patches/composer` em seu projeto local.
+1. Identifique a solicitação de confirmação ou extração do GitHub a ser usada para o patch. Este exemplo usa a confirmação [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede), vinculada ao problema do GitHub [#6474](https://github.com/magento/magento2/issues/6474).
+1. Anexe as extensões `.patch` ou `.diff` à URL de confirmação. Use `.diff` para um arquivo menor. Por exemplo: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
+1. Salve a página como um arquivo no diretório `patches/composer`. Por exemplo, `github-issue-6474.diff`.
+1. Edite o arquivo e remova `app/code/<VENDOR>/<PACKAGE>` de todos os caminhos para que eles sejam relativos ao diretório `vendor/<VENDOR>/<PACKAGE>`.
 
    >[!NOTE]
    >
    >Os editores de texto que removem automaticamente os espaços em branco à direita ou adicionam novas linhas podem quebrar a correção. Use um editor de texto simples para fazer essas alterações.
 
-O exemplo a seguir mostra o arquivo DIFF mencionado anteriormente após remover todas as instâncias do `app/code/Magento/Payment`:
+O exemplo a seguir mostra o arquivo DIFF mencionado anteriormente após a remoção de todas as instâncias de `app/code/Magento/Payment`:
 
 ```diff
 diff --git a/view/frontend/web/js/view/payment/iframe.js b/view/frontend/web/js/view/payment/iframe.js
@@ -96,4 +96,4 @@ Você pode aplicar patches usando qualquer um dos métodos a seguir:
 
 >[!NOTE]
 >
->Para aplicar um patch a um projeto do Adobe Commerce na infraestrutura em nuvem, consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no _Guia do Commerce na nuvem_.
+>Para aplicar um patch a um projeto do Adobe Commerce na infraestrutura em nuvem, consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no _guia do Commerce na nuvem_.

@@ -23,7 +23,7 @@ Use esta coleção de guias a seguir para saber mais sobre conceitos, processos,
       <img alt="Informações da versão" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/release-notes/overview.md"><strong>Informações da versão</strong></a>
+      <a href="../release/release-notes/overview.md"><strong>Informações sobre a versão</strong></a>
       <p>Revise todas as informações sobre a versão de patches e serviços da Adobe Commerce.</p>
     </div>
   </td>
@@ -41,7 +41,7 @@ Use esta coleção de guias a seguir para saber mais sobre conceitos, processos,
        <img alt="Enterprise" src="../assets/icons/alert-circle.svg" width="40"/>
     </a>
     <div>
-      <a href="../security-and-compliance/overview.md"><strong>Segurança e conformidade</strong></a>
+      <a href="../security-and-compliance/overview.md"><strong>Segurança e Conformidade</strong></a>
       <p>Saiba como os comerciantes do Adobe Commerce são responsáveis pela manutenção de um ambiente seguro.</p>
     </div>
   </td>
@@ -61,7 +61,7 @@ Use esta coleção de guias a seguir para saber mais sobre conceitos, processos,
        <img alt="Operações" src="../assets/icons/refresh.svg" width="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>Playbook operacional</strong></a>
+      <a href="../operational-playbook/overview.md"><strong>Manual operacional</strong></a>
       <p>Saiba como preparar seus negócios operacionalmente para gerenciar um site de comércio eletrônico bem-sucedido.</p>
     </div>
   </td>
@@ -70,7 +70,7 @@ Use esta coleção de guias a seguir para saber mais sobre conceitos, processos,
        <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>Comércio em escala</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong>Commerce em escala</strong></a>
       <p>Saiba como fornecer experiências em escala usando o Adobe Commerce com o Adobe Experience Manager.</p>
     </div>
   </td>

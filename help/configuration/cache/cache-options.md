@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '97'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ O aplicativo Commerce usa um front-end e back-end de cache de baixo nível para 
 
 ## Cache de front-end de baixo nível
 
-O Commerce estende [Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html) implementando [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) cache de front-end.
+O Commerce estende o [Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html) implementando o cache de front-end [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php).
 
 ## Cache de back-end de baixo nível
 
-Em geral, o aplicativo Commerce funciona com qualquer cache de back-end que [Infraestruturas do Zend_ Cache](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) suporta. No entanto, este guia aborda apenas os seguintes caches de back-end de baixo nível:
+Em geral, o aplicativo Commerce funciona com qualquer cache de back-end ao qual o [Zend_Cache Backends](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) ofereça suporte. No entanto, este guia aborda apenas os seguintes caches de back-end de baixo nível:
 
 - [Redis](config-redis.md)
 - [Banco de dados](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)

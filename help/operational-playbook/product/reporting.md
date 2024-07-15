@@ -4,7 +4,7 @@ description: Monitore KPIs, rastreie vendas e meça o sucesso do seu site de com
 exl-id: 7b57c11b-ff32-440f-85bd-6b6d09c522b7
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 O comércio eletrônico se encaixa bem como um caso de uso quando se trata de relatórios e painéis. No comércio eletrônico, tudo está online, o que permite que os varejistas aproveitem o potencial de diferentes ferramentas para coletar dados e analisá-los para melhorar seus processos de negócios, equipes, ofertas de produtos e muito mais.
 
-![Exemplo de painel de relatório](../../assets/playbooks/dashboard-example.png)
+![Exemplo do painel de relatórios](../../assets/playbooks/dashboard-example.png)
 
 Cada empresa tem requisitos de relatórios diferentes. Por exemplo, se você quiser rastrear uma promoção específica, poderá criar um painel específico para ver o progresso da promoção, como quantas pessoas usaram a promoção, quais produtos venderam melhor e assim por diante. Você também pode usar um painel para rastrear atividades diárias no site, tráfego, taxa de conversão, produto mais vendido, produto mais vendido e devoluções.
 
@@ -37,13 +37,13 @@ Há tanta coisa acontecendo em um negócio de comércio eletrônico que pode ser
 
 Os quatro principais relatórios e painéis que as empresas B2B usam incluem:
 
-- **Perfil da empresa**—As empresas B2B precisam rastrear os perfis de clientes para compreender o histórico de compras, os detalhes de pagamento e o canal que usaram para comprar. Esse painel pode ajudar a identificar riscos e problemas em potencial.
+- **Perfil da empresa**—As empresas B2B precisam acompanhar seus perfis de empresas clientes para entender seu histórico de compras, detalhes de pagamento e qual canal eles usaram para comprar. Esse painel pode ajudar a identificar riscos e problemas em potencial.
 
-- **Catálogo**— um relatório de catálogo e um painel ajudam as empresas B2B a visualizar o desempenho de cada produto nos níveis de catálogo, promoções e inventário, o que ajuda a identificar qual tipo de promoção funciona melhor e quais produtos estão sob demanda. Isso ajuda as empresas a aumentar o estoque e a obter uma vantagem competitiva.
+- **Catálogo** — Um relatório de catálogo e um painel ajudam as empresas B2B a visualizar o desempenho de cada produto nos níveis de catálogo, promoções e inventário, o que ajuda a identificar qual tipo de promoção funciona melhor e quais produtos estão sob demanda. Isso ajuda as empresas a aumentar o estoque e a obter uma vantagem competitiva.
 
-- **Aspas**— O modelo de negócios B2B opera em cotações e preços. As empresas B2B devem passar por um processo em que analisam uma cotação para que possam aprová-la ou tentar negociar. Um relatório e um painel de cotações ajudam a melhorar a taxa de conversão de cotações, rastreando a taxa de sucesso, as taxas de concorrência, o desempenho e a retenção geral do cliente.
+- **Cotações** — O modelo de negócios B2B opera em cotações e preços. As empresas B2B devem passar por um processo em que analisam uma cotação para que possam aprová-la ou tentar negociar. Um relatório e um painel de cotações ajudam a melhorar a taxa de conversão de cotações, rastreando a taxa de sucesso, as taxas de concorrência, o desempenho e a retenção geral do cliente.
 
-- **Vendas**— mesmo que as empresas B2B possam trabalhar on-line, um representante de vendas ainda é necessário para fazer as coisas funcionarem em termos de identificação de cotações que precisam de negociação, rastreamento de cotações que estão perto de expirar, rastreamento de contratos que estão prontos para renovação, rastreamento do desempenho da equipe e ajuda a simplificar as atividades comerciais diárias.
+- **Vendas**—Embora as empresas B2B possam trabalhar online, um representante de vendas ainda é necessário para fazer as coisas funcionarem em termos de identificação de cotações que precisam de negociação, rastreamento de cotações que estão perto de expirar, rastreamento de contratos que estão prontos para renovação, rastreamento do desempenho da equipe e ajuda a simplificar as atividades comerciais diárias.
 
 ## Melhor juntos
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Exemplos de arquitetura de referência global
 
-Este tópico descreve maneiras comuns de organizar uma [arquitetura de referência global (GRA)](overview.md) base de código. Embora a [pacotes separados](#option-1-separate-packages) for preferida, algumas situações exigirão uma das outras opções descritas abaixo.
+Este tópico descreve maneiras comuns de organizar uma [base de código da GRA (arquitetura de referência global)](overview.md). Embora a opção [pacotes separados](#option-1-separate-packages) seja preferida, algumas situações exigem uma das outras opções descritas abaixo.
 
 ## Definições
 
@@ -23,11 +23,11 @@ Este tópico descreve maneiras comuns de organizar uma [arquitetura de referênc
 
 ## Opção 1: pacotes separados
 
-Consulte [Estrutura de projeto do compositor](composer/project-structure.md) práticas recomendadas para a configuração desse método.
+Consulte as práticas recomendadas da [estrutura do projeto do Composer](composer/project-structure.md) para configurar este método.
 
 ![Diagrama que ilustra a opção de pacotes separados para a arquitetura de referência global](../../../assets/playbooks/gra-separate-packages.png)
 
-A maneira mais flexível de gerenciar pacotes do GRA Composer é por meio de metapackages. Os metapackages contêm um `composer.json` somente arquivo, que define outras dependências do pacote. Criar metapackages usando [Packagist Particular](https://packagist.com/) repositórios.
+A maneira mais flexível de gerenciar pacotes do GRA Composer é por meio de metapackages. Os metapackages contêm apenas um arquivo `composer.json`, o que define outras dependências de pacote. Crie metapackages usando repositórios [Private Packagist](https://packagist.com/).
 
 ### Projeto principal `composer.json`
 
@@ -82,7 +82,7 @@ A maneira mais flexível de gerenciar pacotes do GRA Composer é por meio de met
 }
 ```
 
-Cada módulo, pacote de idiomas, tema e biblioteca tem seu próprio repositório Git. Cada repositório Git é sincronizado automaticamente com o repositório do Private Packagist e gera um pacote nele, desde que haja uma `composer.json` na raiz do repositório Git.
+Cada módulo, pacote de idiomas, tema e biblioteca tem seu próprio repositório Git. Cada repositório Git é sincronizado automaticamente com o repositório do Private Packagist e gera um pacote nele, desde que haja um arquivo `composer.json` na raiz do repositório Git.
 
 ## Opções 2: pacotes em massa
 
@@ -109,7 +109,7 @@ A estrutura de arquivos dentro do diretório de fornecedor deve ser semelhante a
             └── composer.json
 ```
 
-A variável `composer.json` O arquivo deve ter esta aparência:
+O arquivo `composer.json` deve ter esta aparência:
 
 ```json
 {
@@ -141,13 +141,13 @@ Essa arquitetura usa quatro repositórios Git para armazenar código:
 - `core`: contém a instalação principal do Adobe Commerce. É usado para atualizar versões do Adobe Commerce.
 - `GRA`: contém o código GRA. Todos os módulos GRA, pacotes de idiomas, temas de rótulo branco e bibliotecas.
 - `brand/region`: cada marca ou região tem seu próprio repositório com apenas o código específico da marca ou da região.
-- `release`: todas as opções acima são mescladas com este repositório Git. Somente confirmações de mesclagem são permitidas aqui.
+- `release`: todas as opções acima são mescladas neste repositório Git. Somente confirmações de mesclagem são permitidas aqui.
 
-![Diagrama que ilustra a opção de divisão do Git para a arquitetura de referência global](../../../assets/playbooks/gra-split-git.png)
+![Diagrama que ilustra a opção dividida do Git para a arquitetura de referência global](../../../assets/playbooks/gra-split-git.png)
 
 Para configurar essa opção:
 
-1. Crie os quatro tipos de repositório no Git. Crie o `core` e `GRA` repositórios somente uma vez. Criar um `brand/region` e um `release` repositório para cada marca.
+1. Crie os quatro tipos de repositório no Git. Crie os repositórios `core` e `GRA` apenas uma vez. Crie um repositório `brand/region` e um repositório `release` para cada marca.
 
    Nomes de repositório sugeridos:
 
@@ -156,7 +156,7 @@ Para configurar essa opção:
    - `m2-region-x`/`m2-brand-x` (por exemplo, `m2-emea`/`m2-adobe`)
    - `m2-release-region-x`/`m2-release-brand-x` (por exemplo, `m2-release-emea`/`m2-release-adobe`)
 
-1. Criar um `release/` e execute o seguinte para criar um histórico Git compartilhado para todos os repositórios.
+1. Crie um diretório `release/` e execute o seguinte para criar um histórico Git compartilhado para todos os repositórios.
 
    ```bash
    git init
@@ -181,7 +181,7 @@ Para configurar essa opção:
    git clone git@github.com:example-client/m2-gra.git
    ```
 
-1. [Instalar o Adobe Commerce com o Composer](../../../installation/composer.md). Remova o `.gitignore` arquivo, adicione o `core` remoto, adicione e confirme o código e envie por push.
+1. [Instalar o Adobe Commerce com o Composer](../../../installation/composer.md). Remova o arquivo `.gitignore`, adicione o controle remoto `core`, adicione e confirme o código e envie por push.
 
    ```bash
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition m2-core
@@ -196,18 +196,18 @@ Para configurar essa opção:
    git push
    ```
 
-1. No `GRA` crie os seguintes diretórios:
+1. No repositório `GRA`, crie os seguintes diretórios:
 
    - `app/code/`
    - `app/design/`
    - `app/i18n/`
    - `lib/`
 
-1. Adicionar código. Remova o `.gitignore` adicionar e confirmar o código, adicionar o remoto e enviar.
+1. Adicionar código. Remova o arquivo `.gitignore`, adicione e confirme o código, adicione o remoto e envie por push.
 
-1. No `brand/region` repositório. Faça o mesmo que em `GRA` e lembre-se de que os arquivos devem ser exclusivos. Não é possível incluir o mesmo arquivo neste repositório e na variável `GRA` repositório.
+1. No repositório `brand/region`. Faça o mesmo que no repositório `GRA` e lembre-se de que os arquivos devem ser exclusivos. Você não pode incluir o mesmo arquivo neste repositório e no repositório `GRA`.
 
-1. No `release` repositório, aplique a mesclagem.
+1. No repositório `release`, aplique a mesclagem.
 
    ```bash
    git clone git@github.com:example-client/m2-release-brand-x.git
@@ -220,9 +220,9 @@ Para configurar essa opção:
    git push
    ```
 
-1. Remova o `.gitkeep` arquivo.
+1. Remova o arquivo `.gitkeep`.
 
-1. Implante o `release` para os servidores de produção, teste, controle de qualidade e desenvolvimento. Atualizando `core`, `GRA`, e `brand` o código é tão fácil quanto executar os seguintes comandos:
+1. Implante o repositório do `release` nos servidores de produção, teste, controle de qualidade e desenvolvimento. Atualizar o código `core`, `GRA` e `brand` é tão fácil quanto executar os seguintes comandos:
 
    ```bash
    git fetch --all
@@ -236,13 +236,13 @@ Essa estratégia imita de perto a forma como o repositório Git do Magento Open 
 
 Todo o código é desenvolvido e testado em um único repositório. A automação exibe pacotes desse único repositório, que pode ser instalado em ambientes UAT e de produção usando o Composer.
 
-![Diagrama que ilustra a opção monorepo para a arquitetura de referência global](../../../assets/playbooks/gra-monorepo1.png)
+![Diagrama que ilustra a opção monorepo da arquitetura de referência global](../../../assets/playbooks/gra-monorepo1.png)
 
 A opção monorepo oferece a facilidade de trabalhar em um único repositório, além de fornecer a flexibilidade de compor instâncias com pacotes.
 
 O controle de versão e a destilação de pacotes são feitos por automação, usando Ações do GitHub ou Ações do GitLab.
 
-![Diagrama que ilustra a opção monorepo para a arquitetura de referência global](../../../assets/playbooks/gra-monorepo2.png)
+![Diagrama que ilustra a opção monorepo da arquitetura de referência global](../../../assets/playbooks/gra-monorepo2.png)
 
 Consulte os seguintes recursos para obter mais informações sobre essa automação:
 
@@ -255,15 +255,15 @@ Consulte os seguintes recursos para obter mais informações sobre essa automaç
 
 ## Não misture estratégias
 
-Não é aconselhável usar uma abordagem combinada usando o Composer para pacotes GRA e o `app/` diretório para pacotes de marca ou região.
+Não é aconselhável usar uma abordagem combinada usando o Composer para pacotes GRA e o diretório `app/` para pacotes de marca ou região.
 
-Você não só consegue todos _vantagens_ mas também todas as _desvantagens_ de ambos os métodos. Você deve escolher um ou outro (Git ou Composer) para funcionar de maneira ideal.
+Você não só obtém todas as _vantagens_, mas também todas as _desvantagens_ de ambos os métodos. Você deve escolher um ou outro (Git ou Composer) para funcionar de maneira ideal.
 
 ## Soluções a serem evitadas
 
-- **Convenções de nomenclatura do módulo para significar GRA ou marca**
+- **Convenções de nomenclatura de módulo para significar GRA ou marca**
 
-  A nomenclatura dos módulos para significar GRA ou marca leva à falta de flexibilidade. Em vez disso, use metapackages do Composer para determinar a qual grupo um módulo pertence. Por exemplo, para VF de cliente, pacote `vf/meta-gra` contém referências a todos os pacotes GRA e pode ser instalado usando o `composer require vf/meta-gra` comando. Pacote `vf/meta-kipling` contém referências a todos os pacotes específicos do Kipling e ao `vf/meta-gra` pacote. Os módulos são nomeados `vf/module-sales` e `vf/module-sap` por exemplo. Essa convenção de nomenclatura permite mover pacotes entre o status da marca e do GRA, com baixo impacto.
+  A nomenclatura dos módulos para significar GRA ou marca leva à falta de flexibilidade. Em vez disso, use metapackages do Composer para determinar a qual grupo um módulo pertence. Por exemplo, para o VF do cliente, o pacote `vf/meta-gra` contém referências a todos os pacotes GRA e pode ser instalado usando o comando `composer require vf/meta-gra`. O pacote `vf/meta-kipling` contém referências a todos os pacotes específicos do Kipling e ao pacote `vf/meta-gra`. Os módulos são nomeados como `vf/module-sales` e `vf/module-sap` por exemplo. Essa convenção de nomenclatura permite mover pacotes entre o status da marca e do GRA, com baixo impacto.
 
 - **Atualizações principais do Adobe Commerce por instância**
 

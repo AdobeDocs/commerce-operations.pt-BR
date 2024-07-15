@@ -1,6 +1,6 @@
 ---
-title: A variável [!UICONTROL Indexing] guia
-description: Saiba mais sobre o [!UICONTROL Indexing] guia de [!DNL Observation for Adobe Commerce].
+title: A guia [!UICONTROL Indexing]
+description: Saiba mais sobre a guia [!UICONTROL Indexing] do  [!DNL Observation for Adobe Commerce].
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# A variável [!UICONTROL Indexing] guia
+# A guia [!UICONTROL Indexing]
 
-A variável **[!UICONTROL Indexing]** A guia tenta explicar problemas com a indexação e identificar possíveis causas.
+A guia **[!UICONTROL Indexing]** tenta explicar problemas com a indexação e identificar possíveis causas.
 
 ## [!UICONTROL Core index invalidated]
 
 ![Índice principal invalidado](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
 
-A variável **[!UICONTROL Core index invalidated]** O quadro do verifica a invalidação de indexação em um período selecionado. Se a indexação estiver ocorrendo ao mesmo tempo que outras [!DNL crons], isso colocará uma grande carga nos recursos do site.
+O quadro **[!UICONTROL Core index invalidated]** analisa a invalidação de indexação em um período selecionado. Se a indexação estiver ocorrendo ao mesmo tempo que outros [!DNL crons] de uso intensivo de recursos, isso colocará uma carga pesada sobre os recursos do site.
 
 * `%Catalog Product Rule indexer has been invalidated%`) como `catalog_product_rule_idx_reset`
 * `%Catalog Rule Product indexer has been invalidated%`) como `catalog_rule_product_idx_reset`
@@ -38,7 +38,7 @@ A variável **[!UICONTROL Core index invalidated]** O quadro do verifica a inval
 
 ![Recriações do índice principal](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
 
-A variável **[!UICONTROL Core index rebuilds]** O quadro do verifica as reconstruções do índice principal em um período selecionado. Estas são as cadeias de caracteres analisadas dos logs para indicar a conclusão da reconstrução do índice.
+O quadro **[!UICONTROL Core index rebuilds]** analisa as recompilações do índice principal em um período selecionado. Estas são as cadeias de caracteres analisadas dos logs para indicar a conclusão da reconstrução do índice.
 
 * `%Catalog Product Rule index has been rebuilt%`) como `catalog_product_rule_idx`
 * `%Catalog Rule Product index has been rebuilt%`) como `catalog_rule_product_idx`
@@ -59,10 +59,10 @@ A variável **[!UICONTROL Core index rebuilds]** O quadro do verifica as reconst
 
 ![tabela(s) de índice catalogsearch](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
 
-A variável **[!UICONTROL catalogsearch index table(s)]** o quadro verifica as tabelas de índice catalogsearch em um período selecionado. Esta consulta analisa a duração de quaisquer operações de armazenamento de dados em relação a tabelas com `%catalogsearch%` no nome da tabela.
+O quadro **[!UICONTROL catalogsearch index table(s)]** analisa as tabelas de índice catalogsearch em um período selecionado. Esta consulta está analisando a duração de quaisquer operações de armazenamento de dados em tabelas com `%catalogsearch%` no nome da tabela.
 
 ## [!UICONTROL product index table(s)]
 
 ![tabela(s) de índice de produto](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
-A variável **[!UICONTROL product index table(s)]** O quadro do verifica as tabelas de índice de produto em um período selecionado. Esta consulta analisa a duração de quaisquer operações de armazenamento de dados em relação a tabelas com `%product%` no nome da tabela.
+O quadro **[!UICONTROL product index table(s)]** analisa as tabelas de índice de produto em um período selecionado. Esta consulta está analisando a duração de quaisquer operações de armazenamento de dados em tabelas com `%product%` no nome da tabela.

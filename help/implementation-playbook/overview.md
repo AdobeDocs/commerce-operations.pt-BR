@@ -6,7 +6,7 @@ feature: Best Practices, Cloud, Integration
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '493'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -37,16 +37,16 @@ Embora o sucesso de um projeto de TI dependa muito da experiência e da experiê
 
 A estrutura deste manual segue o ciclo de vida típico de um projeto de implementação do Adobe Commerce. Isso simplifica a navegação neste documento, pois os leitores podem pular imediatamente para a seção relevante de um projeto para todas as informações relevantes.
 
-- **Escopo do projeto**— um detalhamento das principais partes interessadas, processos, cronogramas e requisitos essenciais para as marcas compreenderem e concluírem a implementação bem-sucedida.
+- **Escopo do projeto** — Um detalhamento das principais partes interessadas, processos, linhas do tempo e requisitos que são essenciais para as marcas compreenderem e concluírem a implementação bem-sucedida.
 
-- **Desenvolvimento e controle de qualidade**— uma análise das ferramentas, soluções, processos e metodologias que foram testadas e aperfeiçoadas em várias implementações Adobe Commerce, bem como nossas recomendações para quais soluções são mais adequadas às necessidades e objetivos específicos dos negócios.
+- **Desenvolvimento e controle de qualidade** — uma análise das ferramentas, soluções, processos e metodologias que foram testadas e aperfeiçoadas em várias implementações do Adobe Commerce, bem como nossas recomendações para quais soluções são mais adequadas às necessidades e objetivos específicos dos negócios.
 
-- **Planejamento e governança**— mergulhar na criação de um plano para fornecer uma solução no prazo, dentro do orçamento e que atenda às suas necessidades é fundamental para o sucesso.
+- **Planejamento e governança** — é fundamental para o sucesso um mergulho na criação de um plano para fornecer uma solução no prazo, dentro do orçamento e que atenda às suas necessidades.
 
-- **Arquitetura e integrações**— os recursos, a arquitetura e as integrações que tornam o Adobe Commerce uma das plataformas de comércio eletrônico mais confiáveis e confiáveis do mercado.
+- **Arquitetura e integrações** — Os recursos, a arquitetura e as integrações que tornam a Adobe Commerce uma das plataformas de comércio eletrônico mais confiáveis e confiáveis do mercado.
 
-- **Infraestrutura e implantação**— Indo além na própria plataforma, destacamos a infraestrutura e os ambientes que alimentam a Adobe Commerce, bem como as soluções de software que a tornam uma plataforma tão robusta.
+- **Infraestrutura e implantação**—Mais adiante na própria plataforma, destacamos a infraestrutura e os ambientes que alimentam a Adobe Commerce e as soluções de software que a tornam uma plataforma tão robusta.
 
-- **Processo de lançamento e transição**— as táticas e ações, desde o pré-lançamento até o pós-lançamento, que devem ocorrer para garantir que o site entre em funcionamento e mantenha seu nível de eficácia desde o primeiro dia.
+- **Processo de lançamento e transição** — as táticas e ações, desde o pré-lançamento até o pós-lançamento, que devem ocorrer para garantir que o site entre em funcionamento e mantenha seu nível de eficácia desde o primeiro dia.
 
-- **Suporte e manutenção contínuos**— detalhes sobre a fase de transição e os tipos de modelos e SLAs relacionados a um plano de suporte contínuo para continuar levando sua marca adiante após o lançamento.
+- **Suporte e manutenção contínuos**—Detalhes sobre a fase de transição e os tipos de modelos e SLAs sobre um plano de suporte contínuo para continuar levando sua marca adiante após o lançamento.

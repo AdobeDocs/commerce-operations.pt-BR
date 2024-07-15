@@ -12,9 +12,10 @@ ht-degree: 0%
 
 # Gerenciamento de pedidos
 
-Para novos negócios, os níveis de pedido são baixos e é mais fácil concluir pedidos a um custo mais baixo. No entanto, quando a demanda aumenta as ordens, torna-se difícil lidar com ordens com uma pequena equipe ou por si mesmo a um custo mais baixo. Talvez você precise de uma instalação maior, como um depósito ou mais de um depósito, dependendo da natureza da empresa, que pode ser cara e requer mais equipe. É aqui que o gerenciamento de pedidos entra em cena.
+Para empresas totalmente novas, os níveis de pedido são baixos e é mais fácil
+conclua os pedidos com um custo mais baixo. No entanto, quando a demanda aumenta as ordens, torna-se difícil lidar com ordens com uma pequena equipe ou por si mesmo a um custo mais baixo. Talvez você precise de uma instalação maior, como um depósito ou mais de um depósito, dependendo da natureza da empresa, que pode ser cara e requer mais equipe. É aqui que o gerenciamento de pedidos entra em cena.
 
-O Order Management ajuda a atender às mudanças nos requisitos operacionais para gerenciar demanda, inventário, embalagem e entrega. Integrar um sistema de gerenciamento de pedidos com a plataforma pode ajudar as empresas a atender aos seus requisitos em constante mudança e impulsionar a satisfação do cliente, a retenção do cliente, taxas de conversão mais altas e a fidelidade à marca. Todos esses fatores afetam direta e indiretamente o desempenho e o crescimento da receita de sua empresa.
+O Order Management ajuda a atender às mudanças nos requisitos operacionais para gerenciar demanda, inventário, embalagem e entrega. Integrar um sistema Order Management com a plataforma pode ajudar as empresas a atender aos seus requisitos em constante mudança e impulsionar a satisfação do cliente, a retenção do cliente, taxas de conversão mais altas e a fidelidade à marca. Todos esses fatores afetam direta e indiretamente o desempenho e o crescimento da receita de sua empresa.
 
 Os sistemas de gerenciamento de pedidos ajudam a centralizar todos os dados cruciais em um único sistema, o que fornece uma visão única de todos os fluxos, incluindo pedidos, produtos, clientes, inventário, embalagem, devoluções e pagamentos, para que você possa atender facilmente às expectativas dos clientes.
 
@@ -29,6 +30,6 @@ O gerenciamento de pedidos é essencial em qualquer negócio de comércio eletr�
 - Monitore o retorno para entender por que os retornos estão sendo feitos pelos clientes para que eles possam trabalhar nisso e melhorar
 - Ajuda a entender a experiência geral do cliente se ele estava satisfeito com a compra ou não e como a empresa pode melhorar para atender melhor aos clientes
 
-O sistema correto do Order Management e o uso correto dele podem fazer maravilhas para a organização em termos de receita. Ele economiza tempo e dinheiro, fornece uma visão geral dos diferentes departamentos que estão trabalhando em conjunto e ajuda a prever a demanda da empresa e trabalhar para melhorar a experiência do cliente para aumentar as taxas de conversão.
+O sistema Order Management correto e o uso correto dele podem fazer maravilhas para a organização em termos de receita. Ele economiza tempo e dinheiro, fornece uma visão geral dos diferentes departamentos que estão trabalhando em conjunto e ajuda a prever a demanda da empresa e trabalhar para melhorar a experiência do cliente para aumentar as taxas de conversão.
 
 ![Diagrama do processo de gerenciamento de pedidos](../../assets/playbooks/order-management.png)

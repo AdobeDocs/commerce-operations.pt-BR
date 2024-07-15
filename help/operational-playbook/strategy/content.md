@@ -26,7 +26,7 @@ Esse estágio envolve começar com seu usuário, entender as necessidades dele, 
 
 Esse estágio envolve a criação de conteúdo. Isso inclui criação de conteúdo, criação, edição, produção de ativos e otimização de conteúdo — acessibilidade, SEO, marcação e classificação, terceirização de compras na produção, função de ferramentas e tecnologia de terceiros e reutilização de conteúdo.
 
-### Pós-produção
+### Post-produção
 
 Esse estágio envolve a revisão e avaliação do conteúdo, adaptação e otimização. Isso inclui avaliação de análise, otimização, teste, aprendizado e experiência do usuário.
 
@@ -38,10 +38,10 @@ Quer você esteja gerenciando conteúdo básico da Web ou conteúdo a ser lança
 
 A Adobe Experience Manager combina várias funções de nível de infraestrutura e nível de aplicativo em um único pacote integrado. A oferta aborda:
 
-- **Sites**— crie e forneça rapidamente sites e aplicativos móveis relevantes e atualize o conteúdo a qualquer momento, sem sobrecarregar o departamento de TI.
-- **Assets**— gerencie facilmente imagens, vídeos e outros ativos em todos os canais digitais para fornecer experiências personalizadas ao cliente.
-- **Communities**—Crie comunidades prósperas e conversas envolventes em todas as suas propriedades sociais para que você possa inspirar novos níveis de aprendizado e fidelidade do cliente.
-- **Forms**— integre formulários de nível empresarial aos seus sites e experiências móveis e simplifique a criação de formulários e o preenchimento de transações.
-- **Aplicativos**—Crie e forneça aplicativos móveis com uma solução que preencha a lacuna entre profissionais de marketing e TI para que eles possam atualizar conteúdo facilmente (mesmo após o lançamento).
+- **Sites**—Crie e entregue rapidamente sites e aplicativos móveis relevantes e atualize o conteúdo a qualquer momento sem sobrecarregar o seu departamento de TI.
+- **Assets**—Gerencie facilmente imagens, vídeos e outros ativos em cada canal digital para oferecer experiências personalizadas ao cliente.
+- **Comunidades**—Crie comunidades prósperas e conversas envolventes em todas as suas propriedades sociais para inspirar novos níveis de aprendizado e fidelidade do cliente.
+- **Forms**—Integre formulários de nível empresarial aos seus sites e experiências móveis e simplifique a criação de formulários e a conclusão de transações.
+- **Aplicativos**—Crie e forneça aplicativos móveis com uma solução que preencha a lacuna entre profissionais de marketing e TI, para que os profissionais de marketing possam atualizar conteúdo facilmente (mesmo após a inicialização).
 
 ![Diagrama da estrutura da estratégia de conteúdo](../../assets/playbooks/content-strategy-framework2.png)

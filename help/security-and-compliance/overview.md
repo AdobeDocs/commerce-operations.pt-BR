@@ -15,13 +15,13 @@ Esta seção contém informações sobre segurança, privacidade e conformidade 
 
 ## Segurança
 
-- [Segurança de produto Adobe](https://helpx.adobe.com/security.html): saiba mais sobre os patches mais recentes, atualizações de segurança e práticas recomendadas do Adobe Commerce.
-- [Centro de confiança Adobe](https://www.adobe.com/trust.html): acesse as informações mais recentes disponíveis sobre a integridade operacional, a segurança, a privacidade e a conformidade de todos os serviços em nuvem do Adobe.
-- [Ferramenta de análise do site](../tools/site-wide-analysis-tool/dashboard.md): visualize insights de segurança simplificados sobre o site do Adobe Commerce, incluindo verificações de segurança, serviços de fim de vida útil e recomendações de segurança.
+- [Segurança de produto do Adobe](https://helpx.adobe.com/security.html): saiba mais sobre os patches, atualizações de segurança e práticas recomendadas mais recentes para o Adobe Commerce.
+- [Centro de Confiabilidade do Adobe](https://www.adobe.com/trust.html): acesse as informações mais recentes disponíveis sobre integridade operacional, segurança, privacidade e conformidade de todos os serviços de nuvem do Adobe.
+- [Ferramenta de Análise do Site](../tools/site-wide-analysis-tool/dashboard.md): veja informações de segurança simplificadas sobre o site da Adobe Commerce, incluindo verificações de segurança, serviços do fim da vida útil e recomendações de segurança.
 
 ## Conformidade
 
-Os comerciantes são obrigados a atender às diretrizes do setor para manter um ambiente seguro, requisitos legais em sua jurisdição e práticas recomendadas para o comércio online. Para saber mais de uma perspectiva comercial, consulte a [Política de privacidade da loja](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
+Os comerciantes são obrigados a atender às diretrizes do setor para manter um ambiente seguro, requisitos legais em sua jurisdição e práticas recomendadas para o comércio online. Para saber mais de uma perspectiva comercial, consulte a [Política de Privacidade da Loja](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
 
 Esta documentação de conformidade fornece as informações técnicas para garantir que as instalações do Adobe Commerce cumpram com os requisitos de legislação de privacidade específica. Alguns desses requisitos exigem que os comerciantes concluam um trabalho de desenvolvimento adicional para atingir a conformidade. Consulte os seguintes tópicos para obter detalhes:
 

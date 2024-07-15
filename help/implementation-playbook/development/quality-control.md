@@ -77,7 +77,7 @@ O processo de controle de qualidade no diagrama anterior pode ser descrito resum
   <tr>
     <td></td>
     <td></td>
-    <td>Publicar bugs no sistema de rastreamento de erros (Jira/Redmine/Trello)</td>
+    <td>Erros do Post no sistema de rastreamento de erros (Jira/Redmine/Trello)</td>
     <td>Priorizar/programar testes para alinhar-se ao planejamento do projeto definido pelo PM</td>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ O processo de controle de qualidade no diagrama anterior pode ser descrito resum
 </tbody>
 </table>
 
-Semelhante ao [ferramentas](project-management-tools.md) identificamos para o processo de desenvolvimento, selecionamos algumas soluções e plataformas de escolha que costumamos utilizar para testes de controle de qualidade.
+Semelhante às [ferramentas](project-management-tools.md) identificadas para o processo de desenvolvimento, selecionamos algumas soluções e plataformas de escolha que costumamos utilizar para testes de controle de qualidade.
 
 | Finalidade | Ferramenta |
 |---------------------------|---------------------------------------------------|
@@ -181,7 +181,7 @@ BrowserStack é uma plataforma de teste móvel e da Web em nuvem que permite aos
 
 O Postman é a plataforma de colaboração para o desenvolvimento de API. O Postman simplifica cada etapa da criação de uma API e simplifica a colaboração para que você possa criar APIs melhores.
 
-O SoapUI é um aplicativo de teste de serviço Web de código aberto para SOAP (Simple Object Access Protocol) e REST (Representational State Transfer). Sua funcionalidade abrange inspeção de serviços da Web; invocação, desenvolvimento, simulação e zombaria; teste funcional; teste de carga e conformidade.
+SoapUI é um aplicativo de teste de serviço Web de código aberto para Simple Object Access Protocol (SOAP) e transferências de estado de representação (REST). Sua funcionalidade abrange inspeção de serviços da Web; invocação, desenvolvimento, simulação e zombaria; teste funcional; teste de carga e conformidade.
 
 ## Teste de automação
 

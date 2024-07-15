@@ -16,10 +16,10 @@ Você deve usar a linha de comando para gerenciar módulos e extensões do Adobe
 
 ## Ativar ou desativar um módulo
 
-Para ativar ou desativar um módulo, consulte [Ativar ou desativar módulos](../../installation/tutorials/manage-modules.md).
+Para ativar ou desativar um módulo, consulte [Habilitar ou desabilitar módulos](../../installation/tutorials/manage-modules.md).
 
 ## Desinstalar um módulo
 
 Para desinstalar um módulo, consulte [Desinstalar módulos](../../installation/tutorials/uninstall-modules.md).
 
-Para desinstalar um tema, use o [`theme:uninstall`](../../installation/tutorials/themes.md) comando.
+Para desinstalar um tema, use o comando [`theme:uninstall`](../../installation/tutorials/themes.md).

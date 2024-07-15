@@ -1,52 +1,52 @@
 ---
-title: A variável [!UICONTROL MySQL] guia
-description: Saiba mais sobre o [!UICONTROL MySQL] guia de [!DNL Observation for Adobe Commerce].
+title: A guia [!UICONTROL MySQL]
+description: Saiba mais sobre a guia [!UICONTROL MySQL] do  [!DNL Observation for Adobe Commerce].
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '2030'
+source-wordcount: '1625'
 ht-degree: 0%
 
 ---
 
-# A variável [!UICONTROL MySQL] guia
+# A guia [!UICONTROL MySQL]
 
 ## [!UICONTROL MySQL% free storage by node]
 
-![Armazenamento gratuito MySQL% por nó](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
+Armazenamento livre de ![MySQL% por nó](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
-Muitos problemas são causados pela falta de armazenamento do MySQL no armazenamento atribuído ao MySQL (`datadir` Configuração do MySQL, o padrão é `/data/mysql`) ou o `tmpdir` ficando sem espaço. O padrão `tmpdir` (configuração MySQL) é `/tmp`. A variável **[!UICONTROL MySQL% free storage by node]** o quadro observa o `/, /tmp` (se definido como uma montagem separada) e a variável `/data/mysql` porcentagem de armazenamento livre. A partir do MySQL versão 5.7 (MariaDB versão 10.2), descompactado `tmp` as tabelas são gravadas em um `tmp` tablespace no `/data/mysql` no arquivo (ibtmp1). Por padrão, esse arquivo é expandido automaticamente sem limite. Como é um tablespace, ele não diminuirá de tamanho e será redefinido para 12 MB quando o MySQL for reiniciado.
+Muitos problemas são causados pela falta de armazenamento do MySQL no armazenamento atribuído ao MySQL (`datadir` definição de configuração do MySQL, o padrão é `/data/mysql`) ou pela falta de espaço de `tmpdir`. O padrão `tmpdir` (configuração do MySQL) é `/tmp`. O quadro **[!UICONTROL MySQL% free storage by node]** analisa o `/, /tmp` (se definido como uma montagem separada) e o percentual de `/data/mysql` de armazenamento livre. A partir do MySQL versão 5.7 (MariaDB versão 10.2), as tabelas `tmp` descompactadas são gravadas em um tablespace `tmp` no diretório `/data/mysql` no arquivo (ibtmp1). Por padrão, esse arquivo é expandido automaticamente sem limite. Como é um tablespace, ele não diminuirá de tamanho e será redefinido para 12 MB quando o MySQL for reiniciado.
 
 ## [!UICONTROL MySQL Connections by Node]
 
-![Conexões MySQL por nó](../../assets/tools/observation-for-adobe-commerce/mysql-tab-2.jpg)
+![Conexões MySQL por Nó](../../assets/tools/observation-for-adobe-commerce/mysql-tab-2.jpg)
 
-A variável **[!UICONTROL MySQL Connections by Node]** indica períodos de paralisações do nó do banco de dados ou grandes volumes de conexões.
+O quadro **[!UICONTROL MySQL Connections by Node]** indica períodos de paralisações do nó de banco de dados ou grandes volumes de conexões.
 
 ## [!UICONTROL MySQL Node Summary]
 
-![Resumo de nós do MySQL](../../assets/tools/observation-for-adobe-commerce/mysql-tab-3.jpg)
+![Resumo de Nós do MySQL](../../assets/tools/observation-for-adobe-commerce/mysql-tab-3.jpg)
 
-A variável **[!UICONTROL MySQL Node Summary]** A tabela mostra detalhes do nó do banco de dados, como versão do software e tipo de instância (tamanho).
+A tabela **[!UICONTROL MySQL Node Summary]** mostra detalhes do nó do banco de dados, como versão do software e tipo de instância (tamanho).
 
 ## [!UICONTROL Galera Number of Nodes in cluster]
 
-![Número de nós do cluster](../../assets/tools/observation-for-adobe-commerce/mysql-tab-4.jpg)
+![Número de Nós do Galera no cluster](../../assets/tools/observation-for-adobe-commerce/mysql-tab-4.jpg)
 
-A variável **[!UICONTROL Galera Number of Nodes in cluster]** exibe informações dos logs do MySQL. À medida que os nós ingressam e saem de um cluster, somente as mensagens do período selecionado são exibidas. Se um nó sair do cluster antes do período, nenhuma mensagem existirá durante esse período. Se você suspeitar que o banco de dados pode estar em execução a menos de um nó, expanda o período para um período maior para ver se você pode ver informações adicionais. Se houver informações durante o período de tempo que indiquem menos do que todos os nós na variável [!DNL Galera] cluster, expanda o período para ver se você pode determinar quando o nó deixou o cluster.
+O quadro **[!UICONTROL Galera Number of Nodes in cluster]** exibe informações dos logs do MySQL. À medida que os nós ingressam e saem de um cluster, somente as mensagens do período selecionado são exibidas. Se um nó sair do cluster antes do período, nenhuma mensagem existirá durante esse período. Se você suspeitar que o banco de dados pode estar em execução a menos de um nó, expanda o período para um período maior para ver se você pode ver informações adicionais. Se houver informações durante o período de tempo que indiquem menos do que todos os nós no cluster [!DNL Galera], expanda o período de tempo para ver se você pode determinar quando o nó deixou o cluster.
 
 ## [!UICONTROL MySQL shutdowns and starts]
 
-![O MySQL é encerrado e iniciado](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
+![Desligamentos e inicializações do MySQL](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
 
-A variável **[!UICONTROL MySQL shutdowns and starts]** O quadro detecta quando há um desligamento de um nó. A variável [!DNL Galera] os nós serão removidos e serão removidos automaticamente do [!DNL Galera] nó. Isso normalmente resultará em uma reinicialização do serviço MySQL.
+O quadro **[!UICONTROL MySQL shutdowns and starts]** detecta quando há um desligamento de um nó. Os nós [!DNL Galera] serão removidos e serão removidos automaticamente do nó [!DNL Galera]. Isso normalmente resultará em uma reinicialização do serviço MySQL.
 
 ## [!UICONTROL Galera log]
 
-![Registro de galera](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
+![Log de galera](../../assets/tools/observation-for-adobe-commerce/mysql-tab-6.jpg)
 
-A variável **[!UICONTROL Galera log]** mostra as contagens de sinais específicos dos logs do MySQL relativos a [!DNL Galera] nós, seus estados e as alterações de estado do [!DNL Galera] cluster.
+O quadro **[!UICONTROL Galera log]** mostra as contagens de sinais específicos dos logs do MySQL relativos aos nós [!DNL Galera], seus estados e as alterações de estado do cluster [!DNL Galera].
 
 * &#39;%1047 O WSREP ainda não preparou o nó para uso do aplicativo (%node_not_prep_for_use&#39;)
 * &#39;%\[ERROR\] WSREP: Falha ao ler de: wsrep_sst_xtrabackup-v2%&#39;) como &#39;xtrabackup_read_fail&#39;
@@ -70,15 +70,15 @@ A variável **[!UICONTROL Galera log]** mostra as contagens de sinais específic
 
 ## [!UICONTROL Galera Log by Host]
 
-![Log de Galera por Host](../../assets/tools/observation-for-adobe-commerce/mysql-tab-7.jpg)
+![Log de Galeria por Host](../../assets/tools/observation-for-adobe-commerce/mysql-tab-7.jpg)
 
-A variável **[!UICONTROL Galera Log by Host]** o quadro é igual ao **[!UICONTROL Galera log]** exceto que é dividido por nó para ajudar na solução de problemas.
+O quadro **[!UICONTROL Galera Log by Host]** é igual ao quadro **[!UICONTROL Galera log]**, exceto que é dividido pelo nó para ajudar na solução de problemas.
 
 ## [!UICONTROL Database performance]
 
 ![Desempenho do banco de dados](../../assets/tools/observation-for-adobe-commerce/mysql-tab-8.jpg)
 
-A variável **[!UICONTROL Database performance]** mostra o desempenho do banco de dados durante solicitações específicas. Você pode ver cada métrica clicando nelas nos ícones coloridos abaixo do gráfico. Muitas das métricas chamadas no [Monitorando o Desempenho do Banco de Dados MySQL com o New Relic](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) são encontrados neste quadro.
+O quadro **[!UICONTROL Database performance]** mostra o desempenho do banco de dados durante solicitações específicas. Você pode ver cada métrica clicando nelas nos ícones coloridos abaixo do gráfico. Muitas das métricas chamadas em [Monitorando o Desempenho do Banco de Dados MySQL com o New Relic](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) são encontradas neste quadro.
 
 * average(query.queriesPerSecond)
 * average(query.slowQueriesPerSecond)
@@ -92,21 +92,21 @@ A variável **[!UICONTROL Database performance]** mostra o desempenho do banco d
 
 ![Contagem de Chamadas do Banco de Dados de Transações](../../assets/tools/observation-for-adobe-commerce/mysql-tab-9.jpg)
 
-A variável **[!UICONTROL Transaction Database Call Count]** quadro mostra o número de chamadas de banco de dados feitas por cada faceta de transação. Isso parece ser focado em linhas e não em instruções.
+O quadro **[!UICONTROL Transaction Database Call Count]** mostra o número de chamadas de banco de dados feitas por cada faceta de transação. Isso parece ser focado em linhas e não em instruções.
 
 ## [!UICONTROL Cron_schedule table updates]
 
-![Atualizações de tabela Cron_schedule](../../assets/tools/observation-for-adobe-commerce/mysql-tab-10.jpg)
+![Atualizações da tabela Cron_schedule](../../assets/tools/observation-for-adobe-commerce/mysql-tab-10.jpg)
 
-A variável **[!UICONTROL Cron_schedule table updates]** quadro exibe a duração máxima das atualizações do banco de dados na tabela cron_schedule para o período selecionado.
+O quadro **[!UICONTROL Cron_schedule table updates]** exibe a duração máxima das atualizações do banco de dados na tabela cron_schedule para o período selecionado.
 
 ## [!UICONTROL Slow Query Traces]
 
-![Rastreamentos de Consulta Lentos](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
+![Rastreamentos de Consulta Lenta](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
 
-A variável **[!UICONTROL Slow Query Traces]** quadro exibe a tabela e o tipo de solicitação em que existem rastreamentos de consulta lenta. Um rastreamento de consulta lento é criado para transações de consulta que levam mais de cinco segundos. Importantes para este quadro são as consultas de atualização. Se uma tabela estiver sendo atualizada por `UPDATE`, `DELETE`, e `INSERT` podem bloquear tabelas por um período.
+O quadro **[!UICONTROL Slow Query Traces]** exibe a tabela e o tipo de solicitação em que há rastreamentos de consulta lenta. Um rastreamento de consulta lento é criado para transações de consulta que levam mais de cinco segundos. Importantes para este quadro são as consultas de atualização. Se uma tabela estiver sendo atualizada por instruções `UPDATE`, `DELETE` e `INSERT`, elas podem bloquear tabelas por um período.
 
-Par `SELECT` As instruções podem bloquear linhas se usadas com FOR UPDATE.
+Mesmo instruções `SELECT` podem bloquear linhas se usadas com FOR UPDATE.
 
 ## [!UICONTROL Datastore Operations tables]
 
@@ -116,13 +116,13 @@ Par `SELECT` As instruções podem bloquear linhas se usadas com FOR UPDATE.
 
 ![Alteração na tabela do Cron](../../assets/tools/observation-for-adobe-commerce/mysql-tab-13.jpg)
 
-A variável **[!UICONTROL Cron table change]** frame procura por mensagens de erro &quot;não foi possível adquirir bloqueio para o trabalho cron:&quot;, juntamente com um erro de memória PHP específico e bloqueios envolvendo o `cron_schedule` tabela. Se a variável `cron_schedule` A tabela está bloqueada (por exemplo, por um `DELETE` sendo executada em relação a ela), bloqueará a execução de outros crons.
+O quadro **[!UICONTROL Cron table change]** procura mensagens de erro &quot;não foi possível adquirir bloqueio para o trabalho cron:&quot;, juntamente com um erro de memória de PHP específico e bloqueios envolvendo a tabela `cron_schedule`. Se a tabela `cron_schedule` estiver bloqueada (por exemplo, por uma consulta `DELETE` sendo executada em relação a ela), ela bloqueará a execução de outros crons.
 
 ## [!UICONTROL Deadlocks]
 
 ![Deadlocks](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
 
-A variável **[!UICONTROL Deadlocks]** O quadro analisa as seguintes strings analisadas a partir dos logs do MySQL:
+O quadro **[!UICONTROL Deadlocks]** analisa as seguintes cadeias de caracteres analisadas dos logs do MySQL:
 
 * &#39;%PHP erro fatal: tamanho de memória permitido de &#39;%&#39;) como php_mem_error
 * &#39;%get lock; tente reiniciar a transação; a consulta era: DELETE FROM \`cron_schedule%&#39;) as cron_sched_lock_del
@@ -131,7 +131,7 @@ A variável **[!UICONTROL Deadlocks]** O quadro analisa as seguintes strings ana
 * &#39;% lock para trabalho cron:%&#39;) como &#39;total_cron_lock&#39;
 * &#39;%General error: 1205 Lock wait timeout aded%&#39;) as &#39;sql_1205_lock&#39;
 * &#39;%ERROR 1213 (40001): Deadlock encontrado ao tentar obter lock%&#39;) como &#39;sql_1213_lock&#39;
-* &#39;%SQLSTATE[40001]: falha de serialização: 1213 Deadlock encontrado (%) como &#39;sql_1213_lock2&#39;
+* &#39;%SQLSTATE[40001]: falha de serialização: 1213 Deadlock encontrado%&#39;) como &#39;sql_1213_lock2&#39;
 * &#39;% lock para o trabalho cron: indexer_update_all_views%&#39;) como &#39;lock_indexer_update_all_views&#39;
 * &#39;% lock para o trabalho cron: sales_grid_order_Invoice_async_insert%&#39;) como &#39;lock_sales_grid_order_Invoice_async_insert&#39;,
 * &#39;% lock para o trabalho cron: staging_remove_updates%&#39;) as &#39;lock_staging_remove_updates&#39;
@@ -190,7 +190,7 @@ A variável **[!UICONTROL Deadlocks]** O quadro analisa as seguintes strings ana
 
 ![Estatísticas do BD](../../assets/tools/observation-for-adobe-commerce/mysql-tab-15.jpg)
 
-A variável **[!UICONTROL DB Statistics]** o quadro exibe exclusões, gravações, linhas lidas, atualizações e consultas lentas por segundo.
+O quadro **[!UICONTROL DB Statistics]** exibe exclusões, gravações, linhas lidas, atualizações e consultas lentas por segundo.
 
 ## [!UICONTROL Request frequency]
 
@@ -200,7 +200,7 @@ A variável **[!UICONTROL DB Statistics]** o quadro exibe exclusões, gravaçõe
 
 ![Erros de Banco de Dados](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-A variável **[!UICONTROL Database Errors]** quadro mostra uma variedade de bancos de dados [avisos e erros](https://mariadb.com/kb/en/mariadb-error-codes/):
+O quadro **[!UICONTROL Database Errors]** mostra uma variedade de [avisos e erros](https://mariadb.com/kb/en/mariadb-error-codes/) do banco de dados:
 
 * &#39;%Memory size alocado para a tabela temporária é mais de 20% de innodb_buffer_pool_size%&#39; como &#39;temp_tbl_buff_pool&#39;
 * &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) como &#39;rbr_write_fail&#39;
@@ -208,28 +208,28 @@ A variável **[!UICONTROL Database Errors]** quadro mostra uma variedade de banc
 * &#39;%Número do erro 28%&#39;) como &#39;err_28&#39;
 * &#39;%rollback%&#39;) como &#39;reversão&#39;
 * &#39;%Foreign key constraint falha para a tabela &#39;%&#39;) como &#39;Foreign_key_constraint&#39;
-* &#39;%Error_code: 1114%&#39;) como &#39;sql_1114_full&#39;&#39;%CRITICAL: SQLSTATE[HY000] [2006] O servidor MySQL desapareceu (%) como &quot;sql_went&quot;
-* &#39;%SQLSTATE[HY000] [1040] Muitas conexões (%) como &#39;sql_1040&#39;
-* &#39;%CRÍTICO: SQLSTATE[HY000] [2002]%&#39;) como &#39;sql_2002&#39;
+* &#39;%Error_code: 1114%&#39;) como &#39;sql_1114_full&#39;&#39;%CRITICAL: SQLSTATE[HY000] [2006] (O servidor MySQL desapareceu%&#39;) como &#39;sql_went&#39;
+* &#39;%SQLSTATE[HY000] [1040] Muitas conexões (%)&#39;) como &#39;sql_1040&#39;
+* &#39;%CRITICAL: SQLSTATE[HY000] [2002]%&#39;) como &#39;sql_2002&#39;
 * &#39;%SQLSTATE[08S01]:%&#39;) como &#39;sql_1047&#39;
-* &#39;%[Aviso] Conexão cancelada (%) como &#39;aborted_conn&#39;
+* &#39;%[Aviso] Conexão anulada%&#39;) como &#39;aborted_conn&#39;
 * &#39;%SQLSTATE[23000]: violação de restrição de integridade:%&#39;) como &#39;sql_23000&#39;
 * &#39;%1205 Tempo limite de espera de bloqueio (%1) como &#39;sql_1205&#39;
-* &#39;%SQLSTATE[HY000] [1049] Banco de dados desconhecido (%) como &#39;sql_1049&#39;
-* &#39;%SQLSTATE[42S02]: tabela ou exibição base não encontrada:%&#39;) como &#39;sql_42S02&#39;
+* &#39;%SQLSTATE[HY000] [1049] Banco de dados desconhecido%&#39;) como &#39;sql_1049&#39;
+* &#39;%SQLSTATE[42S02]: Tabela ou exibição base não encontrada:%&#39;) como &#39;sql_42S02&#39;
 * &#39;%General error: 1114%&#39;) as &#39;sql_1114&#39;
 * &#39;%SQLSTATE[40001]%&#39;) como &#39;sql_1213&#39;
-* &#39;%SQLSTATE[42S22]: Coluna não encontrada: 1054 Coluna desconhecida (%) como &#39;sq1_1054&#39;
-* &#39;%SQLSTATE[42000]: Erro de sintaxe ou violação de acesso:%&#39;) como&#39;sql_42000&#39;
+* &#39;%SQLSTATE[42S22]: coluna não encontrada: 1054 Coluna desconhecida%&#39;) como &#39;sq1_1054&#39;
+* &#39;%SQLSTATE[42000]: Erro de sintaxe ou violação de acesso:%&#39;) as&#39;sql_42000&#39;
 * &#39;%SQLSTATE[21000]: violação de cardinalidade:%&#39;) como &#39;sql_1241&#39;
-* &#39;%SQLSTATE[2003]:%&#39;) como &#39;sql_22003&#39;
-* &#39;%SQLSTATE[HY000] [9000] Cliente com endereço IP (%) como &#39;sql_9000&#39;
+* &#39;%SQLSTATE[22003]:%&#39;) como &#39;sql_22003&#39;
+* &#39;%SQLSTATE[HY000] [9000] Cliente com endereço IP%&#39;) como &#39;sql_9000&#39;
 * &#39;%SQLSTATE[HY000]: Erro geral: 2014%&#39;) como &#39;sql_2014&#39;
 * &#39;%1927 Conexão eliminada (%1927) como &#39;sql_1927&#39;
 * &#39;%1062 \[ERRO\] InnoDB:%&#39;) as &#39;sql_1062_e&#39;
-* &#39;%&#39;[Nota] WSREP: Liberando mapa de memória para disco...%&#39;) como &#39;mem_map_flush&#39;
+* &#39;%[Nota] WSREP: liberando mapa de memória para disco...%&#39;) como &#39;mem_map_flush&#39;
 * &#39;%Código de erro interno do MariaDB: 1146%&#39;) como &#39;sql_1146&#39;
-* &#39;%Código de erro interno do MariaDB: 1062%&#39;) como &#39;sql_1062&#39; * &#39;%1062 [Aviso] InnoDB:%&#39;) como &#39;sql_1062_w&#39;
+* &#39;%Internal MariaDB (código de erro: 1062%&#39;) as &#39;sql_1062&#39; * &#39;%1062 [Aviso] InnoDB:%&#39;) as &#39;sql_1062_w&#39;
 * &#39;%Código de erro interno do MariaDB: 1064%&#39;) como &#39;sql_1064&#39;
 * &#39;%InDB: falha de asserção no arquivo &#39;%&#39;) como &#39;assertion_err&#39;
 * &#39;%mysqld_safe Número de processos em execução agora: 0%&#39;) como &#39;mysql_oom&#39;
@@ -245,40 +245,40 @@ A variável **[!UICONTROL Database Errors]** quadro mostra uma variedade de banc
 
 ![Tabela de Erros do BD](../../assets/tools/observation-for-adobe-commerce/mysql-tab-18.jpg)
 
-A variável **[!UICONTROL DB Error Table]** O quadro mostra as mesmas informações que o **[!UICONTROL Database Errors]** quadro, mas você pode vê-lo por nó e em um formato de tabela. Consulte [Códigos de erro do MariaDB](https://mariadb.com/kb/en/mariadb-error-codes/) para obter mais informações.
+O quadro **[!UICONTROL DB Error Table]** mostra as mesmas informações que o quadro **[!UICONTROL Database Errors]**, mas você pode vê-lo por nó e em um formato de tabela. Consulte [Códigos de erro do MariaDB](https://mariadb.com/kb/en/mariadb-error-codes/) para obter mais informações.
 
 ## [!UICONTROL Database Traces]
 
-![Rastreamentos de Banco de Dados](../../assets/tools/observation-for-adobe-commerce/mysql-tab-19.jpg)
+![Rastreamentos do Banco de Dados](../../assets/tools/observation-for-adobe-commerce/mysql-tab-19.jpg)
 
-A variável **[!UICONTROL Database Traces]** O quadro mostra os rastreamentos do banco de dados por tipo na linha do tempo selecionada.
+O quadro **[!UICONTROL Database Traces]** mostra os rastreamentos do banco de dados por tipo na linha do tempo selecionada.
 
 ## [!UICONTROL Database processes]
 
-![Processos de banco de dados](../../assets/tools/observation-for-adobe-commerce/mysql-tab-20.jpg)
+![Processos do banco de dados](../../assets/tools/observation-for-adobe-commerce/mysql-tab-20.jpg)
 
-A variável **[!UICONTROL Database processes]** O quadro mostra os processos de banco de dados, ambientes e identificadores de nó.
+O quadro **[!UICONTROL Database processes]** mostra os processos de banco de dados, ambientes e identificadores de nó.
 
 ## [!UICONTROL MySQL Non-Sleeping Threads by Node]
 
-![Threads Não Suspensas do MySQL por Nó](../../assets/tools/observation-for-adobe-commerce/mysql-tab-21.jpg)
+![MySQL Non-Sleeping Threads por Nó](../../assets/tools/observation-for-adobe-commerce/mysql-tab-21.jpg)
 
-A variável **[!UICONTROL MySQL Non-Sleeping Threads by Node]** mostra as threads de conexão com o banco de dados. Este quadro mostra as threads ativas.
+O quadro **[!UICONTROL MySQL Non-Sleeping Threads by Node]** mostra as threads de conexão com o banco de dados. Este quadro mostra as threads ativas.
 
 ## [!UICONTROL MySQL Running and Sleeping Threads by environment]
 
-![MySQL em execução e threads suspensos por ambiente](../../assets/tools/observation-for-adobe-commerce/mysql-tab-22.jpg)
+![MySQL Executando e Suspendendo Threads por ambiente](../../assets/tools/observation-for-adobe-commerce/mysql-tab-22.jpg)
 
-A variável **[!UICONTROL MySQL Running and Sleeping Threads by environment]** O quadro mostra conexões ativas e em repouso com o banco de dados. Se houver conexões com o banco de dados em que as consultas lentas entraram em suspensão, haverá conexões em suspensão. As conexões em suspensão podem ser consultas de banco de dados bloqueadas por linhas ou tabelas bloqueadas. Estas conexões em repouso também contêm conexões de trabalho do PHP.
+O quadro **[!UICONTROL MySQL Running and Sleeping Threads by environment]** mostra conexões ativas e inativas com o banco de dados. Se houver conexões com o banco de dados em que as consultas lentas entraram em suspensão, haverá conexões em suspensão. As conexões em suspensão podem ser consultas de banco de dados bloqueadas por linhas ou tabelas bloqueadas. Estas conexões em repouso também contêm conexões de trabalho do PHP.
 
 ## [!UICONTROL MySQL mem used by node]
 
-![Mem MySQL usada pelo nó](../../assets/tools/observation-for-adobe-commerce/mysql-tab-23.jpg)
+![Memória MySQL usada pelo nó](../../assets/tools/observation-for-adobe-commerce/mysql-tab-23.jpg)
 
-A variável **[!UICONTROL MySQL mem used by node]** O quadro mostra o uso de memória do nó pelo MySQL. Em sites maiores, esse quadro pode ser barras contínuas com GBs de memória usados.
+O quadro **[!UICONTROL MySQL mem used by node]** mostra o uso de memória do nó pelo MySQL. Em sites maiores, esse quadro pode ser barras contínuas com GBs de memória usados.
 
 ## [!UICONTROL Database mysql-slow.log]
 
 ![Banco de dados mysql-slow.log](../../assets/tools/observation-for-adobe-commerce/mysql-tab-24.jpg)
 
-A variável **[!UICONTROL Database mysql-slow.log]** quadro mostra os tipos de instrução de consulta que estavam no `mysql-slow.log` arquivo no período selecionado.
+O quadro **[!UICONTROL Database mysql-slow.log]** mostra os tipos de instrução de consulta que estavam no arquivo `mysql-slow.log` durante o período selecionado.

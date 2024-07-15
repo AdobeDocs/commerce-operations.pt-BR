@@ -18,7 +18,7 @@ Embora a otimização de desempenho possa vir de muitos aspectos, há algumas re
 
 >[!TIP]
 >
->Consulte a [_Guia de práticas recomendadas de desempenho_](../../../performance/overview.md) para obter mais informações sobre a otimização do desempenho.
+>Consulte o [_Guia de Práticas Recomendadas de Desempenho_](../../../performance/overview.md) para obter mais informações sobre a otimização do desempenho.
 
 ## Infraestrutura
 
@@ -58,11 +58,11 @@ N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
 
 A otimização dessas configurações depende dos resultados do teste de desempenho para projetos diferentes.
 
-- **ByteCode**—Para obter a velocidade máxima do Adobe Commerce no PHP 7, você deve ativar o `opcache` módulo e o configure adequadamente.
+- **ByteCode**—Para obter a velocidade máxima do Adobe Commerce no PHP 7, você deve ativar o módulo `opcache` e configurá-lo corretamente.
 
-- **APCU**—Adobe recomenda ativar a extensão PHP APCu e configurar o Composer para otimizar o desempenho máximo. Essa extensão armazena em cache locais de arquivos abertos, o que aumenta o desempenho de chamadas de servidor do Adobe Commerce, incluindo páginas, chamadas de Ajax e pontos de extremidade.
+- **APCU**—O Adobe recomenda habilitar a extensão PHP APCu e configurar o Composer para otimizar o desempenho máximo. Essa extensão armazena em cache locais de arquivos abertos, o que aumenta o desempenho de chamadas de servidor do Adobe Commerce, incluindo páginas, chamadas de Ajax e pontos de extremidade.
 
-- **Realpath_cacheconfiguration**—Otimização `realpath_cache` permite que processos PHP armazenem em cache caminhos para arquivos em vez de pesquisá-los sempre que uma página é carregada.
+- **Realpath_cacheconfiguration**—A otimização de `realpath_cache` permite que processos PHP armazenem em cache caminhos para arquivos, em vez de pesquisá-los sempre que uma página for carregada.
 
 ### Servidor da Web
 
@@ -80,7 +80,7 @@ Este documento não fornece instruções detalhadas de ajuste do MySQL porque ca
 
 O banco de dados do Adobe Commerce (e qualquer outro banco de dados) é sensível à quantidade de memória disponível para armazenar dados e índices. Para usar efetivamente a indexação de dados MySQL, a quantidade de memória disponível deve ser, no mínimo, próxima à metade do tamanho dos dados armazenados no banco de dados.
 
-Otimize o `innodb_buffer_pool_instances` configuração para evitar problemas com várias threads tentando acessar a mesma instância. O valor de `max_connections` deve estar correlacionado com o número total de threads do PHP configurados no servidor de aplicativo. Use a seguinte fórmula para calcular o melhor valor para `innodb-thread-concurrency`:
+Otimize a configuração `innodb_buffer_pool_instances` para evitar problemas com várias threads tentando acessar a mesma instância. O valor do parâmetro `max_connections` deve correlacionar-se com o número total de threads do PHP configurados no servidor de aplicativos. Use a seguinte fórmula para calcular o melhor valor para `innodb-thread-concurrency`:
 
 ```
 innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
@@ -94,7 +94,7 @@ Os Redis devem ter memória suficiente alocada para armazenar todos os outros ca
 
 ### Armazenamento em cache de páginas
 
-A Adobe recomenda o uso de verniz para o cache de página inteira na loja da Adobe Commerce. A variável `PageCache` O módulo ainda está presente na base de código, mas deve ser usado somente para fins de desenvolvimento.
+A Adobe recomenda o uso de verniz para o cache de página inteira na loja da Adobe Commerce. O módulo `PageCache` ainda está presente na base de código, mas deve ser usado somente para fins de desenvolvimento.
 
 Instale o Varnish em um servidor separado na frente da camada da Web. Ele deve aceitar todas as solicitações recebidas e fornecer cópias de página em cache. Para permitir que o Verniz funcione de maneira eficaz com páginas seguras, um proxy de terminação SSL pode ser colocado na frente do Verniz. O Nginx pode ser usado para essa finalidade.
 
@@ -102,7 +102,7 @@ Embora a invalidação da memória cache de página inteira do Varnish seja efic
 
 ### Filas de mensagens
 
-O Message Queue Framework (MQF) é um sistema que permite que um módulo publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona. O Adobe Commerce oferece suporte [!DNL RabbitMQ] como o agente de mensagens, que fornece uma plataforma escalável para enviar e receber mensagens.
+O Message Queue Framework (MQF) é um sistema que permite que um módulo publique mensagens em filas. Também define os consumidores que recebem as mensagens de forma assíncrona. O Adobe Commerce oferece suporte a [!DNL RabbitMQ] como agente de mensagens, o que fornece uma plataforma escalável para enviar e receber mensagens.
 
 ### Teste e monitoramento de desempenho
 
@@ -122,11 +122,11 @@ Além das recomendações comuns de otimização de infraestrutura mencionadas a
 
 ### Arquitetura headless
 
-Há uma seção separada dedicada ao [headless](../../architecture/enterprise-blueprint.md#headless-storefront). Em resumo, ela separa a camada da loja da própria plataforma. Ainda é o mesmo back-end, mas o Adobe Commerce não processa mais solicitações diretamente e, em vez disso, oferece suporte somente a vitrines personalizadas por meio da API do GraphQL.
+Há uma seção separada dedicada a [headless](../../architecture/enterprise-blueprint.md#headless-storefront). Em resumo, ela separa a camada da loja da própria plataforma. Ainda é o mesmo back-end, mas o Adobe Commerce não processa mais solicitações diretamente e, em vez disso, oferece suporte somente a vitrines personalizadas por meio da API do GraphQL.
 
 ### Manter o Adobe Commerce atualizado
 
-O Adobe Commerce sempre tem melhor desempenho ao executar a versão mais recente. Mesmo que não seja possível manter o Adobe Commerce atualizado após cada lançamento de uma nova versão, ainda é recomendável [atualização](../../../upgrade/overview.md) quando a Adobe Commerce apresenta otimizações significativas de desempenho.
+O Adobe Commerce sempre tem melhor desempenho ao executar a versão mais recente. Mesmo que não seja possível manter o Adobe Commerce atualizado após cada lançamento de uma nova versão, ainda é recomendável [atualizar](../../../upgrade/overview.md) quando o Adobe Commerce introduz otimizações significativas de desempenho.
 
 Por exemplo, em 2020, o Adobe lançou uma otimização para a camada Redis, corrigindo muitas ineficiências, problemas de conexão e transferência de dados desnecessários entre o Redis e o Adobe Commerce. O desempenho geral entre as versões 2.3 e 2.4 é noturno e diurno e forneceu melhorias significativas no carrinho, checkout e usuários simultâneos, apenas por causa da otimização do Redis.
 

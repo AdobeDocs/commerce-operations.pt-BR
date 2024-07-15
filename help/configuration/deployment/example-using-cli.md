@@ -4,7 +4,7 @@ description: Veja um exemplo de como definir valores compartilhados, específico
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -12,21 +12,21 @@ ht-degree: 0%
 # Exemplo usando comandos CLI
 
 Esse exemplo mostra como definir valores compartilhados, específicos do sistema e confidenciais no sistema de desenvolvimento e, em seguida, implantar esses valores no sistema de produção.
-Isso é feito usando uma combinação de configurações compartilhadas, a variável `config.php` e o comando da CLI do Commerce.
+Isso é feito usando uma combinação de configurações compartilhadas, o arquivo `config.php` e o comando da CLI do Commerce.
 
 Este exemplo usa as seguintes definições de configuração:
 
-- **Número De Iva** e **Nome do armazenamento** para as definições de configuração compartilhadas.
+- **Número Vat** e **Nome do Repositório** para as definições de configuração compartilhadas.
 
   Eles são encontrados em **Lojas** > Configurações > **Configuração** > Geral > **Geral**.
 
-- **Enviar Emails Para** para o valor de configuração confidencial.
+- **Enviar Emails para** sobre o valor de configuração confidencial.
 
-  Isso é encontrado em **Lojas** > Configurações > **Configuração** > Geral > **Contatos**.
+  Isto é encontrado em **Lojas** > Configurações > **Configuração** > Geral > **Contatos**.
 
 - **Domínio de email padrão** para o valor de configuração específico do sistema.
 
-  Isso é encontrado em **Lojas** > Configurações > **Configuração** > Clientes > **Configuração do cliente** > **Criar novas opções de conta**.
+  Isso é encontrado em **Lojas** > Configurações > **Configuração** > Clientes > **Configuração do Cliente** > **Criar Novas Opções de Conta**.
 
 Você pode usar o mesmo procedimento mostrado neste exemplo para definir qualquer configuração nas seguintes referências:
 
@@ -47,7 +47,7 @@ Para os fins deste exemplo, pressupomos o seguinte:
 
 - Você usa o controle de origem do Git
 - O sistema de desenvolvimento está disponível em um repositório remoto Git chamado `mconfig`
-- Sua ramificação de trabalho Git é chamada de `m2.2_deploy`
+- Sua ramificação de trabalho Git é chamada `m2.2_deploy`
 
 ## Etapa 1: definir a configuração no sistema de desenvolvimento
 
@@ -55,27 +55,27 @@ Para definir o local padrão e as unidades de peso no sistema de desenvolvimento
 
 1. Faça logon no Administrador.
 1. Clique em **Lojas** > Configurações > **Configuração** > Geral > **Geral**.
-1. Se você tiver mais de um site disponível, use o **Exibição da loja** no canto superior esquerdo para alternar para um site diferente, como mostra a figura a seguir.
+1. Se você tiver mais de um site disponível, use a lista **Exibição da Loja** no canto superior esquerdo para alternar para um site diferente, como mostra a figura a seguir.
 
    ![Alternar sites](../../assets/configuration/split-deploy-switch-website.png)
 
-1. No painel direito, expanda **Armazenar informações**.
-1. Se necessário, limpe a **Usar padrão** ao lado da caixa de seleção **Número IVA** e **Nome do armazenamento** campos.
+1. No painel direito, expanda **Armazenar Informações**.
+1. Se necessário, desmarque a caixa de seleção **Usar padrão** ao lado dos campos **Número VAT** e **Nome do Repositório**.
 1. Insira um número no campo (por exemplo, `12345`).
-1. No **Nome do armazenamento** insira um valor (como `My Store`).
+1. No campo **Nome do Repositório**, insira um valor (como `My Store`).
 1. Clique em **Salvar configuração**.
 1. Na navegação à esquerda, em Geral, clique em **Contatos**.
 1. No painel direito, expanda **Opções de email**.
-1. Se necessário, limpe a **Usar padrão** ao lado da caixa de seleção **Enviar Emails Para** campo.
+1. Se necessário, desmarque a caixa de seleção **Usar padrão** ao lado do campo **Enviar emails para**.
 1. Insira um endereço de email no campo.
 1. Clique em **Salvar configuração**.
-1. Use o **Exibição da loja** para selecionar o **Configuração padrão** como mostra a figura a seguir.
+1. Use a lista **Exibição de Loja** para selecionar a **Configuração Padrão**, conforme mostrado na figura a seguir.
 
    ![Alternar para a configuração padrão](../../assets/configuration/split-deploy-default-config.png)
 
-1. No painel esquerdo, clique em Clientes > **Configuração do cliente**.
-1. No painel direito, expanda **Criar novas opções de conta**.
-1. Se necessário, limpe a **Usar valor do sistema** ao lado da caixa de seleção **Domínio de email padrão** campo.
+1. No painel esquerdo, clique em Clientes > **Configuração do Cliente**.
+1. No painel direito, expanda **Criar Novas Opções de Conta**.
+1. Se necessário, desmarque a caixa de seleção **Usar valor do sistema** ao lado do campo **Domínio de email padrão**.
 1. Insira um nome de domínio no campo.
 1. Clique em **Salvar configuração**.
 1. Se solicitado, limpe o cache.
@@ -86,7 +86,7 @@ Agora que você alterou a configuração no Admin, grave a configuração compar
 
 {{$include /help/_includes/config-save-config.md}}
 
-Mesmo que `app/etc/env.php` (a configuração específica do sistema) foi atualizada, não faça check-in dela no controle de origem.
+Mesmo que `app/etc/env.php` (a configuração específica do sistema) tenha sido atualizada, não faça o check-in dela no controle de origem.
 Você criará as mesmas configurações no sistema de produção posteriormente neste procedimento.
 
 ## Etapa 3: atualizar o sistema de compilação e gerar arquivos
@@ -108,11 +108,11 @@ Para definir as configurações confidenciais e específicas do sistema usando v
 
 - Escopo para cada configuração
 
-  Se você seguiu as instruções da Etapa 1, o escopo para **Enviar Emails Para** é o site e o escopo para **Domínio de email padrão** é global (ou seja, o escopo de Configuração padrão).
+  Se você seguir as instruções da Etapa 1, o escopo de **Enviar Emails para** será o site e o escopo de **Domínio de Email Padrão** será global (isto é, o escopo de Configuração Padrão).
 
-  É necessário o código do site para definir a variável **Enviar Emails Para** valor de configuração.
+  Você precisa do código do site para definir o valor de configuração **Enviar Emails para**.
 
-  Para obter mais informações sobre como descobrir esse valor, consulte: [Usar variáveis de ambiente para substituir as definições de configuração](../reference/override-config-settings.md#environment-variables).
+  Para obter mais informações sobre como localizar este valor, consulte: [Usar variáveis de ambiente para substituir as configurações](../reference/override-config-settings.md#environment-variables).
 
 - Caminhos de configuração para as configurações usadas neste exemplo:
 
@@ -121,7 +121,7 @@ Para definir as configurações confidenciais e específicas do sistema usando v
   | Enviar Emails Para | `contact/email/recipient_email` |
   | Domínio de email padrão | `customer/create_account/email_domain` |
 
-  Para todos os caminhos de configuração confidenciais e específicos do sistema, consulte: [Referência de caminhos de configuração sensíveis e específicos do sistema](../reference/config-reference-sens.md).
+  Para todos os caminhos de configuração sensíveis e específicos do sistema, consulte: [Referência a caminhos de configuração sensíveis e específicos do sistema](../reference/config-reference-sens.md).
 
 ### Defina as variáveis usando comandos CLI
 
@@ -130,7 +130,7 @@ Use os seguintes comandos da CLI para definir configurações específicas e con
 - `magento config:set` para configurações específicas do sistema
 - `magento config:sensitive:set` para configurações confidenciais
 
-Para definir as configurações específicas do sistema **Domínio de email padrão**, que está no escopo padrão, use o seguinte comando:
+Para definir a configuração específica do sistema **Domínio de Email Padrão**, que está no escopo padrão, use o seguinte comando:
 
 ```bash
 bin/magento config:set customer/create_account/email_domain <email domain>
@@ -138,7 +138,7 @@ bin/magento config:set customer/create_account/email_domain <email domain>
 
 Você não precisa usar o escopo no comando porque ele é o escopo padrão.
 
-Para definir valores para **Enviar Emails Para** No entanto, você deve saber o tipo de escopo (`website`) e o código do escopo, que provavelmente é diferente em cada site.
+No entanto, para definir valores para **Enviar Emails para**, você deve saber o tipo de escopo (`website`) e o código do escopo, que provavelmente é diferente em cada site.
 
 Exemplo:
 
@@ -158,7 +158,7 @@ Para verificar as definições de configuração:
 
 1. Faça logon no Administrador do sistema de produção.
 1. Clique em **Lojas** > Configurações > **Configuração** > Geral > **Geral**.
-1. Use o **Exibição da loja** no canto superior esquerdo para alternar para um site diferente.
+1. Use a lista **Exibição de Loja** no canto superior esquerdo para alternar para um site diferente.
 
    As opções de configuração compartilhada definidas no sistema de desenvolvimento são exibidas de forma semelhante a seguir.
 
@@ -166,18 +166,18 @@ Para verificar as definições de configuração:
 
    >[!INFO]
    >
-   >A variável **Nome do armazenamento** O campo é editável no escopo do site, mas se você alternar para o escopo Configuração padrão, ele não será editável. Esse é o resultado de como você define as opções no sistema de desenvolvimento. O valor de **Número IVA** não é editável no escopo do site.
+   >O campo **Nome da Loja** é editável no escopo do site, mas se você alternar para o escopo de Configuração Padrão, ele não será editável. Esse é o resultado de como você define as opções no sistema de desenvolvimento. O valor de **Número de IVA** não é editável no escopo do site.
 
 1. Se ainda não tiver feito isso, alterne para o Escopo de configuração padrão.
 1. Na navegação à esquerda, em Geral, clique em **Contatos**.
 
-   A variável **Enviar Emails Para** não é editável, como mostra a figura a seguir. Essa é uma configuração delicada.
+   O campo **Enviar Emails para** não é editável, como mostra a figura a seguir. Essa é uma configuração delicada.
 
    ![Verificar configurações no sistema de produção](../../assets/configuration/split-deploy-verify-contacts.png)
 
-1. No painel esquerdo, clique em Clientes > **Configuração do cliente**.
-1. No painel direito, expanda **Criar novas opções de conta**.
+1. No painel esquerdo, clique em Clientes > **Configuração do Cliente**.
+1. No painel direito, expanda **Criar Novas Opções de Conta**.
 
-   O valor de **Domínio de email padrão** é exibido da seguinte maneira: Esta é uma configuração específica do sistema.
+   O valor do campo **Domínio de email padrão** é exibido da seguinte maneira: Esta é uma configuração específica do sistema.
 
    ![Verificar configurações no sistema de produção](../../assets/configuration/split-default-domain.png)

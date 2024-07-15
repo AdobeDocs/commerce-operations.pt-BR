@@ -34,5 +34,5 @@ O comando retorna um dos seguintes códigos de saída:
 | Código de saída | Descrição | Ação sugerida |
 |--------------|--------------|---------------|
 | 0 | Normal | Nenhum |
-| 1 | Alguns módulos usam versões de código mais recentes ou mais antigas que o banco de dados | Executar [`magento setup:upgrade`](database-upgrade.md) para atualizar o esquema do banco de dados e executar `composer update` do diretório raiz do aplicativo para atualizar dependências de componentes |
+| 1 | Alguns módulos usam versões de código mais recentes ou mais antigas que o banco de dados | Execute [`magento setup:upgrade`](database-upgrade.md) para atualizar o esquema de banco de dados e execute `composer update` a partir do diretório raiz do aplicativo para atualizar as dependências de componente |
 | 2 | `magento setup:upgrade` é obrigatório | [`magento setup:upgrade`](database-upgrade.md) para atualizar o esquema do banco de dados |

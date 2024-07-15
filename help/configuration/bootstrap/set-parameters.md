@@ -1,17 +1,17 @@
 ---
 title: Definir o valor dos parâmetros de inicialização
-description: Saiba como definir parâmetros de inicialização para o aplicativo Commerce.
+description: Saiba como definir parâmetros de inicialização para o aplicativo do Commerce.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '568'
 ht-degree: 1%
 
 ---
 
 # parâmetros de Bootstrap
 
-Este tópico demonstra como definir os valores dos parâmetros de inicialização de aplicativos do Commerce. Consulte [Visão geral da inicialização e bootstrapping do aplicativo](initialization.md).
+Este tópico demonstra como definir os valores dos parâmetros de inicialização do aplicativo do Commerce. Consulte [Visão geral da inicialização e inicialização do aplicativo](initialization.md).
 
 A tabela a seguir discute os parâmetros de inicialização que você pode definir:
 
@@ -23,7 +23,7 @@ A tabela a seguir discute os parâmetros de inicialização que você pode defin
 >[!INFO]
 >
 >- Nem todos os parâmetros de inicialização estão documentados.
->- Agora, defina o modo do aplicativo (desenvolvedor, padrão, produção) usando a variável [`magento deploy:mode:set {mode}`](../cli/set-mode.md) comando.
+>- Agora você define o modo do aplicativo (desenvolvedor, padrão, produção) usando o comando [`magento deploy:mode:set {mode}`](../cli/set-mode.md).
 
 ## Definir parâmetros usando uma variável de ambiente
 
@@ -33,7 +33,7 @@ Esta seção discute como definir os valores dos parâmetros de inicialização 
 
 Você pode especificar variáveis de inicialização como variáveis de ambiente em todo o sistema, o que permite que todos os processos as usem.
 
-Por exemplo, você pode usar a variável `MAGE_PROFILER` system environment variable para especificar um modo da seguinte maneira:
+Por exemplo, você pode usar a variável de ambiente do sistema `MAGE_PROFILER` para especificar um modo da seguinte maneira:
 
 ```terminal
 MAGE_PROFILER={firebug|csv|<custom value>}
@@ -49,7 +49,7 @@ export MAGE_PROFILER=firebug
 
 >[!INFO]
 >
->Se um `PHP Fatal error` for exibido no navegador depois que você definir um valor de profiler, reinicie o servidor Web. O motivo pode estar relacionado ao cache de código de bytes do PHP, que armazena em cache códigos de bytes e classpaths do PHP.
+>Se um `PHP Fatal error` for exibido no navegador depois que você definir um valor de criador de perfil, reinicie o servidor Web. O motivo pode estar relacionado ao cache de código de bytes do PHP, que armazena em cache códigos de bytes e classpaths do PHP.
 
 ## Definir parâmetros para o Apache ou o Nginx
 
@@ -57,13 +57,13 @@ Esta seção discute como especificar o modo para Apache ou Nginx.
 
 ### Configuração do Nginx
 
-Consulte a [Configuração de amostra do Nginx] em _GitHub_.
+Consulte a [configuração de amostra do Nginx] no _GitHub_.
 
 ### Configuração do Apache .htaccess
 
-Uma maneira de definir o modo do aplicativo é editando `.htaccess`. Dessa forma, não é necessário alterar as configurações do Apache.
+Uma maneira de definir o modo de aplicativo é editando `.htaccess`. Dessa forma, não é necessário alterar as configurações do Apache.
 
-Você pode modificar `.htaccess` em qualquer um dos seguintes locais, dependendo do seu ponto de entrada para o aplicativo Commerce:
+Você pode modificar `.htaccess` em qualquer um dos locais a seguir, dependendo do seu ponto de entrada para o aplicativo do Commerce:
 
 - `<magento_root>/.htaccess`
 - `<magento_root>/pub/.htaccess`
@@ -72,13 +72,13 @@ Você pode modificar `.htaccess` em qualquer um dos seguintes locais, dependendo
 
 1. Abra qualquer um dos arquivos anteriores em um editor de texto e adicione ou remova o comentário da configuração desejada.
 
-   Por exemplo, para especificar um [modo](application-modes.md), exclua o comentário do seguinte:
+   Por exemplo, para especificar um [modo](application-modes.md), remova o comentário do seguinte:
 
    ```conf
    #   SetEnv MAGE_PROFILER firebug
    ```
 
-1. Defina o valor de `MAGE_PROFILER` a qualquer dos seguintes:
+1. Defina o valor de `MAGE_PROFILER` para qualquer um dos seguintes:
 
    ```terminal
    firebug
@@ -86,25 +86,25 @@ Você pode modificar `.htaccess` em qualquer um dos seguintes locais, dependendo
    <custom value>
    ```
 
-1. Salvar as alterações em `.htaccess`; não é necessário reiniciar o Apache para que a alteração tenha efeito.
+1. Salve as alterações em `.htaccess`; não é necessário reiniciar o Apache para que a alteração tenha efeito.
 
 ### Configuração do Apache
 
-O Apache Web Server suporta a configuração do modo de aplicativo usando `mod_env` diretivas.
+O Apache Web Server dá suporte à configuração do modo de aplicativo usando diretivas `mod_env`.
 
-O Apache `mod_env` diretiva é ligeiramente diferente na [Apache versão 2.2] e [Apache versão 2.4].
+A diretiva `mod_env` do Apache é um pouco diferente na [versão 2.2] e [versão 2.4] do Apache.
 
-Os procedimentos a seguir mostram como definir o modo do aplicativo em um host virtual Apache. Essa não é a única maneira de usar `mod_env` diretivas; consulte a documentação do Apache para obter detalhes.
+Os procedimentos a seguir mostram como definir o modo do aplicativo em um host virtual Apache. Esta não é a única maneira de usar diretivas `mod_env`; consulte a documentação do Apache para obter detalhes.
 
 >[!TIP]
 >
->A seção a seguir presume que você já configurou o host virtual. Caso contrário, consulte um recurso como [este tutorial do DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
+>A seção a seguir presume que você já configurou o host virtual. Caso contrário, consulte um recurso como o [este tutorial do DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
 
 **Para especificar uma variável de inicialização para o Apache no Ubuntu**:
 
-1. Como usuário com `root` privilégios, abra o arquivo de configuração do host virtual em um editor de texto.
+1. Como um usuário com privilégios `root`, abra o arquivo de configuração de host virtual em um editor de texto.
 
-   Por exemplo, se o host virtual for nomeado como `my.magento`,
+   Por exemplo, se o nome do host virtual for `my.magento`,
 
    - Apache 2.4: `vim /etc/apache2/sites-available/my.magento.conf`
    - Apache 2.2: `vim /etc/apache2/sites-available/my.magento`
@@ -141,11 +141,11 @@ Os procedimentos a seguir mostram como definir o modo do aplicativo em um host v
 
 >[!TIP]
 >
->Esta seção pressupõe que você já configurou o host virtual. Caso contrário, consulte um recurso como [este tutorial do DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
+>Esta seção pressupõe que você já configurou o host virtual. Caso contrário, consulte um recurso como o [este tutorial do DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
 
 **Para especificar uma variável de inicialização para o Apache no CentOS**:
 
-1. Como usuário com `root` privilégios, abrir `/etc/httpd/conf/httpd.conf` em um editor de texto.
+1. Como um usuário com privilégios `root`, abra o `/etc/httpd/conf/httpd.conf` em um editor de texto.
 
 1. Em qualquer lugar na configuração do host virtual, adicione a seguinte linha:
 

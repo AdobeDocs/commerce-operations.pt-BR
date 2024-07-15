@@ -4,7 +4,7 @@ description: Execute testes de unidade definidos na base de código Adobe Commer
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ Esse comando executa um conjunto de testes definidos na base de código do Comme
 
 ## Pré-requisitos
 
-Antes de executar este comando, faça o seguinte _deve_ ser verdadeiro:
+Antes de executar este comando, o seguinte _deve_ ser verdadeiro:
 
-- A variável `Magento_Developer` o módulo deve ser habilitado. Você pode ativá-la da seguinte maneira:
+- O módulo `Magento_Developer` deve ser habilitado. Você pode ativá-la da seguinte maneira:
 
   ```bash
   bin/magento module:enable [--force] Magento_Developer
   ```
 
-  Use o `--force` opção apenas se for necessário.
+  Use a opção `--force` somente se for necessário.
 
 - Seu sistema deve estar configurado para executar os testes desejados.
 

@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 0%
+source-wordcount: '197'
+ht-degree: 1%
 
 ---
 
@@ -17,14 +17,14 @@ Para o Adobe Commerce em implantações de infraestrutura em nuvem, melhore o te
 
 ## Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 Adobe Commerce na infraestrutura em nuvem
 
 
 ## Otimizar e compactar imagens
 
-Antes de carregar imagens para seus sites do Commerce, otimize-as e compacte-as para equilibrar o desempenho com a qualidade de exibição. Isso ajuda a aumentar o espaço e reduzir o tempo de carregamento da página.
+Antes de carregar imagens para seus sites do Commerce, otimize-as e compacte-as para equilibrar o desempenho com a qualidade de visualização. Isso ajuda a aumentar o espaço e reduzir o tempo de carregamento da página.
 
 - O formato PNG fornece imagens de tamanho menor para imagens com grandes áreas de cor sólida.
 
@@ -32,9 +32,9 @@ Antes de carregar imagens para seus sites do Commerce, otimize-as e compacte-as 
 
 ## Ativar e configurar a otimização de imagem do Fastly
 
-Depois de configurar o serviço Fastly para o projeto do Adobe Commerce Cloud, consulte [Otimização rápida de imagens](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) para obter instruções sobre como ativar e configurar a otimização de imagens.
+Depois de configurar o serviço Fastly para o seu projeto no Adobe Commerce Cloud, consulte [Fastly image otimization](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) para obter instruções sobre como habilitar e configurar a otimização de imagens.
 
 ## Informações adicionais
 
-- [Configurar o Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+- [Configurar Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
 - [Imagens mal otimizadas podem causar problemas de desempenho](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)

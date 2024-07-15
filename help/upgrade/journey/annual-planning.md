@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Muitas empresas trabalham com orçamentos e roteiros anuais. É fundamental durante essas discussões anuais que você fale sobre a integridade, a direção e a estratégia de atualização da sua plataforma para o ano, juntamente com como ela se encaixa nas metas gerais e nos indicadores-chave de desempenho (KPIs) da empresa.
 
-Na sequência da [programação de lançamento](https://devdocs.magento.com/release/), atribua janelas de orçamento e versão para atualizações, evitando feriados, fechamentos de empresas e horários de pico. Ao entender a programação de lançamento do Adobe e permanecer informado sobre quais alterações e aprimoramentos fazem parte de cada lançamento por meio do [notas de versão](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html), é melhor você planejar o ano.
+Seguindo o [cronograma de lançamento](https://devdocs.magento.com/release/), atribua janelas de orçamento e de lançamento para atualizações, evitando feriados, fechamentos de empresas e horários de pico. Ao entender o cronograma de lançamento do Adobe e se manter informado sobre quais alterações e melhorias fazem parte de cada lançamento por meio das [notas de versão](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html), você pode planejar melhor seu ano.
 
 Durante o planejamento, talvez você queira se perguntar:
 

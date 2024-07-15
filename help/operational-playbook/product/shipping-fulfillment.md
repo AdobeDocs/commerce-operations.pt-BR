@@ -20,27 +20,27 @@ Muitos esforços são necessários para fornecer aos clientes a melhor experiên
 
 O envio e o fornecimento têm alguns fatores básicos que atuam como base, incluindo:
 
-- **Métodos e custo de envio**— as empresas precisam analisar e dividir todo o custo de envio e determinar se devem absorver os custos de envio, repassar os custos para os clientes ou compartilhar os custos? Como a empresa fornecerá ofertas de frete ou frete grátis? Como os produtos serão enviados? Haverá mais de um método de envio e custos de envio?
+- **Métodos e custo de envio**—As empresas precisam analisar e dividir todo o custo de envio e determinar se devem absorver os custos de envio, repassá-los para os clientes ou compartilhar os custos? Como a empresa fornecerá ofertas de frete ou frete grátis? Como os produtos serão enviados? Haverá mais de um método de envio e custos de envio?
 
-- **Produto**— Cada produto é diferente em termos de número de itens, peso, destino e durabilidade. As empresas precisam analisar esses detalhes para entender o custo total de envio, pois produtos diferentes têm custos de envio diferentes.
+- **Produto**—Cada produto é diferente em termos de número de itens, peso, destino e durabilidade. As empresas precisam analisar esses detalhes para entender o custo total de envio, pois produtos diferentes têm custos de envio diferentes.
 
-- **Empacotamento**— O empacotamento também desempenha um papel importante na compreensão do método e do custo de envio. Por exemplo, o produto é frágil ou é embalado como um presente?
+- **Empacotamento** — O empacotamento também desempenha um papel importante na compreensão do método e do custo de envio. Por exemplo, o produto é frágil ou é embalado como um presente?
 
-- **Temporada**—Que mudanças devem ser trazidas durante as estações de pico, como o frenesi de cliques e festivais.
+- **Temporada**—Que alterações devem ser trazidas durante as estações de pico, como o frenesi de cliques e festivais.
 
-- **Operadoras**—Que companhia de navegação de terceiros melhor se adapta aos negócios? Quais são os serviços prestados pelas companhias de navegação? Qual é o custo?
+- **Operadoras**—Que empresa de remessa de terceiros melhor se adapta aos negócios? Quais são os serviços prestados pelas companhias de navegação? Qual é o custo?
 
 ## Métodos de envio
 
 Antes de uma empresa enviar seu produto, a empresa precisa decidir sobre os métodos e custos de envio. Há várias opções para métodos de envio, incluindo:
 
-- **Frete gratuito**—Fornecer frete gratuito aos clientes pode ser a melhor experiência do cliente, mas pode não ser adequado para os negócios.
+- **Remessa gratuita**—Fornecer frete gratuito aos clientes pode ser a melhor experiência do cliente, mas pode não ser adequado para a empresa.
 
-- **Taxas em tempo real**—Colaborar com fornecedores de envio terceirizados permite que os varejistas publiquem o método e o custo de envio que a empresa de envio está cobrando atualmente. Isso permite que os clientes escolham seu método de envio preferido.
+- **Taxas em tempo real**—A colaboração com fornecedores de envio de terceiros permite que os varejistas publiquem o método e o custo de envio que a empresa de envio está cobrando atualmente. Isso permite que os clientes escolham seu método de envio preferido.
 
-- **Taxa única**—Uma das opções de envio mais populares. O truque aqui é garantir que os varejistas não sobrecarreguem ou subcarreguem os clientes. Isso também funciona se os varejistas tiverem um produto padrão, mas pode ficar complicado se os varejistas tiverem uma variedade de produtos.
+- **Taxa única** — uma das opções de envio mais populares. O truque aqui é garantir que os varejistas não sobrecarreguem ou subcarreguem os clientes. Isso também funciona se os varejistas tiverem um produto padrão, mas pode ficar complicado se os varejistas tiverem uma variedade de produtos.
 
-- **Frete grátis acima de um valor**—Os varejistas podem fornecer frete gratuito quando o cliente compra acima de um determinado valor. Os varejistas precisam calcular esse valor para fornecer esse serviço.
+- **Remessa gratuita acima de um valor** — Os varejistas podem fornecer frete gratuito quando o cliente compra acima de um determinado valor. Os varejistas precisam calcular esse valor para fornecer esse serviço.
 
 O envio e o atendimento exigiam a coordenação da equipe interna e externamente. Uma estratégia de envio e de preenchimento deve ser compartilhada com toda a organização para que estejam alinhados. Por exemplo, se a equipe de marketing quiser enviar uma promoção que inclua frete gratuito, será necessário alinhá-la à estratégia e à equipe de envio e atendimento para eliminar qualquer experiência negativa do cliente.
 

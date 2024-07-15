@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configurar o provedor de bloqueio
 
-Antes de executar este comando, faça o seguinte *ou* você deve [instalar o aplicativo](../advanced.md):
+Antes de executar este comando, você deve fazer o seguinte *ou*. Você deve [instalar o aplicativo](../advanced.md):
 
 * [Criar ou atualizar a configuração de implantação](deployment.md)
 * [Criar o esquema de banco de dados](database.md)
@@ -38,8 +38,8 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 | Nome | Valor | Obrigatório? |
 |--- |--- |--- |
-| `--lock-provider` | Nome do provedor de bloqueio: `db`, `zookeeper`ou `file`.<br><br>O provedor de bloqueio padrão: `db` | Não |
-| `--lock-db-prefix` | O prefixo do banco de dados específico para evitar conflitos de bloqueio ao usar o `db` provedor de bloqueio.<br><br>O valor padrão: `NULL` | Não |
-| `--lock-zookeeper-host` | Host e porta para conectar-se ao cluster do Zookeeper quando você usa o `zookeeper` provedor de bloqueio.<br><br>Por exemplo: `127.0.0.1:2181` | Sim, se você definir `--lock-provider=zookeeper` |
+| `--lock-provider` | Nome do provedor de bloqueio: `db`, `zookeeper` ou `file`.<br><br>O provedor de bloqueio padrão: `db` | Não |
+| `--lock-db-prefix` | O prefixo do banco de dados específico para evitar conflitos de bloqueio ao usar o provedor de bloqueio `db`.<br><br>O valor padrão: `NULL` | Não |
+| `--lock-zookeeper-host` | Host e porta para se conectar ao cluster Zookeeper quando você usa o provedor de bloqueio `zookeeper`.<br><br>Por exemplo: `127.0.0.1:2181` | Sim, se você definir `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | O caminho onde o Zookeeper salva bloqueios.<br><br>O caminho padrão é: `/magento/locks` | Não |
 | `--lock-file-path` | O caminho onde os bloqueios de arquivo são salvos. | Sim, se você definir `--lock-provider=file` |

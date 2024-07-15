@@ -15,28 +15,28 @@ Este tópico discute como clonar e adicionar dados de amostra se você tiver clo
 
 Se você não for um desenvolvedor contribuinte, escolha uma das outras opções exibidas no sumário à esquerda da página.
 
-Os desenvolvedores colaboradores podem usar esse método para instalar dados de amostra *somente* se o seguinte for verdadeiro:
+Os desenvolvedores colaboradores podem usar este método de instalação de dados de exemplo *only* se o seguinte for verdadeiro:
 
 * Você usa o Magento Open Source
-* Você [clonado o repositório GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* Você [clonou o repositório GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 >[!WARNING]
 >
->Você pode usar dados de amostra com o `develop` (mais atual) ou uma ramificação liberada (como `2.4` (mais estável). Recomendamos que você use uma ramificação lançada porque ela é mais estável. Se estiver contribuindo com código para o repositório e precisar do código mais recente, use o `develop` filial. Independentemente da ramificação escolhida, você deve [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) a ramificação correspondente do repositório GitHub do Magento Open Source. Por exemplo, dados de amostra para a variável `develop` ramificação pode ser usada *somente* com o Magento Open Source `develop` filial.
+>Você pode usar dados de amostra com a ramificação `develop` (mais atual) ou com uma ramificação lançada (como `2.4` (mais estável)). Recomendamos que você use uma ramificação lançada porque ela é mais estável. Se estiver contribuindo com código para o repositório e precisar do código mais recente, use a ramificação `develop`. Independentemente da ramificação escolhida, você deve [clonar](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) a ramificação correspondente do repositório GitHub Magento Open Source. Por exemplo, dados de exemplo para a ramificação `develop` podem ser usados *only* com a ramificação Magento Open Source `develop`.
 
 ## Clonar o repositório de dados de amostra
 
 Esta seção discute como instalar dados de amostra clonando o repositório de dados de amostra. Você pode clonar o repositório de dados de amostra de qualquer uma das seguintes maneiras:
 
-* Clonar com o [Protocolo SSH](#clone-with-ssh)
-* Clonar com o [Protocolo HTTPS](#clone-with-https)
+* Clonar com o [protocolo SSH](#clone-with-ssh)
+* Clonar com o [protocolo HTTPS](#clone-with-https)
 
 ### Clonar com SSH
 
 Para clonar o repositório GitHub de dados de amostra usando o protocolo SSH:
 
-1. Em um navegador da Web, acesse o [repositório de dados de amostra](https://github.com/magento/magento2-sample-data).
-1. Ao lado do nome da ramificação, clique em **SSH** da lista.
+1. Em um navegador da Web, vá para o [repositório de dados de amostra](https://github.com/magento/magento2-sample-data).
+1. Ao lado do nome da ramificação, clique em **SSH** na lista.
 1. Clique em **Copiar para a área de transferência**
 
    A figura a seguir mostra um exemplo.
@@ -45,9 +45,9 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo SSH:
 
 1. Altere para o diretório docroot do servidor Web.
 
-   Normalmente, para o Ubuntu, é `/var/www` e para o CentOS, é `/var/www/html`.
+   Normalmente, para o Ubuntu, é `/var/www` e para o CentOS, `/var/www/html`.
 
-1. Enter `git clone` e cole o valor obtido anteriormente.
+1. Insira `git clone` e cole o valor obtido anteriormente.
 
    Um exemplo é o seguinte:
 
@@ -59,7 +59,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo SSH:
 
    >[!NOTE]
    >
-   >Se o erro a seguir for exibido, verifique se [compartilhou sua chave SSH](https://docs.github.com/articles/generating-ssh-keys/) com GitHub:<br>
+   >Se o seguinte erro for exibido, verifique se você [compartilhou sua chave SSH](https://docs.github.com/articles/generating-ssh-keys/) com o GitHub:<br>
 
    ```terminal
    Cloning into 'magento2'...
@@ -67,13 +67,13 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo SSH:
    fatal: The remote end hung up unexpectedly
    ```
 
-1. Verifique a ramificação do repositório de dados de amostra que corresponde à ramificação usada no repositório principal `magento2` repositório.
+1. Verifique a ramificação do repositório de dados de amostra que corresponde à ramificação usada no repositório `magento2` principal.
 
    Por exemplo:
 
-   Se você usou o `2.4-develop` do repositório GitHub Magento Open Source, a ramificação de Dados de amostra deve ser `2.4-develop`.
+   Se você usou a ramificação `2.4-develop` do repositório GitHub Magento Open Source, a ramificação de Dados de amostra deve ser `2.4-develop`.
 
-   Para fazer check-out da ramificação correta, execute o seguinte comando no diretório raiz do repositório de dados de amostra (supondo que você precise da `2.4-develop` ramificação):
+   Para fazer check-out da ramificação correta, execute o seguinte comando no diretório raiz do repositório de dados de amostra (supondo que você precise da ramificação `2.4-develop`):
 
    ```bash
    git checkout 2.4-develop
@@ -100,8 +100,8 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo SSH:
 
 Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
 
-1. Em um navegador da Web, acesse o [repositório de dados de amostra](https://github.com/magento/magento2-sample-data).
-1. No lado direito da página, sob a guia **clonar URL** clique em **HTTPS**.
+1. Em um navegador da Web, vá para o [repositório de dados de amostra](https://github.com/magento/magento2-sample-data).
+1. No lado direito da página, no campo **clonar URL**, clique em **HTTPS**.
 1. Clique em **Copiar para a área de transferência**.
 
    A figura a seguir mostra um exemplo.
@@ -110,9 +110,9 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
 
 1. Altere para o diretório docroot do servidor Web.
 
-   Normalmente, para o Ubuntu, é `/var/www` e para o CentOS, é `/var/www/html`.
+   Normalmente, para o Ubuntu, é `/var/www` e para o CentOS, `/var/www/html`.
 
-1. Enter `git clone` e cole o valor obtido anteriormente.
+1. Insira `git clone` e cole o valor obtido anteriormente.
 
    Um exemplo é o seguinte:
 
@@ -121,13 +121,13 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
    ```
 
 1. Aguarde o repositório clonar no servidor.
-1. Verifique a ramificação do repositório de dados de amostra que corresponde à ramificação usada no repositório principal `magento2` repositório.
+1. Verifique a ramificação do repositório de dados de amostra que corresponde à ramificação usada no repositório `magento2` principal.
 
    Por exemplo:
 
-   Se você usou o `2.4-develop` do repositório GitHub Magento Open Source, a ramificação de Dados de amostra deve ser `2.4-develop`.
+   Se você usou a ramificação `2.4-develop` do repositório GitHub Magento Open Source, a ramificação de Dados de amostra deve ser `2.4-develop`.
 
-   Para fazer check-out da ramificação correta, execute o seguinte comando no diretório raiz do repositório de dados de amostra (supondo que você precise da `2.4-develop` ramificação):
+   Para fazer check-out da ramificação correta, execute o seguinte comando no diretório raiz do repositório de dados de amostra (supondo que você precise da ramificação `2.4-develop`):
 
    ```bash
    git checkout 2.4-develop
@@ -151,7 +151,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
 
 >[!WARNING]
 >
->Se estiver instalando dados de amostra *após* ao instalar o Adobe Commerce, você também deve executar o seguinte comando para atualizar o banco de dados e o schema:
+>Se você estiver instalando dados de exemplo *após* a instalação do Adobe Commerce, também deverá executar o seguinte comando para atualizar o banco de dados e o esquema:
 >
 >```bash
 ><magento_root>/bin/magento setup:upgrade
@@ -159,7 +159,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
 
 ## Definir a propriedade e as permissões do sistema de arquivos
 
-Como a variável `php build-sample-data.php` O script cria symlinks entre o repositório de dados de amostra e o repositório de Magento Open Source, você deve definir as permissões do sistema de arquivos e a propriedade no repositório de dados de amostra. Se isso não for feito, ocorrerão erros ao acessar a loja.
+Como o script `php build-sample-data.php` cria symlinks entre o repositório de dados de amostra e o repositório Magento Open Source, você deve definir as permissões do sistema de arquivos e a propriedade no repositório de dados de amostra. Se isso não for feito, ocorrerão erros ao acessar a loja.
 
 Para definir as permissões e a propriedade do sistema de arquivos no repositório de dados de amostra:
 

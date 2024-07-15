@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: 728e9439-63d0-4481-b014-7ba2ce97b9d0
+exl-id: 5aa03f91-1240-47f6-8d06-b06e64973266
 feature: Install, Logs, Observability
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -47,13 +47,13 @@ Os painéis fornecem acesso rápido aos aspectos frequentes ou importantes do si
 
 ## Agregação e rotação de logs
 
-Os arquivos de log são encontrados em servidores de aplicativos que processam solicitações ou logs do MySQL quando a execução demora muito. O difícil é que os registros são separados uns dos outros e encontrar todos eles, analisar as informações de cada registro pode ser complicado. Há muitos anos, esse problema era resolvido com uma técnica chamada _agregação de log_. Isso leva os arquivos de log de todos os locais de log, os enviando por push para um local centralizado. Depois que as informações são movidas, um software pode lê-las e fornecer maneiras de pesquisar, filtrar e revisar as informações. Esse pode ser um processo complicado para corrigir. Há muitas opções, mas se você tiver sorte, suas ferramentas de monitoramento podem ler e agregar seus arquivos de log, como o New Relic. Ao encontrar uma boa ferramenta, você pode economizar uma quantidade imensurável de tempo no futuro. A menos que você tenha apenas um único servidor que faça tudo para que seu site funcione e opere, ter agregação de log é essencial. Isso é especialmente útil ao tentar descobrir se você está sob um ataque de DDoS ou enfrentando um pico de tráfego legítimo, ou ao pesquisar por que uma determinada solicitação está falhando.
+Os arquivos de log são encontrados em servidores de aplicativos que processam solicitações ou logs do MySQL quando a execução demora muito. O difícil é que os registros são separados uns dos outros e encontrar todos eles, analisar as informações de cada registro pode ser complicado. Muitos anos atrás, esse problema foi resolvido usando uma técnica chamada _agregação de log_. Isso leva os arquivos de log de todos os locais de log, os enviando por push para um local centralizado. Depois que as informações são movidas, um software pode lê-las e fornecer maneiras de pesquisar, filtrar e revisar as informações. Esse pode ser um processo complicado para corrigir. Há muitas opções, mas se você tiver sorte, suas ferramentas de monitoramento podem ler e agregar seus arquivos de log, como o New Relic. Ao encontrar uma boa ferramenta, você pode economizar uma quantidade imensurável de tempo no futuro. A menos que você tenha apenas um único servidor que faça tudo para que seu site funcione e opere, ter agregação de log é essencial. Isso é especialmente útil ao tentar descobrir se você está sob um ataque de DDoS ou enfrentando um pico de tráfego legítimo, ou ao pesquisar por que uma determinada solicitação está falhando.
 
-Outra parte importante dos registros é garantir que a rotação ocorra. Isso historicamente se refere a `run-away logs` que pode encher acidentalmente o disco rígido e fazer com que o site fique inativo. Uma versão de rotação de log pode ocorrer quando um arquivo de log atinge um determinado tamanho, como 1 GB. Há ferramentas de nível de servidor, como `logrotate` que pode removê-los automaticamente. Por exemplo, ele pode remover arquivos de log muito grandes quando eles se tornarem maiores que 1 GB ou remover arquivos de log com mais de 90 dias. Você define uma política de log, portanto, é importante entender as limitações de recursos.
+Outra parte importante dos registros é garantir que a rotação ocorra. Historicamente, isso se refere ao `run-away logs`, que pode encher acidentalmente o disco rígido e fazer com que o site fique inativo. Uma versão de rotação de log pode ocorrer quando um arquivo de log atinge um determinado tamanho, como 1 GB. Existem ferramentas de nível de servidor, como o `logrotate`, que podem removê-las automaticamente. Por exemplo, ele pode remover arquivos de log muito grandes quando eles se tornarem maiores que 1 GB ou remover arquivos de log com mais de 90 dias. Você define uma política de log, portanto, é importante entender as limitações de recursos.
 
 ## Verificações de malware
 
-Muitas empresas de hospedagem de sites dedicadas ao Adobe Commerce teriam uma biblioteca de explorações conhecidas e malware. Eles devem oferecer uma verificação automaticamente ou mediante solicitação. Quando são eficazes, são reacionários e funcionam somente quando novos malwares são detectados. Pode ser uma boa ideia ter uma ferramenta proativa que possa examinar o código e o banco de dados em busca de malware conhecido. Há algumas opções disponíveis, como [MageReport](https://www.magereport.com){target="_blank"}, [Sansec](https://sansec.io){target="_blank"}, or [Magento Malware Scanner](https://github.com/gwillem/magento-malware-scanner){target="_blank"}. Eles podem fazer uma varredura remota externa ou ser instalados e atualizar/examinar/monitorar proativamente após serem configurados nos servidores. Essas podem ser uma ótima opção, pois a biblioteca deles é constantemente atualizada porque estão instalados e monitorando milhares de sites se você escolher uma solução fornecida, como a Sansec. À medida que um novo malware é detectado, todos os projetos que eles monitoram se beneficiam das informações e agora serão alertados se forem detectados.
+Muitas empresas de hospedagem de sites dedicadas ao Adobe Commerce teriam uma biblioteca de explorações conhecidas e malware. Eles devem oferecer uma verificação automaticamente ou mediante solicitação. Quando são eficazes, são reacionários e funcionam somente quando novos malwares são detectados. Pode ser uma boa ideia ter uma ferramenta proativa que possa examinar o código e o banco de dados em busca de malware conhecido. Há algumas opções disponíveis, como [MageReport](https://www.magereport.com){target="_blank"}, [Sansec](https://sansec.io){target="_blank"} ou [Magento Malware Scanner](https://github.com/gwillem/magento-malware-scanner){target="_blank"}. Eles podem fazer uma varredura remota externa ou ser instalados e atualizar/examinar/monitorar proativamente após serem configurados nos servidores. Essas podem ser uma ótima opção, pois a biblioteca deles é constantemente atualizada porque estão instalados e monitorando milhares de sites se você escolher uma solução fornecida, como a Sansec. À medida que um novo malware é detectado, todos os projetos que eles monitoram se beneficiam das informações e agora serão alertados se forem detectados.
 
 Há algumas versões gratuitas a considerar, mas para malware, você realmente deve considerar uma solução paga. Pode ser uma diferença entre o fato de seu site ter sido infectado por alguns minutos e alguns meses. Ter uma exploração em seu site causa enormes dores de cabeça, esta é uma área que você deve considerar pagar por um serviço.
 
@@ -65,7 +65,7 @@ A página Recommendations da Ferramenta de análise do site lista recomendaçõe
 
 Saiba mais sobre as práticas recomendadas para melhorar o desempenho do site. Rastrear e implementar as recomendações listadas de acordo com a prioridade.
 
-Para obter mais informações sobre como instalar isso no seu projeto, visite [Guia de instalação da ferramenta de análise do site](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/installation.html){target="_blank"}.
+Para obter mais informações sobre como instalar isso em seu projeto, visite o [Guia de Instalação da Ferramenta de Análise do Site](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/installation.html){target="_blank"}.
 
 ## Monitoramento de SSL
 
@@ -77,9 +77,9 @@ A execução de testes automatizados, como testes funcionais ou testes de unidad
 
 Testes de carga podem ser desafiadores para acertar. Grande parte da complexidade vem de como o front-end é usado e implementado. Se o site tiver um front-end headless, talvez você queira testar a carga do GraphQL e as APIs REST. O teste de carga depende de você e da equipe de DevOps. Saber que cada teste de carga, executado assim que possível, fornece informações sobre o status do projeto. Ele também fornece referências para testes futuros para ver se há alterações drásticas nos resultados do teste de carga. Em caso afirmativo, e se forem negativos, esta é uma boa oportunidade para analisar as alterações de código mais recentes e procurar seções que afetam o desempenho para melhorar.
 
-A Adobe Commerce tem uma boa orientação para ajudar a entender como executar testes de unidade. Consulte [Teste de unidade PHP](https://developer.adobe.com/commerce/testing/guide/unit/){target="_blank"} no _Guia de teste do aplicativo_ no site de documentação do Adobe Developer.
+A Adobe Commerce tem uma boa orientação para ajudar a entender como executar testes de unidade. Consulte [teste de unidade PHP](https://developer.adobe.com/commerce/testing/guide/unit/){target="_blank"} no _Guia de Teste de Aplicativo_ no site de documentação do Adobe Developer.
 
-Para obter mais informações sobre teste funcional, visite [Introdução à estrutura de teste funcional](https://developer.adobe.com/commerce/testing/functional-testing-framework/){target="_blank"}.
+Para obter mais informações sobre teste funcional, visite [Introdução à Estrutura de Teste Funcional](https://developer.adobe.com/commerce/testing/functional-testing-framework/){target="_blank"}.
 
 
 {{$include /help/_includes/hosting-related-links.md}}

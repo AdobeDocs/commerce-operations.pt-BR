@@ -21,26 +21,26 @@ O Aurora é um servidor MySQL de alto desempenho, totalmente compatível, hosped
 
 Usar o Aurora como banco de dados é tão fácil quanto especificar o banco de dados na configuração normal do Adobe Commerce, usando o conector de banco de dados padrão.
 
-Ao executar `bin/magento setup:install`, use as informações do Aurora no `db-` campos:
+Ao executar o `bin/magento setup:install`, use as informações do Aurora nos campos `db-`:
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-A variável `db-host` o valor é o URL do Aurora com o `https://` e à direita `:portnumber`  removido.
+O valor `db-host` é a URL Aurora com `https://` e `:portnumber` à direita removidos.
 
 ## Configuração de uma conexão de banco de dados remota
 
 >[!NOTE]
 >
->Este é um tópico avançado que deve ser usado somente por um administrador de rede ou administrador de banco de dados experiente. Você deve ter `root` acesso ao sistema de arquivos e você deverá ser capaz de fazer login no MySQL como `root`.
+>Este é um tópico avançado que deve ser usado somente por um administrador de rede ou administrador de banco de dados experiente. Você deve ter acesso de `root` ao sistema de arquivos e deve ser capaz de fazer login no MySQL como `root`.
 
 ### Pré-requisitos
 
 Antes de começar, você deve:
 
-* [Instalar servidor MySQL](mysql.md) no servidor de banco de dados.
-* [Criar uma instância de banco de dados](mysql.md#configuring-the-database-instance) no servidor de banco de dados.
+* [Instalar MySQL server](mysql.md) no servidor de banco de dados.
+* [Crie uma instância de banco de dados](mysql.md#configuring-the-database-instance) no servidor de banco de dados.
 * Instale o cliente MySQL no nó da Web do Adobe Commerce. Consulte a documentação do MySQL para obter detalhes.
 
 ### Alta disponibilidade
@@ -50,7 +50,7 @@ Use as diretrizes a seguir para configurar conexões de banco de dados remoto se
 * Você deve configurar uma conexão para cada nó do servidor Web.
 * Normalmente, você configura uma conexão de banco de dados para o balanceador de carga de banco de dados; no entanto, o clustering de banco de dados pode ser complexo e a configuração depende de você. O Adobe não faz recomendações específicas para clustering de banco de dados.
 
-  Para obter mais informações, consulte [Documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Para obter mais informações, consulte a [documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Resolução de problemas de conexão
 
@@ -60,7 +60,7 @@ Se você tiver problemas ao se conectar a um dos hosts, primeiro execute ping no
 
 Para criar uma conexão remota:
 
-1. No servidor de banco de dados, como um usuário com `root` privilégios, abra o arquivo de configuração do MySQL.
+1. No servidor de banco de dados, como um usuário com privilégios `root`, abra o arquivo de configuração MySQL.
 
    Para localizá-lo, digite o seguinte comando:
 
@@ -77,19 +77,19 @@ Para criar uma conexão remota:
 
    >[!NOTE]
    >
-   >No Ubuntu 16, o caminho é normalmente `/etc/mysql/mysql.conf.d/mysqld.cnf`.
+   >No Ubuntu 16, o caminho normalmente é `/etc/mysql/mysql.conf.d/mysqld.cnf`.
 
-1. Procure no arquivo de configuração por `bind-address`.
+1. Pesquisar o arquivo de configuração para `bind-address`.
 
    Se existir, altere o valor da seguinte maneira.
 
-   Se não existir, adicione-o à `[mysqld]` seção.
+   Se ele não existir, adicione-o à seção `[mysqld]`.
 
    ```conf
    bind-address = <ip address of your web node>
    ```
 
-   Consulte [Documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), especialmente se você tiver um servidor Web em cluster.
+   Consulte a [documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), especialmente se você tiver um servidor Web clusterizado.
 
 1. Salve as alterações no arquivo de configuração e saia do editor de texto.
 1. Reinicie o serviço MySQL:
@@ -100,18 +100,18 @@ Para criar uma conexão remota:
 
    >[!NOTE]
    >
-   >Se o MySQL não for iniciado, procure no syslog a origem do problema. Resolva o problema usando [Documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) ou outra fonte autorizada.
+   >Se o MySQL não for iniciado, procure no syslog a origem do problema. Resolva o problema usando a [documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) ou outra fonte autoritativa.
 
 ## Conceder acesso a um usuário do banco de dados
 
 Para permitir que o nó da Web se conecte ao servidor de banco de dados, você deve conceder a um usuário de banco de dados do nó da Web acesso ao banco de dados no servidor remoto.
 
-Este exemplo concede a `root` usuário do banco de dados acesso total ao banco de dados no host remoto.
+Este exemplo concede ao usuário do banco de dados `root` acesso total ao banco de dados no host remoto.
 
 Para conceder acesso a um usuário do banco de dados:
 
 1. Efetue log-in no servidor de banco de dados.
-1. Conecte-se ao banco de dados MySQL como o `root` usuário.
+1. Conectar ao banco de dados MySQL como o usuário `root`.
 1. Digite o seguinte comando:
 
    ```shell
@@ -155,8 +155,8 @@ Se o servidor Web estiver clusterizado, insira o comando em cada host do servido
 
 Ao instalar o Adobe Commerce, você deve especificar o seguinte:
 
-* O URL de base (também conhecido como *endereço da loja*) especifica o nome do host ou endereço IP do *nó da web*
-* O host do banco de dados é o *servidor de banco de dados remoto* Endereço IP (ou balanceador de carga se o servidor de banco de dados estiver clusterizado)
-* O nome de usuário do banco de dados é o *nó da web local* usuário do banco de dados ao qual você deu acesso
+* A URL de base (também chamada de *endereço de repositório*) especifica o nome de host ou endereço IP do *nó da Web*
+* O host do banco de dados é o endereço IP do *servidor de banco de dados remoto* (ou balanceador de carga se o servidor de banco de dados estiver clusterizado)
+* O nome de usuário do banco de dados é o *nó da Web local* usuário do banco de dados ao qual você deu acesso
 * A senha do banco de dados é a senha do usuário do nó da Web local
 * Nome do banco de dados é o nome do banco de dados no servidor remoto

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Estrutura de projeto do compositor
 
-Este guia descreve como configurar e manter o [opção separar pacotes](../examples.md#option-1-separate-packages) descritos nos exemplos de arquitetura de referência global (GRA).
+Este guia descreve como configurar e manter a [opção de pacotes separados](../examples.md#option-1-separate-packages) descrita nos exemplos de arquitetura de referência global (GRA).
 
 ## Pré-requisitos
 
@@ -23,7 +23,7 @@ Antes de começar, verifique o seguinte:
 
 - Você tem um repositório Git
 - Você tem um repositório do Composer (este tópico destaca a Lista de pacotes privados)
-- Você configurou o repositório do Composer para espelhar o `repo.magento.com` e `packagist.org` repositórios
+- Você configurou o repositório do Composer para espelhar os repositórios `repo.magento.com` e `packagist.org`
 
 ## Repositório de projeto Git principal
 
@@ -37,7 +37,7 @@ O repositório principal do projeto Git deve conter apenas um projeto do Compose
 └─ composer.lock
 ```
 
-Adicione o seguinte conteúdo à `.gitignore` arquivo:
+Adicionar o conteúdo a seguir ao arquivo `.gitignore`:
 
 ```tree
 /*
@@ -71,11 +71,11 @@ Adicione o seguinte conteúdo à `.gitignore` arquivo:
 
 ## Salvar arquivos que não são do módulo
 
-1. Adicione o `app/etc/config.xml` para o repositório Git.
+1. Adicione o arquivo `app/etc/config.xml` ao repositório Git.
 
    Você pode usar o módulo que vai criar para instalar outros arquivos de região ou específicos da marca, como `.htaccess`, arquivos de texto de autenticação do Google ou Bing, executáveis ou outros arquivos estáticos que não são gerenciados por módulos do Adobe Commerce.
 
-   Uso `magento2-component` Digite pacotes para criar um mapeamento de arquivo e copiar arquivos para o repositório Git principal durante `composer install` e `composer update` operações.
+   Use pacotes do tipo `magento2-component` para criar um mapeamento de arquivo para copiar arquivos para o repositório Git principal durante as operações `composer install` e `composer update`.
 
 1. Crie um repositório Git que siga a convenção de nomenclatura `component-environment-<region/country/brand>`:
 
@@ -94,7 +94,7 @@ Adicione o seguinte conteúdo à `.gitignore` arquivo:
    composer config -e
    ```
 
-1. Adicione o `app/etc/config.php` arquivo como um mapeamento na variável `extra.map` atributo do seu `composer.json` arquivo:
+1. Adicione o arquivo `app/etc/config.php` como um mapeamento no atributo `extra.map` de seu arquivo `composer.json`:
 
    ```json
    {
@@ -115,7 +115,7 @@ Adicione o seguinte conteúdo à `.gitignore` arquivo:
    }
    ```
 
-1. Valide seu `composer.json` e confirme-o no repositório Git:
+1. Valide o arquivo `composer.json` e confirme-o no repositório Git:
 
    ```bash
    composer validate
@@ -203,7 +203,7 @@ Adicione o seguinte conteúdo à `.gitignore` arquivo:
    git push --tags
    ```
 
-1. Verifique se o Composer copiou o `app/etc/config.php` arquivo de `<client>/component-environment-<region/country/brand>`.
+1. Verifique se o Composer copiou o arquivo `app/etc/config.php` de `<client>/component-environment-<region/country/brand>`.
 
 ## Implantar código
 
@@ -211,22 +211,22 @@ No servidor Web, é possível implantar o código usando o Composer, mas não é
 
 ## Adicionar outras instâncias e pacotes
 
-Cada instância (região, marca ou instalação exclusiva do Adobe Commerce) deve obter sua própria **projeto principal** instância, **metapackage específico**, e **pacote de componente do ambiente**. A variável **Metapackage de GRA** deve ser **compartilhado** em todas as instâncias.
+Cada instância (região, marca ou outra instalação exclusiva do Adobe Commerce) deve obter sua própria instância do **projeto principal**, **metapackage específico** e **pacote de componentes do ambiente**. O **metapackage de GRA** deve ser **compartilhado** em todas as instâncias.
 
 Pacotes funcionais (como módulos do Adobe Commerce, temas, pacotes de idiomas e bibliotecas) e pacotes de terceiros devem ser exigidos pelo:
 
-- **Metapackage de GRA**—Para instalação em _all_ instâncias
-- **metappackage específico da instância**—Para instalação em uma única marca ou região
+- **Metapackage de GRA**—Para instalação em _todas_ instâncias
+- **metapackage específico da instância**—Para instalação em uma única marca ou região
 
 >[!IMPORTANT]
 >
->Não exigir pacotes no do projeto principal `composer.json` arquivo no `main` ou `release` filiais.
+>Não exigir pacotes no arquivo `composer.json` do projeto principal nas ramificações `main` ou `release`.
 
 ## Preparação para o desenvolvimento
 
-Para desenvolvimento, instale `develop` de todos os módulos que você mantém.
+Para desenvolvimento, instale as versões `develop` de todos os módulos que você mantém.
 
-Dependendo da sua estratégia de ramificação, você pode ter `develop`, `qa`, `uat`, e `main` filiais. Cada ramificação existe no Composer com um `dev-` prefixo. Assim, o `develop` A ramificação pode ser exigida por meio do Composer como versão `dev-develop`.
+Dependendo da sua estratégia de ramificação, você pode ter `develop`, `qa`, `uat` e `main` ramificações. Cada ramificação existe no Composer com um prefixo `dev-`. Portanto, a ramificação `develop` pode ser exigida pelo Composer como versão `dev-develop`.
 
 1. Criar `develop` ramificações em todos os módulos e repositórios do projeto.
 
@@ -262,7 +262,7 @@ Dependendo da sua estratégia de ramificação, você pode ter `develop`, `qa`, 
    "magento-services/component-environment-fantasy-corp:dev-develop as 0.999"
    ```
 
-   A etapa anterior gera as seguintes linhas no `composer.json` arquivo:
+   A etapa anterior gera as seguintes linhas no arquivo `composer.json`:
 
    ```json
    "require": {
@@ -274,4 +274,4 @@ Dependendo da sua estratégia de ramificação, você pode ter `develop`, `qa`, 
 
    >[!IMPORTANT]
    >
-   >**Não mesclar** estes `composer.json` alterações no arquivo da sua ramificação de produção. Instalar somente versões estáveis de pacotes no `release` e `main` filiais. É possível definir essas dependências para `qa` e outras sucursais não principais.
+   >**Não mesclar** essas `composer.json` alterações de arquivo na ramificação de produção. Instale somente versões estáveis de pacotes nas ramificações `release` e `main`. Você pode definir essas dependências para `qa` ramificações e outras ramificações não principais.

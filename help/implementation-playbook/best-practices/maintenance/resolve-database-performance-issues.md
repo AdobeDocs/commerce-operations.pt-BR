@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -29,17 +29,17 @@ Determine se há consultas MySQL de execução lenta. Dependendo do plano de inf
 
 Você pode usar o MySQL para identificar e resolver consultas de longa execução em qualquer projeto do Adobe Commerce na infraestrutura em nuvem.
 
-1. Execute o [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) declaração.
-1. Se você vir consultas longas, execute [MySQL `EXPLAIN` e `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) para cada uma delas, para descobrir o que faz com que a consulta seja executada por um longo tempo.
+1. Execute a instrução [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html).
+1. Se você vir consultas longas, execute [MySQL `EXPLAIN` e `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) para cada uma delas, para descobrir o que faz a consulta ser executada por um longo tempo.
 1. Com base nos problemas encontrados, siga as etapas para corrigir a consulta para que ela seja executada mais rapidamente.
 
 ### Analisar consultas usando o Percona Toolkit (somente para arquitetura Pro)
 
 Se seu projeto do Adobe Commerce for implantado na arquitetura Pro, você poderá usar o Percona Toolkit para analisar consultas.
 
-1. Execute o `pt-query-digest --type=slowlog` comando em logs de consulta lenta do MySQL.
-   * Para encontrar o local dos logs de consultas lentas, consulte **[!UICONTROL Log locations > Service Logs]**(https://devdocs.magento.com/cloud/project/log-locations.html#service-logs) em nossa documentação para desenvolvedores.
-   * Consulte a [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) documentação.
+1. Execute o comando `pt-query-digest --type=slowlog` nos logs de consulta lenta do MySQL.
+   * Para encontrar a localização dos logs de consulta lenta, consulte **[!UICONTROL Log locations > Service Logs]**(https://devdocs.magento.com/cloud/project/log-locations.html#service-logs) em nossa documentação do desenvolvedor.
+   * Consulte a documentação do [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest).
 1. Com base nos problemas encontrados, siga as etapas para corrigir a consulta para que ela seja executada mais rapidamente.
 
 ## Verificar se todas as tabelas têm uma chave primária
@@ -58,13 +58,13 @@ Evite esses problemas definindo uma chave primária para qualquer tabela que nã
    SELECT table_catalog, table_schema, table_name, engine FROM information_schema.tables        WHERE (table_catalog, table_schema, table_name) NOT IN (SELECT table_catalog, table_schema, table_name FROM information_schema.table_constraints  WHERE constraint_type = 'PRIMARY KEY') AND table_schema NOT IN ('information_schema', 'pg_catalog');    
    ```
 
-1. Para qualquer tabela sem uma chave primária, adicione uma chave primária atualizando o `db_schema.xml` (o schema declarativo) com um nó semelhante ao seguinte:
+1. Para qualquer tabela sem uma chave primária, adicione uma chave primária atualizando o `db_schema.xml` (o esquema declarativo) com um nó semelhante ao seguinte:
 
    ```html
    <constraint xsi:type="primary" referenceId="PRIMARY">         <column name="id_column"/>     </constraint>    
    ```
 
-   Ao adicionar o nó, substitua a variável `referenceID` e `column name` variáveis com seus valores personalizados personalizados.
+   Ao adicionar o nó, substitua as variáveis `referenceID` e `column name` pelos valores personalizados.
 
 Para obter mais informações, consulte [Configurar esquema declarativo](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) na documentação do desenvolvedor.
 
@@ -82,11 +82,11 @@ SELECT s.INDEXED_COL,GROUP_CONCAT(INDEX_NAME) FROM (SELECT INDEX_NAME,GROUP_CONC
 
 A consulta retorna os nomes das colunas e os nomes de índices duplicados.
 
-Os comerciantes de arquitetura Pro também podem executar a verificação usando o Percona Toolkit  `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)` comando.
+Os comerciantes de arquitetura Pro também podem executar a verificação usando o comando Percona Toolkit `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)`.
 
 ### Remover índices duplicados
 
-Usar o SQL [Instrução DROP INDEX](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) para remover índices duplicados.
+Use a [Instrução DROP INDEX](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) do SQL para remover índices duplicados.
 
 ```SQL
 DROP INDEX

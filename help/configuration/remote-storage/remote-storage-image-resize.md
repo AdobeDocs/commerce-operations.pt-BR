@@ -5,8 +5,8 @@ feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -16,11 +16,11 @@ Por padrão, o Adobe Commerce oferece suporte ao redimensionamento de imagens no
 
 O diagrama a seguir mostra como o Nginx recupera, redimensiona e armazena imagens no cache. O redimensionamento é determinado pelos parâmetros incluídos no URL, como altura e largura.
 
-![redimensionamento de imagem](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![redimensionamento da imagem](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >
->Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Configurar o armazenamento remoto para a infraestrutura do Commerce na nuvem](cloud-support.md)
+>Para projetos do Adobe Commerce na infraestrutura em nuvem, consulte [Configurar armazenamento remoto para a infraestrutura do Commerce na nuvem](cloud-support.md)
 
 ## Configurar formato de URL no Adobe Commerce
 
@@ -28,13 +28,13 @@ Para redimensionar imagens no lado do servidor, você deve configurar o Adobe Co
 
 **Para configurar o Commerce para redimensionamento de imagem do lado do servidor**:
 
-1. No _Admin_ clique em **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
+1. No painel _Admin_, clique em **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
 
 1. No painel direito, expanda **[!UICONTROL Url options]**.
 
-1. No _Formato de URL da mídia de catálogo_ seção, limpar **[!UICONTROL Use system value]**.
+1. Na seção _Formato da URL de mídia de catálogo_, desmarque **[!UICONTROL Use system value]**.
 
-1. Selecione o `Image optimization based on query parameters` URL no **_Formato de URL da mídia de catálogo_** campo.
+1. Selecione a URL `Image optimization based on query parameters` no campo **_Formato da URL de mídia de catálogo_**.
 
 1. Clique em **[!UICONTROL Save Config]**.
 
@@ -42,17 +42,17 @@ Para redimensionar imagens no lado do servidor, você deve configurar o Adobe Co
 
 ## Configurar Nginx
 
-Para continuar configurando o redimensionamento de imagem do lado do servidor, você deve preparar o `nginx.conf` arquivo e forneça um `proxy_pass` para o adaptador escolhido.
+Para continuar configurando o redimensionamento de imagem do lado do servidor, você deve preparar o arquivo `nginx.conf` e fornecer um valor de `proxy_pass` para o adaptador escolhido.
 
 **Para permitir que o Nginx redimensione imagens**:
 
-1. Instale o [Módulo de filtro de imagem Nginx][nginx-module].
+1. Instale o [módulo do filtro de imagem Nginx][nginx-module].
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. Criar um `nginx.conf` arquivo com base no modelo incluído `nginx.conf.sample` arquivo. Por exemplo:
+1. Crie um arquivo `nginx.conf` com base no arquivo de modelo `nginx.conf.sample` incluído. Por exemplo:
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {
@@ -69,7 +69,7 @@ Para continuar configurando o redimensionamento de imagem do lado do servidor, v
    }
    ```
 
-1. [_Opcional_] Configurar um `proxy_pass` para o seu adaptador específico.
+1. [_Opcional_] Configure um valor de `proxy_pass` para o adaptador específico.
 
    - [Serviço de armazenamento simples da Amazon (Amazon S3)](remote-storage-aws-s3.md)
 

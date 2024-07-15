@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 0%
+source-wordcount: '135'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ As ações críticas resultam em operações de invalidação e reindexação de
 
 ## Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -32,6 +32,6 @@ As ações críticas resultam em operações de invalidação e reindexação de
 ## Informações adicionais
 
 - [Práticas recomendadas para armazenamento em cache](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-- [Conteúdo privado: invalidar conteúdo privado](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [Conteúdo privado: Invalidar conteúdo privado](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Recomendações de hardware: caches](../../../performance/hardware.md#caches)
 - [Configuração avançada: Configurar Redis](../../../performance/advanced-setup.md#set-up-redis)

@@ -4,7 +4,7 @@ description: Descrição de comércio eletrônico
 exl-id: b418d36b-7dc6-49c7-95a8-03a55c69cb6f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ O comércio eletrônico possibilita que as pessoas abram as portas de suas próp
 - A sobrecarga de comércio eletrônico é baixa em comparação aos tijolos e argamassa
 - Lojas online abertas 24 horas por dia, 7 dias por semana
 - Compras instantâneas
-- Personalização e experiências personalizadas do usuário
+- Personalization e experiências de usuário personalizadas
 - Potencial de alcance global do cliente
 
 ### Desvantagens
@@ -73,6 +73,6 @@ As expectativas do cliente estão aumentando e há sempre novas técnicas de cre
 
 ![O valor da tecnologia comercial](../../assets/playbooks/commerce-tech.png)
 
-## Setores de comércio
+## Setores da Commerce
 
 ![O valor da tecnologia comercial](../../assets/playbooks/commerce-industries.png)

@@ -20,10 +20,10 @@ As permissões e a propriedade de arquivos devem ser consistentes em todos os si
    - Verifique se o servidor Web é executado como o mesmo usuário em todos os sistemas
    - Verifique se o proprietário do sistema de arquivos está no grupo de servidores Web em todos os sistemas
 
-- Altere as permissões e a propriedade do sistema de arquivos do Commerce em cada sistema, conforme necessário, usando as seguintes diretrizes:
+- Altere as permissões e a propriedade do sistema de arquivos Commerce em cada sistema, conforme necessário, usando as seguintes diretrizes:
 
-   - Desenvolvimento e criação: [Definir propriedade e permissões de pré-instalação (dois usuários)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - Produção: [Propriedade e permissões de comércio no desenvolvimento e na produção](file-system-permissions.md)
+   - Desenvolvimento e compilação: [Definir propriedade e permissões de pré-instalação (dois usuários)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+   - Produção: [Propriedade e permissões do Commerce no desenvolvimento e produção](file-system-permissions.md)
 
 >[!INFO]
 >

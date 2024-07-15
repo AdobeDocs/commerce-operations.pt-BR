@@ -8,7 +8,7 @@ ht-degree: 8%
 # Logon no servidor
 
 1. Faça logon no servidor.
-1. Alterne para a [proprietário do sistema de arquivos](../installation/prerequisites/file-system/overview.md).
+1. Alternar para o [proprietário do sistema de arquivos](../installation/prerequisites/file-system/overview.md).
 1. Altere para o diretório onde você clonou o aplicativo. Por exemplo,
 
    ```bash

@@ -5,7 +5,7 @@ feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
 source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '139'
 ht-degree: 4%
 
 ---
@@ -36,15 +36,15 @@ ht-degree: 4%
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [Visão geral](upgrade-compatibility-tool/overview.md)
    - [Requisitos do sistema](upgrade-compatibility-tool/prerequisites.md)
-   - Use o [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+   - Usar o [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
       - [Executar a ferramenta em uma interface de linha de comando](upgrade-compatibility-tool/run.md)
-      - [Integre com o [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [Integrar com o  [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Execute a ferramenta dentro do plug-in Magento PHPStorm](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
-   - Relatórios {#reporting}
+   - Relatório {#reporting}
       - [Relatórios](upgrade-compatibility-tool/reports.md)
       - [Mensagens de erro](upgrade-compatibility-tool/error-messages.md)
    - [Ferramentas relacionadas](upgrade-compatibility-tool/related-tools.md)
-- Desenvolvedores colaboradores {#developer}
+- Contribuindo com desenvolvedores {#developer}
    - [Atualizar uma instalação baseada em Git](developer/git-installs.md)
    - [Gerenciar módulos](developer/manage-modules.md)
 - Solução de problemas {#troubleshooting}
@@ -54,4 +54,4 @@ ht-degree: 4%
 - Recursos {#resources}
    - [Leitura recomendada](resources/recommended-reading.md)
    - [Modernização de sua plataforma com o Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

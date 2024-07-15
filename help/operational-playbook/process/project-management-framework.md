@@ -13,4 +13,4 @@ ht-degree: 0%
 
 O modelo DACI é um quadro de gestão de projetos utilizado para definir claramente as funções e responsabilidades das várias partes interessadas num projeto, conduzindo a decisões de grupo eficazes e eficientes. DACI significa Driver, Approver, Contributor e Informed. Essas funções deixam claro quem tem autoridade em determinadas áreas e situações, permitindo que um projeto avance sem problemas.
 
-![Diagrama de gerenciamento de projetos DACI](../../assets/playbooks/daci-model.png)
+![Diagrama de gerenciamento de projeto DACI](../../assets/playbooks/daci-model.png)

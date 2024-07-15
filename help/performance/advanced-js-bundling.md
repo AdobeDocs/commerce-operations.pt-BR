@@ -1,28 +1,28 @@
 ---
-title: Avançado [!DNL JavaScript] Agrupamento
-description: Saiba mais sobre como o empacotamento do JavaScript pode reduzir o tamanho e a frequência das solicitações do servidor.
+title: Agrupamento  [!DNL JavaScript]  avançado
+description: Saiba mais sobre como o agrupamento JavaScript pode reduzir o tamanho e a frequência das solicitações do servidor.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '2137'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
 
-# Avançado [!DNL JavaScript] empacotamento
+# Agrupamento [!DNL JavaScript] avançado
 
-Agrupamento [!DNL JavaScript] módulos para melhor desempenho tem a ver com a redução de dois fatores:
+O agrupamento de [!DNL JavaScript] módulos para obter melhor desempenho tem a ver com a redução de dois fatores:
 
 1. O número de solicitações do servidor.
 1. O tamanho dessas solicitações de servidor.
 
-Em um aplicativo modular, o número de solicitações de servidor pode chegar a centenas. Por exemplo, a captura de tela a seguir mostra apenas o início da lista de [!DNL JavaScript] módulos carregados na home page de uma instalação limpa.
+Em um aplicativo modular, o número de solicitações de servidor pode chegar a centenas. Por exemplo, a captura de tela a seguir mostra apenas o início da lista de módulos do [!DNL JavaScript] carregados na home page de uma instalação limpa.
 
-![Sem agrupamento](../assets/performance/images/noBundling.png)
+![Nenhum pacote](../assets/performance/images/noBundling.png)
 
 ## Mesclagem e agrupamento
 
-Pronto para uso, [!DNL Commerce] O fornece duas maneiras de reduzir o número de solicitações do servidor: mesclagem e agrupamento. Essas configurações estão desativadas por padrão. Você pode ativá-los na interface do usuário do administrador no **[!UICONTROL Stores]** > **Configurações** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]** ou na linha de comando.
+Pronto para uso, o [!DNL Commerce] fornece duas maneiras de reduzir o número de solicitações do servidor: mesclando e agrupando. Essas configurações estão desativadas por padrão. Você pode ativá-los na interface do Administrador em **[!UICONTROL Stores]** > **Configurações** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]** ou na linha de comando.
 
 ![Agrupamento](../assets/performance/images/bundlingImage.png)
 
@@ -34,13 +34,13 @@ Para habilitar o agrupamento interno na linha de comando:
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
-Este é um nativo [!DNL Commerce] mecanismo que combina todos os ativos presentes no sistema e os distribui entre pacotes do mesmo tamanho (bundle_0.js, bundle_1.js ... bundle_x.js):
+Este é um mecanismo nativo [!DNL Commerce] que combina todos os ativos presentes no sistema e os distribui entre pacotes do mesmo tamanho (bundle_0.js, bundle_1.js ... bundle_x.js):
 
-![[!DNL Commerce] empacotamento](../assets/performance/images/magentoBundling.png)
+![[!DNL Commerce] agrupamento](../assets/performance/images/magentoBundling.png)
 
-Melhor, mas o navegador ainda carrega TODAS as [!DNL JavaScript] pacotes, não apenas os necessários.
+Melhor, mas o navegador ainda carrega TODOS os pacotes [!DNL JavaScript], não apenas os necessários.
 
-[!DNL Commerce] o agrupamento reduz o número de conexões por página, mas, para cada solicitação de página, carrega todos os pacotes, mesmo quando a página solicitada depende apenas de arquivos dentro de um ou dois dos pacotes. O desempenho melhora depois que o navegador armazena os pacotes em cache. Mas, como o navegador carrega esses pacotes de forma síncrona, a primeira visita do usuário a um [!DNL Commerce] a loja pode demorar um pouco para renderizar e prejudicar a experiência do usuário.
+O agrupamento [!DNL Commerce] reduz o número de conexões por página, mas para cada solicitação de página ele carrega todos os pacotes, mesmo quando a página solicitada só pode depender de arquivos dentro de um ou dois dos pacotes. O desempenho melhora depois que o navegador armazena os pacotes em cache. Mas, como o navegador carrega esses pacotes de forma síncrona, a primeira visita do usuário a uma loja [!DNL Commerce] pode demorar um pouco para renderizar e prejudicar a experiência do usuário.
 
 ### Mesclagem básica
 
@@ -50,37 +50,37 @@ Para habilitar a mesclagem interna na linha de comando:
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
-Este comando mescla todos os síncronos [!DNL JavaScript] arquivos em um único arquivo. Habilitar a mesclagem sem também habilitar o agrupamento não é útil porque [!DNL Commerce] usa RequireJS. Se você não ativar o agrupamento, [!DNL Commerce] mescla somente RequireJS e sua configuração. Quando você habilita o agrupamento e a mesclagem, [!DNL Commerce] cria um único [!DNL JavaScript] arquivo:
+Este comando mescla todos os arquivos [!DNL JavaScript] síncronos em um único arquivo. Habilitar mesclagem sem também habilitar agrupamento não é útil porque [!DNL Commerce] usa RequireJS. Se você não habilitar o agrupamento, [!DNL Commerce] mesclará somente RequireJS e suas configurações. Quando você habilita o agrupamento e a mesclagem, o [!DNL Commerce] cria um único arquivo [!DNL JavaScript]:
 
-![Mesclagem do mundo real](../assets/performance/images/magentoMergingDevWorld.png)
+![Mesclagem real](../assets/performance/images/magentoMergingDevWorld.png)
 
 ## Tempos de renderização do mundo real
 
 Os tempos de carregamento agrupados e mesclados anteriores parecem ótimos em um ambiente de desenvolvimento. Mas no mundo real, muitas coisas podem desacelerar a renderização: conexões lentas, grandes limiares de conexão, redes limitadas. Além disso, os dispositivos móveis não são renderizados tão rapidamente quanto os desktops.
 
-Para testar e preparar a implantação da loja para o mundo real, recomendamos que você teste com o perfil de limitação nativo do Chrome, &quot;Slow 3G&quot;. Com o Slow 3G, nossos tempos de saída empacotados anteriores agora refletem as realidades de conexão de muitos usuários:
+Para testar e preparar a implantação de sua loja para o mundo real, recomendamos que você teste com o perfil de limitação nativo de &quot;Slow 3G&quot; da Chrome. Com o Slow 3G, nossos tempos de saída empacotados anteriores agora refletem as realidades de conexão de muitos usuários:
 
 ![Agrupamento real](../assets/performance/images/magentoBundlingRealWorld.png)
 
-Na conectividade Slow 3G, leva cerca de 44 segundos para carregar todos os pacotes da página inicial de um [!DNL Commerce] instalação.
+Na conectividade Slow 3G, leva cerca de 44 segundos para carregar todos os pacotes da página inicial de uma instalação limpa do [!DNL Commerce].
 
 O mesmo é verdadeiro ao mesclar os pacotes em um único arquivo. Os usuários ainda podem aguardar cerca de 42 segundos pelo carregamento da página inicial, como mostrado aqui:
 
-![Mesclagem do mundo real](../assets/performance/images/magentoMergingRealWorld.png)
+![Mesclagem real](../assets/performance/images/magentoMergingRealWorld.png)
 
-Com uma abordagem mais avançada [!DNL JavaScript] empacotamento, podemos melhorar esses tempos de carregamento.
+Com uma abordagem mais avançada ao agrupamento [!DNL JavaScript], podemos melhorar esses tempos de carregamento.
 
 ## Agrupamento avançado
 
-Lembre-se, o objetivo de [!DNL JavaScript] o agrupamento é para reduzir o número e o tamanho dos ativos solicitados para cada página carregada no navegador. Para fazer isso, queremos criar nossos pacotes para que cada página em nossa loja só precise baixar um pacote comum e um pacote específico da página para cada página acessada.
+Lembre-se, o objetivo do agrupamento [!DNL JavaScript] é reduzir o número e o tamanho dos ativos solicitados para cada página carregada no navegador. Para fazer isso, queremos criar nossos pacotes para que cada página em nossa loja só precise baixar um pacote comum e um pacote específico da página para cada página acessada.
 
-Uma maneira de fazer isso é definir seus pacotes por tipos de página. Você pode categorizar [!DNL Commerce]As páginas do em vários tipos de página, incluindo Categoria, Produto, CMS, Cliente, Carrinho e Check-out. Cada página categorizada em um desses tipos de página tem um conjunto diferente de dependências do módulo RequireJS. Ao agrupar os módulos RequireJS por tipo de página, você acabará com apenas alguns pacotes que cobrem as dependências de qualquer página em sua loja.
+Uma maneira de fazer isso é definir seus pacotes por tipos de página. Você pode categorizar as páginas de [!DNL Commerce] em vários tipos de página, incluindo Categoria, Produto, CMS, Cliente, Carrinho e Check-out. Cada página categorizada em um desses tipos de página tem um conjunto diferente de dependências do módulo RequireJS. Ao agrupar os módulos RequireJS por tipo de página, você acabará com apenas alguns pacotes que cobrem as dependências de qualquer página em sua loja.
 
 Por exemplo, você pode acabar com um pacote para as dependências comuns a todas as páginas, um pacote para páginas somente CMS, um pacote para páginas somente Catálogo, outro pacote para páginas somente Pesquisa e um pacote para páginas de Check-out.
 
 Você também pode criar pacotes por finalidade: para recursos comuns, recursos relacionados ao produto, recursos de envio, recursos de check-out, impostos e validações de formulário. A forma como você define os pacotes depende de você e da estrutura da loja. Você pode descobrir que algumas estratégias de agrupamento funcionarão melhor do que outras.
 
-Uma limpeza [!DNL Commerce] a instalação do permite atingir um desempenho suficiente dividindo pacotes por tipos de página, mas algumas personalizações podem exigir uma análise mais profunda e outras distribuições de ativos.
+Uma instalação limpa do [!DNL Commerce] permite alcançar um bom desempenho suficiente ao dividir pacotes por tipos de página, mas algumas personalizações podem exigir análise mais profunda e outras distribuições de ativos.
 
 ### Ferramentas necessárias
 
@@ -100,9 +100,9 @@ As versões completas do código de amostra usado neste artigo estão disponíve
 
 ### Parte 1: Criar uma configuração de pacote
 
-#### 1\. Adicionar um arquivo build.js
+#### 1. Adicionar um arquivo build.js
 
-Criar um `build.js` arquivo no [!DNL Commerce] diretório raiz. Esse arquivo conterá toda a configuração de build dos seus pacotes.
+Crie um arquivo `build.js` no diretório raiz [!DNL Commerce]. Esse arquivo conterá toda a configuração de build dos seus pacotes.
 
 ```javascript
 ({
@@ -111,11 +111,11 @@ Criar um `build.js` arquivo no [!DNL Commerce] diretório raiz. Esse arquivo con
 })
 ```
 
-Posteriormente, alteraremos o `optimize:` configuração de_ `none` para `uglify2` para minificar a saída do pacote. Mas, por enquanto, durante o desenvolvimento, você pode deixá-lo definido como `none` para garantir compilações mais rápidas.
+Posteriormente, alteraremos a configuração `optimize:` de_ `none` para `uglify2` para minificar a saída do pacote. Mas, por enquanto, durante o desenvolvimento, você pode deixá-lo definido como `none` para garantir compilações mais rápidas.
 
-#### 2\. Adicionar dependências, calços, caminhos e mapa RequireJS
+#### 2\ Adicionar dependências, calços, caminhos e mapa RequireJS
 
-Adicione os seguintes nós de configuração de build RequireJS, `deps`, `shim`, `paths`, e `map`, para o arquivo de build:
+Adicione os seguintes nós de configuração de compilação RequireJS, `deps`, `shim`, `paths` e `map`, ao seu arquivo de compilação:
 
 ```javascript
 ({
@@ -129,15 +129,15 @@ Adicione os seguintes nós de configuração de build RequireJS, `deps`, `shim`,
 })
 ```
 
-#### 3\. Agregar os valores de instância do requirements-config.js
+#### 3 Agregar os valores de instância do requirements-config.js
 
-Nesta etapa, será necessário agregar todos os vários `deps`, `shim`, `paths`, e `map` nós de configuração do da sua loja `requirejs-config.js` nos nós correspondentes em seu `build.js` arquivo. Para fazer isso, é possível abrir a variável **[!UICONTROL Network]** no painel Ferramentas do desenvolvedor do seu navegador e navegue para qualquer página na sua loja, como a página inicial. Na guia Rede, você verá a instância da loja do `requirejs-config.js` arquivo próximo à parte superior, destacado aqui:
+Nesta etapa, será necessário agregar todos os vários nós de configuração do `deps`, `shim`, `paths` e `map` do arquivo `requirejs-config.js` do armazenamento nos nós correspondentes no arquivo `build.js`. Para fazer isso, abra a guia **[!UICONTROL Network]** no painel Ferramentas do Desenvolvedor do seu navegador e navegue para qualquer página da sua loja, como a página inicial. Na guia Rede, você verá a instância do arquivo `requirejs-config.js` da sua loja próxima à parte superior, realçada aqui:
 
-![Configuração RequireJS](../assets/performance/images/RequireJSConfig.png)
+![Requer configuração de JS](../assets/performance/images/RequireJSConfig.png)
 
-Nesse arquivo, você encontrará várias entradas para cada um dos nós de configuração (`deps`, `shim`, `paths`, `map`). Você precisa agregar esses vários valores de nó no único nó de configuração do arquivo build.js. Por exemplo, se a loja `requirejs-config.js` A instância tem entradas para 15 separadas `map` nós, será necessário mesclar as entradas de todos os 15 nós no único `map` no seu `build.js` arquivo. O mesmo acontecerá com o `deps`, `shim`, e `paths` nós. Sem um script para automatizar esse processo, pode demorar.
+Neste arquivo, você encontrará várias entradas para cada um dos nós de configuração (`deps`, `shim`, `paths`, `map`). Você precisa agregar esses vários valores de nó no único nó de configuração do arquivo build.js. Por exemplo, se a instância `requirejs-config.js` do seu armazenamento tiver entradas para 15 nós `map` separados, você precisará mesclar as entradas para todos os 15 nós no único nó `map` no arquivo `build.js`. O mesmo ocorrerá para os nós `deps`, `shim` e `paths`. Sem um script para automatizar esse processo, pode demorar.
 
-Será necessário alterar o caminho `mage/requirejs/text` para `requirejs/text` in `paths` nó de configuração da seguinte maneira:
+Você precisará alterar o caminho `mage/requirejs/text` para `requirejs/text` no nó de configuração `paths` da seguinte maneira:
 
 ```javascript
 ({
@@ -149,9 +149,9 @@ Será necessário alterar o caminho `mage/requirejs/text` para `requirejs/text` 
 })
 ```
 
-#### 4\. Adicionar um nó de módulos
+#### 4\ Adicionar um nó de módulos
 
-No final do `build.js` , adicione os módulos[] matriz como um espaço reservado para os pacotes que você definirá para sua loja posteriormente.
+Ao final do arquivo `build.js`, adicione a matriz modules[] como espaço reservado para os pacotes que você definirá para sua loja mais tarde.
 
 ```javascript
 ({
@@ -167,16 +167,16 @@ No final do `build.js` , adicione os módulos[] matriz como um espaço reservado
 })
 ```
 
-#### 5\. Recuperar dependências RequireJS
+#### 5\ Recuperar dependências RequireJS
 
-Você pode recuperar todas as [!DNL RequireJS] as dependências de módulo dos tipos de página da sua loja usando:
+Você pode recuperar todas as dependências de módulo [!DNL RequireJS] dos tipos de página de seu armazenamento usando:
 
-1. [!DNL PhantomJS] na linha de comando (supondo que você tenha [!DNL PhantomJS] instalado).
+1. [!DNL PhantomJS] da linha de comando (supondo que você tenha [!DNL PhantomJS] instalado).
 1. Comando RequireJS no console do navegador.
 
 #### Para usar [!DNL PhantomJS]:
 
-No [!DNL Commerce] diretório raiz, crie um novo arquivo chamado `deps.js` e copie no código abaixo. Este código usa [!DNL [!DNL PhantomJS]] para abrir uma página e esperar que o navegador carregue todos os ativos da página. Em seguida, ele gera todos os [!DNL RequireJS] para uma determinada página.
+No diretório raiz [!DNL Commerce], crie um novo arquivo chamado `deps.js` e copie no código abaixo. Este código usa [!DNL [!DNL PhantomJS]] para abrir uma página e aguardar o navegador carregar todos os ativos da página. Em seguida, ele gera todas as dependências [!DNL RequireJS] de uma determinada página.
 
 ```javascript
 "use strict";
@@ -204,10 +204,10 @@ if (system.args.length === 1) {
 }
 ```
 
-Abra um terminal dentro do [!DNL Commerce] diretório raiz e execute o script em cada página da loja que representa um tipo de página específico:
+Abra um terminal dentro do diretório raiz [!DNL Commerce] e execute o script em cada página do armazenamento que represente um tipo de página específico:
 
 <pre>
-phantomjs deps.js <i>url para página específica</i> &gt; <i>text-file-presented-pagetype-dependencies</i>
+phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>arquivo-texto-representação-pagetype-dependencies</i>
 </pre>
 
 Por exemplo, aqui estão quatro páginas da loja de amostra com tema Luma que representam os quatro tipos de página que usaremos para criar nossos quatro pacotes (página inicial, categoria, produto, carrinho):
@@ -222,17 +222,17 @@ phantomjs deps.js http://m2.loc/checkout/cart/?SID=m2tjdt7ipvep9g0h8pmsgie975 > 
 
 #### Para usar o console do navegador:
 
-Se não quiser usar [!DNL PhantomJS], você pode executar o seguinte comando no console do navegador enquanto visualiza cada tipo de página na loja:
+Se você não quiser usar o [!DNL PhantomJS], execute o seguinte comando no console do navegador ao visualizar cada tipo de página na vitrine:
 
 ```shell
 Object.keys(window.require.s.contexts._.defined)
 ```
 
-Este comando (usado no [!DNL PhantomJS] script) cria a mesma lista de [!DNL RequireJS] dependências e as exibe no console do navegador. A desvantagem dessa abordagem é que você terá que criar seus próprios arquivos de texto do tipo pacote/página.
+Este comando (usado no script [!DNL PhantomJS]) cria a mesma lista de dependências [!DNL RequireJS] e as exibe no console do navegador. A desvantagem dessa abordagem é que você terá que criar seus próprios arquivos de texto do tipo pacote/página.
 
 #### 6\. Formatar e filtrar a saída
 
-Depois de mesclar a variável [!DNL RequireJS] dependências em arquivos de texto do tipo página, você pode usar o seguinte comando em cada arquivo de dependência do tipo página para substituir as vírgulas em seus arquivos por novas linhas:
+Depois de mesclar as dependências de [!DNL RequireJS] em arquivos de texto do tipo página, você pode usar o seguinte comando em cada arquivo de dependência do tipo página para substituir as vírgulas em seus arquivos por novas linhas:
 
 ```terminal
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
@@ -250,17 +250,17 @@ sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 ...
 ```
 
-#### 7\. Identificar pacotes exclusivos e comuns
+#### 7\ Identificar pacotes exclusivos e comuns
 
 O objetivo é criar um pacote comum de [!DNL JavaScript] arquivos necessários para todas as páginas. Dessa forma, o navegador só precisa carregar o pacote comum juntamente com um ou mais tipos de página específicos.
 
-Abra um terminal no [!DNL Commerce] diretório raiz e use o seguinte comando para verificar se você tem dependências que podem ser divididas em pacotes separados:
+Abra um terminal no diretório raiz [!DNL Commerce] e use o seguinte comando para verificar se você tem dependências que podem ser divididas em conjuntos separados:
 
 ```bash
 sort bundle/*.txt |uniq -c |sort -n
 ```
 
-Este comando mescla e classifica as dependências encontradas no `bundle/*.txt` arquivos.  A saída também mostra o número de arquivos que contêm cada dependência:
+Este comando mescla e classifica as dependências encontradas nos arquivos `bundle/*.txt`.  A saída também mostra o número de arquivos que contêm cada dependência:
 
 ```terminal
 1 buildTools,
@@ -275,7 +275,7 @@ Este comando mescla e classifica as dependências encontradas no `bundle/*.txt` 
 ...
 ```
 
-Essa saída mostra que `buildTools` é uma dependência em apenas um dos arquivos bundle/*.txt. A variável `jquery/jquery.metadata` a dependência está em dois (2) arquivos e `es6-collections` O está em três (3) arquivos.
+Esta saída mostra que `buildTools` é uma dependência em apenas um dos arquivos bundle/*.txt. A dependência `jquery/jquery.metadata` está em dois (2) arquivos e `es6-collections` está em três (3) arquivos.
 
 Nossa saída mostra apenas três tipos de página (página inicial, categoria e produto), que nos informa:
 
@@ -285,9 +285,9 @@ Nossa saída mostra apenas três tipos de página (página inicial, categoria e 
 
 Isso nos diz que provavelmente podemos melhorar as velocidades de carregamento de página de nossa loja dividindo nossas dependências em um pacote diferente, assim que soubermos quais tipos de página precisam de quais dependências.
 
-#### 8\. Criar um arquivo de distribuição de dependências
+#### 8\ Criar um arquivo de distribuição de dependências
 
-Para descobrir quais tipos de página precisam de quais dependências, crie um novo arquivo no [!DNL Commerce] diretório raiz chamado `deps-map.sh` e copie no código abaixo:
+Para descobrir quais tipos de página precisam de quais dependências, crie um novo arquivo no diretório raiz [!DNL Commerce] chamado `deps-map.sh` e copie no código abaixo:
 
 ```shell
 awk 'END {
@@ -309,7 +309,7 @@ awk 'END {
 
 Você também pode encontrar o script em [https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html)
 
-Abra um terminal no [!DNL Commerce] diretório raiz e execute o arquivo:
+Abra um terminal no diretório raiz [!DNL Commerce] e execute o arquivo:
 
 ```bash
 bash deps-map.sh
@@ -333,17 +333,17 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 Essas informações são suficientes para criar uma configuração de pacotes.
 
-#### 9\. Criar pacotes no arquivo build.js
+#### 9\ Criar pacotes no arquivo build.js
 
-Abra o `build.js` arquivo de configuração e adicione seus pacotes ao `modules` nó. Cada pacote deve definir as seguintes propriedades:
+Abra o arquivo de configuração `build.js` e adicione seus pacotes ao nó `modules`. Cada pacote deve definir as seguintes propriedades:
 
-- `name`— o nome do pacote. Por exemplo, um nome de `bundles/cart` gera um `cart.js` pacote em um `bundles` subdiretório.
+- `name`— o nome do pacote. Por exemplo, um nome de `bundles/cart` gera um pacote `cart.js` em um subdiretório `bundles`.
 
 - `create`— um sinalizador booleano para criar o pacote (valores: `true` ou `false`).
 
-- `include`— uma matriz de ativos (strings) incluídos como dependências para a página. RequireJS rastreia todas as dependências e as inclui no pacote, a menos que excluídas.
+- `include`— uma matriz de ativos (sequências de caracteres) incluídos como dependências para a página. RequireJS rastreia todas as dependências e as inclui no pacote, a menos que excluídas.
 
-- `exclude`— uma série de pacotes ou ativos a serem excluídos do pacote.
+- `exclude`— uma matriz de pacotes ou ativos a serem excluídos do pacote.
 
 ```javascript
 {
@@ -368,17 +368,17 @@ Abra o `build.js` arquivo de configuração e adicione seus pacotes ao `modules`
 
 Este exemplo reutiliza `mage/bootstrap` e `requirejs/require` ativos, colocando maior prioridade em seus componentes mais importantes e componentes que precisam ser carregados de forma síncrona. Os pacotes presentes são:
 
-- `requirejs/require`—o único pacote carregado de forma síncrona
+- `requirejs/require` — o único pacote carregado de forma síncrona
 - `mage/bootstrap`—o pacote de inicialização com componentes de UI
 - `bundles/default`—pacote padrão necessário para todas as páginas
-- `bundles/cart`—um pacote necessário para a página do carrinho
-- `bundles/shipping`—pacote comum para o carrinho de compras e a página de check-out (supondo que o check-out nunca seja aberto diretamente, a página de check-out será carregada ainda mais rápido se a página do carrinho tiver sido aberta anteriormente e o pacote de envio já tiver sido carregado)
+- `bundles/cart` — um pacote necessário para a página do carrinho
+- `bundles/shipping` — pacote comum para carrinho de compras e página de check-out (supondo que o check-out nunca seja aberto diretamente, a página de check-out será carregada ainda mais rápido se a página do carrinho tiver sido aberta anteriormente e o pacote de remessa já tiver sido carregado)
 - `bundles/checkout`—tudo para finalização
-- `bundles/catalog`— tudo para páginas de produto e categoria
+- `bundles/catalog`—tudo para páginas de produto e categoria
 
 ### Parte 2: Gerar pacotes
 
-As etapas abaixo descrevem o processo básico para gerar [!DNL Commerce] pacotes. Você pode automatizar esse processo da maneira que quiser, mas ainda precisará usar `nodejs` e `r.js` para realmente gerar seus pacotes. E se seus temas têm [!DNL JavaScript]personalizações relacionadas a e não podem reutilizar as mesmas `build.js` arquivo, talvez seja necessário criar vários `build.js` configurações por tema.
+As etapas abaixo descrevem o processo básico para gerar pacotes [!DNL Commerce] mais eficientes. Você pode automatizar esse processo da maneira que quiser, mas ainda precisará usar `nodejs` e `r.js` para realmente gerar seus pacotes. E se os temas tiverem personalizações relacionadas a [!DNL JavaScript] e não puderem reutilizar o mesmo arquivo `build.js`, talvez seja necessário criar várias configurações de `build.js` por tema.
 
 #### 1. Gerar sites de armazenamento estáticos
 
@@ -413,13 +413,13 @@ mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US
 
 #### 3. Execute o otimizador r.js
 
-Em seguida, execute o otimizador r.js no `build.js` arquivo de [!DNL Commerce]do diretório raiz. Os caminhos para todos os diretórios e arquivos são relativos ao diretório de trabalho.
+Em seguida, execute o otimizador r.js no arquivo `build.js` do diretório raiz de [!DNL Commerce]. Os caminhos para todos os diretórios e arquivos são relativos ao diretório de trabalho.
 
 ```bash
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
-Esse comando gera pacotes em um `bundles` subdiretório do diretório de destino, que neste caso resulta em `pub/static/frontend/Magento/luma/en_US/bundles`.
+Este comando gera pacotes em um subdiretório `bundles` do diretório de destino, que neste caso resulta em `pub/static/frontend/Magento/luma/en_US/bundles`.
 
 A listagem do conteúdo do novo diretório do pacote pode ser semelhante a:
 
@@ -440,7 +440,7 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 
 #### 4. Configurar RequireJS para usar pacotes
 
-Para fazer com que RequireJS use seus pacotes, adicione um `onModuleBundleComplete` retorno de chamada após o `modules` no nó `build.js` arquivo:
+Para fazer com que RequireJS use seus pacotes, adicione um retorno de chamada `onModuleBundleComplete` após o nó `modules` no arquivo `build.js`:
 
 ```javascript
 [
@@ -482,7 +482,7 @@ Execute o seguinte comando para implantar:
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
-Abertura `requirejs-config.js` no `pub/static/frontend/Magento/luma/en_US` diretório para verificar se RequireJS anexou o arquivo com chamadas de configuração de empacotamento:
+Abra `requirejs-config.js` no diretório `pub/static/frontend/Magento/luma/en_US` para verificar se RequireJS anexou o arquivo com chamadas de configuração agrupadas:
 
 ```javascript
 require.config({
@@ -495,7 +495,7 @@ require.config({
 
 >[!NOTE]
 >
->Ao configurar pacotes, coloque o plug-in `requirejs.config()` chamadas na ordem em que você deseja que sejam executadas, já que as chamadas são executadas na ordem em que aparecem.
+>Ao configurar pacotes, certifique-se de colocar as chamadas `requirejs.config()` na ordem em que deseja que sejam executadas, já que as chamadas são executadas na ordem em que aparecem.
 
 #### 6. Testar os resultados
 
@@ -503,13 +503,13 @@ Depois que a página for carregada, observe o navegador carregando diferentes de
 
 ![Duas vezes mais rápido](../assets/performance/images/TwiceAsFast.png)
 
-O tempo de carregamento de uma página inicial vazia agora é duas vezes mais rápido do que o uso de páginas [!DNL Commerce] empacotamento. Mas podemos fazer ainda melhor.
+O tempo de carregamento de uma página inicial vazia agora é duas vezes mais rápido do que o uso do agrupamento [!DNL Commerce] nativo. Mas podemos fazer ainda melhor.
 
 #### 7. Otimizar os pacotes
 
-Mesmo se compactado, o [!DNL JavaScript] os arquivos ainda são grandes. Reduza-os com RequireJS, que usa o modificador para minificação [!DNL JavaScript] para obter bons resultados.
+Mesmo se forem compactados, os arquivos [!DNL JavaScript] ainda serão grandes. Reduza-os com RequireJS, que usa um modificador para minificar [!DNL JavaScript] para um bom resultado.
 
-Para ativar o otimizador no seu `build.js` arquivo, adicionar `uglify2` como o valor da propriedade otimizar na parte superior do `build.js` arquivo:
+Para habilitar o otimizador no arquivo `build.js`, adicione `uglify2` como o valor para a propriedade de otimização na parte superior do arquivo `build.js`:
 
 ```javascript
 ({
@@ -521,4 +521,4 @@ Para ativar o otimizador no seu `build.js` arquivo, adicionar `uglify2` como o v
 Os resultados podem ser significativos:
 ![Três vezes mais rápido](../assets/performance/images/ThreeTimesFaster.png)
 
-Os tempos de carregamento agora são três vezes mais rápidos que com o nativo [!DNL Commerce] empacotamento.
+Os tempos de carregamento agora são três vezes mais rápidos que com o agrupamento [!DNL Commerce] nativo.

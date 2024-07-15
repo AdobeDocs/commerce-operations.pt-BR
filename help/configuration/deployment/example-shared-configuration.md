@@ -4,19 +4,19 @@ description: Veja um exemplo de como alterar configurações em um sistema de de
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
 # Exemplo usando uma configuração compartilhada
 
-Este exemplo mostra como alterar as seguintes configurações no sistema de desenvolvimento, atualizar o arquivo de configuração compartilhado, `config.php`, no sistema de compilação, e implemente as mesmas configurações no sistema de produção:
+Este exemplo mostra como alterar as seguintes configurações no sistema de desenvolvimento, atualizar o arquivo de configuração compartilhado, `config.php`, no sistema de compilação, e implementar as mesmas configurações no sistema de produção:
 
-- Fuso horário
+- Fuso Horário
 - Unidade de peso
 
-Essas configurações estão disponíveis no Administrador do **Lojas** > Configurações > **Configuração** > Geral > **Geral**.
+Estas configurações estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > Geral > **Geral**.
 
 Você pode usar o mesmo procedimento para definir configurações não confidenciais e não específicas do sistema nas seguintes referências:
 
@@ -36,7 +36,7 @@ Para os fins deste exemplo, pressupomos o seguinte:
 
 - Você usa o controle de origem do Git
 - O sistema de desenvolvimento está disponível em um repositório remoto Git chamado `mconfig`
-- Sua ramificação de trabalho Git é chamada de `m2.2_deploy`
+- Sua ramificação de trabalho Git é chamada `m2.2_deploy`
 
 ## Etapa 1: definir a configuração no sistema de desenvolvimento
 
@@ -44,21 +44,21 @@ Para definir o fuso horário e as unidades de peso no sistema de desenvolvimento
 
 1. Faça logon no Administrador.
 1. Clique em **Lojas** > Configurações > **Configuração** > Geral > **Geral**.
-1. No painel direito, expanda **Opções de localidade**.
+1. No painel direito, expanda **Opções de Local**.
 
    A figura a seguir mostra um exemplo.
 
    ![Definir opções de localidade no sistema de desenvolvimento](../../assets/configuration/split-deploy-set-locale.png)
 
-1. No **Fuso horário** clique em **GMT+00:00 (UTC)**.
-1. Limpe a **Usar valor do sistema** ao lado da caixa de seleção **Unidade de Peso** campo.
-1. No **Unidade de Peso** clique em **kgs**.
+1. Na lista **Fuso horário**, clique em **GMT+00:00 (UTC)**.
+1. Desmarque a caixa de seleção **Usar valor do sistema** ao lado do campo **Unidade de Peso**.
+1. Na lista **Unidade de Peso**, clique em **kg**.
 1. Clique em **Salvar configuração**.
 1. Se solicitado, limpe o cache.
 
 ## Etapa 2: atualizar a configuração compartilhada
 
-Gerar o arquivo de configuração compartilhado, `app/etc/config.php`, no sistema de desenvolvimento e transfira-o usando o controle do código-fonte para o sistema de build, conforme discutido nesta seção.
+Gere o arquivo de configuração compartilhado, `app/etc/config.php`, em seu sistema de desenvolvimento e transfira-o usando o controle do código-fonte para seu sistema de compilação conforme discutido nesta seção.
 
 {{$include /help/_includes/config-save-config.md}}
 
@@ -76,11 +76,11 @@ A última etapa do processo é atualizar o sistema de produção do controle do 
 
 ### Verifique as alterações no Admin
 
-**Para verificar se essas configurações não são editáveis no Admin**:
+**Para verificar se estas configurações não são editáveis no Admin**:
 
 1. Faça logon no Administrador.
 1. Clique em **Lojas** > Configurações > **Configuração** > Geral > **Geral**.
-1. No painel direito, expanda **Opções de localidade**.
+1. No painel direito, expanda **Opções de Local**.
 
    As opções que você acabou de definir são exibidas da seguinte maneira:
 
@@ -88,4 +88,4 @@ A última etapa do processo é atualizar o sistema de produção do controle do 
 
 >[!INFO]
 >
->Para alterar uma configuração que está bloqueada no Administrador, use o [`magento config:set --lock` comando](../cli/set-configuration-values.md).
+>Para alterar uma configuração bloqueada no Admin, use o comando [`magento config:set --lock` ](../cli/set-configuration-values.md).

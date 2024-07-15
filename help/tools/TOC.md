@@ -13,7 +13,7 @@ ht-degree: 3%
 # Ferramentas {#tools}
 
 - [Visão geral](overview.md)
-- Ferramenta de análise do site {#site-wide-analysis-tool}
+- Ferramenta de Análise do Site {#site-wide-analysis-tool}
    - [Introdução](site-wide-analysis-tool/intro.md)
    - [Instalação](site-wide-analysis-tool/installation.md)
    - [Como acessar o](site-wide-analysis-tool/access.md)
@@ -26,7 +26,7 @@ ht-degree: 3%
    - [Extensões](site-wide-analysis-tool/extensions.md)
    - [Alertas](site-wide-analysis-tool/alerts.md)
    - [Correções](site-wide-analysis-tool/patches.md)
-- Ferramenta Correções de qualidade {#quality-patches-tool}
+- Ferramenta de correções de qualidade {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de versão](quality-patches-tool/release-notes.md)
@@ -48,14 +48,14 @@ ht-degree: 3%
    - [A guia Alertas](observation-for-adobe-commerce/alerts-tab.md)
    - [A guia WAF](observation-for-adobe-commerce/waf-tab.md)
    - [A guia CDN](observation-for-adobe-commerce/cdn-tab.md)
-   - [A variável [!DNL RabbitMQ] guia](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [A guia  [!DNL RabbitMQ] ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [A página do Cron](observation-for-adobe-commerce/cron-tab.md)
    - [A guia Indexação](observation-for-adobe-commerce/indexing-tab.md)
    - [A guia QuickView](observation-for-adobe-commerce/oac-quickview-tab.md)
    - [A guia Segurança](observation-for-adobe-commerce/security-tab.md)
    - [A guia Infraestrutura](observation-for-adobe-commerce/oac-infra.md)
    - [Como usar a observação para o Adobe Commerce](observation-for-adobe-commerce/how-to-use.md)
-- Ferramenta de migração de dados {#data-migration}
+- Ferramenta de Migração de Dados {#data-migration}
    - [Como a migração funciona](data-migration-tool/how-migration-works.md)
    - [Práticas recomendadas](data-migration-tool/best-practices.md)
    - [Versões compatíveis](data-migration-tool/supported-versions.md)
@@ -74,8 +74,8 @@ ht-degree: 3%
       - [Alterações](data-migration-tool/migrate-data/delta.md)
       - [Acompanhamento](data-migration-tool/migrate-data/follow-up.md)
       - [Dados que exigem migração manual](data-migration-tool/migrate-data/manual.md)
-      - [Etapas de migração pós-dados](data-migration-tool/migrate-data/post-migration.md)
+      - [Post - etapas de migração de dados](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
       - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
-      - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+      - [Log de alterações](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

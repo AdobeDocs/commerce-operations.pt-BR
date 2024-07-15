@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Você deve iniciar um [consumidor de fila de mensagens](../queues/consumers.md) para habilitar operações assíncronas, como ações em massa do Inventory management e pontos de extremidade ASSÍNCRONOS e em massa REST. Para habilitar a funcionalidade B2B, você deve iniciar vários consumidores. Módulos de terceiros também podem exigir que você inicie um consumidor personalizado.
+Você deve iniciar um [consumidor da fila de mensagens](../queues/consumers.md) para habilitar operações assíncronas, como ações em massa do Inventory management e pontos de extremidade ASSÍNCRONOS e em massa REST. Para habilitar a funcionalidade B2B, você deve iniciar vários consumidores. Módulos de terceiros também podem exigir que você inicie um consumidor personalizado.
 
 Para exibir uma lista de todos os consumidores:
 
@@ -27,14 +27,14 @@ Para iniciar consumidores de fila de mensagens:
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
-Depois de consumir todas as mensagens disponíveis, o comando é encerrado. Você pode executar o comando novamente manualmente ou com um trabalho cron. Você também pode executar várias instâncias do `magento queue:consumers:start` comando para processar grandes filas de mensagens. Por exemplo, você pode anexar `&` para executar o comando em segundo plano, retorne a um prompt e continue executando os comandos:
+Depois de consumir todas as mensagens disponíveis, o comando é encerrado. Você pode executar o comando novamente manualmente ou com um trabalho cron. Você também pode executar várias instâncias do comando `magento queue:consumers:start` para processar grandes filas de mensagens. Por exemplo, você pode anexar `&` ao comando para executá-lo em segundo plano, retornar a um prompt e continuar a executar comandos:
 
 ```bash
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-Consulte [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) na seção Commerce do _Referência de ferramentas de linha de comando_ para obter detalhes sobre as opções, os parâmetros e os valores do comando.
+Consulte [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) na seção Commerce da _Referência de ferramentas de linha de comando_ para obter detalhes sobre opções, parâmetros e valores de comandos.
 
 >[!INFO]
 >
->A variável `--multi-process` está presente na variável `queue:consumers:start` comando, mas para executar consumidores com processos paralelos, configure o [`multiple_processes`](../queues/manage-message-queues.md#configuration) opção em `/app/etc/env.php`. Caso contrário, se `queue:consumers:start` é chamado com o `--multi-process` funciona somente em um único thread.
+>A opção `--multi-process` está presente no comando `queue:consumers:start`, mas, para executar consumidores com processos paralelos, configure a opção [`multiple_processes`](../queues/manage-message-queues.md#configuration) em `/app/etc/env.php`. Caso contrário, se `queue:consumers:start` for chamado com a opção `--multi-process`, ele só funcionará em um único thread.

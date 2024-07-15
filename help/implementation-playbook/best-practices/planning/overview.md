@@ -106,27 +106,27 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | [Configuração de categoria](catalog-management.md#category-limits) | Configure categorias de produtos para obter o desempenho ideal. |
 | [Configuração do produto&#x200B;](catalog-management.md#product-sku-limits) | Configure as SKUs do produto para obter o desempenho ideal. |
-| [Configuração da variação do produto](catalog-management.md#product-variations) | Configure as variações do produto para obter o desempenho ideal. |
-| [Configuração das opções do produto](catalog-management.md#product-options) | Configure as opções do produto para obter o desempenho ideal. |
-| [Configuração dos atributos do produto&#x200B;](catalog-management.md#product-attributes) | Configure os atributos do produto para obter o desempenho ideal. |
-| [Configuração de paginação para listagens de produtos](catalog-management.md#product-listing-pagination) | Configure a paginação de lista de produtos para obter o desempenho ideal. |
+| [Configuração de variação do produto](catalog-management.md#product-variations) | Configure as variações do produto para obter o desempenho ideal. |
+| [Configuração de opções do produto](catalog-management.md#product-options) | Configure as opções do produto para obter o desempenho ideal. |
+| [Configuração de atributos de produto&#x200B;](catalog-management.md#product-attributes) | Configure os atributos do produto para obter o desempenho ideal. |
+| [Configuração de paginação para listas de produtos](catalog-management.md#product-listing-pagination) | Configure a paginação de lista de produtos para obter o desempenho ideal. |
 
 ## Extensões
 
 | Prática recomendada | Descrição |
 |-----------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Uso de extensões de terceiros no Adobe Commerce](extensions.md) | Saiba como evitar problemas de desempenho causados por extensões de terceiros do Adobe Commerce. |
+| [Usando extensões de terceiros no Adobe Commerce](extensions.md) | Saiba como evitar problemas de desempenho causados por extensões de terceiros do Adobe Commerce. |
 
 ## Escopo do projeto
 
 | Prática recomendada | Descrição |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | [Escalonamentos de parceiros](partner-escalation.md) | Prepare-se para escalonar um problema de parceiro com uma Equipe de conta da Adobe ou saiba como evitar um escalonamento. |
-| [Processamento de armazenamento de pagamentos](payment-processing-storage.md) | Processe e armazene com segurança os detalhes de pagamento. |
+| [Processamento do armazenamento de pagamentos](payment-processing-storage.md) | Processe e armazene com segurança os detalhes de pagamento. |
 
 ## Vendas e marketing
 
 | Prática recomendada | Descrição |
 |------------------------------------------------------------|--------------------------------------------------------------|
 | [Limites do carrinho de produtos](catalog-management.md#cart-limits) | Gerenciar limites do carrinho para obter o desempenho ideal. |
-| [Configuração de promoções](catalog-management.md#promotions) | Configure vendas e promoções para itens em um carrinho de compras. |
+| [Configurando promoções](catalog-management.md#promotions) | Configure vendas e promoções para itens em um carrinho de compras. |

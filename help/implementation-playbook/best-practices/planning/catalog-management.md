@@ -29,7 +29,7 @@ Para obter o melhor desempenho, use as diretrizes a seguir para gerenciar os lim
 
 ### Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -38,7 +38,7 @@ Para obter o melhor desempenho, use as diretrizes a seguir para gerenciar os lim
 
 Use as estratégias a seguir para gerenciar o número de itens do carrinho
 
-- Dividir pedidos em vários pedidos menores com um número menor de linhas usando o [!UICONTROL Add Item by SKU] recurso.
+- Dividir pedidos em vários pedidos menores com um número menor de linhas usando o recurso [!UICONTROL Add Item by SKU].
 - Adicione apenas a lógica personalizada e a personalização do carrinho necessária para carregar uma lista de itens.
 
 ## Limites de categoria
@@ -47,7 +47,7 @@ Configurar um grande número de categorias pode afetar o desempenho.
 
 ### Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -70,7 +70,7 @@ Configurar muitos atributos de produto ou opções de atributos de produto pode 
 
 ### Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -112,7 +112,7 @@ Remover conjuntos de atributos de produto não utilizados usando o MySQL.
 
 ### Possível impacto no desempenho
 
-Configuração de muitos **atributos do produto** aumenta o tamanho do modelo de produto para cada produto (estrutura EAV) e a quantidade de dados que devem ser recuperados. Esse aumento afeta as operações das seguintes maneiras:
+A configuração de muitos **atributos de produto** aumenta o tamanho do modelo de produto para cada produto (estrutura EAV) e a quantidade de dados que devem ser recuperados. Esse aumento afeta as operações das seguintes maneiras:
 
 - Aumento no tráfego de consultas SQL relacionadas à recuperação de dados do EAV e à quantidade de dados processados que resulta na diminuição da taxa de transferência do BD
 - Aumento significativo no tamanho dos índices do Adobe Commerce e do índice de pesquisa de texto completo
@@ -125,7 +125,7 @@ Os aumentos nos dados do produto e nos tamanhos do índice podem afetar o desemp
 - A funcionalidade Ações em massa do produto pode ser bloqueada.
 - O tempo de recriação do índice para catálogos de médio e grande porte não pode ser executado diariamente devido a longos tempos de execução.
 
-Configuração de muitos **opções de atributo** podem afetar o desempenho do site das seguintes maneiras:
+A configuração de muitas **opções de atributo** pode afetar o desempenho do site das seguintes maneiras:
 
 - Longos tempos de solicitação e renderização nas páginas de detalhes do produto (PDP) e categoria contendo produtos complexos.
 - O tempo de resposta das operações de salvamento do produto do administrador aumenta acima das metas de desempenho ideais.
@@ -138,7 +138,7 @@ A configuração de muitas opções de produto por produto pode afetar o desempe
 
 ### Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -155,7 +155,7 @@ Use as seguintes estratégias para reduzir o número de opções de produtos por
 
 A configuração de muitas opções de produtos aumenta a quantidade de dados recuperados para cada produto em todas as operações de leitura e gravação, resultando em:
 
-- Maior tráfego de consulta SQL e mais pesado `JOIN` operações aumentam a taxa de transferência do banco de dados.
+- O aumento do tráfego de consultas SQL e as operações `JOIN` mais pesadas aumentam a taxa de transferência do banco de dados.
 - Aumento do tamanho dos índices do Adobe Commerce e do índice de pesquisa de texto completo.
 
 Os aumentos listados acima podem afetar o desempenho do site das seguintes maneiras:
@@ -170,14 +170,14 @@ A exibição de muitos produtos por página pode afetar o desempenho.
 
 ### Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
 
 ### Atualizar a configuração da lista de produtos
 
-Se você tiver muitos produtos em uma categoria, atualize a configuração do catálogo da loja para desativar a opção para **Permitir todos os produtos por página**.
+Se você tiver muitos produtos em uma categoria, atualize a configuração do catálogo da loja para desabilitar a opção para **Permitir todos os produtos por página**.
 
 Depois que você desativa essa opção, o Adobe Commerce usa os controles de paginação de vitrine eletrônica de produtos para gerenciar o número de produtos exibidos nos componentes da vitrine eletrônica. Para obter instruções, consulte [Configurar controles de paginação](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
@@ -187,7 +187,7 @@ A configuração de muitas SKUs de produtos pode afetar o desempenho, retardando
 
 ### Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -205,7 +205,7 @@ Use as seguintes estratégias para reduzir o número de produtos (SKUs):
    - Diminua o número de SKUs diminuindo o número de sites, grupos de clientes, catálogos compartilhados, número de produtos ou número de opções de produtos configuráveis
 - Forneça mais variações de produtos usando opções personalizadas em vez de criar produtos separados.
 - Levando em consideração que um SKU efetivo pode incluir uma série de permutas potenciais de preços, porque os preços podem ser especificados de forma diferente para cada loja ou grupo de clientes.
-- Desative ou remova componentes não utilizados do sistema, como módulos. Consulte  [Desinstalar módulos](../../../installation/tutorials/uninstall-modules.md).
+- Desative ou remova componentes não utilizados do sistema, como módulos. Consulte [Desinstalar módulos](../../../installation/tutorials/uninstall-modules.md).
 - Gerenciar produtos em um Sistema de gerenciamento de plataforma (PMS) externo.
 
 ## Variações de produto
@@ -214,7 +214,7 @@ A configuração de muitas variações por produto pode afetar o desempenho.
 
 ### Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -249,7 +249,7 @@ Siga estas práticas recomendadas para configurar vendas e promoções para iten
 
 ### Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -261,4 +261,4 @@ Ter mais do que o número máximo recomendado de regras de preço do carrinho ou
 - Maior tempo de resposta quando os produtos são adicionados ao carrinho.
 - Aumento do tempo para carregar e renderizar o minicart.
 - Mais tempo para renderizar a página do carrinho.
-- Maior tempo para renderizar o **Totais** na página Check-out.
+- Mais tempo para renderizar o bloco **Totais** na página Check-out.

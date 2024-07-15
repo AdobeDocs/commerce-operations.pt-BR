@@ -5,7 +5,7 @@ exl-id: 466f2f83-ea19-4230-b33b-4435974effb7
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,10 @@ Todo o modelo de comércio eletrônico é definido no site, o que significa que 
 
 Diferenças entre o gerenciamento de campanhas B2B e B2C:
 
-- **Desenvolver relacionamento**—B2B usa gerenciamento de campanhas para construir relacionamentos de longo prazo, enquanto B2C usa gerenciamento de campanhas para construir relacionamentos de curto prazo
+- **Desenvolver relacionamento**—B2B usa o gerenciamento de campanhas para construir relacionamentos de longo prazo, enquanto B2C usa o gerenciamento de campanhas para construir relacionamentos de curto prazo
 
-- **Marcas**—O gerenciamento de campanhas B2B se concentra mais na geração de leads, enquanto o B2C se concentra no valor da marca
+- **Marcas** — O gerenciamento de campanhas B2B se concentra mais na geração de clientes potenciais, enquanto o B2C se concentra no valor da marca
 
 - **Tomada de decisão**—As decisões de campanha B2B são lógicas, enquanto as decisões de campanha B2C são emocionais
 
-- **Público**— o gerenciamento de campanhas B2B inclui várias partes interessadas, enquanto o gerenciamento de campanhas B2C é direcionado a usuários finais individuais
+- **Público-alvo** — o gerenciamento de campanhas B2B inclui várias partes interessadas, enquanto o gerenciamento de campanhas B2C é direcionado a usuários finais individuais

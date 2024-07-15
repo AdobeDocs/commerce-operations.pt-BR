@@ -6,8 +6,8 @@ feature: Best Practices, Cache
 exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 0%
+source-wordcount: '182'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 O cache do Realpath armazena em cache os caminhos reais do sistema de arquivos dos nomes de arquivos referenciados, em vez de pesquisá-los sempre. Toda vez que várias funções de arquivo são executadas ou requerem um arquivo e usar um caminho relativo, o PHP tem que procurar onde esse arquivo realmente existe.
 
-Para melhorar o desempenho do Commerce, use as seguintes configurações recomendadas para configurar o `realpath_cache` configurações no `php.ini` arquivo:
+Para melhorar o desempenho do Commerce, use as seguintes configurações recomendadas para definir as configurações de `realpath_cache` no arquivo `php.ini`:
 
 - Defina o tamanho do cache como 10 MB (`realpath cache_size=10M`)
 - Defina a vida útil (ttl) como 7.200 segundos (`realpath_cache_ttl=7200`)

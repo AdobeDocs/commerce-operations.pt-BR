@@ -4,7 +4,7 @@ description: Saiba mais sobre as diferentes funções e responsabilidades envolv
 exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -130,12 +130,12 @@ A equipe de Conteúdo faz parte da equipe de Marketing, da equipe de Ecommerce o
 
 A equipe de conteúdo é responsável por:
 
-- **Organização do conteúdo**— Elementos, URLs, navegação e estrutura de página precisam ser simples e fáceis de usar. Se o site for muito complicado, os clientes se perdem.
+- **Organizar o conteúdo**—Elementos, URLs, navegação e estrutura de página precisam ser simples e de fácil utilização. Se o site for muito complicado, os clientes se perdem.
 
-- **Correção de conteúdo com falha**— Imagens, páginas, páginas ausentes, fluxo de check-out corrompido e mensagens de erro quebradas fazem com que os clientes saiam do site e deixem uma impressão negativa.
+- **Correção de conteúdo com falha**: imagens com falha, páginas, páginas ausentes, fluxo de check-out com falha e mensagens de erro fazem com que os clientes saiam do site e deixem uma impressão negativa.
 
-- **Atualização de conteúdo**—O conteúdo do site precisa estar atualizado. Se o site consistir em conteúdo desatualizado, ele afetará a experiência do cliente e aumentará a carga de trabalho para a equipe de Atendimento ao cliente. Por exemplo, eles precisam responder às perguntas do cliente que deveriam ter sido respondidas pelo conteúdo no site.
+- **Atualizando conteúdo**—O conteúdo do site precisa ser atualizado. Se o site consistir em conteúdo desatualizado, ele afetará a experiência do cliente e aumentará a carga de trabalho para a equipe de Atendimento ao cliente. Por exemplo, eles precisam responder às perguntas do cliente que deveriam ter sido respondidas pelo conteúdo no site.
 
-- **Simplificação do conteúdo**— a equipe de conteúdo precisa criar conteúdo simples e direto. A linguagem simples funciona melhor ao interagir com os clientes.
+- **Simplificando o conteúdo** — A equipe de Conteúdo precisa criar conteúdo simples e direto. A linguagem simples funciona melhor ao interagir com os clientes.
 
 A equipe de conteúdo cria, testa, gerencia e otimiza todo o conteúdo do site, o que traz o ROI.

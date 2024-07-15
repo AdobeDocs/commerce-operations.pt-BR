@@ -26,8 +26,8 @@ Este tópico detalha alguns dos principais padrões de desenvolvimento do Adobe 
 
 Embora alguns implementadores de soluções possam ter suas próprias preferências em metodologias, processos e ferramentas, este manual se concentra em práticas recomendadas e metodologias aceitas que podem ser compartilhadas na maioria das implementações.
 
-Como qualquer projeto de TI grande, o Adobe Commerce é construído com base em padrões de codificação que usam práticas recomendadas e padronizações, e padrões que foram estabelecidos dentro da Adobe Commerce [Padrão de codificação](https://developer.adobe.com/commerce/php/coding-standards/). Seguir esses padrões é importante para eliminar erros e melhorar a qualidade e a capacidade de manutenção do código criado de forma personalizada.
+Como qualquer projeto de TI grande, o Adobe Commerce é construído com base em padrões de codificação que usam práticas recomendadas e padronizações, e padrões que foram estabelecidos dentro do [Padrão de codificação](https://developer.adobe.com/commerce/php/coding-standards/) do Adobe Commerce. Seguir esses padrões é importante para eliminar erros e melhorar a qualidade e a capacidade de manutenção do código criado de forma personalizada.
 
 ## Adobe Commerce na infraestrutura em nuvem
 
-A infraestrutura do Adobe Commerce na nuvem é uma plataforma de hospedagem gerenciada e automatizada para o software Adobe Commerce. A infraestrutura do Adobe Commerce na nuvem vem com vários recursos que a diferenciam das implementações locais do Adobe Commerce. Consulte a [Guia da nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+A infraestrutura do Adobe Commerce na nuvem é uma plataforma de hospedagem gerenciada e automatizada para o software Adobe Commerce. A infraestrutura do Adobe Commerce na nuvem vem com vários recursos que a diferenciam das implementações locais do Adobe Commerce. Consulte o [Guia da Nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).

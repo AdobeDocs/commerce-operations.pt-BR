@@ -52,7 +52,7 @@ ht-degree: 0%
    + [Verificar configuração de verniz](cache/config-varnish-final.md)
    + [Bloco ESI de verniz](cache/use-varnish-esi.md)
    + [Cache de conteúdo estático](cache/static-content-signing.md)
-+ Linha de comando {#cli}
++ Linha de Comando {#cli}
    + [Ferramenta de linha de comando](cli/config-cli.md)
    + [Comandos comuns](cli/common-cli-commands.md)
    + [Habilitar registro](cli/enable-logging.md)
@@ -96,7 +96,7 @@ ht-degree: 0%
    + [Serviços](reference/config-reference-services.md)
    + [Configurações sensíveis e específicas do sistema](reference/config-reference-sens.md)
    + [Substituir definições de configuração](reference/override-config-settings.md)
-+ Cron Jobs {#crons}
++ Trabalhos do Cron {#crons}
    + [Trabalhos e grupos do Cron](cron/custom-cron.md)
    + [Personalizar referência de crons](cron/custom-cron-reference.md)
    + [Configurar um trabalho cron personalizado](cron/custom-cron-tutorial.md)
@@ -139,11 +139,11 @@ ht-degree: 0%
       + [memcached para armazenamento de sessão](storage/memcached.md)
       + [memcached no CentOS](storage/memcache-centos.md)
       + [memcached no Ubuntu](storage/memcache-ubuntu.md)
-   + Dividir banco de dados {#split-db}
+   + Dividir Banco de Dados {#split-db}
       + [Visão geral da divisão do banco de dados](storage/multi-master.md)
       + [Configuração automática](storage/multi-master-masterdb.md)
       + [Configuração manual](storage/multi-master-manual.md)
       + [Verificar banco de dados dividido](storage/multi-master-verify.md)
       + [Replicação de banco de dados](storage/multi-master-replication.md)
       + [Reverter para um único banco de dados](storage/revert-split-database.md)
-+ [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
++ [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

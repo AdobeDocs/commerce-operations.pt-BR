@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configurar consumidores de mensagem
 
-Antes de executar este comando, faça o seguinte *ou* você deve [instalar o aplicativo](../advanced.md):
+Antes de executar este comando, você deve fazer o seguinte *ou*. Você deve [instalar o aplicativo](../advanced.md):
 
 * [Criar ou atualizar a configuração de implantação](deployment.md)
 * [Criar o esquema de banco de dados](database.md)

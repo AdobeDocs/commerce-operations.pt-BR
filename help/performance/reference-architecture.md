@@ -15,9 +15,9 @@ Este tópico descreve uma configuração genérica recomendada para instâncias 
 
 Para o Adobe Commerce em ambientes de infraestrutura em nuvem, consulte [Arquitetura inicial](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
-## [!DNL Commerce] Diagrama da arquitetura de referência
+## Diagrama da arquitetura de referência [!DNL Commerce]
 
-A variável [!DNL Commerce] O diagrama da arquitetura de referência representa a abordagem de práticas recomendadas para configurar uma arquitetura [!DNL Commerce] local.
+O diagrama da Arquitetura de Referência [!DNL Commerce] representa a abordagem de prática recomendada para configurar um site [!DNL Commerce] escalável.
 
 A cor de cada elemento no diagrama indica se o elemento faz parte do Magento Open Source ou do Adobe Commerce e se é necessário.
 
@@ -31,9 +31,9 @@ As seções a seguir fornecem recomendações e considerações para cada seçã
 
 ### [!DNL Varnish]
 
-* A [!DNL Varnish] cluster pode ser dimensionado para o tráfego de um site
+* Um cluster [!DNL Varnish] pode ser dimensionado para o tráfego de um site
 * Ajuste o tamanho da instância com base no número de páginas de cache necessárias
-* Em um site de alto tráfego, use um [!DNL Varnish] Mestre para garantir a liberação de uma solicitação (no máximo) por camada da Web no cache
+* Em um site de alto tráfego, use um [!DNL Varnish] Mestre para garantir a liberação no cache de uma solicitação (no máximo) por camada da Web
 
 ### Web
 
@@ -62,14 +62,14 @@ As seções a seguir fornecem recomendações e considerações para cada seçã
 * Considere usar GFS ou GlusterFS para armazenamento em pub/mídia
 * Como alternativa, use o armazenamento do BD para sites de tráfego baixo
 
-### Recomendado [!DNL Varnish] arquitetura de referência
+### Arquitetura de referência [!DNL Varnish] recomendada
 
-O Magento suporta vários mecanismos de cache de página inteira (File, Memcache, Redis, [!DNL Varnish]) prontas para uso, juntamente com cobertura expandida por meio de extensões. [!DNL Varnish] é o mecanismo de cache de página completa recomendado.  [!DNL Commerce] suporta vários tipos de [!DNL Varnish] configurações.
+O Magento oferece suporte a vários mecanismos de cache de página inteira (File, Memcache, Redis, [!DNL Varnish]) prontos para uso, juntamente com uma cobertura expandida por meio de extensões. [!DNL Varnish] é o mecanismo de cache de página inteira recomendado.  O [!DNL Commerce] oferece suporte a várias configurações diferentes do [!DNL Varnish].
 
-Para sites que não exigem alta disponibilidade, recomendamos usar um [!DNL Varnish] configuração com terminação SSL do Nginx.
+Para sites que não exigem alta disponibilidade, recomendamos usar uma configuração simples do [!DNL Varnish] com terminação SSL Nginx.
 
-![Simples [!DNL Varnish] Configuração com terminação SSL](../assets/performance/images/single-varnish-with-ssl-termination.png)
+![Configuração [!DNL Varnish] Simples com Terminação SSL](../assets/performance/images/single-varnish-with-ssl-termination.png)
 
-Para sites que exigem alta disponibilidade, recomendamos usar uma camada 2 [!DNL Varnish] configuração com um balanceador de carga de terminação SSL.
+Para sites que exigem alta disponibilidade, recomendamos usar uma configuração [!DNL Varnish] de 2 camadas com um balanceador de carga de terminação SSL.
 
-![Alta disponibilidade em dois níveis [!DNL Varnish] configuração com o balanceador de carga de terminação SSL](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)
+![Configuração de [!DNL Varnish] de duas camadas de alta disponibilidade com o balanceador de carga de terminação SSL](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)

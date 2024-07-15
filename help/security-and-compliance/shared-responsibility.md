@@ -132,7 +132,7 @@ A tabela de resumo a seguir usa o modelo RACI para mostrar as responsabilidades 
     <td></td>
   </tr>
   <tr>
-    <td>Aplicação de patches aos serviços de suporte<br>(Por exemplo, Nginx ou MySQL.)</td>
+    <td>Aplicando patches aos serviços de suporte <br>(Por exemplo, Nginx ou MySQL.)</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -230,7 +230,7 @@ A tabela de resumo a seguir usa o modelo RACI para mostrar as responsabilidades 
     <td></td>
   </tr>
   <tr>
-    <td>Configurar o repositório de origem<sup>1</sup></td>
+    <td>Configurando o repositório de origem<sup>1</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -440,7 +440,7 @@ A tabela de resumo a seguir usa o modelo RACI para mostrar as responsabilidades 
     <td></td>
   </tr>
   <tr>
-    <td>Correção de verificações do Adobe Commerce na infraestrutura em nuvem PCI<sup>4</sup></td>
+    <td>Remediando verificações de PCI do Adobe Commerce na infraestrutura em nuvem<sup>4</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -521,9 +521,9 @@ A tabela de resumo a seguir usa o modelo RACI para mostrar as responsabilidades 
   <tr>
     <td colspan="5">
       <p><sup><strong>1</strong></sup> Somente se o repositório do Adobe Commerce na infraestrutura em nuvem for usado como o repositório principal. O uso de outros repositórios externos é de exclusiva responsabilidade do comerciante.</p>
-      <p><sup><strong>2</strong></sup> O Adobe oferece suporte de Nível 1 para problemas com provedores CDN.</p>
-      <p><sup><strong>3</strong></sup> O comerciante é responsável por quaisquer controles Ngnix que eles configuram para seus aplicativos.</p>
-      <p><sup><strong>4</strong></sup> Para PCI, os requisitos de teste de penetração são compartilhados entre a Adobe e o comerciante.</p>
+      <p>O Adobe <sup><strong>2</strong></sup> oferece suporte de Nível 1 para problemas com provedores CDN.</p>
+      <p><sup><strong>3</strong></sup> O comerciante é responsável por todos os controles Ngnix configurados para seus aplicativos.</p>
+      <p><sup><strong>4</strong></sup> Para o PCI, os requisitos de teste de penetração são compartilhados entre o Adobe e o comerciante.</p>
     </td>
   </tr>
 </tfoot>
@@ -639,7 +639,7 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 | --- | --- | --- |
 | Rotação de logs | R |   |
 | Aplicativo Adobe Commerce personalizado | | R |
-| Disponibilidade dos serviços da New Relic:<br>integração de aplicativos e agentes de APM, aplicativo de infraestrutura,<br>Registro e integração | R |   |
+| Disponibilidade de serviços da New Relic:<br>integração de agente e aplicativo de APM, aplicativo de infraestrutura,<br>integração e registro | R |   |
 | Configuração de alertas do New Relic |     | R |
 | Implantação do agente do New Relic em servidores PaaS |     | R |
 
@@ -662,7 +662,7 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 | --- | --- | --- |
 | Configuração do aplicativo |     | R |
 | Adicionar domínios ao aplicativo do Adobe Commerce (URLs de base) |     | R |
-| Configuração do PaaS para usar versões de Serviços compatíveis com a versão do Adobe Commerce implantada<br><br>Por exemplo, diferentes versões do Commerce são compatíveis com versões específicas do PHP, Redis e assim por diante. |     | R |
+| Configurando PaaS para usar versões de Serviços suportadas pela versão implantada do Adobe Commerce<br><br>Por exemplo, versões diferentes do Commerce são compatíveis com versões específicas do PHP, Redis, etc. |     | R |
 
 {style="table-layout:auto"}
 
@@ -702,8 +702,8 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidade dos serviços Galera e MariaDB | R | |
-| Manutenção contínua das configurações padrão do banco de dados<br><br>(indexação e otimização de tabelas principais, otimização de configurações padrão sys-admin) | R |   |
-| Manutenção contínua de dados do comerciante e configurações modificadas<br><br>(configuração de tabelas normalizadas versus planas, indexação e otimização de tabelas personalizadas e de terceiros, arquivamento ou remoção de dados, definição das configurações de administração do sistema) |     | R |
+| Manutenção em andamento das configurações padrão do banco de dados<br><br>(indexação e otimização das tabelas principais, otimização das configurações padrão sys-admin) | R |   |
+| Manutenção contínua de dados de comerciante e configurações modificadas<br><br>(configuração de tabelas normalizadas versus planas, indexação e otimização de tabelas personalizadas e de terceiros, arquivamento ou remoção de dados, definição das configurações de administração do sistema) |     | R |
 | Configuração do Galera e do MySQL | R |   |
 | Qualidade contínua e patches de Galera e MariaDB | R |   |
 | Otimização contínua da infraestrutura | R |   |
@@ -786,8 +786,8 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 | Disponibilidade de serviços Adobe Commerce Business Intelligence | R |   |
 | Processos de Sincronização de Dados do MBI | R |   |
 | Detecção de problemas de sincronização do MBI | R |   |
-| Configuração da sincronização de dados do MBI para Adobe Commerce Cloud Pro, Starter, No local ou não-Adobe Commerce<br>(API, qualidade e formatação de dados, rede comercial,<br>Conexões de BD dentro e fora do Adobe Commerce Cloud DB, acima dos limites de dados) |     | R |
-| Configuração da sincronização de dados do MBI para Adobe Commerce Cloud Pro<br>(Configuração do banco de dados Adobe Commerce Cloud) | R |   |
+| Configurando a Sincronização de Dados do MBI para Adobe Commerce Cloud Pro, Starter, No Local ou não-Adobe Commerce<br> (API, Qualidade e formatação de dados, rede comerciante,<br>Conexões de BD dentro e fora do Adobe Commerce Cloud, acima dos limites de dados) |     | R |
+| Configurando a Sincronização de Dados do MBI para o Adobe Commerce Cloud Pro<br> (configuração do banco de dados Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
 
@@ -857,7 +857,7 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 | Configuração de entrada de PrivateLink para o ponto de extremidade do Serviço VPC do Comerciante |     | R |
 | Aceitação da entrada do PrivateLink para o ponto de extremidade do Serviço VPC do Comerciante | R |   |
 | Configuração de integrações de PrivateLink (endpoint para conta) |     | R |
-| Configuração de VPC de propriedade do comerciante para o endpoint do PrivateLink<br><br> (incluindo qualquer conexão VPN) |     | R |
+| Configuração de VPC de propriedade de comerciante para o ponto de extremidade PrivateLink <br><br> (incluindo quaisquer conexões VPN) |     | R |
 
 {style="table-layout:auto"}
 

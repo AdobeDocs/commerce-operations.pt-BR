@@ -18,17 +18,17 @@ ht-degree: 1%
 
 Este tópico discute como começar a usar a solução de banco de dados dividido ao:
 
-1. Instalação do Adobe Commerce com um único banco de dados mestre (chamado de `magento`)
-1. Criando dois bancos de dados mestres adicionais para checkout e OMS (nomeados como `magento_quote` e `magento_sales`)
+1. Instalando o Adobe Commerce com um único banco de dados mestre (denominado `magento`)
+1. Criando dois bancos de dados mestres adicionais para check-out e OMS (nomeados como `magento_quote` e `magento_sales`)
 1. Configuração do Adobe Commerce para usar os bancos de dados de check-out e vendas
 
 >[!INFO]
 >
->Este guia pressupõe que todos os três bancos de dados estão no mesmo host que o aplicativo Commerce e que eles sejam nomeados `magento`, `magento_quote`, e `magento_sales`. No entanto, a escolha de onde localizar os bancos de dados e seu nome depende de você. Esperamos que nossos exemplos tornem as instruções mais fáceis de seguir.
+>Este guia pressupõe que todos os três bancos de dados estejam no mesmo host que o aplicativo Commerce e que sejam nomeados como `magento`, `magento_quote` e `magento_sales`. No entanto, a escolha de onde localizar os bancos de dados e seu nome depende de você. Esperamos que nossos exemplos tornem as instruções mais fáceis de seguir.
 
 ## Instale o software da Adobe Commerce
 
-Você pode ativar bancos de dados divididos a qualquer momento depois de instalar o software Adobe Commerce; em outras palavras, você pode adicionar bancos de dados divididos a um sistema Adobe Commerce que já tenha dados de check-out e pedido. Use as instruções no arquivo LEIAME do Adobe Commerce ou no [guia de instalação](../../installation/overview.md) para instalar o software Adobe Commerce usando um único banco de dados mestre.
+Você pode ativar bancos de dados divididos a qualquer momento depois de instalar o software Adobe Commerce; em outras palavras, você pode adicionar bancos de dados divididos a um sistema Adobe Commerce que já tenha dados de check-out e pedido. Use as instruções no Adobe Commerce README ou no [guia de instalação](../../installation/overview.md) para instalar o software Adobe Commerce usando um único banco de dados mestre.
 
 ## Configurar bancos de dados mestres adicionais
 
@@ -41,8 +41,8 @@ Crie o checkout e os bancos de dados mestres OMS da seguinte maneira:
    mysql -u root -p
    ```
 
-1. Insira o MySQL `root` senha do usuário quando solicitado.
-1. Insira os seguintes comandos na ordem mostrada para criar instâncias de banco de dados chamadas `magento_quote` e `magento_sales` com os mesmos nomes de usuário e senhas:
+1. Digite a senha do usuário `root` do MySQL quando solicitado.
+1. Digite os seguintes comandos na ordem mostrada para criar instâncias de banco de dados chamadas `magento_quote` e `magento_sales` com os mesmos nomes de usuário e senhas:
 
    ```shell
    create database magento_quote;
@@ -60,7 +60,7 @@ Crie o checkout e os bancos de dados mestres OMS da seguinte maneira:
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. Enter `exit` para sair do prompt de comando.
+1. Digite `exit` para sair do prompt de comando.
 
 1. Verifique os bancos de dados, um de cada vez:
 
@@ -88,11 +88,11 @@ Crie o checkout e os bancos de dados mestres OMS da seguinte maneira:
 
 ## Configurar o Commerce para usar os bancos de dados mestres
 
-Depois de configurar um total de três bancos de dados mestres, use a linha de comando para configurar o Commerce para usá-los. (O comando configura conexões de banco de dados e distribui tabelas entre os bancos de dados mestres.)
+Após configurar um total de três bancos de dados mestres, use a linha de comando para configurar o Commerce para usá-los. (O comando configura conexões de banco de dados e distribui tabelas entre os bancos de dados mestres.)
 
 ### Primeiros passos
 
-Consulte [Execução de comandos](../cli/config-cli.md#running-commands) para fazer login e executar comandos da CLI.
+Consulte [Executando comandos](../cli/config-cli.md#running-commands) para fazer logon e executar comandos CLI.
 
 ### Configurar o banco de dados de check-out
 

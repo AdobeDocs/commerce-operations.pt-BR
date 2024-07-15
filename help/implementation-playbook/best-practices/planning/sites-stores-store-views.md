@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
 source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Para o Adobe Commerce em infraestrutura em nuvem, as práticas recomendadas se a
 
 ## Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -34,12 +34,12 @@ Se o projeto exigir muitos sites, lojas ou visualizações de loja, você poder�
 
 Sites e lojas são multiplicadores para dados de catálogo, portanto, ter muitos sites e lojas pode afetar negativamente o desempenho do site das seguintes maneiras:
 
-- Tabelas de índice maiores aumentam o tempo necessário para concluir operações de indexação [Índice de preço].
+- Tabelas de índice maiores aumentam o tempo necessário para concluir as operações de indexação [Índice de preços].
 - O aumento do tempo para recuperar a configuração do aplicativo degrada o tempo de resposta da loja para páginas de catálogo não armazenadas em cache.
 - Aumentos significativos no tempo necessário para concluir as operações de salvamento no Administrador, pois os dados são salvos separadamente para cada site.
 
 
 ## Informações adicionais
 
-- [Noções básicas sobre sites, lojas e visualizações de loja](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
+- [Compreendendo sites, lojas e exibições de loja](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Configurar vários sites ou lojas](https://devdocs.magento.com/cloud/project/project-multi-sites.html)

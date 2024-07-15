@@ -32,9 +32,9 @@ Essa abordagem consiste nas seguintes etapas:
 
 O modelo híbrido permite aproveitar o potencial da metodologia Agile, mantendo a meta de cronograma, custo e qualidade. Todo o plano está dividido em duas fases distintas, seguidas pelas atividades de lançamento, otimização e manutenção.
 
-- **Ter a ideia certa**— esta é uma fase de pré-implementação para garantir que os requisitos, o projeto e a solução de tecnologia sejam estrategizados, documentados e colaborados entre as partes interessadas. O backlog para implementação é removido e criado, sprints de desenvolvimento são planejados e uma estratégia sequencial para criação do produto é finalizada.
+- **Ter a ideia certa**—Esta é uma fase de pré-implementação para garantir que os requisitos, o design e a solução de tecnologia sejam estrategizados, documentados e colaborados entre as partes interessadas. O backlog para implementação é removido e criado, sprints de desenvolvimento são planejados e uma estratégia sequencial para criação do produto é finalizada.
 
-- **Acertando a ideia**— esta é a fase de implementação para criar o produto de forma iterativa, testar completamente e liberar adequadamente. O primeiro passo é desenvolver o código por meio de vários sprints; cada sprint contém desenvolvimento e testes no sprint, seguidos por testes de integração do sistema, testes de desempenho e segurança, testes de aceitação do usuário e atividades de lançamento.
+- **Acertando na ideia**—Esta é a fase de implementação para compilar o produto de forma iterativa, testar completamente e liberar adequadamente. O primeiro passo é desenvolver o código por meio de vários sprints; cada sprint contém desenvolvimento e testes no sprint, seguidos por testes de integração do sistema, testes de desempenho e segurança, testes de aceitação do usuário e atividades de lançamento.
 
 O planejamento de projetos é uma atividade crítica. Ele orienta as partes interessadas, as equipes, os patrocinadores e os gerentes de projeto sobre como monitorar, gerenciar e controlar as fases do projeto. Também ajuda a identificar objetivos, evitar a falta de prazos, priorizar tarefas essenciais, reduzir riscos e fornecer os resultados desejados.
 
@@ -43,7 +43,7 @@ O plano de projeto geralmente consiste em quatro fases:
 - Início e planejamento
 - Execução
 - Launch
-- Pós-lançamento
+- Post-launch
 
 Cada fase pode ser fornecida por meio de vários sprints menores, gerenciando assim o progresso e os resultados por meio de incrementos menores e com um grau mais alto de agilidade. No entanto, o planejamento é único, na medida em que geralmente faz parte das outras três fases. Fornecemos um detalhamento de cada fase e um exemplo de um plano de projeto para uma implementação bem-sucedida do Adobe Commerce:
 
@@ -51,4 +51,4 @@ Cada fase pode ser fornecida por meio de vários sprints menores, gerenciando as
 
 A abordagem que definimos mostra diferentes fases do projeto se unindo para permitir uma execução bem-sucedida do projeto. O PMO (Project Management Office, escritório de gestão de projetos) fornece uma supervisão rigorosa em vários níveis e garante o sucesso em cada fase (e sprint), gerando uma execução bem-sucedida e oportuna com qualidade e custo ideais.
 
-![Infográfico da abordagem de planejamento de amostra](../../assets/playbooks/planning-approach-sample.svg)
+![Infográfico da abordagem de planejamento de exemplo](../../assets/playbooks/planning-approach-sample.svg)

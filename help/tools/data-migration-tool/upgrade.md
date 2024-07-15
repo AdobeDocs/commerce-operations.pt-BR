@@ -1,18 +1,18 @@
 ---
-title: Atualizar o [!DNL Data Migration Tool]
-description: Saiba como atualizar o [!DNL Data Migration Tool] para transferir dados entre Magento 1 e Magento 2.
+title: Atualizar o  [!DNL Data Migration Tool]
+description: Saiba como atualizar o [!DNL Data Migration Tool] para transferir dados entre o Magento 1 e o Magento 2.
 exl-id: c0d56d1d-b15b-437f-be72-74282dbe85c1
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
 
 # Atualizar o [!DNL Data Migration Tool]
 
-Para verificar as versões da sua instalação atual do Magento 2 e do [!DNL Data Migration Tool] for exatamente igual, talvez seja necessário atualizar a ferramenta.
+Para verificar se as versões da sua instalação atual do Magento 2 e do [!DNL Data Migration Tool] são exatamente iguais, talvez seja necessário atualizar a ferramenta.
 
 ## Pré-requisitos
 
@@ -20,17 +20,17 @@ Antes de atualizar o [!DNL Data Migration Tool], você deve:
 
 * Atualize seu software Magento para obter a versão mais recente
 
-* Faça backup do `vendor/magento/data-migration-tool` diretório
+* Fazer backup do diretório `vendor/magento/data-migration-tool`
 
-* Certifique-se de que a variável [!DNL Data Migration Tool] versão corresponde à versão do aplicativo Magento
+* Verifique se a versão [!DNL Data Migration Tool] corresponde à versão do aplicativo Magento
 
 ### Atualize seu software Magento
 
-Se você ainda não tiver feito isso, [atualize o software do Magento](../../upgrade/overview.md).
+Se ainda não tiver feito isso, [atualize o software Magento](../../upgrade/overview.md).
 
-### Faça backup do `vendor/magento/data-migration-tool` diretório
+### Fazer backup do diretório `vendor/magento/data-migration-tool`
 
-Antes de atualizar o [!DNL Data Migration Tool], faça backup de pelo menos o `vendor/magento/data-migration-tool` diretório. Durante a atualização, ele pode ser excluído e substituído pelo código atualizado.
+Antes de atualizar o [!DNL Data Migration Tool], faça backup pelo menos do diretório `vendor/magento/data-migration-tool`. Durante a atualização, ele pode ser excluído e substituído pelo código atualizado.
 
 Você também pode fazer backup de toda a base de código do Magento e do banco de dados usando o seguinte comando:
 
@@ -40,24 +40,24 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 >[!WARNING]
 >
->A variável `vendor/magento/data-migration-tool` O diretório contém seu código personalizado. Se você não fizer backup, poderá perder suas personalizações durante a atualização.
+>O diretório `vendor/magento/data-migration-tool` contém seu código personalizado. Se você não fizer backup, poderá perder suas personalizações durante a atualização.
 
 
 ### Verificar se as versões são correspondentes
 
-As versões do [!DNL Data Migration Tool] e o software Magento deve ser exatamente igual. Por exemplo, o Magento 2.1.2 exige a versão 2.1.2 do [!DNL Data Migration Tool].
+As versões do [!DNL Data Migration Tool] e do software Magento devem ser exatamente iguais. Por exemplo, o Magento 2.1.2 exige a versão 2.1.2 do [!DNL Data Migration Tool].
 
-Consulte a [Instalar [!DNL Data Migration Tool]](install.md) tópico para saber como:
+Consulte o tópico [Instalar [!DNL Data Migration Tool]](install.md) para saber como:
 
-* [Marcar](install.md#check-your-version) sua versão do Magento 2
+* [Verificar](install.md#check-your-version) a sua versão do Magento 2
 
-* [Localizar](install.md#find-released-versions-of-data-migration-tool) versões lançadas do [!DNL Data Migration Tool]
+* [Localizar](install.md#find-released-versions-of-data-migration-tool) versões lançadas de [!DNL Data Migration Tool]
 
-* [Marcar](install.md#check-version-of-installed-data-migration-tool) o [!DNL Data Migration Tool] version
+* [Verificar](install.md#check-version-of-installed-data-migration-tool) a versão [!DNL Data Migration Tool]
 
 ## Atualizar o [!DNL Data Migration Tool]
 
-1. Efetue login no servidor de aplicativos como ou alterne para [o proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
+1. Faça logon no servidor de aplicativos como ou alterne para [o proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 1. Altere para o diretório raiz do aplicativo.
 1. Digite o seguinte comando:
 

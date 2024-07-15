@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Você pode executar os seguintes tipos de relatórios:
 
-- **Dependências do módulo**: mostra o número total de dependências entre módulos e se as dependências são permanentes ou temporárias.
+- **Dependências de módulo**: mostra o número total de dependências entre módulos e se as dependências são permanentes ou suaves.
 - **Dependências circulares**: mostra o número total de cadeias de dependência e o número e a lista de dependências circulares para cada módulo.
-- **Dependências da estrutura**: mostra o número total de dependências na estrutura do Commerce por módulo (incluindo o número total de entradas da estrutura para cada biblioteca).
+- **Dependências de estrutura**: mostra o número total de dependências na estrutura do Commerce por módulo (incluindo o número total de entradas de estrutura para cada biblioteca).
 
 Uma dependência em um comentário também é uma dependência.
 

@@ -26,7 +26,7 @@ A fase de desenvolvimento inclui as seguintes atividades:
 
 >[!TIP]
 >
->Consulte [práticas recomendadas gerais](general.md) para obter recomendações de alto nível sobre a gestão geral do processo de desenvolvimento.
+>Consulte [práticas recomendadas gerais](general.md) para obter recomendações de alto nível sobre o gerenciamento geral do processo de desenvolvimento.
 
 As seções a seguir incluem informações de práticas recomendadas para a fase de desenvolvimento.
 
@@ -42,7 +42,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 | Prática recomendada | Descrição |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Criações e implantação](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Descreve as práticas recomendadas para os estágios de criação e implantação do Adobe Commerce em projetos de infraestrutura em nuvem |
+| [Compilações e implantação](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Descreve as práticas recomendadas para os estágios de criação e implantação do Adobe Commerce em projetos de infraestrutura em nuvem |
 | Depuração | Depurar a estrutura do Adobe Commerce de forma sistemática e eficaz |
 | [Implantação de conteúdo estático](static-content-deployment.md) | Evite problemas com o conteúdo estático que não aparece em sua loja |
 | [Solução de problemas](troubleshooting.md) | Solução de problemas comuns de implementação do Adobe Commerce |
@@ -57,7 +57,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 | Prática recomendada | Descrição |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Redimensionamento da imagem do catálogo](catalog-image-resizing.md) | Fornece orientação sobre o redimensionamento de imagens antes que um armazenamento entre em produção para garantir o desempenho ideal |
+| [Redimensionamento de imagem de catálogo](catalog-image-resizing.md) | Fornece orientação sobre o redimensionamento de imagens antes que um armazenamento entre em produção para garantir o desempenho ideal |
 | [CSS e JS](optimize-css-js-files.md) | Mesclar e minificar arquivos de folha de estilos em cascata (CSS) e JavaScript (JS) do Administrador ou da linha de comando |
 | [Imagens](image-optimization.md) | Otimizar imagens e usar o Fastly para otimizar o tempo de resposta |
 
@@ -71,7 +71,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 | Prática recomendada | Descrição |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Tratamento de exceções](exception-handling.md) | Descreve os métodos recomendados para registrar exceções |
+| [Manipulação de exceções](exception-handling.md) | Descreve os métodos recomendados para registrar exceções |
 | [Extensões](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Descreve padrões de desenvolvimento para ajudar a garantir a compatibilidade entre sua extensão, versões futuras do Adobe Commerce e outras extensões personalizadas |
 | [Blocos de conteúdo privado](private-content-block-configuration.md) | Configurar blocos de conteúdo privado para otimizar o desempenho da loja |
 | [Modificar código PHP principal e de terceiros](modifying-core-and-third-party-code.md) | Modifique a funcionalidade, o resultado ou a entrada de qualquer código que você não criou ou não controla diretamente |

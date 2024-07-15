@@ -5,7 +5,7 @@ exl-id: bd10881f-0336-4aa4-82ad-4d635010e2e4
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ A lista de verificação de pré-lançamento é necessária para verificar o est
 - Ativar a ferramenta de monitoramento de desempenho (New Relics)
 - Atividades de migração de dados em ensaios (se houver)
 
-![Diagrama que mostra a fase 1 do processo de lançamento](../../assets/playbooks/launch-steps-1.svg)
+![Diagrama mostrando a fase 1 do processo de inicialização](../../assets/playbooks/launch-steps-1.svg)
 
 As principais diferenças entre as implementações de nuvem e no local do Adobe Commerce são os scripts e as ferramentas de implantação, bem como a configuração do SSL, do serviço de email e do CDN. Mas o processo continua o mesmo.
 
@@ -57,4 +57,4 @@ A lista de verificação completa de pré-lançamento mostra todas as principais
 - Configuração de pagamento para o ambiente de produção (para alguns, o pagamento está usando o modo sandbox para testes)
 - Os dados de teste (cliente, lista de desejos, revisões, pedidos e dados relacionados) do banco de dados de Produção são apagados
 
-![Diagrama que mostra a fase 2 do processo de lançamento](../../assets/playbooks/launch-steps-2.svg)
+![Diagrama mostrando a fase 2 do processo de inicialização](../../assets/playbooks/launch-steps-2.svg)

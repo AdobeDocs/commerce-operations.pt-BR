@@ -23,7 +23,7 @@ Sempre que você executar uma ação que faça com que o esquema ou os dados do 
 
 >[!NOTE]
 >
->A *componente* pode ser um módulo, tema ou pacote de idiomas; não importa se o componente vem ou não do Commerce Marketplace.
+>Um *componente* pode ser um módulo, tema ou pacote de idiomas; não importa se o componente vem ou não do Commerce Marketplace.
 
 1. Inicie a atualização:
 
@@ -31,7 +31,7 @@ Sempre que você executar uma ação que faça com que o esquema ou os dados do 
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   Onde `--keep-generated` é um argumento opcional que não atualiza [arquivos de visualização estáticos](../../configuration/cli/static-view-file-deployment.md). Esse argumento opcional é para uso *somente* em circunstâncias limitadas por integradores de sistemas experientes. Deve ser usado *somente* in [modo de produção](../../configuration/bootstrap/application-modes.md#production-mode). Deve ser *não* ser usado em [modo de desenvolvedor](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Onde `--keep-generated` é um argumento opcional que não atualiza [arquivos de exibição estáticos](../../configuration/cli/static-view-file-deployment.md). Este argumento opcional é para uso de *somente* em circunstâncias limitadas por integradores de sistema experientes. Ele deve ser usado *somente* no [modo de produção](../../configuration/bootstrap/application-modes.md#production-mode). Ele deve *não* ser usado no [modo de desenvolvedor](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. Limpe o cache:
 

@@ -6,22 +6,22 @@ feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas de configuração para processamento de pedidos
 
-À medida que o volume de pedidos aumenta nos sites do Commerce, você pode otimizar o desempenho de finalização de compra e o processamento de pedidos, ativando as seguintes opções de configuração da loja:
+À medida que o volume do pedido aumenta nos sites do Commerce, você pode otimizar o desempenho do check-out e o processamento de pedidos ativando as seguintes opções de configuração da loja:
 
-- **[!UICONTROL Asynchronous indexing]**—Ative esta opção para evitar bloqueios de bancos de dados e processamento lento que podem ocorrer quando grandes números de pedidos são feitos simultaneamente.
-- **[!UICONTROL Asynchronous email notifications]**—Ative essa opção para acelerar o desempenho do check-out enviando notificações por email de check-out e processamento de pedidos em intervalos designados, em vez de enviá-las imediatamente.
-- **[!UICONTROL Enable Archiving]**—Ative esta opção para melhorar o desempenho de ordens, NFFs, entregas e avisos de crédito e manter seu espaço de trabalho livre de informações desnecessárias, para que você possa se concentrar nos negócios atuais. Consulte [Ativar arquivamento](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
+- **[!UICONTROL Asynchronous indexing]**—Habilite esta opção para evitar bloqueios de banco de dados e processamento lento que podem ocorrer quando um grande número de pedidos é feito simultaneamente.
+- **[!UICONTROL Asynchronous email notifications]**—Habilite esta opção para acelerar o desempenho do check-out enviando check-out e notificações de email de processamento de pedidos em intervalos designados, em vez de enviá-los imediatamente.
+- **[!UICONTROL Enable Archiving]**—Habilite esta opção para melhorar o desempenho de pedidos, faturas, remessas e avisos de crédito, e manter seu espaço de trabalho livre de informações desnecessárias, para que você possa se concentrar nos negócios atuais. Consulte [Habilitar arquivamento](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
 
 ## Produtos e versões afetados
 
-[Todas as versões compatíveis](../../../release/versions.md) de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -38,7 +38,7 @@ As etapas para habilitar o processamento assíncrono de pedidos dependem do modo
 
 - Para sites locais do Adobe Commerce no modo Padrão ou de Produção, habilite a indexação assíncrona atualizando a configuração de Configurações de Grade no Administrador.
 
-  Consulte [Habilitar atualizações e reindexação de grade programadas](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
+  Consulte [Habilitar atualizações de grade agendadas e reindexação](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
   >[!WARNING]
   >

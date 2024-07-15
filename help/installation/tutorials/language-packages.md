@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Esta seção discute como desinstalar um ou mais pacotes de idioma, incluindo, opcionalmente, o código dos pacotes de idioma do sistema de arquivos. Você pode criar backups primeiro para poder restaurar os dados posteriormente.
 
-Este comando desinstala o *somente* pacotes de idiomas especificados em `composer.json`; em outras palavras, pacotes de linguagem que são fornecidos como pacotes do Composer. Se o pacote de idioma não for um pacote do Composer, você deverá desinstalá-lo manualmente removendo o código do pacote de idioma do sistema de arquivos.
+Este comando desinstala *somente* pacotes de linguagem especificados em `composer.json`; em outras palavras, pacotes de linguagem fornecidos como pacotes do Composer. Se o pacote de idioma não for um pacote do Composer, você deverá desinstalá-lo manualmente removendo o código do pacote de idioma do sistema de arquivos.
 
-É possível restaurar backups a qualquer momento usando o [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
+Você pode restaurar backups a qualquer momento usando o comando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
 Uso do comando:
 
@@ -29,7 +29,7 @@ O comando de desinstalação do pacote de idioma executa as seguintes tarefas:
 
    Para contornar isso, você pode desinstalar todos os pacotes de idiomas dependentes ao mesmo tempo ou pode desinstalar os pacotes de idiomas dependentes primeiro.
 
-1. Se `--backup code` for especificado, fazer backup do sistema de arquivos (excluindo `var` e `pub/static` diretórios) para `var/backups/<timestamp>_filesystem.tgz`
+1. Se `--backup code` for especificado, fazer backup do sistema de arquivos (excluindo os diretórios `var` e `pub/static`) em `var/backups/<timestamp>_filesystem.tgz`
 1. Remove arquivos de pacotes de idiomas da base de código usando `composer remove`.
 1. Limpa o cache.
 

@@ -39,7 +39,7 @@ Percona é uma bifurcação do MySQL que se concentra no desempenho e no manusei
 
 ## Linguagem de programação
 
-O Adobe Commerce é um aplicativo baseado em PHP e as versões mais recentes são sempre compatíveis com a versão estável mais recente do PHP (por exemplo, a versão 2.4 do Adobe Commerce recomenda o uso do PHP 7.4). Para obter mais segurança e desempenho, existem vários fatores a serem considerados ao configurar o PHP para obter o máximo de velocidade e eficiência no processamento de requisições. A loja da Web do Adobe Commerce é criada com HTML, JavaScript e o pré-processador LESS CSS.
+O Adobe Commerce é um aplicativo baseado em PHP e as versões mais recentes são sempre compatíveis com a versão estável mais recente do PHP (por exemplo, a versão 2.4 do Adobe Commerce recomenda o uso do PHP 7.4). Para obter mais segurança e desempenho, existem vários fatores a serem considerados ao configurar o PHP para obter o máximo de velocidade e eficiência no processamento de requisições. A loja da Web do Adobe Commerce é construída com o HTML, JavaScript e o pré-processador LESS CSS.
 
 ## Servidores da Web
 
@@ -62,11 +62,11 @@ Para a versão 2.4 e posterior do Adobe Commerce, todas as instalações devem s
 
 ## Serviços de fila de mensagens
 
-As filas de mensagens fornecem um mecanismo de comunicação assíncrono no qual o remetente e o destinatário de uma mensagem não entram em contato entre si. [!DNL RabbitMQ] O é um agente de mensagens de código aberto que oferece um sistema de mensagens confiável, altamente disponível, escalável e portátil.
+As filas de mensagens fornecem um mecanismo de comunicação assíncrono no qual o remetente e o destinatário de uma mensagem não entram em contato entre si. [!DNL RabbitMQ] é um agente de mensagens de código aberto que oferece um sistema de mensagens confiável, altamente disponível, escalável e portátil.
 
 ## Ferramentas de segurança
 
-A variável [Ferramenta de verificação de segurança da Adobe Commerce](https://docs.magento.com/user-guide/magento/security-scan.html) O permite que você monitore regularmente os sites da loja e receba atualizações de riscos de segurança conhecidos, malware e software desatualizado. Normalmente, você começa a usar essa ferramenta ao iniciar o teste de aceitação do usuário (UAT). Além da ferramenta Adobe Commerce Security Scan, que é gratuita e está disponível para todas as implementações e versões do Adobe Commerce, há outras opções que podem ser usadas durante o processo de CI/CD e antes de cada versão.
+A [Ferramenta de Verificação de Segurança da Adobe Commerce](https://docs.magento.com/user-guide/magento/security-scan.html) permite monitorar regularmente os sites da loja e receber atualizações de riscos de segurança conhecidos, malware e software desatualizado. Normalmente, você começa a usar essa ferramenta ao iniciar o teste de aceitação do usuário (UAT). Além da ferramenta Adobe Commerce Security Scan, que é gratuita e está disponível para todas as implementações e versões do Adobe Commerce, há outras opções que podem ser usadas durante o processo de CI/CD e antes de cada versão.
 
 O SonarQube é uma plataforma de gerenciamento de qualidade de código aberto, projetada para analisar e medir a qualidade técnica de seu código. O SonarQube não só fornece um relatório completo de bugs de código, erros de sintaxe e vulnerabilidades, como também oferece sugestões e exemplos para corrigir seu código. O SonarQube é perfeito para usar em um ambiente de CI/CD como uma ferramenta capaz de analisar o código antes que ele seja implantado.
 

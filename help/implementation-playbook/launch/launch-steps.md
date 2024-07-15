@@ -5,7 +5,7 @@ exl-id: d7807b2f-85c0-4e3e-a473-c65dbec44d28
 feature: Configuration, Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ A equipe de suporte da Adobe Commerce trabalha com você durante todo o processo
 
 - Entre em contato com a linha direta da Adobe Commerce caso algum problema esteja bloqueando a ativação
 
-![Diagrama que mostra a fase 3 do processo de lançamento](../../assets/playbooks/launch-steps-3.svg)
+![Diagrama mostrando a fase 3 do processo de inicialização](../../assets/playbooks/launch-steps-3.svg)

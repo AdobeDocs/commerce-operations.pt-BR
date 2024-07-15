@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '712'
 ht-degree: 1%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 1%
 >Você deve [instalar o Redis](config-redis.md#install-redis) antes de continuar.
 
 
-O Commerce agora fornece opções de linha de comando para configurar o armazenamento de sessão Redis. Em versões anteriores, você editava o `<Commerce install dir>app/etc/env.php` arquivo. A linha de comando fornece validação e é o método de configuração recomendado, mas ainda é possível editar o `env.php` arquivo.
+O Commerce agora fornece opções de linha de comando para configurar o armazenamento de sessão Redis. Em versões anteriores, você editava o arquivo `<Commerce install dir>app/etc/env.php`. A linha de comando fornece validação e é o método de configuração recomendado, mas você ainda pode editar o arquivo `env.php`.
 
-Execute o `setup:config:set` e especifique parâmetros específicos do Redis.
+Execute o comando `setup:config:set` e especifique parâmetros específicos do Redis.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
@@ -29,17 +29,17 @@ onde
 
 `--session-save=redis` habilita o armazenamento de sessão Redis. Se esse recurso já tiver sido ativado, omita esse parâmetro.
 
-`--session-save-redis-<parameter_name>=<parameter_value>` é uma lista de pares de parâmetro/valor que configuram o armazenamento da sessão:
+`--session-save-redis-<parameter_name>=<parameter_value>` é uma lista de pares parâmetro/valor que configuram o armazenamento da sessão:
 
 | Parâmetro de linha de comando | Nome do parâmetro | Significado | Valor padrão |
 |--- |--- |--- |--- |
 | session-save-redis-host | host | Nome de host totalmente qualificado, endereço IP ou caminho absoluto, se estiver usando soquetes UNIX. | localhost |
 | session-save-redis-port | porta | Porta de escuta do servidor Redis. | 6379 |
 | session-save-redis-password | senha | Especifica uma senha se o servidor Redis exigir autenticação. | vazio |
-| session-save-redis-timeout | timeout | Tempo limite da conexão, em segundos. | 2.5 |
+| session-save-redis-timeout | timeout | Tempo limite da conexão, em segundos. | 2,5 |
 | session-save-redis-persistent-id | persistent_identifier | Sequência de caracteres exclusiva para ativar conexões persistentes (por exemplo, sess-db0).<br>[Problemas conhecidos com phpredis e php-fpm](https://github.com/phpredis/phpredis/issues/70). |
-| session-save-redis-db | banco de dados | Número exclusivo do banco de dados Redis, recomendado para proteção contra perda de dados.<br><br>**Importante**: Se você usar Redis para mais de um tipo de cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número do banco de dados de cache padrão a 0, o número do banco de dados de cache da página a 1 e o número do banco de dados de armazenamento da sessão a 2. | 0 |
-| session-save-redis-compression-threshold | compression_threshold | Defina como 0 para desativar a compactação (recomendado quando `suhosin.session.encrypt = On`).<br>[Problema conhecido com sequências de mais de 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-redis-db | banco de dados | Número exclusivo do banco de dados Redis, recomendado para proteção contra perda de dados.<br><br>**Importante**: se você usar Redis para mais de um tipo de cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número do banco de dados de cache padrão a 0, o número do banco de dados de cache da página a 1 e o número do banco de dados de armazenamento da sessão a 2. | 0 |
+| session-save-redis-compression-threshold | compression_threshold | Defina como 0 para desabilitar a compactação (recomendado quando `suhosin.session.encrypt = On`).<br>[Problema conhecido com sequências com mais de 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Opções: gzip, lzf, lz4 ou snappy. | gzip |
 | session-save-redis-log-level | log_level | Defina como qualquer um dos itens a seguir, listados na ordem do menos detalhado ao mais detalhado:<ul><li>0 (emergência: apenas os erros mais graves)<li>1 (alerta: ação imediata necessária)<li>2 (crítico: componente do aplicativo indisponível)<li>3 (erro: erros de tempo de execução, não críticos, mas que devem ser monitorados)<li>4 (aviso: informações adicionais, recomendado)<li>5 (aviso: condição normal, mas significativa)<li>6 (informações: mensagens informativas)<li>7 (depurar: o máximo de informações somente para desenvolvimento ou teste)</ul> | 1 |
 | session-save-redis-max-concurrency | max_concurrency | Número máximo de processos que podem aguardar um bloqueio em uma sessão. Para grandes clusters de produção, defina como pelo menos 10% do número de processos PHP. | 6 |
@@ -127,10 +127,10 @@ Exemplo de saída de armazenamento de sessão:
 redis-cli ping
 ```
 
-`PONG` A deve ser a resposta.
+`PONG` deve ser a resposta.
 
 Se ambos os comandos forem bem-sucedidos, o Redis será configurado corretamente.
 
 ### Inspeção de dados compactados
 
-Para inspecionar dados de Sessão compactados e Cache de Página, a variável [RESP.app](https://flathub.org/apps/details/app.resp.RESP) O suporta a descompactação automática do cache de sessão e página do Commerce 2 e exibe os dados de sessão do PHP em um formato legível.
+Para inspecionar os dados de Sessão compactados e o Cache de Página, o [RESP.app](https://flathub.org/apps/details/app.resp.RESP) oferece suporte à descompactação automática do cache de Sessão e Página do Commerce 2 e exibe os dados de sessão do PHP de forma legível.

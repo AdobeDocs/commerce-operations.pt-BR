@@ -44,7 +44,7 @@ Os recursos de carregamento lento são geralmente considerados como um indicador
 
 A Adobe Commerce pode acompanhar sua empresa por meio de seus recursos:
 
-![Diagrama que mostra os recursos escalonáveis do Adobe Commerce](../../../assets/playbooks/scalable-capabilities.svg)
+![Diagrama mostrando os recursos escalonáveis do Adobe Commerce](../../../assets/playbooks/scalable-capabilities.svg)
 
 Há também fatores-chave que impulsionam a escala no comércio, que também afetam o desempenho geral.
 
@@ -57,4 +57,4 @@ Há também fatores-chave que impulsionam a escala no comércio, que também afe
 
 Para arquiteturas em camadas e em cache criadas para escala, é possível usar esse gráfico como uma referência.
 
-![Diagrama que mostra como usar a API do GraphQL do Adobe Commerce em uma arquitetura que pode ser armazenada em cache](../../../assets/playbooks/cacheable-architecture.svg)
+![Diagrama que mostra como usar a API GraphQL do Adobe Commerce em uma arquitetura que pode ser armazenada em cache](../../../assets/playbooks/cacheable-architecture.svg)

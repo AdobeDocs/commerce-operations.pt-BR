@@ -5,7 +5,7 @@ exl-id: 7b1348b5-d379-48c1-9e9d-71a8d02b2ca4
 feature: Best Practices, Search
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ A SEO (Otimização do mecanismo de pesquisa) é uma ferramenta que ajuda você 
 
 Veja os resultados descritos em vermelho na imagem a seguir:
 
-![Resultados de pesquisa não pagos do SEO Google](../../assets/playbooks/seo-unpaid.png)
+![Resultados de pesquisa de SEO Google não pagos](../../assets/playbooks/seo-unpaid.png)
 
 ## Pago
 
@@ -28,20 +28,20 @@ Veja os resultados descritos em laranja na imagem a seguir:
 >
 >Compras no Google descritas em roxo.
 
-![Resultados de pesquisa paga do SEO Google](../../assets/playbooks/seo-paid.png)
+![Resultados de pesquisa de SEO Google pagos](../../assets/playbooks/seo-paid.png)
 
 ## Estratégias
 
 A estratégia de SEO inclui:
 
-- **Pesquisa por palavra-chave**—Palavras-chave usadas por clientes para pesquisar
+- **Pesquisa por palavra-chave** — Palavras-chave usadas por clientes para pesquisar
 
-- **Arquitetura do site**— A pesquisa é feita com palavras-chave
+- **Arquitetura do site**—A pesquisa é feita com as palavras-chave
 
 - **SEO (técnico)**—Garantindo que o SEO rastreie o site
 
-- **SEO na página**— Meta tags e conteúdo são usados para atrair clientes
+- **SEO na página**—Metatags e conteúdo são usados para atrair clientes
 
-- **Analytics**—Ferramentas, como Google Analytics, são usadas para rastrear SEO
+- **Analytics** — Ferramentas, como Google Analytics, são usadas para rastrear SEO
 
 As campanhas de SEO B2B têm como objetivo aumentar a conscientização da marca e a geração de leads, o que resulta em um aumento na taxa de conversão. As campanhas SEO B2C têm como objetivo atrair visitantes para fazer compras imediatas. O SEO tem diferentes usos e impactos em empresas B2B versus B2C. O SEO pode ajudar a aumentar o tráfego no site, o que, por sua vez, aumentará as vendas e o ROI. Defina uma estratégia de SEO simples para obter vantagem competitiva.

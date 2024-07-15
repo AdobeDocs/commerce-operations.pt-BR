@@ -15,7 +15,7 @@ O Adobe Commerce é compatível com o Apache 2.4.x.
 
 ## Diretivas necessárias do Apache
 
-1. Definir `AllowEncodedSlashes` na configuração do servidor (globalmente) ou nas configurações do host virtual para evitar a decodificação das barras codificadas que podem causar problemas para URLs. Por exemplo, ao recuperar produtos com uma barra na SKU por meio da API, você não deseja convertê-los. O bloco de amostra não está completo e outras diretivas são necessárias.
+1. Defina `AllowEncodedSlashes` na configuração do servidor (globalmente) ou nas configurações do host virtual para evitar a decodificação das barras codificadas que podem causar problemas para URLs. Por exemplo, ao recuperar produtos com uma barra na SKU por meio da API, você não deseja convertê-los. O bloco de amostra não está completo e outras diretivas são necessárias.
 
    ```conf
    <VirtualHost *:443>
@@ -28,11 +28,11 @@ O Adobe Commerce é compatível com o Apache 2.4.x.
 
 Este tópico discute como habilitar substituições no Apache 2.4 e especificar uma configuração para o [arquivo de configuração distribuído, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-O Adobe Commerce usa substituições e `.htaccess` para fornecer instruções no nível do diretório para o Apache. As instruções a seguir também estão incluídas em todas as outras seções deste tópico.
+O Adobe Commerce usa substituições de servidor e `.htaccess` para fornecer instruções no nível do diretório para o Apache. As instruções a seguir também estão incluídas em todas as outras seções deste tópico.
 
 Use esta seção para habilitar substituições no Apache 2.4 e especificar uma configuração para o [arquivo de configuração distribuído, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
-O Adobe Commerce usa substituições e `.htaccess` para fornecer instruções no nível do diretório para o Apache.
+O Adobe Commerce usa substituições de servidor e `.htaccess` para fornecer instruções no nível do diretório para o Apache.
 
 >[!NOTE]
 >
@@ -44,11 +44,11 @@ O Adobe Commerce usa substituições e `.htaccess` para fornecer instruções no
    a2enmod rewrite
    ```
 
-1. Para permitir que o aplicativo use o método distribuído `.htaccess` arquivo de configuração, consulte as diretrizes na seção [Documentação do Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. Para permitir que o aplicativo use o arquivo de configuração distribuído `.htaccess`, consulte as diretrizes na [documentação do Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
 
    >[!TIP]
    >
-   >No Apache 2.4, o arquivo de configuração do site padrão do servidor é `/etc/apache2/sites-available/000-default.conf`.
+   >No Apache 2.4, o arquivo de configuração de site padrão do servidor é `/etc/apache2/sites-available/000-default.conf`.
 
    Por exemplo, você pode adicionar o seguinte ao final de `000-default.conf`:
 
@@ -60,7 +60,7 @@ O Adobe Commerce usa substituições e `.htaccess` para fornecer instruções no
 
    >[!NOTE]
    >
-   >Às vezes, podem ser necessários parâmetros adicionais. Para obter mais informações, consulte [Documentação do Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >Às vezes, podem ser necessários parâmetros adicionais. Para obter mais informações, consulte a [documentação do Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
 
 1. Se você alterou as configurações do Apache, reinicie o Apache:
 
@@ -70,7 +70,7 @@ O Adobe Commerce usa substituições e `.htaccess` para fornecer instruções no
 
    >[!NOTE]
    >
-   >- Se você atualizou de uma versão anterior do Apache, primeiro procure `<Directory "/var/www/html">` ou `<Directory "/var/www">` in `000-default.conf`.
+   >- Se você atualizou de uma versão anterior do Apache, primeiro procure por `<Directory "/var/www/html">` ou `<Directory "/var/www">` em `000-default.conf`.
    >- Você deve alterar o valor de `AllowOverride` na diretiva para o diretório no qual você espera instalar o software Adobe Commerce. Por exemplo, para instalar no docroot do servidor Web, edite a diretiva em `<Directory /var/www>`.
 
 >[!NOTE]
@@ -103,7 +103,7 @@ Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
 
-- Se o Apache estiver *não* instalado, consulte:
+- Se o Apache *não* estiver instalado, consulte:
    - [Instalação ou atualização do Apache no Ubuntu](#installing-apache-on-ubuntu)
    - [Instalação do Apache no CentOS](#installing-apache-on-centos)
 
@@ -137,13 +137,13 @@ Para instalar a versão padrão do Apache:
    Server built: 2020-04-15T18:00:57
    ```
 
-1. Ativar [substituições e `.htaccess`](#apache-rewrites-and-htaccess).
+1. Habilitar [regravações e `.htaccess`](#apache-rewrites-and-htaccess).
 
 ### Atualização do Apache no Ubuntu
 
 Para atualizar para o Apache 2.4:
 
-1. Adicione o `ppa:ondrej` repositório, que tem o Apache 2.4:
+1. Adicione o repositório `ppa:ondrej`, que tem o Apache 2.4:
 
    ```bash
    apt-get -y update
@@ -180,13 +180,13 @@ Para atualizar para o Apache 2.4:
    Server built: Jul 22 2020 22:46:25
    ```
 
-1. Ativar [substituições e `.htaccess`](#apache-rewrites-and-htaccess).
+1. Habilitar [regravações e `.htaccess`](#apache-rewrites-and-htaccess).
 
 ## Instalação do Apache no CentOS
 
-O Adobe Commerce requer regravações do servidor Apache. Você também deve especificar o tipo de diretivas que podem ser usadas na `.htaccess`, que o aplicativo usa para especificar regras de regravação.
+O Adobe Commerce requer regravações do servidor Apache. Você também deve especificar o tipo de diretivas que podem ser usadas em `.htaccess`, que o aplicativo usa para especificar regras de substituição.
 
-A instalação e configuração do Apache é basicamente um processo de três etapas: instalar o software, habilitar as regravações e especificar `.htaccess` diretivas.
+A instalação e configuração do Apache é basicamente um processo de três etapas: instalar o software, habilitar regravações e especificar diretivas `.htaccess`.
 
 ### Instalação do Apache
 
@@ -217,7 +217,7 @@ A instalação e configuração do Apache é basicamente um processo de três et
 
 ### Habilitar regravações e .htaccess para CentOS
 
-1. Abertura `/etc/httpd/conf/httpd.conf` arquivo para edição:
+1. Abrir arquivo `/etc/httpd/conf/httpd.conf` para edição:
 
    ```bash
    vim /etc/httpd/conf/httpd.conf`
@@ -244,7 +244,7 @@ A instalação e configuração do Apache é basicamente um processo de três et
 
    >[!NOTE]
    >
-   >Os valores anteriores para `Order` pode não funcionar em todos os casos. Para obter mais informações, consulte a documentação do Apache ([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
+   >Os valores anteriores para `Order` podem não funcionar em todos os casos. Para obter mais informações, consulte a documentação do Apache ([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
 
 1. Salve o arquivo e saia do editor de texto.
 
@@ -260,7 +260,7 @@ A instalação e configuração do Apache é basicamente um processo de três et
 
 ### Habilite regravações e .htaccess para Ubuntu
 
-1. Abertura `/etc/apache2/sites-available/default` arquivo para edição:
+1. Abrir arquivo `/etc/apache2/sites-available/default` para edição:
 
    ```bash
    vim /etc/apache2/sites-available/default
@@ -285,7 +285,7 @@ A instalação e configuração do Apache é basicamente um processo de três et
 
 1. Salve o arquivo e saia do editor de texto.
 
-1. Configurar o Apache para usar o `mod_rewrite` módulo:
+1. Configure o Apache para usar o módulo `mod_rewrite`:
 
    ```bash
    cd /etc/apache2/mods-enabled
@@ -307,7 +307,7 @@ Se você encontrar erros 403 Proibido ao tentar acessar o site, poderá atualiza
 
 ### Resolução de erros 403 proibidos para o Apache 2.4
 
-Para permitir que os visitantes do site acessem seu site, use uma das opções [Exigir diretivas](https://httpd.apache.org/docs/2.4/howto/access.html).
+Para permitir que visitantes do site acessem seu site, use uma das [Diretivas necessárias](https://httpd.apache.org/docs/2.4/howto/access.html).
 
 Por exemplo:
 
@@ -322,4 +322,4 @@ Por exemplo:
 
 >[!NOTE]
 >
->Os valores anteriores para `Order` pode não funcionar em todos os casos. Para obter mais informações, consulte [Documentação do Apache](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+>Os valores anteriores para `Order` podem não funcionar em todos os casos. Para obter mais informações, consulte a [documentação do Apache](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).

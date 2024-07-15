@@ -15,22 +15,22 @@ ht-degree: 0%
 >
 >Este é um tópico de uma série para ajudar os comerciantes e desenvolvedores da Adobe Commerce a entender as implicações da California Consumer Privacy Act (CCPA). As informações destinam-se apenas a fins informativos e não devem ser interpretadas como aconselhamento jurídico. Consulte seu advogado para determinar se e como sua empresa deve cumprir quaisquer obrigações legais.
 
-A variável [CCPA](https://oag.ca.gov/privacy/ccpa) A amplia os direitos dos consumidores na Califórnia para determinar como suas informações pessoais são coletadas, armazenadas e usadas, com ênfase na proteção dos consumidores contra a venda ou troca não autorizadas ou suas informações pessoais. A CCPA foi promulgada em 2018 e entrou em vigor em 1º de janeiro de 2020.
+A [CCPA](https://oag.ca.gov/privacy/ccpa) expande os direitos dos consumidores da Califórnia para determinar como suas informações pessoais são coletadas, armazenadas e usadas, com ênfase na proteção dos consumidores contra vendas ou trocas não autorizadas ou suas informações pessoais. A CCPA foi promulgada em 2018 e entrou em vigor em 1º de janeiro de 2020.
 
 A CCPA concede os seguintes novos direitos aos consumidores:
 
-- **Direito de saber** as categorias de informações pessoais sobre eles coletadas, usadas, compartilhadas ou vendidas nos últimos 12 meses.
-- **Direito de exclusão** determinados tipos de informações pessoais detidas por uma empresa e/ou seus provedores de serviços.
-- **Direito de não participação** da venda das suas informações pessoais.
-- **Direito à não discriminação** em termos de preço ou serviço por ter exercido um direito de privacidade nos termos da CCPA.
+- **Direito de saber** as categorias de informações pessoais sobre eles que foram coletadas, usadas, compartilhadas ou vendidas nos últimos 12 meses.
+- **Direito de excluir** determinados tipos de informações pessoais mantidas por uma empresa e/ou seus provedores de serviços.
+- **Direito de recusar** a venda de suas informações pessoais.
+- **Direito à não discriminação** em termos de preço ou serviço por ter exercido um direito de privacidade sob a CCPA.
 
 ## Conformidade com a CCPA
 
-O desenvolvimento e a implementação de um plano de conformidade com a CCPA exigem um esforço coordenado. Recomendamos que os comerciantes montem uma equipe multifuncional e sigam o roteiro descrito em [Guia de conformidade da CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) a sua empresa em conformidade com o regulamento. Como desenvolvedor, você pode ser convidado a participar como parte interessada, com ênfase nas etapas de 2 a 5 do processo. Consulte a [Guia de conformidade da CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) para obter mais informações.
+O desenvolvimento e a implementação de um plano de conformidade com a CCPA exigem um esforço coordenado. Recomendamos que os comerciantes montem uma equipe multifuncional e sigam o roteiro descrito no [Guia de Conformidade da CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) para colocar sua empresa em conformidade com o regulamento. Como desenvolvedor, você pode ser convidado a participar como parte interessada, com ênfase nas etapas de 2 a 5 do processo. Consulte o [Guia de Conformidade da CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) para obter mais informações.
 
 1. Montar uma equipe multifuncional para abordar a conformidade com a CCPA.
 
-1. **Faça o inventário das propriedades digitais.**
+1. **Fazer inventário das propriedades digitais.**
 
 1. **Mapeie a jornada do cliente e os processos de coleta de dados.**
 

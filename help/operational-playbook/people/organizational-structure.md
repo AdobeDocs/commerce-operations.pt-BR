@@ -28,4 +28,4 @@ Os benefícios dessa forma de modelo centralizado em um projeto de implementaç�
 
 O diagrama a seguir mostra um exemplo de uma estrutura organizacional baseada em projetos recomendada:
 
-![Diagrama da estrutura da organização baseada em projeto](../../assets/playbooks/org-structure-project.png)
+![Diagrama de estrutura da organização baseada em projeto](../../assets/playbooks/org-structure-project.png)

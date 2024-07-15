@@ -54,21 +54,21 @@ ht-degree: 12%
       - [Regiões](infrastructure/cloud/regions.md)
       - [Tecnologias](infrastructure/cloud/technology.md)
       - [Segurança e conformidade](infrastructure/cloud/security.md)
-   - Otimização do desempenho {#performance}
+   - Otimização de desempenho {#performance}
       - [Problemas típicos](infrastructure/performance/optimization.md)
       - [Referenciais](infrastructure/performance/benchmarks.md)
       - [Recommendations](infrastructure/performance/recommendations.md)
-- Disponibilidade do Launch {#launch}
+- Prontidão para inicialização {#launch}
    - [Visão geral](launch/overview.md)
    - [Etapas de pré-lançamento](launch/pre-launch-steps.md)
    - [Etapas de inicialização](launch/launch-steps.md)
-   - [Etapas pós-lançamento](launch/post-launch-steps.md)
+   - [Etapas de inicialização do Post](launch/post-launch-steps.md)
 - Manutenção e suporte {#maintenance}
    - [Visão geral](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Práticas recomendadas {#best-practices}
    - [Visão geral](best-practices/phases.md)
-   - Planejamento {#planning}
+   - Planejando {#planning}
       - [Visão geral](best-practices/planning/overview.md)
       - [Gerenciamento de catálogo](best-practices/planning/catalog-management.md)
       - [Configuração de exibição de sites, lojas e lojas](best-practices/planning/sites-stores-store-views.md)
@@ -96,8 +96,8 @@ ht-degree: 12%
       - [Blocos de conteúdo privado](best-practices/development/private-content-block-configuration.md)
       - [Implantação de conteúdo estático](best-practices/development/static-content-deployment.md)
       - [Modificação de tabelas de banco de dados](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [Modificação do código principal e de terceiros](best-practices/development/modifying-core-and-third-party-code.md)
-   - Launch {#launch}
+      - [Modificando código principal e de terceiros](best-practices/development/modifying-core-and-third-party-code.md)
+   - Iniciar {#launch}
       - [Visão geral](best-practices/launch/overview.md)
       - [Configurar rastreadores da Web](best-practices/launch/robots-txt.md)
       - [Proteger seu site e sua infraestrutura](best-practices/launch/security-best-practices.md)
@@ -114,4 +114,4 @@ ht-degree: 12%
       - [Serviços de atualização](best-practices/maintenance/update-services.md)
       - [Lista de verificação de atualização](best-practices/maintenance/upgrade-checklist.md)
       - [Pré-requisitos de atualização para o MariaDB](best-practices/maintenance/mariadb-upgrade.md)
-- [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -18,6 +18,6 @@ Isso acontece frequentemente devido à falta de clareza sobre as funções e res
 
 ## Como nós colaboramos coletivamente?
 
-Uma matriz RACI (Responsible, Accountable, Consulted, and Informed, responsável, responsável, responsável, consultado e informado), como mencionamos na [escopo do projeto](../project-scope/deliverables.md) seção — é uma ferramenta útil que define e documenta a propriedade e a responsabilidade em cada estágio do projeto. Dentro da matriz, cada tarefa, marco e decisão do projeto é mapeada para funções ou indivíduos específicos. Ele ajuda o gerenciamento de projetos a simplificar os processos, garantindo que cada membro da equipe e parte interessada entenda suas funções específicas. Tal deve ser definido na fase de planeamento do projeto e aceite por cada parte interessada.
+Uma matriz RACI (Responsible, Accountable, Consulted, and Informed, Responsável, Responsável, Consultada e Informada), como mencionado na seção [escopo do projeto](../project-scope/deliverables.md), é uma ferramenta útil que define e documenta a propriedade e a responsabilidade em cada estágio do projeto. Dentro da matriz, cada tarefa, marco e decisão do projeto é mapeada para funções ou indivíduos específicos. Ele ajuda o gerenciamento de projetos a simplificar os processos, garantindo que cada membro da equipe e parte interessada entenda suas funções específicas. Tal deve ser definido na fase de planeamento do projeto e aceite por cada parte interessada.
 
 ![Tabela que descreve a estrutura RACI](../../assets/playbooks/raci.svg)
