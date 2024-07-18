@@ -3,7 +3,7 @@ title: Mecanismo de pesquisa atual não suportado
 description: Solucione o problema da atualização do Adobe Commerce depois de encontrar um erro sobre um mecanismo de pesquisa não compatível.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 A seguinte mensagem de erro indica que a versão do Adobe Commerce da qual você está atualizando está configurada para usar um mecanismo de pesquisa de catálogo que não é compatível na versão para a qual você está atualizando:
 
-```terminal
+```
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 

@@ -2,7 +2,7 @@
 title: Definir o valor dos parâmetros de inicialização
 description: Saiba como definir parâmetros de inicialização para o aplicativo do Commerce.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Você pode especificar variáveis de inicialização como variáveis de ambiente
 
 Por exemplo, você pode usar a variável de ambiente do sistema `MAGE_PROFILER` para especificar um modo da seguinte maneira:
 
-```terminal
+```
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -80,7 +80,7 @@ Você pode modificar `.htaccess` em qualquer um dos locais a seguir, dependendo 
 
 1. Defina o valor de `MAGE_PROFILER` para qualquer um dos seguintes:
 
-   ```terminal
+   ```
    firebug
    csvfile
    <custom value>

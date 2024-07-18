@@ -2,7 +2,7 @@
 title: Importar dados de arquivos de configuração
 description: Importe as definições de configuração do Adobe Commerce dos arquivos de configuração.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Se você inserir `bin/magento app:config:import` sem o sinalizador opcional, ser
 
 Por exemplo, se o arquivo de configuração contiver um novo site e um novo armazenamento, a seguinte mensagem será exibida:
 
-```terminal
+```
 These Websites will be created: New Website
 These Groups will be created: New Store
 Do you want to continue [yes/no]?
@@ -46,14 +46,14 @@ Para continuar a importação, insira `yes`.
 
 Se os arquivos de configuração de implantação contiverem alguns dados a serem importados, uma mensagem semelhante à seguinte será exibida:
 
-```terminal
+```
 Start import:
 Some information about importing
 ```
 
 Se os arquivos de configuração de implantação não contiverem dados a serem importados, uma mensagem semelhante à seguinte será exibida:
 
-```terminal
+```
 Start import:
 Nothing to import
 ```

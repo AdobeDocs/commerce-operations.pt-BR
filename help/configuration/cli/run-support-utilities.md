@@ -2,7 +2,7 @@
 title: Execute os utilitários de suporte
 description: Solucione problemas em seu projeto do Commerce usando o utilitário de suporte integrado.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Onde:
 
 Os dados confidenciais incluem informações de clientes das seguintes tabelas de banco de dados:
 
-```terminal
+```
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ Após a conclusão do comando, forneça o backup do banco de dados para o Suport
 
 Fornecemos comandos que exibem caminhos para utilitários exigidos pelo Coletor de dados e pela linha de comando. Você pode usar esses comandos, por exemplo, se erros como o seguinte forem exibidos no Admin ou na linha de comando:
 
-```terminal
+```
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Execute os seguintes comandos na ordem mostrada para exibir os caminhos para os 
 
 A seguir, há uma amostra:
 
-```terminal
+```
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

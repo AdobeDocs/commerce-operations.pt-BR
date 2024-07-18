@@ -2,7 +2,7 @@
 title: Relatórios de dependência
 description: Crie relatórios que mostrem os totais das dependências de módulo, circular e estrutura.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Se nenhum diretório ou nome de arquivo for passado como argumento, a seguinte r
 
 A seguir, uma parte da saída de um relatório de dependências de módulo de amostra:
 
-```terminal
+```
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ A seguir, uma parte da saída de um relatório de dependências de módulo de am
 
 A seguir, uma parte da saída para um exemplo de relatório de dependências circulares:
 
-```terminal
+```
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ A seguir, uma parte da saída para um exemplo de relatório de dependências cir
 
 A seguir, uma parte da saída de um relatório de dependências de estrutura de exemplo:
 
-```terminal
+```
 "Dependencies of framework:","Total number"
 "","111"
 

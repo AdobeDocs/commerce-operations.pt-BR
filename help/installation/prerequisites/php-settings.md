@@ -3,7 +3,7 @@ title: Configurações do PHP
 description: Siga estas etapas para instalar as extensões necessárias do PHP e definir as configurações necessárias do PHP para instalações locais do Adobe Commerce.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '751'
 ht-degree: 0%
@@ -35,7 +35,7 @@ php -v
 
 Se o PHP estiver instalado, uma mensagem similar à seguinte será exibida:
 
-```terminal
+```
 PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v4.1.2, Copyright (c) Zend Technologies
@@ -69,7 +69,7 @@ Para verificar as extensões instaladas:
 
 - Defina o fuso horário do sistema para o PHP; caso contrário, erros como o seguinte durante a instalação e operações relacionadas ao tempo como cron podem não funcionar:
 
-```terminal
+```
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
 ```
 

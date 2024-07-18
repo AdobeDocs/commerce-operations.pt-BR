@@ -3,7 +3,7 @@ title: Configurar servidor Web
 description: Saiba como configurar o servidor Web para funcionar com o Verniz.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Se o Varnish falhar ao ser iniciado como um serviço, inicie-o a partir da linha
 
    As mensagens a seguir são exibidas para confirmar um início bem-sucedido:
 
-   ```terminal
+   ```
    child (29805) Started
    200 0
    
@@ -159,7 +159,7 @@ netstat -tulpn
 
 Procure a seguinte saída em particular:
 
-```terminal
+```
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -178,7 +178,7 @@ Instale o software Commerce, se ainda não tiver feito isso. Quando solicitado a
 
 Possível erro ao instalar o Commerce:
 
-```terminal
+```
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -217,7 +217,7 @@ Em um navegador da Web, vá para qualquer página do Commerce.
 
 Uma longa lista de cabeçalhos de resposta é exibida na janela da tela de comandos. Procure cabeçalhos como os seguintes:
 
-```terminal
+```
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -252,7 +252,7 @@ curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 
 Procure cabeçalhos como os seguintes:
 
-```terminal
+```
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

@@ -2,7 +2,7 @@
 title: Instalação de início rápido local
 description: Siga estas etapas para instalar o Adobe Commerce na sua infraestrutura.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -129,7 +129,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Você deve definir permissões de leitura e gravação para o grupo de servidores Web antes de instalar o Adobe Commerce. Isso é necessário para que a linha de comando possa gravar arquivos no sistema de arquivos.
 
-```terminal
+```bash
 cd /var/www/html/<magento install directory>
 find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +

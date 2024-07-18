@@ -2,7 +2,7 @@
 title: Definir o modo de operação
 description: Leia sobre como configurar os modos de operação do Adobe Commerce.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -25,7 +25,7 @@ O modo de produção tem melhor desempenho porque os arquivos de exibição est�
 
 Quando você muda para o modo de desenvolvedor ou de produção, limpamos o conteúdo dos seguintes diretórios:
 
-```terminal
+```
 var/cache
 generated/metadata
 generated/code
@@ -54,7 +54,7 @@ bin/magento deploy:mode:show
 
 Uma mensagem semelhante à seguinte é exibida:
 
-```terminal
+```
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -86,7 +86,7 @@ bin/magento deploy:mode:set production
 
 Mensagens semelhantes a esta são exibidas:
 
-```terminal
+```
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -143,7 +143,7 @@ Ao mudar do modo de produção para o modo de desenvolvedor, você deve limpar a
 
    A seguinte mensagem é exibida:
 
-   ```terminal
+   ```
    Enabled developer mode.
    ```
 
@@ -155,7 +155,7 @@ bin/magento deploy:mode:set default
 
 A seguinte mensagem é exibida:
 
-```terminal
+```
 Enabled default mode.
 ```
 

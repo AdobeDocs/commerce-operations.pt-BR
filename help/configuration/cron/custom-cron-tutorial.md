@@ -2,7 +2,7 @@
 title: Configurar um trabalho cron personalizado e um grupo cron (tutorial)
 description: Use este tutorial passo a passo para criar um trabalho cron personalizado.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Se você já tiver um módulo de amostra, poderá usá-lo; ignore esta etapa e a
 
    Você deve ver o seguinte resultado:
 
-   ```terminal
+   ```
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -97,7 +97,7 @@ Antes de continuar, verifique se o módulo de amostra está registrado e ativado
 
 1. Certifique-se de que o módulo esteja ativado.
 
-   ```terminal
+   ```
    Module is enabled
    ```
 
@@ -215,7 +215,7 @@ Para verificar o cron:
 
       O resultado deve ser semelhante ao seguinte:
 
-      ```terminal
+      ```
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -234,7 +234,7 @@ Para verificar o cron:
 
    Você deve ver uma ou mais entradas como as seguintes:
 
-   ```terminal
+   ```
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
