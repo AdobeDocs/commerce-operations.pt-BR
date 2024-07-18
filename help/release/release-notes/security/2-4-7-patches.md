@@ -2,9 +2,9 @@
 title: Notas de versão do patch de segurança do Adobe Commerce 2.4.7
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 368776904b6396b870ab040ccd58fe2e006fc5d7
+source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 A versão de segurança do Adobe Commerce 2.4.7-p1 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.7.
 
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança de Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Aplicar hotfix para CVE-2024-34102
+
+{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
 
 ### Destaques da segurança
 
