@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 9d855fca840f081a4b0faa0170eb0e950a7cd7ad
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,4 @@ Essas notas de versão de patch de segurança capturam atualizações para aprim
 Saiba mais sobre lançamentos de patch de segurança:
 
 * [Visão geral das versões de correção do Adobe Commerce Security](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* [Instruções para baixar e aplicar patches de segurança](/help/installation/composer.md)
+* As instruções para baixar e aplicar versões de patch de segurança estão disponíveis no [Guia de Atualização](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)
