@@ -2,7 +2,7 @@
 title: Comandos comuns
 description: Ver uma amostra de comandos e uso comuns da Commerce CLI.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Os comandos são exibidos somente na forma de resumo; para obter mais informaç�
 
 ## Argumentos comuns
 
-Os argumentos a seguir são comuns a todos os comandos. Esses comandos podem ser executados antes ou depois que o software Commerce é instalado:
+Os argumentos a seguir são comuns a [todos os comandos](/help/tools/reference/commerce-on-premises.md). Esses comandos podem ser executados antes ou depois que o software Commerce é instalado:
 
 | Versão longa | Versão curta | Significado |
 |--- |--- |--- |
