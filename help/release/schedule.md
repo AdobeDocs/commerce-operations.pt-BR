@@ -2,9 +2,9 @@
 title: Programação de lançamento
 description: Saiba quando a Adobe planeja anunciar o lançamento de novos recursos do Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 2dd18f3eada5fc5e1abe9ecc7954df06986abcd1
+source-git-commit: dc493fc044401e33ef40e4e070b5d82977938eb1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -82,7 +82,7 @@ A tabela a seguir fornece as datas das versões de patch programadas (as datas e
   </tr>
   <tr>
     <td>14 de outubro de 2025</td>
-    <td><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patches de segurança</a>: para 2.4.8, 2.4.7, 2.4.6 e 2.4.5</td>
+    <td><img alt="Ícone de liberação de patch" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Patches de segurança</a>: para 2.4.8, 2.4.7 e 2.4.6</td>
   </tr>
 </tbody>
 </table>
