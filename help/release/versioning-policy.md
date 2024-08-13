@@ -2,9 +2,9 @@
 title: Política de lançamento
 description: Saiba mais sobre os diferentes tipos de versões do Adobe Commerce, incluindo versões secundárias, patches, patches de segurança, recursos, hotfixes, patches individuais e patches personalizados.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: b5d120893668f4315e289a204649270db4f7a6bc
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ As versões de disponibilidade pré-geral dos recursos do Adobe Commerce são di
 
 As versões do Beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. O Adobe não terá nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte do Adobe ou de outra forma) às versões do Beta. Os clientes são aconselhados a ter cuidado e não depender, de forma alguma, do funcionamento ou do desempenho corretos das versões do Beta e/ou de qualquer documentação ou material que os acompanhe. Portanto, qualquer uso das versões do Beta é totalmente de responsabilidade do Cliente.
 
-## Extensibilidade, infraestrutura e versão de serviços
+## Versão de recursos, infraestrutura em nuvem e extensibilidade
 
-Versões de recursos que contêm novos recursos e atualizações de recursos fornecidos como serviços independentes, separados das versões de patches. Exemplos incluem tecnologia de extensibilidade, como malha de API e evento, produtos SaaS, como Recommendations de produto e Live Search, módulos independentes, como B2B e PWA Studio, e atualizações em nossos serviços e infraestrutura de hospedagem em nuvem.
+A infraestrutura em nuvem e as versões de recursos contêm novos recursos e atualizações de recursos que são fornecidos como serviços independentes, separados das versões de patch. Os exemplos incluem atualizações em nossos serviços e infraestrutura de hospedagem na nuvem, B2B, produtos SaaS (Serviço de catálogo, Conexão de dados, Recommendations de produtos e Live Search) e tecnologia de extensibilidade (API Mesh, Integration Starter Kit e Eventos).
 
 ## Hotfix
 
@@ -74,12 +74,10 @@ Patches individuais contêm correções de qualidade de baixo impacto para um pr
 >
 >Os patches individuais não contêm alterações incompatíveis com versões anteriores.
 
+## Correção isolada
+
+Contém uma correção independente incluída no patch somente de segurança mais recente ou um patch somente de segurança futuro, que está sendo lançado separadamente para uma implementação mais rápida.
+
 ## Correção personalizada
 
 Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código Adobe Commerce por vários motivos. Os patches personalizados são entregues por meio da [Ferramenta de Patches de Qualidade](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
-
-## Tópicos relacionados
-
-- [Controle de versão](https://developer.adobe.com/commerce/php/development/versioning/)
-- [Versões futuras](schedule.md)
-- [Política de Ciclo de Vida de Software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
