@@ -3,9 +3,9 @@ title: Caminhos sensíveis e específicos do sistema
 description: Consulte uma lista de valores de configuração confidenciais e específicos do sistema.
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: 5a8e52d8eee1619697db40accb9775b92b4e8a9d
+source-git-commit: e5a1c5634124831c8d5a95df6818ec30c372e8dd
 workflow-type: tm+mt
-source-wordcount: '3696'
+source-wordcount: '3676'
 ht-degree: 0%
 
 ---
@@ -150,16 +150,16 @@ Estes valores de configuração estão disponíveis no Administrador em **Lojas*
 | Nome de usuário HTTP do Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
 | Senha HTTP do Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
 | Tempo limite do servidor Elasticsearch | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
-| Nome de usuário HTTP do Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| Senha HTTP do Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| Tempo limite do servidor Elasticsearch | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| Hostname do OpenSearch Server | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
-| Porta do OpenSearch Server | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
-| Prefixo de Índice OpenSearch | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
-| Habilitar Autenticação HTTP OpenSearch | `catalog/search/opensearch_enable_auth` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| Nome de usuário HTTP do OpenSearch | `catalog/search/opensearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| Senha HTTP do OpenSearch | `catalog/search/opensearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
-| Tempo Limite do OpenSearch Server | `catalog/search/opensearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | (`{{ site.baseurl }}`/common/images/cloud_env.png) |
+| Nome de usuário HTTP do Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
+| Senha HTTP do Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
+| Tempo limite do servidor Elasticsearch | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
+| Hostname do OpenSearch Server | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
+| Porta do OpenSearch Server | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
+| Prefixo de Índice OpenSearch | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
+| Habilitar Autenticação HTTP OpenSearch | `catalog/search/opensearch_enable_auth` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
+| Nome de usuário HTTP do OpenSearch | `catalog/search/opensearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
+| Senha HTTP do OpenSearch | `catalog/search/opensearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
+| Tempo Limite do OpenSearch Server | `catalog/search/opensearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
 
 {style="table-layout:auto"}
 
