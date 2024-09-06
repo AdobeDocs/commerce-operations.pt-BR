@@ -2,9 +2,9 @@
 title: Segurança de responsabilidade compartilhada e modelo operacional
 description: Saiba mais sobre as responsabilidades de segurança de cada parte envolvida em seu projeto Adobe Commerce na infraestrutura em nuvem.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 76aafb88855f7f41db8e57b06cf0e82370b57302
+source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2791'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ O Adobe é responsável pela segurança e disponibilidade do ambiente Adobe Comm
 - Configuração de firewalls de servidor e perímetro
 - Conectar e configurar o repositório do Adobe Commerce na infraestrutura em nuvem
 - Definir, testar, implementar e documentar planos de recuperação de desastres (DR) para as áreas dentro do escopo de responsabilidade da Adobe
-- Definição de regras do WAF (Web Application Firewall, firewall de aplicativo Web) da plataforma global
+- Definição de regras de firewall de aplicativo Web da plataforma global (WAF)
 - Fortalecimento do sistema operacional (SO)
 - Implementar e manter a integração das soluções de rede de distribuição de conteúdo (CDN) e de gerenciamento de desempenho de aplicativos (APM) com o Adobe Commerce na infraestrutura em nuvem
 - Emitir atualizações de segurança periódicas e outras atualizações para o Adobe Commerce principal no código de infraestrutura em nuvem (a aplicação de patches é responsabilidade do comerciante)
@@ -98,7 +98,7 @@ Os provedores de serviços em nuvem também são responsáveis por:
 
 ## Responsabilidades do provedor de CDN
 
-A solução Adobe Commerce na infraestrutura em nuvem usa provedores de CDN para acelerar o tempo de carregamento de página, armazenar em cache o conteúdo e remover instantaneamente o conteúdo desatualizado. Esses provedores também são responsáveis por problemas de segurança diretamente relacionados ou que afetem sua CDN, e por definir e manter regras WAF da CDN.
+A solução Adobe Commerce na infraestrutura em nuvem usa provedores de CDN para acelerar o tempo de carregamento de página, armazenar em cache o conteúdo e remover instantaneamente o conteúdo desatualizado. Esses provedores também são responsáveis por problemas de segurança diretamente relacionados ou que afetem a CDN, e por definir e manter regras de WAF da CDN.
 
 ## Resumo das responsabilidades de segurança
 
@@ -139,7 +139,7 @@ A tabela de resumo a seguir usa o modelo RACI para mostrar as responsabilidades 
     <td></td>
   </tr>
   <tr>
-    <td>Definindo regras WAF de origem</td>
+    <td>Definição das regras de origem do WAF</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -153,14 +153,14 @@ A tabela de resumo a seguir usa o modelo RACI para mostrar as responsabilidades 
     <td>R</td>
   </tr>
   <tr>
-    <td>Implantação de regras do WAF da plataforma</td>
+    <td>Implantação de regras do Platform WAF</td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Implantação de regras WAF da CDN</td>
+    <td>Implantação de regras do WAF CDN</td>
     <td>A</td>
     <td>I</td>
     <td></td>
@@ -641,7 +641,7 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 | Aplicativo Adobe Commerce personalizado | | R |
 | Disponibilidade de serviços da New Relic:<br>integração de agente e aplicativo de APM, aplicativo de infraestrutura,<br>integração e registro | R |   |
 | Configuração de alertas do New Relic |     | R |
-| Implantação do agente do New Relic em servidores PaaS |     | R |
+| Implantação do agente do New Relic em servidores PaaS | R |  |
 
 {style="table-layout:auto"}
 
@@ -820,15 +820,15 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 
 {style="table-layout:auto"}
 
-#### Firewall de Aplicativo Web (WAF)
+#### Firewall de aplicativo da Web (WAF)
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidade e configuração do WAF | R |  |
-| Endereçamento de falsos positivos da regra WAF | R | |
-| Reportando falsos positivos da regra WAF |     | R |
-| Ajuste de Regra WAF (NÃO SUPORTADO) |     |     |
-| Logs WAF/CDN |     | R |
+| Solucionando falsos positivos das regras do WAF | R | |
+| Relatórios de falsos positivos de regras do WAF |     | R |
+| Ajuste de regra do WAF (NÃO SUPORTADO) |     |     |
+| Logs do WAF/CDN |     | R |
 
 {style="table-layout:auto"}
 
@@ -841,7 +841,6 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 | Detecção de DDOS - camada 3-4 | R |   |
 | Detecção de DDOS - camada 7 |     | R |
 | Resposta DDOS | R |   |
-| Configuração da limitação de taxa de extensão do Fastly e Proteção de bot (Limitada) |     | R |
 
 {style="table-layout:auto"}
 
@@ -850,14 +849,14 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Configurar e manter conexões PrivateLink (se usadas) com um VPC de propriedade do Adobe | R |   |
-| Configurar e manter conexões PrivateLink (se usadas) com um VPC de propriedade do comerciante |     | R |
+| Configurar e manter conexões PrivateLink (se usadas) com uma VPC de propriedade do comerciante |     | R |
 | Disponibilidade de SSH (Link não privado) | R |   |
 | Configuração de entrada de PrivateLink para o ponto de acesso do Adobe Commerce Cloud Service | R |   |
 | Aceitação de entrada de PrivateLink para o ponto de extremidade do Adobe Commerce Cloud Service |     | R |
-| Configuração de entrada de PrivateLink para o ponto de extremidade do Serviço VPC do Comerciante |     | R |
-| Aceitação da entrada do PrivateLink para o ponto de extremidade do Serviço VPC do Comerciante | R |   |
+| Configuração de entrada do PrivateLink para o ponto de acesso do serviço VPC do comerciante |     | R |
+| Aceitação da entrada do PrivateLink para o ponto de acesso do serviço VPC do comerciante | R |   |
 | Configuração de integrações de PrivateLink (endpoint para conta) |     | R |
-| Configuração de VPC de propriedade de comerciante para o ponto de extremidade PrivateLink <br><br> (incluindo quaisquer conexões VPN) |     | R |
+| Configuração de VPC de propriedade de comerciante para o ponto de extremidade PrivateLink <br><br> (incluindo qualquer conexão VPN) |     | R |
 
 {style="table-layout:auto"}
 
