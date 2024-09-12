@@ -1,7 +1,7 @@
 ---
-source-git-commit: aedbb5c550a088b67328891fbb788458d14f31a8
+source-git-commit: cd4655cf45df5293ef82a9fa2f411e8630524603
 workflow-type: tm+mt
-source-wordcount: '12351'
+source-wordcount: '13175'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Problemas corrigidos
 
-Corrigimos 231 problemas no código principal Magento Open Source 2.4.8. Um subconjunto dos problemas corrigidos incluídos nesta versão está descrito abaixo.
+Corrigimos 253 problemas no código principal Magento Open Source 2.4.8. Um subconjunto dos problemas corrigidos incluídos nesta versão está descrito abaixo.
 
 ### APIs
 
@@ -48,8 +48,9 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38406>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/38407>
 * _AC-11919_: Admin: os botões de ações da página flutuam à esquerda em vez da direita
+   * _Observação de correção_: o sistema agora alinha corretamente os Botões de ações da página à direita do cabeçalho fixo no painel de administração, melhorando a aparência profissional. Anteriormente, esses botões flutuavam incorretamente no lado esquerdo do cabeçalho fixo.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38701>
-   * _Contribuição de código do GitHub_: &lt;https://github.com/magento/magento2/ (Interno, Não Mesclado)>
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/44cef3a9>
 * _AC-11999_: erro dev:di:info no magento 2.4.7
    * _Observação de correção_: o sistema agora exibe corretamente os parâmetros do construtor ao executar o comando dev:di:info, impedindo a ocorrência de erros. Anteriormente, a execução desse comando resultava em um erro devido a uma incompatibilidade de tipos no argumento.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38740>
@@ -100,9 +101,17 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
 * _ACP2E-3125_: Problema de modelo de redefinição de senha com o usuário Administrador
    * _Observação de correção_: o problema foi resolvido com o uso da chave correta, que agora inclui o nome de usuário administrador no modelo de email e conclui o assunto corretamente. Anteriormente, o problema vinha de uma chave desatualizada que estava sendo usada.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3149_: barras duplas na URL do segmento do cliente
+   * _Observação de correção_: barras duplas não aparecem na URL quando o botão &#39;Redefinir filtro&#39; é clicado na grade.
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/8459b17d>
 * _ACP2E-3171_: COD não está disponível para países específicos permitidos
    * _Observação de correção_: agora o Cash on delivery está disponível para países específicos permitidos sempre que necessário e   O AC-3216 está funcionando como esperado.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/6f4805f8>
+* _ACP2E-3178_: não é possível atualizar o status de Pedido criado pelo Cliente
+   * _Nota de correção_: &#39;
+Agora podemos atualizar status de pedidos personalizados, enquanto anteriormente, o status só podia ser alterado se o status atual fosse &quot;processando&quot; ou &quot;fraude&quot;.
+   * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38659>
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/8459b17d>
 
 ### Interface do administrador, desempenho
 
@@ -150,7 +159,25 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
 ### B2B, Estrutura
 
 * _AC-9607_: Filtrar a Grade da Empresa e, em seguida, Tentar Exportar para Grade em CSV Apresentará Falha e Lançará Exceção
-   * _Contribuição de código do GitHub_: &lt;https://github.com/magento/magento2/ (Interno, Não Mesclado)>
+   * _Observação de correção_: o sistema agora permite a exportação bem-sucedida em CSV dos dados da grade Empresas no painel de administração, mesmo quando filtros como &quot;Saldo Pendente&quot; e &quot;Tipo de Empresa&quot; são aplicados. Anteriormente, a aplicação de determinados filtros e a tentativa de exportar os dados da grade resultavam em uma falha e em uma exceção.
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/44cef3a9>
+
+### Braintree
+
+* _PACOTE-3367_: Pagar via LPM
+   * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3368_: configurável com o produto Virtual como secundário
+   * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3369_: Erro de falha na verificação de CVV
+   * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
+* _PACOTE-3370_: Problemas de Compartimentação pela Área da conta 247
+   * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3371_: Enviar para um endereço de um país diferente
+   * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
+* _BUNDLE-3372_: Cartão de Crédito - Função de Desmontagem
+   * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
+* _PACOTE-3373_: Retorno de Chamada de Remessa para PayPal Express
+   * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### Carrinho e saída
 
@@ -378,6 +405,9 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
 * _ACP2E-3090_: Manipulando Filtros de Categoria no GraphQL: includeDirectChildrenOnly e category_uid
    * _Observação de correção_: somente as categorias secundárias diretas são buscadas durante a filtragem por category_uid.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/93d50f8d>
+* _ACP2E-3166_: a classificação de produto Graphql da [Cloud] não funciona
+   * _Observação de correção_: a classificação de produto GraphQl por vários campos quando os campos são passados em variáveis agora funciona conforme esperado.
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/8459b17d>
 
 ### Catálogo, preços, preparo e visualização
 
@@ -471,6 +501,10 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
    * _Observação de correção_: o sistema agora segue as restrições definidas na GUI de gerenciamento ao processar solicitações de alteração de senha por meio da API, evitando possível abuso da função de redefinição de senha. Anteriormente, a API podia processar solicitações de alteração de senha fora das regras definidas na GUI de gerenciamento, possivelmente permitindo um fluxo constante de emails de redefinição se os emails válidos fossem conhecidos.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38238>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/0c53bbf7>
+* _AC-10721_:
+   * _Observação de correção_: atualize as dependências do league/flysystem Composer para a versão mais recente
+   * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/91cb4d46>>
+   * _Contribuição de código do GitHub_: atualize as dependências do 2.x league/flysystem Composer para a versão mais recente 3.x
 * _AC-10838_: processo de indexação de erro do processo de índice de pesquisa de catálogo
    * _Observação de correção_: o sistema agora conclui com êxito o comando re-index sem encontrar nenhum erro, independentemente da versão libxml compilada com PHP. Anteriormente, a execução do comando re-index resultava em um erro de processo de índice de pesquisa de catálogo durante o processo de indexação quando o PHP era compilado com determinadas versões de libxml.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38254>
@@ -506,7 +540,11 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
 * _AC-11673_:
    * _Observação de correção_: investigue as versões mais recentes do php-amqplib/php-amqplib
    * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _Contribuição de código do GitHub_: certifique-se de que a versão mais recente do php-amqplib/php-amqplib seja compatível
+   * _Contribuição de código do GitHub_: atualização da versão mais recente php-amqplib/php-amqplib :^3.x
+* _AC-11681_: [Problema] referências AC-2039 AC-1667 de atualização do TinyMCE
+   * _Observação de correção_: atualização da versão mais recente do tinymce no composer.json
+   * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38533>
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/36543>, <https://github.com/magento/magento2/commit/b34c0a75>
 * _AC-11696_: ChangelogBatchWalker não funciona em vários threads
    * _Observação de correção_: o sistema agora oferece suporte à bifurcação de processo para indexação MView, evitando erros durante a execução do indexador ao operar em vários threads. Anteriormente, executar ChangelogBatchWalker em várias threads levava à exclusão de tabelas usadas por outras threads, causando um erro durante a execução do indexador.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38246>
@@ -534,14 +572,22 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
    * _Observação de correção_: o sistema agora lida corretamente com arquivos LESS vazios durante a implantação de conteúdo estático, exibindo uma mensagem de erro &quot;MENOS arquivo está vazio&quot;. Anteriormente, um erro de tipo incorreto era exibido ao encontrar um arquivo LESS vazio durante a implantação.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38682>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/38683>
+* _AC-11911_:
+   * _Observação de correção_: limpeza de css jQuery/fileuploader após a migração para a biblioteca de atualização
+   * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/7cabfb46>>
+   * _Contribuição de código do GitHub_: biblioteca jQuery/fileUploader removida porque foi migrada para a biblioteca Uppy
 * _AC-12002_: [Problema] [Exibição] Remoção de espaço extra na marca de link e script
    * _Observação de correção_: o sistema agora garante que não haja espaços extras nas marcas de link e script, fornecendo um código mais limpo e eficiente. Anteriormente, espaços duplos podiam ser encontrados entre os atributos nas tags link e script.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/32920>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/32919>
+* _AC-12015_:
+   * _Observação de correção_: limpeza da pasta ExtJs após a migração para a biblioteca jsTree
+   * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/7cabfb46>>
+   * _Contribuição de código do GitHub_: a pasta extJs foi removida, pois a funcionalidade relacionada foi migrada para jsTree
 * _AC-12022_:
    * _Observação de correção_: atualizar a dependência do sistema monolog/monolog para a versão principal mais recente
    * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/edcd0dcc>>
-   * _Contribuição de código do GitHub_: o sistema foi atualizado para usar a versão principal mais recente da biblioteca &quot;monolog/monolog&quot;, garantindo compatibilidade e melhor desempenho. Anteriormente, o sistema usava uma versão desatualizada da biblioteca &quot;monolog/monolog&quot;, que poderia ter levado a possíveis problemas e limitações.
+   * _Contribuição de código do GitHub_: o sistema foi atualizado para usar a versão principal mais recente da biblioteca &quot;monolog/monolog:^3.x&quot;, garantindo compatibilidade e melhor desempenho. Anteriormente, o sistema usava uma versão desatualizada da biblioteca &quot;monolog/monolog&quot;, que poderia ter levado a possíveis problemas e limitações.
 * _AC-12023_:
    * _Observação de correção_: atualize a dependência wikimedia/less.php para a versão principal mais recente
    * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/edcd0dcc>>
@@ -549,15 +595,18 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
 * _AC-12024_:
    * _Corrigir observação_: atualize a dependência da biblioteca jquery/validate para a versão secundária mais recente
    * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _Contribuição de código do GitHub_: atualize a dependência da biblioteca jquery/validate para a versão secundária mais recente
+   * _Contribuição de código do GitHub_: atualize a dependência da biblioteca jquery/validate para a versão secundária mais recente 1.20.0
 * _AC-12025_:
    * _Observação de correção_: atualize a dependência do sistema Moment.js para a versão secundária mais recente
    * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _Contribuição de código do GitHub_: atualize a dependência do sistema Moment.js para a versão secundária mais recente
+   * _Contribuição de código do GitHub_: atualize a dependência do sistema Moment.js para a versão secundária mais recente 2.30.1
 * _AC-12267_:
    * _Observação de correção_: suporte a novas tentativas de conexão para a sessão Redis e compatível com colinmollenhour/php-redis-session-abstract v2.0.0
    * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/672a2e61>>
-   * _Contribuição de código do GitHub_: verifique se a versão mais recente de colinmollenhour/php-redis-session-abstract v2.0.0 é compatível com o adobe commerce
+   * _Contribuição de código do GitHub_: a versão mais recente atualizada de colinmollenhour/php-redis-session-abstract v2.0.0 é compatível com o adobe commerce
+* _AC-12268_:
+   * _Observação de correção_: atualize as dependências do League/flysystem Composer para a versão mais recente
+   * _Contribuição de código do GitHub_: atualize as dependências do 2.x league/flysystem Composer para a versão mais recente 3.x
 * _AC-12594_: [Problema] Use a configuração compilada para dados gerados em vez da configuração geral
    * _Observação de correção_: o sistema agora usa a configuração compilada para dados gerados em vez da configuração geral, reduzindo a transferência de rede e a sobrecarga dos dados que dependem de uma determinada versão do código. Essa alteração impede a substituição de cache em instâncias compartilhadas durante a troca de contêiner, resultando em estabilidade aprimorada e tempo de inatividade reduzido. Anteriormente, determinadas classes principais usavam o tipo de configuração compartilhada, o que poderia resultar na substituição de cache ou no tempo de inatividade do aplicativo devido a diferenças nas versões do código em vários servidores.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38785>
@@ -566,6 +615,15 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
    * _Observação de correção_: o sistema agora remove referências a arquivos de extjs que foram removidos anteriormente, eliminando erros no console do navegador e no arquivo de log do sistema. Anteriormente, essas referências estavam causando erros devido à ausência dos arquivos referenciados.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38960>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/38951>
+* _AC-12715_:
+   * _Corrigir observação_: atualizar dependências do laminas composer atualizando para a versão mais recente
+   * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/b34c0a75>>
+   * _Contribuição de código do GitHub_: o sistema agora oferece suporte às versões mais recentes das dependências do laminas Composer:
+laminas/laminas-servicemanager
+laminas/laminas-server
+laminas/laminas-stdlib
+lâminas/lâminas-validador
+garantir a compatibilidade e a funcionalidade atualizada. Anteriormente, a atualização para as versões mais recentes dessas dependências podia causar problemas de incompatibilidade com versões anteriores e falhas de teste.
 * _AC-12778_: [Problema] Limpeza secundária: correção de uso incorreto de sprintf, leva apenas 2 espaços reservados aqui e w...
    * _Observação de correção_: o sistema agora usa corretamente a função sprintf com o número apropriado de espaços reservados, melhorando a limpeza e a consistência do código. Anteriormente, a função sprintf era usada incorretamente com um argumento extra, o que não causava grandes problemas, mas não era o uso correto.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/39062>
@@ -598,13 +656,6 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
    * _Observação de correção_: o sistema agora aplica corretamente um recuo de 4 espaços ao compositor e aos arquivos auth.json, seguindo uma correção para um erro de sintaxe no editorconfig. Anteriormente, devido a um espaço na sintaxe editorconfig, esses arquivos eram formatados incorretamente com um recuo de 2 espaços.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/37394>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/37395>
-* _AC-8714_:
-   * _Observação de correção_: verniz 7.3 - os links de Subcategorias/opções da categoria Padrão não são exibidos na página Inicial da Loja
-   * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/d1c335aa>, &lt;https://github.com/magento/magento2/ (Interno, Não Mesclado)>>
-   * _Contribuição de código do GitHub_: as páginas iniciais da loja agora exibem subcategorias de categoria padrão conforme esperado. Anteriormente, os compradores podiam acessar subcategorias somente por URL.
-* _AC-8714_: verniz 7.3 - Links de subcategorias/opções de categoria padrão não são exibidos na página inicial da Loja
-   * _Observação de correção_: as home pages da Storefront agora exibem subcategorias de categoria padrão conforme esperado. Anteriormente, os compradores podiam acessar subcategorias somente por URL.
-   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/d1c335aa>, &lt;https://github.com/magento/magento2/ (Interno, Não Mesclado)>
 * _AC-8984_: [Problema] Adiciona mais algumas cores à saída de determinados comandos da cli de instalação
    * _Observação de correção_: o sistema agora adiciona mais cores à saída de determinados comandos de CLI (interface de linha de comando) de instalação, melhorando a legibilidade e a experiência do usuário. Anteriormente, a saída desses comandos era mais difícil de ler devido à falta de diferenciação de cores.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/29335>
@@ -615,8 +666,8 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/38076>
 * _AC-9712_: https://github.com/magento/magento2/issues/37841
    * _Observação de correção_: diferença em menos compilação entre php e biblioteca nodejs (grunt) com expressões `calc` complicadas
-   * _Problema do GitHub_: &lt;&lt;https://github.com/magento/magento2/ (Interno, Não Mesclado)>>
-   * _Contribuição de código do GitHub_: corrija a diferença na menor compilação entre a biblioteca php e nodejs (grunt)
+   * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/b34c0a75>>
+   * _Contribuição de código do GitHub_: corrija a diferença na menor compilação entre a biblioteca php e nodejs (grunt) após a atualização wikimedia/less.php:^5.x
 * _ACP2E-2692_: erro &quot;Tabela ou exibição base não encontrada&quot; ocorre quando a indexação parcial é executada
    * _Observação de correção_: a reindexação parcial agora funciona corretamente com o log de alterações grande no caso de conexão do banco de dados secundário
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/ba25af8a>
@@ -670,6 +721,9 @@ Anteriormente, se um produto era desativado em &quot;Todas as exibições da loj
 * _ACP2E-3190_: graphql de produtos da [Cloud] apresentando erro quando o mesmo produto simples foi atribuído a vários produtos configuráveis
    * _Observação de correção_: anteriormente, com produtos configuráveis separados com o mesmo produto simples, o grapQL retornava um erro. Depois que essa correção se aplica, diferentes produtos configuráveis com o mesmo produto simples, o grapQL retorna o resultado sem erros.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/148c3ead>
+* _ACP2E-3253_: a paginação itemsV2 do carrinho do GraphQL não está funcionando corretamente
+   * _Observação de correção_: o problema foi corrigido ao passar o valor correto para o argumento da página atual na consulta de coleção. Anteriormente, o valor errado era passado para definir a página atual, causando o problema.
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/8459b17d>
 
 ### GraphQL, Inventário / MSI
 
@@ -715,6 +769,9 @@ Anteriormente, o era atribuído ao armazenamento de administração em vez do re
 * _ACP2E-2990_: Data &quot;created_at&quot; do cliente não convertida para fuso horário de armazenamento na exportação
    * _Observação de correção_: um valor de data &#39;created_at&#39; da coluna é convertido no formato de data apropriado com base no fuso horário do armazenamento na seção CSV de exportação de cliente.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/3056e9cb>
+* _ACP2E-3165_: [Nuvem] Obtendo erro ao verificar os dados nos dados de importação usando CSV
+   * _Observação de correção_: não há erros ao verificar os dados durante a importação de CSV. Anteriormente, a mensagem de erro exibida era: &quot;Não é possível encontrar um cliente que corresponda a esse email e código do site na(s) linha(s): 1&quot; ao verificar os dados na seção de importação usando o CSV do administrador.
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/8459b17d>
 
 ### Instalar e administrar
 
@@ -786,7 +843,7 @@ Anteriormente, o era atribuído ao armazenamento de administração em vez do re
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/38410>
 * _AC-12571_: navegar na árvore de categorias leva a erros no Redis: &quot;A sessão do Redis excedeu as conexões simultâneas&quot;
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38851>
-   * _Contribuição de código do GitHub_: &lt;https://github.com/magento/magento2/ (Interno, Não Mesclado)>
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/0611e750>
 
 ### Pagamentos
 
@@ -858,8 +915,9 @@ Antes de serem automaticamente rejeitados.
 ### SEO
 
 * _AC-11907_: a adição de regravações de URL com ênfase causa carregamento infinito
+   * _Observação de correção_: o sistema agora cria e funciona com êxito substituições de URL com acentos, impedindo o carregamento infinito durante o processo de salvamento. Anteriormente, adicionar uma regravação de URL com ênfase causava um problema de carregamento infinito.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38692>
-   * _Contribuição de código do GitHub_: &lt;https://github.com/magento/magento2/ (Interno, Não Mesclado)>
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/44cef3a9>
 * _ACP2E-2641_: Reescrita de URL de categoria incorreta de vários armazenamentos para categoria de terceiro nível
    * _Observação de correção_: gerar substituições de URL corretas para filhos com pai com chave de URL com escopo personalizado
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/ea79f7dd>
@@ -869,10 +927,21 @@ Antes de serem automaticamente rejeitados.
 
 ### Segurança
 
+* _AC-11762_:
+   * _Observação de correção_: atualizar o campo de janela OTP 2FA com a descrição correta e o valor padrão após a alteração de BiC
+   * _Contribuição de código do GitHub_: comando atualizado para o modo como o período otp_window será inserido a partir de agora bin/magento config:set twofactorauth/google/otp_window VALUE
+para a configuração bin/magento:definir valor de twofactorauth/google/leeway
 * _AC-11855_: [Problema] Pop-up Paylater de Fonte Ausente CSP
    * _Observação de correção_: o sistema agora permite o carregamento da fonte &#39;https://www.paypalobjects.com/webstatic/mktg/2014design/font/PP-Sans/PayPalSansBig-Medium.woff&#39; sem violar a diretiva de Política de Segurança de Conteúdo, garantindo a exibição correta do Popup Paylater. Anteriormente, o carregamento da fonte era recusado devido a uma violação da diretiva da Política de segurança de conteúdo, causando problemas de exibição com o pop-up Paylater.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38624>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/37401>
+* _AC-11937_:
+   * _Observação de correção_: atualizar o campo de janela OTP 2FA com a descrição correta e o valor padrão após a alteração de BiC
+   * _Contribuição de código do GitHub_: comando atualizado para o modo como o período otp_window será inserido a partir de agora bin/magento config:set twofactorauth/google/otp_window VALUE
+para a configuração bin/magento:definir valor de twofactorauth/google/leeway
+* _AC-12309_:
+   * _Observação de correção_: atualize a documentação do usuário para autenticação de dois fatores (2FA) para alterar o comando otp_window
+   * _Contribuição de código do GitHub_: atualize a documentação do usuário para autenticação de dois fatores (2FA) para alterar o comando de configurações OTP_WINDOW conforme: https://jira.corp.adobe.com/browse/AC-11762
 
 ### Envio
 
@@ -880,10 +949,23 @@ Antes de serem automaticamente rejeitados.
    * _Observação de correção_: o sistema agora usa corretamente o termo &quot;operadora&quot; em vez do erro ortográfico &quot;currier&quot; nas funções do manipulador do JavaScript usadas no modelo de rastreamento de pedidos, garantindo a nomenclatura de função adequada e a clareza do código. Anteriormente, o termo incorreto &quot;currier&quot; era usado, levando a uma potencial confusão e inconsistência na base de código.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/34523>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/33414>
+* _AC-11811_:
+   * _Observação de correção_: UPS REST &quot;Uma remessa não pode ter KGS/IN, LBS/CM ou OZS/CM como sua unidade de medida&quot;
+   * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/9b1713d8>>
+   * _Contribuição de código do GitHub_: as taxas de UPS estão visíveis no check-out e no carrinho.
+* _AC-11916_:
+   * _Observação de correção_: [QPT] UPS REST &quot;Uma remessa não pode ter KGS/IN, LBS/CM ou OZS/CM como sua unidade de medida&quot;
+   * _Contribuição de código do GitHub_: as taxas de UPS estão visíveis no check-out e no carrinho.
 * _AC-11938_: UPS REST &quot;Uma remessa não pode ter KGS/IN, LBS/CM ou OZS/CM como sua unidade de medida&quot;
    * _Observação de correção_: certifique-se de que as taxas de no-break estejam visíveis no check-out e no carrinho.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38618>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/493e01f5>
+* _AC-11983_:
+   * _Observação de correção_: [QPT] UPS REST &quot;Uma remessa não pode ter KGS/IN, LBS/CM ou OZS/CM como sua unidade de medida&quot;
+   * _Contribuição de código do GitHub_: as taxas de UPS estão visíveis no check-out e no carrinho.
+* _AC-11984_:
+   * _Observação de correção_: [QPT] UPS REST &quot;Uma remessa não pode ter KGS/IN, LBS/CM ou OZS/CM como sua unidade de medida&quot;
+   * _Contribuição de código do GitHub_: as taxas de UPS estão visíveis no check-out e no carrinho.
 * _ACP2E-2738_: Janela de Rastreamento mostrando a Data de Entrega Esperada incorreta
    * _Observação de correção_: exibir a data de entrega correta para a operadora Fedex.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/57a32313>
@@ -913,20 +995,17 @@ Antes de serem automaticamente rejeitados.
 
 ### Estrutura da interface
 
-* _AC-12128_:
-   * _Corrigir observação_: [Nuvem] Vulnerabilidade de segurança do Prototype.js CVE-2020-27511
-   * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _Contribuição de código do GitHub_: a vulnerabilidade de segurança CVE-2020-27511 deve ser resolvida
-* _AC-12128_: [Nuvem] Vulnerabilidade de segurança do Prototype.js CVE-2020-27511
-   * _Observação de correção_: a vulnerabilidade de segurança CVE-2020-27511 deve ser resolvida
+* _AC-12128_: correção de vulnerabilidade de segurança Prototype.js CVE-2020-27511
+   * _Observação de correção_: o sistema foi atualizado para resolver a vulnerabilidade de segurança CVE-2020-27511 em Prototype.js 1.7.3, melhorando a segurança geral do sistema. Antes dessa atualização, o sistema era susceptível a uma negação de serviço de expressão regular (ReDOS) por meio da remoção de tags HTML criadas.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12128_:
+   * _Observação de correção_: correção de vulnerabilidade de segurança Prototype.js CVE-2020-27511
+   * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
+   * _Contribuição de código do GitHub_: o sistema foi atualizado para resolver a vulnerabilidade de segurança CVE-2020-27511 em Prototype.js 1.7.3, melhorando a segurança geral do sistema. Antes dessa atualização, o sistema era susceptível a uma negação de serviço de expressão regular (ReDOS) por meio da remoção de tags HTML criadas.
 * _AC-12189_: Grunt Less usa pub/ prefix para sourcemaps
    * _Observação de correção_: o sistema agora gera menos/css sourcemaps sem o prefixo /pub para caminhos ao usar grunt, eliminando a necessidade de uma solução alternativa na configuração do servidor Web. Anteriormente, o uso do prefixo /pub em caminhos de mapas de origem exigia uma configuração específica no servidor Web para funcionar corretamente.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38837>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/38840>
-* _AC-12950_: atualize o tinymce 7.3.0 no composer.json e remova dos arquivos do tinymce 7
-   * _Observação de correção_: torne o TinyMCE 7.x uma versão com suporte para o Adobe Commerce 2.4.8-beta1
-   * _Contribuição de código do GitHub_: &lt;https://github.com/magento/magento2/ (Interno, Não Mesclado)>
 * _AC-1306_: conteúdo estático está sendo implantado para módulos desabilitados
    * _Observação de correção_: o sistema agora exclui CSS relacionado a módulos desabilitados dos arquivos finais de saída de CSS, garantindo que estilos desnecessários não sejam carregados. Anteriormente, o CSS relacionado a módulos desativados era incluído nos arquivos finais de saída do CSS, levando ao carregamento de estilos extras e desnecessários.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/24666>
