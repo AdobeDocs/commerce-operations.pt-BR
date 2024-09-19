@@ -2,9 +2,9 @@
 title: Versões do Beta
 description: Saiba mais sobre as versões beta do Adobe Commerce e como participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 050d5877fae4cb9caaee06598f4429ea8857b1d2
+source-git-commit: f90279e0e152204ac976db307ca14d4418cbcba8
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '1094'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,32 @@ O acesso antecipado aos recursos que o Adobe está desenvolvendo oferece aos cli
 ## Programas atuais do Beta
 
 Consulte as seções a seguir para obter uma lista de programas beta ativos.
+
+### Recursos aprimorados de pesquisa para o Live Search (Beta público)
+
+Esta versão beta oferece suporte a três novos recursos na consulta [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+
+- **Pesquisa em camadas** - Pesquisar em outro contexto de pesquisa - Com esse recurso, você pode realizar até duas camadas de pesquisa para suas consultas de pesquisa. Por exemplo:
+
+   - **Pesquisa de Camada 1** - Pesquise por &quot;motor&quot; em &quot;product_attribute_1&quot;.
+   - **Pesquisa de camada 2** - Pesquise por &quot;part number 123&quot; em &quot;product_attribute_2&quot;. Este exemplo procura por &quot;número de peça 123&quot; nos resultados por &quot;motor&quot;.
+
+  A pesquisa em camadas está disponível para a indexação de pesquisa `startsWith` e a indexação de pesquisa `contains`, conforme descrito abaixo:
+
+- **startsWith indexação de pesquisa** - Pesquisar usando a indexação `startsWith`. Esse novo recurso permite:
+
+   - Procurando produtos em que o valor do atributo começa com uma string específica.
+   - Configurar uma pesquisa &quot;termina com&quot; para que os compradores possam pesquisar produtos em que o valor do atributo termina com uma determinada string. Para habilitar uma pesquisa &quot;termina com&quot;, o atributo de produto precisa ser assimilado na ordem inversa, e a chamada de API também deve ser uma sequência invertida.
+
+- **contém a indexação de pesquisa** -Pesquise um atributo usando a indexação contains. Esse novo recurso permite:
+
+   - Procurando uma consulta em uma cadeia de caracteres maior. Por exemplo, se um comprador procurar o número de produto &quot;PE-123&quot; na cadeia de caracteres &quot;HAPE-123&quot;.
+
+      - Observação: este tipo de pesquisa é diferente da [pesquisa de frase](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) existente, que executa uma pesquisa de preenchimento automático. Por exemplo, se o valor do atributo do seu produto for &quot;calças de ar livre&quot;, uma pesquisa de frase retornará uma resposta para &quot;fora da panela&quot;, mas não retornará uma resposta para &quot;ou formigas&quot;. A contém busca, no entanto, retorna uma resposta para &quot;ou formigas&quot;.
+
+Essas novas condições aprimoram o mecanismo de filtragem de consultas de pesquisa para refinar os resultados da pesquisa. Essas novas condições não afetam a consulta de pesquisa principal. Para acesso beta, envie um email para `sagonzal@adobe.com` ou `alexj@adobe.com`.
+
+Para instalar o Live Search beta, consulte o [Guia do Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
 
 ### Integração do Experience Manager Assets para o Commerce (Private Beta)
 
