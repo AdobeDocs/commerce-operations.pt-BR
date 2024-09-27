@@ -3,9 +3,9 @@ title: '"ACSD-49129: o atributo "Conteúdo" não é retornado nas respostas da A
 description: Aplique o patch ACSD-49129 para corrigir o problema do Adobe Commerce em que o atributo *content* (*código de imagem base64*) não é retornado nas respostas da API de mídia do produto "rest/V1/products/sku/media".
 feature: REST, Attributes, Media, Page Content, Products
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ O atributo *content* não está presente nas respostas da API.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada

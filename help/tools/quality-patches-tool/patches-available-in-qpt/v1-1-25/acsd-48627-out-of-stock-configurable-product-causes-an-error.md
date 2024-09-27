@@ -3,9 +3,9 @@ title: "ACSD-48627: o produto configurável sem estoque causa um erro"
 description: Aplique o patch ACSD-48627 para corrigir o problema do Adobe Commerce em que o produto configurável indisponível causa um erro ao enviar uma solicitação do GraphQL para obter detalhes do carrinho.
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
-source-git-commit: e4744df378c3436598e49500d68cf4ef45d64f8c
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -275,7 +275,7 @@ Há um *erro interno do servidor* na resposta.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada

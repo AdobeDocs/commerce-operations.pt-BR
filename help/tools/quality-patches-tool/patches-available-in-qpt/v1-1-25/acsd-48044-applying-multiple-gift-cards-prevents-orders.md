@@ -3,9 +3,9 @@ title: "ACSD-48044: a aplicação de vários cartões-presente impede que os ped
 description: Aplique o patch ACSD-48044 para corrigir o problema do Adobe Commerce, onde a aplicação de vários cartões-presente a um único pedido com vários envios impede que os pedidos sejam feitos.
 feature: Admin Workspace, Gift, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Os valores do cartão-presente estão misturados com o erro *&quot;Corrija o có
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada

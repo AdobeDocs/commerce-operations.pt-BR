@@ -3,9 +3,9 @@ title: "ACSD-54961: Usuário administrador restrito não pode atualizar em massa
 description: Aplique o patch ACSD-54961 para corrigir o problema do Adobe Commerce em que um usuário administrador restrito não pode atualizar em massa o status de Revisão do produto.
 feature: Products
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ report.CRITICAL: TypeError: array_intersect(): Argument #1 ($array) must be of t
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada

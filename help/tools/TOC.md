@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: b9164d958ddc366de3843c9f9b7f6521ad0b4ff2
+source-git-commit: af567e6643ef977671f8ba27dbb961bcc4c7d472
 workflow-type: tm+mt
-source-wordcount: '5888'
+source-wordcount: '5892'
 ht-degree: 0%
 
 ---
@@ -626,6 +626,8 @@ ht-degree: 0%
       - v1.1.51 {#v1-1-51}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
          - [ACSD-60538: os atributos não mostram se um produto está desativado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+      - v1.1.52 {#v1-1-52}
+         - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
       - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Referência de ferramentas de linha de comando {#cli-reference}

@@ -3,9 +3,9 @@ title: "ACSD-55231: erro SKU não encontrado ao usar a funcionalidade de pedido 
 description: Aplique o patch ACSD-55231 para corrigir o problema do Adobe Commerce em que você obtém o erro *'O SKU não foi encontrado no catálogo'* ao tentar adicionar um produto ao carrinho usando a funcionalidade de pedido rápido.
 feature: Products, Checkout, B2B
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Você não pode adicionar o produto ao carrinho usando a funcionalidade de pedid
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada

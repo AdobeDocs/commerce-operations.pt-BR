@@ -3,9 +3,9 @@ title: "ACSD-51204: o produto não retorna ao estoque após criar o memorando de
 description: Aplique o patch ACSD-51204 para corrigir o problema do Adobe Commerce em que o produto não retorna ao estoque após criar o memorando de crédito.
 feature: Orders, Products, Returns
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ A quantidade vendável do produto é deixada como *0*.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](</help/tools/quality-patches-tool/usage.md>) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada

@@ -3,9 +3,9 @@ title: 'ACSD-55566: falha na mutação [!UICONTROL mergeCart] com erro interno d
 description: Aplique o patch ACSD-55566 para corrigir o problema do Adobe Commerce em que a mutação "mergeCart" falha com um erro interno do servidor na resposta  [!DNL GraphQL]  ao mesclar os carrinhos de origem e de destino que têm os mesmos itens de pacote.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Você recebe um erro interno.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada

@@ -3,9 +3,9 @@ title: "ACSD-53722: o preço das opções de produto agrupadas muda para US$ 0"
 description: Aplique o patch ACSD-53722 para corrigir o problema do Adobe Commerce em que o preço das opções de produto agrupadas muda para $0 quando atualizações programadas para escopos diferentes se tornam ativas.
 feature: Products
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Após a atualização agendada, o preço da opção de produto agrupado no site 
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada

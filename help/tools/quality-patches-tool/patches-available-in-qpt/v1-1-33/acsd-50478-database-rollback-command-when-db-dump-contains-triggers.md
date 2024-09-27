@@ -1,9 +1,9 @@
 ---
 title: "ACSD-50478: Problema de JS para ação de reversão na grade de backups e no comando de reversão do banco de dados"
 description: Aplique o patch ACSD-50478 para corrigir o problema de JS para a ação de reversão na grade de backups e o comando de reversão do banco de dados para um caso em que o despejo do banco de dados contém acionadores e um comando SQL *delimitador*.
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Você observou os erros mencionados nas etapas 4 e 6.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada

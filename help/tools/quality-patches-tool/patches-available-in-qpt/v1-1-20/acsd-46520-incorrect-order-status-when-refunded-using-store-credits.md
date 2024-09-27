@@ -3,9 +3,9 @@ title: "ACSD-46520: status de pedido incorreto quando reembolsado usando crédit
 description: Este artigo fornece uma solução para o problema em que os usuários obtêm um status de pedido incorreto quando reembolsados usando créditos da loja.
 feature: Orders, Returns
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ O status do pedido é *Concluído*, que não é o status correto.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou [!DNL Magento Open Source] no local: [Ferramentas de Patches de Qualidade > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) no guia da Ferramenta de Patches de Qualidade.
+* Adobe Commerce ou [!DNL Magento Open Source] no local: [Ferramentas de Patches de Qualidade > Uso](/help/tools/quality-patches-tool/usage.md) no guia da Ferramenta de Patches de Qualidade.
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada

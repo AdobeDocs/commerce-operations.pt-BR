@@ -3,9 +3,9 @@ title: "ACSD-58442: corrige o problema em que dispositivos com largura de 768px 
 description: Aplique o patch ACSD-58442 para corrigir o problema do Adobe Commerce em que dispositivos com uma largura de 768px são tratados como móveis, fazendo com que o menu e o cabeçalho sejam carregados em uma visualização móvel em vez de em desktop.
 feature: Storefront
 role: Admin, Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Cargas de menu e cabeçalho como uma visualização móvel.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
