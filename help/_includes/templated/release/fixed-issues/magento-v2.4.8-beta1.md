@@ -1,7 +1,7 @@
 ---
-source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
+source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
 workflow-type: tm+mt
-source-wordcount: '14443'
+source-wordcount: '14792'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ garantir a compatibilidade e a funcionalidade atualizada. Anteriormente, a atual
 
 ## Problemas corrigidos
 
-Corrigimos 253 problemas no código principal Magento Open Source 2.4.8. Um subconjunto dos problemas corrigidos incluídos nesta versão está descrito abaixo.
+Corrigimos 254 problemas no código principal Magento Open Source 2.4.8. Um subconjunto dos problemas corrigidos incluídos nesta versão está descrito abaixo.
 
 ### APIs
 
@@ -207,6 +207,10 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
    * _Observação de correção_: o sistema agora aceita uploads de imagens de produtos com extensões de arquivo de carta em maiúsculas, garantindo um processo suave de criação de produtos. Anteriormente, os uploads de imagem com extensões de arquivo em letras maiúsculas eram recusados, forçando os usuários a alterar a extensão do arquivo para minúsculas.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38831>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-6975_: [Problema] Defina o modo de indexador padrão como &#39;agendamento&#39;
+   * _Observação de correção_: todos os novos indexadores estão no modo **[!UICONTROL Update by Schedule]** por padrão.  Anteriormente, o modo padrão era **[!UICONTROL Update on Save]**. Os indexadores existentes não são afetados. [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+   * _Problema do GitHub_: <https://github.com/magento/magento2/issues/36419>
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/0b410856>
 * _AC-7700_: [Problema] Descartar tabelas de log de alterações do indexador no cancelamento de inscrição do mview
    * _Observação de correção_: o sistema agora remove automaticamente tabelas de log de alterações não usadas quando um índice é alternado de &#39;atualização na programação&#39; para &#39;atualização ao salvar&#39;, marcando o índice como inválido para garantir que nenhuma entrada seja perdida. Anteriormente, alternar um índice para &quot;atualizar ao salvar&quot; deixaria as tabelas de log de alterações não usadas no sistema e marcaria todos os índices alterados como &quot;válidos&quot;.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/29789>
@@ -300,18 +304,24 @@ Agora podemos atualizar status de pedidos personalizados, enquanto anteriormente
 ### Braintree
 
 * _PACOTE-3367_: Pagar via LPM
+   * _Observação de correção_: o sistema agora renderiza corretamente os Métodos de Pagamento Local (LPM) na carga inicial, mesmo quando os endereços de entrega e cobrança de um cliente conectado não coincidem, garantindo um processo de finalização suave. Anteriormente, uma incompatibilidade entre os endereços de envio e de cobrança de um cliente impedia a renderização do LPM, causando possíveis interrupções durante o checkout.
    * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3368_: configurável com o produto Virtual como secundário
+   * _Observação de correção_: o sistema agora permite métodos de pagamento expresso para produtos configuráveis que têm um produto filho virtual, garantindo um processo de finalização suave. Anteriormente, os métodos de pagamento expresso não estavam disponíveis quando um produto configurável com um produto filho virtual era adicionado ao carrinho.
    * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3369_: Erro de falha na verificação de CVV
    * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _PACOTE-3370_: Problemas de Compartimentação pela Área da conta 247
+   * _Observação de correção_: o sistema agora permite que os clientes salvem informações de um novo cartão ou de uma conta do PayPal em vários sites sem encontrar erros de autorização. Anteriormente, os clientes não conseguiam salvar novos métodos de pagamento em diferentes sites e apresentavam uma mensagem de erro de autorização.
    * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3371_: Enviar para um endereço de um país diferente
+   * _Observação de correção_: o sistema agora permite que as transações sejam processadas sem erros ao enviar para um endereço de um país diferente, garantindo um processo de finalização suave. Anteriormente, tentar enviar para um endereço de um país diferente resultava em erros de console, apesar de não haver erros visíveis no front-end.
    * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3372_: Cartão de Crédito - Função de Desmontagem
+   * _Observação de correção_: o sistema agora lida corretamente com a desmontagem dos componentes do Braintree PayPal quando um cliente navega de volta da página de pagamento para a página de remessa, evitando erros e garantindo que os botões do PayPal Express sejam renderizados corretamente. Anteriormente, navegar de volta para a página de remessa a partir da página de pagamento às vezes resultava em um erro ao tentar destruir os componentes do Braintree PayPal.
    * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _PACOTE-3373_: Retorno de Chamada de Remessa para PayPal Express
+   * _Observação de correção_: o sistema agora exibe corretamente os métodos de envio disponíveis no modal do PayPal Express, permitindo que os clientes selecionem seu método de envio preferido antes de prosseguir para a página de revisão ou concluir sua transação. Anteriormente, nenhum método de envio estava disponível para seleção no modal do PayPal Express, exigindo que os clientes selecionassem um método de envio em uma página de revisão separada antes que pudessem concluir sua transação.
    * _Contribuição de código do GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### Carrinho e saída
