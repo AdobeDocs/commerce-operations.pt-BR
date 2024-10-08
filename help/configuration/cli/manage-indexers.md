@@ -2,9 +2,9 @@
 title: Gerenciar os indexadores
 description: Consulte exemplos de como exibir e gerenciar indexadores do Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -194,7 +194,7 @@ Catalog Search indexer has been invalidated.
 
 Use este comando para definir as seguintes opções do indexador:
 
-- **Atualização ao salvar (`realtime`)**: os dados indexados são atualizados quando uma alteração é feita no Administrador. (Por exemplo, o índice de produtos da categoria é reindexado depois que os produtos são adicionados a uma categoria no Administrador.) Este é o padrão.
+- **Atualização ao salvar (`realtime`)**: os dados indexados são atualizados quando uma alteração é feita no Administrador. (Por exemplo, o índice de produtos da categoria é reindexado depois que os produtos são adicionados a uma categoria no Administrador.)
 - **Atualizar por agendamento (`schedule`)**: os dados são indexados de acordo com o agendamento definido pelo seu trabalho cron.
 
 [Saiba mais sobre indexação](https://developer.adobe.com/commerce/php/development/components/indexing/).

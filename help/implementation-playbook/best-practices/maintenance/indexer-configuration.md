@@ -4,9 +4,9 @@ description: Mantenha e otimize o desempenho do site seguindo as práticas recom
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
+source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Para otimizar e manter o desempenho do site, revise e atualize a configuração 
 
 ## Definir indexadores para atualizar de acordo com um agendamento
 
-O Adobe Commerce tem dois tipos de modos indexadores: [!UICONTROL Update on Save] (configuração padrão) e [!DNL Update on Schedule].
+O Adobe Commerce tem dois tipos de modos indexadores: [!UICONTROL Update on Save] e [!DNL Update on Schedule].
 
 - O modo **[!UICONTROL Update on Save]** atualiza os índices imediatamente sempre que o catálogo ou outros dados são alterados. Por exemplo, se um usuário administrador adicionar novos produtos a uma categoria, o índice de produtos da categoria será reindexado imediatamente quando a atualização for salva.
 
