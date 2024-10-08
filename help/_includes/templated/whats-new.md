@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3ee39b766bbad8d0b3a80cd2305dd8323eadf17f
+source-git-commit: 0fab2989afbf65c32ad41667a7e26ec235cb0eae
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '120'
 ht-degree: 2%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 2%
 
 Saiba mais sobre a nova documentação e as atualizações importantes na documentação existente.
 
-### 13 de agosto de 2024
+### 8 de outubro de 2024
 
 <table style="table-layout:auto;">
   <thead>
@@ -23,21 +23,33 @@ Saiba mais sobre a nova documentação e as atualizações importantes na docume
   </thead>
   <tbody>
     <tr>
-      <td><p>Notas de versão publicadas para os patches de segurança de agosto de 2024:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p2</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p7</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p9</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p10</a></p>
+      <td><p>Adicionados <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">requisitos do sistema</a> para as versões 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11.</p>
 </td>
-      <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bfe3444c045bbfacf63e59e609d75d43e9c44a0">0bfe34</a> (confirmação)</td>
+      <td>técnico</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ce5bbafb3887c8bfb803f37fe33133fed9a23783">ce5bba</a> (confirmação)</td>
     </tr>
     <tr>
-      <td><p>Adicionadas <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">datas de anúncio de 2025</a> para lançamentos de patches e recursos do Adobe Commerce.</p>
+      <td><p>Notas de versão publicadas para os patches de outubro de 2024:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8-beta1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p3</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p10</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p11</a></p>
 </td>
       <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e499dc4423b8f0a3b72ac9ae3e1223f5c4c4db7">6e499d</a> (confirmação)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/93649180699470370f8e4de4f5d544689bb385bc">936491</a> (confirmação)</td>
+    </tr>
+    <tr>
+      <td><p>Atualizado <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#fixed-issues">problemas corrigidos</a> nas notas de versão.</p>
+</td>
+      <td>técnico</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/03d7916aed86aa3869a0abaf32a9c2678add9bd2">03d791</a> (confirmação)</td>
+    </tr>
+    <tr>
+      <td><p>Adicionadas <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">novas versões lançadas</a>.</p>
+</td>
+      <td>técnico</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/295f801219885c6908faea35648878fb7a4d8ec1">295f80</a> (confirmação)</td>
     </tr>
   </tbody>
 </table>
 
-### 5 de agosto de 2024
+### 4 de outubro de 2024
 
 <table style="table-layout:auto;">
   <thead>
@@ -49,15 +61,15 @@ Saiba mais sobre a nova documentação e as atualizações importantes na docume
   </thead>
   <tbody>
     <tr>
-      <td><p>Publicadas <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notas de versão</a> para a versão do pacote QPT 1.1.49.</p>
+      <td><p>Publicadas <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notas de versão</a> da versão do pacote da Ferramenta de correções de qualidade (QPT) 1.1.52.</p>
 </td>
-      <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/abd006da0182057336ba5adcd8ef198eb27e3319">abd006</a> (confirmação)</td>
+      <td>técnico</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c2cbbf8032ea9d29dc3c17e146ced81d7137bf77">c2cbbf</a> (confirmação)</td>
     </tr>
   </tbody>
 </table><!-- date_group -->
 
-### 18 de julho de 2024
+### 12 de setembro de 2024
 
 <table style="table-layout:auto;">
   <thead>
@@ -69,10 +81,10 @@ Saiba mais sobre a nova documentação e as atualizações importantes na docume
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de informações urgentes sobre um hotfix de validação JSON web token (JWT) relacionado ao <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-34102">CVE-2024-34102</a> nas notas de versão de patch de segurança de junho:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p9</a></p>
+      <td><p>Publicadas <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notas de versão</a> da versão do pacote da Ferramenta de Patches de Qualidade (QPT) 1.1.51.</p>
 </td>
       <td>atualização importante</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3def61189269c39102e5dba289b8e04c1cb68a23">3def61</a> (confirmação)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a7cd214422842e321284f1ddc62fdab2796078d2">a7cd21</a> (confirmação)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
