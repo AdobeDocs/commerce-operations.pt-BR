@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1f8fda87e0d39fdcf2372f72373a0b2ea486d25a
+source-git-commit: a8f4df78dfec2a1e94d650cac03c7fba21f398e8
 workflow-type: tm+mt
-source-wordcount: '21185'
+source-wordcount: '8072'
 ht-degree: 0%
 
 ---
@@ -9,21 +9,73 @@ ht-degree: 0%
 
 <!-- All the assigned and captured content is used in the included template -->
 
+
+
 <!-- The template to render with above values -->
 
 **Versão**: 2.4.7-p1
 
 Esta referência contém 141 comandos disponíveis através da ferramenta de linha de comando `bin/magento`.
 A lista inicial é gerada automaticamente usando o comando `bin/magento list` na Adobe Commerce.
+
+## Geral
+
 Use o guia [&quot;Adicionar comandos CLI&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) para adicionar um comando CLI personalizado.
 
->[!NOTE]
->
->Você pode chamar comandos CLI do `bin/magento` usando atalhos em vez do nome completo do comando. Por exemplo, você pode chamar `bin/magento setup:upgrade` usando `bin/magento s:up`, `bin/magento s:upg`. Consulte [sintaxe de atalho](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) para entender como usar atalhos com qualquer comando CLI.
+Você pode chamar comandos CLI do `bin/magento` usando atalhos em vez do nome completo do comando. Por exemplo, você pode chamar `bin/magento setup:upgrade` usando `bin/magento s:up`, `bin/magento s:upg`. Consulte [sintaxe de atalho](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) para entender como usar atalhos com qualquer comando CLI.
 
->[!NOTE]
->
->Essa referência é gerada a partir da base de código do aplicativo. Para alterar o conteúdo, você pode atualizar o código-fonte para a implementação de comando correspondente no repositório [codebase](https://github.com/magento) e enviar suas alterações para revisão. Outra maneira é _Fornecer comentários_ (localizar o link no canto superior direito). Para obter as diretrizes de contribuição, consulte [Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+Esta documentação de referência é gerada a partir do código-fonte do aplicativo. Para alterar a documentação, você deve abrir uma solicitação de pull para o comando correspondente no repositório [codebase](https://github.com/magento) relevante. Consulte [Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) para obter mais informações.
+
+### Opções globais
+
+#### `--help`, `-h`
+
+Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
+
+- Padrão: `false`
+- Não aceita um valor
+
+#### `--quiet`, `-q`
+
+Não enviar nenhuma mensagem
+
+- Padrão: `false`
+- Não aceita um valor
+
+#### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
+
+- Padrão: `false`
+- Não aceita um valor
+
+#### `--version`, `-V`
+
+Exibir esta versão do aplicativo
+
+- Padrão: `false`
+- Não aceita um valor
+
+#### `--ansi`
+
+Forçar (ou desativar — no- ansi) a saída ANSI
+
+- Não aceita um valor
+
+#### `--no-ansi`
+
+Negar a opção &quot;—ansi&quot;
+
+- Padrão: `false`
+- Não aceita um valor
+
+#### `--no-interaction`, `-n`
+
+Não faça nenhuma pergunta interativa
+
+- Padrão: `false`
+- Não aceita um valor
+
 
 ## `_complete`
 
@@ -33,85 +85,40 @@ bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURREN
 
 Comando interno para fornecer sugestões de conclusão de shell
 
+### Opções
 
-### `--shell`, `-s`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--shell`, `-s`
 
 O tipo de concha (&quot;bash&quot;, &quot;fish&quot;, &quot;zsh&quot;)
 
 - Requer um valor
 
-### `--input`, `-i`
+#### `--input`, `-i`
 
 Uma matriz de tokens de entrada (por exemplo, COMP_WORDS ou argv)
 
 - Padrão: `[]`
 - Requer um valor
 
-### `--current`, `-c`
+#### `--current`, `-c`
 
 O índice da matriz &quot;input&quot; na qual o cursor está (por exemplo, COMP_CWORD)
 
 - Requer um valor
 
-### `--api-version`, `-a`
+#### `--api-version`, `-a`
 
 A versão da API do script de conclusão
 
 - Requer um valor
 
-### `--symfony`, `-S`
+#### `--symfony`, `-S`
 
 obsoleto
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `completion`
@@ -121,7 +128,6 @@ bin/magento completion [--debug] [--] [<shell>]
 ```
 
 Despejar o script de conclusão do shell
-
 
 ```
 The completion command dumps the shell completion script required
@@ -152,63 +158,19 @@ Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
     eval "$(/var/www/html/magento2/bin/magento completion )"
 ```
 
+### Argumentos
 
-### `shell`
+#### `shell`
 
 O tipo de shell (por exemplo, &quot;bash&quot;), o valor do var env &quot;$SHELL&quot; será usado se isso não for fornecido
 
+### Opções
 
-### `--debug`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--debug`
 
 Analisar o log de depuração da conclusão
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -222,7 +184,6 @@ bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 
 Exibir a ajuda de um comando
 
-
 ```
 The help command displays help for a given command:
 
@@ -235,72 +196,28 @@ You can also output the help in other formats by using the --format option:
 To display the list of available commands, please use the list command.
 ```
 
+### Argumentos
 
-### `command_name`
+#### `command_name`
 
 O nome do comando
 
 - Padrão: `help`
 
+### Opções
 
-### `--format`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--format`
 
 O formato de saída (txt, xml, json ou md)
 
 - Padrão: `txt`
 - Requer um valor
 
-### `--raw`
+#### `--raw`
 
 Para gerar a ajuda do comando raw
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -313,7 +230,6 @@ bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 Listar comandos
-
 
 ```
 The list command lists all commands:
@@ -333,77 +249,33 @@ It's also possible to get raw list of commands (useful for embedding command run
   bin/magento list --raw
 ```
 
+### Argumentos
 
-### `namespace`
+#### `namespace`
 
 O nome do namespace
 
+### Opções
 
-### `--raw`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--raw`
 
 Para gerar a lista de comandos raw
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--format`
+#### `--format`
 
 O formato de saída (txt, xml, json ou md)
 
 - Padrão: `txt`
 - Requer um valor
 
-### `--short`
+#### `--short`
 
 Para ignorar a descrição dos argumentos dos comandos
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -417,54 +289,9 @@ bin/magento admin:adobe-ims:disable
 
 Desabilitar o módulo Adobe IMS
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `admin:adobe-ims:enable`
@@ -475,78 +302,33 @@ bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|
 
 Ativar o módulo Adobe IMS.
 
+### Opções
 
-### `--organization-id`, `-o`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--organization-id`, `-o`
 
 Defina o ID da organização para a configuração do Adobe IMS. Obrigatório ao habilitar o módulo
 
 - Aceita um valor
 
-### `--client-id`, `-c`
+#### `--client-id`, `-c`
 
 Defina a ID do cliente para a configuração do Adobe IMS. Obrigatório ao habilitar o módulo
 
 - Aceita um valor
 
-### `--client-secret`, `-s`
+#### `--client-secret`, `-s`
 
 Defina o segredo do cliente para a configuração do Adobe IMS. Obrigatório ao habilitar o módulo
 
 - Aceita um valor
 
-### `--2fa`, `-t`
+#### `--2fa`, `-t`
 
 Verifique se 2FA está ativado para Organização na Adobe Admin Console. Obrigatório ao habilitar o módulo
 
 - Aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `admin:adobe-ims:info`
@@ -557,54 +339,9 @@ bin/magento admin:adobe-ims:info
 
 Informações de configuração do módulo Adobe IMS
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `admin:adobe-ims:status`
@@ -615,54 +352,9 @@ bin/magento admin:adobe-ims:status
 
 Status do módulo IMS da Adobe
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `admin:user:create`
@@ -673,90 +365,45 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 Cria um administrador
 
+### Opções
 
-### `--admin-user`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--admin-user`
 
 (Obrigatório) Usuário administrador
 
 - Requer um valor
 
-### `--admin-password`
+#### `--admin-password`
 
 (Obrigatório) Senha do administrador
 
 - Requer um valor
 
-### `--admin-email`
+#### `--admin-email`
 
 (Obrigatório) Email do administrador
 
 - Requer um valor
 
-### `--admin-firstname`
+#### `--admin-firstname`
 
 (Obrigatório) Nome do administrador
 
 - Requer um valor
 
-### `--admin-lastname`
+#### `--admin-lastname`
 
 (Obrigatório) Sobrenome do administrador
 
 - Requer um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `admin:user:unlock`
@@ -767,67 +414,23 @@ bin/magento admin:user:unlock <username>
 
 Desbloquear Conta de Administrador
 
-
 ```
 This command unlocks an admin account by its username.
 To unlock:
       bin/magento admin:user:unlock username
 ```
 
+### Argumentos
 
-### `username`
+#### `username`
 
 O nome de usuário do administrador a ser desbloqueado
 
 - Obrigatório
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `app:config:dump`
@@ -838,63 +441,18 @@ bin/magento app:config:dump [<config-types>...]
 
 Criar despejo de aplicativo
 
+### Argumentos
 
-
-### `config-types`
+#### `config-types`
 
 Lista separada por espaços de tipos de configuração ou omissão para despejar todos os [escopos, sistema, temas, i18n]
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `app:config:import`
@@ -905,54 +463,9 @@ bin/magento app:config:import
 
 Importar dados de arquivos de configuração compartilhados para o armazenamento de dados apropriado
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `app:config:status`
@@ -963,54 +476,9 @@ bin/magento app:config:status
 
 Verifica se a propagação de configuração requer atualização
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `braintree:migrate`
@@ -1021,78 +489,33 @@ bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNA
 
 Migrar cartões armazenados de um banco de dados Magento 1
 
+### Opções
 
-### `--host`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--host`
 
 Nome do host/IP. A porta é opcional
 
 - Requer um valor
 
-### `--dbname`
+#### `--dbname`
 
 Nome do banco de dados
 
 - Requer um valor
 
-### `--username`
+#### `--username`
 
 Usuário do banco de dados. Deve ter acesso de leitura
 
 - Requer um valor
 
-### `--password`
+#### `--password`
 
 Senha
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `cache:clean`
@@ -1103,69 +526,24 @@ bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 Limpa os tipos de cache
 
+### Argumentos
 
-
-### `types`
+#### `types`
 
 Lista separada por espaços de tipos de cache ou omitir para aplicar a todos os tipos de cache.
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--bootstrap`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--bootstrap`
 
 adicionar ou substituir parâmetros da inicialização
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `cache:disable`
@@ -1176,69 +554,24 @@ bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 Desabilita os tipos de cache
 
+### Argumentos
 
-
-### `types`
+#### `types`
 
 Lista separada por espaços de tipos de cache ou omitir para aplicar a todos os tipos de cache.
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--bootstrap`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--bootstrap`
 
 adicionar ou substituir parâmetros da inicialização
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `cache:enable`
@@ -1249,69 +582,24 @@ bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 Habilita o(s) tipo(s) de cache
 
+### Argumentos
 
-
-### `types`
+#### `types`
 
 Lista separada por espaços de tipos de cache ou omitir para aplicar a todos os tipos de cache.
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--bootstrap`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--bootstrap`
 
 adicionar ou substituir parâmetros da inicialização
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `cache:flush`
@@ -1322,69 +610,24 @@ bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 
 Libera o armazenamento em cache usado pelo(s) tipo(s) de cache
 
+### Argumentos
 
-
-### `types`
+#### `types`
 
 Lista separada por espaços de tipos de cache ou omitir para aplicar a todos os tipos de cache.
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--bootstrap`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--bootstrap`
 
 adicionar ou substituir parâmetros da inicialização
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `cache:status`
@@ -1395,60 +638,15 @@ bin/magento cache:status [--bootstrap BOOTSTRAP]
 
 Verifica o status do cache
 
+### Opções
 
-### `--bootstrap`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--bootstrap`
 
 adicionar ou substituir parâmetros da inicialização
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `catalog:images:resize`
@@ -1459,65 +657,20 @@ bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 
 Cria imagens de produtos redimensionadas
 
+### Opções
 
-### `--async`, `-a`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--async`, `-a`
 
 Redimensionar imagem no modo assíncrono
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--skip_hidden_images`
+#### `--skip_hidden_images`
 
 Não processar imagens marcadas como ocultas da página do produto
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1531,54 +684,9 @@ bin/magento catalog:product:attributes:cleanup
 
 Remove atributos de produto não utilizados.
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `cms:wysiwyg:restrict`
@@ -1589,61 +697,17 @@ bin/magento cms:wysiwyg:restrict <restrict>
 
 Defina se deseja impor a validação do conteúdo HTML do usuário ou mostrar um aviso
 
+### Argumentos
 
-
-### `restrict`
+#### `restrict`
 
 y\n
 
 - Obrigatório
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `config:sensitive:set`
@@ -1654,86 +718,41 @@ bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-c
 
 Definir valores de configuração confidenciais
 
+### Argumentos
 
-
-### `path`
+#### `path`
 
 Caminho de configuração para exemplo group/section/field_name
 
 
-### `value`
+#### `value`
 
 Valor de configuração
 
+### Opções
 
-### `--interactive`, `-i`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--interactive`, `-i`
 
 Ativar o modo interativo para definir todas as variáveis confidenciais
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--scope`
+#### `--scope`
 
 Escopo para configuração, se não for definido, usar &quot;padrão&quot;
 
 - Padrão: `default`
 - Aceita um valor
 
-### `--scope-code`
+#### `--scope-code`
 
 Código de escopo para configuração, cadeia de caracteres vazia por padrão
 
 - Padrão: &quot;
 - Aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `config:set`
@@ -1744,98 +763,55 @@ bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env]
 
 Alterar configuração do sistema
 
+### Argumentos
 
-
-### `path`
+#### `path`
 
 Caminho de configuração no formato seção/grupo/nome_do_campo
 
 - Obrigatório
 
-### `value`
+
+#### `value`
 
 Valor de configuração
 
 - Obrigatório
 
-### `--scope`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--scope`
 
 Escopo de configuração (padrão, site ou loja)
 
 - Padrão: `default`
 - Requer um valor
 
-### `--scope-code`
+#### `--scope-code`
 
 Código do escopo (obrigatório somente se o escopo não for &#39;padrão&#39;)
 
 - Requer um valor
 
-### `--lock-env`, `-e`
+#### `--lock-env`, `-e`
 
 Valor de bloqueio que impede a modificação no Administrador (será salvo em app/etc/env.php)
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--lock-config`, `-c`
+#### `--lock-config`, `-c`
 
 Bloquear e compartilhar valor com outras instalações, impede a modificação no Administrador (será salvo em app/etc/config.php)
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--lock`, `-l`
+#### `--lock`, `-l`
 
 Obsoleto, use a opção — lock- env.
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1849,74 +825,29 @@ bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<pat
 
 Mostra o valor de configuração para determinado caminho. Se o caminho não for especificado, todos os valores salvos serão mostrados
 
+### Argumentos
 
-
-### `path`
+#### `path`
 
 Caminho de configuração, por exemplo section_id/group_id/field_id
 
+### Opções
 
-### `--scope`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--scope`
 
 Escopo para configuração; se não especificado, o escopo &quot;padrão&quot; será usado
 
 - Padrão: `default`
 - Aceita um valor
 
-### `--scope-code`
+#### `--scope-code`
 
 Código do escopo (necessário somente se o escopo não for `default`)
 
 - Padrão: &quot;
 - Aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `cron:install`
@@ -1927,65 +858,20 @@ bin/magento cron:install [-f|--force] [-d|--non-optional]
 
 Gera e instala o crontab para o usuário atual
 
+### Opções
 
-### `--force`, `-f`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--force`, `-f`
 
 Forçar tarefas de instalação
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--non-optional`, `-d`
+#### `--non-optional`, `-d`
 
 Instalar somente as tarefas não opcionais (padrão)
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -1999,54 +885,9 @@ bin/magento cron:remove
 
 Remove tarefas do crontab
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `cron:run`
@@ -2057,73 +898,28 @@ bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootst
 
 Executa trabalhos por agendamento
 
+### Opções
 
-### `--group`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--group`
 
 Executar trabalhos somente do grupo especificado
 
 - Requer um valor
 
-### `--exclude-group`
+#### `--exclude-group`
 
 Excluir trabalhos do grupo especificado
 
 - Padrão: `[]`
 - Aceita vários valores
 
-### `--bootstrap`
+#### `--bootstrap`
 
 Adicionar ou substituir parâmetros da inicialização
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `customer:hash:upgrade`
@@ -2134,54 +930,9 @@ bin/magento customer:hash:upgrade
 
 Atualize o hash do cliente de acordo com o algoritmo mais recente
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `deploy:mode:set`
@@ -2192,65 +943,21 @@ bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 
 Defina o modo do aplicativo.
 
+### Argumentos
 
-
-### `mode`
+#### `mode`
 
 O modo de aplicativo a ser definido. As opções disponíveis são &quot;desenvolvedor&quot; ou &quot;produção&quot;
 
 - Obrigatório
 
-### `--skip-compilation`, `-s`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--skip-compilation`, `-s`
 
 Ignora a limpeza e a regeneração de conteúdo estático (código gerado, CSS pré-processado e ativos no pub/static/)
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -2264,54 +971,9 @@ bin/magento deploy:mode:show
 
 Exibe o modo de aplicação atual.
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `dev:di:info`
@@ -2322,61 +984,17 @@ bin/magento dev:di:info <class>
 
 Fornece informações sobre a configuração da Injeção de Dependência para o Comando.
 
+### Argumentos
 
-
-### `class`
+#### `class`
 
 Nome da classe
 
 - Obrigatório
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `dev:email:newsletter-compatibility-check`
@@ -2387,54 +1005,9 @@ bin/magento dev:email:newsletter-compatibility-check
 
 Verifica modelos de boletim informativo em busca de possíveis problemas de compatibilidade com o uso de variáveis
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `dev:email:override-compatibility-check`
@@ -2445,54 +1018,9 @@ bin/magento dev:email:override-compatibility-check
 
 Verifica substituições de modelos de e-mail em busca de possíveis problemas de compatibilidade com o uso de variáveis
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `dev:profiler:disable`
@@ -2503,54 +1031,9 @@ bin/magento dev:profiler:disable
 
 Desative o profiler.
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `dev:profiler:enable`
@@ -2561,60 +1044,15 @@ bin/magento dev:profiler:enable [<type>]
 
 Ative o profiler.
 
+### Argumentos
 
-
-### `type`
+#### `type`
 
 Tipo de profiler
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `dev:query-log:disable`
@@ -2625,54 +1063,9 @@ bin/magento dev:query-log:disable
 
 Desabilitar log de consultas do BD
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `dev:query-log:enable`
@@ -2683,75 +1076,30 @@ bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [
 
 Habilitar log de consultas do BD
 
+### Opções
 
-### `--include-all-queries`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--include-all-queries`
 
 Registra todas as consultas. [true\|false]
 
 - Padrão: `true`
 - Aceita um valor
 
-### `--query-time-threshold`
+#### `--query-time-threshold`
 
 Limites de tempo de consulta.
 
 - Padrão: `0.001`
 - Aceita um valor
 
-### `--include-call-stack`
+#### `--include-call-stack`
 
 Incluir pilha de chamadas. [true\|false]
 
 - Padrão: `true`
 - Aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `dev:source-theme:deploy`
@@ -2762,9 +1110,9 @@ bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA
 
 Coleta e publica arquivos de origem para o tema.
 
+### Argumentos
 
-
-### `file`
+#### `file`
 
 Arquivos a serem pré-processados (o arquivo deve ser especificado sem a extensão)
 
@@ -2772,81 +1120,37 @@ Arquivos a serem pré-processados (o arquivo deve ser especificado sem a extens�
 
 - Matriz
 
-### `--type`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--type`
 
 Tipo de arquivos de origem: [less]
 
 - Padrão: `less`
 - Requer um valor
 
-### `--locale`
+#### `--locale`
 
 Localidade: [en_US]
 
 - Padrão: `en_US`
 - Requer um valor
 
-### `--area`
+#### `--area`
 
 Área: [front-end\|adminhtml]
 
 - Padrão: `frontend`
 - Requer um valor
 
-### `--theme`
+#### `--theme`
 
 Tema: [Fornecedor/tema]
 
 - Padrão: `Magento/luma`
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `dev:template-hints:disable`
@@ -2857,54 +1161,9 @@ bin/magento dev:template-hints:disable
 
 Desative as dicas de modelo de front-end. Uma liberação de cache pode ser necessária.
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `dev:template-hints:enable`
@@ -2915,54 +1174,9 @@ bin/magento dev:template-hints:enable
 
 Ativar dicas de modelo de front-end. Uma liberação de cache pode ser necessária.
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `dev:template-hints:status`
@@ -2973,54 +1187,9 @@ bin/magento dev:template-hints:status
 
 Mostrar status das dicas do modelo de front-end.
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `dev:tests:run`
@@ -3031,69 +1200,24 @@ bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 
 Executa testes
 
+### Argumentos
 
-
-### `type`
+#### `type`
 
 Tipo de teste a ser executado. Tipos disponíveis: tudo, unidade, integração, integração-tudo, estático, estático-tudo, integridade, herdado, padrão
 
 - Padrão: `default`
 
+### Opções
 
-### `--arguments`, `-c`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--arguments`, `-c`
 
 Argumentos adicionais para PHPUnit. Exemplo: &quot;-c&#39;—filter=MeuTeste&#39;&quot; (sem espaços)
 
 - Padrão: &quot;
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `dev:urn-catalog:generate`
@@ -3104,68 +1228,24 @@ bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 
 Gera o catálogo de URNs para mapeamentos *.xsd para que o IDE destaque o xml.
 
+### Argumentos
 
-
-### `path`
+#### `path`
 
 Caminho para o arquivo de saída do catálogo. Para PhpStorm, use .idea/misc.xml
 
 - Obrigatório
 
-### `--ide`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--ide`
 
 Formato no qual o catálogo será gerado. Com suporte: [phpstorm, vscode]
 
 - Padrão: `phpstorm`
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `dev:xml:convert`
@@ -3176,71 +1256,28 @@ bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 
 Converte arquivo XML usando folhas de estilos XSL
 
+### Argumentos
 
-
-### `xml-file`
+#### `xml-file`
 
 Caminho para o arquivo XML que será transformado
 
 - Obrigatório
 
-### `processor`
+
+#### `processor`
 
 Caminho para a folha de estilos XSL que será aplicada ao arquivo XML
 
 - Obrigatório
 
-### `--overwrite`, `-o`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--overwrite`, `-o`
 
 Substituir arquivo XML
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -3254,63 +1291,18 @@ bin/magento downloadable:domains:add [<domains>...]
 
 Adicionar domínios à lista de permissões de domínios baixáveis
 
+### Argumentos
 
-
-### `domains`
+#### `domains`
 
 Nome dos domínios
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `downloadable:domains:remove`
@@ -3321,63 +1313,18 @@ bin/magento downloadable:domains:remove [<domains>...]
 
 Remover domínios da lista de permissões de domínios baixáveis
 
+### Argumentos
 
-
-### `domains`
+#### `domains`
 
 Nomes de domínio
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `downloadable:domains:show`
@@ -3388,54 +1335,9 @@ bin/magento downloadable:domains:show
 
 Exibir lista de permissões de domínios baixáveis
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `encryption:payment-data:update`
@@ -3446,54 +1348,9 @@ bin/magento encryption:payment-data:update
 
 Criptografa novamente os dados criptografados do cartão de crédito com a cifra de criptografia mais recente.
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `events:create-event-provider`
@@ -3504,66 +1361,21 @@ bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCR
 
 Crie um provedor de eventos personalizado em Eventos Adobe I/O para esta instância. Se você não especificar as opções de rótulo e descrição, elas deverão ser definidas no arquivo de sistema app/etc/event-types.json.
 
+### Opções
 
-### `--label`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--label`
 
 Um rótulo para definir seu provedor personalizado.
 
 - Aceita um valor
 
-### `--description`
+#### `--description`
 
 Uma descrição do provedor.
 
 - Aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `events:generate:module`
@@ -3574,54 +1386,9 @@ bin/magento events:generate:module
 
 Gerar módulo com base na lista de plug-ins
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `events:info`
@@ -3632,68 +1399,24 @@ bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 
 Retorna a carga do evento especificado.
 
+### Argumentos
 
-
-### `event-code`
+#### `event-code`
 
 Código do evento
 
 - Obrigatório
 
-### `--depth`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--depth`
 
 O número de níveis na carga útil do evento a ser retornada
 
 - Padrão: `2`
 - Aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `events:list`
@@ -3704,54 +1427,9 @@ bin/magento events:list
 
 Mostra a lista de eventos inscritos
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `events:list:all`
@@ -3762,61 +1440,17 @@ bin/magento events:list:all <module_name>
 
 Retorna uma lista de eventos assináveis definidos no módulo especificado
 
+### Argumentos
 
-
-### `module_name`
+#### `module_name`
 
 Nome do módulo
 
 - Obrigatório
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `events:metadata:populate`
@@ -3827,54 +1461,9 @@ bin/magento events:metadata:populate
 
 Cria metadados no Adobe I/O a partir da lista de configuração (configurações XML e de aplicativos)
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `events:provider:info`
@@ -3885,54 +1474,9 @@ bin/magento events:provider:info
 
 Retorna detalhes sobre o provedor de eventos configurado
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `events:registrations:list`
@@ -3943,54 +1487,9 @@ bin/magento events:registrations:list
 
 Lista registros de eventos no seu projeto do App Builder
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `events:subscribe`
@@ -4001,106 +1500,62 @@ bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [-
 
 Inscreve-se no evento
 
+### Argumentos
 
-
-### `event-code`
+#### `event-code`
 
 Código do evento
 
 - Obrigatório
 
-### `--force`, `-f`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--force`, `-f`
 
 Força a inscrição do evento especificado, mesmo que ele não tenha sido definido localmente.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--fields`
+#### `--fields`
 
 A lista de campos na carga de dados do evento.
 
 - Padrão: `[]`
 - Requer um valor
 
-### `--parent`
+#### `--parent`
 
 O código de evento pai de uma inscrição de evento com regras.
 
 - Requer um valor
 
-### `--rules`
+#### `--rules`
 
 A lista de regras para a assinatura do evento, em que cada regra é formatada como &quot;campo\|operador\|valor&quot;.
 
 - Padrão: `[]`
 - Requer um valor
 
-### `--priority`, `-p`
+#### `--priority`, `-p`
 
 Agiliza a transmissão desse evento. Especifique essa opção para eventos que precisam ser entregues imediatamente. Por padrão, os eventos são enviados pelo cron uma vez por minuto.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--destination`, `-d`
+#### `--destination`, `-d`
 
 O destino deste evento. Especifique essa opção para os eventos que devem ser entregues ao destino personalizado.
 
 - Padrão: `default`
 - Requer um valor
 
-### `--hipaaAuditRequired`
+#### `--hipaaAuditRequired`
 
 Indica que o evento contém dados sujeitos à auditoria da HIPAA.
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4114,58 +1569,13 @@ bin/magento events:sync-events-metadata [-d|--delete]
 
 Sincronizar metadados de evento para esta instância
 
+### Opções
 
-### `--delete`, `-d`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--delete`, `-d`
 
 A exclusão de metadados de eventos não é mais necessária
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4179,61 +1589,17 @@ bin/magento events:unsubscribe <event-code>
 
 Remove a assinatura do evento fornecido
 
+### Argumentos
 
-
-### `event-code`
+#### `event-code`
 
 Código de evento do qual cancelar inscrição
 
 - Obrigatório
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `i18n:collect-phrases`
@@ -4244,70 +1610,25 @@ bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<dire
 
 Descobre frases na base de código
 
+### Argumentos
 
-
-### `directory`
+#### `directory`
 
 Caminho do diretório para análise. Não é necessário se o sinalizador — magento estiver ativo
 
+### Opções
 
-### `--output`, `-o`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--output`, `-o`
 
 Caminho (incluindo o nome do arquivo) para um arquivo de saída. Sem nenhum arquivo especificado, o padrão é stdout.
 
 - Requer um valor
 
-### `--magento`, `-m`
+#### `--magento`, `-m`
 
 Use o parâmetro —magento para analisar a base de código do Magento atual. Omita o parâmetro se um diretório for especificado.
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4321,78 +1642,35 @@ bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <lo
 
 Salva o pacote de idioma
 
+### Argumentos
 
-
-### `source`
+#### `source`
 
 Caminho para o arquivo do dicionário de origem com traduções
 
 - Obrigatório
 
-### `locale`
+
+#### `locale`
 
 Local de destino do dicionário, por exemplo &quot;de_DE&quot;
 
 - Obrigatório
 
-### `--mode`, `-m`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--mode`, `-m`
 
 Modo de salvamento do dicionário - &quot;substituir&quot; - substituir o pacote de idiomas por um novo - &quot;mesclar&quot; - mesclar pacotes de idiomas, por padrão &quot;substituir&quot;
 
 - Padrão: `replace`
 - Requer um valor
 
-### `--allow-duplicates`, `-d`
+#### `--allow-duplicates`, `-d`
 
 Use o parâmetro —allow-duplicates para permitir o salvamento de duplicatas de translate. Caso contrário, omita o parâmetro.
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4406,68 +1684,24 @@ bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 
 Desinstala pacotes de idiomas
 
+### Argumentos
 
-
-### `package`
+#### `package`
 
 Nome do pacote de idioma
 
 - Padrão: `[]`
-
 - Obrigatório
+
 - Matriz
 
-### `--backup-code`, `-b`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--backup-code`, `-b`
 
 Fazer backup de arquivos de código e configuração (excluindo arquivos temporários)
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -4481,54 +1715,9 @@ bin/magento indexer:info
 
 Mostra os Indexadores permitidos
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `indexer:reindex`
@@ -4539,63 +1728,18 @@ bin/magento indexer:reindex [<index>...]
 
 Reindexa dados
 
+### Argumentos
 
-
-### `index`
+#### `index`
 
 Lista separada por espaços de tipos de índice ou omissão para aplicar a todos os índices.
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `indexer:reset`
@@ -4606,63 +1750,18 @@ bin/magento indexer:reset [<index>...]
 
 Redefine o status do indexador para inválido
 
+### Argumentos
 
-
-### `index`
+#### `index`
 
 Lista separada por espaços de tipos de índice ou omissão para aplicar a todos os índices.
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `indexer:set-dimensions-mode`
@@ -4673,65 +1772,20 @@ bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 
 Definir modo de indexador Dimension
 
+### Argumentos
 
-
-### `indexer`
+#### `indexer`
 
 Nome do indexador [catalog_product_price|catalogpermissions_category]
 
 
-### `mode`
+#### `mode`
 
 Modos de dimensão do indexador catalog_product_price          nenhum,site,customer_group,website_and_customer_group catalogpermissions_category    nenhum,customer_group
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `indexer:set-mode`
@@ -4742,68 +1796,23 @@ bin/magento indexer:set-mode [<mode> [<index>...]]
 
 Define o tipo de modo de índice
 
+### Argumentos
 
-
-### `mode`
+#### `mode`
 
 Tipo de modo do indexador [tempo real|agenda]
 
 
-### `index`
+#### `index`
 
 Lista separada por espaços de tipos de índice ou omissão para aplicar a todos os índices.
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `indexer:set-status`
@@ -4814,69 +1823,25 @@ bin/magento indexer:set-status <status> [<index>...]
 
 Define o status do indexador especificado
 
+### Argumentos
 
-
-### `status`
+#### `status`
 
 Tipo de status do indexador [inválido|suspenso|válido]
 
 - Obrigatório
 
-### `index`
+
+#### `index`
 
 Lista separada por espaços de tipos de índice ou omissão para aplicar a todos os índices.
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `indexer:show-dimensions-mode`
@@ -4887,63 +1852,18 @@ bin/magento indexer:show-dimensions-mode [<indexer>...]
 
 Mostra o modo de Dimension do indexador
 
+### Argumentos
 
-
-### `indexer`
+#### `indexer`
 
 Lista separada por espaços de tipos de índice ou omissão para aplicar a todos os índices (catalog_product_price,catalogpermissions_category)
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `indexer:show-mode`
@@ -4954,63 +1874,18 @@ bin/magento indexer:show-mode [<index>...]
 
 Mostra o modo de índice
 
+### Argumentos
 
-
-### `index`
+#### `index`
 
 Lista separada por espaços de tipos de índice ou omissão para aplicar a todos os índices.
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `indexer:status`
@@ -5021,63 +1896,18 @@ bin/magento indexer:status [<index>...]
 
 Mostra o status do Indexador
 
+### Argumentos
 
-
-### `index`
+#### `index`
 
 Lista separada por espaços de tipos de índice ou omissão para aplicar a todos os índices.
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `info:adminuri`
@@ -5088,54 +1918,9 @@ bin/magento info:adminuri
 
 Exibe o URI do administrador de Magento
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `info:backups:list`
@@ -5146,54 +1931,9 @@ bin/magento info:backups:list
 
 Imprime a lista de arquivos de backup disponíveis
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `info:currency:list`
@@ -5204,54 +1944,9 @@ bin/magento info:currency:list
 
 Exibe a lista de moedas disponíveis
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `info:dependencies:show-framework`
@@ -5262,61 +1957,16 @@ bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 
 Mostra o número de dependências na estrutura Magento
 
+### Opções
 
-### `--output`, `-o`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--output`, `-o`
 
 Nome do arquivo do relatório
 
 - Padrão: `framework-dependencies.csv`
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `info:dependencies:show-modules`
@@ -5327,61 +1977,16 @@ bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 
 Mostra o número de dependências entre módulos
 
+### Opções
 
-### `--output`, `-o`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--output`, `-o`
 
 Nome do arquivo do relatório
 
 - Padrão: `modules-dependencies.csv`
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `info:dependencies:show-modules-circular`
@@ -5392,61 +1997,16 @@ bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 
 Mostra o número de dependências circulares entre módulos
 
+### Opções
 
-### `--output`, `-o`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--output`, `-o`
 
 Nome do arquivo do relatório
 
 - Padrão: `modules-circular-dependencies.csv`
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `info:language:list`
@@ -5457,54 +2017,9 @@ bin/magento info:language:list
 
 Exibe a lista de localidades de idioma disponíveis
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `info:timezone:list`
@@ -5515,54 +2030,9 @@ bin/magento info:timezone:list
 
 Exibe a lista de fusos horários disponíveis
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `inventory:reservation:create-compensations`
@@ -5573,67 +2043,22 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 Criar reservas por argumentos de remuneração fornecidos
 
+### Argumentos
 
-
-### `compensations`
+#### `compensations`
 
 Lista de argumentos de compensação no formato &quot;::&quot;
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--raw`, `-r`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--raw`, `-r`
 
 Saída bruta
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5647,79 +2072,34 @@ bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-
 
 Mostrar todos os pedidos e produtos com inconsistências de quantidade vendável
 
+### Opções
 
-### `--complete-orders`, `-c`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--complete-orders`, `-c`
 
 Mostrar apenas inconsistências para pedidos completos
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--incomplete-orders`, `-i`
+#### `--incomplete-orders`, `-i`
 
 Mostrar apenas inconsistências para pedidos incompletos
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--bunch-size`, `-b`
+#### `--bunch-size`, `-b`
 
 Define quantos pedidos serão carregados de uma vez
 
 - Padrão: `50`
 - Aceita um valor
 
-### `--raw`, `-r`
+#### `--raw`, `-r`
 
 Saída bruta
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -5733,64 +2113,20 @@ bin/magento inventory-geonames:import <countries>...
 
 Baixar e importar nomes geográficos para o algoritmo de seleção de origem
 
+### Argumentos
 
-
-### `countries`
+#### `countries`
 
 Lista de códigos de país a serem importados
 
 - Padrão: `[]`
-
 - Obrigatório
+
 - Matriz
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `maintenance:allow-ips`
@@ -5801,83 +2137,38 @@ bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENT
 
 Define IPs isentos do modo de manutenção
 
+### Argumentos
 
-
-### `ip`
+#### `ip`
 
 Endereços IP permitidos
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--none`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--none`
 
 Limpar endereços IP permitidos
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--add`
+#### `--add`
 
 Adicionar o endereço IP à lista existente
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `maintenance:disable`
@@ -5888,67 +2179,22 @@ bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PA
 
 Desabilita o modo de manutenção
 
+### Opções
 
-### `--ip`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--ip`
 
 Endereços IP permitidos (use &quot;nenhum&quot; para limpar a lista de IP permitidos)
 
 - Padrão: `[]`
 - Requer um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `maintenance:enable`
@@ -5959,67 +2205,22 @@ bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PAR
 
 Ativa o modo de manutenção
 
+### Opções
 
-### `--ip`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--ip`
 
 Endereços IP permitidos (use &quot;nenhum&quot; para limpar a lista de IP permitidos)
 
 - Padrão: `[]`
 - Requer um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `maintenance:status`
@@ -6030,60 +2231,15 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 Exibe o status do modo de manutenção
 
+### Opções
 
-### `--magento-init-params`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `media-content:sync`
@@ -6094,54 +2250,9 @@ bin/magento media-content:sync
 
 Sincronizar conteúdo com ativos
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `media-gallery:sync`
@@ -6152,54 +2263,9 @@ bin/magento media-gallery:sync
 
 Sincronizar armazenamento de mídia e ativos de mídia no banco de dados
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `module:config:status`
@@ -6210,54 +2276,9 @@ bin/magento module:config:status
 
 Verifica a configuração dos módulos no arquivo &#39;app/etc/config.php&#39; e relata se eles estão atualizados ou não
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `module:disable`
@@ -6268,90 +2289,45 @@ bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--m
 
 Desativa módulos especificados
 
+### Argumentos
 
-
-### `module`
+#### `module`
 
 Nome do módulo
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--force`, `-f`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--force`, `-f`
 
 Ignorar verificação de dependências
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--all`
+#### `--all`
 
 Desativar todos os módulos
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 Limpar arquivos de visualização estáticos gerados. Necessário, se o(s) módulo(s) tiverem arquivos de visualização estáticos
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `module:enable`
@@ -6362,90 +2338,45 @@ bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--ma
 
 Habilita módulos especificados
 
+### Argumentos
 
-
-### `module`
+#### `module`
 
 Nome do módulo
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--force`, `-f`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--force`, `-f`
 
 Ignorar verificação de dependências
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--all`
+#### `--all`
 
 Habilitar todos os módulos
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 Limpar arquivos de visualização estáticos gerados. Necessário, se o(s) módulo(s) tiverem arquivos de visualização estáticos
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `module:status`
@@ -6456,83 +2387,38 @@ bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENT
 
 Exibe o status dos módulos
 
+### Argumentos
 
-
-### `module-names`
+#### `module-names`
 
 Nome opcional do módulo
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--enabled`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--enabled`
 
 Imprimir somente os módulos habilitados
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--disabled`
+#### `--disabled`
 
 Imprimir somente módulos desabilitados
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `module:uninstall`
@@ -6543,112 +2429,68 @@ bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media]
 
 Desinstala módulos instalados pelo compositor
 
+### Argumentos
 
-
-### `module`
+#### `module`
 
 Nome do módulo
 
 - Padrão: `[]`
-
 - Obrigatório
+
 - Matriz
 
-### `--remove-data`, `-r`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--remove-data`, `-r`
 
 Remover dados instalados pelos módulos
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--backup-code`
+#### `--backup-code`
 
 Fazer backup de arquivos de código e configuração (excluindo arquivos temporários)
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--backup-media`
+#### `--backup-media`
 
 Fazer backup de mídia
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--backup-db`
+#### `--backup-db`
 
 Fazer backup completo do banco de dados
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--non-composer`
+#### `--non-composer`
 
 Todos os módulos, que serão passados aqui, serão não baseados em compositor
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 Limpar arquivos de visualização estáticos gerados. Necessário, se o(s) módulo(s) tiverem arquivos de visualização estáticos
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `newrelic:create:deploy-marker`
@@ -6659,77 +2501,34 @@ bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revis
 
 Verifique se há entradas na fila de implantação e crie um marcador de implantação apropriado.
 
+### Argumentos
 
-
-### `message`
+#### `message`
 
 Implantar mensagem?
 
 - Obrigatório
 
-### `change_log`
+
+#### `change_log`
 
 Registro de alterações?
 
 - Obrigatório
 
-### `user`
+
+#### `user`
 
 Usuário de implantação
 
 
-### `revision`
+#### `revision`
 
 Revisão
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `queue:consumers:list`
@@ -6740,58 +2539,13 @@ bin/magento queue:consumers:list
 
 Lista de consumidores do MessageQueue
 
-
 ```
 This command shows list of MessageQueue consumers.
 ```
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `queue:consumers:restart`
@@ -6802,58 +2556,13 @@ bin/magento queue:consumers:restart
 
 Reiniciar consumidores do MessageQueue
 
-
 ```
 Command put poison pill for MessageQueue consumers and force to restart them after next status check.
 ```
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `queue:consumers:start`
@@ -6863,7 +2572,6 @@ bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BA
 ```
 
 Iniciar consumidor MessageQueue
-
 
 ```
 This command starts MessageQueue consumer by its name.
@@ -6897,97 +2605,54 @@ To define the number of processes per consumer:
     bin/magento queue:consumers:start someConsumer --multi-process=4
 ```
 
+### Argumentos
 
-### `consumer`
+#### `consumer`
 
 O nome do consumidor a ser iniciado.
 
 - Obrigatório
 
-### `--max-messages`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--max-messages`
 
 O número de mensagens a serem processadas pelo consumidor antes do término do processo. Se não for especificado - finalizar após o processamento de todas as mensagens em fila.
 
 - Requer um valor
 
-### `--batch-size`
+#### `--batch-size`
 
 O número de mensagens por lote. Aplicável somente para o consumidor do lote.
 
 - Requer um valor
 
-### `--area-code`
+#### `--area-code`
 
 O padrão da área preferida (global, adminhtml, etc.) é global.
 
 - Requer um valor
 
-### `--single-thread`
+#### `--single-thread`
 
 Essa opção impede a execução de várias cópias de um consumidor simultaneamente.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--multi-process`
+#### `--multi-process`
 
 O número de processos por consumidor.
 
 - Aceita um valor
 
-### `--pid-file-path`
+#### `--pid-file-path`
 
 O caminho do arquivo para salvar o PID (Esta opção está obsoleta, use — single- thread)
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `remote-storage:sync`
@@ -6998,54 +2663,9 @@ bin/magento remote-storage:sync
 
 Sincronizar arquivos de mídia com o armazenamento remoto.
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `saas:resync`
@@ -7056,97 +2676,52 @@ bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run
 
 Sincroniza novamente os dados do feed com o serviço SaaS.
 
+### Opções
 
-### `--feed`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--feed`
 
 Nome do feed para ressincronização completa com o serviço SaaS. Feeds disponíveis: Payment Services Order Production, Payment Services Order Sandbox, Payment Services Order Status Production, Payment Services Order Status Sandbox, Payment Services Order Status Sandbox, Payment Services Store Production, Sandbox de armazenamento de serviços de pagamento
 
 - Requer um valor
 
-### `--no-reindex`
+#### `--no-reindex`
 
 Execute o reenvio de dados de feed somente para o serviço SaaS. Não reindexa. (Esta opção não se aplica aos produtos, substituições de produtos, feeds de preços)
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--cleanup-feed`
+#### `--cleanup-feed`
 
 Força a limpeza da tabela indexadora de feed antes da sincronização.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--dry-run`
+#### `--dry-run`
 
 Pista seca. Os dados não serão exportados. Para salvar a carga no arquivo de log var/log/saas-export.log, execute com a variável env EXPORTER_EXTENDED_LOG=1.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--thread-count`
+#### `--thread-count`
 
 Definir contagem de threads de sincronização.
 
 - Requer um valor
 
-### `--batch-size`
+#### `--batch-size`
 
 Definir tamanho do lote de sincronização
 
 - Requer um valor
 
-### `--continue-resync`
+#### `--continue-resync`
 
 Continuar a ressincronizar a partir da última posição armazenada (essa opção é aplicável aos produtos, substituições de produtos, feeds de preços)
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7160,58 +2735,13 @@ bin/magento sampledata:deploy [--no-update]
 
 Implantar módulos de dados de amostra para instalações de Magento com base no compositor
 
+### Opções
 
-### `--no-update`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--no-update`
 
 Atualizar composer.json sem executar a atualização do composer
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7225,58 +2755,13 @@ bin/magento sampledata:remove [--no-update]
 
 Remover todos os pacotes de dados de amostra do composer.json
 
+### Opções
 
-### `--no-update`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--no-update`
 
 Atualizar composer.json sem executar a atualização do composer
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7290,54 +2775,9 @@ bin/magento sampledata:reset
 
 Redefina todos os módulos de dados de amostra para reinstalação
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `security:recaptcha:disable-for-user-forgot-password`
@@ -7348,54 +2788,9 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 Desativar o reCAPTCHA para o formulário de senha esquecida do usuário administrador
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `security:recaptcha:disable-for-user-login`
@@ -7406,54 +2801,9 @@ bin/magento security:recaptcha:disable-for-user-login
 
 Desabilitar reCAPTCHA para o formulário de logon de usuário administrador
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `security:tfa:google:set-secret`
@@ -7464,67 +2814,24 @@ bin/magento security:tfa:google:set-secret <user> <secret>
 
 Defina o segredo usado para a geração de OTP do Google.
 
+### Argumentos
 
-
-### `user`
+#### `user`
 
 Nome de usuário
 
 - Obrigatório
 
-### `secret`
+
+#### `secret`
 
 Segredo
 
 - Obrigatório
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `security:tfa:providers`
@@ -7535,54 +2842,9 @@ bin/magento security:tfa:providers
 
 Listar todos os provedores disponíveis
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `security:tfa:reset`
@@ -7593,67 +2855,24 @@ bin/magento security:tfa:reset <user> <provider>
 
 Redefinir configuração para um usuário
 
+### Argumentos
 
-
-### `user`
+#### `user`
 
 Nome de usuário
 
 - Obrigatório
 
-### `provider`
+
+#### `provider`
 
 Código do provedor
 
 - Obrigatório
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `server:run`
@@ -7664,114 +2883,69 @@ bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-wn|--
 
 Executar servidor de aplicativos
 
+### Opções
 
-### `--port`, `-p`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--port`, `-p`
 
 porta para atender
 
 - Padrão: `9501`
 - Aceita um valor
 
-### `--background`, `-b`
+#### `--background`, `-b`
 
 sinalizador de modo de plano de fundo
 
 - Padrão: `0`
 - Aceita um valor
 
-### `--workerNum`, `-wn`
+#### `--workerNum`, `-wn`
 
 número de processos de trabalho a serem iniciados
 
 - Padrão: `4`
 - Aceita um valor
 
-### `--dispatchMode`, `-dm`
+#### `--dispatchMode`, `-dm`
 
 modo de distribuição de conexões para os processos de trabalho
 
 - Padrão: `3`
 - Aceita um valor
 
-### `--maxRequests`, `-mr`
+#### `--maxRequests`, `-mr`
 
 máximo de solicitações antes que o processo de trabalho fosse reiniciado
 
 - Padrão: `10000`
 - Aceita um valor
 
-### `--area`, `-a`
+#### `--area`, `-a`
 
 área do servidor de aplicativos
 
 - Padrão: `graphql`
 - Aceita um valor
 
-### `--magento-init-params`, `-mip`
+#### `--magento-init-params`, `-mip`
 
 parâmetros de inicialização do magento bootstrap
 
 - Padrão: &quot;
 - Aceita um valor
 
-### `--maxWaitTime`, `-mwt`
+#### `--maxWaitTime`, `-mwt`
 
 quanto tempo esperar pelos trabalhadores após o recarregamento (por exemplo, alteração de configuração) antes de matá-los
 
 - Padrão: `3600`
 - Aceita um valor
 
-### `--state-monitor`
+#### `--state-monitor`
 
 Habilitar monitoramento de estado. Use isso somente para problemas de estado de depuração!
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -7785,54 +2959,9 @@ bin/magento server:state-monitor:aggregate-output
 
 Saída agregada do monitor de estado do ApplicationServer
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `setup:backup`
@@ -7843,81 +2972,36 @@ bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENT
 
 Faz backup de Magento Base de código de aplicativo, mídia e banco de dados
 
+### Opções
 
-### `--code`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--code`
 
 Fazer backup de arquivos de código e configuração (excluindo arquivos temporários)
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--media`
+#### `--media`
 
 Fazer backup de mídia
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--db`
+#### `--db`
 
 Fazer backup completo do banco de dados
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:config:set`
@@ -7928,647 +3012,602 @@ bin/magento setup:config:set [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--en
 
 Cria ou modifica a configuração de implantação
 
+### Opções
 
-### `--enable-debug-logging`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--enable-debug-logging`
 
 Habilitar log de depuração
 
 - Requer um valor
 
-### `--enable-syslog-logging`
+#### `--enable-syslog-logging`
 
 Habilitar registro do syslog
 
 - Requer um valor
 
-### `--backend-frontname`
+#### `--backend-frontname`
 
 Nome de frente de backend (será gerado automaticamente se estiver faltando)
 
 - Requer um valor
 
-### `--remote-storage-driver`
+#### `--remote-storage-driver`
 
 Driver de armazenamento remoto
 
 - Requer um valor
 
-### `--remote-storage-prefix`
+#### `--remote-storage-prefix`
 
 Prefixo de armazenamento remoto
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--remote-storage-endpoint`
+#### `--remote-storage-endpoint`
 
 Ponto de extremidade de armazenamento remoto
 
 - Requer um valor
 
-### `--remote-storage-bucket`
+#### `--remote-storage-bucket`
 
 Compartimento de armazenamento remoto
 
 - Requer um valor
 
-### `--remote-storage-region`
+#### `--remote-storage-region`
 
 Região de armazenamento remoto
 
 - Requer um valor
 
-### `--remote-storage-key`
+#### `--remote-storage-key`
 
 Chave de acesso do armazenamento remoto
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--remote-storage-secret`
+#### `--remote-storage-secret`
 
 Chave secreta do armazenamento remoto
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--remote-storage-path-style`
+#### `--remote-storage-path-style`
 
 Estilo do caminho de armazenamento remoto
 
 - Padrão: `0`
 - Requer um valor
 
-### `--id_salt`
+#### `--id_salt`
 
 Sal GraphQl
 
 - Requer um valor
 
-### `--config-async`
+#### `--config-async`
 
 Habilitar Salvar Configuração de Administração assíncrona? 1 - Sim, 0 - Não
 
 - Requer um valor
 
-### `--checkout-async`
+#### `--checkout-async`
 
 Habilitar processamento assíncrono de pedidos? 1 - Sim, 0 - Não
 
 - Requer um valor
 
-### `--amqp-host`
+#### `--amqp-host`
 
 Host do servidor Amqp
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--amqp-port`
+#### `--amqp-port`
 
 Porta do servidor Amqp
 
 - Padrão: `5672`
 - Requer um valor
 
-### `--amqp-user`
+#### `--amqp-user`
 
 Nome de usuário do servidor Amqp
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--amqp-password`
+#### `--amqp-password`
 
 Senha do servidor Amqp
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--amqp-virtualhost`
+#### `--amqp-virtualhost`
 
 Virtualhost Amqp
 
 - Padrão: `/`
 - Requer um valor
 
-### `--amqp-ssl`
+#### `--amqp-ssl`
 
 Amqp SSL
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--amqp-ssl-options`
+#### `--amqp-ssl-options`
 
 Opções de SSL Amqp (JSON)
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--consumers-wait-for-messages`
+#### `--consumers-wait-for-messages`
 
 Os consumidores devem aguardar uma mensagem da fila? 1 - Sim, 0 - Não
 
 - Requer um valor
 
-### `--queue-default-connection`
+#### `--queue-default-connection`
 
 Conexão padrão de filas de mensagens. Pode ser &#39;db&#39;, &#39;amqp&#39; ou um sistema de fila personalizado.O sistema de fila deve estar instalado e configurado, caso contrário, as mensagens não serão processadas corretamente.
 
 - Requer um valor
 
-### `--deferred-total-calculating`
+#### `--deferred-total-calculating`
 
 Ativar cálculo de total adiado? 1 - Sim, 0 - Não
 
 - Requer um valor
 
-### `--key`
+#### `--key`
 
 Chave de criptografia
 
 - Requer um valor
 
-### `--db-host`
+#### `--db-host`
 
 Host do servidor de banco de dados
 
 - Requer um valor
 
-### `--db-name`
+#### `--db-name`
 
 Nome do banco de dados
 
 - Requer um valor
 
-### `--db-user`
+#### `--db-user`
 
 Usuário do servidor de banco de dados
 
 - Requer um valor
 
-### `--db-engine`
+#### `--db-engine`
 
 Mecanismo do servidor de banco de dados
 
 - Requer um valor
 
-### `--db-password`
+#### `--db-password`
 
 Senha do servidor de banco de dados
 
 - Requer um valor
 
-### `--db-prefix`
+#### `--db-prefix`
 
 Prefixo da tabela do banco de dados
 
 - Requer um valor
 
-### `--db-model`
+#### `--db-model`
 
 Tipo de banco de dados
 
 - Requer um valor
 
-### `--db-init-statements`
+#### `--db-init-statements`
 
 Conjunto inicial de comandos do banco de dados
 
 - Requer um valor
 
-### `--skip-db-validation`, `-s`
+#### `--skip-db-validation`, `-s`
 
 Se especificado, a validação da conexão com o banco de dados será ignorada
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--http-cache-hosts`
+#### `--http-cache-hosts`
 
 hosts de cache http
 
 - Requer um valor
 
-### `--db-ssl-key`
+#### `--db-ssl-key`
 
 Caminho completo do arquivo de chave do cliente para estabelecer uma conexão de banco de dados por meio do SSL
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--db-ssl-cert`
+#### `--db-ssl-cert`
 
 Caminho completo do arquivo de certificado do cliente para estabelecer uma conexão de banco de dados por meio do SSL
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--db-ssl-ca`
+#### `--db-ssl-ca`
 
 Caminho completo do arquivo de certificado do servidor para estabelecer conexão de banco de dados por meio do SSL
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--db-ssl-verify`
+#### `--db-ssl-verify`
 
 Verificar certificação do servidor
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--session-save`
+#### `--session-save`
 
 Manipulador de salvamento de sessão
 
 - Requer um valor
 
-### `--session-save-redis-host`
+#### `--session-save-redis-host`
 
 Nome de host totalmente qualificado, endereço IP ou caminho absoluto se estiver usando soquetes UNIX
 
 - Requer um valor
 
-### `--session-save-redis-port`
+#### `--session-save-redis-port`
 
 Porta de escuta do servidor Redis
 
 - Requer um valor
 
-### `--session-save-redis-password`
+#### `--session-save-redis-password`
 
 Senha do servidor Redis
 
 - Requer um valor
 
-### `--session-save-redis-timeout`
+#### `--session-save-redis-timeout`
 
 Tempo limite da conexão, em segundos
 
 - Requer um valor
 
-### `--session-save-redis-persistent-id`
+#### `--session-save-redis-persistent-id`
 
 Sequência de caracteres exclusiva para habilitar conexões persistentes
 
 - Requer um valor
 
-### `--session-save-redis-db`
+#### `--session-save-redis-db`
 
 Número do banco de dados Redis
 
 - Requer um valor
 
-### `--session-save-redis-compression-threshold`
+#### `--session-save-redis-compression-threshold`
 
 Limite de compactação Redis
 
 - Requer um valor
 
-### `--session-save-redis-compression-lib`
+#### `--session-save-redis-compression-lib`
 
 Biblioteca de compactação Redis. Valores: gzip (padrão), lzf, lz4, snappy
 
 - Requer um valor
 
-### `--session-save-redis-log-level`
+#### `--session-save-redis-log-level`
 
 Nível de log Redis. Valores: 0 (menos explícito) a 7 (mais explícito)
 
 - Requer um valor
 
-### `--session-save-redis-max-concurrency`
+#### `--session-save-redis-max-concurrency`
 
 Número máximo de processos que podem aguardar um bloqueio em uma sessão
 
 - Requer um valor
 
-### `--session-save-redis-break-after-frontend`
+#### `--session-save-redis-break-after-frontend`
 
 Número de segundos a aguardar antes de tentar interromper um bloqueio para uma sessão de front-end
 
 - Requer um valor
 
-### `--session-save-redis-break-after-adminhtml`
+#### `--session-save-redis-break-after-adminhtml`
 
 Número de segundos a aguardar antes de tentar interromper um bloqueio para a sessão de administrador
 
 - Requer um valor
 
-### `--session-save-redis-first-lifetime`
+#### `--session-save-redis-first-lifetime`
 
 Tempo de vida, em segundos, da sessão para não bots na primeira gravação (use 0 para desativar)
 
 - Requer um valor
 
-### `--session-save-redis-bot-first-lifetime`
+#### `--session-save-redis-bot-first-lifetime`
 
 Tempo de vida, em segundos, da sessão para bots na primeira gravação (use 0 para desativar)
 
 - Requer um valor
 
-### `--session-save-redis-bot-lifetime`
+#### `--session-save-redis-bot-lifetime`
 
 Tempo de vida da sessão para bots em gravações subsequentes (use 0 para desativar)
 
 - Requer um valor
 
-### `--session-save-redis-disable-locking`
+#### `--session-save-redis-disable-locking`
 
 Redis desabilita o bloqueio. Valores: falso (padrão), verdadeiro
 
 - Requer um valor
 
-### `--session-save-redis-min-lifetime`
+#### `--session-save-redis-min-lifetime`
 
 Tempo de vida mínimo da sessão Redis, em segundos
 
 - Requer um valor
 
-### `--session-save-redis-max-lifetime`
+#### `--session-save-redis-max-lifetime`
 
 Tempo de vida máximo da sessão do Redis, em segundos
 
 - Requer um valor
 
-### `--session-save-redis-sentinel-master`
+#### `--session-save-redis-sentinel-master`
 
 Redis Sentinel master
 
 - Requer um valor
 
-### `--session-save-redis-sentinel-servers`
+#### `--session-save-redis-sentinel-servers`
 
 Servidores Redis Sentinel, separados por vírgula
 
 - Requer um valor
 
-### `--session-save-redis-sentinel-verify-master`
+#### `--session-save-redis-sentinel-verify-master`
 
 Redis Sentinel verifica o mestre. Valores: falso (padrão), verdadeiro
 
 - Requer um valor
 
-### `--session-save-redis-sentinel-connect-retries`
+#### `--session-save-redis-sentinel-connect-retries`
 
 Tentativas de conexão do Redis Sentinel.
 
 - Requer um valor
 
-### `--cache-backend`
+#### `--cache-backend`
 
 Manipulador de cache padrão
 
 - Requer um valor
 
-### `--cache-backend-redis-server`
+#### `--cache-backend-redis-server`
 
 Servidor Redis
 
 - Requer um valor
 
-### `--cache-backend-redis-db`
+#### `--cache-backend-redis-db`
 
 Número do banco de dados do cache
 
 - Requer um valor
 
-### `--cache-backend-redis-port`
+#### `--cache-backend-redis-port`
 
 Porta de escuta do servidor Redis
 
 - Requer um valor
 
-### `--cache-backend-redis-password`
+#### `--cache-backend-redis-password`
 
 Senha do servidor Redis
 
 - Requer um valor
 
-### `--cache-backend-redis-compress-data`
+#### `--cache-backend-redis-compress-data`
 
 Defina como 0 para desativar a compactação (o padrão é 1, ativado)
 
 - Requer um valor
 
-### `--cache-backend-redis-compression-lib`
+#### `--cache-backend-redis-compression-lib`
 
 Biblioteca de compactação para usar [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
 
 - Requer um valor
 
-### `--cache-backend-redis-use-lua`
+#### `--cache-backend-redis-use-lua`
 
 Defina como 1 para ativar lua (o padrão é 0, desativado)
 
 - Requer um valor
 
-### `--cache-id-prefix`
+#### `--cache-id-prefix`
 
 Prefixo de ID para chaves de cache
 
 - Requer um valor
 
-### `--allow-parallel-generation`
+#### `--allow-parallel-generation`
 
 Permitir gerar cache de forma não bloqueada
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--page-cache`
+#### `--page-cache`
 
 Manipulador de cache padrão
 
 - Requer um valor
 
-### `--page-cache-redis-server`
+#### `--page-cache-redis-server`
 
 Servidor Redis
 
 - Requer um valor
 
-### `--page-cache-redis-db`
+#### `--page-cache-redis-db`
 
 Número do banco de dados do cache
 
 - Requer um valor
 
-### `--page-cache-redis-port`
+#### `--page-cache-redis-port`
 
 Porta de escuta do servidor Redis
 
 - Requer um valor
 
-### `--page-cache-redis-password`
+#### `--page-cache-redis-password`
 
 Senha do servidor Redis
 
 - Requer um valor
 
-### `--page-cache-redis-compress-data`
+#### `--page-cache-redis-compress-data`
 
 Defina como 1 para compactar o cache de página inteira (use 0 para desativar)
 
 - Requer um valor
 
-### `--page-cache-redis-compression-lib`
+#### `--page-cache-redis-compression-lib`
 
 Biblioteca de compactação para usar [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
 
 - Requer um valor
 
-### `--page-cache-id-prefix`
+#### `--page-cache-id-prefix`
 
 Prefixo de ID para chaves de cache
 
 - Requer um valor
 
-### `--lock-provider`
+#### `--lock-provider`
 
 Nome do provedor de bloqueio
 
 - Requer um valor
 
-### `--lock-db-prefix`
+#### `--lock-db-prefix`
 
 Prefixo de bloqueio específico da instalação para evitar conflitos de bloqueio
 
 - Requer um valor
 
-### `--lock-zookeeper-host`
+#### `--lock-zookeeper-host`
 
 Host e porta para conexão com o cluster Zookeeper. Por exemplo: 127.0.0.1:2181
 
 - Requer um valor
 
-### `--lock-zookeeper-path`
+#### `--lock-zookeeper-path`
 
 O caminho onde o Zookeeper salvará bloqueios. O caminho padrão é: /magento/locks
 
 - Requer um valor
 
-### `--lock-file-path`
+#### `--lock-file-path`
 
 O caminho onde os bloqueios de arquivo serão salvos.
 
 - Requer um valor
 
-### `--document-root-is-pub`
+#### `--document-root-is-pub`
 
 O sinalizador para mostrar se o Pub está na raiz e pode ser verdadeiro ou falso apenas
 
 - Requer um valor
 
-### `--backpressure-logger`
+#### `--backpressure-logger`
 
 Manipulador de registrador de pressão inversa
 
 - Requer um valor
 
-### `--backpressure-logger-redis-server`
+#### `--backpressure-logger-redis-server`
 
 Servidor Redis
 
 - Requer um valor
 
-### `--backpressure-logger-redis-port`
+#### `--backpressure-logger-redis-port`
 
 Porta de escuta do servidor Redis
 
 - Requer um valor
 
-### `--backpressure-logger-redis-timeout`
+#### `--backpressure-logger-redis-timeout`
 
 Tempo limite do servidor Redis
 
 - Requer um valor
 
-### `--backpressure-logger-redis-persistent`
+#### `--backpressure-logger-redis-persistent`
 
 Redis persistente
 
 - Requer um valor
 
-### `--backpressure-logger-redis-db`
+#### `--backpressure-logger-redis-db`
 
 Número do banco de dados Redis
 
 - Requer um valor
 
-### `--backpressure-logger-redis-password`
+#### `--backpressure-logger-redis-password`
 
 Senha do servidor Redis
 
 - Requer um valor
 
-### `--backpressure-logger-redis-user`
+#### `--backpressure-logger-redis-user`
 
 Usuário do servidor Redis
 
 - Requer um valor
 
-### `--backpressure-logger-id-prefix`
+#### `--backpressure-logger-id-prefix`
 
 Prefixo de ID para chaves
 
 - Requer um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:db-data:upgrade`
@@ -8579,60 +3618,15 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 Instala e atualiza dados no BD
 
+### Opções
 
-### `--magento-init-params`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:db-declaration:generate-patch`
@@ -8643,81 +3637,38 @@ bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--t
 
 Gere o patch e coloque-o na pasta específica.
 
+### Argumentos
 
-
-### `module`
+#### `module`
 
 Nome do módulo
 
 - Obrigatório
 
-### `patch`
+
+#### `patch`
 
 Nome do patch
 
 - Obrigatório
 
-### `--revertable`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--revertable`
 
 Verifique se o patch é reversível ou não.
 
 - Padrão: `false`
 - Aceita um valor
 
-### `--type`
+#### `--type`
 
 Descubra que tipo de patch deve ser gerado. Valores disponíveis: `data`, `schema`.
 
 - Padrão: `data`
 - Aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:db-declaration:generate-whitelist`
@@ -8728,61 +3679,16 @@ bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]
 
 Gerar lista de permissões de tabelas e colunas que podem ser editadas pelo instalador de declarações
 
+### Opções
 
-### `--module-name`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--module-name`
 
 Nome do módulo onde a lista de permissões será gerada
 
 - Padrão: `all`
 - Aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:db-schema:add-slave`
@@ -8793,107 +3699,62 @@ bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--usernam
 
 Mover tabelas relacionadas à cotação de check-out para um servidor de banco de dados separado
 
+### Opções
 
-### `--host`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--host`
 
 Host do Servidor BD Escravo
 
 - Padrão: `localhost`
 - Requer um valor
 
-### `--dbname`
+#### `--dbname`
 
 Nome do Banco de Dados Secundário
 
 - Requer um valor
 
-### `--username`
+#### `--username`
 
 Nome de usuário do BD subordinado
 
 - Padrão: `root`
 - Requer um valor
 
-### `--password`
+#### `--password`
 
 Senha de usuário do BD subordinado
 
 - Aceita um valor
 
-### `--connection`
+#### `--connection`
 
 Nome da conexão subordinada
 
 - Padrão: `default`
 - Aceita um valor
 
-### `--resource`
+#### `--resource`
 
 Nome do recurso subordinado
 
 - Padrão: `default`
 - Aceita um valor
 
-### `--maxAllowedLag`
+#### `--maxAllowedLag`
 
 Máximo de Conexões Lag Slave Permitidas (em segundos)
 
 - Padrão: &quot;
 - Aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:db-schema:split-quote`
@@ -8904,98 +3765,53 @@ bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--usern
 
 Mover tabelas relacionadas à cotação de check-out para um servidor de banco de dados separado. Obsoleto desde a versão 2.4.2 e será removido
 
+### Opções
 
-### `--host`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--host`
 
 Verificar host do Servidor de BD
 
 - Requer um valor
 
-### `--dbname`
+#### `--dbname`
 
 Nome do banco de dados de check-out
 
 - Requer um valor
 
-### `--username`
+#### `--username`
 
 Fazer check-out do nome de usuário do BD
 
 - Requer um valor
 
-### `--password`
+#### `--password`
 
 Fazer check-out da senha de usuário do BD
 
 - Aceita um valor
 
-### `--connection`
+#### `--connection`
 
 Fazer check-out do nome da conexão
 
 - Padrão: `checkout`
 - Aceita um valor
 
-### `--resource`
+#### `--resource`
 
 Fazer check-out do nome do recurso
 
 - Padrão: `checkout`
 - Aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:db-schema:split-sales`
@@ -9006,98 +3822,53 @@ bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--usern
 
 Mover tabelas relacionadas a vendas para um servidor do BD separado. Obsoleto desde a versão 2.4.2 e será removido
 
+### Opções
 
-### `--host`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--host`
 
 Host do servidor do banco de dados de vendas
 
 - Requer um valor
 
-### `--dbname`
+#### `--dbname`
 
 Nome do Banco de Dados de Vendas
 
 - Requer um valor
 
-### `--username`
+#### `--username`
 
 Nome de usuário do BD de Vendas
 
 - Requer um valor
 
-### `--password`
+#### `--password`
 
 Senha do usuário do BD de Vendas
 
 - Aceita um valor
 
-### `--connection`
+#### `--connection`
 
 Nome da conexão de vendas
 
 - Padrão: `sales`
 - Aceita um valor
 
-### `--resource`
+#### `--resource`
 
 Nome do recurso de vendas
 
 - Padrão: `sales`
 - Aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:db-schema:upgrade`
@@ -9108,67 +3879,22 @@ bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]
 
 Instala e atualiza o esquema do BD
 
+### Opções
 
-### `--convert-old-scripts`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--convert-old-scripts`
 
 Permite converter scripts antigos (InstallSchema, UpgradeSchema) para o formato db_schema.xml
 
 - Padrão: `false`
 - Aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:db:status`
@@ -9179,60 +3905,15 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 Verifica se o esquema ou os dados do banco de dados exigem atualização
 
+### Opções
 
-### `--magento-init-params`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:di:compile`
@@ -9243,54 +3924,9 @@ bin/magento setup:di:compile
 
 Gera a configuração de ID e todas as classes ausentes que podem ser geradas automaticamente
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `setup:install`
@@ -9301,886 +3937,841 @@ bin/magento setup:install [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enabl
 
 Instala o aplicativo Magento
 
+### Opções
 
-### `--enable-debug-logging`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--enable-debug-logging`
 
 Habilitar log de depuração
 
 - Requer um valor
 
-### `--enable-syslog-logging`
+#### `--enable-syslog-logging`
 
 Habilitar registro do syslog
 
 - Requer um valor
 
-### `--backend-frontname`
+#### `--backend-frontname`
 
 Nome de frente de backend (será gerado automaticamente se estiver faltando)
 
 - Requer um valor
 
-### `--remote-storage-driver`
+#### `--remote-storage-driver`
 
 Driver de armazenamento remoto
 
 - Requer um valor
 
-### `--remote-storage-prefix`
+#### `--remote-storage-prefix`
 
 Prefixo de armazenamento remoto
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--remote-storage-endpoint`
+#### `--remote-storage-endpoint`
 
 Ponto de extremidade de armazenamento remoto
 
 - Requer um valor
 
-### `--remote-storage-bucket`
+#### `--remote-storage-bucket`
 
 Compartimento de armazenamento remoto
 
 - Requer um valor
 
-### `--remote-storage-region`
+#### `--remote-storage-region`
 
 Região de armazenamento remoto
 
 - Requer um valor
 
-### `--remote-storage-key`
+#### `--remote-storage-key`
 
 Chave de acesso do armazenamento remoto
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--remote-storage-secret`
+#### `--remote-storage-secret`
 
 Chave secreta do armazenamento remoto
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--remote-storage-path-style`
+#### `--remote-storage-path-style`
 
 Estilo do caminho de armazenamento remoto
 
 - Padrão: `0`
 - Requer um valor
 
-### `--id_salt`
+#### `--id_salt`
 
 Sal GraphQl
 
 - Requer um valor
 
-### `--config-async`
+#### `--config-async`
 
 Habilitar Salvar Configuração de Administração assíncrona? 1 - Sim, 0 - Não
 
 - Requer um valor
 
-### `--checkout-async`
+#### `--checkout-async`
 
 Habilitar processamento assíncrono de pedidos? 1 - Sim, 0 - Não
 
 - Requer um valor
 
-### `--amqp-host`
+#### `--amqp-host`
 
 Host do servidor Amqp
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--amqp-port`
+#### `--amqp-port`
 
 Porta do servidor Amqp
 
 - Padrão: `5672`
 - Requer um valor
 
-### `--amqp-user`
+#### `--amqp-user`
 
 Nome de usuário do servidor Amqp
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--amqp-password`
+#### `--amqp-password`
 
 Senha do servidor Amqp
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--amqp-virtualhost`
+#### `--amqp-virtualhost`
 
 Virtualhost Amqp
 
 - Padrão: `/`
 - Requer um valor
 
-### `--amqp-ssl`
+#### `--amqp-ssl`
 
 Amqp SSL
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--amqp-ssl-options`
+#### `--amqp-ssl-options`
 
 Opções de SSL Amqp (JSON)
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--consumers-wait-for-messages`
+#### `--consumers-wait-for-messages`
 
 Os consumidores devem aguardar uma mensagem da fila? 1 - Sim, 0 - Não
 
 - Requer um valor
 
-### `--queue-default-connection`
+#### `--queue-default-connection`
 
 Conexão padrão de filas de mensagens. Pode ser &#39;db&#39;, &#39;amqp&#39; ou um sistema de fila personalizado.O sistema de fila deve estar instalado e configurado, caso contrário, as mensagens não serão processadas corretamente.
 
 - Requer um valor
 
-### `--deferred-total-calculating`
+#### `--deferred-total-calculating`
 
 Ativar cálculo de total adiado? 1 - Sim, 0 - Não
 
 - Requer um valor
 
-### `--key`
+#### `--key`
 
 Chave de criptografia
 
 - Requer um valor
 
-### `--db-host`
+#### `--db-host`
 
 Host do servidor de banco de dados
 
 - Requer um valor
 
-### `--db-name`
+#### `--db-name`
 
 Nome do banco de dados
 
 - Requer um valor
 
-### `--db-user`
+#### `--db-user`
 
 Usuário do servidor de banco de dados
 
 - Requer um valor
 
-### `--db-engine`
+#### `--db-engine`
 
 Mecanismo do servidor de banco de dados
 
 - Requer um valor
 
-### `--db-password`
+#### `--db-password`
 
 Senha do servidor de banco de dados
 
 - Requer um valor
 
-### `--db-prefix`
+#### `--db-prefix`
 
 Prefixo da tabela do banco de dados
 
 - Requer um valor
 
-### `--db-model`
+#### `--db-model`
 
 Tipo de banco de dados
 
 - Requer um valor
 
-### `--db-init-statements`
+#### `--db-init-statements`
 
 Conjunto inicial de comandos do banco de dados
 
 - Requer um valor
 
-### `--skip-db-validation`, `-s`
+#### `--skip-db-validation`, `-s`
 
 Se especificado, a validação da conexão com o banco de dados será ignorada
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--http-cache-hosts`
+#### `--http-cache-hosts`
 
 hosts de cache http
 
 - Requer um valor
 
-### `--db-ssl-key`
+#### `--db-ssl-key`
 
 Caminho completo do arquivo de chave do cliente para estabelecer uma conexão de banco de dados por meio do SSL
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--db-ssl-cert`
+#### `--db-ssl-cert`
 
 Caminho completo do arquivo de certificado do cliente para estabelecer uma conexão de banco de dados por meio do SSL
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--db-ssl-ca`
+#### `--db-ssl-ca`
 
 Caminho completo do arquivo de certificado do servidor para estabelecer conexão de banco de dados por meio do SSL
 
 - Padrão: &quot;
 - Requer um valor
 
-### `--db-ssl-verify`
+#### `--db-ssl-verify`
 
 Verificar certificação do servidor
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--session-save`
+#### `--session-save`
 
 Manipulador de salvamento de sessão
 
 - Requer um valor
 
-### `--session-save-redis-host`
+#### `--session-save-redis-host`
 
 Nome de host totalmente qualificado, endereço IP ou caminho absoluto se estiver usando soquetes UNIX
 
 - Requer um valor
 
-### `--session-save-redis-port`
+#### `--session-save-redis-port`
 
 Porta de escuta do servidor Redis
 
 - Requer um valor
 
-### `--session-save-redis-password`
+#### `--session-save-redis-password`
 
 Senha do servidor Redis
 
 - Requer um valor
 
-### `--session-save-redis-timeout`
+#### `--session-save-redis-timeout`
 
 Tempo limite da conexão, em segundos
 
 - Requer um valor
 
-### `--session-save-redis-persistent-id`
+#### `--session-save-redis-persistent-id`
 
 Sequência de caracteres exclusiva para habilitar conexões persistentes
 
 - Requer um valor
 
-### `--session-save-redis-db`
+#### `--session-save-redis-db`
 
 Número do banco de dados Redis
 
 - Requer um valor
 
-### `--session-save-redis-compression-threshold`
+#### `--session-save-redis-compression-threshold`
 
 Limite de compactação Redis
 
 - Requer um valor
 
-### `--session-save-redis-compression-lib`
+#### `--session-save-redis-compression-lib`
 
 Biblioteca de compactação Redis. Valores: gzip (padrão), lzf, lz4, snappy
 
 - Requer um valor
 
-### `--session-save-redis-log-level`
+#### `--session-save-redis-log-level`
 
 Nível de log Redis. Valores: 0 (menos explícito) a 7 (mais explícito)
 
 - Requer um valor
 
-### `--session-save-redis-max-concurrency`
+#### `--session-save-redis-max-concurrency`
 
 Número máximo de processos que podem aguardar um bloqueio em uma sessão
 
 - Requer um valor
 
-### `--session-save-redis-break-after-frontend`
+#### `--session-save-redis-break-after-frontend`
 
 Número de segundos a aguardar antes de tentar interromper um bloqueio para uma sessão de front-end
 
 - Requer um valor
 
-### `--session-save-redis-break-after-adminhtml`
+#### `--session-save-redis-break-after-adminhtml`
 
 Número de segundos a aguardar antes de tentar interromper um bloqueio para a sessão de administrador
 
 - Requer um valor
 
-### `--session-save-redis-first-lifetime`
+#### `--session-save-redis-first-lifetime`
 
 Tempo de vida, em segundos, da sessão para não bots na primeira gravação (use 0 para desativar)
 
 - Requer um valor
 
-### `--session-save-redis-bot-first-lifetime`
+#### `--session-save-redis-bot-first-lifetime`
 
 Tempo de vida, em segundos, da sessão para bots na primeira gravação (use 0 para desativar)
 
 - Requer um valor
 
-### `--session-save-redis-bot-lifetime`
+#### `--session-save-redis-bot-lifetime`
 
 Tempo de vida da sessão para bots em gravações subsequentes (use 0 para desativar)
 
 - Requer um valor
 
-### `--session-save-redis-disable-locking`
+#### `--session-save-redis-disable-locking`
 
 Redis desabilita o bloqueio. Valores: falso (padrão), verdadeiro
 
 - Requer um valor
 
-### `--session-save-redis-min-lifetime`
+#### `--session-save-redis-min-lifetime`
 
 Tempo de vida mínimo da sessão Redis, em segundos
 
 - Requer um valor
 
-### `--session-save-redis-max-lifetime`
+#### `--session-save-redis-max-lifetime`
 
 Tempo de vida máximo da sessão do Redis, em segundos
 
 - Requer um valor
 
-### `--session-save-redis-sentinel-master`
+#### `--session-save-redis-sentinel-master`
 
 Redis Sentinel master
 
 - Requer um valor
 
-### `--session-save-redis-sentinel-servers`
+#### `--session-save-redis-sentinel-servers`
 
 Servidores Redis Sentinel, separados por vírgula
 
 - Requer um valor
 
-### `--session-save-redis-sentinel-verify-master`
+#### `--session-save-redis-sentinel-verify-master`
 
 Redis Sentinel verifica o mestre. Valores: falso (padrão), verdadeiro
 
 - Requer um valor
 
-### `--session-save-redis-sentinel-connect-retries`
+#### `--session-save-redis-sentinel-connect-retries`
 
 Tentativas de conexão do Redis Sentinel.
 
 - Requer um valor
 
-### `--cache-backend`
+#### `--cache-backend`
 
 Manipulador de cache padrão
 
 - Requer um valor
 
-### `--cache-backend-redis-server`
+#### `--cache-backend-redis-server`
 
 Servidor Redis
 
 - Requer um valor
 
-### `--cache-backend-redis-db`
+#### `--cache-backend-redis-db`
 
 Número do banco de dados do cache
 
 - Requer um valor
 
-### `--cache-backend-redis-port`
+#### `--cache-backend-redis-port`
 
 Porta de escuta do servidor Redis
 
 - Requer um valor
 
-### `--cache-backend-redis-password`
+#### `--cache-backend-redis-password`
 
 Senha do servidor Redis
 
 - Requer um valor
 
-### `--cache-backend-redis-compress-data`
+#### `--cache-backend-redis-compress-data`
 
 Defina como 0 para desativar a compactação (o padrão é 1, ativado)
 
 - Requer um valor
 
-### `--cache-backend-redis-compression-lib`
+#### `--cache-backend-redis-compression-lib`
 
 Biblioteca de compactação para usar [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
 
 - Requer um valor
 
-### `--cache-backend-redis-use-lua`
+#### `--cache-backend-redis-use-lua`
 
 Defina como 1 para ativar lua (o padrão é 0, desativado)
 
 - Requer um valor
 
-### `--cache-id-prefix`
+#### `--cache-id-prefix`
 
 Prefixo de ID para chaves de cache
 
 - Requer um valor
 
-### `--allow-parallel-generation`
+#### `--allow-parallel-generation`
 
 Permitir gerar cache de forma não bloqueada
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--page-cache`
+#### `--page-cache`
 
 Manipulador de cache padrão
 
 - Requer um valor
 
-### `--page-cache-redis-server`
+#### `--page-cache-redis-server`
 
 Servidor Redis
 
 - Requer um valor
 
-### `--page-cache-redis-db`
+#### `--page-cache-redis-db`
 
 Número do banco de dados do cache
 
 - Requer um valor
 
-### `--page-cache-redis-port`
+#### `--page-cache-redis-port`
 
 Porta de escuta do servidor Redis
 
 - Requer um valor
 
-### `--page-cache-redis-password`
+#### `--page-cache-redis-password`
 
 Senha do servidor Redis
 
 - Requer um valor
 
-### `--page-cache-redis-compress-data`
+#### `--page-cache-redis-compress-data`
 
 Defina como 1 para compactar o cache de página inteira (use 0 para desativar)
 
 - Requer um valor
 
-### `--page-cache-redis-compression-lib`
+#### `--page-cache-redis-compression-lib`
 
 Biblioteca de compactação para usar [snappy,lzf,l4z,zstd,gzip] (deixe em branco para determinar automaticamente)
 
 - Requer um valor
 
-### `--page-cache-id-prefix`
+#### `--page-cache-id-prefix`
 
 Prefixo de ID para chaves de cache
 
 - Requer um valor
 
-### `--lock-provider`
+#### `--lock-provider`
 
 Nome do provedor de bloqueio
 
 - Requer um valor
 
-### `--lock-db-prefix`
+#### `--lock-db-prefix`
 
 Prefixo de bloqueio específico da instalação para evitar conflitos de bloqueio
 
 - Requer um valor
 
-### `--lock-zookeeper-host`
+#### `--lock-zookeeper-host`
 
 Host e porta para conexão com o cluster Zookeeper. Por exemplo: 127.0.0.1:2181
 
 - Requer um valor
 
-### `--lock-zookeeper-path`
+#### `--lock-zookeeper-path`
 
 O caminho onde o Zookeeper salvará bloqueios. O caminho padrão é: /magento/locks
 
 - Requer um valor
 
-### `--lock-file-path`
+#### `--lock-file-path`
 
 O caminho onde os bloqueios de arquivo serão salvos.
 
 - Requer um valor
 
-### `--document-root-is-pub`
+#### `--document-root-is-pub`
 
 O sinalizador para mostrar se o Pub está na raiz e pode ser verdadeiro ou falso apenas
 
 - Requer um valor
 
-### `--backpressure-logger`
+#### `--backpressure-logger`
 
 Manipulador de registrador de pressão inversa
 
 - Requer um valor
 
-### `--backpressure-logger-redis-server`
+#### `--backpressure-logger-redis-server`
 
 Servidor Redis
 
 - Requer um valor
 
-### `--backpressure-logger-redis-port`
+#### `--backpressure-logger-redis-port`
 
 Porta de escuta do servidor Redis
 
 - Requer um valor
 
-### `--backpressure-logger-redis-timeout`
+#### `--backpressure-logger-redis-timeout`
 
 Tempo limite do servidor Redis
 
 - Requer um valor
 
-### `--backpressure-logger-redis-persistent`
+#### `--backpressure-logger-redis-persistent`
 
 Redis persistente
 
 - Requer um valor
 
-### `--backpressure-logger-redis-db`
+#### `--backpressure-logger-redis-db`
 
 Número do banco de dados Redis
 
 - Requer um valor
 
-### `--backpressure-logger-redis-password`
+#### `--backpressure-logger-redis-password`
 
 Senha do servidor Redis
 
 - Requer um valor
 
-### `--backpressure-logger-redis-user`
+#### `--backpressure-logger-redis-user`
 
 Usuário do servidor Redis
 
 - Requer um valor
 
-### `--backpressure-logger-id-prefix`
+#### `--backpressure-logger-id-prefix`
 
 Prefixo de ID para chaves
 
 - Requer um valor
 
-### `--base-url`
+#### `--base-url`
 
 URL em que o armazenamento deveria estar disponível. Obsoleto, use config:set com o caminho web/unsecure/base_url
 
 - Requer um valor
 
-### `--language`
+#### `--language`
 
 Código de idioma padrão. Obsoleto, use config:set com o caminho general/locale/code
 
 - Requer um valor
 
-### `--timezone`
+#### `--timezone`
 
 Código de fuso horário padrão. Obsoleto, use config:set com o caminho general/locale/timezone
 
 - Requer um valor
 
-### `--currency`
+#### `--currency`
 
 Código de moeda padrão. Obsoleto, use config:set com o caminho currency/options/base, currency/options/default e currency/options/allow
 
 - Requer um valor
 
-### `--use-rewrites`
+#### `--use-rewrites`
 
 Use regravações. Obsoleto, use config:set com o caminho web/seo/use_rewrites
 
 - Requer um valor
 
-### `--use-secure`
+#### `--use-secure`
 
 Use URLs seguros. Habilite essa opção somente se o SSL estiver disponível. Obsoleto, use config:set com o caminho web/secure/use_in_frontend
 
 - Requer um valor
 
-### `--base-url-secure`
+#### `--base-url-secure`
 
 URL base da conexão SSL. Obsoleto, use config:set com o caminho web/secure/base_url
 
 - Requer um valor
 
-### `--use-secure-admin`
+#### `--use-secure-admin`
 
 Execute a interface do administrador com SSL. Obsoleto, use config:set com o caminho web/secure/use_in_adminhtml
 
 - Requer um valor
 
-### `--admin-use-security-key`
+#### `--admin-use-security-key`
 
 Usar um recurso de &quot;chave de segurança&quot; nos formulários e URLs do administrador do Magento. Obsoleto, use config:set com o caminho admin/security/use_form_key
 
 - Requer um valor
 
-### `--admin-user`
+#### `--admin-user`
 
 Usuário administrador
 
 - Aceita um valor
 
-### `--admin-password`
+#### `--admin-password`
 
 Senha do administrador
 
 - Aceita um valor
 
-### `--admin-email`
+#### `--admin-email`
 
 Email do administrador
 
 - Aceita um valor
 
-### `--admin-firstname`
+#### `--admin-firstname`
 
 Nome do administrador
 
 - Aceita um valor
 
-### `--admin-lastname`
+#### `--admin-lastname`
 
 Sobrenome do administrador
 
 - Aceita um valor
 
-### `--search-engine`
+#### `--search-engine`
 
 Mecanismo de pesquisa. Valores: elasticsearch7, elasticsearch8, opensearch
 
 - Requer um valor
 
-### `--elasticsearch-host`
+#### `--elasticsearch-host`
 
 host do servidor Elasticsearch.
 
 - Requer um valor
 
-### `--elasticsearch-port`
+#### `--elasticsearch-port`
 
 porta do servidor Elasticsearch.
 
 - Requer um valor
 
-### `--elasticsearch-enable-auth`
+#### `--elasticsearch-enable-auth`
 
 Defina como 1 para ativar a autenticação. (o padrão é 0, desativado)
 
 - Requer um valor
 
-### `--elasticsearch-username`
+#### `--elasticsearch-username`
 
 nome de usuário do Elasticsearch. Aplicável somente se a autenticação HTTP estiver habilitada
 
 - Requer um valor
 
-### `--elasticsearch-password`
+#### `--elasticsearch-password`
 
 Senha do Elasticsearch. Aplicável somente se a autenticação HTTP estiver habilitada
 
 - Requer um valor
 
-### `--elasticsearch-index-prefix`
+#### `--elasticsearch-index-prefix`
 
 prefixo do índice Elasticsearch.
 
 - Requer um valor
 
-### `--elasticsearch-timeout`
+#### `--elasticsearch-timeout`
 
 Tempo limite do servidor Elasticsearch.
 
 - Requer um valor
 
-### `--opensearch-host`
+#### `--opensearch-host`
 
 Host do servidor OpenSearch.
 
 - Requer um valor
 
-### `--opensearch-port`
+#### `--opensearch-port`
 
 Porta do servidor OpenSearch.
 
 - Requer um valor
 
-### `--opensearch-enable-auth`
+#### `--opensearch-enable-auth`
 
 Defina como 1 para ativar a autenticação. (o padrão é 0, desativado)
 
 - Requer um valor
 
-### `--opensearch-username`
+#### `--opensearch-username`
 
 Nome de usuário do OpenSearch. Aplicável somente se a autenticação HTTP estiver habilitada
 
 - Requer um valor
 
-### `--opensearch-password`
+#### `--opensearch-password`
 
 Senha do OpenSearch. Aplicável somente se a autenticação HTTP estiver habilitada
 
 - Requer um valor
 
-### `--opensearch-index-prefix`
+#### `--opensearch-index-prefix`
 
 Prefixo do índice OpenSearch.
 
 - Requer um valor
 
-### `--opensearch-timeout`
+#### `--opensearch-timeout`
 
 Tempo limite do servidor OpenSearch.
 
 - Requer um valor
 
-### `--cleanup-database`
+#### `--cleanup-database`
 
 Limpar o banco de dados antes da instalação
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--sales-order-increment-prefix`
+#### `--sales-order-increment-prefix`
 
 Prefixo do número da ordem de venda
 
 - Requer um valor
 
-### `--use-sample-data`
+#### `--use-sample-data`
 
 Usar dados de amostra
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--enable-modules`
+#### `--enable-modules`
 
 Lista de nomes de módulo separados por vírgulas. Isso deve ser incluído durante a instalação. Parâmetro mágico disponível &quot;tudo&quot;.
 
 - Aceita um valor
 
-### `--disable-modules`
+#### `--disable-modules`
 
 Lista de nomes de módulo separados por vírgulas. Isso deve ser evitado durante a instalação. Parâmetro mágico disponível &quot;tudo&quot;.
 
 - Aceita um valor
 
-### `--convert-old-scripts`
+#### `--convert-old-scripts`
 
 Permite converter scripts antigos (InstallSchema, UpgradeSchema) para o formato db_schema.xml
 
 - Padrão: `false`
 - Aceita um valor
 
-### `--interactive`, `-i`
+#### `--interactive`, `-i`
 
 Instalação de Magento interativa
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--safe-mode`
+#### `--safe-mode`
 
 Instalação segura de Magento com despejos em operações destrutivas, como remoção de coluna
 
 - Aceita um valor
 
-### `--data-restore`
+#### `--data-restore`
 
 Restaurar dados removidos de despejos
 
 - Aceita um valor
 
-### `--dry-run`
+#### `--dry-run`
 
 A instalação do Magento será executada no modo de simulação
 
 - Padrão: `false`
 - Aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:performance:generate-fixtures`
@@ -10191,65 +4782,21 @@ bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profil
 
 Gera luminárias
 
+### Argumentos
 
-
-### `profile`
+#### `profile`
 
 Caminho para o arquivo de configuração do perfil
 
 - Obrigatório
 
-### `--skip-reindex`, `-s`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--skip-reindex`, `-s`
 
 Ignorar reindexação
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10263,78 +4810,33 @@ bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FIL
 
 Reverte a base de código, a mídia e o banco de dados do aplicativo Magento
 
+### Opções
 
-### `--code-file`, `-c`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--code-file`, `-c`
 
 Nome de base do arquivo de backup de código em var/backups
 
 - Requer um valor
 
-### `--media-file`, `-m`
+#### `--media-file`, `-m`
 
 Nome de base do arquivo de backup de mídia em var/backups
 
 - Requer um valor
 
-### `--db-file`, `-d`
+#### `--db-file`, `-d`
 
 Nome de base do arquivo de backup de banco de dados em var/backups
 
 - Requer um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:static-content:deploy`
@@ -10345,220 +4847,175 @@ bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] 
 
 Implanta arquivos de visualização estáticos
 
+### Argumentos
 
-
-### `languages`
+#### `languages`
 
 Lista separada por espaços de códigos de linguagem ISO-639 para os quais serão gerados arquivos de visualização estáticos.
 
 - Padrão: `[]`
-
 - Matriz
 
-### `--force`, `-f`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--force`, `-f`
 
 Implante arquivos em qualquer modo.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--strategy`, `-s`
+#### `--strategy`, `-s`
 
 Implantar arquivos usando a estratégia especificada.
 
 - Padrão: `quick`
 - Aceita um valor
 
-### `--area`, `-a`
+#### `--area`, `-a`
 
 Gera arquivos somente para as áreas especificadas.
 
 - Padrão: `all`
 - Aceita vários valores
 
-### `--exclude-area`
+#### `--exclude-area`
 
 Não gerar arquivos para as áreas especificadas.
 
 - Padrão: `none`
 - Aceita vários valores
 
-### `--theme`, `-t`
+#### `--theme`, `-t`
 
 Gera arquivos de visualização estáticos apenas para os temas especificados.
 
 - Padrão: `all`
 - Aceita vários valores
 
-### `--exclude-theme`
+#### `--exclude-theme`
 
 Não gerar arquivos para os temas especificados.
 
 - Padrão: `none`
 - Aceita vários valores
 
-### `--language`, `-l`
+#### `--language`, `-l`
 
 Gera arquivos somente para os idiomas especificados.
 
 - Padrão: `all`
 - Aceita vários valores
 
-### `--exclude-language`
+#### `--exclude-language`
 
 Não gerar arquivos para os idiomas especificados.
 
 - Padrão: `none`
 - Aceita vários valores
 
-### `--jobs`, `-j`
+#### `--jobs`, `-j`
 
 Habilite o processamento paralelo usando o número especificado de trabalhos.
 
 - Padrão: `0`
 - Aceita um valor
 
-### `--max-execution-time`
+#### `--max-execution-time`
 
 O tempo máximo de execução esperado do processo estático de implantação (em segundos).
 
 - Padrão: `900`
 - Aceita um valor
 
-### `--symlink-locale`
+#### `--symlink-locale`
 
 Crie symlinks para os arquivos dessas localidades, que são transmitidos para implantação, mas não têm personalizações.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--content-version`
+#### `--content-version`
 
 A versão personalizada do conteúdo estático pode ser usada se a implantação estiver em execução em vários nós para garantir que a versão do conteúdo estático seja idêntica e o armazenamento em cache funcione corretamente.
 
 - Requer um valor
 
-### `--refresh-content-version-only`
+#### `--refresh-content-version-only`
 
 Atualizar a versão somente do conteúdo estático pode ser usado para atualizar o conteúdo estático no cache do navegador e do CDN.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--no-javascript`
+#### `--no-javascript`
 
 Não implante arquivos do JavaScript.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--no-js-bundle`
+#### `--no-js-bundle`
 
 Não implante arquivos de pacote do JavaScript.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--no-css`
+#### `--no-css`
 
 Não implante arquivos CSS.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--no-less`
+#### `--no-less`
 
 Não implante MENOS arquivos.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--no-images`
+#### `--no-images`
 
 Não implantar imagens.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--no-fonts`
+#### `--no-fonts`
 
 Não implantar arquivos de fonte.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--no-html`
+#### `--no-html`
 
 Não implante arquivos HTML.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--no-misc`
+#### `--no-misc`
 
 Não implante arquivos de outros tipos (.md, .jbf, .csv etc.).
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--no-html-minify`
+#### `--no-html-minify`
 
 Não minifique arquivos HTML.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--no-parent`
+#### `--no-parent`
 
 Não compile temas principais. Compatível somente com estratégias rápidas e padrão.
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -10572,114 +5029,69 @@ bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [
 
 Instala a configuração de armazenamento. Obsoleto desde 2.2.0. Use config:set
 
+### Opções
 
-### `--base-url`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--base-url`
 
 URL em que o armazenamento deveria estar disponível. Obsoleto, use config:set com o caminho web/unsecure/base_url
 
 - Requer um valor
 
-### `--language`
+#### `--language`
 
 Código de idioma padrão. Obsoleto, use config:set com o caminho general/locale/code
 
 - Requer um valor
 
-### `--timezone`
+#### `--timezone`
 
 Código de fuso horário padrão. Obsoleto, use config:set com o caminho general/locale/timezone
 
 - Requer um valor
 
-### `--currency`
+#### `--currency`
 
 Código de moeda padrão. Obsoleto, use config:set com o caminho currency/options/base, currency/options/default e currency/options/allow
 
 - Requer um valor
 
-### `--use-rewrites`
+#### `--use-rewrites`
 
 Use regravações. Obsoleto, use config:set com o caminho web/seo/use_rewrites
 
 - Requer um valor
 
-### `--use-secure`
+#### `--use-secure`
 
 Use URLs seguros. Habilite essa opção somente se o SSL estiver disponível. Obsoleto, use config:set com o caminho web/secure/use_in_frontend
 
 - Requer um valor
 
-### `--base-url-secure`
+#### `--base-url-secure`
 
 URL base da conexão SSL. Obsoleto, use config:set com o caminho web/secure/base_url
 
 - Requer um valor
 
-### `--use-secure-admin`
+#### `--use-secure-admin`
 
 Execute a interface do administrador com SSL. Obsoleto, use config:set com o caminho web/secure/use_in_adminhtml
 
 - Requer um valor
 
-### `--admin-use-security-key`
+#### `--admin-use-security-key`
 
 Usar um recurso de &quot;chave de segurança&quot; nos formulários e URLs do administrador do Magento. Obsoleto, use config:set com o caminho admin/security/use_form_key
 
 - Requer um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:uninstall`
@@ -10690,60 +5102,15 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 Desinstala o aplicativo Magento
 
+### Opções
 
-### `--magento-init-params`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `setup:upgrade`
@@ -10754,93 +5121,48 @@ bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD
 
 Atualiza o aplicativo Magento, os dados do banco de dados e o esquema
 
+### Opções
 
-### `--keep-generated`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--keep-generated`
 
 Impede que os arquivos gerados sejam excluídos. Desencorajamos o uso dessa opção, exceto ao implantar na produção. Consulte o integrador de sistemas ou administrador para obter mais informações.
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--convert-old-scripts`
+#### `--convert-old-scripts`
 
 Permite converter scripts antigos (InstallSchema, UpgradeSchema) para o formato db_schema.xml
 
 - Padrão: `false`
 - Aceita um valor
 
-### `--safe-mode`
+#### `--safe-mode`
 
 Instalação segura de Magento com despejos em operações destrutivas, como remoção de coluna
 
 - Aceita um valor
 
-### `--data-restore`
+#### `--data-restore`
 
 Restaurar dados removidos de despejos
 
 - Aceita um valor
 
-### `--dry-run`
+#### `--dry-run`
 
 A instalação do Magento será executada no modo de simulação
 
 - Padrão: `false`
 - Aceita um valor
 
-### `--magento-init-params`
+#### `--magento-init-params`
 
 Adicione a qualquer comando para personalizar parâmetros de inicialização de Magento Por exemplo: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `store:list`
@@ -10851,54 +5173,9 @@ bin/magento store:list
 
 Exibe a lista de armazenamentos
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `store:website:list`
@@ -10909,54 +5186,9 @@ bin/magento store:website:list
 
 Exibe a lista de sites
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `support:backup:code`
@@ -10967,70 +5199,25 @@ bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--log
 
 Criar backup de código
 
+### Opções
 
-### `--name`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--name`
 
 Nome do despejo
 
 - Aceita um valor
 
-### `--output`, `-o`
+#### `--output`, `-o`
 
 Caminho de saída
 
 - Aceita um valor
 
-### `--logs`, `-l`
+#### `--logs`, `-l`
 
 Incluir logs
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11044,77 +5231,32 @@ bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 
 Criar backup de BD
 
+### Opções
 
-### `--name`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--name`
 
 Nome do despejo
 
 - Aceita um valor
 
-### `--output`, `-o`
+#### `--output`, `-o`
 
 Caminho de saída
 
 - Aceita um valor
 
-### `--logs`, `-l`
+#### `--logs`, `-l`
 
 Incluir logs
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--ignore-sanitize`, `-i`
+#### `--ignore-sanitize`, `-i`
 
 Ignorar limpeza
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11128,58 +5270,13 @@ bin/magento support:utility:check [--hide-paths]
 
 Verifique os utilitários de backup necessários
 
+### Opções
 
-### `--hide-paths`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--hide-paths`
 
 Verificar somente os utilitários de console necessários
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11193,58 +5290,13 @@ bin/magento support:utility:paths [-f|--force]
 
 Criar lista de caminhos de utilitários
 
+### Opções
 
-### `--force`, `-f`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--force`, `-f`
 
 Forçar
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11258,75 +5310,31 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <th
 
 Desinstala o tema
 
+### Argumentos
 
-
-### `theme`
+#### `theme`
 
 Caminho do tema. O caminho do tema deve ser especificado como o caminho completo, que é área/fornecedor/nome. Por exemplo, front-end/Magento/blank
 
 - Padrão: `[]`
-
 - Obrigatório
+
 - Matriz
 
-### `--backup-code`
+### Opções
+
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--backup-code`
 
 Fazer backup do código (excluindo arquivos temporários)
 
 - Padrão: `false`
 - Não aceita um valor
 
-### `--clear-static-content`, `-c`
+#### `--clear-static-content`, `-c`
 
 Limpar arquivos de visualização estáticos gerados.
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
 
 - Padrão: `false`
 - Não aceita um valor
@@ -11340,101 +5348,56 @@ bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BAC
 
 Gera um VCL verniz e o ecoa na linha de comando
 
+### Opções
 
-### `--access-list`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--access-list`
 
 Lista de acesso IPs que pode limpar o verniz
 
 - Padrão: `localhost`
 - Requer um valor
 
-### `--backend-host`
+#### `--backend-host`
 
 Host do back-end da Web
 
 - Padrão: `localhost`
 - Requer um valor
 
-### `--backend-port`
+#### `--backend-port`
 
 Porta do back-end da Web
 
 - Padrão: `8080`
 - Requer um valor
 
-### `--export-version`
+#### `--export-version`
 
 A versão do arquivo verniz
 
 - Padrão: `6`
 - Requer um valor
 
-### `--grace-period`
+#### `--grace-period`
 
 Período de carência em segundos
 
 - Padrão: `300`
 - Requer um valor
 
-### `--input-file`
+#### `--input-file`
 
 Arquivo de entrada do qual gerar vcl
 
 - Requer um valor
 
-### `--output-file`
+#### `--output-file`
 
 Caminho para o arquivo para gravar vcl
 
 - Requer um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `webhooks:dev:run`
@@ -11445,67 +5408,24 @@ bin/magento webhooks:dev:run <name> <payload>
 
 Executa um webhook registrado para fins de desenvolvimento.
 
+### Argumentos
 
-
-### `name`
+#### `name`
 
 Nome do Webhook
 
 - Obrigatório
 
-### `payload`
+
+#### `payload`
 
 A carga do webhook no formato JSON
 
 - Obrigatório
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `webhooks:generate:module`
@@ -11516,54 +5436,9 @@ bin/magento webhooks:generate:module
 
 Gerar plug-ins com base em registros de webhook
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `webhooks:info`
@@ -11574,75 +5449,31 @@ bin/magento webhooks:info [--depth [DEPTH]] [--] <webhook-name> [<webhook-type>]
 
 Retorna a carga do webhook especificado.
 
+### Argumentos
 
-
-### `webhook-name`
+#### `webhook-name`
 
 Nome do método do Webhook
 
 - Obrigatório
 
-### `webhook-type`
+
+#### `webhook-type`
 
 Tipo de Webhook (antes, depois)
 
 - Padrão: `before`
 
+### Opções
 
-### `--depth`
+Para opções globais, consulte [Opções globais](#global-options).
+
+#### `--depth`
 
 O número de níveis na carga do webhook a ser retornada
 
 - Padrão: `3`
 - Aceita um valor
-
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
 
 
 ## `webhooks:list`
@@ -11653,54 +5484,9 @@ bin/magento webhooks:list
 
 Mostra a lista de webhooks inscritos
 
+### Opções
 
-### `--help`, `-h`
-
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
 
 
 ## `webhooks:list:all`
@@ -11711,58 +5497,14 @@ bin/magento webhooks:list:all <module_name>
 
 Retorna uma lista de nomes de método de webhook com suporte para o módulo especificado
 
+### Argumentos
 
-
-### `module_name`
+#### `module_name`
 
 Nome do módulo
 
 - Obrigatório
 
-### `--help`, `-h`
+### Opções
 
-Exibe a ajuda para o comando fornecido. Quando nenhum comando é fornecido, exibir ajuda para o comando de lista
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--quiet`, `-q`
-
-Não enviar nenhuma mensagem
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para depuração
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--version`, `-V`
-
-Exibir esta versão do aplicativo
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--ansi`
-
-Forçar (ou desativar — no- ansi) a saída ANSI
-
-- Não aceita um valor
-
-### `--no-ansi`
-
-Negar a opção &quot;—ansi&quot;
-
-- Padrão: `false`
-- Não aceita um valor
-
-### `--no-interaction`, `-n`
-
-Não faça nenhuma pergunta interativa
-
-- Padrão: `false`
-- Não aceita um valor
+Para opções globais, consulte [Opções globais](#global-options).
