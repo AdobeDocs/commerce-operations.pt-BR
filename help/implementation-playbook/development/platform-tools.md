@@ -3,7 +3,7 @@ title: Ferramentas da plataforma
 description: Escolha as ferramentas recomendadas da plataforma para a implementação do Adobe Commerce.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
 feature: Configuration
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%
@@ -66,7 +66,7 @@ As filas de mensagens fornecem um mecanismo de comunicação assíncrono no qual
 
 ## Ferramentas de segurança
 
-A [Ferramenta de Verificação de Segurança da Adobe Commerce](https://docs.magento.com/user-guide/magento/security-scan.html) permite monitorar regularmente os sites da loja e receber atualizações de riscos de segurança conhecidos, malware e software desatualizado. Normalmente, você começa a usar essa ferramenta ao iniciar o teste de aceitação do usuário (UAT). Além da ferramenta Adobe Commerce Security Scan, que é gratuita e está disponível para todas as implementações e versões do Adobe Commerce, há outras opções que podem ser usadas durante o processo de CI/CD e antes de cada versão.
+A [Ferramenta de Verificação de Segurança da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) permite monitorar regularmente os sites da loja e receber atualizações de riscos de segurança conhecidos, malware e software desatualizado. Normalmente, você começa a usar essa ferramenta ao iniciar o teste de aceitação do usuário (UAT). Além da ferramenta Adobe Commerce Security Scan, que é gratuita e está disponível para todas as implementações e versões do Adobe Commerce, há outras opções que podem ser usadas durante o processo de CI/CD e antes de cada versão.
 
 O SonarQube é uma plataforma de gerenciamento de qualidade de código aberto, projetada para analisar e medir a qualidade técnica de seu código. O SonarQube não só fornece um relatório completo de bugs de código, erros de sintaxe e vulnerabilidades, como também oferece sugestões e exemplos para corrigir seu código. O SonarQube é perfeito para usar em um ambiente de CI/CD como uma ferramenta capaz de analisar o código antes que ele seja implantado.
 

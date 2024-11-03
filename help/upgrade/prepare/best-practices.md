@@ -3,7 +3,7 @@ title: Práticas recomendadas
 description: Use as práticas recomendadas pelo Adobe para gerenciar o processo de atualização de seus projetos do Adobe Commerce.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Comece a adotar a plataforma Adobe Commerce Extensibility, se ainda não tiver a
 
 - **Extensibilidade da interface**. Estenda e desenvolva sua loja independentemente de seu back-end e middleware usando o [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **Extensibilidade de API**. Use o [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) para estender a camada da API Web, evoluindo o modelo de dados de gráfico e executando funções lambda diretamente da camada de gráfico.
+- **Extensibilidade de API**. Use o [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html) para estender a camada da API Web, evoluindo o modelo de dados de gráfico e executando funções lambda diretamente da camada de gráfico.
 
 - **middleware e serviços de Adobe I/O**. Conecte seus sistemas com o Adobe Commerce usando o Adobe middleware e um conjunto de conexões de aplicativo criado em [Adobe I/O](https://www.adobe.io/). Além disso, você pode estender os principais recursos da plataforma, substituindo o comportamento padrão pela sua própria lógica de negócios que é executada no Adobe I/O.
 
@@ -57,7 +57,7 @@ Comece a adotar a plataforma Adobe Commerce Extensibility, se ainda não tiver a
 
 À medida que expandimos continuamente os recursos do Adobe Commerce, é essencial desenvolver na versão mais recente disponível e definir uma estratégia de atualização em seus planos de projeto. Dessa forma, você permanecerá seguro, em conformidade e atualizado com os últimos aprimoramentos que lhe permitem aumentar as vendas mais rapidamente, operar com mais eficiência e manter-se à frente da concorrência agora e no futuro.
 
-Para ajudá-lo a planejar e orçar atualizações, você deve monitorar nossa [programação de lançamento](https://devdocs.magento.com/release). Planeje tarefas de atualização na lista de pendências da sua equipe com antecedência. Pretende concluir este trabalho com a DG.
+Para ajudá-lo a planejar e orçar atualizações, você deve monitorar nossa [programação de lançamento](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule). Planeje tarefas de atualização na lista de pendências da sua equipe com antecedência. Pretende concluir este trabalho com a DG.
 
 - Use a versão de pré-lançamento para saber mais sobre cada nova versão. O pré-lançamento é o código de Disponibilidade geral disponível para os comerciantes da Adobe Commerce e todos os parceiros duas semanas antes da Disponibilidade geral. Se você tiver vários armazenamentos, use o pré-lançamento em seu armazenamento básico e verifique se os módulos e temas personalizados são compatíveis com ele.
 
@@ -73,13 +73,13 @@ As atualizações devem ser feitas regularmente e com um orçamento predefinido.
 
 Avaliar o trabalho a ser feito para atualização:
 
-- Revise as [notas de versão](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) para entender o escopo e o impacto da nova versão.
+- Revise as [notas de versão](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) para entender o escopo e o impacto da nova versão.
 
 - Use o [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) para identificar possíveis problemas que devem ser corrigidos em seu código personalizado antes de tentar atualizar para uma versão mais recente.
 
 - Se você estiver usando extensões de terceiros, valide a compatibilidade delas com a versão de destino para a qual você está planejando atualizar.
 
-### Teste de atualização do Post
+### Teste pós-atualização
 
 Os testes são a fase de uma atualização que requer mais tempo. Como resultado, esse processo deve ser o mais automatizado possível. Você pode se beneficiar usando as ferramentas de teste principais. O [Guia de Teste de Aplicativo](https://developer.adobe.com/commerce/testing/guide/) fornece detalhes.
 

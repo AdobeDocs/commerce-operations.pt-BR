@@ -2,7 +2,7 @@
 title: Execute os utilitários de suporte
 description: Solucione problemas em seu projeto do Commerce usando o utilitário de suporte integrado.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Os utilitários de Suporte da Adobe Commerce, também conhecidos como [Coletor de Dados](https://docs.magento.com/user-guide/system/support-data-collector.html), permitem que os usuários coletem informações de solução de problemas do seu sistema, que podem ser usadas pela nossa equipe de suporte.
+Os utilitários de Suporte da Adobe Commerce, também conhecidos como [Coletor de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector), permitem que os usuários coletem informações de solução de problemas do seu sistema, que podem ser usadas pela nossa equipe de suporte.
 
 O Adobe Commerce usa esses backups, também chamados de _despejos_, para analisar problemas que exigem acesso ao seu código. Um cenário típico é o seguinte:
 

@@ -2,7 +2,7 @@
 title: Dicionários de tradução e pacotes de idiomas
 description: Saiba como gerar dicionários de tradução e criar pacotes de idioma.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 0%
@@ -317,7 +317,7 @@ Semelhante ao exemplo anterior, gere um arquivo CSV, mas em vez de especificar u
 
 [Visão geral das traduções]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [dicionário de tradução]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[configura as traduções]: https://docs.magento.com/user-guide/stores/store-language-add.html?Highlight=translation
+[configura as traduções]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [Saiba mais sobre pacotes de idiomas]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

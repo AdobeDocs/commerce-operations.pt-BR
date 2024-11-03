@@ -4,7 +4,7 @@ description: Saiba como fornecer informações para ajudar pesquisadores de segu
 feature: Configuration, Security
 badge: label="Contribuição de Kalpesh Mehta de Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
 exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Quando vulnerabilidades de segurança são descobertas pelos pesquisadores, geralmente faltam canais de relatórios adequados. Como resultado, algumas vulnerabilidades não são relatadas. A finalidade do arquivo `security.txt` [formato de arquivo](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) é fornecer aos pesquisadores de segurança as informações que eles podem usar para relatar suas descobertas.
 
-Os comerciantes podem inserir suas informações de contato para [relatórios de problemas de segurança](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) do _Administrador_ da Commerce. Para desenvolvedores, o módulo `Magento_Securitytxt` fornece a seguinte funcionalidade:
+Os comerciantes podem inserir suas informações de contato para [relatórios de problemas de segurança](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-issue-reporting) do _Administrador_ da Commerce. Para desenvolvedores, o módulo `Magento_Securitytxt` fornece a seguinte funcionalidade:
 
 - Permite que as configurações de segurança sejam salvas do _Administrador_.
 - Contém um roteador para corresponder à classe de ação do aplicativo para solicitações para os arquivos `.well-known/security.txt` e `.well-known/security.txt.sig`.

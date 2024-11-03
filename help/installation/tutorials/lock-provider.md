@@ -2,7 +2,7 @@
 title: Configurar o provedor de bloqueio
 description: Siga estas etapas para impedir que os trabalhos cron duplicados e os grupos cron sejam executados na implantação do Adobe Commerce.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Configure um provedor de bloqueio para impedir a inicialização de trabalhos cr
 
 O Adobe Commerce usa o banco de dados para salvar bloqueios por padrão. Se você tiver vários nós em seus servidores, recomendamos usar o Zookeeper como provedor de bloqueio.
 
-Se você estiver executando o Adobe Commerce na infraestrutura em nuvem, não será necessário definir as configurações do provedor de bloqueio. O aplicativo configura o provedor de bloqueio de arquivo para projetos Pro durante o processo de provisionamento. Consulte [Variáveis da nuvem](https://devdocs.magento.com/cloud/env/variables-cloud.html).
+Se você estiver executando o Adobe Commerce na infraestrutura em nuvem, não será necessário definir as configurações do provedor de bloqueio. O aplicativo configura o provedor de bloqueio de arquivo para projetos Pro durante o processo de provisionamento. Consulte [Variáveis da nuvem](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Uso do comando
 

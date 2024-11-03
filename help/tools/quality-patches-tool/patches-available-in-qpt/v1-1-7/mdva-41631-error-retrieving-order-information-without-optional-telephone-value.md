@@ -3,7 +3,7 @@ title: 'MDVA-41631: Erro ao recuperar informações do pedido sem valor "phone" 
 description: O patch MDVA-41631 corrige o problema em que os usuários obtêm um erro ao recuperar informações do pedido sem o valor opcional de "telefone" por meio do GraphQL. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 está instalada. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -36,8 +36,8 @@ Os usuários recebem um erro ao recuperar informações do pedido sem o valor op
 
 1. Vá para **Loja** > **Configuração** > **Clientes** > **Configuração do Cliente** > **Opções de Nome e Endereço** > **Mostrar Telefone** e defina o número de telefone como opcional.
 1. Faça um pedido usando a API do GraphQL como cliente conectado.
-   * Não defina o número de telefone ao definir os endereços de faturamento e de envio. Siga as instruções fornecidas no [Tutorial de check-out do GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-customer.html) em nossa documentação do desenvolvedor.
-1. Recupere o pedido usando a [consulta customerOrders](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer-orders.html) do GraphQL.
+   * Não defina o número de telefone ao definir os endereços de faturamento e de envio. Siga as instruções fornecidas no [Tutorial de check-out do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) em nossa documentação do desenvolvedor.
+1. Recupere o pedido usando a [consulta customerOrders](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html) do GraphQL.
 
 <pre>
 <code class="language-graphql">

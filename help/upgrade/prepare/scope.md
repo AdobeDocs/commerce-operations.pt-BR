@@ -2,7 +2,7 @@
 title: Entender o escopo de atualização
 description: Saiba mais sobre alterações incompatíveis com versões anteriores em uma versão que pode afetar módulos personalizados do Adobe Commerce ou extensões de terceiros.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # Entender o escopo da atualização
 
-Revise as [notas de versão](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) para entender o escopo de uma versão, incluindo aprimoramentos, correções de erros e problemas conhecidos que podem afetar módulos de terceiros e personalizados.
+Revise as [notas de versão](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) para entender o escopo de uma versão, incluindo aprimoramentos, correções de erros e problemas conhecidos que podem afetar módulos de terceiros e personalizados.
 
 ## Alterações incompatíveis com versões anteriores
 
 As versões do Adobe Commerce podem conter alterações incompatíveis com versões anteriores. Revise nossa documentação de alterações incompatíveis com versões anteriores. Consulte o seguinte:
 
-- **[Destaques de alterações importantes](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**—Alterações que têm grande impacto e exigem explicação detalhada e instruções especiais para garantir que módulos de terceiros continuem funcionando.
-- **[Referência de alteração menor](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)** — Documentação de referência gerada a partir da base de código que descreve alterações menores em classes, associação de API, banco de dados, injeção de dependência, interfaces, layouts, sistema e XSD.
+- **[Destaques de alterações importantes](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)**—Alterações que têm grande impacto e exigem explicação detalhada e instruções especiais para garantir que módulos de terceiros continuem funcionando.
+- **[Referência de alteração menor](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** — Documentação de referência gerada a partir da base de código que descreve alterações menores em classes, associação de API, banco de dados, injeção de dependência, interfaces, layouts, sistema e XSD.
 
 ## Extensões de terceiros
 
@@ -26,7 +26,7 @@ A nova política de compatibilidade do Adobe Commerce Marketplace garante que _t
 
 ## Módulos personalizados
 
-Todos os módulos personalizados devem ser verificados em relação à versão de destino para a qual você deseja atualizar. Esse é o processo de atualização que consome mais tempo e recursos. Ao avaliar seus módulos personalizados, você deve procurar alterações incompatíveis com versões anteriores e estar ciente das novas práticas, como a decomposição do controlador. Você pode saber mais sobre isso nas [notas de versão](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Além disso, verifique se você está seguindo as [práticas recomendadas](https://developer.adobe.com/commerce/php/best-practices/extensions/) para o desenvolvimento de módulo.
+Todos os módulos personalizados devem ser verificados em relação à versão de destino para a qual você deseja atualizar. Esse é o processo de atualização que consome mais tempo e recursos. Ao avaliar seus módulos personalizados, você deve procurar alterações incompatíveis com versões anteriores e estar ciente das novas práticas, como a decomposição do controlador. Você pode saber mais sobre isso nas [notas de versão](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview). Além disso, verifique se você está seguindo as [práticas recomendadas](https://developer.adobe.com/commerce/php/best-practices/extensions/) para o desenvolvimento de módulo.
 
 ## [!DNL Upgrade Compatibility Tool]
 

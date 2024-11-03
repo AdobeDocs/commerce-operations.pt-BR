@@ -3,7 +3,7 @@ title: Segurança da infraestrutura em nuvem
 description: Saiba mais sobre como o Adobe mantém segura a infraestrutura em nuvem do Adobe Commerce.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 0%
@@ -27,15 +27,15 @@ Consulte a [Visão geral dos serviços do Fastly](https://experienceleague.adobe
 
 ## Firewall de Aplicativo Web
 
-O Fastly Web Application Firewall (WAF) é usado para fornecer proteção adicional. O WAF baseado em nuvem da Fastly usa regras de terceiros de fontes comerciais e de código aberto, como o Conjunto de Regras Principal OWASP. Além disso, são empregadas regras específicas do Adobe Commerce. Os clientes estão protegidos contra os principais ataques de camada de aplicativo, incluindo ataques de injeção e entradas mal-intencionadas, script entre sites, exfiltração de dados, violações de protocolo HTTP e outras dez principais ameaças da OWASP.
+O Fastly Web Application Firewall (WAF) é usado para fornecer proteção adicional. O WAF do Fastly usa regras de terceiros de fontes comerciais e de código aberto, como o Conjunto de Regras Principal do OWASP. Além disso, são empregadas regras específicas do Adobe Commerce. Os clientes estão protegidos contra os principais ataques de camada de aplicativo, incluindo ataques de injeção e entradas mal-intencionadas, script entre sites, exfiltração de dados, violações de protocolo HTTP e outras dez principais ameaças da OWASP.
 
-As regras do WAF são atualizadas pelo Adobe Commerce caso novas vulnerabilidades sejam detectadas, permitindo que o Managed Services &quot;corrija virtualmente&quot; problemas de segurança antes dos patches de software. O Fastly WAF não fornece serviços de limitação de taxa ou detecção de bot. Se desejar, os clientes podem licenciar um serviço de detecção de bot de terceiros compatível com o Fastly.
+As regras do WAF são atualizadas pela Adobe Commerce caso novas vulnerabilidades sejam detectadas, permitindo que o Managed Services corrija virtualmente problemas de segurança antes dos patches de software. O Fastly WAF não fornece serviços de limitação de taxa ou detecção de bot. Se desejar, os clientes podem licenciar um serviço de detecção de bot de terceiros compatível com o Fastly.
 
-Consulte o [Web Application Firewall (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) no _Guia da Nuvem_.
+Consulte o [Firewall do Aplicativo Web (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) no _Guia da Nuvem_.
 
 ## Nuvem privada virtual
 
-O ambiente de produção do plano do Adobe Commerce Pro é configurado como uma Nuvem privada virtual (VPC), para que os servidores de produção sejam isolados e tenham capacidade limitada de se conectar e sair do ambiente de nuvem. Somente conexões seguras com os servidores na nuvem são permitidas. Protocolos seguros, como SFTP ou rsync, podem ser usados para transferências de arquivos.
+O ambiente de produção do plano do Adobe Commerce Pro é configurado como uma Nuvem privada virtual (VPC) para que os servidores de produção sejam isolados e tenham capacidade limitada de se conectar e sair do ambiente de nuvem. Somente conexões seguras com os servidores na nuvem são permitidas. Protocolos seguros, como SFTP ou rsync, podem ser usados para transferências de arquivos.
 
 Os clientes podem usar túneis SSH para proteger as comunicações com o aplicativo. O acesso ao AWS PrivateLink pode ser fornecido por uma taxa adicional. Todas as conexões com esses servidores são controladas usando Grupos de segurança do AWS, um firewall virtual que limita as conexões com o ambiente. Os recursos técnicos dos clientes podem acessar esses servidores usando SSH.
 
@@ -59,7 +59,7 @@ O Adobe Commerce exige integrações de gateway de pagamento, onde os dados de c
 
 ## aplicativo Adobe Commerce
 
-O Adobe testa regularmente o código principal do aplicativo em busca de vulnerabilidades de segurança. Patches para defeitos e problemas de segurança são fornecidos aos clientes. A Equipe de segurança do produto valida os produtos da Adobe Commerce seguindo as diretrizes de segurança do aplicativo OWASP. Várias ferramentas de avaliação de vulnerabilidade de segurança e fornecedores externos são usadas para testar e verificar a conformidade. As ferramentas de segurança incluem:
+O Adobe testa regularmente o código principal do aplicativo em busca de vulnerabilidades de segurança. Patches para defeitos e problemas de segurança são fornecidos aos clientes. A Equipe de segurança do produto valida os produtos da Adobe Commerce seguindo as diretrizes de segurança de aplicativos da OWASP. Várias ferramentas de avaliação de vulnerabilidade de segurança e fornecedores externos são usadas para testar e verificar a conformidade. As ferramentas de segurança incluem:
 
 - Verificação estática e dinâmica de Veracode
 - Verificação do código-fonte RIPS
@@ -70,7 +70,7 @@ O Adobe testa regularmente o código principal do aplicativo em busca de vulnera
 
 A base de código completa é verificada com essas ferramentas quinzenalmente. Os clientes são notificados sobre patches de segurança por emails diretos, notificações no aplicativo e na [Central de Segurança](https://helpx.adobe.com/security.html).
 
-Os clientes devem garantir que esses patches sejam aplicados em seus aplicativos personalizados dentro de 30 dias do lançamento, de acordo com as diretrizes de PCI. O Adobe também fornece uma [Ferramenta de Verificação de Segurança](https://docs.magento.com/user-guide/magento/security-scan.html) que permite aos comerciantes monitorar regularmente seus sites e receber atualizações sobre riscos de segurança conhecidos, malware e acesso não autorizado. A Ferramenta de verificação de segurança é um serviço gratuito e pode ser executada em qualquer versão do Adobe Commerce.
+Os clientes devem garantir que esses patches sejam aplicados em seus aplicativos personalizados dentro de 30 dias do lançamento, de acordo com as diretrizes de PCI. O Adobe também fornece uma [Ferramenta de Verificação de Segurança](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) que permite aos comerciantes monitorar regularmente seus sites e receber atualizações sobre riscos de segurança conhecidos, malware e acesso não autorizado. A Ferramenta de verificação de segurança é um serviço gratuito e pode ser executada em qualquer versão do Adobe Commerce.
 
 Para incentivar os pesquisadores de segurança a identificar e relatar vulnerabilidades, a Adobe Commerce tem um [programa de retribuição de bugs](https://hackerone.com/magento), além de testes internos. Além disso, o cliente recebe o código fonte completo do aplicativo para sua própria análise, se desejado.
 
@@ -84,7 +84,7 @@ A única maneira de obter o código executável no ambiente de produção do Man
 
 ## Logs
 
-Todas as atividades do AWS são registradas no AWS CloudTrail. O sistema operacional, o servidor de aplicativos e os logs de banco de dados são armazenados nos servidores de produção e armazenados em backups. Todas as alterações no código-fonte são registradas em um repositório Git. O histórico de implantação está disponível na [Interface da Web do Projeto](https://devdocs.magento.com/cloud/project/projects.html#login) do Adobe Commerce. Todo o acesso ao suporte é registrado e as sessões de suporte são gravadas.
+Todas as atividades do AWS são registradas no AWS CloudTrail. O sistema operacional, o servidor de aplicativos e os logs de banco de dados são armazenados nos servidores de produção e armazenados em backups. Todas as alterações no código-fonte são registradas em um repositório Git. O histórico de implantação está disponível na [Interface da Web do Projeto](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) do Adobe Commerce. Todo o acesso ao suporte é registrado e as sessões de suporte são gravadas.
 
 Consulte [Exibir e gerenciar logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) no _Guia da Nuvem_.
 

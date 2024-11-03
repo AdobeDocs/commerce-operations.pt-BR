@@ -3,7 +3,7 @@ title: "MDVA-44147: a solicitação do GraphQL não retorna Listas de Requisiç�
 description: O patch MDVA-44147 corrige o problema em que a solicitação do GraphQL não retorna Listas de requisições. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 está instalada. A ID do patch é MDVA-44147. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -35,8 +35,8 @@ A solicitação GraphQL não retorna Listas de Requisições.
 <u>Etapas a serem reproduzidas</u>:
 
 1. Vá para **Loja** > **Configurações** > **Configuração** > **Geral** > **Recursos B2B** e habilite a Lista de Requisições.
-1. Faça logon como cliente e adicione um produto à [Lista de Requisições](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html).
-1. Crie um [Token de cliente](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html).
+1. Faça logon como cliente e adicione um produto à [Lista de Requisições](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
+1. Crie um [Token de cliente](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
 
    <pre>
     <code class="language-graphql">
@@ -51,7 +51,7 @@ A solicitação GraphQL não retorna Listas de Requisições.
       </code>
       </pre>
 
-1. Use a consulta a seguir para recuperar todas as Listas de Requisições do cliente. Use o cabeçalho **Autorização** com o valor `Bearer <customer_token>`. Para obter mais informações, consulte o artigo [Consulta a clientes](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) em nossa documentação para desenvolvedores.
+1. Use a consulta a seguir para recuperar todas as Listas de Requisições do cliente. Use o cabeçalho **Autorização** com o valor `Bearer <customer_token>`. Para obter mais informações, consulte o artigo [Consulta a clientes](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) em nossa documentação para desenvolvedores.
 
    Solicitação:
 

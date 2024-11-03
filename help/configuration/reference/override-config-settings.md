@@ -2,7 +2,7 @@
 title: Substituir definições de configuração
 description: Saiba como usar variáveis de ambiente para substituir as configurações.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -62,8 +62,8 @@ O formato geral dos nomes das variáveis de configurações do sistema é o segu
   Para obter mais informações sobre escopos, consulte:
 
    - [Etapa 1: Localizar o valor do escopo de exibição do site ou da loja](#step-1-find-the-website-or-store-view-scope-value)
-   - [Tópico do Guia do Usuário do Commerce sobre o escopo](https://docs.magento.com/user-guide/configuration/scope.html)
-   - [Referência rápida do escopo](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
+   - [Tópico do Guia do Usuário do Commerce sobre o escopo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [Referência rápida do escopo](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` é o caminho de configuração com caracteres de sublinhado duplo substituído por `/`. Para obter mais informações, consulte [Etapa 2: definir variáveis do sistema](#step-2-set-global-website-or-store-view-variables).
 
@@ -251,7 +251,7 @@ Um exemplo passo a passo é mostrado em [Definir valores de configuração usand
 
 >[!WARNING]
 >
->- Para usar os valores definidos na matriz `$_ENV`, você deve definir `variables_order = "EGPCS"`(Ambiente, Obtenção, Post, Cookie e Servidor) no arquivo `php.ini`. Para obter detalhes, consulte [documentação sobre PHP](https://www.php.net/manual/en/ini.core.php).
+>- Para usar os valores definidos na matriz `$_ENV`, você deve definir `variables_order = "EGPCS"`(Ambiente, Obtenção, Publicação, Cookie e Servidor) no arquivo `php.ini`. Para obter detalhes, consulte [documentação sobre PHP](https://www.php.net/manual/en/ini.core.php).
 >
 >- Para o Adobe Commerce na infraestrutura em nuvem, se você estiver tentando substituir as definições de configuração usando a [Interface da Web do Project](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), você deve anexar o nome da variável a `env:` como prefixo. Por exemplo:
 >

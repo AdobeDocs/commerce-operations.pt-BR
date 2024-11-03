@@ -3,7 +3,7 @@ title: "ACSD-44938: VAT_ID não pode ser aplicado na solicitação do GraphQL pa
 description: O patch ACSD-44938 corrige o problema em que a VAT_ID não pode ser aplicada em uma solicitação GraphQL para um usuário convidado. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 está instalada. A ID do patch é ACSD-44938. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -34,12 +34,12 @@ VAT_ID não pode ser aplicado em uma solicitação GraphQL para um usuário conv
 
 <u>Etapas a serem reproduzidas</u>:
 
-1. Siga as etapas mencionadas no [tutorial do GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-shopping-cart.html) em nossa documentação do desenvolvedor para criar um carrinho de convidado.
+1. Siga as etapas mencionadas no [tutorial do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) em nossa documentação do desenvolvedor para criar um carrinho de convidado.
 1. Tente aplicar VAT_ID para o usuário convidado usando o GraphQL.
 
 <u>Resultados esperados</u>:
 
-VAT_ID pode ser aplicado da mesma forma que para um cliente registrado. Consulte o artigo [createCustomerAddress mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-customer-address.html) na documentação do desenvolvedor.
+VAT_ID pode ser aplicado da mesma forma que para um cliente registrado. Consulte o artigo [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) na documentação do desenvolvedor.
 
 <u>Resultados reais</u>:
 

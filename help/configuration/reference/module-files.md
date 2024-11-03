@@ -2,7 +2,7 @@
 title: Arquivos de configuração de módulo
 description: Saiba como personalizar um módulo usando tipos de configuração.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
@@ -81,7 +81,7 @@ A tabela a seguir mostra cada tipo de configuração e o objeto de configuraçã
 | --- | --- | --- | --- |
 | `address_formats.xml` | Declaração de formato de endereço | principal, global | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [Lista de Controle de Acesso](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | global | [\Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
-| `analytics.xml` | [Relatórios avançados](https://devdocs.magento.com/guides/v2.4/advanced-reporting/data-collection.html) | principal, global | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
+| `analytics.xml` | [Relatórios avançados]https://developer.adobe.com/commerce/php/development/advanced-reporting/data-collection/) | principal, global | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml` | Declaração de tipo de cache | principal, global | [\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
 | `catalog_attributes.xml` | Configuração de atributos do catálogo | global | [\Magento\Catalog\Model\Attribute\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/Attribute/Config/Data.php) |
 | `config.php` e `env.php` | [Configuração de implantação](../reference/deployment-files.md) | Esses arquivos podem ser lidos/gravados pelo processador de configuração interno. | Não tem objeto, não pode ser personalizado |
@@ -111,7 +111,7 @@ A tabela a seguir mostra cada tipo de configuração e o objeto de configuraçã
 | `queue_consumer.xml` | [Define a relação entre uma fila existente e seu consumidor](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_consumerxml) | global | [\Magento\Framework\MessageQueue\Consumer\Config\Xml\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Consumer/Config/Xml/Reader.php) |
 | `queue_publisher.xml` | [Define a troca em que um tópico é publicado.](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_publisherxml) | global | [\Magento\WebapiAsync\Code\Generator\Config\RemoteServiceReader\Publisher](https://github.com/magento/magento2/blob/2.4/app/code/Magento/WebapiAsync/Code/Generator/Config/RemoteServiceReader/Publisher.php) |
 | `queue_topology.xml` | [Define as regras de roteamento de mensagens, declara filas e trocas](https://developer.adobe.com/commerce/php/development/components/message-queues/configuration/#queue_topologyxml) | global | [\Magento\Framework\MessageQueue\Topology\Config\Xml\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/MessageQueue/Topology/Config/Xml/Reader.php) |
-| `reports.xml` | [Relatórios avançados](https://devdocs.magento.com/guides/v2.4/advanced-reporting/report-xml.html) | global | [\Magento\Analytics\ReportXml\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config.php) |
+| `reports.xml` | [Relatórios avançados](https://developer.adobe.com/commerce/php/development/advanced-reporting/report-xml/) | global | [\Magento\Analytics\ReportXml\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config.php) |
 | `resources.xml` | Define o recurso do módulo | global | [\Magento\Framework\App\ResourceConnection\Config\Reader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/ResourceConnection/Config/Reader.php) |
 | `routes.xml` | Configuração de [Rota](https://developer.adobe.com/commerce/php/development/components/routing/) | área | [Magento\Framework\App\Route\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Route/Config.php) |
 | `sales.xml` | Define a configuração total de vendas | global | [\Magento\Sales\Model\Config\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Config/Data.php) |

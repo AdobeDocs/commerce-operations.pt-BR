@@ -4,7 +4,7 @@ description: Saiba como definir configurações de banco de dados e aplicativo p
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -59,9 +59,9 @@ Para determinar qual mecanismo de pesquisa está em uso no momento, execute o se
 
 Para obter instruções de configuração, consulte o Guia do desenvolvedor do Adobe Commerce na nuvem:
 
-- [Configurar o serviço OpenSearch](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [Configurar o serviço OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Configurar o serviço Elasticsearch](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Configurar o serviço Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Evitar acionadores personalizados
 
@@ -76,7 +76,7 @@ Para saber mais sobre alternativas ao uso de acionadores personalizados, consult
 
 ## Atualizar [!DNL ECE-Tools] para a versão 2002.0.21 ou superior {#ece-tools-version}
 
-Para evitar possíveis problemas com bloqueios do cron, atualize as ECE-Tools para a versão 2002.0.21 ou superior. Para obter instruções, consulte [Atualizar `ece-tools` versão](https://devdocs.magento.com/cloud/project/ece-tools-update.html) na documentação do desenvolvedor.
+Para evitar possíveis problemas com bloqueios do cron, atualize as ECE-Tools para a versão 2002.0.21 ou superior. Para obter instruções, consulte [Atualizar `ece-tools` versão](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) na documentação do desenvolvedor.
 
 ## Alternar modo indexador com segurança
 

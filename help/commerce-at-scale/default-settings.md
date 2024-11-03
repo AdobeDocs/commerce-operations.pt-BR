@@ -4,7 +4,7 @@ description: Prepare seu projeto do Adobe Commerce para usar o Adobe Experience 
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 feature: Integration, Cache
 topic: Commerce, Performance
-source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
@@ -26,7 +26,7 @@ O GraphQL permite fazer várias consultas em uma única chamada. É importante o
 
 >[!NOTE]
 >
-> Mais informações sobre consultas armazenáveis em cache e não armazenáveis em cache, consulte a [documentação do desenvolvedor](https://devdocs.magento.com/guides/v2.4/graphql/caching.html) do Adobe Commerce.
+> Mais informações sobre consultas armazenáveis em cache e não armazenáveis em cache, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/webapi/graphql/caching.html) do Adobe Commerce.
 
 ## Tabela plana do catálogo
 
@@ -42,7 +42,7 @@ A blindagem de origem do Fastly pode ser ativada nas configurações do back-end
 
 Quando a blindagem de origem do Fastly estiver ativada, você também poderá ativar o Fastly Image Otimizer. Quando as imagens do catálogo de produtos são armazenadas no Adobe Commerce, esse serviço oferece a capacidade de transferir todo o processamento de transformação de imagens do catálogo de produtos que consome muitos recursos para o Fastly e para o OFF da origem do Adobe Commerce. Os tempos de resposta do usuário final também são aprimorados para tempos de carregamento de página, já que as imagens são transformadas no local da borda, o que elimina a latência ao reduzir o número de solicitações de volta à origem do Adobe Commerce.
 
-A otimização de imagem do Fastly pode ser ativada por &quot;ativar a otimização de imagem profunda&quot; na configuração do Fastly no admin, embora somente após a ativação do origin shield. Mais detalhes sobre as configurações para a otimização do Fastly Image estão disponíveis na [documentação do desenvolvedor](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) do Adobe Commerce.
+A otimização de imagem do Fastly pode ser ativada por &quot;ativar a otimização de imagem profunda&quot; na configuração do Fastly no admin, embora somente após a ativação do origin shield. Mais detalhes sobre as configurações para a otimização do Fastly Image estão disponíveis na [documentação do desenvolvedor](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) do Adobe Commerce.
 
 ![Captura de tela das configurações de otimização de imagem do Fastly no Administrador do Adobe Commerce](../assets/commerce-at-scale/image-optimization.svg)
 

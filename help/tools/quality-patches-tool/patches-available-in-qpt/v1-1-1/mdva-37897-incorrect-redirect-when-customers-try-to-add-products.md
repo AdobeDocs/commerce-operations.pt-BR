@@ -3,7 +3,7 @@ title: "MDVA-37897: redirecionamento incorreto ao adicionar produtos do visualiz
 description: O patch MDVA-37897 resolve o problema de redirecionamento incorreto quando os usuários tentam adicionar produtos com opções do widget Recentemente visualizado. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1 está instalada. A ID do patch é MDVA-37897. Observe que o problema está programado para ser corrigido no Adobe Commerce versão 2.4.4.
 feature: Products
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -51,8 +51,8 @@ Você será redirecionado para a página da lista de produtos.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do tipo de implantação:
 
-* Adobe Commerce no local: [Guia de Atualização de Software > Aplicar Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) em nossa documentação para desenvolvedores.
-* Adobe Commerce em nossa infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://devdocs.magento.com/cloud/project/project-patch.html) em nossa documentação de desenvolvedor.
+* Adobe Commerce no local: [Guia de Atualização de Software > Aplicar Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) em nossa documentação para desenvolvedores.
+* Adobe Commerce em nossa infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) em nossa documentação de desenvolvedor.
 
 ## Leitura relacionada
 

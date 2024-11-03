@@ -3,7 +3,7 @@ title: Configurar o armazenamento remoto
 description: Saiba como configurar o módulo de Armazenamento remoto para o aplicativo local do Commerce.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 4fce6763ec619b0b5069e71cced9ebeb81505304
+source-git-commit: 419a21604d1fda0a76dd0375ae2340fd6e59ec89
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
@@ -30,7 +30,7 @@ A habilitação do armazenamento remoto pode afetar sua experiência de desenvol
 
 >[!INFO]
 >
->- O armazenamento remoto está disponível somente para o Commerce versão 2.4.2 e posterior. Consulte as [notas de versão do 2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>- O armazenamento remoto está disponível somente para o Commerce versão 2.4.2 e posterior. Consulte as [notas de versão do 2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- O módulo de armazenamento remoto tem _suporte limitado_ no Adobe Commerce na infraestrutura em nuvem. O Adobe não pode solucionar problemas completamente com o serviço de adaptador de armazenamento de terceiros. Consulte [Configurar armazenamento remoto para a infraestrutura do Commerce na nuvem](cloud-support.md) para obter orientação sobre como implementar o armazenamento remoto em projetos na nuvem.
 

@@ -4,7 +4,7 @@ description: Conheça as práticas recomendadas para agendar atualizações crí
 role: Admin, User
 feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 1%
@@ -31,7 +31,7 @@ As ações críticas resultam em operações de invalidação e reindexação de
 
 ## Informações adicionais
 
-- [Práticas recomendadas para armazenamento em cache](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
+- [Práticas recomendadas para armazenamento em cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [Conteúdo privado: Invalidar conteúdo privado](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Recomendações de hardware: caches](../../../performance/hardware.md#caches)
 - [Configuração avançada: Configurar Redis](../../../performance/advanced-setup.md#set-up-redis)

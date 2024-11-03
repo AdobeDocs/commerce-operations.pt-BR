@@ -2,7 +2,7 @@
 title: Configurar vários sites, lojas e visualizações de loja no Administrador
 description: Configure sites, lojas e visualizações de loja adicionais no Administrador do Commerce.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: f7c82844fd6d006e4ebbcf56f6e10338f67d0bdd
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 Esta tarefa requer que você crie uma categoria raiz (e categorias adicionais, se desejado) para cada loja. As tarefas discutidas neste tópico fornecem uma maneira de configurar várias lojas. Para obter informações adicionais, consulte os seguintes recursos no Guia do usuário do Commerce:
 
-- [Categorias](https://docs.magento.com/user-guide/catalog/categories.html)
-- [Adicionando Sites](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Armazenar URLs](https://docs.magento.com/user-guide/stores/store-urls.html)
-- [Conteúdo](https://docs.magento.com/user-guide/cms/content-menu.html)
+- [Categorias](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [Adicionando Sites](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Armazenar URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Conteúdo](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +34,7 @@ Para criar uma categoria raiz:
 1. No campo **Nome da Categoria**, digite um nome exclusivo para identificar esta categoria.
 1. Verifique se a opção Habilitar categoria está definida como **Sim**.
 
-   Para obter informações sobre as outras opções desta página, consulte [Categorias raiz](https://docs.magento.com/user-guide/catalog/category-root.html).
+   Para obter informações sobre as outras opções desta página, consulte [Categorias raiz](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
 
    A figura a seguir mostra um exemplo.
 
@@ -131,7 +131,7 @@ O Commerce oferece a opção de adicionar o código da loja ao URL base do site,
 
 Isso evita que o `index.php` e o `.htaccess` fiquem fora de sincronia com a base de código do Commerce em atualizações futuras.
 
-Consulte o [Guia do Usuário do Commerce](https://docs.magento.com/user-guide/stores/store-urls.html).
+Consulte o [Guia do Usuário do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 Para adicionar o código da loja ao URL base:
 

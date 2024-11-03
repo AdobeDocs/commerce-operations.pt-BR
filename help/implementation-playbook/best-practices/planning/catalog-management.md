@@ -4,7 +4,7 @@ description: Saiba mais sobre as recomendações para configurar limites de carr
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
@@ -100,7 +100,7 @@ Remover conjuntos de atributos de produto não utilizados usando o MySQL.
 
 #### Revisar configuração do conjunto de atributos
 
-1. [Conectar ao banco de dados do site](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
+1. [Conectar ao banco de dados do site](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Localizar o número de conjuntos de atributos usando MySQL
 

@@ -3,7 +3,7 @@ title: "MDVA-42806: Novo email de registro da empresa é enviado sempre que a em
 description: O patch MDVA-42806 resolve o problema em que um novo email de registro da empresa é enviado sempre que uma empresa existente é atualizada por meio da API REST. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 está instalada. A ID do patch é MDVA-42806. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 feature: REST, B2B, Communications, Companies
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Módulos B2B instalados.
 <u>Etapas a serem reproduzidas</u>:
 
 1. Crie uma conta de empresa.
-1. Use o ponto de extremidade `/V1&#x200B;/company&#x200B;/<company_id>`. Para atualizar a empresa criada, consulte [atualizar a empresa](https://devdocs.magento.com/guides/v2.4/b2b/company-object.html#update-the-company) na documentação do desenvolvedor. Abaixo está uma amostra de carga:
+1. Use o ponto de extremidade `/V1&#x200B;/company&#x200B;/<company_id>`. Para atualizar a empresa criada, consulte [atualizar a empresa](https://developer.adobe.com/commerce/webapi/rest/b2b/company-object/#update-the-company) na documentação do desenvolvedor. Abaixo está uma amostra de carga:
 
 ```php
 {

@@ -2,7 +2,7 @@
 title: referência env.php
 description: Veja uma lista de valores para o arquivo env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%
@@ -146,7 +146,7 @@ O Commerce usa uma chave de criptografia para proteger senhas e outros dados con
 ]
 ```
 
-Saiba mais sobre [Chave de criptografia](https://docs.magento.com/user-guide/system/encryption-key.html) no _Guia do usuário do Commerce_.
+Saiba mais sobre [Chave de criptografia](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) no _Guia do usuário do Commerce_.
 
 ## bd
 
@@ -203,7 +203,7 @@ Uma lista de domínios para download disponíveis neste nó. Domínios adicionai
 ]
 ```
 
-Saiba mais sobre [Domínios baixáveis](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
+Saiba mais sobre [Domínios baixáveis](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## instalar
 
