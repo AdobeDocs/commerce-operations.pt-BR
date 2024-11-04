@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: d146972c919934452f40521141842524a80d4da6
+source-git-commit: 4764716fe6fbc043f96843195f9d25b6d3517a40
 workflow-type: tm+mt
-source-wordcount: '6071'
+source-wordcount: '6087'
 ht-degree: 0%
 
 ---
@@ -646,6 +646,7 @@ ht-degree: 0%
       - v1.1.53 {#v1-1-53}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
          - [ACSD-59930: melhora o desempenho dos fluxos da empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
+         - [ACSD-60584: o token de acesso criado para um site tem permissão para acessar informações em outros sites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
       - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Referência de ferramentas de linha de comando {#cli-reference}
