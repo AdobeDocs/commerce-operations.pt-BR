@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: ebcf6c2f99b44489d3914dc4a83fd0f3f944ad93
+source-git-commit: 2a751e4548ab032a1d9339efeb66559c3836e58e
 workflow-type: tm+mt
-source-wordcount: '6093'
+source-wordcount: '6106'
 ht-degree: 0%
 
 ---
@@ -642,6 +642,7 @@ ht-degree: 0%
          - [ACSD-60590: Melhorando o desempenho da geração de relatórios diários agregados dos melhores vendedores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: Classificando itens em [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
          - [ACSD-59865: [!UICONTROL Cart Price Rule] falha ao cancelar regras anteriores devido à quantidade insuficiente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+         - [ACSD-59366: excluir equipes com usuários desativados não visíveis na lista de equipes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list.md)
          - [ACSD-60788: scripts personalizados para  [!DNL Google Tag Manager]  não executados devido a erros de CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors.md)
          - [ACSD-59952: erro ao excluir o catálogo compartilhado com a mesma ID de grupo de outro catálogo compartilhado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
       - v1.1.53 {#v1-1-53}
@@ -689,7 +690,7 @@ ht-degree: 0%
       - [Especificações técnicas](data-migration-tool/technical-specification.md)
    - Migrar dados {#migrate-data}
       - [Visão geral](data-migration-tool/migrate-data/overview.md)
-      - [Configurações](data-migration-tool/migrate-data/settings.md)
+      - [Configurações ](data-migration-tool/migrate-data/settings.md)
       - [Dados](data-migration-tool/migrate-data/data.md)
       - [Alterações](data-migration-tool/migrate-data/delta.md)
       - [Acompanhamento](data-migration-tool/migrate-data/follow-up.md)
