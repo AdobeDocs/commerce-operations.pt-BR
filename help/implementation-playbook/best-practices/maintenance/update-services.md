@@ -4,9 +4,9 @@ description: Saiba como manter sua Adobe Commerce atualizada na pilha de tecnolo
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Os clientes com planos Pro só podem realizar autoatendimento em atualizações 
 
 >[!WARNING]
 >
->As atualizações de serviço não podem ser enviadas para o ambiente de produção sem aviso prévio de 48 horas úteis para nossa equipe de infraestrutura. Isso é necessário, pois precisamos garantir que tenhamos um engenheiro de suporte de infraestrutura disponível para atualizar sua configuração dentro de um prazo desejado com tempo de inatividade mínimo para seu ambiente de produção.
+>As atualizações de serviço não podem ser enviadas para um ambiente de produção sem aviso prévio de 48 horas úteis para a equipe de infraestrutura do Adobe. Isso é necessário para que o Adobe possa garantir que um engenheiro de suporte de infraestrutura esteja disponível para atualizar sua configuração dentro de um período de tempo desejado com tempo de inatividade mínimo para o ambiente de produção. A Adobe recomenda colocar seu site no modo de manutenção durante a atualização do serviço.
 
 Você pode exibir a lista de versões de serviço e datas de fim de vida útil no seguinte arquivo: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
