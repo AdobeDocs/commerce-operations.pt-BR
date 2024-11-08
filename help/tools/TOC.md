@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 4ea3dede58424662be7e317807ff9b2d128cd261
+source-git-commit: 8fa763e2c5ec006f638b7265c49f4576a6ab3b32
 workflow-type: tm+mt
-source-wordcount: '6128'
+source-wordcount: '6137'
 ht-degree: 0%
 
 ---
@@ -650,6 +650,7 @@ ht-degree: 0%
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
          - [ACSD-59930: melhora o desempenho dos fluxos da empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
          - [ACSD-60584: o token de acesso criado para um site tem permissão para acessar informações em outros sites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
+         - [ACSD-61528: a recuperação de funções usando o GraphQL não retorna resultados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318: erro de aninhamento de emulação de ambiente em &quot;system.log&quot;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
       - v1.1.54 {#v1-1-54}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
