@@ -2,9 +2,9 @@
 title: Modos de aplicação
 description: O aplicativo Commerce pode operar em diferentes modos, dependendo das suas necessidades. Exibir uma lista detalhada dos modos de aplicação disponíveis.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 5003e8dcbb3736201ea19ebe30d5e56775096157
+source-git-commit: c415c3427f513255b9d4ebe1d24ba4024df21928
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,12 @@ Consulte [Definir o modo de operação](../cli/set-mode.md) para saber como alte
 
 ## Suporte na nuvem
 
-Devido ao sistema de arquivos somente leitura, não é possível alterar os modos nos ambientes de nuvem remotos. Não tente alterar os modos modificando o arquivo `app/etc/env.php` porque o pacote `ece-tools` substitui o arquivo com base em várias fontes de configuração.
+Devido ao sistema de arquivos somente leitura, há uma restrição estrita contra a alteração dos modos em ambientes de nuvem remotos e ele não pode ser substituído pelo Suporte da Adobe Commerce. Não tente alterar os modos modificando o arquivo `app/etc/env.php` porque o pacote `ece-tools` substitui o arquivo com base em várias fontes de configuração.
 
 A infraestrutura do Adobe Commerce na nuvem executa automaticamente o aplicativo no modo de _manutenção_ durante uma implantação, o que coloca o site offline até que a implantação seja concluída. Caso contrário, o aplicativo permanecerá no modo de _produção_. Consulte [Processo de implantação](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) no _guia do Commerce on Cloud Infrastructure_.
 
 Se você usa o Cloud Docker para Commerce como uma ferramenta de desenvolvimento, é possível implantar seu projeto de infraestrutura em nuvem em um ambiente do Docker no modo _desenvolvedor_, mas o desempenho é mais lento devido a operações adicionais de sincronização de arquivos. Consulte [Implantar o ambiente do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) no _Guia do Cloud Docker for Commerce_.
+
 
 ## Modo padrão
 
@@ -54,6 +55,10 @@ No modo de desenvolvedor:
 - Uma exceção é lançada no manipulador de erros, em vez de ser registrada
 - Uma exceção é lançada quando um assinante de evento não pode ser chamado
 - Mostra cabeçalhos personalizados de solicitação e resposta HTTP `X-Magento-*`
+
+>[!NOTE]
+>
+>Esse modo não é compatível com o ambiente do Adobe Commerce Cloud e o Suporte da Adobe Commerce não pode facilitar a alteração do modo do aplicativo.
 
 ## Modo de produção
 
