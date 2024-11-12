@@ -2,9 +2,9 @@
 title: Servidor de aplicativos GraphQL
 description: Siga estas instruções para habilitar o GraphQL Application Server na implantação do Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 620be59a5b66bd4f55997951c59e473ac14a5c21
+source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2082'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Conclua as seguintes etapas antes de implantar o GraphQL Application Server em p
 
 1. Implante o Adobe Commerce na infraestrutura de nuvem usando o modelo de nuvem da [2.4.7-ramificação appserver](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Verifique se todas as personalizações e extensões do Commerce são compatíveis com o GraphQL Application Server.
-1. Confirme se a variável de ambiente `CRYPT_KEY` está definida para sua instância. Você pode verificar o status dessa variável no Portal de projetos na nuvem (interface de integração).
+1. Confirme se a variável de ambiente `CRYPT_KEY` está definida para sua instância. Você pode verificar o status dessa variável no Cloud Console.
 1. Clonar o projeto do Commerce Cloud.
 1. Renomeie `application-server/.magento/.magento.app.yaml.sample` como `application-server/.magento/.magento.app.yaml` e ajuste as configurações em .magento.app.yaml, se necessário.
 1. Descomente a configuração da rota a seguir no arquivo `project_root/.magento/routes.yaml` para redirecionar o tráfego `/graphql` para o GraphQL Application Server.
