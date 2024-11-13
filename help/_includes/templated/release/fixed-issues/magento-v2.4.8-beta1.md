@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
+source-git-commit: e05e4e4ef547bfb95fdcc53c2095ef0725b0a6e1
 workflow-type: tm+mt
-source-wordcount: '14732'
+source-wordcount: '14731'
 ht-degree: 0%
 
 ---
@@ -809,10 +809,10 @@ garantir a compatibilidade e a funcionalidade atualizada. Anteriormente, a atual
    * _Observação de correção_: o sistema agora só adiciona o país modificado à configuração &#39;general/region/state_required&#39; quando um novo país com estados obrigatórios é adicionado, evitando qualquer interrupção no código personalizado que pressupõe que a região esteja desabilitada. Anteriormente, adicionar um novo país com estados obrigatórios redefinia a configuração &quot;general/region/state_required&quot; para países padrão com um estado obrigatório, possivelmente quebrando a loja.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/37796>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/38076>
-* _AC-9712_: https://github.com/magento/magento2/issues/37841
-   * _Observação de correção_: diferença em menos compilação entre php e biblioteca nodejs (grunt) com expressões `calc` complicadas
-   * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/b34c0a75>>
-   * _Contribuição de código do GitHub_: corrija a diferença na menor compilação entre a biblioteca php e nodejs (grunt) após a atualização wikimedia/less.php:^5.x
+* _AC-9712_: diferença em menos compilação entre php e biblioteca nodejs (grunt) com expressões `calc` complicadas
+   * _Nota de correção_: corrija a diferença na compilação menor entre php e biblioteca nodejs (grunt) após a atualização wikimedia/less.php:^5.x
+   * _Problema do GitHub_: <https://github.com/magento/magento2/issues/37841>
+   * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/b34c0a75>
 * _ACP2E-2692_: erro &quot;Tabela ou exibição base não encontrada&quot; ocorre quando a indexação parcial é executada
    * _Observação de correção_: a reindexação parcial agora funciona corretamente com o log de alterações grande no caso de conexão do banco de dados secundário
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/ba25af8a>
