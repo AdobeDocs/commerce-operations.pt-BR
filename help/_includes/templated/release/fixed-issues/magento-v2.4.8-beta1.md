@@ -1,7 +1,7 @@
 ---
-source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
+source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
 workflow-type: tm+mt
-source-wordcount: '14792'
+source-wordcount: '14732'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ garantir a compatibilidade e a funcionalidade atualizada. Anteriormente, a atual
 
 ## Problemas corrigidos
 
-Corrigimos 254 problemas no código principal Magento Open Source 2.4.8. Um subconjunto dos problemas corrigidos incluídos nesta versão está descrito abaixo.
+Corrigimos 253 problemas no código principal Magento Open Source 2.4.8. Um subconjunto dos problemas corrigidos incluídos nesta versão está descrito abaixo.
 
 ### APIs
 
@@ -1143,10 +1143,6 @@ para a configuração bin/magento:definir valor de twofactorauth/google/leeway
 * _AC-12128_: correção de vulnerabilidade de segurança Prototype.js CVE-2020-27511
    * _Observação de correção_: o sistema foi atualizado para resolver a vulnerabilidade de segurança CVE-2020-27511 em Prototype.js 1.7.3, melhorando a segurança geral do sistema. Antes dessa atualização, o sistema era susceptível a uma negação de serviço de expressão regular (ReDOS) por meio da remoção de tags HTML criadas.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12128_:
-   * _Observação de correção_: correção de vulnerabilidade de segurança Prototype.js CVE-2020-27511
-   * _Problema do GitHub_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _Contribuição de código do GitHub_: o sistema foi atualizado para resolver a vulnerabilidade de segurança CVE-2020-27511 em Prototype.js 1.7.3, melhorando a segurança geral do sistema. Antes dessa atualização, o sistema era susceptível a uma negação de serviço de expressão regular (ReDOS) por meio da remoção de tags HTML criadas.
 * _AC-12189_: Grunt Less usa pub/ prefix para sourcemaps
    * _Observação de correção_: o sistema agora gera menos/css sourcemaps sem o prefixo /pub para caminhos ao usar grunt, eliminando a necessidade de uma solução alternativa na configuração do servidor Web. Anteriormente, o uso do prefixo /pub em caminhos de mapas de origem exigia uma configuração específica no servidor Web para funcionar corretamente.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38837>
