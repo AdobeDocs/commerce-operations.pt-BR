@@ -1,18 +1,19 @@
 ---
 title: 'MDVA-41631: Erro ao recuperar informações do pedido sem valor "phone" opcional'
-description: O patch MDVA-41631 corrige o problema em que os usuários obtêm um erro ao recuperar informações do pedido sem o valor opcional de "telefone" por meio do GraphQL. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 está instalada. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
+description: O patch MDVA-41631 corrige o problema em que os usuários obtêm um erro ao recuperar informações do pedido sem o valor opcional de "telefone"  [!DNL GraphQL]. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 está instalada. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+exl-id: e56cea59-ffc1-4520-85ca-136cda613884
+source-git-commit: 3f14d93eca09967e320aae4af5e94c6d0c16cd20
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
 
 # MDVA-41631: erro ao recuperar informações do pedido sem valor &quot;phone&quot; opcional
 
-O patch MDVA-41631 corrige o problema em que os usuários obtêm um erro ao recuperar informações do pedido sem o valor opcional de &quot;telefone&quot; por meio do GraphQL. Este patch está disponível quando a [Ferramenta de Patches de Qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 está instalada. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
+O patch MDVA-41631 corrige o problema em que os usuários obtêm um erro ao recuperar informações do pedido sem o valor opcional de &quot;telefone&quot; por meio do [!DNL GraphQL]. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 está instalado. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 
 ## Produtos e versões afetados
 
@@ -30,14 +31,14 @@ Adobe Commerce (todos os métodos de implantação) 2.4.1 - 2.4.3-p1
 
 ## Problema
 
-Os usuários recebem um erro ao recuperar informações do pedido sem o valor opcional de &quot;telefone&quot; por meio do GraphQL.
+Os usuários obtêm um erro ao recuperar informações do pedido sem o valor opcional de &quot;telefone&quot; por meio do [!DNL GraphQL].
 
 <u>Etapas a serem reproduzidas</u>:
 
 1. Vá para **Loja** > **Configuração** > **Clientes** > **Configuração do Cliente** > **Opções de Nome e Endereço** > **Mostrar Telefone** e defina o número de telefone como opcional.
-1. Faça um pedido usando a API do GraphQL como cliente conectado.
-   * Não defina o número de telefone ao definir os endereços de faturamento e de envio. Siga as instruções fornecidas no [Tutorial de check-out do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) em nossa documentação do desenvolvedor.
-1. Recupere o pedido usando a [consulta customerOrders](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html) do GraphQL.
+1. Faça um pedido usando [!DNL GraphQL API] como cliente conectado.
+   * Não defina o número de telefone ao definir os endereços de faturamento e de envio. Siga as instruções fornecidas no [[!DNL GraphQL] Tutorial de check-out](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) em nossa documentação do desenvolvedor.
+1. Recupere a ordem usando a consulta [!DNL GraphQL] [`customerOrders`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/).
 
 <pre>
 <code class="language-graphql">
@@ -81,7 +82,7 @@ country_code
 
 <u>Resultados esperados</u>:
 
-Os usuários obtêm informações sobre pedidos.
+Os usuários obtêm as informações do pedido.
 
 <u>Resultados reais</u>:
 
@@ -96,7 +97,7 @@ Para aplicar patches individuais, use os links a seguir, dependendo do método d
 
 ## Leitura relacionada
 
-Para saber mais sobre a Ferramenta de correção de qualidade, consulte:
+Para saber mais sobre o [!DNL Quality Patches Tool], consulte:
 
 * [Ferramenta de correções de qualidade lançada: uma nova ferramenta para autoatender correções de qualidade](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
 * [Verifique se há um patch disponível para o problema do Adobe Commerce usando a Ferramenta de Patches de Qualidade](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!DNL Quality Patches Tool].

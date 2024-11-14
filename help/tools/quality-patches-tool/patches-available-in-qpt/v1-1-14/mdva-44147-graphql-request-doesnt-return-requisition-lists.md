@@ -1,18 +1,19 @@
 ---
-title: "MDVA-44147: a solicitação do GraphQL não retorna Listas de Requisições"
-description: O patch MDVA-44147 corrige o problema em que a solicitação do GraphQL não retorna Listas de requisições. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 está instalada. A ID do patch é MDVA-44147. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
+title: "MDVA-44147: [!DNL GraphQL] a solicitação não retorna [!UICONTROL Requisition Lists]"
+description: O patch MDVA-44147 corrige o problema em que a  [!DNL GraphQL] solicitação não retorna [!UICONTROL Requisition Lists]. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 está instalada. A ID do patch é MDVA-44147. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+exl-id: 534c4e45-6521-45c0-ae4e-c60b754f432f
+source-git-commit: fa95ca5ac2f7606386a785fb3b29f56672d555b1
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
-# MDVA-44147: A solicitação do GraphQL não retorna Listas de Requisições
+# MDVA-44147: a solicitação [!DNL GraphQL] não retorna [!UICONTROL Requisition Lists]
 
-O patch MDVA-44147 corrige o problema em que a solicitação do GraphQL não retorna Listas de requisições. Este patch está disponível quando a [Ferramenta de Patches de Qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 está instalada. A ID do patch é MDVA-44147. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
+O patch MDVA-44147 corrige o problema em que a solicitação [!DNL GraphQL] não retorna [!UICONTROL Requisition Lists]. Este patch está disponível quando a [Ferramenta de Patches de Qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 está instalada. A ID do patch é MDVA-44147. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 
 ## Produtos e versões afetados
 
@@ -30,12 +31,12 @@ O patch MDVA-44147 corrige o problema em que a solicitação do GraphQL não ret
 
 ## Problema
 
-A solicitação GraphQL não retorna Listas de Requisições.
+A solicitação [!DNL GraphQL] não retorna [!UICONTROL Requisition Lists].
 
 <u>Etapas a serem reproduzidas</u>:
 
-1. Vá para **Loja** > **Configurações** > **Configuração** > **Geral** > **Recursos B2B** e habilite a Lista de Requisições.
-1. Faça logon como cliente e adicione um produto à [Lista de Requisições](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
+1. Vá para **Repositório** > **Configurações** > **Configuração** > **Geral** > **Recursos B2B** e habilite **[!UICONTROL Requisition List]**.
+1. Faça logon como cliente e adicione um produto ao [[!UICONTROL Requisition List]](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
 1. Crie um [Token de cliente](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
 
    <pre>
@@ -51,7 +52,7 @@ A solicitação GraphQL não retorna Listas de Requisições.
       </code>
       </pre>
 
-1. Use a consulta a seguir para recuperar todas as Listas de Requisições do cliente. Use o cabeçalho **Autorização** com o valor `Bearer <customer_token>`. Para obter mais informações, consulte o artigo [Consulta a clientes](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) em nossa documentação para desenvolvedores.
+1. Use a consulta a seguir para recuperar todos os [!UICONTROL Requisition Lists] do cliente. Use o cabeçalho **Autorização** com o valor `Bearer <customer_token>`. Para obter mais informações, consulte o artigo [Consulta a clientes](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) em nossa documentação para desenvolvedores.
 
    Solicitação:
 
