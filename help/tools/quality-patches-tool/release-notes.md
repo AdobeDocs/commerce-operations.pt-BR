@@ -2,7 +2,7 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fb884f895cb03dcc920dc3de9baa63deb8737cd3
+source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
 workflow-type: tm+mt
 source-wordcount: '23125'
 ht-degree: 0%
@@ -68,7 +68,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **ACSD-61553** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.7) - Corrige o problema em que os descontos de **[!UICONTROL Cart Price Rule]** são calculados incorretamente quando vários descontos com prioridades diferentes e **[!UICONTROL Maximum Qty Discount is Applied To]** são aplicados ao produto.
 * **ACSD-61667** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Melhora o desempenho do inventário para criar entregas no caso de muitas fontes com coleta na loja.
 * **ACSD-61969** (para Adobe Commerce >=2.4.7 &lt;2.4.8) - Corrige o problema em que o usuário precisa digitar um código de cupom que diferencie maiúsculas e minúsculas para corresponder exatamente como o código de cupom foi configurado.
-* Patches atualizados: ACSD-54989, ACSD-60632
+* Versões atualizadas: **ACSD-54989**, **ACSD-60632**
 
 ## v1.1.52 {#v1-1-52}
 
@@ -83,7 +83,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **ACSD-60788** (para Adobe Commerce >=2.4.7 &lt;2.4.8) - Corrige o problema em que scripts personalizados para [!DNL Google Tag Manager] não são executados devido a erros de Política de Segurança de Conteúdo (CSP).
 * **ACSD-61322** (para Adobe Commerce >=2.4.6 &lt;2.4.8) - Corrige o problema em que [!UICONTROL Products/Categories] não atribuído ao [!UICONTROL Shared Catalog] para o Padrão (Grupo Geral) ainda estão incluídos no Mapa do Site XML.
 * **ACSD-61366** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige o problema em que o comando `setup:static-content:deploy --jobs 4` é executado com vários trabalhos com falha com o erro *A porta deve ser configurada no parâmetro de host* quando a porta é especificada para a conexão de BD.
-* Versões atualizadas: **ACSD-54989**, **ACSD-60632**
+* Patches atualizados: ACSD-51857, ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
