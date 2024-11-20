@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 0d5eeb691281d7c62aa64a9d8cd042f18504a67f
 workflow-type: tm+mt
-source-wordcount: '6363'
+source-wordcount: '6370'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ _Atributos do termo:_
 _substantivo_
 
 O back office protegido por senha da loja onde os pedidos, o catálogo, o conteúdo e as configurações são gerenciados.
-Os usuários acessam a área de Administração para gerenciar a loja, incluindo produtos, pedidos, remessas, conteúdo CMS, design da loja, informações do cliente e assim por diante.
+Os usuários acessam a área de Administração para gerenciar a loja, incluindo produtos, pedidos, remessas, conteúdo do CMS, design da loja, informações do cliente e assim por diante.
 Os usuários administradores têm uma função associada com permissões que controlam o acesso a recursos, opções e funcionalidades.
 
 Saiba mais: [Guia do Usuário do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
@@ -248,7 +248,7 @@ _adjetivo_
 
 Uma empresa de varejo com um local físico permanente, em oposição às empresas que funcionam virtual ou exclusivamente pela Internet.
 
-Para o [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) e o [Order Management](https://omsdocs.magento.com/getting-started/terminology/), esta loja é uma fonte para rastrear quantidades de produtos, pedidos de remessa e suporte para retirada na loja.
+Para o [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) e o [Order Management](#oms), esta loja é uma fonte para rastrear quantidades de produtos, pedidos de remessa e suporte para retirada na loja.
 
 _Atributos do termo:_
 
@@ -454,7 +454,7 @@ _Atributos do termo:_
 
 * _Campo: nuvem_
 
-### Bloco CMS
+### Bloqueio do CMS
 
 _substantivo_
 
@@ -1046,7 +1046,11 @@ _Atributos do termo:_
 
 _substantivo_
 
-[OMS](https://omsdocs.magento.com) é a oferta de Sistema Adobe Order Management.
+OMS é a oferta de Sistema Adobe Order Management.
+
+>[!IMPORTANT]
+>
+>O Adobe Commerce Order Management (OMS) chegou ao fim da vida útil e não é mais compatível.
 
 O OMS é uma solução flexível e acessível para gerenciar, vender e realizar o inventário de qualquer canal de vendas.
 O OMS oferece uma experiência perfeita ao cliente, o que aumenta as vendas e reduz os custos, além de acelerar o tempo de comercialização.
@@ -1058,7 +1062,7 @@ Os recursos do OMS incluem:
 * Atendimento ao cliente mais fácil e ágil
 * Melhor experiência e fidelidade do cliente
 
-Saiba mais: [Introdução ao OMS](https://omsdocs.magento.com/en/getting-started/), [site de Documentação do OMS](https://omsdocs.magento.com/en/)
+Saiba mais: [Site de documentos OMS arquivados](https://commerce-docs.github.io/oms-documentation-archive/)
 
 _Atributos do termo:_
 
