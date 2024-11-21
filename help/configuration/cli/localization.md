@@ -2,7 +2,7 @@
 title: Dicionários de tradução e pacotes de idiomas
 description: Saiba como gerar dicionários de tradução e criar pacotes de idioma.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 02c69e890b40643781ab8f48c3133527dd79386a
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 0%
@@ -284,8 +284,8 @@ Semelhante ao exemplo anterior, gere um arquivo CSV, mas em vez de especificar u
    ```php
    <?php
    /**
-    * Copyright &copy; Magento, Inc. All rights reserved.
-    * See COPYING.txt for license details.
+    * Copyright Adobe
+    * All Rights Reserved.
     */
    
    use Magento\Framework\Component\ComponentRegistrar;
@@ -301,11 +301,10 @@ Semelhante ao exemplo anterior, gere um arquivo CSV, mas em vez de especificar u
 
    ```xml
    <?xml version="1.0"?>
-   /**
-   * Copyright &copy; Magento, Inc. All rights reserved.
-   * See COPYING.txt for license details.
-   */
-   
+   <!--
+   Copyright Adobe
+   All Rights Reserved.
+   -->
    <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
        <code>xx_YY</code>
        <vendor>examplecorp</vendor>
