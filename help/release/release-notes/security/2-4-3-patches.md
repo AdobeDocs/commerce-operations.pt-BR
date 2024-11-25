@@ -2,7 +2,7 @@
 title: Notas de versão para Patches de segurança do Adobe Commerce 2.4.3
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Esta versão inclui o seguinte hotfix e todos os hotfixes que foram lançados pa
 
 **Acesso de administrador restrito às pastas da Galeria de Mídia**. As permissões padrão da Galeria de mídia agora permitem somente operações de diretório (exibir, carregar, excluir e criar) que são permitidas explicitamente pela configuração. Os usuários administradores não podem mais acessar ativos de mídia pela Galeria de Mídia que foram carregados fora dos diretórios `catalog/category` ou `wysiwyg`. Os administradores que desejam acessar ativos de mídia devem movê-los para uma pasta explicitamente permitida ou ajustar suas configurações. Consulte [Modificar permissões de pastas do Media Library](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
 
-**Limites reduzidos para a complexidade da consulta GraphQL**. A complexidade máxima de consulta permitida do GraphQL foi reduzida para evitar ataques de negação de serviço (DOS). Consulte [configuração de segurança do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/security-configuration.html). <!-- PWA-1700-->
+**Limites reduzidos para a complexidade da consulta GraphQL**. A complexidade máxima de consulta permitida do GraphQL foi reduzida para evitar ataques de negação de serviço (DOS). Consulte [configuração de segurança do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
 
 **Vulnerabilidades recentes no teste de penetração** foram corrigidas nesta versão. <!-- MC-42431-->
 
