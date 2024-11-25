@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: a2e26daf2d5775e1186c1eca7272f9a2efcee23f
+source-git-commit: 9aeaa3faaf0aee1ed2e20cb86362d4246c858a05
 workflow-type: tm+mt
-source-wordcount: '6253'
+source-wordcount: '6268'
 ht-degree: 0%
 
 ---
@@ -664,6 +664,7 @@ ht-degree: 0%
          - [ACSD-61845: Ocorre um erro para solicitações com text/html accept header](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-58735: O administrador restrito não pode visualizar carrinhos de compras abandonados na conta do cliente para o site associado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
          - [ACSD-58471: o conteúdo dinâmico não é carregado na página de detalhes do produto quando as regras de preço do catálogo são programadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383: duplicar avisos de crédito de solicitações de reembolso simultâneas via  [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
       - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
