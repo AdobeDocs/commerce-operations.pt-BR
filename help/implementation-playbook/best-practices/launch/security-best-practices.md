@@ -3,9 +3,9 @@ title: Proteger o site e a infraestrutura da Commerce
 description: Mantenha a segurança implementando práticas recomendadas de segurança ao instalar, configurar e atualizar instalações do Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: a00b7b66beb6499f7fb19fda2dfd450799f73728
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -115,10 +115,6 @@ Como parte de um plano de recuperação de desastres, a Adobe recomenda que os c
 
 **Adobe Commerce implantado no local**
 
-- [Ideias de recuperação de desastres](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
-- [Backup e recuperação](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
 - [Exportar definições de configuração](../../../configuration/cli/export-configuration.md)
 
    - [Importar definições de configuração](../../../configuration/cli/import-configuration.md)
@@ -133,7 +129,7 @@ Esta seção resume as práticas recomendadas para manter a segurança do local 
 
 ![Lista de Verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Usar um Firewall do Aplicativo Web**—Analise o tráfego e descubra padrões suspeitos, como informações de cartão de crédito enviadas para um endereço IP desconhecido usando um Firewall do Aplicativo Web.
 
-As instalações do Adobe Commerce implantadas na infraestrutura em nuvem podem usar serviços WAF incorporados disponíveis com a [integração de serviços Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+As instalações do Adobe Commerce implantadas na infraestrutura em nuvem podem usar os serviços WAF integrados disponíveis com a [integração do Fastly services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
 
 ![Lista de Verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Definir configurações avançadas de segurança de senha**—Configure senhas fortes e altere-as pelo menos a cada 90 dias, conforme recomendado pelo Padrão de Segurança de Dados PCI na seção 8.2.4. Consulte [Definir configurações de segurança do administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
 

@@ -5,16 +5,16 @@ role: Developer
 feature: Best Practices
 badge: label="Contribuição de Anton Evers, arquiteto técnico sênior, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Contribuição de Anton Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas para distribuição de patches do Adobe Commerce em escala
 
-Se você gerencia várias instalações do Adobe Commerce, o [patch](../../../upgrade/patches/apply.md) pode ser um processo complexo. _A aplicação centralizada de patches_ é uma parte essencial da [arquitetura de referência global](../../architecture/global-reference/overview.md) e uma prática recomendada para empresas. Ele ajuda a aplicar os patches corretos em todas as instalações do Adobe Commerce. Este tópico explica como obter a distribuição centralizada de patches para todos os tipos de [patches](../../../upgrade/patches/overview.md) do Adobe Commerce.
+Se você gerencia várias instalações do Adobe Commerce, o [patch](../../../upgrade/patches/apply.md) pode ser um processo complexo. _A aplicação centralizada de patches_ é uma prática recomendada para empresas. Ele ajuda a aplicar os patches corretos em todas as instalações do Adobe Commerce. Este tópico explica como obter a distribuição centralizada de patches para todos os tipos de [patches](../../../upgrade/patches/overview.md) do Adobe Commerce.
 
 >[!NOTE]
 >

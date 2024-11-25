@@ -3,9 +3,9 @@ title: Práticas recomendadas de desempenho de check-out
 description: Saiba como otimizar o desempenho das experiências de check-out no site do Adobe Commerce.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 O processo [check-out](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) no Adobe Commerce é um aspecto crítico da experiência da vitrine eletrônica. Ele depende dos recursos [carrinho](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) e [check-out](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page) integrados.
 
-O desempenho é fundamental para manter uma boa experiência do usuário. Revise o [resumo do benchmark de desempenho](../implementation-playbook/infrastructure/performance/benchmarks.md) para saber mais sobre as expectativas de desempenho. Você pode otimizar o desempenho do check-out configurando as seguintes opções para **processamento de pedido de alta taxa de transferência**:
+O desempenho é fundamental para manter uma boa experiência do usuário. Você pode otimizar o desempenho do check-out configurando as seguintes opções para **processamento de pedido de alta taxa de transferência**:
 
 - [AsyncOrder](#asynchronous-order-placement) — processa de forma assíncrona pedidos usando uma fila.
 - [Cálculo do Total Adiado](#deferred-total-calculation) — Adiar cálculos para totais de pedidos até o início do check-out.

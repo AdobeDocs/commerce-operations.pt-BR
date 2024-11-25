@@ -5,9 +5,9 @@ badge: label="Contribuição de objectsource" type="Informative" url="https://ob
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: e5df5a7242dbe8ceff548257daeb39f7c9fc5c69
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,6 @@ Por exemplo, você pode examinar detalhadamente as transações com foco nos det
 Saiba mais sobre o gerenciamento do desempenho do site:
 
 - [Monitoramento de desempenho](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) (infraestrutura em nuvem)
-- [Análise da otimização de desempenho](/help/implementation-playbook/infrastructure/performance/recommendations.md)
 - [Práticas recomendadas de configuração](/help/performance/configuration.md)
 - [Observação para Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)
 

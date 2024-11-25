@@ -3,9 +3,9 @@ title: Arquitetura de referência corporativa
 description: Saiba como implementar o Adobe Commerce usando a tecnologia de comércio combinável mais recente da Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
+source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,10 @@ A [Conexão de Dados](https://experienceleague.adobe.com/en/docs/commerce-mercha
 
 >[!NOTE]
 >
->Consulte [blueprints de experiência digital](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) para obter mais detalhes técnicos.
+>Consulte os seguintes recursos para obter mais informações:
+>
+>- [blueprints de experiência digital](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) para obter mais detalhes técnicos.
+>- Consulte [Personalizando a experiência do cliente](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Integração com sistemas de terceiros
@@ -63,6 +66,11 @@ O Adobe fornece as seguintes ferramentas de desenvolvedor para criar integraçõ
 - [**Eventos**](https://developer.adobe.com/commerce/extensibility/events/) — Use disparadores de eventos personalizados para interagir com outras ferramentas de desenvolvimento extensíveis.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) — Use webhooks para acionar automaticamente interações entre o Commerce e sistemas de terceiros.
 - [**SDK da Interface do Administrador**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)—Personalize e aprimore o Administrador do Commerce com novas páginas e recursos para seus comerciantes.
+- [**Integration Starter Kit**](https://developer.adobe.com/commerce/extensibility/starter-kit/) — acelere suas integrações de back-office com integrações de referência, scripts de integração e uma arquitetura padronizada.
+
+>[!NOTE]
+>
+>Consulte [A abordagem moderna: extensibilidade efetiva no Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Serviços de vitrine
 

@@ -2,10 +2,10 @@
 title: 'Início: Guias Operacionais'
 description: Navegue por um índice da administração do sistema Adobe Commerce e da documentação operacional do produto.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
+source-git-commit: 5a2aae6a2f3b1353457f003460d230db2b57abdd
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 20%
+source-wordcount: '163'
+ht-degree: 7%
 
 ---
 
@@ -27,13 +27,13 @@ Use esta coleção de guias a seguir para saber mais sobre conceitos, processos,
       <p>Revise todas as informações sobre a versão de patches e serviços da Adobe Commerce.</p>
     </div>
   </td>
-  <td valign="top">
-    <a href="../performance/overview.md">
-       <img alt="Desempenho" src="../assets/icons/gauge.svg" width="40"/>
+    <td valign="top">
+    <a href="../implementation-playbook/overview.md">
+      <img alt="Implementação" src="../assets/icons/play.svg" width="40"/>
     </a>
     <div>
-      <a href="../performance/overview.md"><strong>Práticas recomendadas de desempenho</strong></a>
-      <p>Use essas recomendações para otimizar o desempenho da sua implantação do Adobe Commerce.</p>
+      <a href="../implementation-playbook/overview.md"><strong>Manual de implementação</strong></a>
+      <p>Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -45,33 +45,13 @@ Use esta coleção de guias a seguir para saber mais sobre conceitos, processos,
       <p>Saiba como os comerciantes do Adobe Commerce são responsáveis pela manutenção de um ambiente seguro.</p>
     </div>
   </td>
-</tr>
-<tr>
-  <td valign="top">
-    <a href="../implementation-playbook/overview.md">
-      <img alt="Implementação" src="../assets/icons/play.svg" width="40"/>
+    <td valign="top">
+    <a href="../performance/overview.md">
+       <img alt="Desempenho" src="../assets/icons/gauge.svg" width="40"/>
     </a>
     <div>
-      <a href="../implementation-playbook/overview.md"><strong>Manual de implementação</strong></a>
-      <p>Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../operational-playbook/overview.md">
-       <img alt="Operações" src="../assets/icons/refresh.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../operational-playbook/overview.md"><strong>Manual operacional</strong></a>
-      <p>Saiba como preparar seus negócios operacionalmente para gerenciar um site de comércio eletrônico bem-sucedido.</p>
-    </div>
-  </td>
-  <td valign="top">
-    <a href="../commerce-at-scale/overview.md">
-       <img alt="Enterprise" src="../assets/icons/enterprise.svg" width="40"/>
-    </a>
-    <div>
-      <a href="../commerce-at-scale/overview.md"><strong>Commerce em escala</strong></a>
-      <p>Saiba como fornecer experiências em escala usando o Adobe Commerce com o Adobe Experience Manager.</p>
+      <a href="../performance/overview.md"><strong>Práticas recomendadas de desempenho</strong></a>
+      <p>Use essas recomendações para otimizar o desempenho da sua implantação do Adobe Commerce.</p>
     </div>
   </td>
 </tr>

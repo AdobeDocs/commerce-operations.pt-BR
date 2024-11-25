@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de implementação para 
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '406'
 ht-degree: 1%
 
 ---
@@ -93,12 +93,6 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
   </tr>
 </tbody>
 </table>
-
-## Projeto arquitetônico
-
-| Prática recomendada | Descrição |
-|----------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Arquitetura de referência global (GRA)](../../architecture/global-reference/examples.md) | Entenda os métodos comuns de organização de uma base de código GRA. |
 
 ## Design do catálogo
 

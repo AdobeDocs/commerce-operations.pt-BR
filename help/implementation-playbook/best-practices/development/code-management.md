@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de gerenciamento de cód
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,6 @@ Este tópico foi projetado para ajudá-lo a decidir se usará o Git ou o Compose
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
-
-Abrange a [arquitetura de referência global (GRA)](../../architecture/global-reference/overview.md) e as instalações de instância única.
 
 ## Definições
 

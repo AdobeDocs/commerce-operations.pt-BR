@@ -4,9 +4,9 @@ description: Saiba como evitar problemas de desempenho causados por extensões d
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 1fdbded7738365593ef7da64f4dbe6713984bff3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 1%
 
 As extensões de terceiros (módulos) do Adobe Commerce têm o potencial de causar vários problemas que podem afetar negativamente o desempenho da loja. Você pode evitar esses problemas seguindo estas práticas recomendadas:
 
+- Desenvolva suas integrações e personalizações do Commerce usando a [extensibilidade fora do processo](https://developer.adobe.com/commerce/extensibility/) sempre que possível para facilitar a manutenção e a atualização.
 - Baixe e compre extensões de terceiros de uma fonte confiável, como o [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 - Atualize todas as extensões de terceiros para a versão mais recente.
 - Se não conseguir manter suas extensões de terceiros atualizadas, considere usar extensões diferentes.
