@@ -5,7 +5,7 @@ badge: label="Contribuição de objectsource" type="Informative" url="https://ob
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Solucionar problemas de desempenho do MySQL implementando a organização por cl
 
 Sites de alto tráfego geralmente enfrentam gargalos no banco de dados, causados principalmente pela dependência de um único servidor MySQL. Você pode resolver esses gargalos implementando o cluster de banco de dados, uma arquitetura distribuída que melhora o desempenho e garante alta disponibilidade.
 
-O clustering de banco de dados minimiza o impacto de problemas relacionados ao banco de dados durante períodos de pico de tráfego, permitindo que vários nós da Web se conectem a vários servidores MySQL. Use ferramentas como o Cluster Galera para configurar o cluster de banco de dados para sites do Commerce. O Cluster Galera está incluído em [projetos Adobe Commerce implantados na infraestrutura de nuvem](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html).
+O clustering de banco de dados minimiza o impacto de problemas relacionados ao banco de dados durante períodos de pico de tráfego, permitindo que vários nós da Web se conectem a vários servidores MySQL. Use ferramentas como o Cluster Galera para configurar o cluster de banco de dados para sites do Commerce. O Cluster Galera está incluído em [projetos Adobe Commerce implantados na infraestrutura de nuvem](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture).
 
 #### Otimização de consultas MySQL
 
