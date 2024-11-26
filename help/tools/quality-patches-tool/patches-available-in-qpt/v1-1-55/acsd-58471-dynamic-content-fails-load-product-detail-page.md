@@ -3,13 +3,13 @@ title: "ACSD-58471: o conteúdo dinâmico não é carregado na página de detalh
 description: Aplique o patch ACSD-58471 para corrigir o problema do Adobe Commerce em que o conteúdo dinâmico falha ao carregar na página de detalhes do produto, quando as regras de preço de catálogo associadas foram agendadas.
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: a3afb779006de95ac70dff39a737360112220af8
+exl-id: 6ff68b74-67fc-400c-aa79-a1274fd19708
+source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58471: falha no carregamento do conteúdo dinâmico na página de detalhes do produto, quando as regras de preço de catálogo associadas foram agendadas
 
@@ -28,6 +28,8 @@ O patch ACSD-58471 resolve o problema em que o conteúdo dinâmico não é carre
 >O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
+
+O conteúdo dinâmico não é carregado na página de detalhes do produto quando as regras de preço do catálogo são agendadas.
 
 <u>Etapas a serem reproduzidas</u>:
 
