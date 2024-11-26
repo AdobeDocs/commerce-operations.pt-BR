@@ -1,7 +1,7 @@
 ---
-source-git-commit: 50b87e6f2f604d195c2d079bd18451754edaa11c
+source-git-commit: 663fafedfc678c2ea29408e0087858ef470336bb
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 **Aprimoramento de Segurança**: um aprimoramento de software ou uma alteração de configuração para melhorar a segurança de forma proativa no aplicativo. Esses aprimoramentos de segurança ajudam a lidar com riscos de segurança que afetam a postura de segurança do aplicativo do Adobe Commerce, mas que podem ser incompatíveis com versões anteriores.
 
 Com as versões de patch de segurança, você pode manter seu site mais seguro sem aplicar correções de qualidade e aprimoramentos adicionais contidos em uma versão de patch completa. As versões de patch de segurança são anexadas com &quot;-pN&quot;, onde N é a versão de patch incremental que começa com 1 (por exemplo, 2.3.5-p1). As versões de patch de segurança também podem incluir hotfixes necessários para resolver problemas críticos que afetam o aplicativo Adobe Commerce.
+
+As versões de patch de segurança também podem incluir alterações relacionadas à conformidade que são necessárias para garantir que o aplicativo Adobe Commerce possa atender aos requisitos de conformidade. Essas alterações podem introduzir alterações incompatíveis com versões anteriores e são necessárias para garantir que todas as linhas de versão compatíveis permaneçam compatíveis.
 
 Cada versão de patch de segurança é baseada na versão anterior de patch completo. Ele contém correções de qualidade e segurança da versão anterior do patch e correções de segurança criadas entre a versão anterior do patch completo e a versão do patch de segurança.
 
