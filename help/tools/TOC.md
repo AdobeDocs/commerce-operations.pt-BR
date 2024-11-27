@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 3c1c16839612aa70b2798ac1aaf0d352a8c4a972
+source-git-commit: 1699b863c80febd762c0d34f33f7af72777e82f2
 workflow-type: tm+mt
-source-wordcount: '6286'
+source-wordcount: '6301'
 ht-degree: 0%
 
 ---
@@ -662,6 +662,7 @@ ht-degree: 0%
          - [ACSD-61199: a guia [!UICONTROL Hierarchy] da página do CMS não exibe a estrutura de árvore apropriada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200: Corrige a compensação de imposto de desconto em cálculos de total de vendas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522: endereços de email nos campos de Nome e Sobrenome enviam confirmações de pedido inválidas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
+         - [ACSD-61799: cálculo de desconto total incorreto com várias regras de carrinho de desconto fixo aplicadas à cotação](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules.md)
          - [ACSD-62485: async.operations.all o consumidor para de funcionar quando a empresa é criada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845: Ocorre um erro para solicitações com text/html accept header](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
