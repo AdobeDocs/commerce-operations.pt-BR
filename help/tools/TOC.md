@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: ff7823cb402c40bb4429fb5acab0cf85c3035be7
+source-git-commit: 0f593cd529ee1b5d259c091758e141629e785ab8
 workflow-type: tm+mt
-source-wordcount: '6352'
+source-wordcount: '6365'
 ht-degree: 0%
 
 ---
@@ -659,6 +659,7 @@ ht-degree: 0%
          - [ACSD-61667: melhora o desempenho do inventário para criar entregas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+           [ACSD-60267: o FPT se aplica incorretamente quando os produtos são adicionados por meio de opções de produto configuráveis](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
          - [ACSD-61199: a guia [!UICONTROL Hierarchy] da página do CMS não exibe a estrutura de árvore apropriada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200: Corrige a compensação de imposto de desconto em cálculos de total de vendas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522: endereços de email nos campos de Nome e Sobrenome enviam confirmações de pedido inválidas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
