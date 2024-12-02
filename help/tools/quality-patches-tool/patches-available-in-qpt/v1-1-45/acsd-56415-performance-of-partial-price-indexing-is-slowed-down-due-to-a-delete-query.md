@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-56415: desempenho de [!UICONTROL Partial Price Indexing] atrasado devido à consulta "DELETE"'
+title: 'ACSD-56415: desempenho de [!UICONTROL Partial Price Indexing] desacelerado devido à consulta "DELETE"'
 description: Aplique o patch ACSD-56415 para corrigir o problema do Adobe Commerce em que o desempenho do [!UICONTROL Partial Price Indexing] é atrasado devido a uma consulta "DELETE" quando o banco de dados tem muitos dados de preço parciais para indexar.
 feature: Catalog Service
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: c877844e-79d3-4756-97a5-de44e6fb5170
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%

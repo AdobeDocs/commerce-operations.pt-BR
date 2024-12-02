@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47910: ordens, NFFs, remessas, avisos de crédito ausentes nas respectivas grades de entidade"
+title: 'ACSD-47910: ordens, NFFs, entregas, avisos de crédito ausentes nas respectivas grades de entidade'
 description: Aplique o patch ACSD-47910 para corrigir o problema do Adobe Commerce em que há ordens, NFFs, entregas e avisos de crédito ausentes nas respectivas grades de entidade.
 feature: Admin Workspace, Invoices, Orders, Returns, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09115cf3-62c3-425e-bc99-e8971398dd20
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

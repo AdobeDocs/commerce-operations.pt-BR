@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53979: Ocorre um erro JS na página inicial"
+title: 'ACSD-53979: Ocorre um erro JS na página inicial'
 description: Aplique o patch ACSD-53979 para corrigir o problema do Adobe Commerce em que ocorre um erro de JavaScript na página inicial se a mensagem de boas-vindas contiver uma aspa simples.
 feature: Page Content
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 34a1802e-b64c-4d5d-85df-356c0740aa41
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 0%

@@ -3,7 +3,8 @@ title: 'ACSD-54739: *[!UICONTROL Product Stock]* status não aplicado para *[!UI
 description: Aplique o patch ACSD-54739 para corrigir o problema do Adobe Commerce em que o status *[!UICONTROL Product Stock]* não é aplicado para *[!UICONTROL Related Product Rules]*.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d6d3b25d-b10e-4ccb-a9c4-b5c1c7773eb6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%

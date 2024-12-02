@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55414: mau desempenho quando MariaDB tenta lançar os entitys_ids"
+title: 'ACSD-55414: Desempenho incorreto quando MariaDB tenta lançar os entitys_ids'
 description: Aplique o patch ACSD-55414 para corrigir o problema do Adobe Commerce quando o MariaDB tenta converter "entitys_ids" de sequência de caracteres em número inteiro, isso dificulta o desempenho da reindexação.
 feature: Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 76309cef-559e-4a55-a27b-7d807ef9f74e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

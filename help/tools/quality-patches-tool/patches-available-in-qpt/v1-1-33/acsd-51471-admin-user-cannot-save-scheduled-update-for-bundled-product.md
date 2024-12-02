@@ -1,7 +1,8 @@
 ---
-title: "ACSD-51471: o usuário administrador não pode salvar a atualização programada para o produto agrupado"
+title: 'ACSD-51471: o usuário administrador não pode salvar a atualização programada para o produto agrupado'
 description: Aplique o patch ACSD-51471 para corrigir o problema do Adobe Commerce em que um usuário administrador não pode salvar uma atualização agendada para um produto empacotado que usa um produto simples com uma atualização agendada.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d8134111-63f0-4476-a407-677bda52fa90
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%

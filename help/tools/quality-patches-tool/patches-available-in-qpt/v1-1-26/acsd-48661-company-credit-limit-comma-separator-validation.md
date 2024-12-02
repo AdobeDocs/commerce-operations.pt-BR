@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48661: problema de validação do separador de vírgula do limite de crédito da empresa"
+title: 'ACSD-48661: problema de validação do separador de vírgula do limite de crédito da empresa'
 description: Aplique o patch ACSD-48661 para corrigir o problema do Adobe Commerce em que, quando o limite de crédito da empresa é maior que 999, o separador de vírgulas impede o salvamento da empresa devido a um erro de validação.
 feature: Admin Workspace, B2B, Companies, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7115226e-5942-4a8f-9dec-b1b6f665eef8
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49737: o cupom está marcado incorretamente como usado após um pagamento de cartão com falha"
+title: 'ACSD-49737: o cupom está marcado incorretamente como usado após um pagamento de cartão com falha'
 description: Aplique o patch ACSD-49737 para corrigir o problema do Adobe Commerce em que o cupom é marcado incorretamente como usado após uma falha no pagamento por cartão.
 feature: Orders, Payments
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09060026-8d64-49f6-a85a-3230a52030fb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

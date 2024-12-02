@@ -1,9 +1,10 @@
 ---
-title: "BB2B-2598: Adiciona o recurso de armazenamento em cache a storeConfig, moeda, país, países, queries GraphQl availableStores"
+title: 'BB2B-2598: Adiciona recurso de armazenamento em cache a storeConfig, moeda, país, países, availableStores consultas GraphQl'
 description: Aplique o patch BB2B-2598 para adicionar o recurso de armazenamento em cache às consultas storeConfig, moeda, país, países e GraphQl availableStores.
 feature: B2B, GraphQL, Cache
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b842fab4-d2c0-4ef1-be13-182f09015cd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

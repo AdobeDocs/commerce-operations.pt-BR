@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39043: Os usuários administradores obtêm erro ao adicionar o widget à página do CMS"
+title: 'MDVA-39043: Erros dos usuários administradores ao adicionar widget à página do CMS'
 description: O patch MDVA-39043 corrige o problema em que usuários administradores com acesso limitado obtêm um erro ao adicionar o widget "Produtos" à página do CMS. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 está instalada. A ID do patch é MDVA-39043. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: Admin Workspace, CMS, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 82488249-cca3-4a28-bdc1-fa93a4c9dc2f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

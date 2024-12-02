@@ -1,9 +1,10 @@
 ---
-title: "MDVA-37234: Adicionar item ao carrinho várias vezes cria item de linha duplicado"
+title: 'MDVA-37234: Adicionar item ao carrinho várias vezes cria item de linha duplicado'
 description: O patch MDVA-37234 corrige o problema em que adicionar um item ao carrinho várias vezes (solicitação paralela) para o mesmo SKU cria um item de linha duplicado para a mesma ID de carrinho. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 está instalada. A ID do patch é MDVA-37234. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: Orders, Shopping Cart
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: d4e9fca1-7fba-4a33-9c5e-c9695cbfc61c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

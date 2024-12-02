@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51305: produtos filho compostos indisponíveis no estoque na resposta do GraphQL"
+title: 'ACSD-51305: produtos filho compostos indisponíveis no estoque na resposta do GraphQL'
 description: Aplique o patch ACSD-51305 para corrigir o problema do Adobe Commerce em que os produtos derivados compostos indisponíveis não estão disponíveis na resposta do GraphQL.
 feature: Categories, GraphQL, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 110bb332-2032-4aaf-b95e-971fc3382262
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46618: o widget lista de produtos mostra preços em cache incorretos para o cliente conectado"
+title: 'ACSD-46618: o widget lista de produtos mostra preços incorretos no cache para o cliente conectado'
 description: Aplique uma correção para corrigir o problema do Adobe Commerce em que o widget lista de produtos mostra preços em cache incorretos para um cliente conectado.
 feature: Cache, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fa350f84-2fe5-474b-b4fd-d6c1e8bb0f95
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

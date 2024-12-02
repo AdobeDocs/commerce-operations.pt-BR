@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48362: o endereço de entrega padrão é usado em vez de um novo."
+title: 'ACSD-48362: o endereço de envio padrão é usado em vez de um novo.'
 description: Aplique o patch ACSD-48362 para corrigir o problema do Adobe Commerce em que o endereço de envio padrão é usado em vez de um novo ao fazer um pedido usando uma cotação negociável.
 feature: Admin Workspace, B2B, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6f0717a6-1e29-4059-9640-5b92586c36e4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%

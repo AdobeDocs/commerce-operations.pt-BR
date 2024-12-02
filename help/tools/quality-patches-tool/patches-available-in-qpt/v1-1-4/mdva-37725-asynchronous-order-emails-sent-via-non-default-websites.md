@@ -1,9 +1,10 @@
 ---
-title: "MDVA-37725: emails enviados por sites não padrão contêm URLs de logotipo de site padrão"
+title: 'MDVA-37725: Emails enviados por sites não padrão contêm URLs de logotipo do site padrão'
 description: O patch MDVA-37725 corrige o problema em que emails de ordem assíncrona são enviados por sites não padrão contendo URLs de logotipo do site padrão.
 feature: Communications, Orders
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 6e72897c-7652-4b5a-8575-090e94188daf
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

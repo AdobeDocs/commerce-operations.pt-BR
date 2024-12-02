@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-42509: não foi possível carregar o CSV para ordem rápida, resultando no erro "Não é possível enviar o cookie"'
+title: 'MDVA-42509: não foi possível carregar o CSV para ordem rápida, resultando no erro "Não é possível enviar o cookie"'
 description: O patch MDVA-42509 resolve o problema em que não foi possível carregar um CSV para ordem rápida, resultando no erro *Não é possível enviar o cookie*. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.16 está instalada. A ID do patch é MDVA-42509. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 feature: B2B, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 6319931b-9cf1-4004-b302-737863c53ff8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%

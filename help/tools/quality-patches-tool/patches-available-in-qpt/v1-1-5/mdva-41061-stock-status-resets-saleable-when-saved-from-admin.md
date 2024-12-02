@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41061: O status do estoque é redefinido para vendável quando o produto é salvo do Administrador"
+title: 'MDVA-41061: O status do estoque é redefinido para vendável quando o produto é salvo do Administrador'
 description: O patch MDVA-41061 corrige o problema em que o status do estoque é redefinido para vendable quando o produto é salvo do Admin. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 está instalada. A ID do patch é MDVA-41061. A versão de patch mais recente está disponível no QPT 1.1.15 com ID de patch MDVA-41061-V3. Observe que o problema foi corrigido no Adobe Commerce 2.4.4.
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ddbc30ef-bc88-4878-8bd8-6880823819a2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%

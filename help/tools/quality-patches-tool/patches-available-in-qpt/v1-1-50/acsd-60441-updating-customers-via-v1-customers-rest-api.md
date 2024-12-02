@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60441: a atualização de clientes por meio do ponto de extremidade V1/customers [!DNL REST] API gera um erro"
+title: 'ACSD-60441: A atualização de clientes por meio do ponto de extremidade V1/customers [!DNL REST] API gera um erro'
 description: Aplique o patch ACSD-60441 para corrigir o problema do Adobe Commerce em que a atualização de clientes por meio da V1/customers [!DNL REST] API ao usar o token de acesso de integração gerado do back-end gera um erro.
 feature: REST, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3936c065-41a6-4860-8313-e054f9b23ac7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%

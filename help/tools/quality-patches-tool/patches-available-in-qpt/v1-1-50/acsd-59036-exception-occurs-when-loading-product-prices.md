@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59036: uma exceção ocorre ao carregar preços de produtos com limites inferiores e superiores definidos como US$ 0"
+title: 'ACSD-59036: uma exceção ocorre ao carregar preços de produtos com limites inferiores e superiores definidos como US$ 0'
 description: Aplique o patch ACSD-59036 para corrigir o problema do Adobe Commerce em que ocorre uma exceção ao carregar preços do produto com limites inferiores e superiores definidos como *$0*.
 feature: Categories, Products, Storefront, Search
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a7d05108-0b03-4eb4-84ab-0dc5601530cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54264: erro quando o cliente tenta fazer check-out com uma cotação negociável"
+title: 'ACSD-54264: erro quando o cliente tenta fazer check-out com a cotação negociável'
 description: Aplique o patch ACSD-54264 para corrigir o problema do Adobe Commerce em que uma mensagem de erro "Você não pode atualizar o atributo solicitado. A linha ID:store_id" aparece quando um cliente tenta fazer check-out com uma cotação negociável de outra visualização de loja.
 feature: B2B, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b1696228-b2ed-44eb-9e75-bf25ccf2f1cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%

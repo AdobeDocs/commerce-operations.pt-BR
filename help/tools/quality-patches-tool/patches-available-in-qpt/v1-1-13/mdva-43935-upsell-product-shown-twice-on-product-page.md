@@ -1,9 +1,10 @@
 ---
-title: "MDVA-43935: produto de venda adicional mostrado duas vezes na página do produto"
+title: 'MDVA-43935: produto de venda adicional mostrado duas vezes na página do produto'
 description: O patch MDVA-43935 corrige o problema em que o produto de venda adicional é mostrado duas vezes na página do produto. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 está instalada. A ID do patch é MDVA-43935. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 feature: Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f076b29a-b2de-4549-9216-407c50a3e3e5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

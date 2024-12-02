@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46617: **[!UICONTROL Continue to Checkout]** botão esmaecido quando o subtotal é maior que o valor mínimo de pedido configurado'
+title: 'ACSD-46617: botão **[!UICONTROL Continue to Checkout]** esmaecido quando o subtotal é maior que o valor mínimo de pedido configurado'
 description: Aplique o patch ACSD-46617 para resolver o problema do Adobe Commerce em que o botão **[!UICONTROL Continue to Checkout]** fica esmaecido mesmo se o subtotal for maior que a quantidade mínima de pedido configurada.
 feature: Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

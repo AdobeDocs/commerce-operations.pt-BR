@@ -1,7 +1,8 @@
 ---
-title: "ACSD-51240: arquivo carregado ausente durante o registro por meio do formulário de registro da empresa"
+title: 'ACSD-51240: arquivo carregado ausente durante o registro por meio do formulário de registro da empresa'
 description: Aplique o patch ACSD-51240 para corrigir o problema do Adobe Commerce em que o arquivo carregado está ausente durante o registro por meio do formulário de registro da empresa.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 78e339d6-435e-4856-9f57-98bb955d093c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "MDVA-42657: Não é possível selecionar categorias nas condições do segmento do cliente"
+title: 'MDVA-42657: Não é possível selecionar categorias nas condições do segmento do cliente'
 description: O patch MDVA-42657 resolve o problema em que o usuário administrador não consegue selecionar categorias nas condições do segmento do cliente. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 está instalada. A ID do patch é MDVA-42657. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 feature: Categories, Console, Customer Service
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 115bad99-a603-4940-897e-034974ed1a6c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 0%

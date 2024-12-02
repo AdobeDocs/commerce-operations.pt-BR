@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41597: erro ao adicionar mais de um produto configurável ao carrinho"
+title: 'MDVA-41597: erro ao adicionar mais de um produto configurável ao carrinho'
 description: O patch MDVA-41597 corrige o problema em que os usuários recebem um erro ao adicionar mais de um produto configurável ao carrinho usando o GraphQL. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 está instalada. A ID do patch é MDVA-41597. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: Configuration, Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: a4bb2aea-c477-40f0-a016-50886dc2cd4b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54067: o vídeo do produto não é reproduzido no dispositivo móvel"
+title: 'ACSD-54067: o vídeo do produto não é reproduzido no dispositivo móvel'
 description: Aplique o patch ACSD-54067 para corrigir o problema do Adobe Commerce em que um vídeo de produto não é reproduzido em um dispositivo móvel.
 feature: Media, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 023e7cf7-c344-4e86-850d-741b85df87a9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52287: o status dos pedidos arquivados não é alterado"
+title: 'ACSD-52287: o status dos pedidos arquivados não é alterado'
 description: Aplique o patch ACSD-52287 para corrigir o problema do Adobe Commerce em que o status dos pedidos arquivados não muda de *concluído* para *fechado* na grade após o envio do memorando de crédito.
 feature: Orders, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 012f49ba-fdc1-4e1e-87fe-7b9c661f231b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60632: endereço salvo com cada tentativa de pedido"
+title: 'ACSD-60632: Endereço salvo com cada tentativa de pedido'
 description: Aplique o patch ACSD-60632 para corrigir o problema do Adobe Commerce em que um novo endereço é salvo a cada tentativa de inserção de pedido, independentemente de o pedido ser criado com sucesso ou não.
 feature: Orders, Products
 role: Admin, Developer
-source-git-commit: d68d6f7501e7dd6faf36f8506d1b0aab028eed58
+exl-id: 9b623a1c-594f-47ed-82b4-d11ba20f3a58
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

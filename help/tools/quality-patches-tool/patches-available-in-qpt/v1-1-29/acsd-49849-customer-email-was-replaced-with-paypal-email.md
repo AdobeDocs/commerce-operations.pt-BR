@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49849: o email do cliente foi substituído pelo email do PayPal"
+title: 'ACSD-49849: o email do cliente foi substituído pelo email do PayPal'
 description: Aplique o patch ACSD-49849 para corrigir o problema do Adobe Commerce em que o email do cliente foi substituído pelo email do PayPal ao fazer um pedido no PayPal Express via GraphQL.
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1d7a2bde-892a-4ded-a4b4-9450989c8aee
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%

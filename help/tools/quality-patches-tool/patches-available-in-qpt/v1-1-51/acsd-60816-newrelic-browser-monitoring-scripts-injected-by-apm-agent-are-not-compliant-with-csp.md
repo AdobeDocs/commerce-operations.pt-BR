@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60816: [!DNL New Relic] os scripts de monitoramento de navegador inseridos pelo agente APM não são compatíveis com o CSP"
+title: 'ACSD-60816: [!DNL New Relic] os scripts de monitoramento de navegador inseridos pelo agente APM não são compatíveis com o CSP'
 description: Aplique o patch ACSD-60816 para corrigir o problema do Adobe Commerce em que os  [!DNL New Relic] scripts de monitoramento de navegador inseridos pelo agente APM não estão em conformidade com a Política de Segurança de Conteúdo (CSP), impedindo sua execução.
 feature: Tools and External Services, Checkout
 role: Admin, Developer
-source-git-commit: 278cc668a9d6746a38845e54d173260e1a65bb22
+exl-id: d03c25e0-ed25-4877-8470-737d3499473f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%

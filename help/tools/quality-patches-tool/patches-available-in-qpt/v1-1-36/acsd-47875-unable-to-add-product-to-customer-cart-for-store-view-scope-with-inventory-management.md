@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47875: não é possível adicionar o produto ao carrinho para o escopo de exibição da loja com o gerenciamento de estoque"
+title: 'ACSD-47875: Não é possível adicionar o produto ao carrinho para o escopo de exibição da loja com o gerenciamento de estoque'
 description: Aplique o patch ACSD-47875 para corrigir o problema do Adobe Commerce em que um produto não pode ser adicionado ao carrinho do cliente do Administrador para um escopo de exibição de loja específico com gerenciamento de estoque.
 feature: Inventory, Shopping Cart, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 10862e09-d561-4ed5-ab6f-cf002fae6850
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

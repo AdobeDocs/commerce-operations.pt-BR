@@ -1,15 +1,15 @@
 ---
-title: "ACSD-58163: [!UICONTROL Cart Price Rule] não aplica desconto do carrinho [!UICONTROL Customer Segment] correspondente sem código de cupom"
+title: 'ACSD-58163: [!UICONTROL Cart Price Rule] não aplica desconto do carrinho [!UICONTROL Customer Segment] correspondente sem código de cupom'
 description: Aplique o patch ACSD-58163 para corrigir o problema do Adobe Commerce em que o [!UICONTROL Cart Price Rule] não aplica um desconto para um convidado do carrinho [!UICONTROL Customer Segment] correspondente sem um código de cupom.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 209a50f7-32d9-40e9-bfd5-4658e4ca392d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58163: [!UICONTROL Cart Price Rule] não aplica desconto do carrinho [!UICONTROL Customer Segment] correspondente sem código de cupom
 

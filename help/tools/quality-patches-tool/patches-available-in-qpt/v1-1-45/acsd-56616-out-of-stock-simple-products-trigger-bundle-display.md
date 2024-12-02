@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56616: Exibição de vitrine de produtos empacotados durante a escassez simples de estoque"
+title: 'ACSD-56616: Exibição de vitrine de produtos empacotados durante a escassez simples de estoque'
 description: Aplique o patch ACSD-56616 para corrigir o problema do Adobe Commerce em que os produtos empacotados aparecem inesperadamente na loja quando todos os produtos simples associados estão esgotados.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8b225d9d-1898-4c4d-81be-7b92cbf7d06f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

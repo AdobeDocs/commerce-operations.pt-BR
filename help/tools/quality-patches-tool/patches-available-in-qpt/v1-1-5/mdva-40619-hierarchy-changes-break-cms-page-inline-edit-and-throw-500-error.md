@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40619: As alterações de hierarquia interrompem a edição em linha da página do CMS e geram um erro 500"
+title: 'MDVA-40619: as alterações de hierarquia interrompem a edição em linha da página do CMS e geram o erro 500'
 description: O patch MDVA-40619 resolve o problema em que a hierarquia de páginas do CMS altera a edição em linha da página do CMS e emite "erro 500". Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 está instalada. A ID do patch é MDVA-40619. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: CMS
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 148cb0a5-5a6c-4cfa-bf95-4bafc57beec6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%

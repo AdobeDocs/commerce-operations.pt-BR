@@ -1,5 +1,5 @@
 ---
-title: "ACSD-60804: editar um cliente associado a uma empresa excluída resulta em um erro"
+title: 'ACSD-60804: editar um cliente associado a uma empresa excluída resulta em um erro'
 description: Aplique o patch ACSD-60804 para corrigir o problema do Adobe Commerce em que editar um cliente associado a uma empresa excluída causa um erro *Chamada para uma função membro getSuperUserId() em null*.
 feature: Companies, Customers, B2B
 role: Admin, Developer

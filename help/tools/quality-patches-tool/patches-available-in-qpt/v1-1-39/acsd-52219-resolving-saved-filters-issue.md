@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52219: Resolução de um problema de filtro de grades do administrador na alternância da exibição de marcador"
+title: 'ACSD-52219: Resolução de um problema de filtro de grades de administrador na alternância da exibição de marcador'
 description: Aplique o patch ACSD-52219 para corrigir o problema do Adobe Commerce em que os filtros salvos das grades de administrador não funcionam como esperado ao alternar frequentemente entre exibições de marcadores.
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3f1af6ba-88a0-480c-b16e-c00c655e346f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

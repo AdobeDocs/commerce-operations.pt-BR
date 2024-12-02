@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54885: exceção durante a finalização de vários endereços quando o administrador faz logon como cliente"
+title: 'ACSD-54885: exceção durante a finalização de vários endereços quando o administrador faz logon como cliente'
 description: Aplique o patch ACSD-54885 para corrigir o problema do Adobe Commerce em que ocorre um erro durante a verificação de vários endereços quando o administrador está usando a funcionalidade *[!UICONTROL Login as Customer]*.
 feature: Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c146bc2a-2df1-4825-9cfc-69e04095b3c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

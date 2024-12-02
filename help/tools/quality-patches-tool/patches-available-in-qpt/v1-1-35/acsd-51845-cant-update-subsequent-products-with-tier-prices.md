@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51845: não é possível atualizar produtos subsequentes com preços de camada e conjuntos de atributos diferentes por meio de massa assíncrona [!DNL API]"
+title: 'ACSD-51845: não é possível atualizar produtos subsequentes com preços de camada e conjuntos de atributos diferentes por meio de um volume assíncrono [!DNL API]'
 description: Aplique o patch ACSD-51845 para corrigir o problema do Adobe Commerce, em que não é possível atualizar produtos subsequentes com preços de camada e diferentes conjuntos de atributos por meio de massa assíncrona [!DNL REST API].
 feature: REST, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 83d97946-83da-4c1b-8f2a-21a64ee84e93
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

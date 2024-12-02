@@ -3,7 +3,8 @@ title: 'ACSD-61756: degradação de desempenho de filtros "AdvancedSalesRule" de
 description: Aplique o patch ACSD-61756 para corrigir o problema do Adobe Commerce em que a consulta "magento_salesrule_filter" executa uma verificação de tabela completa sem usar índices, resultando em degradação de desempenho ao manipular grandes volumes de registros. Este patch melhora o desempenho adicionando os índices de banco de dados ausentes para filtros "AdvancedSalesRule".
 feature: Price Rules, Price Indexer
 role: Admin, Developer
-source-git-commit: 42a376d1a791a17d88bea68dfef178a7b2849ce2
+exl-id: 418c7c40-83ee-4cd9-8ebb-b356886ffb58
+source-git-commit: 23e92bb9032001134d2696be498a4c384f323c36
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%

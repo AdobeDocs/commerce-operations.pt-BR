@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52202: A quantidade padrão de estoque comercializável muda para 0 com erro quando o estoque não padrão é definido como 0 qtd. na ordem"
+title: 'ACSD-52202: A quantidade padrão de estoque comercializável muda para 0 com erro quando o estoque não padrão é definido como 0 qtd. na ordem'
 description: Aplique o patch ACSD-52202 para corrigir o problema do Adobe Commerce em que uma quantidade padrão vendável de estoque é alterada para 0 com erro quando a quantidade sem estoque padrão é definida como 0 em um pedido.
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2ba5cc3b-9774-49f6-948f-371ab3c0c9df
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

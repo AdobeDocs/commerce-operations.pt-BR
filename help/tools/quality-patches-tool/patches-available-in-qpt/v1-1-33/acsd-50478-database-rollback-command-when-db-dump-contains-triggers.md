@@ -1,7 +1,8 @@
 ---
-title: "ACSD-50478: Problema de JS para ação de reversão na grade de backups e no comando de reversão do banco de dados"
+title: 'ACSD-50478: Problema de JS para ação de reversão na grade de backups e comando de reversão do banco de dados'
 description: Aplique o patch ACSD-50478 para corrigir o problema de JS para a ação de reversão na grade de backups e o comando de reversão do banco de dados para um caso em que o despejo do banco de dados contém acionadores e um comando SQL *delimitador*.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2f47fbf6-44fc-487c-91fe-6e2e52fcdb2b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

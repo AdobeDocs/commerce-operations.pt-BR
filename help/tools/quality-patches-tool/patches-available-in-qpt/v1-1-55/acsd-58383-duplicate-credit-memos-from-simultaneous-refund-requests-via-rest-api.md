@@ -1,5 +1,5 @@
 ---
-title: "ACSD-58383: memorandos de crédito duplicados de solicitações de reembolso simultâneas via [!DNL REST API]"
+title: 'ACSD-58383: Avisos de crédito duplicados de solicitações de reembolso simultâneas via  [!DNL REST API]'
 description: Aplique o patch ACSD-58383 para corrigir o problema do Adobe Commerce em que a emissão de um reembolso via  [!DNL REST API]  com duas solicitações idênticas executadas simultaneamente cria avisos de crédito duplicados.
 feature: REST, Payments, Returns
 role: Admin, Developer

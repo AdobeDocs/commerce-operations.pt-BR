@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55352: Criação de avisos de crédito com pontos de recompensa"
+title: 'ACSD-55352: Criação de avisos de crédito com pontos de premiação'
 description: Aplique o patch ACSD-55352 para corrigir o problema do Adobe Commerce em que, após criar um aviso de crédito parcial com pontos de premiação do cliente, o status do pedido muda para *fechado* e as opções de aviso de crédito desaparecem da página de pedido do administrador.
 feature: Checkout, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%

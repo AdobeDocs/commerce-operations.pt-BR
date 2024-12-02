@@ -3,7 +3,8 @@ title: 'ACSD-46519: [!UICONTROL product_count] em [!UICONTROL categoryList] [!DN
 description: Aplique o patch ACSD-46519 para corrigir o problema do Adobe Commerce em que, ao usar o método [!UICONTROL categoryList] [!DNL GraphQL]  para obter categorias secundárias, ele mostra [!UICONTROL product_count] como 0 para categorias principais.
 feature: Categories, GraphQL, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7becaa4e-421a-4983-ac73-f5b58fc45d8f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60303: problema de posicionamento de pedido de administrador resolvido com a minificação de HTML ativada"
+title: 'ACSD-60303: problema de posicionamento de pedido de administrador resolvido com a minificação de HTML ativada'
 description: Aplique o patch ACSD-60303 para corrigir o problema do Adobe Commerce em que um pedido do administrador não pode ser feito se a minificação de HTML estiver ativada.
 feature: Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 85b987e7-9d65-4d15-8099-985dc227b66c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

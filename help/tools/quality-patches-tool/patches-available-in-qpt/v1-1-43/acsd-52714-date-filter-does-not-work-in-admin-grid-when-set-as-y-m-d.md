@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52714: o filtro de data não funciona na grade do administrador quando definido como y-m-d"
+title: 'ACSD-52714: o filtro de data não funciona na grade de administração quando definido como y-m-d'
 description: Aplique o patch ACSD-52714 para corrigir o problema do Adobe Commerce em que o filtro de data não funciona na grade de administração quando o formato de data é definido como y-m-d.
 feature: Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4a34900b-9566-41bb-8d3e-18a440117907
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

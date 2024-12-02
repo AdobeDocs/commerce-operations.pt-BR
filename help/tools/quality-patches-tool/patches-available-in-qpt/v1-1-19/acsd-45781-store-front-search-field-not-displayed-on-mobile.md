@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45781: o campo de pesquisa frontal da loja não é exibido no celular"
+title: 'ACSD-45781: O campo de pesquisa frontal da loja não é exibido no celular'
 description: O patch MDVA-45781 resolve o problema em que o campo de pesquisa frontal da loja não é exibido em dispositivos móveis. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 está instalada. A ID do patch é MDVA-45781. Observe que o problema foi corrigido no Adobe Commerce 2.4.3.
 feature: Cache, Native Luma Frontend Development, Search
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f761461b-2dd0-45d2-b80d-57793f6f0924
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

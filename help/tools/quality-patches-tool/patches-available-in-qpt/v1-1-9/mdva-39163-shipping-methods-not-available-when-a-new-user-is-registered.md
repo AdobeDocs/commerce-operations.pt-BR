@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39163: Métodos de envio não disponíveis para usuários recém-registrados com produtos da sessão de convidado"
+title: 'MDVA-39163: Métodos de envio não disponíveis para usuários recém-registrados com produtos da sessão de convidado'
 description: O patch MDVA-39163 resolve o problema em que os métodos de envio não estão disponíveis quando um novo usuário é registrado e os produtos no carrinho são da sessão de convidado. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 está instalada. A ID do patch é MDVA-39163. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 feature: CMS, Marketing Tools, Orders, Products, Shipping/Delivery
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 781b466b-7d8f-4ad1-9fb4-5404cd02f7d8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 0%

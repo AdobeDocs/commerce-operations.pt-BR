@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51149: Agendado [!UICONTROL ImportExport] com [!UICONTROL Catalog Permissions] habilitado invalida indexadores"
+title: 'ACSD-51149: Agendado [!UICONTROL ImportExport] com [!UICONTROL Catalog Permissions] habilitado invalida indexadores'
 description: Aplique o patch ACSD-51149 para corrigir o problema de desempenho do Adobe Commerce em que o [!UICONTROL ImportExport] agendado com [!UICONTROL Catalog Permissions] habilitado invalida os indexadores.
 feature: Cache, Data Import/Export
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: eafc69ab-ec81-4192-85f8-a235f0a131a9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%

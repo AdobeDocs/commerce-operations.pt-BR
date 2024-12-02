@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46541: um usuário administrador não pode criar um aviso de crédito se um item de pedido for excluído"
+title: 'ACSD-46541: Um usuário administrador não pode criar um aviso de crédito se um item de pedido for excluído'
 description: Aplique o patch ACSD-46541 para corrigir o problema do Adobe Commerce em que, uma vez excluído o produto, não é possível criar um memorando de crédito no Administrador do Adobe Commerce.
 feature: Admin Workspace, Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c46ee888-92b1-4798-bd2b-1a082fd1406a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

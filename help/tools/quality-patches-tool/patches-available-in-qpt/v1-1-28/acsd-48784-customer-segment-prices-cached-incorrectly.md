@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48784: preços de segmento do cliente armazenados em cache incorretamente entre grupos de clientes"
+title: 'ACSD-48784: preços de segmento do cliente armazenados incorretamente em cache entre grupos de clientes'
 description: Aplique o patch ACSD-48784 para corrigir o problema do Adobe Commerce em que os preços de segmento do cliente são armazenados em cache incorretamente entre grupos de clientes.
 feature: Admin Workspace, Cache, Customer Service, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a691c61c-fdba-4d6a-8314-095dfb0ba4a1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

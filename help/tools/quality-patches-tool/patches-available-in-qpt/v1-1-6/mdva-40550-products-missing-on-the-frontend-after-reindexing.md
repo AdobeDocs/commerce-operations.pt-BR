@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40550: produtos ausentes no front-end após a reindexação"
+title: 'MDVA-40550: Produtos ausentes no front-end após reindexação'
 description: O patch MDVA-40550 resolve o problema em que a reindexação resulta na ausência de produtos em algumas ou todas as categorias da loja. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 está instalada. A ID do patch é MDVA-40550. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: Categories, Console, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 5ce7e341-e165-4668-9de7-8e9ca3a70c70
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

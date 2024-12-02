@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45849: os metadados de vídeo são perdidos após a atualização de preparo"
+title: 'ACSD-45849: os metadados de vídeo são perdidos após a atualização de preparo'
 description: O patch ACSD-45849 corrige o problema em que os metadados de vídeo são perdidos após a aplicação de uma atualização de preparo. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 está instalada. A ID do patch é ACSD-45849. Observe que o problema foi corrigido no Adobe Commerce 2.4.4.
 feature: Staging, Page Content
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: cbab0120-585a-47ef-8ed9-abb2da1ec3d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

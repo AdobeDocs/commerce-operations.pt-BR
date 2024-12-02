@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45169: o Visual Merchandiser exibe ações e preços incorretos para o produto configurável"
+title: 'ACSD-45169: o Visual Merchandiser exibe ações e preços incorretos para o produto configurável'
 description: O patch ACSD-45169 corrige o problema em que o Visual Merchandiser não exibe o estoque e o preço corretos de um produto configurável após a aplicação de uma atualização de preparo. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 está instalada. A ID do patch é ACSD-45169. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.6.
 feature: Categories, Configuration, Merchandising, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 3f1218ee-2fd0-4f3e-80d7-7e6f9342e0fb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

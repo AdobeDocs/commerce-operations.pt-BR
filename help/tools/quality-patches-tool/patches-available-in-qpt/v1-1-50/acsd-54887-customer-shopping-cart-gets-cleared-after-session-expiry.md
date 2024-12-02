@@ -1,15 +1,15 @@
 ---
-title: "ACSD-54887: o carrinho de compras do cliente é limpo depois que a sessão do cliente expira"
+title: 'ACSD-54887: o carrinho de compras do cliente é limpo depois que a sessão do cliente expira'
 description: Aplique o patch ACSD-54887 para corrigir o problema do Adobe Commerce em que o carrinho de compras do cliente é limpo depois que a sessão do cliente expira com o [!UICONTROL Persistent Shopping Cart] ativado.
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: de2a96b2-48ce-4b9b-93bc-f7b64c37463a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-54887: o carrinho de compras do cliente é limpo depois que a sessão do cliente expira
 
@@ -71,4 +71,3 @@ Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
 
 Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no guia [!DNL Quality Patches Tool].
-

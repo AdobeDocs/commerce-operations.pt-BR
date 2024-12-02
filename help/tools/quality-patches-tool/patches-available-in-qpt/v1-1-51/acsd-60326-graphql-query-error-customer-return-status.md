@@ -1,11 +1,12 @@
 ---
-title: "ACSD-60326: a consulta do GraphQL no status do cliente [!UICONTROL Returns] fornece um erro"
+title: 'ACSD-60326: a consulta GraphQL no status do cliente [!UICONTROL Returns] fornece um erro'
 description: Aplique o patch ACSD-60326 para corrigir o problema do Adobe Commerce em que ocorre um erro na consulta do GraphQL para o status do cliente [!UICONTROL Returns].
 feature: GraphQL, Returns, Customers
 role: Admin, Developer
-source-git-commit: d7455f78009358bf20b07bd35122c4cab147351a
+exl-id: 5cfd7e0d-8703-43a0-86d3-e69612347534
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---

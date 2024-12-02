@@ -1,9 +1,10 @@
 ---
-title: 'Erro "MDVA-40311: "Chave de formulário ou segurança inválida" após fazer logon no Administrador se o caminho de administrador personalizado estiver configurado"'
-description: '"O patch MDVA-40311 corrige o problema em que o usuário administrador recebe uma mensagem de erro: *Chave de segurança ou formulário inválida. Atualize a página* após fazer logon no Administrador se o caminho de administração personalizado estiver configurado e a chave secreta estiver ativada. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 está instalada. A ID do patch é MDVA-40311. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.'''
+title: 'MDVA-40311: Erro "Chave de formulário ou segurança inválida" após fazer logon no Administrador se o caminho de administrador personalizado estiver configurado'
+description: 'O patch MDVA-40311 corrige o problema em que o usuário administrador recebe uma mensagem de erro: *Chave de segurança ou formulário inválida. Atualize a página* após fazer logon no Administrador se o caminho de administração personalizado estiver configurado e a chave secreta estiver ativada. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 está instalada. A ID do patch é MDVA-40311. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.'
 feature: Admin Workspace, Compliance, Security
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: dce4914b-e32e-4af0-be24-e55680191fa3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%

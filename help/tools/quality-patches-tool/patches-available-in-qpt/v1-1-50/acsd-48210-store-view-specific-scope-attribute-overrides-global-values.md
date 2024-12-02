@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48210: o atributo de escopo específico da exibição de armazenamento substitui os valores globais"
+title: 'ACSD-48210: o atributo de escopo específico da exibição de armazenamento substitui os valores globais'
 description: Aplique o patch ACSD-48210 para corrigir o problema do Adobe Commerce de atualizar um atributo *[!UICONTROL Website Scope]* em uma exibição de repositório específica que substitui os valores de atributo no escopo global.
 feature: Products, Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 944089c6-2f05-4c51-86ea-ede124bff80b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

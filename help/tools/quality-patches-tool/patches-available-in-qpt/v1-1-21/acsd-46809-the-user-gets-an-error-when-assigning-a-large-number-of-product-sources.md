@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46809: o usuário recebe um erro ao atribuir um grande número de fontes de produtos"
+title: 'ACSD-46809: o usuário recebe um erro ao atribuir um grande número de fontes de produtos'
 description: Aplique o patch ACSD-46809 para corrigir o problema do Adobe Commerce em que o usuário recebe um erro ao atribuir um grande número de fontes de produtos.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4225f49b-84a1-4641-a05b-ba6ada6e83be
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%

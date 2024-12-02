@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45168: URLs amigáveis para SEO não geradas para produtos que têm atributos url_key substituídos"
+title: 'ACSD-45168: URLs amigáveis para SEO não geradas para produtos que têm atributos url_key substituídos'
 description: Aplique o patch ACSD-45168 para corrigir o problema do Adobe Commerce, em que URLs amigáveis para SEO não gerados para produtos que têm atributos url_key substituídos no nível da visualização da loja.
 feature: Attributes, Cache, Categories, Marketing Tools, Products
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 7d908307-f60c-4758-ad0f-f108ebb94558
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%

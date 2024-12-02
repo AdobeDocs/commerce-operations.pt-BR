@@ -1,9 +1,10 @@
 ---
-title: "MDVA-43731: Os sinônimos de pesquisa não funcionam quando o valor é adicionado em 'Termos mínimos para correspondência'"
+title: 'MDVA-43731: Os sinônimos de pesquisa não funcionam quando o valor é adicionado em "Termos mínimos para correspondência"'
 description: O patch MDVA-43731 corrige o problema em que os Sinônimos de pesquisa param de funcionar quando um valor é adicionado em "Termos mínimos para correspondência". Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 está instalada. A ID do patch é MDVA-43731. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 feature: Cache, Marketing Tools, Search
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 1eada0cd-c0ab-4f0f-b6bf-7c10e1df07ce
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%

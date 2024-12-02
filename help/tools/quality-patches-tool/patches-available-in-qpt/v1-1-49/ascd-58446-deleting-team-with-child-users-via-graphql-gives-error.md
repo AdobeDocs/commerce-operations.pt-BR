@@ -1,9 +1,10 @@
 ---
-title: "ACSD-58446: excluir uma equipe com usuários ou equipes secundárias por meio do GraphQL gera uma mensagem de erro não informativa"
+title: 'ACSD-58446: excluir uma equipe com usuários ou equipes secundárias por meio do GraphQL gera uma mensagem de erro não informativa'
 description: Aplique o patch ACSD-58446 para corrigir o problema do Adobe Commerce em que a exclusão de uma equipe com usuários ou equipes secundários por meio do GraphQL retorna uma mensagem de erro não informativa inconsistente com a interface do usuário.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 943ab281-cc41-4b96-8a7c-fff8c074267c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%

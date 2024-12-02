@@ -1,7 +1,8 @@
 ---
-title: "ACSD-52277: o usuário administrador redirecionou incorretamente ao selecionar a exibição da loja ao criar um novo pedido"
+title: 'ACSD-52277: o usuário administrador redirecionou incorretamente ao selecionar a exibição da loja ao criar um novo pedido'
 description: Aplique o patch ACSD-52277 para corrigir o problema do Adobe Commerce em que um usuário administrador não é redirecionado corretamente após selecionar a exibição da loja ao criar um novo pedido no Admin.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 61ef59a9-7a31-441f-a763-2d8016498fa7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

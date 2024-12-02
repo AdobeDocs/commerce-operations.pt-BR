@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54965: a grade [!UICONTROL Visual Merchandising] não exibe o estoque correto"
+title: 'ACSD-54965: a grade [!UICONTROL Visual Merchandising] não exibe o estoque correto'
 description: Aplique o patch ACSD-54965 para corrigir o problema do Adobe Commerce em que a grade [!UICONTROL Visual Merchandising] não exibe o estoque correto quando um produto é atribuído ao estoque personalizado.
 feature: Merchandising, Categories
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bd8a3547-1d84-4a17-b006-b35d92256211
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

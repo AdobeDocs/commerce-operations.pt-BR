@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61200: Corrige a compensação de imposto de desconto nos cálculos do total de vendas"
+title: 'ACSD-61200: Corrige a compensação de imposto de desconto em cálculos de total de vendas'
 description: Aplique o patch ACSD-61200 para corrigir o problema do Adobe Commerce em que *[!UICONTROL Discount Tax Compensation Amount]* e *[!UICONTROL Shipping Discount Tax Compensation Amount]* estão ausentes nos cálculos do total de vendas, causando discrepâncias entre os dados da ordem de venda e os dados do relatório de cupom.
 feature: Reporting, Taxes
 role: Admin, Developer
-source-git-commit: 61259d8e059cd813a84907e4baef873b2cc8cad0
+exl-id: eb908827-de29-4b2c-b094-b5db0931cd52
+source-git-commit: 2e82c935145d71d0c66c531003fa51f564da6e41
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "MDVA-43167: a ação em massa da grade de ordem do administrador não se aplica a páginas múltiplas"
+title: 'MDVA-43167: a ação em massa da grade de ordem do administrador não se aplica a páginas múltiplas'
 description: O patch MDVA-43167 corrige o problema em que a ação em massa da grade de ordem do administrador não se aplica a várias páginas quando o usuário administrador seleciona todos os pedidos. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.16 está instalada. A ID do patch é MDVA-43167. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.6.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 992f8a90-300e-41aa-b03d-b8a647dddd51
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

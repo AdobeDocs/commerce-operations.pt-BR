@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40601: Não é possível recuperar dados sobre categoria alterada pela atualização agendada via GraphQL"
+title: 'MDVA-40601: Não é possível recuperar dados sobre categoria alterada pela atualização agendada via GraphQL'
 description: O patch de qualidade MDVA-40601 do Adobe Commerce corrige o problema em que os usuários recebem um erro ao obter informações sobre a categoria alterada por atualização agendada por meio do GraphQL. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 está instalada. A ID do patch é MDVA-40601. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: Categories, GraphQL
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: c50e9f77-66eb-4c4c-b0b5-b77db84a4a0b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57315: Uma nova transação é criada em  [!DNL PayPal Payflow Pro] sempre que o botão Buscar é clicado"
+title: 'ACSD-57315: Nova transação criada em  [!DNL PayPal Payflow Pro]  sempre que o botão Buscar é clicado'
 description: Aplique o patch ACSD-57315 para corrigir o problema do Adobe Commerce em que uma nova transação é criada no  [!DNL PayPal Payflow Pro]  sempre que o botão buscar é clicado na tela exibir transação no [!UICONTROL Admin].
 feature: Payments
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1fb8a5af-fda1-4c24-859d-d45424bde12f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

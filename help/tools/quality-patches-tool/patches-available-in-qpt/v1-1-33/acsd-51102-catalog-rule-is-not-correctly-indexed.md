@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51102: regra de catálogo aplicada a um grande número de produtos não indexados corretamente"
+title: 'ACSD-51102: regra de catálogo aplicada a um grande número de produtos não indexados corretamente'
 description: Aplique o patch ACSD-51102 para corrigir o problema do Adobe Commerce em que uma regra de catálogo aplicada a um grande número de produtos não é indexada corretamente quando a regra é ativada por uma atualização programada.
 feature: Catalog Management, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 35a8078d-667b-4101-8562-ece052b44c9c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%

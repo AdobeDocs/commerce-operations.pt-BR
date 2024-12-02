@@ -1,9 +1,10 @@
 ---
-title: "MDVA-37592: A classificação por preço não funciona para produtos com preço zero"
+title: 'MDVA-37592: A classificação por preço não funciona para produtos com preço zero'
 description: O patch do Adobe Commerce MDVA-37592 resolve o problema em que a classificação por preço não funciona corretamente para produtos com preço zero atribuído a um catálogo compartilhado. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0 está instalada. A ID do patch é MDVA-37592. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: B2B, Catalog Management, Categories, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4d4a158c-2020-42a4-9b8b-14c9b48b4107
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

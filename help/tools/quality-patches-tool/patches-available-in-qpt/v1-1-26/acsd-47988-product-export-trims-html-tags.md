@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47988: a exportação de produtos elimina tags HTML da descrição do produto do page builder"
+title: 'ACSD-47988: a exportação de produtos elimina tags HTML do construtor de páginas Descrição do produto'
 description: Aplique o patch ACSD-47988 para corrigir o problema do Adobe Commerce em que a exportação de produto elimina tags HTML da descrição do produto do page builder.
 feature: Admin Workspace, Data Import/Export, Page Builder, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2cb3b4ac-38df-4832-b894-b34bb3d7bbc6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%

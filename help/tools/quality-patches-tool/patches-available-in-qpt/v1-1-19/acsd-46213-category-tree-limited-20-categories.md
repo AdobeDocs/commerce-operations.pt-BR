@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46213: solicitação de árvore de categoria limitada a 20 categorias"
-description: '"O patch ACSD-46213 corrige o problema em que a solicitação da árvore de categorias é limitada a 20 categorias. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 está instalada. A ID do patch é ACSD-46213. '''
+title: 'ACSD-46213: solicitação de árvore de categoria limitada a 20 categorias'
+description: 'O patch ACSD-46213 corrige o problema em que a solicitação da árvore de categorias é limitada a 20 categorias. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 está instalada. A ID do patch é ACSD-46213. '
 feature: Categories
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 2cd4b102-db52-424f-9a7f-d775cb2b2c49
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%

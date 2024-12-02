@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40488: produtos configuráveis com produtos secundários indisponíveis não mostrados na faixa de preço correta"
+title: 'MDVA-40488: produtos configuráveis com produtos secundários indisponíveis não mostrados na faixa de preço correta'
 description: O patch MDVA-40488 resolve o problema em que os produtos configuráveis com produtos secundários esgotados não são mostrados em sua faixa de preço correta. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 está instalada. A ID do patch é MDVA-40488. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: Configuration, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 9a843d1b-88df-4bd7-a358-3aa34c436bdf
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%

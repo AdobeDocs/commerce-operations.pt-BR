@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47004: IVA não aplicado ao endereço de faturamento sem ID de IVA"
+title: 'ACSD-47004: IVA não aplicado ao endereço de faturamento sem ID de IVA'
 description: Aplique o patch ACSD-47004 para corrigir o problema do Adobe Commerce em que o IVA não é aplicado a um endereço de faturamento sem uma ID de IVA.
 feature: Customer Service, Shipping/Delivery, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 72a64937-1c04-4fc2-bc61-fd2056e24419
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 1%

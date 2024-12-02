@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49835: a caixa de seleção [!UICONTROL Use Default Value] não está salva"
+title: 'ACSD-49835: a caixa de seleção [!UICONTROL Use Default Value] não está salva'
 description: Aplique o patch ACSD-49835 para corrigir o problema do Adobe Commerce em que a caixa de seleção [!UICONTROL Use Default Value] não é salva corretamente em um nível de armazenamento para um atributo de seleção múltipla.
 feature: Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e8d5a95f-b17d-49fc-a6d3-e03554667438
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%

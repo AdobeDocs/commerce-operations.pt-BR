@@ -1,9 +1,10 @@
 ---
-title: "MDVA-32776: status do estoque não atualizado com o posicionamento do pedido"
+title: 'MDVA-32776: Status do estoque não atualizado com posicionamento do pedido'
 description: O patch MDVA-32776 corrige o problema em que o status do estoque não é atualizado quando um pedido é feito, mas não enviado. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 está instalada. A ID do patch é MDVA-32776. Observe que o problema foi corrigido no Adobe Commerce 2.4.2.
 feature: Orders
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 6f872c72-c96f-4c23-b6df-44e3da3a81c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%

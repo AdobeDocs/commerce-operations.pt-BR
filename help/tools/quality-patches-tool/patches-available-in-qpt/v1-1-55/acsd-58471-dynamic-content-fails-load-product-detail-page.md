@@ -1,5 +1,5 @@
 ---
-title: "ACSD-58471: o conteúdo dinâmico não é carregado na página de detalhes do produto quando as regras de preço de catálogo associadas são agendadas"
+title: 'ACSD-58471: falha no carregamento do conteúdo dinâmico na página de detalhes do produto, quando as regras de preço de catálogo associadas foram agendadas'
 description: Aplique o patch ACSD-58471 para corrigir o problema do Adobe Commerce em que o conteúdo dinâmico falha ao carregar na página de detalhes do produto, quando as regras de preço de catálogo associadas foram agendadas.
 feature: Catalog Management
 role: Admin, Developer

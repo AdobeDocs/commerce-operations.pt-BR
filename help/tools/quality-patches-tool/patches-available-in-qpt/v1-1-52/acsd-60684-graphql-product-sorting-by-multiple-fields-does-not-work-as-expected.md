@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60684: [!DNL GraphQL] a classificação de produtos por vários campos não funciona conforme esperado"
+title: 'ACSD-60684: [!DNL GraphQL] a classificação de produtos por vários campos não funciona conforme esperado'
 description: Aplique o patch ACSD-60684 para corrigir o problema do Adobe Commerce, em que a classificação de produtos  [!DNL GraphQL]  por vários campos não funciona quando a classificação é passada em variáveis.
 feature: GraphQL, Products, Search
 role: Admin, Developer
-source-git-commit: 279036e9e7247ce915820a4b00173644ee7252b1
+exl-id: 1c29299b-c85f-4166-886b-357a1486e67e
+source-git-commit: a5dda25e502889ee0a23e99b412aeeb863de452c
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%

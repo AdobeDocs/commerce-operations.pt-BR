@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45520: opções de amostra não selecionadas na página de detalhes do produto"
+title: 'ACSD-45520: opções de amostra não selecionadas na página de detalhes do produto'
 description: O patch ACSD-45520 corrige o problema em que as opções de amostra não são pré-selecionadas na página de detalhes do produto quando um usuário edita produtos configuráveis do carrinho de compras. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 está instalada. A ID do patch é ACSD-45520. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.6.
 feature: Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: a8b37dba-5a02-45a9-8e43-5288352a9d75
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%

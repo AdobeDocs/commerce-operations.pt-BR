@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47079: status de estoque dos produtos compostos não atualizado quando o status do estoque de subprodutos é alterado"
+title: 'ACSD-47079: status do estoque de produtos compostos não atualizado quando o status do estoque de subprodutos é alterado'
 description: Aplique o patch ACSD-47079 para corrigir o problema do Adobe Commerce em que o status do estoque de produtos compostos (agrupados, agrupados e configuráveis) não é atualizado quando o status do estoque de subprodutos é alterado por meio do POST REST API /rest/V1/inventory/source-items.
 feature: Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f035f530-fae5-4b61-8af9-044f6ec02284
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
