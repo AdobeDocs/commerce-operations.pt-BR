@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 948881a32a1723398e71c9bd3c2173336878ee0d
+source-git-commit: 46c7053368bfab9c5975c5616be9b67050b93105
 workflow-type: tm+mt
-source-wordcount: '6399'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -672,6 +672,7 @@ ht-degree: 0%
          - [ACSD-61845: Ocorre um erro para solicitações com text/html accept header](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-58828: a mensagem &quot;o endereço é obrigatório&quot; do lado do servidor é exibida para qualquer campo obrigatório vazio, junto com a validação do lado do cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
          - [ACSD-61534: a configuração de design não pode ser definida usando a configuração bin/magento:set](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set.md)
          - [ACSD-61348: itens da lista de desejos visíveis via GraphQL, mas não na loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront.md)
          - [ACSD-61785: Não é possível atualizar o atributo reforço_warning_notification por meio de mutação do GraphQL e chamadas de API REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql.md)
