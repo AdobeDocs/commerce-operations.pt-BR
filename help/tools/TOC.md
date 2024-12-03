@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 8c7b6673ba27b4a36d7bf19722768a4ca24a9955
+source-git-commit: 948881a32a1723398e71c9bd3c2173336878ee0d
 workflow-type: tm+mt
-source-wordcount: '6390'
+source-wordcount: '6399'
 ht-degree: 0%
 
 ---
@@ -660,6 +660,7 @@ ht-degree: 0%
          - [ACSD-61667: melhora o desempenho do inventário para criar entregas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+         - [ACSD-61134: [!UICONTROL Braintree Vault] método de pagamento automaticamente desmarcado no fluxo de trabalho de check-out](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61134-braintree-vault-payment-method-is-automatically-deselected-in-the-checkout-workflow.md)
          - [ACSD-61756: degradação de desempenho de filtros AdvancedSalesRule devido à falta de índices de banco de dados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter.md)
          - [ACSD-60267: o FPT se aplica incorretamente quando os produtos são adicionados por meio de opções de produto configuráveis](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
          - [ACSD-61199: a guia [!UICONTROL Hierarchy] da página do CMS não exibe a estrutura de árvore apropriada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
