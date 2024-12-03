@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 088b9ce70ba89bad4ea82f60093de0e3bf050cf9
+source-git-commit: 8c7b6673ba27b4a36d7bf19722768a4ca24a9955
 workflow-type: tm+mt
-source-wordcount: '6377'
+source-wordcount: '6390'
 ht-degree: 0%
 
 ---
@@ -655,6 +655,7 @@ ht-degree: 0%
          - [ACSD-61528: a recuperação de funções usando o GraphQL não retorna resultados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318: erro de aninhamento de emulação de ambiente em &quot;system.log&quot;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
          - [ACSD-60804: editar um cliente associado a uma empresa excluída resulta em um erro](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
+         - [ACSD-61969: é necessário digitar o código do cupom conforme configurado em maiúsculas ou minúsculas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61969-required-type-coupon-code-as-configured-in-uppercase-lowercase.md)
          - [ACSD-61133: sales_clean_quotes cron exclui cotas de ordens de compra não aprovadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders.md)
          - [ACSD-61667: melhora o desempenho do inventário para criar entregas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
