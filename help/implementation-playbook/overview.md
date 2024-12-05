@@ -1,12 +1,12 @@
 ---
 title: Manual de implementação
-description: Saiba mais sobre as práticas recomendadas para planejamento, desenvolvimento, inicialização e manutenção do seu projeto do Adobe Commerce.
+description: Saiba mais sobre as práticas recomendadas de planejamento, desenvolvimento, inicialização e manutenção do seu projeto do Adobe Commerce.
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
 source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
