@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: f529a07568618b2b5e550896efaaf4d662445d30
+source-git-commit: 35094fd36ea666d428a593f79759ca5ff30c5d00
 workflow-type: tm+mt
-source-wordcount: '6456'
+source-wordcount: '6460'
 ht-degree: 0%
 
 ---
@@ -683,6 +683,8 @@ ht-degree: 0%
          - [ACSD-58383: Avisos de crédito duplicados de solicitações de reembolso simultâneas via  [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735: O administrador restrito não pode visualizar carrinhos de compras abandonados na conta do cliente para o site associado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
          - [ACSD-60344: Emails de confirmação de pedido duplicados ao usar [!UICONTROL Purchase Order] com aprovação automática](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
+      - v1.1.56 {#v1-1-56}
+         - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
       - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Referência de ferramentas de linha de comando {#cli-reference}
