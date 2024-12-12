@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52095: o gerenciamento do valor de estoque está incorreto ao exportar CSV"
+title: 'ACSD-52095: o gerenciamento do valor de estoque está incorreto ao exportar CSV'
 description: Aplique o patch ACSD-52095 para corrigir o problema do Adobe Commerce em que o valor do estoque de gerenciamento de produtos está incorreto ao exportar CSV.
 feature: Inventory, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1f8415aa-23c6-480a-b54d-37b2b2d3199a
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -57,7 +58,7 @@ O valor **[!UICONTROL Manage Stock]** é *0* quando está habilitado para os pro
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](</help/tools/quality-patches-tool/usage.md>) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada

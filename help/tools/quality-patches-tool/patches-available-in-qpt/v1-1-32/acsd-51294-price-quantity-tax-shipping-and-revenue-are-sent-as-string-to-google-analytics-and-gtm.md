@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51294: Preço, quantidade, imposto, remessa, receita enviada como cadeia de caracteres para [!DNL Google Analytics] e GTM"
+title: 'ACSD-51294: Preço, quantidade, imposto, remessa, receita enviada como cadeia de caracteres para [!DNL Google Analytics] e GTM'
 description: Aplique o patch ACSD-51294 para corrigir o problema do Adobe Commerce em que o preço, a quantidade, o imposto, o envio e a receita são enviados como uma cadeia de caracteres para [!DNL Google Analytics] e GTM.
 feature: Orders, Shipping/Delivery, Variables
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 99d2a311-2543-4007-99fd-6c34a2950773
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -51,7 +52,7 @@ Os valores de preço e quantidade são uma cadeia de caracteres.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](</help/tools/quality-patches-tool/usage.md>) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
