@@ -2,7 +2,7 @@
 title: Apache
 description: Siga estas etapas para instalar e configurar o Apache Web Server para instalações locais do Adobe Commerce.
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: f8c5d714a4e96d0508f745d1b7617696c8cc94a7
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 0%
@@ -26,7 +26,7 @@ O Adobe Commerce é compatível com o Apache 2.4.x.
 
 ## Regravações do Apache e htaccess
 
-Este tópico discute como habilitar substituições no Apache 2.4 e especificar uma configuração para o [arquivo de configuração distribuído, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
+Este tópico discute como habilitar substituições no Apache 2.4 e especificar uma configuração para o [arquivo de configuração distribuído, `.htaccess`](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample).
 
 O Adobe Commerce usa substituições de servidor e `.htaccess` para fornecer instruções no nível do diretório para o Apache. As instruções a seguir também estão incluídas em todas as outras seções deste tópico.
 
