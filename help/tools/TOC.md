@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 21a0dbfdb679a35d79f001f78c921aed8441f0d4
+source-git-commit: 152b51d45303b29a1d3d378af0e9fc8b02bbb6aa
 workflow-type: tm+mt
-source-wordcount: '6523'
+source-wordcount: '6531'
 ht-degree: 0%
 
 ---
@@ -685,6 +685,7 @@ ht-degree: 0%
          - [ACSD-62793: atributos Datetime em exportações sem componente de tempo. Além disso, se [!UICONTROL Fields Enclosure] estiver habilitado, os valores de atributo serão colocados entre aspas duplas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes.md)
          - [ACSD-60344: Emails de confirmação de pedido duplicados ao usar [!UICONTROL Purchase Order] com aprovação automática](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
          - [ACSD-62332: consulta GraphQL da lista de produtos limitada a 10.000 produtos e  [!DNL Live Search] define a página atual como 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
+         - [ACSD-62591: O tema não muda corretamente quando [!UICONTROL User Agent Rules] é configurado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
          - [ACSD-63242: importação lenta ao adicionar mais de 10.000 produtos de catálogo](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
