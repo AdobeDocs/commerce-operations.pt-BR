@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 6ec6aec8747e4b40943c864dec84b98e6b293d07
+source-git-commit: 1cca6c27ff0dce3f3ffb961a1f1eb3f56ea8dd78
 workflow-type: tm+mt
-source-wordcount: '6547'
+source-wordcount: '6561'
 ht-degree: 0%
 
 ---
@@ -688,6 +688,7 @@ ht-degree: 0%
          - [ACSD-62591: O tema não muda corretamente quando [!UICONTROL User Agent Rules] é configurado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-62979: ID de armazenamento incorreta no cabeçalho do GraphQL causa um erro de memória fatal](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error.md)
          - [ACSD-62475: corrige problemas de mesclagem de cartão-presente no carrinho](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart.md)
          - [ACSD-63242: importação lenta ao adicionar mais de 10.000 produtos de catálogo](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062: cálculos de desconto de carrinho incorretos com várias regras de sobreposição](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
