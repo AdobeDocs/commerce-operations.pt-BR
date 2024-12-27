@@ -3,7 +3,8 @@ title: 'Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.57'
 description: Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no  [!DNL Quality Patches Tool] (QPT) v1.1.57.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 82b8d22438107680cdf47057e0db3e15bf819599
+exl-id: 3e252a71-f35f-4046-9353-169060451ffe
+source-git-commit: fc5c790108a3c62d4591631128743259824c4c6b
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -27,7 +28,7 @@ O QPT v1.1.57 inclui os seguintes patches:
 1. **ACSD-62635**: corrige o problema em que os produtos relacionados a várias lojas não são exibidos corretamente na consulta de produto do [!DNL GraphQL].
 1. **ACSD-62671**: corrige o problema em que a solicitação [!DNL GraphQL] não retorna informações de endereço atualizadas na primeira tentativa.
 1. **ACSD-62689**: corrige o problema em que o cliente não pode adicionar Categorias em [!UICONTROL Related Product Rules] e [!UICONTROL Widgets] após a profundidade 4.
-1. **ACSD-62708**: corrige o problema em que o tamanho da fonte do editor do [!DNL TinyMCE] 7 no administrador mostra [!UICONTROL px] e não [!UICONTROL pt] após aplicar a correção de [!UICONTROL ACP2E-3430]. Agora, você também pode definir o tamanho da fonte em [!UICONTROL px] em vez de [!UICONTROL pt].
+1. **ACSD-62708**: corrige o problema em que o tamanho da fonte do editor do [!DNL TinyMCE] 7 no administrador mostra [!UICONTROL pt] e não [!UICONTROL px] após aplicar a correção de [!UICONTROL ACP2E-3430]. Agora, você também pode definir o tamanho da fonte em [!UICONTROL px] em vez de [!UICONTROL pt].
 1. **ACSD-62758**: corrige o problema em que os vídeos de produtos não são renderizados corretamente na página de detalhes do [!UICONTROL Configurable Product] se a URL contiver opções selecionadas.
 1. **ACSD-62951**: corrige o problema para onde o email [!UICONTROL Credit Memo] é enviado sem incluir itens e totais.
 1. **ACSD-62965**: corrige o problema em que uma mensagem *LocalizedException* não é incluída no posicionamento do pedido [!DNL GraphQL response].
