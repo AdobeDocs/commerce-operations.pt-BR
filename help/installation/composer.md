@@ -2,28 +2,28 @@
 title: Instalação de início rápido local
 description: Siga estas etapas para instalar o Adobe Commerce na sua infraestrutura.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 60db3da9154e76032c88d687b6b6e22d7b81f9ae
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
 
-# Instalação de início rápido local
+# Instalação start rápida no local
 
-As instruções nesta página descrevem como instalar o Adobe Commerce na infraestrutura auto-hospedada. Para obter orientação sobre como atualizar uma instalação existente, consulte o [_Guia de Atualização_](../upgrade/overview.md).
+As instruções nesta página descrevem como instalar Adobe Systems Comércio na infraestrutura auto-hospedada. Para obter orientações sobre como atualizar uma instalação existente, consulte o [_Guia_](../upgrade/overview.md) de atualização.
 
-O Adobe usa o [Composer](https://getcomposer.org/) para gerenciar componentes do Adobe Commerce e suas dependências. Usar o Composer para obter o metapackage do Adobe Commerce oferece as seguintes vantagens:
+Adobe Systems usa [o Composer](https://getcomposer.org/) para gerenciar Adobe Systems Comércio componentes e suas dependências. Usar o Composer para obter a Adobe Systems Comércio metapackage oferece as seguintes vantagens:
 
-- Reutilizar bibliotecas de terceiros sem agrupá-las com o código-fonte
-- Reduza os conflitos de extensão e os problemas de compatibilidade usando uma arquitetura baseada em componentes com um gerenciamento robusto de dependências
-- Siga os padrões [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)
-- Reempacotar o Magento Open Source com outros componentes
-- Usar o software Adobe Commerce em um ambiente de produção
+- Reutilize bibliotecas de terceiros sem agrupar com o código-fonte
+- Reduza conflitos de extensão e problemas de compatibilidade usando uma arquitetura baseada em componentes com um gerenciamento de dependência robusto
+- Adere aos [padrões PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)
+- Reembalar Magento Open Source com outros componentes
+- Use o software Adobe Systems Comércio em um ambiente de produção
 
 >[!NOTE]
 >
->Os desenvolvedores que contribuem com o Magento Open Source devem usar o método de instalação [baseado no Git](https://developer.adobe.com/commerce/contributor/guides/install/).
+>Os desenvolvedores que contribuem para o Magento Open Source devem usar o [método de instalação baseado em](https://developer.adobe.com/commerce/contributor/guides/install/) Git.
 
 ## Pré-requisitos
 
@@ -89,13 +89,13 @@ Para obter o metappackage do Adobe Commerce:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Quando solicitado, insira suas chaves de autenticação. Chaves públicas e privadas são criadas e configuradas em seu [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+   Quando solicitado, insira suas chaves de autenticação. Chaves públicas e privadas são criadas e configuradas de [Commerce Marketplace - Chaves de Acesso](https://commercemarketplace.adobe.com/customer/account/login/). Para o `[!UICONTROL username]`, copie e cole o valor da chave pública. Para o valor da `[!UICONTROL password]`chave privada, copie e cole o valor da chave privada.
 
    >[!NOTE]
    >
-   > Ao usar um arquivo do Composer `auth.json` ou uma variável de ambiente, você não será solicitado a digitar suas chaves de autenticação.
+   > Se você usar um `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` arquivo composer ou ambiente variável configurado com suas chaves de autenticação Comércio, você não será solicitado a inserir chaves de autenticação.
 
-   Se você encontrar erros, como `Could not find package...` ou `...no matching package found`, verifique se não há erros de digitação no comando. Se ainda encontrar erros, talvez você não esteja autorizado a baixar o Adobe Commerce. Contate o [Suporte da Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
+   Se você encontrar erros como `Could not find package...` ou `...no matching package found`, certifique-se de que não haja erros de digitação no seu comando. Se ainda encontrar erros, talvez não esteja autorizado a baixar Adobe Systems Comércio. Contate o [Suporte da Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
 
    Consulte [Solução de problemas](https://support.magento.com/hc/en-us/articles/360033818091) para obter ajuda com mais erros.
 
@@ -137,7 +137,7 @@ chown -R :www-data . # Ubuntu
 chmod u+x bin/magento
 ```
 
-## Instalar o aplicativo
+## Instale o aplicativo
 
 Você deve usar a linha de comando para instalar o Adobe Commerce.
 
@@ -174,7 +174,7 @@ bin/magento setup:install \
 >
 >Para obter uma descrição completa das opções de instalação da CLI, consulte [Instalar o aplicativo da linha de comando](advanced.md).
 
-## Resumo do comando
+## Resumo do Comando
 
 Para exibir uma lista completa de comandos, insira:
 
@@ -198,7 +198,7 @@ bin/magento help setup:install
 bin/magento help cache:enable
 ```
 
-A tabela a seguir resume os comandos disponíveis. Os comandos são exibidos somente na forma de resumo. Para obter mais informações sobre um comando, clique no link na coluna Comando.
+A tabela a seguir resume os comandos disponíveis. Os comandos são mostrados somente no formulário de resumo. Para obter mais informações sobre um comando, clique na link na coluna Comando.
 
 | Comando | Descrição | Pré-requisitos |
 |--- |--- |--- |
