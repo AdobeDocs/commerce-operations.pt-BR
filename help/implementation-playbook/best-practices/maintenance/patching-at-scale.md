@@ -3,9 +3,9 @@ title: Práticas recomendadas para distribuição de patches em escala
 description: Saiba como o patch centralizado para o Adobe Commerce pode ajudar você a gerenciar projetos empresariais.
 role: Developer
 feature: Best Practices
-badge: label="Contribuição de Anton Evers, arquiteto técnico sênior, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Contribuição de Anton Evers"
+badge: label="Contribuição de Tony Evers, arquiteto técnico sênior, Adobe" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="Contribuição de Tony Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 0%
