@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 696f8b1e24c38b7604058df88eff31c6c296d6e7
+source-git-commit: 9e71d979e0662770043fd9ca74b9ba8b5a6752f0
 workflow-type: tm+mt
-source-wordcount: '24185'
+source-wordcount: '24552'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,23 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.58 {#v1-1-58}
+
+* **ACSD-48570** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Corrige o problema em que a página de redefinição de senha não podia ser acessada clicando no link [!UICONTROL Admin] de redefinição de senha quando **Adicionar Código de Armazenamento a URLs** estava *habilitado*, o que anteriormente resultava na exibição de uma página de logon ou 404.
+* **ACSD-62118** (para Adobe Commerce >=2.4.6 &lt;2.4.8) - Corrige o problema em que a tabela `sales_order_tax_item` não é totalmente atualizada quando [!DNL B2B] pedidos são feitos usando o método de Ordem de Compra.
+* **ACSD-63067** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que todas as quantidades de produtos são realçadas incorretamente e a mensagem *[!DNL Please specify the quantity of product(s).]* é exibida para todos os produtos em um produto agrupado quando apenas uma quantidade está incorreta.
+* **ACSD-63090** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que os itens do carrinho de compras são removidos quando um produto é excluído depois de ser adicionado ao carrinho.
+* **ACSD-63182** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que ocorre um erro ao salvar um produto de pacote duplicado com o **[!DNL MSI]** *habilitado*.
+* **ACSD-63283** (para Adobe Commerce >=2.4.4 &lt;2.4.8) - Corrige o problema em que a solicitação de itens do registro de presentes causa uma exceção e em que as atualizações do registro de presentes incluem itens que não pertencem ao registro.
+* **ACSD-63299** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que o preço especial de um produto configurável não é exibido na loja.
+* **ACSD-63325** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige o problema em que um erro `Syntax Error: Unexpected <EOF>` ocorre ao enviar uma solicitação [!DNL GraphQL] vazia.
+* **ACSD-63329** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que os valores padrão para atributos com tipos de entrada **[!UICONTROL Date]** ou **[!UICONTROL Date and Time]** não são definidos ao criar produtos por meio do [!DNL REST API].
+* **ACSD-63572** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.8) - Corrige o problema em que as tabelas temporárias do indexador `CatalogRule` não são limpas se o processo do indexador for encerrado.
+* **ACSD-63578** (para Adobe Commerce >=2.4.4 &lt;2.4.8) - Corrige o problema em que clicar no botão **[!UICONTROL Delete]** em **[!UICONTROL Add to Order by SKU]** no [!UICONTROL Admin] não remove o [!DNL SKU].
+* Versões atualizadas: **MDVA-39305-V3**
+* Patches substituídos: **ACSD-56280**
+* Patches obsoletos: **ACSD-62872**
 
 ## v1.1.57 {#v1-1-57}
 
