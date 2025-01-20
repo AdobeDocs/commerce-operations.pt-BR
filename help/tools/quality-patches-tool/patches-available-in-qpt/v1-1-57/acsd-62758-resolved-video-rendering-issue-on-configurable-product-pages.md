@@ -3,16 +3,17 @@ title: 'ACSD-62758: resolução do problema de renderização de vídeo nas pág
 description: Aplique o patch ACSD-62758 para corrigir o problema do Adobe Commerce, em que os vídeos de produtos nas páginas de detalhes do produto configuráveis não são renderizados corretamente quando os URLs contêm opções de amostra pré-selecionadas.
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: 313709361ee86e39b89c416f71a92b078318f4fb
+exl-id: 084b497d-4471-4458-bc1d-2a452bfe2662
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # ACSD-62758: resolução do problema de renderização de vídeo nas páginas de produto configuráveis
 
-O patch ACSD-62758 corrige o problema em que vídeos de produtos nas páginas de detalhes do produto configuráveis não são renderizados corretamente quando URLs contêm opções de amostra pré-selecionadas. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 está instalado. A ID do patch é ACSD-62758. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.
+O patch ACSD-62758 corrige o problema em que vídeos de produtos nas páginas de detalhes do produto configuráveis não são renderizados corretamente quando URLs contêm opções de amostra pré-selecionadas. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 está instalado. A ID do patch é ACSD-62758. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.
 
 ## Produtos e versões afetados
 
@@ -70,3 +71,4 @@ Para aplicar patches individuais, use os links a seguir, dependendo do método d
 Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) no guia Ferramentas.
+

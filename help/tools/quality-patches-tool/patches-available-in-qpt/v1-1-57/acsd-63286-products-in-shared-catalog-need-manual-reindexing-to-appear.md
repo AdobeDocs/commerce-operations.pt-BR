@@ -3,16 +3,17 @@ title: 'ACSD-63286: os produtos atribuídos ao catálogo compartilhado precisam 
 description: Aplique o patch ACSD-63286 para corrigir o problema do Adobe Commerce em que os produtos atribuídos a um catálogo compartilhado por meio da API não aparecem na loja até que uma reindexação manual seja executada.
 feature: Products, REST
 role: Admin, Developer
-source-git-commit: 00b2b9285ca27d630bd0ece2750b531710e8d196
+exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # ACSD-63286: os produtos atribuídos ao catálogo compartilhado precisam de reindexação manual para serem exibidos
 
-O patch ACSD-63286 corrige o problema em que os produtos atribuídos a um catálogo compartilhado por meio da API não aparecem na loja até que uma reindexação manual seja executada. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 está instalado. A ID do patch é ACSD-63286. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.
+O patch ACSD-63286 corrige o problema em que os produtos atribuídos a um catálogo compartilhado por meio da API não aparecem na loja até que uma reindexação manual seja executada. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 está instalado. A ID do patch é ACSD-63286. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.
 
 ## Produtos e versões afetados
 

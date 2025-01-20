@@ -3,17 +3,17 @@ title: 'ACSD-62591: o tema não muda quando **[!UICONTROL User Agent Rules]** é
 description: Aplique o patch ACSD-62591 para corrigir o problema do Adobe Commerce em que o tema não muda corretamente quando o **[!UICONTROL User Agent Rules]** é configurado.
 feature: Themes
 role: Admin, Developer
-source-git-commit: 319ac7ea1fb8f33f4ed7bfa440477cf6d6657cb5
+exl-id: 7b206b25-8918-40a6-a956-d38d5058d38f
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62591: O tema não muda corretamente quando [!UICONTROL User Agent Rules] é configurado
 
-O patch ACSD-62591 corrige o problema em que o tema não muda corretamente quando o **[!UICONTROL User Agent Rules]** é configurado. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 está instalado. A ID do patch é ACSD-62591. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.
+O patch ACSD-62591 corrige o problema em que o tema não muda corretamente quando o **[!UICONTROL User Agent Rules]** é configurado. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 está instalado. A ID do patch é ACSD-62591. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.
 
 ## Produtos e versões afetados
 
@@ -61,3 +61,4 @@ Para aplicar patches individuais, use os links a seguir, dependendo do método d
 Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) no guia Ferramentas.
+
