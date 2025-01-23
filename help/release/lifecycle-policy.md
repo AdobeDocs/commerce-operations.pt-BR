@@ -2,7 +2,7 @@
 title: Política de ciclo de vida do software
 description: Saiba mais sobre as principais datas relacionadas ao fim do suporte de software das versões do Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 2a611b87df0d25be0e047e4d07e8c0ac3cd4d904
+source-git-commit: ce7c322c5cf979a992e6f929c3105daf86d4aa49
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 4%
@@ -38,8 +38,8 @@ O Adobe incentiva os clientes a atualizarem o mais rápido possível. No entanto
 |----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
 | Adobe Commerce 2.4.7 | 9 de abril de 2024 | 9 de abril de 2027 | N/D | 8.2 e 8.3 | 10,6 |
 | Adobe Commerce 2.4.6 | 14 de março de 2023 | 11 de agosto de 2026<sup>2</sup> | N/D | 8.1 e 8.2 | 10,6 |
-| Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 9 de agosto de 2025 | 11 de agosto de 2026 | 8,1 | 10.5<sup>3</sup> |
-| Adobe Commerce 2.4.4 | 12 de abril de 2022 | 24 de abril de 2025 | 14 de abril de 2026 | 8,1 | 10.5<sup>4</sup> |
+| Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 9 de agosto de 2025 | 11 de agosto de 2026 | 8,1 | 10.6<sup>3</sup> |
+| Adobe Commerce 2.4.4 | 12 de abril de 2022 | 24 de abril de 2025 | 14 de abril de 2026 | 8,1 | 10.6<sup>4</sup> |
 
 {style="table-layout:auto"}
 
@@ -47,8 +47,8 @@ O Adobe incentiva os clientes a atualizarem o mais rápido possível. No entanto
 >
 >- <sup>1</sup> O fim do suporte de software inclui correções de fim de qualidade e de fim de segurança.
 >- <sup>2</sup> Atualizado para alinhar com o fim do suporte estendido para 2.4.5.
->- <sup>3</sup> Começando com o patch de segurança 2.4.5-p8.
->- <sup>4</sup> Começando com o patch de segurança 2.4.4-p9.
+>- <sup>3</sup> Começando com o patch de segurança 2.4.5-p11.
+>- <sup>4</sup> Começando com o patch de segurança 2.4.4-p12.
 >- Consulte [Política de Ciclo de Vida de Software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
