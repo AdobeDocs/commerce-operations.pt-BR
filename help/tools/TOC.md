@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 100437ecc120fc09f25aea56c9ed2a1f3e21edd2
+source-git-commit: 28b92daba4a7f3c2adc9d7531bcf3118fcb32603
 workflow-type: tm+mt
-source-wordcount: '6866'
+source-wordcount: '6878'
 ht-degree: 0%
 
 ---
@@ -725,6 +725,7 @@ ht-degree: 0%
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
          - [ACSD-63067: Resolução de problemas de validação de quantidade em produtos agrupados na loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
          - [ACSD-62118: a tabela sales_order_tax_item não foi totalmente atualizada para ordens B2B feitas usando o método [!UICONTROL Purchase Order]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
+         - [ACSD-63182: Ocorre um erro ao salvar um produto após a duplicação do produto empacotado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
    - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referência de ferramentas de linha de comando {#cli-reference}
    - [Adobe Commerce (no local)](reference/commerce-on-premises.md)
