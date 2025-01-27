@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: fd62bcd5d101d694c3e4fefdd9a64545e4e1cf7c
+source-git-commit: 100437ecc120fc09f25aea56c9ed2a1f3e21edd2
 workflow-type: tm+mt
-source-wordcount: '6854'
+source-wordcount: '6866'
 ht-degree: 0%
 
 ---
@@ -718,6 +718,7 @@ ht-degree: 0%
          - [ACSD-63326: corrija o problema de redirecionamento do administrador após colocar um pedido do back-end](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
          - [ACSD-63286: os produtos atribuídos ao catálogo compartilhado precisam de reindexação manual para serem exibidos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325: botão [!UICONTROL Import] disponível mesmo após um erro de validação](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
+         - [ACSD-61895: [!DNL GraphQL] falha na consulta de categorias para catálogo compartilhado particular com exibição restrita](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-not-returning-categories-with-allow-permission.md)
          - [ACSD-62671: [!DNL GraphQL] não retorna o endereço atualizado na primeira tentativa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
          - [ACSD-62481: O carrinho de compras permanece vazio mesmo com o [!UICONTROL Persistence] ativado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled.md)
       - v1.1.58 {#v1-1-58}
