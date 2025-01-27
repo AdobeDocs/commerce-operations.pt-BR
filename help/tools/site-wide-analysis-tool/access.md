@@ -2,20 +2,18 @@
 title: Como acessar [!DNL Site-Wide Analysis Tool]
 description: Saiba como acessar o  [!DNL Site-Wide Analysis Tool]
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 2896442432158456698cac2d566cf0f61b5d7847
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
 # Como acessar o [!DNL Site-Wide Analysis Tool]
 
-Há duas maneiras de acessar o [!DNL Site-Wide Analysis Tool Dashboard].
+Você pode acessar o painel [!DNL Site-Wide Analysis Tool] no [!UICONTROL Admin Panel] da sua loja.
 
-Você pode acessar o [!DNL dashboard] do [[!DNL Site-Wide Analysis Tool] Site](https://supportinsights.adobe.com/commerce) diretamente **(somente para Adobe Commerce na infraestrutura de nuvem)** e fazer logon com sua Adobe ID ou acessar por meio do [!DNL dashboard] do [!DNL Admin Panel] de sua loja.
-
-O serviço [!DNL Site-Wide Analysis Tool] está disponível no [modo de produção](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) para [!DNL Admin] usuários com permissão para acessar os [recursos de função](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) do usuário.
+O serviço [!DNL Site-Wide Analysis Tool] está disponível no [modo de produção](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) para [!UICONTROL Admin] usuários com permissão para acessar os [recursos de função](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) do usuário.
 
 >[!NOTE]
 >
@@ -25,28 +23,16 @@ O serviço [!DNL Site-Wide Analysis Tool] está disponível no [modo de produç�
 ![Painel de Análise do Site](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool]Painel*
 
-## Opção 1: Fazer logon no [!DNL Site-Wide Analysis Tool Dashboard] diretamente do domínio [!DNL Site-Wide Analysis Tool] (somente para Adobe Commerce na infraestrutura de nuvem)
+>[!NOTE]
+>
+>Sua conta deve ter direito a **[!DNL Support Permissions]** para acessar o [!DNL Site-Wide Analysis Tool Dashboard].
+>Veja mais detalhes em [Compartilhar uma [!DNL Commerce] conta](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) em nosso guia do usuário.
 
-**[!DNL Adobe ID]é necessário** para acessar uma conta [!DNL Commerce].
-Se você já tiver uma conta [!DNL Commerce], mas não tiver uma [!DNL Adobe ID], poderá criar uma durante o processo de entrada.
-
-1. Ir para [https://supportinsights.adobe.com/commerce](https://supportinsights.adobe.com/commerce).
-
-1. Clique no botão **[!UICONTROL Sign in with Adobe ID]** e siga as instruções.
-
-   ![Painel de Análise do Site](../../assets/tools/adobe-id-login.jpg)
-   *[!DNL Adobe ID]tela de logon*
-
-1. Aceite os termos e condições.
-
-1. **<u>Observação</u>:** sua conta deve ter direito a **[!DNL Support Permissions]** para acessar [!DNL Site-Wide Analysis Tool Dashboard].
-Veja mais detalhes em [Compartilhar uma [!DNL Commerce] conta](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) em nosso guia do usuário.
-
-## Opção 2: Fazer logon em seu [!DNL Site-Wide Analysis Tool Dashboard] a partir do [!DNL Admin Panel] do seu armazenamento
+## Fazendo logon em [!DNL Site-Wide Analysis Tool Dashboard] a partir da [!UICONTROL Admin Panel] do seu armazenamento
 
 ### Etapa 1: verificar permissões
 
-Verifique se a conta de usuário [!DNL Admin] tem permissão para acessar [!DNL Site-Wide Analysis Tool] por meio de sua [função de usuário atribuída](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
+Verifique se a conta de usuário [!UICONTROL Admin] tem permissão para acessar [!DNL Site-Wide Analysis Tool] por meio de sua [função de usuário atribuída](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
 
 >[!IMPORTANT]
 >
@@ -65,14 +51,14 @@ Para a função personalizada que precisa de acesso de [!DNL Site-Wide Analysis 
 
 >[!NOTE]
 >
->Se você tiver verificado que a conta de usuário tem permissão para acessar o [!DNL Site-Wide Analysis Tool] e o usuário receber um erro 403 ao tentar acessar a ferramenta a partir do [!DNL Admin], sua instância do Adobe Commerce na infraestrutura em nuvem poderá ter o controle de acesso HTTP habilitado. O Painel [!DNL Site-Wide Analysis Tool] NÃO é suportado se a Autenticação HTTP estiver habilitada. Para obter mais informações sobre como resolver esse problema, consulte nosso [Artigo de suporte](https://support.magento.com/hc/en-us/articles/360057400172-403-errors-when-accessing-Site-Wide-Analysis-Tool-on-Magento?_ga=2.168901729.117144580.1649172612-1623400270.1640858671).
+>Se você tiver verificado que a conta de usuário tem permissão para acessar o [!DNL Site-Wide Analysis Tool] e o usuário receber um erro 403 ao tentar acessar a ferramenta a partir do [!UICONTROL Admin], sua instância do Adobe Commerce na infraestrutura em nuvem poderá ter o controle de acesso HTTP habilitado. O Painel [!DNL Site-Wide Analysis Tool] NÃO é suportado se a Autenticação HTTP estiver habilitada. Para obter mais informações sobre como resolver esse problema, consulte nosso [Artigo de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
 
 ### Etapa 2: acessar [!DNL Site-Wide Analysis Tool]
 
 1. Na barra lateral *[!UICONTROL Admin]*, vá para **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]**.
 
    ![Painel de Análise do Site](../../assets/tools/ac-admin-panel-marked.jpg)
-   *[!DNL Site-Wide Analysis Tool]local em [!DNL Admin Panel] no Adobe Commerce*
+   *[!DNL Site-Wide Analysis Tool]local em [!UICONTROL Admin Panel] no Adobe Commerce*
 
 1. Leia os *Termos de Uso* de [!DNL Site-Wide Analysis Tool] e clique em **[!UICONTROL Accept]** para continuar.
 
