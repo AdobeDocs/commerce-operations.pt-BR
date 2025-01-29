@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 28b92daba4a7f3c2adc9d7531bcf3118fcb32603
+source-git-commit: 58e57bd106e7dbf9bab32fc9d93a9b1252592570
 workflow-type: tm+mt
-source-wordcount: '6878'
+source-wordcount: '6891'
 ht-degree: 0%
 
 ---
@@ -706,6 +706,7 @@ ht-degree: 0%
          - [ACSD-62755: [!DNL TinyMCE] 7 precisa do tamanho e da fonte da fonte adicionados às configurações de inicialização do editor](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
       - v1.1.57 {#v1-1-57}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+         - [ACSD-62951: corrige itens e totais ausentes em [!UICONTROL Credit Memo] emails enviados por meio da API REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api.md)
          - [ACSD-62212: email [!UICONTROL Forgot Password] não traduzido para o idioma de exibição do armazenamento](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62212-forgot-password-email-not-translated-to-store-view-language.md)
          - [ACSD-62708: o tamanho da fonte do editor  [!DNL TinyMCE] 7 no painel do administrador mostra PT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue.md)
          - [ACSD-62689: Não é possível adicionar categorias em [!UICONTROL Related Product Rules] e widgets após profundidade 4](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62689-customer-add-categories-issue-related-product-rules-and-widgets.md)
