@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 3864c393e06eca769d29e20da62cd19dff1cbd7a
+source-git-commit: 420a74a1c0e4d4d242691968cfa6b515a9f91e77
 workflow-type: tm+mt
-source-wordcount: '6952'
+source-wordcount: '6970'
 ht-degree: 0%
 
 ---
@@ -732,6 +732,7 @@ ht-degree: 0%
          - [ACSD-48570: corrigindo problema de link de redefinição de senha do administrador com código de loja no URL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299: Preço especial de um produto configurável não é exibido na vitrine](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325: Erro de sintaxe: erro &lt; EOF > inesperado ao enviar solicitação  [!DNL GraphQL]  vazia](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
+         - [ACSD-63329: Os valores padrão para campos de data e hora não são definidos ao criar produtos com a API REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
    - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referência de ferramentas de linha de comando {#cli-reference}
    - [Adobe Commerce (no local)](reference/commerce-on-premises.md)
