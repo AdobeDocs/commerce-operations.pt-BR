@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 420a74a1c0e4d4d242691968cfa6b515a9f91e77
+source-git-commit: 183a83346633913b3b013732cbac8676a0756609
 workflow-type: tm+mt
-source-wordcount: '6970'
+source-wordcount: '6981'
 ht-degree: 0%
 
 ---
@@ -729,6 +729,7 @@ ht-degree: 0%
          - [ACSD-63283: Resolvendo problemas de email e posicionamento de pedido do [!UICONTROL Gift Registry] no Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)
          - [ACSD-62118: a tabela sales_order_tax_item não foi totalmente atualizada para ordens B2B feitas usando o método [!UICONTROL Purchase Order]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
          - [ACSD-63182: Ocorre um erro ao salvar um produto após a duplicação do produto empacotado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
+         - [ACSD-63090: a exclusão de um produto do Administrador esvazia o carrinho de compras](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart.md)
          - [ACSD-48570: corrigindo problema de link de redefinição de senha do administrador com código de loja no URL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299: Preço especial de um produto configurável não é exibido na vitrine](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325: Erro de sintaxe: erro &lt; EOF > inesperado ao enviar solicitação  [!DNL GraphQL]  vazia](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
