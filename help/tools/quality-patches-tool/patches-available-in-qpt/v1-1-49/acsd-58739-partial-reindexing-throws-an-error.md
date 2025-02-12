@@ -4,7 +4,7 @@ description: Aplique o patch ACSD-55241 para corrigir o problema do Adobe Commer
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -35,7 +35,7 @@ A reindexação parcial gera um erro.
 
 <u>Etapas a serem reproduzidas</u>:
 
-1. Adicionar configurações de conexão subordinada ao `app/etc/ev.php`.
+1. Adicionar configurações de conexão subordinada ao `app/etc/env.php`.
 1. Gere até 10000 produtos e execute o seguinte comando:
 
    ```
