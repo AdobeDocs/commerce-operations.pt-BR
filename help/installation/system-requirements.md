@@ -2,9 +2,9 @@
 title: Requisitos do sistema
 description: Use esta referência para identificar as dependências de software necessárias que foram testadas com as versões do Adobe Commerce.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,13 @@ A seguir é apresentado um resumo das dependências de software e dos serviços 
 
 Há algumas diferenças nas dependências da infraestrutura do Commerce na nuvem. O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infraestrutura em nuvem é determinado por serviços testados e implantados nos ambientes de nuvem hospedados e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Por exemplo, o Elasticsearch 7.17 é compatível com o Commerce 2.4.4 para implantações locais, mas o OpenSearch 1.2 é compatível com o Commerce 2.4.4 na infraestrutura em nuvem.
 
-As tabelas a seguir mostram versões de dependências de software de terceiros que o Adobe testou com versões específicas do Adobe Commerce.
+>[!NOTE]
+>
+>Os requisitos do sistema se aplicam apenas às versões lançadas do Adobe Commerce. As versões do Beta ou de acesso antecipado não estão incluídas. Consulte as [notas de versão](../release/release-notes/overview.md) para saber mais sobre as versões mais recentes do Adobe Commerce.
 
-O Adobe suporta apenas a combinação dos requisitos de sistema descritos nas tabelas a seguir. Por exemplo, 2.4.5 é totalmente testado com MariaDB 10.4. A Adobe recomenda que você atualize para MariaDB 10.4 antes de atualizar para a versão 2.4.5.
+As tabelas a seguir mostram versões de dependências de software de terceiros que a Adobe testou com versões específicas do Adobe Commerce.
+
+O Adobe só oferece suporte à combinação dos requisitos de sistema descritos nas tabelas a seguir. Por exemplo, 2.4.5 é totalmente testado com MariaDB 10.4. A Adobe recomenda atualizar para MariaDB 10.4 antes de atualizar para a versão 2.4.5.
 
 >[!BEGINTABS]
 
@@ -121,7 +125,7 @@ Mail Transfer Agent (MTA) ou um servidor SMTP. A infraestrutura do Commerce na n
 
 ### Memória
 
-A atualização dos aplicativos e extensões obtidos do Commerce Marketplace e de outras fontes pode exigir até 2 GB de RAM. Se você estiver usando um sistema com menos de 2 GB de RAM, crie um [arquivo de troca](https://support.magento.com/hc/en-us/articles/360032980432); caso contrário, a atualização poderá falhar.
+A atualização dos aplicativos e extensões obtidos da Commerce Marketplace e de outras fontes pode exigir até 2 GB de RAM. Se você estiver usando um sistema com menos de 2 GB de RAM, crie um [arquivo de troca](https://support.magento.com/hc/en-us/articles/360032980432); caso contrário, a atualização poderá falhar.
 
 ### Sistemas operacionais (Linux x86-64)
 
