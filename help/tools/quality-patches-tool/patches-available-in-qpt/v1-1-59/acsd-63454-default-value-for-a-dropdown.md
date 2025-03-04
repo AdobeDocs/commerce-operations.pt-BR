@@ -3,13 +3,13 @@ title: 'ACSD-63454: O valor padrão de um atributo Suspenso e Múltipla seleçã
 description: Aplique o patch ACSD-63454 para corrigir o problema do Adobe Commerce em que o valor padrão de um atributo Suspenso e de Seleção Múltipla não é salvo corretamente no banco de dados.
 feature: Attributes, Products
 role: Admin, Developer
-source-git-commit: 1c872ebeff05c0c84756d7abd7f43c4652032d3f
+exl-id: fa79a3bb-e615-44cb-8d84-da892f924fd0
+source-git-commit: cb73a5a346ec0e8acd59accf73605e25ef35c3ca
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63454: O valor padrão para os atributos [!UICONTROL Dropdown] e [!UICONTROL Multiple Select] não é salvo corretamente no banco de dados
 
@@ -35,19 +35,19 @@ O valor padrão dos atributos [!UICONTROL Dropdown] e [!UICONTROL Multiple Selec
 
 <u>Etapas a serem reproduzidas</u>:
 
-1. Faça login no back-end, vá para **[!UICONTROL Stores]** > [!UICONTROL Attributes] > **[!UICONTROL Product]**.
+1. Faça login no back-end, vá para **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Product]**.
 1. Clique em **[!UICONTROL Add New Attribute]**.
 1. Na guia **[!UICONTROL Properties]**, defina o seguinte:
-   * [!UICONTROL Default Label] = teste
-   * [!UICONTROL Catalog Input Type for Store Owner]= [!UICONTROL Multiple Select]
-   * [!UICONTROL Manage Options]: Adicionar 2 opções sem selecionar **[!UICONTROL Is Default]**.
+   * **[!UICONTROL Default Label]**: *teste*
+   * **[!UICONTROL Catalog Input Type for Store Owner]**: *[!UICONTROL Multiple Select]*
+   * **[!UICONTROL Manage Options]**: Adicione duas opções sem selecionar **[!UICONTROL Is Default]**.
 1. Clique em **[!UICONTROL Save Attribute]**.
-1. Verifique no banco de dados se a coluna *default_value* está vazia.
+1. Verifique no banco de dados se a coluna `default_value` está vazia.
 
    `select attribute_code, default_value from eav_attribute where attribute_code = 'test';`
 
 1. Retorne e defina uma das duas opções como **[!UICONTROL Is Default]**.
-1. Verifique o banco de dados novamente para garantir que *default_value* agora contenha a ID da opção selecionada.
+1. Verifique o banco de dados novamente para garantir que `default_value` agora contenha a ID da opção selecionada.
 1. Retorne e altere a opção padrão selecionando a outra opção.
 
 <u>Resultados esperados</u>:
