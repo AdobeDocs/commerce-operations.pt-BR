@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: c01df7ef04c5e259d6bd015f8a3105c167b5c26f
+source-git-commit: f59d574087a4eaa33643d6de16e702a19a3606f9
 workflow-type: tm+mt
-source-wordcount: '7083'
+source-wordcount: '7094'
 ht-degree: 0%
 
 ---
@@ -740,6 +740,7 @@ ht-degree: 0%
          - [ACSD-64112: execução de indexer_update_all_views cron falha quando MAGE_INDEXER_THREADS_COUNT é definido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
          - [ACSD-63454: O valor padrão de um atributo Suspenso e Múltipla seleção não é salvo corretamente no banco de dados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870: O cliente não efetuou logout corretamente durante a alteração do status da empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
+         - [ACSD-63469: descontos de carrinho de valor fixo não aplicados corretamente com várias regras](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly.md)
          - [ACSD-64113: Erro no administrador ao carregar imagem com largura menor do que altura via [!DNL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images.md)
          - [ACSD-64212: Pedido não vinculado a uma conta de cliente criada via [!DNL GraphQL] após a realização do pedido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
          - [ACSD-63793: Os processos de importação interferem entre si em diferentes guias do navegador](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
