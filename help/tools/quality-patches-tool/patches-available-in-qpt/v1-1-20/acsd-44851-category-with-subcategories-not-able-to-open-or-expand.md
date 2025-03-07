@@ -4,9 +4,9 @@ description: Este artigo fornece uma solução para o problema em que o usuário
 feature: Categories
 role: Admin
 exl-id: c1ad13d8-94e1-47cf-ad65-9bc5ce1c26ad
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: 33a9d54ce3e50df89b0455e4c1b2dfccb5bee32a
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,6 @@ Para aplicar patches individuais, use os links a seguir, dependendo do método d
 
 ## Leitura relacionada
 
-Para saber mais sobre a Ferramenta de correção de qualidade, consulte:
+Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
-* [Ferramenta de correções de qualidade lançada: uma nova ferramenta para autoatender correções de qualidade](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
-* [Verifique se há patch disponível para o problema do Adobe Commerce usando o  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!UICONTROL Quality Patches Tool].
-
-Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no guia Ferramenta de patches de qualidade.
+* [[!DNL Quality Patches Tool]: uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) no guia Ferramentas.
