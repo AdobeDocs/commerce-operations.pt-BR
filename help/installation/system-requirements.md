@@ -2,9 +2,9 @@
 title: Requisitos do sistema
 description: Use esta referência para identificar as dependências de software necessárias que foram testadas com as versões do Adobe Commerce.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
+source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 A seguir é apresentado um resumo das dependências de software e dos serviços testados para Adobe Commerce.
 
-Há algumas diferenças nas dependências da infraestrutura do Commerce na nuvem. O suporte à versão do serviço e à compatibilidade do Adobe Commerce na infraestrutura em nuvem é determinado por serviços testados e implantados nos ambientes de nuvem hospedados e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Por exemplo, o Elasticsearch 7.17 é compatível com o Commerce 2.4.4 para implantações locais, mas o OpenSearch 1.2 é compatível com o Commerce 2.4.4 na infraestrutura em nuvem.
+Existem algumas diferenças nas dependências do Commerce na nuvem. O suporte à versão do serviço e à compatibilidade do Adobe Commerce na nuvem é determinado pelos serviços testados e implantados nos ambientes de nuvem hospedados e, às vezes, difere das versões compatíveis com implantações locais do Adobe Commerce. Por exemplo, o Elasticsearch 7.17 é compatível com o Commerce 2.4.4 para implantações locais, mas o OpenSearch 1 é compatível com o 2.4.4 Adobe Commerce na nuvem.
 
 >[!NOTE]
 >
