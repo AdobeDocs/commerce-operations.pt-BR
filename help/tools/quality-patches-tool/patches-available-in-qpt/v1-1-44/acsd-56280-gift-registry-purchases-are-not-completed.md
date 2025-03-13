@@ -1,16 +1,21 @@
 ---
-title: "ACSD-56280: as compras do registro de presentes não estão concluídas"
+title: 'ACSD-56280: As compras de registro de presentes não foram concluídas'
 description: Aplique o patch ACSD-56280 para corrigir o problema do Adobe Commerce em que as compras de registro de presentes não são concluídas
 feature: Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a79f789f-999f-4d11-b7ee-2c065b681efb
+source-git-commit: ab02be3396e68044e9356f89fba6b55aa880056f
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
 # ACSD-56280: As compras de registro de presentes não foram concluídas
+
+>[!NOTE]
+>
+>Este patch foi substituído por [ACSD-63283](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md).
 
 O patch ACSD-56280 corrige o problema em que as compras de registro de presentes não são concluídas. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44 está instalado. A ID do patch é ACSD-56280. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.7.
 
@@ -54,7 +59,7 @@ A ordem não é feita e o erro exibido é, `Call to a member function getUpdated
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
