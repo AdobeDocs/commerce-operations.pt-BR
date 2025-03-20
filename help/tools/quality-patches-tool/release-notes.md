@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
+source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
 workflow-type: tm+mt
-source-wordcount: '25023'
+source-wordcount: '25431'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.61 {#v1-1-61}
+
+* **ACP2E-3689** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige vários problemas com a exibição da árvore de categoria em níveis mais profundos e refletindo relações de âncora/não âncora.
+* **ACP2E-3705** (para Adobe Commerce >=2.4.7 &lt;2.4.8) - Corrige um problema em que a execução do cron `indexer_update_all_views` falha ao definir `MAGE_INDEXER_THREADS_COUNT`.
+* **ACSD-63883** (para Adobe Commerce >=2.4.4 &lt;2.4.7-p4) - Corrige o problema em que a Lista de Requisições retorna um `items_count` incorreto na resposta do GraphQL.
+* **ACSD-63974** (para Adobe Commerce >=2.4.4 &lt;2.4.8) - Corrige o problema em que a página de lista Requisição leva muito tempo para carregar quando há muitos itens, adicionando um recurso de paginação à grade da lista Requisição na Loja, que exibe somente partes de registros limitadas ao número de registros por página, em vez de todos os registros de uma só vez.
+* **ACSD-64178** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige o problema em que a página de edição do Conjunto de atributos carrega lentamente se houver milhares de atributos de produto.
+* **ACSD-64209** (para Adobe Commerce >=2.4.4 &lt;2.4.8) - Corrige o problema em que o agendador cron recupera todas as cotações negociáveis sem excluir aquelas com o status **[!UICONTROL ordered]**, fazendo com que um email ou emails sejam acionados.
+* **ACSD-64431** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - A mutação `placeOrder` que contém as informações de código do cupom na solicitação não lança mais um erro interno, mas mostra que o pedido foi feito com êxito.
+* **ACSD-64467** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige o problema em que o editor do WYSIWYG aparece vazio após salvar uma descrição de categoria no nível de exibição da loja.
+* **ACSD-64546** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que uma mensagem de erro genérica ocorre na interface do usuário e uma exceção *Array para conversão de cadeia de caracteres* é armazenada nos logs durante a criação do rótulo de remessa UPS, garantindo que o erro real seja exibido na interface do usuário e que a mensagem de erro correta seja armazenada nos logs.
+* **ACSD-64684** (para Adobe Commerce >=2.4.4 &lt;2.4.8) - Corrige o problema em que ocorre um erro de validação ao editar e salvar um cartão-presente com um valor maior que *999* devido à vírgula (separador de milhares) no número *mil (1.000)*.
+* Versões atualizadas: **ACSD-49392**, **ACSD-50368**, **ACSD-51819**, **ACSD-54966-V2**, **ACSD-57003**, **ACSD-62979**, **ACSD-64112**
+* Patches substituídos: **ACSD-49392**, **ACSD-58739**, **ACSD-62689**, **ACSD-64112**
+* Patches obsoletos: **ACSD-46192**, **ACSD-52133**
 
 ## v1.1.60 {#v1-1-60}
 
