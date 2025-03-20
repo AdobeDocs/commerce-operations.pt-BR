@@ -2,9 +2,9 @@
 title: Requisitos do sistema
 description: Use esta referência para identificar as dependências de software necessárias que foram testadas com as versões do Adobe Commerce.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
+source-git-commit: ca0c47cf9882bccbc55aca786f3e6615503662f3
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Para obter orientações sobre a configuração da nuvem, consulte [configuraç�
 
 É recomendável verificar se o [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) está habilitado por motivos de desempenho. O OPcache está habilitado em muitas distribuições PHP. A extensão `opcache` é instalada por padrão na infraestrutura do Commerce na nuvem.
 
-Para configurações no local, verifique se o PHP OPcache está instalado, consulte [configurações do PHP](prerequisites/php-settings.md). Ou, para obter orientação específica sobre configurações de desempenho, consulte as recomendações de software para [configurações de PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) no guia _Práticas recomendadas de desempenho_.
+Para locais, verifique se o OPcache do PHP está instalado, consulte [configurações do PHP](prerequisites/php-settings.md). Ou, para obter orientação específica sobre configurações de desempenho, consulte as recomendações de software para [configurações de PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) no guia _Práticas recomendadas de desempenho_.
 
 Se você precisar instalar o OPcache separadamente, consulte a [documentação do OPcache do PHP](https://www.php.net/manual/en/opcache.setup.php).
 
@@ -129,7 +129,9 @@ A atualização dos aplicativos e extensões obtidos da Commerce Marketplace e d
 
 ### Sistemas operacionais (Linux x86-64)
 
-Distribuições Linux, como RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian e similares. O Microsoft Windows e o macOS não são compatíveis.
+Distribuições Linux, como RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian e similares.
+
+O Microsoft Windows e o macOS **não** são suportados.
 
 O Adobe Commerce requer as seguintes ferramentas do sistema para algumas operações:
 
