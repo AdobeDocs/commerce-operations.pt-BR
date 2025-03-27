@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
+source-git-commit: 93c9eb8865aa53ec784d47fd66ca97d1941b4604
 workflow-type: tm+mt
-source-wordcount: '25431'
+source-wordcount: '25682'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.62 {#v1-1-62}
+
+* **ACSD-63406** (para Adobe Commerce e Magento Open Source >=2.4.4-p9 &lt;2.4.5 || >=2.4.5-p8 &lt;2.4.6 || >=2.4.6-p6 &lt;2.4.8) - Corrige o problema em que as aspas persistentes expiradas não são apagadas por nenhum trabalho cron quando o trabalho `persistent_clear_expired` cron é executado.
+* **ACSD-63520** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige o problema em que imagens adicionadas por meio do **[!UICONTROL Configurations]** no painel de administração não aderem ao limite de tamanho máximo do upload.
+* **ACSD-64523** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige o problema em que era possível criar novos produtos sem um nome por meio do processo de importação (admin ou API), o que danificaria a interface do administrador e resultaria em produtos inválidos.
+* **ACSD-64532** (para Adobe Commerce e Magento Open Source >=2.4.6-p2 &lt;2.4.8) - Corrige o problema em que uma variável ENV definida como &quot;false&quot; é tratada como uma cadeia de caracteres &quot;false&quot; em vez de um booleano false.
+* **ACSD-64592** (para Adobe Commerce >=2.4.4 &lt;2.4.8) - Corrige o problema em que o link de declaração do email para um cartão-presente em lojas não padrão sempre redirecionava a declaração do cartão-presente para o site padrão.
+* **ACSD-65164** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.8) - Corrige o problema em que a mensagem de erro *Algumas das opções de item selecionadas não estão disponíveis no momento* ocorre ao reordenar um produto configurável com uma única opção personalizada de caixa de seleção selecionada.
+* **ACSD-64732** (para Adobe Commerce >=2.4.4 &lt;2.4.8) - Corrige o problema em que controladores de terceiros não eram armazenados em cache corretamente com segmentos de clientes.
 
 ## v1.1.61 {#v1-1-61}
 
