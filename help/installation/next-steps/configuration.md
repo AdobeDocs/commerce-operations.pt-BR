@@ -3,9 +3,9 @@ title: Configurar o aplicativo
 description: Saiba mais sobre a configuração pós-instalação necessária para implantações locais do Adobe Commerce.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: e737ca014e90860b8ab023487625b07c0eeb1222
+source-git-commit: a28dad04dac23075234a6ac3c2b362d125c9d981
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
