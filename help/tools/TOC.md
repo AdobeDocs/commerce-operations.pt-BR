@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 472b79822cfb103e1e3833622cfc2eb439016193
+source-git-commit: 382702e6e267402d925f33460ea8e0135c528b84
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '7282'
 ht-degree: 0%
 
 ---
@@ -767,6 +767,7 @@ ht-degree: 0%
          - [ACSD-63992: [!UICONTROL Cart Price Rule] com erro de condição de cupom e método de envio na interface do Administrador](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
+         - [ACSD-64178: a página [!UICONTROL Edit Attribute Set] é carregada lentamente com milhares de atributos de produto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
    - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referência de ferramentas de linha de comando {#cli-reference}
    - [Adobe Commerce (no local)](reference/commerce-on-premises.md)
