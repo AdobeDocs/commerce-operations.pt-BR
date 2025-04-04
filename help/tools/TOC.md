@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 382702e6e267402d925f33460ea8e0135c528b84
+source-git-commit: bbbe5481d87c44fe22beb303bcc19dcc00984fac
 workflow-type: tm+mt
-source-wordcount: '7282'
+source-wordcount: '7271'
 ht-degree: 0%
 
 ---
@@ -763,7 +763,7 @@ ht-degree: 0%
       - v1.1.60 {#v1-1-60}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323: Resolve a funcionalidade [!UICONTROL Select All] e melhora a paginação e a contagem de registros no pop-up de categoria de produto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
-         - [ACSD-64111: corrige um problema em que um erro InvalidArgumentException: Class does not exist ocorre em vendor/magento/module-rule/Model/ConditionFactory.php:50 ao definir condições aninhadas para um componente Product em  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
+         - [ACSD-64111: corrige InvalidArgumentException: a classe não existe ao definir condições aninhadas para um componente Produto em  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992: [!UICONTROL Cart Price Rule] com erro de condição de cupom e método de envio na interface do Administrador](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
