@@ -4,14 +4,18 @@ description: Aplique o patch ACSD-62689 para corrigir o problema do Adobe Commer
 feature: Categories
 role: Admin, Developer
 exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
-source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
+source-git-commit: 7aefd4f20580529a9da14776368bf2c3bbb3ff3c
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
 # ACSD-62689: Não é possível adicionar categorias em *[!UICONTROL Related Product Rules]* e widgets após profundidade 4
+
+>[!NOTE]
+>
+>Este patch foi substituído por [ACP2E-3689](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md).
 
 O patch ACSD-62689 corrige o problema em que um cliente não consegue adicionar categorias em *[!UICONTROL Related Product Rules]* e widgets após o aninhamento de profundidade quatro. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 está instalado. A ID do patch é ACSD-62689. Observe que esse problema está programado para ser corrigido no Adobe Commerce 2.4.8.
 
@@ -58,7 +62,7 @@ Na etapa 7, ambas as categorias não podem ser selecionadas. Na etapa 9, ambas a
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 
