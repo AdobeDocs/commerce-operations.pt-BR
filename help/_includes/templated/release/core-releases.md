@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1ad42acc0d007ef1dee8c6c6f93da9daed1925f8
+source-git-commit: 54757d09eb0f476229e567e43c58dc2130a59ac9
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.8
 
-A data de término do suporte à linha de versão 2.4.8 ainda não foi definida.
+O suporte para a linha de versão 2.4.8 termina em 11 de abril de 2028.
 
 <table>
   <thead>
@@ -21,15 +21,9 @@ A data de término do suporte à linha de versão 2.4.8 ainda não foi definida.
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#highlights-in-v248-beta2">2.4.8-beta2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8</a>
         </td>
-        <td>11 de fevereiro de 2025</td>
-    </tr>
-    <tr>
-        <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8#highlights-in-v248-beta1">2.4.8-beta1</a>
-        </td>
-        <td>Outubro  8 de outubro de 2024</td>
+        <td>abril  8 de outubro de 2025</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -46,6 +40,12 @@ O suporte para a linha de versão 2.4.7 termina em abril  9 de janeiro de 2027.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5</a>
+        </td>
+        <td>abril  8 de outubro de 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p4">2.4.7-p4</a>
@@ -91,6 +91,12 @@ O suporte para a linha de versão 2.4.6 termina em 11 de agosto de 2026.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p10">2.4.6-p10</a>
+        </td>
+        <td>abril  8 de outubro de 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p9">2.4.6-p9</a>
@@ -166,6 +172,12 @@ O suporte para a linha de versão 2.4.5 termina em agosto  9 de janeiro de 2025
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p12">2.4.5-p12</a>
+        </td>
+        <td>abril  8 de outubro de 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#p11">2.4.5-p11</a>
@@ -253,6 +265,12 @@ O suporte para a linha de versão 2.4.4 termina em 12 de abril de 2025.
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p13">2.4.4-p13</a>
+        </td>
+        <td>abril  8 de outubro de 2025</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p12">2.4.4-p12</a>
