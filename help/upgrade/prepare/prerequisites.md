@@ -2,9 +2,9 @@
 title: Concluir pré-requisitos
 description: Prepare seu projeto do Adobe Commerce para uma atualização concluindo essas etapas de pré-requisito.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: d19051467efe7dcf7aedfa7a29460c72d896f5d4
+source-git-commit: df185e21f918d32ed5033f5db89815b5fc98074f
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1866'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Atualize todos os requisitos e dependências do sistema em seu ambiente. Consult
 >
 >Para projetos Pro da infraestrutura em nuvem do Adobe Commerce, você deve criar um tíquete de [Suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para instalar ou atualizar serviços em ambientes de Preparo e Produção. Indique as mudanças de serviço necessárias e inclua seus arquivos `.magento.app.yaml` e `services.yaml` atualizados e a versão do PHP no tíquete. Pode levar até 48 horas para a equipe de infraestrutura da nuvem atualizar seu projeto. Consulte [Software e serviços com suporte](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
-## Verifique se há um mecanismo de pesquisa compatível instalado
+## Verifique se um mecanismo de pesquisa suportado está instalado
 
 O Adobe Commerce exige que o Elasticsearch ou o OpenSearch esteja instalado para usar o software.
 
@@ -61,6 +61,60 @@ A partir da versão 2.4, o MySQL não é mais um mecanismo de pesquisa de catál
 * [Configurar Commerce para usar Elasticsearch](../../configuration/search/configure-search-engine.md) e reindexar
 
 Alguns mecanismos de pesquisa de catálogos de terceiros são executados sobre o mecanismo de pesquisa do Adobe Commerce. Entre em contato com seu fornecedor para determinar se você deve atualizar sua extensão.
+
+### Alterações no MySQL 8.4
+
+A Adobe adicionou suporte para o MySQL 8.4 na versão 2.4.8.
+Esta seção descreve as principais alterações no MySQL 8.4 que os desenvolvedores devem estar cientes.
+
+#### Chave não padrão obsoleta
+
+O uso de chaves não exclusivas ou parciais como chaves estrangeiras não é padrão e foi descontinuado no MySQL 8.4. A partir do MySQL 8.4.0, você deve habilitar explicitamente essas chaves definindo [`restrict_fk_on_non_standard_key`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) como `OFF` ou iniciando o servidor com a opção `--skip-restrict-fk-on-non-standard-key`.
+
+#### Atualização do MySQL 8.0 ( ou versões mais antigas ) para MySQL 8.4
+
+Para atualizar corretamente o MySQL da versão 8.0 para a versão 8.4, siga estas etapas na ordem:
+
+1. Habilitar modo de manutenção:
+
+   ```bash
+   bin/magento maintenance:enable
+   ```
+
+1. Faça um backup do banco de dados:
+
+   ```bash
+   bin/magento setup:backup --db
+   ```
+
+1. Atualize o MySQL para a versão 8.4.
+1. Defina `restrict_fk_on_non_standard_key` como `OFF` em `[mysqld]` no arquivo `my.cnf`.
+
+   ```bash
+   [mysqld]
+   restrict_fk_on_non_standard_key = OFF 
+   ```
+
+   >[!WARNING]
+   >
+   >Se você não alterar o valor de `restrict_fk_on_non_standard_key` para `OFF`, receberá o seguinte erro durante a importação:
+   >
+   ```sql
+   > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
+   >```
+1. Reinicie o servidor MySQL.
+1. Importe os dados de backup para o MySQL.
+1. Limpe o cache:
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+1. Desabilitar modo de manutenção:
+
+   ```bash
+   bin/magento maintenance:disable
+   ```
 
 #### MariaDB
 
@@ -204,7 +258,7 @@ Você deve converter o formato de todas as tabelas do banco de dados de `COMPACT
 
 Definir o limite de arquivos abertos (ulimit) pode ajudar a evitar falhas de várias chamadas recursivas de cadeias de caracteres de consulta longas ou problemas com o uso do comando `bin/magento setup:rollback`. Esse comando é diferente para shells UNIX diferentes. Consulte seu tipo individual para obter informações específicas sobre o comando `ulimit`.
 
-A Adobe recomenda definir os arquivos abertos [ulimit](https://ss64.com/bash/ulimit.html) com um valor de `65536` ou mais, mas você poderá usar um valor maior, se necessário. Você pode definir o ulimit na linha de comando ou pode torná-lo uma configuração permanente para o shell do usuário.
+A Adobe recomenda definir os arquivos abertos [ulimit](https://ss64.com/bash/ulimit.html) com um valor de `65536` ou mais, mas você poderá usar um valor maior, se necessário. Você pode definir o comando na linha de comando ou torná-lo uma configuração permanente para o shell do usuário.
 
 Para definir o ulimit a partir da linha de comando:
 

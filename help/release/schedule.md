@@ -2,7 +2,7 @@
 title: Programação de lançamento
 description: Saiba quando a Adobe planeja anunciar o lançamento de novos recursos do Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: dc493fc044401e33ef40e4e070b5d82977938eb1
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 2%
@@ -12,13 +12,13 @@ ht-degree: 2%
 
 # Programação de lançamento
 
-O Adobe se esforça continuamente para encontrar o equilíbrio certo entre fazer atualizações de produtos simples e previsíveis, além de fornecer melhorias e novos recursos aos participantes iniciais mais rapidamente (consulte [política de controle de versão](versioning-policy.md)). O objetivo deste cronograma é fornecer datas para quando o Adobe planeja anunciar o lançamento de novos recursos substanciais.
+A Adobe se esforça continuamente para encontrar o equilíbrio certo entre tornar as atualizações de produtos simples e previsíveis, além de fornecer melhorias e novos recursos aos participantes iniciais mais rapidamente (consulte [política de controle de versão](versioning-policy.md)). O objetivo deste cronograma é fornecer datas para quando a Adobe planeja anunciar o lançamento de novos recursos substanciais.
 
 ## Recursos, infraestrutura em nuvem e extensibilidade
 
 Novos recursos, atualizações de recursos, infraestrutura em nuvem e atualizações de extensibilidade são fornecidos independentemente de versões de patches e estão disponíveis por meio de módulos externos, extensões, ferramentas ou serviços da Web. Os exemplos incluem:
 
-- ![Ícone de recurso](../assets/icons/feature.svg) [**Recursos e funcionalidades**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/release-information/release-notes-all)—Novos recursos e funcionalidades fornecidos independentemente das versões de patch. Por exemplo, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Serviço de Catálogo, Conexão de Dados, Live Search e Recommendations de Produtos.
+- ![Ícone de recurso](../assets/icons/feature.svg) [**Recursos e funcionalidades**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—Novos recursos e funcionalidades fornecidos independentemente das versões de patch. Por exemplo, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Serviço de Catálogo, Conexão de Dados, Live Search e Recomendações de Produto.
 
 - ![Ícone de infraestrutura](../assets/icons/servers.svg) [**Infraestrutura em nuvem**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite)—Novos recursos e aprimoramentos do Adobe Commerce na infraestrutura em nuvem e dos pacotes do Cloud Tools Suite for Commerce, que implantam e gerenciam instalações e atualizações do Adobe Commerce na plataforma em nuvem.
 
@@ -42,7 +42,7 @@ A lista a seguir fornece as datas das versões programadas de recursos, infraest
 
 O Adobe também lança [patches](versioning-policy.md#patch-release) para cada linha de versão suportada do aplicativo Adobe Commerce PHP principal. As versões de correção são oportunidades de atualizar a base de código principal para manter sua plataforma segura, confiável e eficiente.
 
-Além dos patches de qualidade, segurança e beta agendados listados nesta página, o Adobe fornece acesso a [patches individuais](versioning-policy.md#individual-patch) por meio da [Ferramenta de patches de qualidade](../tools/quality-patches-tool/usage.md). A ferramenta permite aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para a versão instalada do Adobe Commerce.
+Além dos patches de qualidade, segurança e beta agendados listados nesta página, a Adobe fornece acesso a [patches individuais](versioning-policy.md#individual-patch) por meio da [Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md). A ferramenta permite aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para a versão instalada do Adobe Commerce.
 
 A tabela a seguir fornece as datas das versões de patch programadas (as datas estão sujeitas a alterações):
 

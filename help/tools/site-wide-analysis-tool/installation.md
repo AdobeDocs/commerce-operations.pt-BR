@@ -1,9 +1,9 @@
 ---
 title: Guia de instalação
-description: Use este guia para instalar o [!DNL Site-Wide Analysis Tool] para seu site
+description: Use este guia para instalar [!DNL Site-Wide Analysis Tool] no seu site
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->A partir de 23 de abril de 2024, o [!DNL Site-Wide Analysis Tool] será descontinuado para todos os clientes locais do Adobe Commerce.
+>A partir de 23 de abril de 2024, a ação [!DNL Site-Wide Analysis Tool] será descontinuada para todos os Adobe Systems Comércio clientes no local.
 
-O [!DNL Site-Wide Analysis Tool] fornece monitoramento, relatórios e recomendações de desempenho em tempo real 24 horas por dia, 7 dias por semana, para garantir a segurança e a operabilidade do Adobe Commerce nas instalações da infraestrutura em nuvem. Ela também fornece informações detalhadas sobre patches disponíveis e instalados, extensões de terceiros e a instalação do Adobe Commerce.
+Fornece [!DNL Site-Wide Analysis Tool] monitoramento de desempenho, relatórios e recomendações 24 horas por dia, 7 dias por semana, em tempo real para garantir a segurança e a operabilidade de Adobe Systems Comércio em instalações infraestrutura em nuvem. Ele também fornece informações detalhadas sobre patches disponíveis e instalados, extensões de terceiros e suas Adobe Systems Comércio instalação.
 
 >[!INFO]
 >
->Saiba [como habilitar](../site-wide-analysis-tool/access.md) o [!DNL Site-Wide Analysis Tool] e gerar relatórios.
+>Aprenda [a ativar](../site-wide-analysis-tool/access.md) [!DNL Site-Wide Analysis Tool] e gerar relatórios.
 
 Se você tiver uma instalação local do Adobe Commerce, instale um agente em sua infraestrutura para usar a ferramenta. Não é necessário instalar o agente no Adobe Commerce em projetos de infraestrutura em nuvem.
 
@@ -78,7 +78,7 @@ Sua infraestrutura local deve atender aos seguintes requisitos antes de instalar
 
 ## [!DNL Commerce Services Connector]
 
-O agente requer que a extensão [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) seja instalada no sistema e [configurada](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) com chaves de API. Para verificar se a extensão está instalada, execute o seguinte comando:
+O agente requer que a extensão [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) seja instalada no sistema e [configurada](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) com chaves de API. Para verificar se a extensão está instalada, execute o seguinte comando:
 
 ```bash
 bin/magento module:status Magento_ServicesId
@@ -98,7 +98,7 @@ Se você instalou a extensão e a configurou usando uma chave de API existente p
 
 1. Clique em **[!UICONTROL Delete]** ao lado da Chave de API existente.
 
-1. [Configure](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) uma nova chave de API.
+1. [Configure](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) uma nova chave de API.
 
 >[!IMPORTANT]
 >
@@ -130,7 +130,7 @@ Se a extensão não estiver instalada, use as seguintes instruções para instal
    bin/magento cache:clean
    ```
 
-1. [Configure as Chaves de API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) para conectar a extensão ao seu sistema.
+1. [Configure as Chaves de API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) para conectar a extensão ao seu sistema.
 
 ## Instalar o agente
 
@@ -199,9 +199,9 @@ Se você não quiser usar nosso [script de shell](https://github.com/magento-swa
       tar -xf launcher.linux-amd64.tar.gz
       ```
 
-   Para a arquitetura **ARM64**:
+   Para a **arquitetura ARM64** :
 
-   1. Baixe o arquivo iniciador.
+   1. Baixe o arquivo de iniciador.
 
       ```bash
       curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
@@ -229,7 +229,7 @@ Se você não quiser usar nosso [script de shell](https://github.com/magento-swa
    shasum -a 512 -c launcher.checksum
    ```
 
-1. Crie o arquivo `config.yaml` com o conteúdo a seguir.
+1. Criar o `config.yaml` arquivo com o seguinte conteúdo.
 
    ```yaml
    project:
@@ -268,7 +268,7 @@ Se você não quiser usar nosso [script de shell](https://github.com/magento-swa
 
    - [Cron](#cron)
 
-## Executar o agente {#run-the-agent}
+## Execute o agente {#run-the-agent}
 
 Recomendamos configurar o agente para ser executado como um serviço. Se você tiver acesso limitado à sua infraestrutura e não tiver permissões raiz, deverá usar o [cron](#cron).
 
@@ -404,7 +404,7 @@ Para resolver esse erro, tente as seguintes etapas:
 1. Faça uma [instalação com script](#scripted), salve a saída e verifique se há erros na saída.
 1. Revise o arquivo `config.yaml` gerado e verifique se o caminho para sua instância do Commerce e PHP está correto.
 1. Verifique se o usuário que está executando o agendador está no grupo Unix [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md) ou se é o mesmo usuário que o proprietário do sistema de arquivos.
-1. Verifique se as chaves do [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) estão instaladas corretamente e tente atualizá-las para conectar a extensão ao seu sistema.
+1. Verifique se as chaves do [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) estão instaladas corretamente e tente atualizá-las para conectar a extensão ao seu sistema.
 1. [Desinstalar](#uninstall) o agente depois de atualizar as chaves e reinstalar usando o [script de instalação](#scripted).
 1. Execute o scheduler e veja se você ainda recebe o mesmo erro.
 1. Se você ainda receber o mesmo erro, aumente o nível do log no `config.yaml` para depurar e abrir um tíquete de Suporte.

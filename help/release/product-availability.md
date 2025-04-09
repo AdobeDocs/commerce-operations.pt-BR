@@ -1,8 +1,8 @@
 ---
 title: Disponibilidade do produto
-description: Saiba mais sobre quais recursos do Adobe Commerce são compatíveis no momento e verifique sua compatibilidade com versões específicas do Adobe Commerce.
+description: Saiba mais sobre quais Adobe Systems recursos Comércio são suportados atualmente e verifique sua compatibilidade com versões Adobe Systems Comércio específicas.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 56dabc0c35460a8ace6f6be455050f56119d1b16
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 0%
@@ -11,35 +11,35 @@ ht-degree: 0%
 
 # Disponibilidade do produto
 
-A tabela a seguir descreve o status da disponibilidade do software Adobe Commerce e onde obtê-lo, especialmente para software que está disponível fora do pacote convencional do Adobe Commerce Composer.
+A tabela a seguir descreve o status do Adobe Systems Comércio disponibilidade de software e onde obtê-lo, especialmente para softwares que estão disponíveis fora do pacote convencional Adobe Systems Comércio Composer.
 
-Os serviços e as extensões são testados na versão mais recente do Commerce no momento do lançamento dos produtos.
+Os serviços e extensões são testados na versão mais recente da Comércio no momento do lançamento dos produtos.
 
-As versões compatíveis foram totalmente testadas pelo Adobe. A assistência para versões compatíveis está disponível no Suporte ao cliente do Adobe. As versões mais antigas podem funcionar corretamente, mas não são oficialmente compatíveis.
+As versões compatíveis foram totalmente testadas por Adobe Systems. A assistência para versões suportadas está disponível Adobe Systems Suporte ao cliente. As versões mais antigas podem funcionar corretamente, mas não são oficialmente compatíveis.
 
 >[!NOTE]
 >
->O suporte para versões do Adobe Commerce também inclui suporte para [patches de segurança disponíveis](versions.md).
+>Suporte para Adobe Systems Comércio versões também inclui suporte para [patches](versions.md) de segurança disponíveis.
 
-## Extensões criadas no Adobe
+## Extensões Adobe Systems de autoria
 
-Essas extensões do Adobe Commerce são dissociadas da base de código principal do Adobe Commerce. Isso permite que o Adobe libere iterações dessas extensões em um período mais flexível e forneça aos clientes acesso antecipado a novos recursos.
+Essas extensões Adobe Systems Comércio são dissociadas da base Adobe Systems principal Comércio base de código. Isso permite Adobe Systems liberar iterações dessas extensões em uma período mais flexível e fornecer aos clientes acesso anterior a novos recursos.
 
-A tabela a seguir mostra o suporte à versão para cada extensão relativa à versão do Adobe Commerce.
+A tabela a seguir mostra o suporte de versão para cada extensão em relação à versão Comércio Adobe Systems.
 
 {{$include /help/_includes/templated/product-availability-extensions.md}}
 
-## Serviços da Commerce
+## Serviços Comércio
 
-Os [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) são um conjunto de recursos hospedados em Adobe que fornecem funcionalidade robusta e tempos de resposta rápidos, juntamente com a sua instância do Commerce.
+[Comércio Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) são um conjunto de recursos hospedados por Adobe Systems que oferecem funcionalidade tempos de resposta robustos e rápidos, juntamente com seus instância de Comércio.
 
-Recomenda-se que os comerciantes usem a versão mais recente de um serviço para garantir a maior estabilidade e funcionalidade. A documentação descreve a versão lançada no momento.
+Recomenda-se que os comerciantes usem a versão mais recente de um serviço para garantir a mais alta estabilidade e funcionalidade. A documentação descreve a versão atualmente lançada.
 
-* No momento, os Serviços da Adobe Commerce são compatíveis com o Commerce 2.4.4 e posterior. É recomendável que os comerciantes usem a versão mais recente do serviço.
-* Os serviços são considerados compatíveis com as versões anteriores do Commerce 2.4.x, mas não são oficialmente compatíveis.
-* Os serviços não são compatíveis com o Commerce 2.3.x, exceto com o Product Recommendations 3.3.7 e versões anteriores.
-* Atualmente, o serviço de Pagamentos é compatível com o Magento Open Source 2.4.4 e posteriores. É recomendável que os comerciantes usem a versão mais recente do serviço.
+* Adobe Systems Comércio Services são atualmente compatíveis com a Comércio 2.4.4 e posteriores. Recomenda-se que os comerciantes usem a versão mais recente do serviço.
+* Os serviços são considerados compatíveis com versões anteriores do Comércio 2.4.x, mas não são oficialmente compatíveis.
+* Os serviços não são compatíveis com o Comércio 2.3.x, exceto para Produtos recomendações 3.3.7 e anteriores.
+* No momento, o serviço de Pagamentos é compatível com o Magento Open Source 2.4.4 e posterior. Recomenda-se que os comerciantes usem a versão mais recente do serviço.
 
-A tabela a seguir mostra o suporte à versão para cada serviço em relação à versão do Adobe Commerce.
+A tabela a seguir mostra o suporte de versão para cada serviço em relação à Adobe Systems versão Comércio.
 
 {{$include /help/_includes/templated/product-availability-services.md}}
