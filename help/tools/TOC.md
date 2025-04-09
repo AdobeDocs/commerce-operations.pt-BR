@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 1e02a1831639368ba4640231a854d6f5613c60ad
+source-git-commit: fd76886406710d98dafa22953950424d2037477a
 workflow-type: tm+mt
-source-wordcount: '7287'
+source-wordcount: '7312'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Ferramentas {#tools}
 
 - [Visão geral](overview.md)
-- Ferramenta de Análise do Site {#site-wide-analysis-tool}
+- Ferramenta de análise do site {#site-wide-analysis-tool}
    - [Introdução](site-wide-analysis-tool/intro.md)
    - [Instalação](site-wide-analysis-tool/installation.md)
    - [Como acessar o](site-wide-analysis-tool/access.md)
@@ -40,12 +40,12 @@ ht-degree: 0%
    - [Alertas gerenciados no Adobe Commerce: [!DNL MariaDB] alertas](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
    - [Alertas gerenciados para Adobe Commerce: [!DNL Apdex] alerta de aviso](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    - [Alertas gerenciados para Adobe Commerce: alerta de aviso do CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
-- Ferramenta de correções de qualidade {#quality-patches-tool}
+- Ferramenta Correções de qualidade {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de versão](quality-patches-tool/release-notes.md)
-   - Patches disponíveis na Ferramenta de Patches de Qualidade {#patches-available-in-qpt}
+   - Patches disponíveis na Ferramenta de patches de qualidade {#patches-available-in-qpt}
       - [Visão geral](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
       - v1.1.0 {#v1-1-0}
          - [Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.0](quality-patches-tool/patches-available-in-qpt/v1-1-0/overview.md)
@@ -766,9 +766,11 @@ ht-degree: 0%
          - [ACSD-64111: corrige InvalidArgumentException: a classe não existe ao definir condições aninhadas para um componente Produto em  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992: [!UICONTROL Cart Price Rule] com erro de condição de cupom e método de envio na interface do Administrador](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
+         - [ACSD-64546: Mensagem de erro genérico na interface e na matriz para exceção de conversão de sequência de caracteres durante a criação do rótulo UPS](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion.md)
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689: Vários problemas com a árvore de categoria são exibidos em níveis mais profundos e refletem relações de âncora/não âncora](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: a página [!UICONTROL Edit Attribute Set] é carregada lentamente com milhares de atributos de produto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-63974: correções lentas [!UICONTROL Requisition List] no tempo de carregamento com paginação](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
    - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referência de ferramentas de linha de comando {#cli-reference}
    - [Adobe Commerce (no local)](reference/commerce-on-premises.md)
@@ -795,7 +797,7 @@ ht-degree: 0%
    - [A guia Segurança](observation-for-adobe-commerce/security-tab.md)
    - [A guia Infraestrutura](observation-for-adobe-commerce/oac-infra.md)
    - [Como usar a observação para o Adobe Commerce](observation-for-adobe-commerce/how-to-use.md)
-- Ferramenta de Migração de Dados {#data-migration}
+- Ferramenta de migração de dados {#data-migration}
    - [Como a migração funciona](data-migration-tool/how-migration-works.md)
    - [Práticas recomendadas](data-migration-tool/best-practices.md)
    - [Versões compatíveis](data-migration-tool/supported-versions.md)
