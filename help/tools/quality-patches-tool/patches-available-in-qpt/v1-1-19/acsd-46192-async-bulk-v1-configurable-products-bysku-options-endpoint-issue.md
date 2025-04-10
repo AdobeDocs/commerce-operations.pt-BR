@@ -1,16 +1,21 @@
 ---
-title: "ACSD-46192: problema com endpoint assíncrono/em massa/V1/configurable-products/bySku/options"
+title: 'ACSD-46192: problema com endpoint assíncrono/em massa/V1/configurable-products/bySku/options'
 description: O patch ACSD-46192 corrige o problema com o endpoint "async/bulk/V1/configurable-products/bySku/options". Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 está instalada. A ID do patch é ACSD-46192. Observe que o problema foi corrigido no Adobe Commerce 2.4.5.
 feature: Configuration, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
+source-git-commit: 2cd5a55d95fad071fe872fa466aaeb56c439dad1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
 # ACSD-46192: problema com endpoint assíncrono/em massa/V1/configurable-products/bySku/options
+
+>[!NOTE]
+>
+>O patch ACSD-46192 foi parcialmente descontinuado, pois esse problema é resolvido pelo patch de segurança obrigatório [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).
 
 O patch ACSD-46192 corrige o problema com o endpoint `async/bulk/V1/configurable-products/bySku/options`. Este patch está disponível quando a [Ferramenta de Patches de Qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 está instalada. A ID do patch é ACSD-46192. Observe que o problema foi corrigido no Adobe Commerce 2.4.5.
 
@@ -22,7 +27,7 @@ O patch ACSD-46192 corrige o problema com o endpoint `async/bulk/V1/configurable
 
 **Compatível com as versões do Adobe Commerce:**
 
-* Adobe Commerce (todos os métodos de implantação) 2.4.3 e 2.4.4
+* Adobe Commerce (todos os métodos de implantação) 2.3.6 - 2.4.3-p3
 
 >[!NOTE]
 >
@@ -30,7 +35,7 @@ O patch ACSD-46192 corrige o problema com o endpoint `async/bulk/V1/configurable
 
 ## Problema
 
-Ocorre um erro quando uma solicitação POST é enviada para `async/bulk/V1/configurable-products/bySku/`.
+Erro ao enviar uma solicitação POST para `async/bulk/V1/configurable-products/bySku/`.
 
 <u>Etapas a serem reproduzidas</u>:
 
@@ -83,7 +88,7 @@ TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
