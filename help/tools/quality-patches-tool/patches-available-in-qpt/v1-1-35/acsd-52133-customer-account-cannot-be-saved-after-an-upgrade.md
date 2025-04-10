@@ -4,14 +4,18 @@ description: Aplique o patch ACSD-52133 para corrigir o problema do Adobe Commer
 feature: Customers, Upgrade
 role: Admin
 exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 82667023bbaa9d725eb52dacb8bd47042bdfe028
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # ACSD-52133: A conta do cliente não pode ser salva após uma atualização
+
+>[!NOTE]
+>
+>Este patch foi substituído devido a um conflito com o patch de segurança [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).
 
 O patch ACSD-52133 corrige o problema em que uma conta de cliente não pode ser salva após uma atualização. Este patch está disponível quando o [!DNL Quality Patches Tool (QPT)] 1.1.35 está instalado. A ID do patch é ACSD-52133. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.7.
 
