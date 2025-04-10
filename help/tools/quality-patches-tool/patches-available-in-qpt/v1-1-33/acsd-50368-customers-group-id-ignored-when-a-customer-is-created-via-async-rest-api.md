@@ -4,14 +4,18 @@ description: Aplique o patch ACSD-50368 para corrigir o problema do Adobe Commer
 feature: REST
 role: Admin
 exl-id: 1ca78717-2144-4410-a398-764864ee182f
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 9039635038bee9083fa3ed009e79c76e3655b357
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
 # ACSD-50368: a group_id dos clientes é ignorada quando um cliente é criado por meio da API REST assíncrona ou da API REST assíncrona em massa
+
+>[!NOTE]
+>
+>O patch ACSD-50368 foi parcialmente descontinuado, pois esse problema é resolvido pelo patch de segurança obrigatório [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) para versões acima da 2.4.4.
 
 O patch ACSD-50368 corrige o problema em que a group_id de clientes é ignorada quando um cliente é criado por meio da API REST assíncrona ou da API REST em massa assíncrona. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.33 está instalado. A ID do patch é ACSD-50368. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.7.
 
@@ -23,7 +27,7 @@ O patch ACSD-50368 corrige o problema em que a group_id de clientes é ignorada 
 
 **Compatível com as versões do Adobe Commerce:**
 
-* Adobe Commerce (todos os métodos de implantação) 2.4.3 - 2.4.4-p4
+* Adobe Commerce (todos os métodos de implantação) 2.4.3 - 2.4.3-p3
 
 >[!NOTE]
 >
@@ -35,7 +39,7 @@ A group_id dos clientes é ignorada quando um cliente é criado por meio da API 
 
 <u>Pré-requisitos</u>:
 
-Configure o RabbitMQ para filas de processamento:
+Configurar RabbitMQ para filas de processamento:
 
 ```
 bin/magento setup:config:set --amqp-host=services --amqp-port=5672 --amqp-user=guest --amqp-password=guest 
@@ -120,7 +124,7 @@ O group_id é definido para o padrão 1 para o novo cliente.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
