@@ -2,9 +2,9 @@
 title: Versões do Beta
 description: Saiba mais sobre as versões beta do Adobe Commerce e como participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
+source-git-commit: ea4f340540e57b282657a44502d80f1d5c409c6a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,13 @@ Os programas beta do Adobe Commerce são uma maneira de os comerciantes obterem 
 
 >[!IMPORTANT]
 >
->As versões do Beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. A Adobe não terá nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) às versões beta. Recomenda-se que os clientes usem cuidado e não confiem de forma alguma no funcionamento ou desempenho correto das versões beta e/ou em qualquer documentação ou material que a acompanhe. Os recursos e AS APIs na versão beta estão sujeitos a alterações sem aviso prévio. Assim, qualquer uso das versões beta é totalmente por conta própria do cliente.
+>As versões do Beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. A Adobe não terá nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) às versões beta. Os clientes são aconselhados a ter cuidado e não depender de forma alguma do funcionamento ou do desempenho correto das versões beta e/ou de qualquer documentação ou material que as acompanhe. Os recursos e as APIs na versão beta estão sujeitos a alterações sem aviso prévio. Portanto, qualquer uso das versões beta é de inteira responsabilidade do cliente.
 
-## Benefícios de participar
+## Benefícios da participação
 
-Obter acesso antecipado aos recursos que a Adobe Systems está desenvolvendo fornece aos clientes e parceiros a capacidade de fornecer feedback, moldar o desenvolvimento de produtos e preparar-se para adotar novos recursos antes da disponibilidade geral.
+A obtenção de acesso antecipado aos recursos que a Adobe está desenvolvendo oferece aos clientes e parceiros a capacidade de fornecer feedback, moldar o desenvolvimento do produto e se preparar para adotar novos recursos antes da disponibilidade geral.
 
-## Programas beta atuais
+## Programas atuais do Beta
 
 Consulte as seções a seguir para obter uma lista de programas beta ativos.
 
@@ -34,13 +34,13 @@ O Adobe Commerce Optimizer aprimora sua experiência de comércio eletrônico co
 
 Com o Adobe Commerce Optimizer, você pode:
 
-- Cresça e dimensione seu catálogo sem reaplacar toda a sua pilha de comércio.
-- Ingera dados do catálogo de qualquer fonte.
+- Aumente e dimensione seu catálogo sem refazer a plataforma de toda a sua pilha de comércio.
+- Assimilar dados de catálogo de qualquer origem.
 - Definir canais e políticas de negócios.
 - Crie pesquisas e recomendações personalizadas usando IA e ML.
 - Visualize dados essenciais do produto disponíveis, incluindo o status da sincronização e dados de eventos da loja, para uma implementação precisa e solução de problemas.
 
-[Saiba mais](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) sobre o Adobe Commerce Optimizer. Se você deseja participar do programa de acesso antecipado do Adobe Commerce Optimizer, envie uma solicitação de email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+[Saiba mais](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) sobre o Adobe Commerce Optimizer. Se você estiver interessado em saber mais sobre o programa de acesso antecipado do [!DNL Adobe Commerce Optimizer], preencha o [formulário de solicitação de acesso antecipado](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
 
 ### Recursos aprimorados de pesquisa para o Live Search (Beta público)
 
@@ -53,18 +53,18 @@ Esta versão beta oferece suporte a três novos recursos na consulta [`productSe
 
   A pesquisa em camadas está disponível para a indexação de pesquisa `startsWith` e a indexação de pesquisa `contains`, conforme descrito abaixo:
 
-- **startsWith pesquisa indexação** - Search usando `startsWith` indexação. Esse novo recurso permite:
+- **startsWith indexação de pesquisa** - Pesquisar usando a indexação `startsWith`. Esse novo recurso permite:
 
-   - Pesquisando por produtos nos quais o valor do atributo começa com uma determinada string.
-   - Configurar uma pesquisa &quot;termina com&quot; para que os compradores possam pesquisa para produtos onde o valor do atributo termina com uma determinada string. Para habilitar uma pesquisa &quot;termina com&quot;, o atributo produto precisa ser assimilado ao contrário e a chamada da API também deve ser uma sequência de caracteres revertida.
+   - Procurando produtos em que o valor do atributo começa com uma string específica.
+   - Configurar uma pesquisa &quot;termina com&quot; para que os compradores possam pesquisar produtos em que o valor do atributo termina com uma determinada string. Para habilitar uma pesquisa &quot;termina com&quot;, o atributo de produto precisa ser assimilado na ordem inversa, e a chamada de API também deve ser uma sequência invertida.
 
 - **contém a indexação de pesquisa** -Pesquise um atributo usando a indexação contains. Esse novo recurso permite:
 
    - Procurando uma consulta em uma cadeia de caracteres maior. Por exemplo, se um comprador procurar o número de produto &quot;PE-123&quot; na cadeia de caracteres &quot;HAPE-123&quot;.
 
-      - Observação: este tipo de pesquisa é diferente da [pesquisa de frase](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) existente, que executa uma pesquisa de preenchimento automático. Por exemplo, se o valor do seu atributo de produto for &quot;calças ao ar livre&quot;, uma frase pesquisa retornará uma resposta para &quot;panela para fora&quot;, mas não retorna uma resposta para &quot;formigas oor&quot;. Uma contém pesquisa, no entanto, retorna uma resposta para &quot;formigas oor&quot;.
+      - Observação: este tipo de pesquisa é diferente da [pesquisa de frase](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) existente, que executa uma pesquisa de preenchimento automático. Por exemplo, se o valor do atributo do seu produto for &quot;calças de ar livre&quot;, uma pesquisa de frase retornará uma resposta para &quot;fora da panela&quot;, mas não retornará uma resposta para &quot;ou formigas&quot;. A contém busca, no entanto, retorna uma resposta para &quot;ou formigas&quot;.
 
-Essas novas condições aumentam o mecanismo de filtragem pesquisar consulta para refinar pesquisa resultados. Essas novas condições não afetam as pesquisar consulta principais. Para participar da beta, envie um solicitação de email para [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
+Essas novas condições aprimoram o mecanismo de filtragem de consultas de pesquisa para refinar os resultados da pesquisa. Essas novas condições não afetam a consulta de pesquisa principal. Para participar da versão beta, envie uma solicitação de email para [commerce-store-services](mailto:commerce-storefront-services@adobe.com).
 
 Para instalar o Live Search beta, consulte o [Guia do Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
@@ -74,21 +74,21 @@ Esse acelerador de integração do IBM Sterling Order Management permite que os 
 
 - Visibilidade em tempo real dos níveis de inventário e datas precisas de entrega para seus clientes.
 - Seleção de fornecedor automatizada para pedidos com base em regras configuráveis, para que você possa otimizar sua rede de atendimento e inventário.
-- Uma visualização universal de pedidos em todos os canais a partir de uma única painel para que suas equipes de suporte possam prestar um serviço excepcional e identificar e lidar com exceções rapidamente.
-- Um fluxo de gerenciamento de retorno de modelo para simplificar o gerenciamento de retornos.
+- Uma visualização universal de pedidos em canais a partir de um único painel, para que suas equipes de suporte possam fornecer serviços excepcionais e identificar e lidar com exceções rapidamente.
+- Um fluxo de gerenciamento de devoluções modelado para simplificar o gerenciamento de devoluções.
 
-Para participar deste beta, envie um email solicitação para [o sbieber@adobe.com](mailto:sbieber@adobe.com).
+Para participar deste beta, envie uma solicitação de email para [sbieber@adobe.com](mailto:sbieber@adobe.com).
 
-### Fundação Comércio Adobe Systems (beta público)
+### Adobe Commerce Foundation (Beta público)
 
-Cada Adobe Systems Comércio versão beta da Foundation inclui todas as alterações entregues a Adobe Systems Comércio código principal até a data de lançamento agendada, inclusive, mas não se limitando às seguintes áreas funcionais:
+Cada versão beta do Adobe Commerce Foundation inclui todas as alterações fornecidas ao código principal do Adobe Commerce até a data de lançamento programada, incluindo, mas não limitado às seguintes áreas funcionais:
 
 - Correções de segurança mais recentes
 - Melhorias de desempenho
 - Melhorias na GraphQL
 - Correções de erros de qualidade geral
 - Contribuições da Comunidade
-- Alterações necessárias para suportar compatibilidade com [serviços Adobe Systems Comércio](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- Alterações necessárias para oferecer suporte à compatibilidade com [serviços da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
 
 #### Convenção de nomenclatura e programação
 
@@ -113,4 +113,4 @@ A Adobe não fornece o serviço de suporte padrão da Adobe para versões beta.
 
 Para enviar feedback relacionado às versões beta, siga nosso [fluxo regular de relatórios de problemas](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) no [GitHub](https://github.com/magento/magento2).
 
-Nossas equipes internas monitor todos os problemas crítico relatados na versão beta mais recente e priorizar que sejam resolvidos antes da data de lançamento do GA.
+Nossas equipes internas monitorarão todos os problemas críticos relatados em relação à versão beta mais recente e os priorizarão para serem resolvidos antes da data de lançamento no mercado.
