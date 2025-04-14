@@ -1,17 +1,16 @@
 ---
-title: 'ACSD-64467: WYSIWYG editor vazio após salvar categoria descrição em armazenamento nível de visualização'
-description: Aplicar o ACSD-64467 correção para corrigir o problema Comércio Adobe Systems em que o editor WYSIWYG aparece vazio depois de salvar uma descrição categoria no nível armazenamento visualização.
+title: 'ACSD-64467: editor do WYSIWYG vazio após salvar a descrição da categoria no nível de exibição da loja'
+description: Aplique o patch ACSD-64467 para corrigir o problema do Adobe Commerce em que o editor do WYSIWYG aparece vazio após salvar uma descrição de categoria no nível de exibição da loja.
 feature: Page Content
 role: Admin, Developer
-exl-id: 8bc1794f-ace1-4719-9fff-194dbd701ab6
-source-git-commit: b71447d5dac3208e537b29204dc8d47e8838f584
+source-git-commit: 4e883b3ec9b790f52dd56206539475e72bdf361d
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
-# ACSD-64467: WYSIWYG editor vazio após salvar categoria descrição em armazenamento nível de visualização
+# ACSD-64467: editor do WYSIWYG vazio após salvar a descrição da categoria no nível de exibição da loja
 
 O patch ACSD-64467 corrige o problema em que o editor do WYSIWYG aparece vazio após salvar uma descrição de categoria no nível de exibição da loja. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 está instalado. A ID do patch é ACSD-64467. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.
 
@@ -27,9 +26,9 @@ O patch ACSD-64467 corrige o problema em que o editor do WYSIWYG aparece vazio a
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o correção é compatível com a sua Adobe Systems versão Comércio, atualize o `magento/quality-patches` pacote para a versão mais recente e verifique a compatibilidade em [[!DNL Quality Patches Tool]: Search para patches página](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID da correção como palavra-chave de pesquisa para localizar a correção.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
-## Questão
+## Problema
 
 O editor do WYSIWYG aparece vazio após salvar uma descrição de categoria no nível de exibição de loja.
 
@@ -46,9 +45,9 @@ A descrição é salva e exibida corretamente.
 
 <u>Resultados reais</u>:
 
-A descrição fica vazia após o recarregamento do página.
+A descrição fica vazia após o recarregamento da página.
 
-## Aplicar o correção
+## Aplicar o patch
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
