@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 72917c9e97141216e7393c28048e43f4f5f9c73f
+source-git-commit: 0960da0b0c1945e899ce092fb938de13e1b5c95c
 workflow-type: tm+mt
-source-wordcount: '7407'
+source-wordcount: '7422'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Ferramentas {#tools}
 
 - [Visão geral](overview.md)
-- Ferramenta de Análise do Site {#site-wide-analysis-tool}
+- Ferramenta de análise do site {#site-wide-analysis-tool}
    - [Introdução](site-wide-analysis-tool/intro.md)
    - [Instalação](site-wide-analysis-tool/installation.md)
    - [Como acessar o](site-wide-analysis-tool/access.md)
@@ -40,12 +40,12 @@ ht-degree: 0%
    - [Alertas gerenciados no Adobe Commerce: [!DNL MariaDB] alertas](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
    - [Alertas gerenciados para Adobe Commerce: [!DNL Apdex] alerta de aviso](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    - [Alertas gerenciados para Adobe Commerce: alerta de aviso do CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
-- Ferramenta de correções de qualidade {#quality-patches-tool}
+- Ferramenta Correções de qualidade {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de versão](quality-patches-tool/release-notes.md)
-   - Patches disponíveis na Ferramenta de Patches de Qualidade {#patches-available-in-qpt}
+   - Patches disponíveis na Ferramenta de patches de qualidade {#patches-available-in-qpt}
       - [Visão geral](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
       - v1.1.0 {#v1-1-0}
          - [Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.0](quality-patches-tool/patches-available-in-qpt/v1-1-0/overview.md)
@@ -772,6 +772,7 @@ ht-degree: 0%
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689: Vários problemas com a árvore de categoria são exibidos em níveis mais profundos e refletem relações de âncora/não âncora](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: a página [!UICONTROL Edit Attribute Set] é carregada lentamente com milhares de atributos de produto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-64431: A mutação &quot;placeOrder&quot; com código de cupom na solicitação lança um erro interno](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error.md)
          - [ACSD-64684: erro de validação ao salvar um cartão-presente com um valor superior a 999 devido à vírgula em mil (1.000)](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64684-validation-error-for-gift-card-value-over-999-due-to-comma-in-one-thousand.md)
          - [ACSD-63883: Corrigindo items_count incorreto na resposta  [!DNL GraphQL]  para [!UICONTROL Requisition List]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
          - [ACP2E-3705: indexer_update_all_views cron falha quando MAGE_INDEXER_THREADS_COUNT é definido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
@@ -804,7 +805,7 @@ ht-degree: 0%
    - [A guia Segurança](observation-for-adobe-commerce/security-tab.md)
    - [A guia Infraestrutura](observation-for-adobe-commerce/oac-infra.md)
    - [Como usar a observação para o Adobe Commerce](observation-for-adobe-commerce/how-to-use.md)
-- Ferramenta de Migração de Dados {#data-migration}
+- Ferramenta de migração de dados {#data-migration}
    - [Como a migração funciona](data-migration-tool/how-migration-works.md)
    - [Práticas recomendadas](data-migration-tool/best-practices.md)
    - [Versões compatíveis](data-migration-tool/supported-versions.md)
