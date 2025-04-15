@@ -1,5 +1,5 @@
 ---
-source-git-commit: 54757d09eb0f476229e567e43c58dc2130a59ac9
+source-git-commit: f756964406f101a93a513600f668edbffec17cb1
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 0%
@@ -255,7 +255,7 @@ O suporte para a linha de versão 2.4.5 termina em agosto  9 de janeiro de 2025
 
 ## 2.4.4
 
-O suporte para a linha de versão 2.4.4 termina em 12 de abril de 2025.
+O suporte para a linha de versão 2.4.4 terminou em 12 de abril de 2025.
 
 <table>
   <thead>
@@ -352,9 +352,9 @@ O suporte para a linha de versão 2.4.4 termina em 12 de abril de 2025.
   </tbody>
 </table>
 
-## 2.4.0 - 2.4.3
+## 2.4.0-2.4.3
 
-O suporte para a linha de versão 2.4.0-2.4.3 terminou em 28 de novembro de 2022.
+O suporte para a linha de versão 2.4.0-2.4.3 foi encerrado em 28 de novembro de 2022.
 
 <table>
   <thead>
@@ -707,7 +707,7 @@ O suporte para a linha de versão 2.1 terminou em 30 de junho de 2019.
         <td>
           2.1.10
         </td>
-        <td>novembro  7 de outubro de 2017</td>
+        <td>7 de novembro de 2017</td>
     </tr>
     <tr>
         <td>
