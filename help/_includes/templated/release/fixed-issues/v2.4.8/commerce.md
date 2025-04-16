@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
+source-git-commit: 934fe621356c45bcefd2f84b7d01986b4995b061
 workflow-type: tm+mt
-source-wordcount: '28394'
+source-wordcount: '28390'
 ht-degree: 0%
 
 ---
@@ -99,8 +99,8 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
    * _Observação de correção_: o sistema agora alinha corretamente os Botões de ações da página à direita do cabeçalho fixo no painel de administração, melhorando a aparência profissional. Anteriormente, esses botões flutuavam incorretamente no lado esquerdo do cabeçalho fixo.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38701>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/44cef3a9>
-* _AC-11999_: erro dev:di:info no magento 2.4.7
-   * _Observação de correção_: o sistema agora exibe corretamente os parâmetros do construtor ao executar o comando dev:di:info, impedindo a ocorrência de erros. Anteriormente, a execução desse comando resultava em um erro devido a uma incompatibilidade de tipos no argumento.
+* _AC-11999_: erro `dev:di:info` no magento 2.4.7
+   * _Observação de correção_: o sistema agora exibe corretamente os parâmetros do construtor ao executar o comando `dev:di:info`, impedindo a ocorrência de erros. Anteriormente, a execução desse comando resultava em um erro devido a uma incompatibilidade de tipos no argumento.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38740>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-13000_: caixa de seleção Fazer logon como aceitação do cliente não traduzível
@@ -969,7 +969,7 @@ Anteriormente, os registros nas tabelas de sequência de produtos do pacote não
    * _Observação de correção_: o sistema agora redefine o campo de texto da região quando o país é alterado no menu suspenso, garantindo que os valores anteriores não persistam. Anteriormente, alterar o país na lista suspensa não redefinia o campo de região, fazendo com que o último valor salvo fosse preservado.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/3ea26621>
 * _AC-9240_: a exclusão de cliente não limpa todos os dados de sessão do navegador na loja para clientes conectados e excluídos
-   * _Observação de correção_: excluir um cliente agora limpa todos os dados de sessão do navegador da loja para clientes conectados e excluídos conforme esperado. O comprador pode continuar comprando e o navegador trata a sessão como uma sessão de convidado. Anteriormente, quando a conta do cliente de um comprador conectado era excluída do Administrador, o navegador do comprador exibia erros do JavaScript.
+   * _Observação de correção_: excluir um cliente agora limpa todos os dados de sessão do navegador da loja para clientes conectados e excluídos conforme esperado. O comprador pode continuar comprando e o navegador trata a sessão como uma sessão de convidado. Anteriormente, quando a conta do cliente de um comprador conectado era excluída do Administrador, o navegador do comprador exibia erros de JavaScript.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/7d5e3906>
 
 ### Estrutura
@@ -1531,19 +1531,19 @@ Anteriormente, o era atribuído ao armazenamento de administração em vez do re
 * _LYNX-399_: a miniatura do espaço reservado retorna quando um produto simples é adicionado ao carrinho em um produto agrupado
    * _Observação de correção_: corrigido um problema em que a adição de um produto simples (parte de um produto agrupado) ao carrinho retornava uma imagem em miniatura de espaço reservado, mesmo quando o produto tinha uma imagem atribuída.
 Detalhes da correção:
-· A miniatura do produto agora exibe corretamente a imagem atribuída, se disponível.
-· A seleção da miniatura respeita a configuração do administrador em:
+* A miniatura do produto agora exibe corretamente a imagem atribuída, se disponível.
+* A seleção da miniatura respeita a configuração do administrador em:
 Lojas > Configuração > Vendas > Check-out > Carrinho de compras > Imagem de produto agrupada.
 Isso garante um comportamento consistente de miniaturas para produtos agrupados com base nas configurações da loja.
 * _LYNX-400_: os atributos de opção personalizados do cliente não funcionam com valores inteiros
-   * _Observação de correção_: corrigiu um problema onde os atributos de opção personalizados do cliente não funcionavam quando o valor retornado era um número inteiro. Agora, as opções personalizadas lidam corretamente com valores inteiros e os retornam conforme esperado.
+   * _Observação de correção_: corrigiu um problema onde os atributos de opção personalizados do cliente não funcionavam quando o valor retornado era um inteiro. Agora, as opções personalizadas lidam corretamente com valores inteiros e os retornam conforme esperado.
 * _LYNX-402_: erro interno do servidor ao tentar obter priceDetails para produtos do pacote com preço dinâmico
    * _Observação de correção_: resolvida um problema em que a consulta de price_details para produtos agrupados com preços dinâmicos via GraphQL resultava em um erro interno do servidor. Esse aprimoramento garante consultas estáveis do carrinho ao trabalhar com produtos de pacote configurados com preços dinâmicos.
 * _LYNX-403_: only_x_left_in_stock sempre retorna 0 para produtos configuráveis
    * _Observação de correção_: resolvida um problema em que o atributo only_x_left_in_stock sempre retornava 0 para produtos configuráveis quando adicionado usando o SKU pai com opções.
 Detalhes da correção:
-· O valor only_x_left_in_stock agora reflete com precisão o estoque da variante secundária selecionada, em vez do SKU principal.
-· Isso garante que os níveis de estoque sejam exibidos corretamente para variações de produtos configuráveis no carrinho e nas páginas do produto.
+* O valor only_x_left_in_stock agora reflete com precisão o estoque da variante secundária selecionada, em vez do SKU principal.
+* Isso garante que os níveis de estoque sejam exibidos corretamente para variações de produtos configuráveis no carrinho e nas páginas do produto.
 * _LYNX-405_: Erro do GraphQL: tipo &#39;file&#39; sem suporte na consulta de opções personalizáveis
    * _Observação de correção_: corrigido um problema no qual o GraphQL retornava um erro para opções personalizáveis do tipo &quot;arquivo&quot; nos itens do carrinho. A consulta agora retorna corretamente os detalhes de todos os tipos de opções personalizáveis, incluindo opções baseadas em arquivos, sem causar erros.
 * _LYNX-411_: a consulta do GraphQL não retorna o preço regular calculado correto para produtos personalizáveis
