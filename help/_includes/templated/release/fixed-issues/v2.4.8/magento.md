@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
+source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
 workflow-type: tm+mt
-source-wordcount: '26047'
+source-wordcount: '26039'
 ht-degree: 0%
 
 ---
@@ -195,8 +195,8 @@ Anteriormente, era possível criar o grupo de clientes Duplicar preço do grupo 
    * _Observação de correção_: o sistema agora alinha corretamente os Botões de ações da página à direita do cabeçalho fixo no painel de administração, melhorando a aparência profissional. Anteriormente, esses botões flutuavam incorretamente no lado esquerdo do cabeçalho fixo.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38701>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/44cef3a9>
-* _AC-11999_: erro dev:di:info no magento 2.4.7
-   * _Observação de correção_: o sistema agora exibe corretamente os parâmetros do construtor ao executar o comando dev:di:info, impedindo a ocorrência de erros. Anteriormente, a execução desse comando resultava em um erro devido a uma incompatibilidade de tipos no argumento.
+* _AC-11999_: erro `dev:di:info` no magento 2.4.7
+   * _Observação de correção_: o sistema agora exibe corretamente os parâmetros do construtor ao executar o comando `dev:di:info`, impedindo a ocorrência de erros. Anteriormente, a execução desse comando resultava em um erro devido a uma incompatibilidade de tipos no argumento.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38740>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-13000_: caixa de seleção Fazer logon como aceitação do cliente não traduzível
@@ -331,7 +331,7 @@ Agora podemos atualizar status de pedidos personalizados, enquanto anteriormente
    * _Observação de correção_: após a correção, se o domínio de administrador personalizado for um subdomínio do domínio principal, o administrador só poderá ser acessado do subdomínio configurado.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/37663>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_: validação com falha para &quot;Quantidade Máxima Permitida no Carrinho de Compras&quot;
+* _ACP2E-3392_: validação com falha para &#39;Quantidade Máxima Permitida no Carrinho de Compras&#39;
    * _Observação de correção_: anteriormente, quando colocávamos `Maximum Qty Allowed in Shopping Cart` vazio, não havia nenhuma exceção, embora um valor vazio não fosse aceito aqui. Depois que essa correção for aplicada, colocar uma string vazia gerará exceções e não permitirá salvar o produto.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [Problema na Interface do Usuário de Visualização do Pagebuilder] Os botões na coluna do Page Builder não estão alinhados corretamente
@@ -964,7 +964,7 @@ Agora podemos atualizar status de pedidos personalizados, enquanto anteriormente
    * _Observação de correção_: o sistema agora redefine o campo de texto da região quando o país é alterado no menu suspenso, garantindo que os valores anteriores não persistam. Anteriormente, alterar o país na lista suspensa não redefinia o campo de região, fazendo com que o último valor salvo fosse preservado.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/3ea26621>
 * _AC-9240_: a exclusão de cliente não limpa todos os dados de sessão do navegador na loja para clientes conectados e excluídos
-   * _Observação de correção_: excluir um cliente agora limpa todos os dados de sessão do navegador da loja para clientes conectados e excluídos conforme esperado. O comprador pode continuar comprando e o navegador trata a sessão como uma sessão de convidado. Anteriormente, quando a conta do cliente de um comprador conectado era excluída do Administrador, o navegador do comprador exibia erros do JavaScript.
+   * _Observação de correção_: excluir um cliente agora limpa todos os dados de sessão do navegador da loja para clientes conectados e excluídos conforme esperado. O comprador pode continuar comprando e o navegador trata a sessão como uma sessão de convidado. Anteriormente, quando a conta do cliente de um comprador conectado era excluída do Administrador, o navegador do comprador exibia erros de JavaScript.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/7d5e3906>
 
 ### Estrutura
@@ -1084,8 +1084,8 @@ Agora podemos atualizar status de pedidos personalizados, enquanto anteriormente
    * _Observação de correção_: o sistema agora faz referência às classes corretamente nos módulos, garantindo uma operação mais suave e evitando falhas devido a classes não existentes. Isso inclui uma correção de bug nos módulos Indexador e Creditmemo e a implementação da HttpGetActionInterface na classe PrintAction. Anteriormente, referências de classe incorretas resultavam em erros e possíveis falhas no sistema, e certas funcionalidades, como o nome do arquivo para arquivos PDF de memorando de crédito e reindexação de estoques, não funcionavam como esperado.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/39126>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/37784>
-* _AC-12964_: capacidade de definir Área para comando CLI dev:di:info
-   * _Observação de correção_: o sistema agora permite que os desenvolvedores definam uma área para o comando CLI dev:di:info, aprimorando o processo de desenvolvimento e depuração. Anteriormente, esse comando só podia exibir informações da área GLOBAL.
+* _AC-12964_: capacidade de definir Área para o comando CLI `dev:di:info`
+   * _Observação de correção_: o sistema agora permite que os desenvolvedores definam uma área para o comando da CLI `dev:di:info`, aprimorando o processo de desenvolvimento e depuração. Anteriormente, esse comando só podia exibir informações da área GLOBAL.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38758>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/38759>
 * _AC-13149_: [Problema] adicione a propriedade isMultipleFiles ao modelo de elemento de formulário de imagem
@@ -1506,19 +1506,19 @@ Anteriormente, o era atribuído ao armazenamento de administração em vez do re
 * _LYNX-399_: a miniatura do espaço reservado retorna quando um produto simples é adicionado ao carrinho em um produto agrupado
    * _Observação de correção_: corrigido um problema em que a adição de um produto simples (parte de um produto agrupado) ao carrinho retornava uma imagem em miniatura de espaço reservado, mesmo quando o produto tinha uma imagem atribuída.
 Detalhes da correção:
-· A miniatura do produto agora exibe corretamente a imagem atribuída, se disponível.
-· A seleção da miniatura respeita a configuração do administrador em:
+* A miniatura do produto agora exibe corretamente a imagem atribuída, se disponível.
+* A seleção da miniatura respeita a configuração do administrador em:
 Lojas > Configuração > Vendas > Check-out > Carrinho de compras > Imagem de produto agrupada.
 Isso garante um comportamento consistente de miniaturas para produtos agrupados com base nas configurações da loja.
 * _LYNX-400_: os atributos de opção personalizados do cliente não funcionam com valores inteiros
-   * _Observação de correção_: corrigiu um problema onde os atributos de opção personalizados do cliente não funcionavam quando o valor retornado era um número inteiro. Agora, as opções personalizadas lidam corretamente com valores inteiros e os retornam conforme esperado.
+   * _Observação de correção_: corrigiu um problema onde os atributos de opção personalizados do cliente não funcionavam quando o valor retornado era um inteiro. Agora, as opções personalizadas lidam corretamente com valores inteiros e os retornam conforme esperado.
 * _LYNX-402_: erro interno do servidor ao tentar obter priceDetails para produtos do pacote com preço dinâmico
    * _Observação de correção_: resolvida um problema em que a consulta de price_details para produtos agrupados com preços dinâmicos via GraphQL resultava em um erro interno do servidor. Esse aprimoramento garante consultas estáveis do carrinho ao trabalhar com produtos de pacote configurados com preços dinâmicos.
 * _LYNX-403_: only_x_left_in_stock sempre retorna 0 para produtos configuráveis
    * _Observação de correção_: resolvida um problema em que o atributo only_x_left_in_stock sempre retornava 0 para produtos configuráveis quando adicionado usando o SKU pai com opções.
 Detalhes da correção:
-· O valor only_x_left_in_stock agora reflete com precisão o estoque da variante secundária selecionada, em vez do SKU principal.
-· Isso garante que os níveis de estoque sejam exibidos corretamente para variações de produtos configuráveis no carrinho e nas páginas do produto.
+* O valor only_x_left_in_stock agora reflete com precisão o estoque da variante secundária selecionada, em vez do SKU principal.
+* Isso garante que os níveis de estoque sejam exibidos corretamente para variações de produtos configuráveis no carrinho e nas páginas do produto.
 * _LYNX-411_: a consulta do GraphQL não retorna o preço regular calculado correto para produtos personalizáveis
    * _Observação de correção_: correção de um problema no qual a GraphQL não retornava o preço normal calculado correto para produtos personalizáveis. A consulta agora inclui corretamente o preço regular calculado com valores personalizáveis aplicados (por exemplo, US$ 125) na propriedade price, refletindo o preço base e quaisquer custos adicionais de personalização.
 * _LYNX-412_: AppliedTaxes via EstimatedTotals persistem com mutações atualizadas
@@ -1534,9 +1534,9 @@ Detalhes da correção:
 * _LYNX-447_: erro de servidor do GraphQL no carrinho com only_x_left_in_stock no produto agrupado
    * _Observação de correção_: correção de um problema em que a busca de um carrinho contendo um produto agrupado com o campo only_x_left_in_stock na consulta do GraphQL resultava em um erro interno do servidor. Agora, o GraphQL retorna corretamente um flutuante ou nulo para o campo only_x_left_in_stock sem erros.
 * _LYNX-464_: erro do GraphQL ao remover outros produtos com produto configurável insuficiente no carrinho
-   * _Observação de correção_: corrigido um problema em que a tentativa de remover produtos em estoque do carrinho resultava em um erro do GraphQL &quot;A quantidade solicitada não está disponível&quot; se o carrinho também contivesse produtos configuráveis com estoque insuficiente. A remoção agora funciona como esperado sem disparar erros.
+   * _Observação de correção_: corrigido um problema em que a tentativa de remover produtos em estoque do carrinho resultava em um erro de GraphQL &quot;A quantidade solicitada não está disponível&quot; se o carrinho também contivesse produtos configuráveis com estoque insuficiente. A remoção agora funciona como esperado sem disparar erros.
 * _LYNX-469_: não é possível adicionar produtos porque o SKU em mutação diferencia maiúsculas de minúsculas
-   * _Observação de correção_: resolvida um problema em que a mutação addProductsToCart retornava um erro &quot;PRODUCT_NOT_FOUND&quot; ao usar SKUs com maiúsculas e minúsculas diferentes. A mutação agora lida com SKUs sem distinção entre maiúsculas e minúsculas, garantindo consistência com consultas do Serviço de catálogo e comportamento de PDP.
+   * _Observação de correção_: resolveu um problema em que a mutação addProductsToCart retornava um erro &#39;PRODUCT_NOT_FOUND&#39; ao usar SKUs com maiúsculas e minúsculas diferentes. A mutação agora lida com SKUs sem distinção entre maiúsculas e minúsculas, garantindo consistência com consultas do Serviço de catálogo e comportamento de PDP.
 * _LYNX-603_: atributo de produto > marca comercial short form ™ é retornado como ™
    * _Observação de correção_: resolvido um problema de codificação de caracteres com o nome do produto para a API do GraphQL
 * _LYNX-619_: problema de mutação updateCustomerEmail

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 934fe621356c45bcefd2f84b7d01986b4995b061
+source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
 workflow-type: tm+mt
-source-wordcount: '28390'
+source-wordcount: '28386'
 ht-degree: 0%
 
 ---
@@ -245,7 +245,7 @@ Agora podemos atualizar status de pedidos personalizados, enquanto anteriormente
    * _Observação de correção_: após a correção, se o domínio de administrador personalizado for um subdomínio do domínio principal, o administrador só poderá ser acessado do subdomínio configurado.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/37663>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_: validação com falha para &quot;Quantidade Máxima Permitida no Carrinho de Compras&quot;
+* _ACP2E-3392_: validação com falha para &#39;Quantidade Máxima Permitida no Carrinho de Compras&#39;
    * _Observação de correção_: anteriormente, quando colocávamos `Maximum Qty Allowed in Shopping Cart` vazio, não havia nenhuma exceção, embora um valor vazio não fosse aceito aqui. Depois que essa correção for aplicada, colocar uma string vazia gerará exceções e não permitirá salvar o produto.
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [Problema na Interface do Usuário de Visualização do Pagebuilder] Os botões na coluna do Page Builder não estão alinhados corretamente
@@ -1089,8 +1089,8 @@ Anteriormente, os registros nas tabelas de sequência de produtos do pacote não
    * _Observação de correção_: o sistema agora faz referência às classes corretamente nos módulos, garantindo uma operação mais suave e evitando falhas devido a classes não existentes. Isso inclui uma correção de bug nos módulos Indexador e Creditmemo e a implementação da HttpGetActionInterface na classe PrintAction. Anteriormente, referências de classe incorretas resultavam em erros e possíveis falhas no sistema, e certas funcionalidades, como o nome do arquivo para arquivos PDF de memorando de crédito e reindexação de estoques, não funcionavam como esperado.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/39126>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/37784>
-* _AC-12964_: capacidade de definir Área para comando CLI dev:di:info
-   * _Observação de correção_: o sistema agora permite que os desenvolvedores definam uma área para o comando CLI dev:di:info, aprimorando o processo de desenvolvimento e depuração. Anteriormente, esse comando só podia exibir informações da área GLOBAL.
+* _AC-12964_: capacidade de definir Área para o comando CLI `dev:di:info`
+   * _Observação de correção_: o sistema agora permite que os desenvolvedores definam uma área para o comando da CLI `dev:di:info`, aprimorando o processo de desenvolvimento e depuração. Anteriormente, esse comando só podia exibir informações da área GLOBAL.
    * _Problema do GitHub_: <https://github.com/magento/magento2/issues/38758>
    * _Contribuição de código do GitHub_: <https://github.com/magento/magento2/pull/38759>
 * _AC-13149_: [Problema] adicione a propriedade isMultipleFiles ao modelo de elemento de formulário de imagem
@@ -1545,7 +1545,7 @@ Detalhes da correção:
 * O valor only_x_left_in_stock agora reflete com precisão o estoque da variante secundária selecionada, em vez do SKU principal.
 * Isso garante que os níveis de estoque sejam exibidos corretamente para variações de produtos configuráveis no carrinho e nas páginas do produto.
 * _LYNX-405_: Erro do GraphQL: tipo &#39;file&#39; sem suporte na consulta de opções personalizáveis
-   * _Observação de correção_: corrigido um problema no qual o GraphQL retornava um erro para opções personalizáveis do tipo &quot;arquivo&quot; nos itens do carrinho. A consulta agora retorna corretamente os detalhes de todos os tipos de opções personalizáveis, incluindo opções baseadas em arquivos, sem causar erros.
+   * _Observação de correção_: corrigido um problema no qual o GraphQL retornava um erro para opções personalizáveis do tipo &#39;arquivo&#39; em itens de carrinho. A consulta agora retorna corretamente os detalhes de todos os tipos de opções personalizáveis, incluindo opções baseadas em arquivos, sem causar erros.
 * _LYNX-411_: a consulta do GraphQL não retorna o preço regular calculado correto para produtos personalizáveis
    * _Observação de correção_: correção de um problema no qual a GraphQL não retornava o preço normal calculado correto para produtos personalizáveis. A consulta agora inclui corretamente o preço regular calculado com valores personalizáveis aplicados (por exemplo, US$ 125) na propriedade price, refletindo o preço base e quaisquer custos adicionais de personalização.
 * _LYNX-412_: AppliedTaxes via EstimatedTotals persistem com mutações atualizadas
@@ -1563,9 +1563,9 @@ Detalhes da correção:
 * _LYNX-447_: erro de servidor do GraphQL no carrinho com only_x_left_in_stock no produto agrupado
    * _Observação de correção_: correção de um problema em que a busca de um carrinho contendo um produto agrupado com o campo only_x_left_in_stock na consulta do GraphQL resultava em um erro interno do servidor. Agora, o GraphQL retorna corretamente um flutuante ou nulo para o campo only_x_left_in_stock sem erros.
 * _LYNX-464_: erro do GraphQL ao remover outros produtos com produto configurável insuficiente no carrinho
-   * _Observação de correção_: corrigido um problema em que a tentativa de remover produtos em estoque do carrinho resultava em um erro do GraphQL &quot;A quantidade solicitada não está disponível&quot; se o carrinho também contivesse produtos configuráveis com estoque insuficiente. A remoção agora funciona como esperado sem disparar erros.
+   * _Observação de correção_: corrigido um problema em que a tentativa de remover produtos em estoque do carrinho resultava em um erro de GraphQL &quot;A quantidade solicitada não está disponível&quot; se o carrinho também contivesse produtos configuráveis com estoque insuficiente. A remoção agora funciona como esperado sem disparar erros.
 * _LYNX-469_: não é possível adicionar produtos porque o SKU em mutação diferencia maiúsculas de minúsculas
-   * _Observação de correção_: resolvida um problema em que a mutação addProductsToCart retornava um erro &quot;PRODUCT_NOT_FOUND&quot; ao usar SKUs com maiúsculas e minúsculas diferentes. A mutação agora lida com SKUs sem distinção entre maiúsculas e minúsculas, garantindo consistência com consultas do Serviço de catálogo e comportamento de PDP.
+   * _Observação de correção_: resolveu um problema em que a mutação addProductsToCart retornava um erro &#39;PRODUCT_NOT_FOUND&#39; ao usar SKUs com maiúsculas e minúsculas diferentes. A mutação agora lida com SKUs sem distinção entre maiúsculas e minúsculas, garantindo consistência com consultas do Serviço de catálogo e comportamento de PDP.
 * _LYNX-603_: atributo de produto > marca comercial short form ™ é retornado como ™
    * _Observação de correção_: resolvido um problema de codificação de caracteres com o nome do produto para a API do GraphQL
 * _LYNX-619_: problema de mutação updateCustomerEmail
