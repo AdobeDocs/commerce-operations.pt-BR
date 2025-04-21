@@ -2,9 +2,9 @@
 title: Servidor de aplicativos GraphQL
 description: Siga estas instruções para habilitar o GraphQL Application Server na implantação do Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
+source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2074'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ O GraphQL Application Server está disponível somente para o Adobe Commerce. N�
 
 >[!NOTE]
 >
->No momento, o GraphQL Application Server não é compatível com [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). Os clientes do Adobe Commerce na infraestrutura em nuvem que atualmente usam o [!DNL AWS S3] para [armazenamento remoto](../configuration/remote-storage/cloud-support.md) não podem usar o GraphQL Application Server até que o Adobe libere um hotfix posteriormente em 2024.
+>No momento, o GraphQL Application Server não é compatível com [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). Os clientes do Adobe Commerce na infraestrutura em nuvem que atualmente usam o [!DNL AWS S3] para [armazenamento remoto](../configuration/remote-storage/cloud-support.md) não podem usar o GraphQL Application Server.
 
 ## Arquitetura
 
@@ -39,7 +39,7 @@ A execução do GraphQL Application Server requer o seguinte:
 * Commerce versão 2.4.7+
 * PHP 8.2 ou superior
 * Extensão PHP v5+ Swoole instalada
-* RAM e CPU adequadas com base na carga esperada
+* RAM e CPU adequados com base na carga esperada
 
 ## Ativar e implantar na infraestrutura em nuvem
 
