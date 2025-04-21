@@ -3,17 +3,17 @@ title: 'ACSD-63323: Resolve a funcionalidade [!UICONTROL Select All] e melhora a
 description: Aplique o patch ACSD-63323 para corrigir o problema do Adobe Commerce em que a opção [!UICONTROL Select All] não funciona ao adicionar produtos a uma categoria. Além disso, garante que a paginação e o rótulo de contagem de registros funcionem corretamente ao adicionar produtos a uma categoria por meio da grade pop-up.
 feature: Products
 role: Admin, Developer
-source-git-commit: f3f0cc93adf83b485ca50811adcc561638e3c5c2
+exl-id: 96e318fd-f1dd-4b15-b171-78ae1c8e4e0d
+source-git-commit: d24909ea2571eacafac1ff6b225e87bc40d320bc
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-63323: Resolve a funcionalidade [!UICONTROL Select All] e melhora a paginação e a contagem de registros no pop-up de categoria de produto
 
-O patch ACSD-63323 corrige o problema em que a opção **[!UICONTROL Select All]** não funciona ao adicionar produtos a uma categoria. Além disso, garante que a paginação e o rótulo de contagem de registros funcionem corretamente ao adicionar produtos a uma categoria por meio da grade pop-up. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) é instalado. A ID do patch é ACSD-63323. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.
+O patch ACSD-63323 corrige o problema em que a opção **[!UICONTROL Select All]** não funciona ao adicionar produtos a uma categoria. Além disso, garante que a paginação e o rótulo de contagem de registros funcionem corretamente ao adicionar produtos a uma categoria por meio da grade pop-up. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 está instalado. A ID do patch é ACSD-63323. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.
 
 ## Produtos e versões afetados
 
@@ -68,5 +68,3 @@ Para aplicar patches individuais, use os links a seguir, dependendo do método d
 Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) no guia Ferramentas.
-
-
