@@ -4,9 +4,9 @@ description: Aplique o patch ACSD-51819 para corrigir o problema do Adobe Commer
 feature: Orders, Checkout
 role: Admin, Developer
 exl-id: dbca8790-d947-4104-bba9-b29abcfc0344
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 5f22591c499f0f5d349994195731c7c87512f5f0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ O patch ACSD-51819 corrige o problema em que vários pedidos podem ser feitos po
 
 **O patch foi criado para a versão do Adobe Commerce:**
 
-* Adobe Commerce (todos os métodos de implantação) 2.4.4-p2
+* Adobe Commerce (todos os métodos de implantação) 2.4.4-p2, 2.4.5-p5, 2.4.6, 2.4.6-p4, 2.4.7-p1
 
 **Compatível com as versões do Adobe Commerce:**
 
-* Adobe Commerce (todos os métodos de implantação) 2.4.4 - 2.4.4-p3
+* Adobe Commerce (todos os métodos de implantação) 2.4.4 - 2.4.4-p11, 2.4.5-p3 - 2.4.5-p10, 2.4.6 - 2.4.6-p8, 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Foram feitos pedidos em ambos os navegadores.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
