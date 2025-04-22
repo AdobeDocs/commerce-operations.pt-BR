@@ -3,13 +3,13 @@ title: 'ACSD-62979: ID de armazenamento incorreta no cabeçalho do GraphQL causa
 description: Aplique o patch ACSD-62979 para corrigir o problema do Adobe Commerce em que o uso da ID de armazenamento incorreta no cabeçalho do GraphQL causa um erro fatal de memória
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: 16875f95ab23559d4e1081b8cfe0374e1394d87d
+exl-id: 832baae1-34b4-4ca8-bfa9-221aa60da67e
+source-git-commit: 187a0056971e6bec324b5cc9d374375bbfb84dd8
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62979: ID de armazenamento incorreta no cabeçalho do GraphQL causa um erro de memória fatal
 
@@ -19,11 +19,11 @@ O patch ACSD-62979 corrige o problema em que o uso da ID de armazenamento incorr
 
 **O patch foi criado para a versão do Adobe Commerce:**
 
-* Adobe Commerce (todos os métodos de implantação) 2.4.6-p7, 2.4.6
+* Adobe Commerce (todos os métodos de implantação) 2.4.6, 2.4.6-p7, 2.4.7-p3
 
 **Compatível com as versões do Adobe Commerce:**
 
-* Adobe Commerce (todos os métodos de implantação) 2.4.4 - 2.4.6-p8
+* Adobe Commerce (todos os métodos de implantação) 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Erro fatal como:
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
 * Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
@@ -93,4 +93,3 @@ Para aplicar patches individuais, use os links a seguir, dependendo do método d
 Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) no guia Ferramentas.
-
