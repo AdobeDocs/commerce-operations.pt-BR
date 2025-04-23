@@ -2,9 +2,9 @@
 title: Pré-requisitos de instalação local
 description: Saiba mais sobre as dependências de software necessárias para instalações locais do Adobe Commerce.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: db2256f5327897a4376a0d038ce697e8f93235af
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Antes de instalar o Adobe Commerce, é necessário fazer o seguinte:
 
-* Configure um ou mais hosts que atendam aos [requisitos de sistema](../system-requirements.md).
+* Configure um ou mais hosts que atendam aos [requisitos de sistema](../system-requirements.md) listados na guia *Commerce local*.
 * Se você estiver configurando mais de um nó da Web com balanceamento de carga, configure e teste essa parte do sistema _antes_ de instalar o aplicativo.
 * Certifique-se de poder fazer backup de todo o sistema em vários pontos durante a instalação para que você possa revertê-lo em caso de problemas.
 
@@ -66,11 +66,11 @@ Para instalar ou atualizar o Apache, consulte [Apache](web-server/apache.md).
 
 ### PHP
 
-Consulte [requisitos do sistema](../system-requirements.md) para versões compatíveis do PHP e [PHP](../system-requirements.md#php-settings) para requisitos do PHP.
+Consulte a guia *Commerce no local* em [requisitos do sistema](../system-requirements.md) para obter as versões do PHP compatíveis e [PHP](../system-requirements.md#php-settings) para os requisitos do PHP.
 
 ### MySQL
 
-Verifique se você tem uma versão compatível do MySQL com a versão do Adobe Commerce que está instalando. Consulte [Requisitos do sistema](../system-requirements.md) para obter as versões com suporte.
+Verifique se você tem uma versão compatível do MySQL com a versão do Adobe Commerce que está instalando. Consulte a guia *Commerce no local* em [Requisitos do sistema](../system-requirements.md) para obter as versões com suporte.
 
 ```bash
 mysql -u <database root user or database owner name> -p
