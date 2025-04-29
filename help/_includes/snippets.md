@@ -1,5 +1,5 @@
 ---
-source-git-commit: ab3401c2629b550655c7b2a382b998ce2c8ac6f0
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Todos os comandos CLI do Magento devem ser executados pelo [proprietário do sistema de arquivos](/help/configuration/cli/config-cli.md#prerequisites).
+>Todos os comandos da CLI do Magento devem ser executados pelo [proprietário do sistema de arquivos](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Comandos de backup {#tip-backup-command}
 
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->As versões do Adobe Commerce podem conter alterações incompatíveis com versões anteriores (BICs). Para revisar as alterações incompatíveis com versões anteriores, consulte [referência do BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Os principais problemas incompatíveis com versões anteriores estão descritos em [destaques da BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). Nem todas as versões introduzem os BICs principais.
+>As versões do Adobe Commerce podem conter alterações incompatíveis com versões anteriores (BICs). Para revisar as alterações incompatíveis com versões anteriores, consulte [referência do BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Os principais problemas incompatíveis com versões anteriores estão descritos em [destaques da BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Nem todas as versões introduzem os BICs principais.
 
 ## Isenção de responsabilidade da Beta {#beta}
 
 >[!IMPORTANT]
 >
->As versões do Beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. O Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (dos Serviços de suporte do Adobe ou de qualquer outro serviço) às versões beta. Os clientes devem ter cuidado e não devem depender de forma alguma do funcionamento ou do desempenho correto das versões beta e/ou de qualquer documentação ou material que as acompanhe. Portanto, qualquer uso das versões beta é de inteira responsabilidade do cliente.
+>As versões do Beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (dos Serviços de suporte da Adobe ou de qualquer outro serviço) às versões beta. Os clientes devem ter cuidado e não devem depender de forma alguma do funcionamento ou do desempenho correto das versões beta e/ou de qualquer documentação ou material que as acompanhe. Portanto, qualquer uso das versões beta é de inteira responsabilidade do cliente.
 
 ## Aviso CVE {#cve-notice}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Embora o código para aprimoramentos e correções de erros descritos nestas notas de versão esteja incluído no Adobe Commerce, vários desses projetos (por exemplo, B2B, Page Builder e Progressive Web Application (PWA) Studio) também são lançados de forma independente. As correções de erros para esses projetos estão documentadas nas informações de versão separadas e específicas do projeto, disponíveis na documentação de cada projeto. Consulte a [visão geral da versão do produto](/help/release/release-notes/overview.md).
+>Embora o código para aprimoramentos e correções de erros descritos nestas notas de versão esteja incluído no Adobe Commerce, vários desses projetos (por exemplo, B2B, Page Builder e Progressive Web Applications (PWA) Studio) também são lançados independentemente. As correções de erros para esses projetos estão documentadas nas informações de versão separadas e específicas do projeto, disponíveis na documentação de cada projeto. Consulte a [visão geral da versão do produto](/help/release/release-notes/overview.md).
 
 ## Controle do processo PHP {#php-process-control}
 

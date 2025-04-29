@@ -2,7 +2,7 @@
 title: Entender o escopo de atualização
 description: Saiba mais sobre alterações incompatíveis com versões anteriores em uma versão que pode afetar módulos personalizados do Adobe Commerce ou extensões de terceiros.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Revise as [notas de versão](https://experienceleague.adobe.com/en/docs/commerce
 
 As versões do Adobe Commerce podem conter alterações incompatíveis com versões anteriores. Revise nossa documentação de alterações incompatíveis com versões anteriores. Consulte o seguinte:
 
-- **[Destaques de alterações importantes](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)**—Alterações que têm grande impacto e exigem explicação detalhada e instruções especiais para garantir que módulos de terceiros continuem funcionando.
+- **[Destaques de alterações importantes](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)**—Alterações que têm grande impacto e exigem explicação detalhada e instruções especiais para garantir que módulos de terceiros continuem funcionando.
 - **[Referência de alteração menor](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** — Documentação de referência gerada a partir da base de código que descreve alterações menores em classes, associação de API, banco de dados, injeção de dependência, interfaces, layouts, sistema e XSD.
 
 ## Extensões de terceiros
@@ -103,7 +103,7 @@ A saída a seguir mostra um exemplo de relatório resumido:
 
 ### Dicas e conselhos
 
-Todos os problemas identificados pela ferramenta são listados no relatório com códigos de erro específicos. Use a [referência da mensagem de erro](../upgrade-compatibility-tool/error-messages.md) para obter mais detalhes sobre cada problema. O Adobe também fornece sugestões para corrigir cada tipo de problema para que você possa planejar suas etapas de correção.
+Todos os problemas identificados pela ferramenta são listados no relatório com códigos de erro específicos. Use a [referência da mensagem de erro](../upgrade-compatibility-tool/error-messages.md) para obter mais detalhes sobre cada problema. A Adobe também fornece sugestões para corrigir cada tipo de problema para que você possa planejar suas etapas de correção.
 
 Use o relatório para estimar o esforço necessário para atualizar seu código para a atualização. Com base em sua experiência, você pode estimar o esforço necessário para atualizar com base no número total de problemas identificados e na gravidade dos problemas. Como essa é uma ferramenta de linha de comando, você pode incorporá-la aos conjuntos de teste e verificação de código automatizados e usar a saída JSON para gerar seus relatórios.
 
@@ -111,4 +111,4 @@ Recomendamos salvar os resultados de cada projeto de atualização para que voc�
 
 Também recomendamos que você execute a ferramenta regularmente enquanto trabalha na atualização para ter visibilidade sobre o seu progresso. O número de problemas deve diminuir à medida que forem corrigidos. Isso também ajuda sua equipe a decidir a melhor abordagem para distribuir o trabalho.
 
-O [!DNL Upgrade Compatibility Tool] continua sendo aprimorado e as próximas versões incluirão recursos como correções automáticas para ajudá-lo a corrigir problemas o mais rápido possível. As melhorias mais recentes lançadas em janeiro de 2022 incluem testes de compatibilidade do PHP 8.1 e recursos de visualização de HTML que ajudam a identificar rapidamente áreas que podem exigir mais esforço para atualização.
+O [!DNL Upgrade Compatibility Tool] continua sendo aprimorado e as próximas versões incluirão recursos como correções automáticas para ajudá-lo a corrigir problemas o mais rápido possível. As melhorias mais recentes lançadas em janeiro de 2022 incluem testes de compatibilidade do PHP 8.1 e recursos de visualização do HTML que ajudam a identificar rapidamente áreas que podem exigir mais esforço para atualização.

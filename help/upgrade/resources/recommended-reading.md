@@ -2,7 +2,7 @@
 title: Leitura recomendada para atualizações
 description: Revise a documentação recomendada para planejar sua atualização do Adobe Commerce.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 9542084e6ed1a4ebbbb33373d9c7bc9b463b9d5d
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 4%
@@ -19,7 +19,7 @@ Continue aprendendo sobre as atualizações do Adobe Commerce usando os recursos
       <td><strong>Notas de versão e anúncios</strong>
         <p>Saiba mais sobre os últimos desenvolvimentos do Adobe Commerce, incluindo estratégia de produtos, segurança, correções de erros e problemas conhecidos.</p>
           <ul>
-            <li><a href="https://blog.adobe.com/">Blog Adobe</a></li>
+            <li><a href="https://blog.adobe.com/">Blog do Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
             <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Boletim de segurança do Adobe</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
@@ -32,7 +32,7 @@ Continue aprendendo sobre as atualizações do Adobe Commerce usando os recursos
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">Plug-in PhpStorm da Ferramenta de Compatibilidade de Atualização</a> (vídeo)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Ferramenta de compatibilidade de atualização</a></li>
-            <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool Slack channel</a></li>
+            <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">Canal #UpgradeCompatibilityTool Slack</a></li>
             <li><a href="../../tools/quality-patches-tool/usage.md">Ferramenta Correções de qualidade</a></li>
           </ul>
       </td>
@@ -42,7 +42,7 @@ Continue aprendendo sobre as atualizações do Adobe Commerce usando os recursos
         <p>Revise os detalhes sobre as versões e políticas da Adobe Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Perguntas frequentes sobre o fim do suporte ao software Adobe Commerce</a></li>
-            <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements/">política de Commerce Marketplace</a></li>
+            <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements/">política do Commerce Marketplace</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">Perguntas frequentes sobre a nova estratégia de lançamento do Adobe Commerce, política de ciclo de vida atualizada e suporte estendido</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Política de ciclo de vida</a></li>
             <li><a href="../../release/schedule.md">Programação de lançamento</a></li>
@@ -55,20 +55,20 @@ Continue aprendendo sobre as atualizações do Adobe Commerce usando os recursos
             <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
             <li><a href="https://marketplace.magento.com/magento-live-search.html">Live Search</a></li>
             <li><a href="https://marketplace.magento.com/magento-payment-services.html">Payment Services</a></li>
-            <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">Recommendations do produto</a></li>
+            <li><a href="https://marketplace.magento.com/magento-product-recommendations.html">Recomendações de produto</a></li>
           </ul>
       </td>
     </tr>
     <tr>
       <td><strong>Atualizar Recursos</strong>
-        <p>Mantenha sua loja segura e operando com eficiência. Prepare-se para a atualização do Adobe Commerce revisando a documentação técnica abrangente do Adobe.</p>
+        <p>Mantenha sua loja segura e operando com eficiência. Prepare-se para a atualização do Adobe Commerce consultando a ampla documentação técnica da Adobe.</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">Caminhos de atualização recomendados</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Gravação do workshop de atualização técnica</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">Acesso a pré-lançamentos</a></li>
             <li><a href="../../release/beta.md">Visão geral das versões do Beta</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">Desenvolvimento incompatível com versões anteriores</a></li>
-            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">Alterações incompatíveis com versões anteriores</a></li>
+            <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Alterações incompatíveis com versões anteriores</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">Lista de Verificação do Plano de Atualização</a></li>
             <li><a href="../prepare/best-practices.md">Práticas recomendadas de atualização</a></li>
             <li><a href="../../release/product-availability.md">Disponibilidade do software</a></li>
@@ -78,7 +78,7 @@ Continue aprendendo sobre as atualizações do Adobe Commerce usando os recursos
         <p>Saiba mais sobre a mais recente tecnologia de vitrine eletrônica que você pode usar para construir experiências exclusivas para seus clientes.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/pwa-studio/">PWA Studio</a></li>
-            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">Atualizando o PWA Studio</a></li>
+            <li><a href="https://developer.adobe.com/commerce/pwa-studio/guides/upgrading-versions">Atualização do PWA Studio</a></li>
           </ul>
       </td>
     </tr>
