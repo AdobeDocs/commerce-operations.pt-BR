@@ -2,9 +2,9 @@
 title: Notas de versão do patch de segurança do Adobe Commerce 2.4.7
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
+source-git-commit: 331a76e8389b1779dda402f506ddb9b76bea95b9
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,14 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 ### Destaques
 
 Esta versão apresenta suporte para a [extensão pronta para HIPAA do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview).
+
+### Problemas conhecidos
+
+**Problema**: ao instalar o 2.4.7-p5 com o PHP 8.2 ou superior, o sistema instala o `paypal/module-braintree` versão 4.7.0, que se destina ao 2.4.8 e mais recente. Para o PHP 8.1, é usada a versão correta 4.6.1-p5 do Braintree. Esta incompatibilidade se deve à dependência flexível em `adobe-commerce/extensions-metapackage: ~2.0` no metapackage. Isso afeta a compatibilidade e o conjunto de recursos suportados para implantações do PHP 8.2+.<!-- ACPLTSRV-6276) -->
+
+Além disso, para as versões 2.4.7-p3, 2.4.7-p4 e 2.4.7-p5, a extensão do Braintree versão 4.6.1-p5 pode ser instalada, enquanto alguns usuários esperam 4.6.1-p3 ou p4, devido a dependências mais rigorosas anteriores terem sido relaxadas para permitir atualizações de extensão em uma linha de versão. <!-- AC-14430 -->
+
+**Solução alternativa**: para garantir que você tenha a versão correta do Braintree para a sua versão do PHP, execute `composer update` para instalar a versão apropriada conforme determinado pela dependência `adobe-commerce/extensions-metapackage:2.0.0`.
 
 ## 2.4.7-p4
 
