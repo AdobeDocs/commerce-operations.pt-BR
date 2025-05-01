@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 93c9eb8865aa53ec784d47fd66ca97d1941b4604
+source-git-commit: db6ccbcf16786c1987f3d84e86582fe048edd2e4
 workflow-type: tm+mt
-source-wordcount: '25682'
+source-wordcount: '25802'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.63 {#v1-1-63}
+
+* **ACSD-64627** (para Adobe Commerce >=2.4.6-p8 &lt;2.4.8) - Corrige o problema em que os atributos personalizados do cliente não podem ser salvos ao adicionar ou editar usuários na Estrutura da empresa.
+* **ACSD-64753** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que o armazenamento pré-selecionado na &quot;Coleta no Repositório&quot; não é atualizado quando o endereço de entrega é alterado, mesmo que esteja fora do raio do armazenamento.
+* **ACSD-65195** (para Adobe Commerce >=2.4.4 &lt;2.4.8) - Corrige o problema em que a mutação do GraphQL `createCompany` lança um erro para um país sem uma região necessária.
+* **LYNX-839** (para Adobe Commerce 2.4.8) - Remoção da exposição de informações de grupos de clientes, segmentos e regras promocionais por meio do GraphQL.
+* Versões atualizadas: **MDVA-12304**, **ACSD-48234**, **ACSD-58054**
 
 ## v1.1.62 {#v1-1-62}
 
