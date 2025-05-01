@@ -3,9 +3,9 @@ title: Referência de caminhos de configuração de catálogo
 description: Consulte uma lista de valores de configuração de catálogo.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
+source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ Estes valores de configuração estão disponíveis no Administrador em **Lojas*
 | Habilitar Sugestões de Pesquisa | `catalog/search/search_suggestion_enabled` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
 | Contagem de Sugestões de Pesquisa | `catalog/search/search_suggestion_count` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mostrar a contagem de resultados para cada sugestão | `catalog/search/search_suggestion_count_results_enabled` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
-| Habilitar o Search Recommendations | `catalog/search/search_recommendations_enabled` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
-| Pesquisar contagem de Recommendations | `catalog/search/search_recommendations_count` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Habilitar recomendações de pesquisa | `catalog/search/search_recommendations_enabled` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
+| Contagem de recomendações de pesquisa | `catalog/search/search_recommendations_count` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mostrar Contagem de Resultados para Cada Recomendação | `catalog/search/search_recommendations_count_results_enabled` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) |
 | Termos mínimos para corresponder | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gerar regravações de URL de &quot;categoria/produto&quot; | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -150,6 +150,8 @@ Estes valores de configuração estão disponíveis no Administrador em **Lojas*
 {style="table-layout:auto"}
 
 ## Caminhos do Visual Merchandiser
+
+[!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
 
 Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Catálogo** > **Merchandiser Visual**.
 
