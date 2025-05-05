@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Prática recomendada para a configuração de relatórios
 
-Se a sua empresa não requer a funcionalidade de relatórios ou segmentos dinâmicos de clientes, desabilite a [funcionalidade de relatórios](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports) para melhorar o desempenho do armazenamento.
+Se a sua empresa não requer a funcionalidade de relatórios ou segmentos dinâmicos de clientes, desabilite a [funcionalidade de relatórios](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/general/reports) para melhorar o desempenho do armazenamento.
 
 ## Produtos e versões afetados
 
@@ -32,5 +32,5 @@ Se você não usar os Relatórios ou segmentos dinâmicos de clientes, desative 
 
 ## Informações adicionais
 
-- [Gerar relatórios no Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
-- [Segmentos dinâmicos do cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)
+- [Gerar relatórios no Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/reporting/reports-menu)
+- [Segmentos dinâmicos do cliente](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/segments/customer-segments)

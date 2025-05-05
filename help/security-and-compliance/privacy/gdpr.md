@@ -31,5 +31,5 @@ Para obter informações técnicas, consulte os diagramas de fluxo de dados e os
 
 Para obter mais informações sobre como o Adobe Commerce ajuda os comerciantes a cumprir o GDPR, consulte o seguinte:
 
-- [Conformidade com o GDPR](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
+- [Conformidade com o GDPR](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=pt-BR)
 - [O Adobe Commerce está pronto para o GDPR](https://business.adobe.com/privacy/general-data-protection-regulation.html)

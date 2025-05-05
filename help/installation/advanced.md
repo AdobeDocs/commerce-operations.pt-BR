@@ -119,7 +119,7 @@ As opções a seguir especificam as informações e credenciais do usuário admi
 
 É possível criar o usuário de Administração durante ou após a instalação. Se você criar o usuário durante a instalação, todas as administrador variáveis de credencial serão necessárias. Consulte [Exemplos de instalações](#sample-localhost-installations) do localhost.
 
-As tabelas a seguir fornecem muitos, mas não todos os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises) de Ferramentas de linha de Comando.
+As tabelas a seguir fornecem muitos, mas não todos os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises) de Ferramentas de linha de Comando.
 
 | Nome | Valor | Obrigatório? |
 |--- |--- |--- |

@@ -32,9 +32,9 @@ Antes de carregar imagens para seus sites do Commerce, otimize-as e compacte-as 
 
 ## Ativar e configurar a otimização de imagem do Fastly
 
-Depois de configurar o serviço Fastly para o seu projeto no Adobe Commerce Cloud, consulte [Fastly image otimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) para obter instruções sobre como habilitar e configurar a otimização de imagens.
+Depois de configurar o serviço Fastly para o seu projeto no Adobe Commerce Cloud, consulte [Fastly image otimization](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization) para obter instruções sobre como habilitar e configurar a otimização de imagens.
 
 ## Informações adicionais
 
-- [Configurar Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
-- [Imagens mal otimizadas podem causar problemas de desempenho](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)
+- [Configurar Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)
+- [Imagens mal otimizadas podem causar problemas de desempenho](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html?lang=pt-BR)

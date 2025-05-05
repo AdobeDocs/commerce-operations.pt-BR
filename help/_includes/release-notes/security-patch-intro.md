@@ -18,4 +18,4 @@ Essas notas de versão de patch de segurança capturam atualizações para aprim
 Saiba mais sobre lançamentos de patch de segurança:
 
 * [Visão geral das versões de correção do Adobe Commerce Security](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* As instruções para baixar e aplicar versões de patch de segurança estão disponíveis no [Guia de Atualização](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)
+* As instruções para baixar e aplicar versões de patch de segurança estão disponíveis no [Guia de Atualização](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)

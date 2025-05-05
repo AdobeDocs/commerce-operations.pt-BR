@@ -31,7 +31,7 @@ A tabela a seguir mostra o suporte de versão para cada extensão em relação �
 
 ## Serviços Comércio
 
-[Comércio Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) são um conjunto de recursos hospedados por Adobe Systems que oferecem funcionalidade tempos de resposta robustos e rápidos, juntamente com seus instância de Comércio.
+[Comércio Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR) são um conjunto de recursos hospedados por Adobe Systems que oferecem funcionalidade tempos de resposta robustos e rápidos, juntamente com seus instância de Comércio.
 
 Recomenda-se que os comerciantes usem a versão mais recente de um serviço para garantir a mais alta estabilidade e funcionalidade. A documentação descreve a versão atualmente lançada.
 

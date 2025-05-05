@@ -31,4 +31,4 @@ Sites que têm blocos de conteúdo privado contendo as variáveis `_isScopePriva
 ## Informações adicionais
 
 - [Conteúdo privado](../../../performance/configuration.md#client-side-optimization-settings)
-- [Solicitações AJAX de alta taxa de transferência causam desempenho insatisfatório](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [Solicitações AJAX de alta taxa de transferência causam desempenho insatisfatório](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=pt-BR)

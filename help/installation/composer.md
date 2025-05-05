@@ -93,7 +93,7 @@ Para obter o metappackage do Adobe Commerce:
 
    >[!NOTE]
    >
-   > Se você usar um `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` arquivo composer ou ambiente variável configurado com suas chaves de autenticação Comércio, você não será solicitado a inserir chaves de autenticação.
+   > Se você usar um `[auth.json](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` arquivo composer ou ambiente variável configurado com suas chaves de autenticação Comércio, você não será solicitado a inserir chaves de autenticação.
 
    Se você encontrar erros como `Could not find package...` ou `...no matching package found`, certifique-se de que não haja erros de digitação no seu comando. Se ainda encontrar erros, talvez não esteja autorizado a baixar Adobe Systems Comércio. Contate o [Suporte da Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
 

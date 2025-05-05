@@ -78,7 +78,7 @@ Sua infraestrutura local deve atender aos seguintes requisitos antes de instalar
 
 ## [!DNL Commerce Services Connector]
 
-O agente requer que a extensão [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) seja instalada no sistema e [configurada](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) com chaves de API. Para verificar se a extensão está instalada, execute o seguinte comando:
+O agente requer que a extensão [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=pt-BR) seja instalada no sistema e [configurada](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=pt-BR) com chaves de API. Para verificar se a extensão está instalada, execute o seguinte comando:
 
 ```bash
 bin/magento module:status Magento_ServicesId
@@ -92,13 +92,13 @@ Se você instalou a extensão e a configurou usando uma chave de API existente p
 
    >[!NOTE]
    >
-   > Se você tiver problemas para acessar sua conta, consulte [Não é possível fazer logon no suporte da Adobe Commerce ou na conta da nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) para obter ajuda com a solução de problemas.
+   > Se você tiver problemas para acessar sua conta, consulte [Não é possível fazer logon no suporte da Adobe Commerce ou na conta da nuvem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html?lang=pt-BR) para obter ajuda com a solução de problemas.
 
 1. Clique em **[!UICONTROL API Portal]**.
 
 1. Clique em **[!UICONTROL Delete]** ao lado da Chave de API existente.
 
-1. [Configure](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) uma nova chave de API.
+1. [Configure](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=pt-BR) uma nova chave de API.
 
 >[!IMPORTANT]
 >
@@ -130,7 +130,7 @@ Se a extensão não estiver instalada, use as seguintes instruções para instal
    bin/magento cache:clean
    ```
 
-1. [Configure as Chaves de API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) para conectar a extensão ao seu sistema.
+1. [Configure as Chaves de API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=pt-BR) para conectar a extensão ao seu sistema.
 
 ## Instalar o agente
 
@@ -404,7 +404,7 @@ Para resolver esse erro, tente as seguintes etapas:
 1. Faça uma [instalação com script](#scripted), salve a saída e verifique se há erros na saída.
 1. Revise o arquivo `config.yaml` gerado e verifique se o caminho para sua instância do Commerce e PHP está correto.
 1. Verifique se o usuário que está executando o agendador está no grupo Unix [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md) ou se é o mesmo usuário que o proprietário do sistema de arquivos.
-1. Verifique se as chaves do [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) estão instaladas corretamente e tente atualizá-las para conectar a extensão ao seu sistema.
+1. Verifique se as chaves do [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=pt-BR) estão instaladas corretamente e tente atualizá-las para conectar a extensão ao seu sistema.
 1. [Desinstalar](#uninstall) o agente depois de atualizar as chaves e reinstalar usando o [script de instalação](#scripted).
 1. Execute o scheduler e veja se você ainda recebe o mesmo erro.
 1. Se você ainda receber o mesmo erro, aumente o nível do log no `config.yaml` para depurar e abrir um tíquete de Suporte.

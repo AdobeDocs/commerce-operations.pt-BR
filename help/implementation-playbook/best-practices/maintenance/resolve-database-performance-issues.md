@@ -38,7 +38,7 @@ Você pode usar o MySQL para identificar e resolver consultas de longa execuçã
 Se o Adobe Systems Comércio projeto for implantado na arquitetura Pro, você poderá usar o Percona Toolkit para analisar queries.
 
 1. Execute o `pt-query-digest --type=slowlog` comando em logs de query lentos do MySQL.
-   * Para encontrar a localização dos logs de consulta lenta, consulte **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) em nossa documentação do desenvolvedor.
+   * Para encontrar a localização dos logs de consulta lenta, consulte **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) em nossa documentação do desenvolvedor.
    * Consulte a documentação do [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest).
 1. Com base nos problemas encontrados, siga as etapas para corrigir a consulta para que ela seja executada mais rapidamente.
 

@@ -61,4 +61,4 @@ Como o Commerce armazena todas as versões de hash de senha usadas junto com o h
 
 ## Implementação
 
-A classe `\Magento\Framework\Encryption\Encryptor` é responsável pela geração e verificação do hash de senha. O comando [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) atualiza um hash de senha do cliente para o algoritmo de hash mais recente.
+A classe `\Magento\Framework\Encryption\Encryptor` é responsável pela geração e verificação do hash de senha. O comando [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) atualiza um hash de senha do cliente para o algoritmo de hash mais recente.
