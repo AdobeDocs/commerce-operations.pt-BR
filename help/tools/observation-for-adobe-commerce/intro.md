@@ -38,4 +38,4 @@ Comerciantes e parceiros que desejam otimizar o desempenho do site do Adobe Comm
 
 Assista a este vídeo para saber mais sobre [!DNL Observation for Adobe Commerce]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344444?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3412493?quality=12&captions=por_br)
