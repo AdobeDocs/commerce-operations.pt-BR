@@ -2,9 +2,9 @@
 title: Executar o  [!DNL Upgrade Compatibility Tool]
 description: Siga estas etapas para executar o  [!DNL Upgrade Compatibility Tool]  em uma interface de linha de comando para o seu projeto do Adobe Commerce.
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: bfb952d29bd3d7fc7147107216981e05202e44aa
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 O [!DNL Upgrade Compatibility Tool] é uma ferramenta que verifica uma instância personalizada do Adobe Commerce em relação a uma versão específica, analisando todos os módulos instalados nela. Ele retorna uma lista de problemas críticos, erros e avisos que devem ser abordados antes da atualização para a versão mais recente do Adobe Commerce.
 
-Veja este [tutorial em vídeo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=pt-BR) (06:02) para saber mais sobre o [!DNL Upgrade Compatibility Tool].
+Veja este [tutorial em vídeo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) para saber mais sobre o [!DNL Upgrade Compatibility Tool].
 
 Comandos disponíveis para [!DNL Upgrade Compatibility Tool] em uma interface de linha de comando:
 
@@ -59,7 +59,7 @@ Opções disponíveis para o comando `upgrade:check`:
 
 | **Comando** | **Opções disponíveis** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li>—help: retorna todas as opções disponíveis.</li><li>—current-version: Versão atual do Adobe Commerce. Esse parâmetro é obrigatório e deve ser sempre usado.</li><li>—min-issue-level: você pode filtrar problemas de acordo com o nível mínimo de problema (o valor padrão é AVISO).</li><li>—ignore-current-version-compatibility-issues (ou -i): se você não quiser incluir problemas críticos, erros e avisos da versão atual no seu relatório.</li><li>—coming-version (ou -c): aponta para uma versão específica do Adobe Commerce. O último disponível será usado se omitido.</li></ul> |
+| `upgrade:check` | <ul><li>—help: retorna todas as opções disponíveis.</li><li>—current-version: Versão atual do Adobe Commerce. A versão da instalação do Adobe Commerce será usada, se omitida.</li><li>—min-issue-level: você pode filtrar problemas de acordo com o nível mínimo de problema (o valor padrão é AVISO).</li><li>—ignore-current-version-compatibility-issues (ou -i): se você não quiser incluir problemas críticos, erros e avisos da versão atual no seu relatório.</li><li>—coming-version (ou -c): aponta para uma versão específica do Adobe Commerce. O último disponível será usado se omitido.</li></ul> |
 
 O [!DNL Upgrade Compatibility Tool] permite executar o comando `upgrade:check` com uma opção `--ignore-current-version-compatibility-issues`. Use esta opção somente quando quiser obter novos problemas introduzidos com a atualização da sua versão atual para a versão de destino em seu relatório [!DNL Upgrade Compatibility Tool]:
 
@@ -146,7 +146,7 @@ Opções disponíveis para o comando `core:code:changes`:
 
 >[!NOTE]
 >
-> É uma prática recomendada manter o código personalizado fora do código principal. Consulte o [guia de atualização](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=pt-BR) do Adobe Commerce 2.4 para obter mais práticas recomendadas de atualização.
+> É uma prática recomendada manter o código personalizado fora do código principal. Consulte o [guia de atualização](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) do Adobe Commerce 2.4 para obter mais práticas recomendadas de atualização.
 
 ### Instalação do Vanilla
 
@@ -163,7 +163,7 @@ Consulte o tópico [Implantar instância básica](https://developer.adobe.com/co
 O [!DNL Upgrade Compatibility Tool] pode corrigir automaticamente um conjunto reduzido de problemas:
 
 - Funções que podiam ser usadas sem passar um argumento, mas com esse uso agora se tornaram obsoletas.
-- Uso de `$this` em modelos de Magento.
+- Uso de `$this` em modelos do Magento.
 - Uso da palavra-chave PHP `final` em métodos privados.
 
 Para isso, execute o comando `refactor`:
@@ -259,8 +259,8 @@ Isso retorna opções específicas que podem ser executadas para o comando `upgr
 
 - Evite ter dois módulos com o mesmo nome.
 - Siga os [padrões de codificação](https://developer.adobe.com/commerce/php/coding-standards/) do Adobe Commerce.
-- Práticas recomendadas do [Guia de atualização](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=pt-BR) do Adobe Commerce 2.4.
-- Execute o [!DNL Upgrade Compatibility Tool] a partir do [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=pt-BR) para projetos do [Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=pt-BR){target=_blank}.
+- Práticas recomendadas do [Guia de atualização](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) do Adobe Commerce 2.4.
+- Execute o [!DNL Upgrade Compatibility Tool] a partir do [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) para projetos do [Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}.
 
 ## Otimizar os resultados
 
