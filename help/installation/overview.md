@@ -13,7 +13,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->O diagrama a seguir fornece uma visão geral de alto nível das _**instalações locais**_ do Adobe Commerce:
+>O diagrama a seguir fornece uma visão geral de alto nível das _&#x200B;**instalações locais**&#x200B;_ do Adobe Commerce:
 
 ![Como funciona a instalação](../assets/installation/install-diagram-24.svg)
 

@@ -1,6 +1,6 @@
 ---
 title: "ACSD-50813: o administrador não pode adicionar produtos empacotados que contenham uma barra"
-description: Aplique o patch ACSD-50813 para corrigir o problema de desempenho do Adobe Commerce em que o administrador não pode adicionar produtos empacotados contendo uma marca de barra (`/`) no SKU com a funcionalidade *Adicionar produtos por SKU* à ordem do administrador.
+description: Aplique o patch ACSD-50813 para corrigir o problema de desempenho do Adobe Commerce em que o administrador não pode adicionar produtos empacotados contendo uma marca de barra (&grave;/&grave;) no SKU com a funcionalidade *Adicionar produtos por SKU* à ordem do administrador.
 source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
 source-wordcount: '406'

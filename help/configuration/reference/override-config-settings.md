@@ -224,7 +224,7 @@ Para localizar o nome da variável para a origem do país de entrega:
 
 1. Determine o escopo.
 
-   Localize o escopo no [banco de dados](#find-a-website-or-store-view-scope-in-the-database) conforme discutido na Etapa 1: encontre o valor do escopo de exibição do site ou do repositório. (Você também pode encontrar o valor no Administrador como mostrado na [tabela da Etapa 2: definir variáveis de exibição globais, de site ou de armazenamento](#step-2-set-global-website-or-store-view-variables.
+   Localize o escopo no [banco de dados](#find-a-website-or-store-view-scope-in-the-database) conforme discutido na Etapa 1: encontre o valor do escopo de exibição do site ou do repositório. (Você também pode encontrar o valor no Administrador como mostrado na [tabela da Etapa 2: definir variáveis de exibição globais, de site ou de armazenamento] (#step-2-set-global-website-or-store-view-variables.
 
    Por exemplo, o escopo pode ser `CONFIG__WEBSITES__DEFAULT`.
 

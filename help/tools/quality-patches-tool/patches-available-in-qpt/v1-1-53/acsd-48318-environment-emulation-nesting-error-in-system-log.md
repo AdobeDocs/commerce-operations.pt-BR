@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-48318: Erro de aninhamento de emulação de ambiente em "system.log"'
-description: Aplique o patch ACSD-48318 para corrigir o problema do Adobe Commerce em que uma mensagem de erro *main.ERROR:Environment emulation nested is not allowed* aparece em `system.log` toda vez que um email de fatura é enviado.
+description: Aplique o patch ACSD-48318 para corrigir o problema do Adobe Commerce em que uma mensagem de erro *main.ERROR:Environment emulation nested is not allowed* aparece em &grave;system.log&grave; toda vez que um email de fatura é enviado.
 feature: System, Orders
 role: Admin, Developer
 exl-id: 24af18de-80dd-4e0a-bdf9-5b9c075fc608

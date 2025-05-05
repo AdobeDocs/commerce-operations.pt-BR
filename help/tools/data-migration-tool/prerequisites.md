@@ -44,6 +44,6 @@ Se o Log Binário estiver habilitado para o banco de dados Magento 1, defina a v
 
 Migre o código de extensão do Magento 1 para o Magento 2.
 
-Para encontrar as versões mais recentes das extensões, visite [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) ou contate seu provedor de extensões.
+Para encontrar as versões mais recentes das extensões, visite [[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/) ou contate seu provedor de extensões.
 
-Você também pode usar o [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).
+Você também pode usar o [[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).

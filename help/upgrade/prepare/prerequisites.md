@@ -99,7 +99,7 @@ Para atualizar corretamente o MySQL da versão 8.0 para a versão 8.4, siga esta
    >
    >Se você não alterar o valor de `restrict_fk_on_non_standard_key` para `OFF`, receberá o seguinte erro durante a importação:
    >
-   ```sql
+   >```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Reinicie o servidor MySQL.
@@ -192,7 +192,7 @@ O suporte para o Elasticsearch 8.x foi introduzido no Adobe Commerce 2.4.6. As i
 
    Esta abordagem funciona para 2.4.7-p4 com PHP 8.3. O problema ocorre porque `aws/aws-sdk-php` requer `psr/http-message >= 2.0`, o que pode causar conflitos. As etapas acima ajudam a resolver esses problemas de dependência.
 
-+++
+   +++
 
 1. Atualize os componentes do projeto.
 
@@ -358,7 +358,7 @@ Para definir a variável de ambiente:
 
 Por motivos de segurança, o Adobe Commerce exige determinadas permissões no sistema de arquivos. As permissões são diferentes de _[propriedade](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. A propriedade determina quem pode executar ações no sistema de arquivos; as permissões determinam o que o usuário pode fazer.
 
-Os diretórios no sistema de arquivos devem ser graváveis pelo grupo ](../../installation/prerequisites/file-system/overview.md) do [proprietário do sistema de arquivos.
+Os diretórios no sistema de arquivos devem ser graváveis pelo grupo [&#128279;](../../installation/prerequisites/file-system/overview.md) do proprietário do sistema de arquivos.
 
 Para verificar se as permissões do sistema de arquivos estão definidas corretamente, faça logon no servidor de aplicativos ou use o aplicativo gerenciador de arquivos do provedor de hospedagem.
 

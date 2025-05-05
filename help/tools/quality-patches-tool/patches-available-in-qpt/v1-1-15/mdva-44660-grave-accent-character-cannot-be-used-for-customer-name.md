@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-44660: o caractere de acento grave [`] não pode ser usado para o nome do cliente'
-description: O patch MDVA-44660 corrige o problema em que o caractere de acento grave (`) não pode ser usado para o nome de um cliente. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 está instalada. A ID do patch é MDVA-44660. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
+title: 'MDVA-44660: o caractere de acento grave [&grave;] não pode ser usado para o nome do cliente'
+description: O patch MDVA-44660 corrige o problema em que o caractere de acento grave (&grave;) não pode ser usado para o nome de um cliente. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 está instalada. A ID do patch é MDVA-44660. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 feature: Variables
 role: Admin
 exl-id: 603161bf-fac3-4571-b872-d98de1bdf6b4

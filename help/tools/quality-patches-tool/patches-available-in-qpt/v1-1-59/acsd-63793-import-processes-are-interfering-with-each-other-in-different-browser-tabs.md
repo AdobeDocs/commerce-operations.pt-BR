@@ -36,7 +36,7 @@ A importação de dados por meio da interface do Administrador interfere em outr
 <u>Etapas a serem reproduzidas</u>:
 
 1. Vá para **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]**.
-1. Definir **[!UICONTROL Entity Type]** como *[!UICONTROL Customers and Addresses](arquivo único)*.
+1. Definir **[!UICONTROL Entity Type]** como *[!UICONTROL Customers and Addresses] (arquivo único)*.
 1. Defina **[!UICONTROL Import Behavior]** como *[!UICONTROL Add/Update]*.
 1. Selecione um arquivo válido para importar.
 1. Clique no botão **[!UICONTROL Check Data]**.

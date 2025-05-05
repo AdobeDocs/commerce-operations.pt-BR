@@ -1,6 +1,6 @@
 ---
-title: "ACSD-57074: *Sim/Não* o atributo personalizado com o prefixo `price_*` no atributo `attribute_code` não funciona com a indexação"
-description: Aplique o patch ACSD-57074 para corrigir o problema do Adobe Commerce em que o atributo personalizado *Sim/Não* com o prefixo `price_*` no atributo `attribute_code` não funciona com a indexação.
+title: "ACSD-57074: *Sim/Não* o atributo personalizado com o prefixo &grave;price_*&grave; no atributo &grave;attribute_code&grave; não funciona com a indexação"
+description: Aplique o patch ACSD-57074 para corrigir o problema do Adobe Commerce em que o atributo personalizado *Sim/Não* com o prefixo &grave;price_*&grave; no atributo &grave;attribute_code&grave; não funciona com a indexação.
 feature: Products, Categories, Catalog Management
 role: Admin, Developer
 source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a

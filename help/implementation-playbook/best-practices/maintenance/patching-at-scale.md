@@ -34,7 +34,7 @@ Como há vários tipos diferentes de patches e muitas maneiras de aplicá-los, c
 1. **Patches de segurança** fazem parte da base de código estático de uma versão do Adobe Commerce.
 1. **Patches do compositor** por meio de `composer install` e `composer update` plug-ins, como [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
 1. Todos os **patches necessários** incluídos no pacote [Patches da Nuvem para o Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
-1. **patches de qualidade** selecionados incluídos em [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
+1. **patches de qualidade** selecionados incluídos em [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
 1. **Patches personalizados** e patches do Suporte da Adobe Commerce no diretório `/m2-hotfixes` em ordem alfabética por nome de patch.
 
    >[!IMPORTANT]
