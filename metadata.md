@@ -12,9 +12,10 @@ solution: Commerce
 solution-title: Commerce
 topic: Administration, Commerce, Development
 type: Documentation
-source-git-commit: aaca7ead9923b676718f6e371caa797d6c0d412f
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+source-git-commit: ca842f16660c568d8d690bbcef06777e68ceac2c
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 # Metadados para uso interno
 
-A variável `metadata.md` o arquivo inclui metadados de nível de repositório que passam para o guia do usuário `TOC.md` arquivos no repositório. Se quiser alterar o conteúdo metadata.md para qualquer guia do usuário, faça isso em qualquer `TOC.md` arquivo.
+O arquivo `metadata.md` inclui metadados em nível de repositório que passam para arquivos `TOC.md` do guia do usuário no repositório. Se quiser alterar o conteúdo metadata.md para qualquer guia do usuário, faça isso em qualquer arquivo `TOC.md`.
 
 | metadados | o que faz |
 |--- |--- |
