@@ -1,7 +1,7 @@
 ---
-source-git-commit: 53b2494d848c027e32f1493bbc7a9f204677afaa
+source-git-commit: 5d6d60b99d883f0a83cdcfc1c65c04d2f4ef09b7
 workflow-type: tm+mt
-source-wordcount: '27958'
+source-wordcount: '27937'
 ht-degree: 0%
 
 ---
@@ -192,7 +192,7 @@ O comando `bin/magento i18n:collect-phrases -o` agora coleta e adiciona corretam
 * __Problema de permissão para acessar o Bloco Dinâmico__
 Anteriormente, para administradores restritos, a adição de um novo bloco dinâmico exibia um erro. Após implementar essa correção, o administrador restrito pode adicionar o bloco dinâmico com êxito e editar o bloco sem erros
   _ACP2E-2687_
-* __O apóstrofo no nome de exibição de armazenamento foi substituído por &#039;__
+* __O apóstrofo no nome de exibição de armazenamento foi substituído por &amp;#039;__
 Os filtros de exibição de armazenamento da grade agora exibem corretamente apóstrofos
   _ACP2E-2787 - [Problema do GitHub](https://github.com/magento/magento2/issues/38395) - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
 * __Falha no carregamento do Favicon ao validar arquivos .ico__
@@ -479,7 +479,7 @@ Anteriormente, para as diferentes lojas, os produtos podem ser resolicitados da 
 * __No admin, o &quot;Carrinho de Compras&quot; no lado esquerdo não é atualizado ao selecionar os itens e &quot;Mover para o Carrinho de Compras&quot; no lado direito__
 O &quot;Carrinho de compras&quot; no lado esquerdo é atualizado ao selecionar os itens e &quot;Mover para o carrinho de compras&quot; no lado direito no lado do administrador. Anteriormente, essa funcionalidade não funcionava porque os itens do carrinho transformados não ficavam vazios na sessão.
   _ACP2E-2620 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
-* __[Regra de Vendas da &lbrace;Cloud] não aplicada à primeira ordem de Envio Múltiplo__
+* __[Regra de Vendas da {Cloud] não aplicada à primeira ordem de Envio Múltiplo__
 Após a correção, o desconto é mostrado corretamente para cada pedido da mesma cotação de remessa múltipla.
   _ACP2E-2646 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/f89a447e)_
 * As Solicitações Paralelas de Produção da __[Cloud] para Adicionar o Mesmo Produto ao Carrinho Resultam em Dois Itens Separados na API de Resto do Carrinho__
@@ -536,7 +536,7 @@ Os itens do carrinho de compras do cliente não desaparecem mais como resultado 
 * __Quando um item do Registro de presente é comprado, o cliente vê itens que não estão em seu Registro__
 A atualização do Registro de presentes não inclui mais itens que não pertencem ao Registro de presentes.
   _ACP2E-3495_
-* __[Problema na &lbrace;Cloud] com o Pop-up de Confirmação &quot;Remover Tudo&quot; Removendo Itens do Carrinho sem Confirmação__
+* __[Problema na {Cloud] com o Pop-up de Confirmação &quot;Remover Tudo&quot; Removendo Itens do Carrinho sem Confirmação__
 Agora, clicar no botão &quot;Remover tudo&quot; para produtos com atenção obrigatória solicita uma mensagem de confirmação para garantir que os itens só sejam removidos com a sua confirmação. Anteriormente, os itens eram removidos imediatamente sem qualquer confirmação
   _ACP2E-3510_
 * __[NUVEM] Reordena a funcionalidade do botão__
@@ -816,7 +816,7 @@ Anteriormente, com o tíquete de configuração mencionado, quando colocávamos 
 * __Erro de Tipo ao criar o objeto: Exceção Magento\CatalogSearch\Model\Indexer\Fulltext\Interceptor__
 Após a correção, uma ocorrência da classe Magento\CatalogSearch\Model\Indexer\Fulltext pode ser criada sem especificar $data.
   _ACP2E-3345 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/1366ae5e)_
-* __[Problema da &lbrace;CLOUD] com produtos não estão visíveis no front-end após salvar no Magento Admin__
+* __[Problema da {CLOUD] com produtos não estão visíveis no front-end após salvar no Magento Admin__
 Após a correção, os produtos configuráveis que têm produtos secundários com nomes longos não serão perdidos na loja.
   _ACP2E-3521 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/1984c61c)_
 
@@ -866,7 +866,7 @@ Os wdigets agora estão sendo renderizados corretamente dentro de blocos dinâmi
 * __A URL do YouTube nocookie não está funcionando no Page Builder__
 Agora, o pagebuilder permite o URL sem cookies do youtube nas configurações de elemento de formulário das regras de validação. Anteriormente, o URL sem cookie do YouTube não funcionava no pagebuilder.
   _ACP2E-2606_
-* __[O front-end da &lbrace;Cloud] não está carregando devido a um problema no modelo de informativo__
+* __[O front-end da {Cloud] não está carregando devido a um problema no modelo de informativo__
 A adição de blocos por meio da seção de conteúdo da página do CMS não gera mais exceções
   _ACP2E-2693 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/ea79f7dd)_
 * __ACP2E-2836: [Nuvem] Exceção de investigação encontrada no log: InvalidArgumentException: a classe não existe em vendor/magento/module-rule/Model/ConditionFactory.php__
@@ -1178,10 +1178,10 @@ A chamada GraphQL da Ordem de Compra poderá executar a tarefa sem encontrar err
 O sistema agora exibe corretamente os produtos configuráveis no site, mesmo que o produto não esteja habilitado em &quot;Todas as exibições da loja&quot;, mas esteja habilitado em escopos específicos de exibição da loja.
 Anteriormente, se um produto era desativado em &quot;Todas as exibições da loja&quot; e ativado apenas em escopos de exibição da loja específicos, os atributos do produto não eram exibidos corretamente na resposta do GraphQL, fazendo com que o produto não fosse exibido corretamente.
   _ACP2E-3184 - [Contribuição de código do GitHub](https://github.com/magento/inventory/commit/3f300077)_
-* __[Graphql de Produtos da &lbrace;Cloud] apresentando erro quando o mesmo produto simples foi atribuído a vários produtos configuráveis__
+* __[Graphql de Produtos da {Cloud] apresentando erro quando o mesmo produto simples foi atribuído a vários produtos configuráveis__
 Anteriormente, com produtos configuráveis separados com o mesmo produto simples, o grapQL retornava um erro. Depois que essa correção se aplica, diferentes produtos configuráveis com o mesmo produto simples, o grapQL retorna o resultado sem erros.
   _ACP2E-3190 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/148c3ead)_
-* __[Problema na &lbrace;Cloud] com Autenticação de Usuário e Acesso a Token entre Sites na Configuração de Vários Sites__
+* __[Problema na {Cloud] com Autenticação de Usuário e Acesso a Token entre Sites na Configuração de Vários Sites__
 As consultas de informações do cliente e do carrinho do GraphQl na configuração de vários sites verificam se o cliente em um site não padrão existe.
 Anteriormente, a consulta funcionava sem verificar se o cliente existe em um site não padrão na configuração de vários sites.
   _ACP2E-3215 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/581b7ef1)_
@@ -1340,7 +1340,7 @@ Exibição da mensagem de erro correta durante a verificação de importação d
 * __A exportação de produtos provoca OOM mesmo com limite de memória 4G__
 Antes dessa correção, a exportação do produto falhava se os atributos do produto tivessem milhares de valores de opção mesmo com memória 4G disponível. Após essa correção, a exportação do produto deve concluir a exportação do arquivo csv.
   _ACP2E-3475 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/1984c61c)_
-* __[Processos De Importação Da &lbrace;Cloud] Que Interferem Entre Si__
+* __[Processos De Importação Da {Cloud] Que Interferem Entre Si__
 Mensagens corretas serão exibidas se o mesmo usuário administrador executar duas ou mais operações de importação usando a mesma sessão de usuário.
   _ACP2E-3527 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/d4de4726)_
 
@@ -1424,7 +1424,7 @@ O sistema agora inclui uma opção de configuração async_sending_tries para es
 * __[Nuvem] Status do Pedido alterado para concluído quando o reembolso parcial de um pedido parcialmente enviado__
 Ao emitir um aviso de crédito, o status da ordem não é mais alterado para &quot;concluído&quot; se houver itens que ainda não foram entregues.
   _ACP2E-2756 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/7e0e5582)_
-* __[A &lbrace;CLOUD] Não Pode Desabilitar O Envio De Emails Da Interface Do Administrador, Como Mostra O Dev Docs__
+* __[A {CLOUD] Não Pode Desabilitar O Envio De Emails Da Interface Do Administrador, Como Mostra O Dev Docs__
 O sistema agora impede corretamente que emails de vendas sejam enviados quando a comunicação por email está desativada. Esses emails não serão mais enviados quando a comunicação por email for reativada. Anteriormente, os emails de vendas iniciados enquanto a comunicação por email estava desativada ainda eram enviados assim que a comunicação por email era reativada.
   _ACP2E-3002 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/c8931218)_
 * __Pedido fechado sem reembolso total__
@@ -1537,7 +1537,7 @@ Correção de um problema em que a tentativa de remover produtos em estoque do c
 * __Não é possível adicionar produtos porque o SKU na mutação diferencia maiúsculas de minúsculas__
 Solução de um problema em que a mutação addProductsToCart retornava um erro &quot;PRODUCT_NOT_FOUND&quot; ao usar SKUs com invólucro diferente. A mutação agora lida com SKUs sem distinção entre maiúsculas e minúsculas, garantindo consistência com consultas do Serviço de catálogo e comportamento de PDP.
   _LYNX-469_
-* __Atributo do produto > forma abreviada da marca comercial &trade; é retornado como &trade;__
+* __Atributo do produto > forma abreviada da marca comercial &amp;trade; é retornado como &amp;trade;__
 Solução de um problema de codificação de caracteres com o nome do produto para a API do GraphQL
   _LYNX-603_
 * __problema de mutação de updateCustomerEmail__
@@ -1638,9 +1638,6 @@ O sistema agora carrega corretamente os arquivos CSS de forma assíncrona nas p�
 * __Usando o tipo virtual para configurar o plug-in, o método interceptor não pode ser gerado corretamente no comando `setup:di:compile`__
 O sistema agora gera corretamente métodos interceptores ao usar um tipo virtual para configurar um plug-in, garantindo resultados consistentes tanto pré-compilados quanto compilados em tempo de execução. Anteriormente, o sistema gerava resultados incorretos quando pré-compilado em comparação à compilação em tempo de execução.
   _AC-13398 - [Problema do GitHub](https://github.com/magento/magento2/issues/33980) - [Contribuição de código do GitHub](https://github.com/magento/magento2/pull/38141)_
-* __Não é possível baixar arquivos do Coletor de Dados__
-Baixar o backup não mostra mais uma página em branco em vez de baixar o arquivo.
-  _ACP2E-3441_
 * __Os testes de unidade do Adobe Commerce 2.4.7-p3 estão falhando__
 Nenhuma nota de versão é necessária.
   _ACP2E-3631 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/982b1c42)_
