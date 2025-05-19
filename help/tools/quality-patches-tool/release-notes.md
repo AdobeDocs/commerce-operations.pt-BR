@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: db6ccbcf16786c1987f3d84e86582fe048edd2e4
+source-git-commit: 729670154dcca1df590f60d534af162fbcc57c94
 workflow-type: tm+mt
-source-wordcount: '25802'
+source-wordcount: '26107'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.64 {#v1-1-64}
+
+* **ACP2E-3838** (para Adobe Commerce e Magento Open Source >=2.4.4-p9 &lt;2.4.4-p13 || >=2.4.5-p8 &lt;2.4.5-p12 || >=2.4.6-p6 &lt;2.4.6-p10 || >=2.4.7 &lt;2.4.7-p5) - Corrige o problema em que os erros do CORS [!DNL Page Builder] impedem que as alterações sejam salvas no painel de Administração no modo de produção.
+* **ACP2E-3841** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.8) - Corrige o problema em que as regras de preço do carrinho para produtos de remessa múltipla não se aplicam corretamente quando as condições de subseleção são usadas e a remessa gratuita é habilitada.
+* **ACSD-63139** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige o problema em que a exportação de produtos falha quando os atributos do produto contêm milhares de valores de opção.
+* **ACSD-65100** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que a remoção dos valores de [!UICONTROL Maximum Width] e [!UICONTROL Maximum Height] na configuração [!UICONTROL Media Gallery Image Optimization] causa um erro durante o processo de otimização da imagem.
+* **ACSD-65127** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que a habilitação da minificação do JavaScript no modo de produção faz com que o [!DNL TinyMCE] 6 gere erros no console do navegador, afetando a funcionalidade e a experiência do usuário.
+* **ACSD-65787** (para Adobe Commerce e Magento Open Source >=2.4.7-p5 &lt;2.4.8) - Corrige o problema em que a classe SchemaBuilder falha durante a criação ou as atualizações do esquema devido a uma &#39;coluna&#39; de chave de matriz indefinida ao processar dados da tabela.
+* **ACSD-65223** (para Adobe Commerce, B2B 1.5.1) - Corrige o problema em que os termos e contratos selecionados manualmente para [!DNL B2B] ordens de compra resultam em um erro.
+* **ACSD-65540** (para Adobe Commerce, B2B 1.5.2) - Corrige o problema em que ocorre um erro de sintaxe SQL devido à ausência da função `REGEXP_LIKE` ao atualizar a tabela `company_structure`.
+* **ACSD-65684** (para Adobe Commerce, B2B 1.5.2) - Corrige o problema de desempenho em que a atualização do módulo `Magento_Company` após a atualização para o [!DNL B2B] 1.5.2 demorava muito para processar um grande número de registros (~100.000+) na tabela `company_structure`.
+* Versões atualizadas: **ACSD-48234**, **ACSD-51819**, **ACSD-57570**, **ACSD-56415**
 
 ## v1.1.63 {#v1-1-63}
 
