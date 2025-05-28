@@ -2,7 +2,7 @@
 title: Gerenciar os indexadores
 description: Consulte exemplos de como exibir e gerenciar indexadores do Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
+source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,7 +39,8 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> Os comerciantes do Adobe Commerce que usam o Live Search, o Serviço de Catálogo ou as Recomendações de Produto têm a opção de usar a [indexação de preço com base em SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/index.html).
+>
+> Os comerciantes do Adobe Commerce que usam o Live Search, o Serviço de Catálogo ou as Recomendações de Produto têm a opção de usar a [indexação de preço com base em SaaS](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Exibir status do indexador
 
@@ -124,13 +125,13 @@ Você pode executar os seguintes índices no modo paralelo:
 - `Catalog Search Fulltext` pode ser paralelizado por exibições de armazenamento.
 - `Category Product` pode ser paralelizado por exibições de armazenamento.
 - O `Catalog Price` pode ser comparado a sites e grupos de clientes.
-- `Catalog Permissions` pode ser agrupado em paralelo por grupos de clientes.
+- `Catalog Permissions` pode ser paralelizado por grupos de clientes.
 
 >[!INFO]
 >
->A paralelização do Catálogo Search Texto completo e Categoria Produto é ativada por padrão.
+>A paralelização para Texto completo da pesquisa no catálogo e Produto da categoria é ativada por padrão.
 
-Para usar a paralelização, defina um dos modos de dimensão disponíveis para o indexador de preços do produto:
+Para usar a paralelização, defina um dos modos de dimensões disponíveis para o indexador de preço do produto:
 
 - `none` (padrão)
 - `website`
@@ -143,7 +144,7 @@ Por exemplo, para definir o modo por site:
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
 
-Para usar paralelização para permissões de catálogo, defina um dos modos de dimensões disponíveis para o indexador de Permissões do catálogo:
+Para usar a paralelização para permissões de Catálogo, defina um dos modos de dimensões disponíveis para o indexador de Permissões de Catálogo:
 
 - `none` (padrão)
 - `customer_group`
@@ -154,9 +155,9 @@ Ou para verificar o modo atual:
 bin/magento indexer:show-dimensions-mode
 ```
 
-Para reindexar em modo paralelo, execute o comando reindexe usando a variável de ambiente `MAGE_INDEXER_THREADS_COUNT`ou adicione um variável de ambiente ao `env.php` arquivo. Essa variável define o número de encadeamentos para o processamento de reindexação.
+Para reindexar no modo paralelo, execute o comando reindex usando a variável de ambiente `MAGE_INDEXER_THREADS_COUNT` ou adicione uma variável de ambiente ao arquivo `env.php`. Essa variável define o número de threads para o processamento de reindexação.
 
-Por exemplo, o comando a seguir executa o `Catalog Search Fulltext` indexador em três threads:
+Por exemplo, o comando a seguir executa o indexador `Catalog Search Fulltext` em três threads:
 
 ```bash
 MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fulltext
@@ -192,22 +193,22 @@ Catalog Search indexer has been invalidated.
 
 ## Configurar indexadores
 
-Use este comando para definir as seguintes opções de indexador:
+Use este comando para definir as seguintes opções do indexador:
 
-- **Atualização ao salvar (`realtime`)**: os dados indexados são atualizados quando uma alteração é feita na Administração. (Por exemplo, o índice de produtos categoria é reindexado depois que os produtos são adicionados a uma categoria no Administrador.)
+- **Atualização ao salvar (`realtime`)**: os dados indexados são atualizados quando uma alteração é feita no Administrador. (Por exemplo, o índice de produtos da categoria é reindexado depois que os produtos são adicionados a uma categoria no Administrador.)
 - **Atualizar por agendamento (`schedule`)**: os dados são indexados de acordo com o agendamento definido pelo seu trabalho cron.
 
 [Saiba mais sobre indexação](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
 ### Exibir a configuração atual
 
-Para visualização a configuração atual do indexador:
+Para exibir a configuração do indexador atual:
 
 ```bash
 bin/magento indexer:show-mode [indexer]
 ```
 
-Onde `[indexer]` está uma lista de indexadores separada por espaços. Omita `[indexer]` para mostrar todos os modos de indexadores. Por exemplo, para mostrar o modo de todos os indexadores:
+Onde `[indexer]` é uma lista de indexadores separada por espaços. Omitir `[indexer]` para mostrar os modos de todos os indexadores. Por exemplo, para mostrar o modo de todos os indexadores:
 
 Exemplo de resultado:
 
@@ -231,11 +232,11 @@ Catalog Search:                                    Update on Save
 >
 >Defina o [!DNL Customer Grid] com `realtime` em vez de `schedule`. O [!DNL Customer Grid] só pode ser reindexado usando a opção [!UICONTROL Update on Save]. Este índice não dá suporte à opção `Update by Schedule`. Use a seguinte linha de comando para definir este indexador para atualizar ao salvar: `php bin/magento indexer:set-mode realtime customer_grid`
 >
->Consulte [Práticas recomendadas para a configuração de indexador](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=pt-BR) no _Manual de implementação_.
+>Consulte [Práticas recomendadas para a configuração de indexador](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) no _Manual de implementação_.
 
 >[!INFO]
 >
->Antes de alternar os modos do indexador, defina o site como [manutenção](../../installation/tutorials/maintenance-mode.md) e [desabilite os trabalhos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=pt-BR#disable-cron-jobs). Isso garante que você não seja afetado por bloqueios no banco de dados.
+>Antes de alternar os modos do indexador, defina o site como [manutenção](../../installation/tutorials/maintenance-mode.md) e [desabilite os trabalhos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Isso garante que você não seja afetado por bloqueios no banco de dados.
 
 Para especificar a configuração do indexador:
 
@@ -308,6 +309,6 @@ Quando um indexador é definido com o status `suspended`, ele afeta principalmen
 
 >[!IMPORTANT]
 >
->Alterar o status de um indexador de `suspended` ou `invalid` para `valid` requer cuidado. Essa ação pode cliente potencial à degradação de desempenho se houver dados acumulados não processados.
+>Alterar o status de um indexador de `suspended` ou `invalid` para `valid` requer cuidado. Essa ação pode levar à degradação do desempenho se houver dados não indexados acumulados.
 >
->É crucial garantir que todos os dados são indexados com precisão antes de atualizar manualmente o status para `valid` manter o desempenho do sistema e a integridade dos dados.
+>É crucial garantir que todos os dados sejam indexados com precisão antes de atualizar manualmente o status para `valid` para manter o desempenho do sistema e a integridade dos dados.
