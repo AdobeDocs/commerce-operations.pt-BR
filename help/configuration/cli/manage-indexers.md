@@ -40,7 +40,7 @@ salesrule_rule                           Sales Rule
 
 >[!NOTE]
 >
-> Os comerciantes do Adobe Commerce que usam o Live Search, o Serviço de Catálogo ou as Recomendações de Produto têm a opção de usar a [indexação de preço com base em SaaS](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
+> Os comerciantes do Adobe Commerce que usam o Live Search, o Serviço de Catálogo ou as Recomendações de Produto têm a opção de usar a [indexação de preço com base em SaaS](https://experienceleague.adobe.com/pt-br/docs/commerce/price-indexer/price-indexing).
 
 ## Exibir status do indexador
 
@@ -232,11 +232,11 @@ Catalog Search:                                    Update on Save
 >
 >Defina o [!DNL Customer Grid] com `realtime` em vez de `schedule`. O [!DNL Customer Grid] só pode ser reindexado usando a opção [!UICONTROL Update on Save]. Este índice não dá suporte à opção `Update by Schedule`. Use a seguinte linha de comando para definir este indexador para atualizar ao salvar: `php bin/magento indexer:set-mode realtime customer_grid`
 >
->Consulte [Práticas recomendadas para a configuração de indexador](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) no _Manual de implementação_.
+>Consulte [Práticas recomendadas para a configuração de indexador](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=pt-BR) no _Manual de implementação_.
 
 >[!INFO]
 >
->Antes de alternar os modos do indexador, defina o site como [manutenção](../../installation/tutorials/maintenance-mode.md) e [desabilite os trabalhos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Isso garante que você não seja afetado por bloqueios no banco de dados.
+>Antes de alternar os modos do indexador, defina o site como [manutenção](../../installation/tutorials/maintenance-mode.md) e [desabilite os trabalhos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=pt-BR#disable-cron-jobs). Isso garante que você não seja afetado por bloqueios no banco de dados.
 
 Para especificar a configuração do indexador:
 
