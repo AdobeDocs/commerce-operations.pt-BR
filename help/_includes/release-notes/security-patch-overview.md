@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9514f6655bb6d99205c3799a164b6db62887362c
+source-git-commit: 0eb7528ebcc1515defd672830b8f00e460819aa1
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ As versões de patch de segurança também podem incluir alterações relacionad
 
 Cada versão de patch de segurança é baseada na versão anterior de patch completo. Ele contém correções de qualidade e segurança da versão anterior do patch e correções de segurança criadas entre a versão anterior do patch completo e a versão do patch de segurança.
 
-Para obter instruções sobre como baixar e aplicar patches de segurança, consulte [Executar e atualizar](../../installation/composer.md#example---security-patch) no _Guia de Atualização_.
+Para obter instruções sobre como baixar e aplicar patches de segurança, consulte [Como obter e aplicar patches de segurança](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) na _Base de Conhecimentos Adobe Commerce_.
