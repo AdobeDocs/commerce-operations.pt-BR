@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 729670154dcca1df590f60d534af162fbcc57c94
+source-git-commit: 811c29c722448a0dc0c9172f58020bd17241513c
 workflow-type: tm+mt
-source-wordcount: '26107'
+source-wordcount: '26381'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.65 {#v1-1-65}
+
+* **ACP2E-3753** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que os emails de alerta do produto em uma configuração de várias lojas sempre eram enviados usando o tema padrão, independentemente da configuração de loja ou tema.
+* **ACSD-64118** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Corrige o problema em que solicitações simultâneas para salvar e atualizar o mesmo produto resultam em inconsistência de dados ou produtos duplicados.
+* **ACSD-64813** (para Adobe Commerce >=2.4.4 &lt;2.4.9) - Corrige o problema em que o cancelamento da atribuição de categorias de um catálogo compartilhado [!DNL B2B] via API [!DNL REST] demora muito ou atinge um tempo limite com catálogos grandes.
+* **ACSD-65202** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que a página &quot;Minha Conta&quot; não exibe pedidos recentes de outras exibições de loja na mesma loja.
+* **ACSD-65254** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema no qual as notificações por email não eram enviadas aos clientes após a atualização dos endereços de email em suas contas usando a mutação `updateCustomerEmail` [!DNL GraphQL].
+* **ACSD-65331** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que o armazenamento selecionado em [!UICONTROL Pick in Store] era limpo após navegar repetidamente de volta para a página de check-out.
+* **ACSD-65822** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que as quantidades de produtos agrupadas e configuráveis não são exibidas corretamente no painel do carrinho de compras em [!UICONTROL Customer's Activities].
+* **ACSD-66093** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que endereços de email podiam ser inseridos nos campos [!UICONTROL First Name] e [!UICONTROL Last Name] do cliente convidado, resultando em emails de confirmação de pedido inválidos.
+* Versões atualizadas: **ACSD-51291**
+* Patches substituídos: **ACSD-61522**
 
 ## v1.1.64 {#v1-1-64}
 
