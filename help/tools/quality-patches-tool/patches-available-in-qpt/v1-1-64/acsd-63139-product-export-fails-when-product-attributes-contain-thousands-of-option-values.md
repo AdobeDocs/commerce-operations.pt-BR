@@ -27,7 +27,7 @@ O patch ACSD-63139 corrige o problema em que a exportação de produtos falha qu
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -46,7 +46,7 @@ A exportação de produtos falha quando os atributos de produto contêm milhares
    bin/magento cron:install
    ```
 
-1. Configure o [!DNL RabbitMQ] seguindo as instruções em [[!DNL RabbitMQ] pré-requisitos](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/rabbitmq).
+1. Configure o [!DNL RabbitMQ] seguindo as instruções em [[!DNL RabbitMQ] pré-requisitos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/prerequisites/rabbitmq).
 1. Abra o arquivo `php.ini`, defina o limite de memória como 4G e reinicie o serviço PHP.
 1. No Painel de Administração, vá para **[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**.
 1. Na seção *[!UICONTROL Export Settings]*, defina **[!UICONTROL Entity Type]** como *Produtos*, role até a parte inferior e clique em **[!UICONTROL Continue]**.
@@ -73,7 +73,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
