@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: a8113b440141df870d9ed58ebfee3aa61c72b366
+source-git-commit: 7648632f1002f104f6fc2abed13b4ddbb699057d
 workflow-type: tm+mt
-source-wordcount: '7652'
+source-wordcount: '7665'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Alertas gerenciados para Adobe Commerce: alerta de aviso do CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Ferramenta Correções de qualidade {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de versão](quality-patches-tool/release-notes.md)
    - Patches disponíveis na Ferramenta de patches de qualidade {#patches-available-in-qpt}
@@ -793,6 +793,7 @@ ht-degree: 0%
          - [ACSD-64753: a loja pré-selecionada em &quot;Retirada na Loja&quot; não é atualizada quando o endereço de entrega é alterado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
       - v1.1.64 {#v1-1-64}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
+         - [ACSD-63139: falha na exportação do produto quando os atributos do produto contêm milhares de valores de opção](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-63139-product-export-fails-when-product-attributes-contain-thousands-of-option-values.md)
          - [ACSD-65100: a remoção dos valores [!UICONTROL Maximum Width] e [!UICONTROL Maximum Height] na configuração [!UICONTROL Media Gallery Image Optimization] causa um erro](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65100-removing-the-values-for-maximum-width-and-maximum-height-in-the-media-gallery-image-optimization-configuration-causes-an-error-during-the-image-optimization-process.md)
          - [ACSD-65127: a minificação do JavaScript no modo de produção causa erros [!DNL TinyMCE] 6 no navegador](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65127-javascript-minification-in-production-mode-causes-tinymce-6-errors-in-the-browser.md)
          - [ACP2E-3838: [!DNL Page Builder] Os erros do CORS impedem que as alterações sejam salvas no painel de administração no modo de produção](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3838-page-builder-cors-errors-prevent-saving-changes-in-the-admin-panel-in-production-mode.md)
@@ -846,6 +847,6 @@ ht-degree: 0%
       - [Dados que exigem migração manual](data-migration-tool/migrate-data/manual.md)
       - [Etapas de migração pós-dados](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=pt-BR)
+      - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Log de alterações](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
