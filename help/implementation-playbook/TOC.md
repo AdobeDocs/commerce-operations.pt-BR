@@ -2,10 +2,10 @@
 user-guide-title: Manual de implementação
 user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
-source-git-commit: 3f6bf86091885ffa0c557b0c43ce3ff024076a45
+source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 15%
+source-wordcount: '163'
+ht-degree: 14%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 15%
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Práticas recomendadas {#best-practices}
    - [Visão geral](best-practices/phases.md)
-   - Planejando {#planning}
+   - Planejamento {#planning}
       - [Visão geral](best-practices/planning/overview.md)
       - [Gerenciamento de catálogo](best-practices/planning/catalog-management.md)
       - [Configuração de exibição de sites, lojas e lojas](best-practices/planning/sites-stores-store-views.md)
@@ -28,6 +28,7 @@ ht-degree: 15%
       - [Configuração do banco de dados para implantações em nuvem&#x200B;](best-practices/planning/database-on-cloud.md)
       - [Configuração do MySQL](best-practices/planning/mysql-configuration.md)
       - [Configuração do serviço Redis](best-practices/planning/redis-service-configuration.md)
+      - [Configuração do serviço Valkey](best-practices/planning/valkey-service-configuration.md)
       - [Tamanho da memória do OPcache](best-practices/planning/opcache-memory-size.md)
       - [Tamanho do cache do Realpath](best-practices/planning/realpath-cache-size.md)
       - [Extensões](best-practices/planning/extensions.md)
@@ -49,7 +50,7 @@ ht-degree: 15%
       - [Implantação de conteúdo estático](best-practices/development/static-content-deployment.md)
       - [Modificação de tabelas de banco de dados](best-practices/development/modifying-core-and-third-party-tables.md)
       - [Modificando código principal e de terceiros](best-practices/development/modifying-core-and-third-party-code.md)
-   - Iniciar {#launch}
+   - Launch {#launch}
       - [Visão geral](best-practices/launch/overview.md)
       - [Configurar rastreadores da Web](best-practices/launch/robots-txt.md)
       - [Proteger seu site e sua infraestrutura](best-practices/launch/security-best-practices.md)
@@ -68,4 +69,4 @@ ht-degree: 15%
       - [Lista de verificação de atualização](best-practices/maintenance/upgrade-checklist.md)
       - [Pré-requisitos de atualização para o MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glossário](glossary.md)
-- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
