@@ -2,9 +2,9 @@
 title: referência env.php
 description: Veja uma lista de valores para o arquivo env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ O Commerce usa uma chave de criptografia para proteger senhas e outros dados con
 ]
 ```
 
-Saiba mais sobre [Chave de criptografia](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/encryption-key) no _Guia do usuário do Commerce_.
+Saiba mais sobre [Chave de criptografia](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) no _Guia do usuário do Commerce_.
 
 ## bd
 
@@ -203,7 +203,7 @@ Uma lista de domínios para download disponíveis neste nó. Domínios adicionai
 ]
 ```
 
-Saiba mais sobre [Domínios baixáveis](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Saiba mais sobre [Domínios baixáveis](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## instalar
 
@@ -300,3 +300,74 @@ Saiba mais em [env-php-config-set](../cli/set-configuration-values.md).
 <!-- Link definitions -->
 
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
+
+
+## Adicionar variáveis à configuração do arquivo
+
+Você pode definir ou substituir cada opção de configuração (variável com valor) por variáveis de ambiente de nível de sistema operacional (SO).
+
+A configuração `env.php` é armazenada em uma matriz com níveis aninhados. Para converter um caminho de matriz aninhado em uma cadeia de caracteres para variáveis de ambiente do sistema operacional, concatene cada chave no caminho com caracteres de sublinhado duplo `__`, maiúsculos e com o prefixo `MAGENTO_DC_`.
+
+Por exemplo, vamos converter o manipulador de salvamento de sessão da configuração `env.php` em uma variável de ambiente do sistema operacional.
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+```
+
+Concatenadas com `__` e chaves em maiúsculas se tornarão `SESSION__SAVE`.
+
+Em seguida, adicionamos o prefixo `MAGENTO_DC_` para obter o nome da variável de ambiente do sistema operacional resultante `MAGENTO_DC_SESSION__SAVE`.
+
+```shell
+export MAGENTO_DC_SESSION__SAVE=files
+```
+
+Como outro exemplo, vamos converter um caminho de opção de configuração `env.php` escalar.
+
+```conf
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+>[!INFO]
+>
+>Embora o nome da variável deva estar em maiúsculas, o valor diferencia maiúsculas de minúsculas e deve ser preservado conforme documentado.
+
+Colocamos o arquivo em maiúsculas e adicionamos o prefixo `MAGENTO_DC_` para receber o nome final da variável de ambiente do sistema operacional `MAGENTO_DC_X-FRAME-OPTIONS`.
+
+```shell
+export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
+```
+
+>[!INFO]
+>
+>Observe que o conteúdo `env.php` terá prioridade sobre as variáveis de ambiente do sistema operacional.
+
+## Substituir configuração de arquivo por variáveis
+
+Para substituir as opções de configuração `env.php` existentes por uma variável de ambiente do sistema operacional, o elemento de matriz da configuração deve ser codificado em JSON e definido como um valor da variável do sistema operacional `MAGENTO_DC__OVERRIDE`.
+
+Se precisar substituir várias opções de configuração, monte-as em uma única matriz antes da codificação JSON.
+
+Por exemplo, vamos substituir as seguintes `env.php` configurações:
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+O texto codificado em JSON da matriz acima seria
+`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`.
+
+Agora, defina-o como o valor da variável do sistema operacional `MAGENTO_DC__OVERRIDE`.
+
+```shell
+export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
+```
+
+>[!INFO]
+>
+>Verifique se a matriz codificada em JSON está corretamente citada e/ou escapada, se necessário, para impedir que o SO corrompa a string codificada.
