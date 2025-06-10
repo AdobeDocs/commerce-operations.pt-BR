@@ -86,13 +86,13 @@ A versão de segurança 2.4.6-p6 do Adobe Commerce fornece correções de bugs d
 
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
-Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do [B2B2B.
+Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do B2B2B.
 
 ### Aplicar hotfix para CVE-2024-34102
 
 {{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
-Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do [B2B2B.
+Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do B2B2B.
 
 ### Destaques
 
