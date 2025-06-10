@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
+source-git-commit: 102fee9672c75c94c7d18d47562338f8eff97f11
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/release-notes).
+>Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Somente Adobe Commerce {#ee-only}
 
@@ -52,6 +52,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >As versões do Adobe Commerce podem conter alterações incompatíveis com versões anteriores (BICs). Para revisar as alterações incompatíveis com versões anteriores, consulte [referência do BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Os principais problemas incompatíveis com versões anteriores estão descritos em [destaques da BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). Nem todas as versões introduzem os BICs principais.
+
+## Isenção de responsabilidade da Alpha {#alpha}
+
+>[!IMPORTANT]
+>
+>As versões do [Alpha](/help/release/versioning-policy.md#alpha-patch-release) podem estar incompletas e provavelmente contêm defeitos. Eles são fornecidos &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) às versões do Alpha. Os clientes não devem confiar no funcionamento ou no desempenho correto das versões do Alpha ou de qualquer documentação ou material que o acompanhe. O uso das versões do Alpha é de inteira responsabilidade do cliente.
 
 ## Isenção de responsabilidade da Beta {#beta}
 
