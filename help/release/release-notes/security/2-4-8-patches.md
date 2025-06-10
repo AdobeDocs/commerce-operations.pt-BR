@@ -1,9 +1,9 @@
 ---
 title: Notas de versão do patch de segurança do Adobe Commerce 2.4.8
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.7.
-source-git-commit: 9ec53ae90e400a6dad98c77c6ae55c70c19e0a40
+source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,24 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 
 ### Destaques
 
-{{$include /help/_includes/release-notes/highlights/security-2025-06.md}}
+Esta versão inclui os seguintes destaques:
+
+* **Aprimoramento de desempenho da API**—Resolve a degradação de desempenho em pontos de extremidade de API da Web assíncronos em massa que foram introduzidos após o patch de segurança anterior.<!-- AC-14078 -->
+
+* **Correção de acesso de Bloqueios do CMS** — Resolve um problema em que os usuários administradores com permissões restritas (como acesso somente de merchandising) não conseguiam exibir a página de listagem [!UICONTROL CMS Blocks].
+
+  Anteriormente, esses usuários encontravam um erro devido a parâmetros de configuração ausentes após a instalação de patches de segurança anteriores.<!-- AC-14087 -->
+
+* **Compatibilidade com limite de cookies** — Resolve uma alteração incompatível com versões anteriores envolvendo a constante `MAX_NUM_COOKIES` na estrutura. Esta atualização restaura o comportamento esperado e garante a compatibilidade para extensões ou personalizações que interagem com limites de cookies.<!-- AC-14475 -->
+
+* **Correção para CVE-2024-34104**—Resolve uma vulnerabilidade de autorização inadequada.<!-- AC-13917 -->
+
+* **Correção para CVE-2025-47110**—Resolve uma vulnerabilidade de modelos de email.<!-- AC-14695 -->
+
+* **Correção para VULN-31547**—Resolve uma vulnerabilidade de link canônico de categoria.<!-- AC-14713 -->
+
+>[!BEGINSHADEBOX]
+
+A correção para o CVE-2025-47110 também está disponível como um patch isolado. Consulte o [artigo da Base de Dados de Conhecimento](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) para obter detalhes.
+
+>[!ENDSHADEBOX]
