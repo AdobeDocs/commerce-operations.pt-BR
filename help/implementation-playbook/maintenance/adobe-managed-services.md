@@ -1,11 +1,11 @@
 ---
 title: Adobe Managed Services
-description: Saiba como o Adobe Managed Services pode ajudar a oferecer suporte e manter a implementação do Adobe Commerce.
+description: Saiba como o Adobe Managed Services pode ajudar a apoiar e manter sua implementação do Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 O Adobe Commerce é uma plataforma para fornecer recursos de comércio eletrônico que inclui recursos robustos prontos para uso, amplas opções de personalização e integrações de terceiros.
 
-O Adobe Managed Services fornece aplicativos e infraestrutura hospedados e gerenciados para Adobe Commerce em planos profissionais de infraestrutura em nuvem.
+O Adobe Managed Services fornece aplicativos e infraestrutura hospedados e gerenciados para o Adobe Commerce em planos profissionais de infraestrutura em nuvem.
 
 ## Benefícios
 
@@ -35,13 +35,30 @@ O Adobe Managed Services oferece os principais benefícios em implementações d
    - Fornecer suporte a eventos por meio de planejamento, execução e monitoramento
    - Suporte e experiência em nuvem (otimização proativa, relatórios e práticas recomendadas)
 
-Consulte os seguintes infográficos para obter uma comparação mais detalhada dos principais benefícios da Managed Services:
+Consulte a tabela a seguir para obter uma comparação mais detalhada dos principais benefícios da Managed Services:
 
-![Infográfico que mostra uma comparação do Adobe Managed Services com outras opções de implementação do Adobe Commerce](../../assets/playbooks/managed-services-compare.png)
+| Recurso | Adobe Commerce no local | Adobe Commerce na nuvem | Adobe Commerce no Managed Services |
+|---------|---------------------------|-------------------------|-----------------------------------|
+| Software corporativo da Adobe | ✓ | ✓ | ✓ |
+| Infraestrutura em nuvem segura e dedicada | | ✓ | ✓ |
+| Destino de nível de serviço de incidente aprimorado | | P1: 1 hora | P1: 15 minutos |
+| Monitoramento e resposta da capacidade de sobretensão | | | ✓ |
+| Segurança da infraestrutura | | | ✓ |
+| Nível de infraestrutura 99,99% SLA | | | ✓ |
+| SLA de nível de aplicativo 99,9% | | | |
+| Recurso de especialista em infraestrutura designado (engenheiro de sucesso do cliente) | | | |
+| Gerenciamento de eventos planejados | | | |
+| Monitoramento de site personalizado e runbook personalizado | | | |
+| Assistência para implantação de atualização e patch | | | |
+| Coordenação do processo de ativação | | | |
+| Gerenciamento dedicado de atendimento de segundo nível | | | |
+| Monitoramento e assistência para aplicativos | | | |
+
+Avise-me se desejar que isso seja exportado para o Excel ou outro formato.
 
 ## Funções e responsabilidades
 
-O Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimento, o preparo e a produção do Adobe Commerce em sistemas Managed Services. Para que o desenvolvimento e a implantação da solução prossigam da maneira mais eficiente possível, é importante que o cliente e o parceiro entendam e cumpram suas funções, conforme descrito abaixo:
+A Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimento, o preparo e a produção do Adobe Commerce em sistemas Managed Services. Para que o desenvolvimento e a implantação da solução prossigam da maneira mais eficiente possível, é importante que o cliente e o parceiro entendam e cumpram suas funções, conforme descrito abaixo:
 
 <table>
     <thead>
@@ -183,7 +200,7 @@ O Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
             <td>Colaborador</td>
         </tr>
         <tr>
-            <td>Revisão do Runbook</td>
+            <td>Análise da Runbook</td>
             <td></td>
             <td></td>
             <td>Proprietário</td>
@@ -324,7 +341,7 @@ O Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
             <td></td>
         </tr>
         <tr>
-            <td>Regras de Firewall do Aplicativo Web (WAF)</td>
+            <td>Regras de Firewall para Aplicativos da Web (WAF)</td>
             <td>Colaborador</td>
             <td>Colaborador</td>
             <td>Proprietário</td>
@@ -370,21 +387,21 @@ O Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
 
 ## Segurança
 
-A pilha de segurança de Adobe para o Managed Services cria segurança em todos os níveis, usando automação e consistência para reduzir erros humanos. As equipes de desenvolvimento e operações herdam automaticamente os controles de segurança de diferentes níveis da pilha.
+A pilha de segurança do Adobe para Managed Services cria segurança em todos os níveis, usando automação e consistência para reduzir erros humanos. As equipes de desenvolvimento e operações herdam automaticamente os controles de segurança de diferentes níveis da pilha.
 
-Parceiros de plataforma, como Amazon Web Services e Microsoft Azure, garantem cobertura máxima de segurança ao aplicar personalizações de plataforma, enquanto a equipe do Adobe Managed Services fornece serviços principais de segurança, como conformidade, registro, autenticação, verificação e monitoramento, segurança do servidor e configuração de aplicativo seguro. Consulte [Segurança do Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) para obter mais informações.
+Parceiros de plataforma, como o Amazon Web Services e o Microsoft Azure, garantem a máxima cobertura de segurança ao aplicar personalizações de plataforma, enquanto a equipe da Adobe Managed Services fornece serviços essenciais de segurança, como conformidade, registro, autenticação, verificação e monitoramento, segurança do servidor e configuração de aplicativos seguros. Consulte [Segurança do Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) para obter mais informações.
 
-O diagrama a seguir mostra a pilha da tecnologia de segurança Adobe Managed Services:
+O diagrama a seguir mostra a pilha da tecnologia de segurança do Adobe Managed Services:
 
 ![Diagrama mostrando a pilha de segurança do Adobe Managed Services](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## Assistência para atualização
 
-A equipe do Managed Services desempenha um papel ativo ao ajudar a planejar e auxiliar no processo de atualização. O CSE (Engenheiro de sucesso do cliente) trabalha com a equipe de atualização do projeto, incluindo gerentes de projeto e desenvolvedores (especialistas internos no assunto, parceiros certificados pela Adobe ou profissionais da Adobe Consulting) para ajudar a equipe a garantir o planejamento adequado e a adesão às práticas recomendadas durante a atualização.
+A equipe do Managed Services desempenha um papel ativo ao ajudar a planejar e auxiliar no processo de atualização. O CSE (Engenheiro de sucesso do cliente) trabalha com a equipe de atualização do projeto, incluindo gerentes de projeto e desenvolvedores (especialistas internos no assunto, parceiros certificados da Adobe ou profissionais da Adobe Consulting) para ajudar a equipe a garantir o planejamento adequado e a adesão às práticas recomendadas durante a atualização.
 
 Os Managed Services CSEs trabalharam com clientes da Adobe Commerce para executar atualizações em grandes ambientes. Seu CSE pode ajudá-lo a aproveitar o conhecimento especializado para maximizar o sucesso da atualização, minimizando o tempo de inatividade e reduzindo o risco geral. Além disso, os Managed Services CSEs trabalham com seu ambiente de preparo dedicado para a atualização, de modo que os processos de produção existentes não sejam afetados ao validar a atualização.
 
-O Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimento, o preparo e a produção do sistema Managed Services. A tabela a seguir fornece uma visão geral das funções que cada participante desempenha no processo de atualização:
+A Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimento, o preparo e a produção de seu sistema Managed Services. A tabela a seguir fornece uma visão geral das funções que cada participante desempenha no processo de atualização:
 
 <table>
 <thead>
@@ -455,7 +472,7 @@ O Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
     <td>Colaborador<br />O CSE agenda o evento de reunião de conferência de inicialização.</td>
   </tr>
   <tr>
-    <td>Post-Launch</td>
+    <td>Pós-lançamento</td>
     <td></td>
     <td>Colaborador</td>
     <td>Colaborador</td>
