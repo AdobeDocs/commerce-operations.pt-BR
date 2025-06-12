@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-61366: o comando `bin/magento setup:static-content:deploy —jobs 4` encontra várias falhas de trabalho com um erro'
-description: Aplique o patch ACSD-61366 para corrigir o problema do Adobe Commerce em que o comando `bin/magento setup:static-content:deploy —jobs 4` encontra várias falhas de trabalho com o erro *Port must be configured within the host parameter*, apesar de especificar a porta para a conexão de banco de dados.
+title: 'ACSD-61366: o comando &grave;bin/magento setup:static-content:deploy —jobs 4&grave; encontra várias falhas de trabalho com um erro'
+description: Aplique o patch ACSD-61366 para corrigir o problema do Adobe Commerce em que o comando &grave;bin/magento setup:static-content:deploy —jobs 4&grave; encontra várias falhas de trabalho com o erro *Port must be configured within the host parameter*, apesar de especificar a porta para a conexão de banco de dados.
 feature: SCD
 role: Admin, Developer
 exl-id: d71a4833-a236-429b-a4e5-7d7d51c2caeb
