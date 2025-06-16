@@ -2,7 +2,7 @@
 title: Política de ciclo de vida do software
 description: Saiba mais sobre as principais datas relacionadas ao fim do suporte de software das versões do Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 5a45f2b0ad2485014abd3b807a5797f9fc82388b
+source-git-commit: 2e81a28502d369bc8903e6b9e9154e693260234d
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 Para o Adobe Commerce 2.4.4 e versões subsequentes:
 
-- Para simplificar a política de ciclo de vida do Adobe Commerce e atender às necessidades críticas dos clientes, a Adobe ampliou a janela de suporte para três anos a partir da data de disponibilidade geral (GA) do Adobe Commerce 2.4.4 e posteriores. A Adobe fornece correções de qualidade para a versão 2.4.4 e posteriores por um período de suporte de três anos. Os clientes podem acessar as correções de qualidade entrando em contato com o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou por meio do autoatendimento [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) se a versão ainda estiver qualificada para suporte de qualidade. A tabela a seguir descreve as datas de fim do suporte de software para as linhas de versão do Adobe Commerce.
+- Para simplificar a política de ciclo de vida do Adobe Commerce e atender às necessidades críticas dos clientes, a Adobe ampliou a janela de suporte para três anos a partir da data de disponibilidade geral (GA) do Adobe Commerce 2.4.4 e posteriores. A Adobe fornece correções de qualidade para a versão 2.4.4 e posteriores por um período de suporte de três anos. Os clientes podem acessar as correções de qualidade entrando em contato com o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou por meio do autoatendimento [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) se a versão ainda estiver qualificada para suporte de qualidade. A tabela a seguir descreve as datas de fim do suporte de software para as linhas de versão do Adobe Commerce.
 
 - A Adobe fornece correções de segurança por meio de uma versão de patch de segurança para o período de suporte de três anos.
 
@@ -41,7 +41,7 @@ A Adobe incentiva os clientes a atualizarem o mais rápido possível. No entanto
 | Adobe Commerce 2.4.8 | 8 de abril de 2025 | 11 de abril de 2028 | N/D | 8.3 e 8.4 | 11,4 |
 | Adobe Commerce 2.4.7 | 9 de abril de 2024 | 9 de abril de 2027 | N/D | 8.2 e 8.3 | 10.11<sup>3</sup> |
 | Adobe Commerce 2.4.6 | 14 de março de 2023 | 11 de agosto de 2026<sup>2</sup> | N/D | 8.1 e 8.2 | 10.11<sup>4</sup> |
-| Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 9 de agosto de 2025 | 11 de agosto de 2026 | 8,1 | 10.6<sup>5</sup> |
+| Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 12 de agosto de 2025 | 11 de agosto de 2026 | 8,1 | 10.6<sup>5</sup> |
 | Adobe Commerce 2.4.4 | 12 de abril de 2022 | 12 de abril de 2025 | 14 de abril de 2026 | 8,1 | 10.6<sup>6</sup> |
 
 {style="table-layout:auto"}
