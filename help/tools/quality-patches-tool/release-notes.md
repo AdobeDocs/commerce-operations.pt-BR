@@ -2,9 +2,9 @@
 title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 811c29c722448a0dc0c9172f58020bd17241513c
+source-git-commit: 883d9cd90a70dc898766f89ee4d8e8adb1583c08
 workflow-type: tm+mt
-source-wordcount: '26381'
+source-wordcount: '26682'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.66 {#v1-1-66}
+
+* **ACP2E-3789** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.9) - Corrige o problema em que atualiza um produto por meio de [!DNL WebAPI] arquivos de mídia duplicados quando uma ID de mídia é fornecida.
+* **ACP2E-3918** (para Adobe Commerce >=2.4.5 &lt;2.4.9) - Corrige o problema em que o check-out falhava para clientes da empresa que fizeram logon usando a coleta na loja sem um endereço de cobrança padrão.
+* **ACSD-65750** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corrige o problema em que a consulta do GraphQL `route` retornava produtos fora de ordem nos tipos de conteúdo Produtos do Page Builder.
+* **ACSD-65775** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que os detalhes do pedido de API [!DNL REST] retornavam valores `base_row_total` e `row_total` incorretos quando várias quantidades do mesmo item eram solicitadas.
+* **ACSD-65777** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que o campo `types` estava ausente para tipos de imagem de produto na solicitação do GraphQL `MediaGallery`.
+* **ACSD-65848** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que a contagem total de produtos em uma categoria era calculada usando uma subseleção, refatorando o método para usar uma associação.
+* **ACSD-65913** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corrige o problema em que [!DNL OpenSearch] gerou um erro *invalid_argument_exception* para categorias com produtos com o mesmo preço.
+* **ACSD-66041** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que os códigos postais da Irlanda (IE) não eram pesquisáveis para locais de retirada devido a um `CountryID` ausente.
+* **ACSD-66212** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que a importação de um arquivo CSV do cliente causou falhas na segunda tentativa e nas subsequentes.
+* Versões atualizadas: **MDVA-12304**, **MDVA-19640**, **ACP2E-3841**, **ACSD-65100**, **ACSD-65787**, **ACP2E-3753**, **ACSD-65202**, **ACSD-65331**, **ACSD-65822**
 
 ## v1.1.65 {#v1-1-65}
 
