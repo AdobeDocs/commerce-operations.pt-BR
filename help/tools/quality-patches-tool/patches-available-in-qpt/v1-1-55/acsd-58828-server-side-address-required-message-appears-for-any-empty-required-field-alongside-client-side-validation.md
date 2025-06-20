@@ -3,13 +3,14 @@ title: 'ACSD-58828: a mensagem *address is required* do lado do servidor é exib
 description: Aplique o patch ACSD-58828 para corrigir o problema do Adobe Commerce em que a mensagem de validação do lado do servidor *address is required* é exibida se qualquer campo obrigatório estiver vazio, junto com a mensagem de validação do lado do cliente.
 feature: Shipping/Delivery, Checkout
 role: Admin, Developer
-source-git-commit: 3b47046d31a6f71f8c366fb468f435633832c039
+exl-id: 6c19773d-cb75-409f-bbd7-78d285a0252a
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58828: O endereço *do lado do servidor é obrigatório*. A mensagem é exibida para qualquer campo obrigatório vazio, junto com a validação do lado do cliente
 
@@ -25,7 +26,7 @@ O patch ACSD-58828 corrige o problema em que a mensagem de validação do lado d
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -54,8 +55,8 @@ O endereço de erro *é obrigatório. Insira e tente novamente.* exibições.
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

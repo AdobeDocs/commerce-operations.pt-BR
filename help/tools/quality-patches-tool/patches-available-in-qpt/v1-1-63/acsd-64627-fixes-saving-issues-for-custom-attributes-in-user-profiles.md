@@ -3,13 +3,14 @@ title: 'ACSD-64627: Não é possível salvar atributos personalizados do cliente
 description: Aplique o patch ACSD-64627 para corrigir o problema do Adobe Commerce em que os atributos personalizados do cliente não podem ser salvos ao adicionar ou editar usuários no [!UICONTROL Company Structure].
 feature: B2B
 role: Admin, Developer
-source-git-commit: 96e20dbe336789794462232928648a22f489c88f
+exl-id: 8e7dd72e-c21e-46cf-8e2b-9dccedfd8b04
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64627: Não é possível salvar atributos personalizados do cliente em [!UICONTROL Company Structure]
 
@@ -27,7 +28,7 @@ O patch ACSD-64627 corrige o problema em que os atributos personalizados do clie
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -62,7 +63,7 @@ Os botões não respondem. Nenhum explorador de arquivos é aberto ou os dados s
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

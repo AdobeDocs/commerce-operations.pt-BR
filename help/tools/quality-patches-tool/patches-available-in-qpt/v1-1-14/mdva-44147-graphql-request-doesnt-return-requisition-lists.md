@@ -1,10 +1,11 @@
 ---
 title: 'MDVA-44147: [!DNL GraphQL] a solicitação não retorna [!UICONTROL Requisition Lists]'
-description: O patch MDVA-44147 corrige o problema em que a  [!DNL GraphQL] solicitação não retorna [!UICONTROL Requisition Lists]. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14 é instalado. A ID do patch é MDVA-44147. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
+description: O patch MDVA-44147 corrige o problema em que a  [!DNL GraphQL] solicitação não retorna [!UICONTROL Requisition Lists]. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14 é instalado. A ID do patch é MDVA-44147. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin
 exl-id: 534c4e45-6521-45c0-ae4e-c60b754f432f
-source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # MDVA-44147: a solicitação [!DNL GraphQL] não retorna [!UICONTROL Requisition Lists]
 
-O patch MDVA-44147 corrige o problema em que a solicitação [!DNL GraphQL] não retorna [!UICONTROL Requisition Lists]. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14 está instalado. A ID do patch é MDVA-44147. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
+O patch MDVA-44147 corrige o problema em que a solicitação [!DNL GraphQL] não retorna [!UICONTROL Requisition Lists]. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14 está instalado. A ID do patch é MDVA-44147. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 
 ## Produtos e versões afetados
 
@@ -27,7 +28,7 @@ O patch MDVA-44147 corrige o problema em que a solicitação [!DNL GraphQL] não
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -36,19 +37,19 @@ A solicitação [!DNL GraphQL] não retorna [!UICONTROL Requisition Lists].
 <u>Etapas a serem reproduzidas</u>:
 
 1. Vá para **Repositório** > **Configurações** > **Configuração** > **Geral** > **Recursos B2B** e habilite **[!UICONTROL Requisition List]**.
-1. Faça logon como cliente e adicione um produto ao [[!UICONTROL Requisition List]](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
+1. Faça logon como cliente e adicione um produto ao [[!UICONTROL Requisition List]](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
 1. Criar um [[!UICONTROL Customer Token]](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/).
 
    <pre>
     <code class="language-graphql">
-    mutation &lbrace;
+    mutation {
       generateCustomerToken(
         email: "test@gmail.com"
         password: "xxxxxxxx"
-        ) &lbrace;
+        ) {
           token
-        &rbrace;
-      &rbrace;
+        }
+      }
       </code>
       </pre>
 
@@ -58,33 +59,33 @@ A solicitação [!DNL GraphQL] não retorna [!UICONTROL Requisition Lists].
 
    <pre>
     <code class="language-graphql">
-    query &lbrace;
-      customer &lbrace;
+    query {
+      customer {
         requisition_lists(
           pageSize: 20
-          ) &lbrace;
-            items &lbrace;
+          ) {
+            items {
               uid
               name
               description
-              items(pageSize: 20) &lbrace;
-                items &lbrace;
+              items(pageSize: 20) {
+                items {
                   uid
-                  product &lbrace;
+                  product {
                     uid
                     name
                     sku
                     __typename
-                  &rbrace;
+                  }
                   quantity
-                &rbrace;
+                }
                 total_pages
-              &rbrace;
-            &rbrace;
+              }
+            }
             total_count
-          &rbrace;
-        &rbrace;
-      &rbrace;
+          }
+        }
+      }
       </code>
       </pre>
 
@@ -92,37 +93,37 @@ A solicitação [!DNL GraphQL] não retorna [!UICONTROL Requisition Lists].
 
    <pre>
     <code class="language-graphql">
-    &lbrace;
-      "data": &lbrace;
-        "customer": &lbrace;
-          "requisition_lists": &lbrace;
-            "items": &lbrack;
-            &lbrace;
+    {
+      "data": {
+        "customer": {
+          "requisition_lists": {
+            "items": [
+            {
               "uid": "MQ==",
               "name": "Name",
               "description": "Description",
-              "items": &lbrace;
-                "items": &lbrack;
-                &lbrace;
+              "items": {
+                "items": [
+                {
                   "uid": "MQ==",
-                  "product": &lbrace;
+                  "product": {
                     "uid": "MQ==",
                     "name": "Simple 01",
                     "sku": "s00001",
                     "__typename": "SimpleProduct"
-                    &rbrace;,
+                    },
                     "quantity": 1
-                  &rbrace;
-                  &rbrack;,
+                  }
+                  ],
                   "total_pages": 1
-                &rbrace;
-              &rbrace;
-              &rbrack;,
+                }
+              }
+              ],
               "total_count": 1
-            &rbrace;
-          &rbrace;
-        &rbrace;
-      &rbrace;
+            }
+          }
+        }
+      }
       </code>
       </pre>
 
@@ -130,38 +131,38 @@ A solicitação [!DNL GraphQL] não retorna [!UICONTROL Requisition Lists].
 
    <pre>
     <code class="language-graphql">
-    query &lbrace;
-      customer &lbrace;
+    query {
+      customer {
         requisition_lists(
           pageSize: 20,
-          filter: &lbrace;
-            uids: &lbrace;
+          filter: {
+            uids: {
               eq: "MQ=="
-            &rbrace;
-          &rbrace;
-          ) &lbrace;
-            items &lbrace;
+            }
+          }
+          ) {
+            items {
               uid
               name
               description
-              items(pageSize: 20) &lbrace;
-                items &lbrace;
+              items(pageSize: 20) {
+                items {
                   uid
-                  product &lbrace;
+                  product {
                     uid
                     name
                     sku
                     __typename
-                  &rbrace;
+                  }
                   quantity
-                &rbrace;
+                }
                 total_pages
-              &rbrace;
-            &rbrace;
+              }
+            }
             total_count
-          &rbrace;
-        &rbrace;
-      &rbrace;
+          }
+        }
+      }
       </code>
       </pre>
 
@@ -178,13 +179,13 @@ Nenhum resultado é retornado.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
 Para saber mais sobre o [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
+* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
 * [Verifique se há patch disponível para o problema do Adobe Commerce usando o  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!DNL Quality Patches Tool].
 
-Para obter informações sobre outros patches disponíveis no [!DNL QPT], consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no guia [!DNL Quality Patches Tool].
+Para obter informações sobre outros patches disponíveis no [!DNL QPT], consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no guia [!DNL Quality Patches Tool].

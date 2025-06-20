@@ -3,7 +3,9 @@ title: 'Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.50'
 description: Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no  [!DNL Quality Patches Tool] (QPT) v1.1.50.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: 4e136531-6bd4-4294-9a5a-66d19eb136db
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -29,7 +31,7 @@ O QPT v1.1.50 inclui os seguintes patches:
 1. **ACSD-59229**: corrige o problema em que as informações relacionadas ao grupo de clientes são salvas no segmento errado devido ao valor antigo de [!UICONTROL X-Magento-Vary] na solicitação.
 1. **ACSD-59378**: corrige o problema em que substituições de URL de nível de repositório são atualizadas incorretamente durante a importação.
 1. **ACSD-59514**: corrige o problema em que os formulários na área de Administração com [!DNL Page Builder] acionavam o *[!DNL Page Builder]por 5 segundos sem liberar bloqueios.* erro no console do navegador após o envio do formulário e as alterações não podem ser salvas.
-1. **ACSD-60303**: corrige o problema em que um pedido do Administrador não pode ser feito se a minificação de HTML estiver habilitada.
+1. **ACSD-60303**: corrige o problema em que um pedido do Administrador não pode ser feito se a minificação do HTML estiver habilitada.
 1. **ACSD-60441**: corrige o problema com a atualização de clientes por meio do ponto de extremidade `V1/customers REST API` ao usar o token de acesso de integração gerado do back-end.
 
 Use o menu à esquerda para navegar até uma página de patch específica.

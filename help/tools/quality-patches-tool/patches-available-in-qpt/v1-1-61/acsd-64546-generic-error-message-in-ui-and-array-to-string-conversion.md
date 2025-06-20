@@ -3,13 +3,14 @@ title: 'ACSD-64546: Mensagem de erro genérico na interface e exceção de conve
 description: Aplique o patch ACSD-64546 para corrigir o problema do Adobe Commerce em que uma mensagem de erro genérica é exibida na interface do usuário e a exceção de conversão de matriz em string é registrada durante a criação do rótulo UPS. O patch garante que o erro correto seja mostrado na interface e nos logs.
 feature: Shipping/Delivery
 role: Admin, Developer
-source-git-commit: f50da09cec35b3a72208f17b6832e3068de9c874
+exl-id: 458371bc-4afe-4675-b090-5797e05c5b88
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64546: Exceção de mensagem de erro genérica na interface do usuário e *Conversão de matriz em cadeia de caracteres* durante a criação do rótulo UPS
 
@@ -25,7 +26,7 @@ O patch ACSD-64546 corrige o problema em que uma mensagem de erro genérica é e
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 

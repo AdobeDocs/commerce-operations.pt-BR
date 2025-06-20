@@ -3,13 +3,14 @@ title: 'ACSD-64592: links de reclamação de cartão-presente de loja não padr�
 description: Aplique o patch ACSD-64592 para corrigir o problema em que, em uma configuração de vários sites, quando um Cartão Presente Virtual é comprado do site secundário (não padrão), o link Código do Cartão Presente no email tem o URL padrão do site.
 feature: Gift, Products
 role: Admin, Developer
-source-git-commit: 39866e1cf8f2afd892c9e151259a446d0277d58f
+exl-id: 1cc026c0-7487-48e8-a092-3e72085ca38a
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64592: links de reclamação de cartão-presente de loja não padrão redirecionam para o site padrão
 
@@ -27,7 +28,7 @@ O patch ACSD-64592 corrige um problema em que, em um ambiente de vários sites, 
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -56,7 +57,7 @@ O link Código do cartão-presente tem o URL do site padrão, mesmo que o pedido
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

@@ -3,13 +3,14 @@ title: 'ACSD-64149: Um segmento de cliente com uma condição [!UICONTROL Date r
 description: Aplique o patch ACSD-64149 para corrigir o problema do Adobe Commerce em que o segmento de cliente com uma condição **[!UICONTROL Date range]** pode ser salvo quando apenas uma das datas é editada.
 feature: Customers, Admin Workspace
 role: Admin, Developer
-source-git-commit: c1c5256aee44ce65e9339cf3985e53f710fc7c8a
+exl-id: 5423bbd3-75e9-4137-b2d5-3a0ceb3384ad
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64149: Um segmento de cliente com uma condição [!UICONTROL Date range] pode ser salvo quando apenas uma data é editada
 
@@ -27,7 +28,7 @@ O patch ACSD-64149 corrige o problema em que um segmento de cliente com uma cond
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 

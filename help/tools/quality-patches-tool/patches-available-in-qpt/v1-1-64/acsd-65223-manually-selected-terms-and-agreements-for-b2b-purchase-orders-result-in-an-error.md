@@ -3,13 +3,14 @@ title: 'ACSD-65223: os termos e contratos selecionados manualmente para ordens d
 description: Aplique o patch ACSD-65223 para corrigir o problema do Adobe Commerce em que os pedidos criados usando o [!UICONTROL Purchase Orders] não podem ser concluídos com métodos de pagamento online, como cartões de crédito, quando os termos e condições são necessários para o check-out.
 feature: B2B, Purchase Orders
 role: Admin, Developer
-source-git-commit: 57c0cb63f1e2c7b12d11b759eddf0d21b5db78b2
+exl-id: 5a5d0774-3801-4688-86bd-58a390394cc0
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65223: os termos e contratos selecionados manualmente para ordens de compra B2B resultam em um erro
 
@@ -27,7 +28,7 @@ O patch ACSD-65223 corrige o problema em que os pedidos criados usando o **[!UIC
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -65,7 +66,7 @@ Você não pode colocar um pedido usando um método de pagamento online em orden
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

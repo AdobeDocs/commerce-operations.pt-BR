@@ -3,13 +3,14 @@ title: 'ACP2E-3838: [!DNL Page Builder] Os erros do CORS impedem que as alteraç
 description: Aplique o patch ACP2E-3838 para corrigir o problema do Adobe Commerce em que os  [!DNL Page Builder] erros do CORS impedem que as alterações sejam salvas no painel de administração no modo de produção.
 feature: Page Builder, Page Content, Admin Workspace
 role: Admin, Developer
-source-git-commit: 1b9c721c8200f38b6ce5d1b4de87b1f10e07e8d2
+exl-id: 0d590c0e-e21c-4553-a0a3-9332e22796f3
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3838: [!DNL Page Builder] Erros do CORS impedem que alterações sejam salvas no painel de administração no modo de produção
 
@@ -27,7 +28,7 @@ O patch ACP2E-3838 corrige o problema em que [!DNL Page Builder] erros do CORS i
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -56,7 +57,7 @@ O conteúdo da página deve ser salvo com sucesso sem erros.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

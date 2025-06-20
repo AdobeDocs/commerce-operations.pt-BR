@@ -3,13 +3,14 @@ title: 'ACSD-65195: A mutação "createCompany" do GraphQL retorna um erro para 
 description: Aplique o patch ACSD-65195 para corrigir o problema do Adobe Commerce em que a mutação "createCompany" do GraphQL lança um erro para países que não exigem uma região.
 feature: B2B, Companies, GraphQL
 role: Admin, Developer
-source-git-commit: 8eb1d7f9d787ddb3b1cc619744920ab8a9914ae8
+exl-id: b9eed00c-26f2-47fe-b1a0-6b020527f0c1
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65195: A mutação do GraphQL `createCompany` retorna um erro para um país sem uma região necessária
 
@@ -27,7 +28,7 @@ O patch ACSD-65195 corrige o problema em que a mutação [!UICONTROL GraphQL] `c
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 

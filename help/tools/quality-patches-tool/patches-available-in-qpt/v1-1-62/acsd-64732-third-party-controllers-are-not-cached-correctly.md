@@ -3,13 +3,14 @@ title: 'ACSD-64732: controladores de terceiros não armazenados em cache correta
 description: Aplique o patch ACSD-64732 para corrigir o problema do Adobe Commerce em que controladoras de terceiros não são armazenadas em cache corretamente com segmentos do cliente.
 feature: Cache
 role: Admin, Developer
-source-git-commit: 047de42098f711036f1f5252d2cbc4a329ebbfb2
+exl-id: 378e5a96-06dd-4796-9e45-a67cf539fcce
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64732: controladores de terceiros não armazenados em cache corretamente com segmentos do cliente
 
@@ -27,7 +28,7 @@ O patch ACSD-64732 corrige o problema em que as controladoras de terceiros não 
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 

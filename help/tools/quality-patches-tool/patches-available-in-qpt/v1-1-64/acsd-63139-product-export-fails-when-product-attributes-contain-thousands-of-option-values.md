@@ -3,13 +3,14 @@ title: 'ACSD-63139: falha na exportação do produto quando os atributos do prod
 description: Aplique o patch ACSD-63139 para corrigir o problema do Adobe Commerce em que a exportação de produtos falha quando os atributos do produto contêm milhares de valores de opção.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 57970acb07948f0792856e5f60df6c297a26780a
+exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63139: falha na exportação do produto quando os atributos do produto contêm milhares de valores de opção
 
@@ -27,7 +28,7 @@ O patch ACSD-63139 corrige o problema em que a exportação de produtos falha qu
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -37,16 +38,16 @@ A exportação de produtos falha quando os atributos de produto contêm milhares
 
 1. Instale o Adobe Commerce com o módulo B2B.
 1. Importar um dump de banco de dados grande com:
-   &#x200B;- ~7.000 produtos
-   &#x200B;- ~450 atributos de produto
-   &#x200B;- Alguns atributos com mais de 100 opções
+   - ~7.000 produtos
+   - ~450 atributos de produto
+   - Alguns atributos com mais de 100 opções
 1. Execute o seguinte comando para instalar o cron (se ainda não estiver instalado):
 
    ```
    bin/magento cron:install
    ```
 
-1. Configure o [!DNL RabbitMQ] seguindo as instruções em [[!DNL RabbitMQ] pré-requisitos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/prerequisites/rabbitmq).
+1. Configure o [!DNL RabbitMQ] seguindo as instruções em [[!DNL RabbitMQ] pré-requisitos](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/rabbitmq).
 1. Abra o arquivo `php.ini`, defina o limite de memória como 4G e reinicie o serviço PHP.
 1. No Painel de Administração, vá para **[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**.
 1. Na seção *[!UICONTROL Export Settings]*, defina **[!UICONTROL Entity Type]** como *Produtos*, role até a parte inferior e clique em **[!UICONTROL Continue]**.
@@ -73,7 +74,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

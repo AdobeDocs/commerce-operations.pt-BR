@@ -4,7 +4,8 @@ description: Aplique o patch ACSD-61534 para corrigir o problema do Adobe Commer
 feature: Configuration
 role: Admin, Developer
 exl-id: 5bba3f05-e017-42b2-8a89-5471afb84ff3
-source-git-commit: bbf7df7fdca4c11f6f268344db00e2c8643b5dce
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -27,7 +28,7 @@ Adobe Commerce (todos os métodos de implantação) 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -40,7 +41,7 @@ A configuração de design não pode ser definida usando o comando `bin/magento 
 1. Vá para **[!UICONTROL Content]** > **[!UICONTROL Design]** > **[!UICONTROL Configuration]**.
 1. Clique em **[!UICONTROL Edit]** próximo a **[!UICONTROL Global/Main website]** na segunda linha.
 1. Editar tema para uma exibição de loja.
-1. Abra o cabeçote do HTML.
+1. Abra o HTML head.
 1. Habilitar o campo **[!UICONTROL Scripts and Style Sheets]** desabilitado usando ferramentas de desenvolvedor.
 1. Altere o valor e salve-o.
 
@@ -56,8 +57,8 @@ A tabela `core_config_data` contém um valor atualizado para `design/head/includ
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source no local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

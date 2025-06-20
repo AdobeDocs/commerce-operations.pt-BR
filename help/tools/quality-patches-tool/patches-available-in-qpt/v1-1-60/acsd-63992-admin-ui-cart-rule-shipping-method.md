@@ -3,13 +3,14 @@ title: 'ACSD-63992: [!UICONTROL Cart Price Rule] com erro de condição de cupom
 description: Aplique o patch ACSD-63992 para corrigir o problema do Adobe Commerce em que o [!UICONTROL Cart Price Rule] com um cupom e uma condição baseada em um método de envio não pode ser aplicado corretamente por meio da interface do Administrador.
 feature: Price Rules, Admin Workspace
 role: Admin, Developer
-source-git-commit: ef17f2f75eae16e3efada4ea08ee0f068fd60702
+exl-id: 80f407c7-4552-4cfb-96ae-43773d2ec398
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63992: [!UICONTROL Cart Price Rule] com erro de condição de cupom e método de envio na interface do Administrador
 
@@ -27,7 +28,7 @@ O patch ACSD-63992 corrige o problema em que o [!UICONTROL Cart Price Rule] com 
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -59,7 +60,7 @@ A seguinte mensagem de erro é exibida:
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
