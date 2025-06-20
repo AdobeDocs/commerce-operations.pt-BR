@@ -2,9 +2,9 @@
 title: Desabilitar saída do módulo
 description: Saiba como desativar a saída do módulo.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: fee09845777e23717e618ac57df4158d6b172d4f
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -101,4 +101,7 @@ O procedimento para desativar a saída do módulo em uma única instância do Co
    ```
 
 Neste exemplo, a saída do módulo `Magento_Review` foi desabilitada e os clientes não podem mais revisar produtos.
-Para reabilitar a saída, defina o valor como `0`.
+
+### Reativar saída do módulo
+
+Para reabilitar a saída, defina o valor do módulo como `0` ou remova a linha/módulo do arquivo `config.php`.
