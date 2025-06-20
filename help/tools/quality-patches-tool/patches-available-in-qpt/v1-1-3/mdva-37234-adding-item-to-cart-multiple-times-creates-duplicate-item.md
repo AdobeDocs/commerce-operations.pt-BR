@@ -42,15 +42,15 @@ Adicionar um item ao carrinho várias vezes (solicitação paralela) para o mesm
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
         generateCustomerToken(
             email: "customer email"
             password: "customer password"
         )
-        {
+        &lbrace;
             token
-        }
-    }
+        &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -58,9 +58,9 @@ Adicionar um item ao carrinho várias vezes (solicitação paralela) para o mesm
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 

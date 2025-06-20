@@ -51,6 +51,7 @@ As regras de preço do carrinho para produtos de remessa múltipla não se aplic
 1. Teste do produto 2:
    1. Categorias: Categoria Teste 2
    1. Preço: $ 56,25 
+
       **(Os preços devem ser os mesmos mostrados aqui para garantir que o teste funcione corretamente.)**
 
 **Regra de preço do carrinho:**

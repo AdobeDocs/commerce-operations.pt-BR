@@ -38,9 +38,9 @@ A exportação de produtos falha quando os atributos de produto contêm milhares
 
 1. Instale o Adobe Commerce com o módulo B2B.
 1. Importar um dump de banco de dados grande com:
-   - ~7.000 produtos
-   - ~450 atributos de produto
-   - Alguns atributos com mais de 100 opções
+   &#x200B;- ~7.000 produtos
+   &#x200B;- ~450 atributos de produto
+   &#x200B;- Alguns atributos com mais de 100 opções
 1. Execute o seguinte comando para instalar o cron (se ainda não estiver instalado):
 
    ```
