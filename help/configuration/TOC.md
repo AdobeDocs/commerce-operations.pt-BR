@@ -2,10 +2,10 @@
 user-guide-title: Guia de configuração
 user-guide-description: Configurar os recursos e serviços do aplicativo do Adobe Commerce.
 feature: Configuration
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 + Configuração geral {#setup}
    + [Inicialização e inicialização do aplicativo](bootstrap/initialization.md)
    + [Modos de aplicação](bootstrap/application-modes.md)
-   + [parâmetros de Bootstrap](bootstrap/set-parameters.md)
+   + [Parâmetros do Bootstrap](bootstrap/set-parameters.md)
    + [Criação de perfil](bootstrap/mage-profiler.md)
    + [Caminhos de diretório base](bootstrap/mage-directory.md)
 + Implantação {#deployment}
@@ -41,6 +41,10 @@ ht-degree: 0%
       + [Configurar Redis](cache/config-redis.md)
       + [Usar Redis para cache padrão](cache/redis-pg-cache.md)
       + [Usar Redis para armazenamento de sessão](cache/redis-session.md)
+   + Valkey {#valkey}
+      + [Configurar Valkey](cache/config-valkey.md)
+      + [Usar Valkey para cache padrão](cache/valkey-pg-cache.md)
+      + [Usar Valkey para armazenamento de sessão](cache/valkey-session.md)
    + Verniz {#varnish}
       + [Visão geral do verniz](cache/config-varnish.md)
       + [Instalar verniz](cache/config-varnish-install.md)
@@ -52,7 +56,7 @@ ht-degree: 0%
    + [Verificar configuração de verniz](cache/config-varnish-final.md)
    + [Bloco ESI de verniz](cache/use-varnish-esi.md)
    + [Cache de conteúdo estático](cache/static-content-signing.md)
-+ Linha de Comando {#cli}
++ Linha de comando {#cli}
    + [Ferramenta de linha de comando](cli/config-cli.md)
    + [Comandos comuns](cli/common-cli-commands.md)
    + [Habilitar registro](cli/enable-logging.md)
@@ -96,7 +100,7 @@ ht-degree: 0%
    + [Serviços](reference/config-reference-services.md)
    + [Configurações sensíveis e específicas do sistema](reference/config-reference-sens.md)
    + [Substituir definições de configuração](reference/override-config-settings.md)
-+ Trabalhos do Cron {#crons}
++ Cron Jobs {#crons}
    + [Trabalhos e grupos do Cron](cron/custom-cron.md)
    + [Personalizar referência de crons](cron/custom-cron-reference.md)
    + [Configurar um trabalho cron personalizado](cron/custom-cron-tutorial.md)
@@ -139,11 +143,11 @@ ht-degree: 0%
       + [memcached para armazenamento de sessão](storage/memcached.md)
       + [memcached no CentOS](storage/memcache-centos.md)
       + [memcached no Ubuntu](storage/memcache-ubuntu.md)
-   + Dividir Banco de Dados {#split-db}
+   + Dividir banco de dados {#split-db}
       + [Visão geral da divisão do banco de dados](storage/multi-master.md)
       + [Configuração automática](storage/multi-master-masterdb.md)
       + [Configuração manual](storage/multi-master-manual.md)
       + [Verificar banco de dados dividido](storage/multi-master-verify.md)
       + [Replicação de banco de dados](storage/multi-master-replication.md)
       + [Reverter para um único banco de dados](storage/revert-split-database.md)
-+ [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
++ [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
