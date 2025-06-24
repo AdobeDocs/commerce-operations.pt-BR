@@ -25,13 +25,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Para obter a configuração do ambiente na infraestrutura em nuvem, consulte o [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) no _Guia do Commerce na Infraestrutura em Nuvem_.
+Para obter a configuração do ambiente na infraestrutura em nuvem, consulte o [`VALKEY_BACKEND`](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) no _Guia do Commerce na Infraestrutura em Nuvem_.
 
 Para instalações locais, consulte [Configurar o cache da página Valkey](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) no _Guia de Configuração_.
 
 >[!NOTE]
 >
->Verifique se você está usando a versão mais recente do pacote `ece-tools`. Caso contrário, [atualize para a versão mais recente](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). Você pode verificar a versão instalada em seu ambiente local usando o comando da CLI do `composer show magento/ece-tools`.
+>Verifique se você está usando a versão mais recente do pacote `ece-tools`. Caso contrário, [atualize para a versão mais recente](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). Você pode verificar a versão instalada em seu ambiente local usando o comando da CLI do `composer show magento/ece-tools`.
 
 ### Dimensionamento da memória cache L2 (Adobe Commerce Cloud)
 
@@ -91,7 +91,7 @@ Para instalações locais do Adobe Commerce, configure a nova implementação do
 
 >[!WARNING]
 >
->_não_ configure uma conexão slave Valkey para projetos de infraestrutura em nuvem com uma [arquitetura dimensionada/dividida](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Isso causa erros de conexão do Valkey. Para obter mais informações, consulte a [Orientação para configuração da Valkey](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) no guia do _Commerce na Infraestrutura de Nuvem_.
+>_não_ configure uma conexão slave Valkey para projetos de infraestrutura em nuvem com uma [arquitetura dimensionada/dividida](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Isso causa erros de conexão do Valkey. Para obter mais informações, consulte a [Orientação para configuração da Valkey](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) no guia do _Commerce na Infraestrutura de Nuvem_.
 
 ## Chaves de pré-carregamento
 
@@ -153,7 +153,7 @@ stage:
 
 >[!NOTE]
 >
->No exemplo anterior, o cache `full_page` não é relevante para o Adobe Commerce em projetos de infraestrutura em nuvem, pois eles usam [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
+>No exemplo anterior, o cache `full_page` não é relevante para o Adobe Commerce em projetos de infraestrutura em nuvem, pois eles usam [Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly).
 
 Para configurar instalações locais, consulte [Opções de cache obsoletas](../../../configuration/cache/level-two-cache.md#stale-cache-options) no _Guia de Configuração_.
 
