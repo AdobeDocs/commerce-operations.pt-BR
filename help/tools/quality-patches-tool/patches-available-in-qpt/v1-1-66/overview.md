@@ -1,0 +1,28 @@
+---
+title: 'Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.66'
+description: Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no  [!DNL Quality Patches Tool] (QPT) v1.1.66.
+feature: Tools and External Services
+role: Admin, Developer
+source-git-commit: 04a8de460c3d75d4438b0a460cd4edf50f4726f6
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 0%
+
+---
+
+# Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.66
+
+Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no [!DNL Quality Patches Tool] (QPT) v1.1.66.
+
+O QPT v1.1.66 inclui os seguintes patches:
+1. **ACP2E-3789**: atualizando um produto através de `WebAPI` arquivos de mídia duplicados quando uma ID de mídia foi fornecida.
+1. **ACP2E-3918**: falha no check-out para clientes da empresa que fizeram logon usando a retirada na loja sem um endereço de cobrança padrão.
+1. **ACSD-65750**: a consulta de &quot;rota&quot; do GraphQL retornou produtos fora de ordem nos tipos de conteúdo de Produtos do Page Builder.
+1. **ACSD-65775**: os detalhes da ordem da API REST retornaram valores `base_row_total` e `row_total` incorretos quando várias quantidades do mesmo item foram solicitadas.
+1. **ACSD-65777**: o campo &quot;tipos&quot; estava ausente para tipos de imagem de produto na solicitação do GraphQL `MediaGallery`.
+1. **ACSD-65848**: as categorias no administrador estão carregando muito lentamente.
+1. **ACSD-65913**: OpenSearch emitiu um `illegal_argument_exception` para categorias com produtos com o mesmo preço.
+1. **ACSD-66041**: os códigos postais da Irlanda (IE) não puderam ser pesquisados locais de retirada devido a uma CountryID ausente.
+1. **ACSD-66212**: corrige o problema em que a importação de um arquivo CSV do cliente causou falhas na segunda tentativa e nas subsequentes.
+
+Use o menu à esquerda para navegar até uma página de patch específica.
