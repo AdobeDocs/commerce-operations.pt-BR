@@ -3,9 +3,10 @@ title: 'Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.66'
 description: Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no  [!DNL Quality Patches Tool] (QPT) v1.1.66.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 04a8de460c3d75d4438b0a460cd4edf50f4726f6
+exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
+source-git-commit: 31a6b8296681a8f8aa23aa941c0637510b330cdc
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no [!DNL Quality Patches Tool] (QPT) v1.1.66.
 
 O QPT v1.1.66 inclui os seguintes patches:
-1. **ACP2E-3789**: atualizando um produto através de `WebAPI` arquivos de mídia duplicados quando uma ID de mídia foi fornecida.
+1. **ACP2E-3789**: arquivos de mídia duplicados na atualização do produto via WebAPI.
 1. **ACP2E-3918**: falha no check-out para clientes da empresa que fizeram logon usando a retirada na loja sem um endereço de cobrança padrão.
 1. **ACSD-65750**: a consulta de &quot;rota&quot; do GraphQL retornou produtos fora de ordem nos tipos de conteúdo de Produtos do Page Builder.
 1. **ACSD-65775**: os detalhes da ordem da API REST retornaram valores `base_row_total` e `row_total` incorretos quando várias quantidades do mesmo item foram solicitadas.
