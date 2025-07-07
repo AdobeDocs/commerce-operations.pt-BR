@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: Saiba como o Adobe Managed Services pode ajudar a apoiar e manter sua implementação do Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
+source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -40,19 +40,20 @@ Consulte a tabela a seguir para obter uma comparação mais detalhada dos princi
 | Recurso | Adobe Commerce no local | Adobe Commerce na nuvem | Adobe Commerce no Managed Services |
 |---------|---------------------------|-------------------------|-----------------------------------|
 | Software corporativo da Adobe | ✓ | ✓ | ✓ |
-| Infraestrutura em nuvem segura e dedicada | | ✓ | ✓ |
-| Destino de nível de serviço de incidente aprimorado | | P1: 1 hora | P1: 15 minutos |
-| Monitoramento e resposta da capacidade de sobretensão | | | ✓ |
-| Segurança da infraestrutura | | | ✓ |
-| Nível de infraestrutura 99,99% SLA | | | ✓ |
-| SLA de nível de aplicativo 99,9% | | | |
-| Recurso de especialista em infraestrutura designado (engenheiro de sucesso do cliente) | | | |
-| Gerenciamento de eventos planejados | | | |
-| Monitoramento de site personalizado e runbook personalizado | | | |
-| Assistência para implantação de atualização e patch | | | |
-| Coordenação do processo de ativação | | | |
-| Gerenciamento dedicado de atendimento de segundo nível | | | |
-| Monitoramento e assistência para aplicativos | | | |
+| Adobe Developer App Builder | | ✓ | ✓ |
+| Infraestrutura em nuvem segura e dedicada | | ✓ P1: 1 hora | ✓ P1: 15 minutos |
+| Meta aprimorada de nível de serviço para incidentes | | ✓ | ✓ |
+| Monitoramento e resposta da capacidade de sobretensão | | ✓ | ✓ |
+| Segurança da infraestrutura | | ✓ | ✓ |
+| Nível de infraestrutura 99,99% SLA | | ✓ | ✓ |
+| SLA de nível de aplicativo 99,9% | | | ✓ |
+| Recurso de especialista em infraestrutura designado (engenheiro de sucesso do cliente) | | | ✓ |
+| Gerenciamento de eventos planejados | | | ✓ |
+| Monitoramento de site personalizado e runbook personalizado | | | ✓ |
+| Assistência para implantação de atualização e patch | | | ✓ |
+| Coordenação do processo de ativação | | | ✓ |
+| Gerenciamento dedicado de atendimento de segundo nível | | | ✓ |
+| Monitoramento e assistência para aplicativos | | | ✓ |
 
 ## Funções e responsabilidades
 
