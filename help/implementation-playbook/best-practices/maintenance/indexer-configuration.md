@@ -4,9 +4,9 @@ description: Mantenha e otimize o desempenho do site seguindo as práticas recom
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 29168544e3a33b874b104f308bd53cb475ac2638
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,18 @@ Ter um grande armazenamento com vários Administradores trabalhando no back-end 
 Para maximizar o desempenho do site, siga estas práticas recomendadas para indexação:
 
 - Revise a configuração do índice.
-- Defina os indexadores como _[!UICONTROL Update on Schedule]_&#x200B;para sites grandes e sites com atualizações frequentes e tráfego intenso. Consulte [Gerenciamento de Índice](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Defina os indexadores como _[!UICONTROL Update on Schedule]_para sites grandes e sites com atualizações frequentes e tráfego intenso. Consulte [Gerenciamento de Índice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Siga as [práticas recomendadas de desempenho](../../../performance/configuration.md) para gerenciar índices.
 
 >[!IMPORTANT]
 >
->O [!DNL Customer Grid] só pode ser reindexado usando a opção [!UICONTROL Update on Save]. Este índice não dá suporte à opção `Update by Schedule`.
+>O comportamento do indexador [!DNL Customer Grid] foi alterado na versão 2.4.8:
+>
+>- **Anterior a 2.4.8**: o indexador [!DNL Customer Grid] só pode ser reindexado usando a opção [!UICONTROL Update on Save] e não oferece suporte à opção [!UICONTROL Update by Schedule].
+>- **2.4.8 e posterior**: o indexador [!DNL Customer Grid] oferece suporte aos modos [!UICONTROL Update on Save] e [!UICONTROL Update by Schedule] e o padrão é [!UICONTROL Update by Schedule].
 
 ## Informações adicionais
 
 - [Gerenciamento de índice para usuários administradores](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gerenciamento de índice usando a CLI do Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=pt-BR)
+- [Gerenciamento de Índice usando a CLI do Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Visão geral da indexação para desenvolvedores](https://developer.adobe.com/commerce/php/development/components/indexing/)
