@@ -1,6 +1,6 @@
 ---
 title: Visão geral do processo de atualização
-description: Saiba como atualizar o projeto do Adobe Commerce ajuda a manter sua loja segura e operando com eficiência.
+description: Saiba como atualizar o projeto do Adobe Commerce ajuda a manter sua vitrine segura e operando com eficiência.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Atualizar seu projeto Adobe Commerce é fundamental para garantir que sua loja permaneça segura, compatível com PCI e operando no máximo de eficiência. Este guia aborda as principais considerações ao se preparar para uma atualização.
 
-O guia fornece uma visão geral da jornada de atualização típica do Adobe Commerce e as práticas recomendadas para seguir ao longo dessa jornada. Ele também descreve detalhes técnicos do processo de atualização com um exemplo oportuno e instruções passo a passo para atualizar para a versão mais recente do Adobe Commerce. É importante revisar o [cronograma de lançamento](../release/schedule.md) do Adobe Commerce e começar a se preparar para atualizações antecipadamente. O Adobe publica o cronograma de lançamento anualmente para facilitar o processo de planejamento dos comerciantes e recomenda atualizar cada ciclo de lançamento de patch. Para permanecer em conformidade com o PCI, os comerciantes devem estar usando o patch ou patch de segurança mais recente.
+O guia fornece uma visão geral da jornada de atualização típica do Adobe Commerce e as práticas recomendadas para seguir ao longo dessa jornada. Ele também descreve detalhes técnicos do processo de atualização com um exemplo oportuno e instruções passo a passo para atualizar para a versão mais recente do Adobe Commerce. É importante revisar o [cronograma de lançamento](../release/schedule.md) do Adobe Commerce e começar a se preparar para atualizações antecipadamente. A Adobe publica a programação de lançamento anualmente para facilitar o processo de planejamento dos comerciantes e recomenda atualizar cada ciclo de lançamento de patch. Para permanecer em conformidade com o PCI, os comerciantes devem estar usando o patch ou patch de segurança mais recente.
 
 ## Para quem este guia se destina?
 
@@ -39,7 +39,7 @@ A atualização capacita sua empresa a permanecer ágil no veloz e em constante 
 
 ### Segurança
 
-A segurança é um dos principais motivos para fazer upgrade, pois 83% dos incidentes de segurança ocorrem em software desatualizado. De acordo com a [IBM](https://www.ibm.com/reports/data-breach), o custo médio de uma violação de dados é de US$ 3,86 milhões, muito superior ao custo de mitigar esse risco com a atualização. O Adobe oferece duas maneiras de manter sua loja segura durante todo o ano:
+A segurança é um dos principais motivos para fazer upgrade, pois 83% dos incidentes de segurança ocorrem em software desatualizado. De acordo com a [IBM](https://www.ibm.com/reports/data-breach), o custo médio de uma violação de dados é de US$ 3,86 milhões, muito superior ao custo de mitigar esse risco com a atualização. A Adobe oferece duas maneiras de manter sua loja segura durante todo o ano:
 
 - **Versões de patch** — Inclua segurança, desempenho, qualidade e correções de erros de alta prioridade.
 - **Versões de patch de segurança** — Inclua correções e aprimoramentos para manter seu site seguro e sejam mais fáceis de implementar.
@@ -52,7 +52,7 @@ O desempenho é outro motivo importante para a atualização. De acordo com [Hub
 
 O caso para atrasar ou adiar upgrades de plataformas geralmente tem um custo imediato. No entanto, o custo real de executar uma versão desatualizada de qualquer software é muito maior e pode ter um impacto duradouro em uma empresa.
 
-Pode parecer contraintuitivo, mas a execução de atualizações regulares da plataforma requer menos esforço geral do que a execução de atualizações pouco frequentes devido à quantidade de dívida técnica acumulada resultante do atraso. Adobe recentemente trabalhou com um parceiro que tem um comerciante de varejo que costumava realizar atualizações com pouca frequência e inconsistência (anualmente ou por mais tempo). Ao transformar a maneira como eles abordam atualizações e seguir um caminho de atualização regular recomendado pela Adobe ao longo de 12 meses, o parceiro conseguiu economizar o cliente em quatro semanas de tempo de desenvolvimento cumulativo, esforço e custos associados. Esses custos poderiam então ser redirecionados para iniciativas que impulsionassem o crescimento dos negócios.
+Pode parecer contraintuitivo, mas a execução de atualizações regulares da plataforma requer menos esforço geral do que a execução de atualizações pouco frequentes devido à quantidade de dívida técnica acumulada resultante do atraso. Recentemente, a Adobe trabalhou com um parceiro que tem um comerciante de varejo que costumava realizar atualizações com pouca frequência e inconsistência (anualmente ou por mais tempo). Ao transformar a maneira como eles abordam as atualizações e seguir um caminho de atualização regular recomendado pela Adobe ao longo de 12 meses, o parceiro conseguiu economizar o cliente em quatro semanas de tempo de desenvolvimento cumulativo, esforço e custos associados. Esses custos poderiam então ser redirecionados para iniciativas que impulsionassem o crescimento dos negócios.
 
 Quando as atualizações são executadas regularmente, as alterações são incrementais e o esforço de atualização correspondente reflete isso. Quando as atualizações da plataforma são adiadas por um período estendido, elas podem se tornar um processo muito mais envolvido. Além disso, as extensões usadas no [Adobe Commerce Marketplace](https://marketplace.magento.com/) e em outras integrações de terceiros também podem ser afetadas. Por fim, o tempo necessário para investigar, planejar e executar um upgrade atrasado é estendido, o que adiciona esforço e custos evitáveis.
 
