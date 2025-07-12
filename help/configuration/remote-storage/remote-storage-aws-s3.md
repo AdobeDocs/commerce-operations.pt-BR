@@ -3,9 +3,9 @@ title: Configurar bucket do AWS S3 para armazenamento remoto
 description: Configure seu projeto do Commerce para usar o serviço de armazenamento AWS S3 para armazenamento remoto.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
+source-git-commit: 3690043019d70ad15332f757158937a7d5305043
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ O [Amazon Simple Storage Service (Amazon S3)][AWS S3] é um serviço de armazena
 >[!WARNING]
 >
 >O Adobe desencoraja muito o uso de compartimentos públicos porque representa um sério risco à segurança.
+>
+>Ao usar um bucket do S3 fornecido pelo cliente para armazenamento de ativos ou mídia, a Adobe não é responsável por problemas, perda de dados ou interrupções relacionadas à configuração, ao gerenciamento ou à operação do bucket do S3, e não oferece suporte a esses problemas. Toda solução de problemas e manutenção do bucket do S3 é de responsabilidade exclusiva do cliente.
 
 **Para habilitar o armazenamento remoto com o adaptador AWS S3**:
 
