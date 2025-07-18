@@ -3,9 +3,9 @@ title: Usar Redis para cache padrão
 description: Saiba como configurar o Redis como cache padrão para o Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 2c489f2655e6fb067de1730355df6cd3683ea562
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ Com os seguintes parâmetros:
 | `cache-backend-redis-port` | porta | Porta de escuta do servidor Redis | `6379` |
 | `cache-backend-redis-db` | banco de dados | Obrigatório se você usar Redis para o cache padrão e de página inteira. Você deve especificar o número do banco de dados de um dos caches; o outro cache usa 0 por padrão.<br><br>**Importante**: se você usar Redis para mais de um tipo de cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número do banco de dados de cache padrão a 0, o número do banco de dados de cache da página a 1 e o número do banco de dados de armazenamento da sessão a 2. | `0` |
 | `cache-backend-redis-password` | senha | A configuração de uma senha Redis habilita um de seus recursos de segurança internos: o comando `auth`, que requer que os clientes se autentiquem para acessar o banco de dados. A senha é configurada diretamente no arquivo de configuração do Redis: `/etc/redis/redis.conf` | |
+| `--cache-backend-redis-use-lua` | use_lua | Ative ou desative o LUA. <br><br>**LUA**: Lua permite executar parte da lógica do aplicativo dentro do Redis, melhorando o desempenho e garantindo a consistência dos dados através de sua execução atômica. | `0` |
+| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Ative ou desative o LUA para a coleta de lixo. <br><br>**LUA**: Lua permite executar parte da lógica do aplicativo dentro do Redis, melhorando o desempenho e garantindo a consistência dos dados através de sua execução atômica. | `1` |
 
 ### Exemplo de comando
 
