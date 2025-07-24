@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 2daf54073220ffda6a31ee0786d751b025577f06
+source-git-commit: e93696c2a20df68a2855ee3941db74d2307db1ca
 workflow-type: tm+mt
-source-wordcount: '7872'
+source-wordcount: '7885'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Alertas gerenciados para Adobe Commerce: alerta de aviso do CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Ferramenta Correções de qualidade {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de versão](quality-patches-tool/release-notes.md)
    - Patches disponíveis na Ferramenta de patches de qualidade {#patches-available-in-qpt}
@@ -814,6 +814,7 @@ ht-degree: 0%
          - [ACSD-65331: O armazenamento selecionado em [!UICONTROL Pick in Store] foi limpo após retornar ao check-out](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65331-selected-store-in-pick-in-store-cleared-after-returning-to-checkout-page.md)
       - v1.1.66 {#v1-1-66}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.66](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/overview.md)
+         - [ACSD-65913: [!DNL OpenSearch] lança um argumento_exceção_ilegal para categorias com produtos com o mesmo preço](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65913-opensearch-threw-an-illegal-argument-exception-for-categories-with-products-having-the-same-price.md)
          - [ACSD-65848: as categorias no administrador estão carregando muito lentamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65848-categories-in-admin-are-loading-very-slow.md)
          - [ACSD-65750: a consulta  [!DNL GraphQL] &quot;rota&quot; retorna produtos fora de ordem no tipo de conteúdo  [!DNL Page Builder]  Produtos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65750-graphql-route-query-returned-products-out-of-order-in-page-builder-products-content-types.md)
          - [ACSD-65777: campo &quot;tipos&quot; ausente para tipos de imagem do produto na solicitação do MediaGallery GraphQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acsd-65777-types-field-was-missing-for-product-image-types-in-the-mediagallery-graphql-request.md)
@@ -867,6 +868,6 @@ ht-degree: 0%
       - [Dados que exigem migração manual](data-migration-tool/migrate-data/manual.md)
       - [Etapas de migração pós-dados](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=pt-BR)
+      - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Log de alterações](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
