@@ -2,9 +2,9 @@
 title: Segurança de responsabilidade compartilhada e modelo operacional
 description: Saiba mais sobre as responsabilidades de segurança de cada parte envolvida em seu projeto Adobe Commerce na infraestrutura em nuvem.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
+source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
@@ -798,6 +798,28 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidade do serviço Product Recommendations | R |   |
+
+{style="table-layout:auto"}
+
+#### Live Search
+
+|     | Adobe | Comerciante |
+| --- | --- | --- |
+| Disponibilidade do serviço Live Search | R |   |
+
+{style="table-layout:auto"}
+
+#### Qualidade dos eventos da loja (coleção de dados) para potencializar as Recomendações de produto e a saída do Live Search
+
+|     | Adobe | Comerciante |
+| --- | --- | --- |
+| Tema principal (Luma) | R |   |
+| Tema personalizado |  | R |
+| Implementação principal do PWA | R |   |
+| Implementação personalizada do PWA |  | R |
+| Implementação principal do AEM EDS (Modelo do Commerce) | R |   |
+| Implementação personalizada do AEM EDS |  | R |
+| Qualquer outra implementação personalizada de loja |  | R |
 
 {style="table-layout:auto"}
 
