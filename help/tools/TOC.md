@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 2ce7ad3fd91202dde3c7b824eb0c6e913a2ae720
+source-git-commit: bd458074cee538556166cd20dac53ffd90db7cf0
 workflow-type: tm+mt
-source-wordcount: '7968'
+source-wordcount: '7987'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Alertas gerenciados para Adobe Commerce: alerta de aviso do CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Ferramenta Correções de qualidade {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de versão](quality-patches-tool/release-notes.md)
    - Patches disponíveis na Ferramenta de patches de qualidade {#patches-available-in-qpt}
@@ -825,6 +825,7 @@ ht-degree: 0%
          - [ACP2E-3918: Falha de check-out para clientes da empresa que usam a retirada na loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup.md)
       - v1.1.67 {#v1-1-67}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.67](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview.md)
+         - [ACSD-66084: row_total_incl_tax retorna o valor residual próximo de zero em vez de 0,00 para itens totalmente descontados na resposta da API da ordem](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66084-fix-row-total-incl-tax-residual-value-for-discounted-items-in-order-api.md)
          - [ACSD-66049: vitrines em outros idiomas exibem preços incorretos devido à versão da biblioteca ICU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66049-non-english-storefronts-display-incorrect-pricing-due-to-the-icu-library-version.md)
          - [ACSD-66441: a Navegação em camadas exibe opções de atributo incorretas na configuração de várias lojas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66441-layered-navigation-displays-incorrect-attribute-in-multi-store-setup.md)
          - [AC-14985: erro ao enviar emails SMTP usando TLS](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-error-when-sending-smtp-emails-using-tls.md)
@@ -879,6 +880,6 @@ ht-degree: 0%
       - [Dados que exigem migração manual](data-migration-tool/migrate-data/manual.md)
       - [Etapas de migração pós-dados](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=pt-BR)
+      - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Log de alterações](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
