@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: 6758b85e797de75ea5430062c8335fa903f00838
+source-git-commit: a0bf44520c0d355c9aca3aaab55306a2d0fe018e
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ O QPT v1.1.67 inclui os seguintes patches:
 1. **ACSD-65935**: `customerOrders` A consulta do GraphQL retornou um erro de servidor interno quando um produto foi excluído.
 1. **ACSD-66049**: as vitrines que não estão em inglês exibem preços incorretos devido à versão da biblioteca ICU.
 1. **ACSD-66084**: `row_total_incl_tax` retorna um valor residual quase zero em vez de 0,00 para itens totalmente descontados na resposta da API do pedido.
-1. **ACSD-66118**: a atualização do código de exibição de armazenamento limpa as configurações de Configuração de Design se o cache de configuração não for atualizado.
+1. **ACSD-66118**: a atualização do código **[!UICONTROL Store View]** limpa as configurações de **[!UICONTROL Design Configuration]** se o cache de configuração não for atualizado.
 1. **ACSD-66139**: o GraphQL retorna o erro UNDEFINED para o carrinho inexistente ou inativo durante o posicionamento do pedido.
 1. **ACSD-66301**: mover produtos de um pedido de volta para o carrinho no Administrador resulta em uma incompatibilidade de quantidade.
 1. **ACSD-66434**: ID do cliente ausente das consultas da GraphQL da empresa.
