@@ -1,23 +1,31 @@
 ---
 title: Notas de versão do patch de segurança do Adobe Commerce 2.4.8
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.7.
-source-git-commit: 33debd1c742698e8242faaef1ff83bb2a9e5ee58
+exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
+source-git-commit: a5cdc9ee2d8c8632c40e0ced62182d5275b8b942
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
-
 
 # Notas de versão de patches de segurança do Adobe Commerce 2.4.8
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
+## 2.4.8-p2
+
+A versão de segurança 2.4.8-p2 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.8.
+
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
+
+{{b2b-patches}}
+
 ## 2.4.8-p1
 
 A versão de segurança 2.4.8-p1 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.8.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-50](https://helpx.adobe.com/br/security/products/magento/apsb25-50.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -41,6 +49,6 @@ Esta versão inclui os seguintes destaques:
 
 >[!BEGINSHADEBOX]
 
-As correções para CVE-2025-47110 e VULN-31547 também estão disponíveis como um patch isolado. Consulte o [artigo da Base de Dados de Conhecimento](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) para obter detalhes.
+As correções para CVE-2025-47110 e VULN-31547 também estão disponíveis como um patch isolado. Consulte o [artigo da Base de Dados de Conhecimento](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) para obter detalhes.
 
 >[!ENDSHADEBOX]
