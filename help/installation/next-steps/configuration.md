@@ -3,9 +3,9 @@ title: Configurar o aplicativo
 description: Saiba mais sobre a configuração pós-instalação necessária para implantações locais do Adobe Commerce.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: a28dad04dac23075234a6ac3c2b362d125c9d981
+source-git-commit: a7c98879e027948fc887e28d4baa5fb04214ca95
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Para obter mais informações sobre cron, incluindo como remover um crontab e ex
 
 Após a instalação, recomendamos o seguinte:
 
-* Verifique se a propriedade e as permissões do arquivo estão definidas corretamente
+* Verifique se a propriedade e as permissões do seu arquivo estão definidas [corretamente](../prerequisites/file-system/configure-permissions.md)
 * Recomendamos [alterar o URI de Administrador padrão](../tutorials/admin-uri.md) de `admin` para algo diferente
 * Verifique se o cabeçalho HTTP [`X-Frame-Option`](../../configuration/security/xframe-options.md) está definido corretamente.
 * Tome precauções contra script entre sites (XSS) ao [proteger seus modelos](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
@@ -65,7 +65,7 @@ Para obter mais informações, consulte uma das seguintes opções:
 >
 >* Os ambientes iniciais não têm rotação de log.
 >
->* Não é possível configurar a rotação de logs em ambientes de Integração Pro. Você deve implementar uma solução/script personalizado e [configurar seu cron](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para executar o script conforme necessário.
+>* Não é possível configurar a rotação de logs em ambientes de Integração Pro. Você deve implementar uma solução/script personalizado e [configurar seu cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para executar o script conforme necessário.
 
 ### Configurar regras do iptables para permitir que vários serviços se comuniquem
 
