@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: d025c8a6e451ff41ec4b50cf633927e52b9429f0
+source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ O QPT v1.1.67 inclui os seguintes patches:
 1. **AC-14984**: problema de conexão SSL com php-amqplib/php-amqplib ^3.2.0.
 1. **ACSD-65935**: `customerOrders` A consulta do GraphQL retornou um erro de servidor interno quando um produto foi excluído.
 1. **ACSD-66049**: as vitrines que não estão em inglês exibem preços incorretos devido à versão da biblioteca ICU.
-1. **ACSD-66084**: `row_total_incl_tax` retorna um valor residual quase zero em vez de 0,00 para itens totalmente descontados na resposta da API do pedido.
+1. **ACSD-66084**: `row_total_incl_tax` retorna quase zero em vez de 0,00 para itens totalmente descontados na API da ordem.
 1. **ACSD-66118**: a atualização do código **[!UICONTROL Store View]** limpa as configurações de **[!UICONTROL Design Configuration]** se o cache de configuração não for atualizado.
 1. **ACSD-66139**: o GraphQL retorna o erro UNDEFINED para o carrinho inexistente ou inativo durante o posicionamento do pedido.
 1. **ACSD-66301**: mover produtos de um pedido para o carrinho no Commerce Admin resulta em uma incompatibilidade de quantidade.
