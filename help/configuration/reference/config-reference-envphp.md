@@ -2,9 +2,9 @@
 title: referência env.php
 description: Veja uma lista de valores para o arquivo env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
+source-git-commit: 26fac37405ad635f297b65415517451d5149e50f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ O Commerce usa uma chave de criptografia para proteger senhas e outros dados con
 ]
 ```
 
-Saiba mais sobre [Chave de criptografia](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/encryption-key) no _Guia do usuário do Commerce_.
+Saiba mais sobre [Chave de criptografia](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) no _Guia do usuário do Commerce_.
 
 ## bd
 
@@ -203,7 +203,7 @@ Uma lista de domínios para download disponíveis neste nó. Domínios adicionai
 ]
 ```
 
-Saiba mais sobre [Domínios baixáveis](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Saiba mais sobre [Domínios baixáveis](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## instalar
 
@@ -347,6 +347,12 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 ## Substituir configuração de arquivo por variáveis
 
 Para substituir as opções de configuração `env.php` existentes por uma variável de ambiente do sistema operacional, o elemento de matriz da configuração deve ser codificado em JSON e definido como um valor da variável do sistema operacional `MAGENTO_DC__OVERRIDE`.
+
+Quando `MAGENTO_DC__OVERRIDE` é definido, a estrutura Commerce ignora os valores correspondentes no arquivo `env.php` e lê a configuração diretamente da variável de ambiente. Os valores no arquivo `env.php` permanecem inalterados, mas são ignorados para as seções de configuração substituídas.
+
+>[!IMPORTANT]
+>
+>A variável `MAGENTO_DC__OVERRIDE` ignora completamente as seções de configuração especificadas no arquivo `env.php`. Esse comportamento é diferente das variáveis `MAGENTO_DC_` individuais, que têm prioridade inferior aos valores no arquivo `env.php`.
 
 Se precisar substituir várias opções de configuração, monte-as em uma única matriz antes da codificação JSON.
 
