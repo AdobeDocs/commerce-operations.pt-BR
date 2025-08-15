@@ -2,9 +2,9 @@
 title: Política de lançamento
 description: Saiba mais sobre os diferentes tipos de versões do Adobe Commerce.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 0ea8c2bfffe81d27547c0330abdd75fc078542cf
+source-git-commit: f7b22089bcf88f6c881b0cbd4d7f77d795d9071b
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,10 @@ Patches individuais contêm correções de qualidade de baixo impacto para um pr
 
 ## Correção isolada
 
-Patches isoladosContêm uma correção independente incluída no patch de segurança mais recente ou em um patch de segurança que será lançado separadamente para uma implementação mais rápida.
+Os patches isolados são correções de segurança lançadas independentemente de um patch de segurança completo para permitir uma implementação mais rápida. Cada patch isolado trata de um problema de segurança específico e é incluído no patch de segurança completo mais recente ou que será lançado em breve. Detalhes sobre o problema são fornecidos no boletim de segurança relacionado, que se vincula a um artigo da Base de conhecimento (KB) contendo os detalhes da correção, como aplicar o patch e informações adicionais.
+
+Consulte a [Central de Segurança](https://helpx.adobe.com/security/products/magento.html) para encontrar as atualizações de segurança mais recentes disponíveis para o Adobe Commerce.
 
 ## Correção personalizada
 
-Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código do Adobe Commerce por vários motivos. Os patches personalizados são entregues por meio da [Ferramenta de Patches de Qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/usage).
+Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código do Adobe Commerce por vários motivos. Os patches personalizados são entregues por meio da [Ferramenta de Patches de Qualidade](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
