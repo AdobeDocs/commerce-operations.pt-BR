@@ -39,9 +39,9 @@ Uma ferramenta que você pode usar para testes de estresse é o GTmetrix. Medir 
 
 Saiba mais sobre como preparar projetos do Commerce para períodos de alto tráfego:
 
-- [Disponibilidade para feriados](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
-- [Análise de Compras de Feriado](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
-- [Aumento da Capacidade de Sobretensão](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
+- [Disponibilidade para feriados](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=pt-BR)
+- [Análise de Compras de Feriado](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=pt-BR)
+- [Aumento da Capacidade de Sobretensão](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=pt-BR)
 
 ### Teste de carga
 
@@ -51,12 +51,12 @@ Use o GTmetrix para simular tráfego intenso e analisar o desempenho do local pa
 
 Saiba mais sobre como testar projetos do Adobe Commerce:
 
-- [Orientação de teste](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html) (infraestrutura em nuvem)
+- [Orientação de teste](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html?lang=pt-BR) (infraestrutura em nuvem)
 - [Teste de aplicativo](https://developer.adobe.com/commerce/testing/guide/)
 
 ### Identificar e resolver problemas de desempenho
 
-Solucione problemas de desempenho usando várias ferramentas, como o New Relic e o Observation for Adobe Commerce, para detectar gargalos e otimizar sites do Commerce de maneira eficaz. A [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) está incluída com o Adobe Commerce na infraestrutura em nuvem e a [Observação para Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) está incluída para implantações na nuvem e locais.
+Solucione problemas de desempenho usando várias ferramentas, como o New Relic e o Observation for Adobe Commerce, para detectar gargalos e otimizar sites do Commerce de maneira eficaz. A [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=pt-BR) está incluída com o Adobe Commerce na infraestrutura em nuvem e a [Observação para Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) está incluída para implantações na nuvem e locais.
 
 Use essas ferramentas para analisar o desempenho do site e identificar problemas de desempenho relacionados a:
 
@@ -69,7 +69,7 @@ Por exemplo, você pode examinar detalhadamente as transações com foco nos det
 
 Saiba mais sobre o gerenciamento do desempenho do site:
 
-- [Monitoramento de desempenho](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) (infraestrutura em nuvem)
+- [Monitoramento de desempenho](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=pt-BR) (infraestrutura em nuvem)
 - [Práticas recomendadas de configuração](/help/performance/configuration.md)
 - [Observação para Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)
 
@@ -81,7 +81,7 @@ Solucionar problemas de desempenho do MySQL implementando a organização por cl
 
 Sites de alto tráfego geralmente enfrentam gargalos no banco de dados, causados principalmente pela dependência de um único servidor MySQL. Você pode resolver esses gargalos implementando o cluster de banco de dados, uma arquitetura distribuída que melhora o desempenho e garante alta disponibilidade.
 
-O clustering de banco de dados minimiza o impacto de problemas relacionados ao banco de dados durante períodos de pico de tráfego, permitindo que vários nós da Web se conectem a vários servidores MySQL. Use ferramentas como o Cluster Galera para configurar o cluster de banco de dados para sites do Commerce. O Cluster Galera está incluído em [projetos Adobe Commerce implantados na infraestrutura de nuvem](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture).
+O clustering de banco de dados minimiza o impacto de problemas relacionados ao banco de dados durante períodos de pico de tráfego, permitindo que vários nós da Web se conectem a vários servidores MySQL. Use ferramentas como o Cluster Galera para configurar o cluster de banco de dados para sites do Commerce. O Cluster Galera está incluído em [projetos Adobe Commerce implantados na infraestrutura de nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/architecture/pro-architecture).
 
 #### Otimização de consultas MySQL
 
@@ -93,10 +93,10 @@ Para otimizar o desempenho do servidor MySQL e minimizar os gargalos, é essenci
 
 Saiba mais sobre como configurar e otimizar o MySQL:
 
-- [Práticas recomendadas para a configuração do banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
-- [Replicação lenta para replicação do Galera DB](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html)
+- [Práticas recomendadas para a configuração do banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=pt-BR)
+- [Replicação lenta para replicação do Galera DB](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=pt-BR)
 - [Diretrizes gerais do MySQL](/help/installation/prerequisites/database/mysql.md)
-- [Cache de consulta do MySQL](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html)
+- [Cache de consulta do MySQL](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=pt-BR)
 
 ## Gerenciar trabalhos cron com eficiência: desempenho e tempo
 
@@ -110,7 +110,7 @@ Além disso, é possível usar a Observação para Adobe Commerce para exibir in
 
 Saiba mais sobre a implementação do Adobe Commerce cron:
 
-- [Cron (tarefas agendadas)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) no _Guia do Usuário do Commerce Admin Systems_
-- [Configuração do aplicativo - propriedade crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (infraestrutura em nuvem)
-- [Configurar e executar crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) (no local)
-- [Observação para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) (Consulte as guias [!UICONTROL Cron] e [!UICONTROL MySQL].)
+- [Cron (tarefas agendadas)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=pt-BR) no _Guia do Usuário do Commerce Admin Systems_
+- [Configuração do aplicativo - propriedade crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=pt-BR) (infraestrutura em nuvem)
+- [Configurar e executar crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=pt-BR) (no local)
+- [Observação para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=pt-BR) (Consulte as guias [!UICONTROL Cron] e [!UICONTROL MySQL].)

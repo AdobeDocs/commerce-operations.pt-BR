@@ -35,7 +35,7 @@ Ter um grande armazenamento com vários Administradores trabalhando no back-end 
 Para maximizar o desempenho do site, siga estas práticas recomendadas para indexação:
 
 - Revise a configuração do índice.
-- Defina os indexadores como _[!UICONTROL Update on Schedule]_&#x200B;para sites grandes e sites com atualizações frequentes e tráfego intenso. Consulte [Gerenciamento de Índice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Defina os indexadores como _[!UICONTROL Update on Schedule]_&#x200B;para sites grandes e sites com atualizações frequentes e tráfego intenso. Consulte [Gerenciamento de Índice](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Siga as [práticas recomendadas de desempenho](../../../performance/configuration.md) para gerenciar índices.
 
 >[!IMPORTANT]
@@ -48,5 +48,5 @@ Para maximizar o desempenho do site, siga estas práticas recomendadas para inde
 ## Informações adicionais
 
 - [Gerenciamento de índice para usuários administradores](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gerenciamento de Índice usando a CLI do Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [Gerenciamento de Índice usando a CLI do Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=pt-BR)
 - [Visão geral da indexação para desenvolvedores](https://developer.adobe.com/commerce/php/development/components/indexing/)

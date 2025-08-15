@@ -40,7 +40,7 @@ Cada fase de desenvolvimento deve ter uma ramificação correspondente no Git pa
 
 >[!TIP]
 >
->O Adobe Commerce em projetos de infraestrutura em nuvem contém ramificações específicas que correspondem a ambientes diferentes. Consulte o [Fluxo de trabalho do projeto Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html) e o [Fluxo de trabalho do projeto inicial](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html) no _Guia da Nuvem_.
+>O Adobe Commerce em projetos de infraestrutura em nuvem contém ramificações específicas que correspondem a ambientes diferentes. Consulte o [Fluxo de trabalho do projeto Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=pt-BR) e o [Fluxo de trabalho do projeto inicial](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=pt-BR) no _Guia da Nuvem_.
 
 ## Estratégias de ramificação
 

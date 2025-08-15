@@ -30,7 +30,7 @@ A habilitação do armazenamento remoto pode afetar sua experiência de desenvol
 
 >[!INFO]
 >
->- O armazenamento remoto está disponível somente para o Commerce versão 2.4.2 e posterior. Consulte as [notas de versão do 2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- O armazenamento remoto está disponível somente para o Commerce versão 2.4.2 e posterior. Consulte as [notas de versão do 2.4.2](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- O módulo de armazenamento remoto tem _suporte limitado_ no Adobe Commerce na infraestrutura em nuvem. A Adobe não pode solucionar totalmente os problemas do serviço de adaptador de armazenamento de terceiros. Consulte [Configurar armazenamento remoto para a infraestrutura do Commerce na nuvem](cloud-support.md) para obter orientação sobre como implementar o armazenamento remoto em projetos na nuvem.
 
@@ -91,7 +91,7 @@ Depois de habilitar o armazenamento remoto para um adaptador específico, você 
 
 >[!INFO]
 >
->O comando sync migra somente arquivos no diretório `pub/media`, _não_ os arquivos de importação/exportação no diretório `var`. Consulte [Importação/Exportação agendada](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) no _Guia do Usuário do Commerce 2.4_.
+>O comando sync migra somente arquivos no diretório `pub/media`, _não_ os arquivos de importação/exportação no diretório `var`. Consulte [Importação/Exportação agendada](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=pt-BR) no _Guia do Usuário do Commerce 2.4_.
 
 <!-- link definitions -->
 

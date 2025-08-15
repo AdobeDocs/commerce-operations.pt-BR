@@ -13,10 +13,10 @@ ht-degree: 0%
 
 Esta tarefa requer que você crie uma categoria raiz (e categorias adicionais, se desejado) para cada loja. As tarefas discutidas neste tópico fornecem uma maneira de configurar várias lojas. Para obter informações adicionais, consulte os seguintes recursos no Guia do usuário do Commerce:
 
-- [Categorias](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
-- [Adicionando Sites](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Armazenar URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [Conteúdo](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
+- [Categorias](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/categories)
+- [Adicionando Sites](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Armazenar URLs](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Conteúdo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +34,7 @@ Para criar uma categoria raiz:
 1. No campo **Nome da Categoria**, digite um nome exclusivo para identificar esta categoria.
 1. Verifique se a opção Habilitar categoria está definida como **Sim**.
 
-   Para obter informações sobre as outras opções desta página, consulte [Categorias raiz](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
+   Para obter informações sobre as outras opções desta página, consulte [Categorias raiz](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/category-root).
 
    A figura a seguir mostra um exemplo.
 
@@ -131,7 +131,7 @@ O Commerce oferece a opção de adicionar o código da loja ao URL base do site,
 
 Isso evita que o `index.php` e o `.htaccess` fiquem fora de sincronia com a base de código do Commerce em atualizações futuras.
 
-Consulte o [Guia do Usuário do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
+Consulte o [Guia do Usuário do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 Para adicionar o código da loja ao URL base:
 

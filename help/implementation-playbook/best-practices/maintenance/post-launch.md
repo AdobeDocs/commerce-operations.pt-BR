@@ -35,7 +35,7 @@ O suporte e a manutenção pós-lançamento são cruciais para garantir que sua 
 
   >[!TIP]
   >
-  >Consulte o [monitoramento de desempenho](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance) no _Guia da Nuvem_.
+  >Consulte o [monitoramento de desempenho](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/monitor/performance) no _Guia da Nuvem_.
 
 
 - **Otimização do desempenho do banco de dados**: para otimizar o desempenho do banco de dados na Adobe Commerce Cloud, implemente o seguinte:
@@ -66,7 +66,7 @@ Essas etapas de monitoramento ajudam a manter o desempenho ideal do CDN e aborda
 
 >[!TIP]
 >
->Consulte a [Visão geral dos serviços do Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) no _Guia da Nuvem_.
+>Consulte a [Visão geral dos serviços do Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/cdn/fastly) no _Guia da Nuvem_.
 
 #### Monitoramento de segurança regular
 
@@ -86,7 +86,7 @@ Para manter o monitoramento de segurança regular na Adobe Commerce Cloud, a Ado
 
 >[!TIP]
 >
->Consulte [Segurança](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security) no _Guia de Sistemas do Administrador_.
+>Consulte [Segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security) no _Guia de Sistemas do Administrador_.
 
 #### Registro e monitoramento de erros
 
@@ -102,7 +102,7 @@ Para monitorar o registro de erros na Adobe Commerce Cloud, o Adobe fornece vár
 
 >[!TIP]
 >
->Para obter mais detalhes sobre práticas de registro e rastreamento de erros na Adobe Commerce Cloud, consulte [Gerenciamento de logs do New Relic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) e [monitoramento de exceção](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
+>Para obter mais detalhes sobre práticas de registro e rastreamento de erros na Adobe Commerce Cloud, consulte [Gerenciamento de logs do New Relic](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) e [monitoramento de exceção](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
 
 ### Segurança e atualizações
 
@@ -110,19 +110,19 @@ Para monitorar o registro de erros na Adobe Commerce Cloud, o Adobe fornece vár
 
 Para permanecer atualizado e garantir a segurança do seu sistema da Adobe Commerce Cloud, veja a seguir algumas práticas importantes para o monitoramento de patches e atualizações de segurança:
 
-- **Assinar alertas de segurança do Adobe Commerce**: mantenha-se informado sobre vulnerabilidades de segurança ao [se registrar para receber notificações do Adobe](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security).
+- **Assinar alertas de segurança do Adobe Commerce**: mantenha-se informado sobre vulnerabilidades de segurança ao [se registrar para receber notificações do Adobe](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security).
 
-- **Verificar notas de versão**: examine regularmente as [notas de versão de correção de segurança](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/overview), que estão marcadas com &quot;-pN&quot; para versões (por exemplo, 2.3.5-p1), e contêm correções críticas e melhorias.
+- **Verificar notas de versão**: examine regularmente as [notas de versão de correção de segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/overview), que estão marcadas com &quot;-pN&quot; para versões (por exemplo, 2.3.5-p1), e contêm correções críticas e melhorias.
 
 - **Aplicar patches de segurança imediatamente**: aplique patches de segurança assim que estiverem disponíveis. Isso inclui a atualização para as versões mais recentes ou a aplicação de arquivos de patch específicos.
 
 - **Usar patches de nuvem**: para a Adobe Commerce Cloud, os patches de segurança podem ser agrupados no Conjunto de ferramentas da nuvem. Atualize o conjunto ou a versão do Commerce para receber essas correções.
 
-- **Gerenciamento automatizado de patches**: considere usar ferramentas como o patcher centralizado para [gerenciar e aplicar patches em vários armazenamentos automaticamente](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale).
+- **Gerenciamento automatizado de patches**: considere usar ferramentas como o patcher centralizado para [gerenciar e aplicar patches em vários armazenamentos automaticamente](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale).
 
 >[!TIP]
 >
->Para obter mais detalhes e instruções passo a passo sobre como aplicar patches e manter a segurança, consulte [notas de versão de patch de segurança](../../../release/release-notes/security/overview.md) e [Como aplicar patches de segurança](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches). Você também deve revisar os relatórios da [Ferramenta de Análise do Site](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access).
+>Para obter mais detalhes e instruções passo a passo sobre como aplicar patches e manter a segurança, consulte [notas de versão de patch de segurança](../../../release/release-notes/security/overview.md) e [Como aplicar patches de segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches). Você também deve revisar os relatórios da [Ferramenta de Análise do Site](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/access).
 
 #### Conformidade com o PCI
 
@@ -132,11 +132,11 @@ Para garantir a conformidade com o PCI na Adobe Commerce Cloud, siga estas prát
 
 - **Usar protocolos de transmissão seguros**: sempre transmita dados de pagamento através de protocolos seguros, como TLS, com criptografia e gerenciamento de chaves adequado.
 
-- **Utilizar o WAF (firewall de aplicativo da Web)**: o serviço WAF com tecnologia Fastly ajuda a atender aos requisitos do PCI DSS 6.6 e protege contra vulnerabilidades comuns, bloqueando o tráfego mal-intencionado antes que ele chegue ao seu site. Veja mais informações [aqui](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) e [aqui](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service).
+- **Utilizar o WAF (firewall de aplicativo da Web)**: o serviço WAF com tecnologia Fastly ajuda a atender aos requisitos do PCI DSS 6.6 e protege contra vulnerabilidades comuns, bloqueando o tráfego mal-intencionado antes que ele chegue ao seu site. Veja mais informações [aqui](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) e [aqui](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service).
 
-- **Limitar acesso**: certifique-se de que somente a equipe autorizada tenha acesso aos dados confidenciais de pagamento e [aplique o controle de acesso para reduzir o risco de exposição](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage).
+- **Limitar acesso**: certifique-se de que somente a equipe autorizada tenha acesso aos dados confidenciais de pagamento e [aplique o controle de acesso para reduzir o risco de exposição](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage).
 
-- **Verificação de segurança regular**: execute verificações PCI ASV regulares e [monitore seu ambiente](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) para resolver possíveis vulnerabilidades.
+- **Verificação de segurança regular**: execute verificações PCI ASV regulares e [monitore seu ambiente](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/shared-responsibility) para resolver possíveis vulnerabilidades.
 
 >[!TIP]
 >
@@ -202,9 +202,9 @@ Para garantir a conformidade com o PCI na Adobe Commerce Cloud, siga estas prát
 
 - **Dimensionamento automático para tratamento de tráfego**:
 
-   - A Adobe Commerce Cloud oferece suporte ao dimensionamento automático para ajustar dinamicamente os recursos do servidor (por exemplo, nós da Web) com base nas demandas de tráfego em tempo real, garantindo que sua loja possa lidar com grandes volumes de visitantes sem intervenção manual. Consulte [dimensionamento automático](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/autoscaling) no _Guia da Nuvem_.
+   - A Adobe Commerce Cloud oferece suporte ao dimensionamento automático para ajustar dinamicamente os recursos do servidor (por exemplo, nós da Web) com base nas demandas de tráfego em tempo real, garantindo que sua loja possa lidar com grandes volumes de visitantes sem intervenção manual. Consulte [dimensionamento automático](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/architecture/autoscaling) no _Guia da Nuvem_.
 
-   - As camadas de serviço e da Web podem ser dimensionadas independentemente, adicionando mais nós da Web para aumentar o tráfego e dimensionando nós de serviço ou banco de dados para desempenho de back-end durante períodos de pico. Consulte [arquitetura escalada](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) no _Guia da Nuvem_.
+   - As camadas de serviço e da Web podem ser dimensionadas independentemente, adicionando mais nós da Web para aumentar o tráfego e dimensionando nós de serviço ou banco de dados para desempenho de back-end durante períodos de pico. Consulte [arquitetura escalada](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) no _Guia da Nuvem_.
 
 - **Monitoramento de desempenho**:
 
@@ -230,13 +230,13 @@ Para garantir a conformidade com o PCI na Adobe Commerce Cloud, siga estas prát
 
 ### Relatórios e análises
 
-- **O Adobe Commerce Intelligence Commerce Intelligence:**, um recurso principal do Adobe Commerce, fornece informações de práticas recomendadas em várias fontes de dados, permitindo que os comerciantes tomem decisões científicas orientadas por dados e tomem ações claras e informadas. Consulte o [_Guia do Usuário do Commerce Intelligence_](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/getting-started).
+- **O Adobe Commerce Intelligence Commerce Intelligence:**, um recurso principal do Adobe Commerce, fornece informações de práticas recomendadas em várias fontes de dados, permitindo que os comerciantes tomem decisões científicas orientadas por dados e tomem ações claras e informadas. Consulte o [_Guia do Usuário do Commerce Intelligence_](https://experienceleague.adobe.com/pt-br/docs/commerce-business-intelligence/mbi/getting-started).
 
 - **Adobe Analytics:** o Adobe Analytics oferece uma solução poderosa para rastrear, analisar e otimizar o desempenho da sua loja online. O Adobe Analytics ajuda as empresas de comércio eletrônico a obter insights mais profundos sobre o comportamento do cliente, o desempenho do produto, as taxas de conversão e outras métricas principais, permitindo a tomada de decisões orientadas por dados.
 
 - **Google Analytics:** use o Google Analytics para rastrear o comportamento do cliente, as fontes de tráfego e as taxas de conversão.
 
-- **Ferramentas adicionais do Commerce Intelligence:** o Adobe Commerce inclui Relatórios Avançados. Este recurso fornece acesso a um conjunto de relatórios dinâmicos com base em seus produtos, pedidos e dados do cliente, com um painel personalizado adaptado às suas necessidades comerciais, consulte [relatórios avançados](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) no _Guia do Usuário do Administrador_ para obter mais informações.
+- **Ferramentas adicionais do Commerce Intelligence:** o Adobe Commerce inclui Relatórios Avançados. Este recurso fornece acesso a um conjunto de relatórios dinâmicos com base em seus produtos, pedidos e dados do cliente, com um painel personalizado adaptado às suas necessidades comerciais, consulte [relatórios avançados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting) no _Guia do Usuário do Administrador_ para obter mais informações.
 
 ### Conclusão
 

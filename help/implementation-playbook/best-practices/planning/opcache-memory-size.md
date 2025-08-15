@@ -27,7 +27,7 @@ Aloque pelo menos **2GB** de memória para o [módulo OPcache PHP](https://www.p
 ## Informações adicionais
 
 * [Práticas recomendadas de desempenho - Configurações do PHP](../../../performance/software.md#php-settings)
-* [Configurar opções do PHP](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
+* [Configurar opções do PHP](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
 * [Práticas recomendadas de banco de dados para o Adobe Commerce na infraestrutura em nuvem](database-on-cloud.md)
 * [Problemas mais comuns de banco de dados no Adobe Commerce na infraestrutura em nuvem](../maintenance/resolve-database-performance-issues.md)
 * [A &quot;Atualização programada&quot; dos indexadores otimiza o desempenho do Adobe Commerce](../maintenance/indexer-configuration.md)

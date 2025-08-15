@@ -17,10 +17,10 @@ Para obter direito de acesso a pacotes do Adobe Commerce, você deve usar chaves
 
 >[!TIP]
 >
->Se você encontrar [erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), talvez não tenha autorização para acessar o pacote ou o direito de acesso tenha expirado devido a uma fatura pendente em sua conta.
+>Se você encontrar [erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=pt-BR), talvez não tenha autorização para acessar o pacote ou o direito de acesso tenha expirado devido a uma fatura pendente em sua conta.
 >
 >* Se você for a pessoa de contato principal na conta, verifique se não há nenhuma fatura pendente listada na conta.
->* Se as chaves fornecidas pelo Contato Principal não estiverem funcionando e não houver faturas pendentes na conta, o Contato Principal deverá contatar o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obter assistência.
+>* Se as chaves fornecidas pelo Contato Principal não estiverem funcionando e não houver faturas pendentes na conta, o Contato Principal deverá contatar o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para obter assistência.
 
 Para criar chaves de autenticação:
 

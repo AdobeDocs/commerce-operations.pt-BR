@@ -13,4 +13,4 @@ ht-degree: 0%
 
 Manter um site de comércio eletrônico saudável é tão importante para o sucesso de sua empresa quanto o seu lançamento inicial, e um aspecto importante disso é planejar e preparar proativamente atualizações que ajudem seu site a funcionar da maneira mais tranquila possível.
 
-Não definir as expectativas corretas de atualização durante esse período gera insatisfação futura. Conheça e entenda a [cadência de lançamento](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) e use este guia para ajudá-lo a definir como e quando planejar atualizações.
+Não definir as expectativas corretas de atualização durante esse período gera insatisfação futura. Conheça e entenda a [cadência de lançamento](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/schedule) e use este guia para ajudá-lo a definir como e quando planejar atualizações.

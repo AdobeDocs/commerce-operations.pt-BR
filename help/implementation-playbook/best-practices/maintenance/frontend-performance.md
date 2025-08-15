@@ -37,5 +37,5 @@ Para verificar o desempenho de front-end da loja de sites:
 ## Informações adicionais
 
 - [Gerenciamento de índice para usuários administradores](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gerenciamento de Índice usando a CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [Gerenciamento de Índice usando a CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=pt-BR)
 - [Visão geral da indexação para desenvolvedores](https://developer.adobe.com/commerce/php/development/components/indexing/)
