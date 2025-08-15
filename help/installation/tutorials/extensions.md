@@ -20,7 +20,7 @@ As extensões incluem:
 - Temas (altere a aparência da loja e do administrador)
 - Pacotes de idioma (localize a loja e o Administrador)
 
-Este tópico explica como usar a interface de linha de comando para gerenciar extensões de terceiros que você compra do Commerce Marketplace para projetos do _no local_. Para projetos de infraestrutura em nuvem, consulte [Gerenciar extensões](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+Este tópico explica como usar a interface de linha de comando para gerenciar extensões de terceiros compradas da Commerce Marketplace para projetos _no local_. Para projetos de infraestrutura em nuvem, consulte [Gerenciar extensões](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 Você pode usar o mesmo procedimento para instalar a extensão _any_. Tudo o que você precisa é o nome e a versão do Compositor da extensão. Para encontrá-lo, abra o arquivo `composer.json` da extensão e anote os valores de `"name"` e `"version"`.
 
@@ -37,7 +37,7 @@ Antes da instalação, talvez você queira:
 
 Para instalar uma extensão, você deve:
 
-1. Obtenha uma extensão do Commerce Marketplace ou de outro desenvolvedor de extensão.
+1. Obtenha uma extensão do Commerce Marketplace ou de outro desenvolvedor de extensões.
 1. Se você instalar uma extensão do Commerce Marketplace, verifique se o repositório `repo.magento.com` existe no arquivo `composer.json`:
 
    ```bash
@@ -58,9 +58,9 @@ Para instalar uma extensão, você deve:
 
 Se você já sabe o nome e a versão do Composer da extensão, ignore esta etapa e continue com [Atualize seu arquivo `composer.json`](#update-composer-dependencies).
 
-Para obter o nome e a versão do Compositor da extensão do Commerce Marketplace:
+Para obter o nome e a versão do Composer da extensão no Commerce Marketplace:
 
-1. Faça logon em [Commerce Marketplace](https://commercemarketplace.adobe.com/) com o nome de usuário e a senha que você usou para comprar a extensão.
+1. Faça logon no [Commerce Marketplace](https://commercemarketplace.adobe.com/) com o nome de usuário e a senha que você usou para comprar a extensão.
 
 1. No canto superior direito, clique em **Seu nome** > **Meu perfil**.
 
@@ -76,7 +76,7 @@ Para obter o nome e a versão do Compositor da extensão do Commerce Marketplace
 
 >[!TIP]
 >
->Como alternativa, você pode encontrar o nome e a versão do Composer da extensão _any_ (seja na compra no Commerce Marketplace ou em outro lugar) no arquivo `composer.json` da extensão.
+>Como alternativa, você pode encontrar o nome e a versão do Compositor da extensão _any_ (seja você comprando no Commerce Marketplace ou em outro lugar) no arquivo `composer.json` da extensão.
 
 ### Atualizar dependências do Composer
 
@@ -156,7 +156,7 @@ Algumas extensões não funcionam corretamente, a menos que você limpe primeiro
    bin/magento setup:upgrade
    ```
 
-1. Recompile o projeto: no modo de Produção, você pode receber uma mensagem para &quot;Execute novamente o comando Magento compile&quot;. O aplicativo não solicita que você execute o comando compile no modo de Desenvolvedor.
+1. Recompile o projeto: no modo de Produção, você pode receber uma mensagem para &quot;Execute novamente o comando de compilação do Magento&quot;. O aplicativo não solicita que você execute o comando compile no modo de Desenvolvedor.
 
    ```bash
    bin/magento setup:di:compile

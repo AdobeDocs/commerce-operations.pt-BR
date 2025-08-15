@@ -45,7 +45,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Recommendations de produto desenvolvido pela Adobe Sensei (B2C e B2B)</td>
+      <td>Recomendações de produto viabilizadas pelo Adobe Sensei (B2C e B2B)</td>
       <td></td>
       <td></td>
       <td></td>
@@ -69,7 +69,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Sales Channel Amazon</td>
+      <td>Amazon Sales Channel</td>
       <td></td>
       <td></td>
       <td>+</td>
@@ -289,7 +289,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Eventos Adobe I/O para Adobe Commerce</td>
+      <td>Adobe I/O Events para Adobe Commerce</td>
       <td></td>
       <td></td>
       <td></td>

@@ -62,7 +62,7 @@ Para exportar um arquivo de configuração de verniz do Admin:
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. Adobe recomendamos que você abra `default.vcl` e altere o valor de `acl purge` para o endereço IP do host Vernish. (Você pode especificar vários hosts em linhas separadas ou também pode usar a notação CIDR.)
+1. A Adobe recomenda que você abra `default.vcl` e altere o valor de `acl purge` para o endereço IP do host Vernish. (Você pode especificar vários hosts em linhas separadas ou também pode usar a notação CIDR.)
 
    Por exemplo,
 

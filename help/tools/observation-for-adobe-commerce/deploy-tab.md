@@ -79,7 +79,7 @@ O quadro **[!UICONTROL Deploy Log Detail]** mostra os detalhes de resumo da mens
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![detalhes do log de implantação do Post](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![Detalhes do log pós-implantação](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
 O quadro **[!UICONTROL Post Deploy Log Detail]** mostra os detalhes do log pós-implantação que ocorreram no período selecionado. Esse quadro focaliza mensagens de log específicas que contêm as seguintes strings:
 

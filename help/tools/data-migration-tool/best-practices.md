@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas de migração de dados
-description: Siga estas práticas recomendadas de migração de dados para garantir um upgrade bem-sucedido do Magento 1 para o Magento 2.
+description: Siga estas práticas recomendadas de migração de dados para garantir uma atualização bem-sucedida do Magento 1 para o Magento 2.
 exl-id: 0cd51987-a514-434d-b21e-2739ada2ce85
 feature: Best Practices, Configuration
 topic: Commerce, Migration
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Esta seção fornece as melhores recomendações para acelerar e simplificar a migração e orientações sobre quanto tempo pode levar.
 
-* **Usar uma cópia do banco de dados de uma instância Magento 1** ao executar o teste de migração. Não use a instância de produção do banco de dados de armazenamento do Magento 1.
+* **Usar uma cópia do banco de dados de uma instância do Magento 1** ao executar o teste de migração. Não use a instância de produção do banco de dados de armazenamento do Magento 1.
 
-* **Remova dados desatualizados e redundantes** do banco de dados Magento 1 antes da migração.
+* **Remova dados desatualizados e redundantes** do banco de dados do Magento 1 antes da migração.
 
 Esses dados podem incluir logs, cotações de pedidos, produtos visualizados ou comparados recentemente, visitantes, categorias específicas do evento e regras promocionais.
 
@@ -35,7 +35,7 @@ Esses dados podem incluir logs, cotações de pedidos, produtos visualizados ou 
 
 ## Estimativas de avaliação comparativa
 
-O Adobe testou a migração de dados no seguinte sistema:
+A Adobe testou a migração de dados no seguinte sistema:
 
 * Virtual Box VM, CentOS 6, 2,5 GB de RAM, CPU 1 núcleo, 2,6 GHz
 * Banco de dados com 177.000 produtos, 355.000 pedidos e 214.000 clientes

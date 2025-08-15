@@ -337,7 +337,7 @@ Anteriormente, para administradores restritos, a adição de um novo bloco dinâ
 
 _ACP2E-2687_
 
-#### O apóstrofo no nome da exibição de armazenamento é substituído por &#039;
+#### O apóstrofo no nome da exibição de armazenamento é substituído por &amp;#039;
 
 Os filtros de exibição de armazenamento da grade agora exibem corretamente apóstrofos
 
@@ -846,7 +846,7 @@ O &quot;Carrinho de compras&quot; no lado esquerdo é atualizado ao selecionar o
 
 _ACP2E-2620 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
 
-#### [Regra de Vendas da &lbrace;Cloud] não aplicada à primeira ordem de Envio Múltiplo
+#### [Regra de Vendas da {Cloud] não aplicada à primeira ordem de Envio Múltiplo
 
 Após a correção, o desconto é mostrado corretamente para cada pedido da mesma cotação de remessa múltipla.
 
@@ -960,7 +960,7 @@ A atualização do Registro de presentes não inclui mais itens que não pertenc
 
 _ACP2E-3495_
 
-#### [Problema na &lbrace;Cloud] com o Pop-up de Confirmação &quot;Remover Tudo&quot; Removendo Itens do Carrinho sem Confirmação
+#### [Problema na {Cloud] com o Pop-up de Confirmação &quot;Remover Tudo&quot; Removendo Itens do Carrinho sem Confirmação
 
 Agora, clicar no botão &quot;Remover tudo&quot; para produtos com atenção obrigatória solicita uma mensagem de confirmação para garantir que os itens só sejam removidos com a sua confirmação. Anteriormente, os itens eram removidos imediatamente sem qualquer confirmação
 
@@ -1197,7 +1197,7 @@ Anteriormente, os registros nas tabelas de sequência de produtos do pacote não
 
 _ACP2E-2888_
 
-#### [Problema de Cotação da &lbrace;Cloud] na arquitetura de vários sites
+#### [Problema de Cotação da {Cloud] na arquitetura de vários sites
 
 Anteriormente, a arquitetura de vários sites com moedas e grupos de clientes diferentes não podia aplicar descontos corretamente à loja. Depois que essa correção for implementada, a arquitetura de vários sites com descontos de preço de grupo de clientes diferentes será aplicada com sucesso a diferentes lojas.
 
@@ -1971,7 +1971,7 @@ O sistema agora segue o padrão de codificação, removendo a tag `@author` proi
 
 _AC-8356 - [Problema do GitHub](https://github.com/magento/magento2/issues/37250) - [Contribuição de código do GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### Espaço na regra de quebras de sintaxe editorconfig para `[&lbrace;composer,auth&rbrace;.json]`
+#### Espaço na regra de quebras de sintaxe editorconfig para `[{composer,auth}.json]`
 
 O sistema agora aplica corretamente um recuo de 4 espaços para os arquivos composer e auth.json, seguindo uma correção para um erro de sintaxe no editorconfig. Anteriormente, devido a um espaço na sintaxe editorconfig, esses arquivos eram formatados incorretamente com um recuo de 2 espaços.
 
@@ -2127,7 +2127,7 @@ O problema foi corrigido após a aplicação da verificação ao solicitar uma p
 
 _ACP2E-2653 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### A chamada de Produtos GraphQL contendo o filtro de preço `&lbrace;from:&quot;0&quot;&rbrace;` não retorna nenhum resultado
+#### A chamada de Produtos GraphQL contendo o filtro de preço `{from:&quot;0&quot;}` não retorna nenhum resultado
 
 Anteriormente, a pesquisa de produtos graphql com o filtro para preços zero não retornava nenhum resultado devido a uma exceção lançada. Agora, a pesquisa retorna os resultados conforme esperado.
 
@@ -2159,7 +2159,7 @@ Anteriormente, com produtos configuráveis separados com o mesmo produto simples
 
 _ACP2E-3190 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/148c3ead)_
 
-#### [Problema na &lbrace;Cloud] com Autenticação de Usuário e Acesso a Token Entre Sites na Instalação de Vários Sites
+#### [Problema na {Cloud] com Autenticação de Usuário e Acesso a Token Entre Sites na Instalação de Vários Sites
 
 As consultas de informações do cliente e do carrinho do GraphQl na configuração de vários sites verificam se o cliente em um site não padrão existe.
 Anteriormente, a consulta funcionava sem verificar se o cliente existe em um site não padrão na configuração de vários sites.
@@ -2208,7 +2208,7 @@ Após a correção, as solicitações graphql inválidas não serão registradas
 
 _ACP2E-3467 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/1984c61c)_
 
-#### [Problemas de &lbrace;Cloud] com a API Graphql
+#### [Problemas de {Cloud] com a API Graphql
 
 Antes da correção com o uso do servidor de aplicativos Graphql, a solicitação de endereço do cliente não retornava os dados mais recentes.
 
@@ -2450,7 +2450,7 @@ Antes dessa correção, a exportação do produto falhava se os atributos do pro
 
 _ACP2E-3475 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/1984c61c)_
 
-#### [Processos De Importação Da &lbrace;Cloud] Que Interferem Entre Si
+#### [Processos De Importação Da {Cloud] Que Interferem Entre Si
 
 Mensagens corretas serão exibidas se o mesmo usuário administrador executar duas ou mais operações de importação usando a mesma sessão de usuário.
 
@@ -2800,7 +2800,7 @@ Solução de um problema em que a mutação addProductsToCart retornava um erro 
 
 _LYNX-469_
 
-#### Atributo do produto > formulário curto da marca comercial &trade; é retornado como &trade;
+#### Atributo do produto > formulário curto da marca comercial &amp;trade; é retornado como &amp;trade;
 
 Solução de um problema de codificação de caracteres com o nome do produto para a API do GraphQL
 

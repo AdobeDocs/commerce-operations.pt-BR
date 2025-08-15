@@ -19,7 +19,7 @@ Este tópico discute como definir as opções necessárias do PHP.
 >
 >A última versão do Adobe Commerce requer no mínimo o PHP 8.1. Consulte [requisitos do sistema](../system-requirements.md) para todas as versões do PHP suportadas.
 
-Para obter orientações sobre a configuração da nuvem, consulte [configurações do PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=pt-BR) no guia _Commerce na Infraestrutura da Nuvem_.
+Para obter orientações sobre a configuração da nuvem, consulte [configurações do PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) no guia _Commerce na Infraestrutura da Nuvem_.
 
 ## Controle do processo PHP
 
@@ -75,7 +75,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Defina o limite de memória do PHP.
 
-  Adobe recomenda o seguinte:
+  A Adobe recomenda o seguinte:
 
    - Compilando código ou implantando ativos estáticos, `1G`
    - Depurando, `2G`
@@ -92,13 +92,13 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Habilitar [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), que é necessário para o Adobe Commerce 2.1 e posterior.
 
-  A Adobe recomenda ativar o [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) por motivos de desempenho. O OPcache está habilitado em muitas distribuições PHP.
+  A Adobe recomenda habilitar o [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) por motivos de desempenho. O OPcache está habilitado em muitas distribuições PHP.
 
   Adobe Commerce 2.1 e posteriores usam comentários de código PHP para geração de código.
 
 >[!NOTE]
 >
->Para evitar problemas durante a instalação e o upgrade, o Adobe recomenda que você aplique as mesmas configurações do PHP tanto para a configuração da linha de comando do PHP quanto para a configuração do plug-in do servidor Web PHP. Para obter mais informações, consulte a próxima seção.
+>Para evitar problemas durante a instalação e o upgrade, a Adobe recomenda que você aplique as mesmas configurações do PHP tanto para a configuração da linha de comando do PHP quanto para a configuração do plug-in do servidor Web PHP. Para obter mais informações, consulte a próxima seção.
 
 ## Localizar arquivos de configuração do PHP
 

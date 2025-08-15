@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->O suporte ao OpenSearch foi adicionado na versão 2.4.4. O OpenSearch é uma bifurcação de Elasticsearch compatível. Consulte [Migrar Elasticsearch para OpenSearch](../../../upgrade/prepare/opensearch-migration.md) para obter mais informações.
+>O suporte ao OpenSearch foi adicionado na versão 2.4.4. O OpenSearch é uma bifurcação compatível do Elasticsearch. Consulte [Migrar Elasticsearch para OpenSearch](../../../upgrade/prepare/opensearch-migration.md) para obter mais informações.
 
 Esta seção discute como configurar o nginx como um proxy *não seguro* para que o Adobe Commerce possa usar um mecanismo de pesquisa em execução neste servidor. Esta seção não discute a configuração da autenticação básica de HTTP; ela é discutida em [Comunicação segura com nginx](#secure-communication-with-nginx).
 
@@ -81,7 +81,7 @@ Esta seção discute como especificar quem pode acessar o servidor nginx.
 
 ## Comunicação segura com nginx
 
-Esta seção discute como configurar a [Autenticação básica de HTTP](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) com seu proxy seguro. O uso conjunto da autenticação TLS e HTTP Básica impede que qualquer pessoa intercepte a comunicação com o Elasticsearch ou OpenSearch ou com o servidor de aplicativos.
+Esta seção discute como configurar a [Autenticação básica de HTTP](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) com seu proxy seguro. O uso conjunto da autenticação TLS e HTTP Básica impede que qualquer pessoa intercepte comunicações com o Elasticsearch, OpenSearch ou com o servidor de aplicativos.
 
 Como o nginx nativamente oferece suporte à autenticação básica HTTP, recomendamos fazê-lo por exemplo, [Autenticação Digest](https://www.nginx.com/resources/wiki/modules/auth_digest/), que não é recomendada na produção.
 

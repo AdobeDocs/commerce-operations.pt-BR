@@ -100,7 +100,7 @@ Remover conjuntos de atributos de produto não utilizados usando o MySQL.
 
 #### Revisar configuração do conjunto de atributos
 
-1. [Conectar ao banco de dados do site](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [Conectar ao banco de dados do site](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Localizar o número de conjuntos de atributos usando MySQL
 
@@ -179,7 +179,7 @@ A exibição de muitos produtos por página pode afetar o desempenho.
 
 Se você tiver muitos produtos em uma categoria, atualize a configuração do catálogo da loja para desabilitar a opção para **Permitir todos os produtos por página**.
 
-Depois que você desativa essa opção, o Adobe Commerce usa os controles de paginação de vitrine eletrônica de produtos para gerenciar o número de produtos exibidos nos componentes da vitrine eletrônica. Para obter instruções, consulte [Configurar controles de paginação](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=pt-BR#configure-the-pagination-controls).
+Depois que você desativa essa opção, o Adobe Commerce usa os controles de paginação de vitrine eletrônica de produtos para gerenciar o número de produtos exibidos nos componentes da vitrine eletrônica. Para obter instruções, consulte [Configurar controles de paginação](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Limites de SKU do produto
 

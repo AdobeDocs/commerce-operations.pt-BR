@@ -1,5 +1,5 @@
 ---
-title: Recommendations de software
+title: Recomendações de software
 description: Revise uma lista de softwares recomendados relacionados ao desempenho ideal das implantações do Adobe Commerce.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
@@ -151,7 +151,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Ao ajustar a alocação de memória para o opcache, considere o tamanho da base de código do Magento e todas as suas extensões. A equipe de desempenho do Magento usa os valores do exemplo anterior para testes, pois fornece espaço suficiente no opcache para o número médio de extensões instaladas.
+Ao ajustar a alocação de memória para opcache, considere o tamanho da base de código do Magento e todas as suas extensões. A equipe de desempenho do Magento usa os valores do exemplo anterior para testes, pois fornece espaço suficiente no opcache para o número médio de extensões instaladas.
 
 Se você tiver um computador com pouca memória e não tiver muitas extensões ou personalizações instaladas, use as seguintes configurações para obter um resultado semelhante:
 

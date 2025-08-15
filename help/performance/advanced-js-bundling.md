@@ -100,7 +100,7 @@ As versões completas do código de amostra usado neste artigo estão disponíve
 
 ### Parte 1: Criar uma configuração de pacote
 
-#### 1. Adicionar um arquivo build.js
+#### &#x200B;1. Adicionar um arquivo build.js
 
 Crie um arquivo `build.js` no diretório raiz [!DNL Commerce]. Esse arquivo conterá toda a configuração de build dos seus pacotes.
 
@@ -380,7 +380,7 @@ Este exemplo reutiliza `mage/bootstrap` e `requirejs/require` ativos, colocando 
 
 As etapas abaixo descrevem o processo básico para gerar pacotes [!DNL Commerce] mais eficientes. Você pode automatizar esse processo da maneira que quiser, mas ainda precisará usar `nodejs` e `r.js` para realmente gerar seus pacotes. E se os temas tiverem personalizações relacionadas a [!DNL JavaScript] e não puderem reutilizar o mesmo arquivo `build.js`, talvez seja necessário criar várias configurações de `build.js` por tema.
 
-#### 1. Gerar sites de armazenamento estáticos
+#### &#x200B;1. Gerar sites de armazenamento estáticos
 
 Antes de gerar pacotes, execute o comando static deployment:
 
@@ -397,7 +397,7 @@ Esse comando gera implantações de armazenamento estáticas para cada tema e lo
 
 Para gerar pacotes para todos os temas e localidades da loja, repita as etapas abaixo para cada tema e localidade da loja.
 
-#### 2. Mova o conteúdo estático do armazenamento para um diretório temporário
+#### &#x200B;2. Mova o conteúdo estático do armazenamento para um diretório temporário
 
 Primeiro, você precisa mover o conteúdo estático do diretório de destino para algum diretório temporário, pois RequireJS substitui todo o conteúdo no diretório de destino.
 
@@ -411,7 +411,7 @@ Por exemplo:
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
-#### 3. Execute o otimizador r.js
+#### &#x200B;3. Execute o otimizador r.js
 
 Em seguida, execute o otimizador r.js no arquivo `build.js` do diretório raiz de [!DNL Commerce]. Os caminhos para todos os diretórios e arquivos são relativos ao diretório de trabalho.
 
@@ -438,7 +438,7 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### 4. Configurar RequireJS para usar pacotes
+#### &#x200B;4. Configurar RequireJS para usar pacotes
 
 Para fazer com que RequireJS use seus pacotes, adicione um retorno de chamada `onModuleBundleComplete` após o nó `modules` no arquivo `build.js`:
 
@@ -474,7 +474,7 @@ require.config({});
 }
 ```
 
-#### 5. Execute o comando implantar novamente
+#### &#x200B;5. Execute o comando implantar novamente
 
 Execute o seguinte comando para implantar:
 
@@ -497,7 +497,7 @@ require.config({
 >
 >Ao configurar pacotes, certifique-se de colocar as chamadas `requirejs.config()` na ordem em que deseja que sejam executadas, já que as chamadas são executadas na ordem em que aparecem.
 
-#### 6. Testar os resultados
+#### &#x200B;6. Testar os resultados
 
 Depois que a página for carregada, observe o navegador carregando diferentes dependências e pacotes. Por exemplo, estes são os resultados para o perfil &quot;Slow 3G&quot;:
 
@@ -505,7 +505,7 @@ Depois que a página for carregada, observe o navegador carregando diferentes de
 
 O tempo de carregamento de uma página inicial vazia agora é duas vezes mais rápido do que o uso do agrupamento [!DNL Commerce] nativo. Mas podemos fazer ainda melhor.
 
-#### 7. Otimizar os pacotes
+#### &#x200B;7. Otimizar os pacotes
 
 Mesmo se forem compactados, os arquivos [!DNL JavaScript] ainda serão grandes. Reduza-os com RequireJS, que usa um modificador para minificar [!DNL JavaScript] para um bom resultado.
 

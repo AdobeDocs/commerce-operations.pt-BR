@@ -4,7 +4,7 @@ description: Siga estas etapas para executar o  [!DNL Upgrade Compatibility Tool
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Como resultado da análise, o [!DNL Upgrade Compatibility Tool] pode exportar um relatório que contém uma lista de problemas para cada arquivo especificando sua gravidade, código de erro e descrição do erro. O [!DNL Upgrade Compatibility Tool] exporta o relatório em dois formatos diferentes:
 
 - Um [arquivo JSON](reports.md#json-file).
-- Um [relatório de HTML](reports.md#html-report).
+- Um [relatório do HTML](reports.md#html-report).
 
 Consulte o seguinte exemplo de interface de linha de comando de um relatório:
 
@@ -81,14 +81,14 @@ Onde os argumentos são os seguintes:
 >
 > O caminho padrão para a pasta de saída é `var/output/[TIME]-results.json`.
 
-## relatório HTML
+## relatório do HTML
 
-Você pode obter o relatório de HTML ao executar a ferramenta em uma interface de linha de comando ou por meio do [!DNL Site-Wide Analysis Tool]. O relatório HTML também contém:
+Você pode obter o relatório do HTML ao executar a ferramenta em uma interface de linha de comando ou por meio do [!DNL Site-Wide Analysis Tool]. O relatório do HTML também contém:
 
 - Uma lista de problemas identificados.
 - Um resumo da análise.
 
-![Relatório de HTML - Resumo](../../assets/upgrade-guide/uct-html-summary.png)
+![Relatório do HTML - Resumo](../../assets/upgrade-guide/uct-html-summary.png)
 
 Navegue facilmente pelos problemas identificados durante a análise [!DNL Upgrade Compatibility Tool].
 
@@ -96,13 +96,13 @@ Você pode filtrar os problemas exibidos no relatório de acordo com o nível m�
 
 Há uma lista suspensa no canto superior direito que permite selecionar um nível diferente. A lista de problemas identificados é filtrada de acordo.
 
-![relatório de HTML - Uso suspenso](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+![Relatório do HTML - Uso suspenso](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
 
 >[!NOTE]
 >
 > Os problemas com nível de problema mais baixo são eliminados, mas você recebe uma notificação para que esteja sempre ciente dos problemas identificados por módulo.
 
-O relatório HTML também inclui quatro gráficos diferentes:
+O relatório do HTML também inclui quatro gráficos diferentes:
 
 - **Módulos por severidade de problema**: mostra a distribuição de severidade por módulos.
 - **Arquivos por severidade de problema**: mostra a distribuição de severidade por arquivos.
@@ -111,15 +111,15 @@ O relatório HTML também inclui quatro gráficos diferentes:
 
 Esses gráficos permitem identificar os módulos mais comprometidos e os que exigem mais trabalho para executar uma atualização.
 
-![Relatório de HTML - Diagramas](../../assets/upgrade-guide/uct-html-diagrams.png)
+![Relatório do HTML - Diagramas](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-Os diagramas de relatório de HTML também são atualizados de acordo, com a única exceção de `Modules with relative sizes and issues`, que é gerada com o `min-issue-level` que foi configurado originalmente.
+Os diagramas de relatório do HTML também são atualizados adequadamente, com a única exceção do `Modules with relative sizes and issues`, que é gerado com o `min-issue-level` que foi configurado originalmente.
 
 Se quiser ver resultados diferentes para o diagrama `Modules with relative sizes and issues`, execute novamente o comando fornecendo outro valor para a opção `--min-issue-level`.
 
-![Relatório de HTML - Diagrama de Gráfico de Bolhas](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
+![Relatório do HTML - Diagrama de Gráfico de Bolhas](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
-Para exportar esse relatório de HTML para uma pasta de saída diferente:
+Para exportar esse relatório do HTML para uma pasta de saída diferente:
 
 ```bash
 bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]

@@ -1,6 +1,6 @@
 ---
 user-guide-title: Resumos de eventos do Adobe Commerce
-user-guide-description: Revise um resumo do conteúdo do Adobe Commerce sobre eventos Adobe.
+user-guide-description: Revise um resumo do conteúdo do Adobe Commerce sobre os eventos do Adobe.
 hide: true
 source-git-commit: 7a42eb716abbd588051288cd6a288408925d8bba
 workflow-type: tm+mt

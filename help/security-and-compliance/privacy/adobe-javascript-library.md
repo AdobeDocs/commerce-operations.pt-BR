@@ -1,5 +1,5 @@
 ---
-title: Biblioteca JavaScript de Privacidade Adobe
+title: Biblioteca JavaScript de privacidade da Adobe
 description: Saiba como usar ferramentas personalizadas para acessar e excluir informações pessoais do cliente coletadas pelo Adobe Commerce.
 hide: true
 hidefromtoc: true
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Biblioteca JavaScript de Privacidade Adobe
+# Biblioteca JavaScript de privacidade da Adobe
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-A [Biblioteca JavaScript de Privacidade Adobe](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=pt-BR) é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados.
+A [Biblioteca JavaScript de Privacidade da Adobe](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados.
 
 Os serviços de rastreamento de dados da Adobe Commerce podem armazenar informações privadas aplicáveis a regulamentos de privacidade, como o [Regulamento Geral sobre a Proteção de Dados (GDPR)](gdpr.md) e a [Lei de Privacidade do Consumidor da Califórnia (CCPA)](ccpa.md).
 
@@ -43,7 +43,7 @@ A Biblioteca JS do Adobe Privacy fornece várias funções para gerenciar dados 
 `retrieveThenRemoveIdentities()`
 : Esta função é semelhante a `removeIdentities()`, pois recupera uma matriz de identidades e as remove do navegador.
 
-Para obter mais informações e exemplos para usar essas funções, consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=pt-BR).
+Para obter mais informações e exemplos para usar essas funções, consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Inicialização
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 O construtor aceita um objeto de configuração com parâmetros durante a instância.
-Consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=pt-BR) para obter uma lista desses parâmetros de configuração.
+Consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) para obter uma lista desses parâmetros de configuração.

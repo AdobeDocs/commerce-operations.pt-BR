@@ -221,7 +221,7 @@ onde
 
 >[!INFO]
 >
->O comando `bin/magento config:show` exibe os valores de quaisquer [valores criptografados](../reference/config-reference-sens.md) como uma série de asteriscos: `**&#x200B;**&#x200B;**`.
+>O comando `bin/magento config:show` exibe os valores de quaisquer [valores criptografados](../reference/config-reference-sens.md) como uma série de asteriscos: `******`.
 
 ### Exemplos
 

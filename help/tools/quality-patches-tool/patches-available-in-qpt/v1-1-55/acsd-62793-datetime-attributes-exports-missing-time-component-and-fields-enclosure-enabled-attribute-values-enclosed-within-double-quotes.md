@@ -7,7 +7,7 @@ exl-id: 340dcc84-dcb8-40ed-b2ab-2d950d1dd1ca
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O patch ACSD-62793 corrige o problema em que os atributos datetime em dados expo
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -41,7 +41,7 @@ Os atributos Datetime nos dados exportados não incluem o componente de tempo. A
 1. Crie um produto simples com um valor de data e hora para o novo atributo.
 1. Exporte o produto para um arquivo CSV de **[!UICONTROL System]** > *Transferência de Dados* > **[!UICONTROL Export]**.
 1. Verifique o valor do atributo na coluna *additional_attributes*. Ele só tem a parte de data, mas não a hora.
-1. Atualize o valor do atributo para usar a hora, por exemplo, &quot;08/10/22, 15:20&quot;.
+1. Atualize o valor do atributo para usar a hora, por exemplo, &quot;08/10/22, 3:20 PM&quot;.
 1. Importe o arquivo CSV.
 1. Verifique a tabela *catalog_product_entity_datetime*.
 
@@ -58,7 +58,7 @@ Somente a parte de data é exportada e importada.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 
 ## Leitura relacionada

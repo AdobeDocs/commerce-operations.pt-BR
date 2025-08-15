@@ -32,10 +32,10 @@ A desabilitação de saída é executada nas seguintes classes:
 
 Para desativar a saída do módulo na implantação do pipeline ou qualquer outra implantação, com várias instâncias do aplicativo do Commerce:
 
-1. Edite o arquivo `config.xml` do módulo `Backend`.
+1. Edite o arquivo `Backend` do módulo `config.xml`.
 1. Exporte as alterações de configuração.
 
-### Editar o arquivo `config.xml` do módulo `Backend`
+### Editar o arquivo `Backend` do módulo `config.xml`
 
 1. Arquivar o arquivo `config.xml` original.
 1. Adicione linhas semelhantes às seguintes ao arquivo `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml`, diretamente sob o elemento `<default>`:

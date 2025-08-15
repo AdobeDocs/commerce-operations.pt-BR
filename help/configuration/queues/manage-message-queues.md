@@ -49,7 +49,7 @@ Você também pode usar um gerenciador de processos, como o [Supervisor](https:/
 
 >[!INFO]
 >
->Se sua loja da Adobe Commerce estiver hospedada na plataforma Cloud, use o [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#cron_consumers_runner) para configurar o trabalho cron do `consumers_runner`.
+>Se sua loja da Adobe Commerce estiver hospedada na plataforma Cloud, use o [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) para configurar o trabalho cron do `consumers_runner`.
 
 ### Configuração específica
 
@@ -82,6 +82,6 @@ Edite o arquivo `/app/etc/env.php` para configurar o trabalho cron `consumers_ru
 
   >[!INFO]
   >
-  >Se o armazenamento do Adobe Commerce estiver hospedado na plataforma de nuvem, use o [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#consumers_wait_for_max_messages) para configurar como os consumidores processam mensagens da fila de mensagens.
+  >Se o armazenamento do Adobe Commerce estiver hospedado na plataforma de nuvem, use o [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) para configurar como os consumidores processam mensagens da fila de mensagens.
 
 Consulte [Iniciar consumidores da fila de mensagens](../cli/start-message-queues.md).

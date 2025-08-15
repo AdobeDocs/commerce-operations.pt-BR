@@ -25,7 +25,7 @@ A partir de MariaDB 10.5.1, as colunas com formatos temporais antigos são marca
 
 O Adobe Commerce não pode mapear as colunas de data para um tipo de dados adequado devido ao comentário MariaDB, o que pode causar um comportamento inesperado no código personalizado.
 
-Para evitar um comportamento inesperado ao atualizar o MariaDB de versões anteriores para a versão 10.6, o Adobe recomenda migrar as colunas para o novo formato interno.
+Para evitar um comportamento inesperado ao atualizar o MariaDB de versões anteriores para a versão 10.6, a Adobe recomenda migrar as colunas para o novo formato interno.
 
 ### Configuração padrão
 

@@ -1,6 +1,6 @@
 ---
 title: Configurações de migração de dados
-description: Saiba como começar a migrar configurações do Magento 1 para o Magento 2 com o  [!DNL Data Migration Tool].
+description: Saiba como iniciar a migração de configurações do Magento 1 para o Magento 2 com o  [!DNL Data Migration Tool].
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -45,7 +45,7 @@ Onde:
 
 >[!NOTE]
 >
->Este comando não migra todas as configurações. Verifique todas as configurações no Magento 2 Admin antes de continuar.
+>Este comando não migra todas as configurações. Verifique todas as configurações no Administrador do Magento 2 antes de continuar.
 
 
 A mensagem `Migration completed` é exibida após as configurações serem transferidas com êxito.

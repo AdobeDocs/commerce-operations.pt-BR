@@ -77,7 +77,7 @@ Em todas as outras máquinas, a instância do Commerce deve ter acesso ao banco 
 
 Como alternativa, o controle de versão de arquivos estáticos pode ser desativado em todas as máquinas. Isto pode ser acessado pelo Administrador em **Lojas** > Configurações > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações de Arquivos Estáticos** > **Assinar Arquivos Estáticos** = **Não**.
 
-Por fim, todas as instâncias do Commerce devem estar no modo de produção. Antes de o Verniz ser iniciado, limpe o cache em cada instância. No Admin, vá para **Sistema** > Ferramentas > **Gerenciamento de cache** e clique em **Liberar cache de Magento**. Você também pode executar o seguinte comando para limpar o cache:
+Por fim, todas as instâncias do Commerce devem estar no modo de produção. Antes de o Verniz ser iniciado, limpe o cache em cada instância. No Administrador, vá para **Sistema** > Ferramentas > **Gerenciamento de Cache** e clique em **Limpar Cache do Magento**. Você também pode executar o seguinte comando para limpar o cache:
 
 ```bash
 bin/magento cache:flush

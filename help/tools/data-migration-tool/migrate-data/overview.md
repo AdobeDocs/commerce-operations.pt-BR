@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Visão geral da migração
 
-Antes de iniciar a migração, pare todos os trabalhos de cron do Magento 1.
+Antes de iniciar a migração, interrompa todos os trabalhos cron do Magento 1.
 
 Durante o processo de migração, siga estas regras gerais para uma migração bem-sucedida:
 
-1. **Não** fazer alterações no Administrador do Magento 1, exceto para gerenciamento de pedidos (remessa, criação de fatura e avisos de crédito)
+1. **Não** faça alterações no Administrador do Magento 1, exceto para gerenciamento de pedidos (remessa, criação de fatura e avisos de crédito)
 1. **Não** altere qualquer código
-1. **Não** fazer alterações no administrador e na vitrine do Magento 2
+1. **Não** faça alterações no Administrador e na loja do Magento 2
 
 >[!TIP]
 >
->Todas as operações na loja de Magento 1 são permitidas.
+>Todas as operações na loja do Magento 1 são permitidas.
 
 ## Executar o [!DNL Data Migration Tool]
 

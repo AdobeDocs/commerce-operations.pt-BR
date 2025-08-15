@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # .gitignore referência
 
-Magento Open Source inclui um arquivo base `.gitignore`. Consulte [o arquivo mais recente do Commerce `.gitignore`](https://raw.githubusercontent.com/magento/magento2/2.4/.gitignore). Se você precisar adicionar um arquivo que esteja na lista `.gitignore`, poderá usar a opção `-f` (forçar) ao preparar uma confirmação:
+O Magento Open Source inclui um arquivo base `.gitignore`. Consulte [o arquivo mais recente do Commerce `.gitignore`](https://raw.githubusercontent.com/magento/magento2/2.4/.gitignore). Se você precisar adicionar um arquivo que esteja na lista `.gitignore`, poderá usar a opção `-f` (forçar) ao preparar uma confirmação:
 
 ```bash
 git add <path/filename> -f

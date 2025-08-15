@@ -18,9 +18,9 @@ Se você implantar o Commerce em um único computador e puder tolerar algum temp
 
 ## Implantação de pipeline
 
-Com a versão 2.2 do Commerce, o Adobe apresentou a _implantação do pipeline_ como uma nova maneira de implantar na produção com tempo de inatividade mínimo. Esse processo de implantação ocorre em diferentes sistemas e fornece uma maneira de manter configurações consistentes para todos os sistemas de implantação de pipeline. É um modelo simples, mas eficiente, que permite separar definições de configuração comuns de configurações específicas do sistema (como host e porta) ou configurações confidenciais (como nomes e senhas).
+Com a versão 2.2 do Commerce, a Adobe apresentou a _implantação de pipeline_ como uma nova maneira de implantar na produção com tempo de inatividade mínimo. Esse processo de implantação ocorre em diferentes sistemas e fornece uma maneira de manter configurações consistentes para todos os sistemas de implantação de pipeline. É um modelo simples, mas eficiente, que permite separar definições de configuração comuns de configurações específicas do sistema (como host e porta) ou configurações confidenciais (como nomes e senhas).
 
-Para usar a implantação do pipeline, o Adobe presume que você esteja:
+Para usar a implantação de pipeline, a Adobe presume que você esteja:
 
 - Um integrador de sistemas experiente, com excelente conhecimento das opções de configuração do Adobe Commerce.
 - Gerenciar um grande site da Commerce (milhares de SKUs) e manter o tempo de inatividade do site de produção em um nível mínimo.
@@ -36,7 +36,7 @@ Ao implantar ativos estáticos e compilar código em um computador separado do s
 
 Usamos os termos a seguir para descrever os sistemas envolvidos na implantação.
 
-- **Sistema de desenvolvimento**—Máquina na qual os desenvolvedores trabalham para personalizar o código e instalar extensões, temas e pacotes de linguagem do Commerce Marketplace. Além disso, você faz todas as alterações de configuração no sistema de desenvolvimento. Você pode ter muitos sistemas de desenvolvimento.
+- **Sistema de desenvolvimento** — Máquina na qual os desenvolvedores trabalham para personalizar o código e instalar extensões, temas e pacotes de idiomas do Commerce Marketplace. Além disso, você faz todas as alterações de configuração no sistema de desenvolvimento. Você pode ter muitos sistemas de desenvolvimento.
 
 - **Sistema de compilação** — Um sistema no qual você implanta ativos estáticos e compila o código para seu sistema de produção. Como você cria esses ativos em um sistema que não está em produção, o tempo de inatividade do sistema de produção é minimizado.
 

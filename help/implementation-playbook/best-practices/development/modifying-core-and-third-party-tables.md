@@ -18,7 +18,7 @@ Este artigo fornece práticas recomendadas para modificar tabelas de banco de da
 
 A migração de [!DNL Magento 1] e outras plataformas de comércio eletrônico ou o trabalho com módulos do [!DNL Adobe Commerce] Marketplace podem exigir a adição e o salvamento de dados extras. Seu primeiro instinto pode ser adicionar uma coluna a uma tabela de banco de dados ou ajustar uma existente. No entanto, você só deve modificar uma tabela [!DNL Adobe Commerce] principal (ou tabela de fornecedores de terceiros) em situações limitadas.
 
-## Por que o Adobe recomenda evitar modificações
+## Por que a Adobe recomenda evitar modificações
 
 O principal motivo para evitar a modificação das tabelas principais é que o Adobe Commerce inclui uma lógica subjacente que contém consultas SQL brutas. As alterações na estrutura da tabela podem causar efeitos colaterais inesperados, que são difíceis de solucionar. A alteração também pode afetar as operações de DDL (Data Definition Language), causando impactos inesperados e imprevisíveis no desempenho.
 
@@ -36,7 +36,7 @@ Essa situação exigiria que o banco de dados fosse migrado para um servidor, of
 
 Outra opção relacionada para manter os dados externos para o comércio, mas permitir que você os use em tempo real, seria aproveitar outras ferramentas, como o GraphQL mesh. Essa opção combina diferentes fontes de dados e as retorna como uma única resposta.
 
-Por exemplo, você pode `stitch` agrupar pedidos antigos de um banco de dados externo, talvez do antigo site Magento 1 que está desativado. Em seguida, usando a malha do GraphQL, mostre-as como parte do histórico de pedidos dos clientes. Esses pedidos antigos podem ser combinados com os pedidos do seu ambiente [!DNL Adobe Commerce] atual.
+Por exemplo, você pode `stitch` agrupar pedidos antigos de um banco de dados externo, talvez o site antigo do Magento 1 que está descontinuado. Em seguida, usando a malha do GraphQL, mostre-as como parte do histórico de pedidos dos clientes. Esses pedidos antigos podem ser combinados com os pedidos do seu ambiente [!DNL Adobe Commerce] atual.
 
 Para obter mais informações sobre como usar a malha de API com o GraphQL, consulte [O que é malha de API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) e [Gateway do GraphQL Mesh](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
@@ -52,9 +52,9 @@ Dois exemplos de locais de armazenamento são tabelas de banco de dados e [!DNL 
 
 ### Considere outras alternativas
 
-Como desenvolvedor, é vital sempre considerar o uso de ferramentas fora do seu ambiente [!DNL Adobe Commerce], como GraphQL mesh e Adobe App Builder. Essas ferramentas podem ajudar você a reter o acesso aos dados, mas não têm impacto no aplicativo principal de comércio ou em suas tabelas de banco de dados subjacentes. Com essa abordagem, você expõe seus dados por meio de uma API. Em seguida, adicione uma fonte de dados à configuração do App Builder. Usando o GraphQL Mesh, você pode combinar essas fontes de dados e produzir uma única resposta, como mencionado em [dados herdados](#legacy-data).
+Como desenvolvedor, é vital sempre considerar o uso de ferramentas fora do seu ambiente [!DNL Adobe Commerce], como a malha do GraphQL e o Adobe App Builder. Essas ferramentas podem ajudar você a reter o acesso aos dados, mas não têm impacto no aplicativo principal de comércio ou em suas tabelas de banco de dados subjacentes. Com essa abordagem, você expõe seus dados por meio de uma API. Em seguida, adicione uma fonte de dados à configuração do App Builder. Usando o GraphQL Mesh, você pode combinar essas fontes de dados e produzir uma única resposta, como mencionado em [dados herdados](#legacy-data).
 
-Para obter detalhes adicionais sobre a malha do GraphQL, consulte [Gateway do GraphQL Mesh](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obter informações sobre o Adobe App Builder, consulte [Introdução ao App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=pt-BR){target="_blank"}.
+Para obter detalhes adicionais sobre a malha do GraphQL, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obter informações sobre o Adobe App Builder, consulte [Introdução ao App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 ## Modificação de uma tabela principal ou de terceiros
 
@@ -67,13 +67,13 @@ Se você decidir armazenar dados modificando uma tabela de banco de dados princi
 
 ## Práticas recomendadas para modificar uma tabela de banco de dados externa
 
-O Adobe recomenda seguir estas etapas quando você adiciona uma coluna a uma tabela do banco de dados principal ou a uma tabela de terceiros:
+A Adobe recomenda seguir estas etapas quando você adiciona uma coluna a uma tabela do banco de dados principal ou a uma tabela de terceiros:
 
 1. Crie um módulo com um nome no namespace que represente o que você está atualizando.
 
    Por exemplo: `app/code/YourCompany/Customer`
 
-1. Crie os arquivos apropriados para habilitar o módulo (consulte [Criar um módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=pt-BR){target="_blank"}.
+1. Crie os arquivos apropriados para habilitar o módulo (consulte [Criar um módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Crie um arquivo chamado `db_schema.xml` na pasta `etc` e faça as alterações apropriadas.
 

@@ -23,6 +23,6 @@ Esta versão inclui os seguintes destaques:
 
 >[!BEGINSHADEBOX]
 
-A correção para o CVE-2025-47110 também está disponível como um patch isolado. Consulte o [artigo da Base de Dados de Conhecimento](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) para obter detalhes.
+A correção para o CVE-2025-47110 também está disponível como um patch isolado. Consulte o [artigo da Base de Dados de Conhecimento](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) para obter detalhes.
 
 >[!ENDSHADEBOX]

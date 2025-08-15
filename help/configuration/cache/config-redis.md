@@ -33,7 +33,7 @@ Dependendo da sua instalação, você geralmente pode encontrar sua configuraç�
 
 Para otimizar a instância Redis de acordo com seus requisitos, você obtém melhores resultados usando uma instância dedicada a cada sessão, cache do Commerce e FPC.
 
-Para sessões, o Adobe recomenda que você ative a persistência para copiar dados Redis no disco usando uma das seguintes opções de persistência: instantâneos comuns do RDB (Redis Database Backup) ou logs de persistência AOF (Append Only File).
+Para sessões, a Adobe recomenda que você ative a persistência para copiar dados Redis para o disco usando uma das seguintes opções de persistência: instantâneos comuns do Backup do banco de dados Redis (RDB) ou logs de persistência de Anexar somente arquivo (AOF).
 
 - **Os instantâneos do RDB (Backup do Banco de Dados Redis**) armazenam o banco de dados completo em um arquivo de despejo após um determinado tempo, quando um número mínimo de chaves foi alterado desde o último salvamento. Use a configuração `save` dentro do arquivo `redis.conf` para definir essa configuração.
 

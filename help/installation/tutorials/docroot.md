@@ -62,7 +62,7 @@ Para concluir este tutorial, você precisa acessar uma instalação em funcionam
 >
 >Consulte os [Pré-requisitos](../prerequisites/overview.md) e o [Guia de Instalação](../overview.md) para obter mais informações.
 
-## 1. Editar a configuração do servidor
+## &#x200B;1. Editar a configuração do servidor
 
 O nome e o local do arquivo de host virtual dependem da versão do Apache que você está executando. Este exemplo mostra o nome e o local do arquivo de host virtual no Apache v2.4.
 
@@ -96,7 +96,7 @@ O nome e o local do arquivo de host virtual dependem da versão do Apache que vo
    systemctl restart apache2
    ```
 
-## 2. Atualize seu URL base
+## &#x200B;2. Atualize seu URL base
 
 Se você anexou um nome de diretório ao nome de host ou endereço IP do servidor para criar a URL base quando instalou o aplicativo (por exemplo, `http://192.168.33.10/magento2`), é necessário removê-la.
 
@@ -122,7 +122,7 @@ Se você anexou um nome de diretório ao nome de host ou endereço IP do servido
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## 3. Atualize o arquivo env.php
+## &#x200B;3. Atualize o arquivo env.php
 
 Anexe o seguinte nó ao arquivo `env.php`.
 
@@ -134,7 +134,7 @@ Anexe o seguinte nó ao arquivo `env.php`.
 
 Consulte a [referência do arquivo env.php](../../configuration/reference/config-reference-envphp.md) para obter mais informações.
 
-## 4. Alternar modos
+## &#x200B;4. Alternar modos
 
 Os [modos de aplicativo](../../configuration/bootstrap/application-modes.md), que incluem o `production` e o `developer`, foram projetados para melhorar a segurança e facilitar o desenvolvimento. Como os nomes sugerem, você deve alternar para o modo `developer` ao estender ou personalizar o aplicativo e alternar para o modo `production` ao executar em um ambiente ativo.
 
@@ -164,7 +164,7 @@ Alternar entre os modos é uma etapa importante para verificar se a configuraç�
 
 1. Atualize o navegador e verifique se a loja é exibida corretamente.
 
-## 5. Verifique a vitrine
+## &#x200B;5. Verifique a vitrine
 
 Acesse a loja em um navegador da Web para verificar se tudo está funcionando.
 

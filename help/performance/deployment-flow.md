@@ -26,7 +26,7 @@ composer install --no-dev
 
 ## Pré-processar instruções de injeção de dependência
 
-Ao pré-processar e compilar instruções de injeção de dependência (DI), Magento:
+Ao pré-processar e compilar instruções de injeção de dependência (DI), o Magento:
 
 * Lê e processa todas as configurações presentes
 * Analisa dependências entre classes

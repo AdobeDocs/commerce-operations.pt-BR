@@ -1,5 +1,5 @@
 ---
-title: A guia  [!DNL QuickView]
+title: 'A guia  [!DNL QuickView] '
 description: A guia  [!DNL QuickView]  explica os diferentes tipos de alertas exibidos, incluindo aqueles com pouco espaço em disco e uso do servidor.
 exl-id: 34405f9b-30de-4fab-acca-64a8e308ca90
 feature: Configuration, Observability
@@ -28,6 +28,6 @@ O quadro **[!UICONTROL Upsize / Downsize by node]** mostra upsize e downsize por
 
 ## [!UICONTROL CPU Utilization]
 
-![Utilização da CPU](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
+![Utilização do CPU](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
-O quadro **[!UICONTROL CPU Utilization]** mostra a utilização da CPU por nós no período selecionado.
+O quadro **[!UICONTROL CPU Utilization]** mostra a utilização do CPU por nós no período selecionado.

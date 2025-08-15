@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
->As versões de Magento e [!DNL Data Migration Tool] devem corresponder.
+>As versões do Magento e [!DNL Data Migration Tool] devem corresponder.
 
 
 Verifique se você está usando a *mesma versão lançada* do Magento 2 e do [!DNL Data Migration Tool]. Por exemplo, para a versão 2.2.0 do Magento, você também deve usar a versão 2.2.0 do [!DNL Data Migration Tool].
@@ -37,7 +37,7 @@ php <magento_root>/bin/magento --version
 
 ### Repositório do GitHub
 
-Se você clonou o repositório GitHub Magento 2, insira os seguintes comandos:
+Se você clonou o repositório GitHub do Magento 2, insira os seguintes comandos:
 
 ```bash
 cd <your Magento 2 clone directory>
@@ -70,7 +70,7 @@ Antes de instalar, verifique se você tem:
 
 ### Instalar de `repo.magento.com`
 
-Para instalar o [!DNL Data Migration Tool], você deve atualizar `composer.json` no diretório de instalação raiz do Magento para fornecer o local do pacote [!DNL Data Migration Tool].
+Para instalar o [!DNL Data Migration Tool], atualize o `composer.json` no diretório de instalação raiz do Magento para fornecer o local do pacote [!DNL Data Migration Tool].
 
 1. Faça logon no servidor de aplicativos como ou alterne para o [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 1. Altere para o diretório raiz do aplicativo.
@@ -84,7 +84,7 @@ Para instalar o [!DNL Data Migration Tool], você deve atualizar `composer.json`
    composer require magento/data-migration-tool:<version>
    ```
 
-   Onde `<version>` deve corresponder à versão da base de código Magento 2.
+   Onde `<version>` deve corresponder à versão da base de código do Magento 2.
 
    Por exemplo, para a versão 2.2.0, digite:
 
@@ -114,7 +114,7 @@ Se você clonou o repositório GitHub, siga as etapas abaixo para instalar o [!D
    composer require magento/data-migration-tool:<version>
    ```
 
-   onde `<version>` deve corresponder à versão da base de código Magento 2.
+   onde `<version>` deve corresponder à versão da base de código do Magento 2.
 
    Por exemplo, para a versão 2.2.0, digite:
 

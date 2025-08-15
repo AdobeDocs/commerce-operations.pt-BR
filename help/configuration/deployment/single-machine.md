@@ -22,7 +22,7 @@ Este tópico fornece instruções para implantar atualizações para o Commerce 
 >[!WARNING]
 >
 >Este guia não se aplica se você usou o `git clone` para instalar o Commerce.
->Os desenvolvedores colaboradores devem usar [este guia][install] para atualizar sua instalação do Commerce.
+>>Os desenvolvedores colaboradores devem usar [este guia][install] para atualizar sua instalação do Commerce.
 
 ## Etapas de implantação
 

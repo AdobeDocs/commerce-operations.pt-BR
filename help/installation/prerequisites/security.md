@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->O Adobe não tem nenhuma recomendação sobre o uso do SELinux; você pode usá-lo para melhorar a segurança, se desejar. Se você usar o SELinux, precisará configurá-lo corretamente ou o Adobe Commerce poderá funcionar de forma imprevisível. Se você optar por usar o SELinux, consulte um recurso como o [wiki do CentOS](https://wiki.centos.org/HowTos/SELinux) para configurar regras para habilitar a comunicação.
+>O Adobe não tem recomendações sobre como usar o SELinux; você pode usá-lo para melhorar a segurança, se desejar. Se você usar o SELinux, precisará configurá-lo corretamente ou o Adobe Commerce poderá funcionar de forma imprevisível. Se você optar por usar o SELinux, consulte um recurso como o [wiki do CentOS](https://wiki.centos.org/HowTos/SELinux) para configurar regras para habilitar a comunicação.
 
 ## Sugestão para instalar com o Apache
 

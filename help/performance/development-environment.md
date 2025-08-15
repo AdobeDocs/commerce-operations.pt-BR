@@ -1,5 +1,5 @@
 ---
-title: Ambiente de desenvolvimento Recommendations
+title: Recomendações do ambiente de desenvolvimento
 description: Saiba mais sobre as recomendações de desempenho para configurar o ambiente de desenvolvimento local do Adobe Commerce.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
@@ -43,4 +43,4 @@ No modo de desenvolvimento, não execute comandos para compilação, geração d
 
 ## Tempo normal de carregamento de página em uma máquina virtual
 
-Se você desenvolver em uma VM e levar mais de 2 segundos para carregar uma página de Magento, revise as configurações do ambiente.
+Se você desenvolver em uma VM e levar mais de 2 segundos para carregar uma página do Magento, revise as configurações do ambiente.

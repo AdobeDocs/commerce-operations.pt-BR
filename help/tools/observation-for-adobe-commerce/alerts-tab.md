@@ -18,13 +18,13 @@ A guia [!UICONTROL Alerts] fornece vários alertas, incluindo alertas críticos 
 
 ![Abrir Alertas Críticos](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
 
-O quadro **[!UICONTROL Open Alert Details]** mostra uma contagem dos alertas críticos abertos no período selecionado. Os alertas incluirão alertas criados por Adobe e qualquer um criado pelo parceiro ou comerciante.
+O quadro **[!UICONTROL Open Alert Details]** mostra uma contagem dos alertas críticos abertos no período selecionado. Os alertas incluirão alertas criados pela Adobe e qualquer um criado pelo parceiro ou comerciante.
 
 ## [!UICONTROL Closed Critical Alerts]
 
 ![Alertas Críticos Fechados](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
 
-O quadro **[!UICONTROL Closed Critical Alerts]** mostra uma contagem dos alertas críticos fechados durante o período selecionado. Os alertas incluirão alertas criados por Adobe e qualquer um criado pelo parceiro ou comerciante.
+O quadro **[!UICONTROL Closed Critical Alerts]** mostra uma contagem dos alertas críticos fechados durante o período selecionado. Os alertas incluirão alertas criados pela Adobe e qualquer um criado pelo parceiro ou comerciante.
 
 ## [!UICONTROL Critical Alert Details]
 

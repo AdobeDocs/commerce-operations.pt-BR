@@ -90,7 +90,7 @@ Sabemos dos seguintes problemas com o verniz:
 
 O armazenamento em cache de verniz funciona com o Commerce usando:
 
-- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) do repositório GitHub Magento 2
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) do repositório GitHub do Magento 2
 - `.htaccess` arquivo de configuração distribuído para o Apache fornecido com o Commerce
 - Configuração `default.vcl` para Verniz gerada com o [Administrador](../cache/configure-varnish-commerce.md)
 

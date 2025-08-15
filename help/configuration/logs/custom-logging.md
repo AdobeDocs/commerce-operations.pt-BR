@@ -16,7 +16,7 @@ Os registros fornecem visibilidade sobre os processos do sistema; por exemplo, i
 
 Este tópico se concentra no registro baseado em arquivos, embora o Commerce também forneça a flexibilidade para armazenar logs no banco de dados.
 
-O Adobe recomenda o uso de registro de aplicativo centralizado pelos seguintes motivos:
+A Adobe recomenda usar o registro centralizado de aplicativos pelos seguintes motivos:
 
 - Ele permite o armazenamento de registros em um servidor diferente do servidor de aplicativos e diminui as operações de I/O de disco, simplificando o suporte do servidor de aplicativos.
 
@@ -24,7 +24,7 @@ O Adobe recomenda o uso de registro de aplicativo centralizado pelos seguintes m
 
   >[!INFO]
   >
-  >O Adobe não recomenda ou endossa nenhuma solução de registro específica.
+  >A Adobe não recomenda nem endossa nenhuma solução de registro específica.
 
 ## Conformidade com a PSR-3
 

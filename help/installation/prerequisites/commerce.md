@@ -15,7 +15,7 @@ Você está entre os 240.000 comerciantes em todo o mundo que confiam em nosso s
 
 ## Como obter o software
 
-Verifique a disponibilidade de novos recursos e versões interessantes e saiba como obtê-los em nossa [página de disponibilidade de produtos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability).
+Verifique a disponibilidade de novos recursos e versões interessantes e saiba como obtê-los em nossa [página de disponibilidade de produtos](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 Consulte a tabela a seguir para começar a instalar o Adobe Commerce.
 
@@ -39,7 +39,7 @@ Consulte a tabela a seguir para começar a instalar o Adobe Commerce.
     </tr>
     <tr>
         <td><p>Desenvolvedor colaborador</p></td>
-        <td><p>Contribui para a base de código do Magento Open Source, para a criação de bugs de arquivos e para a personalização do aplicativo. Altamente técnico, tem seu próprio servidor de desenvolvimento, entende o Composer e o GitHub.</p>
+        <td><p>Contribui para a base de código do Magento Open Source, arquiva bugs e personaliza o aplicativo. Altamente técnico, tem seu próprio servidor de desenvolvimento, entende o Composer e o GitHub.</p>
             <p>Você <em>não pode</em> usar o aplicativo em um ambiente de produção.</p>
       <p>Você deve atualizar usando os <a href="../../upgrade/developer/git-installs.md">comandos do Composer e do Git</a>.</p></td>
         <td><ol><li>Clona o repositório GitHub.</li>

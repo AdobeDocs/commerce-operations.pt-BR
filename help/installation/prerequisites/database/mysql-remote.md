@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Às vezes, talvez você queira hospedar o banco de dados em um servidor separado em vez de executar o servidor de banco de dados e o servidor da Web na mesma máquina.
 
-O Adobe forneceu uma maneira de se conectar a um servidor MySQL em uma máquina diferente. A partir do Adobe Commerce 2.4.3, você também pode configurar o aplicativo para usar um banco de dados Amazon Web Services (AWS) Aurora sem alterações no código.
+A Adobe forneceu uma maneira de se conectar a um servidor MySQL em uma máquina diferente. A partir do Adobe Commerce 2.4.3, você também pode configurar o aplicativo para usar um banco de dados Amazon Web Services (AWS) Aurora sem alterações no código.
 
 O Aurora é um servidor MySQL de alto desempenho, totalmente compatível, hospedado na AWS.
 
@@ -48,7 +48,7 @@ Antes de começar, você deve:
 Use as diretrizes a seguir para configurar conexões de banco de dados remoto se o servidor Web ou o servidor de banco de dados estiver clusterizado:
 
 * Você deve configurar uma conexão para cada nó do servidor Web.
-* Normalmente, você configura uma conexão de banco de dados para o balanceador de carga de banco de dados; no entanto, o clustering de banco de dados pode ser complexo e a configuração depende de você. O Adobe não faz recomendações específicas para clustering de banco de dados.
+* Normalmente, você configura uma conexão de banco de dados para o balanceador de carga de banco de dados; no entanto, o clustering de banco de dados pode ser complexo e a configuração depende de você. O Adobe não faz recomendações específicas para o clustering de banco de dados.
 
   Para obter mais informações, consulte a [documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 

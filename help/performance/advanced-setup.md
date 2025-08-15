@@ -42,7 +42,7 @@ Para diminuir o tempo de indexação, você pode [excluir determinados sites dos
 
 Às vezes, uma instância do Redis não é suficiente para atender às solicitações recebidas. Há várias soluções que podemos recomendar para resolver essa situação.
 
-Primeiro, [!DNL Commerce] permite configurar o armazenamento em cache separado para cada tipo de cache. Isso permite que você instale quantas instâncias Redis separadas forem o número de tipos de cache registrados no Magento. Na prática, você pode desejar instâncias do Redis para os caches usados mais ativamente, como configuração, layout e blocos.
+Primeiro, [!DNL Commerce] permite configurar o armazenamento em cache separado para cada tipo de cache. Isso permite instalar quantas instâncias Redis separadas quantos forem o número de tipos de cache registrados no Magento. Na prática, você pode desejar instâncias do Redis para os caches usados mais ativamente, como configuração, layout e blocos.
 
 Outra solução pode ser colocar o cache de configuração no sistema de arquivos e mover os outros caches para o servidor Redis. Com essa solução, você precisa de uma ferramenta separada para a invalidação centralizada do cache de configuração em todos os nós da Web.
 
@@ -92,7 +92,7 @@ bin/magento setup:db-schema:add-slave
 
 Esse comando executa alterações de configuração, mas não configura a própria replicação. Isso deve ser feito manualmente.
 
-Depois de dividir seu banco de dados mestre e configurar bancos de dados subordinados, o [!DNL Commerce] regula automaticamente as conexões com um banco de dados específico, tomando decisões com base no tipo de solicitação (POST, PUT, GET etc.) e recurso de dados. Se o [!DNL Commerce] ou suas extensões executarem operações de gravação em uma solicitação GET, o sistema alternará automaticamente a conexão do banco de dados subordinado para o mestre. Funciona da mesma forma com bancos de dados mestres: assim que você trabalha com uma tabela relacionada a check-out, o sistema redireciona todas as consultas para um banco de dados específico. Enquanto isso, todas as consultas relacionadas ao catálogo irão para o banco de dados principal.
+Depois de dividir o banco de dados mestre e definir bancos de dados subordinados, o [!DNL Commerce] regula automaticamente as conexões com um banco de dados específico, tomando decisões com base no tipo de solicitação (POST, PUT, GET etc.) e recurso de dados. Se o [!DNL Commerce] ou suas extensões executarem operações de gravação em uma solicitação GET, o sistema alternará automaticamente a conexão do banco de dados subordinado para o mestre. Funciona da mesma forma com bancos de dados mestres: assim que você trabalha com uma tabela relacionada a check-out, o sistema redireciona todas as consultas para um banco de dados específico. Enquanto isso, todas as consultas relacionadas ao catálogo irão para o banco de dados principal.
 
 Para obter mais detalhes sobre a configuração e os benefícios de várias configurações mestre/escravo, consulte
 [Dividir solução de desempenho de banco de dados](../configuration/storage/multi-master.md).

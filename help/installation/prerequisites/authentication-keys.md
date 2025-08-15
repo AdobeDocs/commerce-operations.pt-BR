@@ -11,16 +11,16 @@ ht-degree: 0%
 
 # Obter suas chaves de autenticação
 
-O repositório `repo.magento.com` é onde os pacotes do Adobe Commerce e do Composer de terceiros são armazenados e requerem autenticação. Use sua conta Commerce Marketplace para gerar um par de *chaves de autenticação* de 32 caracteres para acessar o repositório.
+O repositório `repo.magento.com` é onde os pacotes do Adobe Commerce e do Composer de terceiros são armazenados e requerem autenticação. Use sua conta do Commerce Marketplace para gerar um par de *chaves de autenticação* de 32 caracteres para acessar o repositório.
 
 Para obter direito de acesso a pacotes do Adobe Commerce, você deve usar chaves associadas a uma MAGEID que recebeu acesso a esses pacotes. Normalmente, a MAGEID é o contato principal na conta da Adobe Commerce e nem sempre é o proprietário do projeto Adobe Commerce na infraestrutura em nuvem.
 
 >[!TIP]
 >
->Se você encontrar [erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=pt-BR), talvez não tenha autorização para acessar o pacote ou o direito de acesso tenha expirado devido a uma fatura pendente em sua conta.
+>Se você encontrar [erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), talvez não tenha autorização para acessar o pacote ou o direito de acesso tenha expirado devido a uma fatura pendente em sua conta.
 >
 >* Se você for a pessoa de contato principal na conta, verifique se não há nenhuma fatura pendente listada na conta.
->* Se as chaves fornecidas pelo Contato Principal não estiverem funcionando e não houver faturas pendentes na conta, o Contato Principal deverá contatar o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para obter assistência.
+>* Se as chaves fornecidas pelo Contato Principal não estiverem funcionando e não houver faturas pendentes na conta, o Contato Principal deverá contatar o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obter assistência.
 
 Para criar chaves de autenticação:
 
@@ -30,7 +30,7 @@ Para criar chaves de autenticação:
 
 1. Clique em **Teclas de Acesso** na guia Marketplace.
 
-   ![Obtenha suas chaves de acesso seguro no Commerce Marketplace](../../assets/installation/cloud_access-key.png)
+   ![Obtenha suas chaves de acesso seguras no Commerce Marketplace](../../assets/installation/cloud_access-key.png)
 
 1. Clique em **Criar uma Nova Chave de Acesso**. Insira um nome específico para as chaves (por exemplo, o nome do desenvolvedor que recebe as chaves) e clique em **OK**.
 

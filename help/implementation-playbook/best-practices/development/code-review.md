@@ -100,7 +100,7 @@ As revisões de privacidade e de [GDPR](../../../security-and-compliance/privacy
 - O código lida com dados ou emails do cliente? Preste atenção especial.
 - Se esse código puder ser executado em um loop, ele poderá vazar dados do cliente de um ciclo de loop para outro?
 - Os indicadores de risco são importações, trabalhos cron, emails transacionais e manipuladores de fila de lotes.
-- Garanta o isolamento dos dados do usuário em loops. Adobe aconselha usar fábricas ou repositórios para criar modelos no ciclo de loop, que não são acessíveis fora do loop.
+- Garanta o isolamento dos dados do usuário em loops. A Adobe aconselha usar fábricas ou repositórios para criar modelos no ciclo de loop, que não são acessíveis fora do loop.
 
 ### Mentoria
 

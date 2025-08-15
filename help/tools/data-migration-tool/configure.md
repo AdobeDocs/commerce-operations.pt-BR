@@ -15,10 +15,10 @@ ht-degree: 0%
 Após instalar o [!DNL Data Migration Tool], o seguinte diretório contém arquivos de mapeamento e configuração:
 
 * Magento Open Source:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: Configuração e scripts para migrar do Magento Open Source 1 para o Magento Open Source 2
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: configuração e scripts para migrar do Magento Open Source 1 para o Magento Open Source 2
 
 * Adobe Commerce:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: Configuração e scripts para migrar do Magento Open Source 1 para o Adobe Commerce 2
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: configuração e scripts para migrar do Magento Open Source 1 para o Adobe Commerce 2
    * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: configuração e scripts para migrar do Adobe Commerce 1 para o Adobe Commerce 2
 
 Os diretórios anteriores contêm subdiretórios para cada versão compatível.
@@ -35,7 +35,7 @@ Se você planeja executar o [!DNL Data Migration Tool] apenas localmente, poder�
 
 ### Configurar migração em um módulo separado
 
-Antes de migrar dados, é necessário criar um módulo Magento 2.
+Antes de migrar dados, é necessário criar um módulo do Magento 2.
 
 1. Crie um módulo Magento 2.
 
@@ -106,7 +106,7 @@ Antes de migrar dados, é necessário criar um módulo Magento 2.
 
 1. No arquivo `config.xml`, você deve definir os detalhes de acesso aos bancos de dados M1 e M2 e à chave de criptografia.
 
-1. Se o armazenamento M1 tiver alterações personalizadas, você deverá mapear o restante dos arquivos de configuração para as personalizações do armazenamento Magento 1. Consulte [Trabalhar com arquivos de configuração e mapeamento](#migration-config).
+1. Se seu armazenamento M1 tiver alterações personalizadas, você deverá mapear o restante dos arquivos de configuração para suas personalizações do armazenamento Magento 1. Consulte [Trabalhar com arquivos de configuração e mapeamento](#migration-config).
 
 ### Configurar migração na pasta `vendor`
 
@@ -200,7 +200,7 @@ O [!DNL Data Migration Tool] usa *arquivos de mapeamento* para permitir que voc�
 
 * Adaptar a transferência de dados de um campo para o formato Magento 2
 
-Os arquivos de mapeamento para versões de Magento com suporte estão localizados em subdiretórios de `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
+Os arquivos de mapeamento para versões do Magento com suporte estão localizados em subdiretórios de `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
 
 Para usar os arquivos de mapeamento:
 
@@ -218,8 +218,8 @@ Embora você esteja trabalhando com o arquivo `map.xml.dist` na maior parte do t
 
 | Nome do arquivo de mapeamento | Descrição |
 | --- | --- |
-| `class-map.xml.dist` | Dicionário de mapeamentos de classe entre Magento 1 e Magento 2 |
-| `config.xml.dist` | Arquivo de configuração principal que especifica as configurações de banco de dados Magento 1 e Magento 2, configuração de etapa e links para arquivos de mapeamento |
+| `class-map.xml.dist` | Dicionário de mapeamentos de classe entre o Magento 1 e o Magento 2 |
+| `config.xml.dist` | Arquivo de configuração principal que especifica as configurações do banco de dados Magento 1 e Magento 2, a configuração de etapa e links para arquivos de mapeamento |
 | *Somente Adobe Commerce*. `customer-attr-document-groups.xml.dist` | Lista de tabelas usadas na etapa atributos personalizados do cliente. |
 | *Somente Adobe Commerce*. `customer-attr-map.xml.dist` | Arquivo de mapa usado na etapa Atributos personalizados do cliente. |
 | `deltalog.xml.dist` | Contém a lista de tabelas necessárias para a configuração de rotinas de banco de dados. |

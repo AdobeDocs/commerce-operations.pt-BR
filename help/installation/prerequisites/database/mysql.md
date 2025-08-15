@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Consulte [Requisitos do Sistema](../../system-requirements.md) para obter as versões do MySQL com suporte.
 
-O Adobe _fortemente_ recomenda que você observe o seguinte padrão ao configurar seu banco de dados:
+O Adobe _recomenda que você observe o seguinte padrão ao configurar seu banco de dados:_
 
 * O Adobe Commerce usa [gatilhos de banco de dados MySQL](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) para melhorar o acesso ao banco de dados durante a reindexação. Elas são criadas quando o modo do indexador é definido como [agenda](../../../configuration/cli/manage-indexers.md#configure-indexers). O aplicativo não oferece suporte a acionadores personalizados no banco de dados porque esses acionadores podem introduzir incompatibilidades com versões futuras do Adobe Commerce.
 * Familiarize-se com [estas limitações potenciais do acionador MySQL](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) antes de continuar.

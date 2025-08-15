@@ -137,7 +137,7 @@ Por exemplo, desabilite o trabalho cron `visitor_clean` que foi definido no mód
 ...
 ```
 
-Para desabilitar o trabalho do cron `visitor_clean`, crie um módulo personalizado e substitua o trabalho do cron `schedule` de `visitor_clean`:
+Para desabilitar o trabalho do cron `visitor_clean`, crie um módulo personalizado e substitua o trabalho do cron `visitor_clean` de `schedule`:
 
 ```xml
 ...

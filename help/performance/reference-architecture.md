@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Este tópico descreve uma configuração genérica recomendada para instâncias do Adobe Commerce usando servidores simples hospedados fisicamente em um data center (não virtualizado) no qual os recursos não são compartilhados com outros usuários. Seu provedor de hospedagem, especialmente se for especializado em hospedagem de alto desempenho do Commerce, pode recomendar uma configuração diferente que seja igualmente ou mais eficaz para suas necessidades.
 
-Para o Adobe Commerce em ambientes de infraestrutura em nuvem, consulte [Arquitetura inicial](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
+Para o Adobe Commerce em ambientes de infraestrutura em nuvem, consulte [Arquitetura inicial](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## Diagrama da arquitetura de referência [!DNL Commerce]
 
 O diagrama da Arquitetura de Referência [!DNL Commerce] representa a abordagem de prática recomendada para configurar um site [!DNL Commerce] escalável.
 
-A cor de cada elemento no diagrama indica se o elemento faz parte do Magento Open Source ou do Adobe Commerce e se é necessário.
+A cor de cada elemento no diagrama indica se ele faz parte do Magento Open Source ou do Adobe Commerce e se é necessário.
 
 * Elementos laranjas são necessários para o Magento Open Source
 * Os elementos em cinza são opcionais para o Magento Open Source

@@ -21,7 +21,7 @@ Your current search engine, <Engine Name>, is not supported. You must install a 
 Esse erro significa que uma das seguintes condições é verdadeira na versão de nível inferior do Adobe Commerce:
 
 - O mecanismo de pesquisa é definido como MySQL.
-- O mecanismo de pesquisa está definido como uma versão do Elasticsearch que não é mais suportada.
+- O mecanismo de pesquisa está definido como uma versão do Elasticsearch que não é mais compatível.
 
 Use o seguinte comando para verificar o mecanismo de pesquisa atual:
 
@@ -66,12 +66,12 @@ Um valor de `elasticsearch` indica que sua versão de nível inferior do Adobe C
 
 Você deve executar as seguintes tarefas antes de atualizar para a versão 2.4:
 
-1. Atualização para uma versão do Elasticsearch compatível com Commerce. Consulte [Atualizando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obter instruções completas sobre como fazer backup de seus dados, detectar possíveis problemas de migração e testar atualizações antes de implantar na produção. Dependendo da sua versão atual do Elasticsearch, uma reinicialização completa do cluster pode ou não ser necessária.
+1. Atualização para uma versão do Elasticsearch compatível com o Commerce. Consulte [Atualizando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obter instruções completas sobre como fazer backup de seus dados, detectar possíveis problemas de migração e testar atualizações antes de implantar na produção. Dependendo da sua versão atual do Elasticsearch, uma reinicialização completa do cluster pode ou não ser necessária.
 
    >[!NOTE]
    >
    >O Elasticsearch exige o JDK 1.8 ou superior. Consulte [Instalar o Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para verificar qual versão do JDK está instalada.
 
-1. [Configurar Elasticsearch](../../configuration/search/configure-search-engine.md) e reindexar.
+1. [Configure o Elasticsearch](../../configuration/search/configure-search-engine.md) e reindexe.
 
 Após configurar o mecanismo de pesquisa e reindexar, você estará pronto para atualizar para a versão 2.4.

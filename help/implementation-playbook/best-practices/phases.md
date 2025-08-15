@@ -12,7 +12,7 @@ ht-degree: 7%
 
 # Práticas recomendadas de implementação
 
-Há muitas maneiras de implementar um projeto do Adobe Commerce. As práticas recomendadas fornecidas nesta seção descrevem como a Adobe espera que os clientes e parceiros implementem casos de uso específicos. Essas recomendações foram projetadas para ajudar a evitar problemas comuns e possíveis problemas relacionados à configuração e personalização do site, implantação, operações, desempenho e atualizações.
+Há muitas maneiras de implementar um projeto do Adobe Commerce. As práticas recomendadas fornecidas nesta seção descrevem a forma como a Adobe espera que os clientes e parceiros implementem casos de uso específicos. Essas recomendações foram projetadas para ajudar a evitar problemas comuns e possíveis problemas relacionados à configuração e personalização do site, implantação, operações, desempenho e atualizações.
 
 Essas práticas recomendadas são organizadas por fase de implementação para que você possa encontrar as recomendações que se aplicam ao seu caso de uso.
 

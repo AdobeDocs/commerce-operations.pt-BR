@@ -48,7 +48,7 @@ Este tópico usa as seguintes convenções de nomenclatura:
 
 ## Faça backup do sistema Commerce
 
-A Adobe recomenda que você faça backup do banco de dados e do sistema de arquivos atuais para poder restaurá-los caso tenha problemas durante o processo.
+A Adobe recomenda que você faça backup do banco de dados e do sistema de arquivos atuais para poder restaurá-los se tiver problemas durante o processo.
 
 **Para fazer backup do sistema**:
 

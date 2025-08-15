@@ -4,14 +4,14 @@ description: Crie uma página de modo de manutenção personalizada que seus cli
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
 
 # Opções de modo de manutenção para atualização
 
-Este tópico discute como criar uma página de manutenção personalizada para exibir aos usuários enquanto seu aplicativo Magento está sendo atualizado. A criação de uma página personalizada é opcional, mas recomendada, pois seu site está acessível durante parte da atualização.
+Este tópico discute como criar uma página de manutenção personalizada para exibir aos usuários enquanto seu aplicativo do Magento está sendo atualizado. A criação de uma página personalizada é opcional, mas recomendada, pois seu site está acessível durante parte da atualização.
 
 Criar uma página personalizada para redirecionar usuários impede qualquer acesso ao site e também informa aos usuários que o site está em manutenção.
 
@@ -66,9 +66,9 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
 1. Atualize sua configuração do Apache para fazer o seguinte:
 
    - Redirecionar todo o tráfego para a página de manutenção
-   - executar a Inclui na lista de permissões de determinados IPs para que um administrador possa atualizar o software Magento.
+   - Incluir na lista de permissões determinados IPs para que um administrador possa atualizar o software Magento.
 
-   O exemplo a seguir inclui na lista de permissões 192.0.2.110.
+   Incluir na lista de permissões O exemplo a seguir apresenta 192.0.2.110.
 
    Adicione o seguinte ao final do arquivo de configuração do Apache:
 
@@ -107,7 +107,7 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
 1. Use um editor de texto para abrir o arquivo de configuração nginx que contém o bloco do servidor.
 1. Adicionar o seguinte ao bloco de servidor (`server` é mostrado apenas para maior clareza; não adicione um segundo bloco de servidor).
 
-   Incluir na lista de permissões A seguinte mensagem indica o endereço IP 192.0.2.110 e 192.0.2.115 em um sistema onde o Magento está instalado em `/var/www/html/magento2`:
+   Incluir na lista de permissões O seguinte capítulo exibe o endereço IP 192.0.2.110 e 192.0.2.115 em um sistema em que o Magento está instalado em `/var/www/html/magento2`:
 
    ```conf
    server {

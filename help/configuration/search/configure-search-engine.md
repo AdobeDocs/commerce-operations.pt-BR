@@ -17,9 +17,9 @@ Esta seção discute as configurações mínimas que você deve escolher para te
 >[!TIP]
 >
 >Nas versões 2.4.4 e 2.4.3-p2, todos os campos rotulados **Elasticsearch** também se aplicam ao OpenSearch.
->Quando o suporte para o Elasticsearch 8.x foi introduzido na versão 2.4.6, novos rótulos foram criados para distinguir entre configurações Elasticsearch e OpenSearch.
+>>Quando o suporte para o Elasticsearch 8.x foi introduzido na versão 2.4.6, novos rótulos foram criados para distinguir entre as configurações do Elasticsearch e do OpenSearch.
 
-Para obter detalhes adicionais sobre a configuração do mecanismo de pesquisa, consulte o [Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=pt-BR).
+Para obter detalhes adicionais sobre a configuração do mecanismo de pesquisa, consulte o [Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Configurar o mecanismo de pesquisa no Admin
 
@@ -62,7 +62,7 @@ Em caso afirmativo, tente o seguinte:
 
 - Verifique se o servidor do mecanismo de pesquisa está em execução.
 - Se o servidor estiver em um host diferente do Commerce, faça logon no servidor do Commerce e execute ping no host do mecanismo de pesquisa. Resolva os problemas de conectividade de rede e teste a conexão novamente.
-- Examine a janela de comando na qual você iniciou o Elasticsearch ou o OpenSearch para rastreamentos e exceções de pilha. Você deve resolvê-los antes de continuar. Especificamente, certifique-se de ter iniciado seu mecanismo de pesquisa como um usuário com privilégios `root`.
+- Examine a janela de comando na qual você iniciou o Elasticsearch ou o OpenSearch para rastreamentos de pilha e exceções. Você deve resolvê-los antes de continuar. Especificamente, certifique-se de ter iniciado seu mecanismo de pesquisa como um usuário com privilégios `root`.
 - Verifique se o [firewall UNIX e o SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) estão desabilitados ou configure regras para permitir que o mecanismo de pesquisa e o Commerce se comuniquem entre si.
 - Verifique o valor do campo **[!UICONTROL Server Hostname]**. Verifique se o servidor está disponível. Em vez disso, você pode tentar o endereço IP do servidor.
 - Use o comando `netstat -an | grep <listen-port>` para verificar se a porta especificada no campo **[!UICONTROL Server Port]** não está sendo usada por outro processo.

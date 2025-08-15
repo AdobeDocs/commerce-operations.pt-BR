@@ -29,7 +29,7 @@ Onde
 
 >[!NOTE]
 >
->Não é possível habilitar ou desabilitar módulos diretamente em projetos na nuvem. Você deve executar esses comandos localmente e depois enviar as alterações para o arquivo `app/etc/config.php` de um ambiente. Consulte [Fluxo de trabalho do projeto Pro: Fluxo de trabalho de implantação](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=pt-BR#deployment-workflow).
+>Não é possível habilitar ou desabilitar módulos diretamente em projetos na nuvem. Você deve executar esses comandos localmente e depois enviar as alterações para o arquivo `app/etc/config.php` de um ambiente. Consulte [Fluxo de trabalho do projeto Pro: Fluxo de trabalho de implantação](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Módulo ativar, desativar
 
@@ -78,7 +78,7 @@ bin/magento cache:clean
 
 ## Sobre a ativação e desativação de módulos
 
-O Adobe Commerce permite ativar ou desativar os módulos disponíveis no momento; em outras palavras, qualquer módulo fornecido por Adobe ou qualquer módulo de terceiros disponível no momento.
+O Adobe Commerce permite ativar ou desativar os módulos disponíveis no momento; em outras palavras, qualquer módulo fornecido pela Adobe ou qualquer módulo de terceiros disponível no momento.
 
 Determinados módulos têm dependências em outros módulos, nesse caso, você não pode ativar ou desativar um módulo porque ele tem dependências em outros módulos.
 

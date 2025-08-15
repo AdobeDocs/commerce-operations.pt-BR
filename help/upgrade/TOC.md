@@ -6,7 +6,7 @@ topic: Administration, Commerce, Development, Upgrade
 source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -40,11 +40,11 @@ ht-degree: 4%
       - [Executar a ferramenta em uma interface de linha de comando](upgrade-compatibility-tool/run.md)
       - [Integrar com o  [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Execute a ferramenta dentro do plug-in Magento PHPStorm](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
-   - Relatório {#reporting}
+   - Relatórios {#reporting}
       - [Relatórios](upgrade-compatibility-tool/reports.md)
       - [Mensagens de erro](upgrade-compatibility-tool/error-messages.md)
    - [Ferramentas relacionadas](upgrade-compatibility-tool/related-tools.md)
-- Contribuindo com desenvolvedores {#developer}
+- Desenvolvedores colaboradores {#developer}
    - [Atualizar uma instalação baseada em Git](developer/git-installs.md)
    - [Gerenciar módulos](developer/manage-modules.md)
 - Solução de problemas {#troubleshooting}
@@ -54,4 +54,4 @@ ht-degree: 4%
 - Recursos {#resources}
    - [Leitura recomendada](resources/recommended-reading.md)
    - [Modernização de sua plataforma com o Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

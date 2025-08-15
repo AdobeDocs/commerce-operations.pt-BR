@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Clonar repositórios Git de dados de amostra
 
-Este tópico discute como clonar e adicionar dados de amostra se você tiver clonado o repositório GitHub do Magento Open Source. Esse método é destinado apenas aos desenvolvedores contribuintes (ou seja, desenvolvedores que planejam contribuir com a base de código do Magento Open Source).
+Este tópico discute como clonar e adicionar dados de amostra se você tiver clonado o repositório GitHub da Magento Open Source. Esse método é destinado apenas aos desenvolvedores contribuintes (ou seja, desenvolvedores que planejam contribuir com a base de código do Magento Open Source).
 
 Se você não for um desenvolvedor contribuinte, escolha uma das outras opções exibidas no sumário à esquerda da página.
 
@@ -22,7 +22,7 @@ Os desenvolvedores colaboradores podem usar este método de instalação de dado
 
 >[!WARNING]
 >
->Você pode usar dados de amostra com a ramificação `develop` (mais atual) ou com uma ramificação lançada (como `2.4` (mais estável)). Recomendamos que você use uma ramificação lançada porque ela é mais estável. Se estiver contribuindo com código para o repositório e precisar do código mais recente, use a ramificação `develop`. Independentemente da ramificação escolhida, você deve [clonar](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) a ramificação correspondente do repositório GitHub Magento Open Source. Por exemplo, dados de exemplo para a ramificação `develop` podem ser usados *only* com a ramificação Magento Open Source `develop`.
+>Você pode usar dados de amostra com a ramificação `develop` (mais atual) ou com uma ramificação lançada (como `2.4` (mais estável)). Recomendamos que você use uma ramificação lançada porque ela é mais estável. Se estiver contribuindo com código para o repositório e precisar do código mais recente, use a ramificação `develop`. Independentemente da ramificação escolhida, você deve [clonar](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) a ramificação correspondente do repositório GitHub da Magento Open Source. Por exemplo, dados de exemplo para a ramificação `develop` podem ser usados *somente* com a ramificação `develop` do Magento Open Source.
 
 ## Clonar o repositório de dados de amostra
 
@@ -71,7 +71,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo SSH:
 
    Por exemplo:
 
-   Se você usou a ramificação `2.4-develop` do repositório GitHub Magento Open Source, a ramificação de Dados de amostra deve ser `2.4-develop`.
+   Se você usou a ramificação `2.4-develop` do repositório GitHub da Magento Open Source, a ramificação de Dados de Exemplo deverá ser `2.4-develop`.
 
    Para fazer check-out da ramificação correta, execute o seguinte comando no diretório raiz do repositório de dados de amostra (supondo que você precise da ramificação `2.4-develop`):
 
@@ -125,7 +125,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
 
    Por exemplo:
 
-   Se você usou a ramificação `2.4-develop` do repositório GitHub Magento Open Source, a ramificação de Dados de amostra deve ser `2.4-develop`.
+   Se você usou a ramificação `2.4-develop` do repositório GitHub da Magento Open Source, a ramificação de Dados de Exemplo deverá ser `2.4-develop`.
 
    Para fazer check-out da ramificação correta, execute o seguinte comando no diretório raiz do repositório de dados de amostra (supondo que você precise da ramificação `2.4-develop`):
 
@@ -159,7 +159,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
 
 ## Definir a propriedade e as permissões do sistema de arquivos
 
-Como o script `php build-sample-data.php` cria symlinks entre o repositório de dados de amostra e o repositório Magento Open Source, você deve definir as permissões do sistema de arquivos e a propriedade no repositório de dados de amostra. Se isso não for feito, ocorrerão erros ao acessar a loja.
+Como o script `php build-sample-data.php` cria symlinks entre o repositório de dados de exemplo e o repositório do Magento Open Source, você deve definir as permissões e a propriedade do sistema de arquivos no repositório de dados de exemplo. Se isso não for feito, ocorrerão erros ao acessar a loja.
 
 Para definir as permissões e a propriedade do sistema de arquivos no repositório de dados de amostra:
 

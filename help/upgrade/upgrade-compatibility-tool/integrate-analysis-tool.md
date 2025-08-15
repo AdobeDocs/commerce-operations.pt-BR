@@ -15,7 +15,7 @@ O [!DNL Site-Wide Analysis Tool] fornece monitoramento, relatórios e recomenda�
 
 O [!DNL Upgrade Compatibility Tool] agora está integrado ao [!DNL Site-Wide Analysis Tool] para fornecer a capacidade para que pessoas não técnicas executem o [!DNL Upgrade Compatibility Tool] e obtenham um [relatório](../upgrade-compatibility-tool/reports.md) contendo uma lista de problemas para cada arquivo.
 
-Consulte o [[!DNL Site-Wide Analysis Tool] guia do usuário](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/access) para obter mais informações.
+Consulte o [[!DNL Site-Wide Analysis Tool] guia do usuário](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) para obter mais informações.
 
 ## Executar o [!DNL Upgrade Compatibility Tool] a partir do [!DNL Site-Wide Analysis Tool]
 
@@ -31,7 +31,7 @@ Após a conclusão da verificação, os resultados de alto nível são exibidos 
 
 ![Widget do UCT SWAT - Resultados](../../assets/upgrade-guide/uct-swat-results.png)
 
-Clique em **[!UICONTROL Download Report]** para recuperar o [!DNL Upgrade Compatibility Tool] [relatório de HTML](../upgrade-compatibility-tool/reports.md#html-report) e examinar os detalhes.
+Clique em **[!UICONTROL Download Report]** para recuperar o [!DNL Upgrade Compatibility Tool] [relatório do HTML](../upgrade-compatibility-tool/reports.md#html-report) e examinar os detalhes.
 
 
 >[!NOTE]

@@ -4,13 +4,13 @@ description: Aplique o patch ACSD-65848 para corrigir o problema do Adobe Commer
 feature: Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8a614c40a1c0134a0528b74cbd434e7ca96c933a
+exl-id: 0233db9b-86b1-4320-a566-7e7e207dab84
+source-git-commit: 1ccb4c1dda5141934e04509b27fdafbfdc436a15
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65848: as categorias no administrador estão carregando muito lentamente
 
@@ -28,7 +28,7 @@ O patch ACSD-65848 corrige o problema em que a contagem total de produtos em uma
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -77,7 +77,7 @@ As páginas de categoria levam mais de um minuto para serem abertas.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

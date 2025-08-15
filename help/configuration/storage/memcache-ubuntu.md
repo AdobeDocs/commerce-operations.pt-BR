@@ -16,7 +16,7 @@ Esta seção fornece instruções para instalar o memcached no Ubuntu.
 
 >[!INFO]
 >
->O Adobe recomenda o uso da versão memcached 3.0.5 ou posterior.
+>A Adobe recomenda usar o memcached versão 3.0.5 ou posterior.
 
 Como o PHP não tem suporte nativo para memcache, você deve instalar uma extensão para o PHP usá-lo. Há duas extensões PHP disponíveis e é importante decodificar quais usar:
 
@@ -65,7 +65,7 @@ A extensão `memcache` atualmente _não_ funciona com o PHP 7. Consulte a docume
 
 ## Verificar trabalhos memcached antes de instalar o Magento
 
-A Adobe recomenda testar o memcached para verificar se ele funciona antes de instalar o Commerce. Isso leva apenas alguns minutos e pode simplificar a solução de problemas posteriormente.
+A Adobe recomenda testar o memcached para garantir que funcione, antes de instalar o Commerce. Isso leva apenas alguns minutos e pode simplificar a solução de problemas posteriormente.
 
 ### Verificar se o memcached é reconhecido pelo servidor Web
 

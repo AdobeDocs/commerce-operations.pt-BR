@@ -27,4 +27,4 @@ Use a página [!UICONTROL Exceptions] para ver os logs de erros/exceções do ar
 
 ## Práticas recomendadas
 
-Monitore a página [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] para ver quais exceções ocorrem. Para obter mais informações, consulte [Exibir e gerenciar logs](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/test/log-locations) na documentação do desenvolvedor.
+Monitore a página [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Exceptions] para ver quais exceções ocorrem. Para obter mais informações, consulte [Exibir e gerenciar logs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) na documentação do desenvolvedor.

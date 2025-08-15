@@ -19,4 +19,4 @@ As informações de status a seguir aparecem no nível superior da página na te
 
 **[!UICONTROL Health Index Bar]**: mede a integridade geral do site de 0 a 100, onde zero é o pior, e 100 é a integridade perfeita. É calculada com base na quantidade e no coeficiente de peso de prioridade das recomendações ativas.
 
-**[!UICONTROL Download Recommendations Report]**: o Relatório do Recommendations fornece recomendações personalizadas aplicáveis ao seu projeto. Você pode baixar um relatório de PDF clicando nesta seção.
+**[!UICONTROL Download Recommendations Report]**: o Relatório de recomendações fornece recomendações personalizadas aplicáveis ao seu projeto. Você pode baixar um relatório do PDF clicando nesta seção.

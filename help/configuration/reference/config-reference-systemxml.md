@@ -6,7 +6,7 @@ badge: label="Contribuição de David Lambauer" type="Informative" url="https://
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Uma tag `<tab>` pode ter os seguintes atributos:
 | `id` | Define o identificador usado referenciando a seção. | `typeId` | obrigatório |
 | `translate` | Define o campo que deve ser traduzível. Forneça `label` para tornar o rótulo traduzível. | `string` | opcional |
 | `sortOrder` | Define a ordem de classificação da seção. Números altos empurram a seção para a parte inferior da página; números baixos empurram a seção para a parte superior. | `float` | opcional |
-| `class` | Adiciona uma classe CSS definida ao elemento de HTML da guia renderizada. | `string` | opcional |
+| `class` | Adiciona uma classe CSS definida ao elemento HTML da guia renderizada. | `string` | opcional |
 
 ### Referência do nó de guia
 
@@ -94,7 +94,7 @@ Uma tag `<section>` pode ter os seguintes atributos:
 |:----------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:---------|:---------|
 | `id` | Define o identificador usado referenciando a seção. | `typeId` | obrigatório |
 | `translate` | Define o campo que deve ser traduzível. Forneça `label` para tornar o rótulo traduzível. | `string` | opcional |
-| `type` | Define o tipo de entrada do elemento de HTML renderizado. O padrão é `text`. | `string` | opcional |
+| `type` | Define o tipo de entrada do elemento HTML renderizado. O padrão é `text`. | `string` | opcional |
 | `sortOrder` | Define a ordem de classificação da seção. Números altos empurrarão a seção para a parte inferior da página; números baixos empurrarão a seção para o topo. | `float` | opcional |
 | `showInDefault` | Define se a seção é mostrada no escopo de configuração padrão. Especifique `1` para mostrar a seção e `0` para ocultá-la. | `int` | opcional |
 | `showInStore` | Define se a seção é mostrada no nível da loja. Especifique `1` para mostrar a seção e `0` para ocultá-la. | `int` | opcional |
@@ -110,7 +110,7 @@ Uma tag `<section>` pode ter os seguintes filhos:
 | Nó | Descrição | Tipo |
 |------------------|-----------------------------------------------------------------------------------------------------------------------|---------------------|
 | `label` | Define o rótulo exibido no front-end. | `string` |
-| `class` | Adiciona uma classe CSS definida ao elemento de HTML da seção renderizada. | `string` |
+| `class` | Adiciona uma classe CSS definida ao elemento HTML da seção renderizada. | `string` |
 | `tab` | Faz referência à guia associada. Espera a ID da guia. | `typeTabId` |
 | `header_css` | Não usado nem avaliado no momento da escrita deste documento. | `string` |
 | `resource` | Faz referência a um recurso de ACL para fornecer configurações de permissão para esta seção. | `typeAclResourceId` |
@@ -153,7 +153,7 @@ Uma tag `<group>` pode ter os seguintes atributos:
 |:----------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:---------|:---------|
 | `id` | Define o identificador usado que faz referência ao grupo. | `typeId` | obrigatório |
 | `translate` | Define os campos que devem ser traduzíveis. Forneça `label` para tornar o rótulo traduzível. Vários campos devem ser separados por um espaço. | `string` | opcional |
-| `type` | Define o tipo de entrada do elemento de HTML renderizado. O padrão é `text`. | `string` | opcional |
+| `type` | Define o tipo de entrada do elemento HTML renderizado. O padrão é `text`. | `string` | opcional |
 | `sortOrder` | Define a ordem de classificação da seção. Números altos empurrarão a seção para a parte inferior da página; números baixos empurrarão a seção para o topo. | `float` | opcional |
 | `showInDefault` | Define se o grupo é mostrado no escopo de configuração padrão. Especifique `1` para mostrar o grupo e `0` para ocultar o grupo. | `int` | opcional |
 | `showInStore` | Define se o grupo é mostrado no nível do armazenamento. Especifique `1` para mostrar o grupo e `0` para ocultar o grupo. | `int` | opcional |
@@ -228,7 +228,7 @@ Uma tag `<field>` pode ter os seguintes atributos:
 |:----------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:---------|:---------|
 | `id` | Define o identificador usado referenciando o campo. | `typeId` | obrigatório |
 | `translate` | Define os campos que devem ser traduzíveis. Forneça `label` para tornar o rótulo traduzível. Vários campos devem ser separados por um espaço. | `string` | opcional |
-| `type` | Define o tipo de entrada do elemento de HTML renderizado. O padrão é `text`. | `string` | opcional |
+| `type` | Define o tipo de entrada do elemento HTML renderizado. O padrão é `text`. | `string` | opcional |
 | `sortOrder` | Define a ordem de classificação da seção. Números altos empurram a seção para a parte inferior da página; números baixos empurram a seção para a parte superior. | `float` | opcional |
 | `showInDefault` | Define se o campo é mostrado no escopo de configuração padrão. Especifique `1` para mostrar o campo e `0` para ocultar o campo. | `int` | opcional |
 | `showInStore` | Define se o campo é mostrado no nível do armazenamento. Especifique `1` para mostrar o campo e `0` para ocultar o campo. | `int` | opcional |
@@ -248,8 +248,8 @@ Uma tag `<field>` pode ter os seguintes valores para o atributo `type=""`:
 | `select` | Lista suspensa normal, pode precisar de um `source_model` personalizado. Também usado para `Yes/No` seleções. Veja um exemplo em `Magento\Search\Model\Adminhtml\System\Config\Source\Engine`. |
 | `multiselect` | Como `select`, mas várias opções são válidas. |
 | `button` | Um botão que aciona um evento imediato. Requer um modelo de front-end personalizado para definir o texto do botão e a ação. Veja um exemplo em `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean`. |
-| `obscure` | Um campo de texto com o valor criptografado e exibido como `**&#x200B;**`. A alteração do tipo usando &quot;Elemento Inspect&quot; no navegador não revela o valor. |
-| `password` | Como `obscure`, exceto que o valor oculto não é criptografado, e a alteração forçada do tipo usando &quot;Elemento Inspect&quot; no navegador revela o valor. |
+| `obscure` | Um campo de texto com o valor criptografado e exibido como `****`. A alteração do tipo usando &quot;Inspecionar elemento&quot; no navegador não revela o valor. |
+| `password` | Como `obscure`, exceto que o valor oculto não é criptografado, e a alteração forçada do tipo usando &quot;Inspecionar Elemento&quot; no navegador revela o valor. |
 | `file` | Permite que um arquivo seja carregado para processamento. |
 | `label` | Exibe um rótulo em vez de um campo editável. Use esse tipo quando um campo for editável somente em escopos específicos, por exemplo, somente nível de Exibição de Loja. |
 | `time` | Controle para definir a hora usando três menus suspensos: hora, minuto e segundo. |
@@ -282,7 +282,7 @@ Uma tag `<field>` pode ter os seguintes filhos:
 | `comment` | Adiciona um comentário abaixo do rótulo do campo. É possível aplicar o HTML `<![CDATA[//]]>`. | `string` |
 | `tooltip` | Outro elemento de front-end possível que pode ser usado para descrever o significado deste campo. Exibido como um pequeno ícone ao lado do campo. | `string` |
 | `hint` | Exibe informações adicionais. Disponível somente com o `frontend_model` específico. | `string` |
-| `frontend_class` | Adiciona uma classe CSS definida ao elemento de HTML da seção renderizada. | `string` |
+| `frontend_class` | Adiciona uma classe CSS definida ao elemento HTML da seção renderizada. | `string` |
 | `frontend_model` | Especifica um modelo de front-end diferente para alterar a renderização e modificar a saída. | `typeModel` |
 | `backend_model` | Especifica um modelo de back-end diferente para modificar os valores configurados. | `typeModel` |
 | `source_model` | Especifica um modelo de origem diferente que fornece um conjunto específico de valores. | `typeModel` |
@@ -393,7 +393,7 @@ As seguintes regras de validação estão disponíveis:
 | `phoneUS` | Permite um número de telefone (EUA). |
 | `required-entry` | Não permite um valor vazio (validação equivalente como `validate-no-empty`).<br>Mensagem de falha na validação: &quot;Este campo é obrigatório&quot;. |
 | `time` | Permite um horário válido no formato de 24 horas, entre 00:00 e 23:59. Por exemplo `15`, `15:05` ou `15:05:48`. |
-| `time12h` | Permite um horário válido no formato de 12 horas, entre 12h e 23h59min. :59: Por exemplo `3 am`, `11:30 pm`, `02:15:00 pm`. |
+| `time12h` | Permite um horário válido no formato de 12 horas, entre 12:00 e 23h59. :59: Por exemplo `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Permite 7 ou mais caracteres, usando numéricos e alfabéticos. |
 | `validate-alphanum-with-spaces` | Permite o uso de letras (a-z ou A-Z), números (0-9) ou espaços apenas. |
 | `validate-clean-url` | Permite um URL válido. Por exemplo, `https://www.example.com` ou `www.example.com`. |
@@ -404,7 +404,7 @@ As seguintes regras de validação estão disponíveis:
 | `validate-emailSender` | Permite um endereço de email válido. Por exemplo, johndoe@domain.com. |
 | `validate-fax` | Permite um número de fax válido. Por exemplo, 123-456-7890. |
 | `validate-no-empty` | Não permite um valor vazio (validação equivalente como `requried-entry`).<br>Mensagem de falha de validação: &quot;Valor vazio&quot;. |
-| `validate-no-html-tags` | Não permite o uso de tags HTML. |
+| `validate-no-html-tags` | Não permite o uso de tags do HTML. |
 | `validate-password` | Permite 6 ou mais caracteres. Espaços à esquerda e à direita serão ignorados. |
 | `validate-phoneLax` | Permite um número de telefone válido. Por exemplo, (123) 456-7890 ou 123-456-7890. |
 | `validate-phoneStrict` | Permite um número de telefone válido. Por exemplo, (123) 456-7890 ou 123-456-7890. |

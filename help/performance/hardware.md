@@ -1,5 +1,5 @@
 ---
-title: Recommendations de hardware
+title: Recomendações de hardware
 description: Revise uma lista de hardwares recomendados relacionados ao desempenho ideal das implantações do Adobe Commerce.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## CPUs
 
-[!DNL Commerce] nós da web atendem a todas as solicitações que não estão armazenadas em cache ou não podem ser armazenadas em cache por meio do aplicativo. Um núcleo de CPU pode atender cerca de duas (às vezes até quatro) [!DNL Commerce] solicitações efetivamente. Use a seguinte equação para determinar quantos nós/núcleos da Web você precisa processar todas as solicitações recebidas sem colocá-las em fila:
+[!DNL Commerce] nós da web atendem a todas as solicitações que não estão armazenadas em cache ou não podem ser armazenadas em cache por meio do aplicativo. Um núcleo do CPU pode atender a cerca de duas (às vezes até quatro) [!DNL Commerce] solicitações com eficiência. Use a seguinte equação para determinar quantos nós/núcleos da Web você precisa processar todas as solicitações recebidas sem colocá-las em fila:
 
 ```
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
@@ -26,7 +26,7 @@ Se você espera que a carga de uma loja mude, é possível aumentar manualmente 
 
 ### PHP
 
-O Magento tem diferentes requisitos de memória PHP, baseado em como seu sistema é implantado.  Em geral, se você está configurando uma única loja de servidor, recomendamos configurar a memória PHP para 2G.  Se você estiver configurando um site usando implantação de pipeline, recomendamos 2 GB no servidor de build e 1 GB nos nós da Web.
+O Magento tem diferentes requisitos de memória PHP, baseados em como seu sistema é implantado.  Em geral, se você está configurando uma única loja de servidor, recomendamos configurar a memória PHP para 2G.  Se você estiver configurando um site usando implantação de pipeline, recomendamos 2 GB no servidor de build e 1 GB nos nós da Web.
 
 Cenários e requisitos de memória do PHP esperados:
 

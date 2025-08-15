@@ -68,7 +68,7 @@ A tabela a seguir explica os parâmetros e valores desse comando.
 | `--no-less` | Não implante MENOS arquivos. | Não |
 | `--no-images` | Não implantar imagens. | Não |
 | `--no-fonts` | Não implantar arquivos de fonte. | Não |
-| `--no-html` | Não implante arquivos HTML. | Não |
+| `--no-html` | Não implante arquivos do HTML. | Não |
 | `--no-misc` | Não implante outros tipos de arquivos: MD, JBF, CSV, JSON, TXT, HTC, SWF | Não |
 | `--no-html-minify` | Não minifique arquivos HTML. | Não |
 | `-s <quick\|standard\|compact>` | Definir a estratégia de implantação. Use essas opções somente se você tiver mais de um local.<ul><li>Use a [estratégia rápida](static-view-file-strategy.md#quick-strategy) para minimizar o tempo de implantação. Esta é a opção de comando padrão, se não for especificada.</li><li>Use a [estratégia padrão](static-view-file-strategy.md#standard-strategy) para implantar todos os arquivos de exibição estáticos para todos os pacotes.</li><li>Use a [estratégia compacta](static-view-file-strategy.md#compact-strategy) para conservar o espaço em disco no servidor.</li></ul> | Não |
@@ -83,7 +83,7 @@ A tabela a seguir explica os parâmetros e valores desse comando.
 
 A seguir estão alguns exemplos de comandos.
 
-### Excluir um tema e minificação de HTML
+### Exclusão de um tema e minificação do HTML
 
 O comando a seguir implanta conteúdo estático para o idioma inglês dos EUA (`en_US`), exclui o tema Luma fornecido com o Commerce e não minifica arquivos HTML.
 

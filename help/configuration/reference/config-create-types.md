@@ -76,7 +76,7 @@ Para criar um tipo de configuração:
    </config>
    ```
 
-   - O primeiro nó de tipo define o nome de arquivo Reader, associado às classes `Converter` e `SchemaLocator`.
+   - O primeiro nó do tipo define o nome de arquivo do Reader, associado às classes `Converter` e `SchemaLocator`.
    - Em seguida, o nó do tipo virtual `pdfConfigDataStorage` anexa a classe de leitor a uma instância de [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
    - E finalmente, o último nó de tipo anexa esse tipo de dados virtual de configuração à classe [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php), que é usada para, na verdade, ler valores nesses arquivos [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml).
 
@@ -115,7 +115,7 @@ class Reader extends Filesystem
 
 >[!INFO]
 >
->Se preferir criar sua própria versão do leitor, você pode fazer isso implementando o `\Magento\Framework\Config\ReaderInterface`. Consulte o [leitor de configuração de Magento_Analytics](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
+>Se preferir criar sua própria versão do leitor, você pode fazer isso implementando o `\Magento\Framework\Config\ReaderInterface`. Consulte [leitor de configuração do Magento_Analytics](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
 Após definir seu leitor, use-o para coletar, mesclar, validar e converter os arquivos de configuração em uma representação interna de matriz.
 

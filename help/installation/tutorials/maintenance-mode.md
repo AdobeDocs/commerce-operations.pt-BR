@@ -4,7 +4,7 @@ description: Siga estas etapas para personalizar o que os clientes veem quando a
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
 source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Por exemplo, para ativar o modo de manutenção sem isenções de endereço IP:
 bin/magento maintenance:enable
 ```
 
-Para ativar o modo de manutenção para todos os clientes, exceto 192.0.2.10 e 192.0.2.11:
+Para habilitar o modo de manutenção para todos os clientes, exceto 192.0.2.10 e 192.0.2.11:
 
 ```bash
 bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
@@ -86,7 +86,7 @@ Se quiser configurar vários armazenamentos, cada um com um layout diferente e c
 
 No exemplo a seguir, estamos usando um arquivo de modelo de erro do tipo `503`, que requer conteúdo localizado.
 
-O construtor da classe `Error_Processor` aceita um parâmetro de GET `skin` para alterar o layout:
+O construtor da classe `Error_Processor` aceita um parâmetro GET `skin` para alterar o layout:
 
 ```php
 if (isset($_GET['skin'])) {

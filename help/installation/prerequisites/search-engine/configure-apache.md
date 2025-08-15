@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->O suporte ao OpenSearch foi adicionado na versão 2.4.4. O OpenSearch é uma bifurcação de Elasticsearch compatível. Consulte [Migrar Elasticsearch para OpenSearch](../../../upgrade/prepare/opensearch-migration.md) para obter mais informações.
+>O suporte ao OpenSearch foi adicionado na versão 2.4.4. O OpenSearch é uma bifurcação compatível do Elasticsearch. Consulte [Migrar Elasticsearch para OpenSearch](../../../upgrade/prepare/opensearch-migration.md) para obter mais informações.
 
 Esta seção discute como configurar o Apache como um proxy *não seguro* para que o Adobe Commerce possa usar um mecanismo de pesquisa em execução neste servidor. Esta seção não discute a configuração da autenticação básica de HTTP; ela é discutida em [Comunicação segura com o Apache](#secure-communication-with-apache).
 
@@ -64,7 +64,7 @@ Esta seção discute como configurar um proxy usando um host virtual.
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
-   Por exemplo, se você estiver usando Elasticsearch e seu proxy usar a porta 8080:
+   Por exemplo, se você estiver usando o Elasticsearch e seu proxy usar a porta 8080:
 
    ```bash
    curl -i http://localhost:8080/_cluster/health
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Comunicação segura com o Apache
 
-Esta seção discute como configurar a [autenticação básica de HTTP](https://httpd.apache.org/docs/2.2/howto/auth.html). O uso conjunto da autenticação TLS e HTTP Básica impede que qualquer pessoa intercepte a comunicação com o Elasticsearch ou OpenSearch ou com o servidor de aplicativos.
+Esta seção discute como configurar a [autenticação básica de HTTP](https://httpd.apache.org/docs/2.2/howto/auth.html). O uso conjunto da autenticação TLS e HTTP Básica impede que qualquer pessoa intercepte comunicações com o Elasticsearch, OpenSearch ou com o servidor de aplicativos.
 
 Esta seção discute como especificar quem pode acessar o servidor Apache.
 

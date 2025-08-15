@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ backend default {
 
 ## Verificar cabeçalhos de resposta HTTP
 
-Agora é possível verificar se o Verniz está servindo páginas observando os cabeçalhos de resposta de HTML retornados de qualquer página.
+Agora é possível verificar se o Verniz está oferecendo páginas observando os cabeçalhos de resposta do HTML retornados de qualquer página.
 
 Antes de visualizar os cabeçalhos, é necessário definir o Commerce para o modo de desenvolvedor. Há várias maneiras de fazer isso, a mais simples delas é modificar `.htaccess` na raiz do aplicativo Commerce. Você também pode usar o comando [`magento deploy:mode:set`](../cli/set-mode.md).
 
@@ -234,7 +234,7 @@ Uma longa lista de cabeçalhos de resposta é exibida na janela da tela de coman
 
 Se cabeçalhos como estes _não_ forem exibidos, pare de Verniz, verifique seu `default.vcl` e tente novamente.
 
-### Observar cabeçalhos de resposta de HTML
+### Observar cabeçalhos de resposta do HTML
 
 Há várias maneiras de visualizar cabeçalhos de resposta, incluindo o uso de um plug-in de navegador ou um inspetor de navegador.
 

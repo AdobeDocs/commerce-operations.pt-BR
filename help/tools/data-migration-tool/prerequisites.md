@@ -16,15 +16,15 @@ Antes de iniciar a migração, verifique se os seguintes requisitos foram atendi
 
 ## sistema Magento 2
 
-* Configure seu sistema Magento 2 para atender aos [requisitos do sistema](../../installation/system-requirements.md).
+* Configure seu sistema Magento 2 para que ele atenda aos [requisitos de sistema](../../installation/system-requirements.md).
 
   Use uma topologia e um design que correspondam pelo menos ao seu sistema Magento 1 existente.
 
-* [Instalar Magento 2](../../installation/overview.md).
+* [Instalar o Magento 2](../../installation/overview.md).
 
 ## Cron
 
-Não inicie os trabalhos de cron do Magento 2.
+Não inicie trabalhos cron do Magento 2.
 
 ## Banco de dados
 
@@ -34,16 +34,16 @@ Não inicie os trabalhos de cron do Magento 2.
 
   Abra portas no firewall para que a Ferramenta de Migração possa se comunicar com os bancos de dados.
 
-* Certifique-se de que suas contas MySQL tenham todos os privilégios necessários para acessar bancos de dados Magento.
+* Verifique se suas contas do MySQL têm todos os privilégios necessários para acessar os bancos de dados do Magento.
 
-Se o Log Binário estiver habilitado para o banco de dados Magento 1, defina a variável de sistema global [`log_bin_trust_function_creators`](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) MySQL como `1` ou conceda o [privilégio SUPER](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) à sua conta.
+Se o Log Binário estiver habilitado para seu banco de dados Magento 1, defina a variável de sistema global [`log_bin_trust_function_creators`](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_log_bin_trust_function_creators) MySQL como `1` ou conceda o [privilégio SUPER](https://dev.mysql.com/doc/refman/5.7/en/privileges-provided.html#priv_super) à sua conta.
 
-* Não recomendamos a criação de novas entidades (produtos, categorias e atributos) no armazenamento do Magento 2 antes da migração, pois o [!DNL Data Migration Tool] substitui essas novas entidades pelas antigas do Magento 1.
+* Não recomendamos criar novas entidades (produtos, categorias e atributos) no armazenamento do Magento 2 antes da migração, pois o [!DNL Data Migration Tool] substitui essas novas entidades pelas entidades antigas do Magento 1.
 
 ## Extensões
 
-Migre o código de extensão do Magento 1 para o Magento 2.
+Migrar o código de extensão do Magento 1 para o Magento 2.
 
-Para encontrar as versões mais recentes das extensões, visite [[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/) ou contate seu provedor de extensões.
+Para encontrar as versões mais recentes das extensões, visite [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) ou contate seu provedor de extensões.
 
-Você também pode usar o [[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).
+Você também pode usar o [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).

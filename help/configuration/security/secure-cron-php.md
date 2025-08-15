@@ -259,7 +259,7 @@ Você pode executar o cron a qualquer momento, como durante o desenvolvimento, u
 Se você estiver usando um servidor Web Apache, remova a restrição do arquivo `.htaccess` antes de executar o cron em um navegador:
 
 1. Faça logon no servidor do Commerce como um usuário com permissões para gravar no sistema de arquivos do Commerce.
-1. Abra qualquer um dos itens a seguir em um editor de texto (dependendo do ponto de entrada para Magento):
+1. Abra qualquer um dos seguintes em um editor de texto (dependendo do seu ponto de entrada para o Magento):
 
    ```text
    <magento_root>/pub/.htaccess

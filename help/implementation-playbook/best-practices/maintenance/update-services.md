@@ -23,13 +23,13 @@ Adobe Commerce na infraestrutura em nuvem 2.4.x e posterior
 
 Atualize os serviços e componentes usados pelo Adobe Commerce antes de atingirem ou estarem próximos da data de término da vida útil. Isso ajuda a manter a conformidade com o PCI e a diminuir as vulnerabilidades de segurança.
 
-Os clientes com planos iniciais podem realizar ações de autoatendimento em atualizações de serviços. Consulte [Alterar versão do serviço](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) para obter detalhes sobre como fazer isso.
+Os clientes com planos iniciais podem realizar ações de autoatendimento em atualizações de serviços. Consulte [Alterar versão do serviço](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) para obter detalhes sobre como fazer isso.
 
-Os clientes com planos Pro só podem realizar autoatendimento em atualizações de serviços em seu [ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=pt-BR). Para atualizações de serviços em Produção, você deve [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) solicitando a atualização.
+Os clientes com planos Pro só podem realizar autoatendimento em atualizações de serviços em seu [ambiente de integração](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Para atualizações de serviços em Produção, você deve [enviar um tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando a atualização.
 
 >[!WARNING]
 >
->As atualizações de serviço não podem ser enviadas para um ambiente de produção sem aviso prévio de 48 horas úteis para a equipe de infraestrutura do Adobe. Isso é necessário para que o Adobe possa garantir que um engenheiro de suporte de infraestrutura esteja disponível para atualizar sua configuração dentro de um período de tempo desejado com tempo de inatividade mínimo para o ambiente de produção. A Adobe recomenda colocar seu site no modo de manutenção durante a atualização do serviço.
+>As atualizações de serviço não podem ser enviadas para um ambiente de produção sem aviso prévio de 48 horas úteis para a equipe de infraestrutura da Adobe. Isso é necessário para que a Adobe possa garantir que um engenheiro de suporte de infraestrutura esteja disponível para atualizar sua configuração dentro de um período de tempo desejado com tempo de inatividade mínimo para o ambiente de produção. A Adobe recomenda colocar seu site no modo de manutenção durante a atualização do serviço.
 
 Você pode exibir a lista de versões de serviço e datas de fim de vida útil no seguinte arquivo: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 

@@ -19,7 +19,7 @@ Para executar o aplicativo Commerce, as seguintes ações são implementadas em 
 - Criar uma instância do aplicativo Commerce: [\Magento\Framework\AppInterface][app-face]
 - Executar o Commerce
 
-## Lógica de execução de Bootstrap
+## Lógica de execução do Bootstrap
 
 [O objeto de inicialização][bootinitial] usa o seguinte algoritmo para executar o aplicativo Commerce:
 

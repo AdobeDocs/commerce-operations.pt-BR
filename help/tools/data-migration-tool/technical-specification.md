@@ -20,7 +20,7 @@ Para acessar o código-fonte [!DNL Data Migration Tool], consulte o [repositóri
 
 ## Requisitos do sistema
 
-Os [requisitos de sistema](../../installation/system-requirements.md) para [!DNL Data Migration Tool] são os mesmos da Magento 2.
+Os [requisitos de sistema](../../installation/system-requirements.md) para o [!DNL Data Migration Tool] são os mesmos do Magento 2.
 
 ## Estrutura interna
 
@@ -171,7 +171,7 @@ Os dados de configuração estão acessíveis com a classe `\Migration\Config`.
 | Documento | Campo |
 |---|---|
 | `step` | Nó de segundo nível dentro do nó Etapas. A descrição da etapa relevante deve ser especificada no atributo `title`. |
-| `integrity` | Especifica a classe PHP responsável pela verificação de integridade. Compara os nomes de campos, tipos e outras informações da tabela para verificar a compatibilidade entre as estruturas de dados Magento 1 e 2. |
+| `integrity` | Especifica a classe PHP responsável pela verificação de integridade. Compara os nomes de campo da tabela, tipos e outras informações para verificar a compatibilidade entre as estruturas de dados do Magento 1 e do 2. |
 | `data` | Especifica a classe PHP responsável pela verificação de dados. Transfere os dados, tabela por tabela, do Magento 1 para o Magento 2. |
 | `volume` | Especifica a classe PHP responsável pela verificação de volume. Compara o número de registros entre tabelas para verificar se a transferência foi bem-sucedida. |
 | `delta` | Especifica a classe PHP responsável pela verificação delta. Transfere o delta do Magento 1 para o Magento 2 após a migração completa de dados. |
@@ -194,10 +194,10 @@ Os dados de configuração estão acessíveis com a classe `\Migration\Config`.
 | Documento | Campo | Obrigatório? |
 |---|---|---|
 | `name` | Nome do banco de dados do servidor Magento 2. | sim |
-| `host` | Endereço IP do host do servidor Magento 2. | sim |
+| `host` | Endereço IP do host do servidor do Magento 2. | sim |
 | `port` | Número da porta do servidor Magento 2. | não |
 | `user` | Nome de usuário do servidor de banco de dados Magento 2. | sim |
-| `password` | Senha do servidor de banco de dados Magento 2. | sim |
+| `password` | Senha do servidor de banco de dados do Magento 2. | sim |
 | `ssl_ca` | Caminho para o arquivo da Autoridade de certificação SSL. | não |
 | `ssl_cert` | Caminho para o arquivo de certificado SSL. | não |
 | `ssl_key` | Caminho para o arquivo da chave SSL. | não |
@@ -279,7 +279,7 @@ $this->progress->finish();
 
 ### Verificação de integridade
 
-Cada etapa deve verificar se a estrutura da fonte de dados (Magento 1 por padrão) e a estrutura do destino de dados (Magento 2) são compatíveis. Caso contrário, um erro será exibido com entidades incompatíveis. Caso os campos tenham tipos de dados diferentes (o mesmo campo tem tipo de dados decimal em Magento 1 e inteiro em Magento 2), uma mensagem de aviso é exibida (exceto quando foi abordado no Arquivo de mapa ).
+Cada etapa deve verificar se a estrutura da fonte de dados (Magento 1 por padrão) e a estrutura do destino de dados (Magento 2) são compatíveis. Caso contrário, um erro será exibido com entidades incompatíveis. Caso os campos tenham tipos de dados diferentes (o mesmo campo tem tipo de dados decimal no Magento 1 e inteiro no Magento 2), uma mensagem de aviso é exibida (exceto quando ela foi abordada no Arquivo de mapa).
 
 ### Transferência de dados
 
@@ -339,11 +339,11 @@ No nó `<value>`, há regras que funcionam com a coluna &#39;value&#39; na tabel
 
 ### Modo de migração de dados
 
-Nesse modo, a maioria dos dados é migrada. Antes da migração de dados, os estágios de verificação de integridade são executados para cada etapa. Se a verificação de integridade for aprovada, o [!DNL Data Migration Tool] instalará tabelas deltalog (com prefixo `m2_cl_*`) e gatilhos correspondentes para o banco de dados Magento 1 e executará o estágio de migração de dados das etapas. Quando a migração for concluída sem erros, a verificação de volume verificará a consistência dos dados. Ele pode mostrar uma mensagem de aviso se você migrar a loja em tempo real. Não se preocupe, a migração delta cuida desses dados incrementais. As etapas de migração mais valiosas são Mapa, Reescrita de URL e EAV.
+Nesse modo, a maioria dos dados é migrada. Antes da migração de dados, os estágios de verificação de integridade são executados para cada etapa. Se a verificação de integridade for bem-sucedida, o [!DNL Data Migration Tool] instalará tabelas deltalog (com prefixo `m2_cl_*`) e gatilhos correspondentes ao banco de dados Magento 1 e executará o estágio de migração de dados das etapas. Quando a migração for concluída sem erros, a verificação de volume verificará a consistência dos dados. Ele pode mostrar uma mensagem de aviso se você migrar a loja em tempo real. Não se preocupe, a migração delta cuida desses dados incrementais. As etapas de migração mais valiosas são Mapa, Reescrita de URL e EAV.
 
 #### Etapa do mapa
 
-A etapa do mapa é responsável pela transferência da maioria dos dados do Magento 1 para o Magento 2. Esta etapa lê as instruções do arquivo map.xml (localizado no diretório `etc/`). O arquivo descreve as diferenças entre as estruturas de dados de origem (Magento 1) e destino (Magento 2). Se o Magento 1 contiver tabelas ou campos que pertençam a alguma extensão que não exista no Magento 2, essas entidades poderão ser colocadas aqui para ignorá-las pela Etapa do mapa. Caso contrário, exibirá uma mensagem de erro.
+A etapa de mapa é responsável pela transferência da maioria dos dados do Magento 1 para o Magento 2. Esta etapa lê as instruções do arquivo map.xml (localizado no diretório `etc/`). O arquivo descreve as diferenças entre as estruturas de dados de origem (Magento 1) e destino (Magento 2). Se o Magento 1 contiver tabelas ou campos que pertençam a alguma extensão que não exista no Magento 2, essas entidades poderão ser colocadas aqui para ignorá-las por Etapa do mapa. Caso contrário, exibirá uma mensagem de erro.
 
 O arquivo de mapa tem o formato seguinte:
 
@@ -435,7 +435,7 @@ Para ignorar documentos com partes semelhantes (`document_name_1`, `document_nam
 
 #### Etapa de regravação de URL
 
-Esta etapa é complexa porque existem vários algoritmos diferentes desenvolvidos no Magento 1 que não são compatíveis com o Magento 2. Para versões diferentes do Magento 1, pode haver algoritmos diferentes. Assim, na pasta Step/UrlRewrite, há classes que foram desenvolvidas para algumas versões específicas do Magento e Migration\Step\UrlRewrite\Version191to2000 é uma delas. Ele pode transferir dados de regravação de URL do Magento 1.9.1 para o Magento 2.
+Essa etapa é complexa porque há vários algoritmos diferentes desenvolvidos no Magento 1 que não são compatíveis com o Magento 2. Para diferentes versões do Magento 1, pode haver diferentes algoritmos. Assim, na pasta Step/UrlRewrite, há classes que foram desenvolvidas para algumas versões específicas do Magento e Migration\Step\UrlRewrite\Version191to2000 é uma delas. Ele pode transferir dados de regravação de URL do Magento 1.9.1 para o Magento 2.
 
 #### Etapa EAV
 
@@ -453,11 +453,11 @@ Algumas das tabelas que são processadas na etapa:
 
 ### Modo de migração delta
 
-Após a migração principal, dados adicionais poderiam ter sido adicionados ao banco de dados Magento 1 (por exemplo, por clientes na loja). Para rastrear esses dados, a ferramenta configura os acionadores de banco de dados para tabelas no início do processo de migração. Para obter mais informações, consulte [Migrar dados criados por extensões de terceiros](migrate-data/delta.md#migrate-data-created-by-third-party-extensions).
+Após a migração principal, dados adicionais poderiam ter sido adicionados ao banco de dados do Magento 1 (por exemplo, por clientes na loja). Para rastrear esses dados, a ferramenta configura os acionadores de banco de dados para tabelas no início do processo de migração. Para obter mais informações, consulte [Migrar dados criados por extensões de terceiros](migrate-data/delta.md#migrate-data-created-by-third-party-extensions).
 
 ## Fontes de dados
 
-Para acessar as fontes de dados de Magento 1 e Magento 2 e operar com seus dados (selecionar, atualizar, inserir, excluir) há muitas classes na pasta Recursos. Migration\ResourceModel\Source e Migration\ResourceModel\Destination são classes principais. Todas as etapas de migração o usam para operar com dados. Esses dados estão contidos em classes como Migration\ResourceModel\Document, Migration\ResourceModel\Record, Migration\ResourceModel\Structure, etc.
+Para acessar as fontes de dados do Magento 1 e do Magento 2 e operar com seus dados (selecionar, atualizar, inserir, excluir) há muitas classes na pasta Recursos. Migration\ResourceModel\Source e Migration\ResourceModel\Destination são classes principais. Todas as etapas de migração o usam para operar com dados. Esses dados estão contidos em classes como Migration\ResourceModel\Document, Migration\ResourceModel\Record, Migration\ResourceModel\Structure, etc.
 
 Este é um diagrama de classes dessas classes:
 
@@ -465,7 +465,7 @@ Este é um diagrama de classes dessas classes:
 
 ## Logs
 
-Para implementar a saída do processo de migração e controlar todos os níveis possíveis PSR logger, que é usado em Magento, é aplicado. A classe `\Migration\Logger\Logger` foi implementada para fornecer funcionalidade de log. Para usar o agente de log, você deve inseri-lo por meio da injeção de dependência do construtor.
+Para implementar a saída do processo de migração e controlar todos os níveis possíveis, o PSR logger, que é usado no Magento, é aplicado. A classe `\Migration\Logger\Logger` foi implementada para fornecer funcionalidade de log. Para usar o agente de log, você deve inseri-lo por meio da injeção de dependência do construtor.
 
 ```php
 class SomeClass
@@ -496,7 +496,7 @@ Há uma possibilidade de personalizar onde as informações de log devem ser gra
 
 * FileHandler: grava mensagens no arquivo de log que foi definido na opção de configuração &quot;log_file&quot;
 
-Também é possível implementar qualquer manipulador adicional. Há um conjunto de manipuladores na estrutura Magento. Exemplo de adição de manipuladores ao agente de log:
+Também é possível implementar qualquer manipulador adicional. Há um conjunto de manipuladores na estrutura do Magento. Exemplo de adição de manipuladores ao agente de log:
 
 ```php
 // $this->consoleHandler is the object of Migration\Logger\ConsoleHandler class

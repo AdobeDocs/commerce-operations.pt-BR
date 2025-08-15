@@ -15,7 +15,7 @@ ht-degree: 0%
 Antes de usar esse comando, é necessário fazer o seguinte:
 
 - [Criar a configuração de implantação](deployment.md)
-- [Habilite no mínimo os módulos Magento_Authorization e Magento_User](manage-modules.md)
+- [Ative, no mínimo, os módulos Magento_Authorization e Magento_User](manage-modules.md)
 - Criar o esquema de banco de dados
 
 >[!NOTE]

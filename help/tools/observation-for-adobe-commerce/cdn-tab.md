@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # A guia [!UICONTROL CDN]
 
-Esta guia tem informações com foco no [!DNL content delivery network (CDN)]. No caso do Adobe Commerce Cloud, esse é o serviço [!DNL Fastly].
+Esta guia tem informações com foco no [!DNL content delivery network (CDN)]. No caso da Adobe Commerce Cloud, esse é o serviço [!DNL Fastly].
 
 ## [!UICONTROL HIT rate]
 

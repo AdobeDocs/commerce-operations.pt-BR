@@ -122,7 +122,7 @@ Consulte os seguintes diagramas:
 
 ![Diagrama Bisect](../../../assets/playbooks/bisect2.png)
 
-Há várias abordagens para a divisão, mas o Adobe recomenda seguir esta ordem:
+Há várias abordagens para divisão, mas a Adobe recomenda seguir esta ordem:
 
 - Bissecto por tópico
 - Bisect por confirmações

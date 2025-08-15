@@ -34,9 +34,9 @@ O quadro **[!UICONTROL PHP Memory detail]** mostra o uso de memória de processo
 
 ## [!UICONTROL PHP CPU Utilization]
 
-![Utilização de CPU do PHP](../../assets/tools/php-cpu-utilization.jpg)
+![Utilização do PHP no CPU](../../assets/tools/php-cpu-utilization.jpg)
 
-O quadro **[!UICONTROL PHP CPU Utilization]** mostra a utilização percentual da CPU de processos PHP durante o período selecionado.
+O quadro **[!UICONTROL PHP CPU Utilization]** mostra a utilização percentual de CPU dos processos PHP durante o período selecionado.
 
 ## [!UICONTROL PHP Process states]
 

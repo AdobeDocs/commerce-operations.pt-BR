@@ -15,7 +15,7 @@ Com a criação de perfil do Commerce, você pode:
 
 - Ative um profiler integrado.
 
-  Você pode usar um profiler integrado com o Commerce para executar tarefas como analisar o desempenho. A natureza da criação de perfil depende das ferramentas analíticas que você usa. Oferecemos suporte para múltiplos formatos, inclusive o HTML. Quando você habilita o profiler, um arquivo `var/profiler.flag` é gerado indicando que o profiler está habilitado e as configurações. Quando desativado, este arquivo é excluído.
+  Você pode usar um profiler integrado com o Commerce para executar tarefas como analisar o desempenho. A natureza da criação de perfil depende das ferramentas analíticas que você usa. Oferecemos suporte para vários formatos, incluindo o HTML. Quando você habilita o profiler, um arquivo `var/profiler.flag` é gerado indicando que o profiler está habilitado e as configurações. Quando desativado, este arquivo é excluído.
 
 - Exiba gráficos de dependência em uma página do Commerce.
 

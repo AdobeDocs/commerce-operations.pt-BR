@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Visão geral do mecanismo de pesquisa
 
-A partir da versão 2.4.4, o Adobe Commerce exige que [Elasticsearch] ou [OpenSearch] seja o mecanismo de pesquisa do catálogo. As versões anteriores da 2.4.x exigiam o Elasticsearch. Consulte os seguintes tópicos para obter detalhes sobre a instalação de um mecanismo de pesquisa e a configuração inicial:
+A partir da versão 2.4.4, o Adobe Commerce exige que o [Elasticsearch] ou o [OpenSearch] seja o mecanismo de pesquisa do catálogo. As versões anteriores da 2.4.x exigiam o Elasticsearch. Consulte os seguintes tópicos para obter detalhes sobre a instalação de um mecanismo de pesquisa e a configuração inicial:
 
 - [Pré-requisitos do mecanismo de pesquisa](../../installation/prerequisites/search-engine/overview.md)
 - [Configurar o nginx para seu mecanismo de pesquisa](../../installation/prerequisites/search-engine/configure-nginx.md)

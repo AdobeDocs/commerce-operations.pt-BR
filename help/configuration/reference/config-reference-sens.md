@@ -143,16 +143,16 @@ Estes valores de configuração estão disponíveis no Administrador em **Lojas*
 | Nome de usuário do servidor Solr | `catalog/search/solr_server_username` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Senha do servidor Solr | `catalog/search/solr_server_password` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Caminho do servidor Solr | `catalog/search/solr_server_path` | ![Somente Commerce](/help/assets/configuration/cloud-ee.png) | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
-| Nome de host do servidor Elasticsearch | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
-| Porta do servidor Elasticsearch | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
-| Prefixo de índice Elasticsearch | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
-| Habilitar autenticação HTTP do Elasticsearch | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
+| Hostname do servidor Elasticsearch | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
+| Porta do servidor do Elasticsearch | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
+| Prefixo do índice Elasticsearch | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
+| Ativar autenticação HTTP do Elasticsearch | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
 | Nome de usuário HTTP do Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
 | Senha HTTP do Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
-| Tempo limite do servidor Elasticsearch | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
+| Tempo limite do servidor do Elasticsearch | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
 | Nome de usuário HTTP do Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
 | Senha HTTP do Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
-| Tempo limite do servidor Elasticsearch | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
+| Tempo limite do servidor do Elasticsearch | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) |
 | Hostname do OpenSearch Server | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Porta do OpenSearch Server | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Prefixo de Índice OpenSearch | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico ao sistema](/help/assets/configuration/cloud-env.png) | ![Sensível](/help/assets/configuration/cloud-sens.png) |
@@ -464,7 +464,7 @@ Esta seção lista nomes de variáveis e caminhos de configuração disponíveis
 
 {style="table-layout:auto"}
 
-### caminhos sensíveis ao Braintree e específicos do sistema
+### Caminhos sensíveis ao Braintree e específicos do sistema
 
 | Nome | Caminho de configuração | Somente Commerce? | Criptografado? | Específico do sistema? | Sensível? |
 |--------------|--------------|--------------|--------------|--------------|--------------|

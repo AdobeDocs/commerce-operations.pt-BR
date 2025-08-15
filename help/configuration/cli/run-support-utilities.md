@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Os utilitários de Suporte da Adobe Commerce, também conhecidos como [Coletor de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/support#data-collector), permitem que os usuários coletem informações de solução de problemas do seu sistema, que podem ser usadas pela nossa equipe de suporte.
+Os utilitários de Suporte da Adobe Commerce, também conhecidos como [Coletor de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector), permitem que os usuários coletem informações de solução de problemas do seu sistema, que podem ser usadas pela nossa equipe de suporte.
 
 O Adobe Commerce usa esses backups, também chamados de _despejos_, para analisar problemas que exigem acesso ao seu código. Um cenário típico é o seguinte:
 

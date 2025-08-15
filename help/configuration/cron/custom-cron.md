@@ -21,5 +21,5 @@ O aplicativo Commerce fornece os seguintes grupos cron:
 - `index`, que atualiza [indexadores](../cli/manage-indexers.md)
 - `consumers`, que executa os [consumidores](../cli/start-message-queues.md) da fila de mensagens
 - Estes tópicos estão disponíveis somente no Adobe Commerce
-   - `staging`, que executa tarefas [relacionadas a preparo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/staging/content-staging)
+   - `staging`, que executa tarefas [relacionadas a preparo](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)
    - `catalog_event`, que executa tarefas para regras de carrinho de compras e destino

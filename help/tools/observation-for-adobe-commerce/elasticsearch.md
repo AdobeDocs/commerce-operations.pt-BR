@@ -50,19 +50,19 @@ O quadro **[!UICONTROL Elasticsearch Status by node information]** mostra o stat
 
 ## [!UICONTROL Elasticsearch index information]
 
-![informações sobre o índice Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
+![Informações sobre o índice Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 A tabela **[!UICONTROL Elasticsearch index information]** mostra o nome do índice, em que nó ele está, o número de documentos indexados, a integridade do índice e o tamanho do índice em MB em um determinado momento.
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
-![Elasticsearch processar CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
+![Elasticsearch processa CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-O quadro **[!UICONTROL Elasticsearch process CPU %]** mostra o percentual de CPU do processo pelo processo [!DNL Elasticsearch] durante o período selecionado.
+O quadro **[!UICONTROL Elasticsearch process CPU %]** mostra a porcentagem de CPU do processo [!DNL Elasticsearch] durante o período selecionado.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 
-![Lixo de memória de Elasticsearch](../../assets/tools/elasticsearch-memory-garbage.jpg)
+![Lixo de memória do Elasticsearch](../../assets/tools/elasticsearch-memory-garbage.jpg)
 
 [!DNL Elasticsearch] é um processo Java. Se a memória alocada for insuficiente, ele iniciará a coleta de lixo para liberar memória. Se a coleta de lixo for frequente, isso indica que pode haver muitos índices ou fragmentos para a memória alocada. Pode haver uma oportunidade de limpar os índices e fragmentos ou [!DNL Elasticsearch] pode precisar de mais memória.
 
@@ -74,18 +74,18 @@ O quadro **[!UICONTROL Elasticsearch process CPU %]** mostra o percentual de CPU
 
 ## [!UICONTROL Elasticsearch Index Size]
 
-![Tamanho do índice de Elasticsearch](../../assets/tools/elasticsearch-index-size.jpg)
+![Tamanho do Índice Elasticsearch](../../assets/tools/elasticsearch-index-size.jpg)
 
 O quadro **[!UICONTROL Elasticsearch Index Size]** indica o nome e o tamanho do índice no período selecionado. Isso pode indicar problemas com a forma como um site está indexando.
 
 ## [!UICONTROL Elasticsearch Errors]
 
-![Erros de Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
+![Erros do Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
 O quadro **[!UICONTROL Elasticsearch Errors]** exibe erros com [!DNL Elasticsearch], como falta de espaço, alternando do status Amarelo para Vermelho, quando todos os fragmentos falham, quando há problemas de parâmetro com pesquisas, erros de versão e quando todos os nós estão indisponíveis.
 
 ## [!UICONTROL Elasticsearch Unassigned Shards]:
 
-![Compartilhamentos não atribuídos do Elasticsearch](../../assets/tools/elasticsearch-unassigned-shards.jpg)
+![Compartilhamentos não atribuídos da Elasticsearch](../../assets/tools/elasticsearch-unassigned-shards.jpg)
 
 Fragmentos não atribuídos farão com que um cluster mude do status Verde para o status Amarelo.

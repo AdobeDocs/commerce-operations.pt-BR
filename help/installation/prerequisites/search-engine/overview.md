@@ -16,7 +16,7 @@ A partir do Adobe Commerce 2.4, todas as instalações devem ser configuradas pa
 
 >[!NOTE]
 >
->O suporte ao OpenSearch foi adicionado na versão 2.4.4. O OpenSearch é uma bifurcação de Elasticsearch compatível. Todas as instruções para configurar o Elasticsearch 7 se aplicam ao OpenSearch. [Migrar do Elasticsearch para OpenSearch](../../../upgrade/prepare/opensearch-migration.md) fornece orientação sobre como alternar para OpenSearch.
+>O suporte ao OpenSearch foi adicionado na versão 2.4.4. O OpenSearch é uma bifurcação compatível do Elasticsearch. Todas as instruções para configurar o Elasticsearch 7 se aplicam ao OpenSearch. [Migrar do Elasticsearch para OpenSearch](../../../upgrade/prepare/opensearch-migration.md) fornece orientação sobre como alternar para OpenSearch.
 
 ## Versões compatíveis
 
@@ -41,7 +41,7 @@ O diagrama anterior mostra:
 
 * O aplicativo Commerce e o mecanismo de pesquisa são instalados em hosts diferentes.
 
-  A execução em hosts separados requer proxy para funcionar. (A organização por clusters do mecanismo de pesquisa está fora do escopo deste guia, mas você pode encontrar mais informações na [documentação sobre organização por clusters de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  A execução em hosts separados requer proxy para funcionar. (A organização por clusters do mecanismo de pesquisa está fora do escopo deste guia, mas você pode encontrar mais informações na [documentação sobre organização por clusters do Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * Cada host tem seu próprio servidor da Web; os servidores da Web não precisam ser iguais.
 
@@ -63,7 +63,7 @@ As solicitações de pesquisa são processadas da seguinte maneira:
 
 1. O mecanismo de pesquisa processa a solicitação.
 
-1. A comunicação retorna ao longo da mesma rota, com o servidor Web Elasticsearch agindo como um proxy reverso seguro.
+1. A comunicação retorna ao longo da mesma rota, com o servidor Web do Elasticsearch agindo como um proxy reverso seguro.
 
 ## Pré-requisitos
 
@@ -72,7 +72,7 @@ As tarefas discutidas nesta seção exigem o seguinte:
 * [Firewall e SELinux](#firewall-and-selinux)
 * [Instalar o Java Software Development Kit (JDK)](#install-the-java-software-development-kit)
 * [Instalar o mecanismo de pesquisa](#install-the-search-engine)
-* [Atualizando o Elasticsearch](#upgrading-elasticsearch)
+* [Atualização do Elasticsearch](#upgrading-elasticsearch)
 
 ### Firewall e SELinux
 
@@ -95,7 +95,7 @@ Para determinar se o Java já está instalado, digite o seguinte comando:
 java -version
 ```
 
-Se a mensagem `java: command not found` for exibida, você deverá instalar o SDK do Java, conforme discutido na próxima seção.
+Se a mensagem `java: command not found` for exibida, você deverá instalar o Java SDK conforme discutido na próxima seção.
 
 Consulte uma das seguintes seções:
 
@@ -128,11 +128,11 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-Para outras opções, consulte [documentação do Oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+Para outras opções, consulte a [documentação do Oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
 
 ### Instalar o mecanismo de pesquisa
 
-Siga [Instalando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) ou [Instalar e configurar o OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) para as etapas específicas da sua plataforma.
+Siga [Instalando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) ou [Instalando e configurando o OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) para as etapas específicas da sua plataforma.
 
 Para verificar se o Elasticsearch está funcionando, digite o seguinte comando no servidor em que ele está sendo executado:
 
@@ -157,7 +157,7 @@ curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 
-## Atualizando o Elasticsearch
+## Atualização do Elasticsearch
 
 Consulte [Atualizando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obter instruções completas sobre como fazer backup de seus dados, detectar possíveis problemas de migração e testar atualizações antes de implantar na produção. Dependendo da sua versão atual do Elasticsearch, uma reinicialização completa do cluster pode ou não ser necessária.
 

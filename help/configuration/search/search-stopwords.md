@@ -18,7 +18,7 @@ Embora tenhamos mais armazenamento hoje, o desempenho ainda é importante. O Ela
 
 Você deve gerenciar suas palavras irrelevantes usando arquivos CSV localizados no diretório `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` ou no diretório `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`, dependendo de como você instalou o software Commerce.
 
-Para obter mais informações sobre como o Elasticsearch e o OpenSearch usam palavras de interrupção, consulte os seguintes recursos:
+Para obter mais informações sobre como o Elasticsearch e o OpenSearch usam palavras irrelevantes, consulte os seguintes recursos:
 
 - [Palavras de Interrupção: Desempenho Versus Precisão](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
 - [Vantagens e desvantagens das palavras de interrupção](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
@@ -102,7 +102,7 @@ Esta seção discute como alterar opcionalmente o diretório de palavras irrelev
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-O local depende de como você instalou o software Commerce. Se você clonou o repositório GitHub Magento 2, o caminho está em `app/code`. Se você instalou um arquivo compactado ou um metapackage, o caminho está em `vendor`.
+O local depende de como você instalou o software Commerce. Se você clonou o repositório GitHub do Magento 2, o caminho está em `app/code`. Se você instalou um arquivo compactado ou um metapackage, o caminho está em `vendor`.
 
 **Para alterar o diretório**:
 

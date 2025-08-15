@@ -9,16 +9,16 @@ ht-degree: 1%
 
 ---
 
-# parâmetros de Bootstrap
+# Parâmetros do Bootstrap
 
 Este tópico demonstra como definir os valores dos parâmetros de inicialização do aplicativo do Commerce. Consulte [Visão geral da inicialização e inicialização do aplicativo](initialization.md).
 
 A tabela a seguir discute os parâmetros de inicialização que você pode definir:
 
-| parâmetro Bootstrap | Descrição |
+| Parâmetro do Bootstrap | Descrição |
 | ------------------- | -------------------------------------------- |
 | MAGE_DIRS | Especifica o diretório personalizado e os caminhos de URL |
-| MAGE_PROFILER | Ativa gráficos de dependência e criação de perfil de HTML |
+| MAGE_PROFILER | Ativa gráficos de dependência e criação de perfil do HTML |
 
 >[!INFO]
 >

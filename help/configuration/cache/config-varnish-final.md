@@ -83,4 +83,4 @@ Verifique se o diretório `<magento_root>/var/page_cache` está vazio:
 
 >[!TIP]
 >
->Se você encontrar erros 503 (Falha na busca de backend), consulte [Solução de problemas 503 (Serviço indisponível) erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_.
+>Se você encontrar erros 503 (Falha na busca de backend), consulte [Solução de problemas 503 (Serviço indisponível) erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) na _Central de Ajuda da Adobe Commerce_.

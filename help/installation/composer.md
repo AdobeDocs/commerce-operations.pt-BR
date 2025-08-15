@@ -9,21 +9,21 @@ ht-degree: 0%
 
 ---
 
-# Instalação start rápida no local
+# Instalação de início rápido local
 
-As instruções nesta página descrevem como instalar Adobe Systems Comércio na infraestrutura auto-hospedada. Para obter orientações sobre como atualizar uma instalação existente, consulte o [_Guia_](../upgrade/overview.md) de atualização.
+As instruções nesta página descrevem como instalar o Adobe Commerce na infraestrutura auto-hospedada. Para obter orientação sobre como atualizar uma instalação existente, consulte o [_Guia de Atualização_](../upgrade/overview.md).
 
-Adobe Systems usa [o Composer](https://getcomposer.org/) para gerenciar Adobe Systems Comércio componentes e suas dependências. Usar o Composer para obter a Adobe Systems Comércio metapackage oferece as seguintes vantagens:
+O Adobe usa o [Composer](https://getcomposer.org/) para gerenciar componentes do Adobe Commerce e suas dependências. Usar o Composer para obter o metapackage do Adobe Commerce oferece as seguintes vantagens:
 
-- Reutilize bibliotecas de terceiros sem agrupar com o código-fonte
-- Reduza conflitos de extensão e problemas de compatibilidade usando uma arquitetura baseada em componentes com um gerenciamento de dependência robusto
-- Adere aos [padrões PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)
-- Reembalar Magento Open Source com outros componentes
-- Use o software Adobe Systems Comércio em um ambiente de produção
+- Reutilizar bibliotecas de terceiros sem agrupá-las com o código-fonte
+- Reduza os conflitos de extensão e os problemas de compatibilidade usando uma arquitetura baseada em componentes com um gerenciamento robusto de dependências
+- Siga os padrões [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)
+- Reempacotar o Magento Open Source com outros componentes
+- Usar o software Adobe Commerce em um ambiente de produção
 
 >[!NOTE]
 >
->Os desenvolvedores que contribuem para o Magento Open Source devem usar o [método de instalação baseado em](https://developer.adobe.com/commerce/contributor/guides/install/) Git.
+>Os desenvolvedores que contribuem com o Magento Open Source devem usar o método de instalação [baseado em Git](https://developer.adobe.com/commerce/contributor/guides/install/).
 
 ## Pré-requisitos
 
@@ -89,13 +89,13 @@ Para obter o metappackage do Adobe Commerce:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Quando solicitado, insira suas chaves de autenticação. Chaves públicas e privadas são criadas e configuradas de [Commerce Marketplace - Chaves de Acesso](https://commercemarketplace.adobe.com/customer/account/login/). Para o `[!UICONTROL username]`, copie e cole o valor da chave pública. Para o valor da `[!UICONTROL password]`chave privada, copie e cole o valor da chave privada.
+   Quando solicitado, insira suas chaves de autenticação. Chaves públicas e privadas são criadas e configuradas de [Commerce Marketplace - Chaves de Acesso](https://commercemarketplace.adobe.com/customer/account/login/). Para o `[!UICONTROL username]`, copie e cole o valor da chave pública. Para o `[!UICONTROL password]`, copie e cole o valor da chave privada.
 
    >[!NOTE]
    >
-   > Se você usar um `[auth.json](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` arquivo composer ou ambiente variável configurado com suas chaves de autenticação Comércio, você não será solicitado a inserir chaves de autenticação.
+   > Se você usar um arquivo do Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ou uma variável de ambiente configurada com suas chaves de autenticação da Commerce, não será solicitado a inserir chaves de autenticação.
 
-   Se você encontrar erros como `Could not find package...` ou `...no matching package found`, certifique-se de que não haja erros de digitação no seu comando. Se ainda encontrar erros, talvez não esteja autorizado a baixar Adobe Systems Comércio. Contate o [Suporte da Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
+   Se você encontrar erros, como `Could not find package...` ou `...no matching package found`, verifique se não há erros de digitação no comando. Se ainda encontrar erros, talvez você não esteja autorizado a baixar o Adobe Commerce. Contate o [Suporte da Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
 
    Consulte [Solução de problemas](https://support.magento.com/hc/en-us/articles/360033818091) para obter ajuda com mais erros.
 
@@ -137,7 +137,7 @@ chown -R :www-data . # Ubuntu
 chmod u+x bin/magento
 ```
 
-## Instale o aplicativo
+## Instalar o aplicativo
 
 Você deve usar a linha de comando para instalar o Adobe Commerce.
 
@@ -168,13 +168,13 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Você pode personalizar o URI do Administrador com a opção `--backend-frontname`. No entanto, o Adobe recomenda omitir essa opção e permitir que o comando de instalação gere automaticamente um URI aleatório. Um URI aleatório é mais difícil de ser explorado por hackers ou softwares mal-intencionados. O URI é exibido no console quando a instalação é concluída.
+>Você pode personalizar o URI do Administrador com a opção `--backend-frontname`. No entanto, a Adobe recomenda omitir essa opção e permitir que o comando de instalação gere automaticamente um URI aleatório. Um URI aleatório é mais difícil de ser explorado por hackers ou softwares mal-intencionados. O URI é exibido no console quando a instalação é concluída.
 
 >[!TIP]
 >
 >Para obter uma descrição completa das opções de instalação da CLI, consulte [Instalar o aplicativo da linha de comando](advanced.md).
 
-## Resumo do Comando
+## Resumo do comando
 
 Para exibir uma lista completa de comandos, insira:
 
@@ -198,7 +198,7 @@ bin/magento help setup:install
 bin/magento help cache:enable
 ```
 
-A tabela a seguir resume os comandos disponíveis. Os comandos são mostrados somente no formulário de resumo. Para obter mais informações sobre um comando, clique na link na coluna Comando.
+A tabela a seguir resume os comandos disponíveis. Os comandos são exibidos somente na forma de resumo. Para obter mais informações sobre um comando, clique no link na coluna Comando.
 
 | Comando | Descrição | Pré-requisitos |
 |--- |--- |--- |

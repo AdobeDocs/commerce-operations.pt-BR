@@ -20,7 +20,7 @@ Você pode usar o sistema de gerenciamento de cache do Adobe Commerce para melho
 >[!NOTE]
 >
 >
->Os administradores de site de comércio podem gerenciar o cache do Administrador usando a ferramenta Sistema de gerenciamento de cache. Consulte [Gerenciamento de Cache](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/cache-management) no _Guia de Sistemas de Administração_.
+>Os administradores de site de comércio podem gerenciar o cache do Administrador usando a ferramenta Sistema de gerenciamento de cache. Consulte [Gerenciamento de Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) no _Guia de Sistemas de Administração_.
 
 
 ## Exibir o status do cache
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Para obter uma descrição detalhada dos tipos de cache padrão com suporte do Adobe Commerce, consulte [Caches](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/cache-management#caches) no _Guia de Sistemas de Administração_.
+>Para obter uma descrição detalhada dos tipos de cache padrão com suporte do Adobe Commerce, consulte [Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) no _Guia de Sistemas de Administração_.
 
 
 ## Habilitar ou desabilitar tipos de cache
@@ -173,4 +173,4 @@ Exemplo de resultado:
 
 >[!TIP]
 >
->Também é possível limpar e liberar tipos de cache no Administrador. Vá para **Sistema** > **Ferramentas** > **Gerenciamento de Cache**. **Liberar Armazenamento de Cache** é equivalente a `bin/magento cache:flush`. **Liberar Cache de Magento** é equivalente a `bin/magento cache:clean`.
+>Também é possível limpar e liberar tipos de cache no Administrador. Vá para **Sistema** > **Ferramentas** > **Gerenciamento de Cache**. **Liberar Armazenamento de Cache** é equivalente a `bin/magento cache:flush`. **Liberar Cache do Magento** é equivalente a `bin/magento cache:clean`.

@@ -1,9 +1,10 @@
 ---
-title: "[!DNL Quality Patches Tool]: uma ferramenta de autoatendimento para patches de qualidade"
-description: "[!DNL Quality Patches Tool] permite aplicar, reverter e exibir informações gerais sobre patches de qualidade disponíveis para a sua versão instalada do Adobe Commerce (local e na infraestrutura em nuvem) ou Magento Open Source."
+title: '[!DNL Quality Patches Tool]: Uma ferramenta de autoatendimento para patches de qualidade'
+description: O [!DNL Quality Patches Tool] permite aplicar, reverter e exibir informações gerais sobre patches de qualidade disponíveis para a sua versão instalada do Adobe Commerce (local e na infraestrutura em nuvem) ou do Magento Open Source.
 feature: Tools and External Services
 role: Admin
-source-git-commit: 5c84a1606e171ff3c39f784b49bb96d1b68248e2
+exl-id: a83d3834-841d-4b90-b40a-fda985a85452
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Quality Patches Tool]: Uma ferramenta de autoatendimento para patches de qualidade
 
-O [!DNL Quality Patches Tool] permite que você aplique, reverta e exiba informações gerais sobre patches de qualidade disponíveis para a sua versão instalada do Adobe Commerce (local e na infraestrutura em nuvem) ou Magento Open Source.
+O [!DNL Quality Patches Tool] permite aplicar, reverter e exibir informações gerais sobre patches de qualidade disponíveis para a sua versão instalada do Adobe Commerce (local e na infraestrutura em nuvem) ou do Magento Open Source.
 
 A ferramenta fornece uma resolução de problemas de autoatendimento mais rápida, permitindo que você aplique facilmente patches sugeridos pelo Suporte da Adobe Commerce para problemas que você possa ter com o Adobe Commerce.
 

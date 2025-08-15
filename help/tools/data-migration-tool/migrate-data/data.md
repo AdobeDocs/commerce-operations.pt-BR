@@ -35,7 +35,7 @@ Onde:
 
 * `{<path to config.xml>}` é o caminho absoluto do sistema de arquivos para `config.xml`; este argumento é obrigatório
 
-Nesta etapa, o [!DNL Data Migration Tool] cria tabelas e acionadores adicionais para as tabelas de migração no banco de dados Magento 1. Eles são usados na etapa de migração [incremental/delta](delta.md). Tabelas adicionais contêm informações sobre registros alterados após a execução final da migração. Os gatilhos de banco de dados são usados para preencher essas tabelas extras; portanto, se uma nova operação estiver sendo executada na tabela específica (um registro é adicionado/modificado/removido), esses gatilhos de banco de dados salvarão informações sobre essa operação na tabela extra. Quando executamos um processo de migração delta, o [!DNL Data Migration Tool] verifica se há registros não processados nessas tabelas e migra o conteúdo necessário para o banco de dados Magento 2.
+Nesta etapa, o [!DNL Data Migration Tool] cria tabelas e acionadores adicionais para as tabelas de migração no banco de dados do Magento 1. Eles são usados na etapa de migração [incremental/delta](delta.md). Tabelas adicionais contêm informações sobre registros alterados após a execução final da migração. Os gatilhos de banco de dados são usados para preencher essas tabelas extras; portanto, se uma nova operação estiver sendo executada na tabela específica (um registro é adicionado/modificado/removido), esses gatilhos de banco de dados salvarão informações sobre essa operação na tabela extra. Quando executamos um processo de migração delta, o [!DNL Data Migration Tool] verifica se há registros não processados nessas tabelas e migra o conteúdo necessário para o banco de dados do Magento 2.
 
 Cada nova tabela contém:
 
@@ -85,7 +85,7 @@ Por exemplo, para `sales_flat_order`, [!DNL Data Migration Tool] cria:
 
 >[!NOTE]
 >
->O [!DNL Data Migration Tool] salva seu progresso atual à medida que é executado. Se ocorrer erros ou uma intervenção do usuário impedir a execução, a Ferramenta retomará o progresso no último estado em boas condições. Para forçar a execução de [!DNL Data Migration Tool] desde o início, use o argumento `--reset`. Nesse caso, recomendamos que você restaure o dump do banco de dados do Magento 2 para evitar a duplicação de dados migrados anteriormente.
+>O [!DNL Data Migration Tool] salva seu progresso atual à medida que é executado. Se ocorrer erros ou uma intervenção do usuário impedir a execução, a Ferramenta retomará o progresso no último estado em boas condições. Para forçar a execução de [!DNL Data Migration Tool] desde o início, use o argumento `--reset`. Nesse caso, recomendamos que você restaure o despejo do banco de dados do Magento 2 para evitar a duplicação de dados migrados anteriormente.
 
 
 ## Possíveis erros de consistência
