@@ -99,7 +99,7 @@ Para atualizar corretamente o MySQL da versão 8.0 para a versão 8.4, siga esta
    >
    >Se você não alterar o valor de `restrict_fk_on_non_standard_key` para `OFF`, receberá o seguinte erro durante a importação:
    >
-   ```sql
+   >```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Reinicie o servidor MySQL.

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-38559: /V1/customers/search API retorna um erro'
-description: O patch MDVA-38559 corrige o problema em que a API `/V1/customers/search` retorna um erro para clientes que têm mais de uma assinatura. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 está instalada. A ID do patch é MDVA-38559. Observe que o problema foi corrigido no Adobe Commerce 2.4.3.
+description: O patch MDVA-38559 corrige o problema em que a API &grave;/V1/customers/search&grave; retorna um erro para clientes que têm mais de uma assinatura. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 está instalada. A ID do patch é MDVA-38559. Observe que o problema foi corrigido no Adobe Commerce 2.4.3.
 feature: REST, Search
 role: Admin
 exl-id: 6bcb65d0-1389-4090-b53c-8048bf64d8fb

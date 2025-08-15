@@ -17,7 +17,7 @@ Esta seção discute as configurações mínimas que você deve escolher para te
 >[!TIP]
 >
 >Nas versões 2.4.4 e 2.4.3-p2, todos os campos rotulados **Elasticsearch** também se aplicam ao OpenSearch.
->>Quando o suporte para o Elasticsearch 8.x foi introduzido na versão 2.4.6, novos rótulos foram criados para distinguir entre as configurações do Elasticsearch e do OpenSearch.
+>&#x200B;>Quando o suporte para o Elasticsearch 8.x foi introduzido na versão 2.4.6, novos rótulos foram criados para distinguir entre as configurações do Elasticsearch e do OpenSearch.
 
 Para obter detalhes adicionais sobre a configuração do mecanismo de pesquisa, consulte o [Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 

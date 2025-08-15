@@ -540,7 +540,7 @@ Antes da correção, ao solicitar um produto combinado com a opção &quot;Envia
 
 _ACP2E-3947 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/2a252ae6)_
 
-#### [Código OOTB da ]Magento da {Cloud- Problema de configuração de modelo de email
+#### [Código OOTB da ]Magento da &lbrace;Cloud- Problema de configuração de modelo de email
 
 Antes da correção, ao usar o envio assíncrono de email, os emails de remessa eram inconsistentes com a ordem da loja. Agora, após a correção, a ordem de e-mail de envio da loja correta é entregue.
 
