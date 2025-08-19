@@ -3,9 +3,9 @@ title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 00153baf1c4a52d17b750db35a678b1950e00ed1
+source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
 workflow-type: tm+mt
-source-wordcount: '27482'
+source-wordcount: '28046'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,33 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.69 {#v1-1-69}
+
+* **AC-15223** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige um problema na versão 2.4.8 da loja em que, após alternar as lojas, a página é distribuída do cache e não reflete o armazenamento selecionado.
+* **ACP2E-3731** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que as exportações de produtos com visibilidade **[!UICONTROL Catalog, Search]** incluem incorretamente registros de outras exibições de loja em ambientes de várias lojas.
+* **ACP2E-3767** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que a última opção de pacote em um produto de pacote não pode ser removida.
+* **ACP2E-3964** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrigido o problema em que produtos derivados de produtos configuráveis não podiam ser listados por meio da API REST quando um vídeo era definido na galeria.
+* **ACP2E-3977** (para Adobe Commerce >=2.4.4 &lt;2.4.9) - Corrige o problema em que o campo **[!UICONTROL Cap Reward Points Balance At]** não pode estar vazio quando [!UICONTROL Rewards Points Balance Redemption Threshold] está definido, causando um erro de validação.
+* **ACP2E-4050** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.8) - Corrige o problema em que as regras de preço do carrinho não são aplicadas corretamente a produtos de vários envios quando o produto agrupado é usado e as condições de subseleção são usadas com o frete gratuito habilitado.
+* **ACSD-56226** (para Adobe Commerce >=2.4.6 &lt;2.4.7) - Corrige o problema em que as consultas READ no nó subordinado retornam dados desatualizados quando o sinalizador `synchronous_replication` está habilitado.
+* **ACSD-57477** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Corrige o problema em que o processamento de regras de vendas causa desempenho lento em solicitações relacionadas ao carrinho.
+* **ACSD-58108** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.8) - Corrige o problema em que o nome da tabela de ligação ausente na tabela de busca original causava erros com o SQL de extensão de módulo personalizado na grade de ordem.
+* **ACSD-65983** (para Adobe Commerce >=2.4.6-p10 &lt;2.4.9) - Corrige o problema em que a reconfiguração de uma cotação de produto agrupada no back-end de Administração gera um erro.
+* **ACSD-66149** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que o manipulador IPN retorna um erro *500* para tipos IPN desconhecidos ou sem suporte.
+* **ACSD-66153** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que uma página retorna um erro *500* devido a uma estrutura de layout incorreta sendo armazenada em cache.
+* **ACSD-66302** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que os itens da lista de desejos são filtrados incorretamente pela ID do armazenamento em vez de serem filtrados pelo site.
+* **ACSD-66311** (para Adobe Commerce >=2.4.6-p9 &lt;2.4.9) - Corrige o problema em que a grade Empresas carrega lentamente para usuários administradores com acesso restrito a sites.
+* **ACSD-66404** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que o trabalho cron falha ao limpar as tabelas de log de alterações, causando [!DNL Galera Cluster] falhas ao manipular grandes quantidades de dados.
+* **ACSD-66952** (para Adobe Commerce >=2.4.4 &lt;2.4.9) - Corrige o problema em que o cache é limpo em cada visita de PLP ou carrinho, causando sobrecarga de desempenho quando uma regra de destino é definida.
+* **ACSD-67264** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que os layouts de página de produto agrupados e baixáveis são inconsistentes entre os dispositivos.
+* **ACSD-67347** (para Adobe Commerce e Magento Open Source >=2.4.5-p11 &lt;2.4.6) - Corrige o problema em que o pedido falha com *Não é possível adquirir um erro de bloqueio* quando são usados cupons com caracteres especiais e o bloqueio de arquivos está habilitado.
+* Patches substituídos: **ACP2E-3841**
 
 ## v1.1.68 {#v1-1-68}
 
