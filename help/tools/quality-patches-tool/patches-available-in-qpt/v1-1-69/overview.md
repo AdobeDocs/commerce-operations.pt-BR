@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: c701c9ff7385821b771af2d19920ead192e4410a
+source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -27,7 +27,7 @@ O QPT v1.1.69 inclui os seguintes patches:
 1. **ACSD-58108**: a falta de nome de tabela de junção causa erros de SQL na extensão de módulo personalizado de grade de ordem.
 1. **ACSD-65983**: erro ao reconfigurar a cotação de produto agrupada no Admin.
 1. **ACSD-66149**: o manipulador IPN retorna 500 para tipos sem suporte.
-1. **ACSD-66153**: a página retorna 500 devido à estrutura de layout incorreta que está sendo armazenada em cache.
+1. **ACSD-66153**: a página retorna o erro 500 devido à estrutura de layout incorreta em cache.
 1. **ACSD-66302**: itens da lista de desejos filtrados pela ID de armazenamento em vez do site.
 1. **ACSD-66311**: a grade de empresas carrega lentamente para administradores restritos.
 1. **ACSD-66404**: o trabalho do Cron falha ao limpar as tabelas de log de alterações devido aos limites de tamanho de transação [!DNL Galera Cluster].
