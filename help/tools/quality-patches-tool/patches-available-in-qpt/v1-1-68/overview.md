@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: fa5164f3118ec51e4562f7ae5073781307452bc4
+source-git-commit: 53768b017845d0ea8033ebd7651421877ed36a55
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 O QPT v1.1.68 inclui os seguintes patches:
 1. **ACSD-58131**: a presença de uma imagem de 0 bytes na galeria de mídia impediu que todas as imagens no diretório fossem exibidas ou selecionadas.
 1. **ACSD-62146**: o endereço de cobrança selecionado desaparece na página de pagamento de check-out quando a pesquisa de endereço está habilitada e o &quot;Limite de Número de Endereços de Cliente&quot; está definido como 1.
-1. **ACSD-62415**: o back-end do Adobe Commerce carrega categorias muito lentamente.
+1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)**: o back-end do Adobe Commerce carrega categorias muito lentamente.
 1. **ACSD-65938**: emails de cartão-presente foram enviados mesmo quando a criação da fatura falhou.
 1. **ACSD-66072**: os produtos relacionados não são retornados via GraphQL na Página de Detalhes do Produto devido a um erro interno do servidor quando o [!UICONTROL Related Products Rule] está configurado.
 1. **ACSD-66082**: não é possível atualizar a imagem de amostra de um produto por meio da importação do produto.
