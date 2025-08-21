@@ -28,7 +28,7 @@ O ACSD-66139 correção corrige o problema em que, ao colocar uma solicitar para
 
 >[!NOTE]
 >
->O correção pode se tornar aplicável a outras versões com novas [!DNL Quality Patches Tool] versões. Para verificar se a correção é compatível com a sua versão de Adobe Systems Comércio, atualize o `magento/quality-patches` pacote para a versão mais recente e verifique a compatibilidade com [[!DNL Quality Patches Tool]: Search para patches página](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID da correção como palavra-chave de pesquisa para localizar a correção.
+>O correção pode se tornar aplicável a outras versões com novas [!DNL Quality Patches Tool] versões. Para verificar se a correção é compatível com a sua versão de Adobe Systems Comércio, atualize o `magento/quality-patches` pacote para a versão mais recente e verifique a compatibilidade com [[!DNL Quality Patches Tool]: Search para patches página](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID da correção como palavra-chave de pesquisa para localizar a correção.
 
 ## Questão
 
@@ -123,7 +123,7 @@ O `error_code` retorno é *INDEFINIDO*:
 Para aplicar patches individuais, use os seguintes links dependendo do método implantação:
 
 * Adobe Systems Comércio ou Magento Open Source no local: [[!DNL Quality Patches Tool] > uso](/help/tools/quality-patches-tool/usage.md) no [!DNL Quality Patches Tool] guia.
-* Adobe Systems Comércio no infraestrutura em nuvem: [atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia Comércio on Cloud Infrastructure.
+* Adobe Systems Comércio no infraestrutura em nuvem: [atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia Comércio on Cloud Infrastructure.
 
 ## Leitura relacionada
 
