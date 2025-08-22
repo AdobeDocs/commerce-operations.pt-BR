@@ -90,10 +90,10 @@ Patches individuais contêm correções de qualidade de baixo impacto para um pr
 
 Os patches isolados são correções de segurança lançadas independentemente de um patch de segurança completo para permitir uma implementação mais rápida. Cada patch isolado trata de um problema de segurança específico e é incluído no patch de segurança completo mais recente ou que será lançado em breve. Detalhes sobre o problema são fornecidos no boletim de segurança relacionado, que se vincula a um artigo da Base de conhecimento (KB) contendo os detalhes da correção, como aplicar o patch e informações adicionais.
 
-Consulte a [Central de Segurança](https://helpx.adobe.com/security/products/magento.html) para encontrar as atualizações de segurança mais recentes disponíveis para o Adobe Commerce.
+Consulte a [Central de Segurança](https://helpx.adobe.com/br/security/products/magento.html) para encontrar as atualizações de segurança mais recentes disponíveis para o Adobe Commerce.
 
 ## Correção personalizada
 
-Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código do Adobe Commerce por vários motivos. Os patches personalizados são entregues por meio da [Ferramenta de Patches de Qualidade](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
+Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código do Adobe Commerce por vários motivos. Os patches personalizados são entregues por meio da [Ferramenta de Patches de Qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/usage).
 
 <!-- Last updated from includes: 2025-05-28 16:37:31 -->
