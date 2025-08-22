@@ -2,7 +2,7 @@
 title: Instalação avançada local
 description: Saiba mais sobre cenários avançados de instalação do Adobe Commerce na sua infraestrutura.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '2313'
 ht-degree: 0%
@@ -119,7 +119,7 @@ As opções a seguir especificam as informações e credenciais do usuário admi
 
 Você pode criar o usuário Administrador durante ou após a instalação. Se você criar o usuário durante a instalação, todas as variáveis de credencial do administrador serão necessárias. Consulte [Exemplos de instalações localhost](#sample-localhost-installations).
 
-As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência de Ferramentas de Linha de Comando](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência de Ferramentas de Linha de Comando](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nome | Valor | Obrigatório? |
 |--- |--- |--- |
@@ -336,3 +336,5 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Magento installation complete.
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
+
+<!-- Last updated from includes: 2024-04-16 09:42:31 -->

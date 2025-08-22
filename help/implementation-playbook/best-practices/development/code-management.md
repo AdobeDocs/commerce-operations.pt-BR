@@ -4,7 +4,7 @@ description: Saiba mais sobre as práticas recomendadas de gerenciamento de cód
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -115,3 +115,5 @@ Este tópico foi projetado para ajudá-lo a decidir se usará o Git ou o Compose
 1. **Comece com o Git e depois vá para o Composer**
 
    Escolha uma abordagem de gerenciamento de código no início do projeto. Alternar do Git para o Composer ou vice-versa, com desenvolvimento contínuo, é complicado e pode levar à perda de código e/ou perda de histórico de revisão.
+
+<!-- Last updated from includes: 2023-08-23 15:56:59 -->

@@ -2,7 +2,7 @@
 title: Diretrizes do MySQL
 description: Siga estas etapas para instalar e configurar o MySQL e o MariaDB para instalações locais do Adobe Commerce.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
@@ -200,3 +200,5 @@ Para configurar uma instância do banco de dados MySQL:
 >Para Adobe Commerce em projetos de infraestrutura em nuvem, a configuração `explicit_defaults_for_timestamp` para MySQL (MariaDB) assume o padrão _DESLIGADO_.
 
 {{$include /help/_includes/maria-db-config.md}}
+
+<!-- Last updated from includes: 2024-02-12 09:51:27 -->

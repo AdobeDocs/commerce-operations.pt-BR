@@ -3,7 +3,7 @@ title: Criar ou atualizar a configuração de implantação
 description: Siga estas etapas para gerenciar a configuração de implantação do Adobe Commerce.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -65,3 +65,5 @@ Para obter informações adicionais, verifique o [Importar dados dos arquivos de
 ### Dados sensíveis
 
 {{$include /help/_includes/sensitive-data.md}}
+
+<!-- Last updated from includes: 2024-04-16 09:42:31 -->

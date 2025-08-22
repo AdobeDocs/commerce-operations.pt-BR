@@ -2,7 +2,7 @@
 title: Configurar o provedor de bloqueio
 description: Siga estas etapas para impedir que os trabalhos cron duplicados e os grupos cron sejam executados na implantação do Adobe Commerce.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Configure um provedor de bloqueio para impedir a inicialização de trabalhos cr
 
 O Adobe Commerce usa o banco de dados para salvar bloqueios por padrão. Se você tiver vários nós em seus servidores, recomendamos usar o Zookeeper como provedor de bloqueio.
 
-Se você estiver executando o Adobe Commerce na infraestrutura em nuvem, não será necessário definir as configurações do provedor de bloqueio. O aplicativo configura o provedor de bloqueio de arquivo para projetos Pro durante o processo de provisionamento. Consulte [Variáveis da nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+Se você estiver executando o Adobe Commerce na infraestrutura em nuvem, não será necessário definir as configurações do provedor de bloqueio. O aplicativo configura o provedor de bloqueio de arquivo para projetos Pro durante o processo de provisionamento. Consulte [Variáveis da nuvem](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Uso do comando
 
@@ -43,3 +43,5 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 | `--lock-zookeeper-host` | Host e porta para se conectar ao cluster Zookeeper quando você usa o provedor de bloqueio `zookeeper`.<br><br>Por exemplo: `127.0.0.1:2181` | Sim, se você definir `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | O caminho onde o Zookeeper salva bloqueios.<br><br>O caminho padrão é: `/magento/locks` | Não |
 | `--lock-file-path` | O caminho onde os bloqueios de arquivo são salvos. | Sim, se você definir `--lock-provider=file` |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

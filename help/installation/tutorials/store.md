@@ -2,7 +2,7 @@
 title: Configurar o armazenamento
 description: Siga estas etapas para configurar a loja do Adobe Commerce.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -42,3 +42,5 @@ Onde a tabela a seguir define parâmetros e valores:
 | `--use-secure-admin` | `1` significa que você usa SSL para acessar o Administrador. Antes de selecionar essa opção, verifique se o servidor Web oferece suporte para SSL.<br><br>`0` significa que você não usa SSL com o Administrador. Este é o padrão. | Não |
 | `--admin-use-security-key` | `1` faz com que o aplicativo use um valor de chave gerado aleatoriamente para acessar páginas no Administrador e em formulários. Esses valores principais ajudam a impedir ataques de falsificação de script entre sites. Este é o padrão.<br/><br/>`0` desabilita o uso da chave. | Não |
 | `--magento-init-params` | Adicione a qualquer comando para personalizar parâmetros de inicialização de aplicativo<br/><br/>Por exemplo: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Não |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

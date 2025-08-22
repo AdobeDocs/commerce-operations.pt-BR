@@ -2,7 +2,7 @@
 title: Exemplo usando comandos CLI
 description: Veja um exemplo de como definir valores compartilhados, específicos do sistema e confidenciais no sistema de desenvolvimento usando a linha de comando.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -181,3 +181,5 @@ Para verificar as definições de configuração:
    O valor do campo **Domínio de email padrão** é exibido da seguinte maneira: Esta é uma configuração específica do sistema.
 
    ![Verificar configurações no sistema de produção](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

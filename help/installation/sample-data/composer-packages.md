@@ -3,7 +3,7 @@ title: Baixar pacotes de dados de amostra do Composer
 description: Siga estas etapas para instalar dados de amostra do Adobe Commerce usando o Gerenciador de pacotes PHP do Composer.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -65,3 +65,5 @@ Se o erro for exibido, altere para o diretório de instalação do aplicativo e 
 ## Conclua a instalação dos dados de amostra
 
 {{$include /help/_includes/sample-data-complete.md}}
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->
