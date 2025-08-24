@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
+source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,6 @@ O QPT v1.1.69 inclui os seguintes patches:
 1. **ACSD-66404**: o trabalho do Cron falha ao limpar as tabelas de log de alterações devido aos limites de tamanho de transação [!DNL Galera Cluster].
 1. **ACSD-66952**: o cache é limpo em cada PLP ou visita ao carrinho quando uma regra de destino é definida.
 1. **ACSD-67264**: layouts de pacote e de página de produto baixáveis inconsistentes entre dispositivos.
-1. **ACSD-67347**: a ordem falha com erro de bloqueio ao usar cupons de caracteres especiais e bloqueio de arquivos.
+1. **ACSD-67347**: falha na ordem com Não é possível adquirir um bloqueio ao usar códigos de cupom.
 
 Use o menu à esquerda para navegar até uma página de patch específica.
