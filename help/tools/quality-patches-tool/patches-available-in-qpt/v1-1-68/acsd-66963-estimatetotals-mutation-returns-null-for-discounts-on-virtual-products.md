@@ -82,31 +82,31 @@ A mutação `estimateTotals` retorna *null* para descontos quando um código de 
 As informações de desconto são incluídas para carrinhos que contêm apenas produtos virtuais.
 
     &quot;
-    {
-    &quot;dados&quot;: {
-    &quot;estimateTotals&quot;: {
-    &quot;carrinho&quot;: {
-    &quot;preços&quot;: {
-    &quot;descontos&quot;: [
-    {
-    &quot;valor&quot;: {
+    &lbrace;
+    &quot;dados&quot;: &lbrace;
+    &quot;estimateTotals&quot;: &lbrace;
+    &quot;carrinho&quot;: &lbrace;
+    &quot;preços&quot;: &lbrace;
+    &quot;descontos&quot;: &lbrack;
+    &lbrace;
+    &quot;valor&quot;: &lbrace;
     &quot;valor&quot;: 100,5,
     &quot;moeda&quot;: &quot;USD&quot;
-    },
+    &rbrace;,
     &quot;rótulo&quot;: &quot;Um segundo código de desconto para teste&quot;,
-    &quot;cupom&quot;: {
+    &quot;cupom&quot;: &lbrace;
     &quot;código&quot;: &quot;z3r0c00l&quot;
     ,
     &quot;apply_to&quot;: &quot;ITEM&quot;,
     &quot;tipo&quot;: nulo
-    }
-    ]
-    }
-    }
-    }
+    &rbrace;
+    &rbrack;
+    &rbrace;
+    &rbrace;
+    &rbrace;
     ,
     &quot;extensões&quot;: {}
-    }
+    &rbrace;
     &quot;
 
 <u>Resultados reais</u>:
@@ -114,18 +114,18 @@ As informações de desconto são incluídas para carrinhos que contêm apenas p
 As informações de desconto são retornadas como *nulo* para carrinhos com apenas produtos virtuais.
 
     &quot;
-    {
-    &quot;dados&quot;: {
-    &quot;estimateTotals&quot;: {
-    &quot;carrinho&quot;: {
-    &quot;preços&quot;: {
+    &lbrace;
+    &quot;dados&quot;: &lbrace;
+    &quot;estimateTotals&quot;: &lbrace;
+    &quot;carrinho&quot;: &lbrace;
+    &quot;preços&quot;: &lbrace;
     &quot;descontos&quot;: nulo
-    }
-    }
-    }
+    &rbrace;
+    &rbrace;
+    &rbrace;
     ,
     &quot;extensões&quot;: {}
-    }
+    &rbrace;
     &quot;
 
 ## Aplicar o patch
