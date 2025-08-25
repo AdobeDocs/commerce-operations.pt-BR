@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
+source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
 workflow-type: tm+mt
-source-wordcount: '8308'
+source-wordcount: '8320'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Alertas gerenciados para Adobe Commerce: alerta de aviso do CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Ferramenta Correções de qualidade {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de versão](quality-patches-tool/release-notes.md)
    - Patches disponíveis na Ferramenta de patches de qualidade {#patches-available-in-qpt}
@@ -837,6 +837,7 @@ ht-degree: 0%
       - v1.1.68 {#v1-1-68}
          - [ACSD-66072: o GraphQL não retorna produtos relacionados na Página de Detalhes do Produto devido a um erro interno do servidor durante a configuração [!UICONTROL Related Products Rule]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md)
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
+         - [ACSD-66506: Ocorre um erro de backend após a exclusão e reatribuição de produtos do Catálogo compartilhado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66506-backend-error-occurs-after-deleting-and-reassigning-shared-catalog-products.md)
          - [ACSD-66889: erro durante a reindexação do inventário na CLI](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66889-error-during-inventory-reindex-in-cli.md)
          - [ACSD-62415: o back-end do Adobe Commerce carrega [!UICONTROL Categories] muito lentamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)
          - [ACSD-66965: a opção [!UICONTROL Print] na página [!UICONTROL Requisition List] causa um erro](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66965-print-option-on-requisition-list-page-causes-an-error.md)
@@ -909,6 +910,6 @@ ht-degree: 0%
       - [Dados que exigem migração manual](data-migration-tool/migrate-data/manual.md)
       - [Etapas de migração pós-dados](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=pt-BR)
+      - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Log de alterações](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
