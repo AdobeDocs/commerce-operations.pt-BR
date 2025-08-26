@@ -4,13 +4,13 @@ description: Aplique o patch ACSD-66311 para corrigir o problema do Adobe Commer
 role: Admin, Developer
 feature: B2B
 type: Troubleshooting
-source-git-commit: 841e660136354800dd9758d8c10e86c966be3a1e
+exl-id: e470078b-dd10-4b0b-a489-bc88f025fded
+source-git-commit: 3337907b1893260d6cb18b1c4fbf45dfa1f3d6d5
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '405'
 ht-degree: 2%
 
 ---
-
 
 # ACSD-66311: a grade das empresas é carregada lentamente para usuários administradores restritos
 
@@ -28,7 +28,7 @@ O patch ACSD-66311 corrige o problema em que a grade das empresas é carregada l
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -54,7 +54,6 @@ A grade das empresas é carregada lentamente para usuários administradores com 
       | 2 | 1.500 |
       | 3 | 500 |
 
-
    1. Execute a seguinte consulta para verificar a distribuição:
 
       ```
@@ -76,14 +75,13 @@ A grade das empresas é carregada lentamente para usuários administradores com 
       ```
             SELECT customer_count, COUNT(*) AS number_of_companies
             FROM (
-      
-            SELECIONE company_id, COUNT(customer_id) AS customer_count
-            FROM company_advanced_customer_entity
-            AGRUPAR POR company_id
-) subconsulta AS
-AGRUPAR POR customer_count
-ORDER BY customer_count;
-&quot;
+              SELECT company_id, COUNT(customer_id) AS customer_count
+              FROM company_advanced_customer_entity
+              GROUP BY company_id
+            ) AS subquery
+            GROUP BY customer_count
+            ORDER BY customer_count; 
+      ```
 
 1. Reindexe todos os dados para gerar entradas na **customer_grid_flat**.
 1. Faça logon como **adminscope**.
@@ -102,7 +100,7 @@ A página demora mais de 14 minutos para carregar.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
