@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
+source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ O QPT v1.1.69 inclui os seguintes patches:
 1. **ACP2E-3731**: Exportações de produtos com visibilidade *[!UICONTROL Catalog, Search]* incluem registros de outras exibições de loja.
 1. **ACP2E-3767**: a última opção de pacote reaparece após salvar um produto de pacote.
 1. **ACP2E-3964**: produtos derivados configuráveis com vídeo não listados pela API REST.
+1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** não pode ser deixado em branco.
+1. **ACP2E-4050**: **[!UICONTROL Free Shipping]** não aplicado ao check-out de vários endereços.
 1. **ACP2E-3977**: o campo [!UICONTROL Cap Reward Points Balance At] não pode ficar vazio.
 1. **ACP2E-4050**: as regras de preço do carrinho falham para envio múltiplo com pacotes de produtos e envio gratuito.
 1. **ACSD-56226**: consultas READ retornam dados desatualizados com `synchronous_replication` habilitado.
