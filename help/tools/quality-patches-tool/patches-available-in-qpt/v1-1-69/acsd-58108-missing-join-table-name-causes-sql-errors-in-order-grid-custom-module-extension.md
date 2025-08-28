@@ -36,12 +36,12 @@ O nome ausente da tabela de junção na tabela de busca original causa erros SQL
 
 <u>Etapas a serem reproduzidas</u>:
 
-01. Instale uma instância 2.4-develop.
-02. Criar um novo pedido.
-03. Instale um módulo personalizado com uma extensão SQL.
-04. Navegue até **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
-05. Aplique o filtro **[!UICONTROL Purchase Date]** e aguarde o resultado.
-06. Aplicar filtro **[!UICONTROL Product SKU]**.
+&#x200B;01. Instale uma instância 2.4-develop.
+&#x200B;02. Criar um novo pedido.
+&#x200B;03. Instale um módulo personalizado com uma extensão SQL.
+&#x200B;04. Navegue até **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
+&#x200B;05. Aplique o filtro **[!UICONTROL Purchase Date]** e aguarde o resultado.
+&#x200B;06. Aplicar filtro **[!UICONTROL Product SKU]**.
 
 <u>Resultados esperados</u>:
 
