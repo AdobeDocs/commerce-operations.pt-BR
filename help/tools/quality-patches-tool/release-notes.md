@@ -3,9 +3,9 @@ title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
+source-git-commit: edb7f2351afc346d54f62ae1278f481ba7d732f9
 workflow-type: tm+mt
-source-wordcount: '28046'
+source-wordcount: '28348'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,26 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.70 {#v1-1-70}
+
+* **AC-15210** (para Adobe Commerce e Magento Open Source >=2.4.6-p3 &lt;2.4.9) - Migra a integração de USPS das APIs de Ferramentas da Web desatualizadas para as novas APIs RESTful USPS.
+* **ACSD-67102** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige o problema em que o back-end do Adobe Commerce carrega **[!UICONTROL Categories]** muito lentamente.
+* **ACSD-66120** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que [!DNL GraphQL] exibe incorretamente porcentagens de desconto e preços base quando os preços de catálogo estão configurados para incluir imposto.
+* **ACSD-66157** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.9) - Corrige o problema em que o preço especial não entra em vigor para sites criados em fusos horários diferentes.
+* **ACSD-67659** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige um problema no qual as mensagens de erro traduzidas retornam um código de erro INDEFINIDO.
+* **ACSD-67166** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que a consulta `cataloginventory_stock_status` é executada várias vezes ao carregar uma cotação na loja, causando chamadas redundantes de banco de dados.
+* **ACSD-67289** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que o preço normal não é exibido quando um preço especial é aplicado.
+* **ACSD-67686** (para Adobe Commerce e Magento Open Source >=2.4.4-p15 &lt;2.4.5 || >=2,4,5-p14 &lt;2,4,6 || >=2.4.6-p12 &lt;2.4.7) - Corrige o problema em que ocorre um erro `Syntax Error: Unexpected <EOF>` ao enviar uma solicitação [!DNL GraphQL] vazia.
+* **ACSD-67250** (para Adobe Commerce >=2.4.7-p4 &lt;2.4.8) - Corrige o problema em que a operação de salvamento **[!UICONTROL Shared Catalog]** atualiza todos os itens em vez de apenas os afetados, melhorando o desempenho com a eliminação de operações desnecessárias.
+* **ACSD-67030** (para Adobe Commerce >=2.4.4 &lt;2.4.9) - Corrige o problema em que produtos simples não são atribuídos de um produto configurável quando editados por um administrador de função limitada.
+* Versões atualizadas: **ACSD-54095**, **ACSD-51636**, **ACSD-51739**, **ACSD-66093**
+* Patches substituídos: **ACSD-62415**
 
 ## v1.1.69 {#v1-1-69}
 
