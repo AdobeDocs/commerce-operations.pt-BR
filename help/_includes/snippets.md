@@ -1,7 +1,7 @@
 ---
-source-git-commit: 102fee9672c75c94c7d18d47562338f8eff97f11
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/release-notes).
+>Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Somente Adobe Commerce {#ee-only}
 
@@ -80,3 +80,9 @@ ht-degree: 0%
 ## Controle do processo PHP {#php-process-control}
 
 Antes de executar indexadores no modo paralelo, você deve habilitar o suporte de Controle de Processo (`pcntl`) no PHP. Consulte [Instalação](https://www.php.net/manual/en/pcntl.installation.php) na documentação do PHP.
+
+## Patches personalizados {#custom-patches-disclaimer}
+
+>[!IMPORTANT]
+>
+>A Adobe não oferece suporte à aplicação de patches oficiais fornecidos pela Adobe usando esse método. Use o método a seguir por sua conta e risco. Para aplicar patches oficiais, use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Sempre realize testes abrangentes antes de implantar qualquer patch personalizado.

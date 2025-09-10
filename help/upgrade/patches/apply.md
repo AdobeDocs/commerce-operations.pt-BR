@@ -2,9 +2,9 @@
 title: Aplicar patches
 description: Saiba mais sobre os métodos para aplicar patches a um projeto do Adobe Commerce.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Você pode aplicar patches usando qualquer um dos métodos a seguir:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Linha de comando](../patches/apply.md#command-line)
 - [Compositor](../patches/apply.md#composer)
 
@@ -24,9 +24,7 @@ Você pode aplicar patches usando qualquer um dos métodos a seguir:
 
 ## Compositor
 
->[!IMPORTANT]
->
->Para aplicar patches de qualidade oficiais, use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}. Sempre realize testes abrangentes antes de implantar qualquer patch personalizado.
+{{custom-patches-disclaimer}}
 
 Para aplicar um patch personalizado usando o Composer:
 
