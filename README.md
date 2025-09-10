@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7f23a1b123d2ca2e1d116eb66344a67cfe45e409
+source-git-commit: 21a4ec57b49f896cffefbec8db4ce97c161315a0
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '850'
 ht-degree: 3%
 
 ---
@@ -43,13 +43,13 @@ Este projeto adotou o [Código de conduta de código aberto da Adobe](code-of-co
 
 ## Sobre suas contribuições para o conteúdo do Adobe
 
-Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR).
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 A forma como você contribui depende de quem você é e do tipo de alterações com as quais deseja contribuir:
 
 ### Pequenas alterações
 
-Se você estiver contribuindo com pequenas atualizações, visite o artigo e clique na área de feedback que aparece na parte inferior do artigo, clique em **Opções de feedback detalhadas** e em **Sugerir uma edição** para ir para o arquivo de origem do Markdown no GitHub. Use a interface do GitHub para fazer suas atualizações. Consulte o [guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR) para obter mais informações.
+Se você estiver contribuindo com pequenas atualizações, visite o artigo e clique na área de feedback que aparece na parte inferior do artigo, clique em **Opções de feedback detalhadas** e em **Sugerir uma edição** para ir para o arquivo de origem do Markdown no GitHub. Use a interface do GitHub para fazer suas atualizações. Consulte o [guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais informações.
 
 Pequenas correções ou esclarecimentos que você envia para documentação e exemplos de código neste repositório são cobertos pelos termos de uso da Adobe.
 
@@ -67,7 +67,7 @@ Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe d
 
 Os colaboradores da comunidade podem usar a interface do usuário do GitHub para a edição básica ou bifurcar o repositório para fazer grandes contribuições.
 
-Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR) para obter mais detalhes.
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais detalhes.
 
 ## Como usar marcação para formatar seu tópico
 
@@ -86,8 +86,8 @@ Para alguns tópicos, usamos arquivos de dados e modelos para gerar conteúdo pu
 Os exemplos de conteúdo de modelo incluem, entre outros, os seguintes:
 
 - [Referência de ferramentas da CLI](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [Tabelas de disponibilidade de produtos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=pt-BR)
-- [Tabelas de requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR)
+- [Tabelas de disponibilidade de produtos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+- [Tabelas de requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### Gerar conteúdo em modelo
 
@@ -96,7 +96,7 @@ Em geral, a maioria dos autores só precisa adicionar uma versão de lançamento
 >**OBSERVAÇÃO:**
 >
 >- A geração de conteúdo de modelo requer o trabalho na linha de comando em um terminal.
->- É necessário ter o Ruby instalado para executar o script de renderização. Consulte [_jekyll/.ruby-version] (_jekyll/.ruby-version) para obter a versão necessária.
+>- É necessário ter o Ruby instalado para executar o script de renderização. Consulte [_jekyll/.ruby-version](_jekyll/.ruby-version) para obter a versão necessária.
 
 Consulte o seguinte para obter uma descrição da estrutura do arquivo para conteúdo de modelos:
 
@@ -109,8 +109,8 @@ Para atualizar o conteúdo do modelo:
 
 1. No editor de texto, abra um arquivo de dados no diretório `/jekyll/_data`. Por exemplo:
 
-   - [Tabelas de disponibilidade de produtos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=pt-BR): `/jekyll/_data/product-availability.yml`
-   - [Tabelas de requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR): `/jekyll/_data/system-requirements.yml`
+   - [Tabelas de disponibilidade de produtos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   - [Tabelas de requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. Use a estrutura YAML existente para criar entradas.
 
@@ -131,10 +131,10 @@ Para atualizar o conteúdo do modelo:
 1. Gere conteúdo de modelo e grave a saída no diretório `help/_includes/templated`.
 
    ```bash
-   rake render
+   bundle exec rake render
    ```
 
-   >**OBSERVAÇÃO:** você deve executar o script a partir do diretório `_jekyll`. Se esta for a primeira vez que você executa o script, instale primeiro as dependências de Ruby com o comando `bundle install`.
+   >**OBSERVAÇÃO:** você deve executar o script a partir do diretório `_jekyll`. Se esta for a primeira vez que você executa o script, instale primeiro as dependências de Ruby com o comando `bundle install`. As tarefas do rake são fornecidas pela gem `adobe-comdox-exl-rake-tasks` para melhor manutenção nos repositórios de documentação da Adobe Commerce.
 
 1. Volte para o diretório `root`.
 
@@ -164,3 +164,12 @@ Para atualizar o conteúdo do modelo:
    ```
 
 Consulte a documentação do Jekyll para obter mais detalhes sobre [Arquivos de dados](https://jekyllrb.com/docs/datafiles), [Filtros líquidos](https://jekyllrb.com/docs/liquid/filters/) e outros recursos.
+
+## Tarefas do rake disponíveis
+
+Este repositório usa tarefas do rake fornecidas pela gem `adobe-comdox-exl-rake-tasks`. Para ver todas as tarefas disponíveis, execute:
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```
