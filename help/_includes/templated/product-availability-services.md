@@ -29,8 +29,8 @@ ht-degree: 5%
           <td>1,32</td>
           <td>1,32</td>
           <td>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Visão geral</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Notas de versão</a><br/>
+              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/catalog-service/guide-overview">Visão geral</a><br/>
+              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/catalog-service/release-notes">Notas de versão</a><br/>
           </td>
       </tr>
       <tr>
@@ -42,7 +42,7 @@ ht-degree: 5%
           <td>4.5.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Notas de versão</a><br/>
+              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/release-notes">Notas de versão</a><br/>
           </td>
       </tr>
       <tr>
@@ -54,7 +54,7 @@ ht-degree: 5%
           <td>PHP 8.1</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Notas de versão</a><br/>
+              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/payment-services/release-notes">Notas de versão</a><br/>
           </td>
       </tr>
       <tr>
@@ -66,7 +66,7 @@ ht-degree: 5%
           <td>6.4.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">Notas de versão</a><br/>
+              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/product-recommendations/release-notes">Notas de versão</a><br/>
           </td>
       </tr>
   </tbody>
