@@ -2,10 +2,10 @@
 title: Visão geral da instalação local
 description: Saiba mais sobre o processo de instalação de implantações locais do Adobe Commerce.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 7cc77a204d2a3c0773e6a0ab60e57e6e35f12091
+source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 3%
+source-wordcount: '502'
+ht-degree: 2%
 
 ---
 
@@ -14,13 +14,30 @@ ht-degree: 3%
 
 Esta página fornece uma visão geral da instalação do Adobe Commerce em sua própria infraestrutura. O processo de instalação envolve a configuração do ambiente do servidor, a obtenção do software e das credenciais necessárias e a execução do comando de instalação.
 
-Você pode instalar o software Adobe Commerce em aproximadamente 30 a 60 minutos. No entanto, o tempo necessário para configurar o ambiente do servidor antes da instalação varia de acordo com a sua experiência e as tecnologias selecionadas.
+Você pode instalar o software Adobe Commerce no local em aproximadamente 30 a 60 minutos. No entanto, o tempo necessário para configurar o ambiente do servidor antes da instalação varia de acordo com a sua experiência e as tecnologias selecionadas.
 
 >[!TIP]
 >
 >Você deve ter conhecimento técnico intermediário e acesso ao servidor para prosseguir com êxito.
 
-A instalação cria um armazenamento do Adobe Commerce totalmente funcional com uma [vitrine voltada para o cliente](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/storefront/storefront) e um [painel administrativo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/admin/admin). Você deve ter suas credenciais de banco de dados, informações de domínio e chaves de autenticação prontas antes de iniciar o processo.
+A instalação cria um armazenamento do Adobe Commerce totalmente funcional com uma [vitrine voltada para o cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) e um [painel administrativo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Você deve ter suas credenciais de banco de dados, informações de domínio e chaves de autenticação prontas antes de iniciar o processo.
+
+## Responsabilidades do comerciante
+
+Com o Adobe Commerce no local, você hospeda e gerencia sua própria infraestrutura, incluindo servidores, ambientes de hospedagem e manutenção do sistema. A Adobe fornece suporte específico para o aplicativo principal do Commerce, incluindo:
+
+- Acesso a atualizações e correções de produtos
+- Patches de segurança para lidar com vulnerabilidades
+- Documentação abrangente para ajudá-lo a gerenciar e otimizar sua solução de auto-hospedagem
+
+Você tem controle total sobre seu ambiente, permitindo maior personalização e flexibilidade, mas é responsável por garantir o desempenho, a segurança e a escalabilidade da infraestrutura. Por exemplo, você é responsável pelo seguinte:
+
+- O design, a implementação, a configuração, a manutenção, a solução de problemas e os testes de desempenho de todos os sistemas Adobe Commerce no local.
+   - Servidores, sistema operacional, bancos de dados, [!DNL PHP], pesquisa, armazenamento em cache, cache de página inteira e rede de entrega de conteúdo. Temas comuns podem incluir (mas não limitados a) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] e qualquer [!DNL CDN] usado.
+- Planejamento de capacidade, dimensionamento automático, clustering, backups, recuperação de desastres
+- Todos os dados do produto e do cliente, projeto, configuração e instalação, manutenção de aplicativos e bancos de dados, implantação de código, atualizações de versão e aplicativo de patch
+- Monitoramento e alerta via APM/logging/alerting (por exemplo, [!DNL New Relic], [!DNL Datadog], [!DNL ELK])
+- Patch de segurança para sistema operacional, [!DNL PHP], banco de dados, proteção e atualizações de middleware
 
 ## Fluxo de trabalho (WRK)
 
