@@ -1,0 +1,29 @@
+---
+title: 'Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.71'
+description: Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no  [!DNL Quality Patches Tool] (QPT) v1.1.71.
+feature: Tools and External Services
+role: Admin, Developer
+source-git-commit: db405ed4cc0f600e24b22242db9e5f48f31c2756
+workflow-type: tm+mt
+source-wordcount: '178'
+ht-degree: 0%
+
+---
+
+# Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.71
+
+Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no [!DNL Quality Patches Tool] (QPT) v1.1.71.
+
+O QPT v1.1.71 inclui os seguintes patches:
+
+
+* **ACSD-60624**: **[!UICONTROL Upload Image]** não funciona para conteúdo vazio nas seções [!UICONTROL Image], [!UICONTROL Banner] e [!UICONTROL Slider] em [!DNL Page Builder].
+* **ACSD-67089**: problema de paginação na API `inventory/export-stock-salable-qty`, que limita incorretamente `total_count` ao tamanho da página.
+* **ACSD-67093**: recuperar pedidos até [!DNL GraphQL] usando o filtro de intervalo de datas retorna resultados incorretos.
+* **ACSD-67459**: não é possível importar produtos com descrições maiores que 65.536 caracteres.
+* **ACSD-67603**: geração de mapas do site para produtos com inclusão de imagem habilitada, experiências com longos tempos de processamento.
+* **ACSD-67643**: entradas duplicadas são criadas durante atualizações agendadas em ambientes com um alto número de categorias aninhadas.
+* **ACSD-67652**: o status do produto do pacote é retornado como indisponível em chamadas [!DNL GraphQL] mesmo com produtos filho e pai em estoque.
+* **ACSD-67904**: os pedidos não podem ser feitos se o nome da cidade contiver dígitos (0-9), E comercial (&amp;), ponto (.) ou parênteses ().
+
+Use o menu à esquerda para navegar até uma página de patch específica.
