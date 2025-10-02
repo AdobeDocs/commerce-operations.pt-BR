@@ -73,4 +73,4 @@ Comerciantes e parceiros que desejam ter mais visibilidade de seus sites da Adob
 
 Assista a este vídeo para saber mais sobre o [!DNL Site-Wide Analysis Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3412498?quality=12&captions=por_br)
