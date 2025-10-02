@@ -35,7 +35,7 @@ Veja este [vídeo de introdução](https://www.youtube.com/watch?v=KW2R8ki_RG4) 
    - Mostra a integridade geral do sistema com notificações de problemas detectados e recomendações específicas por prioridade.<br>
 Ele também inclui um gráfico histórico para rastrear como a integridade do site muda ao longo do tempo.
    - Mostra o **[!UICONTROL Security Center Widget]** que permite acessar:
-      - [Conformidade de versão {Tech [!DNL Stack] com [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+      - [Conformidade de versão &lbrace;Tech [!DNL Stack] com [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
       - [Boletim de Segurança do Adobe](https://helpx.adobe.com/security/security-bulletin.html)
       - [Recomendações de [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html)
       - [[!DNL Site-Wide Analysis Tool] Recomendações de Segurança de Práticas Recomendadas](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html)
