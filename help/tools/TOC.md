@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 62afde0308aa4e23f1a1f5340f05472b58f33ba0
+source-git-commit: cabc3ca71176a1bde126957929037f09ca09562b
 workflow-type: tm+mt
-source-wordcount: '8522'
+source-wordcount: '8537'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Alertas gerenciados para Adobe Commerce: alerta de aviso do CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Ferramenta Correções de qualidade {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de versão](quality-patches-tool/release-notes.md)
    - Patches disponíveis na Ferramenta de patches de qualidade {#patches-available-in-qpt}
@@ -349,7 +349,7 @@ ht-degree: 0%
          - [ACSD-49822: Atualizações na lista de requisições não refletidas na lista de requisições de impressão](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49822-updates-on-requisition-list-page-not-reflected-on-print.md)
          - [ACSD-49835: a caixa de seleção [!UICONTROL Use Default Value] não está salva](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49835-use-default-value-chekbox-not-saved.md)
          - [ACSD-49970: Tratamento incorreto de erros do GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49970-incorrect-handling-of-graphql-errors.md)
-         - [ACSD-49502: link baixável não atualizado corretamente após a atualização  [!DNL staging] &#x200B;](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49502-downloadable-link-not-updated-correctly.md)
+         - [ACSD-49502: link baixável não atualizado corretamente após a atualização  [!DNL staging] ](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49502-downloadable-link-not-updated-correctly.md)
          - [ACSD-49748: Convites por email não podem ser enviados](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49748-email-invitations-cannot-be-sent.md)
          - [ACSD-49849: o email do cliente foi substituído por email do paypal](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49849-customer-email-was-replaced-with-paypal-email.md)
          - [ACSD-49773: falha na exportação do produto quando o AWS S3 é usado como armazenamento remoto](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49773-product-export-fails-when-aws-s3-is-used-as-remote-storage.md)
@@ -600,7 +600,7 @@ ht-degree: 0%
          - [ACSD-57394: Classificação de produto incorreta por campos de classificação múltipla em [!DNL GraphQL]](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
          - [ACSD-56546: os produtos configuráveis e empacotados são exibidos como esgotados na loja](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
          - [ACSD-56741: Resolução de erros de configuração de banco de dados com acionadores MySQL personalizados](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-56741-database-setup-upgrade-error-with-custom-mysql-trigger.md)
-         - [ACSD-55566: falha na mutação [!UICONTROL mergeCart] com erro interno do servidor na resposta  [!DNL GraphQL] &#x200B;](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response.md)
+         - [ACSD-55566: falha na mutação [!UICONTROL mergeCart] com erro interno do servidor na resposta  [!DNL GraphQL] ](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response.md)
          - [ACSD-58008: editar a data final como vazia faz com que a atualização da programação desapareça](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear.md)
          - [ACSD-57854: a resposta do GraphQL contém categorias desabilitadas que não devem ser listadas em agregações de categoria](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57854-graphql-response-contains-disabled-categories.md)
          - [ACSD-57565: o painel de pedidos exibe informações de pedidos incorretas](quality-patches-tool/patches-available-in-qpt/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information.md)
@@ -628,7 +628,7 @@ ht-degree: 0%
          - [ACSD-58141: PHPSESSID é gerado novamente em solicitações POST para clientes conectados se o cache L2 Redis estiver ativado](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
          - [ACSD-59229: Alocação incorreta de dados de grupo do cliente devido a um valor X-Magento-Vary desatualizado](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          - [ACSD-60441: A atualização de clientes por meio do ponto de extremidade V1/customers [!DNL REST] API gera um erro](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
-         - [ACSD-58352: Os rótulos de atributo de retorno para o armazenamento padrão são retornados por meio da API  [!DNL GraphQL] &#x200B;](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
+         - [ACSD-58352: Os rótulos de atributo de retorno para o armazenamento padrão são retornados por meio da API  [!DNL GraphQL] ](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
          - [ACSD-59514: Forms no Admin com  [!DNL Page Builder] lançamento de erro no console do navegador](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
          - [ACSD-58790: Correções da funcionalidade de pinçar para zoom nas imagens da página de detalhes do produto na exibição móvel no [!DNL Chrome]](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page.md)
          - [ACSD-58442: corrige o problema em que dispositivos com largura de 768px são tratados como móveis, fazendo com que o menu e o cabeçalho sejam carregados na exibição móvel, não no desktop](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
@@ -879,8 +879,9 @@ ht-degree: 0%
          - [ACSD-67166: execução duplicada da consulta cataloginventory_stock_status ao carregar uma cotação na loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
       - v1.1.71 {#v1-1-71}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)
-         - [ACSD-67904: os pedidos não poderão ser feitos se o nome da cidade contiver dígitos (0-9), E comercial (&amp;), ponto (.) ou parênteses ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
+         - [ACSD-60624: Falha ao carregar imagem para conteúdo vazio nas seções Imagem, Banner e Controle deslizante em [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
          - [ACSD-67643: Entradas duplicadas criadas durante atualizações agendadas em ambientes de categoria altamente aninhados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)
+         - [ACSD-67904: os pedidos não poderão ser feitos se o nome da cidade contiver dígitos (0-9), E comercial (&amp;), ponto (.) ou parênteses ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
          - [ACSD-67603: Longos tempos de processamento da geração de mapas do site para produtos com inclusão de imagem ativada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
    - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referência de ferramentas de linha de comando {#cli-reference}
@@ -901,7 +902,7 @@ ht-degree: 0%
    - [A guia Alertas](observation-for-adobe-commerce/alerts-tab.md)
    - [A guia WAF](observation-for-adobe-commerce/waf-tab.md)
    - [A guia CDN](observation-for-adobe-commerce/cdn-tab.md)
-   - [A guia  [!DNL RabbitMQ] &#x200B;](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [A guia  [!DNL RabbitMQ] ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [A página do Cron](observation-for-adobe-commerce/cron-tab.md)
    - [A guia Indexação](observation-for-adobe-commerce/indexing-tab.md)
    - [A guia QuickView](observation-for-adobe-commerce/oac-quickview-tab.md)
@@ -917,7 +918,7 @@ ht-degree: 0%
       - [Pré-requisitos](data-migration-tool/prerequisites.md)
       - [Instalar](data-migration-tool/install.md)
       - [Atualizar](data-migration-tool/upgrade.md)
-      - [Configurar &#x200B;](data-migration-tool/configure.md)
+      - [Configurar ](data-migration-tool/configure.md)
       - [Personalizar](data-migration-tool/customize.md)
       - [Especificações técnicas](data-migration-tool/technical-specification.md)
    - Migrar dados {#migrate-data}
@@ -929,6 +930,6 @@ ht-degree: 0%
       - [Dados que exigem migração manual](data-migration-tool/migrate-data/manual.md)
       - [Etapas de migração pós-dados](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=pt-BR)
+      - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Log de alterações](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
