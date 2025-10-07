@@ -1,11 +1,11 @@
 ---
 title: Usar Valkey para cache padrão
-description: Saiba como configurar o Valkey como cache padrão do Adobe Commerce.
+description: Saiba como configurar o Valkey como cache padrão para o Adobe Commerce. Descubra técnicas de configuração, de configuração e de validação da linha de comando.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---

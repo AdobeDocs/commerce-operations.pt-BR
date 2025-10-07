@@ -1,10 +1,10 @@
 ---
 title: Recomendações do ambiente de desenvolvimento
-description: Saiba mais sobre as recomendações de desempenho para configurar o ambiente de desenvolvimento local do Adobe Commerce.
+description: Saiba mais sobre as recomendações do ambiente de desenvolvimento no Adobe Commerce. Descubra a orientação para a implementação e as estratégias de otimização.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---

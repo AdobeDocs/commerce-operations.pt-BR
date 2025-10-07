@@ -1,11 +1,11 @@
 ---
 title: Referência de caminhos de configuração de pagamento
-description: Consulte uma lista de valores do método de pagamento configuráveis.
+description: Saiba mais sobre caminhos de configuração de pagamento e valores de método no Adobe Commerce Admin. Descubra as opções de configuração do PayPal, cartão de crédito e gateway de pagamento.
 feature: Configuration, Payments
 exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '4100'
+source-wordcount: '4113'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ As configurações são organizadas ainda mais por método de pagamento.
 | Transferir itens de linha do carrinho | `payment/paypal_billing_agreement/line_items_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Permitir no Assistente de Contrato de Cobrança | `payment/paypal_billing_agreement/allow_billing_agreement_wizard` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ativar busca automática | `paypal/fetch_reports/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Agendar | `paypal/fetch_reports/schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Cronograma | `paypal/fetch_reports/schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Hora do dia | `paypal/fetch_reports/time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Logotipo do produto PayPal | `paypal/style/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Estilo de página | `paypal/style/page_style` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

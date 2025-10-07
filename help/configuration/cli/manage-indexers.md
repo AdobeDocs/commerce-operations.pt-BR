@@ -1,10 +1,10 @@
 ---
 title: Gerenciar os indexadores
-description: Consulte exemplos de como exibir e gerenciar indexadores do Commerce.
+description: Saiba como visualizar e gerenciar indexadores do Adobe Commerce usando ferramentas de linha de comando. Descubra comandos do indexador, verificação de status e técnicas de reindexação.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ceefb9371dd0a85046cc5bfc0ddc72144d649608
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> Os comerciantes do Adobe Commerce que usam o Live Search, o Serviço de Catálogo ou as Recomendações de Produto têm a opção de usar a [indexação de preço com base em SaaS](https://experienceleague.adobe.com/pt-br/docs/commerce/price-indexer/price-indexing).
+> Os comerciantes do Adobe Commerce que usam o Live Search, o Serviço de Catálogo ou as Recomendações de Produto têm a opção de usar a [indexação de preço com base em SaaS](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Exibir status do indexador
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 e posterior**: o indexador [!DNL Customer Grid] oferece suporte aos modos [!UICONTROL Update on Save] e [!UICONTROL Update by Schedule] e o padrão é [!UICONTROL Update by Schedule].
 >
->Consulte [Práticas recomendadas para a configuração de indexador](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) no _Manual de implementação_.
+>Consulte [Práticas recomendadas para a configuração de indexador](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) no _Manual de implementação_.
 
 >[!INFO]
 >
->Antes de alternar os modos do indexador, defina o site como [manutenção](../../installation/tutorials/maintenance-mode.md) e [desabilite os trabalhos cron](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). Isso garante que você não tenha bloqueios de banco de dados.
+>Antes de alternar os modos do indexador, defina o site como [manutenção](../../installation/tutorials/maintenance-mode.md) e [desabilite os trabalhos cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). Isso garante que você não tenha bloqueios de banco de dados.
 
 Para especificar a configuração do indexador:
 

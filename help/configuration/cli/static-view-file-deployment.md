@@ -1,10 +1,10 @@
 ---
 title: Implantar arquivos de exibição estáticos
-description: Saiba como gravar arquivos estáticos no sistema de arquivos do Commerce durante o modo de produção.
+description: Saiba como implantar arquivos de exibição estáticos no sistema de arquivos do Adobe Commerce no modo de produção. Descubra comandos de implantação e técnicas de otimização.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---

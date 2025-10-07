@@ -1,10 +1,10 @@
 ---
 title: Configurar um trabalho cron personalizado e um grupo cron (tutorial)
-description: Use este tutorial passo a passo para criar um trabalho cron personalizado.
+description: Saiba como criar trabalhos cron personalizados usando este tutorial passo a passo para o Adobe Commerce. Descubra a configuração do módulo e a configuração do grupo cron.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---

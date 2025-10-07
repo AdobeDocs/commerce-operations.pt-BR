@@ -1,11 +1,11 @@
 ---
 title: Configurar verniz para Commerce
-description: Saiba como atualizar e gerenciar o arquivo de configuração do Vernish para o aplicativo da Commerce.
+description: Saiba como configurar o Varnish especificamente para aplicativos Adobe Commerce. Descubra as técnicas de gerenciamento e atualizações de arquivos de configuração.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---

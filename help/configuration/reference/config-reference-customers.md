@@ -1,11 +1,11 @@
 ---
 title: Referência de caminhos de configuração de clientes
-description: Consulte uma lista de valores de configuração de clientes.
+description: Saiba mais sobre os caminhos e valores da configuração do cliente nas configurações de administração do Adobe Commerce. Conheça informativos, gerenciamento de contas e opções de atendimento ao cliente.
 feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---

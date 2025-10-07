@@ -1,12 +1,12 @@
 ---
 title: referência system.xml
-description: Saiba como o arquivo XML do sistema gerencia a configuração do aplicativo do Commerce.
+description: Saiba como o arquivo system.xml gerencia a configuração de aplicativos do Adobe Commerce. Descubra o gerenciamento da configuração do sistema, a estrutura XML e as técnicas de implementação.
 feature: Configuration, System
 badge: label="Contribuição de David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2717'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Uma tag `<field>` pode ter os seguintes valores para o atributo `type=""`:
 | `select` | Lista suspensa normal, pode precisar de um `source_model` personalizado. Também usado para `Yes/No` seleções. Veja um exemplo em `Magento\Search\Model\Adminhtml\System\Config\Source\Engine`. |
 | `multiselect` | Como `select`, mas várias opções são válidas. |
 | `button` | Um botão que aciona um evento imediato. Requer um modelo de front-end personalizado para definir o texto do botão e a ação. Veja um exemplo em `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean`. |
-| `obscure` | Um campo de texto com o valor criptografado e exibido como `**&#x200B;**`. A alteração do tipo usando &quot;Inspecionar elemento&quot; no navegador não revela o valor. |
+| `obscure` | Um campo de texto com o valor criptografado e exibido como `****`. A alteração do tipo usando &quot;Inspecionar elemento&quot; no navegador não revela o valor. |
 | `password` | Como `obscure`, exceto que o valor oculto não é criptografado, e a alteração forçada do tipo usando &quot;Inspecionar Elemento&quot; no navegador revela o valor. |
 | `file` | Permite que um arquivo seja carregado para processamento. |
 | `label` | Exibe um rótulo em vez de um campo editável. Use esse tipo quando um campo for editável somente em escopos específicos, por exemplo, somente nível de Exibição de Loja. |

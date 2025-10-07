@@ -1,11 +1,11 @@
 ---
 title: Estratégias de implantação para arquivos de visualização estáticos
-description: Leia sobre as estratégias de implantação do aplicativo Commerce.
+description: Saiba mais sobre as estratégias de implantação para arquivos de exibição estáticos em aplicativos do Adobe Commerce. Descubra os melhores métodos de implantação para diferentes casos de uso.
 feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---

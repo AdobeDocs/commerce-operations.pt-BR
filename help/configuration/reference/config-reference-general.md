@@ -1,11 +1,11 @@
 ---
 title: Referência de caminhos de configuração geral
-description: Consulte uma lista de valores de configuração gerais e avançados.
+description: Saiba mais sobre caminhos e valores de configuração gerais e avançados para o Adobe Commerce. Descubra as opções de configuração do sistema, de segurança e administrativa.
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---

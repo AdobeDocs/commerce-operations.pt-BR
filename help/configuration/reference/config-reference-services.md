@@ -1,11 +1,11 @@
 ---
 title: Referência de caminhos de configuração de serviços
-description: Consulte uma lista de valores de configuração de serviços.
+description: Saiba mais sobre os caminhos e valores de configuração de serviços nas configurações de administração do Adobe Commerce. Descubra API da Web, OAuth e opções de configuração de integração de serviço.
 feature: Configuration, Services
 exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---

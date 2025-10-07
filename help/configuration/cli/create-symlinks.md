@@ -1,10 +1,10 @@
 ---
 title: Criar ligações simbólicas para MENOS arquivos
-description: Saiba como criar symlinks para arquivos LESS.
+description: Saiba como criar symlinks para arquivos LESS para desenvolvimento em Adobe Commerce. Descubra a vinculação de folhas de estilos e a otimização do fluxo de trabalho de desenvolvimento.
 exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---

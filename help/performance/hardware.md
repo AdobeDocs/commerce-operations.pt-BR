@@ -1,11 +1,11 @@
 ---
 title: Recomendações de hardware
-description: Revise uma lista de hardwares recomendados relacionados ao desempenho ideal das implantações do Adobe Commerce.
+description: Saiba mais sobre as recomendações de hardware para o desempenho ideal do Adobe Commerce. Descubra os requisitos de CPU, memória e armazenamento para implantações de produção.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---

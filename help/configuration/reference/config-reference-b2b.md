@@ -1,11 +1,11 @@
 ---
 title: Referência de caminhos de configuração da extensão B2B
-description: Consulte uma lista de valores de configuração relacionados a B2B.
+description: Saiba mais sobre caminhos e valores de configuração da extensão B2B para o Adobe Commerce. Descubra as opções de configuração específicas da empresa, do pagamento, da cotação e do B2B.
 feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---

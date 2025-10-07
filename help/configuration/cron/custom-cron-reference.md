@@ -1,10 +1,10 @@
 ---
 title: Trabalho cron personalizado e referência de grupo cron
-description: Saiba como personalizar crons usando grupos cron.
+description: Saiba como personalizar crons usando grupos de cron e crontabs no Adobe Commerce. Descubra a configuração de módulo personalizado e de tarefa agendada.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---

@@ -3,9 +3,9 @@ title: A guia [!UICONTROL Redis]
 description: Saiba mais sobre a guia [!UICONTROL Redis] do  [!DNL Observation for Adobe Commerce].
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
-source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ O **[!UICONTROL Redis Node summary]** inclui todos os nós em um ambiente. O exe
 
 ## [!UICONTROL Redis node detail]
 
-![Detalhes do nó Redis](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
+![Redefine as métricas de desempenho do servidor e os detalhes de configuração do nó](../../assets/tools/observation-for-adobe-commerce/redis-tab-2.jpg)
 
 O quadro **[!UICONTROL Redis node detail]** indica o ambiente, a função [!DNL Redis], a versão do software e o tamanho do nó.
 

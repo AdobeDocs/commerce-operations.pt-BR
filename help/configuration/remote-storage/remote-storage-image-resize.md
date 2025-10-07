@@ -3,9 +3,9 @@ title: Configurar redimensionamento de imagem para armazenamento remoto
 description: Otimize os recursos de disco configurando o redimensionamento de imagens do lado do servidor.
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Por padrão, o Adobe Commerce oferece suporte ao redimensionamento de imagens no
 
 O diagrama a seguir mostra como o Nginx recupera, redimensiona e armazena imagens no cache. O redimensionamento é determinado pelos parâmetros incluídos no URL, como altura e largura.
 
-![redimensionamento da imagem](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![Configuração de nginx para redimensionamento de imagem de armazenamento remoto mostrando as configurações de bloco do servidor](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >

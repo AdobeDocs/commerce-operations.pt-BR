@@ -2,9 +2,9 @@
 title: Gerenciar extensões de terceiros
 description: Siga estas etapas para instalar, habilitar, atualizar e desinstalar extensões de Adobe Commerce.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: f057cf082eeab1e34957e284817c6b93517de21b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ As extensões incluem:
 - Temas (altere a aparência da loja e do administrador)
 - Pacotes de idioma (localize a loja e o Administrador)
 
-Este tópico explica como usar a interface de linha de comando para gerenciar extensões de terceiros compradas da Commerce Marketplace para projetos _no local_. Para projetos de infraestrutura em nuvem, consulte [Gerenciar extensões](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+Este tópico explica como usar a interface de linha de comando para gerenciar extensões de terceiros compradas da Commerce Marketplace para projetos _no local_. Para projetos de infraestrutura em nuvem, consulte [Gerenciar extensões](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 Você pode usar o mesmo procedimento para instalar a extensão _any_. Tudo o que você precisa é o nome e a versão do Compositor da extensão. Para encontrá-lo, abra o arquivo `composer.json` da extensão e anote os valores de `"name"` e `"version"`.
 
@@ -72,7 +72,7 @@ Para obter o nome e a versão do Composer da extensão no Commerce Marketplace:
 
 1. Encontre a extensão que deseja instalar e anote o nome e a versão do componente.
 
-   ![Os detalhes técnicos mostram o nome do Compositor da extensão](../../assets/installation/marketplace-extension-technical-details.png)
+   ![Detalhes técnicos da extensão exibindo o nome do pacote do Composer para instalação](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >

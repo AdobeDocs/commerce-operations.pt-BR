@@ -1,11 +1,11 @@
 ---
 title: Programação de lançamento
-description: Saiba quando a Adobe planeja anunciar o lançamento de novos recursos do Adobe Commerce.
+description: Saiba quando a Adobe planeja anunciar novos recursos e versões para o Adobe Commerce. Descubra os cronogramas futuros de patches e cronogramas de entrega de recursos para um melhor planejamento.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: b908b468f0b8abe8bb7904b9c4a626201dc919bc
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 2%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -18,9 +18,9 @@ A Adobe se esforça continuamente para encontrar o equilíbrio certo entre torna
 
 Novos recursos, atualizações de recursos, infraestrutura em nuvem e atualizações de extensibilidade são fornecidos independentemente de versões de patches e estão disponíveis por meio de módulos externos, extensões, ferramentas ou serviços da Web. Os exemplos incluem:
 
-- ![Ícone de recurso](../assets/icons/feature.svg) [**Recursos e funcionalidades**](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/release-information/release-notes-all)—Novos recursos e funcionalidades fornecidos independentemente das versões de patch. Por exemplo, [B2B](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/release-notes), Serviço de Catálogo, Conexão de Dados, Live Search e Recomendações de Produto.
+- ![Ícone de recurso](../assets/icons/feature.svg) [**Recursos e funcionalidades**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)—Novos recursos e funcionalidades fornecidos independentemente das versões de patch. Por exemplo, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Serviço de Catálogo, Conexão de Dados, Live Search e Recomendações de Produto.
 
-- ![Ícone de infraestrutura](../assets/icons/servers.svg) [**Infraestrutura em nuvem**](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)—Novos recursos e aprimoramentos do Adobe Commerce na infraestrutura em nuvem e dos pacotes do Cloud Tools Suite for Commerce, que implantam e gerenciam instalações e atualizações do Adobe Commerce na plataforma em nuvem.
+- ![Ícone de infraestrutura](../assets/icons/servers.svg) [**Infraestrutura em nuvem**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite)—Novos recursos e aprimoramentos do Adobe Commerce na infraestrutura em nuvem e dos pacotes do Cloud Tools Suite for Commerce, que implantam e gerenciam instalações e atualizações do Adobe Commerce na plataforma em nuvem.
 
 - ![Ícone de extensibilidade](../assets/icons/brackets.svg) [**Extensibilidade**](https://developer.adobe.com/commerce/extensibility/)—Novas ferramentas e serviços de desenvolvedor para extensibilidade fora do processo entregues independentemente das versões de patch. Por exemplo, Integration Starter Kit, Admin UI SDK, Adobe I/O Events para Commerce e API Mesh.
 

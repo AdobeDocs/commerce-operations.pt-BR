@@ -1,11 +1,11 @@
 ---
 title: Visão geral da instalação local
-description: Saiba mais sobre o processo de instalação de implantações locais do Adobe Commerce.
+description: Saiba mais sobre o processo de instalação local do Adobe Commerce. Descubra os requisitos do servidor, as etapas de configuração e as práticas recomendadas de implantação.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
+source-git-commit: 062267b8b06e41d89f704144e640fc1254952532
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 2%
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Você pode instalar o software Adobe Commerce no local em aproximadamente 30 a 6
 >
 >Você deve ter conhecimento técnico intermediário e acesso ao servidor para prosseguir com êxito.
 
-A instalação cria um armazenamento do Adobe Commerce totalmente funcional com uma [vitrine voltada para o cliente](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/storefront/storefront) e um [painel administrativo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/admin/admin). Você deve ter suas credenciais de banco de dados, informações de domínio e chaves de autenticação prontas antes de iniciar o processo.
+A instalação cria um armazenamento do Adobe Commerce totalmente funcional com uma [vitrine voltada para o cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) e um [painel administrativo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Você deve ter suas credenciais de banco de dados, informações de domínio e chaves de autenticação prontas antes de iniciar o processo.
 
 ## Responsabilidades do comerciante
 

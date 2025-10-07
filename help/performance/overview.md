@@ -1,10 +1,10 @@
 ---
 title: Visão geral
-description: Siga estas práticas recomendadas para otimizar o desempenho da implantação do Adobe Commerce.
+description: Saiba mais sobre as práticas recomendadas de desempenho para otimizar a implantação do Adobe Commerce. Descubra estratégias comprovadas para maximizar a velocidade, a eficiência e a experiência do usuário.
 exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '94'
 ht-degree: 1%
 
 ---

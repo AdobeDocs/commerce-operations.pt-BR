@@ -1,10 +1,10 @@
 ---
 title: Dicionários de tradução e pacotes de idiomas
-description: Saiba como gerar dicionários de tradução e criar pacotes de idioma.
+description: Saiba como gerar dicionários de tradução e criar pacotes de idioma para o Adobe Commerce. Descubra a localização e a configuração da loja multilíngue.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1441'
 ht-degree: 0%
 
 ---
@@ -316,7 +316,7 @@ Semelhante ao exemplo anterior, gere um arquivo CSV, mas em vez de especificar u
 
 [Visão geral das traduções]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [dicionário de tradução]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[configura as traduções]: https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-localize
+[configura as traduções]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [Saiba mais sobre pacotes de idiomas]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

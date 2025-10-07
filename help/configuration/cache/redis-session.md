@@ -1,11 +1,11 @@
 ---
 title: Usar Redis para armazenamento de sessão
-description: Saiba como configurar o Redis para armazenamento de sessão.
+description: Saiba como configurar o Redis para armazenamento de sessão no Adobe Commerce. Descubra a configuração da linha de comando, as opções de configuração e as técnicas de otimização de desempenho.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 3886bf261f8f9d2594602850bef9c54db03fb269
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '724'
 ht-degree: 1%
 
 ---

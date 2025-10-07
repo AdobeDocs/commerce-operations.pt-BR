@@ -1,11 +1,11 @@
 ---
 title: Referência dos caminhos de configuração de vendas
-description: Consulte uma lista de valores de configuração de vendas.
+description: Saiba mais sobre caminhos de configuração de vendas e nomes de variáveis no Adobe Commerce. Descubra as configurações de administrador para check-out, envio e impostos.
 feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
 exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1485'
 ht-degree: 0%
 
 ---
