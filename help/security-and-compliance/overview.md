@@ -21,7 +21,7 @@ Esta seção contém informações sobre segurança, privacidade e conformidade 
 
 ## Conformidade
 
-Os comerciantes são obrigados a atender às diretrizes do setor para manter um ambiente seguro, requisitos legais em sua jurisdição e práticas recomendadas para o comércio online. Para saber mais de uma perspectiva comercial, consulte a [Política de Privacidade da Loja](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
+Os comerciantes são obrigados a atender às diretrizes do setor para manter um ambiente seguro, requisitos legais em sua jurisdição e práticas recomendadas para o comércio online. Para saber mais de uma perspectiva comercial, consulte a [Política de Privacidade da Loja](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html?lang=pt-BR).
 
 Esta documentação de conformidade fornece as informações técnicas para garantir que as instalações do Adobe Commerce cumpram com os requisitos de legislação de privacidade específica. Alguns desses requisitos exigem que os comerciantes concluam um trabalho de desenvolvimento adicional para atingir a conformidade. Consulte os seguintes tópicos para obter detalhes:
 

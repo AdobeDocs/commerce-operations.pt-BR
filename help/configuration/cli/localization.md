@@ -316,7 +316,7 @@ Semelhante ao exemplo anterior, gere um arquivo CSV, mas em vez de especificar u
 
 [Visão geral das traduções]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [dicionário de tradução]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[configura as traduções]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
+[configura as traduções]: https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-localize
 [Saiba mais sobre pacotes de idiomas]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

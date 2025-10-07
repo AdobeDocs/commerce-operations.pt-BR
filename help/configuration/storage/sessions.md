@@ -41,7 +41,7 @@ Como um usuário com privilégios `root`, abra seu arquivo `php.ini` e procure o
 
 ## Gerenciar tamanho da sessão
 
-Consulte o [Gerenciamento de sessão](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) no _Guia do usuário_.
+Consulte o [Gerenciamento de sessão](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security-session-management) no _Guia do usuário_.
 
 ## Configuração da coleta de lixo
 
