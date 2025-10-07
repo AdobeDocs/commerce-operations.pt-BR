@@ -26,7 +26,7 @@ O serviço [!DNL Site-Wide Analysis Tool] está disponível no [modo de produç�
 >[!NOTE]
 >
 >Sua conta deve ter direito a **[!DNL Support Permissions]** para acessar o [!DNL Site-Wide Analysis Tool Dashboard].
->>Veja mais detalhes em [Compartilhar uma [!DNL Commerce] conta](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) em nosso guia do usuário.
+>&#x200B;>Veja mais detalhes em [Compartilhar uma [!DNL Commerce] conta](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) em nosso guia do usuário.
 
 ## Fazendo logon em [!DNL Site-Wide Analysis Tool Dashboard] a partir da [!UICONTROL Admin Panel] do seu armazenamento
 

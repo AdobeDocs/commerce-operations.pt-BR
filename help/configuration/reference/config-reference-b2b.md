@@ -14,7 +14,7 @@ ht-degree: 0%
 
 _Disponível para instâncias com B2B para Adobe Commerce instalado._
 
-Este tópico lista os caminhos de configuração para a Extensão B2B do Commerce Enterprise. O comando [`magento app:config:dump` ](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem.
+Este tópico lista os caminhos de configuração para a Extensão B2B do Commerce Enterprise. O comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem.
 
 >[!INFO]
 >
