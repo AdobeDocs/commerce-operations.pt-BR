@@ -17,8 +17,8 @@ As versões de patch de segurança também podem incluir alterações relacionad
 
 Cada versão de patch de segurança é baseada na versão anterior de patch completo. Ele contém correções de qualidade e segurança da versão anterior do patch e correções de segurança criadas entre a versão anterior do patch completo e a versão do patch de segurança.
 
-Para obter instruções sobre como baixar e aplicar patches de segurança, consulte [Como obter e aplicar patches de segurança](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) na _Base de Conhecimentos Adobe Commerce_.
+Para obter instruções sobre como baixar e aplicar patches de segurança, consulte [Como obter e aplicar patches de segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) na _Base de Conhecimentos Adobe Commerce_.
 
 >[!NOTE]
 >
->Os patches de segurança de suporte estendido para 2.4.4 e 2.4.5 estão disponíveis apenas para clientes do Adobe Commerce e não estão disponíveis para a base de código Magento Open Source. Consulte [Suporte Estendido](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+>Os patches de segurança de suporte estendido para 2.4.4 e 2.4.5 estão disponíveis apenas para clientes do Adobe Commerce e não estão disponíveis para a base de código Magento Open Source. Consulte [Suporte Estendido](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
