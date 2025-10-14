@@ -17,7 +17,7 @@ Para o Adobe Commerce em implantações de infraestrutura em nuvem, melhore o te
 
 ## Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 Adobe Commerce na infraestrutura em nuvem
 

@@ -44,7 +44,7 @@ Defina a configuração compartilhada no Administrador em seu sistema de desenvo
 
 A configuração específica do sistema é armazenada em `app/etc/env.php`, que deve _não_ estar no controle de origem.
 
-Defina a configuração específica do sistema no Admin em seu sistema de desenvolvimento (ou Adobe Commerce na integração da infraestrutura em nuvem) e grave a configuração em `env.php` usando o comando [`magento app:config:dump` ](../cli/export-configuration.md).
+Defina a configuração específica do sistema no Admin em seu sistema de desenvolvimento (ou Adobe Commerce na integração da infraestrutura em nuvem) e grave a configuração em `env.php` usando o comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md).
 
 Este comando também grava configurações confidenciais em `env.php`.
 
@@ -88,7 +88,7 @@ O Administrador exibe o seguinte comportamento enquanto está no modo de produç
 
 ## Instalar e remover o cron
 
-Na versão 2.2, pela primeira vez, ajudamos você a configurar seu trabalho cron fornecendo o comando [`magento cron:install` ](../cli/configure-cron-jobs.md). Este comando configura um crontab como o usuário que executa o comando.
+Na versão 2.2, pela primeira vez, ajudamos você a configurar seu trabalho cron fornecendo o comando [`magento cron:install` &#x200B;](../cli/configure-cron-jobs.md). Este comando configura um crontab como o usuário que executa o comando.
 
 Além disso, você pode remover o crontab usando o comando `magento cron:remove`.
 

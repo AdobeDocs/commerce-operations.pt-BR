@@ -29,7 +29,7 @@ Para obter o melhor desempenho, use as diretrizes a seguir para gerenciar os lim
 
 ### Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -47,7 +47,7 @@ Configurar um grande número de categorias pode afetar o desempenho.
 
 ### Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -70,7 +70,7 @@ Configurar muitos atributos de produto ou opções de atributos de produto pode 
 
 ### Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -138,7 +138,7 @@ A configuração de muitas opções de produto por produto pode afetar o desempe
 
 ### Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -170,7 +170,7 @@ A exibição de muitos produtos por página pode afetar o desempenho.
 
 ### Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -187,7 +187,7 @@ A configuração de muitas SKUs de produtos pode afetar o desempenho, retardando
 
 ### Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -214,7 +214,7 @@ A configuração de muitas variações por produto pode afetar o desempenho.
 
 ### Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -249,7 +249,7 @@ Siga estas práticas recomendadas para configurar vendas e promoções para iten
 
 ### Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local

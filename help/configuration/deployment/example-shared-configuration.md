@@ -88,6 +88,6 @@ A última etapa do processo é atualizar o sistema de produção do controle do 
 
 >[!INFO]
 >
->Para alterar uma configuração bloqueada no Admin, use o comando [`magento config:set --lock` ](../cli/set-configuration-values.md).
+>Para alterar uma configuração bloqueada no Admin, use o comando [`magento config:set --lock` &#x200B;](../cli/set-configuration-values.md).
 
 <!-- Last updated from includes: 2024-07-18 15:50:54 -->

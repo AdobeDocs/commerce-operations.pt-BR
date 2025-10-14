@@ -20,7 +20,7 @@ Embora não seja possível eliminar todos os riscos de segurança, a aplicação
 >
 >Para obter informações sobre as funções e responsabilidades para proteger e manter projetos do Adobe Commerce na infraestrutura em nuvem, consulte [Modelo de Responsabilidade Compartilhada](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)) no _Guia de Segurança e Conformidade do Adobe Commerce_.
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local

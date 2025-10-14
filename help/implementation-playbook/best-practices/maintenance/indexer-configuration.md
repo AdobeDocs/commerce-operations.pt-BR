@@ -17,7 +17,7 @@ Para otimizar e manter o desempenho do site, revise e atualize a configuração 
 
 ## Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
