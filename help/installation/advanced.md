@@ -2,9 +2,9 @@
 title: Instalação avançada local
 description: Saiba mais sobre cenários de instalação avançada para implantações locais do Adobe Commerce. Descubra configurações complexas e opções de configuração personalizadas.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2485'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ As opções a seguir especificam as informações e credenciais do usuário admi
 
 Você pode criar o usuário Administrador durante ou após a instalação. Se você criar o usuário durante a instalação, todas as variáveis de credencial do administrador serão necessárias. Consulte [Exemplos de instalações localhost](#sample-localhost-installations).
 
-As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência de Ferramentas de Linha de Comando](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência de Ferramentas de Linha de Comando](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nome | Valor | Obrigatório? |
 |--- |--- |--- |
@@ -187,6 +187,21 @@ As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalaç
 | `--amqp-password` | A senha para conexão com [!DNL RabbitMQ]. Não usar a senha padrão `guest`. | Não |
 | `--amqp-virtualhost` | O host virtual para conexão com [!DNL RabbitMQ]. O padrão é `/`. | Não |
 | `--amqp-ssl` | Indica se é necessário conectar a [!DNL RabbitMQ]. O padrão é `false`. Consulte [!DNL RabbitMQ] para obter informações sobre como configurar o SSL para [!DNL RabbitMQ]. | Não |
+| `--consumers-wait-for-messages` | Os consumidores devem aguardar uma mensagem da fila? 1 - Sim, 0 - Não | Não |
+
+**Opções de configuração de AtiveMQ Artemis:**
+
+>[!NOTE]
+>
+>O AtiveMQ Artemis foi introduzido no Adobe Commerce 2.4.6 e versões posteriores.
+
+| Nome | Valor | Obrigatório? |
+|--- |--- |--- |
+| `--stomp-host` | Não use as opções `--stomp` a menos que já tenha configurado uma instalação do AtiveMQ Artemis. Consulte Instalação do AtiveMQ Artemis para obter mais informações sobre a instalação e configuração do AtiveMQ Artemis.<br><br>O nome do host em que o AtiveMQ Artemis está instalado. | Não |
+| `--stomp-port` | A porta a ser usada para conectar ao AtiveMQ Artemis. O padrão é 61613. | Não |
+| `--stomp-user` | O nome de usuário para conexão com o AtiveMQ Artemis. Não usar o usuário padrão `artemis`. | Não |
+| `--stomp-password` | A senha para conexão com o AtiveMQ Artemis. Não usar a senha padrão `artemis`. | Não |
+| `--stomp-ssl` | Indica se é necessário conectar-se ao AtiveMQ Artemis usando SSL. O padrão é `false`. Consulte AtiveMQ Artemis para obter informações sobre como configurar o SSL para AtiveMQ Artemis. | Não |
 | `--consumers-wait-for-messages` | Os consumidores devem aguardar uma mensagem da fila? 1 - Sim, 0 - Não | Não |
 
 **Opções de configuração de bloqueio:**
@@ -336,5 +351,24 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Magento installation complete.
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
+
+#### Exemplo 4 — Instalação com AtiveMQ Artemis
+
+O exemplo a seguir mostra como instalar o Adobe Commerce com o AtiveMQ Artemis como o agente de mensagem:
+
+```bash
+bin/magento setup:install --base-url=http://127.0.0.1/magento2/ \
+--db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
+--admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
+--admin-user=admin --admin-password=admin123 --language=en_US \
+--currency=USD --timezone=America/Chicago --use-rewrites=1 \
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200 --stomp-host=localhost --stomp-port=61613 \
+--stomp-user=artemis --stomp-password=artemis
+```
+
+>[!NOTE]
+>
+>A instalação do AtiveMQ Artemis requer o Adobe Commerce 2.4.6 ou posterior.
 
 <!-- Last updated from includes: 2024-04-16 09:42:31 -->

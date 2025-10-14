@@ -2,9 +2,9 @@
 title: referência env.php
 description: Saiba mais sobre os valores e as seções de configuração do arquivo env.php no Adobe Commerce. Descubra as configurações e definições do ambiente.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ O Commerce usa uma chave de criptografia para proteger senhas e outros dados con
 ]
 ```
 
-Saiba mais sobre [Chave de criptografia](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/encryption-key) no _Guia do usuário do Commerce_.
+Saiba mais sobre [Chave de criptografia](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) no _Guia do usuário do Commerce_.
 
 ## bd
 
@@ -172,11 +172,19 @@ Todas as configurações de banco de dados estão disponíveis neste nó.
 
 ## default_connection
 
-Define a conexão padrão para filas de mensagens. O valor pode ser `db`, `amqp` ou um sistema de fila personalizado, como `redismq`. Se você especificar qualquer valor diferente de `db`, o software de fila de mensagens deve ser instalado e configurado primeiro. Caso contrário, as mensagens não serão processadas corretamente.
+Define a conexão padrão para filas de mensagens. O valor pode ser `db`, `amqp`, `stomp` ou um sistema de fila personalizado como `redismq`. Se você especificar qualquer valor diferente de `db`, o software de fila de mensagens deve ser instalado e configurado primeiro. Caso contrário, as mensagens não serão processadas corretamente.
 
 ```conf
 'queue' => [
     'default_connection' => 'amqp'
+]
+```
+
+Para STOMP (AtiveMQ Artemis):
+
+```conf
+'queue' => [
+    'default_connection' => 'stomp'
 ]
 ```
 
@@ -203,7 +211,7 @@ Uma lista de domínios para download disponíveis neste nó. Domínios adicionai
 ]
 ```
 
-Saiba mais sobre [Domínios baixáveis](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Saiba mais sobre [Domínios baixáveis](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## instalar
 
@@ -233,13 +241,13 @@ Saiba mais sobre [Modos de aplicativo](../cli/set-mode.md).
 
 ## fila
 
-As configurações da fila de mensagens estão disponíveis neste nó.
+As configurações da fila de mensagens estão disponíveis neste nó. Você pode configurar RabbitMQ (AMQP) ou AtiveMQ Artemis (STOMP) como seu agente de mensagens.
 
 ```conf
 'queue' => [
   'topics' => [
-    'customer.created' => [publisher="default-rabitmq"],
-    'order.created' => [publisher="default-rabitmq"],
+    'customer.created' => [publisher="default-broker"],
+    'order.created' => [publisher="default-broker"],
   ]
 ]
 ```

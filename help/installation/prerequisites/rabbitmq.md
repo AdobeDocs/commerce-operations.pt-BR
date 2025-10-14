@@ -1,15 +1,15 @@
 ---
-title: Agente de mensagens
+title: Agente de mensagem (RabbitMQ)
 description: Siga estas etapas para instalar e configurar o software agente de mensagens necessário (como o  [!DNL RabbitMQ]) para instalações locais do Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
-# Agente de mensagens
+# Agente de mensagem (RabbitMQ)
 
 O Adobe Commerce usa o agente de mensagens de código aberto [!DNL RabbitMQ]. Ele oferece um sistema de mensagens confiável, altamente disponível, escalável e portátil.
 
