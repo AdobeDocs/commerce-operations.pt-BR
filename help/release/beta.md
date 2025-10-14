@@ -30,9 +30,9 @@ Consulte as seções a seguir para obter uma lista de programas beta ativos.
 
 ### Serviço de patch de automação de nuvem (Private Beta)
 
-O [Serviço de Patch de Automação da Nuvem](../tools/caps-tool/intro.md) automatiza o processo de aplicação de patches de segurança isolados aos ambientes do [Adobe Commerce na Infraestrutura da Nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
+O [Serviço de Patch de Automação da Nuvem](../tools/caps-tool/intro.md) automatiza o processo de aplicação de patches de segurança isolados aos ambientes do [Adobe Commerce na Infraestrutura da Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview).
 
-Em outubro de 2025, a versão beta do Serviço de patch de automação de nuvem será adicionada ao [painel de ferramentas de Análise do site](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este serviço oferece suporte aos administradores de projetos da Commerce com um fluxo de trabalho simplificado de patch que inclui:
+Em outubro de 2025, a versão beta do Serviço de patch de automação de nuvem será adicionada ao [painel de ferramentas de Análise do site](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este serviço oferece suporte aos administradores de projetos da Commerce com um fluxo de trabalho simplificado de patch que inclui:
 
 - Instalação de patch automatizada
 - Reverter recuperação
@@ -47,7 +47,7 @@ O beta inclui os seguintes recursos:
 
 >[!NOTE]
 >
->Como o Serviço de patch de automação de nuvem aplica automaticamente patches de segurança isolados, você deve ter a [função de Colaborador ou Administrador de projeto](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) para usá-los.
+>Como o Serviço de patch de automação de nuvem aplica automaticamente patches de segurança isolados, você deve ter a [função de Colaborador ou Administrador de projeto](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/user-access) para usá-los.
 
 Para participar deste beta, preencha e envie o [Serviço de patch de automação de nuvem - Formulário de inscrição no Beta](https://forms.office.com/r/3Wfxj5nPdB).
 
@@ -77,7 +77,7 @@ Esta versão beta oferece suporte a três novos recursos na consulta [`productSe
 
 Essas novas condições aprimoram o mecanismo de filtragem de consultas de pesquisa para refinar os resultados da pesquisa. Essas novas condições não afetam a consulta de pesquisa principal. Para participar da versão beta, envie uma solicitação de email para [commerce-store-services](mailto:commerce-storefront-services@adobe.com).
 
-Para instalar o Live Search beta, consulte o [Guia do Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
+Para instalar o Live Search beta, consulte o [Guia do Live Search](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### Integração do sistema IBM Sterling Order Management (Private Beta)
 
@@ -99,7 +99,7 @@ Cada versão alfa e beta do Adobe Commerce Foundation inclui todas as alteraçõ
 - Melhorias na GraphQL
 - Correções de erros de qualidade geral
 - Contribuições da Comunidade
-- Alterações necessárias para oferecer suporte à compatibilidade com [serviços da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- Alterações necessárias para oferecer suporte à compatibilidade com [serviços da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
 
 #### Convenção de nomenclatura e programação
 
