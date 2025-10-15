@@ -388,7 +388,7 @@ A Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
 
 A pilha de segurança do Adobe para Managed Services cria segurança em todos os níveis, usando automação e consistência para reduzir erros humanos. As equipes de desenvolvimento e operações herdam automaticamente os controles de segurança de diferentes níveis da pilha.
 
-Parceiros de plataforma, como o Amazon Web Services e o Microsoft Azure, garantem a máxima cobertura de segurança ao aplicar personalizações de plataforma, enquanto a equipe da Adobe Managed Services fornece serviços essenciais de segurança, como conformidade, registro, autenticação, verificação e monitoramento, segurança do servidor e configuração de aplicativos seguros. Consulte [Segurança do Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) para obter mais informações.
+Parceiros de plataforma, como o Amazon Web Services e o Microsoft Azure, garantem a máxima cobertura de segurança ao aplicar personalizações de plataforma, enquanto a equipe da Adobe Managed Services fornece serviços essenciais de segurança, como conformidade, registro, autenticação, verificação e monitoramento, segurança do servidor e configuração de aplicativos seguros. Consulte [Segurança do Adobe Commerce](https://business.adobe.com/br/products/magento/secure-ecommerce.html) para obter mais informações.
 
 O diagrama a seguir mostra a pilha da tecnologia de segurança do Adobe Managed Services:
 
