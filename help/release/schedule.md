@@ -18,7 +18,7 @@ O objetivo deste cronograma é fornecer datas para quando a Adobe planeja anunci
 
 >[!NOTE]
 >
->Para saber mais sobre novos recursos, infraestrutura em nuvem e versões de extensibilidade, consulte a documentação da versão dos [Serviços da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
+>Para saber mais sobre novos recursos, infraestrutura em nuvem e versões de extensibilidade, consulte a documentação da versão dos [Serviços da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/release-information/release-notes-all).
 
 Além dos patches de qualidade, segurança e beta agendados listados nesta página, a Adobe fornece acesso a [patches individuais](versioning-policy.md#individual-patch) por meio da [Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md). A ferramenta permite aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para a versão instalada do Adobe Commerce.
 
