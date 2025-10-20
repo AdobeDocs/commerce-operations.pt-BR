@@ -1,7 +1,7 @@
 ---
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: b0756431d8ddf0833ef8c13528f7681a1a92a3ca
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/release-notes).
+>Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Somente Adobe Commerce {#ee-only}
 
@@ -85,4 +85,19 @@ Antes de executar indexadores no modo paralelo, você deve habilitar o suporte d
 
 >[!IMPORTANT]
 >
->A Adobe não oferece suporte à aplicação de patches oficiais fornecidos pela Adobe usando esse método. Use o método a seguir por sua conta e risco. Para aplicar patches oficiais, use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}. Sempre realize testes abrangentes antes de implantar qualquer patch personalizado.
+>A Adobe não oferece suporte à aplicação de patches oficiais fornecidos pela Adobe usando esse método. Use o método a seguir por sua conta e risco. Para aplicar patches oficiais, use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Sempre realize testes abrangentes antes de implantar qualquer patch personalizado.
+
+## Backports de patch de segurança de outubro de 2025 {#oct-2025-backports}
+
+<!--These fixes were backported to 2.4.8-pe, 2.4.7-p8, and 2.4.6-p13-->
+
+* **Migrar do TinyMCE para o Hugerte.org**
+
+  Devido ao fim do suporte para o TinyMCE 5 e 6 e às incompatibilidades de licenciamento com o TinyMCE 7, a implementação atual do editor do Adobe Commerce WYSIWYG é migrada do TinyMCE para o [editor HugeRTE](https://hugerte.org/) de código aberto.
+
+  Essa migração garante que o Adobe Commerce permaneça em conformidade com o licenciamento de código aberto, evita vulnerabilidades conhecidas do TinyMCE 6 e fornece uma experiência de edição moderna e compatível para comerciantes e desenvolvedores.
+
+* **Suporte adicionado para o protocolo STOMP Apache AtiveMQ Artemis**
+
+  Adição de suporte para o agente de mensagens de código aberto AtiveMQ Artemis por meio do Simple Text Oriented Messaging Protocol (STOMP). Ele oferece um sistema de mensagens confiável e escalável, oferecendo flexibilidade para integrações baseadas em STOMP. Consulte [Apache AtiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) no *Guia de Configuração do Commerce*.
+

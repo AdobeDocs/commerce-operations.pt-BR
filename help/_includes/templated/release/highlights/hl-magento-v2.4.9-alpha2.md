@@ -1,5 +1,5 @@
 ---
-source-git-commit: bfad68a46b9b1a79a702f04efd39129decda1a1c
+source-git-commit: 3bc225485fa5a4c2b3565014af4ed81dc37fc4ab
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -92,18 +92,20 @@ _AC-14610_
 
 #### Migrar a integração USPS de APIs de Ferramentas da Web desatualizadas para novas APIs RESTful USPS
 
-Para estar em conformidade com o anúncio da desativação das APIs herdadas de Ferramentas da Web pelo USPS até 25 de janeiro de 2026, a integração do USPS do Adobe Commerce é migrada para as novas APIs RESTful do USPS.
+Para estar em conformidade com o anúncio da desativação das APIs herdadas de ferramentas da Web pelo USPS até 25 de janeiro de 2026, a integração do USPS do Adobe Commerce será migrada para as novas APIs do USPS RESTful.
 Principais aprimoramentos:
-- Suporte à API dupla: os usuários administradores agora podem escolher entre a API herdada de Ferramentas da Web e a nova API RESTful USPS por meio das configurações.
-- Atualização de autenticação: OAuth 2.0 implementado para acesso seguro à API.
-- Formato de dados aprimorado: transição de XML para JSON para uma comunicação mais limpa e eficiente.
-- Novos campos de administrador:
-URL REST do gateway (com base no modo: Desenvolvimento ou Ativo)
-ID do cliente e segredo
-Tipo de conta, Número da conta
-CRID, MID, Código de identificação do correio
-AES/ITN para remessas internacionais
-Métodos de envio permitidos específicos para REST
+
+* Suporte à API dupla: os usuários administradores agora podem escolher entre a API herdada de Ferramentas da Web e a nova API RESTful USPS por meio das configurações.
+* Atualização de autenticação: OAuth 2.0 implementado para acesso seguro à API.
+* Formato de dados aprimorado: transição de XML para JSON para uma comunicação mais limpa e eficiente.
+* Novos campos de administrador:
+   * URL REST do gateway (com base no modo: Desenvolvimento ou Ativo)
+   * ID do cliente e segredo
+   * Tipo de conta, Número da conta
+   * CRID, MID, Código de identificação do correio
+   * AES/ITN para remessas internacionais
+   * Métodos de envio permitidos específicos para REST
+
 Essa migração garante que a Adobe Commerce permaneça em conformidade com os padrões USPS, melhora a confiabilidade do sistema e garante integrações de envio que não se tornarão obsoletas para os comerciantes.
 
 _AC-13257_

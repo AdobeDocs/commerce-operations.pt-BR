@@ -1,9 +1,9 @@
 ---
 title: Agente de mensagem (AtiveMQ Artemis)
 description: Siga estas etapas para instalar e configurar o agente de mensagens Apache AtiveMQ Artemis para instalações locais do Adobe Commerce.
-source-git-commit: 6f15a24e650a7138bae6d0b40f230e6970a943b0
+source-git-commit: 46816b42ea30cb6c5f5ce59752cc00c38d221610
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -12,9 +12,10 @@ ht-degree: 0%
 
 O Adobe Commerce também oferece suporte ao agente de mensagens de código aberto AtiveMQ Artemis por meio do Simple Text Oriented Messaging Protocol (STOMP). Ele oferece um sistema de mensagens confiável e escalável, oferecendo flexibilidade para integrações baseadas em STOMP.
 
+
 >[!NOTE]
 >
->O AtiveMQ Artemis foi introduzido no Adobe Commerce 2.4.6 e versões posteriores.
+>O AtiveMQ Artemis foi introduzido no Adobe Commerce 2.4.6 e versões posteriores. Para obter detalhes sobre como instalar o AtiveMQ Artemis no Adobe Commerce em projetos de infraestrutura em nuvem, consulte [Configurar o serviço AtiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemqsee) no *Guia do Commerce na Nuvem*.
 
 As filas de mensagens fornecem um mecanismo de comunicação assíncrono no qual o remetente e o destinatário de uma mensagem não entram em contato entre si. Eles também não precisam se comunicar com a fila de mensagens ao mesmo tempo. Quando um remetente coloca uma mensagem em uma fila, ela é armazenada até que o destinatário a receba.
 
