@@ -2,9 +2,9 @@
 title: Versões do Beta
 description: Saiba mais sobre as versões beta do Adobe Commerce e como participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: a15422e4e135eba01931172960dfb0a6b359cde8
+source-git-commit: 17397fe91806c22272e426d615b11fd383602798
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,24 @@ A obtenção de acesso antecipado aos recursos que a Adobe está desenvolvendo o
 
 Consulte as seções a seguir para obter uma lista de programas beta ativos.
 
+### Pesquisa semântica: experiências de compras mais inteligentes e sensíveis ao contexto (beta privado)
+
+A pesquisa semântica é uma tecnologia de pesquisa de comércio eletrônico que entende o *significado* por trás da consulta de um comprador, não apenas as palavras exatas. Ao contrário da pesquisa tradicional baseada em palavras-chave, que geralmente falha quando as consultas incluem termos desconhecidos ou com ortografia incorreta, essa abordagem baseada em IA interpreta a intenção usando o processamento de linguagem natural (NLP) e o contexto para fornecer resultados mais relevantes.
+
+Essa tecnologia lida com uma importante limitação da pesquisa tradicional: páginas de resultado zero que ocorrem quando os compradores usam palavras que não existem no catálogo. Ao usar técnicas alimentadas por IA, ele mapeia consultas de usuários e dados de produtos em um espaço semântico compartilhado. Por exemplo, o sistema reconhece que &quot;tênis de corrida&quot; e &quot;tênis de corrida&quot; se referem ao mesmo tipo de produto, permitindo:
+
+- Reconhecimento de sinônimo
+- Relevância contextual
+- Tratamento inteligente de consultas vagas, com erro de ortografia ou compostas
+- Compreensão de linguagem natural e conversacional
+
+Para solicitar um convite para o programa beta, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). A equipe do Adobe responderá com as próximas etapas e os requisitos de qualificação.
+
 ### Serviço de patch de automação de nuvem (Private Beta)
 
-O [Serviço de Patch de Automação da Nuvem](../tools/caps-tool/intro.md) automatiza o processo de aplicação de patches de segurança isolados aos ambientes do [Adobe Commerce na Infraestrutura da Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview).
+O [Serviço de Patch de Automação da Nuvem](../tools/caps-tool/intro.md) automatiza o processo de aplicação de patches de segurança isolados aos ambientes do [Adobe Commerce na Infraestrutura da Nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
 
-Em outubro de 2025, a versão beta do Serviço de patch de automação de nuvem será adicionada ao [painel de ferramentas de Análise do site](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este serviço oferece suporte aos administradores de projetos da Commerce com um fluxo de trabalho simplificado de patch que inclui:
+Em outubro de 2025, a versão beta do Serviço de patch de automação de nuvem será adicionada ao [painel de ferramentas de Análise do site](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este serviço oferece suporte aos administradores de projetos da Commerce com um fluxo de trabalho simplificado de patch que inclui:
 
 - Instalação de patch automatizada
 - Reverter recuperação
@@ -47,7 +60,7 @@ O beta inclui os seguintes recursos:
 
 >[!NOTE]
 >
->Como o Serviço de patch de automação de nuvem aplica automaticamente patches de segurança isolados, você deve ter a [função de Colaborador ou Administrador de projeto](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/user-access) para usá-los.
+>Como o Serviço de patch de automação de nuvem aplica automaticamente patches de segurança isolados, você deve ter a [função de Colaborador ou Administrador de projeto](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) para usá-los.
 
 Para participar deste beta, preencha e envie o [Serviço de patch de automação de nuvem - Formulário de inscrição no Beta](https://forms.office.com/r/3Wfxj5nPdB).
 
@@ -71,7 +84,7 @@ Cada versão alfa e beta do Adobe Commerce Foundation inclui todas as alteraçõ
 - Melhorias na GraphQL
 - Correções de erros de qualidade geral
 - Contribuições da Comunidade
-- Alterações necessárias para oferecer suporte à compatibilidade com [serviços da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
+- Alterações necessárias para oferecer suporte à compatibilidade com [serviços da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Convenção de nomenclatura e programação
 
