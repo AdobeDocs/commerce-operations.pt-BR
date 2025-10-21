@@ -2,7 +2,7 @@
 title: Notas de versão do patch de segurança do Adobe Commerce 2.4.8
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.7.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-source-git-commit: b0756431d8ddf0833ef8c13528f7681a1a92a3ca
+source-git-commit: 40328796c25c56c101f95e286298325b5d1ef439
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 A versão de segurança 2.4.8-p3 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.8.
 
-Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-94](https://helpx.adobe.com/br/security/products/magento/apsb25-94.html).
+Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -31,13 +31,13 @@ Esta versão inclui os seguintes destaques:
 
 * Correção para -AC-15446: Corrigido um erro em `Magento\Framework\Mail\EmailMessage`, onde `getBodyText()` tentou chamar um método `getTextBody()` inexistente em `Symfony\Component\Mime\Message`, garantindo a compatibilidade com Magento 2.4.8-p2 e `magento/framework` 103.0.8-p2.
 
-{{oct-2025-backports}}<!--AC-15446-->
+{{oct-2025-backports}}
 
 ## 2.4.8-p2
 
 A versão de segurança 2.4.8-p2 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.8.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-71](https://helpx.adobe.com/br/security/products/magento/apsb25-71.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
 
 {{b2b-patches}}
 
@@ -45,7 +45,7 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 
 A versão de segurança 2.4.8-p1 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.8.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-50](https://helpx.adobe.com/br/security/products/magento/apsb25-50.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -69,7 +69,7 @@ Esta versão inclui os seguintes destaques:
 
 >[!BEGINSHADEBOX]
 
-As correções para CVE-2025-47110 e VULN-31547 também estão disponíveis como um patch isolado. Consulte o [artigo da Base de Dados de Conhecimento](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) para obter detalhes.
+As correções para CVE-2025-47110 e VULN-31547 também estão disponíveis como um patch isolado. Consulte o [artigo da Base de Dados de Conhecimento](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) para obter detalhes.
 
 >[!ENDSHADEBOX]
 
