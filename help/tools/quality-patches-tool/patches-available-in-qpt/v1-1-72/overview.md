@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 89b78f72fce3f65b8f282038cc4e2ef0f190bda3
+source-git-commit: a6a18a4cbab9d2e5a0c4824fc5ad9463f9e61c1c
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -23,7 +23,7 @@ O QPT v1.1.72 inclui os seguintes patches:
 1. **ACSD-67383**: faça logon como Cliente com duas contas de administrador de empresa na mesma sessão, causando um erro *Nenhuma entidade com cartId*.
 1. **ACSD-67518**: os relatórios avançados geram linhas de cabeçalho duplicadas quando a contagem de linhas excede o tamanho do lote.
 1. **ACSD-67639**: falha ao criar um memorando de crédito para produtos agrupados com **[!UICONTROL Dynamic Price]** definido como *Não*.
-1. **ACSD-67696**: `media_gallery` entradas não retornam no nó de produto GraphQL do carrinho após uma liberação de cache.
+1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: `media_gallery` entradas não retornam no nó de produto GraphQL do carrinho após uma liberação de cache.
 1. **ACSD-67946**: as atualizações do carrinho mostram banners de erro duplicados.
 1. **ACSD-68011**: SKUs inexistentes podem ser atribuídas a um catálogo compartilhado por meio da API `/V1/sharedCatalog/:id/assignProducts` [!DNL REST].
 1. **ACSD-68118**: `customerCart` a consulta do GraphQL retorna valores de atributo de produto que não refletem o cabeçalho da loja, causando localização inconsistente.
