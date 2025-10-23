@@ -19,7 +19,7 @@ Você pode atualizar _implantações locais_ do aplicativo Adobe Commerce a part
 
 >[!NOTE]
 >
->- Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Atualizar versão do Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) no Guia da Nuvem.
+>- Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Atualizar versão do Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=pt-BR) no Guia da Nuvem.
 >- Não use esse método para atualizar se você clonou o repositório GitHub. Consulte [Atualizar uma instalação baseada em Git](../developer/git-installs.md).
 
 As instruções a seguir mostram como atualizar usando o gerenciador de pacotes do Composer. O Adobe Commerce 2.4.2 introduziu o suporte para o Composer 2. Se você estiver tentando atualizar do &lt;2.4.1, é necessário primeiro atualizar para uma versão que seja compatível com o Composer 2 (por exemplo, 2.4.2) usando o Composer 1 _antes_ de atualizar para o Composer 2 para atualizações >2.4.2. Além disso, você deve estar executando uma [versão suportada](../../installation/system-requirements.md) do PHP.
