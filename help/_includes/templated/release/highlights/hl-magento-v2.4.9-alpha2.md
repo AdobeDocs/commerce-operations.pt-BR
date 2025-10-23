@@ -101,7 +101,7 @@ Principais aprimoramentos:
 * Formato de dados aprimorado: transição de XML para JSON para uma comunicação mais limpa e eficiente.
 * Novos campos de administrador:
    * URL REST do gateway (com base no modo: Desenvolvimento ou Ativo)
-   * Segredo do ID do cliente &amp;amp;
+   * Segredo do ID do cliente &amp;
    * Tipo de conta, Número da conta
    * CRID, MID, Código de identificação do correio
    * AES/ITN para remessas internacionais
