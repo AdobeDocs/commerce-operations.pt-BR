@@ -1,7 +1,7 @@
 ---
-source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Principais aprimoramentos:
 * Formato de dados aprimorado: transição de XML para JSON para uma comunicação mais limpa e eficiente.
 * Novos campos de administrador:
    * URL REST do gateway (com base no modo: Desenvolvimento ou Ativo)
-   * ID do cliente e segredo
+   * Segredo do ID do cliente &amp;amp;
    * Tipo de conta, Número da conta
    * CRID, MID, Código de identificação do correio
    * AES/ITN para remessas internacionais

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3bc225485fa5a4c2b3565014af4ed81dc37fc4ab
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,7 @@ _AC-14610_
 #### Migrar a integração USPS de APIs de Ferramentas da Web desatualizadas para novas APIs RESTful USPS
 
 Para estar em conformidade com o anúncio da desativação das APIs herdadas de ferramentas da Web pelo USPS até 25 de janeiro de 2026, a integração do USPS do Adobe Commerce será migrada para as novas APIs do USPS RESTful.
+
 Principais aprimoramentos:
 
 * Suporte à API dupla: os usuários administradores agora podem escolher entre a API herdada de Ferramentas da Web e a nova API RESTful USPS por meio das configurações.
@@ -100,7 +101,7 @@ Principais aprimoramentos:
 * Formato de dados aprimorado: transição de XML para JSON para uma comunicação mais limpa e eficiente.
 * Novos campos de administrador:
    * URL REST do gateway (com base no modo: Desenvolvimento ou Ativo)
-   * ID do cliente e segredo
+   * Segredo do ID do cliente &amp;amp;
    * Tipo de conta, Número da conta
    * CRID, MID, Código de identificação do correio
    * AES/ITN para remessas internacionais
