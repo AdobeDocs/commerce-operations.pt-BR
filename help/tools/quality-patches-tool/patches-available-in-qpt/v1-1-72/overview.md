@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a6a18a4cbab9d2e5a0c4824fc5ad9463f9e61c1c
+source-git-commit: fddde045789cdbbe811975b06635574b9835d497
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ O QPT v1.1.72 inclui os seguintes patches:
 1. **ACSD-67639**: falha ao criar um memorando de crédito para produtos agrupados com **[!UICONTROL Dynamic Price]** definido como *Não*.
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: `media_gallery` entradas não retornam no nó de produto GraphQL do carrinho após uma liberação de cache.
 1. **ACSD-67946**: as atualizações do carrinho mostram banners de erro duplicados.
-1. **ACSD-68011**: SKUs inexistentes podem ser atribuídas a um catálogo compartilhado por meio da API `/V1/sharedCatalog/:id/assignProducts` [!DNL REST].
+1. **ACSD-68011**: SKUs não existentes atribuídas ao catálogo compartilhado via API /V1/sharedCatalog/:id/assignProducts.
 1. **ACSD-68118**: `customerCart` a consulta do GraphQL retorna valores de atributo de produto que não refletem o cabeçalho da loja, causando localização inconsistente.
 1. **ACSD-68092**: as opções de pacote de produtos são perdidas após vários salvamentos devido à sincronização imprópria entre as atualizações agendadas e os dados de base do produto.
 1. **ACSD-67424**: o valor `updated_at` na resposta da API `GET /carts/search` [!DNL REST] não corresponde ao valor mostrado em **[!UICONTROL Admin panel]** ao usar Cotações Negociáveis.
