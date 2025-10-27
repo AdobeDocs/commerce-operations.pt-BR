@@ -1,5 +1,5 @@
 ---
-source-git-commit: 151272eed6c4bb2e1c2e5138a5c8a3a7e7bd8fe6
+source-git-commit: ae571a9e7ca1234644a3bc9beade447009c58a3d
 workflow-type: tm+mt
 source-wordcount: '6077'
 ht-degree: 0%
@@ -41,9 +41,9 @@ Correção de um problema de paginação na API de quantidade comercializável d
 
 _ACP2E-4086 - [Contribuição de código do GitHub](https://github.com/magento/inventory/commit/5632fb5e)_
 
-#### O invasor pode usar a solicitação POST usando a API REST e pode enviar a carga RCE
+#### Problema de validação com IDs de opção personalizadas nas APIs REST do item de carrinho
 
-REST APIs V1/guest-carts/&lt;cartId>/items/ e V1/carts/mine/items/ agora valida &quot;product_options.extension_attributes.custom_options.*.option_id&quot; será option_id válida no SKU do item de carrinho. Anteriormente, essa opção era processada e salva no banco de dados sem qualquer validação.
+As APIs REST V1/guest-carts/&lt;cartId>/items/ e V1/carts/mine/items/ agora validam &quot;product_options.extension_attributes.custom_options.*.option_id&quot; para garantir que faça referência a um option_id válido para a SKU do item de carrinho. Anteriormente, esse parâmetro era processado e salvo no banco de dados sem validação.
 
 _ACP2E-4138 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/a1c57b2e)_
 
