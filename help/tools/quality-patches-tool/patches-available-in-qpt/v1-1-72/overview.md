@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4e2c22626701e342920c8f60caff56af23712306
+source-git-commit: 43696165e24e39e25007b5864f8b0c3d0bcb92c2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ O QPT v1.1.72 inclui os seguintes patches:
 1. **ACSD-67941**: solicitações GraphQL com nomes de filtro desconhecidos causam logs de exceção do PHP.
 1. **ACSD-68064**: entradas duplicadas criadas durante atualizações agendadas em ambientes com categorias profundamente aninhadas.
 1. **ACSD-66807**: a tabela `report_viewed_product_index` mostra uma contagem incorreta de exibições de páginas de produtos.
-1. **ACSD-67383**: faça logon como Cliente com duas contas de administrador de empresa na mesma sessão, causando um erro *Nenhuma entidade com cartId*.
+1. **ACSD-67383**: erro ao fazer logon como um cliente com duas contas de administrador de empresa na mesma sessão.
 1. **ACSD-67518**: os relatórios avançados geram linhas de cabeçalho duplicadas quando a contagem de linhas excede o tamanho do lote.
 1. **ACSD-67639**: falha ao criar um memorando de crédito para produtos agrupados com **[!UICONTROL Dynamic Price]** definido como *Não*.
 1. **ACSD-67946**: a atualização do carrinho mostra banners de erro duplicados.
