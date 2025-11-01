@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424: o valor Updated_at na resposta da API REST do GET /carts/search não corresponde ao valor mostrado no Painel de Administração ao usar Cotações negociáveis</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424: o valor Updated_at na resposta da API REST do GET /carts/search não corresponde ao valor mostrado no Painel de Administração ao usar Cotações negociáveis</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -31,7 +31,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8967a4cc8006fc5fa4319f7ffd6d8c7f3edf3d1">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383: fazer logon como cliente com duas contas de administrador de empresa na mesma sessão causa um erro "Nenhuma entidade com cartId"</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383: fazer logon como cliente com duas contas de administrador de empresa na mesma sessão causa um erro "Nenhuma entidade com cartId"</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -53,7 +53,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.73</a>.</p>
+      <td><p>Adição da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.73</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -75,7 +75,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064: a criação de atualizações agendadas resulta em entradas duplicadas em ambientes com um alto número de categorias aninhadas</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064: a criação de atualizações agendadas resulta em entradas duplicadas em ambientes com um alto número de categorias aninhadas</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -83,7 +83,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8d4046ce9ea0d085cc11f5631d04a8b3adb3239">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946: as atualizações do carrinho mostram banners de erro duplicados</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946: as atualizações do carrinho mostram banners de erro duplicados</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -113,7 +113,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040: a página de pesquisa de front-end apresenta degradação de desempenho no MariaDB 10.6 e 11.4 com muitas solicitações de pesquisa históricas</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040: a página de pesquisa de front-end apresenta degradação de desempenho no MariaDB 10.6 e 11.4 com muitas solicitações de pesquisa históricas</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -121,7 +121,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6dff1447a89c083fb8bd867281d20462cc843baa">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118: a consulta do GraphQL CustomerCart retorna valores de atributo de produto que não refletem o cabeçalho da loja, causando localização inconsistente</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118: a consulta do GraphQL CustomerCart retorna valores de atributo de produto que não refletem o cabeçalho da loja, causando localização inconsistente</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -129,7 +129,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7dec696f3d87d91902a166314199cf3b6c161f85">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807: a tabela Report_viewed_product_index mostra uma contagem incorreta de exibições de página de produto</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807: a tabela Report_viewed_product_index mostra uma contagem incorreta de exibições de página de produto</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -151,7 +151,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639: a criação de um memorando de crédito falha para pacotes de produtos com Preço dinâmico definido como Não</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.72 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639: a criação de um memorando de crédito falha para pacotes de produtos com Preço dinâmico definido como Não</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
