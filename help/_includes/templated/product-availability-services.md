@@ -1,5 +1,5 @@
 ---
-source-git-commit: 287be6576d85b403982a50d462b41ace79f697da
+source-git-commit: 4f72726e9e49521db486d5b61e0e598f9f6f87dd
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 5%
@@ -29,20 +29,20 @@ ht-degree: 5%
           <td>1,32</td>
           <td>1,32</td>
           <td>
-              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/catalog-service/guide-overview">Visão geral</a><br/>
-              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/catalog-service/release-notes">Notas de versão</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Visão geral</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Notas de versão</a><br/>
           </td>
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
-          <td>4.5.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
+          <td>4.6.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/release-notes">Notas de versão</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Notas de versão</a><br/>
           </td>
       </tr>
       <tr>
@@ -54,19 +54,19 @@ ht-degree: 5%
           <td>PHP 8.1</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/payment-services/release-notes">Notas de versão</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Notas de versão</a><br/>
           </td>
       </tr>
       <tr>
           <td>Recomendações de produto</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
-          <td>6.4.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
+          <td>6.5.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/product-recommendations/release-notes">Notas de versão</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">Notas de versão</a><br/>
           </td>
       </tr>
   </tbody>
