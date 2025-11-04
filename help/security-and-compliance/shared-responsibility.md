@@ -796,7 +796,7 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 >
 >Os comerciantes precisam usar a versão mais recente do Live Search, Product Recommendations e Payment Services para garantir a maior estabilidade, funcionalidade e qualificação para o suporte.
 >O Adobe não é compatível com versões desatualizadas e a atualização garante que você se beneficie dos últimos aprimoramentos e correções de erros.
->Para obter detalhes sobre as versões com suporte, consulte a [Matriz de Disponibilidade de Produtos para os Serviços da Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
+>Para obter detalhes sobre as versões com suporte, consulte a [Matriz de Disponibilidade de Produtos para os Serviços da Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability#commerce-services).
 
 #### Recomendações de produto
 
