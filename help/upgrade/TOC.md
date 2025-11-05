@@ -55,4 +55,4 @@ ht-degree: 4%
 - Recursos {#resources}
    - [Leitura recomendada](resources/recommended-reading.md)
    - [Modernização de sua plataforma com o Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
