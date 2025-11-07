@@ -2,9 +2,9 @@
 title: Obtenha o software Adobe Commerce
 description: Saiba como baixar o software Adobe Commerce.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 0659c19e24e90ca4e3a7ac1c04914bda82b766dd
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,13 @@ Você está entre os 240.000 comerciantes em todo o mundo que confiam em nosso s
 
 ## Como obter o software
 
-Verifique a disponibilidade de novos recursos e versões interessantes e saiba como obtê-los em nossa [página de disponibilidade de produtos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability).
+Verifique a disponibilidade e a compatibilidade das extensões criadas pela Adobe e dos Serviços da Commerce para Adobe Commerce e Magento Open Source em nossa [página de disponibilidade do produto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+
+>[!NOTE]
+>
+>As bases de código do Adobe Commerce agora são distribuídas exclusivamente pelo Composer devido a alterações de política. Use o Composer para baixar qualquer uma das versões do Adobe Commerce listadas, pois a base de código não está mais disponível na seção Downloads.
+>
+>Para obter mais informações, consulte [Não é possível acessar o extrato de cobrança e baixar a base de código na Adobe Commerce na infraestrutura em nuvem](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Consulte a tabela a seguir para começar a instalar o Adobe Commerce.
 
