@@ -18,7 +18,7 @@ A Adobe aceita solicitações de participantes internos e externos, incluindo, m
 
 ## Como criar uma solicitação?
 
-**Partes interessadas internas** podem enviar solicitações abrindo um problema Jira no projeto COMDOX. **Partes interessadas externas** podem enviar solicitações abrindo um [problema do GitHub](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) neste repositório.
+**Partes interessadas internas** podem enviar solicitações abrindo um problema Jira no projeto COMDOX. **Partes interessadas externas** podem enviar solicitações abrindo um [problema do GitHub](https://github.com/AdobeDocs/commerce-operations.pt-BR/issues/new/choose) neste repositório.
 
 Você pode submeter os seguintes tipos de solicitações:
 
@@ -29,7 +29,7 @@ Você pode submeter os seguintes tipos de solicitações:
 ## Qual é o processo geral?
 
 
-**Criar um tíquete ou problema Jira**—Partes interessadas internas criam um tíquete Jira no projeto COMDOX. Os participantes externos enviam um problema do GitHub. Inclua detalhes completos no Jira ou [problema do GitHub](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) para ajudar a equipe a entender o contexto e priorizar a solicitação.
+**Criar um tíquete ou problema Jira**—Partes interessadas internas criam um tíquete Jira no projeto COMDOX. Os participantes externos enviam um problema do GitHub. Inclua detalhes completos no Jira ou [problema do GitHub](https://github.com/AdobeDocs/commerce-operations.pt-BR/issues/new/choose) para ajudar a equipe a entender o contexto e priorizar a solicitação.
 
 **A equipe de projeto do Adobe avalia e prioriza a solicitação**—A equipe monitora regularmente solicitações para determinar a prioridade e avaliar as alterações solicitadas para inclusão nas Práticas recomendadas do manual de implementação. Por exemplo, a equipe pode determinar que, em vez de criar um novo tópico de Práticas recomendadas, o conteúdo solicitado deve ser adicionado à documentação do produto existente no Experience League ou no site do Adobe Developer.
 

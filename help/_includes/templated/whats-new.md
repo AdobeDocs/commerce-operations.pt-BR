@@ -614,7 +614,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td>
         Atualização importante
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">pull request</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.pt-BR/pull/161">pull request</a></td>
     </tr>
   </tbody>
 </table>
