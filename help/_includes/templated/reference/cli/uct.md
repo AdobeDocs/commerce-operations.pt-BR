@@ -1,7 +1,7 @@
 ---
-source-git-commit: e044459f849f35a4a1e161a191bc7497fcef9281
+source-git-commit: 92685411a41cb03f1ac9408b0cef2fe83b4a2a16
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,10 @@ A lista inicial é gerada automaticamente usando o comando `bin/uct list` na Ado
 ## Geral
 
 Saiba mais sobre a ferramenta em [Visão geral](/help/upgrade/upgrade-compatibility-tool/overview.md).
+
+>[!NOTE]
+>
+>O comando `composer update` não funciona para atualizar esta ferramenta—você deve [baixar e instalar a versão mais recente](/help/upgrade/upgrade-compatibility-tool/run.md).
 
 Esta documentação de referência é gerada a partir do código-fonte do aplicativo. Para alterar a documentação, você deve abrir uma solicitação de pull para o comando correspondente no repositório [codebase](https://github.com/magento) relevante. Consulte [Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) para obter mais informações.
 
