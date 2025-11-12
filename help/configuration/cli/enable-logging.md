@@ -3,9 +3,9 @@ title: Habilitar registro
 description: Saiba como ativar e desativar diferentes tipos de logon no Adobe Commerce. Descubra a configuração de registro e as técnicas de gerenciamento.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,23 @@ Por padrão, o Commerce grava no log de depuração (`<install_directory>/var/lo
 
 Por padrão, o Commerce grava logs de atividades do banco de dados no arquivo `<install-dir>/var/debug/db.log`.
 
+### Local de armazenamento do log de consulta
+
+Quando o log do banco de dados está ativado, o Commerce armazena logs de consulta no seguinte local:
+
+- **Arquivo de log da consulta**: `<install-directory>/var/debug/db.log`
+- **Diretório de log**: `<install-directory>/var/debug/`
+
+O log de consulta contém:
+- Consultas SQL executadas pelo aplicativo
+- Tempos de execução da consulta
+- Parâmetros e associações de consulta
+- Informações de conexão do banco de dados
+
+>[!NOTE]
+>
+>O arquivo de log de consultas pode crescer rapidamente em ambientes de alto tráfego. Monitore o espaço em disco e considere implementar a rotação de logs ou a limpeza periódica do arquivo de log de consulta.
+
 ### Para habilitar o log do banco de dados
 
 1. Use o comando `dev:query-log` para habilitar ou desabilitar o log do banco de dados.
@@ -71,6 +88,24 @@ Por padrão, o Commerce grava logs de atividades do banco de dados no arquivo `<
    ```bash
    bin/magento cache:flush
    ```
+
+### Para exibir logs de consulta
+
+Você pode exibir os logs de consulta usando comandos padrão de exibição de arquivo:
+
+```bash
+# View the entire query log
+cat var/debug/db.log
+
+# View the last 100 lines of the query log
+tail -n 100 var/debug/db.log
+
+# Monitor the query log in real-time
+tail -f var/debug/db.log
+
+# Search for specific queries
+grep "SELECT" var/debug/db.log
+```
 
 ## Registro de Cron
 
