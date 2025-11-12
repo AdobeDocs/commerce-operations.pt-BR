@@ -1,7 +1,7 @@
 ---
-source-git-commit: e625670e741c0669050ab758d4f87c5ca06fe3df
+source-git-commit: 1e3508e2e8e99d686dfa692415e2b4b41e8b80e8
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/release-notes).
+>Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Somente Adobe Commerce {#ee-only}
 
@@ -85,7 +85,7 @@ Antes de executar indexadores no modo paralelo, você deve habilitar o suporte d
 
 >[!IMPORTANT]
 >
->A Adobe não oferece suporte à aplicação de patches oficiais fornecidos pela Adobe usando esse método. Use o método a seguir por sua conta e risco. Para aplicar patches oficiais, use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}. Sempre realize testes abrangentes antes de implantar qualquer patch personalizado.
+>A Adobe não oferece suporte à aplicação de patches oficiais fornecidos pela Adobe usando esse método. Use o método a seguir por sua conta e risco. Para aplicar patches oficiais, use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Sempre realize testes abrangentes antes de implantar qualquer patch personalizado.
 
 ## Backports de patch de segurança de outubro de 2025 {#oct-2025-backports}
 
@@ -99,7 +99,7 @@ Antes de executar indexadores no modo paralelo, você deve habilitar o suporte d
 
 * **Suporte adicionado para o protocolo STOMP Apache AtiveMQ Artemis**
 
-  Adição de suporte para o agente de mensagens de código aberto AtiveMQ Artemis por meio do Simple Text Oriented Messaging Protocol (STOMP). Ele oferece um sistema de mensagens confiável e escalável, oferecendo flexibilidade para integrações baseadas em STOMP. Consulte [Apache AtiveMQ Artemis](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) no *Guia de Configuração do Commerce*.
+  Adição de suporte para o agente de mensagens de código aberto AtiveMQ Artemis por meio do Simple Text Oriented Messaging Protocol (STOMP). Ele oferece um sistema de mensagens confiável e escalável, oferecendo flexibilidade para integrações baseadas em STOMP. Consulte [Apache AtiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) no *Guia de Configuração do Commerce*.
 
 ## A página de check-out não carrega static.min.js e mixins.min.js {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -116,4 +116,4 @@ Após alterações recentes da CSP/SRI, a página de check-out não carrega stat
 
 **Hotfix**:
 
-Uma correção para lidar com esse problema será lançada o mais rápido possível. Monitore esta página de notas de versão para obter atualizações.
+Uma correção está disponível. Consulte [Falha no check-out quando a minificação e o agrupamento JS estiverem habilitados](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) na Base de Dados de Conhecimento para obter detalhes de patch.
