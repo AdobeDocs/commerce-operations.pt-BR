@@ -3,7 +3,7 @@ title: Usar Valkey para cache padrão
 description: Saiba como configurar o Valkey como cache padrão para o Adobe Commerce. Descubra técnicas de configuração, de configuração e de validação da linha de comando.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: e9f1bef9f97a0e1d738f1221758f1b9a0a238da1
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -34,7 +34,7 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 >A partir do **Adobe Commerce 2.4.9-alpha2**, o **Valkey** substituiu oficialmente o Redis em ferramentas CLI devido a alterações no licenciamento. Valkey é uma bifurcação de Redis e mantém funcionalidade quase idêntica. Para **versões 2.4.8 e anteriores**, os comandos da CLI usados para configurar o Valkey permanecem os mesmos do Redis, garantindo compatibilidade com versões anteriores e simplificando a migração ou o suporte a ambientes duplos. O exemplo a seguir mostra o comando Valkey-specific.
 
 ```bash
-bin/magento setup:config:set --cache-backend=redis --cache-backend-valkey-<parameter>=<value>...
+bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
 
 | Parâmetro de linha de comando | Valor | Significado | Valor padrão |
@@ -272,7 +272,7 @@ Exemplo de saída de cache de página:
 ### comando Valkey ping
 
 ```bash
-redis-cli ping
+valkey-cli ping
 ```
 
 A resposta esperada é: `PONG`
