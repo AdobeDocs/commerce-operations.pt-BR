@@ -3,9 +3,9 @@ title: Criar, editar ou desbloquear uma conta de administrador
 description: Siga estas etapas para gerenciar a conta de administrador do seu aplicativo de Administrador do Adobe Commerce.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: aaed7dba7d11085eb8e2793cefffb8c8b082e750
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,12 @@ bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 Onde a tabela a seguir define parâmetros e valores:
 
 | Nome | Valor | Obrigatório? |
-|--- |--- |--- |
+|--- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
 | `--admin-firstname` | Nome do usuário administrador. | Sim |
 | `--admin-lastname` | Sobrenome do usuário administrador. | Sim |
 | `--admin-email` | Endereço de email do usuário administrador. | Sim |
 | `--admin-user` | Nome de usuário do administrador. | Sim |
-| `--admin-password` | Senha de usuário administrador. A senha deve ter pelo menos 7 caracteres e incluir pelo menos um caractere alfabético e um caractere numérico. <br><br>Recomendamos uma senha mais longa e complexa. Se a string de senha contiver caracteres especiais que exigem interpretação literal (como barras invertidas ou espaços), coloque a senha entre aspas simples. | Sim |
+| `--admin-password` | Senha de usuário administrador. A senha deve ter pelo menos 12 caracteres e incluir pelo menos um caractere alfabético e pelo menos um caractere numérico. <br><br>A Adobe recomenda especificar uma senha mais longa e complexa. Se a string de senha contiver caracteres especiais que exigem interpretação literal (como barras invertidas ou espaços), coloque a senha entre aspas simples. | Sim |
 | `--magento-init-params` | Adicione a qualquer comando para personalizar parâmetros de inicialização de aplicativo<br/><br/>Por exemplo: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Não |
 
 Exemplo de uso:
