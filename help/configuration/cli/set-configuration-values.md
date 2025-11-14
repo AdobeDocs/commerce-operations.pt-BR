@@ -2,9 +2,9 @@
 title: Definir valores de configuração
 description: Saiba como definir valores de configuração e alterar valores de Admin bloqueados no Adobe Commerce. Descubra comandos e técnicas de configuração avançada.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 2672c696d672ad72bef7537570ed630bc33c41b4
+source-git-commit: 5e2d11330d3334df36ba8b3d176fbe2d8bfe0486
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -140,9 +140,7 @@ A tabela a seguir descreve os parâmetros do comando `set`:
 
 >[!INFO]
 >
->A partir do Commerce 2.2.4, as opções `--lock-env` e `--lock-config` substituem a opção `--lock`.
->
->Se você usar a opção `--lock-env` ou `--lock-config` para definir ou alterar um valor, deverá usar o comando [`bin/magento app:config:import` &#x200B;](../cli/import-configuration.md) para importar a configuração antes de acessar o Administrador ou a loja.
+>A partir do Commerce 2.2.4, as opções `--lock-env` e `--lock-config` substituem a opção `--lock`. Se você usar qualquer uma dessas opções, o valor será gravado diretamente no arquivo `app/etc/env.php` ou `app/etc/config.php` e se tornará somente leitura no Administrador. Para importar alterações de configuração desses arquivos para o banco de dados, execute o comando `bin/magento app:config:import` — por exemplo, após editar ou reimplantar manualmente os arquivos.
 
 Se você inserir um caminho de configuração incorreto, esse comando retornará um erro
 
@@ -191,7 +189,7 @@ Você pode usar a opção `--lock-env` para definir valores de configuração se
 
 >[!INFO]
 >
->O arquivo `env.php` é específico do sistema. Você não deve transferi-lo para outro sistema. Você pode usá-lo para substituir valores de configuração do banco de dados. Por exemplo, você pode pegar um despejo de banco de dados de outro sistema e substituir o `base_url` e outros valores para que não seja necessário modificar o banco de dados.
+>O arquivo `env.php` é específico do sistema. Não o transfira para outro sistema. Você pode usá-lo para substituir valores de configuração do banco de dados. Por exemplo, você pode pegar um despejo de banco de dados de outro sistema e substituir o `base_url` e outros valores para que não seja necessário modificar o banco de dados.
 
 Se você usar a opção `--lock-config` da seguinte maneira, o valor de configuração será salvo em `<Commerce base dir>/app/etc/config.php`. O campo para editar esse valor no Admin está desativado.
 
@@ -221,7 +219,7 @@ onde
 
 >[!INFO]
 >
->O comando `bin/magento config:show` exibe os valores de quaisquer [valores criptografados](../reference/config-reference-sens.md) como uma série de asteriscos: `**&#x200B;**&#x200B;**`.
+>O comando `bin/magento config:show` exibe os valores de quaisquer [valores criptografados](../reference/config-reference-sens.md) como uma série de asteriscos: `******`.
 
 ### Exemplos
 
