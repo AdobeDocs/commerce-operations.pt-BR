@@ -3,9 +3,9 @@ title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 828be0e395980ddd9fca3424dc08324c3fe87244
+source-git-commit: fff49f8c9b0c1def976c14e72b4ae7ee08f823b9
 workflow-type: tm+mt
-source-wordcount: '29260'
+source-wordcount: '29413'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,20 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.74 {#v1-1-74}
+
+* **ACSD-68636** (para Adobe Commerce >=2.4.4 &lt;2.4.9) - Corrige um problema em que o nome do proprietário da loja não é exibido corretamente nos cabeçalhos de email de cartão-presente quando a fatura é criada de outra loja.
+* **ACSD-68430** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.8) - Corrige um problema em que falha ao salvar um cliente ou endereço de cliente se o registro incluir várias opções de atributo que foram excluídas da configuração de atributo.
+* **ACSD-68499** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige um problema em que a mutação `updateCartItems` do GraphQL retorna uma resposta bem-sucedida incorreta ao atualizar quantidades que excedem o estoque disponível, causando quantidades e totais inflados.
+* **ACSD-68810** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige um problema no qual um pedido é atribuído a um cliente criado em um site diferente, apesar da configuração **[!UICONTROL Customer Account Sharing]**.
+* Versões atualizadas: **ACSD-49737**, **ACSD-57003-V2**
+* Patches substituídos: **ACSD-61969**
 
 ## v1.1.73 {#v1-1-73}
 
