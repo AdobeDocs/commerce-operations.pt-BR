@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ae994d8185516dabf88b682a33f1775c0d636515
+source-git-commit: e1109aea68d590e5b7fe2fc6ae1fb934b06d4f91
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,6 @@ O QPT v1.1.73 inclui os seguintes patches:
 1. **ACSD-68206**: corrigido o erro ao usar o servidor de Aplicativos GraphQL com o recurso **[!UICONTROL Rate Limiting]** com a extensão PHP [!DNL Redis] instalada.
 1. **ACSD-68356**: a consulta de carrinho [!DNL GraphQL] retorna um valor de desconto incorreto para cotações virtuais.
 1. **ACSD-68391**: correção do problema em que as permissões relacionadas à categoria não eram aplicadas corretamente em **[!UICONTROL Quick Order]** e **[!UICONTROL Requisition Lists]**.
-1. **ACSD-68400**: correção de um problema em que a quantidade de cartão-presente virtual não era refletida com precisão no **[!UICONTROL Inventory reservation table]**.
+1. **ACSD-68400**: a quantidade de cartões-presente virtuais não está sendo refletida com precisão no **[!UICONTROL Inventory reservation table]**.
 
 Use o menu à esquerda para navegar até uma página de patch específica.
