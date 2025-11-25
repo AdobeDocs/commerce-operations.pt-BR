@@ -2,7 +2,7 @@
 title: Nginx
 description: Siga estas etapas para instalar e configurar o servidor Web Nginx para instalações locais do Adobe Commerce.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 0%
@@ -85,7 +85,7 @@ Há várias maneiras de baixar o Adobe Commerce, incluindo:
 
 * [Obtenha o metapackage do Composer](../../composer.md)
 
-* [Clonar o repositório Git](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Clonar o repositório Git](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 Este exemplo mostra uma instalação baseada no Composer usando a linha de comando.
 
@@ -364,7 +364,7 @@ Há várias maneiras de baixar o Adobe Commerce, incluindo:
 
 * [Obtenha o metapackage do Composer](../../composer.md)
 
-* [Clonar o repositório Git](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Clonar o repositório Git](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 Este exemplo mostra uma instalação baseada no Composer usando a linha de comando.
 

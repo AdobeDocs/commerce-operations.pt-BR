@@ -4,9 +4,9 @@ description: Se você for cliente da arquitetura de plano Pro da infraestrutura 
 feature: Observability, Support, Tools and External Services
 role: Admin
 exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
-source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
+source-git-commit: 4560e7d000ad8333c3089b8b5e8ffd25f5d31b67
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 # Alertas gerenciados para o Adobe Commerce
 
 
-Configuramos os principais painéis e alertas para ajudá-lo a entender quando seu site está atingindo níveis críticos de armazenamento e [!DNL Apdex] (satisfação dos usuários com o tempo de resposta dos aplicativos e serviços). Isso pode ajudá-lo a tomar medidas antes que você perceba tempos de resposta lentos ou uma interrupção. Você poderá solucionar problemas de alertas com os artigos listados abaixo. Antes de usar os alertas, primeiro configure os canais de notificação. Consulte [[!DNL New Relic] Configurar canais de notificação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) no Guia do Commerce na nuvem.
+Configuramos os principais painéis e alertas para ajudá-lo a entender quando seu site está atingindo níveis críticos de armazenamento e [!DNL Apdex] (satisfação dos usuários com o tempo de resposta dos aplicativos e serviços). Isso pode ajudá-lo a tomar medidas antes que você perceba tempos de resposta lentos ou uma interrupção. Você poderá solucionar problemas de alertas com os artigos listados abaixo. Antes de usar os alertas, primeiro configure os canais de notificação. Consulte [[!DNL New Relic] Configurar canais de notificação](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) no Guia do Commerce na nuvem.
 
 >[!NOTE]
 >
->Se os alertas gerenciados para a política de alertas da Adobe Commerce não estiverem disponíveis, talvez seja porque essa conta foi recém-criada ou [!DNL New Relic] foi configurada recentemente. Um processo é executado todas as terças-feiras para adicionar a política de alerta a essas contas. A política de alerta deve estar disponível para você no dia seguinte à execução do próximo processo. Se a política ainda estiver ausente, [envie uma solicitação de suporte do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) e inclua a ID do projeto.
+>Se os alertas gerenciados para a política de alertas da Adobe Commerce não estiverem disponíveis, talvez seja porque essa conta foi recém-criada ou [!DNL New Relic] foi configurada recentemente. Um processo é executado todas as terças-feiras para adicionar a política de alerta a essas contas. A política de alerta deve estar disponível para você no dia seguinte à execução do próximo processo. Se a política ainda estiver ausente, [envie uma solicitação de suporte do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) e inclua a ID do projeto.
 
 Consulte a tabela abaixo para obter os links para os artigos da Base de Dados de Conhecimento que fornecem as etapas de solução de problemas para esses alertas:
 
@@ -51,3 +51,7 @@ Consulte a tabela abaixo para obter os links para os artigos da Base de Dados de
 | Aviso e Crítico |     |        |      |       | ✅ |              | [Alertas gerenciados no Adobe Commerce: alertas do MariaDB](managed-alerts-on-magento-commerce-mariadb-alerts.md) |
 | Aviso |     |        |      |       |         | ✅ | [Alertas gerenciados no Adobe Commerce: [!DNL Redis] alerta de aviso de memória](managed-alerts-on-magento-commerce-redis-memory-warning-alert.md) |
 | Crítico |     |        |      |       |         | ✅ | [Alertas gerenciados no Adobe Commerce: [!DNL Redis] alerta crítico de memória](managed-alerts-on-magento-commerce-redis-memory-critical-alert.md) |
+
+## Revisar limites de alerta definidos para alertas gerenciados
+
+Você pode revisar os limites de alerta configurados para alertas gerenciados na sua conta da New Relic. Para obter instruções, consulte [Monitorar o desempenho com alertas gerenciados](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).

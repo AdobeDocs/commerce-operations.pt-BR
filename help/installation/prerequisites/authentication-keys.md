@@ -2,9 +2,9 @@
 title: Obter suas chaves de autenticação
 description: Siga estas etapas para recuperar credenciais para acessar os pacotes do Adobe Commerce Composer em repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: fc63ca58cd2ff7c5ec597751980a39bfbe68aa5f
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ Para obter direito de acesso a pacotes do Adobe Commerce, você deve usar chaves
 
 >[!TIP]
 >
->Se você encontrar [erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=pt-BR), talvez não tenha autorização para acessar o pacote ou o direito de acesso tenha expirado devido a uma fatura pendente em sua conta.
+>Se você encontrar [erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) ou não vir a seção [!UICONTROL Access Keys] na guia Marketplace, talvez não tenha autorização para acessar o pacote ou o direito de acesso expirou devido a uma fatura pendente em sua conta.
 >
 >* Se você for a pessoa de contato principal na conta, verifique se não há nenhuma fatura pendente listada na conta.
->* Se as chaves fornecidas pelo Contato Principal não estiverem funcionando e não houver faturas pendentes na conta, o Contato Principal deverá contatar o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para obter assistência.
+>* Se as chaves fornecidas pelo Contato Principal não estiverem funcionando e não houver faturas pendentes na conta, o Contato Principal deverá contatar o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obter assistência.
 
 Para criar chaves de autenticação:
 
@@ -67,5 +67,5 @@ curl -k https://MAGEID:TOKEN@www.magentocommerce.com/products/downloads/info/hel
 Use suas chaves de autenticação para:
 
 * [Obter o metapackage (integradores, packagers)](../composer.md)
-* [Clonar o repositório GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) (somente desenvolvedores contribuintes)
+* [Clonar o repositório GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) (somente desenvolvedores contribuintes)
 * [Atualizar e gerenciar módulos](../../upgrade/modules/upgrade.md)

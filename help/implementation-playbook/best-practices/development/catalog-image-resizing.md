@@ -4,7 +4,7 @@ description: Saiba como evitar a degradação do desempenho antes de uma inicial
 feature: Best Practices
 role: Developer
 exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
@@ -116,5 +116,5 @@ Visitar um URL de cache de imagem gera todos os tamanhos de imagem em segundo pl
 
 >[!NOTE]
 >
->- O Adobe Commerce em projetos de infraestrutura em nuvem pode descarregar o redimensionamento de imagem do produto para o serviço Fastly. Consulte [Otimização de imagem profunda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=pt-BR#deep-image-optimization) no _Guia da Nuvem_.
->- Se você usar o módulo de armazenamento remoto, também poderá tentar descarregar o redimensionamento da imagem para nginx. Consulte [Configurar redimensionamento de imagem para armazenamento remoto](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=pt-BR) no _Guia de Configuração_.
+>- O Adobe Commerce em projetos de infraestrutura em nuvem pode descarregar o redimensionamento de imagem do produto para o serviço Fastly. Consulte [Otimização de imagem profunda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html#deep-image-optimization) no _Guia da Nuvem_.
+>- Se você usar o módulo de armazenamento remoto, também poderá tentar descarregar o redimensionamento da imagem para nginx. Consulte [Configurar redimensionamento de imagem para armazenamento remoto](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) no _Guia de Configuração_.

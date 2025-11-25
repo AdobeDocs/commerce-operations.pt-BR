@@ -2,7 +2,7 @@
 title: Configurar a propriedade e as permissões do arquivo
 description: Siga estas etapas para configurar permissões do sistema de arquivos para instalações locais do Adobe Commerce.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Para definir permissões antes de instalar o aplicativo:
 1. Se ainda não tiver feito isso, obtenha o aplicativo de uma das seguintes maneiras:
 
    * [Metapackage do compositor](../../composer.md)
-   * [Clonar o repositório (apenas para desenvolvedores contribuintes)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+   * [Clonar o repositório (apenas para desenvolvedores contribuintes)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 1. Após definir a propriedade e as permissões do sistema de arquivos, [instale o aplicativo](../../advanced.md)
 
@@ -192,7 +192,7 @@ Para concluir a tarefa, reinicie o servidor Web:
 Se ainda não tiver feito isso, obtenha o software de uma das seguintes maneiras:
 
 * [Metapackage do compositor](../../composer.md)
-* [Clonar o repositório (apenas para desenvolvedores contribuintes)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Clonar o repositório (apenas para desenvolvedores contribuintes)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 ### Definir propriedade e permissões para o grupo compartilhado
 

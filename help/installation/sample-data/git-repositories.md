@@ -2,7 +2,7 @@
 title: Clonar repositórios Git de dados de amostra
 description: Siga estas etapas para instalar os dados de amostra do Adobe Commerce clonando repositórios Git.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -18,11 +18,11 @@ Se você não for um desenvolvedor contribuinte, escolha uma das outras opções
 Os desenvolvedores colaboradores podem usar este método de instalação de dados de exemplo *only* se o seguinte for verdadeiro:
 
 * Você usa o Magento Open Source
-* Você [clonou o repositório GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* Você [clonou o repositório GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 >[!WARNING]
 >
->Você pode usar dados de amostra com a ramificação `develop` (mais atual) ou com uma ramificação lançada (como `2.4` (mais estável)). Recomendamos que você use uma ramificação lançada porque ela é mais estável. Se estiver contribuindo com código para o repositório e precisar do código mais recente, use a ramificação `develop`. Independentemente da ramificação escolhida, você deve [clonar](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) a ramificação correspondente do repositório GitHub da Magento Open Source. Por exemplo, dados de exemplo para a ramificação `develop` podem ser usados *somente* com a ramificação `develop` do Magento Open Source.
+>Você pode usar dados de amostra com a ramificação `develop` (mais atual) ou com uma ramificação lançada (como `2.4` (mais estável)). Recomendamos que você use uma ramificação lançada porque ela é mais estável. Se estiver contribuindo com código para o repositório e precisar do código mais recente, use a ramificação `develop`. Independentemente da ramificação escolhida, você deve [clonar](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) a ramificação correspondente do repositório GitHub da Magento Open Source. Por exemplo, dados de exemplo para a ramificação `develop` podem ser usados *somente* com a ramificação `develop` do Magento Open Source.
 
 ## Clonar o repositório de dados de amostra
 

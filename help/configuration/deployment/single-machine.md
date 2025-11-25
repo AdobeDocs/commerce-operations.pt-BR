@@ -3,7 +3,7 @@ title: Implantação de computador único
 description: Saiba como implantar atualizações ao Commerce em um servidor de produção usando a linha de comando.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Este tópico fornece instruções para implantar atualizações para o Commerce 
 >[!WARNING]
 >
 >Este guia não se aplica se você usou o `git clone` para instalar o Commerce.
->&#x200B;>Os desenvolvedores colaboradores devem usar [este guia][install] para atualizar sua instalação do Commerce.
+>Os desenvolvedores colaboradores devem usar [este guia][install] para atualizar sua instalação do Commerce.
 
 ## Etapas de implantação
 
@@ -93,4 +93,4 @@ Este tópico fornece instruções para implantar atualizações para o Commerce 
 
 <!-- link definitions -->
 
-[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
+[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies

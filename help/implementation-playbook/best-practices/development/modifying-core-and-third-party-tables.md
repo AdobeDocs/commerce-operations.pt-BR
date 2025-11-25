@@ -5,7 +5,7 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: d40de2f05147e6c58c15cd3cd59275cc91283162
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Dois exemplos de locais de armazenamento são tabelas de banco de dados e [!DNL 
 
 Como desenvolvedor, é vital sempre considerar o uso de ferramentas fora do seu ambiente [!DNL Adobe Commerce], como a malha do GraphQL e o Adobe App Builder. Essas ferramentas podem ajudar você a reter o acesso aos dados, mas não têm impacto no aplicativo principal de comércio ou em suas tabelas de banco de dados subjacentes. Com essa abordagem, você expõe seus dados por meio de uma API. Em seguida, adicione uma fonte de dados à configuração do App Builder. Usando o GraphQL Mesh, você pode combinar essas fontes de dados e produzir uma única resposta, como mencionado em [dados herdados](#legacy-data).
 
-Para obter detalhes adicionais sobre a malha do GraphQL, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obter informações sobre o Adobe App Builder, consulte [Introdução ao App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=pt-BR){target="_blank"}.
+Para obter detalhes adicionais sobre a malha do GraphQL, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obter informações sobre o Adobe App Builder, consulte [Introdução ao App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Modificação de uma tabela principal ou de terceiros
 
@@ -73,7 +73,7 @@ A Adobe recomenda seguir estas etapas quando você adiciona uma coluna a uma tab
 
    Por exemplo: `app/code/YourCompany/Customer`
 
-1. Crie os arquivos apropriados para habilitar o módulo (consulte [Criar um módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=pt-BR){target="_blank"}.
+1. Crie os arquivos apropriados para habilitar o módulo (consulte [Criar um módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Crie um arquivo chamado `db_schema.xml` na pasta `etc` e faça as alterações apropriadas.
 

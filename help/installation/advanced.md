@@ -2,7 +2,7 @@
 title: Instalação avançada local
 description: Saiba mais sobre cenários de instalação avançada para implantações locais do Adobe Commerce. Descubra configurações complexas e opções de configuração personalizadas.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Perdido? Precisa de ajuda? Experimente nossos guias de [Instalação rápida](composer.md) ou [Instalação do colaborador](https://developer.adobe.com/commerce/contributor/guides/install/).
+>Perdido? Precisa de ajuda? Experimente nossos guias de [Instalação rápida](composer.md) ou [Instalação do colaborador](https://developer.adobe.com/commerce/contributor/guides/install).
 
 >[!NOTE]
 >
@@ -97,7 +97,7 @@ Você pode executar os seguintes comandos para localizar valores para alguns arg
 
 >[!NOTE]
 >
->Se um erro for exibido ao executar esses comandos, verifique se você atualizou as dependências de instalação conforme discutido em [Atualizar dependências de instalação](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+>Se um erro for exibido ao executar esses comandos, verifique se você atualizou as dependências de instalação conforme discutido em [Atualizar dependências de instalação](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
 
 ## Instalar da linha de comando
 
@@ -119,7 +119,7 @@ As opções a seguir especificam as informações e credenciais do usuário admi
 
 Você pode criar o usuário Administrador durante ou após a instalação. Se você criar o usuário durante a instalação, todas as variáveis de credencial do administrador serão necessárias. Consulte [Exemplos de instalações localhost](#sample-localhost-installations).
 
-As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência de Ferramentas de Linha de Comando](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência de Ferramentas de Linha de Comando](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nome | Valor | Obrigatório? |
 |--- |--- |--- |

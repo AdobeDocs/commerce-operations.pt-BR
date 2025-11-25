@@ -4,7 +4,7 @@ description: Saiba como instalar o [!DNL Data Migration Tool] para transferir da
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -47,10 +47,10 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-Se você estiver atualmente na ramificação `develop`, deverá alterar para uma [ramificação lançada](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) antes de continuar.
+Se você estiver atualmente na ramificação `develop`, deverá alterar para uma [ramificação lançada](https://developer.adobe.com/commerce/contributor/guides/install/change-version) antes de continuar.
 
 Se você ainda não tiver instalado o software Adobe Commerce, [instale-o agora](../../installation/prerequisites/commerce.md).
-Se estiver clonando o repositório GitHub, verifique uma marca de versão, conforme discutido em [(Colaborador) Clonar o repositório GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
+Se estiver clonando o repositório GitHub, verifique uma marca de versão, conforme discutido em [(Colaborador) Clonar o repositório GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository).
 
 ## Localizar versões lançadas de [!DNL Data Migration Tool]
 

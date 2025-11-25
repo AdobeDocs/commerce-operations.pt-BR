@@ -2,7 +2,7 @@
 title: Desinstalar ou reinstalar o Adobe Commerce
 description: Siga estas etapas para desinstalar e reinstalar as instalações locais do Adobe Commerce.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -24,8 +24,8 @@ Para atualizar o aplicativo:
 
 A maneira como você reinstala o aplicativo a partir da linha de comando depende da sua função:
 
-* Se você instalou o software a partir de um arquivo morto ou se usou &#39;composer-create-project&#39;, consulte [Atualizar dependências de instalação](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
-* Se você for um desenvolvedor contribuinte (isto é, você começou a usar o `git clone`), consulte [Atualizar dependências de instalação](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+* Se você instalou o software a partir de um arquivo morto ou se usou &#39;composer-create-project&#39;, consulte [Atualizar dependências de instalação](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
+* Se você for um desenvolvedor contribuinte (isto é, você começou a usar o `git clone`), consulte [Atualizar dependências de instalação](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
 
 ## Desinstalar o aplicativo
 

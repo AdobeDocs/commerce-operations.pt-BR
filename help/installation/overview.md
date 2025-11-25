@@ -2,7 +2,7 @@
 title: Visão geral da instalação local
 description: Saiba mais sobre o processo de instalação local do Adobe Commerce. Descubra os requisitos do servidor, as etapas de configuração e as práticas recomendadas de implantação.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 062267b8b06e41d89f704144e640fc1254952532
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Você pode instalar o software Adobe Commerce no local em aproximadamente 30 a 6
 >
 >Você deve ter conhecimento técnico intermediário e acesso ao servidor para prosseguir com êxito.
 
-A instalação cria um armazenamento do Adobe Commerce totalmente funcional com uma [vitrine voltada para o cliente](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/storefront/storefront) e um [painel administrativo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/admin/admin). Você deve ter suas credenciais de banco de dados, informações de domínio e chaves de autenticação prontas antes de iniciar o processo.
+A instalação cria um armazenamento do Adobe Commerce totalmente funcional com uma [vitrine voltada para o cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) e um [painel administrativo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Você deve ter suas credenciais de banco de dados, informações de domínio e chaves de autenticação prontas antes de iniciar o processo.
 
 ## Responsabilidades do comerciante
 
@@ -57,7 +57,7 @@ Gere novas [chaves de autenticação](prerequisites/authentication-keys.md) (ou 
 
 Baixe usando o [Composer](prerequisites/commerce.md) (recomendado) ou clone do GitHub para contribuições de desenvolvimento.
 
-Se você deseja contribuir com a base de código do Magento Open Source ou personalizar o aplicativo, [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) o repositório do GitHub. Este método requer familiaridade com o GitHub e o Composer.
+Se você deseja contribuir com a base de código do Magento Open Source ou personalizar o aplicativo, [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) o repositório do GitHub. Este método requer familiaridade com o GitHub e o Composer.
 
 ### Instalar o aplicativo
 
