@@ -1,5 +1,5 @@
 ---
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48dfdd81992a82bf984c3e7b0f30f8e5a69ee735
 workflow-type: tm+mt
 source-wordcount: '8232'
 ht-degree: 1%
@@ -20,11 +20,13 @@ A lista inicial é gerada automaticamente usando o comando `bin/magento list` na
 
 ## Geral
 
-Use o guia [&quot;Adicionar comandos CLI&quot;](https://developer.adobe.com/commerce/php/development/cli-commands) para adicionar um comando CLI personalizado.
+Use o guia [&quot;Adicionar comandos CLI&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) para adicionar um comando CLI personalizado.
 
 Você pode chamar comandos CLI do `bin/magento` usando atalhos em vez do nome completo do comando. Por exemplo, você pode chamar `bin/magento setup:upgrade` usando `bin/magento s:up`, `bin/magento s:upg`. Consulte [sintaxe de atalho](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) para entender como usar atalhos com qualquer comando CLI.
 
-Esta documentação de referência é gerada a partir do código-fonte do aplicativo. Para alterar a documentação, você deve abrir uma solicitação de pull para o comando correspondente no repositório [codebase](https://github.com/magento) relevante. Consulte [Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions) para obter mais informações.
+Esta documentação de referência é gerada a partir do código-fonte do aplicativo. Para alterar a documentação, abra
+uma solicitação pull para o comando correspondente no repositório [codebase](https://github.com/magento) relevante. Consulte
+[Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) para obter mais informações.
 
 ### Opções globais
 
