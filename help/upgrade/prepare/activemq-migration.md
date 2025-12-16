@@ -2,9 +2,9 @@
 title: Migração do RabbitMQ para AtiveMQ
 description: Saiba como substituir o agente de fila de mensagens usado para instalações locais do Adobe Commerce.
 feature: Services, Configuration
-source-git-commit: 8f57a4fa7744f4647ab96d0fcfae08b8eb4927c6
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 O AtiveMQ (Apache AtiveMQ Artemis) é um agente de mensagens multiprotocolo de alto desempenho que fornece uma alternativa ao RabbitMQ para lidar com filas de mensagens no Adobe Commerce.
 
-A partir de 2.4.8-p3, 2.4.7-p8 e 2.4.6-p13, o Adobe Commerce oferece suporte ao AtiveMQ como um agente de fila de mensagens. Isso proporciona flexibilidade adicional para que instalações locais escolham entre RabbitMQ e AtiveMQ com base em seus requisitos de infraestrutura e experiência.
+A partir de 2.4.8-p3, 2.4.7-p8, 2.4.6-p13 e 2.4.5-p16, o Adobe Commerce oferece suporte ao AtiveMQ como um agente de fila de mensagens. Isso proporciona flexibilidade adicional para que instalações locais escolham entre RabbitMQ e AtiveMQ com base em seus requisitos de infraestrutura e experiência.
 
 ## Antes de começar
 

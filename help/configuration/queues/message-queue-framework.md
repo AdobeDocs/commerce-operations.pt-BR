@@ -2,7 +2,7 @@
 title: Visão geral das filas de mensagens
 description: Leia sobre a estrutura da fila de mensagens e como ela funciona com o aplicativo do Adobe Commerce.
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 6f15a24e650a7138bae6d0b40f230e6970a943b0
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 O Message Queue Framework (MQF) é um sistema que permite que um módulo publique mensagens em filas. Também define os [consumidores](consumers.md) que receberão as mensagens de forma assíncrona. O MQF é compatível com vários agentes de mensagens:
 
 - **[[!DNL RabbitMQ]](https://www.rabbitmq.com)** - O agente de mensagens principal, que fornece uma plataforma escalável para enviar e receber mensagens. Ele inclui um mecanismo para armazenar mensagens não entregues e se baseia na especificação Advanced Message Queuing Protocol (AMQP) 0.9.1.
-- **[Artemis do Apache AtiveMQ](https://activemq.apache.org/components/artemis/)** - Um agente de mensagens alternativo que usa o STOMP (Simple Text Oriented Messaging Protocol) para mensagens confiáveis e escalonáveis. Introduzido no Adobe Commerce 2.4.6 e versões posteriores.
+- **[Artemis do Apache AtiveMQ](https://activemq.apache.org/components/artemis/)** - Um agente de mensagens alternativo que usa o STOMP (Simple Text Oriented Messaging Protocol) para mensagens confiáveis e escalonáveis. Introduzido no Adobe Commerce 2.4.5 e versões posteriores.
 
 ## RabbitMQ (AMQP)
 
@@ -38,7 +38,7 @@ Como alternativa ao RabbitMQ, o Adobe Commerce também oferece suporte ao [Apach
 
 >[!NOTE]
 >
->O AtiveMQ Artemis foi introduzido no Adobe Commerce 2.4.6 e versões posteriores.
+>O AtiveMQ Artemis foi introduzido no Adobe Commerce 2.4.5 e versões posteriores.
 
 O diagrama a seguir ilustra a estrutura STOMP com AtiveMQ Artemis:
 

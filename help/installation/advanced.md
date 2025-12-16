@@ -2,7 +2,7 @@
 title: Instalação avançada local
 description: Saiba mais sobre cenários de instalação avançada para implantações locais do Adobe Commerce. Descubra configurações complexas e opções de configuração personalizadas.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 937db2209ec4122c611a857796f043523a0acb29
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 0%
@@ -119,7 +119,7 @@ As opções a seguir especificam as informações e credenciais do usuário admi
 
 Você pode criar o usuário Administrador durante ou após a instalação. Se você criar o usuário durante a instalação, todas as variáveis de credencial do administrador serão necessárias. Consulte [Exemplos de instalações localhost](#sample-localhost-installations).
 
-As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência de Ferramentas de Linha de Comando](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência de Ferramentas de Linha de Comando](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nome | Valor | Obrigatório? |
 |--- |--- |--- |
@@ -193,7 +193,7 @@ As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalaç
 
 >[!NOTE]
 >
->O AtiveMQ Artemis foi introduzido no Adobe Commerce 2.4.6 e versões posteriores.
+>O AtiveMQ Artemis foi introduzido no Adobe Commerce 2.4.5 e versões posteriores.
 
 | Nome | Valor | Obrigatório? |
 |--- |--- |--- |
@@ -369,6 +369,6 @@ bin/magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 >[!NOTE]
 >
->A instalação do AtiveMQ Artemis requer o Adobe Commerce 2.4.6 ou posterior.
+>A instalação do AtiveMQ Artemis requer o Adobe Commerce 2.4.5 ou posterior.
 
 <!-- Last updated from includes: 2024-04-16 09:42:31 -->
