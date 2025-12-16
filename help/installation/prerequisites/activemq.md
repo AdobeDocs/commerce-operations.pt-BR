@@ -15,7 +15,7 @@ O Adobe Commerce também oferece suporte ao agente de mensagens de código abert
 
 >[!NOTE]
 >
->O AtiveMQ Artemis foi introduzido no Adobe Commerce 2.4.5 e versões posteriores. Para obter detalhes sobre como instalar o AtiveMQ Artemis no Adobe Commerce em projetos de infraestrutura em nuvem, consulte [Configurar o serviço AtiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) no *Guia do Commerce na Nuvem*.
+>O AtiveMQ Artemis foi introduzido no Adobe Commerce 2.4.5 e versões posteriores. Para obter detalhes sobre como instalar o AtiveMQ Artemis no Adobe Commerce em projetos de infraestrutura em nuvem, consulte [Configurar o serviço AtiveMQ](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/activemq) no *Guia do Commerce na Nuvem*.
 
 As filas de mensagens fornecem um mecanismo de comunicação assíncrono no qual o remetente e o destinatário de uma mensagem não entram em contato entre si. Eles também não precisam se comunicar com a fila de mensagens ao mesmo tempo. Quando um remetente coloca uma mensagem em uma fila, ela é armazenada até que o destinatário a receba.
 
