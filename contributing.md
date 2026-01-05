@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4dd926ca7014c9e007a8c2c847e076064eb8d170
+source-git-commit: 86d7fba92705b808b45d655a432bb92ed9f9181a
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,11 @@ Este projeto adere ao [código de conduta](code-of-conduct.md) da Adobe. Ao part
 espera-se que você mantenha esse código. Denuncie comportamento inaceitável para
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Documentação do Guia do colaborador
+## Documentação do guia do colaborador
 
-Consulte o [Guia do Colaborador](https://experienceleague.adobe.com/pt-br/docs/contributor/contributor-guide/introduction).
+Consulte o [Guia do Colaborador](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
-## Você tem dúvidas?
+## Você tem uma pergunta?
 
 Comece registrando um problema. Os executores existentes neste projeto trabalham para alcançar
 consenso sobre a direção do projeto e soluções de problemas nos threads de problemas
@@ -35,18 +35,17 @@ como parte do projeto. [Assine nosso CLA](https://opensource.adobe.com/cla.html)
 é necessário enviar apenas um Adobe CLA por vez. Se já tiver enviado anteriormente,
 você está pronto para ir!
 
-## Revisões do código
+## Revisões de código
 
 Todos os envios devem vir na forma de solicitações de pull e precisam ser revisados
 pelos responsáveis pelo projeto. Leia a [documentação de solicitação de pull do GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 para obter mais informações sobre envio de pull requests.
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Por último, siga o [modelo de solicitação de pull](PULL_REQUEST_TEMPLATE.md) quando
+enviando um pull request!
 
-## Do contribuidor para o executor
+
+## Do colaborador para o confirmador
 
 Adoramos contribuições vindas de nossa comunidade! Se você quiser ir além como colaborador
 e se tornar um executor com acesso total à gravação e voz ativa no projeto, você deve
@@ -57,11 +56,11 @@ fique à vontade para entrar em contato com os responsáveis existentes e conver
 
 ## Problemas de segurança
 
-Problemas de segurança não devem ser relatados neste rastreador de problemas. Em vez disso, [envie um problema para nossos especialistas em segurança](https://helpx.adobe.com/br/security/alertus.html).
+Problemas de segurança não devem ser relatados neste rastreador de problemas. Em vez disso, [envie um problema para nossos especialistas em segurança](https://helpx.adobe.com/security/alertus.html).
 
 ## Destaques das novidades
 
-Se as alterações introduzirem novos tópicos, atualizações significativas ou correções que precisam ser destacadas, você poderá adicionar uma breve descrição à [seção Novidades](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/operational-guides/home#whats-new) diretamente do corpo da solicitação de pull.
+Se as alterações introduzirem novos tópicos, atualizações significativas ou correções que precisam ser destacadas, você poderá adicionar uma breve descrição à [seção Novidades](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) diretamente do corpo da solicitação de pull.
 
 Para adicionar um destaque de Novidades:
 
@@ -109,4 +108,4 @@ Para adicionar um destaque de Novidades:
 1. A parte `whatsnew` deve começar na tag `whatsnew` e estar no final do corpo da solicitação de pull.
 1. As descrições das alterações devem incluir os links de trabalho. Certifique-se de que os links estejam corretos e levem aos tópicos pretendidos. Se o tópico for novo, verifique se os links estão funcionando após mesclar a solicitação de pull e publicar o novo tópico. Não há problema em corrigir os links após a mesclagem da solicitação de pull.
 
-Por exemplo, pesquise nas solicitações de pull fechadas no repositório para ver como os realces existentes estão formatados e compare-os com a [seção Novidades](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/operational-guides/home#whats-new) para ver como eles aparecem na documentação.
+Por exemplo, pesquise nas solicitações de pull fechadas no repositório para ver como os realces existentes estão formatados e compare-os com a [seção Novidades](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) para ver como eles aparecem na documentação.
