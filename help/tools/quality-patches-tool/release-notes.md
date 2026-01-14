@@ -3,9 +3,9 @@ title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fff49f8c9b0c1def976c14e72b4ae7ee08f823b9
+source-git-commit: f08af2909959bf8fb14b279f904e91a90f4e3d44
 workflow-type: tm+mt
-source-wordcount: '29413'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.75 {#v1-1-75}
+
+* **ACSD-68289** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige um problema em que a pesquisa de texto completo agora retorna produtos correspondentes se a condição de correspondência mínima for atendida em todos os campos pesquisáveis coletivamente, em vez de exigir que a condição seja atendida por um único campo.
+* **ACSD-68359** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige um problema em que a seleção de um armazenamento durante o check-out usando o [!UICONTROL Pick in Store] não falha mais devido a URLs longas quando muitos produtos estão no carrinho. Anteriormente, isso acionava um *erro de 414* causado por URLs excessivamente longas geradas durante a seleção do armazenamento, impedindo que os clientes concluíssem o check-out.
+* **ACSD-68451** (para Adobe Commerce, B2B >=1.5.2-p1 &lt;1.5.3) - Corrige um problema para vários sites em que um administrador de empresa faz logon em um site, cria uma empresa não relacionada em outro site, mas é erroneamente vinculada a essa empresa não relacionada.
+* **ACSD-68490** (para Adobe Commerce >=2.4.6 &lt;2.4.7) - Corrige o problema em que o botão [!UICONTROL Add New Attribute] está visível para um usuário administrador restrito durante a criação do produto configurável.
+* **ACSD-68517** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Corrige um erro de reenvio de formulário nas páginas de Pesquisa no catálogo e no catálogo.
+* **ACSD-68573** (para Adobe Commerce >=2.4.5 &lt;2.4.9) - Corrige o problema em que as permissões de categoria não eram aplicadas corretamente aos itens da lista de desejos do cliente. Após a correção, os itens da lista de desejos são exibidos e paginados corretamente na Web e no GraphQL.
+* **ACSD-68615** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que a CLI de compensação de reserva de estoque mostrava uma exceção se a combinação processada tivesse uma ID de pedido ausente.
+* **ACSD-68793** (para Adobe Commerce, B2B >=1.5.1 &lt;1.5.3) - Corrige um problema em que produtos válidos eram rejeitados incorretamente ao atribuí-los a um catálogo compartilhado.
+* **ACSD-68925** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige um problema no qual as respostas para solicitações do GraphQL agora estão alinhadas com as especificações do GraphQL sobre HTTP. Um código de resposta 4XX é retornado quando a solicitação não pode ser analisada, não está autorizada ou encontra um problema geral. Se a solicitação for analisada e puder ser processada, um código de resposta 200 será retornado.
+* Versões atualizadas: **MDVA-19640**, **ACSD-47910**, **ACSD-68040**, **ACSD-62965**
+* Patches substituídos: **ACSD-62577**, **ACSD-68011**
 
 ## v1.1.74 {#v1-1-74}
 
