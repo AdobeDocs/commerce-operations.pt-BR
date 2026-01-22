@@ -24,7 +24,7 @@ Além dos patches de qualidade, segurança e beta agendados listados nesta pági
 
 A Adobe Commerce segue um cronograma mensal de lançamento de patches com a seguinte estratégia:
 
-- **Correções de segurança isoladas** — As [correções de segurança](versioning-policy.md#isolated-patch) individuais e não cumulativas podem ser lançadas mensalmente e incluir correções de segurança para todas as [linhas de versão ](lifecycle-policy.md) com suporte (inclui suporte regular e estendido).
+- **Correções de segurança isoladas** — As [correções de segurança](versioning-policy.md#isolated-patch) individuais e não cumulativas podem ser lançadas mensalmente e incluir correções de segurança para todas as [linhas de versão &#x200B;](lifecycle-policy.md) com suporte (inclui suporte regular e estendido).
 
 - **Patches de segurança**—No mínimo, [patches de segurança](versioning-policy.md#security-patch-release) são lançados anualmente (maio) para todas as linhas de versão [com suporte](lifecycle-policy.md). Esses patches incluem todas as correções de segurança isoladas lançadas anteriormente. A Adobe pode lançar patches de segurança adicionais em novembro, se necessário, mas isso não é garantido.
 
