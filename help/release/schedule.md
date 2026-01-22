@@ -2,9 +2,9 @@
 title: Programação de lançamento de patches
 description: Saiba quando a Adobe planeja anunciar o lançamento de novos patches e correções de segurança para o Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: f4601034e3e988b3058946b263ec5e8da41fce16
+source-git-commit: ee39af1beb8df93b179c2e5dee3942b3f367e51a
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,13 @@ O objetivo deste cronograma é fornecer datas para quando a Adobe planeja anunci
 
 >[!NOTE]
 >
->Para saber mais sobre novos recursos, infraestrutura em nuvem e versões de extensibilidade, consulte a documentação da versão dos [Serviços da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/release-information/release-notes-all).
+>Para saber mais sobre novos recursos, infraestrutura em nuvem e versões de extensibilidade, consulte a documentação da versão dos [Serviços da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Além dos patches de qualidade, segurança e beta agendados listados nesta página, a Adobe fornece acesso a [patches individuais](versioning-policy.md#individual-patch) por meio da [Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md). A ferramenta permite aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para a versão instalada do Adobe Commerce.
 
-A partir de janeiro de 2026, a Adobe Commerce migrará para um cronograma mensal de lançamento de patches com a seguinte estratégia:
+A Adobe Commerce segue um cronograma mensal de lançamento de patches com a seguinte estratégia:
 
-- **Correções de segurança isoladas** — As [correções de segurança](versioning-policy.md#isolated-patch) individuais e não cumulativas podem ser lançadas mensalmente e incluir correções de segurança para todas as [linhas de versão &#x200B;](lifecycle-policy.md) com suporte (inclui suporte regular e estendido).
+- **Correções de segurança isoladas** — As [correções de segurança](versioning-policy.md#isolated-patch) individuais e não cumulativas podem ser lançadas mensalmente e incluir correções de segurança para todas as [linhas de versão ](lifecycle-policy.md) com suporte (inclui suporte regular e estendido).
 
 - **Patches de segurança**—No mínimo, [patches de segurança](versioning-policy.md#security-patch-release) são lançados anualmente (maio) para todas as linhas de versão [com suporte](lifecycle-policy.md). Esses patches incluem todas as correções de segurança isoladas lançadas anteriormente. A Adobe pode lançar patches de segurança adicionais em novembro, se necessário, mas isso não é garantido.
 
@@ -37,3 +37,16 @@ Consulte a imagem a seguir para obter detalhes:
 <!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
 
 ![Calendário de lançamento do Adobe Commerce de 2026](../assets/release/release-calendar.drawio.png)
+
+
+## Canais de notificação de versão
+
+A Adobe notifica os clientes sobre novas versões de patches pelos seguintes canais:
+
+- [Boletins e conselhos de segurança do Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
+- Email
+- Alertas no produto
+
+>[!NOTE]
+>
+> Para obter as datas de lançamento de cada versão secundária, patch e segurança, e as datas para o fim do suporte regular, consulte [Versões lançadas](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
