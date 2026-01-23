@@ -34,7 +34,7 @@ Contém uma matriz de módulos e seus estados. Se o módulo estiver ativado, o v
 ]
 ```
 
-Saiba mais sobre [Módulos](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
+Saiba mais sobre [Módulos](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=pt-BR).
 
 ## escopos
 
@@ -82,7 +82,7 @@ Contém uma matriz de valores de configuração de escopo. Ele tem os seguintes 
 ]
 ```
 
-Saiba mais sobre [Escopos do Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
+Saiba mais sobre [Escopos do Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings).
 
 ## sistema
 
