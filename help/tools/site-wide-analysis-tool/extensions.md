@@ -2,7 +2,7 @@
 title: '[!DNL Extensions]'
 description: Saiba mais sobre a  [!DNL Extensions] guia no [!DNL Site-Wide Analysis Tool], quando usá-la, seus benefícios e práticas recomendadas.
 exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Extensions]
 
-Um [!DNL extension] é um módulo personalizado, um pacote de idiomas ou uma combinação de módulos personalizados e pacotes de idiomas que adicionam novas funcionalidades ao produto principal do Adobe Commerce. O [Commerce Marketplace](https://marketplace.magento.com/extensions.html) oferece uma seleção de [!DNL extensions] que estão disponíveis gratuitamente e os que estão à venda. Você pode encontrar a lista de [!DNL extensions] instalados na sua instância do Adobe Commerce no [!DNL Site-Wide Analysis Tool].
+Um [!DNL extension] é um módulo personalizado, um pacote de idiomas ou uma combinação de módulos personalizados e pacotes de idiomas que adicionam novas funcionalidades ao produto principal do Adobe Commerce. O [Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html) oferece uma seleção de [!DNL extensions] que estão disponíveis gratuitamente e os que estão à venda. Você pode encontrar a lista de [!DNL extensions] instalados na sua instância do Adobe Commerce no [!DNL Site-Wide Analysis Tool].
 
 ## Quando usar
 
@@ -31,4 +31,4 @@ A guia [!DNL Extensions] no [!DNL Site-Wide Analysis Tool] fornece informações
 
 * Se você não puder manter seu [!DNL extensions] de terceiros atualizado para suas versões mais recentes, considere usar [!DNL extensions] diferente.
 
-* Para evitar possíveis problemas, baixe/compre o [!DNL extensions] de terceiros de uma fonte confiável, como o [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+* Para evitar possíveis problemas, baixe/compre o [!DNL extensions] de terceiros de uma fonte confiável, como o [Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html).

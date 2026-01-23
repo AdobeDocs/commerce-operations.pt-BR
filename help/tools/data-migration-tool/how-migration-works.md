@@ -3,7 +3,7 @@ title: Como funciona a migração de dados
 description: Saiba mais sobre o processo de migração de dados entre o Magento 1 e o Magento 2, incluindo terminologia, diagramas de fluxo de trabalho e etapas.
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Desenvolvemos o **Magento 2[!DNL Data Migration Tool]** para ajudá-lo a mover c
 
 ### Extensões e código personalizado
 
-Trabalhamos muito com a comunidade de desenvolvimento para ajudar você a usar as extensões do Magento 1 no Magento 2. Agora temos o orgulho de apresentar a [Commerce Marketplace](https://marketplace.magento.com/), onde você pode baixar ou comprar as versões mais recentes das suas extensões favoritas.
+Trabalhamos muito com a comunidade de desenvolvimento para ajudar você a usar as extensões do Magento 1 no Magento 2. Agora temos o orgulho de apresentar a [Commerce Marketplace](https://commercemarketplace.adobe.com//), onde você pode baixar ou comprar as versões mais recentes das suas extensões favoritas.
 
 Mais informações sobre o desenvolvimento de extensões para o Magento 2 estão disponíveis no [Guia do Desenvolvedor do PHP](https://developer.adobe.com/commerce/php/development/).
 

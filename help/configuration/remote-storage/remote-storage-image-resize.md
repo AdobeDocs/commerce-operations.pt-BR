@@ -3,7 +3,7 @@ title: Configurar redimensionamento de imagem para armazenamento remoto
 description: Otimize os recursos de disco configurando o redimensionamento de imagens do lado do servidor.
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Para continuar configurando o redimensionamento de imagem do lado do servidor, v
 
 **Para permitir que o Nginx redimensione imagens**:
 
-1. Instale o [módulo do filtro de imagem Nginx][nginx-module].
+1. Instale o [módulo do filtro de imagem Nginx](https://nginx.org/en/docs/http/ngx_http_image_filter_module.html).
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
@@ -73,6 +73,3 @@ Para continuar configurando o redimensionamento de imagem do lado do servidor, v
 
    - [Serviço de armazenamento simples da Amazon (Amazon S3)](remote-storage-aws-s3.md)
 
-<!-- link definitions -->
-
-[nginx-module]: https://nginx.org/en/docs/http/ngx_http_image_filter_module.html

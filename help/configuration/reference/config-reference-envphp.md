@@ -2,7 +2,7 @@
 title: referência env.php
 description: Saiba mais sobre os valores e as seções de configuração do arquivo env.php no Adobe Commerce. Descubra as configurações e definições do ambiente.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 0%
@@ -32,7 +32,7 @@ O arquivo `env.php` contém as seguintes seções:
 | `resource` | Mapeamento do nome do recurso para uma conexão |
 | `session` | Dados de armazenamento da sessão |
 | `system` | Desabilita o campo para edição no administrador |
-| `x-frame-options` | Configuração de [x-frame-options][x-frame-options] |
+| `x-frame-options` | Configuração de [x-frame-options](../security/xframe-options.md) |
 
 ## back-end
 
@@ -146,7 +146,7 @@ O Commerce usa uma chave de criptografia para proteger senhas e outros dados con
 ]
 ```
 
-Saiba mais sobre [Chave de criptografia](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/encryption-key) no _Guia do usuário do Commerce_.
+Saiba mais sobre [Chave de criptografia](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) no _Guia do usuário do Commerce_.
 
 ## bd
 
@@ -211,7 +211,7 @@ Uma lista de domínios para download disponíveis neste nó. Domínios adicionai
 ]
 ```
 
-Saiba mais sobre [Domínios baixáveis](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Saiba mais sobre [Domínios baixáveis](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## instalar
 
@@ -252,7 +252,7 @@ As configurações da fila de mensagens estão disponíveis neste nó. Você pod
 ]
 ```
 
-Saiba mais sobre [Fila de Mensagens][message-queue].
+Saiba mais sobre [Fila de Mensagens](https://developer.adobe.com/commerce/php/development/components/message-queues/).
 
 ## recurso
 
@@ -305,9 +305,6 @@ Usando este nó, o Commerce bloqueia os valores de configuração no arquivo `en
 
 Saiba mais em [env-php-config-set](../cli/set-configuration-values.md).
 
-<!-- Link definitions -->
-
-[message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
 
 
 ## Adicionar variáveis à configuração do arquivo

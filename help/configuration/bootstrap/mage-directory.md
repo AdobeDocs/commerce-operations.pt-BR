@@ -2,7 +2,7 @@
 title: Personalizar caminhos de diretório base
 description: Use a variável MAGE_DIRS para definir uma matriz de caminhos absolutos.
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -15,7 +15,7 @@ A variável de ambiente `MAGE_DIRS` permite que você especifique caminhos de di
 
 ## Definir MAGE_DIRS
 
-Especifique uma matriz associativa em que as chaves sejam constantes de [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] e os valores sejam caminhos absolutos de diretórios ou seus caminhos de URL, respectivamente.
+Especifique uma matriz associativa em que as chaves sejam constantes de [\\Magento\\App\\Filesystem\\DirectoryList](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) e os valores sejam caminhos absolutos de diretórios ou seus caminhos de URL, respectivamente.
 
 Você pode definir `MAGE_DIRS` de qualquer uma das seguintes maneiras:
 
@@ -50,6 +50,3 @@ Você pode definir `MAGE_DIRS` de qualquer uma das seguintes maneiras:
 
 O exemplo anterior define os caminhos dos diretórios `[cache]` e `[media]` como `/mnt/nfs/cache` e `/mnt/nfs/media`, respectivamente.
 
-<!-- link definitions -->
-
-[directory-list]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php

@@ -2,9 +2,9 @@
 title: Alterar ID de incremento
 description: Alterar a ID de incremento de uma entidade de banco de dados do Commerce.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Talvez seja necessário alterar a ID de incremento para novas entidades de BD ne
 
 >[!INFO]
 >
->Você também pode corrigir o problema do gateway de pagamento para PayPal, permitindo vários pagamentos por ID de fatura nas Preferências de Recebimento de Pagamento do PayPal. Consulte [Solicitação rejeitada do gateway do PayPal - problema de fatura duplicado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=pt-BR) na _Knowledge Base_.
+>Você também pode corrigir o problema do gateway de pagamento para PayPal, permitindo vários pagamentos por ID de fatura nas Preferências de Recebimento de Pagamento do PayPal. Consulte [Solicitação rejeitada do gateway do PayPal - problema de fatura duplicado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) na _Knowledge Base_.
 
 ## Etapas de pré-requisito
 
@@ -70,10 +70,5 @@ O próximo pedido feito na loja com `ID=1` terá a ID &#39;#100002000&#39;.
 Antes de executar a consulta `ALTER TABLE` em um ambiente de produção do Adobe Commerce na infraestrutura em nuvem, é altamente recomendável executar estas etapas:
 
 - Teste todo o procedimento de alteração da ID de incremento no ambiente de preparo
-- [Crie um backup de BD] para restaurar seu BD de Produção em caso de falha
+- [Crie um backup de BD](https://support.magento.com/hc/en-us/articles/360003254334) para restaurar seu BD de Produção em caso de falha
 
-<!-- Link Definitions -->
-
-[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
-[Criar um backup de BD]: https://support.magento.com/hc/en-us/articles/360003254334
-[qualquer versão com suporte]

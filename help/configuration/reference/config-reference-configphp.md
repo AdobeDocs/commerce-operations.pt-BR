@@ -2,9 +2,9 @@
 title: referência config.php
 description: Saiba mais sobre os valores do arquivo config.php e as seções de configuração do Adobe Commerce. Descubra módulos, escopos, configurações do sistema e práticas recomendadas de implantação.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '156'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Contém uma matriz de módulos e seus estados. Se o módulo estiver ativado, o v
 ]
 ```
 
-Saiba mais sobre [Módulos].
+Saiba mais sobre [Módulos](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
 
 ## escopos
 
@@ -82,7 +82,7 @@ Contém uma matriz de valores de configuração de escopo. Ele tem os seguintes 
 ]
 ```
 
-Saiba mais sobre [Escopos do Commerce][scopes].
+Saiba mais sobre [Escopos do Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
 
 ## sistema
 
@@ -120,10 +120,5 @@ Contém uma matriz de valores para a configuração do tema.
 ]
 ```
 
-Saiba mais sobre [Temas].
+Saiba mais sobre [Temas](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/).
 
-<!-- link definitions -->
-
-[Módulos]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=pt-BR
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings
-[Temas]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

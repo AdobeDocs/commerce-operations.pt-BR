@@ -2,7 +2,7 @@
 title: Ativar a criação de perfil
 description: Saiba mais sobre como ativar o MAGE Profiler para uso com suas ferramentas analíticas.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Com a criação de perfil do Commerce, você pode:
 
   Você deve estar particularmente interessado na lista de _dependências não utilizadas_, que são objetos que foram criados porque foram solicitados em algum construtor, mas nunca foram usados (isto é, nenhum de seus métodos foi chamado). Como resultado, o tempo e a memória do processador gastos para criar essas dependências são desperdiçados.
 
-O Commerce fornece a funcionalidade base em [`Magento\Framework\Profiler`][profiler].
+O Commerce fornece a funcionalidade base em [`Magento\Framework\Profiler`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler.php).
 
 Você pode ativar e configurar o profiler usando uma variável MAGE_PROFILER ou a linha de comando.
 
@@ -37,8 +37,8 @@ Você pode definir o valor de `MAGE_PROFILER` de qualquer uma das formas discuti
 
   Você pode usar um dos valores a seguir para ativar um profiler específico:
 
-   - `csvfile` que usa [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
-   - Qualquer outro valor (exceto `2`), incluindo um valor vazio, que use [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
+   - `csvfile` que usa [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
+   - Qualquer outro valor (exceto `2`), incluindo um valor vazio, que usa [`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)
 
 - `2` para habilitar gráficos de dependência.
 
@@ -81,8 +81,3 @@ Para ativar gráficos de dependência, use a opção de variável.
    bin/magento dev:profiler:disable
    ```
 
-<!-- link definitions -->
-
-[csvfile]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php
-[html]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php
-[profiler]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler.php

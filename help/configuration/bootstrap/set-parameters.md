@@ -2,9 +2,9 @@
 title: Definir o valor dos parâmetros de inicialização
 description: Saiba como definir parâmetros de inicialização para o aplicativo do Commerce.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Por exemplo, você pode usar a variável de ambiente do sistema `MAGE_PROFILER` 
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
-Defina a variável usando um comando específico do shell. Como os shells têm sintaxe diferente, consulte uma referência como [unix.stackexchange.com][unix-stackx].
+Defina a variável usando um comando específico do shell. Como os shells têm sintaxe diferente, consulte uma referência como [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
 Exemplo de shell Bash para CentOS:
 
@@ -57,7 +57,7 @@ Esta seção discute como especificar o modo para Apache ou Nginx.
 
 ### Configuração do Nginx
 
-Consulte a [configuração de amostra do Nginx] no _GitHub_.
+Consulte a [configuração de amostra do Nginx](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16) no _GitHub_.
 
 ### Configuração do Apache .htaccess
 
@@ -92,7 +92,7 @@ Você pode modificar `.htaccess` em qualquer um dos locais a seguir, dependendo 
 
 O Apache Web Server dá suporte à configuração do modo de aplicativo usando diretivas `mod_env`.
 
-A diretiva `mod_env` do Apache é um pouco diferente na [versão 2.2] e [versão 2.4] do Apache.
+A diretiva `mod_env` do Apache é um pouco diferente na [versão 2.2](https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv) e [versão 2.4](https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv) do Apache.
 
 Os procedimentos a seguir mostram como definir o modo do aplicativo em um host virtual Apache. Esta não é a única maneira de usar diretivas `mod_env`; consulte a documentação do Apache para obter detalhes.
 
@@ -166,9 +166,3 @@ Os procedimentos a seguir mostram como definir o modo do aplicativo em um host v
    - Ubuntu: `service apache2 restart`
    - CentOS: `service httpd restart`
 
-<!-- link definitions -->
-
-[Apache versão 2.2]: https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
-[Apache versão 2.4]: https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
-[Configuração de amostra do Nginx]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
-[unix-stackx]: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables

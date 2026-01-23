@@ -3,16 +3,16 @@ title: Configurar e usar verniz
 description: Saiba como configurar e usar o armazenamento em cache do Varnish para Adobe Commerce. Descubra a aceleração HTTP, o armazenamento de arquivos e as técnicas de otimização de desempenho.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # Configurar verniz
 
-O [Cache de Verniz] é um acelerador de aplicativo Web de código aberto (também conhecido como _acelerador HTTP_ ou _proxy reverso HTTP de cache_). O Varnish armazena (ou armazena em cache) arquivos ou fragmentos de arquivos na memória, o que permite que o Varnish reduza o tempo de resposta e o consumo de largura de banda da rede em solicitações futuras e equivalentes. Diferentemente de servidores Web como Apache e nginx, o Varnish foi projetado para uso exclusivo com o protocolo HTTP.
+O [Cache de Verniz](https://varnish-cache.org) é um acelerador de aplicativo Web de código aberto (também conhecido como _acelerador HTTP_ ou _proxy reverso HTTP de cache_). O Varnish armazena (ou armazena em cache) arquivos ou fragmentos de arquivos na memória, o que permite que o Varnish reduza o tempo de resposta e o consumo de largura de banda da rede em solicitações futuras e equivalentes. Diferentemente de servidores Web como Apache e nginx, o Varnish foi projetado para uso exclusivo com o protocolo HTTP.
 
 [Requisitos do sistema](../../installation/system-requirements.md) lista as versões do verniz com suporte.
 
@@ -22,9 +22,9 @@ O [Cache de Verniz] é um acelerador de aplicativo Web de código aberto (també
 
 Para obter mais informações sobre verniz, consulte:
 
-- [Panorama do Verniz Grande]
-- [Opções de inicialização de verniz]
-- [Desempenho de Verniz e Site]
+- [Panorama do Verniz Grande](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
+- [Opções de inicialização de verniz](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
+- [Desempenho de Verniz e Site](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
 
 ## Diagrama de topologia de verniz
 
@@ -61,7 +61,7 @@ O processo pode ser resumido da seguinte forma:
 
 Sabemos dos seguintes problemas com o verniz:
 
-- [O verniz não oferece suporte a SSL]
+- [O verniz não oferece suporte a SSL](https://www.varnish-cache.org/docs/3.0/phk/ssl.html)
 
   Como alternativa, use a terminação SSL ou um proxy de terminação SSL.
 
@@ -146,10 +146,3 @@ O código de status 304 ocorre porque o usuário invalidou o cache local e o con
 
 Se o conteúdo for alterado no servidor, o cliente baixará o ativo estático com um código de status HTTP 200 (OK) e um novo ETag.
 
-<!-- Link Definitions -->
-
-[A Grande Imagem De Verniz]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
-[Cache de verniz]: https://varnish-cache.org
-[Opções de inicialização de verniz]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
-[Desempenho de verniz e site]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
-[O verniz não é compatível com SSL]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html

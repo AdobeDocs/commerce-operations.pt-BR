@@ -2,7 +2,7 @@
 title: Visão geral do processo de atualização
 description: Saiba como atualizar seu projeto do Adobe Commerce mantém sua loja segura e eficiente. Descubra as práticas recomendadas para planejar e executar atualizações bem-sucedidas.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
@@ -54,7 +54,7 @@ O caso para atrasar ou adiar upgrades de plataformas geralmente tem um custo ime
 
 Pode parecer contraintuitivo, mas a execução de atualizações regulares da plataforma requer menos esforço geral do que a execução de atualizações pouco frequentes devido à quantidade de dívida técnica acumulada resultante do atraso. Recentemente, a Adobe trabalhou com um parceiro que tem um comerciante de varejo que costumava realizar atualizações com pouca frequência e inconsistência (anualmente ou por mais tempo). Ao transformar a maneira como eles abordam as atualizações e seguir um caminho de atualização regular recomendado pela Adobe ao longo de 12 meses, o parceiro conseguiu economizar o cliente em quatro semanas de tempo de desenvolvimento cumulativo, esforço e custos associados. Esses custos poderiam então ser redirecionados para iniciativas que impulsionassem o crescimento dos negócios.
 
-Quando as atualizações são executadas regularmente, as alterações são incrementais e o esforço de atualização correspondente reflete isso. Quando as atualizações da plataforma são adiadas por um período estendido, elas podem se tornar um processo muito mais envolvido. Além disso, as extensões usadas no [Adobe Commerce Marketplace](https://marketplace.magento.com/) e em outras integrações de terceiros também podem ser afetadas. Por fim, o tempo necessário para investigar, planejar e executar um upgrade atrasado é estendido, o que adiciona esforço e custos evitáveis.
+Quando as atualizações são executadas regularmente, as alterações são incrementais e o esforço de atualização correspondente reflete isso. Quando as atualizações da plataforma são adiadas por um período estendido, elas podem se tornar um processo muito mais envolvido. Além disso, as extensões usadas no [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//) e em outras integrações de terceiros também podem ser afetadas. Por fim, o tempo necessário para investigar, planejar e executar um upgrade atrasado é estendido, o que adiciona esforço e custos evitáveis.
 
 Alguns dos fatores gerais que afetam o nível de esforço para atualizar seu projeto incluem, mas não estão limitados a:
 
