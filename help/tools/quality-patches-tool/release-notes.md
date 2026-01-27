@@ -3,9 +3,9 @@ title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: f08af2909959bf8fb14b279f904e91a90f4e3d44
+source-git-commit: a233f39557ef1cc4f27f3e4ce015de554941d676
 workflow-type: tm+mt
-source-wordcount: '29786'
+source-wordcount: '30379'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,30 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.76 {#v1-1-76}
+
+* **ACSD-67091** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o erro de tamanho máximo do conjunto de gravação para garantir a limpeza do índice de produto da regra de catálogo implementando duas estratégias de exclusão com base no volume de dados.
+* **ACSD-67370** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corrige vários problemas em que preços incorretos eram mostrados para produtos do pacote em PDP/PLP e na página do carrinho para lojas de várias moedas.
+* **ACSD-68410** (para Adobe Commerce, B2B >=1.3.3 &lt;1.5.3) - Corrige um problema em que colocar um pedido para uma cotação negociável adiciona ou mescla incorretamente linhas adicionais do carrinho à cotação. Agora os produtos são adicionados corretamente ao carrinho de compras depois de sair da última etapa da finalização da cotação negociável.
+* **ACSD-69086** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige o problema em que o trabalho cron falha ao limpar as tabelas de log de alterações, causando falhas no Cluster Galera ao manipular grandes quantidades de dados.
+* **ACSD-69115** (para Adobe Commerce >=2.4.4 &lt;2.4.9) - Corrige um problema em que os erros do carrinho de compras não eram exibidos para o usuário administrador ao gerenciar o carrinho de compras de um cliente atribuído a um site não padrão.
+* **ACSD-69129** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.7 || >=2.4.8 &lt;2.4.9) - Corrige um problema em que a exclusão do site base padrão e o uso do site secundário como padrão resultavam em um erro ao tentar atualizar o preço da camada para o site secundário por meio da API REST.
+* **ACSD-69203** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige um problema em que o widget Lista de produtos retornava resultados incorretos quando várias categorias eram listadas na condição de categoria.
+* **ACSD-69261** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige um problema em que um cupom de regra de preço de carrinho configurado para uso único por cliente era reutilizado várias vezes devido à manipulação incorreta do atributo `times_used` em cenários de cancelamento de fatura parcial e quantidade restante.
+* **ACSD-69308** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige um problema no qual as regras de preço de catálogo não se aplicavam quando `special_price` era definido somente no nível do site (não em &quot;Todas as Exibições de Loja&quot;). Após a correção, as regras de preço do catálogo são aplicadas corretamente verificando primeiro a loja padrão do site.
+* **ACSD-69319** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corrige um problema em que os preços de pacote não eram indexados corretamente quando os produtos derivados tinham estoque em fontes personalizadas.
+* **ACSD-69325** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corrige um problema em que a modificação do caso de SKU fazia com que o produto parecesse indisponível na loja.
+* **ACSD-69331** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.9) - Corrige um problema em que os criadores de conteúdo na galeria de mídia não podiam criar pastas com apenas a permissão `create_folder`. Após a correção, eles podem criar pastas conforme esperado.
+* **ACSD-69333** (para Adobe Commerce >=2.4.7 &lt;2.4.9) - Corrige um problema no qual alterações de SKU eram permitidas em produtos com uma Atualização Agendada ativa. Após a correção, as alterações do SKU são proibidas durante as atualizações ativas; os salvamentos falham com um erro claro e o campo SKU do administrador é desativado. Isso evita inconsistências de inventário MSI causadas por alterações de SKU durante reversões de preparo.
+* **ACSD-69541** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige um problema em que a redução da quantidade de um produto no administrador para menos do que o valor já existente em um carrinho impossibilitava a edição da quantidade de produtos nesse carrinho por meio do GraphQL.
+* Versões atualizadas: **ACSD-46541**, **ACSD-53750**, **ACSD-66404**
+* Patches substituídos: **ACSD-66404**, **ACSD-68499**
 
 ## v1.1.75 {#v1-1-75}
 
