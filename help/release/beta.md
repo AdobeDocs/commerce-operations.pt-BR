@@ -2,9 +2,9 @@
 title: Versões do Beta
 description: Saiba mais sobre as versões beta do Adobe Commerce e como participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
+source-git-commit: c5d43d79679a1036f207313464f2a43bc197a3b5
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ A obtenção de acesso antecipado aos recursos que a Adobe está desenvolvendo o
 
 Consulte as seções a seguir para obter uma lista de programas beta ativos.
 
+### Armazenamento do banco de dados para o App Builder (Beta público)
+
+O [Armazenamento de Banco de Dados para o App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database) é um novo armazenamento de dados gerenciado, no estilo de documento, integrado ao Adobe Developer App Builder que oferece aos aplicativos Commerce armazenamento persistente e consultável para dados JSON estruturados. Todos os clientes com uma licença do App Builder podem provisionar esse recurso.
+
 ### Pesquisa semântica: experiências de compras mais inteligentes e sensíveis ao contexto (beta privado)
 
 A pesquisa semântica é uma tecnologia de pesquisa de comércio eletrônico que entende o *significado* por trás da consulta de um comprador, não apenas as palavras exatas. Ao contrário da pesquisa tradicional baseada em palavras-chave, que geralmente falha quando as consultas incluem termos desconhecidos ou com ortografia incorreta, essa abordagem baseada em IA interpreta a intenção usando o processamento de linguagem natural (NLP) e o contexto para fornecer resultados mais relevantes.
@@ -43,9 +47,9 @@ Para solicitar um convite para o programa beta, envie um email para [commerce-st
 
 ### Serviço de patch de automação de nuvem (Private Beta)
 
-O [Serviço de Patch de Automação da Nuvem](../tools/caps-tool/intro.md) automatiza o processo de aplicação de patches de segurança isolados aos ambientes do [Adobe Commerce na Infraestrutura da Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview).
+O [Serviço de Patch de Automação da Nuvem](../tools/caps-tool/intro.md) automatiza o processo de aplicação de patches de segurança isolados aos ambientes do [Adobe Commerce na Infraestrutura da Nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
 
-Em outubro de 2025, a versão beta do Serviço de patch de automação de nuvem será adicionada ao [painel de ferramentas de Análise do site](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este serviço oferece suporte aos administradores de projetos da Commerce com um fluxo de trabalho simplificado de patch que inclui:
+Em outubro de 2025, a versão beta do Serviço de patch de automação de nuvem será adicionada ao [painel de ferramentas de Análise do site](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este serviço oferece suporte aos administradores de projetos da Commerce com um fluxo de trabalho simplificado de patch que inclui:
 
 - Instalação de patch automatizada
 - Reverter recuperação
@@ -60,7 +64,7 @@ O beta inclui os seguintes recursos:
 
 >[!NOTE]
 >
->Como o Serviço de patch de automação de nuvem aplica automaticamente patches de segurança isolados, você deve ter a [função de Colaborador ou Administrador de projeto](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/user-access) para usá-los.
+>Como o Serviço de patch de automação de nuvem aplica automaticamente patches de segurança isolados, você deve ter a [função de Colaborador ou Administrador de projeto](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) para usá-los.
 
 Para participar deste beta, preencha e envie o [Serviço de patch de automação de nuvem - Formulário de inscrição no Beta](https://forms.office.com/r/3Wfxj5nPdB).
 
@@ -84,7 +88,7 @@ Cada versão alfa e beta do Adobe Commerce Foundation inclui todas as alteraçõ
 - Melhorias na GraphQL
 - Correções de erros de qualidade geral
 - Contribuições da Comunidade
-- Alterações necessárias para oferecer suporte à compatibilidade com [serviços da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
+- Alterações necessárias para oferecer suporte à compatibilidade com [serviços da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Convenção de nomenclatura e programação
 
