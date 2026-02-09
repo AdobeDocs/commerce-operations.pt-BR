@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7150c6c26c8e9b3992d169cea299251ab5aaf2bc
+source-git-commit: 939f9612d243084fc7bf84bfc48d7596a1e028c0
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '365'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,36 @@ ht-degree: 2%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 6 de fevereiro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.75 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68451">ACSD-68451: corrige um problema para vários sites em que um administrador de empresa faz logon em um site, cria uma empresa não relacionada em outro site, mas é incorretamente vinculada a essa empresa não relacionada</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/74e1ed73b9574903f12fa27c2f1198a823c80651">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição do Armazenamento do Banco de Dados para App Builder (Beta Público) em <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">versões do Beta</a>.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7908d56156bd72ef7e36938090befd9dd39e50e5">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 29 de janeiro de 2026
 
@@ -23,7 +53,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.75 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615">ACSD-68615: a CLI de compensação de reserva de estoque mostrava uma exceção se a combinação processada tivesse uma ID de pedido ausente</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.75 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615">ACSD-68615: a CLI de compensação de reserva de estoque mostrava uma exceção se a combinação processada tivesse uma ID de pedido ausente</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -31,7 +61,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c73feb1bb1d8e11220482f5ea51fa4427ecee201">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.75 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490">ACSD-68490: o botão "Adicionar novo atributo" está visível para um usuário administrador restrito durante a criação do produto configurável</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.75 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490">ACSD-68490: o botão "Adicionar novo atributo" está visível para um usuário administrador restrito durante a criação do produto configurável</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -53,7 +83,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.75</a>.</p>
+      <td><p>Adição da <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.75</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -75,7 +105,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/schedule">cronograma de lançamento de patches do Commerce</a> para refletir os planos de lançamento para 2026.</p>
+      <td><p>Atualização do <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">cronograma de lançamento de patches do Commerce</a> para refletir os planos de lançamento para 2026.</p>
 </td>
       <td>
         Técnico, feedback
@@ -105,7 +135,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d45a1ea4357f3f14c5d6133225f0d74dee84c9a9">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Atualização da dependência do Composer em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">Requisitos do sistema</a>:<br />- Para as versões principais 2.4.4-2.4.6 (base e patches): atualizado para v2.2.26.<br />- Para 2.4.7+ (base e patches, incluindo versões 2.4.8 e 2.4.9-alpha): atualizado para v2.9.3.</p>
+      <td><p>Atualização da dependência do Composer em <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">Requisitos do sistema</a>:<br />- Para as versões principais 2.4.4-2.4.6 (base e patches): atualizado para v2.2.26.<br />- Para 2.4.7+ (base e patches, incluindo versões 2.4.8 e 2.4.9-alpha): atualizado para v2.9.3.</p>
 </td>
       <td>
         Técnico
@@ -127,7 +157,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted">descrição detalhada do problema corrigido pelo patch ACSD-65935 na versão 1.1.67 do QPT</a>.</p>
+      <td><p>Adição da <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted">descrição detalhada do problema corrigido pelo patch ACSD-65935 na versão 1.1.67 do QPT</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -135,7 +165,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8921d17196230f97b6f940621e8236c5d85e1b9f">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição de descrição detalhada da correção QPT 1.1.73 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190">ACSD-68190: os descontos não se aplicam, os descontos aplicados não são exibidos corretamente na resposta de exibição do carrinho do GraphQL e os descontos que não são de cupom são removidos ao remover um desconto de cupom</a>.</p>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.73 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190">ACSD-68190: os descontos não se aplicam, os descontos aplicados não são exibidos corretamente na resposta de exibição do carrinho do GraphQL e os descontos que não são de cupom são removidos na remoção de um desconto de cupom</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -157,34 +187,12 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição do Composer 2.9 como uma versão com suporte para Adobe Commerce 2.4.9, 2.4.8 e 2.4.7 na documentação <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR">Requisitos do sistema</a>.</p>
+      <td><p>Adição do Composer 2.9 como uma versão com suporte para Adobe Commerce 2.4.9, 2.4.8 e 2.4.7 na documentação <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html">Requisitos do sistema</a>.</p>
 </td>
       <td>
         Técnico
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/018a833063a139a59906630b03d03dd827157bdf">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 9 de dezembro de 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.74 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68499">ACSD-68499: a mutação updateCartItems do GraphQL retornou uma resposta de sucesso incorreta ao atualizar quantidades que excediam o estoque disponível, resultando em quantidades e totais inflados</a>.</p>
-</td>
-      <td>
-        Novo tópico, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/08198cca757b3a3a86febc4ec41259b6c2727367">confirmar</a></td>
     </tr>
   </tbody>
 </table>
