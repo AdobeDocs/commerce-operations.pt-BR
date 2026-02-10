@@ -1,5 +1,5 @@
 ---
-source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
+source-git-commit: e50883135e13621f9668914a260bd5a2bf48641d
 workflow-type: tm+mt
 source-wordcount: '8232'
 ht-degree: 1%
@@ -24,7 +24,9 @@ Use o guia [&quot;Adicionar comandos CLI&quot;](https://developer.adobe.com/comm
 
 Você pode chamar comandos CLI do `bin/magento` usando atalhos em vez do nome completo do comando. Por exemplo, você pode chamar `bin/magento setup:upgrade` usando `bin/magento s:up`, `bin/magento s:upg`. Consulte [sintaxe de atalho](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) para entender como usar atalhos com qualquer comando CLI.
 
-Esta documentação de referência é gerada a partir do código-fonte do aplicativo. Para alterar a documentação, você deve abrir uma solicitação de pull para o comando correspondente no repositório [codebase](https://github.com/magento) relevante. Consulte [Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) para obter mais informações.
+Esta documentação de referência é gerada a partir do código-fonte do aplicativo. Para alterar a documentação, abra
+uma solicitação pull para o comando correspondente no repositório [codebase](https://github.com/magento) relevante. Consulte
+[Contribuições de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) para obter mais informações.
 
 ### Opções globais
 
