@@ -3,9 +3,9 @@ title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: a233f39557ef1cc4f27f3e4ce015de554941d676
+source-git-commit: 151dc8bbf046b1c269c34dcfc66718136b4b8b02
 workflow-type: tm+mt
-source-wordcount: '30379'
+source-wordcount: '30792'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,29 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.77 {#v1-1-77}
+
+* **ACSD-63687** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.7) - Corrige o problema em que preços incorretos são exibidos porque não é possível limpar o cache Redis.
+* **ACSD-68341** (para Adobe Commerce >=2.4.4 &lt;2.4.9) - Corrige o problema quando o cookie X-Magento-Vary é definido várias vezes durante o carregamento do PDP, quando vários segmentos de clientes são criados na loja.
+* **ACSD-68537** (para Adobe Commerce >=2.4.8 &lt;2.4.9) - Corrige o problema em que o desempenho de check-out era degradado à medida que o número de segmentos de clientes aumentava.
+* **ACSD-68664** (para Adobe Commerce >=2.4.6 &lt;2.4.9) - Corrige o problema em que a visualização da atualização agendada é interrompida ao tentar visualizar o conteúdo de lojas com domínios personalizados.
+* **ACSD-68759** (para Adobe Commerce e Magento Open Source >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.9) - Corrige o problema em que a criação de uma conta do cliente falha ao usar o local árabe e o atributo Data de nascimento (DOB) está definido para ser exibido na loja.
+* **ACSD-68892** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema quando as páginas armazenáveis em cache não são armazenadas ou veiculadas corretamente no cache do Fastly, resultando em um comportamento de cache inconsistente e em desempenho reduzido.
+* **ACSD-69016** (para Adobe Commerce >=2.4.7 &lt;2.4.9) - Corrige o problema quando o preço especial não entra em vigor para sites criados em fusos horários diferentes.
+* **ACSD-69020** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige o problema em que um produto configurável é incluído automaticamente nas listagens do carrossel de produtos do PageBuilder se qualquer um de seus produtos secundários atender às condições de filtragem.
+* **ACSD-69237** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que o número de entradas que podem ser processadas e inseridas por meio dos trabalhos sales_*_async_insert cron é limitado a 100 por execução.
+* **ACSD-69311** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema com o cálculo de imposto incorreto em avisos de crédito ao criar um reembolso parcial de uma fatura, se um aviso de crédito anterior foi criado a partir da página de exibição de pedido.
+* **ACSD-69351** (para Adobe Commerce >=2.4.4 &lt;2.4.9) - Corrige o problema em que os saldos de vale-presente e as datas de vencimento são exibidos, não de acordo com o escopo de site atribuído.
+* **ACSD-69494** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige os problemas nas operações assíncronas de reembolso onde as solicitações de reembolso com o parâmetro &quot;is_online&quot; não são processadas corretamente.
+* Versões atualizadas: **ACSD-67250**
+* Patches substituídos: **ACSD-62629**, **ACSD-66157**
+* Patches obsoletos: **ACSD-66157**
 
 ## v1.1.76 {#v1-1-76}
 
