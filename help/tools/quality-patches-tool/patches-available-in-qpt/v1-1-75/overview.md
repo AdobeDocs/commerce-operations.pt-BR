@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 6c107bbdddd733d4d2f8f5b710fceac664ad608f
+source-git-commit: f230c5fe7a2678f091dfff559c21bdb0d349b062
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 
 O QPT v1.1.75 inclui os seguintes patches:
 1. **ACSD-68289**: corrige um problema em que a pesquisa de texto completo agora retorna produtos correspondentes se a condição de correspondência mínima for atendida em todos os campos pesquisáveis coletivamente, em vez de exigir que a condição seja atendida por um único campo.
-1. **ACSD-68359**: corrige um problema em que selecionar um armazenamento durante o check-out usando o **[!UICONTROL Pick in Store]** não falha mais devido a URLs longas quando muitos produtos estão no carrinho. Anteriormente, isso acionava um erro 414 causado por URLs excessivamente longos gerados durante uma venda de loja.
+1. **ACSD-68359**: corrige o erro *414* ao selecionar **[!UICONTROL Pick in Store]** com carrinhos grandes.
 1. **ACSD-68451**: corrige um problema para vários sites em que um administrador de empresa faz logon em um site, cria uma empresa não relacionada em outro site, mas é erroneamente vinculada a essa empresa não relacionada.
 1. **ACSD-68517**: corrige um erro de reenvio de formulário nas páginas **[!UICONTROL Catalog]** e **[!UICONTROL Catalog Search]**.
 1. **ACSD-68490**: botão **[!UICONTROL Add New Attribute]** visível para o administrador restrito durante a criação do produto configurável.
