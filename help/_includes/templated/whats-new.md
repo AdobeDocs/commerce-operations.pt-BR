@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de descrição detalhada da correção QPT 1.1.75 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517: corrige um erro de reenvio de formulário nas páginas Pesquisa no catálogo e no catálogo</a>.</p>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.75 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517: corrige um erro de reenvio de formulário nas páginas Pesquisa no catálogo e no catálogo</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -53,7 +53,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8ee6404271170b19ff27a3ab64711061505494b3">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.76</a>.</p>
+      <td><p>Adição da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.76</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
