@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: cb5efec8e323dbe49fe38a4cf2977718b28c835f
+source-git-commit: f7205d2558f79798cf25c7c51326eae9fcfa8d19
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,6 @@ O QPT v1.1.77 inclui os seguintes patches:
 1. **ACSD-69237**: `sales_*_async_insert` os trabalhos cron processam somente 100 entradas por execução.
 1. **[ACSD-69311](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)**: corrige o cálculo de imposto incorreto em avisos de crédito após reembolsos parciais de faturas.
 1. **ACSD-69351**: saldos de cartão-presente e datas de expiração exibidos em sites incorretos.
-1. **ACSD-69494**: as solicitações de reembolso assíncronas com `is_online` não acionam reembolsos online.
+1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: corrige as solicitações de reembolso assíncronas com `is_online` que não acionam reembolsos online.
 
 Use o menu à esquerda para navegar até uma página de patch específica.
