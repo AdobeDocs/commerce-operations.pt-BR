@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: aeda6ddd9bac7e5f81329d9bd05ab8957ef2fb76
+source-git-commit: 27356acfca4b9e640478010579b0f419749930d3
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O QPT v1.1.76 inclui os seguintes patches:
 1. **ACSD-69319**: corrige um problema em que os preços de pacote não eram indexados corretamente quando produtos derivados tinham estoque em fontes personalizadas.
 1. **ACSD-69325**: corrige um problema em que modificar o caso do SKU faz com que o produto pareça estar esgotado no estoque da loja.
 1. **ACSD-69331**: corrige um problema em que os criadores de conteúdo na galeria de mídia não podiam criar pastas com apenas a permissão `create_folder`. Após a correção, eles podem criar pastas conforme esperado.
-1. **ACSD-69333**: corrige um problema em que alterações de SKU eram permitidas em produtos com uma atualização agendada ativa. Após a correção, as alterações do SKU são proibidas durante as atualizações ativas; os salvamentos falham com um erro claro e o campo SKU do administrador é desativado. Isso impede o MSI.
+1. **[ACSD-69333](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333.md)**: corrige um problema em que alterações de SKU eram permitidas em produtos com uma atualização agendada ativa. Após a correção, as alterações do SKU são proibidas durante as atualizações ativas; os salvamentos falham com um erro claro e o campo SKU do administrador é desativado. Isso evita inconsistências de Inventário MSI causadas por alterações de SKU durante reversões de preparo.
 1. **ACSD-69541**: corrige um problema em que reduzir a quantidade de um produto no administrador para menos do que o que já existe em um carrinho impossibilitava a edição da quantidade de produtos nesse carrinho por meio do GraphQL.
 
 Use o menu à esquerda para navegar até uma página de patch específica.
