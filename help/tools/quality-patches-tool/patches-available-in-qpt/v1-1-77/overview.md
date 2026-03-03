@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 77e2401d76a95ff15ba47a3ee0e2c228b2ecd39f
+source-git-commit: da3647e87926e35309a138a9d9aff4dbf44a5334
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -20,7 +20,7 @@ O QPT v1.1.77 inclui os seguintes patches:
 1. **ACSD-63687**: corrige um problema em que preços incorretos são exibidos devido a uma falha na limpeza do cache [!DNL Redis].
 1. **ACSD-68341**: várias atualizações de cookie `X‑Magento‑Vary` ocorrem na carga de PDP.
 1. **ACSD-68537**: o desempenho do check-out diminui com muitos segmentos de clientes.
-1. **ACSD-68664**: a visualização de atualização agendada tem erros em domínios de repositório personalizados.
+1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: a visualização de atualização agendada tem erros em domínios de repositório personalizados.
 1. **ACSD-68759**: erro de criação de conta de cliente com localidade árabe quando a Data de Nascimento é exibida.
 1. **ACSD-68892**: comportamento de cache [!DNL Fastly] inconsistente para páginas que podem ser armazenadas em cache.
 1. **ACSD-69016**: o preço especial não é aplicado a sites com fusos horários diferentes.
