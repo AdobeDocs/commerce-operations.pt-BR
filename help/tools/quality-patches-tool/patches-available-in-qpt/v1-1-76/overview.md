@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 27356acfca4b9e640478010579b0f419749930d3
+source-git-commit: 65e615d2f679e88d51093a8ea28007dfe418d385
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 O QPT v1.1.76 inclui os seguintes patches:
 1. **ACSD-67091**: corrige o erro de tamanho máximo do conjunto de gravação para garantir a limpeza do índice de produto da regra de catálogo implementando duas estratégias de exclusão com base no volume de dados.
 1. **ACSD-67370**: corrige vários problemas em que os preços incorretos eram mostrados para os produtos do Pacote em PDP/PLP e na página do carrinho para lojas de várias moedas.
-1. **ACSD-68410**: corrige um problema em que colocar um pedido para uma cotação negociável adiciona ou mescla incorretamente linhas de carrinho adicionais à cotação. Agora os produtos são adicionados corretamente ao carrinho de compras depois de sair da última etapa da finalização da cotação negociável.
+1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: corrige um problema em que colocar um pedido para uma cotação negociável adiciona ou mescla incorretamente linhas de carrinho adicionais à cotação. Agora os produtos são adicionados corretamente ao carrinho de compras depois de sair da última etapa da finalização da cotação negociável.
 1. **ACSD-69086**: corrige o problema em que o trabalho cron falha ao limpar as tabelas de log de alterações, causando [!DNL Galera Cluster] falhas ao manipular grandes quantidades de dados.
 1. **ACSD-69115**: corrige um problema em que os erros do carrinho de compras não eram exibidos para o usuário administrador ao gerenciar o carrinho de compras de um cliente atribuído a um site não padrão.
 1. **ACSD-69129**: corrige um problema em que a exclusão do site básico padrão e o uso do site secundário como padrão resulta em um erro ao tentar atualizar o preço da camada para o site secundário por meio da API [!DNL REST].
