@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: da3647e87926e35309a138a9d9aff4dbf44a5334
+source-git-commit: 0e76a5bbc2d44dc8c7d77cb764e9376e5c4aa69f
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ O QPT v1.1.77 inclui os seguintes patches:
 1. **ACSD-68537**: o desempenho do check-out diminui com muitos segmentos de clientes.
 1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: a visualização de atualização agendada tem erros em domínios de repositório personalizados.
 1. **ACSD-68759**: erro de criação de conta de cliente com localidade árabe quando a Data de Nascimento é exibida.
-1. **ACSD-68892**: comportamento de cache [!DNL Fastly] inconsistente para páginas que podem ser armazenadas em cache.
+1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: corrige um comportamento de cache [!DNL Fastly] inconsistente para páginas que podem ser armazenadas em cache.
 1. **ACSD-69016**: o preço especial não é aplicado a sites com fusos horários diferentes.
 1. **ACSD-69020**: os produtos configuráveis aparecem nos carrosséis do [!UICONTROL Page Builder] quando os produtos derivados correspondem aos filtros.
 1. **ACSD-69237**: `sales_*_async_insert` os trabalhos cron processam somente 100 entradas por execução.
