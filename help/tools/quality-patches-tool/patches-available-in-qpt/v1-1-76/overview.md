@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 65e615d2f679e88d51093a8ea28007dfe418d385
+source-git-commit: 3196580876eaa90e79d98f0cd14cbccc841d0524
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
@@ -21,7 +21,7 @@ O QPT v1.1.76 inclui os seguintes patches:
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: corrige um problema em que colocar um pedido para uma cotação negociável adiciona ou mescla incorretamente linhas de carrinho adicionais à cotação. Agora os produtos são adicionados corretamente ao carrinho de compras depois de sair da última etapa da finalização da cotação negociável.
 1. **ACSD-69086**: corrige o problema em que o trabalho cron falha ao limpar as tabelas de log de alterações, causando [!DNL Galera Cluster] falhas ao manipular grandes quantidades de dados.
 1. **ACSD-69115**: corrige um problema em que os erros do carrinho de compras não eram exibidos para o usuário administrador ao gerenciar o carrinho de compras de um cliente atribuído a um site não padrão.
-1. **ACSD-69129**: corrige um problema em que a exclusão do site básico padrão e o uso do site secundário como padrão resulta em um erro ao tentar atualizar o preço da camada para o site secundário por meio da API [!DNL REST].
+1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: corrige um problema em que a exclusão do site básico padrão e o uso do site secundário como padrão resulta em um erro ao tentar atualizar o preço da camada para o site secundário por meio da API [!DNL REST].
 1. **ACSD-69203**: corrige um problema em que o widget **[!UICONTROL Products List]** retorna resultados incorretos quando várias categorias são listadas na condição de categoria.
 1. **ACSD-69261**: corrige um problema em que um cupom da regra de preço do carrinho configurado para uso único por cliente era reutilizado várias vezes devido ao tratamento incorreto do atributo `times_used` em cenários de cancelamento de fatura parcial e quantidade restante.
 1. **ACSD-69308**: corrige um problema em que as regras de preço do catálogo não se aplicavam quando `special_price` era definido somente no nível do site (não em **[!UICONTROL All Store Views]**). Após a correção, as regras de preço do catálogo são aplicadas corretamente verificando primeiro a loja padrão do site.
