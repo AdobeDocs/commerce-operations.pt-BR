@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308: as regras de preço do catálogo não se aplicam quando <code class="language-plaintext highlighter-rouge">special_price</code> é definido somente no nível do site (não em "Todas as exibições da loja"). Após a correção, as regras de preço do catálogo serão aplicadas corretamente verificando primeiro o armazenamento padrão do site</a>.</p>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308: as regras de preço do catálogo não se aplicam quando <code class="language-plaintext highlighter-rouge">special_price</code> é definido somente no nível do site (não em "Todas as exibições da loja"). Após a correção, as regras de preço do catálogo serão aplicadas corretamente verificando primeiro o armazenamento padrão do site</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -31,7 +31,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/db07a5d6f991ff36536a4365ee88fa25062dbe43">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541: reduzir a quantidade de um produto no administrador para menos do que o que já existe em um carrinho tornou impossível editar a quantidade de produto nesse carrinho por meio do GraphQL</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541: reduzir a quantidade de um produto no administrador para menos do que o que já existe em um carrinho tornou impossível editar a quantidade de produto nesse carrinho por meio do GraphQL</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -39,7 +39,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020: os produtos configuráveis aparecem nos carrosséis do Page Builder quando os produtos secundários correspondem aos filtros</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020: os produtos configuráveis aparecem nos carrosséis do Page Builder quando os produtos secundários correspondem aos filtros</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
