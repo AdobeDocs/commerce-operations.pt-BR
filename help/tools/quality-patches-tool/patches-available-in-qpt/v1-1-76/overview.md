@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8eac0cdbf303e307b7734845c09c9d652d901d7b
+source-git-commit: 535934d92c0bd8a0d029c2c9a6c06be161db266f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ O QPT v1.1.76 inclui os seguintes patches:
 1. **ACSD-69115**: corrige um problema em que os erros do carrinho de compras não eram exibidos para o usuário administrador ao gerenciar o carrinho de compras de um cliente atribuído a um site não padrão.
 1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: corrige um problema em que a exclusão do site básico padrão e o uso do site secundário como padrão resulta em um erro ao tentar atualizar o preço da camada para o site secundário por meio da API [!DNL REST].
 1. **ACSD-69203**: corrige um problema em que o widget **[!UICONTROL Products List]** retorna resultados incorretos quando várias categorias são listadas na condição de categoria.
+1. **[ACSD-69261](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)**: corrige um problema em que um cupom da regra de preço do carrinho configurado para uso único por cliente era reutilizado várias vezes devido ao tratamento incorreto do atributo `times_used` em cenários de cancelamento de fatura parcial e quantidade restante.
+1. **ACSD-69308**: corrige um problema em que as regras de preço do catálogo não se aplicavam quando `special_price` era definido somente no nível do site (não em **[!UICONTROL All Store Views]**). Após a correção, as regras de preço do catálogo são aplicadas corretamente verificando primeiro a loja padrão do site.
 1. **ACSD-69261**: corrige um problema em que um cupom da regra de preço do carrinho configurado para uso único por cliente era reutilizado várias vezes devido ao tratamento incorreto do atributo `times_used` em cenários de cancelamento de fatura parcial e quantidade restante.
 1. **[ACSD-69308](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)**: corrige um problema em que as regras de preço do catálogo não se aplicavam quando `special_price` era definido somente no nível do site (não em **[!UICONTROL All Store Views]**).
 1. **ACSD-69319**: corrige um problema em que os preços de pacote não eram indexados corretamente quando produtos derivados tinham estoque em fontes personalizadas.
