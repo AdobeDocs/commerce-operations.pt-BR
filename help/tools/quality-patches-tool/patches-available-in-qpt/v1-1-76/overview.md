@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9b73f6e893a2d68029237407fa525e4d001960e9
+source-git-commit: 8eac0cdbf303e307b7734845c09c9d652d901d7b
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no [!DNL Quality Patches Tool] (QPT) v1.1.76.
 
 O QPT v1.1.76 inclui os seguintes patches:
-1. **ACSD-67091**: corrige o erro de tamanho máximo do conjunto de gravação para garantir a limpeza do índice de produto da regra de catálogo implementando duas estratégias de exclusão com base no volume de dados.
+1. **[ACSD-67091](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)**: corrige o erro de tamanho máximo do conjunto de gravação para garantir a limpeza do índice de produto da regra de catálogo implementando duas estratégias de exclusão com base no volume de dados.
 1. **ACSD-67370**: corrige vários problemas em que os preços incorretos eram mostrados para os produtos do Pacote em PDP/PLP e na página do carrinho para lojas de várias moedas.
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: corrige um problema em que colocar um pedido para uma cotação negociável adiciona ou mescla incorretamente linhas de carrinho adicionais à cotação. Agora os produtos são adicionados corretamente ao carrinho de compras depois de sair da última etapa da finalização da cotação negociável.
 1. **ACSD-69086**: corrige o problema em que o trabalho cron falha ao limpar as tabelas de log de alterações, causando [!DNL Galera Cluster] falhas ao manipular grandes quantidades de dados.
