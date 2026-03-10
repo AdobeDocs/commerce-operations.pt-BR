@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7dd35627836160bf1e892ea920a21ddd107642ad
+source-git-commit: 5ad8f9ce930ca8484c355561f8bfa2f19dba3e9c
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,9 @@ O QPT v1.1.77 inclui os seguintes patches:
 1. **ACSD-69016**: o preço especial não é aplicado a sites com fusos horários diferentes.
 1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: corrige um problema em que os produtos configuráveis aparecem nos carrosséis de produtos do [!DNL Page Builder] quando os produtos derivados atendem às condições de filtragem.
 1. **ACSD-69237**: `sales_*_async_insert` os trabalhos cron processam somente 100 entradas por execução.
+1. **ACSD-69351**: corrige o problema em que os saldos dos cartões-presente e as datas de vencimento são exibidos em sites incorretos.
 1. **ACSD-69311**: corrige o cálculo de imposto incorreto em avisos de crédito após reembolsos parciais de faturas.
-1. **ACSD-69351**: saldos de cartão-presente e datas de expiração exibidos em sites incorretos.
+1. **ACSD-69494**: corrige as solicitações de reembolso assíncronas com `is_online` que não acionam reembolsos online.
 1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: corrige as solicitações de reembolso assíncronas com `is_online` que não acionam reembolsos online.
 
 Use o menu à esquerda para navegar até uma página de patch específica.
