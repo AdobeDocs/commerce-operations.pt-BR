@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5ad8f9ce930ca8484c355561f8bfa2f19dba3e9c
+source-git-commit: fa839814adf83d2a22840e13d4d70540270269b1
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,9 @@ O QPT v1.1.77 inclui os seguintes patches:
 1. **ACSD-68537**: o desempenho do check-out diminui com muitos segmentos de clientes.
 1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: a visualização de atualização agendada tem erros em domínios de repositório personalizados.
 1. **ACSD-68759**: erro de criação de conta de cliente com localidade árabe quando a Data de Nascimento é exibida.
+1. **ACSD-68892**: comportamento de cache [!DNL Fastly] inconsistente para páginas que podem ser armazenadas em cache.
+1. **[ACSD-69016](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016.md)**: corrige um problema em que o preço especial não é aplicado a sites com fusos horários diferentes.
+1. **ACSD-69020**: os produtos configuráveis aparecem nos carrosséis do [!UICONTROL Page Builder] quando os produtos derivados correspondem aos filtros.
 1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: corrige um comportamento de cache [!DNL Fastly] inconsistente para páginas que podem ser armazenadas em cache.
 1. **ACSD-69016**: o preço especial não é aplicado a sites com fusos horários diferentes.
 1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: corrige um problema em que os produtos configuráveis aparecem nos carrosséis de produtos do [!DNL Page Builder] quando os produtos derivados atendem às condições de filtragem.
