@@ -18,7 +18,7 @@ O objetivo deste cronograma é fornecer datas para quando a Adobe planeja anunci
 
 >[!NOTE]
 >
->Para saber mais sobre novos recursos, infraestrutura em nuvem e versões de extensibilidade, consulte a documentação da versão dos [Serviços da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
+>Para saber mais sobre novos recursos, infraestrutura em nuvem e versões de extensibilidade, consulte a documentação da versão dos [Serviços da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/release-information/release-notes-all).
 
 Além dos patches de qualidade, segurança e beta agendados listados nesta página, a Adobe fornece acesso a [patches individuais](versioning-policy.md#individual-patch) por meio da [Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md). A ferramenta permite aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para a versão instalada do Adobe Commerce.
 
@@ -43,10 +43,10 @@ Consulte a imagem a seguir para obter detalhes:
 
 A Adobe notifica os clientes sobre novas versões de patches pelos seguintes canais:
 
-- [Boletins e conselhos de segurança do Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
+- [Boletins e conselhos de segurança do Adobe](https://helpx.adobe.com/br/security/security-bulletin.html#magento)
 - Email
 - Alertas no produto
 
 >[!NOTE]
 >
-> Para obter as datas de lançamento de cada versão secundária, patch e segurança, e as datas para o fim do suporte regular, consulte [Versões lançadas](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
+> Para obter as datas de lançamento de cada versão secundária, patch e segurança, e as datas para o fim do suporte regular, consulte [Versões lançadas](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/versions).
