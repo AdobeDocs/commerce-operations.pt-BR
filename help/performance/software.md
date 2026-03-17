@@ -114,7 +114,7 @@ Adicionar mais extensões aumenta os tempos de carregamento da biblioteca.
 
 >[!INFO]
 >
->`php-mcrypt` foi removido do PHP 7.2 e substituído pela biblioteca [`sodium` ](https://www.php.net/manual/en/book.sodium.php). Verifique se [sódio](https://www.php.net/manual/en/sodium.installation.php) está habilitado corretamente ao atualizar o PHP.
+>`php-mcrypt` foi removido do PHP 7.2 e substituído pela biblioteca [`sodium` &#x200B;](https://www.php.net/manual/en/book.sodium.php). Verifique se [sódio](https://www.php.net/manual/en/sodium.installation.php) está habilitado corretamente ao atualizar o PHP.
 
 >[!INFO]
 >
