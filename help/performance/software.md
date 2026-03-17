@@ -3,9 +3,9 @@ title: Recomendações de software
 description: Saiba mais sobre os requisitos de software e as recomendações para o Adobe Commerce. Descubra as versões compatíveis e as práticas recomendadas de configuração para produção.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 São necessários os seguintes softwares para as instâncias de produção do [!DNL Commerce]:
 
 * [PHP](../installation/system-requirements.md)
-* Nginx e [PHP-FPM](https://php-fpm.org/)
+* Nginx e [PHP-FPM](https://www.php.net/manual/en/install.fpm.php)
 * [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
 * [[!DNL Elasticsearch] ou OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
@@ -47,7 +47,7 @@ net.core.somaxconn = 1024
 
 ## PHP
 
-O Magento suporta totalmente o PHP 7.3 e 7.4. Há vários fatores a serem considerados ao configurar o PHP para obter o máximo de velocidade e eficiência no processamento de requisições.
+Use uma versão do PHP compatível com a versão do Adobe Commerce que você está instalando, conforme listado nos [requisitos do sistema](../installation/system-requirements.md). Há vários fatores a serem considerados ao configurar o PHP para obter o máximo de velocidade e eficiência no processamento de requisições.
 
 ### Extensões PHP
 
@@ -114,7 +114,7 @@ Adicionar mais extensões aumenta os tempos de carregamento da biblioteca.
 
 >[!INFO]
 >
->`php-mcrypt` foi removido do PHP 7.2 e substituído pela biblioteca [`sodium` &#x200B;](https://www.php.net/manual/en/book.sodium.php). Verifique se [sódio](https://www.php.net/manual/en/sodium.installation.php) está habilitado corretamente ao atualizar o PHP.
+>`php-mcrypt` foi removido do PHP 7.2 e substituído pela biblioteca [`sodium` ](https://www.php.net/manual/en/book.sodium.php). Verifique se [sódio](https://www.php.net/manual/en/sodium.installation.php) está habilitado corretamente ao atualizar o PHP.
 
 >[!INFO]
 >
@@ -141,7 +141,7 @@ realpath_cache_ttl=7200
 
 #### ByteCode
 
-Para obter a velocidade máxima de [!DNL Commerce] no PHP 7, você deve ativar o módulo OpCache e configurá-lo corretamente. Estas configurações são recomendadas para o módulo:
+Para obter a velocidade máxima de [!DNL Commerce], você deve ativar o módulo OpCache e configurá-lo corretamente. Estas configurações são recomendadas para o módulo:
 
 ```text
 opcache.memory_consumption=512
@@ -184,15 +184,14 @@ Você também deve configurar o número de threads para processamento de solicit
 
 | Servidor da Web | Nome do atributo | Localização | Informações relacionadas |
 |--- | --- | --- | ---|
-| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Ajustando o NGINX para Desempenho](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Ajuste de desempenho do Apache](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Ajustando o NGINX para Desempenho](https://www.f5.com/company/blog/nginx/tuning-nginx) |
 | Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Diretivas Comuns do Apache MPM](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]
 
 Este documento não fornece instruções detalhadas de ajuste do [!DNL MySQL] porque cada armazenamento e ambiente são diferentes, mas podemos fazer algumas recomendações gerais.
 
-Houve muitas melhorias no [!DNL MySQL] 5.7.9. Estamos confiantes de que o [!DNL MySQL] é distribuído com boas configurações padrão. As configurações mais críticas são:
+As versões recentes do [!DNL MySQL] incluem muitas melhorias de desempenho, e o [!DNL MySQL] geralmente é distribuído com boas configurações padrão. As configurações mais críticas são:
 
 | Parâmetro | Padrão | Descrição |
 |--- | --- | ---|
@@ -207,7 +206,7 @@ A Magento recomenda usar o [!DNL Varnish] como o servidor de cache de página in
 
 Instale o [!DNL Varnish] em um servidor separado, em frente à camada da Web. Ele deve aceitar todas as solicitações recebidas e fornecer cópias de página em cache. Para permitir que [!DNL Varnish] funcione efetivamente com páginas seguras, um proxy de encerramento SSL pode ser colocado na frente de [!DNL Varnish]. O Nginx pode ser usado para essa finalidade.
 
-O [!DNL Commerce] distribui um arquivo de configuração de exemplo para [!DNL Varnish] (versões 4 e 5) que contém todas as configurações recomendadas para desempenho. Entre eles, os mais críticos em termos de desempenho são:
+O [!DNL Commerce] distribui arquivos de configuração de exemplo para versões [!DNL Varnish] com suporte que contêm todas as configurações recomendadas para desempenho. Entre eles, os mais críticos em termos de desempenho são:
 
 * **A verificação de integridade do back-end** sonda o servidor [!DNL Commerce] para determinar se ele está respondendo em tempo hábil.
 * O **modo de carência** permite que você instrua o [!DNL Varnish] a manter um objeto no cache além do período TTL (Time to Live) e fornecer esse conteúdo obsoleto se [!DNL Commerce] não estiver íntegro ou se o conteúdo novo ainda não tiver sido obtido.
@@ -221,7 +220,7 @@ Em geral, recomendamos armazenar seus ativos (imagens, JS, CSS etc.) em um CDN p
 
 Se seu site não exigir a implantação de um grande número de localidades e seus servidores estiverem na mesma região que a maioria de seus clientes, você poderá encontrar ganhos de desempenho significativos a um custo menor armazenando seus ativos no [!DNL Varnish] em vez de usar uma CDN.
 
-Para armazenar seus ativos no [!DNL Varnish], adicione as seguintes entradas de VCL no arquivo `default.vcl` gerado por [!DNL Commerce] para [!DNL Varnish] 5.
+Para armazenar seus ativos no [!DNL Varnish], adicione as seguintes entradas de VCL no arquivo `default.vcl` gerado pelo [!DNL Commerce].
 
 No final da instrução `if` para solicitações PURGE na sub-rotina `vcl_recv`, adicione:
 

@@ -2,9 +2,9 @@
 title: Diretrizes do MySQL
 description: Siga estas etapas para instalar e configurar o MySQL e o MariaDB para instalações locais do Adobe Commerce.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 2d17da1f8cbda1462839ad2fa3ea569833443827
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -15,14 +15,14 @@ Consulte [Requisitos do Sistema](../../system-requirements.md) para obter as ver
 
 O Adobe _recomenda que você observe o seguinte padrão ao configurar seu banco de dados:_
 
-* O Adobe Commerce usa [gatilhos de banco de dados MySQL](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) para melhorar o acesso ao banco de dados durante a reindexação. Elas são criadas quando o modo do indexador é definido como [agenda](../../../configuration/cli/manage-indexers.md#configure-indexers). O aplicativo não oferece suporte a acionadores personalizados no banco de dados porque esses acionadores podem introduzir incompatibilidades com versões futuras do Adobe Commerce.
-* Familiarize-se com [estas limitações potenciais do acionador MySQL](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) antes de continuar.
-* Para aprimorar sua postura de segurança do banco de dados, habilite o modo SQL [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) para impedir o armazenamento de valores de dados inválidos, o que pode causar interações indesejadas no banco de dados.
-* O Adobe Commerce _não_ oferece suporte à replicação baseada em instruções MySQL. Certifique-se de usar _somente_ [replicação baseada em linha](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
+* O Adobe Commerce usa [gatilhos de banco de dados MySQL](https://dev.mysql.com/doc/refman/8.4/en/triggers.html) para melhorar o acesso ao banco de dados durante a reindexação. Elas são criadas quando o modo do indexador é definido como [agenda](../../../configuration/cli/manage-indexers.md#configure-indexers). O aplicativo não oferece suporte a acionadores personalizados no banco de dados porque esses acionadores podem introduzir incompatibilidades com versões futuras do Adobe Commerce.
+* Familiarize-se com [estas limitações potenciais do acionador MySQL](https://dev.mysql.com/doc/refman/8.4/en/stored-program-restrictions.html) antes de continuar.
+* Para aprimorar sua postura de segurança do banco de dados, habilite o modo SQL [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/8.4/en/sql-mode.html#sqlmode_strict_all_tables) para impedir o armazenamento de valores de dados inválidos, o que pode causar interações indesejadas no banco de dados.
+* O Adobe Commerce _não_ oferece suporte à replicação baseada em instruções MySQL. Certifique-se de usar _somente_ [replicação baseada em linha](https://dev.mysql.com/doc/refman/8.4/en/replication-formats.html).
 
 >[!WARNING]
 >
->Atualmente, o Adobe Commerce usa `CREATE TEMPORARY TABLE` instruções dentro de transações, que são [incompatíveis](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) com implementações de banco de dados, e usam replicação baseada em GTID, como [instâncias de segunda geração do Google Cloud SQL](https://cloud.google.com/sql/docs/features#differences). Considere o MySQL para Cloud SQL 8.0 como uma alternativa.
+>Atualmente, o Adobe Commerce usa `CREATE TEMPORARY TABLE` instruções dentro de transações, que são [incompatíveis](https://dev.mysql.com/doc/refman/8.4/en/replication-gtids-restrictions.html) com implementações de banco de dados, e usam replicação baseada em GTID, como [instâncias de segunda geração do Google Cloud SQL](https://docs.cloud.google.com/sql/docs/features#differences). Considere o MySQL para Cloud SQL 8.0 como uma alternativa.
 
 >[!NOTE]
 >
@@ -30,12 +30,12 @@ O Adobe _recomenda que você observe o seguinte padrão ao configurar seu banco 
 
 ## Instalação do MySQL no Ubuntu
 
-O Adobe Commerce 2.4 requer uma instalação limpa do MySQL 8.0. Siga os links abaixo para obter instruções sobre como instalar o MySQL em sua máquina.
+O Adobe Commerce 2.4 oferece suporte a diferentes versões do MySQL 8, dependendo da versão que você está instalando. Use uma versão listada em [Requisitos do Sistema](../../system-requirements.md) e siga os links abaixo para obter instruções sobre como instalar o MySQL em sua máquina.
 
-* [Ubuntu](https://ubuntu.com/server/docs/databases-mysql)
-* [CentOS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
+* [Ubuntu](https://ubuntu.com/server/docs/databases-mysql/)
+* [CentOS](https://dev.mysql.com/doc/refman/8.4/en/linux-installation-yum-repo.html)
 
-Se você espera importar um grande número de produtos, pode aumentar o valor de [`max_allowed_packet`](https://dev.mysql.com/doc/refman/5.6/en/program-variables.html), que é maior que o padrão, 16 MB.
+Se você espera importar um grande número de produtos, pode aumentar o valor de [`max_allowed_packet`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_max_allowed_packet) para um valor maior que o padrão, 16 MB.
 
 >[!NOTE]
 >
@@ -186,8 +186,8 @@ Para configurar uma instância do banco de dados MySQL:
 
    Referências:
 
-   * [MySQL 5.7](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
-   * [MariaDB](https://mariadb.com/kb/en/server-system-variables/#explicit_defaults_for_timestamp)
+   * [MySQL 8.4](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
+   * [MariaDB](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#explicit_defaults_for_timestamp)
 
    Se esta configuração não estiver habilitada, `bin/magento setup:db:status` sempre relata que `Declarative Schema is not up to date`.
 

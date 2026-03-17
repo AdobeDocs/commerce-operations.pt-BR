@@ -2,10 +2,10 @@
 title: Programação de lançamento de patches
 description: Saiba quando a Adobe planeja anunciar o lançamento de novos patches e correções de segurança para o Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 8ee6404271170b19ff27a3ab64711061505494b3
+source-git-commit: a423b2a2f4938f81db0da3706ba6fa240e53b1b3
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 0%
+source-wordcount: '330'
+ht-degree: 5%
 
 ---
 
@@ -18,19 +18,19 @@ O objetivo deste cronograma é fornecer datas para quando a Adobe planeja anunci
 
 >[!NOTE]
 >
->Para saber mais sobre novos recursos, infraestrutura em nuvem e versões de extensibilidade, consulte a documentação da versão dos [Serviços da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/release-information/release-notes-all).
+>Para saber mais sobre novos recursos, infraestrutura em nuvem e versões de extensibilidade, consulte a documentação da versão dos [Serviços da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Além dos patches de qualidade, segurança e beta agendados listados nesta página, a Adobe fornece acesso a [patches individuais](versioning-policy.md#individual-patch) por meio da [Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md). A ferramenta permite aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para a versão instalada do Adobe Commerce.
 
 As versões de patch do Adobe Commerce são lançadas com base nas seguintes diretrizes:
 
-- **Correções de segurança isoladas**—As [correções de segurança](versioning-policy.md#isolated-patch) individuais e não cumulativas foram lançadas conforme necessário e incluem correções de segurança para todas as [linhas de versão &#x200B;](lifecycle-policy.md) com suporte (inclui suporte regular e estendido).
+- **Correções de segurança isoladas**—As [correções de segurança](versioning-policy.md#isolated-patch) individuais e não cumulativas foram lançadas conforme necessário e incluem correções de segurança para todas as [linhas de versão ](lifecycle-policy.md) com suporte (inclui suporte regular e estendido).
 
-- **Patches de segurança**—No mínimo, [patches de segurança](versioning-policy.md#security-patch-release) são lançados anualmente (maio) para todas as linhas de versão [com suporte](lifecycle-policy.md). Esses patches incluem todas as correções de segurança isoladas lançadas anteriormente. A Adobe pode lançar patches de segurança adicionais em novembro, se necessário, mas isso não é garantido.
+- **Patches de segurança**—No mínimo, [patches de segurança](versioning-policy.md#security-patch-release) são lançados anualmente para todas as linhas de versão [com suporte](lifecycle-policy.md). Esses patches incluem todas as correções de segurança isoladas lançadas anteriormente. A Adobe pode lançar patches de segurança adicionais, se necessário, mas isso não é garantido.
 
 - **Patch** — Um [patch](versioning-policy.md#patch-release) completo para a linha de versão LTS 2.4.x do Adobe Commerce (período de suporte de 3 anos) é lançado anualmente (maio).
 
-- **Patches do Beta**—Dois [patches beta](versioning-policy.md#beta-patch-release) para a linha de lançamento do Adobe Commerce 2.4.x LTS são lançados duas vezes por ano (março e novembro).
+- **Patches do Beta**—Dois [patches beta](versioning-policy.md#beta-patch-release) para a linha de lançamento do Adobe Commerce 2.4.x LTS são lançados duas vezes por ano.
 
 Consulte a imagem a seguir para obter detalhes:
 
@@ -43,10 +43,10 @@ Consulte a imagem a seguir para obter detalhes:
 
 A Adobe notifica os clientes sobre novas versões de patches pelos seguintes canais:
 
-- [Boletins e conselhos de segurança do Adobe](https://helpx.adobe.com/br/security/security-bulletin.html#magento)
+- [Boletins e conselhos de segurança do Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
 - Email
 - Alertas no produto
 
 >[!NOTE]
 >
-> Para obter as datas de lançamento de cada versão secundária, patch e segurança, e as datas para o fim do suporte regular, consulte [Versões lançadas](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/versions).
+> Para obter as datas de lançamento de cada versão secundária, patch e segurança, e as datas para o fim do suporte regular, consulte [Versões lançadas](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).

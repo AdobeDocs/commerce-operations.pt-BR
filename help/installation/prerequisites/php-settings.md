@@ -3,9 +3,9 @@ title: Configurações do PHP
 description: Siga estas etapas para instalar as extensões necessárias do PHP e definir as configurações necessárias do PHP para instalações locais do Adobe Commerce.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ Este tópico discute como definir as opções necessárias do PHP.
 
 >[!NOTE]
 >
->A última versão do Adobe Commerce requer no mínimo o PHP 8.1. Consulte [requisitos do sistema](../system-requirements.md) para todas as versões do PHP suportadas.
+>As versões do PHP suportadas variam de acordo com a versão do Adobe Commerce. Consulte [requisitos do sistema](../system-requirements.md) para obter as versões exatas do PHP suportadas pela versão que você está instalando.
 
-Para obter orientações sobre a configuração da nuvem, consulte [configurações do PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=pt-BR) no guia _Commerce na Infraestrutura da Nuvem_.
+Para obter orientações sobre a configuração da nuvem, consulte [configurações do PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) no guia _Commerce na Infraestrutura da Nuvem_.
 
 ## Controle do processo PHP
 
@@ -36,10 +36,10 @@ php -v
 Se o PHP estiver instalado, uma mensagem similar à seguinte será exibida:
 
 ```
-PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
+PHP <supported-version> (cli) (built: <build-date>) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.1.2, Copyright (c) Zend Technologies
-    with Zend OPcache v8.1.2-1ubuntu2.14, Copyright (c), by Zend Technologies
+Zend Engine v<matching-version>, Copyright (c) Zend Technologies
+    with Zend OPcache v<matching-version>, Copyright (c), by Zend Technologies
 ```
 
 Se o PHP não estiver instalado (ou necessitar de uma atualização), instale-o seguindo as instruções para a sua distribuição Linux.
@@ -65,7 +65,7 @@ Para verificar as extensões instaladas:
 
 >[!WARNING]
 >
->Se você estiver usando o PHP 7.4.20, defina `pcre.jit=0` em seu arquivo `php.ini`. Isso contorna um [bug](https://bugs.php.net/bug.php?id=81101) do PHP que impede o carregamento do CSS.
+>Se você estiver solucionando problemas em um ambiente herdado afetado pelo PHP [bug 81101](https://bugs.php.net/bug.php?id=81101), defina `pcre.jit=0` em seu arquivo `php.ini` para contornar o problema no qual o CSS não carrega.
 
 - Defina o fuso horário do sistema para o PHP; caso contrário, erros como o seguinte durante a instalação e operações relacionadas ao tempo como cron podem não funcionar:
 
@@ -138,7 +138,7 @@ Use as diretrizes a seguir para encontrá-la:
   sudo find / -name 'opcache.ini'
   ```
 
-- servidor Web nginx com PHP-FPM: `/etc/php/8.1/fpm/php.ini`
+- servidor Web nginx com PHP-FPM: `/etc/php/<supported-php-version>/fpm/php.ini`
 
 Se você tiver mais de um `opcache.ini`, modifique todos eles.
 
@@ -190,7 +190,7 @@ Para definir opções de `opcache.ini`:
 
    - `opcache.ini` (CentOS)
    - `php.ini` (Ubuntu)
-   - `/etc/php/8.1/fpm/php.ini` (servidor Web nginx (CentOS ou Ubuntu))
+   - `/etc/php/<supported-php-version>/fpm/php.ini` (servidor Web nginx (CentOS ou Ubuntu))
 
 1. Localize `opcache.save_comments` e remova o comentário, se necessário.
 1. Verifique se o valor está definido como `1`.
@@ -206,9 +206,9 @@ Para definir opções de `opcache.ini`:
 Consulte os seguintes artigos de suporte do Adobe Commerce para obter ajuda com a solução de problemas do PHP:
 
 - [Erro de versão do PHP ou erro 404 ao acessar o Adobe Commerce em um navegador](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [erros de configurações do PHP](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
-- [Extensão mcrypt do PHP não instalada corretamente](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
-- [Problemas de verificação de preparação da versão do PHP](https://support.magento.com/hc/en-us/articles/360033546411)
-- [Erros Fatais Comuns do PHP e soluções](https://support.magento.com/hc/en-us/articles/360030568432)
+- [erros de configurações do PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [Extensão mcrypt do PHP não instalada corretamente](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
+- [Problemas de verificação de preparação da versão do PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [Erros Fatais Comuns do PHP e soluções](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->

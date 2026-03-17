@@ -2,9 +2,9 @@
 title: Concluir pré-requisitos
 description: Prepare seu projeto do Adobe Commerce para uma atualização concluindo essas etapas de pré-requisito.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 2d17da1f8cbda1462839ad2fa3ea569833443827
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Depois de revisar os requisitos do sistema, você deve concluir os seguintes pr�
 
 Os [requisitos de sistema](../../installation/system-requirements.md) descrevem exatamente quais versões de software de terceiros foram testadas com versões do Adobe Commerce.
 
-Atualize todos os requisitos e dependências do sistema em seu ambiente. Consulte PHP [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php) e [configurações PHP necessárias](../../installation/prerequisites/php-settings.md#php-settings).
+Atualize todos os requisitos e dependências do sistema em seu ambiente. Revise os [apêndices da migração do PHP](https://www.php.net/manual/en/appendices.php) para sua versão do PHP de destino e as [configurações do PHP necessárias](../../installation/prerequisites/php-settings.md#php-settings).
 
 >[!NOTE]
 >
->Para projetos Pro da infraestrutura em nuvem do Adobe Commerce, você deve criar um tíquete de [Suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para instalar ou atualizar serviços em ambientes de Preparo e Produção. Indique as mudanças de serviço necessárias e inclua seus arquivos `.magento.app.yaml` e `services.yaml` atualizados e a versão do PHP no tíquete. Pode levar até 48 horas para a equipe de infraestrutura da nuvem atualizar seu projeto. Consulte [Software e serviços com suporte](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=pt-BR#supported-software-and-services).
+>Para projetos Pro da infraestrutura em nuvem do Adobe Commerce, você deve criar um tíquete de [Suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para instalar ou atualizar serviços em ambientes de Preparo e Produção. Indique as mudanças de serviço necessárias e inclua seus arquivos `.magento.app.yaml` e `services.yaml` atualizados e a versão do PHP no tíquete. Pode levar até 48 horas para a equipe de infraestrutura da nuvem atualizar seu projeto. Consulte [Software e serviços com suporte](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
 
 ## Verifique se há um mecanismo de pesquisa compatível instalado
 
@@ -56,7 +56,7 @@ As seções a seguir descrevem quais ações devem ser executadas antes da atual
 A partir da versão 2.4, o MySQL não é mais um mecanismo de pesquisa de catálogo compatível. Você deve instalar e configurar o Elasticsearch ou o OpenSearch antes de atualizar. Use os seguintes recursos para ajudar a orientá-lo durante esse processo:
 
 * [Instalar e configurar o Elasticsearch](../../configuration/search/overview-search.md)
-* [Instalando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+* [Instalando o Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch)
 * Configure o [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) ou o [Apache](../../installation/prerequisites/search-engine/configure-apache.md) para funcionar com o mecanismo de pesquisa
 * [Configurar Commerce para usar Elasticsearch](../../configuration/search/configure-search-engine.md) e reindexar
 
@@ -99,7 +99,7 @@ Para atualizar corretamente o MySQL da versão 8.0 para a versão 8.4, siga esta
    >
    >Se você não alterar o valor de `restrict_fk_on_non_standard_key` para `OFF`, receberá o seguinte erro durante a importação:
    >
-   >```sql
+   ```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Reinicie o servidor MySQL.
@@ -124,9 +124,9 @@ Para atualizar corretamente o MySQL da versão 8.0 para a versão 8.4, siga esta
 
 Você deve instalar e configurar o Elasticsearch 7.6 ou superior ou o OpenSearch 1.2 antes de atualizar para a versão 2.4.0. O Adobe não é mais compatível com o Elasticsearch 2.x, 5.x e 6.x. A [configuração do mecanismo de pesquisa](../../configuration/search/configure-search-engine.md), no _Guia de Configuração_, descreve as tarefas que devem ser executadas após atualizar o Elasticsearch para uma versão com suporte.
 
-Consulte [Atualizando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obter instruções completas sobre como fazer backup de seus dados, detectar possíveis problemas de migração e testar atualizações antes de implantar na produção. Dependendo da sua versão atual do Elasticsearch, uma reinicialização completa do cluster pode ou não ser necessária.
+Consulte [Atualizando o Elasticsearch](https://www.elastic.co/docs/deploy-manage/upgrade/deployment-or-cluster) para obter instruções completas sobre como fazer backup de seus dados, detectar possíveis problemas de migração e testar atualizações antes de implantar na produção. Dependendo da sua versão atual do Elasticsearch, uma reinicialização completa do cluster pode ou não ser necessária.
 
-O Elasticsearch requer o Java Development Kit (JDK) 1.8 ou superior. Consulte [Instalar o Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para verificar qual versão do JDK está instalada.
+O Elasticsearch requer o Java Development Kit (JDK) 1.8 ou superior. Consulte [Instalar o Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit) para verificar qual versão do JDK está instalada.
 
 #### OpenSearch
 
@@ -140,7 +140,7 @@ O OpenSearch é uma bifurcação de código aberto do Elasticsearch 7.10.2, apó
 
 Você pode [migrar do Elasticsearch para o OpenSearch](opensearch-migration.md) somente se estiver atualizando para uma versão do Adobe Commerce listada acima (ou superior).
 
-OpenSearch requer JDK 1.8 ou superior. Consulte [Instalar o Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para verificar qual versão do JDK está instalada.
+OpenSearch requer JDK 1.8 ou superior. Consulte [Instalar o Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit) para verificar qual versão do JDK está instalada.
 
 [A configuração do mecanismo de pesquisa](../../configuration/search/configure-search-engine.md) descreve as tarefas que devem ser executadas após a alteração dos mecanismos de pesquisa.
 
@@ -150,9 +150,9 @@ O suporte para o Elasticsearch 8.x foi introduzido no Adobe Commerce 2.4.6. As i
 
 >[!NOTE]
 >
->Na próxima versão 2.4.8, essas etapas não serão necessárias, pois o módulo Elasticsearch 8 está incluído por padrão e você não precisará instalá-lo separadamente.
+>Essas etapas se aplicam apenas ao Adobe Commerce 2.4.6 e 2.4.7. O Adobe Commerce 2.4.8 e versões posteriores não são mais compatíveis com o Elasticsearch; use OpenSearch.
 
-1. Atualize o servidor do Elasticsearch 7.x para 8.x e verifique se está ativo e em execução. Consulte a [documentação do Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Atualize o servidor do Elasticsearch 7.x para 8.x e verifique se está ativo e em execução. Consulte a [documentação do Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. Habilite o campo `id_field_data` adicionando a seguinte configuração ao arquivo `elasticsearch.yml` e reiniciando o serviço Elasticsearch 8.x.
 
@@ -218,7 +218,7 @@ O suporte para o Elasticsearch 8.x foi introduzido no Adobe Commerce 2.4.6. As i
 
 Se você atualizar inadvertidamente a versão do Elasticsearch no servidor ou determinar que precisa fazer downgrade por qualquer outro motivo, também deverá atualizar as dependências do projeto do Adobe Commerce. Por exemplo, para fazer o downgrade do Elasticsearch 8.x para o 7.x
 
-1. Faça o downgrade do servidor do Elasticsearch 8.x para 7.x e verifique se o está ativo e em execução. Consulte a [documentação do Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Faça o downgrade do servidor do Elasticsearch 8.x para 7.x e verifique se o está ativo e em execução. Consulte a [documentação do Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. No diretório raiz do seu projeto Adobe Commerce, atualize suas dependências do Composer para remover o módulo `Magento_Elasticsearch8` e suas dependências do Composer, e instale o módulo `Magento_Elasticsearch7`.
 
@@ -258,7 +258,7 @@ Você deve converter o formato de todas as tabelas do banco de dados de `COMPACT
 
 Definir o limite de arquivos abertos (ulimit) pode ajudar a evitar falhas de várias chamadas recursivas de cadeias de caracteres de consulta longas ou problemas com o uso do comando `bin/magento setup:rollback`. Esse comando é diferente para shells UNIX diferentes. Consulte seu tipo individual para obter informações específicas sobre o comando `ulimit`.
 
-A Adobe recomenda definir os arquivos abertos [ulimit](https://ss64.com/bash/ulimit.html) com um valor de `65536` ou mais, mas você poderá usar um valor maior, se necessário. Você pode definir o ulimit na linha de comando ou pode torná-lo uma configuração permanente para o shell do usuário.
+A Adobe recomenda definir os arquivos abertos [ulimit](https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html#index-ulimit) com um valor de `65536` ou mais, mas você poderá usar um valor maior, se necessário. Você pode definir o ulimit na linha de comando ou pode torná-lo uma configuração permanente para o shell do usuário.
 
 Para definir o ulimit a partir da linha de comando:
 
@@ -358,7 +358,7 @@ Para definir a variável de ambiente:
 
 Por motivos de segurança, o Adobe Commerce exige determinadas permissões no sistema de arquivos. As permissões são diferentes de _[propriedade](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. A propriedade determina quem pode executar ações no sistema de arquivos; as permissões determinam o que o usuário pode fazer.
 
-Os diretórios no sistema de arquivos devem ser graváveis pelo grupo [&#x200B; do &#x200B;](../../installation/prerequisites/file-system/overview.md)proprietário do sistema de arquivos.
+Os diretórios no sistema de arquivos devem ser graváveis pelo grupo [ do ](../../installation/prerequisites/file-system/overview.md)proprietário do sistema de arquivos.
 
 Para verificar se as permissões do sistema de arquivos estão definidas corretamente, faça logon no servidor de aplicativos ou use o aplicativo gerenciador de arquivos do provedor de hospedagem.
 
