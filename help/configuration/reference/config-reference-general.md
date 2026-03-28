@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Referência de caminhos de configuração gerais e avançados
 
-Este tópico lista caminhos de configuração gerais e avançados e _não_ [valores confidenciais e específicos do sistema](config-reference-sens.md). O comando [`magento app:config:dump` ](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem.
+Este tópico lista caminhos de configuração gerais e avançados e _não_ [valores confidenciais e específicos do sistema](config-reference-sens.md). O comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem.
 
 Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir definições de configuração](override-config-settings.md#environment-variables).
 
