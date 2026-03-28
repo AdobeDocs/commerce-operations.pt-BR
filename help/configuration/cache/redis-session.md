@@ -3,7 +3,7 @@ title: Usar Redis para armazenamento de sessão
 description: Saiba como configurar o Redis para armazenamento de sessão no Adobe Commerce. Descubra a configuração da linha de comando, as opções de configuração e as técnicas de otimização de desempenho.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
@@ -37,7 +37,7 @@ onde
 | session-save-redis-port | porta | Porta de escuta do servidor Redis. | 6379 |
 | session-save-redis-password | senha | Especifica uma senha se o servidor Redis exigir autenticação. | vazio |
 | session-save-redis-timeout | timeout | Tempo limite da conexão, em segundos. | 2,5 |
-| session-save-redis-persistent-id | persistent_identifier | Sequência de caracteres exclusiva para ativar conexões persistentes (por exemplo, sess-db0).<br>[Problemas conhecidos com phpredis e php-fpm](https://github.com/phpredis/phpredis/issues/70). |
+| session-save-redis-persistent-id | persistent_identifier | Sequência de caracteres exclusiva para ativar conexões persistentes (por exemplo, sess-db0).<br>[Problemas conhecidos com phpredis e php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
 | session-save-redis-db | banco de dados | Número exclusivo do banco de dados Redis, recomendado para proteção contra perda de dados.<br><br>**Importante**: se você usar Redis para mais de um tipo de cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número do banco de dados de cache padrão a 0, o número do banco de dados de cache da página a 1 e o número do banco de dados de armazenamento da sessão a 2. | 0 |
 | session-save-redis-compression-threshold | compression_threshold | Defina como 0 para desabilitar a compactação (recomendado quando `suhosin.session.encrypt = On`).<br>[Problema conhecido com sequências com mais de 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Opções: gzip, lzf, lz4 ou snappy. | gzip |

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a22d08d6965c6abc288a1a171d25f4ff8bbd7ce
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '24356'
+source-wordcount: '24355'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Agora, as APIs validam corretamente a entrada e retornam um erro 400 para cargas
 
 _AC-6419 - [Problema do GitHub](https://github.com/magento/magento2/issues/35934) - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Erro interno do servidor no ponto de extremidade de API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Erro interno do servidor no ponto de extremidade de API `/V1/order/{orderId}/ship`
 
 O Sistema agora corrige o Erro Interno do Servidor no Ponto de Extremidade da API `/V1/order/{orderId}/ship` e Retorna um erro 400, pois a solicitação está malformada.
 
@@ -254,7 +254,7 @@ _AC-15074 - [Problema do GitHub](https://github.com/magento/magento2/issues/4003
 
 #### Registro de conta de cliente da loja: o formato do endereço de email está sendo convertido com um formato de domínio diferente
 
-Esse erro solucionou um problema em que os emails de clientes com caracteres especiais no domínio (por exemplo, tec55241@adòbe.com) eram convertidos automaticamente para o formato punycode (tec55241@xn--adbe-mqa.com).
+Esse erro solucionou um problema em que os emails de clientes com caracteres especiais no domínio (por exemplo, òbe.com) eram convertidos automaticamente para o formato punycode (tec55241@xn--adbe-mqa.com).
 No Magento 2.4.9-alpha3, a correção garante que essas IDs de email permaneçam inalteradas e válidas, evitando erros de delivery.
 
 _AC-15177 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/68a45d0a)_
@@ -844,7 +844,7 @@ A validação de dados de endereço do cliente foi aprimorada para ser mais cons
 
 _ACP2E-4223 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0a8c9a9a)_
 
-#### [Problema relacionado ao preço do produto na &lbrace;Cloud] na página do carrinho
+#### [Problema relacionado ao preço do produto na {Cloud] na página do carrinho
 
 Correção do problema de preço do produto no pacote na página do carrinho para lojas de várias moedas
 
@@ -986,7 +986,7 @@ _AC-13671 - [Problema do GitHub](https://github.com/magento/magento2/issues/3952
 No Magento 2.4.2, alterar o escopo de preço por meio de config.php não atualiza corretamente o valor is_global em catalog_eav_attribute para o atributo price.
 Como resultado, os preços dos produtos permanecem globais e não podem ser salvos por site, mesmo quando o escopo de preços está definido como site.
 A solução alternativa requer a atualização manual da coluna is_global no banco de dados, o que não é ideal para ambientes de produção.
-Esse comportamento é consistente com o design padrão da Magento, em que o escopo de preço é Global ou Site, mas não por exibição de loja.
+Esse comportamento é consistente com o design padrão do Magento, em que o escopo de preço é Global ou Site, mas não por exibição de loja.
 
 _AC-13857 - [Problema do GitHub](https://github.com/magento/magento2/issues/33559)_
 
@@ -1199,7 +1199,7 @@ Antes da correção, as permissões de categoria não eram aplicadas corretament
 
 _ACP2E-4294 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/c135fc3a)_
 
-#### [Problema de preço de produto de pacote na &lbrace;Cloud] em PDP e PLP
+#### [Problema de preço de produto de pacote na {Cloud] em PDP e PLP
 
 Preço do pacote O produto com preço normal é mostrado corretamente na PDP/PLP para moeda não padrão
 
@@ -2168,7 +2168,7 @@ _AC-8949 - [Contribuição de código do GitHub](https://github.com/magento/mage
 
 #### O GraphQL Response for Order placement não inclui a mensagem de exceção
 
-Revertida a alteração anterior que retornava erros em um formato diferente. Agora, os erros em potencial são retornados de maneira consistente, sem quebrar o esquema do GraphQL. Isso deve ser adicionado como BIC conhecido, aprovado pelo PM aqui: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+Revertida a alteração anterior que retornava erros em um formato diferente. Agora, os erros em potencial são retornados de maneira consistente, sem quebrar o esquema do GraphQL. Isso deve ser adicionado como BIC conhecido, aprovado pelo PM aqui: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/9608ca21)_
 
@@ -2260,7 +2260,7 @@ _ACP2E-4244 - [Contribuição de código do GitHub](https://github.com/magento/m
 
 #### resposta de erro incorreta do updateCartItems GraphQL
 
-Anteriormente, quando uma solicitação de graphQL para um item com quantidade insuficiente era feita, uma mensagem de erro adequada com um código de erro era retornada, juntamente com o cálculo de preço e quantidade solicitados, mesmo que o item não estivesse disponível. Após a aplicação dessa correção, uma mensagem de erro adequada com um código de erro agora é retornada e a quantidade do item é definida como seu valor antigo se não estiver disponível na resposta.
+Anteriormente, quando uma solicitação de graphQL para um item com quantidade insuficiente era feita, uma mensagem de erro adequada com um código de erro era retornada, juntamente com o cálculo de preço e quantidade solicitados, mesmo que o item não estivesse disponível. Depois que essa correção for aplicada, uma mensagem de erro adequada com um código de erro será retornada e a quantidade do item será definida como seu valor antigo se não estiver disponível na resposta.
 
 _ACP2E-4283 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/cbca0396)_
 
@@ -2594,7 +2594,7 @@ Antes da correção, ao solicitar um produto combinado com a opção &quot;Envia
 
 _ACP2E-3947 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/2a252ae6)_
 
-#### [Código OOTB da ]Magento da &lbrace;Cloud- Problema de configuração de modelo de email
+#### [Código OOTB da ]Magento da {Cloud- Problema de configuração de modelo de email
 
 Antes da correção, ao usar o envio assíncrono de email, os emails de remessa eram inconsistentes com a ordem da loja. Agora, após a correção, a ordem de e-mail de envio da loja correta é entregue.
 
@@ -2964,7 +2964,7 @@ Agora, o query é executado com sucesso e retorna as informações corretas do c
 
 _AC-14889 - [Problema do GitHub](https://github.com/magento/magento2/issues/39962) - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/fe72c407)_
 
-#### Regra de preço de catálogo da [Nuvem][experienceleague] não aplicada
+#### `[Cloud][experienceleague]` Regra de preço de catálogo não aplicada
 
 Antes das regras de preço fixo do catálogo não se aplicavam quando `special_price` era definido somente no nível do site (não em &quot;Todas as Exibições da Loja&quot;). Depois que as regras de preço fixo do catálogo agora se aplicam corretamente quando `special_price` é definido no nível do site, verificando primeiro a loja padrão do site.
 
@@ -3115,7 +3115,7 @@ _AC-15304 - [Contribuição de código do GitHub](https://github.com/magento/mag
 
 #### Quando a atualização programada para a categoria é excluída, a quantidade de filhos não é diminuída para a categoria pai
 
-Correção de um problema em que a exclusão de uma atualização agendada para uma categoria não reduzia a contagem de filhos da categoria pai, garantindo a contagem correta das atualizações quando as atualizações ou subcategorias agendadas são removidas.
+Correção de um problema em que a exclusão de uma atualização agendada para uma categoria não reduzia a contagem de filhos da categoria pai, garantindo as atualizações de contagem corretas quando as atualizações ou subcategorias agendadas são removidas.
 
 _AC-15670 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/ef666cd9)_
 
@@ -3152,7 +3152,7 @@ _ACP2E-4212 - [Contribuição de código do GitHub](https://github.com/magento/m
 
 #### Não é possível navegar entre sites na visualização da Atualização da programação
 
-Antes dessa correção, a visualização da atualização agendada falhava ao tentar visualizar o conteúdo de lojas com domínios personalizados. Após essa correção, os domínios de armazenamento personalizados podem ser visualizados como estão e navegados no iframe de visualização. A correção abrange produtos, categorias, páginas do CMS e blocos do CMS, além de oferecer suporte a links de navegação usando as marcas de marcação `{{store url}}`, conforme documentado em [Variáveis e Marcas de Marcação do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/variables/markup-tags).
+Antes dessa correção, a visualização da atualização agendada falhava ao tentar visualizar o conteúdo de lojas com domínios personalizados. Após essa correção, os domínios de armazenamento personalizados podem ser visualizados como estão e navegados no iframe de visualização. A correção abrange produtos, categorias, páginas do CMS e blocos do CMS, além de oferecer suporte a links de navegação usando as marcas de marcação `{{store url}}`, conforme documentado em [Variáveis e Marcas de Marcação do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 

@@ -3,7 +3,7 @@ title: Usar Valkey para armazenamento de sessão
 description: Saiba como configurar o Valkey para armazenamento de sessão no Adobe Commerce. Descubra etapas de instalação, opções de configuração e técnicas de otimização de desempenho.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '807'
 ht-degree: 1%
@@ -44,7 +44,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-valkey-port | porta | Porta de escuta do servidor Valkey. | 6379 |
 | session-save-valkey-password | senha | Especifica uma senha se o servidor Valkey exigir autenticação. | vazio |
 | session-save-valkey-timeout | timeout | Tempo limite da conexão, em segundos. | 2,5 |
-| session-save-valkey-persistent-id | persistent_identifier | Sequência de caracteres exclusiva para ativar conexões persistentes (por exemplo, sess-db0).<br>[Problemas conhecidos com phpredis e php-fpm](https://github.com/phpredis/phpredis/issues/70). |
+| session-save-valkey-persistent-id | persistent_identifier | Sequência de caracteres exclusiva para ativar conexões persistentes (por exemplo, sess-db0).<br>[Problemas conhecidos com phpredis e php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
 | session-save-valkey-db | banco de dados | Número exclusivo do banco de dados Valkey, recomendado para proteger contra perda de dados.<br><br>**Importante**: se você usar Valkey para mais de um tipo de cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número padrão do banco de dados de cache a `0`, o número do banco de dados de cache da página a `1` e o número do banco de dados de armazenamento da sessão a `2`. | 0 |
 | session-save-valkey-compression-threshold | compression_threshold | Defina como `0` para desabilitar a compactação (recomendável quando `suhosin.session.encrypt = On`). | 2048 |
 | session-save-valkey-compression-lib | compression_library | Opções: gzip, lzf, lz4 ou snappy. | gzip |

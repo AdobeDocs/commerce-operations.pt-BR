@@ -3,7 +3,7 @@ title: Referência de caminhos de configuração geral
 description: Saiba mais sobre caminhos e valores de configuração gerais e avançados para o Adobe Commerce. Descubra as opções de configuração do sistema, de segurança e administrativa.
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Referência de caminhos de configuração gerais e avançados
 
-Este tópico lista caminhos de configuração gerais e avançados e _não_ [valores confidenciais e específicos do sistema](config-reference-sens.md). O comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem.
+Este tópico lista caminhos de configuração gerais e avançados e _não_ [valores confidenciais e específicos do sistema](config-reference-sens.md). O comando [`magento app:config:dump` ](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem.
 
 Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir definições de configuração](override-config-settings.md#environment-variables).
 
@@ -30,8 +30,8 @@ Estes valores de configuração estão disponíveis no Administrador em **Lojas*
 | Permitir países | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | O CEP é opcional para | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensível](/help/assets/configuration/cloud-sens.png) |
 | Países da União Europeia | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensível](/help/assets/configuration/cloud-sens.png) |
-| Principais destinos | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| O estado é obrigatório para | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Principais destinos | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| O estado é obrigatório para | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Permitir Escolher Estado se for Opcional para País | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Fuso Horário | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Localidade | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |

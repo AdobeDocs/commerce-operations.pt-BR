@@ -1,5 +1,5 @@
 ---
-source-git-commit: fd421e8c2455a2b45d3f3cc93573d2a609e4936d
+source-git-commit: adda02b9d05b66ab066f110e877584bc1c77515d
 workflow-type: tm+mt
 source-wordcount: '2408'
 ht-degree: 0%
@@ -281,7 +281,7 @@ _AC-14078 - [Contribuição de código do GitHub](https://github.com/magento/mag
 
 Os usuários administradores agora precisam configurar apenas um dos provedores 2FA habilitados do comerciante (por exemplo, Google Authenticator ou U2F) para acessar o painel Administrador. Provedores ativados adicionais podem ser configurados posteriormente, conforme necessário. Anteriormente, quando vários provedores 2FA eram ativados, cada usuário administrador precisava configurar todos os provedores ativados antes que pudesse fazer logon, criando atrito para usuários que não tinham acesso a todos os fatores.
 
-_AC-8253 - [Contribuição de código do GitHub](https://github.com/magento/security-package/commit/71e7936b)_
+_AC-8253 - [Contribuição de código do GitHub](https://github.com/magento-commerce/security-package/commit/41e5a26bd36528cb6b1bdc27b249696a2c721779)_
 
 ### Envio
 

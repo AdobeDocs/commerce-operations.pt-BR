@@ -2,9 +2,9 @@
 title: Instalação avançada local
 description: Saiba mais sobre cenários de instalação avançada para implantações locais do Adobe Commerce. Descubra configurações complexas e opções de configuração personalizadas.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2484'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ As opções a seguir especificam as informações e credenciais do usuário admi
 
 Você pode criar o usuário Administrador durante ou após a instalação. Se você criar o usuário durante a instalação, todas as variáveis de credencial do administrador serão necessárias. Consulte [Exemplos de instalações localhost](#sample-localhost-installations).
 
-As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência de Ferramentas de Linha de Comando](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalação disponíveis. Para obter uma lista completa, consulte a [Referência de Ferramentas de Linha de Comando](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nome | Valor | Obrigatório? |
 |--- |--- |--- |
@@ -135,11 +135,11 @@ As tabelas a seguir fornecem muitos, mas não todos, os parâmetros de instalaç
 |--- |--- |--- |
 | `--base-url` | URL base a ser usada para acessar seu Administrador e vitrine em qualquer um dos seguintes formatos:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Observação:** O esquema (http:// ou https://) e uma barra à direita são necessários.<br><br>`<your install dir>` é o caminho relativo de docroot no qual instalar o software Adobe Commerce. Dependendo de como você configura o servidor Web e os hosts virtuais, o caminho pode ser magento2 ou pode estar em branco.<br><br>Para acessar o Adobe Commerce ou o MagenAdobe Commerce, use `http://127.0.0.1/<your install dir>/` ou `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` que representa uma URL base definida por uma configuração de host virtual ou por um ambiente de virtualização como o Docker. Por exemplo, se você configurar um host virtual com o nome de host `magento.example.com`, poderá instalar o software com `--base-url={{base_url}}` e acessar o Administrador com uma URL como `http://magento.example.com/admin`. | Sim |
 | `--backend-frontname` | URI (Uniform Resource Identifier) para acessar o Administrador. Você pode omitir este parâmetro para permitir que o aplicativo gere um URI aleatório para você com o seguinte padrão <code>admin_jkhgdfq</code>.<br><br>Recomendamos um URI aleatório para fins de segurança. Um URI aleatório é mais difícil de ser explorado por hackers ou softwares mal-intencionados.<br><br>O URI é exibido no final da instalação. Você pode exibi-lo posteriormente a qualquer momento usando o comando `bin/magento info:adminuri`.<br><br>Se você optar por inserir um valor, recomendamos que não use uma palavra comum como admin, backend. O URI do Administrador pode conter valores alfanuméricos e somente o caractere de sublinhado (`_`). | Não |
-| `--db-host` | Use qualquer um dos seguintes:<br><br>- O nome de host ou endereço IP totalmente qualificado do servidor de banco de dados.<br><br>- `localhost` (padrão) ou `127.0.0.1` se o servidor de banco de dados estiver no mesmo host que o servidor Web.localhost significa que a biblioteca de cliente MySQL usa soquetes UNIX para se conectar ao banco de dados. `127.0.0.1` faz com que a biblioteca do cliente use o protocolo TCP. Para obter mais informações sobre soquetes, consulte a [documentação do PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Observação:** você pode especificar opcionalmente a porta do servidor de banco de dados em seu nome de host, como www.example.com:9000 | Sim |
+| `--db-host` | Use qualquer um dos seguintes:<br><br>- O nome de host ou endereço IP totalmente qualificado do servidor de banco de dados.<br><br>- `localhost` (padrão) ou `127.0.0.1` se o servidor de banco de dados estiver no mesmo host que o servidor Web.localhost significa que a biblioteca de cliente MySQL usa soquetes UNIX para se conectar ao banco de dados. `127.0.0.1` faz com que a biblioteca do cliente use o protocolo TCP. Para obter mais informações sobre soquetes, consulte a [documentação do PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Observação:** você pode especificar opcionalmente a porta do servidor de banco de dados em seu nome de host como `www.example.com:9000` | Sim |
 | `--db-name` | Nome da instância do banco de dados em que você deseja instalar as tabelas do banco de dados.<br><br>O padrão é `magento2`. | Sim |
 | `--db-user` | Nome de usuário do proprietário da instância do banco de dados.<br><br>O padrão é `root`. | Sim |
 | `--db-password` | Senha do proprietário da instância do banco de dados. | Sim |
-| `--db-prefix` | Use apenas se estiver instalando as tabelas do banco de dados em uma instância do banco de dados que já tenha tabelas do Adobe Commerce.<br><br>Nesse caso, use um prefixo para identificar as tabelas desta instalação. Alguns clientes têm mais de um Adobe Commerce ou MagenAdobe Commerce Server com todas as tabelas no mesmo banco de dados.<br><br>O prefixo pode ter no máximo cinco caracteres. Ela deve começar com uma letra e pode incluir apenas letras, números e caracteres sublinhados.<br><br>Essa opção permite que esses clientes compartilhem o servidor de banco de dados com mais de uma instalação do Adobe Commerce |
+| `--db-prefix` | Use apenas se estiver instalando as tabelas do banco de dados em uma instância do banco de dados que já tenha tabelas do Adobe Commerce.<br><br>Nesse caso, use um prefixo para identificar as tabelas desta instalação. Alguns clientes têm mais de um Adobe Commerce ou MagenAdobe Commerce Server com todas as tabelas no mesmo banco de dados.<br><br>O prefixo pode ter no máximo cinco caracteres. Ela deve começar com uma letra e pode incluir apenas letras, números e caracteres sublinhados.<br><br>Essa opção permite que esses clientes compartilhem o servidor de banco de dados com mais de uma instalação do Adobe Commerce | |
 | `--db-ssl-key` | Caminho para a chave do cliente. | Não |
 | `--db-ssl-cert` | Caminho para o certificado do cliente. | Não |
 | `--db-ssl-ca` | Caminho para o certificado do servidor. | Não |

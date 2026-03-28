@@ -2,10 +2,10 @@
 user-guide-title: Guia de instalação
 user-guide-description: Saiba como instalar o Adobe Commerce para implantações locais.
 feature: Install
-source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
+source-git-commit: 53f21e0588603ecf19d4d904a8926c978009d449
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 3%
+source-wordcount: '175'
+ht-degree: 4%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 3%
       - [Visão geral](prerequisites/file-system/overview.md)
       - [Configurar permissões](prerequisites/file-system/configure-permissions.md)
    - Servidor da Web {#web-server}
-      - [Nginx](prerequisites/web-server/nginx.md)
-      - [Apache](prerequisites/web-server/apache.md)
+      - [Instalar Nginx](prerequisites/web-server/nginx.md)
+      - [Instalar o Apache](prerequisites/web-server/apache.md)
    - Servidor de banco de dados {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [Conexões remotas](prerequisites/database/mysql-remote.md)
@@ -32,7 +32,7 @@ ht-degree: 3%
       - [Configurar Apache](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
    - Agentes de mensagens {#message-brokers}
-      - [MQ do Coelho](prerequisites/rabbitmq.md)
+      - [Coelho MQ](prerequisites/rabbitmq.md)
       - [MQ ativa](prerequisites/activemq.md)
    - [Segurança](prerequisites/security.md)
    - [Chaves de autenticação](prerequisites/authentication-keys.md)
@@ -69,4 +69,4 @@ ht-degree: 3%
    - [Desinstalar ou reinstalar o Commerce](tutorials/uninstall.md)
    - [Desinstalar temas](tutorials/themes.md)
    - [Atualizar o esquema do banco de dados](tutorials/database-upgrade.md)
-- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
