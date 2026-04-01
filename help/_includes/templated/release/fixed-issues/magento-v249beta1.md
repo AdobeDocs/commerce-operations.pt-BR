@@ -3158,7 +3158,7 @@ _ACP2E-4212 - [Contribuição de código do GitHub](https://github.com/magento/m
 
 #### Não é possível navegar entre sites na visualização da Atualização da programação
 
-Antes dessa correção, a visualização da atualização agendada falhava ao tentar visualizar o conteúdo de lojas com domínios personalizados. Após essa correção, os domínios de armazenamento personalizados podem ser visualizados como estão e navegados no iframe de visualização. A correção abrange produtos, categorias, páginas do CMS e blocos do CMS, além de oferecer suporte a links de navegação usando as marcas de marcação `{{store url}}`, conforme documentado em [Variáveis e Marcas de Marcação do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
+Antes dessa correção, a visualização da atualização agendada falhava ao tentar visualizar o conteúdo de lojas com domínios personalizados. Após essa correção, os domínios de armazenamento personalizados podem ser visualizados como estão e navegados no iframe de visualização. A correção abrange produtos, categorias, páginas do CMS e blocos do CMS, além de oferecer suporte a links de navegação usando as marcas de marcação `{{store url}}`, conforme documentado em [Variáveis e Marcas de Marcação do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
