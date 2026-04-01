@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
 workflow-type: tm+mt
-source-wordcount: '25717'
+source-wordcount: '25765'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ Remoção da biblioteca jQuery/fileUploader porque ela foi migrada para a biblio
 _AC-11911 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/7cabfb46)_
 
 #### Adicionar compatibilidade com o MySQL 8.4 LTS para Magento CE
+
+Nenhuma descrição disponível.
 
 _AC-11995 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
@@ -67,13 +69,19 @@ _AC-12025 - [Contribuição de código do GitHub](https://github.com/magento/mag
 
 #### Adicionar compatibilidade com o MySQL 8.4 LTS para EE
 
+Nenhuma descrição disponível.
+
 _AC-12032 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Adicionar compatibilidade com o MySQL 8.4 LTS para B2B
 
+Nenhuma descrição disponível.
+
 _AC-12034 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Adicionar compatibilidade com o MySQL 8.4 LTS para extensões de pacote
+
+Nenhuma descrição disponível.
 
 _AC-12074 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
@@ -85,6 +93,8 @@ _AC-12085 - [Contribuição de código do GitHub](https://github.com/magento/mag
 
 #### Otimização De Assinantes - PhpUnit10
 
+Nenhuma descrição disponível.
+
 _AC-12165 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/90e25b6b)_
 
 #### Suporte a novas tentativas de conexão para a sessão Redis e compatível com colinmollenhour/php-redis-session-abstract v2.0.0
@@ -94,6 +104,8 @@ Atualização da versão mais recente de colinmollenhour/php-redis-session-abstr
 _AC-12267 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Investigar as falhas de testes de automação com o MySQL 8.4 LTS
+
+Nenhuma descrição disponível.
 
 _AC-12576 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/672a2e61)_
 
@@ -115,6 +127,8 @@ garantir a compatibilidade e a funcionalidade atualizada. Anteriormente, a atual
 _AC-12715 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/b34c0a75)_
 
 #### Investigue a falha no teste de unidade devido à atualização de patch phpunit durante a atualização do componente
+
+Nenhuma descrição disponível.
 
 _AC-12823 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/b34c0a75)_
 
@@ -299,6 +313,8 @@ _AC-10782 - [Problema do GitHub](https://github.com/magento/magento2/issues/3833
 
 #### admin Atualização da senha.
 
+Nenhuma descrição disponível.
+
 _AC-10886 - [Problema do GitHub](https://github.com/magento/magento2/issues/38352) - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/4bca5dfe)_
 
 #### falha ao adicionar endereço da minha conta ao salvar
@@ -387,6 +403,8 @@ _ACP2E-3038 - [Contribuição de código do GitHub](https://github.com/magento/m
 ### Conta, carrinho e check-out
 
 #### o atributo de endereço personalizado do cliente &quot;selecionar&quot; não é renderizado para o novo endereço do cliente
+
+Nenhuma descrição disponível.
 
 _AC-2341 - [Problema do GitHub](https://github.com/magento/magento2/issues/34950)_
 
@@ -854,7 +872,7 @@ O &quot;Carrinho de compras&quot; no lado esquerdo é atualizado ao selecionar o
 
 _ACP2E-2620 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
 
-#### [Regra de Vendas da &lbrace;Cloud] não aplicada à primeira ordem de Envio Múltiplo
+#### [Regra de Vendas da {Cloud] não aplicada à primeira ordem de Envio Múltiplo
 
 Após a correção, o desconto é mostrado corretamente para cada pedido da mesma cotação de remessa múltipla.
 
@@ -1168,7 +1186,7 @@ Os produtos do pacote que não podem ser vendidos no contexto da loja atual não
 
 _ACP2E-2874 - [Contribuição de código do GitHub](https://github.com/magento/inventory/commit/bc37ec76)_
 
-#### [Problema de Cotação da &lbrace;Cloud] na arquitetura de vários sites
+#### [Problema de Cotação da {Cloud] na arquitetura de vários sites
 
 Anteriormente, a arquitetura de vários sites com moedas e grupos de clientes diferentes não podia aplicar descontos corretamente à loja. Depois que essa correção for implementada, a arquitetura de vários sites com descontos de preço de grupo de clientes diferentes será aplicada com sucesso a diferentes lojas.
 
@@ -1481,6 +1499,8 @@ O sistema agora conclui com êxito o processo de implantação de conteúdo est�
 _AC-12283 - [Problema do GitHub](https://github.com/magento/magento2/issues/38845) - [Contribuição de código do GitHub](https://github.com/magento/magento2/pull/38922)_
 
 #### A árvore de categoria do widget não é renderizada corretamente
+
+Nenhuma descrição disponível.
 
 _AC-12692 - [Problema do GitHub](https://github.com/magento/magento2/issues/39008) - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/58e40ceb)_
 
@@ -1878,7 +1898,7 @@ O sistema agora segue o padrão de codificação, removendo a tag `@author` proi
 
 _AC-8356 - [Problema do GitHub](https://github.com/magento/magento2/issues/37250) - [Contribuição de código do GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### Espaço na regra de quebras de sintaxe editorconfig para `[&lbrace;composer,auth&rbrace;.json]`
+#### Espaço na regra de quebras de sintaxe editorconfig para `[{composer,auth}.json]`
 
 O sistema agora aplica corretamente um recuo de 4 espaços para os arquivos composer e auth.json, seguindo uma correção para um erro de sintaxe no editorconfig. Anteriormente, devido a um espaço na sintaxe editorconfig, esses arquivos eram formatados incorretamente com um recuo de 2 espaços.
 
@@ -2022,7 +2042,7 @@ O problema foi corrigido após a aplicação da verificação ao solicitar uma p
 
 _ACP2E-2653 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### A chamada de Produtos GraphQL contendo o filtro de preço `&lbrace;from:"0"&rbrace;` não retorna nenhum resultado
+#### A chamada de Produtos GraphQL contendo o filtro de preço `{from:"0"}` não retorna nenhum resultado
 
 Anteriormente, a pesquisa de produtos graphql com o filtro para preços zero não retornava nenhum resultado devido a uma exceção lançada. Agora, a pesquisa retorna os resultados conforme esperado.
 
@@ -2054,7 +2074,7 @@ Anteriormente, com produtos configuráveis separados com o mesmo produto simples
 
 _ACP2E-3190 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/148c3ead)_
 
-#### [Problema na &lbrace;Cloud] com Autenticação de Usuário e Acesso a Token Entre Sites na Instalação de Vários Sites
+#### [Problema na {Cloud] com Autenticação de Usuário e Acesso a Token Entre Sites na Instalação de Vários Sites
 
 As consultas de informações do cliente e do carrinho do GraphQl na configuração de vários sites verificam se o cliente em um site não padrão existe.
 Anteriormente, a consulta funcionava sem verificar se o cliente existe em um site não padrão na configuração de vários sites.
@@ -2103,7 +2123,7 @@ Após a correção, as solicitações graphql inválidas não serão registradas
 
 _ACP2E-3467 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/1984c61c)_
 
-#### [Problemas de &lbrace;Cloud] com a API Graphql
+#### [Problemas de {Cloud] com a API Graphql
 
 Antes da correção com o uso do servidor de aplicativos Graphql, a solicitação de endereço do cliente não retornava os dados mais recentes.
 
@@ -2333,7 +2353,7 @@ Antes dessa correção, a exportação do produto falhava se os atributos do pro
 
 _ACP2E-3475 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/1984c61c)_
 
-#### [Processos De Importação Da &lbrace;Cloud] Que Interferem Entre Si
+#### [Processos De Importação Da {Cloud] Que Interferem Entre Si
 
 Mensagens corretas serão exibidas se o mesmo usuário administrador executar duas ou mais operações de importação usando a mesma sessão de usuário.
 
@@ -2765,6 +2785,8 @@ _AC-11474 - [Problema do GitHub](https://github.com/magento/magento2/issues/3848
 
 #### Navegar na árvore de categorias leva a erros no Redis: &quot;A sessão Redis excedeu as conexões simultâneas&quot;
 
+Nenhuma descrição disponível.
+
 _AC-12571 - [Problema do GitHub](https://github.com/magento/magento2/issues/38851) - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0611e750)_
 
 #### Problemas de CSP combinados com dev/css/use_css_critical_path
@@ -2891,6 +2913,8 @@ O sistema agora exibe corretamente o preço de produtos simples quando consultad
 _AC-11810 - [Problema do GitHub](https://github.com/magento/magento2/issues/38603)_
 
 #### Erro de arredondamento de centavo na regra de catálogo
+
+Nenhuma descrição disponível.
 
 _AC-13855 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/276e0acd)_
 
@@ -3072,6 +3096,8 @@ _AC-13053 - [Contribuição de código do GitHub](https://github.com/magento/mag
 
 #### magento/module-open-search depende de uma ramificação opensearch-php inexistente
 
+Nenhuma descrição disponível.
+
 _AC-13721 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/05dc0bbf)_
 
 #### tabela search_query quando de grande tamanho, tem grande impacto no front-end do tempo de carregamento
@@ -3202,9 +3228,13 @@ _AC-13362 - [Problema do GitHub](https://github.com/magento/magento2/issues/3139
 
 #### MAGETWO-95118: Verificando o comportamento com o carrinho de compras persistente após a sessão expirar
 
+Nenhuma descrição disponível.
+
 _AC-13478 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/7d5e3906)_
 
 #### Corrigir testes estáticos para permitir o uso por extensões de terceiros
+
+Nenhuma descrição disponível.
 
 _AC-13848 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/9e383b4d)_
 
@@ -3271,6 +3301,8 @@ Essa PR melhora a mensagem de erro quando o require js falha ao carregar um comp
 _AC-13472 - [Problema do GitHub](https://github.com/magento/magento2/issues/36761) - [Contribuição de código do GitHub](https://github.com/magento/magento2/pull/38971)_
 
 #### Erros de descontinuação do PHP 8.4 que causam falhas de build no 2.4-develop
+
+Nenhuma descrição disponível.
 
 _AC-14004 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/1da9ba6f)_
 

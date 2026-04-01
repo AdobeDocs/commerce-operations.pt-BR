@@ -4,9 +4,9 @@ description: Saiba como mesclar e minificar arquivos CSS e JavaScript (JS) para 
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 5f4edc2e694c9bdbdffbe48b0e5d69907cbc0027
+source-git-commit: a08560eb307638a36fdc52224c41bdf2c5d47763
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Para um site do Commerce mais responsivo, otimize os arquivos de recursos CSS e JavaScript (JS) e elimine os recursos de bloqueio de renderização.
 
-- **Otimizar arquivos CSS e JS**—Reduza o tempo necessário para carregar arquivos CSS e JavaScript (JS) configurando o Adobe Commerce para mesclar, minificar e agrupar arquivos separados em um único arquivo.
+- **Otimizar arquivos CSS e JS**—Reduza o tempo necessário para carregar arquivos CSS e JavaScript (JS) configurando o Adobe Commerce para minificar e agrupar arquivos.
 - **Eliminar recursos de bloqueio de renderização**—Considere fornecer recursos JS e CSS críticos em linha e adiar todos os estilos JS/CSS não críticos. Para obter orientação, consulte [Eliminar recursos de bloqueio de renderização](https://web.dev/render-blocking-resources/).
 
 ## Produtos e versões afetados
@@ -37,7 +37,7 @@ Não mescle ou agrupe arquivos se a implantação usar HTTP/2. HTTP/2 baixa arqu
 
 ### Uso do Admin
 
-Para habilitar a mesclagem ou minificação CSS, acesse [!UICONTROL **Admin** > **Lojas** > **Configuração** > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações CSS**].
+Para habilitar mesclagem ou minificação CSS, acesse **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL CSS Settings]**.
 
 ### Usando a linha de comando
 
@@ -63,9 +63,9 @@ Para ativar a minificação CSS no Adobe Commerce na infraestrutura em nuvem:
 
 ## Minificar arquivos JS
 
-### Uso do Admin
+### Usando o [!UICONTROL Admin]
 
-Na barra lateral *Admin*, vá para **Lojas** > **Configurações** > **Configuração** > **Avançado** > **Desenvolvedor** > **Configurações do JavaScript**.
+Na barra lateral [!UICONTROL Admin], vá para **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**.
 
 ### Usando a linha de comando
 
@@ -79,9 +79,13 @@ Para ativar a minificação de JS no Adobe Commerce na infraestrutura em nuvem:
 
 1. Confirme as alterações no arquivo `app/etc/config.php` e reimplante.
 
-## Mesclar e agrupar arquivos JS
+## Agrupar arquivos JS
 
-Você pode ativar a mesclagem ou o agrupamento no Administrador do Commerce (a mesclagem e o agrupamento não podem ser habilitados ao mesmo tempo): [!UICONTROL **Lojas** > **Configurações** > **Configuração** > **Avançadas** > **Desenvolvedor** > **Configurações do JavaScript**].
+Você pode habilitar o agrupamento no Commerce [!UICONTROL Admin]: **[!UICONTROL Stores]** > ***[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**.
+
+>[!NOTE]
+>
+>A mesclagem e o agrupamento não podem ser habilitados ao mesmo tempo.
 
 Você também pode ativar o agrupamento Adobe Commerce incorporado (agrupamento básico) na linha de comando:
 
@@ -89,9 +93,18 @@ Você também pode ativar o agrupamento Adobe Commerce incorporado (agrupamento 
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
+## Mesclar arquivos JS (não recomendado) {#merge-js-files}
+
+>[!WARNING]
+>
+>Não é recomendável habilitar **[!UICONTROL Merge JavaScript Files]**. Esta configuração foi projetada apenas para JavaScript carregada de forma síncrona na seção **[!UICONTROL HEAD]** da página e pode fazer com que o agrupamento e a lógica do [!DNL RequireJS] funcionem incorretamente. Ele é mantido somente para compatibilidade com versões anteriores e não oferece benefício de desempenho quando HTTP/2 está ativado.
+>
+>Se o **[!UICONTROL Merge JavaScript Files]** estiver habilitado e tiver problemas, tente desabilitá-lo antes de aplicar os patches. Consulte [ACSD-67908](../../../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md) se não puder desabilitar a mesclagem.
+
 ## Informações adicionais
 
 - [Configurações de otimização do lado do cliente](../../../performance/configuration.md#client-side-optimization-settings)
-- [Guia do usuário: otimizar arquivos de recursos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [Dicas de agrupamento](../../../performance/configuration.md#bundling-tips) em *Práticas recomendadas de configuração*—ferramentas de agrupamento de terceiros, HTTP/2 e orientações sobre mesclagem de JS e CSS obsoletos
+- [Guia do usuário: otimizar arquivos de recursos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [Guia do desenvolvedor de front-end: mesclagem de CSS, minificação e desempenho do site](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Agrupamento avançado do JavaScript](../../../performance/advanced-js-bundling.md)

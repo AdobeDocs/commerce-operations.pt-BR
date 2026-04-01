@@ -1,42 +1,50 @@
 ---
-title: Apache
-description: Siga estas etapas para instalar e configurar o Apache Web Server para instalações locais do Adobe Commerce.
+title: Instalar o Apache para implantações locais
+description: Saiba como instalar e configurar o Apache para implantações locais do Adobe Commerce. Ative os módulos, as substituições e as configurações ".htaccess" necessários.
+feature: Install, Configuration
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: f8c5d714a4e96d0508f745d1b7617696c8cc94a7
+source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
 
-# Apache
+# Instalar o Apache para implantações locais {#apache}
 
-O Adobe Commerce é compatível com o Apache 2.4.x.
+Este guia aborda a instalação do Apache para implantações locais do Adobe Commerce e a definição das configurações do Apache exigidas pelo Commerce. Ele inclui requisitos compartilhados do Apache e procedimentos específicos do sistema operacional para Ubuntu e CentOS. A Adobe recomenda seguir as instruções de configuração fornecidas neste guia para preservar a funcionalidade e a segurança do aplicativo do Commerce.
 
-## Diretivas necessárias do Apache
+O Adobe oferece suporte às versões do Apache listadas nos [requisitos do sistema](../../system-requirements.md) da sua versão do Adobe Commerce. As versões compatíveis variam de acordo com a versão. O Apache também requer uma configuração PHP compatível. Para obter os requisitos do PHP relacionados, consulte [configurações do PHP](../php-settings.md).
 
-1. Defina `AllowEncodedSlashes` na configuração do servidor (globalmente) ou nas configurações do host virtual para evitar a decodificação das barras codificadas que podem causar problemas para URLs. Por exemplo, ao recuperar produtos com uma barra na SKU por meio da API, você não deseja convertê-los. O bloco de amostra não está completo e outras diretivas são necessárias.
+Comece com a seção que corresponde ao seu ambiente:
 
-   ```conf
-   <VirtualHost *:443>
-     # Allow encoded slashes
-     AllowEncodedSlashes NoDecode
-   </VirtualHost>
-   ```
+- Se o Apache já estiver instalado, comece com [Examine os requisitos do Apache](#review-apache-requirements).
+- Se precisar instalar ou atualizar o Apache no Ubuntu, acesse [Instalar ou atualizar o Apache no Ubuntu](#installing-or-upgrading-apache-on-ubuntu).
+- Se precisar instalar o Apache no CentOS, acesse [Instalar o Apache no CentOS](#installing-apache-on-centos).
 
-## Regravações do Apache e htaccess
+## Revisar requisitos do Apache
 
-Este tópico discute como habilitar substituições no Apache 2.4 e especificar uma configuração para o [arquivo de configuração distribuído, `.htaccess`](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample).
+Conclua esses requisitos em qualquer servidor Apache que hospede o Adobe Commerce.
 
-O Adobe Commerce usa substituições de servidor e `.htaccess` para fornecer instruções no nível do diretório para o Apache. As instruções a seguir também estão incluídas em todas as outras seções deste tópico.
+### Configurar as diretivas necessárias
 
-Use esta seção para habilitar substituições no Apache 2.4 e especificar uma configuração para o [arquivo de configuração distribuído, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
+Defina `AllowEncodedSlashes` na configuração do servidor (globalmente) ou nas configurações do host virtual para evitar a decodificação das barras codificadas que podem causar problemas para URLs. Por exemplo, ao recuperar produtos com uma barra na SKU por meio da API, você não deseja converter a barra. O bloco de exemplo a seguir não está completo e outras diretivas são necessárias.
 
-O Adobe Commerce usa substituições de servidor e `.htaccess` para fornecer instruções no nível do diretório para o Apache.
+```conf
+<VirtualHost *:443>
+  # Allow encoded slashes
+  AllowEncodedSlashes NoDecode
+</VirtualHost>
+```
 
->[!NOTE]
+### Configurar regravações e .htaccess {#apache-rewrites-and-htaccess}
+
+Use esta seção para habilitar regravações do Apache e configurar o [arquivo `.htaccess` distribuído](https://httpd.apache.org/docs/current/howto/htaccess.html). O Adobe Commerce usa substituições de servidor e `.htaccess` para fornecer instruções no nível do diretório para o Apache.
+
+>[!IMPORTANT]
 >
->A falha em ativar essas configurações normalmente resulta na exibição de estilos na vitrine eletrônica ou no Administrador.
+>A falha em ativar essas configurações normalmente resulta na exibição de estilos na vitrine eletrônica ou no Administrador. Também pode impedir que o Apache aplique as proteções de segurança do Adobe Commerce definidas em `.htaccess`.
 
 1. Habilite o módulo de regravação do Apache:
 
@@ -44,40 +52,31 @@ O Adobe Commerce usa substituições de servidor e `.htaccess` para fornecer ins
    a2enmod rewrite
    ```
 
-1. Para permitir que o aplicativo use o arquivo de configuração distribuído `.htaccess`, consulte as diretrizes na [documentação do Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. Habilite o aplicativo para usar o arquivo de configuração `.htaccess` distribuído.
 
-   >[!TIP]
-   >
-   >No Apache 2.4, o arquivo de configuração de site padrão do servidor é `/etc/apache2/sites-available/000-default.conf`.
+   1. No Ubuntu, edite `/etc/apache2/sites-available/000-default.conf`. Para outros layouts do Apache ou se forem necessários parâmetros adicionais, consulte a [documentação do Apache](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) e a [documentação de controle de acesso do Apache](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
 
-   Por exemplo, você pode adicionar o seguinte ao final de `000-default.conf`:
+   1. Adicione ou atualize a diretiva `AllowOverride` para o diretório onde você planeja instalar o Adobe Commerce.
 
-   ```
+   Por exemplo, se você instalar o Adobe Commerce no `docroot` padrão, adicione o seguinte bloco ao `000-default.conf`:
+
+   ```conf
    <Directory "/var/www/html">
-       AllowOverride All
+     AllowOverride All
    </Directory>
    ```
 
    >[!NOTE]
    >
-   >Às vezes, podem ser necessários parâmetros adicionais. Para obter mais informações, consulte a [documentação do Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >Se você atualizou de uma versão anterior do Apache, primeiro procure um bloco existente `<Directory "/var/www/html">` ou `<Directory "/var/www">` em `000-default.conf`. Se você instalar o Adobe Commerce em um `docroot` diferente, atualize o bloco `<Directory>` correspondente para esse caminho.
 
-1. Se você alterou as configurações do Apache, reinicie o Apache:
+1. Reinicie o Apache para aplicar as alterações:
 
    ```bash
    service apache2 restart
    ```
 
-   >[!NOTE]
-   >
-   >- Se você atualizou de uma versão anterior do Apache, primeiro procure por `<Directory "/var/www/html">` ou `<Directory "/var/www">` em `000-default.conf`.
-   >- Você deve alterar o valor de `AllowOverride` na diretiva para o diretório no qual você espera instalar o software Adobe Commerce. Por exemplo, para instalar no docroot do servidor Web, edite a diretiva em `<Directory /var/www>`.
-
->[!NOTE]
->
->A falha em ativar essas configurações normalmente resulta na não exibição de estilos na loja ou no Administrador.
-
-## Módulos necessários do Apache
+### Instalar os módulos necessários
 
 O Adobe Commerce requer que os seguintes módulos do Apache sejam instalados:
 
@@ -88,76 +87,75 @@ O Adobe Commerce requer que os seguintes módulos do Apache sejam instalados:
 - [mod_security.c](https://modsecurity.org)
 - [mod_ssl.c](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
 
-## Verificar a versão do Apache
+## Verificar se o Apache está instalado
 
-Para verificar a versão do Apache que você está executando no momento, insira:
+Para verificar se o Apache está instalado e visualizar a versão atual, insira:
 
 ```bash
 apache2 -v
 ```
 
-O resultado é semelhante ao seguinte:
+O resultado exibe informações semelhantes às seguintes:
 
-```
-Server version: Apache/2.4.04 (Ubuntu)
-Server built: Jul 22 2020 14:35:32
+```text
+Server version: Apache/<installed-version>
+Server built: <build-date>
 ```
 
 - Se o Apache *não* estiver instalado, consulte:
-   - [Instalação ou atualização do Apache no Ubuntu](#installing-apache-on-ubuntu)
-   - [Instalação do Apache no CentOS](#installing-apache-on-centos)
+   - [Instalar ou atualizar o Apache no Ubuntu](#installing-or-upgrading-apache-on-ubuntu)
+   - [Instalar o Apache no CentOS](#installing-apache-on-centos)
 
-## Instalação ou atualização do Apache no Ubuntu
+## Instalar ou atualizar o Apache no Ubuntu {#installing-or-upgrading-apache-on-ubuntu}
 
-As seções a seguir discutem como instalar ou atualizar o Apache:
+A instalação e a configuração do Apache no Ubuntu são um processo de três etapas:
 
-- Instalar o Apache
-- Atualize para o Apache 2.4 no Ubuntu para usar o PHP 7.4.
+1. Instale o software.
+1. Habilitar regravações.
+1. Especifique as diretivas `.htaccess`.
 
-### Instalação do Apache no Ubuntu
+Ao configurar regravações do servidor Apache, você deve especificar o tipo de diretivas que podem ser usadas em `.htaccess`, que o aplicativo usa para especificar regras de regravação e proteções de segurança.
 
-Para instalar a versão padrão do Apache:
+### Instalar o Apache no Ubuntu
 
-1. Instalar o Apache
+1. Instale o Apache se ainda não tiver feito isso:
 
    ```bash
    apt-get -y install apache2
    ```
 
-1. Verifique a instalação.
+1. Verifique a instalação:
 
    ```bash
    apache2 -v
    ```
 
-   O resultado é semelhante ao seguinte:
+   Mensagens semelhantes às seguintes são exibidas para confirmar que a instalação foi bem-sucedida:
 
-   ```
-   Server version: Apache/2.4.18 (Ubuntu)
-   Server built: 2020-04-15T18:00:57
+   ```text
+   Server version: Apache/<installed-version>
+   Server built: <build-date>
    ```
 
-1. Habilitar [regravações e `.htaccess`](#apache-rewrites-and-htaccess).
+1. Prossiga para a próxima seção.
+
+   >[!NOTE]
+   >
+   >Mesmo que o Apache seja fornecido por padrão com o Ubuntu, consulte a seção a seguir para configurá-lo.
 
 ### Atualização do Apache no Ubuntu
 
-Para atualizar para o Apache 2.4:
+Se o Apache já estiver instalado e você estiver usando uma versão anterior ao `2.4`, atualize para o Apache `2.4` ou para a versão mais recente com suporte da versão do Adobe Commerce que você implantou. Consulte [requisitos de sistema](../../system-requirements.md).
 
-1. Adicione o repositório `ppa:ondrej`, que tem o Apache 2.4:
-
-   ```bash
-   apt-get -y update
-   ```
-
-   ```bash
-   apt-add-repository ppa:ondrej/apache2
-   ```
+1. Atualizar informações do pacote:
 
    ```bash
    apt-get -y update
    ```
 
-1. Instalar o Apache 2.4:
+1. Adicione um repositório que forneça uma versão do Apache compatível com seu ambiente, se necessário.
+
+1. Instalar ou atualizar o Apache:
 
    ```bash
    apt-get install -y apache2
@@ -165,62 +163,24 @@ Para atualizar para o Apache 2.4:
 
    >[!NOTE]
    >
-   >Se o comando &#39;apt-get install&#39; falhar devido a dependências não atendidas, consulte um recurso como [https://askubuntu.com/](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
+   >Se o comando `apt-get install` falhar devido a dependências não atendidas, consulte a documentação do pacote do sistema operacional ou os recursos de suporte à distribuição.
 
-1. Verifique a instalação.
+1. Verifique a instalação:
 
    ```bash
    apache2 -v
    ```
 
-   Mensagens semelhantes às seguintes devem ser exibidas:
+1. Confirme se a versão instalada corresponde à versão com suporte para sua versão do Adobe Commerce em [requisitos do sistema](../../system-requirements.md).
 
-   ```
-   Server version: Apache/2.4.10 (Ubuntu)
-   Server built: Jul 22 2020 22:46:25
-   ```
+1. Habilitar [regravações e `.htaccess` para Ubuntu](#enable-rewrites-and-htaccess-for-ubuntu).
 
-1. Habilitar [regravações e `.htaccess`](#apache-rewrites-and-htaccess).
+### Habilite regravações e .htaccess para Ubuntu
 
-## Instalação do Apache no CentOS
-
-O Adobe Commerce requer regravações do servidor Apache. Você também deve especificar o tipo de diretivas que podem ser usadas em `.htaccess`, que o aplicativo usa para especificar regras de substituição.
-
-A instalação e configuração do Apache é basicamente um processo de três etapas: instalar o software, habilitar regravações e especificar diretivas `.htaccess`.
-
-### Instalação do Apache
-
-1. Instale o Apache 2.4 se ainda não tiver feito isso.
+1. Abra o arquivo `/etc/apache2/sites-available/000-default.conf` para edição:
 
    ```bash
-   yum -y install httpd
-   ```
-
-1. Verifique a instalação:
-
-   ```bash
-   httpd -v
-   ```
-
-   Mensagens semelhantes às seguintes são exibidas para confirmar que a instalação foi bem-sucedida:
-
-   ```
-   Server version: Apache/2.4.40 (Unix)
-   Server built: Oct 16 2020 14:48:21
-   ```
-
-1. Prossiga para a próxima seção.
-
-   >[!NOTE]
-   >
-   >Mesmo que o Apache 2.4 seja fornecido por padrão com o CentOS, consulte a seção a seguir para configurá-lo.
-
-### Habilitar regravações e .htaccess para CentOS
-
-1. Abrir arquivo `/etc/httpd/conf/httpd.conf` para edição:
-
-   ```bash
-   vim /etc/httpd/conf/httpd.conf`
+   vim /etc/apache2/sites-available/000-default.conf
    ```
 
 1. Localize o bloco que começa com:
@@ -228,47 +188,6 @@ A instalação e configuração do Apache é basicamente um processo de três et
    ```conf
    <Directory "/var/www/html">
    ```
-
-1. Altere o valor de `AllowOverride` para `All`.
-
-   Por exemplo,
-
-   ```conf
-   <Directory "/var/www/">
-     Options Indexes FollowSymLinks MultiViews
-     AllowOverride All
-     Order allow,deny
-     Allow from all
-   </Directory>
-   ```
-
-   >[!NOTE]
-   >
-   >Os valores anteriores para `Order` podem não funcionar em todos os casos. Para obter mais informações, consulte a documentação do Apache ([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
-
-1. Salve o arquivo e saia do editor de texto.
-
-1. Para aplicar as configurações do Apache, reinicie o Apache.
-
-   ```bash
-   service apache2 restart
-   ```
-
->[!NOTE]
->
->A falha em ativar essas configurações normalmente resulta na exibição de estilos na vitrine eletrônica ou no Administrador.
-
-### Habilite regravações e .htaccess para Ubuntu
-
-1. Abrir arquivo `/etc/apache2/sites-available/default` para edição:
-
-   ```bash
-   vim /etc/apache2/sites-available/default
-   ```
-
-1. Localize o bloco que começa com:
-
-   `<Directory "/var/www/html">`
 
 1. Altere o valor de `AllowOverride` para `All`.
 
@@ -301,11 +220,95 @@ A instalação e configuração do Apache é basicamente um processo de três et
    service apache2 restart
    ```
 
+>[!IMPORTANT]
+>
+>A falha em ativar essas configurações normalmente resulta na exibição de estilos na vitrine eletrônica ou no Administrador. Também pode impedir que o Apache aplique as proteções de segurança do Adobe Commerce definidas em `.htaccess`.
+
+## Instalar o Apache no CentOS {#installing-apache-on-centos}
+
+A instalação e configuração do Apache no CentOS é um processo de três etapas:
+
+1. Instalar o software
+2. Habilitar regravações
+3. Especifique as diretivas `.htaccess`.
+
+Ao configurar regravações do servidor Apache, você deve especificar o tipo de diretivas que podem ser usadas em `.htaccess`, que o aplicativo usa para especificar regras de regravação e proteções de segurança.
+
+### Instalação do Apache
+
+1. Instale o Apache se ainda não tiver feito isso.
+
+   ```bash
+   yum -y install httpd
+   ```
+
+1. Verifique a instalação:
+
+   ```bash
+   httpd -v
+   ```
+
+   Mensagens semelhantes às seguintes são exibidas para confirmar que a instalação foi bem-sucedida:
+
+   ```text
+   Server version: Apache/<installed-version>
+   Server built: <build-date>
+   ```
+
+1. Prossiga para a próxima seção.
+
+   >[!NOTE]
+   >
+   >Mesmo que o Apache seja fornecido por padrão com o CentOS, consulte a seção a seguir para configurá-lo.
+
+### Habilitar regravações e .htaccess para CentOS
+
+1. Abra o arquivo `/etc/httpd/conf/httpd.conf` para edição:
+
+   ```bash
+   vim /etc/httpd/conf/httpd.conf
+   ```
+
+1. Localize o bloco que começa com:
+
+   ```conf
+   <Directory "/var/www/html">
+   ```
+
+1. Altere o valor de `AllowOverride` para `All`.
+
+   Por exemplo:
+
+   ```conf
+   <Directory "/var/www/">
+     Options Indexes FollowSymLinks MultiViews
+     AllowOverride All
+     Order allow,deny
+     Allow from all
+   </Directory>
+   ```
+
+   >[!NOTE]
+   >
+   >Os valores anteriores para `Order` podem não funcionar em todos os casos. Para obter mais informações, consulte a [documentação do Apache](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order).
+
+1. Salve o arquivo e saia do editor de texto.
+
+1. Para aplicar as configurações do Apache, reinicie o Apache.
+
+   ```bash
+   systemctl restart httpd
+   ```
+
+>[!IMPORTANT]
+>
+>A falha em ativar essas configurações normalmente resulta na exibição de estilos na vitrine eletrônica ou no Administrador. Também pode impedir que o Apache aplique as proteções de segurança do Adobe Commerce definidas em `.htaccess`.
+
 ## Resolvendo erros 403 (Proibido)
 
 Se você encontrar erros 403 Proibido ao tentar acessar o site, poderá atualizar sua configuração do Apache ou a configuração do host virtual para permitir que os visitantes do site:
 
-### Resolução de erros 403 proibidos para o Apache 2.4
+### Resolver erros 403 proibidos do Apache
 
 Para permitir que visitantes do site acessem seu site, use uma das [Diretivas necessárias](https://httpd.apache.org/docs/2.4/howto/access.html).
 

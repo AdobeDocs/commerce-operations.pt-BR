@@ -1,58 +1,60 @@
 ---
-title: Nginx
-description: Siga estas etapas para instalar e configurar o servidor Web Nginx para instalações locais do Adobe Commerce.
+title: Instalar o Nginx para implantações locais
+description: Saiba como instalar e configurar o servidor Web Nginx para implantações locais do Adobe Commerce. Configure o PHP-FPM e seu host virtual.
+feature: Install, Configuration
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
 
-# Nginx
+# Instalar o Nginx para implantações locais {#nginx}
 
-O Adobe Commerce oferece suporte ao nginx 1.x (ou à [versão principal mais recente](https://nginx.org/en/linux_packages.html#mainline)). Você também deve instalar o `php-fpm` para uma versão do PHP compatível com a versão do Adobe Commerce que você está instalando.
+Este guia aborda a instalação de Nginx para implantações locais do Adobe Commerce e a definição das configurações de Nginx exigidas pelo Commerce. Ele inclui procedimentos específicos do sistema operacional para Ubuntu e CentOS, juntamente com orientações para a configuração do PHP-FPM. A Adobe recomenda seguir as instruções de configuração fornecidas neste guia para preservar a funcionalidade e a segurança do aplicativo do Commerce.
 
-As instruções de instalação variam de acordo com o sistema operacional que você está usando. Consulte [PHP](../php-settings.md) para obter informações.
+O Adobe oferece suporte às versões do Nginx listadas nos [requisitos do sistema](../../system-requirements.md) da sua versão do Adobe Commerce. As versões compatíveis variam de acordo com a versão. O Nginx também requer uma configuração PHP-FPM compatível. Para requisitos relacionados do PHP, consulte [PHP](../php-settings.md).
 
-## Ubuntu
+## Instalar no Ubuntu
 
-A seção a seguir descreve como instalar o Adobe Commerce 2.x no Ubuntu usando nginx, PHP e MySQL.
+Use esta seção para instalar o Adobe Commerce no Ubuntu com Nginx, PHP e MySQL.
 
-### Instalar o nginx
+### Instalar Nginx
 
 ```bash
 sudo apt -y install nginx
 ```
 
-Você também pode [compilar nginx a partir da origem](https://nginx.org/en/docs/install.html)
+Você também pode [compilar Nginx a partir da origem](https://www.armanism.com/blog/install-nginx-on-ubuntu).
 
-Depois de concluir as seções a seguir e instalar o aplicativo, usaremos um exemplo de arquivo de configuração para [configurar nginx](#configure-nginx).
+Após concluir as seções a seguir e instalar o aplicativo, use o arquivo de configuração de exemplo para [configurar o Nginx](#configure-nginx). Essa configuração recomendada preserva a funcionalidade e a segurança do aplicativo do Commerce.
 
-### Instalar e configurar o php-fpm
+### Instalar e configurar o PHP-FPM
 
-O Adobe Commerce requer várias [extensões PHP](../php-settings.md) para funcionar corretamente. Além dessas extensões, você também deve instalar e configurar a extensão `php-fpm` se estiver usando nginx.
+O Adobe Commerce requer várias [extensões PHP](../php-settings.md) para funcionar corretamente. Além dessas extensões, você também deve instalar e configurar a extensão `php-fpm` se estiver usando o Nginx.
 
 Para instalar e configurar o `php-fpm`:
 
-1. Instalar `php-fpm` e `php-cli`:
+1. Instale os pacotes `php-fpm` e `php-cli` para a versão do PHP suportada pela sua versão do Adobe Commerce. No Ubuntu, os nomes dos pacotes normalmente seguem esse padrão:
 
    ```bash
-   apt-get -y install php<supported-php-version>-fpm php<supported-php-version>-cli
+   apt-get -y install php<php-version>-fpm php<php-version>-cli
    ```
 
    >[!NOTE]
    >
-   >Substitua `<supported-php-version>` por uma versão secundária do PHP listada em [requisitos do sistema](../../system-requirements.md) para a versão do Adobe Commerce que você está instalando. Use o mesmo valor nos caminhos de arquivo, nome de serviço e caminho de soquete nas etapas a seguir.
+   >Substitua `<php-version>` pela versão secundária do PHP com suporte listada em [requisitos do sistema](../../system-requirements.md) para a versão do Adobe Commerce que você está instalando. Use o mesmo valor nos caminhos de arquivo, nome de serviço e caminho de soquete nas etapas a seguir.
 
 1. Abrir os arquivos `php.ini` em um editor:
 
    ```bash
-   vim /etc/php/<supported-php-version>/fpm/php.ini
+   vim /etc/php/<php-version>/fpm/php.ini
    ```
 
    ```bash
-   vim /etc/php/<supported-php-version>/cli/php.ini
+   vim /etc/php/<php-version>/cli/php.ini
    ```
 
 1. Edite ambos os arquivos para corresponder às seguintes linhas:
@@ -65,23 +67,23 @@ Para instalar e configurar o `php-fpm`:
 
    >[!NOTE]
    >
-   >Recomendamos definir o limite de memória para 2 G ao testar o Adobe Commerce. Consulte [Configurações PHP necessárias](../php-settings.md) para obter mais informações.
+   >A Adobe recomenda definir o limite de memória para 2 GB ao testar o Adobe Commerce. Consulte [Configurações PHP necessárias](../php-settings.md) para obter mais informações.
 
 1. Salve e saia do editor.
 
 1. Reiniciar o serviço `php-fpm`:
 
    ```bash
-   systemctl restart php<supported-php-version>-fpm
+   systemctl restart php<php-version>-fpm
    ```
 
 ### Instalar e configurar o MySQL
 
 Consulte [MySQL](../database/mysql.md) para obter mais informações.
 
-### Instalar e configurar
+### Instalar o Adobe Commerce
 
-Há várias maneiras de baixar o Adobe Commerce, incluindo:
+É possível baixar o Adobe Commerce de várias maneiras:
 
 * [Obtenha o metapackage do Composer](../../composer.md)
 
@@ -141,21 +143,21 @@ Este exemplo mostra uma instalação baseada no Composer usando a linha de coman
    chmod u+x bin/magento
    ```
 
-1. Instalar da [linha de comando](../../advanced.md). Este exemplo supõe que o diretório de instalação seja nomeado como `magento2ee`, o `db-host` esteja na mesma máquina (`localhost`) e que o `db-name`, `db-user` e `db-password` sejam todos `magento`:
+1. Instalar da [linha de comando](../../advanced.md). Este exemplo pressupõe que o diretório de instalação seja nomeado como `magento2ee` e que o host do banco de dados esteja na mesma máquina (`localhost`):
 
    ```bash
    bin/magento setup:install \
    --base-url=http://localhost/magento2ee \
    --db-host=localhost \
-   --db-name=magento \
-   --db-user=magento \
-   --db-password=magento \
-   --backend-frontname=admin \
-   --admin-firstname=admin \
-   --admin-lastname=admin \
-   --admin-email=admin@admin.com \
-   --admin-user=admin \
-   --admin-password=admin123 \
+   --db-name=<db-name> \
+   --db-user=<db-user> \
+   --db-password=<db-password> \
+   --backend-frontname=<backend-uri> \
+   --admin-firstname=<admin-first-name> \
+   --admin-lastname=<admin-last-name> \
+   --admin-email=<admin-email> \
+   --admin-user=<admin-user> \
+   --admin-password=<admin-password> \
    --language=en_US \
    --currency=USD \
    --timezone=America/Chicago \
@@ -179,11 +181,15 @@ Este exemplo mostra uma instalação baseada no Composer usando a linha de coman
    ./magento deploy:mode:set developer
    ```
 
-### Configurar nginx
+### Configurar Nginx
 
-Recomendamos configurar o nginx usando o arquivo de configuração `nginx.conf.sample` fornecido no diretório de instalação e no host virtual nginx.
+A Adobe recomenda configurar o Nginx usando o arquivo de configuração `nginx.conf.sample` fornecido no diretório de instalação e a configuração do host virtual Nginx para preservar a funcionalidade e a segurança do aplicativo Commerce.
 
-Essas instruções supõem que você esteja usando o local padrão do Ubuntu para o host virtual nginx (por exemplo, `/etc/nginx/sites-available`) e o docroot padrão do Ubuntu (por exemplo, `/var/www/html`). No entanto, você pode alterar esses locais para atender ao seu ambiente.
+>[!IMPORTANT]
+>
+>O arquivo `nginx.conf.sample` fornece o roteamento de aplicativo necessário, bem como regras de proteção de segurança. Por exemplo, ela restringe a execução de scripts mal-intencionados carregados no servidor. Se você não usar esse arquivo ou modificar suas regras, será responsável pela implementação de controles de segurança equivalentes na sua configuração personalizada do nginx.
+
+Essas instruções supõem que você esteja usando o local padrão do Ubuntu para o host virtual Nginx, como `/etc/nginx/sites-available`, e o docroot padrão do Ubuntu, como `/var/www/html`. Você pode alterar esses locais para se adequar ao seu ambiente.
 
 1. Crie um novo host virtual para seu site:
 
@@ -195,7 +201,7 @@ Essas instruções supõem que você esteja usando o local padrão do Ubuntu par
 
    ```conf
    upstream fastcgi_backend {
-     server  unix:/run/php/php<supported-php-version>-fpm.sock;
+     server  unix:/run/php/php<php-version>-fpm.sock;
    }
    
    server {
@@ -227,7 +233,7 @@ Essas instruções supõem que você esteja usando o local padrão do Ubuntu par
    nginx -t
    ```
 
-1. Reiniciar o nginx:
+1. Reiniciar O Nginx:
 
    ```bash
    systemctl restart nginx
@@ -235,13 +241,13 @@ Essas instruções supõem que você esteja usando o local padrão do Ubuntu par
 
 ### Verificar a instalação
 
-Abra um navegador e navegue até a URL base do site para [verificar a instalação](../../next-steps/verify.md).
+Para verificar a instalação, abra um navegador da Web e navegue até o URL base do site. Para obter mais informações, consulte [Verificar a instalação](../../next-steps/verify.md).
 
-## CentOS 7
+## Instalação no CentOS 7
 
-A seção a seguir descreve como instalar o Adobe Commerce 2.x no CentOS 7 usando nginx, PHP e MySQL.
+Use esta seção para instalar o Adobe Commerce no CentOS 7 com Nginx, PHP e MySQL.
 
-### Instalar o nginx
+### Instalar Nginx
 
 ```bash
 yum -y install epel-release
@@ -261,23 +267,23 @@ systemctl start nginx
 systemctl enable nginx
 ```
 
-Depois de concluir as seções a seguir e instalar o aplicativo, usaremos um arquivo de configuração de exemplo para configurar o nginx.
+Depois de concluir as seções a seguir e instalar o aplicativo, use um arquivo de configuração de exemplo para configurar o Nginx.
 
-### Instalar e configurar o php-fpm
+### Instalar e configurar o PHP-FPM
 
-O Adobe Commerce requer várias extensões [PHP](../php-settings.md) para funcionar corretamente. Além dessas extensões, você também deve instalar e configurar a extensão `php-fpm` se estiver usando nginx.
+O Adobe Commerce requer várias extensões [PHP](../php-settings.md) para funcionar corretamente. Além dessas extensões, você também deve instalar e configurar a extensão `php-fpm` se estiver usando o Nginx.
 
 1. Instalar `php-fpm`:
 
    ```bash
-   yum -y install <supported-php-fpm-package>
+   yum -y install <php-fpm-package>
    ```
 
 1. Abra o arquivo `/etc/php.ini` em um editor.
 
    >[!NOTE]
    >
-   >Instale o nome do pacote que fornece `php-fpm` para uma versão do PHP suportada pela versão do Adobe Commerce que você está instalando. Os nomes dos pacotes variam de acordo com o repositório e sistema operacional.
+   >Instale o pacote que fornece `php-fpm` para a versão do PHP suportada pela versão do Adobe Commerce que você está instalando. Os nomes dos pacotes variam de acordo com o repositório e sistema operacional. Consulte [requisitos de sistema](../../system-requirements.md).
 
 1. Descomente a linha `cgi.fix_pathinfo` e altere o valor para `0`.
 
@@ -291,7 +297,7 @@ O Adobe Commerce requer várias extensões [PHP](../php-settings.md) para funcio
 
    >[!NOTE]
    >
-   >Recomendamos definir o limite de memória para 2 G ao testar o Adobe Commerce. Consulte [Configurações PHP necessárias](../php-settings.md) para obter mais informações.
+   >A Adobe recomenda definir o limite de memória para 2 GB ao testar o Adobe Commerce. Consulte [Configurações PHP necessárias](../php-settings.md) para obter mais informações.
 
 1. Remova o comentário do diretório de caminho da sessão e defina o caminho:
 
@@ -326,24 +332,24 @@ O Adobe Commerce requer várias extensões [PHP](../php-settings.md) para funcio
 
 1. Salve e saia do editor.
 
-1. Crie um diretório para o caminho da sessão PHP e altere o proprietário para o usuário e grupo `apache`:
+1. Crie um diretório para o caminho da sessão PHP e altere o proprietário para o usuário e grupo `nginx`:
 
    ```bash
    mkdir -p /var/lib/php/session/
    ```
 
    ```bash
-   chown -R apache:apache /var/lib/php/
+   chown -R nginx:nginx /var/lib/php/
    ```
 
-1. Crie um diretório para o caminho da sessão PHP e altere o proprietário para o usuário e grupo `apache`:
+1. Crie um diretório para o soquete PHP-FPM e altere o proprietário para o usuário e grupo `nginx`:
 
    ```bash
    mkdir -p /run/php-fpm/
    ```
 
    ```bash
-   chown -R apache:apache /run/php-fpm/
+   chown -R nginx:nginx /run/php-fpm/
    ```
 
 1. Inicie o serviço `php-fpm` e configure-o para iniciar no momento da inicialização:
@@ -364,11 +370,11 @@ O Adobe Commerce requer várias extensões [PHP](../php-settings.md) para funcio
 
 ### Instalar e configurar o MySQL
 
-Consulte [MySQL](..//database/mysql.md) para obter mais informações.
+Consulte [MySQL](../database/mysql.md) para obter mais informações.
 
-### Instalar e configurar
+### Instalar o Adobe Commerce
 
-Há várias maneiras de baixar o Adobe Commerce, incluindo:
+É possível baixar o Adobe Commerce de várias maneiras:
 
 * [Obtenha o metapackage do Composer](../../composer.md)
 
@@ -378,10 +384,10 @@ Este exemplo mostra uma instalação baseada no Composer usando a linha de coman
 
 1. Como o [proprietário do sistema de arquivos](../file-system/overview.md), faça logon no servidor de aplicativos.
 
-1. Altere para o diretório docroot do servidor Web ou um diretório que você configurou como docroot do host virtual. Para este exemplo, estamos usando o padrão Ubuntu `/var/www/html`.
+1. Altere para o diretório docroot do servidor Web ou um diretório que você configurou como docroot do host virtual. Para este exemplo, use o padrão CentOS `/usr/share/nginx/html`.
 
    ```bash
-   cd /var/www/html
+   cd /usr/share/nginx/html
    ```
 
 1. Instale o Composer globalmente. O Composer é necessário para atualizar dependências antes de instalar o Adobe Commerce:
@@ -409,7 +415,7 @@ Este exemplo mostra uma instalação baseada no Composer usando a linha de coman
 1. Defina permissões de leitura e gravação para o grupo de servidores Web antes de instalar o aplicativo. Isso é necessário para que a linha de comando possa gravar arquivos no sistema de arquivos.
 
    ```bash
-   cd /var/www/html/<magento install directory>
+   cd /usr/share/nginx/html/<magento install directory>
    ```
 
    ```bash
@@ -421,28 +427,28 @@ Este exemplo mostra uma instalação baseada no Composer usando a linha de coman
    ```
 
    ```bash
-   chown -R :www-data . # Ubuntu
+   chown -R :nginx . # CentOS
    ```
 
    ```bash
    chmod u+x bin/magento
    ```
 
-1. Instalar da [linha de comando](../../advanced.md). Este exemplo supõe que o diretório de instalação seja nomeado como `magento2ee`, o `db-host` esteja na mesma máquina (`localhost`) e que o `db-name`, `db-user` e `db-password` sejam todos `magento`:
+1. Instalar da [linha de comando](../../advanced.md). Este exemplo pressupõe que o diretório de instalação seja nomeado como `magento2ee` e que o host do banco de dados esteja na mesma máquina (`localhost`):
 
    ```bash
    bin/magento setup:install \
    --base-url=http://localhost/magento2ee \
    --db-host=localhost \
-   --db-name=magento \
-   --db-user=magento \
-   --db-password=magento \
-   --backend-frontname=admin \
-   --admin-firstname=admin \
-   --admin-lastname=admin \
-   --admin-email=admin@admin.com \
-   --admin-user=admin \
-   --admin-password=admin123 \
+   --db-name=<db-name> \
+   --db-user=<db-user> \
+   --db-password=<db-password> \
+   --backend-frontname=<backend-uri> \
+   --admin-firstname=<admin-first-name> \
+   --admin-lastname=<admin-last-name> \
+   --admin-email=<admin-email> \
+   --admin-user=<admin-user> \
+   --admin-password=<admin-password> \
    --language=en_US \
    --currency=USD \
    --timezone=America/Chicago \
@@ -452,18 +458,22 @@ Este exemplo mostra uma instalação baseada no Composer usando a linha de coman
 1. Alternar para modo de desenvolvedor:
 
    ```bash
-   cd /var/www/html/magento2/bin
+   cd /usr/share/nginx/html/magento2/bin
    ```
 
    ```bash
    ./magento deploy:mode:set developer
    ```
 
-### Configurar nginx
+### Configurar Nginx
 
-Recomendamos configurar o nginx usando o arquivo de configuração `nginx.conf.sample` fornecido no diretório de instalação e no host virtual nginx.
+Recomendamos configurar o Nginx usando o arquivo `nginx.conf.sample` no diretório de instalação e sua configuração de host virtual Nginx.
 
-Essas instruções supõem que você esteja usando o local padrão do CentOS para o host virtual nginx (por exemplo, `/etc/nginx/conf.d`) e o docroot padrão (por exemplo, `/usr/share/nginx/html`). No entanto, você pode alterar esses locais para atender ao seu ambiente.
+>[!IMPORTANT]
+>
+>O arquivo `nginx.conf.sample` fornece o roteamento de aplicativo necessário, bem como regras de proteção de segurança. Por exemplo, ela restringe a execução de scripts mal-intencionados carregados no servidor. Se você não usar esse arquivo ou modificar suas regras, será responsável pela implementação de controles de segurança equivalentes na sua configuração personalizada do nginx.
+
+Essas instruções supõem que você esteja usando o local padrão do CentOS para o host virtual Nginx, como `/etc/nginx/conf.d`, e o docroot padrão, como `/usr/share/nginx/html`. Você pode alterar esses locais para se adequar ao seu ambiente.
 
 1. Crie um novo host virtual para seu site:
 
@@ -501,15 +511,15 @@ Essas instruções supõem que você esteja usando o local padrão do CentOS par
    nginx -t
    ```
 
-1. Reiniciar o nginx:
+1. Reiniciar O Nginx:
 
    ```bash
    systemctl restart nginx
    ```
 
-### Configurar SELinux e Fireworld
+### Configurar SELinux e firewalld
 
-O SELinux é ativado por padrão no CentOS 7. Use o seguinte comando para ver se está em execução:
+O SELinux é ativado por padrão no CentOS 7. Use o seguinte comando para confirmar se está em execução:
 
 ```bash
 sestatus
@@ -577,4 +587,4 @@ Para configurar o SELinux e o firewalld:
 
 ### Verificar a instalação
 
-Abra um navegador e navegue até a URL base do site para [verificar a instalação](../../next-steps/verify.md).
+Para verificar a instalação, abra um navegador da Web e navegue até o URL base do site. Para obter mais informações, consulte [Verificar a instalação](../../next-steps/verify.md).
