@@ -2,9 +2,9 @@
 user-guide-title: Manual de implementação
 user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
-source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
+source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '161'
 ht-degree: 14%
 
 ---
@@ -27,8 +27,7 @@ ht-degree: 14%
       - [Configuração de relatórios](best-practices/planning/reporting-configuration.md)
       - [Configuração do banco de dados para implantações em nuvem&#x200B;](best-practices/planning/database-on-cloud.md)
       - [Configuração do MySQL](best-practices/planning/mysql-configuration.md)
-      - [Configuração do serviço Redis](best-practices/planning/redis-service-configuration.md)
-      - [Configuração do serviço Valkey](best-practices/planning/valkey-service-configuration.md)
+      - [Configuração do serviço Redis/Valkey](best-practices/planning/redis-valkey-service-configuration.md)
       - [Tamanho da memória do OPcache](best-practices/planning/opcache-memory-size.md)
       - [Tamanho do cache do Realpath](best-practices/planning/realpath-cache-size.md)
       - [Extensões](best-practices/planning/extensions.md)
@@ -69,4 +68,4 @@ ht-degree: 14%
       - [Lista de verificação de atualização](best-practices/maintenance/upgrade-checklist.md)
       - [Pré-requisitos de atualização para o MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glossário](glossary.md)
-- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
+- [Retornar aos Guias Operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
