@@ -2,9 +2,9 @@
 title: Política de lançamento
 description: Saiba mais sobre os diferentes tipos de versões do Adobe Commerce.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: bf7049ad5b805397f823e7e4cb430e9ecca5965e
+source-git-commit: ef1f4b3199e7e1daa670e537b97175f58327aa12
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ As versões do Beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM Q
 
 ## Hotfix
 
-Hotfixes são patches que contêm correções de segurança ou qualidade de alto impacto, como correções para vulnerabilidades &quot;zero-day&quot;, que afetam muitos comerciantes. O Adobe lança hotfixes (conforme necessário) para versões do Adobe Commerce compatíveis quando problemas críticos de segurança ou qualidade os afetam. Hotfixes foram publicados na [seção Problemas Conhecidos](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) da Base de Dados de Conhecimento. Essas correções estão incluídas na próxima versão de patch planejada.
+Hotfixes são patches que contêm correções de segurança ou qualidade de alto impacto, como correções para vulnerabilidades &quot;zero-day&quot;, que afetam muitos comerciantes. O Adobe lança hotfixes (conforme necessário) para versões do Adobe Commerce compatíveis quando problemas críticos de segurança ou qualidade os afetam. Os hotfixes são entregues por meio da [Ferramenta de correção de qualidade](../tools/quality-patches-tool/usage.md). Essas correções estão incluídas na próxima versão de patch planejada.
 
 >[!NOTE]
 >
@@ -71,20 +71,14 @@ Hotfixes são patches que contêm correções de segurança ou qualidade de alto
 
 ## Patch individual
 
-Patches individuais contêm correções de qualidade de baixo impacto para um problema específico. Essas correções são aplicadas às versões secundárias compatíveis do Adobe Commerce. A Adobe lança patches individuais conforme necessário para o Adobe Commerce de acordo com a [Política de ciclo de vida do software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+Patches individuais contêm correções de qualidade de baixo impacto para um problema específico. Essas correções são aplicadas às versões secundárias compatíveis do Adobe Commerce. A Adobe lança patches individuais conforme necessário para o Adobe Commerce de acordo com a [Política de ciclo de vida do software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Eles são entregues por meio da [Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >
 >Os patches individuais não contêm alterações incompatíveis com versões anteriores.
 
-## Correções de segurança isoladas
-
-Os patches isolados são correções de segurança não cumulativas lançadas independentemente de um patch de segurança completo para permitir uma implementação mais rápida. Cada correção de segurança isolada aborda um problema de segurança específico e é incluída no patch de segurança completo mais recente ou que será lançado em breve. Detalhes sobre o problema são fornecidos no boletim de segurança relacionado, que se vincula a um artigo da Base de conhecimento (KB) contendo os detalhes da correção, como aplicá-la e informações adicionais.
-
-Consulte a [Central de Segurança](https://helpx.adobe.com/br/security/products/magento.html) para encontrar as atualizações de segurança mais recentes disponíveis para o Adobe Commerce.
-
 ## Correção personalizada
 
-Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código do Adobe Commerce por vários motivos. Os patches personalizados são entregues por meio da [Ferramenta de Patches de Qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/usage).
+Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código do Adobe Commerce por vários motivos.
 
 <!-- Last updated from includes: 2025-10-09 22:53:22 -->
