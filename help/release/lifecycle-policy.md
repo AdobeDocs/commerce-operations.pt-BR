@@ -16,7 +16,7 @@ Para simplificar a política de ciclo de vida do Adobe Commerce e atender às ne
 
 Durante o período de suporte de três anos, o cliente terá acesso a:
 
-- **Correções de qualidade** - Os clientes podem acessar correções de qualidade entrando em contato com o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou por meio do autoatendimento [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). A tabela a seguir descreve as datas de fim do suporte de software para as linhas de versão do Adobe Commerce.
+- **Correções de qualidade** - Os clientes podem acessar correções de qualidade entrando em contato com o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou por meio do autoatendimento [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). A tabela a seguir descreve as datas de fim do suporte de software para as linhas de versão do Adobe Commerce.
 
 - **Correções de segurança**-O Adobe fornece correções de segurança por meio de patches de segurança cumulativos e [arquivos de patch de segurança isolados](versioning-policy.md#isolated-security-fixes) não cumulativos para o período de suporte de três anos.
 
@@ -59,11 +59,11 @@ Durante esse período de provisionamento de correções de segurança, observe o
 
   Para aplicar um arquivo de patch de segurança isolado, os clientes devem estar na versão de patch de segurança mais recente (a versão mais recente -p) para a linha de lançamento compatível, já que as correções de segurança isoladas são testadas exclusivamente em relação a essa versão.
 
-- **Nenhuma correção de qualidade ou assistência de engenharia**. Nenhuma correção de erros, atualização de qualidade ([Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md)) ou assistência de engenharia ([Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) será fornecida para as versões 2.4.4 ou 2.4.5 durante este período.
+- **Nenhuma correção de qualidade ou assistência de engenharia**. Nenhuma correção de erros, atualização de qualidade ([Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md)) ou assistência de engenharia ([Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) será fornecida para as versões 2.4.4 ou 2.4.5 durante este período.
 
 - **Não há garantia de conformidade com o PCI:** - Como as versões 2.4.4 e 2.4.5 do PHP atingiram o fim da vida útil, a conformidade com o PCI não pode ser garantida para os comerciantes nessas versões. Continuar a executar essas versões pode colocar em risco a conformidade com o PCI.
 
-Para manter uma cobertura de segurança completa e garantir a conformidade com o PCI, os clientes devem atualizar para uma versão atualmente compatível do Adobe Commerce o mais rápido possível ou migrar para o [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview).
+Para manter uma cobertura de segurança completa e garantir a conformidade com o PCI, os clientes devem atualizar para uma versão atualmente compatível do Adobe Commerce o mais rápido possível ou migrar para o [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/overview).
 
 | Versão | Disponibilidade geral | Fim do suporte estendido | Provisionamento de fim de correções de segurança |
 |----------------------|----------------------|-------------------------|------------------------------------|
