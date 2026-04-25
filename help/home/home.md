@@ -2,9 +2,9 @@
 title: 'Início: Guias Operacionais'
 description: Saiba mais sobre a administração do sistema e os conceitos operacionais do Adobe Commerce. Navegue por guias abrangentes para planejar, configurar e manter a implantação do Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: d4759f2394d55d115e5da80c271152ee621a2683
+source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '173'
 ht-degree: 7%
 
 ---
@@ -12,18 +12,18 @@ ht-degree: 7%
 
 # Guias operacionais do Adobe Commerce
 
-Use esta coleção de guias a seguir para saber mais sobre conceitos, processos, ferramentas e práticas recomendadas de administração do sistema para planejar, configurar, implantar e manter projetos do Adobe Commerce.
+Use this following collection of guides to learn about system administration concepts, processes, tools, and best practices to plan, configure, deploy, and maintain Adobe Commerce projects.
 
-## Planejamento e orientação
+## Planning and guidance
 
 <table>
 <tr>
   <td valign="top">
     <a href="../release/release-notes/overview.md">
-      <img alt="Informações da versão" src="../assets/icons/promote.svg" width="40"/>
+      <img alt="Release Information" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/release-notes/overview.md"><strong>Informações sobre a versão</strong></a>
+      <a href="../release/release-notes/overview.md"><strong>Release Information</strong></a>
       <p>Revise todas as informações sobre a versão de patches e serviços da Adobe Commerce.</p>
     </div>
   </td>
@@ -67,7 +67,7 @@ Use esta coleção de guias a seguir para saber mais sobre conceitos, processos,
     </a>
     <div>
       <a href="../installation/overview.md"><strong>Instalação</strong></a>
-      <p>Saiba como instalar o Adobe Commerce para implantações locais.</p>
+      <p>Learn how to install Adobe Commerce for on-premises deployments.</p>
     </div>
   </td>
   <td valign="top">
@@ -84,7 +84,7 @@ Use esta coleção de guias a seguir para saber mais sobre conceitos, processos,
       <img alt="Atualizar" src="../assets/icons/upload-cloud.svg" width="40"/>
     </a>
     <div>
-      <a href="../upgrade/overview.md"><strong>Atualizar</strong></a>
+      <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
       <p>Saiba como atualizar seu projeto do Adobe Commerce para manter sua loja segura e funcionando com eficiência.</p>
     </div>
   </td>
@@ -102,4 +102,4 @@ Use esta coleção de guias a seguir para saber mais sobre conceitos, processos,
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-04-03 22:13:36 -->
+<!-- Last updated from includes: 2026-04-24 20:40:38 -->
