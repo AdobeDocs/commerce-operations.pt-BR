@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.78</a>.</p>
+      <td><p>Adição da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.78</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -46,7 +46,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   <tbody>
     <tr>
       <td><ul>
-  <li>Atualização da <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">Política de ciclo de vida</a> com a tabela revisada de fim de suporte, o escopo de suporte estendido e uma nova seção sobre provisionamento de correções de segurança adicionais para 2.4.4 e 2.4.5.<br />- Atualização da <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/versioning-policy">Política de controle de versão</a> e do <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">Agendamento de lançamento</a> para pré-requisitos de correções de segurança isolados e entrega de hotfix/patch individual por meio da Ferramenta de Patches de Qualidade; detalhes de correções de segurança isolados foram movidos para a visão geral de patch de segurança compartilhado.<br />- O calendário de lançamento de 2026 foi atualizado para corresponder ao agendamento atual.</li>
+  <li>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/lifecycle-policy">Política de ciclo de vida</a> com a tabela revisada de fim de suporte, o escopo de suporte estendido e uma nova seção sobre provisionamento de correções de segurança adicionais para 2.4.4 e 2.4.5.<br />- Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/versioning-policy">Política de controle de versão</a> e do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/schedule">Agendamento de lançamento</a> para pré-requisitos de correções de segurança isolados e entrega de hotfix/patch individual por meio da Ferramenta de Patches de Qualidade; detalhes de correções de segurança isolados foram movidos para a visão geral de patch de segurança compartilhado.<br />- O calendário de lançamento de 2026 foi atualizado para corresponder ao agendamento atual.</li>
 </ul>
 </td>
       <td>
@@ -69,7 +69,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualizados os <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">requisitos do sistema</a> com versões do New Relic (APM) compatíveis com o Commerce na nuvem por versão.</p>
+      <td><p>Atualizados os <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">requisitos do sistema</a> com versões do New Relic (APM) compatíveis com o Commerce na nuvem por versão.</p>
 </td>
       <td>
         Técnico, feedback
@@ -77,7 +77,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f82d05cf0f7d2749b313ef5f7e89e1e36248bf30">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Atualização de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">versões do Beta</a> com um programa de Categoria de merchandising (Beta público) para projetos SaaS, incluindo links para <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add">Categoria de merchandising</a> e tópicos relacionados de regras de merchandising.</p>
+      <td><p>Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta">versões do Beta</a> com um programa de Categoria de merchandising (Beta público) para projetos SaaS, incluindo links para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add">Categoria de merchandising</a> e tópicos relacionados de regras de merchandising.</p>
 </td>
       <td>
         Atualização importante
@@ -99,7 +99,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Foram adicionadas instruções para substituir corretamente os diretórios de cache L2 padrão do Adobe Commerce em <code class="language-plaintext highlighter-rouge">env.php</code>, a fim de garantir que os arquivos de cache sejam armazenados no local pretendido e evitar falhas de segmentação de diretórios de cache dividido e GlusterFS. Consulte as orientações atualizadas em <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">Práticas recomendadas para a configuração dos serviços Redis e Valkey</a>.</p>
+      <td><p>Foram adicionadas instruções para substituir corretamente os diretórios de cache L2 padrão do Adobe Commerce em <code class="language-plaintext highlighter-rouge">env.php</code>, a fim de garantir que os arquivos de cache sejam armazenados no local pretendido e evitar falhas de segmentação de diretórios de cache dividido e GlusterFS. Consulte as orientações atualizadas em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">Práticas recomendadas para a configuração dos serviços Redis e Valkey</a>.</p>
 </td>
       <td>
         Técnico, feedback
@@ -121,7 +121,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualizado o <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">calendário de lançamento do Adobe Commerce de 2026</a> com as informações de lançamento mais recentes.</p>
+      <td><p>Atualizado o <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/schedule">calendário de lançamento do Adobe Commerce de 2026</a> com as informações de lançamento mais recentes.</p>
 </td>
       <td>
         Notas de versão
@@ -129,7 +129,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f32d342cbdc3e962fede45de828d836c242bc9a">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Updated the <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">best practices for Redis and Valkey configuration</a> and provided related configuration guidance.</p>
+      <td><p>Updated the <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">best practices for Redis and Valkey configuration</a> and provided related configuration guidance.</p>
 </td>
       <td>
         Técnico, feedback
@@ -151,7 +151,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319">ACSD-69319: Bundle prices were not indexed properly when child products had stock under custom sources</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319">ACSD-69319: Bundle prices were not indexed properly when child products had stock under custom sources</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -173,7 +173,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69086">ACSD-69086: Installation fails on MariaDB 10.11 due to unsupported database version check</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69086">ACSD-69086: Installation fails on MariaDB 10.11 due to unsupported database version check</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -195,7 +195,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69331">ACSD-69331: Content creators in the media gallery could not create folders with only the <code class="language-plaintext highlighter-rouge">create_folder</code> permission. After the fix, they can create folders as expected</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69331">ACSD-69331: Content creators in the media gallery could not create folders with only the <code class="language-plaintext highlighter-rouge">create_folder</code> permission. After the fix, they can create folders as expected</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -217,7 +217,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Updated <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">System requirements</a>: added Elasticsearch to the technology stack table for v2.4.8.</p>
+      <td><p>Updated <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">System requirements</a>: added Elasticsearch to the technology stack table for v2.4.8.</p>
 </td>
       <td>
         Technical
@@ -239,7 +239,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.77 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759">ACSD-68759: Customer account creation error with Arabic locale when Date of Birth is shown</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.77 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759">ACSD-68759: Customer account creation error with Arabic locale when Date of Birth is shown</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -247,7 +247,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d3c2d0ebea67fb376a43a67995f3ce278ceac3ee">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.77 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237">ACSD-69237: Sales__async_insert cron jobs process only 100 entries per run</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.77 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237">ACSD-69237: Sales__async_insert cron jobs process only 100 entries per run</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -255,7 +255,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0842ba414e45857e36d61c589687718435739efa">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203">ACSD-69203: o widget Lista de produtos retorna resultados incorretos quando várias categorias são usadas na condição de categoria</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203">ACSD-69203: o widget Lista de produtos retorna resultados incorretos quando várias categorias são usadas na condição de categoria</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -277,7 +277,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69115">ACSD-69115: erros do carrinho de compras não exibidos para usuários administradores de clientes atribuídos a sites não padrão</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69115">ACSD-69115: erros do carrinho de compras não exibidos para usuários administradores de clientes atribuídos a sites não padrão</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -285,7 +285,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9441537126c958bfcc6485e627cbad7efd16128e">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016">ACSD-69016: o preço especial não é aplicado em sites com fusos horários diferentes</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016">ACSD-69016: o preço especial não é aplicado em sites com fusos horários diferentes</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -293,12 +293,12 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b9788fef5bab2eb33334ef9f62bb52fa7b9f243e">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Atualizado <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">Requisitos do sistema</a>: MariaDB 10.6 ainda é compatível com 2.4.5-p16.</p>
+      <td><p>Atualizado <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">Requisitos do sistema</a>: MariaDB 10.6 ainda é compatível com 2.4.5-p16.</p>
 </td>
       <td>
         Técnico
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/173">pull request</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.pt-BR/pull/173">pull request</a></td>
     </tr>
   </tbody>
 </table>
@@ -315,7 +315,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69351">ACSD-69351: saldos de cartão-presente e datas de expiração exibidos em sites incorretos</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69351">ACSD-69351: saldos de cartão-presente e datas de expiração exibidos em sites incorretos</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -323,7 +323,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/092972cf6a0689b886e1729bb195bfc9cea7cb07">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67370">ACSD-67370: foram mostrados preços incorretos para os produtos Bundle em PDP/PLP e na página do carrinho para as lojas de várias moedas</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67370">ACSD-67370: foram mostrados preços incorretos para os produtos Bundle em PDP/PLP e na página do carrinho para as lojas de várias moedas</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -331,7 +331,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6be4fb9868ce348b9d7ab911b501807c2e9603a5">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Atualização das notas de versão do patch de segurança (2.4.4, 2.4.5, 2.4.6, 2.4.7) para referenciar os <a href="https://helpx.adobe.com/security/products/magento/apsb26-05.html">Adobe Security Bulletin APSB26-05</a>: <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4 patches</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5 patches</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6 patches</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7 patches</a>.</p>
+      <td><p>Atualização das notas de versão do patch de segurança (2.4.4, 2.4.5, 2.4.6, 2.4.7) para referenciar os <a href="https://helpx.adobe.com/br/security/products/magento/apsb26-05.html">Adobe Security Bulletin APSB26-05</a>: <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4 patches</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5 patches</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6 patches</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7 patches</a>.</p>
 </td>
       <td>
         Técnico
@@ -339,7 +339,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aca7de52b79acd844950e792430937795bd23eba">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">Referência CLI da Ferramenta de Compatibilidade de Atualização</a> para a versão 3.0.26: exemplos de comandos revisados e listas de versões disponíveis para <code class="language-plaintext highlighter-rouge">dbschema:diff</code> e <code class="language-plaintext highlighter-rouge">upgrade:check</code>.</p>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/uct">Referência CLI da Ferramenta de Compatibilidade de Atualização</a> para a versão 3.0.26: exemplos de comandos revisados e listas de versões disponíveis para <code class="language-plaintext highlighter-rouge">dbschema:diff</code> e <code class="language-plaintext highlighter-rouge">upgrade:check</code>.</p>
 </td>
       <td>
         Técnico
@@ -347,7 +347,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4fa8705ac5d11e6baf2e9fe250e4fc87a1327116">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Versão de 26 de março:<br />- Adição de destaques às <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">notas de versão do Adobe Commerce 2.4.9-beta1</a> para resumir as atualizações significativas incluídas na versão.<br />- Adição do aviso de Fim de Suporte (EOS) do MySQL 8.0 às notas de versão de patch de segurança para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7</a>, aconselhando os clientes locais a migrar para uma versão compatível do MariaDB antes de 30 de abril de 2026.<br />- Versão de patch de segurança <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p17">2.4.4-p17</a> documentada.<br />- Adicionada a referência de CLI <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises-beta">bin/magento (Adobe Commerce no local 2.4.9-beta1)</a> documentando todos os comandos, argumentos e opções disponíveis para a CLI no local 2.4.9-beta1.<br />- Atualizadas as notas de versão de patch de segurança com novas versões de patch e destaques: <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p16</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p14</a>, <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p9</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8-p4</a>.<br />- Atualizados <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">Requisitos do sistema</a> para Adobe Commerce 2.4.9 beta1 (substituindo colunas alfa por 2.4.9-beta1), versões de dependência atualizadas (PHP 8.5/8.4, AtiveMQ Artemis, AWS services) e versões de patch adicionadas 2.4, 2.4.7-p9, 2.4.6-p14, 2.4.5-p16 e 2.4.4-p17.<br />- Atualizado em <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Notas de versão do Adobe Commerce 2.4.9-beta1</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Notas de versão do Magento Open Source 2.4.9-beta1</a> com conteúdo de problemas corrigidos para beta1.<br />- Atualizado em <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Notas de versão do Adobe Commerce 2.4.9-beta1</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-9"> 2.4.9-notas de versão beta1</a> com destaques beta1, incluindo atualizações de estrutura (OpenSearch 3.x, Valkey 8.x, AtiveMQ, Composer, PHP 8.5), melhorias de segurança e ACL, envio (USPS, DHL), melhorias na Magento Open Source e outras alterações 2.4.9-beta1.</p>
+      <td><p>Versão de 26 de março:<br />- Adição de destaques às <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">notas de versão do Adobe Commerce 2.4.9-beta1</a> para resumir as atualizações significativas incluídas na versão.<br />- Adição do aviso de Fim de Suporte (EOS) do MySQL 8.0 às notas de versão de patch de segurança para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7</a>, aconselhando os clientes locais a migrar para uma versão compatível do MariaDB antes de 30 de abril de 2026.<br />- Versão de patch de segurança <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p17">2.4.4-p17</a> documentada.<br />- Adicionada a referência de CLI <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises-beta">bin/magento (Adobe Commerce no local 2.4.9-beta1)</a> documentando todos os comandos, argumentos e opções disponíveis para a CLI no local 2.4.9-beta1.<br />- Atualizadas as notas de versão de patch de segurança com novas versões de patch e destaques: <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p16</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p14</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p9</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8-p4</a>.<br />- Atualizados <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">Requisitos do sistema</a> para Adobe Commerce 2.4.9 beta1 (substituindo colunas alfa por 2.4.9-beta1), versões de dependência atualizadas (PHP 8.5/8.4, AtiveMQ Artemis, AWS services) e versões de patch adicionadas 2.4, 2.4.7-p9, 2.4.6-p14, 2.4.5-p16 e 2.4.4-p17.<br />- Atualizado em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Notas de versão do Adobe Commerce 2.4.9-beta1</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Notas de versão do Magento Open Source 2.4.9-beta1</a> com conteúdo de problemas corrigidos para beta1.<br />- Atualizado em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Notas de versão do Adobe Commerce 2.4.9-beta1</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/magento-open-source/2-4-9"> 2.4.9-notas de versão beta1</a> com destaques beta1, incluindo atualizações de estrutura (OpenSearch 3.x, Valkey 8.x, AtiveMQ, Composer, PHP 8.5), melhorias de segurança e ACL, envio (USPS, DHL), melhorias na Magento Open Source e outras alterações 2.4.9-beta1.</p>
 </td>
       <td>
         Atualização importante
@@ -355,7 +355,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e4cec53679d038d2324f89478c5495de98a29fb3">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Atualizadas as <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">versões lançadas</a> após a versão de março de 2026.</p>
+      <td><p>Atualizadas as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/versions">versões lançadas</a> após a versão de março de 2026.</p>
 </td>
       <td>
         Técnico
@@ -377,7 +377,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091">ACSD-67091: Catalog rule product index cleanup fails due to maximum writeset size during large deletions</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091">ACSD-67091: Catalog rule product index cleanup fails due to maximum writeset size during large deletions</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -385,7 +385,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/520273fb4c1b30e3f8b346f7079062cf9c8b37f3">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261">ACSD-69261: Single‑use cart coupon reused due to incorrect times_used handling in partial invoice and cancellation flows</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261">ACSD-69261: Single‑use cart coupon reused due to incorrect times_used handling in partial invoice and cancellation flows</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -407,7 +407,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541: Reducing a product's quantity in the admin to less than what already exists in a cart made it impossible to edit the product quantity in that cart via GraphQL</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541: Reducing a product's quantity in the admin to less than what already exists in a cart made it impossible to edit the product quantity in that cart via GraphQL</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -415,7 +415,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308: Catalog price rules did not apply when <code class="language-plaintext highlighter-rouge">special_price</code> was set only at the website level (not at "All Store Views"). After the fix, catalog price rules apply correctly by checking the website's default store first</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308: Catalog price rules did not apply when <code class="language-plaintext highlighter-rouge">special_price</code> was set only at the website level (not at "All Store Views"). After the fix, catalog price rules apply correctly by checking the website's default store first</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -423,7 +423,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/db07a5d6f991ff36536a4365ee88fa25062dbe43">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020: os produtos configuráveis aparecem nos carrosséis do Page Builder quando os produtos secundários correspondem aos filtros</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020: os produtos configuráveis aparecem nos carrosséis do Page Builder quando os produtos secundários correspondem aos filtros</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -431,7 +431,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5ce526100a22243b91f75b8a52690e529b64b152">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325">ACSD-69325: a modificação do caso SKU fez com que o produto parecesse indisponível na loja</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325">ACSD-69325: a modificação do caso SKU fez com que o produto parecesse indisponível na loja</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -439,7 +439,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bceda2e729082e0dc81f7eb81838ca5c5049342d">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Atualização de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">versões do Beta</a> com dois novos programas públicos beta: Regras de merchandising globalmente e por exibição de catálogo, e Recomendações de produto globalmente e por exibição de catálogo.</p>
+      <td><p>Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta">versões do Beta</a> com dois novos programas públicos beta: Regras de merchandising globalmente e por exibição de catálogo, e Recomendações de produto globalmente e por exibição de catálogo.</p>
 </td>
       <td>
         Atualização importante
@@ -461,7 +461,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129">ACSD-69129: a atualização de preço da camada da API REST falha após a exclusão do site base padrão e o uso do site secundário como padrão</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129">ACSD-69129: a atualização de preço da camada da API REST falha após a exclusão do site base padrão e o uso do site secundário como padrão</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -469,7 +469,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/06d33e9ed08e079365ac6ae6087e4bdf30bbf45e">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410">ACSD-68410: a finalização da cotação negociável inclui itens de carrinho de compras não desejados</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410">ACSD-68410: a finalização da cotação negociável inclui itens de carrinho de compras não desejados</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -477,7 +477,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/123a0b7c2335fd27d6c8fabbb8a6520af2ac0c76">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição de descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892">ACSD-68892: comportamento inconsistente de cache Fastly para páginas armazenáveis em cache</a>.</p>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892">ACSD-68892: comportamento inconsistente de cache Fastly para páginas armazenáveis em cache</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -499,7 +499,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687">ACSD-63687: preços incorretos são exibidos devido a problemas de limpeza do cache Redis</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687">ACSD-63687: preços incorretos são exibidos devido a problemas de limpeza do cache Redis</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -507,7 +507,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e8a9b37a61119e7604461c83f135a282b15a93ef">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664">ACSD-68664: a visualização de atualização agendada possui erros em domínios de repositório personalizados</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664">ACSD-68664: a visualização de atualização agendada possui erros em domínios de repositório personalizados</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -529,7 +529,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333">ACSD-69333: SKU changes allowed for products with an active Scheduled Update</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.76 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333">ACSD-69333: SKU changes allowed for products with an active Scheduled Update</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -551,7 +551,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.77 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311">ACSD-69311: Incorrect tax calculation in credit memos after partial refunds from invoices</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.77 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311">ACSD-69311: Incorrect tax calculation in credit memos after partial refunds from invoices</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -559,7 +559,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c6d81e7aeb4e2b4d2d5a140e9bf7b8c8ba5f5deb">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.77 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494">ACSD-69494: Async refund requests with is_online don't trigger online refunds</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.77 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494">ACSD-69494: Async refund requests with is_online don't trigger online refunds</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -567,7 +567,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29a5f90122336bde78ed00e778b43b7c56549eef">confirmar</a></td>
     </tr>
     <tr>
-      <td><p>Added detailed description of the QPT 1.1.77 fix for <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537">ACSD-68537: Checkout performance degrades with many customer segments</a>.</p>
+      <td><p>Added detailed description of the QPT 1.1.77 fix for <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537">ACSD-68537: Checkout performance degrades with many customer segments</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
@@ -589,7 +589,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341">ACSD-68341: várias atualizações de cookies X-Magento-Vary ocorrem na carga de PDP</a>.</p>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.77 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341">ACSD-68341: várias atualizações de cookies X-Magento-Vary ocorrem na carga de PDP</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
