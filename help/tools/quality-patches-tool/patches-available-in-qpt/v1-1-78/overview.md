@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3e003e0cf2428a5e6ec45292fa19aaa2b9e9324d
+source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 
 O QPT v1.1.78 inclui os seguintes patches:
 1. **ACP2E-4416**: corrige o problema em que os pontos de premiação do cliente não são inicializados quando criados no Administrador.
-1. **ACP2E-4419**: corrige o problema em que os cartões-presente não são aplicados corretamente no check-out após a validação bem-sucedida do reCAPTCHA v2 (&#39;Não sou um robô&#39;) na loja.
+1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)**: corrige o problema em que os cartões-presente não são aplicados corretamente no check-out após a validação bem-sucedida do reCAPTCHA v2 (&#39;Não sou um robô&#39;) na loja.
 1. **ACP2E-4431**: corrige o problema em que os Produtos Relacionados correspondentes às regras de destino são excluídos durante o processo de reindexação.
 1. **ACP2E-4448**: corrige o problema em que as alterações de configuração feitas durante as interrupções do Redis não são refletidas após a recuperação do Redis, fazendo com que valores obsoletos persistam.
 1. **ACP2E-4452**: corrige o problema em que os preços dos produtos na página Pedido Rápido incluem impostos, independentemente da configuração de exibição de imposto.
