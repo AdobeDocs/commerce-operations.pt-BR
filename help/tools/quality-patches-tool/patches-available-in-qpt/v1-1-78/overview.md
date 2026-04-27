@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
+source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -24,7 +24,7 @@ O QPT v1.1.78 inclui os seguintes patches:
 1. **ACP2E-4456**: corrige um problema em que cancelar um pedido usando uma mutação do GraphQL não faz a transição de um pedido pago inteiramente com cartões-presente para o status Fechado.
 1. **ACP2E-4507**: corrige o problema em que a configuração de Opções de Senha não é aplicada para solicitações de redefinição de senha do cliente feitas por meio de mutações do GraphQL.
 1. **ACP2E-4513**: corrige o problema em que imagens CAPTCHA expiradas não são excluídas do sistema.
-1. **ACP2E-4522**: corrige o problema em que um erro de chave duplicada intermitente ocorre na tabela quote_coupons quando várias solicitações de mesclagem de carrinho ou salvamento de cotação são executadas ao mesmo tempo.
+1. **[ACP2E-4522](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)**: corrige o problema em que um erro de chave duplicada intermitente ocorre na tabela quote_coupons quando várias solicitações de mesclagem de carrinho ou salvamento de cotação são executadas ao mesmo tempo.
 1. **ACP2E-4528**: corrige o problema na validação da cidade em endereços de clientes, o que agora permite um caractere de barra (/) e rejeita caracteres inválidos, como !, &quot;, # e ?.
 1. **ACP2E-4535**: corrige um problema em que o envio do formulário de esqueci a senha faz com que a sessão seja destruída ou gerada novamente (alterações de PHPSESSID) e o carrinho de convidado é limpo.
 1. **ACP2E-4540**: corrige o problema em que a biblioteca Fotorama não estava carregando corretamente, fazendo com que apenas a primeira imagem anexada ficasse visível.
