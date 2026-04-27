@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0494717c06fcabcb093a2b168ae714f773ed6f7b
+source-git-commit: f0aa5266d54a205cba36d9015fe9ed5dca50b599
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O QPT v1.1.78 inclui os seguintes patches:
 1. **ACP2E-4528**: corrige o problema na validação da cidade em endereços de clientes, o que agora permite um caractere de barra (/) e rejeita caracteres inválidos, como !, &quot;, # e ?.
 1. **ACP2E-4535**: corrige um problema em que o envio do formulário de esqueci a senha faz com que a sessão seja destruída ou gerada novamente (alterações de PHPSESSID) e o carrinho de convidado é limpo.
 1. **ACP2E-4540**: corrige o problema em que a biblioteca Fotorama não estava carregando corretamente, fazendo com que apenas a primeira imagem anexada ficasse visível.
-1. **ACP2E-4555**: corrige o problema em que números de telefone modernos contendo &quot;.&quot; ou &quot;/&quot; não são validados corretamente.
+1. **[ACP2E-4555](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)**: corrige o problema em que números de telefone modernos contendo &quot;.&quot; ou &quot;/&quot; não são validados corretamente.
 1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: corrige o problema em que a consulta do GraphQL da Empresa retorna &quot;O cliente atual não está autorizado&quot; quando o cabeçalho X-Adobe-Company é usado.
 1. **ACP2E-4591**: corrige o problema em que os segmentos de clientes baseados na contagem de pedidos, como &quot;Compradores pela primeira vez&quot;, não eram atualizados quando os pedidos eram feitos por meio da API REST.
 1. **ACP2E-4609**: corrige o problema em que a página Minhas Cotações não mostra cotações quando algumas cotações contêm produtos excluídos.
