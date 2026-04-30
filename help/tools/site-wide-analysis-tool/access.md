@@ -2,9 +2,9 @@
 title: Como acessar [!DNL Site-Wide Analysis Tool]
 description: Saiba como acessar o painel da Ferramenta de análise do site no Painel de administração do Adobe Commerce. Descubra as permissões de usuário e os requisitos de função.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: d75d8fe87b5bf5cf5cd1d5a15371a456b82f18db
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Você pode acessar o painel [!DNL Site-Wide Analysis Tool] no [!UICONTROL Admin Panel] da sua loja.
 
-O serviço [!DNL Site-Wide Analysis Tool] está disponível no [modo de produção](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/developer-tools#operation-modes) para [!UICONTROL Admin] usuários com permissão para acessar os [recursos de função](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/user-accounts/permissions-user-roles) do usuário.
+O serviço [!DNL Site-Wide Analysis Tool] está disponível no [modo de produção](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) para [!UICONTROL Admin] usuários com permissão para acessar os [recursos de função](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) do usuário.
 
 >[!NOTE]
 >
@@ -25,14 +25,13 @@ O serviço [!DNL Site-Wide Analysis Tool] está disponível no [modo de produç�
 
 >[!NOTE]
 >
->Sua conta deve ter direito a **[!DNL Support Permissions]** para acessar o [!DNL Site-Wide Analysis Tool Dashboard].
->&#x200B;>Veja mais detalhes em [Compartilhar uma [!DNL Commerce] conta](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html?lang=pt-BR) em nosso guia do usuário.
+>Para acessar a Ferramenta de análise do site (SWAT), os usuários devem ter as permissões necessárias no Adobe Commerce Admin. O acesso direto ao URL do SWAT, incluindo links marcados, não é suportado.
 
 ## Fazendo logon em [!DNL Site-Wide Analysis Tool Dashboard] a partir da [!UICONTROL Admin Panel] do seu armazenamento
 
 ### Etapa 1: verificar permissões
 
-Verifique se a conta de usuário [!UICONTROL Admin] tem permissão para acessar [!DNL Site-Wide Analysis Tool] por meio de sua [função de usuário atribuída](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
+Verifique se a conta de usuário [!UICONTROL Admin] tem permissão para acessar [!DNL Site-Wide Analysis Tool] por meio de sua [função de usuário atribuída](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
 
 >[!IMPORTANT]
 >
@@ -51,7 +50,7 @@ Para a função personalizada que precisa de acesso de [!DNL Site-Wide Analysis 
 
 >[!NOTE]
 >
->Se você tiver verificado que a conta de usuário tem permissão para acessar o [!DNL Site-Wide Analysis Tool] e o usuário receber um erro 403 ao tentar acessar a ferramenta a partir do [!UICONTROL Admin], sua instância do Adobe Commerce na infraestrutura em nuvem poderá ter o controle de acesso HTTP habilitado. O Painel [!DNL Site-Wide Analysis Tool] NÃO é suportado se a Autenticação HTTP estiver habilitada. Para obter mais informações sobre como resolver esse problema, consulte nosso [Artigo de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
+>Se você tiver verificado que a conta de usuário tem permissão para acessar o [!DNL Site-Wide Analysis Tool] e o usuário receber um erro 403 ao tentar acessar a ferramenta a partir do [!UICONTROL Admin], sua instância do Adobe Commerce na infraestrutura em nuvem poderá ter o controle de acesso HTTP habilitado. O Painel [!DNL Site-Wide Analysis Tool] NÃO é suportado se a Autenticação HTTP estiver habilitada. Para obter mais informações sobre como resolver esse problema, consulte nosso [Artigo de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
 
 ### Etapa 2: acessar [!DNL Site-Wide Analysis Tool]
 
