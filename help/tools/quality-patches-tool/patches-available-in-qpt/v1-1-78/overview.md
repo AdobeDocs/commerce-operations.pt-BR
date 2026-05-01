@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: e0111754306fc220ba7eacf3590b70bcc048f34f
+source-git-commit: f78520918618a750cdca062a0543eb4821dfc525
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,7 @@ O QPT v1.1.78 inclui os seguintes patches:
 1. **ACP2E-4609**: corrige o problema em que a página Minhas Cotações não mostra cotações quando algumas cotações contêm produtos excluídos.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)**: corrige o problema em que grandes estruturas de diretório de mídia causavam respostas gettree lentas, resultando em tempos de carregamento estendidos para a árvore de diretório **[!UICONTROL Media Gallery]**.
 1. **ACP2E-4628**: corrige o problema em que importar clientes com endereços de email em maiúsculas resulta no erro de chave de matriz indefinida, quando o Compartilhamento de Conta está definido como Global.
+1. **[ACP2E-4665](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665.md)**: corrige o problema em que produtos derivados de produtos configuráveis contendo vídeos nas galerias de produtos não são listados quando solicitados por meio da API REST.
 1. **ACP2E-4665**: corrige o problema em que produtos derivados de produtos configuráveis contendo vídeos nas galerias de produtos não são listados quando solicitados por meio da API REST.
 1. **ACP2E-4732**: corrige um problema em que a indexação parcial era interrompida para clientes com um grande número de atualizações quando a coluna version_id na tabela changelog atingia seu valor máximo.
 1. **ACP2E-4763**: corrige o problema em que a consulta customerOrders do GraphQL retorna valores inflados de original_price_inclusion_tax e original_row_total_inclusion_tax quando os Preços do catálogo estão definidos como Imposto incluso, devido ao imposto ser aplicado duas vezes.
