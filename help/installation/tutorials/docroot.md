@@ -3,9 +3,9 @@ title: Modifique docroot para melhorar a segurança
 description: Impeça o acesso não autorizado baseado em navegador ao sistema de arquivos local da Adobe Commerce.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ O nome e o local do arquivo de host virtual dependem da versão do Apache que vo
 1. Faça logon no servidor de aplicativos.
 1. Edite seu arquivo de host virtual:
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -92,11 +92,11 @@ O nome e o local do arquivo de host virtual dependem da versão do Apache que vo
 
 1. Reiniciar o Apache:
 
-   ```bash
+   ```shell
    systemctl restart apache2
    ```
 
-## &#x200B;2. Atualize seu URL base
+## &#x200B;2. Atualizar o URL de base
 
 Se você anexou um nome de diretório ao nome de host ou endereço IP do servidor para criar a URL base quando instalou o aplicativo (por exemplo, `http://192.168.33.10/magento2`), é necessário removê-la.
 
@@ -106,7 +106,7 @@ Se você anexou um nome de diretório ao nome de host ou endereço IP do servido
 
 1. Fazer logon no banco de dados:
 
-   ```bash
+   ```shell
    mysql -u <user> -p
    ```
 
@@ -143,28 +143,28 @@ Alternar entre os modos é uma etapa importante para verificar se a configuraç�
 1. Vá para o diretório de instalação.
 1. Alternar para o modo `production`.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Atualize o navegador e verifique se a loja é exibida corretamente.
 1. Alternar para o modo `developer`.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Atualize o navegador e verifique se a loja é exibida corretamente.
 
-## &#x200B;5. Verifique a vitrine
+## &#x200B;5. Verifique a loja
 
 Acesse a loja em um navegador da Web para verificar se tudo está funcionando.
 

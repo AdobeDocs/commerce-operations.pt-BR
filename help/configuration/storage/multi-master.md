@@ -1,11 +1,11 @@
 ---
 title: Solução de desempenho de banco de dados dividido
-description: Leia sobre a solução de banco de dados dividido para o Adobe Commerce.
+description: Saiba mais sobre a solução de desempenho de banco de dados dividido para o Adobe Commerce, separando check-out, pedidos e produtos mestres para escalabilidade local.
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---

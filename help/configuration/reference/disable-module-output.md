@@ -2,9 +2,9 @@
 title: Desabilitar saída do módulo
 description: Saiba como desativar a saída do módulo no Adobe Commerce sem remover dependências. Descubra as etapas de configuração e os casos de uso.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,10 @@ A desabilitação de saída é executada nas seguintes classes:
 
 Para desativar a saída do módulo na implantação do pipeline ou qualquer outra implantação, com várias instâncias do aplicativo do Commerce:
 
-1. Edite o arquivo `Backend` do módulo `config.xml`.
+1. Edite o arquivo `config.xml` do módulo `Backend`.
 1. Exporte as alterações de configuração.
 
-### Editar o arquivo `Backend` do módulo `config.xml`
+### Editar o arquivo `config.xml` do módulo `Backend`
 
 1. Arquivar o arquivo `config.xml` original.
 1. Adicione linhas semelhantes às seguintes ao arquivo `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml`, diretamente sob o elemento `<default>`:
@@ -60,7 +60,7 @@ Como resultado de exemplo dessa configuração, os clientes não podem mais se i
 
 Execute o seguinte comando para exportar as alterações de configuração:
 
-```bash
+```shell
 bin/magento app:config:dump
 ```
 
@@ -68,7 +68,7 @@ Os resultados são gravados no arquivo `<Magento_install_dir>/app/etc/config.php
 
 Em seguida, limpe o cache para ativar a nova configuração:
 
-```bash
+```shell
 bin/magento cache:clean config
 ```
 

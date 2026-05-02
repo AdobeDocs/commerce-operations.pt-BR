@@ -2,9 +2,9 @@
 title: Atualizar módulos e extensões
 description: Use a interface de linha de comando e o Composer para atualizar módulos e extensões do Adobe Commerce.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -21,39 +21,39 @@ Para atualizar ou atualizar um módulo ou uma extensão:
 
    Atualizar por nome de módulo:
 
-   ```bash
+   ```shell
    composer update vendor/module-name
    ```
 
    Atualizar por versão:
 
-   ```bash
+   ```shell
    composer require vendor/module-name ^x.x.x
    ```
 
 1. Execute os seguintes comandos para atualizar, implantar e limpar o cache.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade --keep-generated
    ```
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 ## VBEs (Vendor bundled extensions)
 
-O Adobe removeu todos os [VBEs](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/upgrade-guide/modules/upgrade) na versão 2.4.4. Os fornecedores continuam a oferecer suporte a essas extensões no Adobe Commerce Marketplace.
+O Adobe removeu todos os [VBEs](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade) na versão 2.4.4. Os fornecedores continuam a oferecer suporte a essas extensões no Adobe Commerce Marketplace.
 
 Se quiser continuar usando essas extensões com o Adobe Commerce 2.4.4 e posterior, atualize as dependências de pacote correspondentes no arquivo `composer.json` _antes_ de atualizar para a versão 2.4.4. Entre em contato com o fornecedor para obter o nome e a versão do pacote que serão usados.
 
 Consulte as seguintes listagens do Adobe Commerce Marketplace para obter mais informações:
 
-- [Pagamento do Amazon](https://commercemarketplace.adobe.com//amzn-amazon-pay-magento-2-module.html)
+- [Amazon Pay](https://commercemarketplace.adobe.com//amzn-amazon-pay-magento-2-module.html)
 - [Dotdigital](https://commercemarketplace.adobe.com//dotdigital-dotdigital-magento2-os-package.html)
 - [Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)
 - [Vértice](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)

@@ -4,10 +4,10 @@ description: Saiba mais sobre as práticas recomendadas de implementação para 
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 2%
+source-wordcount: '363'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 | Prática recomendada | Descrição |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Compilações e implantação](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=pt-BR){target="_blank"} | Descreve as práticas recomendadas para os estágios de criação e implantação do Adobe Commerce em projetos de infraestrutura em nuvem |
+| [Compilações e implantação](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Descreve as práticas recomendadas para os estágios de criação e implantação do Adobe Commerce em projetos de infraestrutura em nuvem |
 | Depuração | Depurar a estrutura do Adobe Commerce de forma sistemática e eficaz |
 | [Implantação de conteúdo estático](static-content-deployment.md) | Evite problemas com o conteúdo estático que não aparece em sua loja |
 | [Solução de problemas](troubleshooting.md) | Solução de problemas comuns de implementação do Adobe Commerce |
@@ -65,7 +65,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 | Prática recomendada | Descrição |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Desenvolvimento de tema](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Descreve padrões de desenvolvimento para ajudar a garantir a compatibilidade entre o tema, versões futuras do Adobe Commerce e extensões personalizadas |
+| [Desenvolvimento de tema](https://developer.adobe.com/commerce/frontend-core/guide/best-practices){target="_blank"} | Descreve padrões de desenvolvimento para ajudar a garantir a compatibilidade entre o tema, versões futuras do Adobe Commerce e extensões personalizadas |
 
 ## Desenvolvimento em PHP
 

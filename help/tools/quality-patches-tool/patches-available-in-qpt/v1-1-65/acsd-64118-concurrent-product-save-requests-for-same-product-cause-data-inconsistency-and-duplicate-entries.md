@@ -5,9 +5,9 @@ feature: REST
 role: Admin, Developer
 type: Troubleshooting
 exl-id: e014645e-72b2-4b3d-8b44-3daca502c950
-source-git-commit: 5c84dc5c27f6e57b4116bc1a3d4fb001b55b63f1
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O patch ACSD-64118 corrige o problema em que solicitações simultâneas para sa
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -38,7 +38,7 @@ Solicitações simultâneas para salvar e atualizar o mesmo produto resultam em 
 
 1. Configurar vários processos para consumidores em `env.php`:
 
-   ```
+   ```text
    'multiple_processes' =>
        array (
            'async.operations.all' => 4,
@@ -48,7 +48,7 @@ Solicitações simultâneas para salvar e atualizar o mesmo produto resultam em 
 1. Adicione uma loja adicional e uma nova loja ao site principal.
 1. Envie uma solicitação de API em massa para o ponto de extremidade de storeview padrão `/rest/default/async/bulk/V1/products` com a seguinte carga para criar um produto:
 
-   ```
+   ```text
    [
      {
        "product": {
@@ -79,7 +79,7 @@ Várias entradas para o mesmo SKU estão presentes na tabela `catalog_product_en
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

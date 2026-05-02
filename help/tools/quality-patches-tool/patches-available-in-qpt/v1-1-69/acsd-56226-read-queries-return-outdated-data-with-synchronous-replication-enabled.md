@@ -4,13 +4,13 @@ description: Aplique o patch ACSD-56226 para corrigir o problema do Adobe Commer
 feature: System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a45cef14b7b37f1112d2ef82adf29b09d63b8e2b
+exl-id: 5ad0e884-decb-4e09-b5b3-b38a9953a4b8
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-56226: consultas READ retornam dados desatualizados com `synchronous_replication` ativado
 
@@ -28,7 +28,7 @@ O patch ACSD-56226 corrige o problema em que as consultas READ retornam dados de
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -39,7 +39,7 @@ AS consultas READ retornam dados desatualizados quando o sinalizador `synchronou
 1. Defina `MYSQL_USE_SLAVE_CONNECTION` como *true* nas variáveis de ambiente do Adobe Commerce na infraestrutura de nuvem.
 1. Adicionar a seguinte configuração a `.magento.env.yaml` para definir `synchronous_replication` como *false*:
 
-   ```
+   ```text
    DATABASE_CONFIGURATION:
      _merge: true
      slave_connection:
@@ -62,7 +62,7 @@ A conexão subordinada está desabilitada quando `synchronous_replication` está
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

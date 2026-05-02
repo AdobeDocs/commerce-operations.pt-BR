@@ -4,10 +4,10 @@ description: Conheça as práticas recomendadas para configurar blocos de conte�
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 1%
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Em vez de usar a variável `_isScopePrivate` para conteúdo privado, crie um blo
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -31,4 +31,4 @@ Sites que têm blocos de conteúdo privado contendo as variáveis `_isScopePriva
 ## Informações adicionais
 
 - [Conteúdo privado](../../../performance/configuration.md#client-side-optimization-settings)
-- [Solicitações de AJAX de alta taxa de transferência causam desempenho insatisfatório](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=pt-BR)
+- [Blocos Armazenáveis em Cache e Privados](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#cacheable-and-private-blocks) em _[!DNL Commerce PHP Extensions Guide]_

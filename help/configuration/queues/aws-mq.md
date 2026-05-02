@@ -1,10 +1,10 @@
 ---
 title: Configurar Fila de Mensagens do Amazon
-description: Saiba como configurar o Commerce para usar o serviço AWS MQ.
+description: Saiba como configurar as filas de mensagens do Adobe Commerce para o Amazon MQ em env.php, incluindo os requisitos SSL e TLS para conexões AMQP prontas para nuvem.
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Onde:
 
 Após editar o arquivo `env.php`, execute o seguinte comando para concluir a instalação:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -82,7 +82,7 @@ Para testar o envio de mensagens do Commerce para [!DNL RabbitMQ]:
 
 1. Iniciar o consumidor da fila de mensagens `async.operations.all`.
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:start async.operations.all
    ```
 

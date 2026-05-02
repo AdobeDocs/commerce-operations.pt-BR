@@ -1,14 +1,14 @@
 ---
 title: Título do tópico de práticas recomendadas
-description: Saiba como...
+description: Saiba como aplicar esse modelo de tópico de práticas recomendadas ao criar novas orientações operacionais do Adobe Commerce para o Experience League.
 role: Developer
 feature: Best Practices
 hide: true
 hidefromtoc: true
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 2%
+source-wordcount: '107'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,7 @@ Template instruction: Add details for the product and versions where the best pr
 
 <!-- Example 1: -->
 
-[Todas as versões &#x200B;](../../release/versions.md) com suporte de:
+[Todas as versões ](../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -47,7 +47,7 @@ Template instruction: Add details for the product and versions where the best pr
 
 Adobe Commerce na infraestrutura em nuvem com o Adobe Commerce versão 2.3.4 ou anterior e o MariaDB versão 10.0 ou anterior.
 
-&lt;!— Tipo de negócio: B2C e B2B — especificar apenas se necessário/)—>
+&lt;!— Tipo de negócios: B2C e B2B — especifique somente se necessário/)—>
 
 ## Cabeçalho ...
 

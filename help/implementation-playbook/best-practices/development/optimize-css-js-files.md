@@ -4,9 +4,9 @@ description: Saiba como mesclar e minificar arquivos CSS e JavaScript (JS) para 
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: a08560eb307638a36fdc52224c41bdf2c5d47763
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Para habilitar a mesclagem de CSS no Adobe Commerce na infraestrutura em nuvem:
 
 1. Execute este comando localmente:
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/css/merge_css_files 1
    ```
 
@@ -55,7 +55,7 @@ Para ativar a minificação CSS no Adobe Commerce na infraestrutura em nuvem:
 
 1. Execute este comando localmente:
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/css/minify_files 1
    ```
 
@@ -73,7 +73,7 @@ Para ativar a minificação de JS no Adobe Commerce na infraestrutura em nuvem:
 
 1. Execute este comando localmente:
 
-   ```bash
+   ```shell
    bin/magento config:set --lock-config dev/js/minify_files 1
    ```
 
@@ -89,7 +89,7 @@ Você pode habilitar o agrupamento no Commerce [!UICONTROL Admin]: **[!UICONTROL
 
 Você também pode ativar o agrupamento Adobe Commerce incorporado (agrupamento básico) na linha de comando:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
@@ -105,6 +105,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 - [Configurações de otimização do lado do cliente](../../../performance/configuration.md#client-side-optimization-settings)
 - [Dicas de agrupamento](../../../performance/configuration.md#bundling-tips) em *Práticas recomendadas de configuração*—ferramentas de agrupamento de terceiros, HTTP/2 e orientações sobre mesclagem de JS e CSS obsoletos
-- [Guia do usuário: otimizar arquivos de recursos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [Guia do usuário: otimizar arquivos de recursos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [Guia do desenvolvedor de front-end: mesclagem de CSS, minificação e desempenho do site](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Agrupamento avançado do JavaScript](../../../performance/advanced-js-bundling.md)

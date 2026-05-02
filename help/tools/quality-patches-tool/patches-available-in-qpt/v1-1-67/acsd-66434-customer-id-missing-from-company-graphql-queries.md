@@ -5,9 +5,9 @@ feature: B2B, GraphQL
 role: Admin, Developer
 type: Troubleshooting
 exl-id: cd83c868-29d8-4d7c-9067-af7597056d35
-source-git-commit: e60194341bf79ca3ecdc505cf30f226b8f1b6c7f
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O patch ACSD-66434 corrige o problema em que **[!UICONTROL Customer ID]** está 
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -40,7 +40,7 @@ A consulta de empresa [!DNL GraphQL] retorna `null` para **[!UICONTROL Customer 
 1. No Administrador do Commerce, ative os recursos B2B e crie uma empresa de teste.
 1. Gere um token de portador para o administrador da empresa usando a seguinte mutação [!DNL GraphQL]:
 
-```
+```graphql
 mutation {
   generateCustomerToken(email: "admin_email@example.com", password: "admin_password") {
     token
@@ -50,7 +50,7 @@ mutation {
 
 1. Use o token gerado para recuperar a estrutura da empresa do cliente com a seguinte consulta [!DNL GraphQL]:
 
-```
+```graphql
 query {
   company {
     id
@@ -87,7 +87,7 @@ query {
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

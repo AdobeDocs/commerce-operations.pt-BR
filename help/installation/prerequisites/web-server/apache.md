@@ -2,11 +2,11 @@
 title: Instalar o Apache para implantações locais
 description: Saiba como instalar e configurar o Apache para implantações locais do Adobe Commerce. Ative os módulos, as substituições e as configurações ".htaccess" necessários.
 feature: Install, Configuration
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Use esta seção para habilitar regravações do Apache e configurar o [arquivo 
 
 1. Habilite o módulo de regravação do Apache:
 
-   ```bash
+   ```shell
    a2enmod rewrite
    ```
 
@@ -72,7 +72,7 @@ Use esta seção para habilitar regravações do Apache e configurar o [arquivo 
 
 1. Reinicie o Apache para aplicar as alterações:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -91,7 +91,7 @@ O Adobe Commerce requer que os seguintes módulos do Apache sejam instalados:
 
 Para verificar se o Apache está instalado e visualizar a versão atual, insira:
 
-```bash
+```shell
 apache2 -v
 ```
 
@@ -120,13 +120,13 @@ Ao configurar regravações do servidor Apache, você deve especificar o tipo de
 
 1. Instale o Apache se ainda não tiver feito isso:
 
-   ```bash
+   ```shell
    apt-get -y install apache2
    ```
 
 1. Verifique a instalação:
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
@@ -149,7 +149,7 @@ Se o Apache já estiver instalado e você estiver usando uma versão anterior ao
 
 1. Atualizar informações do pacote:
 
-   ```bash
+   ```shell
    apt-get -y update
    ```
 
@@ -157,7 +157,7 @@ Se o Apache já estiver instalado e você estiver usando uma versão anterior ao
 
 1. Instalar ou atualizar o Apache:
 
-   ```bash
+   ```shell
    apt-get install -y apache2
    ```
 
@@ -167,7 +167,7 @@ Se o Apache já estiver instalado e você estiver usando uma versão anterior ao
 
 1. Verifique a instalação:
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
@@ -179,7 +179,7 @@ Se o Apache já estiver instalado e você estiver usando uma versão anterior ao
 
 1. Abra o arquivo `/etc/apache2/sites-available/000-default.conf` para edição:
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -206,17 +206,17 @@ Se o Apache já estiver instalado e você estiver usando uma versão anterior ao
 
 1. Configure o Apache para usar o módulo `mod_rewrite`:
 
-   ```bash
+   ```shell
    cd /etc/apache2/mods-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s ../mods-available/rewrite.load
    ```
 
 1. Reinicie o Apache para aplicar as alterações:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -238,13 +238,13 @@ Ao configurar regravações do servidor Apache, você deve especificar o tipo de
 
 1. Instale o Apache se ainda não tiver feito isso.
 
-   ```bash
+   ```shell
    yum -y install httpd
    ```
 
 1. Verifique a instalação:
 
-   ```bash
+   ```shell
    httpd -v
    ```
 
@@ -265,7 +265,7 @@ Ao configurar regravações do servidor Apache, você deve especificar o tipo de
 
 1. Abra o arquivo `/etc/httpd/conf/httpd.conf` para edição:
 
-   ```bash
+   ```shell
    vim /etc/httpd/conf/httpd.conf
    ```
 
@@ -296,7 +296,7 @@ Ao configurar regravações do servidor Apache, você deve especificar o tipo de
 
 1. Para aplicar as configurações do Apache, reinicie o Apache.
 
-   ```bash
+   ```shell
    systemctl restart httpd
    ```
 

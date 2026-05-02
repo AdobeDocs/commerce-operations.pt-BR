@@ -4,9 +4,9 @@ description: Saiba como definir configurações de banco de dados e aplicativo p
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
@@ -53,15 +53,15 @@ O mecanismo de pesquisa usado depende da versão do Adobe Commerce na nuvem inst
 
 Para determinar qual mecanismo de pesquisa está em uso no momento, execute o seguinte comando:
 
-```bash
+```shell
 ./bin/magento config:show catalog/search/engine
 ```
 
 Para obter instruções de configuração, consulte o Guia do desenvolvedor do Adobe Commerce na nuvem:
 
-- [Configurar o serviço OpenSearch](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [Configurar o serviço OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Configurar o serviço Elasticsearch](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Configurar o serviço Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Evitar acionadores personalizados
 
@@ -76,14 +76,14 @@ Para saber mais sobre alternativas ao uso de acionadores personalizados, consult
 
 ## Atualizar [!DNL ECE-Tools] para a versão 2002.0.21 ou superior {#ece-tools-version}
 
-Para evitar possíveis problemas com bloqueios do cron, atualize as ECE-Tools para a versão 2002.0.21 ou superior. Para obter instruções, consulte [Atualizar `ece-tools` versão](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) na documentação do desenvolvedor.
+Para evitar possíveis problemas com bloqueios do cron, atualize as ECE-Tools para a versão 2002.0.21 ou superior. Para obter instruções, consulte [Atualizar `ece-tools` versão](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) na documentação do desenvolvedor.
 
 ## Alternar modo indexador com segurança
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 Alternar indexadores gera instruções [!DNL data definition language] (DDL) para criar disparadores que podem causar bloqueios de banco de dados. Você pode evitar esse problema colocando o site no modo de manutenção e desabilitando os trabalhos cron antes de alterar a configuração.
-Para obter instruções, consulte [Configurar indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=pt-BR#configure-indexers-1) no *Guia de Configuração do Adobe Commerce*.
+Para obter instruções, consulte [Configurar indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) no *Guia de Configuração do Adobe Commerce*.
 
 ## Não executar instruções DDL na Produção
 
@@ -95,10 +95,10 @@ Se você precisar executar uma instrução DDL, coloque o site no modo de manute
 
 Ative o arquivamento de pedidos do administrador para reduzir o espaço necessário para tabelas de vendas à medida que os dados de pedidos aumentam. O arquivamento economiza espaço em disco do MySQL e melhora o desempenho do check-out.
 
-Consulte [Habilitar arquivamento](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=pt-BR) na documentação do Adobe Commerce Merchant.
+Consulte [Habilitar arquivamento](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) na documentação do Adobe Commerce Merchant.
 
 ## Informações adicionais
 
-- [Mecanismos de Armazenamento MySQL](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
+- [Mecanismos de armazenamento MySQL](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Pré-requisitos de atualização do Adobe Commerce 2.3.5 para MariaDB](../maintenance/mariadb-upgrade.md)
 - [Práticas recomendadas para resolver problemas de desempenho do banco de dados](../maintenance/resolve-database-performance-issues.md)

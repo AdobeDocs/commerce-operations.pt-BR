@@ -2,9 +2,9 @@
 title: Comandos comuns
 description: Saiba mais sobre comandos comuns da CLI do Adobe Commerce e seus exemplos de uso. Descubra as ferramentas essenciais de linha de comando para desenvolvimento e administração.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ Veja a seguir um resumo de alguns dos comandos disponíveis.
 
 **Para exibir uma lista completa de comandos**:
 
-```bash
+```shell
 bin/magento list
 ```
 
 Exemplo de comando de ajuda:
 
-```bash
+```shell
 bin/magento help <command>
 ```
 
-```bash
+```shell
 bin/magento help cache:enable
 ```
 
@@ -47,7 +47,7 @@ Os comandos são exibidos somente na forma de resumo; para obter mais informaç�
 | [`magento sampledata:install`](../../installation/sample-data/overview.md) | Instala dados de amostra opcionais após a instalação do aplicativo Commerce.<br><br>Para obter mais detalhes sobre dados de exemplo, consulte [Dados de exemplo opcionais](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Gerencia configurações de backend |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Cria/edita/desbloqueia usuários administradores. |
-| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Habilita/desabilita as dicas do modelo de desenvolvedor. |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug) | Habilita/desabilita as dicas do modelo de desenvolvedor. |
 
 ## Argumentos comuns
 

@@ -2,9 +2,9 @@
 title: Compilador de código
 description: Saiba como executar o compilador de código Adobe Commerce a partir da linha de comando. Descubra processos de compilação e técnicas de otimização.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Você pode encontrar classes de compilação de código no namespace [\Magento\S
 
 Para executar o compilador de locatário único:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```
+```text
 Generated code and dependency injection configuration successfully.
 ```
 
@@ -40,7 +40,7 @@ Em alguns casos, convém compilar o código antes de instalar o aplicativo do Co
 
 1. Habilite os módulos.
 
-   ```bash
+   ```shell
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
@@ -50,11 +50,11 @@ Em alguns casos, convém compilar o código antes de instalar o aplicativo do Co
 
 1. Compile o código.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
-   ```
+   ```text
    Generated code and dependency injection configuration successfully.
    ```
 

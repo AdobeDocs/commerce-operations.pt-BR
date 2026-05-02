@@ -2,9 +2,9 @@
 title: Dicionários de tradução e pacotes de idiomas
 description: Saiba como gerar dicionários de tradução e criar pacotes de idioma para o Adobe Commerce. Descubra a localização e a configuração da loja multilíngue.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1513'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ Para gerar o dicionário e iniciar a tradução:
 
 1. Você pode criar um pacote dos dicionários de tradução em um pacote de idiomas e fornecer o pacote ao administrador da loja da Commerce.
 
-1. No Admin, o administrador de armazenamento [configura as traduções](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. No Admin, o administrador de armazenamento [configura as traduções](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Opções de comando:
 
-```bash
+```shell
 bin/magento i18n:collect-phrases [-o|--output="<csv file path and name>"] [-m|--magento] <path to directory to translate>
 ```
 
@@ -48,7 +48,7 @@ A tabela a seguir explica os parâmetros e valores:
 | Parâmetro | Valor | Obrigatório? |
 |--- |--- |--- |
 | `<path to directory to translate>` | Caminho para um diretório que tem código traduzível; em outras palavras, arquivos PHP, PHTML ou XML que têm frases a serem traduzidas.<br><br>A ferramenta inicia a pesquisa no caminho inserido e pesquisa todos os arquivos e subdiretórios que ela contém.<br><br>Não use este parâmetro se você usar `-m --magento`. | Sim (dicionários), não (pacotes). |
-| `-m --magento` | Obrigatório para criar um pacote de idioma a partir deste dicionário de tradução. Se usado, pesquisa os diretórios que contêm bin/magento. Essa opção adiciona temas ou módulos a cada linha do dicionário.<br><br>Este é um exemplo:<br><br>&quot;Nenhum item encontrado&quot;,&quot;Nenhum item encontrado&quot;,módulo,Magento_Wishlist | Não |
+| `-m --magento` | Obrigatório para criar um pacote de idioma a partir deste dicionário de tradução. Se usado, pesquisa os diretórios que contêm bin/magento. Esta opção adiciona temas ou módulos a cada linha do dicionário.<br><br>Um exemplo a seguir:<br><br>&quot;Nenhum item encontrado&quot;,&quot;Nenhum item encontrado&quot;,módulo,Magento_Wishlist | Não |
 | `-o --output="<path>"` | Especifica o caminho absoluto do sistema de arquivos e o nome do arquivo CSV do dicionário de tradução a ser criado. O valor inserido diferencia maiúsculas de minúsculas. O nome do arquivo CSV deve corresponder exatamente ao nome da localidade, incluindo a caixa dos caracteres.<br><br>Se você omitir este parâmetro, a saída será direcionada para stdout. | Não |
 
 >[!INFO]
@@ -98,7 +98,7 @@ Esta seção discute como criar um pacote de linguagem, que grava arquivos CSV e
 
 Uso do comando:
 
-```bash
+```shell
 bin/magento i18n:pack [-m|--mode={merge|replace}] [-d|--allow-duplicates] <source> <locale>
 ```
 
@@ -213,7 +213,7 @@ Para adicionar uma tradução em alemão a um módulo ou tema que deseja distrib
 
 1. Colete frases do módulo:
 
-   ```bash
+   ```shell
    bin/magento i18n:collect-phrases -o "/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n/xx_YY.csv" /var/www/html/magento2/app/code/ExampleCorp/SampleModule
    ```
 
@@ -230,7 +230,7 @@ Semelhante ao exemplo anterior, gere um arquivo CSV, mas em vez de especificar u
 
 1. Colete frases do módulo:
 
-   ```bash
+   ```shell
    bin/magento i18n:collect-phrases -o "/var/www/html/magento2/xx_YY.csv" -m
    ```
 
@@ -241,7 +241,7 @@ Semelhante ao exemplo anterior, gere um arquivo CSV, mas em vez de especificar u
 1. Traduza as palavras e frases usando [estas diretrizes](#translation-guidelines).
 1. Crie o pacote de idioma.
 
-   ```bash
+   ```shell
    bin/magento i18n:pack /var/www/html/magento2/xx_YY.csv -d xx_YY
    ```
 

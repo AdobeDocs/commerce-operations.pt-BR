@@ -3,9 +3,9 @@ title: Configuração do mecanismo de pesquisa
 description: Configure um mecanismo de pesquisa para implantações locais do Adobe Commerce.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ Esta seção discute as configurações mínimas que você deve escolher para te
 >[!TIP]
 >
 >Nas versões 2.4.4 e 2.4.3-p2, todos os campos rotulados **Elasticsearch** também se aplicam ao OpenSearch.
->&#x200B;>Quando o suporte para o Elasticsearch 8.x foi introduzido na versão 2.4.6, novos rótulos foram criados para distinguir entre as configurações do Elasticsearch e do OpenSearch.
+>Quando o suporte para o Elasticsearch 8.x foi introduzido na versão 2.4.6, novos rótulos foram criados para distinguir entre as configurações do Elasticsearch e do OpenSearch.
 
-Para obter detalhes adicionais sobre a configuração do mecanismo de pesquisa, consulte o [Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=pt-BR).
+Para obter detalhes adicionais sobre a configuração do mecanismo de pesquisa, consulte o [Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Configurar o mecanismo de pesquisa no Admin
 
@@ -37,7 +37,7 @@ Para configurar seu sistema para usar o Elasticsearch ou o OpenSearch:
 
    | Opção | Descrição |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | Insira o nome de host ou endereço IP totalmente qualificado da máquina que executa o Elasticsearch ou o OpenSearch.<br>Adobe Commerce na infraestrutura em nuvem: obtenha esse valor do seu sistema de integração. |
+   | **[!UICONTROL Server Hostname]** | Insira o nome de host ou endereço IP totalmente qualificado da máquina que executa o Elasticsearch ou o OpenSearch.<br>Adobe Commerce na infraestrutura na nuvem: obtenha esse valor do seu sistema de integração. |
    | **[!UICONTROL Server Port]** | Insira a porta do proxy do servidor Web. O padrão é 9200<br>Adobe Commerce na infraestrutura em nuvem: obtenha esse valor do seu sistema de integração. |
    | **[!UICONTROL Index Prefix]** | Insira o prefixo de índice do mecanismo de pesquisa. Se você usar uma única instância para mais de uma instalação do Commerce (ambientes de Preparo e Produção), deverá especificar um prefixo exclusivo para cada instalação. Caso contrário, você poderá usar o prefixo padrão magento2. |
    | **[!UICONTROL Enable HTTP Auth]** | Clique em **[!UICONTROL Yes]** somente se você tiver habilitado a autenticação para o servidor do mecanismo de pesquisa. Em caso afirmativo, forneça um nome de usuário e senha nos campos fornecidos. |
@@ -69,13 +69,13 @@ Em caso afirmativo, tente o seguinte:
 
   Por exemplo, para ver se o mecanismo de pesquisa está em execução na porta padrão, use o seguinte comando:
 
-  ```bash
+  ```shell
   netstat -an | grep 9200
   ```
 
   Se estiver sendo executado na porta 9200, será exibido de modo semelhante ao seguinte:
 
-  ```
+  ```text
   `tcp        0      0 :::9200            :::-         LISTEN`
   ```
 
@@ -100,13 +100,13 @@ Para reindexar usando a linha de comando:
 
    Informe o seguinte comando para reindexar somente o índice de pesquisa do catálogo:
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
    Digite o seguinte comando para reindexar todos os indexadores:
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex
    ```
 

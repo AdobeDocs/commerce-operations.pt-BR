@@ -3,9 +3,9 @@ title: Configurar memória em cache no CentOS
 description: Saiba como instalar e configurar o memcached no CentOS para cache do Adobe Commerce. Descubra instruções de configuração e dicas de otimização.
 feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -35,19 +35,19 @@ Para instalar o memcached no CentOS, execute as seguintes tarefas como um usuár
 
 1. Instalar o memcached e suas dependências:
 
-   ```bash
+   ```shell
    yum -y update
    ```
 
-   ```bash
+   ```shell
    yum install -y libevent libevent-devel
    ```
 
-   ```bash
+   ```shell
    yum install -y memcached
    ```
 
-   ```bash
+   ```shell
    yum install -y php-pecl-memcache
    ```
 
@@ -70,7 +70,7 @@ Para instalar o memcached no CentOS, execute as seguintes tarefas como um usuár
 1. Salve as alterações em `memcached` e saia do editor de texto.
 1. Reiniciar memcached.
 
-   ```bash
+   ```shell
    service memcached restart
    ```
 
@@ -78,7 +78,7 @@ Para instalar o memcached no CentOS, execute as seguintes tarefas como um usuár
 
    Para o Apache:
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 
@@ -120,7 +120,7 @@ O teste usa um banco de dados, tabela e dados MySQL para verificar se você pode
 
 Crie o banco de dados MySQL:
 
-```bash
+```shell
 mysql -u root -p
 ```
 
@@ -167,11 +167,11 @@ Onde `<memcached hostname or ip>` é `localhost`, `127.0.0.1`, ou o nome de host
 
 Execute o script a partir da linha de comando.
 
-```bash
+```shell
 cd <web server docroot>
 ```
 
-```bash
+```shell
 php cache-test.php
 ```
 
@@ -181,19 +181,19 @@ O segundo resultado é `got result from memcached`, que verifica se o valor est�
 
 Finalmente, você pode visualizar as chaves de memcache usando Telnet:
 
-```bash
+```shell
 telnet localhost <memcache port>
 ```
 
 No prompt, digite
 
-```bash
+```shell
 stats items
 ```
 
 O resultado é semelhante ao seguinte:
 
-```
+```text
 STAT items:3:number 1
 STAT items:3:age 1075
 STAT items:3:evicted 0
@@ -205,11 +205,11 @@ STAT items:3:tailrepairs 0
 
 Liberar o armazenamento memcache e sair do Telnet:
 
-```bash
+```shell
 flush_all
 ```
 
-```bash
+```shell
 quit
 ```
 

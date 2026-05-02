@@ -4,13 +4,13 @@ description: Aplique o patch ACSD-67347 ao problema do Adobe Commerce em que os 
 feature: Checkout, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 1a48428efbb022b53320370f68691eaed44809b3
+exl-id: a439e163-8b09-456c-91bd-6ee67528744e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-67347: Falha na ordem com *Não é possível adquirir um erro de bloqueio* ao usar códigos de cupom
 
@@ -28,7 +28,7 @@ O patch ACSD-67347 corrige o problema em que os pedidos falham com um erro *Não
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -39,7 +39,7 @@ Os pedidos falham com o erro *Não é possível adquirir um bloqueio* quando cup
 1. Instalar o 2.4-develop.
 1. Definir a configuração de bloqueio de arquivo no arquivo `env.php`:
 
-   ```
+   ```text
    'lock' => [
            'provider' => 'file',
            'config' => [
@@ -61,7 +61,7 @@ Os pedidos são feitos com êxito porque não há restrições à criação de c
 
 O pedido não pode ser feito. O seguinte erro aparece: *Não é possível adquirir bloqueio.*
 
-```
+```text
 File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning!fopen(/Users/test/sites/test/locks/coupon_code_123/abc): Failed to open stream: No such file or directory
 ```
 
@@ -70,7 +70,7 @@ File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

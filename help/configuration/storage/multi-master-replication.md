@@ -1,11 +1,11 @@
 ---
 title: Replicação de banco de dados
-description: Veja os benefícios de configurar a replicação de banco de dados.
+description: Saiba mais sobre os benefícios da replicação de banco de dados para o Adobe Commerce, incluindo backup, descarga de análise e configuração assíncrona do MySQL slave.
 recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Os bancos de dados MySQL são replicados de forma assíncrona, o que significa q
 Uma discussão detalhada sobre replicação de banco de dados está além do escopo deste guia. Para configurá-lo, você pode consultar um recurso como:
 
 - [Documentação do MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Como configurar a replicação subordinada principal no MySQL (digitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Como configurar a replicação do master slave no MySQL (digitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
 O Commerce fornece configurações MySQL de exemplo para seus bancos de dados subordinados. Uma configuração simples é fornecida com a classe `ResourceConnections` `README.md`.
 

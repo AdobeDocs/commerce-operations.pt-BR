@@ -3,9 +3,9 @@ title: Evitar explorações de clickjacking
 description: Evite explorações de clickjacking usando o cabeçalho "X-Frame-Options" para controlar as renderizações da página.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Para verificar sua configuração, visualize os cabeçalhos HTTP em qualquer pá
 
 O exemplo a seguir usa curl, que pode ser executado de qualquer máquina que possa se conectar ao servidor do Commerce pelo protocolo HTTP.
 
-```bash
+```shell
 curl -I -v --location-trusted '<storefront-URL>'
 ```
 

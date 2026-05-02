@@ -2,9 +2,9 @@
 title: Exportar definições de configuração
 description: Saiba como exportar definições de configuração do Adobe Commerce para arquivos usando o despejo de configuração. Descubra a implantação de pipeline e o gerenciamento de configuração.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 No [modelo de implantação de pipeline](../deployment/technical-details.md) do Commerce 2.2 e posterior, você pode manter uma configuração consistente entre os sistemas. Depois de definir as configurações no Administrador no sistema de desenvolvimento, exporte essas configurações para arquivos de configuração usando o seguinte comando:
 
-```bash
+```shell
 bin/magento app:config:dump {config-types}
 ```
 
-_config_types_ é uma lista separada por espaços de tipos de configuração para despejo. Os tipos disponíveis são `scopes`, `system`, `themes` e `i18n`. Se nenhum tipo de configuração for especificado, o comando despeja todas as informações de configuração do sistema.
+_config_ types_ é uma lista separada por espaços de tipos de configuração para despejo. Os tipos disponíveis são `scopes`, `system`, `themes` e `i18n`. Se nenhum tipo de configuração for especificado, o comando despeja todas as informações de configuração do sistema.
 
 O exemplo a seguir descarta apenas escopos e temas:
 
-```bash
+```shell
 bin/magento app:config:dump scopes themes
 ```
 

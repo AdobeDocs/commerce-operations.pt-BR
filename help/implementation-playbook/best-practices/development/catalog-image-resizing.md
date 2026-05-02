@@ -4,9 +4,9 @@ description: Saiba como evitar a degradação do desempenho antes de uma inicial
 feature: Best Practices
 role: Developer
 exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Todas as imagens do catálogo devem ser redimensionadas antes que um armazenamen
 
 Use o comando padrão da CLI para redimensionar todas as imagens:
 
-```bash
+```shell
 bin/magento catalog:images:resize
 ```
 
@@ -41,19 +41,19 @@ O redimensionamento assíncrono de imagens foi introduzido no Adobe Commerce 2.4
 
 1. Verifique se os manipuladores de fila estão em execução:
 
-   ```bash
+   ```shell
    pgrep -fl media.storage.catalog.image.resize
    ```
 
 1. Preencher a fila com todas as solicitações de redimensionamento de imagem:
 
-   ```bash
+   ```shell
    bin/magento catalog:images:resize --async
    ```
 
 1. Depois que todas as imagens forem redimensionadas, encerre o processo:
 
-   ```bash
+   ```shell
    pkill -f media.storage.catalog.image.resize
    ```
 
@@ -77,7 +77,7 @@ Essa abordagem redimensiona 100.000 imagens em menos de 8 horas, enquanto o coma
 
 >[!TAB sed]
 
-```bash
+```shell
 cd pub/
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' > images.txt
 ```
@@ -86,13 +86,13 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 A desvantagem de `siege` é que ele visita todas as URLs em 10 vezes se a simultaneidade estiver definida como 10.
 
-```bash
+```shell
 siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser --concurrent=10 --reps=once
 ```
 
 >[!TAB curl]
 
-```bash
+```shell
 xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n" < <(tr \\n \\0 <images.txt)
 ```
 
@@ -102,7 +102,7 @@ O argumento `-P` determina o número de threads.
 
 A linha única para o exemplo de `find/curl`, caso você possa executar `curl` a partir da mesma máquina em que as imagens estão:
 
-```bash
+```shell
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' | xargs -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n"
 ```
 
@@ -116,5 +116,5 @@ Visitar um URL de cache de imagem gera todos os tamanhos de imagem em segundo pl
 
 >[!NOTE]
 >
->- O Adobe Commerce em projetos de infraestrutura em nuvem pode descarregar o redimensionamento de imagem do produto para o serviço Fastly. Consulte [Otimização de imagem profunda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=pt-BR#deep-image-optimization) no _Guia da Nuvem_.
->- Se você usar o módulo de armazenamento remoto, também poderá tentar descarregar o redimensionamento da imagem para nginx. Consulte [Configurar redimensionamento de imagem para armazenamento remoto](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=pt-BR) no _Guia de Configuração_.
+>- O Adobe Commerce em projetos de infraestrutura em nuvem pode descarregar o redimensionamento de imagem do produto para o serviço Fastly. Consulte [Otimização de imagem profunda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html#deep-image-optimization) no _Guia da Nuvem_.
+>- Se você usar o módulo de armazenamento remoto, também poderá tentar descarregar o redimensionamento da imagem para nginx. Consulte [Configurar redimensionamento de imagem para armazenamento remoto](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) no _Guia de Configuração_.

@@ -2,9 +2,9 @@
 title: Diretrizes do MySQL
 description: Siga estas etapas para instalar e configurar o MySQL e o MariaDB para instalações locais do Adobe Commerce.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -106,13 +106,13 @@ Para atualizar corretamente o MySQL da versão 5.7 para a versão 8, siga estas 
 Teste tudo e verifique se o seu sistema funciona conforme o esperado.
 1. Habilitar modo de manutenção:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Faça um backup do banco de dados:
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
@@ -120,13 +120,13 @@ Teste tudo e verifique se o seu sistema funciona conforme o esperado.
 1. Importe os dados de backup para o MySQL.
 1. Limpe o cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Desabilitar modo de manutenção:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -139,7 +139,7 @@ Para configurar uma instância do banco de dados MySQL:
 1. Faça logon no servidor de banco de dados como qualquer usuário.
 1. Vá para um prompt de comando do MySQL:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -166,7 +166,7 @@ Para configurar uma instância do banco de dados MySQL:
 
 1. Verifique o banco de dados:
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 

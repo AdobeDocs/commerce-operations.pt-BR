@@ -3,9 +3,9 @@ title: Configurar o  [!DNL Data Migration Tool]
 description: Saiba mais sobre os dois métodos para configurar o  [!DNL Data Migration Tool]  para transferir dados entre o Magento 1 e o Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ Antes de migrar dados, é necessário criar um módulo do Magento 2.
 
    Por exemplo, se você migrar `Magento 1.9.3.6 Community Edition` para `Magento 2 Open Source`:
 
-   ```bash
+   ```shell
    cd <your Magento 2 install dir>
    ```
 
-   ```bash
+   ```shell
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
@@ -118,13 +118,13 @@ Para configurar o [!DNL Data Migration Tool] para migração:
 
 1. Altere para o seguinte diretório:
 
-   ```bash
+   ```shell
    <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>
    ```
 
 1. Digite o seguinte comando para criar um `config.xml` a partir da amostra fornecida:
 
-   ```bash
+   ```shell
    cp config.xml.dist config.xml
    ```
 
@@ -208,7 +208,7 @@ Para usar os arquivos de mapeamento:
 
 1. Atualize o caminho para o arquivo recém-copiado no nó `<options>` de `config.xml`. O caminho atualizado deve ser um dos seguintes:
 
-   1. Caminho absoluto do arquivo, ex.: `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Caminho absoluto do arquivo, e. g. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. caminho relativo do arquivo do módulo magento/data-migration-tool: `etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. Caminho do arquivo relativo à raiz do Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 

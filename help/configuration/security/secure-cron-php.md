@@ -1,11 +1,11 @@
 ---
 title: PHP cron seguro
-description: Restrinja quem pode executar o arquivo cron.php em um navegador.
+description: Saiba como restringir o acesso do navegador a pub/cron.php e proteger tarefas agendadas do Adobe Commerce contra execução cron não autorizada ou mal-intencionada.
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '975'
 ht-degree: 1%
 
 ---
@@ -47,11 +47,11 @@ Por motivos de segurança, você pode localizar o arquivo de senha em qualquer l
 
 Digite os seguintes comandos como um usuário com privilégios de `root`:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/passwords <username>
 ```
 
@@ -61,7 +61,7 @@ Siga as instruções na tela para criar uma senha para o usuário.
 
 Para adicionar outro usuário ao seu arquivo de senhas, digite o seguinte comando como um usuário com privilégios `root`:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
@@ -71,13 +71,13 @@ Você pode permitir que mais de um usuário execute o cron adicionando esses usu
 
 Para adicionar outro usuário ao seu arquivo de senha:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
 Para criar um grupo autorizado, crie um arquivo de grupo em qualquer lugar fora do docroot do servidor Web. O arquivo de grupo especifica o nome do grupo e os usuários no grupo. Neste exemplo, o nome do grupo é `MagentoCronGroup`.
 
-```bash
+```shell
 vim /usr/local/apache/password/group
 ```
 
@@ -96,7 +96,7 @@ Para proteger o cron no arquivo `.htaccess`:
 
    (Como `cron.php` está localizado no diretório `pub`, edite somente este `.htaccess`.)
 
-1. _Acesso de cron para um ou mais usuários._ Substitua a diretiva `<Files cron.php>` existente pela seguinte:
+1. _Acesso do Cron para um ou mais usuários._ Substitua a diretiva `<Files cron.php>` existente pela seguinte:
 
    ```conf
    <Files cron.php>
@@ -134,7 +134,7 @@ Esta seção discute como proteger o CRON usando o servidor Web Nginx. Você dev
 Consulte um dos seguintes recursos para criar um arquivo de senha antes de continuar:
 
 - [Como configurar a autenticação de senha com o Nginx no Ubuntu 14.04 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-- [Autenticação HTTP Básica com Nginx (howtoforge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+- [Autenticação HTTP básica com Nginx (howtoforge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 
 ### Cron seguro em `nginx.conf.sample`
 
@@ -163,7 +163,7 @@ O Commerce fornece uma amostra otimizada do arquivo de configuração nginx pron
 
 1.Reinicie o nginx:
 
-```bash
+```shell
 systemctl restart nginx
 ```
 
@@ -183,7 +183,7 @@ A maneira mais fácil de verificar se `pub/cron.php` é seguro é verificar se e
 
    Por exemplo,
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 

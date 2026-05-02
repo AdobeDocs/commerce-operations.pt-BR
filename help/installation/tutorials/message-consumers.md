@@ -2,7 +2,7 @@
 title: Configurar consumidores de mensagem
 description: Siga estas etapas para configurar o comportamento dos consumidores da fila de mensagens do Adobe Commerce.
 exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Antes de executar este comando, você deve fazer o seguinte *ou*. Você deve [in
 
 A configuração do comportamento do consumidor é feita enviando pares de chave/valor dentro da função de configuração:
 
-```bash
+```shell
 bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 ```
 

@@ -2,9 +2,9 @@
 title: Fazer backup e reverter o sistema de arquivos, a mídia e o banco de dados
 description: Siga estas etapas para fazer backup e restaurar seu aplicativo do Adobe Commerce.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,20 @@ Depois do backup, você pode [reverter](#rollback) mais tarde.
 
 >[!TIP]
 >
->Para obter informações sobre projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Gerenciamento de instantâneos e backup](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) no _Guia da nuvem_.
+>Para obter informações sobre projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Gerenciamento de instantâneos e backup](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) no _Guia da nuvem_.
 
 ## Habilitar backups
 
 O recurso de backup está desativado por padrão. Para habilitar, digite o seguinte comando da CLI:
 
-```bash
+```shell
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
 >[!WARNING]
 >
 >**Aviso de descontinuação:**
->&#x200B;>A funcionalidade de backup está obsoleta a partir das versões 2.1.16, 2.2.7 e 2.3.0. Recomendamos investigar tecnologias adicionais de backup e ferramentas binárias de backup (como o Percona XtraBackup).
+>A funcionalidade de backup está obsoleta a partir das versões 2.1.16, 2.2.7 e 2.3.0. Recomendamos investigar tecnologias adicionais de backup e ferramentas binárias de backup (como o Percona XtraBackup).
 
 ## Definir o limite de arquivos abertos
 
@@ -54,7 +54,7 @@ Antes de continuar, se ainda não tiver feito isso, alterne para o [proprietári
 
 Comando:
 
-```bash
+```shell
 ulimit -s 65536
 ```
 
@@ -70,7 +70,7 @@ Para definir opcionalmente o valor no shell Bash do usuário:
 1. Abra `/home/<username>/.bashrc` em um editor de texto.
 1. Adicione a seguinte linha:
 
-   ```bash
+   ```shell
    ulimit -s 65536
    ```
 
@@ -84,7 +84,7 @@ Para definir opcionalmente o valor no shell Bash do usuário:
 
 Uso do comando:
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db]
 ```
 
@@ -103,13 +103,13 @@ O comando executa as seguintes tarefas:
 
 Por exemplo, para fazer backup do sistema de arquivos e do banco de dados,
 
-```bash
+```shell
 bin/magento setup:backup --code --db
 ```
 
 Mensagens semelhantes a esta são exibidas:
 
-```
+```shell
 Enabling maintenance mode
 Code backup is starting...
 Code backup filename: 1434133011_filesystem.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
@@ -128,7 +128,7 @@ Esta seção discute como reverter para um backup feito anteriormente. Você dev
 
 Para localizar o nome dos seus backups, informe:
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
@@ -136,19 +136,19 @@ A primeira string no nome do arquivo de backup é o carimbo de data e hora.
 
 Para efetuar rollback para um backup anterior, informe:
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
 Por exemplo, para restaurar um backup de mídia chamado `1440611839_filesystem_media.tgz`, digite
 
-```bash
+```shell
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 ```
 
 Mensagens semelhantes a esta são exibidas:
 
-```
+```shell
 [SUCCESS]: Media rollback completed successfully.
 Please set file permission of bin/magento to executable
 Disabling maintenance mode

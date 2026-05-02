@@ -3,9 +3,9 @@ title: Baixar pacotes de dados de amostra do Composer
 description: Siga estas etapas para instalar dados de amostra do Adobe Commerce usando o Gerenciador de pacotes PHP do Composer.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Se você for um desenvolvedor contribuinte, consulte [Instalar clonando reposit�
 
 Para instalar dados de exemplo usando a linha de comando, digite o seguinte comando como proprietário do sistema de arquivos no diretório `<app_root>`:
 
-```bash
+```shell
 bin/magento sampledata:deploy
 ```
 
@@ -44,7 +44,7 @@ bin/magento sampledata:deploy
 >
 >Se você estiver instalando dados de exemplo _após_ a instalação do aplicativo, também deverá executar o seguinte comando para atualizar o banco de dados e o esquema no diretório `<app_root>`:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -54,7 +54,7 @@ Você precisa [autenticar](../prerequisites/authentication-keys.md) para conclui
 
 O seguinte erro de autenticação pode ser exibido:
 
-```
+```text
 [Composer\Downloader\TransportException]
 The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate

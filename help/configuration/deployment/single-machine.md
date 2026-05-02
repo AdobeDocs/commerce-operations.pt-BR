@@ -3,9 +3,9 @@ title: Implantação de computador único
 description: Saiba como implantar atualizações ao Commerce em um servidor de produção usando a linha de comando.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '188'
 ht-degree: 1%
 
 ---
@@ -30,19 +30,19 @@ Este tópico fornece instruções para implantar atualizações para o Commerce 
 
 1. Altere o diretório para o diretório base do Commerce:
 
-   ```bash
+   ```shell
    cd <Commerce base directory>
    ```
 
 1. Ative o modo de manutenção usando o comando:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Aplique atualizações ao Commerce ou seus componentes usando o seguinte padrão de comando:
 
-   ```bash
+   ```shell
    composer require-commerce <package> <version> --no-update
    ```
 
@@ -57,37 +57,37 @@ Este tópico fornece instruções para implantar atualizações para o Commerce 
 
 1. Atualizar componentes com o Composer:
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. Atualize o esquema do banco de dados e os dados:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Compile o código:
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. Implantar conteúdo estático:
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
 1. Limpe o cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Sair do modo de manutenção:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 

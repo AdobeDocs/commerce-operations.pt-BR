@@ -2,9 +2,9 @@
 title: Instalação de início rápido local
 description: Saiba como instalar o Adobe Commerce em sua própria infraestrutura usando o Composer. Descubra as etapas de início rápido e os requisitos de configuração.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 0532977ff0aeb5d221b1901d73a374cadf95f83b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -43,13 +43,13 @@ Para alternar para o proprietário do sistema de arquivos:
 
    Se você usar o shell bash, poderá usar a seguinte sintaxe para alternar para o proprietário do sistema de arquivos e inserir o comando ao mesmo tempo:
 
-   ```bash
+   ```shell
    su <file system owner> -s /bin/bash -c <command>
    ```
 
    Se o proprietário do sistema de arquivos não permitir logons, você poderá fazer o seguinte:
 
-   ```bash
+   ```shell
    sudo -u <file system owner>  <command>
    ```
 
@@ -59,7 +59,7 @@ Para alternar para o proprietário do sistema de arquivos:
 
    Exemplo de shell bash para CentOS:
 
-   ```bash
+   ```shell
    export PATH=$PATH:/var/www/html/magento2/bin
    ```
 
@@ -79,13 +79,13 @@ Para obter o metappackage do Adobe Commerce:
 
    **Magento Open Source**
 
-   ```bash
+   ```shell
    composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
    **Adobe Commerce**
 
-   ```bash
+   ```shell
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
@@ -93,7 +93,7 @@ Para obter o metappackage do Adobe Commerce:
 
    >[!NOTE]
    >
-   > Se você usar um arquivo do Composer `[auth.json](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ou uma variável de ambiente configurada com suas chaves de autenticação da Commerce, não será solicitado a inserir chaves de autenticação.
+   > Se você usar um arquivo do Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ou uma variável de ambiente configurada com suas chaves de autenticação da Commerce, não será solicitado a inserir chaves de autenticação.
 
    Se você encontrar erros, como `Could not find package...` ou `...no matching package found`, verifique se não há erros de digitação no comando. Se ainda encontrar erros, talvez você não esteja autorizado a baixar o Adobe Commerce. Contate o [Suporte da Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
 
@@ -103,7 +103,7 @@ Para obter o metappackage do Adobe Commerce:
 
 As versões secundárias contêm novos recursos, correções de qualidade e correções de segurança. Use o Composer para especificar uma versão secundária. Por exemplo, para especificar o metappackage do Adobe Commerce 2.4.6:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
@@ -111,7 +111,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Os patches de qualidade contêm principalmente correções de segurança _e_ funcionais. No entanto, às vezes elas também podem conter recursos novos e compatíveis com versões anteriores. Use o Composer para baixar um patch de qualidade. Por exemplo, para especificar o metappackage do Adobe Commerce 2.4.6:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
@@ -121,7 +121,7 @@ Os patches de segurança contêm apenas correções de segurança. Elas foram pr
 
 Os patches de segurança usam a convenção de nomenclatura do Composer `2.4.6-px`. Use o Composer para especificar um patch. Por exemplo, para baixar o metappackage 2.4.6-p1 do Adobe Commerce:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
@@ -129,7 +129,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Você deve definir permissões de leitura e gravação para o grupo de servidores Web antes de instalar o Adobe Commerce. Isso é necessário para que a linha de comando possa gravar arquivos no sistema de arquivos.
 
-```bash
+```shell
 cd /var/www/html/<magento install directory>
 find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
@@ -143,7 +143,7 @@ Você deve usar a linha de comando para instalar o Adobe Commerce.
 
 Este exemplo supõe que o diretório de instalação seja nomeado como `magento2ee`, o `db-host` esteja na mesma máquina (`localhost`) e que o `db-name`, `db-user` e `db-password` sejam todos `magento`:
 
-```bash
+```shell
 bin/magento setup:install \
 --base-url=http://localhost/magento2ee \
 --db-host=localhost \
@@ -178,23 +178,23 @@ bin/magento setup:install \
 
 Para exibir uma lista completa de comandos, insira:
 
-```bash
+```shell
 bin/magento list
 ```
 
 Para obter ajuda para um comando específico, insira:
 
-```bash
+```shell
 bin/magento help <command>
 ```
 
 Por exemplo:
 
-```bash
+```shell
 bin/magento help setup:install
 ```
 
-```bash
+```shell
 bin/magento help cache:enable
 ```
 

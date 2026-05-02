@@ -3,9 +3,9 @@ title: Instalar verniz
 description: Saiba mais sobre os requisitos de instalação do Varnish para o armazenamento em cache do Adobe Commerce. Descubra os recursos de instalação e as orientações de configuração.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ A instalação do software Vernish está fora do escopo deste guia. Para obter m
 
 - [guia de instalação](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
 - [Guias de instalação em verniz](https://www.varnish-cache.org/docs)
-- [Como instalar o verniz (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
+- [Como instalar verniz (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >
@@ -28,7 +28,7 @@ A instalação do software Vernish está fora do escopo deste guia. Para obter m
 
 Abra um terminal e insira o seguinte comando para exibir a versão de Verniz:
 
-```bash
+```shell
 varnishd -V
 ```
 

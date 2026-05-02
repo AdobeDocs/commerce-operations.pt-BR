@@ -5,9 +5,9 @@ feature: B2B
 role: Admin, Developer
 exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O patch ACSD-63974 corrige o problema em que a página **[!UICONTROL Requisition
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -41,7 +41,7 @@ A página **[!UICONTROL Requisition List]** leva muito tempo para carregar quand
 1. Gere mais de 2000 produtos editando o nó `simple_products` em `setup/performance-toolkit/profiles/ce/small.xml`.
 1. Execute o comando:
 
-   ```bash
+   ```shell
    bin/magento setup:perf:generate-fixtures ./setup/performance-toolkit/profiles/ce/small.xml
    ```
 

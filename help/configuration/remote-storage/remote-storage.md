@@ -3,9 +3,9 @@ title: Configurar o armazenamento remoto
 description: Saiba como configurar o módulo de Armazenamento remoto para o aplicativo local do Commerce.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Por padrão, o aplicativo do Adobe Commerce armazena arquivos de mídia no mesmo
 
 Você não pode ter armazenamento remoto _e armazenamento de banco de dados_ habilitados ao mesmo tempo. Você deve desabilitar o armazenamento do banco de dados antes de habilitar o armazenamento remoto.
 
-```bash
+```shell
 bin/magento config:set system/media_storage_configuration/media_database 0
 ```
 
@@ -30,7 +30,7 @@ A habilitação do armazenamento remoto pode afetar sua experiência de desenvol
 
 >[!INFO]
 >
->- O armazenamento remoto está disponível somente para o Commerce versão 2.4.2 e posterior. Consulte as [notas de versão do 2.4.2](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- O armazenamento remoto está disponível somente para o Commerce versão 2.4.2 e posterior. Consulte as [notas de versão do 2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- O módulo de armazenamento remoto tem _suporte limitado_ no Adobe Commerce na infraestrutura em nuvem. A Adobe não pode solucionar totalmente os problemas do serviço de adaptador de armazenamento de terceiros. Consulte [Configurar armazenamento remoto para a infraestrutura do Commerce na nuvem](cloud-support.md) para obter orientação sobre como implementar o armazenamento remoto em projetos na nuvem.
 
@@ -38,7 +38,7 @@ A habilitação do armazenamento remoto pode afetar sua experiência de desenvol
 
 ## Opções de armazenamento remoto
 
-Você pode configurar o armazenamento remoto usando a opção `remote-storage` com o comando [`setup` da CLI &#x200B;](../../installation/tutorials/deployment.md). A opção `remote-storage` usa a seguinte sintaxe:
+Você pode configurar o armazenamento remoto usando a opção `remote-storage` com o comando ](../../installation/tutorials/deployment.md) da CLI [`setup`. A opção `remote-storage` usa a seguinte sintaxe:
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -67,13 +67,13 @@ Você pode instalar o armazenamento remoto durante uma instalação do Adobe Com
 
 - Exemplo: instalar o Commerce com armazenamento remoto
 
-  ```bash
+  ```shell
   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
 - Exemplo: habilitar o armazenamento remoto no Commerce existente
 
-  ```bash
+  ```shell
   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
@@ -85,11 +85,11 @@ Você pode instalar o armazenamento remoto durante uma instalação do Adobe Com
 
 Depois de habilitar o armazenamento remoto para um adaptador específico, você pode usar a CLI para migrar arquivos de _mídia_ existentes para o armazenamento remoto.
 
-```bash
+```shell
 ./magento2ce/bin/magento remote-storage:sync
 ```
 
 >[!INFO]
 >
->O comando sync migra somente arquivos no diretório `pub/media`, _não_ os arquivos de importação/exportação no diretório `var`. Consulte [Importação/Exportação agendada](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=pt-BR) no _Guia do Usuário do Commerce 2.4_.
+>O comando sync migra somente arquivos no diretório `pub/media`, _não_ os arquivos de importação/exportação no diretório `var`. Consulte [Importação/Exportação agendada](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) no _Guia do Usuário do Commerce 2.4_.
 

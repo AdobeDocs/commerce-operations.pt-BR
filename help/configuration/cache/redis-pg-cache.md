@@ -3,9 +3,9 @@ title: Usar Redis para cache padrão
 description: Saiba como configurar o Redis como cache padrão para o Adobe Commerce. Descubra técnicas de configuração, de configuração e de validação da linha de comando.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: ee4a873a73e8fd747e7d4c8e157327fab1074cc9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Você deve [instalar o Redis](config-redis.md#install-redis) antes de continuar.
 
 Execute o comando `setup:config:set` e especifique parâmetros específicos para o cache padrão Redis.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parameter>=<value>...
 ```
 
@@ -47,7 +47,7 @@ Com os seguintes parâmetros:
 
 O exemplo a seguir habilita o cache padrão Redis, define o host como `127.0.0.1` e atribui o número do banco de dados como 0. Redis usa valores padrão para todos os outros parâmetros.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
@@ -55,7 +55,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 Para configurar o cache da página Redis no Commerce, execute o comando `setup:config:set` com parâmetros adicionais.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
 ```
 
@@ -76,7 +76,7 @@ Com os seguintes parâmetros:
 
 O exemplo a seguir habilita o cache de página Redis, define o host como `127.0.0.1` e atribui o número do banco de dados como 1. Todos os outros parâmetros são definidos com o valor padrão.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
 ```
 
@@ -165,7 +165,7 @@ Essa opção está desativada por padrão e a Adobe recomenda desativá-la até 
 
 **Para habilitar a geração paralela**:
 
-```bash
+```shell
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
@@ -200,13 +200,13 @@ Para verificar se o Redis e o Commerce estão trabalhando juntos, faça login no
 
 ### Comando do monitor Redis
 
-```bash
+```shell
 redis-cli monitor
 ```
 
 Exemplo de saída de cache de página:
 
-```
+```text
 1476826133.810090 [0 127.0.0.1:52366] "select" "1"
 1476826133.816293 [0 127.0.0.1:52367] "select" "0"
 1476826133.817461 [0 127.0.0.1:52367] "hget" "zc:k:ea6_GLOBAL__DICONFIG" "d"
@@ -231,7 +231,7 @@ Exemplo de saída de cache de página:
 
 ### comando Redis ping
 
-```bash
+```shell
 redis-cli ping
 ```
 

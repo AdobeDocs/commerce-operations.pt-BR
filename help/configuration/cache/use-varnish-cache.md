@@ -3,9 +3,9 @@ title: Limpeza de cache com verniz
 description: Saiba como a limpeza de cache funciona com o acelerador de cache da Web do Varnish para Adobe Commerce. Descubra as técnicas de otimização e gerenciamento de cache.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Depois de instalar e configurar o Verniz para funcionar com o Commerce, as segui
 
 ## Configurar o Commerce para limpar o verniz
 
-O Commerce limpa hosts do Varnish depois que você configura hosts do Varnish usando o comando [`magento setup:config:set`](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
+O Commerce limpa hosts do Varnish depois que você configura hosts do Varnish usando o comando [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
 
 Você pode usar o parâmetro opcional `--http-cache-hosts` para especificar uma lista separada por vírgulas de hosts vernizes e portas de escuta. Configure todos os hosts de verniz, independentemente de você ter um ou vários. (Não separe hosts com um caractere de espaço.)
 
@@ -50,7 +50,7 @@ O formato do parâmetro deve ser `<hostname or ip>:<listen port>`, onde você po
 
 Por exemplo,
 
-```bash
+```shell
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 

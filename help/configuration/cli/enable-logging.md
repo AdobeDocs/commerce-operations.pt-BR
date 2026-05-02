@@ -3,9 +3,9 @@ title: Habilitar registro
 description: Saiba como ativar e desativar diferentes tipos de logon no Adobe Commerce. Descubra a configuração de registro e as técnicas de gerenciamento.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ Por padrão, o Commerce grava no log de depuração (`<install_directory>/var/lo
 
 1. Use o comando `setup:config:set` para habilitar o log de depuração para o modo atual.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-debug-logging=true
    ```
 
 1. Limpe o cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -40,13 +40,13 @@ Por padrão, o Commerce grava no log de depuração (`<install_directory>/var/lo
 
 1. Use o comando `setup:config:set` para desabilitar o log de depuração para o modo atual.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-debug-logging=false
    ```
 
 1. Limpe o cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -75,17 +75,17 @@ O log de consulta contém:
 
 1. Use o comando `dev:query-log` para habilitar ou desabilitar o log do banco de dados.
 
-   ```bash
+   ```shell
    bin/magento dev:query-log:enable
    ```
 
-   ```bash
+   ```shell
    bin/magento dev:query-log:disable
    ```
 
 1. Limpe o cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -93,7 +93,7 @@ O log de consulta contém:
 
 Você pode exibir os logs de consulta usando comandos padrão de exibição de arquivo:
 
-```bash
+```shell
 # View the entire query log
 cat var/debug/db.log
 
@@ -127,13 +127,13 @@ O registro em log para `syslog` está desabilitado por padrão.
 
 1. Use o comando `setup:config:set` para alterar o valor do banco de dados `dev/syslog/syslog_logging` para `true`.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-syslog-logging=true
    ```
 
 1. Limpe o cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -141,12 +141,12 @@ O registro em log para `syslog` está desabilitado por padrão.
 
 1. Use o comando `setup:config:set` para alterar o valor do banco de dados `dev/syslog/syslog_logging` para `false`.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-syslog-logging=false
    ```
 
 1. Limpe o cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```

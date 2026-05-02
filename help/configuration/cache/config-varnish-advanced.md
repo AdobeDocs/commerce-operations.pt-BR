@@ -3,9 +3,9 @@ title: Configuração avançada de verniz
 description: Saiba como configurar recursos avançados de Verniz para o Adobe Commerce, incluindo verificações de integridade, carência e modos santos. Descubra técnicas de otimização de VCL.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Como alternativa, o controle de versão de arquivos estáticos pode ser desativa
 
 Por fim, todas as instâncias do Commerce devem estar no modo de produção. Antes de o Verniz ser iniciado, limpe o cache em cada instância. No Administrador, vá para **Sistema** > Ferramentas > **Gerenciamento de Cache** e clique em **Limpar Cache do Magento**. Você também pode executar o seguinte comando para limpar o cache:
 
-```bash
+```shell
 bin/magento cache:flush
 ```
 
@@ -92,7 +92,7 @@ Depois de recompilar, você pode instalar o módulo Saint mode. Em geral, siga e
 1. Obter o código-fonte de [módulos de verniz](https://github.com/varnish/varnish-modules). Clonar a versão do Git (versão mestre) desde que as versões 0.9.x contenham um erro de código-fonte.
 1. Crie o código-fonte com as ferramentas automáticas:
 
-   ```bash
+   ```shell
    sudo apt-get install libvarnishapi-dev || sudo yum install varnish-libs-devel
    ./bootstrap   # If running from git.
    ./configure

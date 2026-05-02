@@ -2,9 +2,9 @@
 title: Implantar arquivos de exibição estáticos
 description: Saiba como implantar arquivos de exibição estáticos no sistema de arquivos do Adobe Commerce no modo de produção. Descubra comandos de implantação e técnicas de otimização.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Você deve gravar arquivos de exibição estáticos no sistema de arquivos do Co
 
 >[!WARNING]
 >
->_Somente modo de desenvolvedor_: quando você instala ou habilita um novo módulo, ele pode carregar novos JavaScript, CSS, layouts e assim por diante. Para evitar problemas com arquivos estáticos, você deve limpar os arquivos antigos para garantir que obtenha todas as alterações para o novo módulo. Você pode limpar arquivos de visualização estáticos gerados de várias maneiras. Consulte [Tópico sobre cache de arquivos estáticos limpos para obter detalhes](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) para obter mais informações.
+>_Somente modo de desenvolvedor_: quando você instala ou habilita um novo módulo, ele pode carregar novos JavaScript, CSS, layouts e assim por diante. Para evitar problemas com arquivos estáticos, você deve limpar os arquivos antigos para garantir que obtenha todas as alterações para o novo módulo. Você pode limpar arquivos de visualização estáticos gerados de várias maneiras. Consulte [Tópico sobre cache de arquivos estáticos limpos para obter detalhes](https://developer.adobe.com/commerce/frontend-core/guide/caching#clean-static-files-cache) para obter mais informações.
 
 **Para implantar arquivos de exibição estáticos**:
 
@@ -45,7 +45,7 @@ Você deve gravar arquivos de exibição estáticos no sistema de arquivos do Co
 
    Opções de comando:
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy [<languages>] [-t|--theme[="<theme>"]] [--exclude-theme[="<theme>"]] [-l|--language[="<language>"]] [--exclude-language[="<language>"]] [-a|--area[="<area>"]] [--exclude-area[="<area>"]] [-j|--jobs[="<number>"]]  [--no-javascript] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [-f|--force]
    ```
 
@@ -53,7 +53,7 @@ A tabela a seguir explica os parâmetros e valores desse comando.
 
 | Opção | Descrição | Obrigatório? |
 | ------ | ----------- | --------- |
-| `<languages>` | Lista separada por espaços de códigos de linguagem [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) para os quais serão gerados arquivos de exibição estáticos. (O padrão é `en_US`.)<br>Localizar a lista executando: `bin/magento info:language:list` | Não |
+| `<languages>` | Lista separada por espaços de códigos de linguagem [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) para os quais serão gerados arquivos de exibição estáticos. (O padrão é `en_US`.)<br>Localize a lista executando: `bin/magento info:language:list` | Não |
 | `--language (-l)` | Gera arquivos somente para os idiomas especificados. O padrão, sem nenhuma opção especificada, é gerar arquivos para todos os códigos de idioma ISO-639. Você pode especificar o nome de um código de idioma por vez. O valor padrão é **all**.<br>Por exemplo: `--language en_US --language es_ES` | Não |
 | `--exclude-language` | Gerar arquivos para os códigos de idioma especificados. O padrão, sem nenhuma opção especificada, é não excluir nada. Você pode especificar o nome de um código de idioma ou uma lista de códigos de idioma separada por vírgulas. O valor padrão é **nenhum**. | Não |
 | `--theme <theme>` | Temas para os quais implantar conteúdo estático. O valor padrão é **all**.<br>Por exemplo: `--theme Magento/blank --theme Magento/luma` | Não |
@@ -87,13 +87,13 @@ A seguir estão alguns exemplos de comandos.
 
 O comando a seguir implanta conteúdo estático para o idioma inglês dos EUA (`en_US`), exclui o tema Luma fornecido com o Commerce e não minifica arquivos HTML.
 
-```bash
+```shell
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify
 ```
 
 Saída de exemplo:
 
-```
+```text
 Requested languages: en_US
 Requested areas: frontend, adminhtml
 Requested themes: Magento/blank, Magento/backend
@@ -112,13 +112,13 @@ Successful: 1993 files; errors: 0
 
 O comando a seguir implanta somente o JavaScript, com 4 tarefas, com uma estratégia de implantação padrão:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -s standard --no-misc --no-html --no-fonts --no-images --no-less --no-css -j 4
 ```
 
 O comando a seguir implanta somente CSS e MENOS com 3 tarefas e uma estratégia de implantação rápida:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -s quick --no-misc --no-html --no-fonts --no-images --no-javascript -j 3
 ```
 
@@ -126,13 +126,13 @@ bin/magento setup:static-content:deploy -s quick --no-misc --no-html --no-fonts 
 
 O comando a seguir gera arquivos de exibição estáticos para todos os idiomas, somente a área de front-end e somente o tema do Commerce Luma, sem gerar fontes:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy --area frontend --no-fonts --theme Magento/luma
 ```
 
 Saída de exemplo:
 
-```
+```text
 Requested languages: en_US
 Requested areas: frontend
 Requested themes: Magento/luma
@@ -162,7 +162,7 @@ Para fazer isso, siga estas etapas:
 
 **Sintoma**: o seguinte erro é exibido quando você executa a ferramenta de implantação de arquivos de exibição estática:
 
-```
+```text
 ERROR: You need to install the Commerce application before running this utility.
 ```
 

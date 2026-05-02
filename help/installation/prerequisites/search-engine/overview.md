@@ -3,9 +3,9 @@ title: Pré-requisitos do mecanismo de pesquisa
 description: Siga estas etapas para instalar e configurar o software de mecanismo de pesquisa compatível para instalações locais do Adobe Commerce.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -82,16 +82,16 @@ O software relacionado à segurança (iptables, SELinux, AppArmor) pode ser conf
 
 Para configurar regras para permitir a comunicação com o firewall ou o SELinux ativado, consulte os seguintes recursos:
 
-* [instruções do iptables](https://help.ubuntu.com/community/IptablesHowTo)
-* [Como editar regras de iptables (projeto fedora)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
+* [instruções para iptables](https://help.ubuntu.com/community/IptablesHowTo)
+* [Como editar regras do iptables (projeto do fedora)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
 * [Introdução ao SELinux (CentOS.org)](https://www.centos.org)
-* [Wiki de Instruções do SELinux (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
+* [Wiki prático do SELinux (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
 
 ### Instalar o kit de desenvolvimento de software Java
 
 Para determinar se o Java já está instalado, digite o seguinte comando:
 
-```bash
+```shell
 java -version
 ```
 
@@ -108,7 +108,7 @@ Veja este [Tutorial sobre o Oceano Digital](https://www.digitalocean.com/communi
 
 Certifique-se de instalar o JDK e *não* o JRE.
 
-```bash
+```shell
 yum -y install java-1.8.0-openjdk
 ```
 
@@ -120,11 +120,11 @@ yum -y install java-1.8.0-openjdk
 
 Para instalar o JDK 1.8 no Ubuntu, insira os seguintes comandos como um usuário com privilégios `root`:
 
-```bash
+```shell
 apt-get -y update
 ```
 
-```bash
+```shell
 apt-get install -y openjdk-8-jdk
 ```
 
@@ -136,24 +136,24 @@ Siga [Instalando o Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/
 
 Para verificar se o Elasticsearch está funcionando, digite o seguinte comando no servidor em que ele está sendo executado:
 
-```bash
+```shell
 curl -XGET '<host>:9200/_cat/health?v&pretty'
 ```
 
 Uma mensagem semelhante à seguinte é exibida:
 
-```
+```text
 epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks
 1519701563 03:19:23  elasticsearch green           1         1      0   0    0    0        0             0
 ```
 
 Para verificar se o OpenSearch está funcionando, insira os seguintes comandos:
 
-```bash
+```shell
 curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 ```
 
-```bash
+```shell
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 

@@ -2,9 +2,9 @@
 title: Clonar repositórios Git de dados de amostra
 description: Siga estas etapas para instalar os dados de amostra do Adobe Commerce clonando repositórios Git.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo SSH:
 
    Um exemplo é o seguinte:
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-sample-data.git
    ```
 
@@ -61,7 +61,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo SSH:
    >
    >Se o seguinte erro for exibido, verifique se você [compartilhou sua chave SSH](https://docs.github.com/articles/generating-ssh-keys/) com o GitHub:<br>
 
-   ```
+   ```text
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly
@@ -75,14 +75,14 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo SSH:
 
    Para fazer check-out da ramificação correta, execute o seguinte comando no diretório raiz do repositório de dados de amostra (supondo que você precise da ramificação `2.4-develop`):
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. Alterar para `<app_root>`.
 1. Digite o seguinte comando para criar vínculos simbólicos entre os arquivos clonados para que os dados de amostra funcionem corretamente:
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
@@ -92,7 +92,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo SSH:
 
 1. Execute o seguinte comando:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -116,7 +116,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
 
    Um exemplo é o seguinte:
 
-   ```bash
+   ```shell
    git clone https://github.com/magento/magento2-sample-data.git
    ```
 
@@ -129,20 +129,20 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
 
    Para fazer check-out da ramificação correta, execute o seguinte comando no diretório raiz do repositório de dados de amostra (supondo que você precise da ramificação `2.4-develop`):
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. Alterar para `<magento_root>`.
 1. Digite o seguinte comando para criar vínculos simbólicos entre os arquivos clonados para que os dados de amostra funcionem corretamente:
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
    Por exemplo,
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="/var/www/magento2"
    ```
 
@@ -153,7 +153,7 @@ Para clonar o repositório GitHub de dados de amostra usando o protocolo HTTPS:
 >
 >Se você estiver instalando dados de exemplo *após* a instalação do Adobe Commerce, também deverá executar o seguinte comando para atualizar o banco de dados e o esquema:
 >
->```bash
+>```shell
 ><magento_root>/bin/magento setup:upgrade
 >```
 
@@ -166,7 +166,7 @@ Para definir as permissões e a propriedade do sistema de arquivos no repositór
 1. Altere para o diretório de clonagem de dados de amostra.
 1. Definir propriedade:
 
-   ```bash
+   ```shell
    chown -R :<your web server group name> .
    ```
 
@@ -178,17 +178,17 @@ Para definir as permissões e a propriedade do sistema de arquivos no repositór
 
 1. Definir permissões:
 
-   ```bash
+   ```shell
    find . -type d -exec chmod g+ws {} +
    ```
 
 1. Limpar arquivos estáticos:
 
-   ```bash
+   ```shell
    cd <your Magento Open Source install dir>
    ```
 
-   ```bash
+   ```shell
    rm -rf var/cache/* var/page_cache/* generated/*
    ```
 

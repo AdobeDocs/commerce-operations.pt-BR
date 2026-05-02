@@ -3,9 +3,9 @@ title: Práticas recomendadas de desempenho de check-out
 description: Saiba mais sobre as práticas recomendadas de desempenho de check-out no Adobe Commerce. Descubra a orientação para a implementação e as estratégias de otimização.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5d94ecbe32b94acf9604db9618a9ae6eb1ae04f9
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Práticas recomendadas de desempenho de check-out
 
-O processo [check-out](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) no Adobe Commerce é um aspecto crítico da experiência da vitrine eletrônica. Ele depende dos recursos [carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/storefront/storefront#shopping-cart) e [check-out](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/storefront/storefront#checkout-page) integrados.
+O processo [check-out](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) no Adobe Commerce é um aspecto crítico da experiência da vitrine eletrônica. Ele depende dos recursos [carrinho](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) e [check-out](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page) integrados.
 
 O desempenho é fundamental para manter uma boa experiência do usuário. Você pode otimizar o desempenho do check-out configurando as seguintes opções para **processamento de pedido de alta taxa de transferência**:
 
@@ -26,7 +26,7 @@ As opções de configuração Ordem assíncrona, Cálculo de total adiado e Veri
 
 >[!NOTE]
 >
->Não use o código PHP personalizado para personalizar o carrinho incorporado e os recursos de check-out. Além de possíveis problemas de desempenho, o uso do código PHP personalizado pode resultar em atualizações complexas e desafios de manutenção. Esses problemas aumentam o custo total de propriedade. Se a personalização do carrinho e do check-out baseados em PHP for inevitável, use somente as [extensões aprovadas pelo Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/). Todas as extensões de marketplace estão sujeitas a [análise abrangente](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) para verificar se atendem aos padrões de codificação e às práticas recomendadas da Adobe Commerce.
+>Não use o código PHP personalizado para personalizar o carrinho incorporado e os recursos de check-out. Além de possíveis problemas de desempenho, o uso do código PHP personalizado pode resultar em atualizações complexas e desafios de manutenção. Esses problemas aumentam o custo total de propriedade. Se a personalização do carrinho e do check-out baseados em PHP for inevitável, use somente as [extensões aprovadas pelo Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/). Todas as extensões de marketplace estão sujeitas a [análise abrangente](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program) para verificar se atendem aos padrões de codificação e às práticas recomendadas da Adobe Commerce.
 
 ## Posicionamento assíncrono de pedidos
 
@@ -43,7 +43,7 @@ Use a interface de linha de comando para habilitar esses recursos ou edite o arq
 
 Você pode habilitar a AsyncOrder usando a interface de linha de comando:
 
-```bash
+```shell
 bin/magento setup:config:set --checkout-async 1
 ```
 
@@ -66,7 +66,7 @@ Consulte [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/
 
 Você pode desativar a AsyncOrder usando a interface de linha de comando:
 
-```bash
+```shell
 bin/magento setup:config:set --checkout-async 0
 ```
 
@@ -132,7 +132,7 @@ O Cálculo Total Adiado está **desabilitado** por padrão. Use a interface de l
 
 Você pode habilitar DeferredTotalCalculation usando a interface de linha de comando:
 
-```bash
+```shell
 bin/magento setup:config:set --deferred-total-calculating 1
 ```
 
@@ -149,7 +149,7 @@ O comando `set` grava o seguinte no arquivo `app/etc/env.php`:
 
 Você pode desabilitar DeferredTotalCalculation usando a interface de linha de comando:
 
-```bash
+```shell
 bin/magento setup:config:set --deferred-total-calculating 0
 ```
 
@@ -174,13 +174,13 @@ A configuração global _Habilitar inventário ao carregar o carrinho_ determina
 
 Quando desativada, a verificação de inventário não ocorre ao adicionar um produto ao carrinho. Se essa verificação de inventário for ignorada, alguns cenários sem estoque poderão gerar outros tipos de erros. Uma verificação de inventário _sempre_ ocorre na etapa de posicionamento do pedido, mesmo quando desabilitada.
 
-**Habilitar a Verificação de Inventário na Carga do Carrinho** está habilitado (definido como Sim) por padrão. Para desabilitar a verificação de estoque ao carregar o carrinho, defina **[!UICONTROL Enable Inventory Check On Cart Load]** como `No` na seção **Lojas** da Interface do Administrador > **Configuração** > **Catálogo** > **Inventário** > **Opções de Estoque**. Consulte [Configurar opções globais](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/configuration/global-options) e [Inventário de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/guide-overview) no _Guia do Usuário_.
+**Habilitar a Verificação de Inventário na Carga do Carrinho** está habilitado (definido como Sim) por padrão. Para desabilitar a verificação de estoque ao carregar o carrinho, defina **[!UICONTROL Enable Inventory Check On Cart Load]** como `No` na seção **Lojas** da Interface do Administrador > **Configuração** > **Catálogo** > **Inventário** > **Opções de Estoque**. Consulte [Configurar opções globais](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) e [Inventário de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) no _Guia do Usuário_.
 
 ## Balanceamento de carga
 
 Você pode ajudar a balancear a carga em diferentes nós, habilitando conexões secundárias para o banco de dados MySQL e a instância Redis.
 
-O Adobe Commerce pode ler vários bancos de dados ou instâncias Redis de forma assíncrona. Se você estiver usando o Commerce na infraestrutura em nuvem, poderá configurar as conexões secundárias editando os valores de [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) no arquivo `.magento.env.yaml`. Somente um nó precisa manipular o tráfego de leitura e gravação. Portanto, definir as variáveis como `true` resultará na criação de uma conexão secundária para o tráfego somente leitura. Defina os valores como `false` para remover qualquer matriz de conexão somente leitura existente do arquivo `env.php`.
+O Adobe Commerce pode ler vários bancos de dados ou instâncias Redis de forma assíncrona. Se você estiver usando o Commerce na infraestrutura em nuvem, poderá configurar as conexões secundárias editando os valores de [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) no arquivo `.magento.env.yaml`. Somente um nó precisa manipular o tráfego de leitura e gravação. Portanto, definir as variáveis como `true` resultará na criação de uma conexão secundária para o tráfego somente leitura. Defina os valores como `false` para remover qualquer matriz de conexão somente leitura existente do arquivo `env.php`.
 
 Exemplo do arquivo `.magento.env.yaml`:
 

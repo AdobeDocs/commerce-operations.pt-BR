@@ -2,9 +2,9 @@
 title: Execute os utilitários de suporte
 description: Saiba como executar utilitários de suporte para solucionar problemas do projeto do Adobe Commerce. Descubra as ferramentas integradas de diagnóstico e suporte.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Os utilitários de Suporte da Adobe Commerce, também conhecidos como [Coletor de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/support#data-collector), permitem que os usuários coletem informações de solução de problemas do seu sistema, que podem ser usadas pela nossa equipe de suporte.
+Os utilitários de Suporte da Adobe Commerce, também conhecidos como [Coletor de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector), permitem que os usuários coletem informações de solução de problemas do seu sistema, que podem ser usadas pela nossa equipe de suporte.
 
 O Adobe Commerce usa esses backups, também chamados de _despejos_, para analisar problemas que exigem acesso ao seu código. Um cenário típico é o seguinte:
 
@@ -42,7 +42,7 @@ Este comando faz backup do código e o compacta no formato `tar.gz`.
 
 Opções de comando:
 
-```bash
+```shell
 bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--logs]
 ```
 
@@ -54,7 +54,7 @@ Onde:
 
 Por exemplo, para criar um backup de código chamado `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
 
-```bash
+```shell
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
 ```
 
@@ -68,7 +68,7 @@ Este comando faz backup do banco de dados Commerce e compacta-o no formato `tar.
 
 Opções de comando:
 
-```bash
+```shell
 bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
@@ -81,7 +81,7 @@ Onde:
 
 Os dados confidenciais incluem informações de clientes das seguintes tabelas de banco de dados:
 
-```
+```text
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ Após a conclusão do comando, forneça o backup do banco de dados para o Suport
 
 Fornecemos comandos que exibem caminhos para utilitários exigidos pelo Coletor de dados e pela linha de comando. Você pode usar esses comandos, por exemplo, se erros como o seguinte forem exibidos no Admin ou na linha de comando:
 
-```
+```text
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Execute os seguintes comandos na ordem mostrada para exibir os caminhos para os 
 
 A seguir, há uma amostra:
 
-```
+```text
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

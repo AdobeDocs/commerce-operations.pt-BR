@@ -1,5 +1,5 @@
 ---
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 1%
@@ -16,19 +16,19 @@ Esta seção discute duas maneiras de verificar se a autenticação básica de H
 
 Digite o seguinte comando:
 
-```bash
+```shell
 curl -i http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 Por exemplo, se você digitar o comando no servidor do mecanismo de pesquisa e seu proxy usar a porta 8080:
 
-```bash
+```shell
 curl -i http://localhost:8080/_cluster/health
 ```
 
 A seguinte mensagem é exibida para indicar falha na autenticação:
 
-```
+```text
 HTTP/1.1 401 Unauthorized
 Date: Tue, 23 Feb 2016 20:35:29 GMT
 Content-Type: text/html
@@ -45,19 +45,19 @@ WWW-Authenticate: Basic realm="Restricted"
 
 Agora, tente o seguinte comando:
 
-```bash
+```shell
 curl -i -u <username>:<password> http://<hostname, ip, or localhost>:<proxy port>/_cluster/health
 ```
 
 Por exemplo:
 
-```bash
+```shell
 curl -i -u magento_elasticsearch:mypassword http://localhost:8080/_cluster/health
 ```
 
 Desta vez, o comando é bem-sucedido com uma mensagem semelhante à seguinte:
 
-```
+```text
 HTTP/1.1 200 OK
 Date: Tue, 23 Feb 2016 20:38:03 GMT
 Content-Type: application/json; charset=UTF-8

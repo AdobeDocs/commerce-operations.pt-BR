@@ -5,9 +5,9 @@ feature: Orders, GraphQL
 role: Admin, Developer
 exl-id: cf9d1409-6fe3-4019-9207-df5f12a41505
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce (todos os métodos de implantação) 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -41,19 +41,19 @@ A resposta do GraphQL para o posicionamento do pedido não inclui uma mensagem `
 1. Adicione um `LocalizedException` a `Magento\Framework\Exception\LocalizedException` em `app/code/Magento/QuoteGraphQl/Model/Resolver/PlaceOrder.php`.
 1. Insira a exceção após a seguinte linha:
 
-   ```
+   ```shell
    $cart = $this->getCartForCheckout->execute($maskedCartId, $userId, $storeId);
    ```
 
    Adicione a exceção:
 
-   ```
+   ```text
    throw new LocalizedException(new Phrase("Test LocalizedException"));
    ```
 
 1. Execute a solicitação de GraphQL de ordem de colocação:
 
-   ```
+   ```graphql
    mutation {
    placeOrder(input: {cart_id: "cart_id"}) {
        order {
@@ -67,7 +67,7 @@ A resposta do GraphQL para o posicionamento do pedido não inclui uma mensagem `
    1. A resposta não inclui a mensagem `LocalizedException`.
    1. Exemplo da resposta incorreta:
 
-      ```
+      ```json
       {
       "data": {
           "placeOrder": {
@@ -90,7 +90,7 @@ Se ocorrer um `LocalizedException`, a mensagem de exceção não será incluída
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

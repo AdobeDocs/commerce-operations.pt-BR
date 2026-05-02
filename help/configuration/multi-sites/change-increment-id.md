@@ -1,10 +1,10 @@
 ---
 title: Alterar ID de incremento
-description: Alterar a ID de incremento de uma entidade de banco de dados do Commerce.
+description: Saiba como alterar IDs de incremento para pedidos, faturas, avisos de crédito e outras entidades de banco de dados do Commerce usando SQL ao mesclar ou restaurar sites.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Talvez seja necessário alterar a ID de incremento para novas entidades de BD ne
 
 >[!INFO]
 >
->Você também pode corrigir o problema do gateway de pagamento para PayPal, permitindo vários pagamentos por ID de fatura nas Preferências de Recebimento de Pagamento do PayPal. Consulte [Solicitação rejeitada do gateway do PayPal - problema de fatura duplicado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=pt-BR) na _Knowledge Base_.
+>Você também pode corrigir o problema do gateway de pagamento para PayPal, permitindo vários pagamentos por ID de fatura nas Preferências de Recebimento de Pagamento do PayPal. Consulte [Solicitação rejeitada do gateway do PayPal - problema de fatura duplicado](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) na _Knowledge Base_.
 
 ## Etapas de pré-requisito
 

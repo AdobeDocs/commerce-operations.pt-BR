@@ -5,9 +5,9 @@ feature: B2B, REST, Categories
 role: Admin, Developer
 type: Troubleshooting
 exl-id: e6fd89c2-d3c0-462f-b328-7a80b456d96d
-source-git-commit: 239a9efcc2ae231b337f654e4e36e6119e6eff7e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O patch ACSD-64813 corrige o problema em que o cancelamento de atribuição de c
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -38,11 +38,11 @@ O cancelamento da atribuição de categorias em um catálogo compartilhado [!DNL
 
 1. Habilitar **[!UICONTROL B2B]**, **[!UICONTROL Company]** e **[!UICONTROL Shared Catalog]**.
 1. Gerar 30.000 produtos ativos, em estoque.
-1. Crie um [catálogo compartilhado personalizado](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) e atribua todos os produtos a ele.
+1. Crie um [catálogo compartilhado personalizado](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) e atribua todos os produtos a ele.
 1. Crie uma nova categoria na categoria raiz padrão e atribua a ela alguns produtos.
 1. Use o token de administrador para chamar o ponto de extremidade da API REST `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` com a nova ID de categoria.
 
-   ```
+   ```json
    {
      "categories": [
        { "id": <new category id> }
@@ -54,7 +54,7 @@ O cancelamento da atribuição de categorias em um catálogo compartilhado [!DNL
 1. Execute `bin/magento cron:run` duas vezes ou execute uma reindexação.
 1. Use o token de administrador para chamar o ponto de extremidade da API REST `rest/all/V1/sharedCatalog/<shared_catalog_id>/unassignCategories` com a nova ID de categoria.
 
-   ```
+   ```json
    {
      "categories": [
        { "id": <new category id> }
@@ -75,7 +75,7 @@ A execução leva aproximadamente 30 minutos ou resulta em um erro de tempo limi
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

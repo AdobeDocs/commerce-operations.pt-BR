@@ -2,9 +2,9 @@
 title: Ferramenta de linha de comando
 description: Saiba como usar a ferramenta de linha de comando do Adobe Commerce para tarefas de instalação e configuração. Descubra os comandos da CLI e as funções administrativas.
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -42,13 +42,13 @@ Antes de começar a usar a CLI, verifique se:
 
 Para o shell bash, use a seguinte sintaxe para alternar para o proprietário do sistema de arquivos e insira o comando ao mesmo tempo:
 
-```bash
+```shell
 su <file system owner> -s /bin/bash -c <command>
 ```
 
 Se o proprietário do sistema de arquivos não permitir logons, você poderá usar o seguinte:
 
-```bash
+```shell
 sudo -u <file system owner> <command>
 ```
 
@@ -58,7 +58,7 @@ Adicionar `<magento_root>/bin` ao seu sistema `PATH`.
 
 Exemplo de shell bash para CentOS:
 
-```bash
+```shell
 export PATH=$PATH:/var/www/html/magento2/bin
 ```
 

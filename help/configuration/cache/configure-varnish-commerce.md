@@ -3,9 +3,9 @@ title: Configurar verniz para Commerce
 description: Saiba como configurar o Varnish especificamente para aplicativos Adobe Commerce. Descubra as técnicas de gerenciamento e atualizações de arquivos de configuração.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Para configurar o Commerce para usar o verniz:
 
 Você também pode ativar o Verniz na linha de comando, em vez de fazer logon no Administrador, usando a ferramenta de interface de linha de comando C:
 
-```bash
+```shell
 bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2
 ```
 
@@ -50,15 +50,15 @@ Para exportar um arquivo de configuração de verniz do Admin:
 
 1. Faça backup do `default.vcl` existente. Em seguida, renomeie o arquivo `varnish.vcl` que você acabou de exportar para `default.vcl`. Em seguida, copie o arquivo para o diretório `/etc/varnish/`.
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
    ```
 
-   ```bash
+   ```shell
    mv <download_directory>/varnish.vcl default.vcl
    ```
 
-   ```bash
+   ```shell
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
@@ -76,11 +76,11 @@ Para exportar um arquivo de configuração de verniz do Admin:
 
 1. Reinicie o Varnish e seu servidor Web:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 

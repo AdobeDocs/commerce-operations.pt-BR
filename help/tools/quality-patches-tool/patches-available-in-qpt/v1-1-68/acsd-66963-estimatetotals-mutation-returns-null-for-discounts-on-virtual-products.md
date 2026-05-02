@@ -5,9 +5,9 @@ feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
 exl-id: b62e48f5-a9d6-456a-97e7-96f740d8e927
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O patch ACSD-66963 corrige o problema em que `estimateTotals` retorna *null* par
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -39,7 +39,7 @@ A mutação `estimateTotals` retorna *null* para descontos quando um código de 
 1. Crie um carrinho contendo apenas produtos virtuais.
 1. Aplicar um código de desconto:
 
-   ```
+   ```graphql
    mutation {
      estimateTotals(
        input: {
@@ -81,7 +81,7 @@ A mutação `estimateTotals` retorna *null* para descontos quando um código de 
 
 As informações de desconto são incluídas para carrinhos que contêm apenas produtos virtuais.
 
-```
+```json
     {
       "data": {
         "estimateTotals": {
@@ -113,7 +113,7 @@ As informações de desconto são incluídas para carrinhos que contêm apenas p
 
 As informações de desconto são retornadas como *nulo* para carrinhos com apenas produtos virtuais.
 
-```
+```json
     {
       "data": {
         "estimateTotals": {
@@ -133,7 +133,7 @@ As informações de desconto são retornadas como *nulo* para carrinhos com apen
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

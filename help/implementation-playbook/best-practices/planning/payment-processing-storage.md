@@ -1,19 +1,19 @@
 ---
 title: Práticas recomendadas para processamento e armazenamento de pagamentos
-description: Saiba como processar e armazenar com segurança os detalhes de pagamento
+description: Saiba como processar e armazenar com segurança os detalhes de pagamento na Adobe Commerce e, ao mesmo tempo, manter a conformidade com o PCI e evitar o armazenamento proibido de dados de titulares de cartão.
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas para processamento e armazenamento de pagamentos
 
-Um dos princípios-chave para manter a [conformidade com o PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=pt-BR) é ter uma estratégia para processar e armazenar corretamente os pagamentos com cartão de crédito.
+Um dos princípios-chave para manter a [conformidade com o PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) é ter uma estratégia para processar e armazenar corretamente os pagamentos com cartão de crédito.
 
 O armazenamento de dados de titulares de cartão no Adobe Commerce é **estritamente proibido**, e isso pode ser uma violação de suas obrigações como comerciante, de acordo com o PCI-DSS (Payment Card Industry Data Security Standard, padrão de segurança de dados do setor de cartões de pagamento). Mais informações sobre o modelo de responsabilidade compartilhada e as diretrizes para obrigações do comerciante estão disponíveis no [Guia de Modelo de Responsabilidade Compartilhada da Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) na Central de Confiabilidade da Adobe.
 
@@ -21,7 +21,7 @@ Siga as práticas recomendadas abaixo para garantir o processamento correto das 
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 * Adobe Commerce na infraestrutura em nuvem
 * Adobe Commerce no local
@@ -53,4 +53,4 @@ O método recomendado para lidar com dados de titulares de cartão é criar um t
 
 ## Informações adicionais
 
-Se você estiver procurando soluções de pagamento recomendadas pela Adobe, considere os [Serviços de Pagamento da Adobe](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=pt-BR).
+Se você estiver procurando soluções de pagamento recomendadas pela Adobe, considere os [Serviços de Pagamento da Adobe](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html).

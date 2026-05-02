@@ -3,9 +3,9 @@ title: Gerar dados para teste de desempenho
 description: Saiba como gerar grandes quantidades de dados para testes de desempenho do Adobe Commerce. Descubra perfis de geração de dados e estratégias de teste.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '768'
+source-wordcount: '775'
 ht-degree: 9%
 
 ---
@@ -56,7 +56,7 @@ Execute o comando conforme discutido nesta seção. Após a execução do comand
 
 Opções de comando:
 
-```bash
+```shell
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
@@ -64,13 +64,13 @@ Onde `<path-to-profile>` especifica o caminho absoluto do sistema de arquivos pa
 
 Por exemplo,
 
-```bash
+```shell
 bin/magento setup:perf:generate-fixtures /var/www/html/magento2/setup/performance-toolkit/profiles/ce/small.xml
 ```
 
 Exemplo de saída para o perfil pequeno:
 
-```
+```text
 Generating profile with following params:
     |- Websites: 1
     |- Store Groups Count: 1

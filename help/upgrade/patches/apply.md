@@ -2,9 +2,9 @@
 title: Aplicar patches
 description: Saiba mais sobre os métodos para aplicar patches a um projeto do Adobe Commerce.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Você pode aplicar patches usando qualquer um dos métodos a seguir:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Linha de comando](../patches/apply.md#command-line)
 - [Compositor](../patches/apply.md#composer)
 
@@ -31,7 +31,7 @@ Para aplicar um patch personalizado usando o Composer:
 1. Abra o aplicativo de linha de comando e navegue até o diretório do projeto.
 1. Adicionar o plug-in `cweagans/composer-patches` ao arquivo `composer.json`.
 
-   ```bash
+   ```shell
    composer require cweagans/composer-patches
    ```
 
@@ -57,13 +57,13 @@ Para aplicar um patch personalizado usando o Composer:
 
 1. Aplique o patch. Use a opção `-v` somente se desejar ver informações de depuração.
 
-   ```bash
+   ```shell
    composer -v install
    ```
 
 1. Atualize o arquivo `composer.lock`. O arquivo de bloqueio rastreia quais patches foram aplicados a cada pacote do Composer em um objeto.
 
-   ```bash
+   ```shell
    composer update --lock
    ```
 
@@ -75,7 +75,7 @@ Para aplicar patches a partir da linha de comando:
 1. Faça logon no servidor como o [usuário administrador](../../configuration/cli/config-cli.md#prerequisites) e verifique se o arquivo está no diretório correto.
 1. Na interface de linha de comando, execute os seguintes comandos de acordo com a extensão de patch:
 
-   ```bash
+   ```shell
    patch < patch_file_name.patch
    ```
 

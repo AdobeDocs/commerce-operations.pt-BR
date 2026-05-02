@@ -2,9 +2,9 @@
 title: Gerenciar extensões de terceiros
 description: Siga estas etapas para instalar, habilitar, atualizar e desinstalar extensões de Adobe Commerce.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ As extensões incluem:
 - Temas (altere a aparência da loja e do administrador)
 - Pacotes de idioma (localize a loja e o Administrador)
 
-Este tópico explica como usar a interface de linha de comando para gerenciar extensões de terceiros compradas da Commerce Marketplace para projetos _no local_. Para projetos de infraestrutura em nuvem, consulte [Gerenciar extensões](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+Este tópico explica como usar a interface de linha de comando para gerenciar extensões de terceiros compradas da Commerce Marketplace para projetos _no local_. Para projetos de infraestrutura em nuvem, consulte [Gerenciar extensões](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 Você pode usar o mesmo procedimento para instalar a extensão _any_. Tudo o que você precisa é o nome e a versão do Compositor da extensão. Para encontrá-lo, abra o arquivo `composer.json` da extensão e anote os valores de `"name"` e `"version"`.
 
@@ -31,7 +31,7 @@ Antes da instalação, talvez você queira:
 1. Faça backup do banco de dados.
 1. Habilitar modo de manutenção:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
@@ -40,7 +40,7 @@ Para instalar uma extensão, você deve:
 1. Obtenha uma extensão do Commerce Marketplace ou de outro desenvolvedor de extensões.
 1. Se você instalar uma extensão do Commerce Marketplace, verifique se o repositório `repo.magento.com` existe no arquivo `composer.json`:
 
-   ```bash
+   ```shell
    "repositories": [
        {
            "type": "composer",
@@ -84,13 +84,13 @@ Adicione o nome e a versão da extensão ao arquivo `composer.json`:
 
 1. Navegue até o diretório do projeto e atualize o arquivo `composer.json`.
 
-   ```bash
+   ```shell
    composer require <component-name>:<version>
    ```
 
    Por exemplo,
 
-   ```bash
+   ```shell
    composer require j2t/module-payplug:2.0.2
    ```
 
@@ -98,7 +98,7 @@ Adicione o nome e a versão da extensão ao arquivo `composer.json`:
 
 1. Aguarde até que o Composer conclua a atualização das dependências do projeto e verifique se não há erros:
 
-   ```
+   ```text
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -110,19 +110,19 @@ Adicione o nome e a versão da extensão ao arquivo `composer.json`:
 
 Para verificar se a extensão foi instalada corretamente, execute o seguinte comando:
 
-```bash
+```shell
 bin/magento module:status J2t_Payplug
 ```
 
 Por padrão, a extensão provavelmente está desativada:
 
-```
+```text
 Module is disabled
 ```
 
 O nome da extensão está no formato `<VendorName>_<ComponentName>`; esse é um formato diferente do nome do Compositor. Use esse formato para habilitar a extensão. Se não tiver certeza do nome da extensão, execute:
 
-```bash
+```shell
 bin/magento module:status
 ```
 
@@ -134,13 +134,13 @@ Algumas extensões não funcionam corretamente, a menos que você limpe primeiro
 
 1. Habilite a extensão e limpe os arquivos de exibição estáticos:
 
-   ```bash
+   ```shell
    bin/magento module:enable J2t_Payplug --clear-static-content
    ```
 
    Você deve ver a seguinte saída:
 
-   ```
+   ```text
    The following modules have been enabled:
    - J2t_Payplug
    
@@ -152,31 +152,31 @@ Algumas extensões não funcionam corretamente, a menos que você limpe primeiro
 
 1. Registre a extensão:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Recompile o projeto: no modo de Produção, você pode receber uma mensagem para &quot;Execute novamente o comando de compilação do Magento&quot;. O aplicativo não solicita que você execute o comando compile no modo de Desenvolvedor.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. Verifique se a extensão está ativada:
 
-   ```bash
+   ```shell
    bin/magento module:status J2t_Payplug
    ```
 
    Você deve ver a saída verificando se a extensão não está mais desativada:
 
-   ```
+   ```text
    Module is enabled
    ```
 
 1. Limpe o cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -198,27 +198,27 @@ Para atualizar ou atualizar um módulo ou uma extensão:
 
    Atualizar por nome de módulo:
 
-   ```bash
+   ```shell
    composer update vendor/module-name
    ```
 
    Atualizar por versão:
 
-   ```bash
+   ```shell
    composer require vendor/module-name ^x.x.x
    ```
 
 1. Execute os seguintes comandos para atualizar, implantar e limpar o cache.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade --keep-generated
    ```
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -240,13 +240,13 @@ As instruções a seguir fornecem informações gerais para a desinstalação de
 
    - Para extensões baseadas no Composer, remova a extensão do arquivo Adobe Commerce `composer.json`.
 
-     ```bash
+     ```shell
      composer remove <component-name>
      ```
 
    - Para extensões não baseadas no Composer, remova os arquivos físicos do repositório do projeto do Adobe Commerce.
 
-     ```bash
+     ```shell
      rm -rf app/code/<vendor-name>/<component-name>
      ```
 

@@ -3,9 +3,9 @@ title: Permissões de acesso a sistemas de arquivos
 description: Veja como configurar o proprietário ou proprietários do sistema de arquivos do aplicativo Commerce para um sistema de desenvolvimento e produção.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -74,19 +74,19 @@ Para remover permissões de gravação em arquivos e diretórios do grupo do usu
 
 1. Alterar para modo de produção.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Remova as permissões de gravação para os seguintes diretórios.
 
-   ```bash
+   ```shell
    find app/code var/view_preprocessed vendor pub/static app/etc generated/code generated/metadata \( -type f -or -type d \) -exec chmod u-w {} + && chmod o-rwx app/etc/env.php
    ```
 
 1. Torne a ferramenta de linha de comando executável.
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
@@ -98,7 +98,7 @@ Para tornar arquivos e diretórios graváveis para que você possa atualizar com
 1. Altere para o diretório de instalação do Commerce.
 1. Digite os seguintes comandos:
 
-   ```bash
+   ```shell
    chmod -R u+w .
    ```
 
@@ -139,7 +139,7 @@ Os arquivos nos diretórios a seguir devem ser graváveis pelos usuários no mod
 - `pub/media`
 - `app/etc`
 
-Defina o bit [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/) nos diretórios para que as permissões sempre herdem do diretório pai.
+Defina o bit [`setgid`](https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits) nos diretórios para que as permissões sempre herdem do diretório pai.
 
 >[!INFO]
 >
@@ -154,15 +154,15 @@ Para definir `setgid` e permissões para modo de desenvolvedor:
 1. Faça logon no servidor do Commerce como ou alterne para o proprietário do sistema de arquivos.
 1. Digite os seguintes comandos na ordem mostrada:
 
-   ```bash
+   ```shell
    cd <magento_root>
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
@@ -188,13 +188,13 @@ Para remover permissões graváveis para arquivos e diretórios do grupo do usu�
 1. Altere para o diretório de instalação do Commerce.
 1. Como proprietário do sistema de arquivos, digite o seguinte comando para alterar para o modo de produção:
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Digite o seguinte comando como um usuário com `root` privilégios:
 
-   ```bash
+   ```shell
    find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} + && chmod o-rwx app/etc/env.php
    ```
 
@@ -206,6 +206,6 @@ Para tornar arquivos e diretórios graváveis para que você possa atualizar com
 1. Altere para o diretório de instalação do Commerce.
 1. Digite o seguinte comando:
 
-   ```bash
+   ```shell
    find app/code lib var generated vendor pub/static pub/media app/etc \( -type d -or -type f \) -exec chmod g+w {} + && chmod o+rwx app/etc/env.php
    ```

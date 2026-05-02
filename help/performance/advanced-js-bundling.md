@@ -2,9 +2,9 @@
 title: Agrupamento JavaScript avançado
 description: Saiba mais sobre o agrupamento avançado de JavaScript no Adobe Commerce. Descubra a orientação para a implementação e as estratégias de otimização.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 5d827da35414fa75649f86a2d96fa8ab9086601a
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2283'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Consulte [Dicas de agrupamento](configuration.md#bundling-tips) em *Práticas re
 
 Para habilitar o agrupamento interno na linha de comando:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
@@ -53,7 +53,7 @@ O agrupamento Commerce reduz o número de conexões por página, mas, para cada 
 
 Para habilitar a mesclagem interna na linha de comando:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
@@ -107,7 +107,7 @@ As versões completas do código de amostra usado neste artigo estão disponíve
 
 ### Parte 1: Criar uma configuração de pacote
 
-#### &#x200B;1. Adicionar um arquivo build.js
+#### 1\. Adicionar um arquivo build.js
 
 Crie um arquivo `build.js` no diretório raiz do Commerce. Esse arquivo conterá toda a configuração de build dos seus pacotes.
 
@@ -120,7 +120,7 @@ Crie um arquivo `build.js` no diretório raiz do Commerce. Esse arquivo conterá
 
 Posteriormente, alteraremos a configuração `optimize:` de_ `none` para `uglify2` para minificar a saída do pacote. Mas, por enquanto, durante o desenvolvimento, você pode deixá-lo definido como `none` para garantir compilações mais rápidas.
 
-#### 2\ Adicionar [!DNL RequireJS] dependências, calços, caminhos e mapa
+#### 2\. Adicionar [!DNL RequireJS] dependências, calços, caminhos e mapa
 
 Adicione os seguintes nós de configuração de compilação [!DNL RequireJS], `deps`, `shim`, `paths` e `map`, ao seu arquivo de compilação:
 
@@ -136,7 +136,7 @@ Adicione os seguintes nós de configuração de compilação [!DNL RequireJS], `
 })
 ```
 
-#### 3 Agregar os valores de instância `requirejs-config.js`
+#### 3\. Agregar os valores de instância `requirejs-config.js`
 
 Nesta etapa, será necessário agregar todos os vários nós de configuração do `deps`, `shim`, `paths` e `map` do arquivo `requirejs-config.js` do armazenamento nos nós correspondentes no arquivo `build.js`. Para fazer isso, abra a guia **[!UICONTROL Network]** no painel Ferramentas do Desenvolvedor do seu navegador e navegue para qualquer página da sua loja, como a página inicial. Na guia Rede, você verá a instância do arquivo `requirejs-config.js` da sua loja próxima à parte superior, realçada aqui:
 
@@ -156,7 +156,7 @@ Você precisará alterar o caminho `mage/requirejs/text` para `requirejs/text` n
 })
 ```
 
-#### 4\ Adicionar um nó de módulos
+#### 4\. Adicionar um nó de módulos
 
 Ao final do arquivo `build.js`, adicione a matriz modules[] como espaço reservado para os pacotes que você definirá para sua loja mais tarde.
 
@@ -174,7 +174,7 @@ Ao final do arquivo `build.js`, adicione a matriz modules[] como espaço reserva
 })
 ```
 
-#### 5\ Recuperar dependências de [!DNL RequireJS]
+#### 5\. Recuperar dependências de [!DNL RequireJS]
 
 Você pode recuperar todas as dependências de módulo [!DNL RequireJS] dos tipos de página de seu armazenamento usando:
 
@@ -219,7 +219,7 @@ phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>arquivo-texto-representaç
 
 Por exemplo, aqui estão quatro páginas da loja de amostra com tema Luma que representam os quatro tipos de página que usaremos para criar nossos quatro pacotes (página inicial, categoria, produto, carrinho):
 
-```
+```text
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -241,7 +241,7 @@ Este comando (usado no script [!DNL PhantomJS]) cria a mesma lista de dependênc
 
 Depois de mesclar as dependências de [!DNL RequireJS] em arquivos de texto do tipo página, você pode usar o seguinte comando em cada arquivo de dependência do tipo página para substituir as vírgulas em seus arquivos por novas linhas:
 
-```bash
+```shell
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -250,26 +250,26 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 Você também deve remover todos os mixins de cada arquivo, pois os mixins duplicam dependências. Use o seguinte comando em cada arquivo de dependência:
 
-```bash
+```shell
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 ...
 ```
 
-#### 7\ Identificar pacotes exclusivos e comuns
+#### 7\. Identificar pacotes exclusivos e comuns
 
 O objetivo é criar um pacote comum de arquivos JavaScript necessários para todas as páginas. Dessa forma, o navegador só precisa carregar o pacote comum juntamente com um ou mais tipos de página específicos.
 
 Abra um terminal no diretório raiz do Commerce e use o seguinte comando para verificar se você tem dependências que podem ser divididas em pacotes separados:
 
-```bash
+```shell
 sort bundle/*.txt |uniq -c |sort -n
 ```
 
 Este comando mescla e classifica as dependências encontradas nos arquivos `bundle/*.txt`.  A saída também mostra o número de arquivos que contêm cada dependência:
 
-```
+```text
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -292,7 +292,7 @@ Nossa saída mostra apenas três tipos de página (página inicial, categoria e 
 
 Isso nos diz que provavelmente podemos melhorar as velocidades de carregamento de página de nossa loja dividindo nossas dependências em um pacote diferente, assim que soubermos quais tipos de página precisam de quais dependências.
 
-#### 8\ Criar um arquivo de distribuição de dependências
+#### 8\. Criar um arquivo de distribuição de dependências
 
 Para descobrir quais tipos de página precisam de quais dependências, crie um novo arquivo no diretório raiz do Commerce chamado `deps-map.sh` e copie no código abaixo:
 
@@ -318,13 +318,13 @@ Você também pode encontrar o script em [https://www.unix.com/shell-programming
 
 Abra um terminal no diretório raiz do Commerce e execute o arquivo:
 
-```bash
+```shell
 bash deps-map.sh
 ```
 
 A saída desse script, aplicada aos nossos três tipos de página de exemplo, deve ser semelhante a (mas muito maior):
 
-```
+```text
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -340,7 +340,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 Essas informações são suficientes para criar uma configuração de pacotes.
 
-#### 9\ Criar pacotes no arquivo build.js
+#### 9\. Criar pacotes no arquivo build.js
 
 Abra o arquivo de configuração `build.js` e adicione seus pacotes ao nó `modules`. Cada pacote deve definir as seguintes propriedades:
 
@@ -391,7 +391,7 @@ As etapas abaixo descrevem o processo básico para gerar pacotes Commerce mais e
 
 Antes de gerar pacotes, execute o comando static deployment:
 
-```bash
+```shell
 php -f bin/magento setup:static-content:deploy -f -a frontend
 ```
 
@@ -404,25 +404,25 @@ Esse comando gera implantações de armazenamento estáticas para cada tema e lo
 
 Para gerar pacotes para todos os temas e localidades da loja, repita as etapas abaixo para cada tema e localidade da loja.
 
-#### &#x200B;2. Mova o conteúdo estático do armazenamento para um diretório temporário
+#### &#x200B;2. Mover o conteúdo estático de armazenamento para um diretório temporário
 
 Primeiro, você precisa mover o conteúdo estático do diretório de destino para algum diretório temporário porque [!DNL RequireJS] substitui todo o conteúdo dentro do diretório de destino.
 
-```bash
+```shell
 mv pub/static/frontend/Magento/{theme}/{locale} pub/static/frontend/Magento/{theme}/{locale}_tmp
 ```
 
 Por exemplo:
 
-```bash
+```shell
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
-#### &#x200B;3. Execute o otimizador r.js
+#### &#x200B;3. Executar o otimizador r.js
 
 Em seguida, execute o otimizador r.js no arquivo `build.js` do diretório raiz da Commerce. Os caminhos para todos os diretórios e arquivos são relativos ao diretório de trabalho.
 
-```bash
+```shell
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
@@ -430,11 +430,11 @@ Este comando gera pacotes em um subdiretório `bundles` do diretório de destino
 
 A listagem do conteúdo do novo diretório do pacote pode ser semelhante a:
 
-```bash
+```shell
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```
+```text
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
@@ -481,11 +481,11 @@ require.config({});
 }
 ```
 
-#### &#x200B;5. Execute o comando implantar novamente
+#### &#x200B;5. Executar comando implantar novamente
 
 Execute o seguinte comando para implantar:
 
-```bash
+```shell
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 

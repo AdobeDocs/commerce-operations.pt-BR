@@ -3,9 +3,9 @@ title: Fluxo de implantação
 description: Saiba mais sobre o processo de fluxo de implantação para ambientes de produção do Adobe Commerce. Descubra as etapas para obter o máximo em desempenho e confiabilidade.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Os arquivos `composer.json` e `composer.lock` gerenciam as dependências do [!DN
 
 Para instalar as dependências de [!DNL Commerce]:
 
-```bash
+```shell
 composer install --no-dev
 ```
 
@@ -35,7 +35,7 @@ Ao pré-processar e compilar instruções de injeção de dependência (DI), o M
 
 Para pré-processar e compilar instruções de ID:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
@@ -49,25 +49,25 @@ Para atualizar o carregador automático:
 >
 >A opção `-o` converte o carregamento automático PSR-0/4 em classmap para obter um carregador automático mais rápido. A opção `--apcu` usa APCu para armazenar em cache classes encontradas/não encontradas.
 
-```bash
+```shell
 composer dump-autoload -o --apcu
 ```
 
 Se você planeja atualizar o carregador automático, é necessário executar os seguintes comandos na ordem:
 
-```bash
+```shell
 composer install --no-dev
 ```
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```bash
+```shell
 composer dump-autoload -o
 ```
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -87,7 +87,7 @@ Você pode usar várias opções para personalizar as operações de implantaç�
 
 Para implantar conteúdo estático:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -105,7 +105,7 @@ Por fim, é necessário colocar a loja no modo de Produção. O modo de produç�
 
 Você também pode implantar conteúdo estático, compilar o conteúdo e definir o modo em um comando da CLI:
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 

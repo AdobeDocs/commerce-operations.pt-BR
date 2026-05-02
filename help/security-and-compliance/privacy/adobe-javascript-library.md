@@ -4,9 +4,9 @@ description: Saiba como usar ferramentas personalizadas para acessar e excluir i
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-A [Biblioteca JavaScript de Privacidade da Adobe](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=pt-BR) é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados.
+A [Biblioteca JavaScript de Privacidade da Adobe](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados.
 
 Os serviços de rastreamento de dados da Adobe Commerce podem armazenar informações privadas aplicáveis a regulamentos de privacidade, como o [Regulamento Geral sobre a Proteção de Dados (GDPR)](gdpr.md) e a [Lei de Privacidade do Consumidor da Califórnia (CCPA)](ccpa.md).
 
@@ -28,7 +28,7 @@ Use um dos métodos a seguir para baixar o arquivo de biblioteca:
 - npm: `npm install @adobe/adobe-privacy`
 - GitHub: [https://github.com/Adobe-Marketing-Cloud/adobe-privacy](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-Após ter o arquivo, será necessário adicioná-lo a um módulo personalizado ou tema instalado em sua instância do Adobe Commerce. Siga as instruções descritas no tópico [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) para realizar esta tarefa.
+Após ter o arquivo, será necessário adicioná-lo a um módulo personalizado ou tema instalado em sua instância do Adobe Commerce. Siga as instruções descritas no tópico [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom) para realizar esta tarefa.
 
 ## Uso
 
@@ -43,7 +43,7 @@ A Biblioteca JS do Adobe Privacy fornece várias funções para gerenciar dados 
 `retrieveThenRemoveIdentities()`
 : Esta função é semelhante a `removeIdentities()`, pois recupera uma matriz de identidades e as remove do navegador.
 
-Para obter mais informações e exemplos para usar essas funções, consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=pt-BR).
+Para obter mais informações e exemplos para usar essas funções, consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Inicialização
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 O construtor aceita um objeto de configuração com parâmetros durante a instância.
-Consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=pt-BR) para obter uma lista desses parâmetros de configuração.
+Consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) para obter uma lista desses parâmetros de configuração.

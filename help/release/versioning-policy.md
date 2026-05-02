@@ -1,10 +1,10 @@
 ---
 title: Política de lançamento
-description: Saiba mais sobre os diferentes tipos de versões do Adobe Commerce.
+description: Saiba mais sobre os tipos de versão do Adobe Commerce, marketing versus controle de versão de módulo, versões de patch e segurança, betas, hotfixes e a política geral de lançamento.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ O Adobe Commerce usa [controle de versão semântico](https://semver.org/) no n�
 
 - **VERSÃO PRINCIPAL**—2
 - **VERSÃO SECUNDÁRIA**—2.4
-- **PATCH release**—2.4.8
+- **Versão do PATCH**—2.4.8
    - **Versão de correção de segurança**—2.4.8-p1
       - Correção de erro de segurança
       - Aprimoramento de segurança
 - **Versão de patch do ALPHA**—2.4.8-alpha1
 - **Versão de patch do BETA**—2.4.8-beta1
-- **Extensibility, Infrastructure, and Services release**
+- **Versão de Extensibilidade, Infraestrutura e Serviços**
 - **Hotfix**
 - **Patch individual**
 - **Patch personalizado**
@@ -32,34 +32,34 @@ As seguintes diretrizes se aplicam a versões secundárias:
 
 - É possível que ocorram alterações importantes; o código escrito para o Adobe Commerce 2.2.x pode não funcionar mais com o Adobe Commerce 2.3.x. Por exemplo, versões secundárias podem apresentar suporte para os principais requisitos e dependências do sistema, como o PHP.
 - As versões dos módulos podem variar. Por exemplo, algumas alterações de módulo são introduzidas em um novo patch, enquanto outras são introduzidas em uma versão secundária.
-- Minor releases can include new features that may require additional work by you or your solution partner during an upgrade to ensure compatibility.
-- Minor releases can include fixes for security and quality issues.
+- Versões secundárias podem incluir novos recursos que podem exigir trabalho adicional de você ou de seu parceiro de soluções durante uma atualização para garantir a compatibilidade.
+- As versões secundárias podem incluir correções para problemas de segurança e qualidade.
 
-## PATCH release
+## Versão do PATCH
 
-Patch releases are primarily focused on delivering security, performance, compliance, and high-priority quality fixes to help you keep your sites performing at their peak.
+As versões de patches se concentram principalmente no fornecimento de correções de segurança, desempenho, conformidade e qualidade de alta prioridade para ajudar você a manter o desempenho máximo de seus sites.
 
-The following guidelines apply to patch releases:
+As seguintes diretrizes se aplicam às versões de patch:
 
-- The latest-supported minor release receives full functional quality fixes and enhancements.
-- Changes that could break extensions or code compatibility are avoided. For example, code written for version 2.2.0 should still work on version 2.2.7.
-- On an exceptional basis, breaking changes or additional patches or hotfixes may be released to address security or compliance issues and high-impact quality issues. On the module level, these changes are mostly PATCH-level; sometimes MINOR-level.
+- A versão secundária com suporte mais recente recebe correções e melhorias completas de qualidade funcional.
+- São evitadas alterações que poderiam quebrar as extensões ou a compatibilidade de código. Por exemplo, o código escrito para a versão 2.2.0 ainda deve funcionar na versão 2.2.7.
+- Excepcionalmente, mudanças intensas ou patches ou hotfixes adicionais podem ser lançados para resolver problemas de segurança ou conformidade e problemas de qualidade de alto impacto. No nível do módulo, essas alterações são principalmente no nível do PATCH e, às vezes, no nível MENOR.
 
-### SECURITY patch release
+### Versão de correção de SEGURANÇA
 
 {{$include /help/_includes/release-notes/security-patch-overview.md}}
 
-## ALPHA patch release
+## Versão de correção do Alpha
 
-Pre-Beta releases of Adobe Commerce features are made publicly available to all Adobe Commerce customers and Adobe partners. Alpha releases are intended for early feedback and evaluation of features that are still in active development. These releases provide an opportunity for early testing and integration planning ahead of Beta and General Availability releases.
+As versões pré-Beta dos recursos do Adobe Commerce são disponibilizadas publicamente a todos os clientes da Adobe Commerce e parceiros da Adobe. As versões do Alpha destinam-se ao feedback inicial e à avaliação de recursos que ainda estão em desenvolvimento ativo. Essas versões oferecem uma oportunidade para testes antecipados e planejamento de integração antes das versões do Beta e de Disponibilidade geral.
 
-Alpha releases may be incomplete, and are likely to contain defects. They are provided &quot;AS IS&quot; without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) Alpha releases. Customers should not rely on the correct functioning or performance of Alpha releases or any accompanying documentation or materials. Use of Alpha releases is entirely at the customer&#39;s own risk.
+As versões do Alpha podem estar incompletas e provavelmente contêm defeitos. Eles são fornecidos &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) às versões do Alpha. Os clientes não devem confiar no funcionamento ou no desempenho correto das versões do Alpha ou de qualquer documentação ou material que o acompanhe. O uso das versões do Alpha é de inteira responsabilidade do cliente.
 
-## BETA patch release
+## Versão de correção do Beta
 
-Pre-General Availability releases of Adobe Commerce features are made publicly available to all Adobe Commerce customers and Adobe partners. It allows for extra time before General Availability to review code and affected components.
+As versões de disponibilidade pré-geral dos recursos do Adobe Commerce são disponibilizadas publicamente para todos os clientes da Adobe Commerce e parceiros da Adobe. Ele permite um tempo extra antes que a Disponibilidade Geral analise o código e os componentes afetados.
 
-Beta releases may contain defects and are provided &quot;AS IS&quot; without warranty of any kind. Adobe has no obligation to maintain, correct, update, change, modify, or otherwise support (via Adobe Support Services or otherwise) Beta releases. Customers should not rely on the correct functioning or performance of Beta releases or any accompanying documentation or materials. Portanto, qualquer uso das versões do Beta é de inteira responsabilidade do cliente.
+As versões do Beta podem conter defeitos e são fornecidas &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) às versões do Beta. Os clientes não devem confiar no funcionamento ou no desempenho correto das versões do Beta ou de qualquer documentação ou material que o acompanhe. Portanto, qualquer uso das versões do Beta é de inteira responsabilidade do cliente.
 
 ## Hotfix
 

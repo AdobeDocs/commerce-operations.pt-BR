@@ -3,9 +3,9 @@ title: Configurar o Apache para seu mecanismo de pesquisa
 description: Siga estas etapas para configurar um mecanismo de pesquisa com o servidor Web Apache para instalações locais do Adobe Commerce.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Esta seção discute como configurar um proxy usando um host virtual.
 
 1. Habilite `mod_proxy` da seguinte maneira:
 
-   ```bash
+   ```shell
    a2enmod proxy_http
    ```
 
@@ -54,25 +54,25 @@ Esta seção discute como configurar um proxy usando um host virtual.
 
 1. Reiniciar o Apache:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
 1. Verifique se o proxy funciona digitando o seguinte comando:
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    Por exemplo, se você estiver usando o Elasticsearch e seu proxy usar a porta 8080:
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    Mensagens semelhantes ao seguinte são exibidas para indicar sucesso:
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -103,7 +103,7 @@ Primeiro, veja se o utilitário Apache `htpasswd` está instalado da seguinte ma
 
 1. Digite o seguinte comando para determinar se `htpasswd` já está instalado:
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
@@ -118,11 +118,11 @@ Primeiro, veja se o utilitário Apache `htpasswd` está instalado da seguinte ma
 
 Digite os seguintes comandos como um usuário com privilégios de `root`:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.<password file name> <username>
 ```
 
@@ -145,22 +145,22 @@ Siga as instruções na tela para criar uma senha para o usuário.
 **Exemplo 1: cron**
 Você deve configurar a autenticação para apenas um usuário para cron; neste exemplo, usamos o usuário do servidor Web. Para criar um arquivo de senha para o usuário do servidor Web, digite os seguintes comandos:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **Exemplo 2: Elasticsearch**
 Você deve configurar a autenticação para dois usuários: um com acesso ao nginx e outro com acesso ao Elasticsearch. Para criar arquivos de senha para esses usuários, digite os seguintes comandos:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticsearch
 ```
 
@@ -168,7 +168,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 Para adicionar outro usuário ao seu arquivo de senhas, digite o seguinte comando como um usuário com privilégios `root`:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/.htpasswd <username>
 ```
 

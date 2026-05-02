@@ -2,9 +2,9 @@
 title: Criar ligações simbólicas para MENOS arquivos
 description: Saiba como criar symlinks para arquivos LESS para desenvolvimento em Adobe Commerce. Descubra a vinculação de folhas de estilos e a otimização do fluxo de trabalho de desenvolvimento.
 exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Para criar symlinks para arquivos LESS:
 
 Opções de comando:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="..."] [--theme="..."] [file1] ... [fileN]
 ```
 
@@ -37,13 +37,13 @@ A tabela a seguir explica os parâmetros e valores desse comando.
 
 Por exemplo, para criar MENOS arquivos para o tema de front-end chamado `VendorName/themeName` na localidade `en_US` usando um arquivo CSS chamado `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`, digite o seguinte comando:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l
 ```
 
 As mensagens a seguir são exibidas para confirmar o sucesso:
 
-```
+```text
 Processed Area: frontend, Locale: en_US, Theme: VendorName/themeName, File type: less.
 -> css/styles-l.less
 Successfully processed.
@@ -51,6 +51,6 @@ Successfully processed.
 
 Para criar MENOS arquivos para o adminhtml:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy --locale="en_US" --area="adminhtml" --theme="Magento/backend" css/styles css/styles-old
 ```

@@ -2,9 +2,9 @@
 title: Definir o valor dos parâmetros de inicialização
 description: Saiba como definir parâmetros de inicialização para o aplicativo do Commerce.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Você pode especificar variáveis de inicialização como variáveis de ambiente
 
 Por exemplo, você pode usar a variável de ambiente do sistema `MAGE_PROFILER` para especificar um modo da seguinte maneira:
 
-```
+```text
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -43,7 +43,7 @@ Defina a variável usando um comando específico do shell. Como os shells têm s
 
 Exemplo de shell Bash para CentOS:
 
-```bash
+```shell
 export MAGE_PROFILER=firebug
 ```
 
@@ -80,7 +80,7 @@ Você pode modificar `.htaccess` em qualquer um dos locais a seguir, dependendo 
 
 1. Defina o valor de `MAGE_PROFILER` para qualquer um dos seguintes:
 
-   ```
+   ```text
    firebug
    csvfile
    <custom value>
@@ -124,13 +124,13 @@ Os procedimentos a seguir mostram como definir o modo do aplicativo em um host v
 1. Salve as alterações e saia do editor de texto.
 1. Ative o host virtual se ainda não tiver feito isso:
 
-   ```bash
+   ```shell
    a2ensite <virtual host config file name>
    ```
 
    Por exemplo,
 
-   ```bash
+   ```shell
    a2ensite my.magento.conf
    ```
 

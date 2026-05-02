@@ -3,9 +3,9 @@ title: Registrar atividade do banco de dados
 description: Configure o Commerce para registrar a atividade do banco de dados usando a interface do Logger.
 feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '86'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ Depois disso, forneça o caminho de arquivo para `Magento\Framework\DB\Logger\Fi
 
 Por fim, compile o código com:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 E limpe o cache com:
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 

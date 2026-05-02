@@ -2,9 +2,9 @@
 title: Converter arquivos de layout
 description: Saiba como converter arquivos de layout XML usando ferramentas de linha de comando do Adobe Commerce. Descubra as atualizações da folha de estilos XSLT e os processos de conversão de arquivos.
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 Use este comando para atualizar seus arquivos XML de layout se você atualizar a folha de estilos XSLT correspondente.
 
-- [Instruções de layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
-- [Tipos de arquivos de layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
+- [Instruções de layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions)
+- [Tipos de arquivo de layout](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-files-types-and-conventions)
 
 Opções de comando:
 
-```bash
+```shell
 bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 ```
 

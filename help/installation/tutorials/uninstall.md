@@ -2,9 +2,9 @@
 title: Desinstalar ou reinstalar o Adobe Commerce
 description: Siga estas etapas para desinstalar e reinstalar as instalações locais do Adobe Commerce.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ A desinstalação do aplicativo remove e restaura o banco de dados, remove a con
 
 Para desinstalar o aplicativo, digite o seguinte comando:
 
-```bash
+```shell
 bin/magento setup:uninstall
 ```
 
 A seguinte mensagem é exibida para confirmar uma desinstalação bem-sucedida:
 
-```
+```text
 [SUCCESS]: Magento uninstallation complete.
 ```
 
@@ -49,7 +49,7 @@ Por padrão, `bin/magento setup:upgrade` limpa o código compilado e o cache. No
 
 No entanto, em algumas situações (particularmente, na implantação em produção), talvez você queira evitar a limpeza do código compilado, pois pode levar algum tempo. (O cache ainda está limpo.) Para atualizar o esquema de banco de dados e os dados *sem* limpando o código compilado, digite:
 
-```bash
+```shell
 bin/magento setup:upgrade --keep-generated
 ```
 

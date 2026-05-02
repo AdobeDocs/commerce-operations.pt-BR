@@ -1,9 +1,9 @@
 ---
 title: Agente de mensagem (AtiveMQ Artemis)
 description: Siga estas etapas para instalar e configurar o agente de mensagens Apache AtiveMQ Artemis para instalações locais do Adobe Commerce.
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ O Adobe Commerce também oferece suporte ao agente de mensagens de código abert
 
 >[!NOTE]
 >
->O AtiveMQ Artemis foi introduzido no Adobe Commerce 2.4.5 e versões posteriores. Para obter detalhes sobre como instalar o AtiveMQ Artemis no Adobe Commerce em projetos de infraestrutura em nuvem, consulte [Configurar o serviço AtiveMQ](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/activemq) no *Guia do Commerce na Nuvem*.
+>O AtiveMQ Artemis foi introduzido no Adobe Commerce 2.4.5 e versões posteriores. Para obter detalhes sobre como instalar o AtiveMQ Artemis no Adobe Commerce em projetos de infraestrutura em nuvem, consulte [Configurar o serviço AtiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) no *Guia do Commerce na Nuvem*.
 
 As filas de mensagens fornecem um mecanismo de comunicação assíncrono no qual o remetente e o destinatário de uma mensagem não entram em contato entre si. Eles também não precisam se comunicar com a fila de mensagens ao mesmo tempo. Quando um remetente coloca uma mensagem em uma fila, ela é armazenada até que o destinatário a receba.
 
@@ -51,7 +51,7 @@ Verifique se o Docker está instalado e em execução no sistema.
 
 1. Execute o AtiveMQ Artemis usando a imagem oficial do Docker:
 
-   ```bash
+   ```shell
    # Run with default configuration
    docker run --detach \
      --name artemis \
@@ -63,7 +63,7 @@ Verifique se o Docker está instalado e em execução no sistema.
 
 1. Executar com credenciais personalizadas:
 
-   ```bash
+   ```shell
    # Run with custom username/password
    docker run --detach \
      --name artemis \
@@ -77,7 +77,7 @@ Verifique se o Docker está instalado e em execução no sistema.
 
 #### Comandos de gerenciamento do Docker
 
-```bash
+```shell
 # Check container status
 docker ps | grep artemis
 
@@ -115,7 +115,7 @@ Verifique se o Java 17 ou superior está instalado (necessário para o AtiveMQ A
 
 1. Baixe e instale a versão mais recente do [site Apache AtiveMQ Artemis](https://activemq.apache.org/components/artemis/download/). A partir de setembro de 2025, a versão estável mais recente é a 2.42.0:
 
-   ```bash
+   ```shell
    sudo mkdir -p /opt/artemis
    cd /opt/artemis
    sudo curl -O https://downloads.apache.org/activemq/activemq-artemis/2.42.0/apache-artemis-2.42.0-bin.tar.gz
@@ -125,7 +125,7 @@ Verifique se o Java 17 ou superior está instalado (necessário para o AtiveMQ A
 
 1. Criar o usuário `artemis` e definir a propriedade:
 
-   ```bash
+   ```shell
    # Create artemis user and set ownership
    sudo useradd -r -s /bin/false artemis 2>/dev/null || true
    sudo chown -R artemis:artemis /opt/artemis
@@ -133,14 +133,14 @@ Verifique se o Java 17 ou superior está instalado (necessário para o AtiveMQ A
 
 1. Criar uma instância de agente:
 
-   ```bash
+   ```shell
    sudo /opt/artemis/bin/artemis create /var/lib/artemis-instance --user artemis --password artemis --allow-anonymous
    sudo chown -R artemis:artemis /var/lib/artemis-instance
    ```
 
 1. Inicie o broker:
 
-   ```bash
+   ```shell
    # Start in foreground (for testing)
    sudo /var/lib/artemis-instance/bin/artemis run
    
@@ -195,7 +195,7 @@ Para habilitar SSL no STOMP, você deve adicionar explicitamente o aceitador `st
 
 Se você instalar o Adobe Commerce _depois_ de instalar o AtiveMQ Artemis, adicione os seguintes parâmetros de linha de comando durante a instalação:
 
-```bash
+```shell
 --stomp-host="<hostname>" --stomp-port="61613" --stomp-user="<user_name>" --stomp-password="<password>"
 ```
 
@@ -232,7 +232,7 @@ Se você já tiver uma instância do Adobe Commerce com configuração RabbitMQ 
 
 Você também pode definir valores de configuração do AtiveMQ usando o comando `bin/magento setup:config:set` (remova a configuração AMQP se ela existir no arquivo `app/etc/env.php`):
 
-```bash
+```shell
 bin/magento setup:config:set --stomp-host="activemq.example.com" --stomp-port="61613" --stomp-user="magento" --stomp-password="magento"
 ```
 
@@ -337,13 +337,13 @@ O AtiveMQ Artemis fornece um console de gerenciamento baseado na Web acessível 
 
 Testar conexão STOMP usando telnet:
 
-```bash
+```shell
 telnet localhost 61613
 ```
 
 Você deve ver uma conexão estabelecida. Para testar com um comando STOMP:
 
-```bash
+```shell
 # Test basic STOMP connection
 echo -e "CONNECT\nhost:localhost\n\n\x00" | telnet localhost 61613
 ```

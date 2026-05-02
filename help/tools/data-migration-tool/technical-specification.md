@@ -3,9 +3,9 @@ title: Especificação técnica do [!DNL Data Migration Tool]
 description: Saiba mais sobre os detalhes de implementação do  [!DNL Data Migration Tool]  e como estender ao transferir dados entre o Magento 1 e o Magento 2.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2113'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Os [requisitos de sistema](../../installation/system-requirements.md) para o [!D
 
 O diagrama a seguir representa a estrutura de diretório de [!DNL Data Migration Tool]:
 
-```
+```shell
 ├── etc                                    --- all configuration files
 │   ├── opensource-to-opensource            --- configuration files for migration from Magento Open Source 1 to Magento Open Source 2
 │   │   ├── 1.9.1.1
@@ -535,12 +535,12 @@ Há três tipos de testes no [!DNL Data Migration Tool]:
 
 Eles estão localizados no diretório `tests/` da ferramenta, que é o mesmo tipo de teste (testes de unidade estão localizados no diretório `tests/unit`). Para iniciar o teste, você deve ter o phpunit instalado. Altere o diretório atual para o diretório de teste e inicie phpunit. Por exemplo:
 
-```bash
+```shell
 [10:32 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool]-[git master]
 $ cd tests/unit
 ```
 
-```bash
+```shell
 [10:33 AM]-[vagrant@debian-70rc1-x64-vbox4210]-[/var/www/magento2/vendor/magento/data-migration-tool/tests/unit]-[git master]
 $ phpunit
 PHPUnit 8.1.0 by Sebastian Bergmann.

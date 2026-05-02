@@ -2,9 +2,9 @@
 title: Importar dados de arquivos de configuração
 description: Saiba como importar definições de configuração do Adobe Commerce de arquivos de configuração. Descubra os processos de implantação de pipeline e importação de banco de dados.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Após importar sites, lojas, visualizações de loja e temas, você pode criar a
 
 No sistema de produção, execute o seguinte comando para importar dados dos arquivos de configuração (`config.php` e `env.php`) para o banco de dados:
 
-```bash
+```shell
 bin/magento app:config:import [-n, --no-interaction]
 ```
 
@@ -36,7 +36,7 @@ Se você inserir `bin/magento app:config:import` sem o sinalizador opcional, ser
 
 Por exemplo, se o arquivo de configuração contiver um novo site e um novo armazenamento, a seguinte mensagem será exibida:
 
-```
+```text
 These Websites will be created: New Website
 These Groups will be created: New Store
 Do you want to continue [yes/no]?
@@ -46,14 +46,14 @@ Para continuar a importação, insira `yes`.
 
 Se os arquivos de configuração de implantação contiverem alguns dados a serem importados, uma mensagem semelhante à seguinte será exibida:
 
-```
+```text
 Start import:
 Some information about importing
 ```
 
 Se os arquivos de configuração de implantação não contiverem dados a serem importados, uma mensagem semelhante à seguinte será exibida:
 
-```
+```text
 Start import:
 Nothing to import
 ```

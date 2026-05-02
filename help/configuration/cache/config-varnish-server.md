@@ -3,9 +3,9 @@ title: Configurar servidor Web
 description: Saiba como configurar seu servidor Web para funcionar com o armazenamento em cache do Varnish para o Adobe Commerce. Conheça os requisitos de configuração e configuração de porta.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Para configurar minimamente o Verniz:
 
 1. Fazer backup de `default.vcl`:
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
@@ -97,13 +97,13 @@ Para configurar minimamente o Verniz:
 
 1. Reiniciar o verniz:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
 Se o Verniz não for iniciado, tente executá-lo a partir da linha de comando da seguinte maneira:
 
-```bash
+```shell
 varnishd -d -f /etc/varnish/default.vcl
 ```
 
@@ -121,7 +121,7 @@ As seções a seguir discutem como verificar se o Verniz está funcionando, mas 
 Execute as tarefas discutidas nas seguintes seções na ordem mostrada:
 
 - [Iniciar verniz](#start-varnish)
-- [&quot;netstat&quot;](#netstat)
+- [`netstat`](#netstat)
 
 ### Iniciar verniz
 
@@ -131,7 +131,7 @@ Se o Varnish falhar ao ser iniciado como um serviço, inicie-o a partir da linha
 
 1. Inicie a CLI do Vernish:
 
-   ```bash
+   ```shell
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
@@ -141,7 +141,7 @@ Se o Varnish falhar ao ser iniciado como um serviço, inicie-o a partir da linha
 
    As mensagens a seguir são exibidas para confirmar um início bem-sucedido:
 
-   ```
+   ```text
    child (29805) Started
    200 0
    
@@ -153,13 +153,13 @@ Se o Varnish falhar ao ser iniciado como um serviço, inicie-o a partir da linha
 
 Faça logon no servidor Vernish e insira o seguinte comando:
 
-```bash
+```shell
 netstat -tulpn
 ```
 
 Procure a seguinte saída em particular:
 
-```
+```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -178,7 +178,7 @@ Instale o software Commerce, se ainda não tiver feito isso. Quando solicitado a
 
 Possível erro ao instalar o Commerce:
 
-```
+```text
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -209,7 +209,7 @@ Para definir o Commerce para o modo de desenvolvedor, use o comando [`magento de
 
 Verifique se o Verniz está em execução e digite o seguinte comando no servidor Verniz:
 
-```bash
+```shell
 varnishlog
 ```
 
@@ -217,7 +217,7 @@ Em um navegador da Web, vá para qualquer página do Commerce.
 
 Uma longa lista de cabeçalhos de resposta é exibida na janela da tela de comandos. Procure cabeçalhos como os seguintes:
 
-```
+```text
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -240,19 +240,19 @@ Há várias maneiras de visualizar cabeçalhos de resposta, incluindo o uso de u
 
 O exemplo a seguir usa `curl`. Você pode inserir esse comando em qualquer máquina que possa acessar o servidor do Commerce usando HTTP.
 
-```bash
+```shell
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
 Por exemplo,
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 Procure cabeçalhos como os seguintes:
 
-```
+```text
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

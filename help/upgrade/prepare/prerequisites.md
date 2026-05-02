@@ -2,9 +2,9 @@
 title: Concluir pré-requisitos
 description: Prepare seu projeto do Adobe Commerce para uma atualização concluindo essas etapas de pré-requisito.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1985'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Atualize todos os requisitos e dependências do sistema em seu ambiente. Revise 
 
 >[!NOTE]
 >
->Para projetos Pro da infraestrutura em nuvem do Adobe Commerce, você deve criar um tíquete de [Suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para instalar ou atualizar serviços em ambientes de Preparo e Produção. Indique as mudanças de serviço necessárias e inclua seus arquivos `.magento.app.yaml` e `services.yaml` atualizados e a versão do PHP no tíquete. Pode levar até 48 horas para a equipe de infraestrutura da nuvem atualizar seu projeto. Consulte [Software e serviços com suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
+>Para projetos Pro da infraestrutura em nuvem do Adobe Commerce, você deve criar um tíquete de [Suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para instalar ou atualizar serviços em ambientes de Preparo e Produção. Indique as mudanças de serviço necessárias e inclua seus arquivos `.magento.app.yaml` e `services.yaml` atualizados e a versão do PHP no tíquete. Pode levar até 48 horas para a equipe de infraestrutura da nuvem atualizar seu projeto. Consulte [Software e serviços com suporte](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
 
 ## Verifique se há um mecanismo de pesquisa compatível instalado
 
@@ -56,7 +56,7 @@ As seções a seguir descrevem quais ações devem ser executadas antes da atual
 A partir da versão 2.4, o MySQL não é mais um mecanismo de pesquisa de catálogo compatível. Você deve instalar e configurar o Elasticsearch ou o OpenSearch antes de atualizar. Use os seguintes recursos para ajudar a orientá-lo durante esse processo:
 
 * [Instalar e configurar o Elasticsearch](../../configuration/search/overview-search.md)
-* [Instalando o Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch)
+* [Instalação do Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch)
 * Configure o [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) ou o [Apache](../../installation/prerequisites/search-engine/configure-apache.md) para funcionar com o mecanismo de pesquisa
 * [Configurar Commerce para usar Elasticsearch](../../configuration/search/configure-search-engine.md) e reindexar
 
@@ -77,20 +77,20 @@ Para atualizar corretamente o MySQL da versão 8.0 para a versão 8.4, siga esta
 
 1. Habilitar modo de manutenção:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Faça um backup do banco de dados:
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
 1. Atualize o MySQL para a versão 8.4.
 1. Defina `restrict_fk_on_non_standard_key` como `OFF` em `[mysqld]` no arquivo `my.cnf`.
 
-   ```bash
+   ```shell
    [mysqld]
    restrict_fk_on_non_standard_key = OFF 
    ```
@@ -107,13 +107,13 @@ Para atualizar corretamente o MySQL da versão 8.0 para a versão 8.4, siga esta
 1. Importe os dados de backup para o MySQL.
 1. Limpe o cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Desabilitar modo de manutenção:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -169,7 +169,7 @@ O suporte para o Elasticsearch 8.x foi introduzido no Adobe Commerce 2.4.6. As i
 
 1. No diretório raiz do seu projeto Adobe Commerce, atualize suas dependências do Composer para remover o módulo `Magento_Elasticsearch7` e instalar o módulo `Magento_Elasticsearch8`.
 
-   ```bash
+   ```shell
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
 
@@ -181,13 +181,13 @@ O suporte para o Elasticsearch 8.x foi introduzido no Adobe Commerce 2.4.6. As i
 
    1. Primeiro, exija o módulo Elasticsearch 8 sem atualizar outras dependências:
 
-      ```bash
+      ```shell
       composer require magento/module-elasticsearch-8 --no-update
       ```
 
    1. Em seguida, atualize o módulo Elasticsearch 8 e os pacotes `aws/aws-sdk-php`:
 
-      ```bash
+      ```shell
       composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
       ```
 
@@ -197,7 +197,7 @@ O suporte para o Elasticsearch 8.x foi introduzido no Adobe Commerce 2.4.6. As i
 
 1. Atualize os componentes do projeto.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -205,13 +205,13 @@ O suporte para o Elasticsearch 8.x foi introduzido no Adobe Commerce 2.4.6. As i
 
 1. Reindexe o índice do catálogo.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
 1. Excluir todos os itens dos tipos de cache ativados.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -223,13 +223,13 @@ Se você atualizar inadvertidamente a versão do Elasticsearch no servidor ou de
 
 1. No diretório raiz do seu projeto Adobe Commerce, atualize suas dependências do Composer para remover o módulo `Magento_Elasticsearch8` e suas dependências do Composer, e instale o módulo `Magento_Elasticsearch7`.
 
-   ```bash
+   ```shell
    composer remove magento/module-elasticsearch-8
    ```
 
 1. Atualize os componentes do projeto.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -237,13 +237,13 @@ Se você atualizar inadvertidamente a versão do Elasticsearch no servidor ou de
 
 1. Reindexe o índice do catálogo.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
 1. Excluir todos os itens dos tipos de cache ativados.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -266,7 +266,7 @@ Para definir o ulimit a partir da linha de comando:
 1. Alternar para o [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 1. Defina o limite para `65536`.
 
-   ```bash
+   ```shell
    ulimit -n 65536
    ```
 
@@ -276,7 +276,7 @@ Para definir o valor no seu shell Bash:
 1. Abra `/home/<username>/.bashrc` em um editor de texto.
 1. Adicione a seguinte linha:
 
-   ```bash
+   ```shell
    ulimit -n 65536
    ```
 
@@ -296,7 +296,7 @@ Para verificar se o trabalho cron está configurado corretamente, verifique o cr
 >
 >O crontab é o arquivo de configuração responsável pela execução dos trabalhos cron.
 
-```bash
+```shell
 crontab -l
 ```
 
@@ -341,7 +341,7 @@ Para definir a variável de ambiente:
 1. Alternar para o [proprietário do sistema de arquivos](../../installation/prerequisites/file-system/overview.md).
 1. Defina a variável:
 
-   ```bash
+   ```shell
    export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
@@ -351,7 +351,7 @@ Para definir a variável de ambiente:
 
 1. Após a conclusão da atualização, é possível desfazer a definição da variável:
 
-   ```bash
+   ```shell
    unset DATA_CONVERTER_BATCH_SIZE
    ```
 
@@ -359,13 +359,13 @@ Para definir a variável de ambiente:
 
 Por motivos de segurança, o Adobe Commerce exige determinadas permissões no sistema de arquivos. As permissões são diferentes de _[propriedade](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. A propriedade determina quem pode executar ações no sistema de arquivos; as permissões determinam o que o usuário pode fazer.
 
-Os diretórios no sistema de arquivos devem ser graváveis pelo grupo [&#x200B; do &#x200B;](../../installation/prerequisites/file-system/overview.md)proprietário do sistema de arquivos.
+Os diretórios no sistema de arquivos devem ser graváveis pelo grupo ](../../installation/prerequisites/file-system/overview.md) do [proprietário do sistema de arquivos.
 
 Para verificar se as permissões do sistema de arquivos estão definidas corretamente, faça logon no servidor de aplicativos ou use o aplicativo gerenciador de arquivos do provedor de hospedagem.
 
 Por exemplo, insira o seguinte comando se o aplicativo estiver instalado em `/var/www/html/magento2`:
 
-```bash
+```shell
 ls -l /var/www/html/magento2
 ```
 
@@ -414,7 +414,7 @@ Consulte o seguinte para obter uma explicação do exemplo de saída:
 
 Para obter informações mais detalhadas, você pode inserir o seguinte comando:
 
-```bash
+```shell
 ls -la /var/www/html/magento2/pub
 ```
 
@@ -436,13 +436,13 @@ Para instalar o plugin:
 
 1. Adicione o pacote ao arquivo `composer.json`.
 
-   ```bash
+   ```shell
    composer require magento/composer-root-update-plugin ~2.0 --no-update
    ```
 
 1. Atualize as dependências:
 
-   ```bash
+   ```shell
    composer update
    ```
 

@@ -5,9 +5,9 @@ feature: Search
 role: Admin, Developer
 exl-id: 211c1e3c-0739-4ff6-a25c-b27d335920d1
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce (todos os métodos de implantação) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -39,7 +39,7 @@ As tabelas `search_query` grandes retardam significativamente as pesquisas de vi
 1. Configure o Adobe Commerce Develop usando o kit de ferramentas de desempenho `small.xml`.
 1. Acesse a linha de comando SQL e exclua a tabela `search_query` usando os seguintes comandos:
 
-   ```
+   ```text
    SET FOREIGN_KEY_CHECKS = 0;  
    DROP TABLE search_query;  
    SET FOREIGN_KEY_CHECKS = 1;  
@@ -48,7 +48,7 @@ As tabelas `search_query` grandes retardam significativamente as pesquisas de vi
 1. Preencha a tabela `search_query` com um grande número de registros, por exemplo: 4 milhões de registros.
 1. Acione caches de reindexação e liberação.
 
-   ```
+   ```shell
    bin/magento indexer:reindex  
    bin/magento c:c  
    bin/magento c:f  
@@ -56,7 +56,7 @@ As tabelas `search_query` grandes retardam significativamente as pesquisas de vi
 
 1. Habilitar logs de depuração do banco de dados:
 
-   ```
+   ```shell
    bin/magento dev:query-log:enable  
    ```
 
@@ -64,7 +64,7 @@ As tabelas `search_query` grandes retardam significativamente as pesquisas de vi
    `http://your_magento_instance/default/catalogsearch/result/?q=test.`
 1. Verifique o `db.log` para o tempo de execução da consulta para o seguinte SQL:
 
-   ```
+   ```sql
    SELECT COUNT(*) FROM (  
    SELECT DISTINCT `main_table`.`query_text`  
    FROM `search_query` AS `main_table`  
@@ -82,7 +82,7 @@ O tempo de execução da consulta é otimizado, resultando em um aumento menos s
 
 O tempo de execução da consulta aumenta significativamente devido à manipulação ineficiente da tabela `search_query` grande:
 
-```
+```text
 TIME: 10.8520 seconds  
 ```
 
@@ -91,7 +91,7 @@ TIME: 10.8520 seconds
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

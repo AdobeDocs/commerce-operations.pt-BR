@@ -3,9 +3,9 @@ title: Usar Valkey para armazenamento de sessão
 description: Saiba como configurar o Valkey para armazenamento de sessão no Adobe Commerce. Descubra etapas de instalação, opções de configuração e técnicas de otimização de desempenho.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '915'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ O Adobe Commerce fornece opções de linha de comando para configurar o armazena
 
 Execute o comando `setup:config:set` e especifique parâmetros específicos de Valkey.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parameter_name>=<parameter_value>...
 ```
 
@@ -34,7 +34,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 >
 >A partir do **Adobe Commerce 2.4.9-alpha2**, o **Valkey** substituiu oficialmente o Redis em ferramentas CLI devido a alterações no licenciamento. Valkey é uma bifurcação de Redis e mantém funcionalidade quase idêntica. Para **versões 2.4.8 e anteriores**, os comandos da CLI usados para configurar o Valkey permanecem os mesmos do Redis, garantindo compatibilidade com versões anteriores e simplificando a migração ou o suporte a ambientes duplos. O exemplo a seguir mostra o comando Valkey-specific.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
@@ -44,8 +44,8 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-valkey-port | porta | Porta de escuta do servidor Valkey. | 6379 |
 | session-save-valkey-password | senha | Especifica uma senha se o servidor Valkey exigir autenticação. | vazio |
 | session-save-valkey-timeout | timeout | Tempo limite da conexão, em segundos. | 2,5 |
-| session-save-valkey-persistent-id | persistent_identifier | Sequência de caracteres exclusiva para ativar conexões persistentes (por exemplo, sess-db0).<br>[Problemas conhecidos com phpredis e php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
-| session-save-valkey-db | banco de dados | Número exclusivo do banco de dados Valkey, recomendado para proteger contra perda de dados.<br><br>**Importante**: se você usar Valkey para mais de um tipo de cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número padrão do banco de dados de cache a `0`, o número do banco de dados de cache da página a `1` e o número do banco de dados de armazenamento da sessão a `2`. | 0 |
+| session-save-valkey-persistent-id | persistent_identifier | Cadeia de caracteres exclusiva para habilitar conexões persistentes (por exemplo, sess-db0).<br>[Problemas conhecidos com phpredis e php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
+| session-save-valkey-db | banco de dados | Número exclusivo do banco de dados Valkey, que é recomendado para proteção contra perda de dados.<br><br>**Importante**: se você usar Valkey para mais de um tipo de cache, os números do banco de dados devem ser diferentes. É recomendável atribuir o número padrão do banco de dados de cache a `0`, o número do banco de dados de cache da página a `1` e o número do banco de dados de armazenamento da sessão a `2`. | 0 |
 | session-save-valkey-compression-threshold | compression_threshold | Defina como `0` para desabilitar a compactação (recomendável quando `suhosin.session.encrypt = On`). | 2048 |
 | session-save-valkey-compression-lib | compression_library | Opções: gzip, lzf, lz4 ou snappy. | gzip |
 | session-save-valkey-log-level | log_level | Defina como qualquer um dos itens a seguir, listados na ordem do menos detalhado ao mais detalhado:<ul><li>0 (emergência: apenas os erros mais graves)<li>1 (alerta: ação imediata necessária)<li>2 (crítico: componente do aplicativo indisponível)<li>3 (erro: erros de tempo de execução, não críticos, mas que devem ser monitorados)<li>4 (aviso: informações adicionais, recomendado)<li>5 (aviso: condição normal, mas significativa)<li>6 (informações: mensagens informativas)<li>7 (depurar: o máximo de informações somente para desenvolvimento ou teste)</ul> | 1 |
@@ -67,7 +67,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 O exemplo a seguir define Valkey como o armazenamento de dados da sessão, define o host como `127.0.0.1`, define o nível de log como `4` e define o número do banco de dados como `2`. Todos os outros parâmetros são definidos com o valor padrão.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=127.0.0.1 --session-save-valkey-log-level=4 --session-save-valkey-db=2
 ```
 
@@ -75,7 +75,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=12
 >
 >A partir do **Adobe Commerce 2.4.9**, o **Valkey** substituiu oficialmente o Redis nas ferramentas CLI devido a alterações no licenciamento. Valkey é uma bifurcação de Redis e mantém funcionalidade quase idêntica. Para **versões 2.4.8 e anteriores**, os comandos da CLI usados para configurar o Valkey permanecem os mesmos do Redis, garantindo compatibilidade com versões anteriores e simplificando a migração ou o suporte a ambientes duplos. O exemplo a seguir mostra o comando Valkey-specific.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
@@ -119,13 +119,13 @@ Para verificar se o Valkey e o Commerce estão funcionando corretamente, faça l
 
 ### Comando do monitor Valkey
 
-```bash
+```shell
 valkey-cli monitor
 ```
 
 Exemplo de saída de armazenamento de sessão:
 
-```
+```text
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
 1476824834.187587 [0 127.0.0.1:52353] "hmget" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "data" "writes"
 1476824834.187939 [0 127.0.0.1:52353] "expire" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "1200"
@@ -136,7 +136,7 @@ Exemplo de saída de armazenamento de sessão:
 
 ### comando Valkey ping
 
-```bash
+```shell
 valkey-cli ping
 ```
 

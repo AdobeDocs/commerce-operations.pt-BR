@@ -5,9 +5,9 @@ feature: Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 0233db9b-86b1-4320-a566-7e7e207dab84
-source-git-commit: 1ccb4c1dda5141934e04509b27fdafbfdc436a15
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O patch ACSD-65848 corrige o problema em que a contagem total de produtos em uma
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -42,7 +42,7 @@ A página de edição/exibição de categoria do Administrador apresenta atrasos
    1. Abra o perfil `small.xml` e atualize-o para incluir 2.500 categorias e 250.000 produtos (para corresponder à configuração do comerciante).
    1. Execute o seguinte comando para gerar as correções:
 
-      ```bash
+      ```shell
       bin/magento 
       setup:performance:generate-fixtures var/setup/performance-toolkit/profiles/ce/small.xml
       ```
@@ -62,7 +62,7 @@ A página de edição/exibição de categoria do Administrador apresenta atrasos
 1. No painel Administração, crie uma estrutura de categoria mais profunda:
    * Mova a Categoria 2 na Categoria 1 para aninhá-la mais profundamente na árvore.
 1. Tente abrir uma página de categoria no painel Admin usando um URL como:
-   ```/admin/catalog/category/edit/id/xx/```
+   `/admin/catalog/category/edit/id/xx/`
 
 <u>Resultados esperados</u>:
 
@@ -77,7 +77,7 @@ As páginas de categoria levam mais de um minuto para serem abertas.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

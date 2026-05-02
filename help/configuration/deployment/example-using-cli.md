@@ -2,9 +2,9 @@
 title: Exemplo usando comandos CLI
 description: Veja um exemplo de como definir valores compartilhados, específicos do sistema e confidenciais no sistema de desenvolvimento usando a linha de comando.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Use os seguintes comandos da CLI para definir configurações específicas e con
 
 Para definir a configuração específica do sistema **Domínio de Email Padrão**, que está no escopo padrão, use o seguinte comando:
 
-```bash
+```shell
 bin/magento config:set customer/create_account/email_domain <email domain>
 ```
 

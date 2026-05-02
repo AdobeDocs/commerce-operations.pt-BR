@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de revisão de código p
 feature: Best Practices
 role: Developer
 exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1180'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Além disso, considere os seguintes pontos ao implementar processos de revisão 
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -116,7 +116,7 @@ Os desenvolvedores podem usar a automação para revisar a compilação de ID, o
 
 - Compilação de ID—Execute os seguintes comandos da CLI para ver se o código pode ser compilado sem problemas.
 
-  ```bash
+  ```shell
   bin/magento module:disable -n -q --all || exit;
   bin/magento module:enable -n -q --all || exit;
   bin/magento cache:enable -n -q || exit;
@@ -133,26 +133,26 @@ Os desenvolvedores podem usar a automação para revisar a compilação de ID, o
 
 - Esquema de banco de dados `whitelist.json` — Execute o seguinte comando da CLI e verifique se o arquivo `db_schema_whitelist.json` não foi adicionado ou alterado.
 
-  ```bash
+  ```shell
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
 - Validação do Composer — Valide o arquivo `composer.json` executando o seguinte comando da CLI no diretório que contém o arquivo `composer.json`.
 
-  ```bash
+  ```shell
   composer validate
   ```
 
 - Padrão de codificação — Instale e execute a ferramenta Padrão de codificação e execute-a no módulo. O arquivo a seguir mostra como habilitá-lo para execução em qualquer lugar digitando `mcs ./app/code/Vendor/Module/`.
 
-  ```bash
+  ```shell
   #!/usr/bin/env bash
   $HOME/web/magento/magento-coding-standard/vendor/bin/phpcs --standard=Magento2 "$@"
   ```
 
 - Phpstan
 
-  ```bash
+  ```shell
   ./vendor/bin/phpstan analyze app/code/Vendor/Module
   ```
 

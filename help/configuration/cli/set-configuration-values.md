@@ -2,9 +2,9 @@
 title: Definir valores de configuração
 description: Saiba como definir valores de configuração e alterar valores de Admin bloqueados no Adobe Commerce. Descubra comandos e técnicas de configuração avançada.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 5e2d11330d3334df36ba8b3d176fbe2d8bfe0486
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Os códigos de escopo para sites e exibições de armazenamento são armazenados
 
 1. Conecte-se ao banco de dados do Commerce.
 
-   ```bash
+   ```shell
    mysql -u <Commerce database username> -p
    ```
 
@@ -98,7 +98,7 @@ Os códigos de escopo para sites e exibições de armazenamento são armazenados
 
    Um exemplo de resultado é o seguinte:
 
-   ```
+   ```ini
    [mysql]> SELECT * FROM store_website;
    +------------+-------+--------------+------------+------------------+------------+
    | website_id | code  | name         | sort_order | default_group_id | is_default |
@@ -117,13 +117,13 @@ Os códigos de escopo para sites e exibições de armazenamento são armazenados
 
 **Para definir valores de configuração específicos do sistema**:
 
-```bash
+```shell
 bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [-lc | --lock-config] path value
 ```
 
 **Para definir valores de configuração confidenciais**:
 
-```bash
+```shell
 bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
@@ -161,19 +161,19 @@ A seguir, alguns exemplos para definir um URL de base de armazenamento:
 
 Defina o URL base para o escopo padrão:
 
-```bash
+```shell
 bin/magento config:set web/unsecure/base_url http://example.com/
 ```
 
 Defina a URL de base para o site `base`:
 
-```bash
+```shell
 bin/magento config:set --scope=websites --scope-code=base web/unsecure/base_url http://example2.com/
 ```
 
 Defina a URL de base para a exibição de armazenamento `test`:
 
-```bash
+```shell
 bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url http://example3.com/
 ```
 
@@ -181,7 +181,7 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 Se você usar a opção `--lock-env` da seguinte maneira, o comando salva o valor de configuração em `<Commerce base dir>/app/etc/env.php` e desabilita o campo para edição desse valor no Administrador.
 
-```bash
+```shell
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
 ```
 
@@ -193,7 +193,7 @@ Você pode usar a opção `--lock-env` para definir valores de configuração se
 
 Se você usar a opção `--lock-config` da seguinte maneira, o valor de configuração será salvo em `<Commerce base dir>/app/etc/config.php`. O campo para editar esse valor no Admin está desativado.
 
-```bash
+```shell
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1
 ```
 
@@ -207,7 +207,7 @@ Você pode usar `--lock-config` para definir valores de configuração se o Comm
 
 Opções de comando:
 
-```bash
+```shell
 bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 ```
 
@@ -215,23 +215,23 @@ onde
 
 - `--scope` é o escopo da configuração (padrão, site, armazenamento). O valor padrão é `default`
 - `--scope-code` é o código de escopo da configuração (código de site ou código de exibição de armazenamento)
-- `path` é o caminho de configuração no formato primeira_parte/segunda_parte/terceira_parte/etc (_necessário_)
+- `path` é o caminho de configuração no formato primeira _parte/segunda_ parte/terceira_parte/etc (_necessário_)
 
 >[!INFO]
 >
->O comando `bin/magento config:show` exibe os valores de quaisquer [valores criptografados](../reference/config-reference-sens.md) como uma série de asteriscos: `**&#x200B;**&#x200B;**`.
+>O comando `bin/magento config:show` exibe os valores de quaisquer [valores criptografados](../reference/config-reference-sens.md) como uma série de asteriscos: `******`.
 
 ### Exemplos
 
 **Para mostrar todas as configurações salvas**:
 
-```bash
+```shell
 bin/magento config:show
 ```
 
 Resultado:
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 general/region/display_all - 1
 general/region/state_required - AT,BR,CA,CH,EE,ES,FI,LT,LV,RO,US
@@ -241,50 +241,50 @@ analytics/subscription/enabled - 1
 
 **Para mostrar todas as configurações salvas do site `base`**:
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base
 ```
 
 Resultado:
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 general/region/state_required - AT,BR,CA
 ```
 
 **Para mostrar a URL base do escopo padrão**:
 
-```bash
+```shell
 bin/magento config:show web/unsecure/base_url
 ```
 
 Resultado:
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 ```
 
 **Para mostrar a URL base do site `base`**:
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
 ```
 
 Resultado:
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
 **Para mostrar a URL base do `default` armazenamento**:
 
-```bash
+```shell
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url
 ```
 
 Resultado:
 
-```
+```text
 web/unsecure/base_url - http://example-for-store.com/
 ```
 

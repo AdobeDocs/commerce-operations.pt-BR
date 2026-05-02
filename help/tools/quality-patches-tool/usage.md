@@ -4,9 +4,9 @@ description: Saiba como usar a Ferramenta de correção de qualidade para aplica
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fornece patches individuais desenvolvidos pela Adobe e pela comunidade Magento Open Source. Ela permite aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para a versão instalada do Adobe Commerce. Você pode aplicar patches a projetos Adobe Commerce, independentemente de quem os desenvolveu. Por exemplo, você pode aplicar uma correção desenvolvida pela comunidade para projetos do Adobe Commerce.
 
-Assista a este [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=pt-BR) e saiba como usar a Ferramenta de correção de qualidade para Adobe Commerce.
+Assista a este [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html) e saiba como usar a Ferramenta de correção de qualidade para Adobe Commerce.
 
 >[!INFO]
 >
->Consulte [Aplicar patches individuais](#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) para revisar uma lista completa de patches lançados.
+>Consulte [Aplicar patches individuais](#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar uma lista completa de patches lançados.
 
 >[!WARNING]
 >
@@ -31,7 +31,7 @@ Assista a este [vídeo técnico](https://experienceleague.adobe.com/docs/commerc
 >
 >Se ainda não estiver instalado, você deve instalar o [[!DNL Git]](https://github.com/git-guides/install-git) ou o [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) antes de instalar o [!DNL Quality Patches Tool]. Adicione o pacote do Composer `magento/quality-patches` ao arquivo `composer.json`:
 
-```bash
+```shell
 composer require magento/quality-patches
 ```
 
@@ -39,7 +39,7 @@ composer require magento/quality-patches
 
 Para exibir a lista de patches individuais disponíveis para a sua versão do Adobe Commerce:
 
-```bash
+```shell
 ./vendor/bin/magento-patches status
 ```
 
@@ -62,7 +62,7 @@ Adobe Commerce 2.3.5
 A tabela de status inclui:
 
 - **Tipo**:
-   - `Optional` — Todos os patches do pacote [!DNL Quality Patches Tool] e do [Guia de Infraestrutura do Commerce on Cloud > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) são opcionais para instalações do Adobe Commerce.
+   - `Optional` — Todos os patches do pacote [!DNL Quality Patches Tool] e do [Guia de Infraestrutura do Commerce on Cloud > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) são opcionais para instalações do Adobe Commerce.
    - `Deprecated` — A Adobe substituiu o patch individual. Se você tiver aplicado o patch, recomendamos que o reverta. A operação de reversão também remove o patch da tabela de status.
 
 - **Status**:
@@ -83,23 +83,23 @@ A tabela de status inclui:
 
 >[!WARNING]
 >
->É uma prática recomendada testar todos os patches em um ambiente de preparo ou desenvolvimento antes de implantar na produção. Também é recomendável fazer backup dos dados antes de aplicar um patch. Consulte [Fazer backup e reverter sistema de arquivos, mídia e banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=pt-BR).
+>É uma prática recomendada testar todos os patches em um ambiente de preparo ou desenvolvimento antes de implantar na produção. Também é recomendável fazer backup dos dados antes de aplicar um patch. Consulte [Fazer backup e reverter sistema de arquivos, mídia e banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Para aplicar um único patch, execute o seguinte comando, onde `MAGETWO-XXXX` é a ID do patch especificada na tabela de status:
 
-```bash
+```shell
 ./vendor/bin/magento-patches apply MAGETWO-XXXX
 ```
 
 Você também pode aplicar vários patches ao mesmo tempo separando cada ID de patch adicional com um espaço:
 
-```bash
+```shell
 ./vendor/bin/magento-patches apply MAGETWO-XXXX MAGETWO-YYYY
 ```
 
 Você deve limpar o cache após aplicar os patches para ver as alterações no aplicativo do Adobe Commerce:
 
-```bash
+```shell
 ./bin/magento cache:clean
 ```
 
@@ -111,29 +111,29 @@ Você deve limpar o cache após aplicar os patches para ver as alterações no a
 
 >[!WARNING]
 >
->É uma prática recomendada testar todos os patches em um ambiente de preparo ou desenvolvimento antes de implantar na produção. Também é recomendável fazer backup dos dados antes de aplicar um patch. Consulte [Fazer backup e reverter sistema de arquivos, mídia e banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=pt-BR).
+>É uma prática recomendada testar todos os patches em um ambiente de preparo ou desenvolvimento antes de implantar na produção. Também é recomendável fazer backup dos dados antes de aplicar um patch. Consulte [Fazer backup e reverter sistema de arquivos, mídia e banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Para reverter um único patch, execute o seguinte comando, onde `MAGETWO-XXXX` é a ID do patch especificada na tabela de status:
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert MAGETWO-XXXX
 ```
 
 Além disso, você pode reverter vários patches ao mesmo tempo separando cada ID de patch adicional com um espaço:
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert MAGETWO-XXXX MAGETWO-YYYY
 ```
 
 Para reverter todos os patches aplicados:
 
-```bash
+```shell
 ./vendor/bin/magento-patches revert --all
 ```
 
 Você deve limpar o cache após reverter os patches para ver as alterações no aplicativo do Adobe Commerce:
 
-```bash
+```shell
 ./bin/magento cache:clean
 ```
 
@@ -141,7 +141,7 @@ Você deve limpar o cache após reverter os patches para ver as alterações no 
 
 A Adobe Commerce lança periodicamente novos patches individuais. Você deve atualizar o [!DNL Quality Patches Tool] para obter novos patches individuais:
 
-```bash
+```shell
 composer update magento/quality-patches
 ```
 
@@ -151,7 +151,7 @@ Exibir os patches adicionados:
 >
 >Os novos patches de adição são exibidos na parte inferior da tabela.
 
-```bash
+```shell
 ./vendor/bin/magento-patches status
 ```
 
@@ -163,7 +163,7 @@ Para reaplicar patches:
 
 1. Atualize o [!DNL Quality Patches Tool]:
 
-   ```bash
+   ```shell
    composer update magento/quality-patches.
    ```
 
@@ -171,7 +171,7 @@ Para reaplicar patches:
 
 1. Aplique os patches:
 
-   ```bash
+   ```shell
    ./vendor/bin/magento-patches apply MAGETWO-XXXX
    ```
 
@@ -179,7 +179,7 @@ Para reaplicar patches:
 
 1. Limpe o cache:
 
-   ```bash
+   ```shell
    ./bin/magento cache:clean
    ```
 

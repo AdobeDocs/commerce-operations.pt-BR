@@ -2,9 +2,9 @@
 title: Configuração do sistema de produção
 description: Saiba como configurar um sistema de produção para o aplicativo do Commerce.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Para configurar uma máquina de produção:
 
    Crie o diretório:
 
-   ```bash
+   ```shell
    mkdir -p ~/.ssh/.composer
    ```
 
@@ -74,19 +74,19 @@ Para definir valores confidenciais:
 1. Altere para o diretório de instalação do Commerce.
 1. Digite o seguinte comando:
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
    Por exemplo, para definir o valor da chave de API do YouTube como `1234`, digite
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234
    ```
 
    Também é possível definir um ou mais valores interativamente da seguinte maneira:
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set -i
    ```
 

@@ -2,9 +2,9 @@
 title: Detalhes técnicos
 description: Leia sobre os detalhes técnicos da implantação de pipeline, os tipos de configurações e os fluxos de trabalho recomendados.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Defina a configuração compartilhada no Administrador em seu sistema de desenvo
 
 A configuração específica do sistema é armazenada em `app/etc/env.php`, que deve _não_ estar no controle de origem.
 
-Defina a configuração específica do sistema no Admin em seu sistema de desenvolvimento (ou Adobe Commerce na integração da infraestrutura em nuvem) e grave a configuração em `env.php` usando o comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md).
+Defina a configuração específica do sistema no Admin em seu sistema de desenvolvimento (ou Adobe Commerce na integração da infraestrutura em nuvem) e grave a configuração em `env.php` usando o comando [`magento app:config:dump` ](../cli/export-configuration.md).
 
 Este comando também grava configurações confidenciais em `env.php`.
 
@@ -88,7 +88,7 @@ O Administrador exibe o seguinte comportamento enquanto está no modo de produç
 
 ## Instalar e remover o cron
 
-Na versão 2.2, pela primeira vez, ajudamos você a configurar seu trabalho cron fornecendo o comando [`magento cron:install` &#x200B;](../cli/configure-cron-jobs.md). Este comando configura um crontab como o usuário que executa o comando.
+Na versão 2.2, pela primeira vez, ajudamos você a configurar seu trabalho cron fornecendo o comando [`magento cron:install` ](../cli/configure-cron-jobs.md). Este comando configura um crontab como o usuário que executa o comando.
 
 Além disso, você pode remover o crontab usando o comando `magento cron:remove`.
 
@@ -117,7 +117,7 @@ Em seu sistema de desenvolvimento:
 
 1. Para remover o código php gerado e os arquivos de ativos estáticos enquanto em desenvolvimento, execute os seguintes comandos:
 
-   ```bash
+   ```shell
    rm -r var/view_preprocessed/*
    rm -r pub/static/*/*
    rm -r generated/*/*
@@ -287,10 +287,10 @@ A definição de configuração específica do sistema de domínio de email padr
 
 As configurações do PayPal não são gravadas em nenhum arquivo porque o comando `bin/magento app:config:dump` não grava configurações confidenciais. Você deve definir as configurações do PayPal no sistema de produção usando os seguintes comandos:
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_username <username>
 ```
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_password <password>
 ```

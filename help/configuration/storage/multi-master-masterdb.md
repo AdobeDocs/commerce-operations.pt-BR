@@ -3,7 +3,7 @@ title: Configurar automaticamente os bancos de dados mestres
 description: Consulte orientações sobre como configurar automaticamente a solução de banco de dados dividido.
 recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Crie o checkout e os bancos de dados mestres OMS da seguinte maneira:
 1. Faça logon no servidor de banco de dados como qualquer usuário.
 1. Digite o seguinte comando para obter um prompt de comando do MySQL:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -66,7 +66,7 @@ Crie o checkout e os bancos de dados mestres OMS da seguinte maneira:
 
    Fazer check-out do banco de dados:
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
@@ -76,7 +76,7 @@ Crie o checkout e os bancos de dados mestres OMS da seguinte maneira:
 
    Banco de dados do sistema de gerenciamento de pedidos:
 
-   ```bash
+   ```shell
    mysql -u magento_sales -p
    ```
 
@@ -98,19 +98,19 @@ Consulte [Executando comandos](../cli/config-cli.md#running-commands) para fazer
 
 Sintaxe de comando:
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 Por exemplo,
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote --host="localhost" --dbname="magento_quote" --username="magento_quote" --password="magento_quote"
 ```
 
 A seguinte mensagem é exibida para confirmar uma configuração bem-sucedida:
 
-```
+```text
 Migration has been finished successfully!
 ```
 
@@ -118,22 +118,22 @@ Migration has been finished successfully!
 
 Sintaxe de comando:
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
 ```
 
 Por exemplo,
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales --host="localhost" --dbname="magento_sales" --username="magento_sales" --password="magento_sales"
 ```
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
 A seguinte mensagem é exibida para confirmar uma configuração bem-sucedida:
 
-```
+```text
 Migration has been finished successfully!
 ```

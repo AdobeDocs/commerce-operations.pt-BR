@@ -2,7 +2,7 @@
 title: Opções de modo de manutenção para atualização
 description: Crie uma página de modo de manutenção personalizada que seus clientes verão na loja da Adobe Commerce enquanto você executa uma atualização.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -66,13 +66,13 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
 1. Atualize sua configuração do Apache para fazer o seguinte:
 
    - Redirecionar todo o tráfego para a página de manutenção
-   - Incluir na lista de permissões determinados IPs para que um administrador possa atualizar o software Magento.
+   - Inclua na lista de permissões determinados IPs para que um administrador possa atualizar o software Magento.
 
-   Incluir na lista de permissões O exemplo a seguir apresenta 192.0.2.110.
+   O exemplo a seguir inclui na lista de permissões 192.0.2.110.
 
    Adicione o seguinte ao final do arquivo de configuração do Apache:
 
-   ```
+   ```text
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
@@ -90,7 +90,7 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
 
 1. Digite o seguinte comando:
 
-   ```bash
+   ```shell
    touch <web server docroot>/maintenance.enable
    ```
 
@@ -107,7 +107,7 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
 1. Use um editor de texto para abrir o arquivo de configuração nginx que contém o bloco do servidor.
 1. Adicionar o seguinte ao bloco de servidor (`server` é mostrado apenas para maior clareza; não adicione um segundo bloco de servidor).
 
-   Incluir na lista de permissões O seguinte capítulo exibe o endereço IP 192.0.2.110 e 192.0.2.115 em um sistema em que o Magento está instalado em `/var/www/html/magento2`:
+   O item a seguir inclui na lista de permissões o endereço IP 192.0.2.110 e 192.0.2.115 em um sistema em que o Magento está instalado em `/var/www/html/magento2`:
 
    ```conf
    server {
@@ -144,13 +144,13 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
 
 1. Digite o seguinte comando:
 
-   ```bash
+   ```shell
    touch <magento_root>/maintenance.enable
    ```
 
 1. Recarregue a configuração do nginx:
 
-   ```bash
+   ```shell
    service nginx reload
    ```
 
@@ -159,6 +159,6 @@ Para redirecionar o tráfego para uma página de manutenção personalizada:
 1. Após a atualização, exclua ou renomeie `maintenance.enable`
 1. Recarregue a configuração do nginx:
 
-   ```bash
+   ```shell
    service nginx reload
    ```

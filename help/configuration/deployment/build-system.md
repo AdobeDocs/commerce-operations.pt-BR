@@ -1,11 +1,11 @@
 ---
 title: Configuração do sistema de compilação
-description: Saiba como implantar o Commerce em um sistema de compilação.
+description: Saiba como configurar um sistema de compilação para implantação do Adobe Commerce com controle do código-fonte, ativos gerados e requisitos de conteúdo estático.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Para instalar o Composer:
 
 1. Digite os seguintes comandos:
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | php
    ```
 
-   ```bash
+   ```shell
    mv composer.phar /usr/local/bin/composer
    ```
 
@@ -82,26 +82,26 @@ Para configurar o sistema de criação:
 
    Se você usar o Git, use o seguinte comando:
 
-   ```bash
+   ```shell
    git clone [-b <branch name>] <repository URL>
    ```
 
 1. Altere para o diretório raiz do Commerce e digite:
 
-   ```bash
+   ```shell
    composer install
    ```
 
 1. Aguarde até que as dependências sejam atualizadas.
 1. Definir propriedade:
 
-   ```bash
+   ```shell
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
    Por exemplo,
 
-   ```bash
+   ```shell
    chown -R commerce-username:apache .
    ```
 
@@ -120,7 +120,7 @@ Para configurar o sistema de criação:
 1. Salve as alterações em `.gitignore` e saia do editor de texto.
 1. Se você usar o Git, use os seguintes comandos para confirmar a alteração:
 
-   ```bash
+   ```shell
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
@@ -128,7 +128,7 @@ Para configurar o sistema de criação:
 
 1. O sistema de compilação deve usar o [modo padrão](../bootstrap/application-modes.md#default-mode) ou o [modo de desenvolvedor](../bootstrap/application-modes.md#developer-mode):
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set <mode>
    ```
 

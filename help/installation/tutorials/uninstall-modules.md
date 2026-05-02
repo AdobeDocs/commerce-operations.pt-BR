@@ -1,10 +1,10 @@
 ---
 title: Desinstalar módulos
-description: Siga estas etapas para desinstalar um módulo do Adobe Commerce.
+description: Saiba como desinstalar módulos do Adobe Commerce com remoção opcional de código, esquema e dados e quando desabilitar módulos em vez de desinstalá-los.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Você só deve desinstalar um módulo se tiver certeza de que não o usará. Em 
 
 Uso do comando:
 
-```bash
+```shell
 bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|--remove-data] [-c|--clear-static-content] \
   {ModuleName} ... {ModuleName}
 ```
@@ -67,7 +67,7 @@ O comando de desinstalação do módulo executa as seguintes tarefas:
 
 Por exemplo, se você tentar desinstalar um módulo do qual outro módulo depende, a seguinte mensagem será exibida:
 
-```
+```shell
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -75,13 +75,13 @@ magento module:uninstall Magento_SampleMinimal
 
 Uma alternativa é desinstalar ambos os módulos após fazer backup do sistema de arquivos do módulo, de `pub/media` arquivos e das tabelas do banco de dados, mas _não_ removendo o esquema ou os dados do banco de dados do módulo:
 
-```bash
+```shell
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
 ```
 
 Mensagens semelhantes a esta são exibidas:
 
-```
+```text
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -122,7 +122,7 @@ Disabling maintenance mode
 
 Para restaurar a base de código para o estado em que você fez o backup, use o seguinte comando:
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
@@ -142,25 +142,25 @@ Esse comando executa as seguintes tarefas:
 1. Verifica o nome do arquivo de backup.
 1. Se você especificar um arquivo de reversão de código:
 
-   a. Verifica se os locais de destino de reversão são graváveis (observe que as pastas `pub/static` e `var` são ignoradas).
+   a) Verifica se os locais de destino de reversão são graváveis (observe que as pastas `pub/static` e `var` são ignoradas).
 
-   b. Exclui todos os arquivos e diretórios no diretório de instalação do aplicativo.
+   b) Exclui todos os arquivos e diretórios no diretório de instalação do aplicativo.
 
-   c. Extrai o arquivo de arquivamento para os locais de destino.
+   c) Extrai o arquivo de arquivamento para os locais de destino.
 
 1. Se você especificar um arquivo de rollback de banco de dados:
 
-   a. Descarta todo o banco de dados.
+   a) Descarta todo o banco de dados.
 
-   b. Restaura o banco de dados usando o backup do banco de dados.
+   b) Restaura o banco de dados usando o backup do banco de dados.
 
 1. Se você especificar um arquivo de reversão de mídia:
 
-   a. Verifica se os locais de destino de rollback são graváveis.
+   a) Verifica se os locais de destino de rollback são graváveis.
 
-   b. Exclui todos os arquivos e diretórios em `pub/media`
+   b) Exclui todos os arquivos e diretórios em `pub/media`
 
-   c. Extrai o arquivo de arquivamento para os locais de destino.
+   c) Extrai o arquivo de arquivamento para os locais de destino.
 
 1. Retira o armazenamento do modo de manutenção.
 
@@ -168,19 +168,19 @@ Por exemplo, para restaurar um backup de código (ou seja, do sistema de arquivo
 
 * Exibir uma lista de backups:
 
-  ```bash
+  ```shell
   magento info:backups:list
   ```
 
 * Restaurar um backup de arquivo chamado `1433876616_filesystem.tgz`:
 
-  ```bash
+  ```shell
   magento setup:rollback --code-file="1433876616_filesystem.tgz"
   ```
 
   Mensagens semelhantes a esta são exibidas:
 
-  ```
+  ```text
   Enabling maintenance mode
   Code rollback is starting ...
   Code rollback filename: 1433876616_filesystem.tgz

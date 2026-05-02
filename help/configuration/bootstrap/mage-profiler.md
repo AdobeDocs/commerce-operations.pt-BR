@@ -2,9 +2,9 @@
 title: Ativar a criação de perfil
 description: Saiba mais sobre como ativar o MAGE Profiler para uso com suas ferramentas analíticas.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -63,13 +63,13 @@ Para ativar gráficos de dependência, use a opção de variável.
 
    Para habilitar o criador de perfil usando o tipo `html` e criar um arquivo de sinalizador:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable html
    ```
 
    Para habilitar o criador de perfil usando o tipo `csvfile` e criar um arquivo de sinalizador:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable csvfile
    ```
 
@@ -77,7 +77,7 @@ Para ativar gráficos de dependência, use a opção de variável.
 
    Para desativar o profiler e remover o arquivo de sinalização:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:disable
    ```
 

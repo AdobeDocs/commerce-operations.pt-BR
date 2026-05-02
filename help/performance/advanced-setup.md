@@ -2,9 +2,9 @@
 title: Configuração avançada
 description: Saiba como fazer a configuração avançada do Adobe Commerce. Descubra as instruções passo a passo e os requisitos de configuração.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: da9ce645d4d32c1368da442d9bd260f5fb3cdb98
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ O Adobe Commerce dá suporte a filas de mensagens implementadas por meio de [!DN
 
 >[!WARNING]
 >
->O recurso de banco de dados dividido foi [descontinuado](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) na versão 2.4.2 do Adobe Commerce. Consulte [Reverter de um banco de dados dividido para um único banco de dados](../configuration/storage/revert-split-database.md).
+>O recurso de banco de dados dividido foi descontinuado na versão 2.4.2 do Adobe Commerce. Consulte [Reverter de um banco de dados dividido para um único banco de dados](../configuration/storage/revert-split-database.md).
 
 O Adobe Commerce permite configurar o armazenamento de banco de dados escalável para atender às necessidades de uma empresa em crescimento. Você pode configurar três bancos de dados mestres separados que atendem a domínios específicos:
 
@@ -68,13 +68,13 @@ Para configurar bancos de dados adicionais, você deve criar um banco de dados v
 
 Para o BD Mestre de Check-out
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote
 ```
 
 Para OMS Master DB
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales
 ```
 
@@ -86,7 +86,7 @@ Além dos bancos de dados mestres, o [!DNL Commerce] permite configurar vários 
 
 Você pode adicionar um banco de dados subordinado executando o seguinte comando:
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave
 ```
 

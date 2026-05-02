@@ -4,13 +4,13 @@ description: Aplique o patch ACP2E-3964 para corrigir o problema do Adobe Commer
 feature: Products, Media, REST, Catalog Management
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f48ced28035c65db561f4700113652574d302ec9
+exl-id: 61c5b97c-79aa-4ee7-96b3-70924d2c85a0
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3964: Produtos filho configuráveis com vídeo não listados pela API REST
 
@@ -28,7 +28,7 @@ O patch ACP2E-3964 corrige o problema em que produtos derivados de produtos conf
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -49,7 +49,7 @@ A API REST deve retornar os dados do produto filho sem erros, incluindo as infor
 
 A API REST retorna um erro:
 
-```
+```text
 Error: Call to a member function getVideoProvider() on null in vendor/magento/module-product-video/Model/Product/Attribute/Media/ExternalVideoEntryConverter.php:87
 ```
 
@@ -58,7 +58,7 @@ Error: Call to a member function getVideoProvider() on null in vendor/magento/mo
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

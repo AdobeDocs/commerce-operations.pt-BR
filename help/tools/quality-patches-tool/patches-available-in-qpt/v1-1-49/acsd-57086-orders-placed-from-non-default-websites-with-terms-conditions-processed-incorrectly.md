@@ -5,16 +5,16 @@ feature: Orders
 role: Admin, Developer
 exl-id: d9f2ef50-12c4-4a2d-b140-dfd0e8948fd3
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
 
 # ACSD-57086: pedidos de sites não padrão com termos e condições ativados são processados incorretamente
 
-O patch ACSD-57086 corrige o problema em que os pedidos feitos de sites não padrão com termos e condições ativados não são processados corretamente. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.49 está instalado. A ID do patch é ACSD-57086. Observe que esse problema foi corrigido no Adobe Commerce 2.4.7.
+O patch ACSD-57086 corrige o problema em que os pedidos feitos de sites não padrão com termos e condições ativados não são processados corretamente. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.49 está instalado. A ID do patch é ACSD-57086. Observe que esse problema foi corrigido no Adobe Commerce 2.4.7.
 
 ## Produtos e versões afetados
 
@@ -28,7 +28,7 @@ O patch ACSD-57086 corrige o problema em que os pedidos feitos de sites não pad
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -39,7 +39,7 @@ Ao usar uma configuração de várias lojas com processamento AsyncOrder, os ped
 1. Instale [!DNL RabbitMQ] e execute `bin/magento setup:upgrade` para criar as filas para [!DNL RabbitMQ].
 1. Configurar o processamento de AsyncOrder com:
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --checkout-async 1
    ```
 
@@ -59,7 +59,7 @@ Ao usar uma configuração de várias lojas com processamento AsyncOrder, os ped
 1. Altere o site padrão indo para **[!UICONTROL Stores]** > **[!UICONTROL All Stores]**. Clique no segundo site, marque *[!UICONTROL Set as Default]* e salve.
 1. Limpar o cache com:
 
-   ```bash
+   ```shell
    bin/magento cache:clear
    ```
 
@@ -67,13 +67,13 @@ Ao usar uma configuração de várias lojas com processamento AsyncOrder, os ped
 1. Volte para Admin depois de fazer o pedido, altere o site padrão de volta para o site principal original e salve.
 1. Limpe o cache:
 
-   ```bash
+   ```shell
    bin/magento cache:clear
    ```
 
 1. Execute o seguinte comando para iniciar o consumidor da fila:
 
-   ```bash
+   ```shell
    bin/magento queue:cons:start placeOrderProcessor
    ```
 
@@ -92,14 +92,14 @@ O status do pedido é *rejeitado* com o seguinte comentário:
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
 Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
+* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
 * [Verifique se há patch disponível para o problema do Adobe Commerce usando o  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!UICONTROL Quality Patches Tool].
 
 
-Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no guia [!DNL Quality Patches Tool].
+Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no guia [!DNL Quality Patches Tool].

@@ -4,10 +4,10 @@ description: Saiba como evitar problemas de desempenho causados por extensões d
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 0%
 
 ---
 
@@ -23,11 +23,11 @@ As extensões de terceiros (módulos) do Adobe Commerce têm o potencial de caus
 
 >[!NOTE]
 >
-> Todas as extensões disponíveis no Adobe Commerce Marketplace são necessárias para manter a compatibilidade com as novas versões do Commerce. Consulte [Compatibilidade de versão](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases/).
+> Todas as extensões disponíveis no Adobe Commerce Marketplace são necessárias para manter a compatibilidade com as novas versões do Commerce. Consulte [Compatibilidade de versão](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases).
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -36,5 +36,5 @@ As extensões de terceiros (módulos) do Adobe Commerce têm o potencial de caus
 
 - [Práticas recomendadas para o planejamento de atualizações](../../../upgrade/prepare/best-practices.md)
 - Uso de extensões de terceiros com o Adobe Commerce na infraestrutura em nuvem
-   - [Tecnologias e requisitos - Desenvolvimento e teste](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [Por que testar completamente na Integração e Preparo?](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [Tecnologias e requisitos - Desenvolvimento e teste](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [Por que testar totalmente a integração e o preparo?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

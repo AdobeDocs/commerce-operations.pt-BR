@@ -2,9 +2,9 @@
 title: Relatórios de dependência
 description: Saiba como criar relatórios de dependência que mostram as dependências de módulo, circular e estrutura no Adobe Commerce. Descubra as ferramentas de análise e relatórios.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Uma dependência em um comentário também é uma dependência.
 
 Opções de comando:
 
-```bash
+```shell
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
@@ -51,7 +51,7 @@ Se nenhum diretório ou nome de arquivo for passado como argumento, a seguinte r
 
 A seguir, uma parte da saída de um relatório de dependências de módulo de amostra:
 
-```
+```text
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ A seguir, uma parte da saída de um relatório de dependências de módulo de am
 
 A seguir, uma parte da saída para um exemplo de relatório de dependências circulares:
 
-```
+```text
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ A seguir, uma parte da saída para um exemplo de relatório de dependências cir
 
 A seguir, uma parte da saída de um relatório de dependências de estrutura de exemplo:
 
-```
+```text
 "Dependencies of framework:","Total number"
 "","111"
 

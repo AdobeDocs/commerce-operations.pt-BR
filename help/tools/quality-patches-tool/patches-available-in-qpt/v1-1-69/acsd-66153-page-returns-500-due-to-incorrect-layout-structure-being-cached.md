@@ -4,13 +4,13 @@ description: Aplique o patch ACSD-66153 para corrigir o problema do Adobe Commer
 feature: Catalog Management
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 70c7255e369ef366407d539488f0d815eb93f48a
+exl-id: 2d6f47cb-2244-40b6-b1b9-0d03f13adc43
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66153: a página retorna o erro 500 devido à estrutura de layout incorreta em cache
 
@@ -28,7 +28,7 @@ O patch ACSD-66153 corrige o problema em que uma página retorna um código de e
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -44,7 +44,7 @@ Uma página retorna um erro 500 devido a uma estrutura de layout incorreta em ca
 1. Abrir **[!UICONTROL two terminal windows]**:
    1. **Terminal 1**: limpar continuamente o cache de layout:
 
-      ```
+      ```shell
       for i in {1..200}; do
         bin/magento cache:clean layout
       done
@@ -52,7 +52,7 @@ Uma página retorna um erro 500 devido a uma estrutura de layout incorreta em ca
 
    1. **Terminal 2**: simular solicitações simultâneas à página de categoria:
 
-      ```
+      ```shell
       for i in {1..200}; do
         curl -s -o /dev/null -w "Request $i: HTTP %{http_code}\n""http://your_magento_base_url/shop.html?req=$i"
       done
@@ -60,7 +60,7 @@ Uma página retorna um erro 500 devido a uma estrutura de layout incorreta em ca
 
 1. Algumas solicitações falham aleatoriamente com um código de status 500, e `var/log/support_report.log` mostra o seguinte erro:
 
-   ```
+   ```yaml
    report.CRITICAL: The element with the "root" ID wasn't found. Verify the ID and try again. [] []
    ```
 
@@ -77,7 +77,7 @@ Algumas solicitações retornam intermitentemente o Erro interno 500 do servidor
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

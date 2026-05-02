@@ -2,9 +2,9 @@
 title: Migração do RabbitMQ para AtiveMQ
 description: Saiba como substituir o agente de fila de mensagens usado para instalações locais do Adobe Commerce.
 feature: Services, Configuration
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,13 @@ Essas instruções de migração presumem que o Adobe Commerce é o único aplic
 
 1. Coloque o site em [Modo de Manutenção](../../installation/tutorials/maintenance-mode.md):
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Verifique se o modo de manutenção está habilitado:
 
-   ```bash
+   ```shell
    bin/magento maintenance:status
    ```
 
@@ -61,7 +61,7 @@ Antes de continuar, verifique se todas as mensagens no RabbitMQ foram processada
 
 1. Verificar todas as filas e suas contagens de mensagens:
 
-   ```bash
+   ```shell
    rabbitmqctl list_queues name messages consumers
    ```
 
@@ -69,7 +69,7 @@ Antes de continuar, verifique se todas as mensagens no RabbitMQ foram processada
 
 1. Verifique as informações detalhadas da fila:
 
-   ```bash
+   ```shell
    rabbitmqctl list_queues name messages messages_ready messages_unacknowledged consumers
    ```
 
@@ -81,7 +81,7 @@ Se as mensagens estiverem pendentes em qualquer fila, processe-as antes de conti
 
 1. Obtenha a lista de consumidores disponíveis:
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:list
    ```
 
@@ -89,7 +89,7 @@ Se as mensagens estiverem pendentes em qualquer fila, processe-as antes de conti
 
    - **Processar consumidores como um grupo**
 
-     ```bash
+     ```shell
      bin/magento cron:run --group=consumers
      ```
 
@@ -99,13 +99,13 @@ Se as mensagens estiverem pendentes em qualquer fila, processe-as antes de conti
 
    - **Processar uma fila de mensagens específica**
 
-     ```bash
+     ```shell
      bin/magento queue:consumers:start <consumer_name> --max-messages=<number>
      ```
 
      Por exemplo, para processar operações assíncronas:
 
-     ```bash
+     ```shell
      bin/magento queue:consumers:start async.operations.all --max-messages=1000
      ```
 
@@ -117,7 +117,7 @@ Se as mensagens estiverem pendentes em qualquer fila, processe-as antes de conti
 
      Verificar continuamente as contagens de mensagens até que todas as filas estejam vazias:
 
-     ```bash
+     ```shell
      # Check every few seconds until 0 messages remain
      watch -n 5 "rabbitmqctl list_queues name messages | grep -v '^Listing' | grep -v '0$'"
      ```
@@ -134,7 +134,7 @@ Antes de prosseguir para a próxima etapa, verifique se **todas as filas mostram
 
 1. Interromper todos os consumidores de fila de mensagens em execução:
 
-   ```bash
+   ```shell
    # If using supervisor
    supervisorctl stop all
    
@@ -144,13 +144,13 @@ Antes de prosseguir para a próxima etapa, verifique se **todas as filas mostram
 
 1. Desabilitar trabalhos cron:
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
 1. Verifique se os trabalhos cron foram removidos:
 
-   ```bash
+   ```shell
    crontab -l
    ```
 
@@ -158,7 +158,7 @@ Antes de prosseguir para a próxima etapa, verifique se **todas as filas mostram
 
 Crie um backup da configuração atual:
 
-```bash
+```shell
 cp app/etc/env.php app/etc/env.php.backup.rabbitmq
 ```
 
@@ -174,13 +174,13 @@ Para concluir tarefas de instalação e configuração do AtiveMQ, como configur
 
 1. Após a conclusão bem-sucedida do teste, reinstale os trabalhos cron:
 
-   ```bash
+   ```shell
    bin/magento cron:install
    ```
 
 1. Verifique se os trabalhos cron estão agendados:
 
-   ```bash
+   ```shell
    crontab -l
    ```
 
@@ -188,13 +188,13 @@ Para concluir tarefas de instalação e configuração do AtiveMQ, como configur
 
 1. Depois de verificar se tudo está funcionando corretamente, desative o modo de manutenção:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
 1. Verifique se o modo de manutenção está desabilitado:
 
-   ```bash
+   ```shell
    bin/magento maintenance:status
    ```
 
@@ -207,7 +207,7 @@ Monitore o sistema por 24 a 48 horas após a migração para garantir que todas 
 - Verificar se as operações assíncronas (salvamentos de configuração, exportações etc.) estão funcionando
 - Verifique os logs CRON para garantir que os consumidores estejam em execução
 
-```bash
+```shell
 # Monitor system logs for queue activity
 tail -f var/log/system.log | grep -i queue
 
@@ -224,44 +224,44 @@ Se ocorrerem problemas durante ou após a migração, você poderá reverter par
 
 1. Habilitar modo de manutenção:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Parar todos os consumidores e desabilitar cron:
 
-   ```bash
+   ```shell
    pkill -f "queue:consumers:start"
    bin/magento cron:remove
    ```
 
 1. Restaurar a configuração anterior:
 
-   ```bash
+   ```shell
    cp app/etc/env.php.backup.rabbitmq app/etc/env.php
    ```
 
 1. Iniciar RabbitMQ (se parado):
 
-   ```bash
+   ```shell
    sudo systemctl start rabbitmq-server
    ```
 
 1. Limpar cache:
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Reinstalar cron:
 
-   ```bash
+   ```shell
    bin/magento cron:install
    ```
 
 1. Desabilitar modo de manutenção:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 

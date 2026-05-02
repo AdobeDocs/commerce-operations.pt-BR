@@ -2,9 +2,9 @@
 title: Biblioteca JavaScript de privacidade
 description: Saiba como usar ferramentas personalizadas para acessar e excluir informações pessoais do cliente coletadas pelo Adobe Commerce.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ Essa biblioteca fornece um conjunto de funções para criar solicitações de da
 
 >[!NOTE]
 >
->Se o [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=pt-BR) estiver habilitado, a Commerce não coletará dados comportamentais até que o comprador dê o seu consentimento. Se o [!UICONTROL **Modo de restrição de cookies**] estiver desativado, a Commerce coletará dados comportamentais por padrão.
+>Se o [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) estiver habilitado, a Commerce não coletará dados comportamentais até que o comprador dê o seu consentimento. Se o [!UICONTROL **Modo de restrição de cookies**] estiver desativado, a Commerce coletará dados comportamentais por padrão.
 
 ## Instalação
 
 A Biblioteca JavaScript de Privacidade está disponível no seguinte local CDN: `commerce.adobe.net/magentoprivacy.js`
 
-Após ter o arquivo, será necessário adicioná-lo a um módulo personalizado ou tema instalado em sua instância do Adobe Commerce. Siga as instruções descritas no tópico [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) para realizar esta tarefa.
+Após ter o arquivo, será necessário adicioná-lo a um módulo personalizado ou tema instalado em sua instância do Adobe Commerce. Siga as instruções descritas no tópico [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom) para realizar esta tarefa.
 
 ### Inicialização
 

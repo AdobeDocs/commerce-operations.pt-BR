@@ -2,7 +2,7 @@
 title: Executar testes de unidade
 description: Saiba como executar testes de unidade definidos na base de código do Adobe Commerce. Descubra comandos de teste, opções de execução e relatórios de resultados.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Antes de executar este comando, o seguinte _deve_ ser verdadeiro:
 
 - O módulo `Magento_Developer` deve ser habilitado. Você pode ativá-la da seguinte maneira:
 
-  ```bash
+  ```shell
   bin/magento module:enable [--force] Magento_Developer
   ```
 
@@ -35,24 +35,24 @@ Por exemplo, para executar testes de integração, você deve copiar `dev/tests/
 
 Uso do comando:
 
-```bash
+```shell
 bin/magento dev:tests:run <test>
 ```
 
 Para listar os tipos de teste disponíveis:
 
-```bash
+```shell
 bin/magento dev:tests:run --help
 ```
 
 Retorno de amostra:
 
-```
+```text
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 
 Por exemplo, para executar testes de integração:
 
-```bash
+```shell
 bin/magento dev:tests:run integration
 ```

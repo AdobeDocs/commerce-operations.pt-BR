@@ -2,9 +2,9 @@
 title: Executar uma atualização
 description: Siga estas etapas para atualizar as implantações locais do Adobe Commerce.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -19,10 +19,10 @@ Você pode atualizar _implantações locais_ do aplicativo Adobe Commerce a part
 
 >[!NOTE]
 >
->- Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Atualizar versão do Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=pt-BR) no Guia da Nuvem.
+>- Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Atualizar versão do Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) no Guia da Nuvem.
 >- Não use esse método para atualizar se você clonou o repositório GitHub. Consulte [Atualizar uma instalação baseada em Git](../developer/git-installs.md).
 
-As instruções a seguir mostram como atualizar usando o gerenciador de pacotes do Composer. O Adobe Commerce 2.4.2 introduziu o suporte para o Composer 2. Se você estiver tentando atualizar do &lt;2.4.1, é necessário primeiro atualizar para uma versão que seja compatível com o Composer 2 (por exemplo, 2.4.2) usando o Composer 1 _antes_ de atualizar para o Composer 2 para atualizações >2.4.2. Além disso, você deve estar executando uma [versão suportada](../../installation/system-requirements.md) do PHP.
+As instruções a seguir mostram como atualizar usando o gerenciador de pacotes do Composer. O Adobe Commerce 2.4.2 introduziu o suporte para o Composer 2. Se você estiver tentando atualizar do &lt;2.4.1, é necessário primeiro atualizar para uma versão que seja compatível com o Composer 2 (por exemplo, 2.4.2) usando o Composer 1 _antes de_ atualizar para o Composer 2 para atualizações >2.4.2. Além disso, você deve estar executando uma [versão suportada](../../installation/system-requirements.md) do PHP.
 
 >[!WARNING]
 >
@@ -35,8 +35,7 @@ Você deve concluir os [pré-requisitos de atualização](../prepare/prerequisit
 >[!IMPORTANT]
 >
 >O Adobe Commerce versão 2.4.6-p13 não inclui o pacote `magento/inventory-composer-installer`, que é necessário para a atualização suave de versões secundárias mais antigas com alterações incompatíveis com versões anteriores.<br>
->&#x200B;>Se você atualizar da versão 2.3 para a 2.4.6-p13, execute o seguinte comando para instalar o pacote `magento/inventory-composer-installer` antes de atualizar:
->&#x200B;>`composer require magento/inventory-composer-installer`
+>Se você atualizar da versão 2.3 para a 2.4.6-p13, execute o seguinte comando para instalar o pacote `magento/inventory-composer-installer` antes de atualizar:>`composer require magento/inventory-composer-installer`
 
 ## Gerenciar pacotes
 
@@ -46,7 +45,7 @@ Você deve concluir os [pré-requisitos de atualização](../prepare/prerequisit
 
 1. Alterne para o modo de manutenção para impedir o acesso ao seu armazenamento durante o processo de atualização.
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
@@ -56,19 +55,19 @@ Você deve concluir os [pré-requisitos de atualização](../prepare/prerequisit
 
    _Adobe Commerce na infraestrutura de nuvem :_
 
-   ```bash
+   ```shell
    ./vendor/bin/ece-tools cron:disable
    ```
 
    _Magento Open Source :_
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
 1. Inicie todos os consumidores da fila de mensagens manualmente para garantir que todas as mensagens sejam consumidas.
 
-   ```bash
+   ```shell
    bin/magento cron:run --group=consumers
    ```
 
@@ -76,7 +75,7 @@ Você deve concluir os [pré-requisitos de atualização](../prepare/prerequisit
 
 1. Crie um backup do arquivo `composer.json`.
 
-   ```bash
+   ```shell
    cp composer.json composer.json.bak
    ```
 
@@ -84,31 +83,31 @@ Você deve concluir os [pré-requisitos de atualização](../prepare/prerequisit
 
    Por exemplo, se estiver atualizando do Magento Open Source para o Adobe Commerce, remova o pacote do Magento Open Source.
 
-   ```bash
+   ```shell
    composer remove magento/product-community-edition --no-update
    ```
 
    Você também pode atualizar dados de amostra.
 
-   ```bash
+   ```shell
    composer require <sample data module-1>:<version> ... <sample data module-n>:<version> --no-update
    ```
 
    - _Adobe Commerce :_
 
-     ```bash
+     ```shell
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
      ```
 
    - _Magento Open Source :_
 
-     ```bash
+     ```shell
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
      ```
 
 1. Atualize sua instância usando a seguinte sintaxe de comando `composer require-commerce`:
 
-   ```bash
+   ```shell
    composer require-commerce magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
    ```
 
@@ -130,7 +129,7 @@ Você deve concluir os [pré-requisitos de atualização](../prepare/prerequisit
 
 1. Atualize as dependências.
 
-   ```bash
+   ```shell
    composer update
    ```
 
@@ -140,13 +139,13 @@ Para ver a lista completa de versões 2.4.x disponíveis:
 
 _Magento Open Source_:
 
-```bash
+```shell
 composer show magento/product-community-edition 2.4.* --available | grep -m 1 versions
 ```
 
 _Adobe Commerce_:
 
-```bash
+```shell
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
@@ -156,13 +155,13 @@ Os patches de qualidade contêm principalmente correções de segurança _e_ fun
 
 _Adobe Commerce_:
 
-```bash
+```shell
 composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_:
 
-```bash
+```shell
 composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
@@ -172,13 +171,13 @@ Os patches de segurança contêm apenas correções de segurança. Elas foram pr
 
 _Adobe Commerce_:
 
-```bash
+```shell
 composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
 ```
 
 _Magento Open Source_:
 
-```bash
+```shell
 composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
@@ -192,21 +191,21 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 1. Aplique atualizações.
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. Limpar os subdiretórios `var/` e `generated/`:
 
-   ```bash
+   ```shell
    rm -rf var/cache/*
    ```
 
-   ```bash
+   ```shell
    rm -rf var/page_cache/*
    ```
 
-   ```bash
+   ```shell
    rm -rf generated/code/*
    ```
 
@@ -216,13 +215,13 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 1. Atualize o esquema do banco de dados e os dados.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Desabilitar modo de manutenção.
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -230,7 +229,7 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
    Se você usar o Varnish para armazenamento em cache de página, reinicie-o:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 

@@ -5,9 +5,9 @@ feature: Customers, Admin Workspace
 role: Admin, Developer
 exl-id: 5423bbd3-75e9-4137-b2d5-3a0ceb3384ad
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O patch ACSD-64149 corrige o problema em que um segmento de cliente com uma cond
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -38,7 +38,7 @@ Ao editar um segmento de cliente existente com uma condição em produtos dentro
 
 1. Verifique se o consumidor `matchCustomerSegmentProcessor` está em execução:
 
-   ```bash
+   ```shell
    $ bin/magento que:cons:st matchCustomerSegmentProcessor
    ```
 
@@ -62,7 +62,7 @@ O seletor **[!UICONTROL Date range]** não deve adicionar hora à data ao editar
    * Uma data tem apenas a data, enquanto a outra tem a data e a hora especificadas.
 * O seguinte erro é exibido nos logs:
 
-  ```
+  ```yaml
   report.CRITICAL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2, query was: SELECT `item`.`quote_id` FROM `quote_item` AS `item`
   INNER JOIN `quote` AS `list` ON item.quote_id = list.entity_id WHERE (list.is_active = 1) AND () [] []
   ```
