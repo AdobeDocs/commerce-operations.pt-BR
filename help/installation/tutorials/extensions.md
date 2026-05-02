@@ -20,7 +20,7 @@ As extensões incluem:
 - Temas (altere a aparência da loja e do administrador)
 - Pacotes de idioma (localize a loja e o Administrador)
 
-Este tópico explica como usar a interface de linha de comando para gerenciar extensões de terceiros compradas da Commerce Marketplace para projetos _no local_. Para projetos de infraestrutura em nuvem, consulte [Gerenciar extensões](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+Este tópico explica como usar a interface de linha de comando para gerenciar extensões de terceiros compradas da Commerce Marketplace para projetos _no local_. Para projetos de infraestrutura em nuvem, consulte [Gerenciar extensões](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 Você pode usar o mesmo procedimento para instalar a extensão _any_. Tudo o que você precisa é o nome e a versão do Compositor da extensão. Para encontrá-lo, abra o arquivo `composer.json` da extensão e anote os valores de `"name"` e `"version"`.
 

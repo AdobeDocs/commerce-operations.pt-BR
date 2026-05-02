@@ -23,7 +23,7 @@ Depois do backup, você pode [reverter](#rollback) mais tarde.
 
 >[!TIP]
 >
->Para obter informações sobre projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Gerenciamento de instantâneos e backup](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) no _Guia da nuvem_.
+>Para obter informações sobre projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Gerenciamento de instantâneos e backup](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) no _Guia da nuvem_.
 
 ## Habilitar backups
 

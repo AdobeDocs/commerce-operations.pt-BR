@@ -14,7 +14,7 @@ ht-degree: 0%
 
 O Commerce GraphQL Application Server permite que o Adobe Commerce mantenha o estado entre as solicitações de API do Commerce GraphQL. O GraphQL Application Server, que é criado na extensão Swoole, opera como um processo com threads de trabalho que lidam com o processamento de solicitações. Ao preservar um estado de aplicativo inicializado entre as solicitações de API do GraphQL, o GraphQL Application Server aprimora o manuseio de solicitações e o desempenho geral do produto. As solicitações de API tornam-se significativamente mais eficientes.
 
-O GraphQL Application Server está disponível somente para o Adobe Commerce. Não está disponível para o Magento Open Source. Para projetos do Cloud Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar o Servidor de Aplicativos do GraphQL.
+O GraphQL Application Server está disponível somente para o Adobe Commerce. Não está disponível para o Magento Open Source. Para projetos do Cloud Pro, você deve [enviar um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar o Servidor de Aplicativos do GraphQL.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ A execução do GraphQL Application Server requer o seguinte:
 
 ### Projetos na nuvem
 
-Os projetos de infraestrutura em nuvem do Adobe Commerce incluem a extensão Swoole por padrão. Você pode [habilitar](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) na propriedade `runtime` do arquivo `.magento.app.yaml`. Por exemplo:
+Os projetos de infraestrutura em nuvem do Adobe Commerce incluem a extensão Swoole por padrão. Você pode [habilitar](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) na propriedade `runtime` do arquivo `.magento.app.yaml`. Por exemplo:
 
 ```yaml
 runtime:
@@ -273,7 +273,7 @@ Conclua as seguintes etapas antes de implantar o GraphQL Application Server em p
 
 >[!NOTE]
 >
->Verifique se todas as configurações personalizadas no arquivo raiz `.magento.app.yaml` foram migradas adequadamente para o arquivo `application-server/.magento/.magento.app.yaml`. Depois que o arquivo `application-server/.magento/.magento.app.yaml` for adicionado ao seu projeto, você deverá mantê-lo além do arquivo `.magento.app.yaml` raiz. Por exemplo, se você precisar [configurar o serviço RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) ou [gerenciar propriedades da Web](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property), adicione a mesma configuração ao `application-server/.magento/.magento.app.yaml` também.
+>Verifique se todas as configurações personalizadas no arquivo raiz `.magento.app.yaml` foram migradas adequadamente para o arquivo `application-server/.magento/.magento.app.yaml`. Depois que o arquivo `application-server/.magento/.magento.app.yaml` for adicionado ao seu projeto, você deverá mantê-lo além do arquivo `.magento.app.yaml` raiz. Por exemplo, se você precisar [configurar o serviço RabbitMQ](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) ou [gerenciar propriedades da Web](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property), adicione a mesma configuração ao `application-server/.magento/.magento.app.yaml` também.
 
 ### Verificar habilitação em projetos na nuvem
 

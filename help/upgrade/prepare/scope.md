@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Entender o escopo da atualização
 
-Revise as [notas de versão](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) para entender o escopo de uma versão, incluindo aprimoramentos, correções de erros e problemas conhecidos que podem afetar módulos de terceiros e personalizados.
+Revise as [notas de versão](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview) para entender o escopo de uma versão, incluindo aprimoramentos, correções de erros e problemas conhecidos que podem afetar módulos de terceiros e personalizados.
 
 ## Alterações incompatíveis com versões anteriores
 
@@ -26,7 +26,7 @@ A nova política de compatibilidade do Adobe Commerce Marketplace garante que _t
 
 ## Módulos personalizados
 
-Todos os módulos personalizados devem ser verificados em relação à versão de destino para a qual você deseja atualizar. Esse é o processo de atualização que consome mais tempo e recursos. Ao avaliar seus módulos personalizados, você deve procurar alterações incompatíveis com versões anteriores e estar ciente das novas práticas, como a decomposição do controlador. Você pode saber mais sobre isso nas [notas de versão](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview). Além disso, verifique se você está seguindo as [práticas recomendadas](https://developer.adobe.com/commerce/php/best-practices/extensions/) para o desenvolvimento de módulo.
+Todos os módulos personalizados devem ser verificados em relação à versão de destino para a qual você deseja atualizar. Esse é o processo de atualização que consome mais tempo e recursos. Ao avaliar seus módulos personalizados, você deve procurar alterações incompatíveis com versões anteriores e estar ciente das novas práticas, como a decomposição do controlador. Você pode saber mais sobre isso nas [notas de versão](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview). Além disso, verifique se você está seguindo as [práticas recomendadas](https://developer.adobe.com/commerce/php/best-practices/extensions/) para o desenvolvimento de módulo.
 
 ## [!DNL Upgrade Compatibility Tool]
 

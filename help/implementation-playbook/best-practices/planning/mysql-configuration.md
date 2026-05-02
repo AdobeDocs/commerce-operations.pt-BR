@@ -48,7 +48,7 @@ Para evitar problemas de desempenho ao usar acionadores, siga estas diretrizes:
 
 - Se você tiver acionadores personalizados que gravam alguns dados quando o acionador é executado, mova essa lógica para gravar diretamente nas tabelas de auditoria. Por exemplo, adicionando uma consulta adicional no código do aplicativo, após a consulta, você pretendia criar o acionador para.
 - Revise os acionadores personalizados existentes e considere removê-los e gravá-los diretamente nas tabelas do lado do aplicativo. Verifique se há gatilhos no banco de dados usando a [`SHOW TRIGGERS` Instrução SQL](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- Para obter assistência, dúvidas ou preocupações adicionais, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
+- Para obter assistência, dúvidas ou preocupações adicionais, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR&#submit-ticket).
 
 ## Conexões subordinadas
 
@@ -62,7 +62,7 @@ Adobe Commerce na infraestrutura em nuvem, somente arquitetura Pro
 
 ### Configuração
 
-Na infraestrutura do Adobe Commerce na nuvem, é possível substituir a configuração padrão da conexão slave do MYSQL definindo a variável [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection). Defina essa variável como `true` para usar automaticamente uma conexão somente leitura com o banco de dados.
+Na infraestrutura do Adobe Commerce na nuvem, é possível substituir a configuração padrão da conexão slave do MYSQL definindo a variável [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#mysql_use_slave_connection). Defina essa variável como `true` para usar automaticamente uma conexão somente leitura com o banco de dados.
 
 **Para habilitar a conexão subordinada do MySQL**:
 
