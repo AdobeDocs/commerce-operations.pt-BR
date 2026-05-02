@@ -38,7 +38,7 @@ Além disso, considere os seguintes pontos ao implementar processos de revisão 
 
 ## Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local

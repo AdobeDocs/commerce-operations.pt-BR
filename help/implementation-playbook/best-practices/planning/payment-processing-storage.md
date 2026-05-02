@@ -21,7 +21,7 @@ Siga as práticas recomendadas abaixo para garantir o processamento correto das 
 
 ## Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 * Adobe Commerce na infraestrutura em nuvem
 * Adobe Commerce no local

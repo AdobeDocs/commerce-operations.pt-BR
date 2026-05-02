@@ -30,7 +30,7 @@ Um nome de variável de ambiente consiste em seu escopo seguido por seu caminho 
 
    - Variáveis de ambiente
    - O comando [`magento config:set`](../cli/set-configuration-values.md)
-   - O Administrador seguido pelo comando [`magento app:config:dump` ](../cli/export-configuration.md)
+   - O Administrador seguido pelo comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md)
 
 Os caminhos de configuração podem ser encontrados em:
 
