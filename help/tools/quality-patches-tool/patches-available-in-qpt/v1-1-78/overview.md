@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f78520918618a750cdca062a0543eb4821dfc525
+source-git-commit: 371cca36da675d8b9ad8e7b0281e48a3067073e2
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 0%
 Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no [!DNL Quality Patches Tool] (QPT) v1.1.78.
 
 O QPT v1.1.78 inclui os seguintes patches:
+1. **ACP2E-4416**: corrige o problema em que os pontos de premiação do cliente não são inicializados quando criados no Administrador.
+1. **ACP2E-4419**: corrige o problema em que os cartões-presente não são aplicados corretamente no check-out após a validação bem-sucedida do reCAPTCHA v2 (&#39;Não sou um robô&#39;) na loja.
+1. **ACP2E-4431**: corrige o problema em que os Produtos Relacionados correspondentes às regras de destino são excluídos durante o processo de reindexação.
+1. **[ACP2E-4448](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)**: corrige o problema em que as alterações de configuração feitas durante as interrupções do Redis não são refletidas após a recuperação do Redis, fazendo com que valores obsoletos persistam.
 1. **[ACP2E-4416](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)**: corrige o problema em que os pontos de premiação do cliente não são inicializados quando criados no Administrador.
 1. **[ACP2E-4431](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)**: corrige o problema em que [!UICONTROL Related Products] correspondidos pelas regras de destino são excluídos durante o processo de reindexação.
 1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)**: corrige o problema em que os cartões-presente não são aplicados corretamente no check-out após a validação bem-sucedida do reCAPTCHA v2 (&#39;Não sou um robô&#39;) na loja.
