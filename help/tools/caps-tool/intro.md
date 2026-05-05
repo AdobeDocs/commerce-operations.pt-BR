@@ -53,7 +53,7 @@ O [!DNL CAPS] é totalmente integrado à infraestrutura da Adobe Commerce Cloud 
 
 Saiba mais sobre o Serviço de patch automatizado da Adobe Cloud e como essa ferramenta ajuda os usuários a encontrar e aplicar rapidamente os patches de segurança. O vídeo a seguir mostra como acessá-lo pelo painel SWAT, escolher o projeto e o ambiente e aplicar patches com um clique.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476252/?captions=por_br&learn=on&enablevpops)
 
 ## Casos de uso comuns
 
