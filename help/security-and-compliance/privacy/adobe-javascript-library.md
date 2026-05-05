@@ -4,7 +4,7 @@ description: Saiba como usar ferramentas personalizadas para acessar e excluir i
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-A [Biblioteca JavaScript de Privacidade da Adobe](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=pt-BR) é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados.
+A [Biblioteca JavaScript de Privacidade da Adobe](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) é um conjunto de ferramentas que ajudam a criar um processo para acessar e excluir dados privados.
 
 Os serviços de rastreamento de dados da Adobe Commerce podem armazenar informações privadas aplicáveis a regulamentos de privacidade, como o [Regulamento Geral sobre a Proteção de Dados (GDPR)](gdpr.md) e a [Lei de Privacidade do Consumidor da Califórnia (CCPA)](ccpa.md).
 
@@ -43,7 +43,7 @@ A Biblioteca JS do Adobe Privacy fornece várias funções para gerenciar dados 
 `retrieveThenRemoveIdentities()`
 : Esta função é semelhante a `removeIdentities()`, pois recupera uma matriz de identidades e as remove do navegador.
 
-Para obter mais informações e exemplos para usar essas funções, consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=pt-BR).
+Para obter mais informações e exemplos para usar essas funções, consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Inicialização
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 O construtor aceita um objeto de configuração com parâmetros durante a instância.
-Consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=pt-BR) para obter uma lista desses parâmetros de configuração.
+Consulte a [documentação oficial da biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) para obter uma lista desses parâmetros de configuração.
