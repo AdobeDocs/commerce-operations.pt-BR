@@ -38,7 +38,7 @@ Template instruction: Add details for the product and versions where the best pr
 
 <!-- Example 1: -->
 
-[Todas as versões ](../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
