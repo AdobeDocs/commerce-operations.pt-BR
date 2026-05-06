@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4c95c5a6c60ff701e81a3d58cbcd587810322a24
+source-git-commit: 0c45d7ba61be21d0983b242cfdbe0b9591dd5c5c
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -20,8 +20,8 @@ O QPT v1.1.78 inclui os seguintes patches:
 1. **ACP2E-4419**: corrige o problema em que os cartões-presente não são aplicados corretamente no check-out após a validação bem-sucedida do reCAPTCHA v2 (&#39;Não sou um robô&#39;) na loja.
 1. **ACP2E-4431**: corrige o problema em que os Produtos Relacionados correspondentes às regras de destino são excluídos durante o processo de reindexação.
 1. **ACP2E-4448**: corrige o problema em que as alterações de configuração feitas durante as interrupções do Redis não são refletidas após a recuperação do Redis, fazendo com que valores obsoletos persistam.
+1. **[ACP2E-4456](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)**: corrige um problema em que cancelar um pedido usando uma mutação do GraphQL não faz a transição de um pedido pago inteiramente com cartões-presente para o status Fechado.
 1. **[ACP2E-4452](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)**: corrige o problema em que os preços dos produtos na página [!UICONTROL Quick Order] incluem impostos, independentemente da configuração de exibição de imposto.
-1. **ACP2E-4456**: corrige um problema em que cancelar um pedido usando uma mutação do GraphQL não faz a transição de um pedido pago inteiramente com cartões-presente para o status Fechado.
 1. **ACP2E-4507**: corrige o problema em que a configuração de Opções de Senha não é aplicada para solicitações de redefinição de senha do cliente feitas por meio de mutações do GraphQL.
 1. **ACP2E-4513**: corrige o problema em que imagens CAPTCHA expiradas não são excluídas do sistema.
 1. **ACP2E-4522**: corrige o problema em que um erro de chave duplicada intermitente ocorre na tabela quote_coupons quando várias solicitações de mesclagem de carrinho ou salvamento de cotação são executadas ao mesmo tempo.
