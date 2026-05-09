@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # ACSD-55031: erro `Type "mixed" cannot be nullable` durante a compilação
 
-O patch ACSD-55031 corrige o problema em que o erro `Type "mixed" cannot be nullable` é exibido durante a compilação após a instalação de uma extensão personalizada. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.40 está instalado. A ID do patch é ACSD-55031. Observe que o problema foi corrigido no Adobe Commerce 2.4.6.
+O patch ACSD-55031 corrige o problema em que o erro `Type "mixed" cannot be nullable` é exibido durante a compilação após a instalação de uma extensão personalizada. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.40 está instalado. A ID do patch é ACSD-55031. Observe que o problema foi corrigido no Adobe Commerce 2.4.6.
 
 ## Produtos e versões afetados
 
@@ -62,7 +62,7 @@ Para aplicar patches individuais, use os links a seguir, dependendo do método d
 
 Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
+* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
 * [Verifique se há patch disponível para o problema do Adobe Commerce usando o  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!UICONTROL Quality Patches Tool].
 
 
