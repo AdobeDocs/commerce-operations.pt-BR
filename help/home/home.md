@@ -2,7 +2,7 @@
 title: 'Início: Guias Operacionais'
 description: Saiba mais sobre a administração do sistema e os conceitos operacionais do Adobe Commerce. Navegue por guias abrangentes para planejar, configurar e manter a implantação do Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 7%
@@ -12,18 +12,18 @@ ht-degree: 7%
 
 # Guias operacionais do Adobe Commerce
 
-Use this following collection of guides to learn about system administration concepts, processes, tools, and best practices to plan, configure, deploy, and maintain Adobe Commerce projects.
+Use esta coleção de guias a seguir para saber mais sobre conceitos, processos, ferramentas e práticas recomendadas de administração do sistema para planejar, configurar, implantar e manter projetos do Adobe Commerce.
 
-## Planning and guidance
+## Planejamento e orientação
 
 <table>
 <tr>
   <td valign="top">
     <a href="../release/release-notes/overview.md">
-      <img alt="Release Information" src="../assets/icons/promote.svg" width="40"/>
+      <img alt="Informações da versão" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/release-notes/overview.md"><strong>Release Information</strong></a>
+      <a href="../release/release-notes/overview.md"><strong>Informações sobre a versão</strong></a>
       <p>Revise todas as informações sobre a versão de patches e serviços da Adobe Commerce.</p>
     </div>
   </td>
@@ -67,7 +67,7 @@ Use this following collection of guides to learn about system administration con
     </a>
     <div>
       <a href="../installation/overview.md"><strong>Instalação</strong></a>
-      <p>Learn how to install Adobe Commerce for on-premises deployments.</p>
+      <p>Saiba como instalar o Adobe Commerce para implantações locais.</p>
     </div>
   </td>
   <td valign="top">
@@ -84,7 +84,7 @@ Use this following collection of guides to learn about system administration con
       <img alt="Atualizar" src="../assets/icons/upload-cloud.svg" width="40"/>
     </a>
     <div>
-      <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
+      <a href="../upgrade/overview.md"><strong>Atualizar</strong></a>
       <p>Saiba como atualizar seu projeto do Adobe Commerce para manter sua loja segura e funcionando com eficiência.</p>
     </div>
   </td>
@@ -102,4 +102,4 @@ Use this following collection of guides to learn about system administration con
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-04-24 20:40:38 -->
+<!-- Last updated from includes: 2026-05-12 08:06:15 -->
