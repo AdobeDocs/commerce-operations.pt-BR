@@ -30,7 +30,7 @@ Há duas implementações de cache L2 disponíveis:
 
 >[!INFO]
 >
->Para o Adobe Commerce na infraestrutura em nuvem, você pode usar [implantar variáveis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) para a configuração do cache L2.
+>Para o Adobe Commerce na infraestrutura em nuvem, você pode usar [implantar variáveis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#redis_backend) para a configuração do cache L2.
 
 ## Configuração herdada do cache L2 (RemoteSynchronizedCache)
 
