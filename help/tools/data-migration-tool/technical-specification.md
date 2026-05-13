@@ -3,7 +3,7 @@ title: Especificação técnica do [!DNL Data Migration Tool]
 description: Saiba mais sobre os detalhes de implementação do  [!DNL Data Migration Tool]  e como estender ao transferir dados entre o Magento 1 e o Magento 2.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '2113'
 ht-degree: 0%
@@ -227,7 +227,7 @@ O processo de migração consiste em etapas.
 
 A etapa é uma unidade que fornece a funcionalidade necessária para a migração de alguns dados separados. A etapa pode consistir em um ou mais estágios (verificação de integridade, dados, verificação de volume e delta).
 
-Por padrão, há várias etapas ([Map](#map-step), [EAV](#eav), [Regravações de URL](#url-rewrite-step) e assim por diante). Opcionalmente, também é possível adicionar suas próprias etapas.
+Por padrão, há várias etapas ([Map](#map-step), [EAV](#eav-step), [Regravações de URL](#url-rewrite-step) e assim por diante). Opcionalmente, também é possível adicionar suas próprias etapas.
 
 As classes relacionadas às etapas estão localizadas no diretório src/Migration/Step.
 

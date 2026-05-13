@@ -3,14 +3,14 @@ title: Configurar e usar verniz
 description: Saiba como configurar e usar o armazenamento em cache do Varnish para Adobe Commerce. Descubra a aceleração HTTP, o armazenamento de arquivos e as técnicas de otimização de desempenho.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
 
-# Configurar verniz
+# Configurar e usar verniz
 
 O [Cache de Verniz](https://www.varnish.org/) é um acelerador de aplicativo Web de código aberto (também conhecido como _acelerador HTTP_ ou _proxy reverso HTTP de cache_). O Varnish armazena (ou armazena em cache) arquivos ou fragmentos de arquivos na memória, o que permite que o Varnish reduza o tempo de resposta e o consumo de largura de banda da rede em solicitações futuras e equivalentes. Diferentemente de servidores Web como Apache e nginx, o Varnish foi projetado para uso exclusivo com o protocolo HTTP.
 

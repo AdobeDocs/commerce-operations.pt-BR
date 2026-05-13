@@ -1,17 +1,17 @@
 ---
-title: Bloco ESI de verniz
+title: Configurar bloco ESI de verniz
 description: Saiba mais sobre as ESI (Varnish Edge Side Includes) e como incorporar páginas da Web para o Adobe Commerce. Descubra a implementação e otimização de blocos ESI.
 badge: label="Contribuição de Constantino G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G"
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
-# Bloco ESI de verniz
+# Configurar bloco ESI de verniz {#varnish-esi-block}
 
 As ESI (Edge Side Includes) são diretivas especiais que podem ser usadas para incluir páginas da Web em outras páginas da Web.
 

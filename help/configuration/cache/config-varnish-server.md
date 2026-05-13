@@ -1,16 +1,16 @@
 ---
-title: Configurar servidor Web
+title: Configurar o servidor Web para cache do verniz
 description: Saiba como configurar seu servidor Web para funcionar com o armazenamento em cache do Varnish para o Adobe Commerce. Conheça os requisitos de configuração e configuração de porta.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Configurar o servidor Web
+# Configurar o servidor Web para o cache do verniz
 
 Configure seu servidor Web para escutar em uma porta diferente da porta padrão 80, pois o Varnish responde diretamente às solicitações HTTP recebidas, não ao servidor Web.
 

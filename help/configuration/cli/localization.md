@@ -2,7 +2,7 @@
 title: Dicionários de tradução e pacotes de idiomas
 description: Saiba como gerar dicionários de tradução e criar pacotes de idioma para o Adobe Commerce. Descubra a localização e a configuração da loja multilíngue.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Para gerar o dicionário e iniciar a tradução:
 
 1. Você pode criar um pacote dos dicionários de tradução em um pacote de idiomas e fornecer o pacote ao administrador da loja da Commerce.
 
-1. No Admin, o administrador de armazenamento [configura as traduções](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. No Admin, o administrador de armazenamento [configura as traduções](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Opções de comando:
 
@@ -106,7 +106,7 @@ A tabela a seguir explica os parâmetros e valores do comando de pacote de idiom
 
 | Parâmetro | Valor | Obrigatório? |
 |--- |--- |--- |
-| `<source>` | Caminho absoluto do sistema de arquivos e nome de um arquivo CSV que contém o dicionário de tradução combinado e as metainformações necessárias para o detalhamento em um pacote de idioma.<br><br>Use [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) para criar o arquivo CSV e, em seguida, crie o pacote de idioma conforme discutido em [Criar diretórios e arquivos](#m2devgde-xlate-files). | Sim |
+| `<source>` | Caminho absoluto do sistema de arquivos e nome de um arquivo CSV que contém o dicionário de tradução combinado e as metainformações necessárias para o detalhamento em um pacote de idioma.<br><br>Use [`bin/magento i18n:collect-phrases`](#generate-a-translation-dictionary) para criar o arquivo CSV e, em seguida, crie o pacote de idioma conforme discutido em [Criar diretórios e arquivos](#create-directories-and-files). | Sim |
 | `<locale>` | [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) (idioma) e [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) (país) identificador do idioma usado como nome de arquivo para todos os arquivos CSV resultantes. Exemplos: `de_DE`, `pt_PT`, `pt_BR`. | Sim |
 | `-m --mode` | Se existir um arquivo de destino, especifica se o pacote de idioma existente deve ser substituído ou mesclado com o novo pacote de idioma. A mesclagem substitui todas as frases existentes e adiciona novas.<br><br>Valores: mesclar ou substituir (padrão). | Não |
 | `-d --allow-duplicates` | Inclua esta opção para permitir duplicatas no pacote de idioma. Caso contrário, o comando falhará com um erro se encontrar a mesma frase em várias entradas com traduções diferentes. | Não |

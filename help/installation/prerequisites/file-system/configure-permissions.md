@@ -2,7 +2,7 @@
 title: Configurar a propriedade e as permissões do arquivo
 description: Siga estas etapas para configurar permissões do sistema de arquivos para instalações locais do Adobe Commerce.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
@@ -111,7 +111,7 @@ Siga as instruções na tela para criar uma senha para o usuário.
 
 >[!WARNING]
 >
->Se você não tiver privilégios de `root` no servidor de aplicativos, poderá usar outra conta de usuário local. Verifique se o usuário tem uma senha forte e continue com [Coloque o proprietário do sistema de arquivos no grupo de servidores Web](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>Se você não tiver privilégios de `root` no servidor de aplicativos, poderá usar outra conta de usuário local. Verifique se o usuário tem uma senha forte e continue com [Coloque o proprietário do sistema de arquivos no grupo de servidores Web](#put-the-file-system-owner-in-the-web-server-group).
 
 Por exemplo, para criar um usuário chamado `magento_user` e fornecer uma senha ao usuário, digite:
 

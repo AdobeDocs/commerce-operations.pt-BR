@@ -1,16 +1,16 @@
 ---
-title: Verificação final
+title: Verificar configuração de verniz
 description: Saiba como executar a verificação final da sua configuração de verniz com o Adobe Commerce. Descubra as etapas de teste e as técnicas de solução de problemas.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-# Verificação final da configuração do verniz
+# Verificar configuração de verniz {#final-verification}
 
 Agora que você está usando o `default.vcl` gerado para você pelo Commerce, é possível executar algumas verificações finais para verificar se o Verniz está funcionando.
 
@@ -83,4 +83,4 @@ Verifique se o diretório `<magento_root>/var/page_cache` está vazio:
 
 >[!TIP]
 >
->Se você encontrar erros 503 (Falha na busca de backend), consulte [Solução de problemas 503 (Serviço indisponível) erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_.
+>Se você encontrar erros 503 (Falha na busca de backend), consulte [Solução de problemas 503 (Serviço indisponível) erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) na _Central de Ajuda da Adobe Commerce_.

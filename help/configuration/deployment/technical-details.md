@@ -2,7 +2,7 @@
 title: Detalhes técnicos
 description: Leia sobre os detalhes técnicos da implantação de pipeline, os tipos de configurações e os fluxos de trabalho recomendados.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -14,10 +14,10 @@ ht-degree: 0%
 Este tópico discute detalhes de implementação técnica sobre a implantação de pipeline no Commerce 2.2 e versões posteriores. As melhorias podem ser divididas nas seguintes áreas:
 
 - [Gerenciamento de configuração](#configuration-management)
-- [Alterações no Administrador](#changes-in-the-admin)
+- [Alterações no Administrador](#the-commerce-admin)
 - [Instalar e remover o cron](#install-and-remove-cron)
 
-Este tópico também discute o [fluxo de trabalho recomendado](#recommended-workflow) para implantação do pipeline e fornece alguns exemplos para ajudá-lo a entender como ele funciona.
+Este tópico também discute o [fluxo de trabalho recomendado](#recommended-pipeline-deployment-workflow) para implantação do pipeline e fornece alguns exemplos para ajudá-lo a entender como ele funciona.
 
 Antes de começar, leia os [Pré-requisitos para os sistemas de desenvolvimento, compilação e produção](../deployment/prerequisites.md).
 
@@ -44,7 +44,7 @@ Defina a configuração compartilhada no Administrador em seu sistema de desenvo
 
 A configuração específica do sistema é armazenada em `app/etc/env.php`, que deve _não_ estar no controle de origem.
 
-Defina a configuração específica do sistema no Admin em seu sistema de desenvolvimento (ou Adobe Commerce na integração da infraestrutura em nuvem) e grave a configuração em `env.php` usando o comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md).
+Defina a configuração específica do sistema no Admin em seu sistema de desenvolvimento (ou Adobe Commerce na integração da infraestrutura em nuvem) e grave a configuração em `env.php` usando o comando [`magento app:config:dump` ](../cli/export-configuration.md).
 
 Este comando também grava configurações confidenciais em `env.php`.
 
@@ -60,7 +60,7 @@ Você pode gerenciar a configuração confidencial de qualquer uma das seguintes
 ### Configurações bloqueadas no Admin
 
 Todas as definições de configuração em `config.php` ou `env.php` estão bloqueadas no Administrador; ou seja, essas definições não podem ser alteradas no Administrador.
-Use o comando [`magento config:set` ou `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) para alterar as configurações nos arquivos `config.php` ou `env.php`.
+Use o comando [`magento config:set` ou `magento config:set --lock`](../cli/set-configuration-values.md#set-values) para alterar as configurações nos arquivos `config.php` ou `env.php`.
 
 ## O administrador do Commerce
 
@@ -88,7 +88,7 @@ O Administrador exibe o seguinte comportamento enquanto está no modo de produç
 
 ## Instalar e remover o cron
 
-Na versão 2.2, pela primeira vez, ajudamos você a configurar seu trabalho cron fornecendo o comando [`magento cron:install` &#x200B;](../cli/configure-cron-jobs.md). Este comando configura um crontab como o usuário que executa o comando.
+Na versão 2.2, pela primeira vez, ajudamos você a configurar seu trabalho cron fornecendo o comando [`magento cron:install` ](../cli/configure-cron-jobs.md). Este comando configura um crontab como o usuário que executa o comando.
 
 Além disso, você pode remover o crontab usando o comando `magento cron:remove`.
 

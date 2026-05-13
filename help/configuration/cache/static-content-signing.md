@@ -1,16 +1,16 @@
 ---
-title: Cache de conteúdo estático
-description: Saiba mais sobre assinatura de cache de conteúdo estático e otimização de desempenho no Adobe Commerce. Descubra como ativar, desativar e configurar recursos de cache.
+title: Assinatura de conteúdo estático e invalidação de cache do navegador
+description: Saiba como a assinatura de conteúdo estático funciona no Adobe Commerce para invalidar o cache do navegador para recursos estáticos. Descubra como habilitar e configurar este recurso.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
-# Cache de conteúdo estático
+# Assinatura de conteúdo estático e invalidação do cache do navegador
 
 Para melhorar o desempenho, o Commerce define os cabeçalhos `Expires` para recursos estáticos, como imagens, JavaScript e arquivos CSS.
 Definir o cabeçalho `Expires` em um recurso estático informa ao navegador para armazenar o recurso em cache nessa URL e fornecer a versão em cache até que ela expire.
@@ -35,9 +35,9 @@ Isso altera o URL dos arquivos estáticos e força o navegador a carregar a nova
 
 O Commerce ativa esse recurso por padrão, e a Adobe recomenda mantê-lo ativado para evitar problemas relacionados a navegadores que servem recursos estáticos antigos.
 
-A configuração para assinatura de conteúdo estático está em [**[!UICONTROL Stores]**> Configurações > Configuração >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+A configuração para assinatura de conteúdo estático está em [**[!UICONTROL Stores]**> Configurações > Configuração >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
-- **Somente no local**: essa configuração estará disponível se o site for **não** em [Modo de produção](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=pt-BR#production-mode).
+- **Somente no local**: essa configuração estará disponível se o site for **não** em [Modo de produção](../bootstrap/application-modes.md#production-mode).
 - **Nuvem**: esta configuração está oculta porque o modo de Produção é estritamente aplicado; portanto, você deve usar a linha de comando como mostrado abaixo.
 
 ![Configurações de Arquivos Estáticos](../../assets/configuration/static-files-settings.png)

@@ -2,7 +2,7 @@
 title: Definir o modo de operação
 description: Saiba como definir os modos de operação do Adobe Commerce entre o desenvolvedor e a produção. Detectar comandos de switching de modo e implicações de segurança.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -161,6 +161,6 @@ Enabled default mode.
 
 ### Execute comandos da CLI de qualquer lugar
 
-[Execute comandos CLI de qualquer lugar](../cli/config-cli.md#config-install-cli-first).
+[Execute comandos CLI de qualquer lugar](../cli/config-cli.md#prerequisites).
 
 Se você não tiver adicionado `<Commerce-install-directory>/bin` ao sistema `PATH`, poderá esperar um erro ao executar o comando sozinho.

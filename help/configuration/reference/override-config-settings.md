@@ -2,9 +2,9 @@
 title: Substituir definições de configuração
 description: Saiba como usar variáveis de ambiente para substituir as configurações do Adobe Commerce. Descubra as práticas recomendadas de gerenciamento e implantação de configuração.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1270'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Você pode substituir o valor de _qualquer_ definição de configuração usando
 
 >[!TIP]
 >
->Confira o tópico [Configurar ambientes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=pt-BR) no _guia do Commerce sobre a infraestrutura na nuvem_.
+>Confira o tópico [Configurar ambientes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) no _guia do Commerce sobre a infraestrutura na nuvem_.
 
 ## Variáveis de ambiente
 
@@ -30,7 +30,7 @@ Um nome de variável de ambiente consiste em seu escopo seguido por seu caminho 
 
    - Variáveis de ambiente
    - O comando [`magento config:set`](../cli/set-configuration-values.md)
-   - O Administrador seguido pelo comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md)
+   - O Administrador seguido pelo comando [`magento app:config:dump` ](../cli/export-configuration.md)
 
 Os caminhos de configuração podem ser encontrados em:
 
@@ -62,8 +62,8 @@ O formato geral dos nomes das variáveis de configurações do sistema é o segu
   Para obter mais informações sobre escopos, consulte:
 
    - [Etapa 1: Localizar o valor do escopo de exibição do site ou da loja](#step-1-find-the-website-or-store-view-scope-value)
-   - [Tópico do Guia do usuário do Commerce sobre escopo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [Referência rápida do escopo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [Tópico do Guia do usuário do Commerce sobre escopo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [Referência rápida do escopo](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` é o caminho de configuração com caracteres de sublinhado duplo substituído por `/`. Para obter mais informações, consulte [Etapa 2: definir variáveis do sistema](#step-2-set-global-website-or-store-view-variables).
 
@@ -224,7 +224,7 @@ Para localizar o nome da variável para a origem do país de entrega:
 
 1. Determine o escopo.
 
-   Localize o escopo no [banco de dados](#find-a-website-or-store-view-scope-in-the-database) conforme discutido na Etapa 1: encontre o valor do escopo de exibição do site ou do repositório. (Você também pode encontrar o valor no Administrador como mostrado na [tabela da Etapa 2: definir variáveis de exibição globais, de site ou de armazenamento]&#x200B;(#step-2-set-global-website-or-store-view-variables.
+   Localize o escopo no [banco de dados](#find-a-website-or-store-view-scope-in-the-database) conforme discutido na Etapa 1: encontre o valor do escopo de exibição do site ou do repositório. (Você também pode encontrar o valor no Administrador como mostrado na [tabela da Etapa 2: definir variáveis de exibição globais, de site ou de armazenamento](#step-2-set-global-website-or-store-view-variables).
 
    Por exemplo, o escopo pode ser `CONFIG__WEBSITES__DEFAULT`.
 
@@ -253,6 +253,6 @@ Um exemplo passo a passo é mostrado em [Definir valores de configuração usand
 >
 >- Para usar os valores definidos na matriz `$_ENV`, você deve definir `variables_order = "EGPCS"`(Ambiente, Obtenção, Publicação, Cookie e Servidor) no arquivo `php.ini`. Para obter detalhes, consulte [documentação sobre PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Para o Adobe Commerce na infraestrutura em nuvem, se você estiver tentando substituir as definições de configuração usando a [Interface da Web do Project](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=pt-BR#configure-the-project), você deve anexar o nome da variável a `env:` como prefixo. Por exemplo:
+>- Para o Adobe Commerce na infraestrutura em nuvem, se você estiver tentando substituir as definições de configuração usando a [Interface da Web do Project](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), você deve anexar o nome da variável a `env:` como prefixo. Por exemplo:
 >
 >![Exemplo de variável de ambiente](../../assets/configuration/cloud-console-envvariable.png)
