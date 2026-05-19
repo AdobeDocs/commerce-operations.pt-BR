@@ -3,9 +3,9 @@ title: Proteger o site e a infraestrutura da Commerce
 description: Mantenha a segurança implementando práticas recomendadas de segurança ao instalar, configurar e atualizar instalações do Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2173'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ A Adobe considera as seguintes recomendações de alta prioridade para todos os 
 
 ![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Habilite a autenticação de dois fatores para o Administrador e todas as conexões SSH**
 
-- [Segurança para o administrador do Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html?lang=pt-BR)
+- [Segurança para o administrador do Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
 
 - [Conexões SSH seguras](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html?lang=pt-BR) (infraestrutura em nuvem)
 
@@ -111,7 +111,7 @@ Como parte de um plano de recuperação de desastres, a Adobe recomenda que os c
 
 - [Backup e recuperação de desastres](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=pt-BR#backup-and-disaster-recovery)
 
-- [Armazenar gerenciamento de configuração para o Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=pt-BR)
+- [Gerenciamento de configuração de loja para o Adobe Commerce na infraestrutura em nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=pt-BR)
 
 **Adobe Commerce implantado no local**
 
@@ -133,7 +133,7 @@ As instalações do Adobe Commerce implantadas na infraestrutura em nuvem podem 
 
 ![Lista de Verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Definir configurações avançadas de segurança de senha**—Configure senhas fortes e altere-as pelo menos a cada 90 dias, conforme recomendado pelo Padrão de Segurança de Dados PCI na seção 8.2.4. Consulte [Definir configurações de segurança do administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=pt-BR).
 
-![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Usar HTTPS** — Se o site do Commerce for recém-implementado, inicie o site inteiro usando HTTPS. Google Além de usar HTTPS como fator de classificação, muitos usuários não consideram comprar de um site, a menos que ele esteja protegido por HTTPS.
+![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Usar HTTPS** — Se o site do Commerce for recém-implementado, inicie o site inteiro usando HTTPS. Além de usar HTTPS como fator de classificação, muitos usuários não consideram comprar de um site, a menos que ele esteja protegido por HTTPS.
 
 ## Proteção contra malware
 
@@ -145,7 +145,7 @@ Nos ataques mais comuns, um código mal-intencionado é inserido no cabeçalho o
 
 As escumadeiras de cartão de crédito do lado do cliente são um tipo de malware que incorpora código no conteúdo do site do comerciante que pode ser executado no navegador de um usuário, como mostrado na figura a seguir.
 
-![Fluxo de dados para ataques de malware direcionados a sites de comércio eletrônico](../../../assets/playbooks/malware-data-flow.svg)
+![Fluxo de dados para ataques de malware direcionados a sites de comércio eletrônico](../../../assets/playbooks/malware-data-flow.png)
 
 Depois que determinadas ações ocorrem, como um usuário enviar um formulário ou modificar um valor de campo, o skimmer serializa os dados e os envia para endpoints de terceiros. Normalmente, esses endpoints são outros sites comprometidos que atuam como uma retransmissão para enviar os dados ao destino final.
 
@@ -160,7 +160,7 @@ Veja abaixo uma lista de categorias comuns de ataques que a Adobe recomenda que 
 
 - **Desfiguração do site** — Um invasor danifica um site ao alterar a aparência visual dele ou adicionar suas próprias mensagens. Embora o acesso ao site e às contas de usuário tenha sido comprometido, as informações de pagamento geralmente permanecem seguras.
 
-- **Botnets**—O servidor Commerce do cliente se torna parte de uma botnet que envia email de spam. Incluir na lista de bloqueios Embora os dados do usuário normalmente não sejam comprometidos, o nome de domínio do cliente pode ser classificado por filtros de spam, impedindo a entrega de qualquer email do domínio. Como alternativa, o site do cliente se torna parte de uma botnet que causa um ataque de negação de serviço distribuído (DDoS) em outro site. A botnet pode bloquear o tráfego IP de entrada para o servidor do Commerce, impedindo que os clientes possam comprar.
+- **Botnets**—O servidor Commerce do cliente se torna parte de uma botnet que envia email de spam. Embora os dados do usuário normalmente não sejam comprometidos, o nome de domínio do cliente pode ser classificado por filtros de spam, impedindo a entrega de qualquer email do domínio. Como alternativa, o site do cliente se torna parte de uma botnet que causa um ataque de negação de serviço distribuído (DDoS) em outro site. A botnet pode bloquear o tráfego IP de entrada para o servidor do Commerce, impedindo que os clientes possam comprar.
 
 - **Ataques diretos ao servidor**—Os dados estão comprometidos, backdoors e malware estão instalados e as operações do site são afetadas. As informações de pagamento que não estão armazenadas no servidor têm menos probabilidade de serem comprometidas por meio desses ataques.
 

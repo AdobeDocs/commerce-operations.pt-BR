@@ -2,9 +2,9 @@
 title: Referência de informações pessoais do cliente (versão 2.x)
 description: Saiba mais sobre diagramas de fluxo de dados e mapeamentos de entidade de banco de dados para informações pessoais do cliente no Adobe Commerce 2.x.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Um usuário pode inserir informações de cliente, endereço e pagamento ao se r
 
 O Adobe Commerce carrega as informações do cliente quando ele faz logon e visualiza várias páginas diferentes ou faz check-out.
 
-![Pontos de acesso de dados de front-end](../../assets/security-compliance/frontend-data-access-points.svg)
+![Pontos de acesso de dados de front-end](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### Pontos de entrada de dados de back-end
 
@@ -46,7 +46,7 @@ Um comerciante pode especificar informações do cliente, dados de endereço e d
 
 O Adobe Commerce carrega informações do cliente quando um comerciante exibe vários tipos de grades, clica em uma grade para ver informações detalhadas e executa várias outras tarefas.
 
-![Pontos de acesso a dados de back-end](../../assets/security-compliance/backend-data-access-points.svg)
+![Pontos de acesso a dados de back-end](../../assets/security-compliance/backend-data-access-points.png)
 
 ## Entidades de banco de dados
 

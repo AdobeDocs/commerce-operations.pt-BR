@@ -3,9 +3,9 @@ title: Visão geral de manutenção e suporte
 description: Manter e oferecer suporte adequadamente à implementação do Adobe Commerce recém-lançada.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ A transferência de conhecimento ocorre ao longo de todo o projeto e uma abordag
 
 O diagrama a seguir mostra as fases e atividades que seriam incluídas em um resultado de transição bem-sucedido:
 
-![Diagrama mostrando fases do processo de transição](../../assets/playbooks/transition-diagram.svg)
+![Diagrama mostrando fases do processo de transição](../../assets/playbooks/transition-diagram.png)
 
 >[!NOTE]
 >

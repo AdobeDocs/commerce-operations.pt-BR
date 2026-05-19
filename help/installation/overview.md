@@ -2,10 +2,10 @@
 title: Visão geral da instalação local
 description: Saiba mais sobre o processo de instalação local do Adobe Commerce. Descubra os requisitos do servidor, as etapas de configuração e as práticas recomendadas de implantação.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '540'
+ht-degree: 3%
 
 ---
 
@@ -43,7 +43,7 @@ Você tem controle total sobre seu ambiente, permitindo maior personalização e
 
 O diagrama a seguir ilustra as principais etapas envolvidas na instalação do Adobe Commerce para ambientes locais:
 
-![Como funciona a instalação](../assets/installation/on-premises-install.drawio.svg)
+![Como funciona a instalação](../assets/installation/on-premises-install.png)
 
 ### Configurar o ambiente do servidor
 
