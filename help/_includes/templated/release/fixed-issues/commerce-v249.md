@@ -1,7 +1,7 @@
 ---
-source-git-commit: d70c7f4ea201e0073588f879d19a29ea11962244
+source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
 workflow-type: tm+mt
-source-wordcount: '36744'
+source-wordcount: '36741'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Agora, as APIs validam corretamente a entrada e retornam um erro 400 para cargas
 
 _AC-6419 - [Problema do GitHub](https://github.com/magento/magento2/issues/35934) - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Erro interno do servidor no ponto de extremidade de API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Erro interno do servidor no ponto de extremidade de API `/V1/order/{orderId}/ship`
 
 O Sistema agora corrige o Erro Interno do Servidor no Ponto de Extremidade da API `/V1/order/{orderId}/ship` e Retorna um erro 400, pois a solicitação está malformada.
 
@@ -707,7 +707,7 @@ _ACP2E-4675 - [Contribuição de código do GitHub](https://github.com/magento/m
 
 #### [Nuvem] Os caminhos de imagem são absolutos na segunda edição no Pagebuilder
 
-Correção de um problema em que a edição em linha do Texto do Page Builder poderia salvar URLs de imagem de mídia absoluta após a edição de uma imagem novamente, em vez de manter a diretiva {{media url=...}} portátil.
+Correção de um problema em que a edição em linha do Texto do Page Builder poderia salvar URLs de imagem de mídia absoluta após a edição de uma imagem novamente, em vez de manter a diretiva `{{media url=...}}` portátil.
 
 _ACP2E-4698 - [Contribuição de código do GitHub](https://github.com/magento/magento2-page-builder/commit/5fd20dbb)_
 
@@ -1191,7 +1191,7 @@ A validação de dados de endereço do cliente foi aprimorada para ser mais cons
 
 _ACP2E-4223 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0a8c9a9a)_
 
-#### [Problema relacionado ao preço do produto na &lbrace;Cloud] na página do carrinho
+#### [Problema relacionado ao preço do produto na {Cloud] na página do carrinho
 
 Correção do problema de preço do produto no pacote na página do carrinho para lojas de várias moedas
 
@@ -1682,7 +1682,7 @@ Antes da correção, as permissões de categoria não eram aplicadas corretament
 
 _ACP2E-4294 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/c135fc3a)_
 
-#### [Problema de preço de produto de pacote na &lbrace;Cloud] em PDP e PLP
+#### [Problema de preço de produto de pacote na {Cloud] em PDP e PLP
 
 Preço do pacote O produto com preço normal é mostrado corretamente na PDP/PLP para moeda não padrão
 
@@ -2077,7 +2077,7 @@ Na versão 2.4.9-alpha3, a validação agora bloqueia corretamente o salvamento 
 
 _AC-13535 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/68a45d0a)_
 
-#### A redefinição de senha do [Administrador][Customer] no Administrador do cliente está falhando
+#### `[Admin][Customer]` Redefinição de senha no Administrador do cliente está falhando
 
 Correção de um problema em que a redefinição da senha de um cliente a partir do painel de administração causava um erro do sistema e uma falha de página. A redefinição de senha agora funciona corretamente e envia o link de redefinição sem erros, mesmo em casos de borda que envolvem alterações de loja.
 
@@ -3342,7 +3342,7 @@ Antes da correção, ao solicitar um produto combinado com a opção &quot;Envia
 
 _ACP2E-3947 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/2a252ae6)_
 
-#### [Código OOTB da ]Magento da &lbrace;Cloud- Problema de configuração de modelo de email
+#### [Código OOTB da ]Magento da {Cloud- Problema de configuração de modelo de email
 
 Antes da correção, ao usar o envio assíncrono de email, os emails de remessa eram inconsistentes com a ordem da loja. Agora, após a correção, a ordem de e-mail de envio da loja correta é entregue.
 
@@ -3609,7 +3609,7 @@ Antes da correção, as chaves de cache usadas para metadados de armazenamento r
 
 _ACP2E-4345 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
-#### Gargalo de [CLOUD][CLOUD] [Mainline] sales_clean_quotes getSize()
+#### `[CLOUD][B2B]` `[Mainline]` afunilamento de sales_clean_quotes getSize()
 
 Melhorar o desempenho do trabalho sales_clean_quotes cron.
 
@@ -4167,7 +4167,7 @@ _ACP2E-4226_
 
 #### Não é possível navegar entre sites na visualização da Atualização da programação
 
-Antes dessa correção, a visualização da atualização agendada falhava ao tentar visualizar o conteúdo de lojas com domínios personalizados. Após essa correção, os domínios de armazenamento personalizados podem ser visualizados como estão e navegados no iframe de visualização. A correção abrange produtos, categorias, páginas do CMS e blocos do CMS, além de oferecer suporte a links de navegação usando as marcas de marcação `{{store url}}`, conforme documentado em [Variáveis e Marcas de Marcação do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/variables/markup-tags).
+Antes dessa correção, a visualização da atualização agendada falhava ao tentar visualizar o conteúdo de lojas com domínios personalizados. Após essa correção, os domínios de armazenamento personalizados podem ser visualizados como estão e navegados no iframe de visualização. A correção abrange produtos, categorias, páginas do CMS e blocos do CMS, além de oferecer suporte a links de navegação usando as marcas de marcação `{{store url}}`, conforme documentado em [Variáveis e Marcas de Marcação do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
