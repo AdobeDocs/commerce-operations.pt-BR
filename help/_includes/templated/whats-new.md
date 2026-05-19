@@ -1,7 +1,7 @@
 ---
-source-git-commit: 726f78414fa49a9d5d2ee4f1b43e718107039530
+source-git-commit: 8b631aabebcc37a793d8dda60af0c9194c269e36
 workflow-type: tm+mt
-source-wordcount: '2622'
+source-wordcount: '2623'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td><p>Adição de uma <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">seção Requisitos do sistema para versões anteriores do Commerce</a> que pode ser recolhida com tabelas de referência e orientação de fim de suporte do MySQL 8.0 / Elasticsearch 7.17 para versões mais antigas do Adobe Commerce.</p>
 </td>
       <td>
-        Técnico
+        Técnico, feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07e7c6904ead0c730597bc6d0899f4c988b7725b">confirmar</a></td>
     </tr>
