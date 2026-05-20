@@ -3,9 +3,9 @@ title: Configurar Redis para Cache Padrão e de Página
 description: Saiba como configurar o Redis como padrão e o back-end do cache de página para o Adobe Commerce. Descubra os comandos da ILC, as configurações do env.php e a verificação da conexão.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: d82061ad2fa4676bd8fa71a9d34a954444eb0f54
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,19 @@ Com os seguintes parâmetros:
 | `cache-backend-redis-port` | porta | Porta de escuta do servidor Redis | `6379` |
 | `cache-backend-redis-db` | banco de dados | Obrigatório se você usar Redis para o cache padrão e de página inteira. Especifique o número do banco de dados de um dos caches; o outro cache usa 0 por padrão.<br><br>**Importante**: se você usar Redis para mais de um tipo de cache, os números do banco de dados deverão ser diferentes. É recomendável atribuir o número do banco de dados de cache padrão a 0, o número do banco de dados de cache da página a 1 e o número do banco de dados de armazenamento da sessão a 2. | `0` |
 | `cache-backend-redis-password` | senha | A configuração de uma senha Redis habilita um de seus recursos de segurança internos: o comando `auth`, que requer que os clientes se autentiquem para acessar o banco de dados. A senha é configurada diretamente no arquivo de configuração do Redis: `/etc/redis/redis.conf` | |
-| `cache-backend-redis-use-lua` | use_lua | Ative ou desative Lua. <br><br>**Lua**: Lua permite executar parte da lógica do aplicativo dentro de Redis, melhorando o desempenho e garantindo a consistência dos dados através da execução atômica. | `0` |
-| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Ative ou desative Lua para a coleta de lixo. <br><br>**Lua**: Lua permite executar parte da lógica do aplicativo dentro de Redis, melhorando o desempenho e garantindo a consistência dos dados através da execução atômica. | `1` |
+| `cache-backend-redis-use-lua` | use_lua | Ative ou desative scripts Lua para todas as operações redis. <br><br>**Padrão: manter em `0`.** O modo Lua é desativado por padrão para evitar regressões de desempenho conhecidas e problemas de perda de cache do GraphQL introduzidos pela biblioteca Redis agrupada (1.17.x) quando Lua foi ativada. | `0` |
+| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Habilite ou desabilite scripts Lua para a coleta de lixo (o trabalho cron `backend_clean_cache`). <br><br>**Padrão: manter em `1`.** Ativado intencionalmente para garantir a limpeza atômica do conjunto de tags durante o GC. Sem ela, uma condição de corrida pode ocorrer quando o cron `backend_clean_cache` é executado ao mesmo tempo que uma operação de salvamento de cache, deixando entradas de cache sem um registro correspondente no índice de tag de cache. Isso faz com que a invalidação baseada em tags falhe silenciosamente — por exemplo, atualizar um preço de produto pode não invalidar o cache do produto, exigindo uma liberação de cache completa. | `1` |
+
+### Modo Lua
+
+Quando habilitado, o modo Lua agrupa várias operações Redis (gravações em cache, atualizações de tags, coleta de lixo) em um único script atômico executado no lado do servidor via `EVALSHA`. Isso impede a intercalação de solicitações simultâneas, por exemplo, garantir que uma entrada de cache e sua associação de tag sejam gravadas juntas.
+
+>[!WARNING]
+>
+>Não altere os valores padrão de `use_lua` e `use_lua_on_gc` sem entender as implicações para sua versão do Adobe Commerce:
+>
+>- **`use_lua`**: habilitar isso no Adobe Commerce 2.4.7 ou 2.4.8 (biblioteca `colinmollenhour/cache-backend-redis` 1.17.1) pode causar corrupção de cache e problemas de perda de cache do GraphQL.
+>- **`use_lua_on_gc`**: desabilitar isso no Adobe Commerce 2.4.8 remove a proteção atômica durante a coleta de lixo e pode fazer com que a invalidação do cache com base em marcas falhe silenciosamente, exigindo uma limpeza completa do cache para se recuperar.
 
 ## Exemplo de comando (cache padrão)
 
