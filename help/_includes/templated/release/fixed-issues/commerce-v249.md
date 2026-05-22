@@ -1,7 +1,7 @@
 ---
-source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
+source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '36741'
+source-wordcount: '36655'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Correção de problemas na v2.4.9
 
-Corrigimos 667 problemas no código principal do Adobe Commerce 2.4.9. Um subconjunto dos problemas corrigidos incluídos nesta versão está descrito abaixo.
+Corrigimos 666 problemas no código principal do Adobe Commerce 2.4.9. Um subconjunto dos problemas corrigidos incluídos nesta versão está descrito abaixo.
 
 ### APIs
 
@@ -2095,7 +2095,7 @@ _AC-15336 - [Contribuição de código do GitHub](https://github.com/magento/mag
 
 #### Compilando código do módulo desabilitado
 
-Este escape de solicitação de pull desativava os módulos antes da compilação do código.
+Alterado o comportamento de `setup:di:compile` para não compilar mais código para módulos desabilitados.
 
 _AC-10933 - [Problema do GitHub](https://github.com/magento/magento2/issues/38241) - [Contribuição de código do GitHub](https://github.com/magento/magento2/pull/39723)_
 
@@ -2214,15 +2214,6 @@ Anteriormente, atingir o valor máximo para a coluna version_id na tabela change
 AC-14424
 
 _AC-14424 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### O Magento 2.4.8 usa pacotes dev que não seguem o controle de versão semântico
-
-Magento 2.4.8 requer versões dev de pdepend/pdepend e phpmd/phpmd (3.x-dev) para compatibilidade com PHP 8.4.
-Essas versões de desenvolvimento entram em conflito com ferramentas de terceiros que esperam pacotes compatíveis com o SemVer, impedindo algumas atualizações.
-Uma solução alternativa temporária é criar um alias para as versões dev no composer.json (por exemplo, &quot;3.x-dev as 3.99.0&quot;), permitindo compatibilidade enquanto satisfaz o controle de versão semântico.
-Isso garante o suporte ao PHP 8.4 e evita conflitos até que versões estáveis sejam disponibilizadas.
-
-_AC-14519 - [Problema do GitHub](https://github.com/magento/magento2/issues/39796)_
 
 #### Depois de Baixar etiqueta de envio, podemos ver alguma quantidade de envio que não estava correspondendo com o preço de envio e manuseio.
 

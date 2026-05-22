@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8b631aabebcc37a793d8dda60af0c9194c269e36
+source-git-commit: d90419967a22835efff29ff609caea342a86a438
 workflow-type: tm+mt
-source-wordcount: '2623'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 0%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 22 de maio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualizadas as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">notas de versão do Adobe Commerce 2.4.9</a> e as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/magento-open-source/2-4-9">notas de versão do Magento Open Source 2.4.9</a>: esclareceram a correção AC-10933 <code class="language-plaintext highlighter-rouge">setup:di:compile</code>, removeram a correção cancelada AC-14519 e ajustaram as contagens de problemas fixos.<br /><em>Crédito: <a href="https://github.com/hostep">hostep</a></em></p>
+</td>
+      <td>
+        Feedback, técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e5a69a282839a393d6eb873af9938208706af50">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.79 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737: o comando de status Bin/magento:db:não reconhece o tipo de dados JSON</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9aad978f42697f74ebd7c8f401e45b4780bd5038">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 20 de maio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.79 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601: Salvando novamente uma parent_id de autorreferência de transação de autorização de pagamento e acionando um loop/OOM infinito</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3fe9730b1954a07d9ef4a405ee75fcde9511e09d">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/lifecycle-policy">Política de ciclo de vida do software</a> com as datas de imposição de atualização da versão em nuvem, definições do período de suporte (incluindo período de transição somente para segurança), uma tabela expandida de fim de suporte para 2.4.4-2.4.9, orientação do PHP PCI e caminhos para migrar para o Adobe Commerce as a Cloud Service ou atualizar no PaaS.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cd0f27ae6a8dcec9b25af15386d8350c22d2fb95">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 13 de maio de 2026
 
@@ -497,72 +557,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Técnico, feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96e5b397a2ffee8fadaf638e721799b40d320d3">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 de março de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319">ACSD-69319: os preços do pacote não eram indexados corretamente quando os produtos secundários tinham estoque em fontes personalizadas</a>.</p>
-</td>
-      <td>
-        Novo tópico, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7646d46e37385cf0a2bfbee6de82410ca54629a1">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 18 de março de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69086">ACSD-69086: falha na instalação do MariaDB 10.11 devido à verificação de versão de banco de dados sem suporte</a>.</p>
-</td>
-      <td>
-        Novo tópico, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/016d24d990492d009677c218b253ae88c21634e6">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 17 de março de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.76 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69331">ACSD-69331: os criadores de conteúdo na galeria de mídia não puderam criar pastas com apenas a permissão <code class="language-plaintext highlighter-rouge">create_folder</code>. Após a correção, eles podem criar pastas conforme esperado</a>.</p>
-</td>
-      <td>
-        Novo tópico, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/40a14de0a67a0c373dcbb497f1893a98322435b3">confirmar</a></td>
     </tr>
   </tbody>
 </table>
