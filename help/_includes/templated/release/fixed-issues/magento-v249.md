@@ -1,7 +1,7 @@
 ---
-source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
+source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '32485'
+source-wordcount: '32399'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Correção de problemas na v2.4.9
 
-Corrigimos 581 problemas no código principal do Magento Open Source 2.4.9. Um subconjunto dos problemas corrigidos incluídos nesta versão está descrito abaixo.
+Corrigimos 580 problemas no código principal do Magento Open Source 2.4.9. Um subconjunto dos problemas corrigidos incluídos nesta versão está descrito abaixo.
 
 ### APIs
 
@@ -73,7 +73,7 @@ Agora, as APIs validam corretamente a entrada e retornam um erro 400 para cargas
 
 _AC-6419 - [Problema do GitHub](https://github.com/magento/magento2/issues/35934) - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Erro interno do servidor no ponto de extremidade de API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Erro interno do servidor no ponto de extremidade de API `/V1/order/{orderId}/ship`
 
 O Sistema agora corrige o Erro Interno do Servidor no Ponto de Extremidade da API `/V1/order/{orderId}/ship` e Retorna um erro 400, pois a solicitação está malformada.
 
@@ -1020,7 +1020,7 @@ A validação de dados de endereço do cliente foi aprimorada para ser mais cons
 
 _ACP2E-4223 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0a8c9a9a)_
 
-#### [Problema relacionado ao preço do produto na &lbrace;Cloud] na página do carrinho
+#### [Problema relacionado ao preço do produto na {Cloud] na página do carrinho
 
 Correção do problema de preço do produto no pacote na página do carrinho para lojas de várias moedas
 
@@ -1456,7 +1456,7 @@ Antes da correção, as permissões de categoria não eram aplicadas corretament
 
 _ACP2E-4294 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/c135fc3a)_
 
-#### [Problema de preço de produto de pacote na &lbrace;Cloud] em PDP e PLP
+#### [Problema de preço de produto de pacote na {Cloud] em PDP e PLP
 
 Preço do pacote O produto com preço normal é mostrado corretamente na PDP/PLP para moeda não padrão
 
@@ -1805,7 +1805,7 @@ _AC-15336 - [Contribuição de código do GitHub](https://github.com/magento/mag
 
 #### Compilando código do módulo desabilitado
 
-Este escape de solicitação de pull desativava os módulos antes da compilação do código.
+Alterado o comportamento de `setup:di:compile` para não compilar mais código para módulos desabilitados.
 
 _AC-10933 - [Problema do GitHub](https://github.com/magento/magento2/issues/38241) - [Contribuição de código do GitHub](https://github.com/magento/magento2/pull/39723)_
 
@@ -1924,15 +1924,6 @@ Anteriormente, atingir o valor máximo para a coluna version_id na tabela change
 AC-14424
 
 _AC-14424 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### O Magento 2.4.8 usa pacotes dev que não seguem o controle de versão semântico
-
-Magento 2.4.8 requer versões dev de pdepend/pdepend e phpmd/phpmd (3.x-dev) para compatibilidade com PHP 8.4.
-Essas versões de desenvolvimento entram em conflito com ferramentas de terceiros que esperam pacotes compatíveis com o SemVer, impedindo algumas atualizações.
-Uma solução alternativa temporária é criar um alias para as versões dev no composer.json (por exemplo, &quot;3.x-dev as 3.99.0&quot;), permitindo compatibilidade enquanto satisfaz o controle de versão semântico.
-Isso garante o suporte ao PHP 8.4 e evita conflitos até que versões estáveis sejam disponibilizadas.
-
-_AC-14519 - [Problema do GitHub](https://github.com/magento/magento2/issues/39796)_
 
 #### O mecanismo do MView ignora erros silenciosamente na execução do acionador
 
@@ -2996,7 +2987,7 @@ Antes da correção, ao solicitar um produto combinado com a opção &quot;Envia
 
 _ACP2E-3947 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/2a252ae6)_
 
-#### [Código OOTB da ]Magento da &lbrace;Cloud- Problema de configuração de modelo de email
+#### [Código OOTB da ]Magento da {Cloud- Problema de configuração de modelo de email
 
 Antes da correção, ao usar o envio assíncrono de email, os emails de remessa eram inconsistentes com a ordem da loja. Agora, após a correção, a ordem de e-mail de envio da loja correta é entregue.
 
@@ -3657,7 +3648,7 @@ _ACP2E-4212 - [Contribuição de código do GitHub](https://github.com/magento/m
 
 #### Não é possível navegar entre sites na visualização da Atualização da programação
 
-Antes dessa correção, a visualização da atualização agendada falhava ao tentar visualizar o conteúdo de lojas com domínios personalizados. Após essa correção, os domínios de armazenamento personalizados podem ser visualizados como estão e navegados no iframe de visualização. A correção abrange produtos, categorias, páginas do CMS e blocos do CMS, além de oferecer suporte a links de navegação usando as marcas de marcação `{{store url}}`, conforme documentado em [Variáveis e Marcas de Marcação do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/variables/markup-tags).
+Antes dessa correção, a visualização da atualização agendada falhava ao tentar visualizar o conteúdo de lojas com domínios personalizados. Após essa correção, os domínios de armazenamento personalizados podem ser visualizados como estão e navegados no iframe de visualização. A correção abrange produtos, categorias, páginas do CMS e blocos do CMS, além de oferecer suporte a links de navegação usando as marcas de marcação `{{store url}}`, conforme documentado em [Variáveis e Marcas de Marcação do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
