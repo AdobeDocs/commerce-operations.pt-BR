@@ -2,7 +2,7 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 535c5a6de142008bccd2d5883a9b680c77914264
+source-git-commit: 891f738f4a3db4e361984d11585f3679068c8ced
 workflow-type: tm+mt
 source-wordcount: '9978'
 ht-degree: 0%
@@ -371,7 +371,7 @@ ht-degree: 0%
       - v1.1.30 {#v1-1-30}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.30](quality-patches-tool/patches-available-in-qpt/v1-1-30/overview.md)
          - [ACSD-50367: a exportação de endereço do cliente não funciona](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50367-customer-address-export-does-not-work.md)
-         - [BB2B-2598: Adiciona recurso de armazenamento em cache a storeConfig, moeda, país, países, availableStores consultas GraphQl](quality-patches-tool/patches-available-in-qpt/v1-1-30/bb2b-2598-add-caching-capability.md)
+         - [B2B-2598: Adiciona o recurso de armazenamento em cache a storeConfig, moeda, país, países, availableStores GraphQl queries](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability.md)
          - [B2B-2674: Adiciona o recurso de armazenamento em cache à consulta de GraphQL customAttributeMetadata](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2674-add-caching-capability.md)
          - [ACSD-49973: melhor desempenho ao buscar produtos empacotados via [!DNL GraphQL]](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49973-improved-performance-fetching-bundled-products-via-graphql.md)
          - [ACSD-50116: um usuário administrador não pode criar uma regravação de URL](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50116-admin-user-cannot-create-a-url-rewrite.md)
