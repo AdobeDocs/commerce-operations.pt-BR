@@ -3,9 +3,9 @@ title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 5b81bd7baa4b00a9100c3e01a20a2b0189b85f92
+source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
 workflow-type: tm+mt
-source-wordcount: '30379'
+source-wordcount: '30340'
 ht-degree: 0%
 
 ---
@@ -938,7 +938,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **ACSD-44851** (*para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6*) - Corrige o problema em que uma categoria com subcategorias não pode abrir ou expandir.
 * **ACSD-46815** (*para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.6*) - Corrige o problema em que a solicitação da árvore de categoria é limitada a 20 categorias.
 * **ACSD-45675** (*para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.6*) - Corrige o problema em que a exportação de produtos usa nomes de categoria do escopo *Exibição de Loja Padrão*.
-* **ACSD-46869** (*para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6*) - Corrige o problema em que um produto configurável em um carrinho não é atualizado por meio de uma solicitação da *API REST do PUT* sem alterar a quantidade do produto.
+* **ACSD-46869** (*para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6*) - Corrige o problema em que um produto configurável em um carrinho não é atualizado por meio de uma solicitação da *API REST* sem alterar a quantidade do produto.
 * **MDVA-42768-V2** (*para Adobe Commerce e Magento Open Source >=2.4.2 &lt;2.4.3*) - Corrige o problema em que o produto Configurável exibe o preço normal como *0* quando *Exibir Fora de Estoque* está *Sim*.
 * Patches atualizados: MDVA-44562, ACSD-46213, MDVA-41305, MDVA-38346, MDVA-13203.
 * Patch obsoleto: MDVA-42768.
@@ -991,7 +991,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **MDVA-40961** (*para Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.4*) - Corrige o problema em que um item adicional não pode ser adicionado ao carrinho quando a quantidade mínima do item já está no carrinho.
 * **MDVA-44887** (*para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.5*) - Corrige o erro *Uncaught SyntaxError: Unexpected token &#39;const&#39;* no painel de Administração.
 * **MDVA-43718** (*para Adobe Commerce e Magento Open Source >=2.3.0 &lt;2.4.5*) - Correções *O consumidor não está autorizado a acessar %resources.* erro que aparece ao acessar um catálogo compartilhado de uma integração personalizada.
-* **MDVA-44660** (*para Adobe Commerce e Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - Corrige o problema em que o caractere de acento grave ``` ` ``` não podia ser usado para o nome e sobrenome de um cliente.
+* **MDVA-44660** (*para Adobe Commerce e Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - Corrige o problema em que o caractere de acento grave (\`) não podia ser usado para o nome e sobrenome de um cliente.
 * **MDVA-40896** (*para Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.4*) - Corrige o *Erro: TypeError: Argumento 3 transmitido para o erro do Magento* na API assíncrona de produto em massa.
 * **MDVA-38559** (*para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.3*) - Corrige o erro */V1/customers/search API* para clientes com mais de uma assinatura.
 * **MDVA-44533** (*para Adobe Commerce e Magento Open Source >=2.3.1 &lt;2.4.4*) - Corrige o problema em que o desconto é aplicado incorretamente a um pacote de produto filho.
@@ -1373,7 +1373,7 @@ Correções secundárias para versões de patch
 * **MDVA-31242** (*para Adobe Commerce >=2.3.0 &lt;2.4.1 com extensão B2B*) - Corrige o problema em que um sinal de moeda incorreto é exibido na grade de Aviso de Crédito.
 * **MDVA-31295** (*para Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige o problema em que os pontos de premiação não são calculados quando um pedido parcial é concluído e os itens são tributados.
 * **MDVA-30112** (*para Adobe Commerce >=2.3.4 &lt;2.4.2*) - Corrige o problema em que, se o número de pedidos exceder o valor *tamanho de grupo*, a Adobe Commerce considerará os pedidos com o status *pendente* como inconsistências.
-* **MDVA-31150** (*para Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige o problema em que os saldos de cartão-presente e de crédito da loja não são retornados pela chamada da API Rest da Fatura da GET, quando a fatura foi lançada pela chamada da API Rest e o pedido foi parcialmente pago por contas de cartão-presente e de crédito da loja.
+* **MDVA-31150** (*para Adobe Commerce >=2.3.0 &lt;2.4.2*) - Corrige o problema em que os saldos de cartão-presente e de crédito da loja não são retornados pela chamada da API Rest da fatura GET, quando a fatura foi lançada pela chamada da API Rest e o pedido foi parcialmente pago por contas de cartão-presente e de crédito da loja.
 * **MDVA-30963** (*para Adobe Commerce >=2.3.2 &lt;2.4.2*) - Corrige o problema em que os resultados da filtragem de produtos definem para conter apenas valores especificados para o escopo *Todas as exibições de loja* no Administrador, incluir produtos com valores substituídos no nível de exibição de loja.
 * **MDVA-29954** (*para Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || 2.4.2 com extensão B2B*) - Corrige o problema em que os emails *Nova Solicitação de Registro de Empresa* e *Você foi vinculado a uma empresa* são enviados do endereço errado.
 * **MDVA-28357** (*para Adobe Commerce >=2.3.2 &lt;2.3.6 || >=2.4.0 &lt;2.4.1*) - Substitui o analisador padrão por um analisador personalizado com tokenizador de palavra-chave para o campo SKU no índice [!DNL ElasticSearch] para fazer com que as consultas de pesquisa com curinga funcionem com SKUs que contenham um hífen (&quot;-&quot;).
