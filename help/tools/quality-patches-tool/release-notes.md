@@ -3,9 +3,14 @@ title: Notas de versão
 description: Saiba mais sobre os patches disponíveis para o Adobe Commerce e os problemas que eles resolvem.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
+autotag-review: '2026-05-29T17:40:45.034Z'
+TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
 workflow-type: tm+mt
-source-wordcount: '30340'
+source-wordcount: 30977
 ht-degree: 0%
 
 ---
@@ -16,11 +21,32 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.80 {#v1-1-80}
+
+* **ACP2E-4239** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corrige o problema em que os filtros de grade de administração que usam atributos de data retornam resultados incorretos devido a diferenças de fuso horário entre a data selecionada, os valores UTC armazenados e o fuso horário de repositório configurado.
+* **ACP2E-4472** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que uma cotação nula é criada durante o fluxo &quot;Fazer logon como cliente&quot;.
+* **ACP2E-4481** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corrige o problema em que a venda de pacotes de produtos não é recalculada corretamente após o cancelamento de um pedido.
+* **ACP2E-4488** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que salvar ou editar produtos no Admin é lento para produtos com conjuntos de atributos grandes.
+* **ACP2E-4493** (para Adobe Commerce >=2.4.4 &lt;2.4.9) - Corrige o problema em que a grade Arquivo Morto de Ordens de Venda exibe um status de pedido incorreto quando a indexação assíncrona está habilitada.
+* **ACP2E-4496** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que o trabalho cron do analytics causa degradação do desempenho durante a execução, resultando em melhor desempenho geral do sistema.
+* **ACP2E-4533** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.8) - Corrige o problema em que as imagens de espaço reservado não são carregadas na Loja quando um código de armazenamento é incluído na URL.
+* **ACP2E-4552** (para Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Corrige o problema em que o status da empresa não é retornado na resposta do GraphQL.
+* **ACP2E-4610** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.9) - Corrige o problema em que o trabalho cron sales_clean_quotes apresenta problemas de desempenho.
+* **ACP2E-4615** (para Adobe Commerce >=2.4.4-p13 &lt;2.4.4-p17 || >=2.4.4-p18 &lt;2.4.5 || >=2.4.5-p12 &lt;2.4.6 || >=2.4.6-p10 &lt;2.4.7 || >=2.4.7-p5 &lt;2.4.9) - Corrige o problema em que os reembolsos de pedidos online falham com um erro do PayPal informando &quot;O gateway do PayPal rejeita a solicitação. Erro interno.&quot;.
+* **ACP2E-4626** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corrige o problema em que alguns arquivos JavaScript do Storefront são solicitados e executados duas vezes, causando cargas duplicadas intermitentes e comportamento instável.
+* **ACP2E-4653** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que o escopo de atributo de condição de Regra de Preço de Carrinho para &quot;Categoria (Somente Pai)&quot; e &quot;Categoria (Somente Filhos)&quot; não é exposto ao recuperar ou atualizar regras por meio da API REST.
+* **ACP2E-4808** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.10) - Corrige o problema em que o atributo Weight na página de produto da loja exibe apenas um valor numérico bruto na seção &quot;Additional Information&quot; ou &quot;More Information&quot; sem a unidade de medida configurada (lb ou kg).
+* **ACP2E-4156** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que a validação do endereço de entrega na API REST não adere à configuração de atributo definida em Administração.
+* **ACP2E-4813** (para Adobe Commerce e Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - Corrige o problema em que os métodos de envio do USPS não estão disponíveis no check-out e as estimativas de envio estão incorretas para determinados produtos, incluindo pedidos divididos em vários pacotes.
+* **ACSD-53502** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Corrige o problema em que Adicionar ao carrinho falha intermitentemente na loja do iOS Safari devido a chamadas recursivas para o script de monitoramento do New Relic, causando recarregamentos de página.
+* Versões atualizadas: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686**, **,** ACP2E-4402 **,** ACP2E-4505 **,** ACP2E-4603 **,** ACP2E-4706 ****
+* Patches substituídos: **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
 
