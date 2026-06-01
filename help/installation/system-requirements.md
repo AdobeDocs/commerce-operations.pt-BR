@@ -2,9 +2,9 @@
 title: Requisitos do sistema
 description: Saiba mais sobre dependências de software e requisitos de sistema para o Adobe Commerce. Consulte as configurações testadas para compatibilidade com seu ambiente de implantação.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: f5d0b6943b1b5ca41967c61842b73734ed41f26f
+source-git-commit: dc0a70a11f332dabf8f09e528c355f2bcb7910bc
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,11 @@ O [modelo do Commerce na Nuvem](https://github.com/magento/magento-cloud) fornec
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
+**<sup>1</sup>Compatibilidade entre MariaDB 12.3 e Adobe Commerce 2.4.9**
+A compatibilidade entre o MariaDB 12.3 e o Adobe Commerce 2.4.9 será confirmada após o lançamento oficial do MariaDB 12.3, previsto para maio-junho.
+
 Para a configuração padrão, os serviços e as versões são definidos no [arquivo `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia *Commerce na Infraestrutura de Nuvem*.
+Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia do *Commerce na Infraestrutura de Nuvem*.
 
 >[!TAB Commerce local]
 
@@ -53,7 +56,7 @@ Linha de versão do Commerce.
 Todos os clientes locais do Adobe Commerce que executam as versões 2.4.7, 2.4.6, 2.4.5, 2.4.4 são altamente
 aconselhados a migrar seus servidores de banco de dados para uma versão compatível do MariaDB.
 
-O **Elasticsearch 7.17 chegou ao Fim do Suporte (EOS) em 15 de janeiro de 2026.**
+**O Elasticsearch 7.17 atingiu o fim do suporte (EOS) em 15 de janeiro de 2026.**
 Após essa data, o Adobe Commerce 2.4.6, 2.4.5 e 2.4.4 não fornecerá compatibilidade ou
 suporte para qualquer versão do Elasticsearch lançada após o Elasticsearch 7. O Adobe não
 validar ou fornecer suporte para versões principais mais recentes do Elasticsearch neste Adobe
@@ -62,10 +65,6 @@ Todos os clientes locais do Adobe Commerce que executam as versões 2.4.6, 2.4.5
 aconselhamos a migrar sua infraestrutura de pesquisa para uma versão compatível do OpenSearch.
 
 >[!ENDTABS]
-
->[!AVAILABILITY]
->
-><sup>1</sup> A compatibilidade entre o MariaDB 12.3 e o Adobe Commerce 2.4.9 será confirmada após o lançamento oficial do MariaDB 12.3, previsto para maio-junho.
 
 ## Requisitos do sistema para versões anteriores do Commerce
 
@@ -86,7 +85,7 @@ O [modelo do Commerce na Nuvem](https://github.com/magento/magento-cloud) fornec
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
 Para a configuração padrão, os serviços e as versões são definidos no [arquivo `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia *Commerce na Infraestrutura de Nuvem*.
+Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia do *Commerce na Infraestrutura de Nuvem*.
 
 >[!TAB Commerce local]
 
@@ -100,7 +99,7 @@ Linha de versão do Commerce.
 Todos os clientes locais do Adobe Commerce que executam as versões 2.4.7, 2.4.6, 2.4.5, 2.4.4 são altamente
 aconselhados a migrar seus servidores de banco de dados para uma versão compatível do MariaDB.
 
-O **Elasticsearch 7.17 chegou ao Fim do Suporte (EOS) em 15 de janeiro de 2026.**
+**O Elasticsearch 7.17 atingiu o fim do suporte (EOS) em 15 de janeiro de 2026.**
 Após essa data, o Adobe Commerce 2.4.6, 2.4.5 e 2.4.4 não fornecerá compatibilidade ou
 suporte para qualquer versão do Elasticsearch lançada após o Elasticsearch 7. O Adobe não
 validar ou fornecer suporte para versões principais mais recentes do Elasticsearch neste Adobe
@@ -225,4 +224,4 @@ Para o Adobe Commerce na nuvem, consulte [Configurar Xdebug](https://experiencel
 >
 >Há um problema conhecido com o `xdebug` que pode afetar as instalações do Adobe Commerce ou o acesso à loja ou ao Administrador após a instalação. Consulte [Problema conhecido que afeta a instalação de `xdebug`](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) na _Base de Dados de Conhecimento de Suporte da Commerce_.
 
-<!-- Last updated from includes: 2026-05-13 16:20:40 -->
+<!-- Last updated from includes: 2026-06-01 11:19:57 -->

@@ -2,9 +2,9 @@
 title: Implementação de atualização
 description: Saiba mais sobre as diferentes fases da implementação de atualização para projetos do Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 3c54a3c429a3dadc826bffcb91f99a5a3a31b42c
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '856'
 ht-degree: 1%
 
 ---
@@ -42,13 +42,13 @@ A seguir estão itens que talvez você queira incluir em uma análise completa:
 
   | Serviço | Versão atual | Atualizar para | Notas |
   |-----------------|-----------------|------------|----------------------------------------------------------|
-  | PHP | 7,4 | 8,1 |                                                          |
-  | Redis | 6,0 | 6,2 |                                                          |
-  | [!DNL RabbitMQ] | 3,8 | 3,9 | Não está sendo usado no momento, mas devemos considerá-lo |
-  | MariaDB (Nuvem) | 10,4 | 10,6 |                                                          |
-  | MySQL | 8,0 | -/-/ |                                                          |
-  | Compositor | 1.9.2 | 2,2 |                                                          |
-  | Elasticsearch | 7,10 | 7,17 |                                                          |
+  | PHP | 7,4 | 8.5 |                                                          |
+  | Valkey | 8.0 | 9 |                                                          |
+  | [!DNL RabbitMQ] | 3.8 | 4.3 | Não está sendo usado no momento, mas devemos considerá-lo |
+  | MariaDB (Nuvem) | 10,4 | 12.3 |                                                          |
+  | MySQL | 8,0 | N/D |                                                          |
+  | Compositor | 1.9.2 | 2.9 |                                                          |
+  | OpenSearch | 1 | 3 |                                                          |
 
 - **Extensões e módulos de terceiros**—Use este modelo de tabela para ajudá-lo a entender o status de suas extensões e personalizações, para que você possa tomar decisões estratégicas e definir ações. Esta é uma oportunidade de substituir qualquer extensão nativa do Adobe Commerce para minimizar a complexidade do seu projeto. Use o comando `bin/magento module:status` para ver uma lista de módulos e extensões.
 
