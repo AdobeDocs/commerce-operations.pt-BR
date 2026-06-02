@@ -42,7 +42,7 @@ O [modelo do Commerce na Nuvem](https://github.com/magento/magento-cloud) fornec
 A compatibilidade entre o MariaDB 12.3 e o Adobe Commerce 2.4.9 será confirmada após o lançamento oficial do MariaDB 12.3, previsto para maio-junho.
 
 Para a configuração padrão, os serviços e as versões são definidos no [arquivo `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia do *Commerce na Infraestrutura de Nuvem*.
+Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia do *Commerce na Infraestrutura de Nuvem*.
 
 >[!TAB Commerce local]
 
@@ -85,7 +85,7 @@ O [modelo do Commerce na Nuvem](https://github.com/magento/magento-cloud) fornec
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
 Para a configuração padrão, os serviços e as versões são definidos no [arquivo `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia do *Commerce na Infraestrutura de Nuvem*.
+Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia do *Commerce na Infraestrutura de Nuvem*.
 
 >[!TAB Commerce local]
 
@@ -115,7 +115,7 @@ aconselhamos a migrar sua infraestrutura de pesquisa para uma versão compatíve
 
 Há configurações específicas do PHP, como a configuração `memory_limit`, que podem ajudá-lo a evitar problemas comuns ao usar o Adobe Commerce. Consulte [Configurações PHP necessárias](prerequisites/php-settings.md).
 
-Para obter orientações sobre a configuração da nuvem, consulte [configurações do PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) no guia *Commerce na Infraestrutura da Nuvem*.
+Para obter orientações sobre a configuração da nuvem, consulte [configurações do PHP](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/php-settings) no guia *Commerce na Infraestrutura da Nuvem*.
 
 ### OPcache do PHP
 
@@ -143,7 +143,7 @@ As [instruções de instalação do PHP](prerequisites/php-settings.md) incluem 
 
 >[!TIP]
 >
->Para extensões PHP na infraestrutura da nuvem, consulte [Habilitar extensões PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) no guia _Commerce na infraestrutura da nuvem_.
+>Para extensões PHP na infraestrutura da nuvem, consulte [Habilitar extensões PHP](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) no guia _Commerce na infraestrutura da nuvem_.
 
 >[!BEGINTABS]
 
@@ -182,11 +182,11 @@ Loja e Administrador:
 
 ### Servidor de email
 
-Mail Transfer Agent (MTA) ou um servidor SMTP. A infraestrutura do Commerce na nuvem usa o [serviço de email SendGrid](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid).
+Mail Transfer Agent (MTA) ou um servidor SMTP. A infraestrutura do Commerce na nuvem usa o [serviço de email SendGrid](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/sendgrid).
 
 ### Memória
 
-A atualização dos aplicativos e extensões obtidos da Commerce Marketplace e de outras fontes pode exigir até 2 GB de RAM. Se você estiver usando um sistema com menos de 2 GB de RAM, crie um [arquivo de troca](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Caso contrário, a atualização poderá falhar.
+A atualização dos aplicativos e extensões obtidos da Commerce Marketplace e de outras fontes pode exigir até 2 GB de RAM. Se você estiver usando um sistema com menos de 2 GB de RAM, crie um [arquivo de troca](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Caso contrário, a atualização poderá falhar.
 
 ### Sistemas operacionais (Linux x86-64)
 
@@ -212,16 +212,16 @@ O Adobe Commerce requer as seguintes ferramentas do sistema para algumas operaç
 - Certificados SSL autoassinados não são compatíveis.
 - Requisito de Segurança da Camada de Transporte (TLS) - PayPal e `repo.magento.com` exigem TLS 1.2 ou posterior.
 
-Para obter a infraestrutura do Commerce na nuvem, consulte a [Configuração do Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) no guia do *Commerce na Infraestrutura da Nuvem*.
+Para obter a infraestrutura do Commerce na nuvem, consulte a [Configuração do Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) no guia do *Commerce na Infraestrutura da Nuvem*.
 
 ### Xdebug
 
 Para o Adobe Commerce, use o [php_xdebug 2.5.x](https://xdebug.org/download) ou posterior (somente ambientes de desenvolvimento; pode ter um efeito adverso no desempenho).
 
-Para o Adobe Commerce na nuvem, consulte [Configurar Xdebug](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug) no guia do *Commerce na infraestrutura da nuvem*.
+Para o Adobe Commerce na nuvem, consulte [Configurar Xdebug](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/test/debug) no guia do *Commerce na infraestrutura da nuvem*.
 
 >[!NOTE]
 >
->Há um problema conhecido com o `xdebug` que pode afetar as instalações do Adobe Commerce ou o acesso à loja ou ao Administrador após a instalação. Consulte [Problema conhecido que afeta a instalação de `xdebug`](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) na _Base de Dados de Conhecimento de Suporte da Commerce_.
+>Há um problema conhecido com o `xdebug` que pode afetar as instalações do Adobe Commerce ou o acesso à loja ou ao Administrador após a instalação. Consulte [Problema conhecido que afeta a instalação de `xdebug`](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) na _Base de Dados de Conhecimento de Suporte da Commerce_.
 
 <!-- Last updated from includes: 2026-06-01 15:26:19 -->
