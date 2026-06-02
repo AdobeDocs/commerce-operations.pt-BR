@@ -1,6 +1,6 @@
 ---
 title: 'B2B-2598: Adiciona o recurso de armazenamento em cache a storeConfig, moeda, país, países, availableStores GraphQl queries'
-description: Aplique o patch B2B-2598 para adicionar o recurso de armazenamento em cache às consultas storeConfig, moeda, país, países e GraphQl availableStores.
+description: Aplique o patch B2B-2598 para adicionar recurso de cache às consultas GraphQl "storeConfig", "currency", "country", "countries" e "availableStores".
 feature: B2B, GraphQL, Cache
 role: Admin
 type: Troubleshooting
@@ -23,9 +23,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 industry_v2:
   - id: aad1e361-483a-40cf-9a88-144325515074
-source-git-commit: 891f738f4a3db4e361984d11585f3679068c8ced
+source-git-commit: 17c3f587a16209876a9713881eff0034d872581e
 workflow-type: tm+mt
-source-wordcount: 458
+source-wordcount: 457
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ O patch B2B-2598 adiciona o recurso de cache às consultas GraphQl `storeConfig`
 
 ## Problema
 
-`availableStores`, `countries`, `country`, `currency`, `storeConfig` e `customAttributeMetadata` consultas GraphQL não são armazenáveis em cache.
+As consultas GraphQL `availableStores`, `countries`, `country`, `currency`, `storeConfig` e `customAttributeMetadata` não podem ser armazenadas em cache.
 
 <u>Pré-requisitos</u>:
 
@@ -60,22 +60,22 @@ O patch B2B-2598 adiciona o recurso de cache às consultas GraphQl `storeConfig`
 Após a aplicação do patch, execute as seguintes etapas para garantir que o recurso de cache esteja disponível:
 
 1. Envie a solicitação `GET` para qualquer uma das consultas GraphQL listadas acima, usando quaisquer campos arbitrários.
-1. Reenviar a solicitação sem qualquer alteração. Você notará que é muito mais rápido. Observe que a solicitação não é enviada ao back-end, mas é completamente tratada por [!DNL Varnish] como uma ocorrência de cache.
+1. Reenviar a solicitação sem qualquer alteração. Você notará que é muito mais rápido. Observe que a solicitação não é enviada para o back-end, mas é completamente tratada por [!DNL Varnish] como uma ocorrência de cache.
 1. Se for necessária mais prova, comente o unset do cabeçalho `X-Magento-Debug` presente em nosso [VCL](https://github.com/magento/magento2/blob/026e5b29a5edfd619bbdea62d636b3cab2ea03b4/app/code/Magento/PageCache/etc/varnish6.vcl#L227), reinicie o [!DNL Varnish] e execute as etapas acima novamente.
 
 ## Aplicar o patch
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
-* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool]
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem
 
 ## Leitura relacionada
 
 Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
-* [Verifique se há patch disponível para o problema do Adobe Commerce usando o  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!UICONTROL Quality Patches Tool].
+* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte
+* [Verifique se há patch disponível para o problema do Adobe Commerce usando o  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!UICONTROL Quality Patches Tool]
 
 
-Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no guia [!DNL Quality Patches Tool].
+Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no guia [!DNL Quality Patches Tool]
