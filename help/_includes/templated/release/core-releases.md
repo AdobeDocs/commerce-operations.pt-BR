@@ -1,7 +1,7 @@
 ---
-source-git-commit: 96a30744d05e5220b60a6a56a9d64d92e1dfd9ce
+source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2046'
 ht-degree: 3%
 
 ---
@@ -275,6 +275,7 @@ O suporte regular para a linha de versão 2.4.6 termina em 11 de agosto de 2026.
 
 O suporte regular para a linha de versão 2.4.5 terminou em 12 de agosto de 2025.
 O suporte estendido para a linha de versão 2.4.5 termina em 11 de agosto de 2026.
+O provisionamento de correções de segurança adicionais para a linha de versão 2.4.5 termina em maio de 2027.
 
 <table>
   <thead>
@@ -399,6 +400,7 @@ O suporte estendido para a linha de versão 2.4.5 termina em 11 de agosto de 202
 
 O suporte regular para a linha de versão 2.4.4 terminou em 12 de abril de 2025.
 O suporte estendido para a linha de versão 2.4.4 terminou em 14 de abril de 2026.
+O provisionamento de correções de segurança adicionais para a linha de versão 2.4.4 termina em maio de 2027.
 
 <table>
   <thead>
