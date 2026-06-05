@@ -1,7 +1,7 @@
 ---
-source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
+source-git-commit: b552c5e9aa33c33efe962f5f3661ca26b29ef0b6
 workflow-type: tm+mt
-source-wordcount: '3282'
+source-wordcount: '3380'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 0%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 5 de junho de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.79 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402">ACP2E-4402: o indexador incremental da Regra de Destino não escolhe produtos desabilitados</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e5aa6a001b0c96b2d0489a444c227a8f0d406675">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2 de junho de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualizadas as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/versions">versões lançadas</a> com correções de segurança adicionais que provisionam datas de término para as linhas de versão 2.4.4 e 2.4.5 (maio de 2027).</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7457647b2fc4c0a4786146a9eee74b2050bf5ad9">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 1 de junho de 2026
 
