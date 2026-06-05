@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 7625ecbebf7c8ca227f3817a0f4f21bba1bb253a
+source-git-commit: 9de5006ef5231f1009e3b6b44a365e151d56e998
 workflow-type: tm+mt
-source-wordcount: '10121'
+source-wordcount: '10131'
 ht-degree: 0%
 
 ---
@@ -996,6 +996,7 @@ ht-degree: 0%
          - [ACP2E-4419: Os cartões-presente não são aplicados corretamente no check-out após a validação bem-sucedida do reCAPTCHA v2 na loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4402: O indexador incremental da Regra de Destino não escolhe produtos desabilitados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
          - [ACP2E-4505: Dependência de categoria circular ao salvar uma categoria com dados obsoletos em uma guia do navegador duplicada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
          - [ACP2E-4720: As regras de preço do carrinho de frete gratuito não são redefinidas para produtos de pacote de preço fixo com itens de remessa separadamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
          - [AC-10698: Os preços e os totais das transações não são enviados para a etiqueta da Google](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
