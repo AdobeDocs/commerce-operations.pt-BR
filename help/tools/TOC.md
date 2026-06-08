@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 9de5006ef5231f1009e3b6b44a365e151d56e998
+source-git-commit: bbe7d69e0cf7a1cdfdbf6ed60b853ace38ae227a
 workflow-type: tm+mt
-source-wordcount: '10131'
+source-wordcount: '10146'
 ht-degree: 0%
 
 ---
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459: não é possível importar produtos com descrições com mais de 65.536 caracteres](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424: o valor updated_at na resposta da API REST do GET /carts/search não corresponde ao valor em [!UICONTROL Admin Panel] para [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424: o valor updated_at na resposta da API REST GET /carts/search não corresponde ao valor em [!UICONTROL Admin Panel] para [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383: erro ao fazer logon como um cliente com duas contas de administrador de empresa na mesma sessão](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064: Entradas duplicadas criadas durante atualizações agendadas em ambientes com categorias profundamente aninhadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946: a atualização do carrinho mostra banners de erro duplicados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
@@ -996,6 +996,7 @@ ht-degree: 0%
          - [ACP2E-4419: Os cartões-presente não são aplicados corretamente no check-out após a validação bem-sucedida do reCAPTCHA v2 na loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4706: O indexador de Regra de Destino cron não escolhe produtos habilitados somente no escopo de exibição da loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706.md)
          - [ACP2E-4402: O indexador incremental da Regra de Destino não escolhe produtos desabilitados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
          - [ACP2E-4505: Dependência de categoria circular ao salvar uma categoria com dados obsoletos em uma guia do navegador duplicada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
          - [ACP2E-4720: As regras de preço do carrinho de frete gratuito não são redefinidas para produtos de pacote de preço fixo com itens de remessa separadamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
