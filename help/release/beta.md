@@ -4,9 +4,9 @@ description: Saiba mais sobre as versões beta do Adobe Commerce e como particip
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 3411fb1d4c89bd4dd576f58b98dcf19ddafa00bf
+source-git-commit: 300ed6b9123701244042abccf70ff774ac05b0fa
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1894'
 ht-degree: 0%
 
 ---
@@ -91,6 +91,25 @@ O merchandising da categoria Adobe Commerce Optimizer ajuda os comerciantes a co
 - Regras de escopo por exibição de catálogo quando a configuração usa várias exibições de catálogo.
 
 Para saber mais, consulte [Merchandising de categoria](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add).
+
+Para compartilhar seus comentários enquanto você usa este recurso beta, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
+### Filtros de preço de recomendação (Beta público) {#recommendation-price-filters-public-beta}
+
+[!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}
+
+[!DNL Adobe Commerce Optimizer] adiciona **filtros de preço** às Recomendações de Produto para que você possa incluir ou excluir produtos recomendados com base no preço ao criar ou editar uma unidade de recomendação. Os filtros usam o **preço calculado final** de cada produto do **catálogo de preços ativo** da loja, incluindo descontos e promoções desse catálogo de preços (não apenas o preço de lista). As regras de preços refinam o conjunto de candidatos; elas não reclassificam os produtos.
+
+Você pode definir intervalos **estáticos** com valores mínimos e máximos fixos na moeda base da sua loja, ou regras **dinâmicas** nas páginas de detalhes do produto que comparam produtos recomendados ao **produto exibido no momento** usando operadores como menor que ou igual a, maior que ou igual a, ou dentro de um valor ou intervalo de porcentagem do preço de âncora. Filtros dinâmicos estão disponíveis para tipos de recomendação relacionados a SKU que são executados no contexto do produto (por exemplo, *Visualizou isto, visualizou aquilo* e *Mais itens semelhantes*).
+
+**Principais benefícios**
+
+- Inclua ou exclua candidatos a recomendação por preço usando regras de inclusão e exclusão na etapa **Filtrar produtos**.
+- Use faixas de preço estáticas para objetivos de merchandising fixos (por exemplo, complementos econômicos ou vendas adicionais premium).
+- Use as regras de preço dinâmicas na página de detalhes do produto para mostrar alternativas em uma faixa de preço comparável em relação ao produto que está sendo visualizado.
+- Alinhe a filtragem com o preço que os compradores veem, que é o mesmo preço final do catálogo de preços ativo usado para filtragem e exibição.
+
+Para saber mais, consulte [Filtros de recomendação — Preço](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/recommendations/filters#price) no guia do comerciante e [Configuração de recomendações de produto](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/?lang=pt-BR) no guia de entrega da loja.
 
 Para compartilhar seus comentários enquanto você usa este recurso beta, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
