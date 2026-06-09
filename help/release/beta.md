@@ -4,9 +4,9 @@ description: Saiba mais sobre as versões beta do Adobe Commerce e como particip
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: cc99a5518bc5f21b93f83f9afb354242547d6a3c
+source-git-commit: 3411fb1d4c89bd4dd576f58b98dcf19ddafa00bf
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1574'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Os programas do Beta para [soluções de produtos da Adobe Commerce](https://exp
 >[!IMPORTANT]
 >
 >**Aviso de isenção legal**<br/>
->As versões do Beta incluem recursos de pré-lançamento e código que podem conter defeitos e são fornecidos &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. A Adobe tem o único critério de disponibilizar versões beta de modo geral. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar, oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) ou fornecer essas versões beta até qualquer data específica. Caso uma versão beta seja disponibilizada para o público em geral, ela poderá estar sujeita a termos e condições adicionais, incluindo taxas aplicáveis. As versões do Beta estão sujeitas a alterações sem aviso prévio, incluindo a descontinuação. Os clientes são aconselhados a ter cuidado e não depender de forma alguma do funcionamento ou do desempenho ininterrupto ou livre de erros das versões beta.  Portanto, qualquer uso das versões beta é de inteira responsabilidade do cliente.
+>As versões do Beta incluem recursos de pré-lançamento e código que podem conter defeitos e são fornecidos &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantia de nenhum tipo. A Adobe tem o único critério de disponibilizar versões beta de modo geral. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar, oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) ou fornecer essas versões beta até qualquer data específica. Caso uma versão beta seja disponibilizada para o público em geral, ela poderá estar sujeita a termos e condições adicionais, incluindo taxas aplicáveis. As versões do Beta estão sujeitas a alterações sem aviso prévio, incluindo a descontinuação. Os clientes são aconselhados a ter cuidado e não depender de forma alguma do funcionamento ou do desempenho ininterrupto ou livre de erros das versões beta.  Portanto, qualquer uso das versões beta é de inteira responsabilidade do cliente.
 
 ## Benefícios da participação
 
@@ -93,21 +93,6 @@ O merchandising da categoria Adobe Commerce Optimizer ajuda os comerciantes a co
 Para saber mais, consulte [Merchandising de categoria](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add).
 
 Para compartilhar seus comentários enquanto você usa este recurso beta, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
-
-### Pesquisa semântica: experiências de compra mais inteligentes e sensíveis ao contexto (Private Beta)
-
-[!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}
-
-A pesquisa semântica é uma tecnologia de pesquisa de comércio eletrônico que entende o *significado* por trás da consulta de um comprador, não apenas as palavras exatas. Ao contrário da pesquisa tradicional baseada em palavras-chave, que geralmente falha quando as consultas incluem termos desconhecidos ou com ortografia incorreta, essa abordagem baseada em IA interpreta a intenção usando o processamento de linguagem natural (NLP) e o contexto para fornecer resultados mais relevantes.
-
-Essa tecnologia lida com uma importante limitação da pesquisa tradicional: páginas de resultado zero que ocorrem quando os compradores usam palavras que não existem no catálogo. Ao usar técnicas alimentadas por IA, ele mapeia consultas de usuários e dados de produtos em um espaço semântico compartilhado. Por exemplo, o sistema reconhece que &quot;tênis de corrida&quot; e &quot;tênis de corrida&quot; se referem ao mesmo tipo de produto, permitindo:
-
-- Reconhecimento de sinônimo
-- Relevância contextual
-- Tratamento inteligente de consultas vagas, com erro de ortografia ou compostas
-- Compreensão de linguagem natural e conversacional
-
-Para solicitar um convite para o programa beta, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). A equipe do Adobe responderá com as próximas etapas e os requisitos de qualificação.
 
 ### Serviço de patch de automação de nuvem (Private Beta)
 
