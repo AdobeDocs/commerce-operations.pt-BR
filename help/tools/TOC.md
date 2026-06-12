@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: bbe7d69e0cf7a1cdfdbf6ed60b853ace38ae227a
+source-git-commit: 7e0a7479cd988b678c95b0ee9ec4c5371d0a62d9
 workflow-type: tm+mt
-source-wordcount: '10146'
+source-wordcount: '10150'
 ht-degree: 0%
 
 ---
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459: não é possível importar produtos com descrições com mais de 65.536 caracteres](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424: o valor updated_at na resposta da API REST GET /carts/search não corresponde ao valor em [!UICONTROL Admin Panel] para [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424: o valor updated_at na resposta da API REST do GET /carts/search não corresponde ao valor em [!UICONTROL Admin Panel] para [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383: erro ao fazer logon como um cliente com duas contas de administrador de empresa na mesma sessão](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064: Entradas duplicadas criadas durante atualizações agendadas em ambientes com categorias profundamente aninhadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946: a atualização do carrinho mostra banners de erro duplicados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
@@ -1007,6 +1007,8 @@ ht-degree: 0%
          - [ACP2E-4603: o produto Permissões de catálogo reindexar deixa linhas de índice de permissão obsoletas e deadlock do MySQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
          - [AC-10737: o comando `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md1` não reconhece o tipo de dados JSON](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
          - [ACP2E-4601: Salvando novamente uma transação de autorização de pagamento com autorreferência parent_id e acionando um loop/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
+      - v1.1.80 {#v1-1-80}
+         - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
    - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referência de ferramentas de linha de comando {#cli-reference}
    - [Adobe Commerce (no local)](reference/commerce-on-premises.md)
