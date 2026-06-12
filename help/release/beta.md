@@ -4,9 +4,9 @@ description: Saiba mais sobre as versões beta do Adobe Commerce e como particip
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 300ed6b9123701244042abccf70ff774ac05b0fa
+source-git-commit: 41e4aa725848fd7fa4910eaea09a802326fa3995
 workflow-type: tm+mt
-source-wordcount: '1894'
+source-wordcount: '1451'
 ht-degree: 0%
 
 ---
@@ -31,68 +31,26 @@ A obtenção de acesso antecipado aos recursos que a Adobe está desenvolvendo o
 
 Consulte as seções a seguir para obter uma lista de programas beta ativos.
 
-### Regras de merchandising globalmente e por exibição de catálogo (Beta público)
+### Correspondência de pesquisa e classificação (Private Beta)
 
 [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}
 
-O Adobe Commerce Optimizer apresenta a capacidade de definir regras de merchandising com escopo flexível, permitindo que os comerciantes apliquem regras em todas as exibições de catálogo ou as apliquem a uma exibição de catálogo específica. Esse recurso simplifica o gerenciamento de regras de merchandising para comerciantes que operam várias lojas, marcas ou idiomas. As regras específicas de Exibição de catálogo permitem que os comerciantes personalizem resultados de pesquisa e lógica de merchandising para canais individuais quando precisarem de experiências localizadas ou específicas da marca. Se houver regras específicas de visualização do catálogo, elas substituirão a regra global dessa visualização, fornecendo controle preciso e mantendo um gerenciamento de configuração eficiente.
+[!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
+
+A Adobe está aprimorando a forma como a descoberta de produtos classifica os resultados da pesquisa para [!DNL Live Search] em [!DNL Adobe Commerce] e para [!DNL Adobe Commerce Optimizer]. A atualização prioriza **correspondências de frase exata e próxima**, em seguida, correspondências em que **todos os termos de consulta aparecem no mesmo atributo pesquisável** e, por fim, **correspondências entre campos** (incluindo comportamento compatível com sugestões de estilo de preenchimento automático). Esse modelo em camadas ajuda as consultas de alta intenção a identificar os produtos mais relevantes primeiro, além de ainda retornar alternativas úteis.
+
+O mesmo modelo de relevância interage com **pesos de pesquisa**, **classificação inteligente**, **sinônimos** e **regras de merchandising** (fixar, impulsionar, enterrar). As vitrines da Alemanha podem usar **decomposto** para palavras compostas, com a mesma abordagem de priorização geral.
 
 **Principais benefícios**
 
-- Defina regras de merchandising globalmente em todas as exibições de catálogo.
-- Substitua as regras para exibições de catálogo específicas quando as experiências localizadas forem necessárias.
-- Reduza a duplicação de configuração em várias lojas.
-- Melhore a escalabilidade para implementações de comércio multimarca e multilíngue.
+- Aumentos mais fortes para correspondências de frases exatas e próximas (incluindo formas normalizadas, como singular e plural).
+- Classificação mais alta quando todas as palavras de consulta aparecem juntas em um campo pesquisável.
+- Expectativas mais claras sobre como os pesos, a classificação inteligente e as regras manuais se combinam no momento do query.
+- Orientação para validar consultas de alto valor e ajustar regras de aumento após a alteração.
 
-Esse recurso melhora a flexibilidade de merchandising e a eficiência operacional, ajudando os comerciantes a fornecer experiências de descoberta de produtos mais relevantes em escala. Para saber mais, consulte [regras de comercialização](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add).
+Saiba mais sobre a estratégia de correspondência e classificação de pesquisa no [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/search-relevance-matching) e no [Live Search (PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/search-relevance-matching).
 
->[!NOTE]
->
->Os participantes do Beta precisarão recriar quaisquer regras de merchandising existentes para aproveitar o novo escopo de exibição do catálogo.
-
-Para compartilhar seus comentários enquanto você usa este recurso beta, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
-
-### Recomendações de produto globalmente e por exibição de catálogo (Beta público)
-
-[!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}
-
-O Adobe Commerce Optimizer apresenta controle aprimorado sobre a configuração das Recomendações de produto, permitindo que os comerciantes definam unidades de recomendação globalmente em todas as exibições de catálogo ou especificamente para exibições de catálogo individual.
-
-Esse recurso simplifica o gerenciamento de recomendações para empresas que operam várias lojas, marcas, regiões ou idiomas. Os comerciantes podem criar uma unidade de recomendação uma vez globalmente e ela se aplicará a todas as exibições de catálogo, garantindo estratégias consistentes de descoberta de produtos em todos os canais. Ao mesmo tempo, as unidades de recomendação específicas para visualização de catálogo permitem que os comerciantes personalizem experiências para lojas específicas quando necessário.
-
-Os eventos de envolvimento da loja e as métricas de recomendação são rastreados no nível de exibição do catálogo, fornecendo insights mais precisos sobre o comportamento do comprador em diferentes lojas.
-
-**Principais benefícios**
-
-- Configurar unidades de recomendação do produto globalmente em todas as exibições de catálogo.
-- Crie recomendações específicas de visualização de catálogo para experiências localizadas da loja.
-- Reduza a configuração duplicada em vitrines com várias marcas ou vários idiomas.
-- Obtenha insights mais precisos com métricas e eventos rastreados pela exibição de catálogo.
-
-Esse aprimoramento ajuda os comerciantes a fornecer experiências de descoberta de produtos mais relevantes, simplificando o gerenciamento de recomendações em ambientes de comércio complexos. Para saber mais, consulte [recomendações](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/manage-results/recommendation-performance)
-
->[!NOTE]
->
->Os participantes do Beta precisarão recriar quaisquer unidades de recomendação existentes para aproveitar o novo escopo de exibição do catálogo.
-
-Para compartilhar seus comentários enquanto você usa este recurso beta, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
-
-### Merchandising por categoria (Beta público)
-
-[!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}
-
-O merchandising da categoria Adobe Commerce Optimizer ajuda os comerciantes a controlar como os produtos são solicitados nas páginas de categoria. Os comerciantes configuram o comportamento como uma **regra de categoria** no fluxo de trabalho de regras de merchandising, juntamente com [regras de pesquisa e regras padrão de listagem de produtos](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/overview). Cada regra pode combinar **classificação inteligente** (sinais comportamentais e IA quando aplicável), **classificação baseada em preço** opcional e **ações manuais**, como fixar, aumentar e enterrar, de modo que as equipes possam preparar descobertas, executar promoções e alinhar páginas de categoria com estratégias sem ferramentas externas.
-
-**Principais benefícios**
-
-- Direcione uma ou mais categorias com o mesmo fluxo de trabalho baseado em regras usado para pesquisa e listagens padrão.
-- Listagens de categoria de ordem usando estratégias de classificação inteligentes (por exemplo, mais visualizadas, mais compradas, adicionar ao carrinho, recomendações personalizadas, tendências) e classificação de preço opcional.
-- Coloque as ações manual de pin, reforço e enterramento na parte superior da classificação inteligente quando precisar de posicionamento preciso.
-- Regras de escopo por exibição de catálogo quando a configuração usa várias exibições de catálogo.
-
-Para saber mais, consulte [Merchandising de categoria](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add).
-
-Para compartilhar seus comentários enquanto você usa este recurso beta, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+Para solicitar um convite para este beta privado, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). A equipe do Adobe responderá com as próximas etapas e os requisitos de qualificação.
 
 ### Filtros de preço de recomendação (Beta público) {#recommendation-price-filters-public-beta}
 
