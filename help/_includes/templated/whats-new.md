@@ -1,7 +1,7 @@
 ---
-source-git-commit: b552c5e9aa33c33efe962f5f3661ca26b29ef0b6
+source-git-commit: b8c97f7a7d92a75ce54d323344460e2e71e8f548
 workflow-type: tm+mt
-source-wordcount: '3380'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 0%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 12 de junho de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.80</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e585cb2150ca7dc2ae6ae883339ef9b894741f0">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição do programa de Correspondência e classificação de pesquisa (Private Beta) a <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">versões do Beta</a>, incluindo o modelo de correspondência em camadas, interação com pesos e regras de merchandising e instruções de convite.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 8 de junho de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.79 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706: o indexador de Regra de Destino cron não escolhe produtos habilitados somente no escopo de exibição da loja</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 5 de junho de 2026
 
@@ -701,36 +753,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Atualização técnica importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bc6807d7f4bfd84ac698de81f8cf6f56d849af7">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 8 de abril de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualizados os <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">requisitos do sistema</a> com versões do New Relic (APM) compatíveis com o Commerce na nuvem por versão.</p>
-</td>
-      <td>
-        Técnico, feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f82d05cf0f7d2749b313ef5f7e89e1e36248bf30">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta">versões do Beta</a> com um programa de Categoria de merchandising (Beta público) para projetos SaaS, incluindo links para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add">Categoria de merchandising</a> e tópicos relacionados de regras de merchandising.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">confirmar</a></td>
     </tr>
   </tbody>
 </table>
