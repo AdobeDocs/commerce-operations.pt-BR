@@ -2,9 +2,9 @@
 title: Disponibilidade do produto
 description: Saiba mais sobre quais recursos do Adobe Commerce são compatíveis no momento e verifique sua compatibilidade com versões específicas do Adobe Commerce.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 2da14d46ea970f7ea1932075f345b18f44431f72
+source-git-commit: 34c1e3ed0ed46fc17bf4492036a8f43658b24bda
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -44,4 +44,4 @@ A tabela a seguir mostra o suporte à versão para cada serviço em relação à
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-04-01 09:59:12 -->
+<!-- Last updated from includes: 2026-04-28 12:43:37 -->
