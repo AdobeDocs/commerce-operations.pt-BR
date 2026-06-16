@@ -4,9 +4,9 @@ description: Saiba mais sobre as versões beta do Adobe Commerce e como particip
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 41e4aa725848fd7fa4910eaea09a802326fa3995
+source-git-commit: bf0f269900468870a1da7b5360548d49e009097c
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -33,10 +33,6 @@ Consulte as seções a seguir para obter uma lista de programas beta ativos.
 
 ### Correspondência de pesquisa e classificação (Private Beta)
 
-[!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}
-
-[!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
-
 A Adobe está aprimorando a forma como a descoberta de produtos classifica os resultados da pesquisa para [!DNL Live Search] em [!DNL Adobe Commerce] e para [!DNL Adobe Commerce Optimizer]. A atualização prioriza **correspondências de frase exata e próxima**, em seguida, correspondências em que **todos os termos de consulta aparecem no mesmo atributo pesquisável** e, por fim, **correspondências entre campos** (incluindo comportamento compatível com sugestões de estilo de preenchimento automático). Esse modelo em camadas ajuda as consultas de alta intenção a identificar os produtos mais relevantes primeiro, além de ainda retornar alternativas úteis.
 
 O mesmo modelo de relevância interage com **pesos de pesquisa**, **classificação inteligente**, **sinônimos** e **regras de merchandising** (fixar, impulsionar, enterrar). As vitrines da Alemanha podem usar **decomposto** para palavras compostas, com a mesma abordagem de priorização geral.
@@ -48,7 +44,7 @@ O mesmo modelo de relevância interage com **pesos de pesquisa**, **classificaç
 - Expectativas mais claras sobre como os pesos, a classificação inteligente e as regras manuais se combinam no momento do query.
 - Orientação para validar consultas de alto valor e ajustar regras de aumento após a alteração.
 
-Saiba mais sobre a estratégia de correspondência e classificação de pesquisa no [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/search-relevance-matching) e no [Live Search (PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/search-relevance-matching).
+Saiba mais sobre a estratégia de correspondência e classificação de pesquisa no [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/manage-results/search-relevance-matching) e no [Live Search (PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching).
 
 Para solicitar um convite para este beta privado, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). A equipe do Adobe responderá com as próximas etapas e os requisitos de qualificação.
 
