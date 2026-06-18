@@ -1,8 +1,8 @@
 ---
 title: Política de Imposição de Atualização de Versão da Nuvem
 description: Saiba mais sobre a imposição de atualização de versão do Adobe Commerce na nuvem — por que a Adobe impõe atualizações, datas de imposição, desativação e ações necessárias. Consulte a política de ciclo de vida para obter disposições transitórias e caminhos de migração.
-nudge: true
-source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
+nudge: false
+source-git-commit: 797f067de451c8b1b4d735e82de66a3fd9b56563
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
