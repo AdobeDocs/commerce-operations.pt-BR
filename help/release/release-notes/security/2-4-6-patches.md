@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 >O Adobe Commerce 2.4.6 está no [suporte estendido](../../lifecycle-policy.md#extended-support) até **30 de agosto de 2027**, seguido por um [período de transição somente de segurança](../../lifecycle-policy.md#security-only-transitional-period) até **31 de maio de 2028**. Essas provisões estão disponíveis somente para clientes do Adobe Commerce. Eles não estendem o suporte para dependências de terceiros, como MySQL.
 >
->Se você executar o Adobe Commerce na Nuvem, deverá atualizar para uma versão com suporte ou migrar para o [!DNL Adobe Commerce as a Cloud Service] antes da **data de imposição de atualização de versão de [ de** de 1 de junho de 2028](../../version-upgrade-enforcement-policy.md). Consulte a tabela [fim das datas de suporte](../../lifecycle-policy.md#end-of-support-dates) para obter as datas do ciclo de vida completo.
+>Se você executar o Adobe Commerce na Nuvem, deverá atualizar para uma versão com suporte ou migrar para o [!DNL Adobe Commerce as a Cloud Service] antes da **data de imposição de atualização de versão de [&#x200B; de** de 1 de junho de 2028](../../version-upgrade-enforcement-policy.md). Consulte a tabela [fim das datas de suporte](../../lifecycle-policy.md#end-of-support-dates) para obter as datas do ciclo de vida completo.
 
 ## 2.4.6-p15
 
@@ -206,13 +206,13 @@ A versão de segurança 2.4.6-p6 do Adobe Commerce fornece correções de bugs d
 
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
-Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do [B2B2B.
+Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do B2B2B.
 
 ### Aplicar hotfix para CVE-2024-34102
 
 {{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
-Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do [B2B2B.
+Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do B2B2B.
 
 ### Destaques
 
