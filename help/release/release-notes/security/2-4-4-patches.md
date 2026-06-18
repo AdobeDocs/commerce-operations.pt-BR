@@ -2,9 +2,9 @@
 title: Notas de versão do patch de segurança do Adobe Commerce 2.4.4
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 16f70659db62f72df534561c174fde523ed5a434
+source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2182'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
 
-## 2.4.4-p18
-
 {{extended-support}}
 
-O Adobe Commerce 2.4.4-p18 é uma versão de segurança de suporte estendido que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.4. Ele está disponível somente para clientes do Adobe Commerce.
+## 2.4.4-p18
+
+O Adobe Commerce 2.4.4-p18 é uma [versão de segurança de suporte estendida](../../lifecycle-policy.md#security-only-transitional-period) que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.4. Ele está disponível somente para clientes do Adobe Commerce.
 
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-49](https://helpx.adobe.com/br/security/products/magento/apsb26-49.html).
 
@@ -26,9 +26,7 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 
 ## 2.4.4-p17
 
-{{extended-support}}
-
-O Adobe Commerce 2.4.4-p17 é uma versão de segurança de suporte estendido que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.4. Ele está disponível somente para clientes do Adobe Commerce.
+O Adobe Commerce 2.4.4-p17 é uma [versão de segurança de suporte estendida](../../lifecycle-policy.md#security-only-transitional-period) que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.4. Ele está disponível somente para clientes do Adobe Commerce.
 
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-05](https://helpx.adobe.com/br/security/products/magento/apsb26-05.html).
 
@@ -36,9 +34,7 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 
 ## 2.4.4-p16
 
-{{extended-support}}
-
-O Adobe Commerce 2.4.4-p16 é uma versão de segurança de suporte estendido que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.4. Ele está disponível somente para clientes do Adobe Commerce.
+O Adobe Commerce 2.4.4-p16 é uma [versão de segurança de suporte estendida](../../lifecycle-policy.md#security-only-transitional-period) que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.4. Ele está disponível somente para clientes do Adobe Commerce.
 
 Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-94](https://helpx.adobe.com/br/security/products/magento/apsb25-94.html).
 
@@ -48,10 +44,6 @@ Para obter as últimas informações sobre as correções de erros de segurança
 
 {{$include /help/_includes/release-notes/highlights/security-2025-10.md}}
 
->[!NOTE]
->
->Os patches de segurança de suporte estendido para 2.4.4 estão disponíveis apenas para clientes do Adobe Commerce. Esses patches não estão disponíveis para a base de código do Magento Open Source. Consulte [Suporte Estendido](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
-
 ### Problemas conhecidos
 
 #### A página de check-out não carrega static.min.js e mixins.min.js
@@ -60,9 +52,7 @@ Para obter as últimas informações sobre as correções de erros de segurança
 
 ## 2.4.4-p15
 
-{{extended-support}}
-
-O Adobe Commerce 2.4.4-p15 é uma versão de segurança de suporte estendido que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.4. Ele está disponível somente para clientes do Adobe Commerce.
+O Adobe Commerce 2.4.4-p15 é uma [versão de segurança de suporte estendida](../../lifecycle-policy.md#security-only-transitional-period) que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.4. Ele está disponível somente para clientes do Adobe Commerce.
 
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-71](https://helpx.adobe.com/br/security/products/magento/apsb25-71.html).
 
@@ -70,9 +60,7 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 
 ## 2.4.4-p14
 
-{{extended-support}}
-
-O Adobe Commerce 2.4.4-p14 é uma versão de segurança de suporte estendido que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.4. Ele está disponível somente para clientes do Adobe Commerce.
+O Adobe Commerce 2.4.4-p14 é uma [versão de segurança de suporte estendida](../../lifecycle-policy.md#security-only-transitional-period) que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.4. Ele está disponível somente para clientes do Adobe Commerce.
 
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-50](https://helpx.adobe.com/br/security/products/magento/apsb25-50.html).
 
@@ -93,8 +81,6 @@ Esta versão inclui os seguintes destaques:
 * **Operações assíncronas** — Operações assíncronas restritas para substituir pedidos de clientes anteriores.<!-- AC-13917 -->
 
 ## 2.4.4-p13
-
-{{extended-support}}
 
 A versão de segurança do Adobe Commerce 2.4.4-p13 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.4.
 

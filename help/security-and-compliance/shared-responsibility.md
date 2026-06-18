@@ -2,9 +2,9 @@
 title: Responsabilidade Compartilhada Segurança e Modelo Operacional
 description: Saiba mais sobre as responsabilidades de segurança de cada parte envolvida em seu projeto Adobe Commerce na infraestrutura em nuvem.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4e5477a247b272dc17863a84bd3b9a55bf36d688
+source-git-commit: 7dcd7f79417df28402a29e1e52d99eb288e8c6b9
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3253'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,13 @@ Os comerciantes são responsáveis pelo seguinte:
 * Obter a certificação PCI, se solicitado pelo processador de pagamento do comerciante
 * Reagir e responder a incidentes de segurança
 * Manutenção de todas as dependências de terceiros, serviços de plataforma e extensões dos Serviços da Adobe Commerce em versões que têm suporte ativo. A Adobe não fornece suporte ou assistência de segurança para implantações que executam versões de dependências não compatíveis. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) e a [Matriz de disponibilidade do produto](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability) para obter as versões com suporte.
+
+>[!NOTE]
+>
+>Consulte também:
+>
+>* [Política de ciclo de vida do software](../release/lifecycle-policy.md) — datas de fim de suporte, suporte estendido e disposições transitórias somente de segurança
+>* [Política de imposição de atualização de versão da nuvem](../release/version-upgrade-enforcement-policy.md) — datas de imposição e ações necessárias
 
 {{supported-versions-only}}
 
@@ -813,8 +820,6 @@ Os comerciantes são responsáveis por sincronizar dados entre ambientes.
 | Configurando a sincronização de dados do MBI para o Adobe Commerce Cloud Pro<br> (configuração do banco de dados do Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
-
-{{supported-versions-only}}
 
 #### Recomendações de produto
 

@@ -3,7 +3,7 @@ title: Arquitetura de referência corporativa
 description: Saiba como implementar o Adobe Commerce usando a mais recente tecnologia de comércio combinável da Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 0d0922b23bfe9152ef7f8b942b0e839a189e5abf
+source-git-commit: dc4747d96e6f226e90ed95c93512c3e879d408ab
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -18,7 +18,7 @@ A Commerce evoluiu para atender aos requisitos corporativos de desempenho, dimen
 
 O diagrama de arquitetura a seguir ilustra o fluxo de dados entre o Adobe Commerce e todas as soluções da Adobe Experience Cloud.
 
-![Diagrama de arquitetura mostrando como o Adobe Commerce se conecta às soluções da Experience Cloud](../../assets/playbooks/commerce-architecture-v3.png){width="800" zoomable="yes"}
+![Diagrama de arquitetura mostrando como o Adobe Commerce se conecta às soluções da Experience Cloud](../../assets/playbooks/commerce-architecture.png){width="800" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ Consulte os seguintes detalhes técnicos do Cloud Foundation:
 - [**Observabilidade interna**](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/monitor/performance) — Ferramentas que combinam dados de log de várias fontes para ajudá-lo a gerenciar o desempenho do site e diagnosticar problemas
 - [**Abrangente cobertura de API**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) e [REST](https://developer.adobe.com/commerce/webapi/rest) APIs para integrar o aplicativo Commerce principal com sistemas de terceiros e estender recursos do Commerce
 
-## Integração com o Experience Cloud
+## Integração com a Experience Cloud
 
-O Adobe Commerce integra-se com todas as soluções da Experience Cloud para oferecer [experiências de comércio personalizadas em escala](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+O Adobe Commerce integra-se com todas as soluções da Experience Cloud para fornecer [experiências de comércio personalizadas em escala](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 A [Conexão de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/overview) desbloqueia insights sobre o comportamento de compra dos compradores para que você possa criar experiências de compra personalizadas em todos os canais com outros produtos da Adobe Digital Experience.
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 52c330f62d722a4cae7f7f360ca61eca0f04b961
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,7 @@ Cada versão de patch de segurança é baseada na versão anterior de patch comp
 
 Para obter instruções sobre como baixar e aplicar patches de segurança, consulte [Como obter e aplicar patches de segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) na _Base de Conhecimentos Adobe Commerce_.
 
->[!NOTE]
->
->Os patches de segurança de suporte estendido estão disponíveis apenas para clientes do Adobe Commerce e não estão disponíveis para a base de código do Magento Open Source. Consulte [Suporte Estendido](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Arquivo de patch de segurança isolado
 
