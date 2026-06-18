@@ -2,84 +2,61 @@
 title: Política de ciclo de vida do software
 description: Saiba mais sobre as principais datas relacionadas ao fim do suporte de software das versões do Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 2b794767cf1901eb9dfedd8bf3977848d1851a70
+nudge: true
+source-git-commit: 5846c83cd31e3d253a5ae0b0064b860e5c7af286
 workflow-type: tm+mt
-source-wordcount: '949'
-ht-degree: 2%
+source-wordcount: '1321'
+ht-degree: 1%
 
 ---
 
 
 # política de ciclo de vida do Adobe Commerce
 
-Para simplificar a política de ciclo de vida do Adobe Commerce e atender às necessidades críticas dos clientes, a Adobe oferece um período de suporte de três anos a partir da data de disponibilidade geral (GA) para cada versão e lança correções de qualidade durante esse período. Para obter datas e detalhes sobre o fim do suporte de software para cada versão, consulte a tabela [Fim do suporte de software](#end-of-software-support).
-
-Durante o período de suporte de três anos, o cliente terá acesso a:
-
-- **Correções de qualidade** - Os clientes podem acessar correções de qualidade entrando em contato com o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou por meio do autoatendimento [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). A tabela a seguir descreve as datas de fim do suporte de software para as linhas de versão do Adobe Commerce.
-
-- **Correções de segurança**-O Adobe fornece correções de segurança por meio de patches de segurança cumulativos e [arquivos de patch de segurança isolados](versioning-policy.md#isolated-security-fixes) não cumulativos para o período de suporte de três anos.
-
-- **Hotfixes**-Para problemas críticos de segurança, como vulnerabilidades inexistentes, a Adobe fornece [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) para todos os clientes em uma versão com suporte, mesmo que eles não estejam na versão mais recente de patch ou patch de segurança. Observe que um hotfix não é abrangente e não trata de todos os problemas de segurança que seriam resolvidos com a atualização para a versão mais recente.
+Para simplificar a política de ciclo de vida do Adobe Commerce e atender às necessidades críticas dos clientes, a Adobe oferece uma janela de suporte padrão de três anos a partir da data de disponibilidade geral (GA) para cada versão e lança correções de qualidade durante esse período. Para obter datas e detalhes sobre o fim do suporte de software para cada versão, consulte a tabela [Fim do suporte de software](#end-of-software-support).
 
 A Adobe não fornece correções de segurança e qualidade para serviços e dependências de software de terceiros (como PHP e MySQL) que podem chegar ao fim da vida útil enquanto os clientes estão no período de suporte estendido ou de três anos para o Adobe Commerce. Consulte os [requisitos do sistema](../installation/system-requirements.md) para obter uma lista completa de tecnologias de terceiros testadas e com suporte.
 
+## Suporte Standard
+
+O período de suporte padrão de três anos a partir da data de disponibilidade geral (GA). O suporte Standard inclui correções de qualidade, patches de segurança e suporte completo do Adobe Commerce on-call.
+
+- **Correções de qualidade** - Os clientes podem acessar correções de qualidade entrando em contato com o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou por meio do autoatendimento [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+
+- **Correções de segurança** - A Adobe fornece correções de segurança por meio de patches de segurança cumulativos e [arquivos de patch de segurança isolados](versioning-policy.md#isolated-security-patch-file) não cumulativos para o período de suporte de três anos.
+
+- **Hotfixes** - Para problemas críticos de segurança, como vulnerabilidades inexistentes, a Adobe fornece [hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) para todos os clientes em uma versão com suporte, mesmo que eles não estejam na versão mais recente de patch ou patch de segurança. Observe que um hotfix não é abrangente e não trata de todos os problemas de segurança que seriam resolvidos com a atualização para a versão mais recente.
+
 ## Suporte estendido
 
-A Adobe incentiva os clientes a atualizarem o mais rápido possível. No entanto, para fornecer maior flexibilidade para alinhar-se aos planos de atualização e às necessidades de negócios, a Adobe oferece uma extensão de suporte de um ano sem custo adicional para clientes do Adobe Commerce nas versões 2.4.6. A extensão de suporte inclui patches de qualidade e segurança para o aplicativo principal por até um ano. O suporte estendido para as versões 2.4.4 e 2.4.5 do Adobe Commerce termina em abril e agosto de 2026, conforme planejado.
+A Adobe incentiva os clientes a atualizarem o mais rápido possível. No entanto, para fornecer maior flexibilidade para se alinhar aos planos de atualização e às necessidades de negócios, a Adobe oferece um ano de suporte adicional sem custo adicional para clientes Adobe Commerce nas versões 2.4.6 e 2.4.7. A extensão de suporte inclui patches de qualidade e segurança para o aplicativo principal. O suporte estendido para as versões 2.4.4 e 2.4.5 do Adobe Commerce termina em abril e agosto de 2026, conforme planejado.
 
 >[!NOTE]
 >
->O suporte estendido está disponível somente para clientes do Adobe Commerce. Não está disponível para a base de código do Magento Open Source.
+>O Adobe está introduzindo uma política de atualização de versão imposta para o Adobe Commerce na nuvem. A partir de **1 de junho de 2027**, o Adobe não manterá mais ambientes na nuvem executando versões não compatíveis do Commerce e se reserva o direito de desativá-los. Se você estiver executando na Nuvem, será necessário migrar para uma versão do Adobe Commerce com suporte ou migrar para a [!DNL Adobe Commerce as a Cloud Service] antes da data publicada de [fim do suporte estendido](lifecycle-policy.md#end-of-support-dates) para a sua linha de lançamento. Consulte a [Política de imposição de atualização de versão da nuvem](version-upgrade-enforcement-policy.md) para obter datas de imposição, versões afetadas e o que acontece se você permanecer em uma versão sem suporte.
 
-## Fim do suporte de software
+## Período de transição apenas para efeitos de segurança
 
-| Versão | Disponibilidade geral | Fim do suporte regular<sup>1</sup> | Fim do suporte estendido |
-|----------------------|----------------------|------------------------------------|-------------------------|
-| Adobe Commerce 2.4.8 | 8 de abril de 2025 | 31 de maio de 2028 | TBD |
-| Adobe Commerce 2.4.7 | 9 de abril de 2024 | 31 de maio de 2027 | TBD |
-| Adobe Commerce 2.4.6 | 14 de março de 2023 | 11 de agosto de 2026 | 30 de agosto de 2027 |
-| Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 12 de agosto de 2025 | 11 de agosto de 2026 |
-| Adobe Commerce 2.4.4 | 12 de abril de 2022 | 12 de abril de 2025 | 14 de abril de 2026 |
-
-{style="table-layout:auto"}
-
->[!NOTE]
->
->- <sup>1</sup> Se você for um cliente da Adobe Commerce, poderá continuar recebendo correções de segurança e qualidade por mais um ano durante o período de suporte estendido.
->- Consulte [Política de Ciclo de Vida de Software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+Um período de transição único e limitado no tempo disponível apenas para as versões 2.4.4, 2.4.5 e 2.4.6, cujo suporte estendido terminou em 2025 ou 2026. O período de transição somente para segurança fornece apenas correções de segurança isoladas limitadas. As correções de qualidade do Adobe Commerce não são fornecidas. Esse período não é equivalente ao suporte padrão ou estendido e não será estendido. Trate-o como um período de migração, não como um nível de suporte de longo prazo.
 
 >[!IMPORTANT]
 >
->A conformidade com o PCI não pode ser garantida para comerciantes que executam a versão 2.4.6 e continuam a usar o PHP 8.1, que chegou ao [fim do suporte em 2025](https://www.php.net/eol.php). Da mesma forma, o PHP 8.2 chega ao [fim da vida útil no final de 2026](https://www.php.net/supported-versions.php), criando o mesmo risco de conformidade com o PCI para os comerciantes que continuarem a usá-lo em 2027.
+>O período transitório apenas para efeitos de segurança é uma exceção única. Ela não será estendida além das datas publicadas. Trate o período somente de segurança como tempo de migração, não como um nível de suporte de longo prazo.
 
-## Provisionamento de correções de segurança adicionais para o Adobe Commerce 2.4.4 e 2.4.5
+## Datas de fim de suporte
 
-Como exceção única, a Adobe está fornecendo um período estendido de provisionamento de correções de segurança para as versões 2.4.4 e 2.4.5 do Adobe Commerce, a fim de dar aos clientes tempo adicional para migrar para o Adobe Commerce as a Cloud Service ou atualizar para uma linha de versão compatível.
+A tabela a seguir mostra o ciclo de vida completo de cada versão do Adobe Commerce, incluindo as novas datas de imposição de atualização de versão para o Adobe Commerce em ambientes na nuvem.
 
-Durante esse período de provisionamento de correções de segurança, observe o seguinte:
-
-- **Somente arquivo de patch de segurança isolado** - Um arquivo de patch de segurança isolado será lançado para essas versões de acordo com o cronograma de lançamento. Nenhuma versão de patch de segurança (nenhuma nova versão -p) será fornecida durante esse período.
-
-  Para aplicar um arquivo de patch de segurança isolado, os clientes devem estar na versão de patch de segurança mais recente (a versão mais recente -p) para a linha de lançamento compatível, já que as correções de segurança isoladas são testadas exclusivamente em relação a essa versão.
-
-- **Nenhuma correção de qualidade ou assistência de engenharia**. Nenhuma correção de erros, atualização de qualidade ([Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md)) ou assistência de engenharia ([Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) será fornecida para as versões 2.4.4 ou 2.4.5 durante este período.
-
-- **Não há garantia de conformidade com o PCI:** - Como as versões 2.4.4 e 2.4.5 do PHP atingiram o fim da vida útil, a conformidade com o PCI não pode ser garantida para os comerciantes nessas versões. Continuar a executar essas versões pode colocar em risco a conformidade com o PCI.
-
-Para manter uma cobertura de segurança completa e garantir a conformidade com o PCI, os clientes devem atualizar para uma versão atualmente compatível do Adobe Commerce o mais rápido possível ou migrar para o [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/overview).
-
-| Versão | Disponibilidade geral | Fim do suporte estendido | Provisionamento de fim de correções de segurança |
-|----------------------|----------------------|-------------------------|------------------------------------|
-| Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 11 de agosto de 2026 | Maio de 2027 |
-| Adobe Commerce 2.4.4 | 12 de abril de 2022 | 14 de abril de 2026 | Maio de 2027 |
+| Versão | Disponibilidade geral | Fim do suporte padrão | Fim do suporte estendido | Fim do período apenas de segurança | [Data de imposição de atualização de versão (somente nuvem)](version-upgrade-enforcement-policy.md) |
+| --------- | ---------------------- | ------------------------ | ------------------------- |-----------------------------| ----------------------------------------------- |
+| Adobe Commerce 2.4.9 | 12 de maio de 2026 | 31 de maio de 2029 | TBD | N/D | TBD |
+| Adobe Commerce 2.4.8 | 8 de abril de 2025 | 31 de maio de 2028 | TBD | N/D | TBD |
+| Adobe Commerce 2.4.7 | 9 de abril de 2024 | 31 de maio de 2027 | 31 de maio de 2028 | N/D | 1 de junho de 2028 |
+| Adobe Commerce 2.4.6 | 14 de março de 2023 | 11 de agosto de 2026 | 30 de agosto de 2027 | 31 de maio de 2028 | 1 de junho de 2028 |
+| Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 12 de agosto de 2025 | 12 de agosto de 2026 | 31 de maio de 2027 | 1 de junho de 2027 |
+| Adobe Commerce 2.4.4 | 12 de abril de 2022 | 12 de abril de 2025 | 14 de abril de 2026 | 31 de maio de 2027 | 1 de junho de 2027 |
 
 {style="table-layout:auto"}
-
->[!NOTE]
->
->Correções de segurança adicionais estão disponíveis somente para clientes do Adobe Commerce e não estão disponíveis para a base de código do Magento Open Source.
-
 
 ## Cronograma do suporte
 
@@ -157,7 +134,8 @@ O cronograma de suporte mapeia os períodos de suporte trimestral por trimestre 
     <td>2.4.7</td>
     <td colspan="9"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="6"></td>
+    <td colspan="4" style="background-color:#ffd700;"></td>
+    <td colspan="2"></td>
   </tr>
   <tr>
     <td>2.4.8</td>
@@ -174,7 +152,7 @@ O cronograma de suporte mapeia os períodos de suporte trimestral por trimestre 
  <tbody>
   <tr>
    <td style="background-color:#67ac68;"></td>
-   <td>Suporte regular</td>
+   <td>Suporte Standard</td>
   </tr>
   <tr>
    <td style="background-color:#ffd700;"></td>
@@ -186,3 +164,47 @@ O cronograma de suporte mapeia os períodos de suporte trimestral por trimestre 
   </tr>
  </tbody>
 </table>
+
+## Dependências de plataforma
+
+Permanecer em uma versão compatível do Commerce também requer dependências de plataforma compatíveis. A Adobe não fornece correções de segurança e qualidade para serviços e dependências de software de terceiros — como MariaDB, OpenSearch, Redis, Valkey, RabbitMQ e outras — que podem chegar ao fim da vida útil enquanto você estiver no período de suporte estendido ou de três anos para o Adobe Commerce. Consulte [Segurança de responsabilidade compartilhada e modelo operacional](../security-and-compliance/shared-responsibility.md) para obter detalhes.
+
+Você é responsável por manter todas as dependências de terceiros e serviços da plataforma nas versões que têm suporte ativo. Consulte [Requisitos do sistema](../installation/system-requirements.md) para obter a lista completa de tecnologias de terceiros testadas e com suporte.
+
+## Fim da vida útil do PHP e conformidade com o PCI
+
+Você é responsável por monitorar o status de suporte das versões do PHP usadas em seus ambientes.
+
+As seguintes versões do PHP usadas pelas linhas de lançamento mais antigas do Commerce atingiram ou chegarão ao fim da vida útil, o que tem implicações diretas na conformidade com o PCI.
+
+| versão do PHP | Data de término da vida útil | Versões do Commerce afetadas | Impacto de conformidade com o PCI |
+| ------------- | ------------------ | ---------------------------- | ------------------------ |
+| PHP 8.1 | 31 de dezembro de 2025 | 2.4.4, 2.4.5 e 2.4.6 (onde o PHP 8.1 é usado) | Conformidade com o PCI em risco — executar o PHP 8.1 além de sua data de fim de vida útil significa que vulnerabilidades de segurança no PHP podem não receber correções, o que coloca a conformidade com o PCI em risco. Avalie o status da conformidade e priorize a atualização. |
+| PHP 8.2 | 31 de dezembro de 2026 | 2.4.6 (onde o PHP 8.2 é usado) | Conformidade com o PCI em risco a partir do final de 2026 — planeje a atualização ou migração antes do final de 2026 para manter a conformidade com o PCI. |
+
+{style="table-layout:auto"}
+
+>[!IMPORTANT]
+>
+>**Aviso de conformidade com o PCI:** a conformidade com o PCI é responsabilidade do comerciante. A Adobe recomenda que os comerciantes de versões afetadas consultem seu avaliador de segurança qualificado e priorizem a mudança para uma versão Commerce e uma versão PHP compatíveis o mais rápido possível. Para obter as linhas do tempo de suporte do PHP, consulte [versões do PHP compatíveis](https://www.php.net/supported-versions.php) e [fim da vida útil do PHP](https://www.php.net/eol.php).
+
+## Opções de atualização e migração
+
+Se você estiver em uma versão que está se aproximando ou que ultrapassou suas datas de fim de suporte, tome uma ação agora. Se você permanecer em uma versão não compatível, sua loja corre o risco de vulnerabilidades de segurança, problemas de conformidade e perda de suporte. O Adobe fornece os seguintes caminhos para migrar para uma versão compatível.
+
+### Caminho recomendado: migrar para o Adobe Commerce as a Cloud Service
+
+[!DNL Adobe Commerce as a Cloud Service] é a plataforma de comércio hospedada de última geração da Adobe e o destino de longo prazo recomendado da Adobe para todos os clientes do Adobe Commerce na nuvem.
+
+- O Adobe gerencia automaticamente toda a infraestrutura, patches e upgrades.
+- Você está sempre em uma infraestrutura compatível — a situação de fim de vida útil não se repete.
+- Você tem acesso aos recursos mais recentes da Adobe: merchandising alimentado por IA, arquitetura de vitrine combinável e integrações nativas da Adobe Experience Cloud.
+- Você elimina ciclos recorrentes de atualização.
+
+Entre em contato com a equipe de conta da Adobe para iniciar uma avaliação de migração. Consulte [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) para obter uma visão geral do produto.
+
+### Caminho alternativo: atualizar para um Adobe Commerce compatível na nuvem ou versão local
+
+Se você não puder migrar para o [!DNL Adobe Commerce as a Cloud Service] imediatamente, será possível atualizar para a versão mais recente do Adobe Commerce na nuvem com suporte no momento. Isso leva você a uma pilha de infraestrutura moderna e totalmente compatível, preservando seu modelo existente de implantação do Commerce na nuvem.
+
+Observe que esse caminho não elimina obrigações de atualização futuras. Os clientes com Adobe Commerce em implantações na nuvem devem continuar atualizando à medida que as linhas de versão atingem suas datas de imposição de atualização de versão.

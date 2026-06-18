@@ -2,9 +2,9 @@
 title: Política de lançamento
 description: Saiba mais sobre os tipos de versão do Adobe Commerce, marketing versus controle de versão de módulo, versões de patch e segurança, betas, hotfixes e a política geral de lançamento.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Hotfixes são patches que contêm correções de segurança ou qualidade de alto
 
 ## Patch individual
 
-Patches individuais contêm correções de qualidade de baixo impacto para um problema específico. Essas correções são aplicadas às versões secundárias compatíveis do Adobe Commerce. A Adobe lança patches individuais conforme necessário para o Adobe Commerce de acordo com a [Política de ciclo de vida do software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Eles são entregues por meio da [Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md).
+Patches individuais contêm correções de qualidade de baixo impacto para um problema específico. Essas correções são aplicadas às versões secundárias compatíveis do Adobe Commerce. A Adobe lança patches individuais conforme necessário para o Adobe Commerce de acordo com a [política de ciclo de vida do software](lifecycle-policy.md). Para obter termos legais, consulte a [Política de Ciclo de Vida de Software (PDF)](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) da Adobe Commerce. Eles são entregues por meio da [Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >
