@@ -2,9 +2,9 @@
 title: Notas de versão do Adobe Commerce
 description: Saiba onde encontrar informações para versões específicas do Adobe Commerce.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 3373f83b5c03e9e81c26376f299014e8bf63a6e9
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,16 @@ ht-degree: 2%
 
 # Notas de versão do Adobe Commerce
 
-Use a tabela a seguir para localizar notas de versão e informações importantes relacionadas a versões específicas de todos os produtos, serviços e ferramentas da Adobe Commerce.
+A tabela abaixo fornece notas de versão e informações importantes para produtos, serviços e ferramentas do Adobe Commerce no local e do Adobe Commerce na nuvem.
+
+>[!BEGINSHADEBOX]
+
+**Notas de versão para outros produtos:**
+
+- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes)
+- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/release-notes)
+
+>[!ENDSHADEBOX]
 
 >[!TIP]
 >
