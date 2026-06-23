@@ -12,9 +12,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
+source-git-commit: f1cae5b4ad3d75dbc7f83b7687a4614f678263cd
 workflow-type: tm+mt
-source-wordcount: 30977
+source-wordcount: 31340
 ht-degree: 0%
 
 ---
@@ -30,6 +30,21 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.81 {#v1-1-81}
+
+* **ACP2E-4300** (para Adobe Commerce >=2.4.5 &lt;2.4.9) - Corrige o problema em que alterar um grupo de clientes no Administrador não atualiza as permissões de catálogo na Loja, fazendo com que o catálogo e o carrinho reflitam permissões desatualizadas.
+* **ACP2E-4401** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que a Visualização de Atualização Agendada do link da Página Inicial com produtos configuráveis redireciona para a página de manutenção em vez de exibir a lista de produtos.
+* **ACP2E-4395** (para Adobe Commerce >=2.4.5 &lt;2.4.9) - Corrige o problema em que a criação do produto API de Cartão Presente não exibe um erro quando nenhum valor é especificado para o escopo global.
+* **ACP2E-4468** (para Adobe Commerce >=2.4.8 &lt;2.4.9) - Corrige o problema em que os usuários administradores com permissões de escopo de site não podem editar conteúdo de banner.
+* **ACP2E-4630** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corrige o problema em que nomes de produtos longos com opções personalizadas se sobrepõem a colunas ou itens adjacentes em PDFs de várias páginas de Fatura, Remessa, Aviso de Crédito e Devolução após quebras de página, tornando os itens de linha ilegíveis.
+* **ACP2E-4680** (para Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Corrige o problema em que os produtos não vendáveis ou excluídos desaparecem das cotações negociáveis finalizadas.
+* **ACP2E-4709** (para Adobe Commerce >=2.4.7 &lt;2.4.9) - Corrige o problema em que as páginas do CMS não são salvas ao usar o Page Builder.
+* **ACP2E-4786** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10) - Corrige o problema em que a exportação de produtos falha ao gravar arquivos quando o armazenamento remoto AWS S3 é configurado, devido à resolução de caminho incorreta no driver de armazenamento.
+* **ACP2E-4801** (para Adobe Commerce, B2B >=1.4.2 &lt;1.5.3) - Corrige o problema em que a atualização das quantidades de opção do produto agrupado por meio do botão Configurar em uma cotação negociável do Administrador não é aplicada e as alterações são descartadas.
+* **ACP2E-4815** (para Adobe Commerce e Magento Open Source >=2.4.6-p15 &lt;2.4.7 || >=2.4.7-p1 &lt;2.4.9) - Corrige vários problemas do GraphQL que causavam exceções de PHP em logs, a associação correta de pedidos com contas de clientes criadas após o pedido via GraphQL e o alinhamento de respostas com o GraphQL sobre especificações HTTP.
+* Versões atualizadas: **ACSD-64212**, **ACSD-64523**, **ACSD-67347**
+* Patches substituídos: **ACSD-67941**, **ACSD-64212**, **ACSD-68925**
 
 ## v1.1.80 {#v1-1-80}
 
