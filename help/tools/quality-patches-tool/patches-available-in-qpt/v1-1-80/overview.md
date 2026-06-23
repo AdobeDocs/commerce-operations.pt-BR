@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 3eff1670dd536175d4905d386027674431831ae8
+source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
 workflow-type: tm+mt
-source-wordcount: 409
+source-wordcount: 410
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ O QPT v1.1.80 inclui os seguintes patches:
 1. **ACP2E-4488**: corrige o problema em que salvar ou editar produtos em [!UICONTROL Admin] é lento para produtos com conjuntos de atributos grandes.
 1. **ACP2E-4493**: corrige o problema em que a grade do Arquivo Morto de Ordens de Venda exibe um status de pedido incorreto quando a indexação assíncrona está habilitada.
 1. **ACP2E-4496**: corrige o problema em que o trabalho cron do analytics causa degradação do desempenho durante a execução, resultando no aprimoramento do desempenho geral do sistema.
-1. **ACP2E-4533**: corrige o problema em que imagens de espaço reservado não são carregadas na Loja quando um código de armazenamento é incluído na URL.
+1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: corrige o problema em que imagens de espaço reservado não são carregadas na loja quando um código de armazenamento é incluído na URL.
 1. **ACP2E-4552**: corrige o problema em que o status da empresa não é retornado na resposta do GraphQL.
 1. **ACP2E-4610**: corrige o problema em que o trabalho cron `sales_clean_quotes` tem problemas de desempenho.
 1. **ACP2E-4615**: corrige o problema em que os reembolsos de pedidos online falham com um erro do PayPal informando: *O gateway do PayPal rejeita a solicitação. Erro Interno.*.
