@@ -8,9 +8,10 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+badgePaas: label="Commerce na nuvem" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce na nuvem."
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 # Práticas recomendadas para a configuração do serviço Redis e Valkey
 
-Use essas recomendações para configurar o Redis ou o Valkey para cache e sessões do Adobe Commerce.
+Use essas recomendações para configurar o armazenamento em cache do Redis ou Valkey e sessões para o Adobe Commerce na nuvem. Para configuração de cache local, consulte [Opções de back-end do cache e referência de armazenamento](../../../configuration/cache/cache-options.md).
 
 - Configurar cache L2
 - Habilitar conexão subordinada
@@ -30,11 +31,13 @@ Use essas recomendações para configurar o Redis ou o Valkey para cache e sess�
 
 >[!NOTE]
 >
->Para ambientes de infraestrutura do Commerce na nuvem, verifique se você está usando a versão mais recente do pacote `ece-tools`. Caso contrário, [atualize para a versão mais recente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=pt-BR). Você pode verificar a versão instalada em seu ambiente local usando o comando da CLI do `composer show magento/ece-tools`.
+>Verifique se você está usando a versão mais recente do pacote `ece-tools`. Caso contrário, [atualize para a versão mais recente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=pt-BR). Você pode verificar a versão instalada em seu ambiente local usando o comando da CLI do `composer show magento/ece-tools`.
 
 ## Configurar cache L2
 
 Configure o cache L2 definindo a variável de implantação `REDIS_BACKEND` ou `VALKEY_BACKEND` no arquivo de configuração `.magento.env.yaml`.
+
+Para obter detalhes sobre a implementação, exemplos de configuração e orientação específica para a implantação, consulte [configuração do cache L2 para otimização do desempenho](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cache/level-two-cache).
 
 >[!BEGINTABS]
 
@@ -48,9 +51,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Para obter a configuração do ambiente na infraestrutura em nuvem, consulte a referência de configuração [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#redis_backend) no _Guia do Commerce na Infraestrutura em Nuvem_.
-
-Para instalações locais, consulte [Configurar o cache de página do Redis](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) no _Guia de Configuração_.
+Para obter detalhes sobre a configuração do ambiente, consulte [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#redis_backend) no _Guia de Infraestrutura do Commerce on Cloud_.
 
 >[!TAB Configuração de Valkey]
 
@@ -62,9 +63,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Para obter a configuração do ambiente na infraestrutura em nuvem, consulte a referência de configuração [`VALKEY_BACKEND`](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) no _Guia do Commerce na Infraestrutura em Nuvem_.
-
-Para instalações locais, consulte [Configurar Valkey](../../../configuration/cache/config-valkey.md) no _Guia de Configuração_.
+Para obter detalhes sobre a configuração do ambiente, consulte as variáveis de configuração [`VALKEY_BACKEND`](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) no _Guia do Commerce na Infraestrutura de Nuvem_.
 
 >[!ENDTABS]
 
@@ -145,9 +144,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Para configuração de ambiente na infraestrutura do Commerce Cloud, consulte [REDIS _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#redis_use_slave_connection) no _Guia de Infraestrutura do Commerce na Nuvem_.
-
-Para instalações locais do Adobe Commerce, configure a nova implementação do cache Redis usando os comandos `bin/magento setup`. Consulte [Usar Redis para cache padrão](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) no _Guia de Configuração_.
+Para obter detalhes sobre a configuração da variável de ambiente, consulte [REDIS _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#redis_use_slave_connection) no _Guia de Infraestrutura do Commerce na Nuvem_.
 
 >[!TAB Configuração de Valkey]
 
@@ -159,9 +156,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Para configuração de ambiente na infraestrutura do Commerce Cloud, consulte [VALKEY _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#valkey_use_slave_connection) no _Guia de Infraestrutura do Commerce na Nuvem_.
-
-Para instalações locais do Adobe Commerce, configure a nova implementação do cache Valkey usando os comandos `bin/magento setup`. Consulte [Configurar Valkey](../../../configuration/cache/config-valkey.md) no _Guia de Configuração_.
+Para obter detalhes sobre a configuração da variável de ambiente, consulte [VALKEY _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#valkey_use_slave_connection) no _Guia de Infraestrutura do Commerce na Nuvem_.
 
 >[!ENDTABS]
 
@@ -212,8 +207,6 @@ Este log lista as chaves que você pode pré-carregar. Para ver o conteúdo de u
 redis-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
 
-Para instalações locais, consulte o [recurso de pré-carregamento Redis](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) no _Guia de Configuração_.
-
 >[!TAB Configuração de chave de pré-carregamento de Valkey]
 
 As chaves de pré-carregamento estão configuradas no arquivo de configuração `.magento.env.yaml`.
@@ -252,8 +245,6 @@ Este log lista as chaves que você pode pré-carregar. Para ver o conteúdo de u
 ```terminal
 valkey-cli -p 6370 -n 1 hgetall "<key_name>"
 ```
-
-Para instalações locais, consulte [Recurso de pré-carregamento de Valkey](../../../configuration/cache/valkey-pg-cache.md#valkey-preload-feature) no _Guia de Configuração_.
 
 >[!ENDTABS]
 
@@ -306,8 +297,6 @@ stage:
 >[!NOTE]
 >
 >O tipo de cache `full_page` não é relevante para projetos de infraestrutura do Adobe Commerce na nuvem porque eles usam [Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/cdn/fastly).
-
-Para instalações locais, consulte [Opções de cache obsoleto](../../../configuration/cache/level-two-cache.md#stale-cache-options) no _Guia de Configuração_.
 
 >[!WARNING]
 >
@@ -996,7 +985,6 @@ stage:
 
 Consulte os seguintes tópicos relacionados:
 
-- [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
-- [Usar Redis para armazenamento de sessão](../../../configuration/cache/redis-session.md)
-- [Usar Valkey para cache padrão](../../../configuration/cache/valkey-pg-cache.md)
-- [Usar Valkey para armazenamento de sessão](../../../configuration/cache/valkey-session.md)
+- [Configurar o serviço Redis](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/redis)
+- [Implantar variáveis](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+

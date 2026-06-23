@@ -3,16 +3,31 @@ title: Configurar e usar verniz
 description: Saiba como configurar e usar o armazenamento em cache do Varnish para Adobe Commerce. Descubra a aceleração HTTP, o armazenamento de arquivos e as técnicas de otimização de desempenho.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+autotag-review: '2026-06-22T21:50:49.341Z'
+TQID: 'https://experienceleague.adobe.com/BsUTkhb2QhntUOT3EC181zdsQjqk8Dw0T5Iac0LS318'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 8cbff72c3b765c6ff85a34a3ec3d2f58b52bb9c3
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: 1077
 ht-degree: 0%
 
 ---
 
 # Configurar e usar verniz
 
-O [Cache de Verniz](https://www.varnish.org/) é um acelerador de aplicativo Web de código aberto (também conhecido como _acelerador HTTP_ ou _proxy reverso HTTP de cache_). O Varnish armazena (ou armazena em cache) arquivos ou fragmentos de arquivos na memória, o que permite que o Varnish reduza o tempo de resposta e o consumo de largura de banda da rede em solicitações futuras e equivalentes. Diferentemente de servidores Web como Apache e nginx, o Varnish foi projetado para uso exclusivo com o protocolo HTTP.
+O [Cache de Verniz](https://www.varnish.org/) é um acelerador de aplicativo Web de código aberto (também conhecido como _acelerador HTTP_ ou _proxy reverso HTTP de cache_). O Varnish armazena (ou armazena em cache) arquivos ou fragmentos de arquivos na memória, o que permite que o Varnish reduza o tempo de resposta e o consumo de largura de banda da rede em solicitações futuras e equivalentes. Ao contrário de servidores da Web como nginx, o Varnish foi projetado para uso exclusivo com o protocolo HTTP.
 
 [Requisitos do sistema](../../installation/system-requirements.md) lista as versões do verniz com suporte.
 
@@ -53,9 +68,7 @@ O processo pode ser resumido da seguinte forma:
 
 >[!NOTE]
 >
->- Exceto quando observado, você deve inserir todos os comandos discutidos neste tópico como um usuário com privilégios `root`.
->
->- Este tópico foi escrito para Verniz no CentOS e Apache 2.4. Se você estiver configurando o Verniz em um ambiente diferente, alguns comandos poderão ser diferentes. Consulte a documentação do Verniz para obter mais informações.
+>Exceto quando observado, você deve inserir todos os comandos discutidos neste tópico como um usuário com privilégios `root`.
 
 ## Problemas conhecidos
 
@@ -88,11 +101,10 @@ Sabemos dos seguintes problemas com o verniz:
 
 ## Visão geral do armazenamento em cache do Vernish
 
-O armazenamento em cache de verniz funciona com o Commerce usando:
+Em uma implantação típica baseada em nginx, o Varnish aceita o tráfego HTTP de entrada na porta 80 e encaminha solicitações para nginx em uma porta de back-end, como 8080. O Adobe Commerce fornece `nginx.conf.sample` para o servidor Web de origem e gera o `default.vcl` de Verniz do Administrador.
 
-- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) do repositório GitHub do Magento 2
-- `.htaccess` arquivo de configuração distribuído para o Apache fornecido com o Commerce
-- Configuração `default.vcl` para Verniz gerada com o [Administrador](../cache/configure-varnish-commerce.md)
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) fornecido com o Adobe Commerce
+- `default.vcl` gerado pelo [Administrador](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 >
@@ -114,7 +126,7 @@ Esta seção usa um inspetor de navegador para mostrar como os ativos são entre
 
 A figura a seguir mostra um exemplo de uso de um inspetor de navegador:
 
-![A primeira vez que uma solicitação é feita para um objeto que pode ser armazenado em cache, o Verniz a entrega ao navegador](../../assets/configuration/varnish-apache-first-visit.png)
+![A primeira vez que uma solicitação é feita para um objeto que pode ser armazenado em cache, o Verniz a entrega ao navegador](../../assets/configuration/varnish-webserver-first-visit.png)
 
 O exemplo anterior mostra uma solicitação para a página principal da loja (`m2_ce_my`). Os ativos CSS e JavaScript são armazenados em cache no navegador do cliente.
 
@@ -126,7 +138,7 @@ O exemplo anterior mostra uma solicitação para a página principal da loja (`m
 
 Se o mesmo navegador solicitar a mesma página novamente, esses ativos serão entregues pelo cache do navegador local, como mostra a figura a seguir.
 
-![Na próxima vez que o mesmo objeto for solicitado, os ativos serão carregados do cache do navegador local](../../assets/configuration/varnish-apache-second-visit.png)
+![Na próxima vez que o mesmo objeto for solicitado, os ativos serão carregados do cache do navegador local](../../assets/configuration/varnish-webserver-second-visit.png)
 
 Observe a diferença no tempo de resposta entre a primeira e a segunda solicitação. Novamente, os ativos estáticos têm um código de resposta 200 (OK) porque são entregues do cache local pela primeira vez.
 
