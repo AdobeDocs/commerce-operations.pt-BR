@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 7e0a7479cd988b678c95b0ee9ec4c5371d0a62d9
+source-git-commit: bcdc7ec2789358b58f137d622ddbf250acf28c2c
 workflow-type: tm+mt
-source-wordcount: '10150'
+source-wordcount: '10160'
 ht-degree: 0%
 
 ---
@@ -423,7 +423,7 @@ ht-degree: 0%
          - [ACSD-50512: erro ao atualizar a data de início de uma atualização de preparo de produto baixável](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895: as tags do Google Analytics 3 GTM não são acionadas se o Google Analytics 4 GTM não estiver configurado](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471: o usuário administrador não pode salvar a atualização programada para o produto agrupado](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: cache de solicitações do GraphQL GET não limpo para páginas do CMS que contêm blocos do CMS](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120: o cache de solicitações GET do GraphQL não é limpo para páginas do CMS que contêm blocos CMS](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700: erro ao alternar exibições da loja na página de edição do produto baixável](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735: Status do item de pedido definido incorretamente como [!UICONTROL Ordered] quando o estoque do produto é 0](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: não é possível classificar a página de catálogo pelo atributo personalizado do tipo Suspenso](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459: não é possível importar produtos com descrições com mais de 65.536 caracteres](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424: o valor updated_at na resposta da API REST do GET /carts/search não corresponde ao valor em [!UICONTROL Admin Panel] para [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424: o valor updated_at na resposta da API REST GET /carts/search não corresponde ao valor em [!UICONTROL Admin Panel] para [!UICONTROL Negotiable Quotes]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383: erro ao fazer logon como um cliente com duas contas de administrador de empresa na mesma sessão](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064: Entradas duplicadas criadas durante atualizações agendadas em ambientes com categorias profundamente aninhadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946: a atualização do carrinho mostra banners de erro duplicados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Salvando novamente uma transação de autorização de pagamento com autorreferência parent_id e acionando um loop/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4156: [!DNL REST] A validação do endereço de remessa da API ignora a configuração do atributo Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
    - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referência de ferramentas de linha de comando {#cli-reference}
    - [Adobe Commerce (no local)](reference/commerce-on-premises.md)
