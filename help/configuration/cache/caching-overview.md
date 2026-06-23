@@ -3,16 +3,23 @@ title: Visão geral do armazenamento em cache e opções de configuração
 description: Saiba mais sobre armazenamento em cache no Adobe Commerce, incluindo armazenamento de back-end, configuração de front-end e armazenamento em cache de página inteira com cache L2, Vernish, Redis e Valkey.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 9cd0f2a84772e2d68fd15a00651216abfa9ec91c
+autotag-review: '2026-06-22T20:28:12.484Z'
+TQID: 'https://experienceleague.adobe.com/oDoZ1o2IWXsDTo84XQygWZYVmfVHWbk-CuqaU47laU4'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: 589
 ht-degree: 0%
 
 ---
 
 # Visão geral do armazenamento em cache e opções de configuração
 
-O Adobe Commerce conta com uma arquitetura de cache em várias camadas para reduzir a carga do banco de dados, minimizar o processamento redundante e acelerar a entrega de páginas. No nível do aplicativo, o Commerce mantém mais de uma dúzia de [tipos de cache](../cli/manage-cache.md#clean-and-flush-cache-types), como configuração, layout, HTML de bloco e coleções, cada um deles pode ser roteado para um back-end de armazenamento dedicado como [Redis](config-redis.md) ou [Valkey](config-valkey.md). Para armazenamento em cache de página inteira, a Adobe recomenda o [Varnish](config-varnish.md), um acelerador HTTP que serve páginas em cache diretamente da memória. Camadas adicionais, como [cache L2](level-two-cache.md) e [assinatura de conteúdo estático](static-content-signing.md), melhoram ainda mais o desempenho de implantações de vários nós e alto tráfego.
+O Adobe Commerce conta com uma arquitetura de cache em várias camadas para reduzir a carga do banco de dados, minimizar o processamento redundante e acelerar a entrega de páginas. No nível do aplicativo, o Commerce mantém mais de uma dúzia de [tipos de cache](../cli/manage-cache.md#clean-and-flush-cache-types), como configuração, layout, HTML de bloco e coleções, cada um deles pode ser roteado para um back-end de armazenamento dedicado como [Redis](config-redis.md) ou [Valkey](config-valkey.md). Para armazenamento em cache de página inteira em implantações locais, a Adobe recomenda [Verniz](config-varnish.md). As implantações do Commerce na nuvem usam o Fastly. Camadas adicionais, como [cache L2](level-two-cache.md) e [assinatura de conteúdo estático](static-content-signing.md), melhoram ainda mais o desempenho de implantações de vários nós e alto tráfego.
 
 Este guia explica como cada camada de armazenamento em cache funciona e mostra como configurar front-ends, back-ends e opções avançadas para atender aos requisitos de implantação.
 
@@ -26,7 +33,7 @@ Um back-end de cache é o mecanismo de armazenamento subjacente para dados em ca
 
 ## Armazenamento em cache de página inteira com Vernish
 
-O [Cache de Verniz](config-varnish.md) é um acelerador HTTP que armazena páginas inteiras em cache na memória. A Adobe recomenda o Varnish para ambientes de produção, pois ele é bem mais rápido que o cache de página inteira integrado.
+O [Cache de Verniz](config-varnish.md) é um acelerador HTTP que armazena páginas inteiras em cache na memória. Para ambientes de produção locais, a Adobe recomenda o Vernish, pois ele é significativamente mais rápido que o cache de página inteira integrado. O Commerce em ambientes na nuvem usa o [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) para armazenamento em cache de página inteira, em vez do Varnish.
 
 >[!NOTE]
 >
@@ -51,12 +58,16 @@ O [cache L2](level-two-cache.md) armazena os dados do cache localmente em cada n
 
 ## Opções de configuração
 
-A configuração de cache é armazenada em dois arquivos:
+Para mapeamento de front-end para tipo e sintaxe de configuração de cache:
+
+**No local** — A configuração de cache é armazenada em dois arquivos:
 
 - `<magento_root>/app/etc/di.xml` — A configuração de injeção de dependência global. Modifique este arquivo para alterar o front-end do cache `default` fornecido.
 - `<magento_root>/app/etc/env.php` — Configuração específica do ambiente. Modifique este arquivo para configurar os front-ends do cache personalizado. Este arquivo substitui a configuração equivalente em `di.xml`.
 
-Para obter detalhes sobre o mapeamento de front-end para tipo e a sintaxe de configuração do cache, consulte:
+Para obter detalhes, consulte:
 
-- [Configurar front-ends do cache](cache-types.md) — Associa um front-end do cache a tipos específicos de cache
-- [Opções de back-end do cache](cache-options.md) — Referência de opção de back-end
+- [Configurar front-ends do cache](cache-types.md)—Associe um front-end do cache a tipos específicos de cache
+- [Opções de back-end do cache](cache-options.md)—Referência de opção de back-end
+
+**Adobe Commerce na Nuvem** — Configurar cache com `CACHE_CONFIGURATION` em `.magento.env.yaml`. Consulte [Práticas recomendadas para a configuração do serviço Redis e Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).

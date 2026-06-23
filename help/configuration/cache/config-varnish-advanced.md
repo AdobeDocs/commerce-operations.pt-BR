@@ -3,14 +3,22 @@ title: Configuração avançada de verniz
 description: Saiba como configurar recursos avançados de Verniz para o Adobe Commerce, incluindo verificações de integridade, carência e modos santos. Descubra técnicas de otimização de VCL.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: 927
 ht-degree: 0%
 
 ---
 
 # Configuração avançada de verniz
+
+{{varnish-config-cloud}}
 
 O verniz fornece vários recursos que impedem que os clientes enfrentem longos atrasos e tempos limite quando o servidor do Commerce não está funcionando corretamente. Esses recursos podem ser configurados no arquivo `default.vcl`. Este tópico descreve as adições que o Commerce fornece no arquivo VCL (Linguagem de configuração de verniz) que você baixa do Administrador.
 

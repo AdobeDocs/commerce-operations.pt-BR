@@ -3,9 +3,17 @@ title: Configurar Valkey para Armazenamento de Sessão
 description: Saiba como configurar o Valkey para armazenamento de sessão no Adobe Commerce. Descubra a configuração da CLI, os parâmetros de sessão e as técnicas de verificação de conexão.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+autotag-review: '2026-06-22T21:59:49.664Z'
+TQID: 'https://experienceleague.adobe.com/Cc9-5afIU1qJ0-4gxtUWo4tRFPtTMD3l1uzpyNBX7p0'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: 976
 ht-degree: 1%
 
 ---
@@ -13,11 +21,15 @@ ht-degree: 1%
 
 # Configurar Valkey para armazenamento de sessão
 
+{{cloud-cache-config}}
+
+O Commerce fornece opções de linha de comando para configurar o armazenamento da sessão Valkey. Embora você possa configurar o armazenamento de sessão editando o arquivo `<Commerce-install-dir>/app/etc/env.php`, o uso da linha de comando é o método recomendado, especialmente para configurações iniciais. A linha de comando fornece validação, garantindo que a configuração esteja sintaticamente correta.
+
 >[!IMPORTANT]
 >
->Você deve [instalar a Valkey](config-valkey.md#install-valkey) antes de continuar.
+>Antes de configurar o armazenamento de sessão, você deve ter o [Valkey instalado](config-valkey.md#install-valkey).
 
-O Adobe Commerce fornece opções de linha de comando para configurar o armazenamento de sessão Valkey.
+## Configurar o armazenamento da sessão Valkey
 
 Execute o comando `setup:config:set` e especifique parâmetros específicos de Valkey.
 
@@ -28,7 +40,6 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 - `--session-save=valkey` habilita o armazenamento da sessão Valkey. Se esse recurso já estiver ativado, omita esse parâmetro.
 
 - `--session-save-valkey-<parameter_name>=<parameter_value>` é uma lista de pares parâmetro/valor que configuram o armazenamento da sessão:
-
 
 >[!NOTE]
 >
