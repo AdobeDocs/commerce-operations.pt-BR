@@ -5,9 +5,13 @@ exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
 autotag-review: '2026-05-29T17:40:45.034Z'
 TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 source-git-commit: f1cae5b4ad3d75dbc7f83b7687a4614f678263cd
 workflow-type: tm+mt
 source-wordcount: 31340
@@ -60,7 +64,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **ACP2E-4156** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que a validação do endereço de entrega na API REST não adere à configuração de atributo definida em Administração.
 * **ACP2E-4813** (para Adobe Commerce e Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - Corrige o problema em que os métodos de envio do USPS não estão disponíveis no check-out e as estimativas de envio estão incorretas para determinados produtos, incluindo pedidos divididos em vários pacotes.
 * **ACSD-53502** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Corrige o problema em que Adicionar ao carrinho falha intermitentemente na loja do iOS Safari devido a chamadas recursivas para o script de monitoramento do New Relic, causando recarregamentos de página.
-* Versões atualizadas: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686**, **,** ACP2E-4402 **,** ACP2E-4505 **,** ACP2E-4603 **,** ACP2E-4706 ****
+* Versões atualizadas: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686**, **,** ACP2E-4402 **,** ACP2E-4505 **,** ACP2E-4603 **,** ACP2E-4706 **&#x200B;**
 * Patches substituídos: **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
