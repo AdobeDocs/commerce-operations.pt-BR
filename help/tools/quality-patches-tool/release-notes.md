@@ -5,16 +5,12 @@ exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
 autotag-review: '2026-05-29T17:40:45.034Z'
 TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: f1cae5b4ad3d75dbc7f83b7687a4614f678263cd
 workflow-type: tm+mt
-source-wordcount: 30977
+source-wordcount: 31340
 ht-degree: 0%
 
 ---
@@ -25,11 +21,26 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.81 {#v1-1-81}
+
+* **ACP2E-4300** (para Adobe Commerce >=2.4.5 &lt;2.4.9) - Corrige o problema em que alterar um grupo de clientes no Administrador não atualiza as permissões de catálogo na Loja, fazendo com que o catálogo e o carrinho reflitam permissões desatualizadas.
+* **ACP2E-4401** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que a Visualização de Atualização Agendada do link da Página Inicial com produtos configuráveis redireciona para a página de manutenção em vez de exibir a lista de produtos.
+* **ACP2E-4395** (para Adobe Commerce >=2.4.5 &lt;2.4.9) - Corrige o problema em que a criação do produto API de Cartão Presente não exibe um erro quando nenhum valor é especificado para o escopo global.
+* **ACP2E-4468** (para Adobe Commerce >=2.4.8 &lt;2.4.9) - Corrige o problema em que os usuários administradores com permissões de escopo de site não podem editar conteúdo de banner.
+* **ACP2E-4630** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corrige o problema em que nomes de produtos longos com opções personalizadas se sobrepõem a colunas ou itens adjacentes em PDFs de várias páginas de Fatura, Remessa, Aviso de Crédito e Devolução após quebras de página, tornando os itens de linha ilegíveis.
+* **ACP2E-4680** (para Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Corrige o problema em que os produtos não vendáveis ou excluídos desaparecem das cotações negociáveis finalizadas.
+* **ACP2E-4709** (para Adobe Commerce >=2.4.7 &lt;2.4.9) - Corrige o problema em que as páginas do CMS não são salvas ao usar o Page Builder.
+* **ACP2E-4786** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10) - Corrige o problema em que a exportação de produtos falha ao gravar arquivos quando o armazenamento remoto AWS S3 é configurado, devido à resolução de caminho incorreta no driver de armazenamento.
+* **ACP2E-4801** (para Adobe Commerce, B2B >=1.4.2 &lt;1.5.3) - Corrige o problema em que a atualização das quantidades de opção do produto agrupado por meio do botão Configurar em uma cotação negociável do Administrador não é aplicada e as alterações são descartadas.
+* **ACP2E-4815** (para Adobe Commerce e Magento Open Source >=2.4.6-p15 &lt;2.4.7 || >=2.4.7-p1 &lt;2.4.9) - Corrige vários problemas do GraphQL que causavam exceções de PHP em logs, a associação correta de pedidos com contas de clientes criadas após o pedido via GraphQL e o alinhamento de respostas com o GraphQL sobre especificações HTTP.
+* Versões atualizadas: **ACSD-64212**, **ACSD-64523**, **ACSD-67347**
+* Patches substituídos: **ACSD-67941**, **ACSD-64212**, **ACSD-68925**
 
 ## v1.1.80 {#v1-1-80}
 
@@ -49,7 +60,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **ACP2E-4156** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que a validação do endereço de entrega na API REST não adere à configuração de atributo definida em Administração.
 * **ACP2E-4813** (para Adobe Commerce e Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - Corrige o problema em que os métodos de envio do USPS não estão disponíveis no check-out e as estimativas de envio estão incorretas para determinados produtos, incluindo pedidos divididos em vários pacotes.
 * **ACSD-53502** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Corrige o problema em que Adicionar ao carrinho falha intermitentemente na loja do iOS Safari devido a chamadas recursivas para o script de monitoramento do New Relic, causando recarregamentos de página.
-* Versões atualizadas: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686**, **,** ACP2E-4402 **,** ACP2E-4505 **,** ACP2E-4603 **,** ACP2E-4706 **&#x200B;**
+* Versões atualizadas: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686**, **,** ACP2E-4402 **,** ACP2E-4505 **,** ACP2E-4603 **,** ACP2E-4706 ****
 * Patches substituídos: **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
