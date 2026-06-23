@@ -3,7 +3,7 @@ title: Verificar configuração de verniz
 description: Saiba como executar a verificação final da sua configuração de verniz com o Adobe Commerce. Descubra as etapas de teste e as técnicas de solução de problemas.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -98,4 +98,4 @@ Verifique se o diretório `<magento_root>/var/page_cache` está vazio:
 
 >[!TIP]
 >
->Se você encontrar erros 503 (Falha na busca de backend), consulte [Solução de problemas 503 (Serviço indisponível) erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) na _Central de Ajuda da Adobe Commerce_.
+>Se você encontrar erros 503 (Falha na busca de backend), consulte [Solução de problemas 503 (Serviço indisponível) erros](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=pt-BR) na _Central de Ajuda da Adobe Commerce_.

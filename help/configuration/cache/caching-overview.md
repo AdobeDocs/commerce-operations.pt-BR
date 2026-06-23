@@ -40,7 +40,7 @@ Um back-end de cache é o mecanismo de armazenamento subjacente para dados em ca
 
 ## Armazenamento em cache de página inteira com Vernish
 
-O [Cache de Verniz](config-varnish.md) é um acelerador HTTP que armazena páginas inteiras em cache na memória. Para ambientes de produção locais, a Adobe recomenda o Vernish, pois ele é significativamente mais rápido que o cache de página inteira integrado. O Commerce em ambientes na nuvem usa o [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) para armazenamento em cache de página inteira, em vez do Varnish.
+O [Cache de Verniz](config-varnish.md) é um acelerador HTTP que armazena páginas inteiras em cache na memória. Para ambientes de produção locais, a Adobe recomenda o Vernish, pois ele é significativamente mais rápido que o cache de página inteira integrado. O Commerce em ambientes na nuvem usa o [Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/cdn/fastly) para armazenamento em cache de página inteira, em vez do Varnish.
 
 >[!NOTE]
 >

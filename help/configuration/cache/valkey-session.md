@@ -3,7 +3,7 @@ title: Configurar Valkey para Armazenamento de Sessão
 description: Saiba como configurar o Valkey para armazenamento de sessão no Adobe Commerce. Descubra a configuração da CLI, os parâmetros de sessão e as técnicas de verificação de conexão.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 autotag-review: '2026-06-22T21:59:49.664Z'
 TQID: 'https://experienceleague.adobe.com/Cc9-5afIU1qJ0-4gxtUWo4tRFPtTMD3l1uzpyNBX7p0'
 product_v2:
