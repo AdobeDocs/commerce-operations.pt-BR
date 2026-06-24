@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
+source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
 workflow-type: tm+mt
-source-wordcount: 410
+source-wordcount: 465
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ O QPT v1.1.80 inclui os seguintes patches:
 1. **ACP2E-4615**: corrige o problema em que os reembolsos de pedidos online falham com um erro do PayPal informando: *O gateway do PayPal rejeita a solicitação. Erro Interno.*.
 1. **ACP2E-4626**: corrige o problema em que alguns arquivos JavaScript do Storefront eram solicitados e executados duas vezes, causando cargas duplicadas intermitentes e comportamento instável.
 1. **ACP2E-4653**: corrige o problema em que o escopo do atributo de condição **[!UICONTROL Cart Price Rule]** para **[!UICONTROL Category (Parent Only)]** e **[!UICONTROL Category (Children Only)]** não é exposto ao recuperar ou atualizar regras por meio da API REST.
+1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: corrige o problema em que o atributo Weight na página de produto da loja exibe apenas um valor numérico bruto na seção **[!UICONTROL Additional Information]** ou **[!UICONTROL More Information]** sem a unidade de medida configurada (lb ou kg).
+1. **ACP2E-4156**: Corrige o problema em que a validação do endereço de remessa na API REST não adere à configuração de atributo definida em [!UICONTROL Admin].
 1. **ACP2E-4808**: corrige o problema em que o atributo Weight na página de produto da loja exibe apenas um valor numérico bruto na seção **[!UICONTROL Additional Information]** ou **[!UICONTROL More Information]** sem a unidade de medida configurada (lb ou kg).
 1. **[ACP2E-4156](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)**: corrige o problema em que a validação do endereço de remessa na API [!DNL REST] não adere à configuração de atributo definida no Administrador.
 1. **ACP2E-4813**: corrige o problema em que os métodos de envio do USPS não estão disponíveis no check-out e as estimativas de envio estão incorretas para determinados produtos, incluindo pedidos divididos em vários pacotes.
