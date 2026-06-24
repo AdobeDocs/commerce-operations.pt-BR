@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
+source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
 workflow-type: tm+mt
-source-wordcount: '10185'
+source-wordcount: '10196'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Alertas gerenciados para Adobe Commerce: alerta de aviso do CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Ferramenta Correções de qualidade {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Uma ferramenta de autoatendimento para patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de versão](quality-patches-tool/release-notes.md)
    - Patches disponíveis na Ferramenta de patches de qualidade {#patches-available-in-qpt}
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Salvando novamente uma transação de autorização de pagamento com autorreferência parent_id e acionando um loop/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4472: Cotação nula criada usando o fluxo Logon como Cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
          - [ACP2E-4808: Exibições de peso do produto sem unidade de medida na loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: Falha ao carregar imagens de espaço reservado na loja quando o URL inclui código de loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
          - [ACP2E-4156: [!DNL REST] A validação do endereço de remessa da API ignora a configuração do atributo Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
