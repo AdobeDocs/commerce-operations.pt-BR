@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1816dfaa5145de416decf64482ed81ee82c7448d
+source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
 workflow-type: tm+mt
-source-wordcount: 463
+source-wordcount: 541
 ht-degree: 0%
 
 ---
@@ -39,6 +39,9 @@ O QPT v1.1.80 inclui os seguintes patches:
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: corrige o problema em que imagens de espaço reservado não são carregadas na loja quando um código de armazenamento é incluído na URL.
 1. **ACP2E-4610**: corrige o problema em que o trabalho cron `sales_clean_quotes` tem problemas de desempenho.
 1. **ACP2E-4615**: corrige o problema em que os reembolsos de pedidos online falham com um erro do PayPal informando: *O gateway do PayPal rejeita a solicitação. Erro Interno.*.
+1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)**: corrige o problema em que alguns arquivos JavaScript do Storefront eram solicitados e executados duas vezes, causando cargas duplicadas intermitentes e comportamento instável.
+1. **ACP2E-4653**: corrige o problema em que o escopo do atributo de condição **[!UICONTROL Cart Price Rule]** para **[!UICONTROL Category (Parent Only)]** e **[!UICONTROL Category (Children Only)]** não é exposto ao recuperar ou atualizar regras por meio da API REST.
+1. **ACP2E-4808**: corrige o problema em que o atributo Weight na página de produto da loja exibe apenas um valor numérico bruto na seção **[!UICONTROL Additional Information]** ou **[!UICONTROL More Information]** sem a unidade de medida configurada (lb ou kg).
 1. **ACP2E-4626**: corrige o problema em que alguns arquivos JavaScript do Storefront eram solicitados e executados duas vezes, causando cargas duplicadas intermitentes e comportamento instável.
 1. **[ACP2E-4653](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)**: corrige o problema em que o escopo do atributo de condição do preço do carrinho para **[!UICONTROL Category (Parent Only)]** e **[!UICONTROL Category (Children Only)]** não é exposto ao recuperar ou atualizar regras por meio da API [!DNL REST].
 1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: corrige o problema em que o atributo Weight na página de produto da loja exibe apenas um valor numérico bruto na seção **[!UICONTROL Additional Information]** ou **[!UICONTROL More Information]** sem a unidade de medida configurada (lb ou kg).
