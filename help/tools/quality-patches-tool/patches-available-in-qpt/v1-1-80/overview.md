@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
+source-git-commit: efdf109d1637bf48f32b7730b4f54c6f060b6e54
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 568
 ht-degree: 0%
 
 ---
@@ -34,11 +34,13 @@ O QPT v1.1.80 inclui os seguintes patches:
 1. **ACP2E-4493**: corrige o problema em que a grade do Arquivo Morto de Ordens de Venda exibe um status de pedido incorreto quando a indexação assíncrona está habilitada.
 1. **ACP2E-4496**: corrige o problema em que o trabalho cron do analytics causa degradação do desempenho durante a execução, resultando no aprimoramento do desempenho geral do sistema.
 1. **ACP2E-4533**: corrige o problema em que imagens de espaço reservado não são carregadas na Loja quando um código de armazenamento é incluído na URL.
+1. **ACP2E-4552**: corrige o problema em que o status da empresa não é retornado na resposta do GraphQL.
+1. **[ACP2E-4610](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)**: corrige o problema em que o trabalho cron `sales_clean_quotes` tem problemas de desempenho.
 1. **[ACP2E-4552](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)**: corrige o problema em que o status da empresa não é retornado na resposta do GraphQL.
 1. **[ACP2E-4496](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)**: corrige o problema em que o trabalho cron do analytics causa degradação do desempenho durante a execução, resultando no aprimoramento do desempenho geral do sistema.
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: corrige o problema em que imagens de espaço reservado não são carregadas na loja quando um código de armazenamento é incluído na URL.
 1. **ACP2E-4610**: corrige o problema em que o trabalho cron `sales_clean_quotes` tem problemas de desempenho.
-1. **ACP2E-4615**: corrige o problema em que os reembolsos de pedidos online falham com um erro do PayPal informando: *O gateway do PayPal rejeita a solicitação. Erro Interno.*.
+1. **[ACP2E-4615](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)**: corrige o problema em que os reembolsos de pedidos online falham com um erro do PayPal informando *O gateway do PayPal rejeita a solicitação. Erro Interno.*.
 1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)**: corrige o problema em que alguns arquivos JavaScript do Storefront eram solicitados e executados duas vezes, causando cargas duplicadas intermitentes e comportamento instável.
 1. **ACP2E-4653**: corrige o problema em que o escopo do atributo de condição **[!UICONTROL Cart Price Rule]** para **[!UICONTROL Category (Parent Only)]** e **[!UICONTROL Category (Children Only)]** não é exposto ao recuperar ou atualizar regras por meio da API REST.
 1. **ACP2E-4808**: corrige o problema em que o atributo Weight na página de produto da loja exibe apenas um valor numérico bruto na seção **[!UICONTROL Additional Information]** ou **[!UICONTROL More Information]** sem a unidade de medida configurada (lb ou kg).
