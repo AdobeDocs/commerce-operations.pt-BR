@@ -21,7 +21,7 @@ A Adobe não fornece correções de segurança e qualidade para serviços e depe
 
 O período de suporte padrão de três anos a partir da data de disponibilidade geral (GA). O suporte Standard inclui correções de qualidade, patches de segurança e suporte completo do Adobe Commerce on-call.
 
-- **Correções de qualidade** - Os clientes podem acessar correções de qualidade entrando em contato com o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou por meio do autoatendimento [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+- **Correções de qualidade** - Os clientes podem acessar correções de qualidade entrando em contato com o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) ou por meio do autoatendimento [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR).
 
 - **Correções de segurança** - A Adobe fornece correções de segurança por meio de patches de segurança cumulativos e [arquivos de patch de segurança isolados](versioning-policy.md#isolated-security-patch-file) não cumulativos para o período de suporte de três anos.
 
@@ -205,7 +205,7 @@ Se você estiver em uma versão que está se aproximando ou que ultrapassou suas
 - Você tem acesso aos recursos mais recentes da Adobe: merchandising alimentado por IA, arquitetura de vitrine combinável e integrações nativas da Adobe Experience Cloud.
 - Você elimina ciclos recorrentes de atualização.
 
-Entre em contato com a equipe de conta da Adobe para iniciar uma avaliação de migração. Consulte [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) para obter uma visão geral do produto.
+Entre em contato com a equipe de conta da Adobe para iniciar uma avaliação de migração. Consulte [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/overview) para obter uma visão geral do produto.
 
 ### Caminho alternativo: atualizar para um Adobe Commerce compatível na nuvem ou versão local
 
