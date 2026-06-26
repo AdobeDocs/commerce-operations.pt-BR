@@ -3,9 +3,9 @@ title: Política de ciclo de vida do software
 description: Saiba mais sobre as principais datas relacionadas ao fim do suporte de software das versões do Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: 5846c83cd31e3d253a5ae0b0064b860e5c7af286
+source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1376'
 ht-degree: 1%
 
 ---
@@ -170,6 +170,10 @@ O cronograma de suporte mapeia os períodos de suporte trimestral por trimestre 
 Permanecer em uma versão compatível do Commerce também requer dependências de plataforma compatíveis. A Adobe não fornece correções de segurança e qualidade para serviços e dependências de software de terceiros — como MariaDB, OpenSearch, Redis, Valkey, RabbitMQ e outras — que podem chegar ao fim da vida útil enquanto você estiver no período de suporte estendido ou de três anos para o Adobe Commerce. Consulte [Segurança de responsabilidade compartilhada e modelo operacional](../security-and-compliance/shared-responsibility.md) para obter detalhes.
 
 Você é responsável por manter todas as dependências de terceiros e serviços da plataforma nas versões que têm suporte ativo. Consulte [Requisitos do sistema](../installation/system-requirements.md) para obter a lista completa de tecnologias de terceiros testadas e com suporte.
+
+>[!IMPORTANT]
+>
+>A execução de versões de dependência não compatíveis pode resultar em uma vulnerabilidade de segurança na instância da Nuvem que o Adobe não pode resolver. Nesses casos, a Adobe se reserva o direito de aplicar uma atualização da dependência de software afetada ou desativar a instância se uma atualização não for possível, independentemente do status de suporte da versão do Adobe Commerce.
 
 ## Fim da vida útil do PHP e conformidade com o PCI
 
