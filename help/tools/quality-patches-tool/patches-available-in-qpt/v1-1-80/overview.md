@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: f8a08611109d9c8e5e686e0c451b0a58ecc12e21
+source-git-commit: b5c22a88e9eb9c4e8122a853deee34a9521c263c
 workflow-type: tm+mt
-source-wordcount: 596
+source-wordcount: 594
 ht-degree: 0%
 
 ---
@@ -28,8 +28,8 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 O QPT v1.1.80 inclui os seguintes patches:
 
 1. **ACP2E-4239**: corrige o problema em que os filtros de grade de Administração que usam atributos de data retornam resultados incorretos devido a diferenças de fuso horário entre a data selecionada, os valores UTC armazenados e o fuso horário de repositório configurado.
+1. **[ACP2E-4481](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)**: corrige o problema em que a capacidade de venda do produto do pacote é recalculada incorretamente após o cancelamento do pedido.
 1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**: Corrige o problema em que um registro de cotação nula é criado na tabela de banco de dados `quote` durante o fluxo **[!UICONTROL Login as Customer]**.
-1. **ACP2E-4481**: corrige o problema em que a capacidade de venda do produto do pacote não é recalculada corretamente depois que um pedido é cancelado.
 1. **[ACP2E-4488](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)**: corrige o problema em que salvar ou editar produtos no Administrador é lento para produtos com conjuntos de atributos grandes.
 1. **ACP2E-4493**: corrige o problema em que a grade do Arquivo Morto de Ordens de Venda exibe um status de pedido incorreto quando a indexação assíncrona está habilitada.
 1. **ACP2E-4496**: corrige o problema em que o trabalho cron do analytics causa degradação do desempenho durante a execução, resultando no aprimoramento do desempenho geral do sistema.
