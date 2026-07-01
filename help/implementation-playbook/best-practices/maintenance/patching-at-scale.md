@@ -7,7 +7,7 @@ badge: label="Contribuição de Tony Evers, arquiteto técnico sênior, Adobe" t
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
 source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -372,5 +372,5 @@ Dessa forma, você pode gerenciar centralmente todos os patches de todas as suas
 
 - [Patches centralizados no Magento Open Source](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
 - [Patches centralizados no Adobe Commerce na infraestrutura em nuvem](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
-- [Plug-in do Compositor do Patcher Centralizado](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
+- [Plug-in do Compositor do patcher centralizado](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
 - [Componente de correção centralizado](https://github.com/AntonEvers/centralized-patcher)
