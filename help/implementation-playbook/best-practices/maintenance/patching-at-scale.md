@@ -7,7 +7,7 @@ badge: label="Contribuição de Tony Evers, arquiteto técnico sênior, Adobe" t
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
 source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Se você gerencia várias instalações do Adobe Commerce, o [patch](../../../up
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -33,8 +33,8 @@ Como há vários tipos diferentes de patches e muitas maneiras de aplicá-los, c
 
 1. **Patches de segurança** fazem parte da base de código estático de uma versão do Adobe Commerce.
 1. **Patches do compositor** por meio de `composer install` e `composer update` plug-ins, como [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
-1. Todos os **patches necessários** incluídos no pacote [Patches da Nuvem para o Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=pt-BR).
-1. **patches de qualidade** selecionados incluídos em [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
+1. Todos os **patches necessários** incluídos no pacote [Patches da Nuvem para o Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
+1. **patches de qualidade** selecionados incluídos em [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
 1. **Patches personalizados** e patches do Suporte da Adobe Commerce no diretório `/m2-hotfixes` em ordem alfabética por nome de patch.
 
    >[!IMPORTANT]
@@ -148,7 +148,7 @@ Para criar o pacote do componente `centralized-patcher`:
    ```
 
 
-O atributo `quality-patches` na amostra de código anterior contém dois patches da [lista completa de patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR), por exemplo.  Esses patches de qualidade são instalados em todos os projetos que exigem o pacote `centralized-patcher` usando o comando `vendor/bin/magento-patches apply`.
+O atributo `quality-patches` na amostra de código anterior contém dois patches da [lista completa de patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html), por exemplo.  Esses patches de qualidade são instalados em todos os projetos que exigem o pacote `centralized-patcher` usando o comando `vendor/bin/magento-patches apply`.
 
 Para fins de teste, você pode criar um exemplo de patch (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
@@ -365,12 +365,12 @@ Assim como com o Adobe Commerce na infraestrutura em nuvem, este artigo presume 
 
 Dessa forma, você pode gerenciar centralmente todos os patches de todas as suas instalações e pode garantir melhor a segurança e a estabilidade das lojas Adobe Commerce. Use os seguintes métodos para verificar o status do patch:
 
-- [Projetos de infraestrutura em nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR#view-available-patches-and-status)
+- [Projetos de infraestrutura em nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html#view-available-patches-and-status)
 - [Projetos no local](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Exemplos de código
 
 - [Patches centralizados no Magento Open Source](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
 - [Patches centralizados no Adobe Commerce na infraestrutura em nuvem](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
-- [Plug-in do Compositor do Patcher Centralizado](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
+- [Plug-in do Compositor do patcher centralizado](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
 - [Componente de correção centralizado](https://github.com/AntonEvers/centralized-patcher)
