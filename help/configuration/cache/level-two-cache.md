@@ -20,7 +20,7 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f3767864abdc38fcc0978f174f16632190112cf
+source-git-commit: efeccc00d057a7e7115f1b156c3d9202ab476ded
 workflow-type: tm+mt
 source-wordcount: 764
 ht-degree: 0%
@@ -188,7 +188,7 @@ A partir do Commerce 2.4.9, você pode usar a implementação de cache L2 basead
 
 >[!NOTE]
 >
->No momento, essa funcionalidade está disponível somente para clientes do Adobe Commerce no local 2.4.9. E será ativado para o Adobe Commerce na nuvem posteriormente, em julho de 2026.&quot;
+>No momento, essa funcionalidade está disponível somente para clientes do Adobe Commerce no local 2.4.9. Ele será ativado para o Adobe Commerce na nuvem posteriormente em julho de 2026.
 
 ### Benefícios do cache Symfony L2
 
