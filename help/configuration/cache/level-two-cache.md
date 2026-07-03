@@ -3,26 +3,16 @@ title: Configuração de cache L2 para otimização de desempenho
 description: Saiba como configurar o cache L2 no Adobe Commerce para reduzir o tráfego de rede e melhorar o desempenho. Conheça as opções de implementação herdadas e do Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce no local."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce no local."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 7f3767864abdc38fcc0978f174f16632190112cf
 workflow-type: tm+mt
-source-wordcount: 738
+source-wordcount: 764
 ht-degree: 0%
 
 ---
@@ -47,7 +37,7 @@ Há duas implementações de cache L2 disponíveis:
 
 >[!NOTE]
 >
->Para o Adobe Commerce na nuvem, configure o cache L2 definindo a variável de implantação [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#redis_backend) ou [`VALKEY_BACKEND`](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) em `.magento.env.yaml`. Consulte [Configurar cache L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para obter exemplos de configuração.
+>Para o Adobe Commerce na Nuvem, configure o cache L2 definindo a variável de implantação [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) ou [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) em `.magento.env.yaml`. Consulte [Configurar cache L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para obter exemplos de configuração.
 
 ## Configuração herdada do cache L2 (RemoteSynchronizedCache)
 
@@ -185,6 +175,10 @@ O código a seguir mostra um exemplo de configuração:
 ## Implementação do cache Modern Symfony L2
 
 A partir do Commerce 2.4.9, você pode usar a implementação de cache L2 baseada em cache Symfony (back-end do `symfony_l2`) que fornece uma implementação de cache moderna e compatível com PSR-6, com melhorias significativas de desempenho em relação ao `RemoteSynchronizedCache` tradicional.
+
+>[!NOTE]
+>
+>No momento, essa funcionalidade está disponível somente para clientes do Adobe Commerce no local 2.4.9. E será ativado para o Adobe Commerce na nuvem posteriormente, em julho de 2026.&quot;
 
 ### Benefícios do cache Symfony L2
 
