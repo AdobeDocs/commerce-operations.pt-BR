@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: 593
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Este guia explica como cada camada de armazenamento em cache funciona e mostra c
 
 ## Armazenamento em cache de front-ends
 
-Um front-end de cache é uma interface entre o Commerce e o back-end de armazenamento em cache. Você pode definir vários front-ends, cada um com configurações de back-end diferentes, e atribuir [tipos de cache](../cli/manage-cache.md#clean-and-flush-cache-types) específicos a cada front-end.  Para obter detalhes sobre a configuração, consulte [Configurar front-ends do cache](cache-types.md).
+Um front-end de cache é uma interface entre o Commerce e o back-end de armazenamento em cache. Você pode definir vários front-ends, cada um com configurações de back-end diferentes, e atribuir [tipos de cache](../cli/manage-cache.md#clean-and-flush-cache-types) específicos a cada front-end. Para obter detalhes sobre a configuração, consulte [Configurar front-ends e tipos de cache](cache-types.md).
 
 ## Armazenamento em cache de back-end
 
@@ -74,7 +74,7 @@ Para mapeamento de front-end para tipo e sintaxe de configuração de cache:
 
 Para obter detalhes, consulte:
 
-- [Configurar front-ends do cache](cache-types.md)—Associe um front-end do cache a tipos específicos de cache
+- [Configurar front-ends e tipos de cache](cache-types.md) — Associe um front-end de cache a tipos de cache específicos
 - [Opções de back-end do cache](cache-options.md)—Referência de opção de back-end
 
 **Adobe Commerce na Nuvem** — Configurar cache com `CACHE_CONFIGURATION` em `.magento.env.yaml`. Consulte [Práticas recomendadas para a configuração do serviço Redis e Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).
