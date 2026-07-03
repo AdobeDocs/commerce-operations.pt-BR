@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+source-git-commit: 15314bbcb5c2bdccf92901235f7d07e1770955d9
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1111'
 ht-degree: 0%
 
 ---
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Para projetos do Adobe Commerce na nuvem, consulte [Práticas recomendadas para a configuração do serviço Redis e Valkey](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) para obter instruções sobre a configuração do cache. O cache Redis não é suportado para o Adobe Commerce 2.4.9, ou versões de patch posteriores a 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 e até as linhas de versão 2.4.8-p5. Use Valkey para configuração de cache, onde Redis não é suportado. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements) para obter os serviços de cache com suporte por versão.
+>Para projetos do Adobe Commerce na nuvem, consulte [Práticas recomendadas para a configuração do serviço Redis e Valkey](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) para obter instruções sobre a configuração do cache. O cache Redis não é compatível com o Adobe Commerce 2.4.9 ou versões de patch posteriores a 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 e 2.4.8-p5. Use Valkey para configuração de cache, onde Redis não é suportado. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) para obter os serviços de cache com suporte por versão.
 
 ## Nota de configuração do Commerce no Cloud Varnish com referência {#varnish-config-cloud}
 
 >[!NOTE]
 >
->Se seu projeto do Commerce for implantado na nuvem, o armazenamento em cache de página inteira usará [Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/cdn/fastly) em vez de Varnish. Os tópicos desta seção se aplicam somente a instalações locais.
+>Se seu projeto do Commerce for implantado na nuvem, o armazenamento em cache de página inteira usará [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) em vez de Varnish. Os tópicos desta seção se aplicam somente a instalações locais.
 
 ## Suporte à versão do serviço Adobe {#supported-versions-only}
 
@@ -25,13 +25,13 @@ ht-degree: 0%
 >
 >A Adobe fornece suporte somente para implantações que executam versões compatíveis de todas as dependências e serviços. Isso se aplica a:
 >
->* **Serviços da plataforma** (incluindo, mas não limitados a, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ e Nginx) — os comerciantes devem permanecer nas versões compatíveis com a versão do Adobe Commerce implantada. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR).
+>* **Serviços da plataforma** (incluindo, mas não limitados a, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ e Nginx) — os comerciantes devem permanecer nas versões compatíveis com a versão do Adobe Commerce implantada. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
 >* **Extensões de serviços da Commerce** (incluindo, mas não limitado a, Live Search, Recomendações de produto e Serviços de pagamento) — somente a versão mais recente é suportada.
 >* **Extensões personalizadas e integrações de terceiros** — os comerciantes são responsáveis por garantir que elas permaneçam nas versões com suporte do fornecedor.
 >
 >A execução de versões não compatíveis pode expor sua loja a vulnerabilidades de segurança, e a Adobe não pode fornecer patches de segurança para dependências que não são mais mantidas por seus fornecedores.
 >
->Para obter a lista completa de versões com suporte, consulte a [Matriz de disponibilidade de produtos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability).
+>Para obter a lista completa de versões com suporte, consulte a [Matriz de disponibilidade de produtos](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Patches de segurança para suporte estendido {#extended-support}
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/release-notes).
+>Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Somente Adobe Commerce {#ee-only}
 
@@ -115,7 +115,7 @@ Antes de executar indexadores no modo paralelo, você deve habilitar o suporte d
 
 >[!IMPORTANT]
 >
->A Adobe não oferece suporte à aplicação de patches oficiais fornecidos pela Adobe usando esse método. Use o método a seguir por sua conta e risco. Para aplicar patches oficiais, use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}. Sempre realize testes abrangentes antes de implantar qualquer patch personalizado.
+>A Adobe não oferece suporte à aplicação de patches oficiais fornecidos pela Adobe usando esse método. Use o método a seguir por sua conta e risco. Para aplicar patches oficiais, use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Sempre realize testes abrangentes antes de implantar qualquer patch personalizado.
 
 ## Backports de patch de segurança de outubro de 2025 {#oct-2025-backports}
 
@@ -129,7 +129,7 @@ Antes de executar indexadores no modo paralelo, você deve habilitar o suporte d
 
 * **Suporte adicionado para o protocolo STOMP Apache AtiveMQ Artemis**
 
-  Adição de suporte para o agente de mensagens de código aberto AtiveMQ Artemis por meio do Simple Text Oriented Messaging Protocol (STOMP). Ele oferece um sistema de mensagens confiável e escalável, oferecendo flexibilidade para integrações baseadas em STOMP. Consulte [Apache AtiveMQ Artemis](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) no *Guia de Configuração do Commerce*.
+  Adição de suporte para o agente de mensagens de código aberto AtiveMQ Artemis por meio do Simple Text Oriented Messaging Protocol (STOMP). Ele oferece um sistema de mensagens confiável e escalável, oferecendo flexibilidade para integrações baseadas em STOMP. Consulte [Apache AtiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) no *Guia de Configuração do Commerce*.
 
 ## A página de check-out não carrega static.min.js e mixins.min.js {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -146,7 +146,7 @@ Após alterações recentes da CSP/SRI, a página de check-out não carrega stat
 
 **Hotfix**:
 
-Uma correção está disponível. Consulte [Falha no check-out quando a minificação e o agrupamento JS estiverem habilitados](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27997) na Base de Dados de Conhecimento para obter detalhes de patch.
+Uma correção está disponível. Consulte [Falha no check-out quando a minificação e o agrupamento JS estiverem habilitados](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) na Base de Dados de Conhecimento para obter detalhes de patch.
 
 ## Nota da CLI do Valkey Redis {#valkey-redis-cli-note}
 
