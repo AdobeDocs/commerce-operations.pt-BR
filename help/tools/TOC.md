@@ -2,9 +2,9 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
+source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
 workflow-type: tm+mt
-source-wordcount: '10316'
+source-wordcount: '10330'
 ht-degree: 0%
 
 ---
@@ -1009,7 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Salvando novamente uma transação de autorização de pagamento com autorreferência parent_id e acionando um loop/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
-         - [ACP2E-4239: Os filtros de Data da Grade de Admin não retornam resultados devido à incompatibilidade de Fuso Horário](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
+         - [ACP2E-4493: a grade do Arquivo Morto de Ordens de Venda mostra o status de pedido incorreto quando a Indexação Assíncrona está habilitada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md) - [ACP2E-4239: os filtros de Data da Grade de Admin não retornam resultados devido à incompatibilidade do Fuso Horário](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
          - [ACP2E-4481: Capacidade de venda do produto do pacote recalculada incorretamente após o cancelamento do pedido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)
          - [ACSD-53502: **[!UICONTROL Add to Cart]** falha intermitentemente no iOS [!DNL Safari]  devido à recursão de script do New Relic](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
          - [ACP2E-4813: Métodos de envio USPS indisponíveis ou incorretos para pedidos de vários pacotes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)

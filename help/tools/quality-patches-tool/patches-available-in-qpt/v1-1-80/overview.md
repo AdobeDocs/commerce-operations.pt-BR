@@ -14,7 +14,7 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
+source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
 workflow-type: tm+mt
 source-wordcount: 593
 ht-degree: 0%
@@ -27,11 +27,11 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 
 O QPT v1.1.80 inclui os seguintes patches:
 
+1. **[ACP2E-4493](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md)**: corrige o problema em que a grade do Arquivo Morto de Ordens de Venda exibe um status de pedido incorreto quando a indexação assíncrona está habilitada.
 1. **[ACP2E-4239](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)**: corrige o problema em que os filtros de grade de administração que usam atributos de data não retornam resultados devido à incompatibilidade de fuso horário entre a data selecionada, os valores [!DNL UTC] armazenados e o fuso horário de repositório configurado.
 1. **[ACP2E-4481](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)**: corrige o problema em que a capacidade de venda do produto do pacote é recalculada incorretamente após o cancelamento do pedido.
 1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**: Corrige o problema em que um registro de cotação nula é criado na tabela de banco de dados `quote` durante o fluxo **[!UICONTROL Login as Customer]**.
 1. **[ACP2E-4488](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)**: corrige o problema em que salvar ou editar produtos no Administrador é lento para produtos com conjuntos de atributos grandes.
-1. **ACP2E-4493**: corrige o problema em que a grade do Arquivo Morto de Ordens de Venda exibe um status de pedido incorreto quando a indexação assíncrona está habilitada.
 1. **ACP2E-4496**: corrige o problema em que o trabalho cron do analytics causa degradação do desempenho durante a execução, resultando no aprimoramento do desempenho geral do sistema.
 1. **ACP2E-4533**: corrige o problema em que imagens de espaço reservado não são carregadas na Loja quando um código de armazenamento é incluído na URL.
 1. **ACP2E-4552**: corrige o problema em que o status da empresa não é retornado na resposta do GraphQL.
