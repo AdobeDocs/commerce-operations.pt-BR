@@ -5,7 +5,7 @@ exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Esta guia tem informações que explicam como identificar se e o que [!DNL bots]
 
 ## Visão geral de alto nível de [!DNL bots]:
 
-* O [!DNL bot] é um software que executa tarefas repetitivas automatizadas. Com a evolução da inteligência artificial e do aprendizado de máquina, as tarefas, os métodos e as interações do [!DNL bots] estão mudando. Há *bons* [!DNL bots] que beneficiam os sites rastreando-os e adicionando-os aos mecanismos de pesquisa da Internet. Isso faz com que os usuários da Internet sejam guiados para o site por meio dos resultados do mecanismo de pesquisa. Um *bom* [!DNL bot] geralmente respeita os limites colocados no [!DNL bot] por um arquivo `robots.txt` ou as configurações em um console de mecanismo de pesquisa. Limites podem restringir o acesso ao site ou a partes do site.
+* O [!DNL bot] é um software que executa tarefas repetitivas automatizadas. Com a evolução da inteligência artificial e do aprendizado de máquina, as tarefas, os métodos e as interações do [!DNL bots] estão mudando. Há *bons* [!DNL bots] que beneficiam os sites ao rastrear e adicioná-los aos mecanismos de pesquisa da Internet. Isso faz com que os usuários da Internet sejam guiados para o site por meio dos resultados do mecanismo de pesquisa. Um *bom* [!DNL bot] geralmente respeita os limites colocados no [!DNL bot] por um arquivo `robots.txt` ou as configurações em um console de mecanismo de pesquisa. Limites podem restringir o acesso ao site ou a partes do site.
 * Mal-intencionado [!DNL bots] ignora o arquivo `robots.txt` ou pode falsificar um bom [!DNL bot] através do campo agente de usuário de solicitação dos dados de solicitação HTTP. Algumas coisas que o malicioso [!DNL bots] faz:
    * Adicione carga a um site para negar acesso ao site a usuários legítimos.
    * Remover e reutilizar conteúdo sem permissão.
