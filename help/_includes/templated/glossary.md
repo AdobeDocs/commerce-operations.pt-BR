@@ -47,7 +47,7 @@ _substantivo_
 
 No software, uma função de usuário com privilégios totais de administrador para gerenciar todas as funcionalidades do.No Adobe Commerce, os usuários administradores têm permissões totais e acesso a todos os recursos, opções e funcionalidades no Admin.Eles também podem criar usuários e funções.
 
-Saiba mais: [Adicionando usuários](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
+Saiba mais: [Adicionando usuários](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=pt-BR)
 
 _Atributos de termo :_
 
@@ -893,7 +893,7 @@ _Atributos de termo :_
 
 _substantivo_
 
-Em marketing e varejo, uma porcentagem adicionada ao custo de um item para determinar o preço de varejo.[Configure a marcação](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html) ou o Markdown de um produto por meio de opções personalizáveis do produto.
+Em marketing e varejo, uma porcentagem adicionada ao custo de um item para determinar o preço de varejo.[Configure a marcação](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=pt-BR) ou o Markdown de um produto por meio de opções personalizáveis do produto.
 
 Em desenvolvimento, um idioma de computador que controla o processamento, a apresentação e a formatação do texto.Além disso, as tags de marcação são trechos de código que adicionam funcionalidade ou conteúdo a uma página ou bloco do CMS.
 
