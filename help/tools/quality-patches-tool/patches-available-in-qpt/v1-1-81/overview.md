@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-10T16:37:59.584Z'
 TQID: 'https://experienceleague.adobe.com/M-ltaMCaVfRfc3vrobfkBCte-P4K2CELj7r3bD-cfxA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: f73ca9edd0af3cfb0975eb4b13eabc78c20c340e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: aeb532d2e065787e1b23781a50808031e5a5d4ce
 workflow-type: tm+mt
-source-wordcount: 304
+source-wordcount: 271
 ht-degree: 0%
 
 ---
@@ -36,6 +31,5 @@ O QPT v1.1.81 inclui os seguintes patches:
 1. **ACP2E-4709**: corrige um problema em que as páginas do CMS não são salvas ao usar o Page Builder.
 1. **ACP2E-4786**: corrige o problema em que os produtos de exportação não gravam arquivos quando o armazenamento remoto do AWS S3 está configurado, devido à resolução de caminho incorreta no driver de armazenamento.
 1. **ACP2E-4801**: corrige o problema em que a atualização das quantidades de opção do produto agrupado por meio do botão [!UICONTROL Configure] em uma cotação negociável do [!UICONTROL Admin] não é aplicada e as alterações são descartadas.
-1. **ACP2E-4815**: corrige vários problemas do GraphQL que causavam exceções de PHP em logs, corrige a associação de pedidos com contas de clientes criadas após o pedido via GraphQL e alinha as respostas com o GraphQL sobre especificações HTTP.
 
 Use o menu à esquerda para navegar até uma página de patch específica.
