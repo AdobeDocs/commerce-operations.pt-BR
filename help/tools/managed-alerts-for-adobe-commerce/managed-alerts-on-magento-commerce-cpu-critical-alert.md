@@ -6,7 +6,7 @@ role: Admin
 exl-id: 8629ab18-5eef-4d76-9cf8-88fe2d3439df
 source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '992'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Verifique se o tíquete de suporte do Adobe Commerce existe. Para ver as etapas,
 1. Descrição do alerta.
 1. [[!DNL New Relic] Link de incidente](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). Isso está incluído nos seus [Alertas gerenciados para o Adobe Commerce](managed-alerts-for-magento-commerce.md).
 1. Use a [[!DNL New Relic] página Transação de APM](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems) para identificar transações com problemas de desempenho:
-   * Classifique as transações pelas pontuações crescentes do Apdex. [[!DNL Apdex]](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction) refere-se à satisfação do usuário com o tempo de resposta de seus aplicativos e serviços Web. Um [low [!DNL Apdex] score](managed-alerts-for-magento-commerce-apdex-warning-alert.md) pode indicar um afunilamento (uma transação com um tempo de resposta mais alto). Normalmente, está relacionado ao banco de dados, [!DNL Redis], ou PHP. New Relic Para obter as etapas, consulte [Exibir transações com a  [!DNL Apdex] insatisfação](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/view-your-apdex-score#apdex-dissat) mais alta.
+   * Classifique as transações pelas pontuações crescentes do Apdex. [[!DNL Apdex]](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction) refere-se à satisfação do usuário com o tempo de resposta de seus aplicativos e serviços Web. Um [low [!DNL Apdex] score](managed-alerts-for-magento-commerce-apdex-warning-alert.md) pode indicar um afunilamento (uma transação com um tempo de resposta mais alto). Normalmente, está relacionado ao banco de dados, [!DNL Redis], ou PHP. Para obter as etapas, consulte [Exibir transações com a  [!DNL Apdex] insatisfação](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/view-your-apdex-score#apdex-dissat) mais alta.
    * Classifique as transações por throughput mais alto, tempo médio de resposta mais lento, mais demorado e outros limites. Para etapas, consulte [!DNL New Relic] [Encontrar problemas específicos de desempenho](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems).
 1. Se você ainda estiver com dificuldades para identificar a origem, use a [[!DNL New Relic] página Infraestrutura do APM](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page) para identificar serviços com muitos recursos. Para ver as etapas, consulte [!DNL New Relic] [Página de Hosts do monitoramento de infraestrutura: guia Processos](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes).
 1. Se você identificar a origem, o SSH no ambiente para investigar mais detalhadamente. Para ver as etapas, consulte [SSH para o seu ambiente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=pt-BR) no Guia do Commerce na Nuvem.

@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: f02a13ca-c851-4508-a2bd-e5bc196a330c
 source-git-commit: 60444d3ef7208d12af3f06af6e3cab2cae93700b
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2382'
 ht-degree: 0%
 
 ---
@@ -230,7 +230,7 @@ Para garantir a conformidade com o PCI na Adobe Commerce Cloud, siga estas prát
 
 ### Relatórios e análises
 
-- **O Adobe Commerce Intelligence Commerce Intelligence:**, um recurso principal do Adobe Commerce, fornece informações de práticas recomendadas em várias fontes de dados, permitindo que os comerciantes tomem decisões científicas orientadas por dados e tomem ações claras e informadas. Consulte o [_Guia do Usuário do Commerce Intelligence_](https://experienceleague.adobe.com/pt-br/docs/commerce-business-intelligence/mbi/getting-started).
+- **O Adobe Commerce Intelligence:**, um recurso principal do Adobe Commerce, fornece informações de práticas recomendadas em várias fontes de dados, permitindo que os comerciantes tomem decisões científicas orientadas por dados e tomem ações claras e informadas. Consulte o [_Guia do Usuário do Commerce Intelligence_](https://experienceleague.adobe.com/pt-br/docs/commerce-business-intelligence/mbi/getting-started).
 
 - **Adobe Analytics:** o Adobe Analytics oferece uma solução poderosa para rastrear, analisar e otimizar o desempenho da sua loja online. O Adobe Analytics ajuda as empresas de comércio eletrônico a obter insights mais profundos sobre o comportamento do cliente, o desempenho do produto, as taxas de conversão e outras métricas principais, permitindo a tomada de decisões orientadas por dados.
 

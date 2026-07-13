@@ -6,7 +6,7 @@ role: Admin
 exl-id: 90047f6e-d90a-4980-9700-84c44f2b8494
 source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1149'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Siga estas etapas para identificar e solucionar problemas da causa.
 
 1. Use a [[!DNL New Relic] página Infraestrutura de APM](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/) para identificar os principais processos com uso intensivo de memória. Para obter as etapas, consulte a [[!DNL New Relic] página Hosts de monitoramento de infraestrutura: guia Processos](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes):
    * Se serviços como [!DNL Redis], MySQL ou PHP forem as principais fontes de consumo de memória, tente o seguinte:
-1. Verifique se você está nas versões mais recentes. Às vezes, versões mais recentes podem corrigir vazamentos de memória. Se você não estiver na versão mais recente, considere atualizar. Para obter etapas, consulte [Change Services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=pt-BR) no Guia do Commerce na Nuvem.
+1. Verifique se você está usando as versões mais recentes. Às vezes, versões mais recentes podem corrigir vazamentos de memória. Se você não estiver na versão mais recente, considere atualizar. Para obter etapas, consulte [Change Services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=pt-BR) no Guia do Commerce na Nuvem.
 1. Se o problema com o serviço não estiver relacionado à versão, tente o seguinte:
 1. **MySQL**: verifique problemas como consultas de longa execução, chaves primárias não definidas e índices duplicados. Para obter as etapas, consulte [Problemas mais comuns do banco de dados no Adobe Commerce na infraestrutura em nuvem](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=pt-BR) no Manual de implementação do Commerce.
 1. **[!DNL Redis]**: se [!DNL Redis] for a principal fonte de consumo de memória, [envie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
