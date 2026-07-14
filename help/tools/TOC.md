@@ -2,9 +2,11 @@
 user-guide-title: Ferramentas
 user-guide-description: Saiba mais sobre as diferentes ferramentas que você pode usar com o Adobe Commerce, seus usos, o processo de instalação e como obter acesso.
 feature: Configuration
-source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
+nduge: true
+color: red
+source-git-commit: afd48570ab4ab29b2d5946e2805b3124b0b7fe82
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10365'
 ht-degree: 0%
 
 ---
@@ -26,6 +28,11 @@ ht-degree: 0%
    - [Extensões](site-wide-analysis-tool/extensions.md)
    - [Alertas](site-wide-analysis-tool/alerts.md)
    - [Correções](site-wide-analysis-tool/patches.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+   - [Introdução](commerce-version-tool/intro.md)
+   - [Gerar um relatório de status de patch](commerce-version-tool/generate-report.md)
+   - [Solução de problemas](commerce-version-tool/troubleshooting.md)
+   - [Notas de versão](commerce-version-tool/release-notes.md)
 - CAPS {#caps-tool}
    - {hide-from-toc}[Introdução](caps-tool/intro.md)
    - {hide-from-toc}[Acesso](caps-tool/access.md)
@@ -1026,6 +1033,8 @@ ht-degree: 0%
          - [ACP2E-4156: [!DNL REST] A validação do endereço de remessa da API ignora a configuração do atributo Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4680: Os produtos não-comercializáveis desaparecem das cotações negociáveis finalizadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
+         - [ACP2E-4300: As permissões do catálogo da loja não são atualizadas após a alteração do grupo de clientes Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
    - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referência de ferramentas de linha de comando {#cli-reference}
    - [Adobe Commerce (no local)](reference/commerce-on-premises.md)
