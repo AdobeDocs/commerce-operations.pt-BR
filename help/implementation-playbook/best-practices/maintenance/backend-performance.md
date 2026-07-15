@@ -7,7 +7,7 @@ feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
 source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Saiba mais sobre como preparar projetos do Commerce para períodos de alto tráf
 
 - [Disponibilidade para feriados](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=pt-BR)
 - [Análise de Compras de Feriado](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=pt-BR)
-- [Aumento da Capacidade de Sobretensão](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=pt-BR)
+- [Aumento da capacidade de sobretensão](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=pt-BR)
 
 ### Teste de carga
 
@@ -93,10 +93,10 @@ Para otimizar o desempenho do servidor MySQL e minimizar os gargalos, é essenci
 
 Saiba mais sobre como configurar e otimizar o MySQL:
 
-- [Práticas recomendadas para a configuração do banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=pt-BR)
+- [Práticas recomendadas para configuração de banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=pt-BR)
 - [Replicação lenta para replicação do Galera DB](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=pt-BR)
 - [Diretrizes gerais do MySQL](/help/installation/prerequisites/database/mysql.md)
-- [Cache de consulta do MySQL](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=pt-BR)
+- [Armazenamento em cache de consultas MySQL](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=pt-BR)
 
 ## Gerenciar trabalhos cron com eficiência: desempenho e tempo
 
