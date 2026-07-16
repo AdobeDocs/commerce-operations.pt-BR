@@ -5,7 +5,7 @@ exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
 source-git-commit: 5a0455b61824cb1946e29dba3ff7bfd9d225b110
 workflow-type: tm+mt
-source-wordcount: '2494'
+source-wordcount: '2632'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ A guia [!UICONTROL Summary] do [!DNL Observation for Adobe Commerce] destina-se 
 
 ![Visão geral da transação](../../assets/tools/transaction-overview.jpg)
 
-### [O que é uma transação?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20frequency,when%20the%20response%20is%20sent)
+### [O que é uma transação?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
 
 &quot;Às [!DNL New Relic], uma transação é definida como uma unidade lógica de trabalho em um aplicativo de software. Especificamente, ele se refere às chamadas de função e chamadas de método que compõem essa unidade de trabalho. Geralmente se refere a uma transação da web, que representa uma atividade que acontece de quando o aplicativo recebe uma solicitação da web até quando a resposta é enviada.&quot;
 
@@ -58,7 +58,7 @@ O quadro **[!UICONTROL Swap memory free in bytes]** exibe, por nó, a quantidade
 
 ![Percentual de CPU por host](../../assets/tools/cpu-percent-by-host.jpg)
 
-A agregação de todos os ambientes e nós é exibida no quadro **[!UICONTROL CPU % by host]**. Você deve desmarcar os ambientes de não produção. Observe também quaisquer instâncias em que todos os nós do ambiente de produção não estejam presentes. Para obter mais dicas sobre alta utilização do CPU, consulte [Solucionar problemas de desempenho usando o New Relic no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=pt-BR).
+A agregação de todos os ambientes e nós é exibida no quadro **[!UICONTROL CPU % by host]**. Você deve desmarcar os ambientes de não produção. Observe também quaisquer instâncias em que todos os nós do ambiente de produção não estejam presentes. Para obter mais dicas sobre alta utilização do CPU, consulte [Solucionar problemas de desempenho usando o New Relic no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -70,7 +70,7 @@ O **[!UICONTROL Alerts during timeframe]** exibe todos os alertas, incluindo o [
 
 ![uso do CPU](../../assets/tools/cpu-usage.jpg)
 
-Se o quadro **[!UICONTROL CPU Usage]** estiver em branco, isso indica que o aplicativo de infraestrutura [!DNL New Relic] não está habilitado. Se seu site está no Starter, você não vê essas informações. Se o seu site for Pro, abra um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR) para habilitar o [!DNL New Relic Infrastructure] para o seu site.
+Se o quadro **[!UICONTROL CPU Usage]** estiver em branco, isso indica que o aplicativo de infraestrutura [!DNL New Relic] não está habilitado. Se seu site está no Starter, você não vê essas informações. Se o seu site for Pro, abra um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) para habilitar o [!DNL New Relic Infrastructure] para o seu site.
 
 ## [!UICONTROL Average Response Time]
 
@@ -115,7 +115,7 @@ O quadro **[!UICONTROL Deployment State]** enfoca fases de implantação especí
 * &#39;%Set flag: .static_content_deploy%&#39;) como &#39;SCD&#39;
 * &#39;%NOTICE: comando de geração concluído (%) como &#39;gen_compl&#39;
 * &#39;%NOTICE: implantação concluída (%) como &#39;deploy_compl&#39;
-* &#39;%NOTA: iniciando pós-implantação.%&#39;) como &#39;start_deploy&#39;
+* &#39;%NOTICE: iniciando pós-implantação.%&#39;) como &#39;start_deploy&#39;
 * &#39;%NOTICE: a pós-implantação está concluída (%) como &#39;implantação&#39;
 * &#39;%deploy-complete%&#39;) como &#39;cl_deploy_compl&#39;
 
@@ -184,7 +184,7 @@ O quadro **[!UICONTROL Nginx access by node]** analisa as contagens de `access.l
 * &#39;%member = 2/3 (unido/total)%&#39;) como &#39;2of3&#39;
 * &#39;%member = 2/2%&#39;) como &#39;2of2&#39; * &#39;%member = 1/2%&#39;) como &#39;1of2&#39; * &#39;%member = 1/3%&#39;) como &#39;1of3&#39;
 * &#39;%member = 1/1%&#39;) como &#39;1of1&#39;
-* &#39;%\[Nota\] /usr/sbin/mysqld (mysqld 10.%&#39;) como &#39;sql_restart&#39;
+* &#39;%\[Nota\] /usr/sbin/mysqld (mysqld 10.%&#39;) as &#39;sql_restart&#39;
 * &#39;%Quorum: Nenhum nó com estado concluído:%&#39;) como &#39;no_node_count&#39;
 * &#39;%WSREP: Membro 0%&#39;) como &#39;mem_0&#39;
 * &#39;%WSREP: Membro 1.0%&#39;) como &#39;mem_1&#39;
@@ -264,7 +264,7 @@ O quadro **[!UICONTROL Database mysql-slow.log]** faz uma contagem de entradas n
 * &#39;%Sincronização SLAVE: sem espaço restante no dispositivo (%SLAVE synchronization: No space left on device%) as &#39;space&#39;
 * &#39;%Server started, Redis version%&#39;) como &#39;serv_start&#39;
 * &#39;%O servidor está pronto para aceitar conexões&#39;) como &#39;pronto&#39;
-* &#39;%Conexão com mestre perdida.%&#39;) como &#39;mstr_lost&#39;
+* &#39;%Connection with master lost.%&#39;) como &#39;mstr_lost&#39;
 * &#39;%+sentinela%&#39;) como &#39;+sentinela&#39;
 * &#39;%-sdown sentinel%&#39;) como &#39;-sentinal&#39;
 * &#39;%-sdown slave%&#39;) como &#39;-slave&#39;, &#39;%+sdown slave%&#39;) como &#39;+slave&#39;
@@ -295,7 +295,7 @@ O quadro **[!UICONTROL PHP errors]** mostra o número de erros de PHP com worker
 **Mensagens e erros de PHP:**
 
 * &#39;%worker_connections are not insufficient%&#39;) como &#39;worker&#39;
-* Erro fatal &#39;%PHP: tamanho de memória permitido!%&#39;) como &#39;mem_size&#39;
+* &#39;%PHP Erro fatal: tamanho de memória permitido!%&#39;) como &#39;mem_size&#39;
 * &#39;%exited on signal 11 (SIGSEGV)%&#39;) como &#39;sig_11&#39;
 * &#39;%exited on signal 7 (SIGBUS)%&#39;) como &#39;sig_7&#39;
 * &#39;%aumente pm.start_servers%&#39;) como &#39;pmstart_serv&#39;
@@ -384,7 +384,7 @@ O quadro **[!UICONTROL Order transactions (default?)]** procura transações `re
 * &#39;%Você pode corrigir esse problema atualizando o serviço Elasticsearch na infraestrutura do Magento Cloud para a versão%&#39; como &#39;ver_err&#39;
 * Status de integridade de &#39;%cluster alterado de \[YELLOW\] para \[RED\] (motivo:%&#39; como &#39;yel_red&#39;
 * &#39;%No space left on device%&#39; como &#39;no_space&#39;
-* &#39;% Falha ao executar &lbrack;SearchRequest&lbrace;searchType=%&#39; as &#39;failed_query&#39;
+* &#39;% Falha ao executar [SearchRequest{searchType=%&#39; as &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

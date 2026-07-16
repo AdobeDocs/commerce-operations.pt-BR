@@ -6,7 +6,7 @@ badge: label="Contribuição de David Lambauer" type="Informative" url="https://
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2748'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Uma tag `<field>` pode ter os seguintes valores para o atributo `type=""`:
 | `select` | Lista suspensa normal, pode precisar de um `source_model` personalizado. Também usado para `Yes/No` seleções. Veja um exemplo em `Magento\Search\Model\Adminhtml\System\Config\Source\Engine`. |
 | `multiselect` | Como `select`, mas várias opções são válidas. |
 | `button` | Um botão que aciona um evento imediato. Requer um modelo de front-end personalizado para definir o texto do botão e a ação. Veja um exemplo em `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean`. |
-| `obscure` | Um campo de texto com o valor criptografado e exibido como `**&#x200B;**`. A alteração do tipo usando &quot;Inspecionar elemento&quot; no navegador não revela o valor. |
+| `obscure` | Um campo de texto com o valor criptografado e exibido como `****`. A alteração do tipo usando &quot;Inspecionar elemento&quot; no navegador não revela o valor. |
 | `password` | Como `obscure`, exceto que o valor oculto não é criptografado, e a alteração forçada do tipo usando &quot;Inspecionar Elemento&quot; no navegador revela o valor. |
 | `file` | Permite que um arquivo seja carregado para processamento. |
 | `label` | Exibe um rótulo em vez de um campo editável. Use esse tipo quando um campo for editável somente em escopos específicos, por exemplo, somente nível de Exibição de Loja. |
@@ -391,9 +391,9 @@ As seguintes regras de validação estão disponíveis:
 | `no-whitespace` | Não permite espaços em branco. |
 | `phoneUK` | Permite um número de telefone (Reino Unido). |
 | `phoneUS` | Permite um número de telefone (EUA). |
-| `required-entry` | Não permite um valor vazio (validação equivalente como `validate-no-empty`).<br>Mensagem de falha na validação: &quot;Este campo é obrigatório&quot;. |
+| `required-entry` | Não permite um valor vazio (validação equivalente como `validate-no-empty`).<br>Mensagem de falha de validação: &quot;Este campo é obrigatório.&quot; |
 | `time` | Permite um horário válido no formato de 24 horas, entre 00:00 e 23:59. Por exemplo `15`, `15:05` ou `15:05:48`. |
-| `time12h` | Permite um horário válido no formato de 12 horas, entre 12:00 e 23h59. :59: Por exemplo `3 am`, `11:30 pm`, `02:15:00 pm`. |
+| `time12h` | Permite um horário válido no formato de 12 horas, entre 12:00 e 23h59. :59:Por exemplo `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Permite 7 ou mais caracteres, usando numéricos e alfabéticos. |
 | `validate-alphanum-with-spaces` | Permite o uso de letras (a-z ou A-Z), números (0-9) ou espaços apenas. |
 | `validate-clean-url` | Permite um URL válido. Por exemplo, `https://www.example.com` ou `www.example.com`. |
@@ -403,7 +403,7 @@ As seguintes regras de validação estão disponíveis:
 | `validate-email` | Permite um endereço de email válido. Por exemplo, johndoe@domain.com. |
 | `validate-emailSender` | Permite um endereço de email válido. Por exemplo, johndoe@domain.com. |
 | `validate-fax` | Permite um número de fax válido. Por exemplo, 123-456-7890. |
-| `validate-no-empty` | Não permite um valor vazio (validação equivalente como `requried-entry`).<br>Mensagem de falha de validação: &quot;Valor vazio&quot;. |
+| `validate-no-empty` | Não permite um valor vazio (validação equivalente como `requried-entry`).<br>Mensagem de falha de validação: &quot;Valor vazio.&quot; |
 | `validate-no-html-tags` | Não permite o uso de tags do HTML. |
 | `validate-password` | Permite 6 ou mais caracteres. Espaços à esquerda e à direita serão ignorados. |
 | `validate-phoneLax` | Permite um número de telefone válido. Por exemplo, (123) 456-7890 ou 123-456-7890. |
