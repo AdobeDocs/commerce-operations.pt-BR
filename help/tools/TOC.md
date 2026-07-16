@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 11f63d811ab907de5e93c121ef8fdf0de294b25f
+source-git-commit: af9c1cd1091aa70aa247064f076817895286c4b8
 workflow-type: tm+mt
-source-wordcount: '10381'
+source-wordcount: '10408'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,8 @@ ht-degree: 0%
          - [ACP2E-4156: [!DNL REST] A validação do endereço de remessa da API ignora a configuração do atributo Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4786: Falha na exportação do produto quando o armazenamento remoto do AWS S3 é configurado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
+         - [ACP2E-4801: Quantidades de opção de produto do pacote não são atualizadas ao reconfigurar uma cotação negociável no Administrador](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)
          - [ACP2E-4630: nomes de produtos longos se sobrepõem a colunas adjacentes em PDFs de vendas de várias páginas após quebras de página](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
          - [ACP2E-4680: Os produtos não-comercializáveis desaparecem das cotações negociáveis finalizadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
          - [ACP2E-4300: As permissões do catálogo da loja não são atualizadas após a alteração do grupo de clientes Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)

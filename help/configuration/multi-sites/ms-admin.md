@@ -4,7 +4,7 @@ description: Configure sites, lojas e visualizações de loja adicionais no Admi
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Esta tarefa requer que você crie uma categoria raiz (e categorias adicionais, se desejado) para cada loja. As tarefas discutidas neste tópico fornecem uma maneira de configurar várias lojas. Para obter informações adicionais, consulte os seguintes recursos no Guia do usuário do Commerce:
 
 - [Categorias](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/categories)
-- [Adicionando Sites](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Adicionar sites](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
 - [Armazenar URLs](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-urls)
 - [Conteúdo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/content-menu)
 

@@ -5,7 +5,7 @@ exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -388,7 +388,7 @@ A Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
 
 A pilha de segurança do Adobe para Managed Services cria segurança em todos os níveis, usando automação e consistência para reduzir erros humanos. As equipes de desenvolvimento e operações herdam automaticamente os controles de segurança de diferentes níveis da pilha.
 
-Parceiros de plataforma, como o Amazon Web Services e o Microsoft Azure, garantem a máxima cobertura de segurança ao aplicar personalizações de plataforma, enquanto a equipe da Adobe Managed Services fornece serviços essenciais de segurança, como conformidade, registro, autenticação, verificação e monitoramento, segurança do servidor e configuração de aplicativos seguros. Consulte [Segurança do Adobe Commerce](https://business.adobe.com/br/products/magento/secure-ecommerce.html) para obter mais informações.
+Parceiros de plataforma, como Amazon Web Services e Microsoft Azure, garantem a máxima cobertura de segurança ao aplicar personalizações de plataforma, enquanto a equipe Managed Services da Adobe fornece serviços essenciais de segurança, como conformidade, registro, autenticação, verificação e monitoramento, segurança do servidor e configuração de aplicativos seguros. Consulte [Segurança do Adobe Commerce](https://business.adobe.com/br/products/magento/secure-ecommerce.html) para obter mais informações.
 
 O diagrama a seguir mostra a pilha da tecnologia de segurança do Adobe Managed Services:
 
@@ -437,7 +437,7 @@ A Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
     <td>Atualizar serviços de infraestrutura<br />[MariaDB, Redis, Open Search e Rabbit MQ] (Preparo e Produção)</td>
     <td></td>
     <td></td>
-    <td>Proprietário<br />O CSE coordena as atualizações do serviço de infraestrutura.<br />O CSE agenda o evento de reunião de conferência para atualizações.O <br />CSE auxilia na migração de dados da produção para o armazenamento temporário.</td>
+    <td>O Proprietário<br />CSE coordena as atualizações do serviço de infraestrutura.<br />O CSE agenda o evento de reunião de conferência para atualizações.<br />O CSE auxilia na migração de dados da Produção para a Preparação.</td>
   </tr>
   <tr>
     <td>Atualizar a base de código e as personalizações do Commerce; recompilação de código e refatoração de código</td>
@@ -456,7 +456,7 @@ A Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
     <td>Executar testes de desempenho e segurança</td>
     <td>Colaborador</td>
     <td>Proprietário</td>
-    <td>O Colaborador<br />CSE auxilia no teste de carga, monitorando o desempenho do aplicativo e da infraestrutura.O <br />CSE ajuda a configurar a Ferramenta de Verificação de Segurança da Commerce.</td>
+    <td>O Colaborador<br />CSE auxilia no teste de carga, monitorando o desempenho do aplicativo e da infraestrutura.<br />O CSE auxilia na configuração da Ferramenta de Verificação de Segurança da Commerce.</td>
   </tr>
   <tr>
     <td>Teste de aceitação de usuários em preparo</td>

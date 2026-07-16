@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 11f63d811ab907de5e93c121ef8fdf0de294b25f
+source-git-commit: af9c1cd1091aa70aa247064f076817895286c4b8
 workflow-type: tm+mt
-source-wordcount: 272
+source-wordcount: 273
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ O QPT v1.1.81 inclui os seguintes patches:
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: corrige o problema em que nomes longos de produtos com opções personalizadas se sobrepõem a colunas ou itens adjacentes em PDFs de várias páginas de Fatura, Remessa, Aviso de Crédito e Devolução após quebras de página, tornando os itens de linha ilegíveis.
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: corrige o problema em que produtos não vendáveis ou excluídos desaparecem das cotações negociáveis finalizadas.
 1. **ACP2E-4709**: corrige um problema em que as páginas do CMS não são salvas ao usar o Page Builder.
-1. **ACP2E-4786**: corrige o problema em que os produtos de exportação não gravam arquivos quando o armazenamento remoto do AWS S3 está configurado, devido à resolução de caminho incorreta no driver de armazenamento.
-1. **ACP2E-4801**: corrige o problema em que a atualização das quantidades de opção do produto agrupado por meio do botão [!UICONTROL Configure] em uma cotação negociável do [!UICONTROL Admin] não é aplicada e as alterações são descartadas.
+1. **[ACP2E-4786](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)**: corrige o problema em que os produtos de exportação não gravam arquivos quando o armazenamento remoto do AWS S3 está configurado, devido à resolução de caminho incorreta no driver de armazenamento.
+1. **[ACP2E-4801](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)**: corrige o problema em que a atualização das quantidades de opção do produto agrupado por meio do botão **[!UICONTROL Configure]** em uma cotação negociável do Administrador não é aplicada e as alterações são descartadas.
 
 Use o menu à esquerda para navegar até uma página de patch específica.
