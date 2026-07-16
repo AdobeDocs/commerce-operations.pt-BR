@@ -58,7 +58,7 @@ O quadro **[!UICONTROL Swap memory free in bytes]** exibe, por nó, a quantidade
 
 ![Percentual de CPU por host](../../assets/tools/cpu-percent-by-host.jpg)
 
-A agregação de todos os ambientes e nós é exibida no quadro **[!UICONTROL CPU % by host]**. Você deve desmarcar os ambientes de não produção. Observe também quaisquer instâncias em que todos os nós do ambiente de produção não estejam presentes. Para obter mais dicas sobre alta utilização do CPU, consulte [Solucionar problemas de desempenho usando o New Relic no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+A agregação de todos os ambientes e nós é exibida no quadro **[!UICONTROL CPU % by host]**. Você deve desmarcar os ambientes de não produção. Observe também quaisquer instâncias em que todos os nós do ambiente de produção não estejam presentes. Para obter mais dicas sobre alta utilização do CPU, consulte [Solucionar problemas de desempenho usando o New Relic no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=pt-BR).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -70,7 +70,7 @@ O **[!UICONTROL Alerts during timeframe]** exibe todos os alertas, incluindo o [
 
 ![uso do CPU](../../assets/tools/cpu-usage.jpg)
 
-Se o quadro **[!UICONTROL CPU Usage]** estiver em branco, isso indica que o aplicativo de infraestrutura [!DNL New Relic] não está habilitado. Se seu site está no Starter, você não vê essas informações. Se o seu site for Pro, abra um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) para habilitar o [!DNL New Relic Infrastructure] para o seu site.
+Se o quadro **[!UICONTROL CPU Usage]** estiver em branco, isso indica que o aplicativo de infraestrutura [!DNL New Relic] não está habilitado. Se seu site está no Starter, você não vê essas informações. Se o seu site for Pro, abra um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR) para habilitar o [!DNL New Relic Infrastructure] para o seu site.
 
 ## [!UICONTROL Average Response Time]
 
