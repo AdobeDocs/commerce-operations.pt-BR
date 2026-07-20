@@ -20,7 +20,7 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: efeccc00d057a7e7115f1b156c3d9202ab476ded
+source-git-commit: 5f20ef1b6e40728e38d06f5c9f90f72ba1eb43e0
 workflow-type: tm+mt
 source-wordcount: 764
 ht-degree: 0%
@@ -88,11 +88,11 @@ Onde:
 
 - `backend` é a implementação do cache L2.
 - `backend_options` é a configuração de cache L2.
-   - `remote_backend` é a implementação de cache remoto: Redis ou MySQL.
-   - `remote_backend_options` é a configuração de cache remoto.
-   - `local_backend` é a implementação de cache local: `Cm_Cache_Backend_File`
-   - `local_backend_options` é a configuração de cache local.
-   - `cache_dir` é uma opção específica de cache de arquivo para o diretório onde o cache local está armazenado.
+  - `remote_backend` é a implementação de cache remoto: Redis ou MySQL.
+  - `remote_backend_options` é a configuração de cache remoto.
+  - `local_backend` é a implementação de cache local: `Cm_Cache_Backend_File`
+  - `local_backend_options` é a configuração de cache local.
+  - `cache_dir` é uma opção específica de cache de arquivo para o diretório onde o cache local está armazenado.
 
 A Adobe recomenda usar Redis para cache remoto (`\Magento\Framework\Cache\Backend\Redis`) e `Cm_Cache_Backend_File` para o cache local de dados na memória compartilhada, usando: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
