@@ -3,24 +3,17 @@ title: Opções de back-end de cache e referência de armazenamento
 description: Saiba mais sobre as opções de back-end do cache no Adobe Commerce, incluindo sistema de arquivos, Redis, Valkey e armazenamento de banco de dados. Descubra abordagens herdadas e modernas.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: a7e44e5b4ddeda89b9fee08aa29b1a31f521e90a
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 3d64249bf778a5aa73db22a532a454bb37d6dd37
 workflow-type: tm+mt
-source-wordcount: 362
+source-wordcount: 309
 ht-degree: 0%
 
 ---
@@ -42,11 +35,13 @@ A tabela a seguir resume os caches de backend disponíveis:
 | Infraestrutura | Descrição | Guia de configuração |
 | ------- | ----------- | ------------------- |
 | Sistema de arquivos | Padrão. Armazena dados do cache em arquivos em `var/cache/`. Nenhuma configuração é necessária. | N/D |
-| [Redis](config-redis.md) | Armazenamento de dados na memória para cache de alto desempenho. | [Usar Redis para cache padrão](redis-pg-cache.md)<br>**Observação: o cache Redis não é compatível com o Adobe Commerce 2.4.9 ou versões de patch posteriores a 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 e 2.4.8-p5. Use Valkey para configuração de cache, onde Redis não é suportado. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements) para obter os serviços de cache com suporte por versão. |
+| [Redis](config-redis.md) | Armazenamento de dados na memória para cache de alto desempenho. | [Usar Redis para cache padrão](redis-pg-cache.md) |
 | [Chave de valor](config-valkey.md) | Alternativa de código aberto e compatível com Redis. | [Usar Valkey para cache padrão](valkey-pg-cache.md) |
 | [Banco de dados](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Armazenamento em cache com base em banco de dados | [Criar mecanismos de cache personalizados](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (documentação do desenvolvedor do Adobe) |
 
-{{redis-cache-support}}
+>[!IMPORTANT]
+>
+>{{redis-cache-support}}
 
 ## Abordagens de implementação
 
