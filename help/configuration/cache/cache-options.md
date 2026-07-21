@@ -18,7 +18,7 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 3d64249bf778a5aa73db22a532a454bb37d6dd37
 workflow-type: tm+mt
 source-wordcount: 309
 ht-degree: 0%
@@ -31,6 +31,10 @@ ht-degree: 0%
 
 O aplicativo Commerce usa um front-end e back-end de cache de baixo nível para fornecer acesso ao armazenamento em cache. O Commerce oferece suporte a vários back-end e estratégias de armazenamento em cache, cada um adequado a casos de uso diferentes. Esta página descreve as infraestruturas disponíveis e a sua diferença.
 
+>[!NOTE]
+>
+>[Verniz](config-varnish.md) lida com o armazenamento em cache de página inteira no nível HTTP e não usa o back-end de cache de nível baixo.
+
 ## Opções de cache de back-end
 
 A tabela a seguir resume os caches de backend disponíveis:
@@ -42,9 +46,9 @@ A tabela a seguir resume os caches de backend disponíveis:
 | [Chave de valor](config-valkey.md) | Alternativa de código aberto e compatível com Redis. | [Usar Valkey para cache padrão](valkey-pg-cache.md) |
 | [Banco de dados](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Armazenamento em cache com base em banco de dados | [Criar mecanismos de cache personalizados](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (documentação do desenvolvedor do Adobe) |
 
->[!NOTE]
+>[!IMPORTANT]
 >
->[Verniz](config-varnish.md) lida com o armazenamento em cache de página inteira no nível HTTP e não usa o back-end de cache de nível baixo.
+>{{redis-cache-support}}
 
 ## Abordagens de implementação
 
