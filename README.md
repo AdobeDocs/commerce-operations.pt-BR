@@ -1,7 +1,7 @@
 ---
-source-git-commit: 44c3c7eaf57d858b5810e6ba6f510e9fea4e1a1a
+source-git-commit: 73d9b59320fac5ad73e893e87aea1edb4bb72a06
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Agradecemos as contribuições da comunidade e de funcionários da Adobe de fora
 
 ## Código de conduta do Adobe Open Source
 
-Este projeto adotou o [Código de Conduta do Adobe Open Source](code-of-conduct.md) ou o [&#x200B; Código de Conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte o artigo [Contribuição](contributing.md).
+Este projeto adotou o [Código de Conduta do Adobe Open Source](code-of-conduct.md) ou o [ Código de Conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte o artigo [Contribuição](contributing.md).
 
 ## Sobre suas contribuições para o conteúdo do Adobe
 
@@ -76,11 +76,14 @@ Para obter instruções detalhadas de instalação, solução de problemas e con
 
 ## Tarefas do rake disponíveis
 
-Este repositório usa tarefas do rake fornecidas pela gem `adobe-comdox-exl-rake-tasks`. Para ver todas as tarefas disponíveis, execute:
+Este repositório usa tarefas do rake fornecidas pelo
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. Para ver todas as tarefas disponíveis, execute:
 
 ```bash
 cd _jekyll
 bundle exec rake --tasks
 ```
 
-
+Para tarefas específicas de repositório, o formato de arquivo de relacionamentos de inclusão e a configuração
+detalhes, consulte [`_jekyll/ReadMe.md`](_jekyll/ReadMe.md).
