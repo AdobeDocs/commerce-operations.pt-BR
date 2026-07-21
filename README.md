@@ -1,7 +1,7 @@
 ---
-source-git-commit: 44c3c7eaf57d858b5810e6ba6f510e9fea4e1a1a
+source-git-commit: 73d9b59320fac5ad73e893e87aea1edb4bb72a06
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -76,11 +76,14 @@ Para obter instruções detalhadas de instalação, solução de problemas e con
 
 ## Tarefas do rake disponíveis
 
-Este repositório usa tarefas do rake fornecidas pela gem `adobe-comdox-exl-rake-tasks`. Para ver todas as tarefas disponíveis, execute:
+Este repositório usa tarefas do rake fornecidas pelo
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. Para ver todas as tarefas disponíveis, execute:
 
 ```bash
 cd _jekyll
 bundle exec rake --tasks
 ```
 
-
+Para tarefas específicas de repositório, o formato de arquivo de relacionamentos de inclusão e a configuração
+detalhes, consulte [`_jekyll/ReadMe.md`](_jekyll/ReadMe.md).
