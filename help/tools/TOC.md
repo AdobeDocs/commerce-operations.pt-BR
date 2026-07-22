@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: db5e09759abee078ed36e097b397f2dacbc2fef7
+source-git-commit: c6a5714275fc7f36688b4aaabffadb90a346e61a
 workflow-type: tm+mt
-source-wordcount: '10433'
+source-wordcount: '10449'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,7 @@ ht-degree: 0%
       - [ACP2E-4156: [!DNL REST] A validação do endereço de remessa da API ignora a configuração do atributo Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
     - v1.1.81 {#v1-1-81}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+      - [ACP2E-4395: Produtos de cartão-presente podem ser criados por meio da API sem uma quantidade no escopo global](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)
       - [ACP2E-4401: [!UICONTROL Scheduled Update Preview] de [!UICONTROL Home Page] com redirecionamentos de produtos configuráveis para [!UICONTROL maintenance page]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)
       - [ACP2E-4468: Os usuários Administradores com escopo de site não podem salvar Blocos Dinâmicos no Page Builder](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)
       - [ACP2E-4786: Falha na exportação do produto quando o armazenamento remoto do AWS S3 é configurado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
