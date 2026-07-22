@@ -2,7 +2,7 @@
 title: Notas de versão de correção de segurança
 description: Revise as notas de versão de patch de segurança do Adobe Commerce para ver as versões compatíveis, incluindo melhorias de segurança, correções e o que cada versão de patch contém.
 exl-id: a3d78211-41ff-4df2-ad29-21465c096027
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 48fc318078cbf1800522aeb43d8927b72727e7ed
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
@@ -18,4 +18,4 @@ As notas de versão de patch de segurança do Adobe Commerce fornecem informaç�
 
 {{$include /help/_includes/release-notes/security-patch-overview.md}}
 
-<!-- Last updated from includes: 2026-04-20 10:12:04 -->
+<!-- Last updated from includes: 2026-06-16 17:36:23 -->
