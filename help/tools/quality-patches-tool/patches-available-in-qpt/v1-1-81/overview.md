@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: af9c1cd1091aa70aa247064f076817895286c4b8
+source-git-commit: db5e09759abee078ed36e097b397f2dacbc2fef7
 workflow-type: tm+mt
-source-wordcount: 273
+source-wordcount: 270
 ht-degree: 0%
 
 ---
@@ -27,10 +27,11 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 
 O QPT v1.1.81 inclui os seguintes patches:
 
+
+1. **[ACP2E-4401](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)**: corrige o problema em que o [!UICONTROL Scheduled Update Preview] do [!UICONTROL Home Page] link com produtos configuráveis redireciona para o [!UICONTROL maintenance page] em vez de exibir a lista de produtos.
 1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**: corrige o problema em que alterar um grupo de clientes no Administrador não atualiza as permissões de catálogo na loja, fazendo com que o catálogo e o carrinho reflitam permissões desatualizadas.
-1. **ACP2E-4401**: corrige o problema em que o [!UICONTROL Scheduled Update Preview] do link da Página Inicial com produtos configuráveis redireciona para a página de manutenção em vez de exibir a lista de produtos.
 1. **ACP2E-4395**: a criação do produto Giftcard API agora exibirá um erro se nenhum valor for especificado para o escopo global.
-1. **ACP2E-4468**: corrige o problema em que [!UICONTROL Admin] usuários com permissões de escopo de site não podem editar conteúdo de banner.
+1. **[ACP2E-4468](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)**: corrige o problema em que os usuários administradores com permissões de escopo de site não podem editar conteúdo de banner.
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: corrige o problema em que nomes longos de produtos com opções personalizadas se sobrepõem a colunas ou itens adjacentes em PDFs de várias páginas de Fatura, Remessa, Aviso de Crédito e Devolução após quebras de página, tornando os itens de linha ilegíveis.
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: corrige o problema em que produtos não vendáveis ou excluídos desaparecem das cotações negociáveis finalizadas.
 1. **ACP2E-4709**: corrige um problema em que as páginas do CMS não são salvas ao usar o Page Builder.
