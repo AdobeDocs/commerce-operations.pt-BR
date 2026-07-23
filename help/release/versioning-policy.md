@@ -2,7 +2,7 @@
 title: Política de lançamento
 description: Saiba mais sobre os tipos de versão do Adobe Commerce, marketing versus controle de versão de módulo, versões de patch e segurança, betas, hotfixes e a política geral de lançamento.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 48fc318078cbf1800522aeb43d8927b72727e7ed
+source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -82,3 +82,4 @@ Patches individuais contêm correções de qualidade de baixo impacto para um pr
 Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código do Adobe Commerce por vários motivos.
 
 <!-- Last updated from includes: 2026-06-16 17:36:23 -->
+
