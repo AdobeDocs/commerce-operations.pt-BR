@@ -2,7 +2,7 @@
 title: Política de lançamento
 description: Saiba mais sobre os tipos de versão do Adobe Commerce, marketing versus controle de versão de módulo, versões de patch e segurança, betas, hotfixes e a política geral de lançamento.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 48fc318078cbf1800522aeb43d8927b72727e7ed
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -16,9 +16,9 @@ O Adobe Commerce usa [controle de versão semântico](https://semver.org/) no n�
 - **VERSÃO PRINCIPAL**—2
 - **VERSÃO SECUNDÁRIA**—2.4
 - **Versão do PATCH**—2.4.8
-   - **Versão de correção de segurança**—2.4.8-p1
-      - Correção de erro de segurança
-      - Aprimoramento de segurança
+  - **Versão de correção de segurança**—2.4.8-p1
+    - Correção de erro de segurança
+    - Aprimoramento de segurança
 - **Versão de patch do ALPHA**—2.4.8-alpha1
 - **Versão de patch do BETA**—2.4.8-beta1
 - **Versão de Extensibilidade, Infraestrutura e Serviços**
@@ -81,4 +81,4 @@ Patches individuais contêm correções de qualidade de baixo impacto para um pr
 
 Criado por pessoas que não são da Adobe para corrigir um problema ou modificar o código do Adobe Commerce por vários motivos.
 
-<!-- Last updated from includes: 2026-04-20 10:12:04 -->
+<!-- Last updated from includes: 2026-06-16 17:36:23 -->
