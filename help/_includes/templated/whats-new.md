@@ -1,8 +1,8 @@
 ---
-source-git-commit: 06df92107c98f188a5dcb4b56aa6d61d3c594a7e
+source-git-commit: 462c3bcd5e4359d2be1a8f112c2dc50d3b8825bd
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 0%
+source-wordcount: '2666'
+ht-degree: 1%
 
 ---
 # Modelo de novidades
@@ -10,6 +10,80 @@ ht-degree: 0%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 23 de julho de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">Requisitos do sistema</a> com detalhes de suporte da versão MariaDB Cloud para Adobe Commerce 2.4.9 (12.3 recomendado, 11.8 suportado).</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eaf47339d87d296799367f699f9322c14e6ee780">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 22 de julho de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualização do tópico <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">Requisitos do sistema</a> com as versões mais recentes do Commerce on Cloud Service, incluindo uma atualização do RabbitMQ 4.3 e compatibilidade confirmada com o MariaDB 12.3.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6607852ba3221a1120f3c88007c106ed9704dcec">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 21 de julho de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.81 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401: visualização de Atualização agendada da página inicial com redirecionamentos de produtos configuráveis para a página de manutenção</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/41aac13f73ff0836f93b8ec30a709bd89fa34a94">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.81 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468: os usuários Administradores com escopo de site não podem salvar Blocos Dinâmicos no Page Builder</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f5fbe594284c05aaa9b2461e3628a3444229efb6">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 16 de julho de 2026
 
