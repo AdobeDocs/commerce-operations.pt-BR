@@ -1,7 +1,7 @@
 ---
-source-git-commit: 73d9b59320fac5ad73e893e87aea1edb4bb72a06
+source-git-commit: 33d2ca6bac7fb0108ff6f236d82f6d97c3ad95c8
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Agradecemos as contribuições da comunidade e de funcionários da Adobe de fora
 
 ## Código de conduta do Adobe Open Source
 
-Este projeto adotou o [Código de Conduta do Adobe Open Source](code-of-conduct.md) ou o [&#x200B; Código de Conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte o artigo [Contribuição](contributing.md).
+Este projeto adotou o [Código de Conduta do Adobe Open Source](code-of-conduct.md) ou o [ Código de Conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte o artigo [Contribuição](contributing.md).
 
 ## Sobre suas contribuições para o conteúdo do Adobe
 
@@ -60,10 +60,11 @@ Após clonar o repositório, execute:
 
 ### O que os ganchos fazem
 
-- Detectar automaticamente arquivos de imagem preparados (PNG, JPG, JPEG, GIF, SVG)
-- Executar `image_optim` para compactar e otimizar imagens
+- Detectar automaticamente arquivos de imagem preparados (`.png`, `.jpeg`, `.jpg`, `.gif`, `.svg`)
+- Executar `image_optim` para compactar e otimizar imagens rasterizadas (`.png`, `.jpeg`, `.jpg`, `.gif`)
 - Transferir imagens otimizadas automaticamente
-- Garantir que todas as imagens confirmadas estejam corretamente otimizadas
+- Garantir que todas as imagens rasterizadas confirmadas estejam corretamente otimizadas
+- Verificar SVGs preparados em relação a um limite de tamanho e anular a confirmação se um SVG superdimensionado for referenciado de `help/` (caso contrário, apenas avisar)
 
 ### Benefícios
 
