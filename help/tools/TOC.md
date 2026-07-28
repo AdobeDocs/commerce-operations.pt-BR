@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 5dec405e9f116622903e9b0e2fbbd255ca28a8e8
+source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
 workflow-type: tm+mt
-source-wordcount: '10469'
+source-wordcount: '10517'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,9 @@ ht-degree: 0%
       - [ACP2E-4709: As páginas do CMS não são salvas no Page Builder quando a hierarquia da página inclui aspas duplas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4805: as solicitações de finalização de compra ficam lentas para produtos configuráveis quando o primeiro filho que pode ser vendido aparece posteriormente na lista](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
+      - [ACP2E-4748: A expiração dos pontos de recompensa é executada lentamente nas lojas com um histórico de pontos de recompensa grande](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
+      - [ACP2E-4875: Usuários administradores desconectados ao abrir contas de clientes com catálogos de endereços grandes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
   - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referência de ferramentas de linha de comando {#cli-reference}
   - [Adobe Commerce (no local)](reference/commerce-on-premises.md)
