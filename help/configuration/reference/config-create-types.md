@@ -4,7 +4,7 @@ description: Saiba como criar e estender tipos de configuração no Adobe Commer
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
