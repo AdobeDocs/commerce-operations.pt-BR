@@ -3,26 +3,16 @@ title: Configuração de cache L2 para otimização de desempenho
 description: Saiba como configurar o cache L2 no Adobe Commerce para reduzir o tráfego de rede e melhorar o desempenho. Conheça as opções de implementação herdadas e do Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce no local."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce no local."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 37196b2d34951dd2df4d1e459cc9e29480f4f6e1
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 7fdc2a2c19eccf36940d9b4545b443eabbab4220
 workflow-type: tm+mt
-source-wordcount: 1221
+source-wordcount: 1378
 ht-degree: 0%
 
 ---
@@ -53,7 +43,7 @@ Há duas implementações de cache L2 disponíveis:
 
 As instruções de configuração de cache dependem do tipo de implantação:
 
-- **Para o Adobe Commerce na Nuvem**, configure o cache L2 definindo a variável de implantação [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#redis_backend) ou [`VALKEY_BACKEND`](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) em `.magento.env.yaml`. Consulte [Configurar cache L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para obter exemplos de configuração.
+- **Para o Adobe Commerce na Nuvem**, configure o cache L2 definindo a variável de implantação [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) ou [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) em `.magento.env.yaml`. Consulte [Configurar cache L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para obter exemplos de configuração.
 
 - **Para versões locais do Adobe Commerce com suporte para Redis**, use o exemplo a seguir para modificar ou substituir a seção de cache existente no arquivo `app/etc/env.php`.
 
@@ -333,7 +323,9 @@ Configure front-ends separados para suporte a cache obsoleto:
 
 >[!NOTE]
 >
->Essas melhorias se aplicam às implantações do Adobe Commerce 2.4.9 que usam o `symfony_l2` e estão disponíveis com o patch ACP2E-5132. Consulte [Patches da nuvem do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) para obter as notas de versão de patch mais recentes.
+>Essas melhorias se aplicam às implantações do Adobe Commerce 2.4.9 que usam o `symfony_l2` e estão disponíveis com o patch ACP2E-5132. Consulte [Patches da nuvem do Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) para obter as notas de versão de patch mais recentes.
+
+As atualizações mais recentes melhoram a escalabilidade do cache L2 do Symfony, reduzem a E/S desnecessária do sistema de arquivos e melhoram a consistência e a confiabilidade do cache.
 
 #### Armazenamento otimizado de tags de cache do Symfony L2
 
@@ -343,22 +335,30 @@ Otimização do comportamento do cache do Symfony L2 para implantações com sup
 
 Para implantações que usam o cache baseado em arquivos (sem Valkey), o índice de tag local continua sendo mantido para oferecer suporte à invalidação do cache. O índice de tag agora é gravado no `cache_dir` configurado, em vez do local `var/cache` previamente codificado, garantindo um uso consistente do diretório de cache e melhor suporte para configurações de cache personalizadas.
 
-#### Invalidação de cache aprimorada
+#### Correção de associações de tag obsoletas após a retag
 
-A invalidação de cache agora usa bloqueios de regeneração baseados em TTL com limpeza adequada de tags L1, eliminando entradas de cache obsoletas que poderiam persistir anteriormente após a invalidação de tags.
+A remarcação de uma entrada de cache pode deixá-la associada a tags às quais ela não pertencia mais. As associações de tag obsoletas agora são limpas na remarcação, portanto, as entradas de cache são invalidadas somente pelas tags atribuídas a elas no momento.
 
-#### Compactação ativada por padrão
+#### Corrigida a gravação remota redundante no salvamento inalterado
 
-A compactação Redis/Valkey (`compress_data`) agora está habilitada por padrão para o cache L2 do Symfony, reduzindo o consumo de memória e o tráfego de rede, e alinhando-se ao comportamento padrão da implementação do cache herdado.
+Salvar uma entrada de cache com conteúdo inalterado ainda acionava uma gravação no back-end remoto (Valkey). Os salvamentos agora são ignorados quando o conteúdo não é alterado, reduzindo as gravações remotas desnecessárias.
+
+#### Remoção baseada no tamanho L1 fixa (cleanup_percentage)
+
+O limite `cleanup_percentage` usado para remoção baseada no tamanho L1 não disparou a limpeza de forma consistente. A remoção do cache L1 agora respeita corretamente o `cleanup_percentage` configurado.
+
+#### Adição de bloqueio de regeneração para cache obsoleto
+
+Quando `use_stale_cache` está habilitado e a cópia remota de uma entrada está temporariamente indisponível, apenas um processo agora adquire um bloqueio de vida curta para regenerar essa entrada. Outras solicitações simultâneas para a mesma entrada continuam a servir o valor local existente em vez de regenerá-lo, reduzindo os carimbos de regeneração e a carga de back-end redundante.
 
 #### Impacto
 
-- Elimina gravações redundantes de índice de tags do sistema de arquivos para implantações de cache do Symfony L2 com suporte da Valkey.
-- Reduz o I/O de disco e melhora o desempenho de gravação em cache.
-- Impede o crescimento desnecessário do diretório `var/cache/symfony/tags/`.
-- Garante que as implantações de cache baseadas em arquivo usem consistentemente o `cache_dir` configurado, preservando o comportamento de invalidação do cache.
-- Elimina entradas de cache obsoletas por meio de bloqueios de regeneração baseados em TTL e limpeza adequada da tag L1.
-- Reduz o consumo de memória e o tráfego de rede com o `compress_data` habilitado por padrão.
+- Elimina gravações redundantes de índice de tags do sistema de arquivos para implantações de cache do Symfony L2 com suporte da Valkey, reduzindo a E/S de disco e evitando o crescimento desnecessário do diretório `var/cache/symfony/tags/`.
+- Garante que as implantações de cache baseadas em arquivo usem consistentemente o `cache_dir` configurado para o índice de tag local, preservando o comportamento de invalidação do cache.
+- Evita a invalidação incorreta do cache causada por associações de tag obsoletas deixadas para trás após a remarcação.
+- Reduz gravações remotas desnecessárias para salvamentos inalterados de cache, diminuindo a carga de rede e back-end.
+- Garante que a remoção do cache L1 acione de forma confiável no limite `cleanup_percentage` configurado.
+- Reduz os carimbos de regeneração para `use_stale_cache` entradas ao selecionar um único regenerador por chave, em vez de cada solicitação simultânea para recriá-lo.
 
 Para obter opções de configuração detalhadas, consulte:
 - [Configuração do cache Valkey com o Symfony Cache](valkey-pg-cache.md)
