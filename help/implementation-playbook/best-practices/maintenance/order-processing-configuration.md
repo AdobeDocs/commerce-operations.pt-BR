@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - **[!UICONTROL Asynchronous indexing]**—Habilite esta opção para evitar bloqueios de banco de dados e processamento lento que podem ocorrer quando um grande número de pedidos é feito simultaneamente.
 - **[!UICONTROL Asynchronous email notifications]**—Habilite esta opção para acelerar o desempenho do check-out enviando check-out e notificações de email de processamento de pedidos em intervalos designados, em vez de enviá-los imediatamente.
-- **[!UICONTROL Enable Archiving]**—Habilite esta opção para melhorar o desempenho de pedidos, faturas, remessas e avisos de crédito, e manter seu espaço de trabalho livre de informações desnecessárias, para que você possa se concentrar nos negócios atuais. Consulte [Habilitar arquivamento](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+- **[!UICONTROL Enable Archiving]**—Habilite esta opção para melhorar o desempenho de pedidos, faturas, remessas e avisos de crédito, e manter seu espaço de trabalho livre de informações desnecessárias, para que você possa se concentrar nos negócios atuais. Consulte [Habilitar arquivamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ## Produtos e versões afetados
 
@@ -38,7 +38,7 @@ As etapas para habilitar o processamento assíncrono de pedidos dependem do modo
 
 - Para sites locais do Adobe Commerce no modo Padrão ou de Produção, habilite a indexação assíncrona atualizando a configuração de Configurações de Grade no Administrador.
 
-  Consulte [Habilitar atualizações de grade agendadas e reindexação](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
+  Consulte [Habilitar atualizações de grade agendadas e reindexação](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html?lang=pt-BR#enable-scheduled-grid-updates-and-reindexing)
 
   >[!WARNING]
   >
