@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 37196b2d34951dd2df4d1e459cc9e29480f4f6e1
+source-git-commit: 7fdc2a2c19eccf36940d9b4545b443eabbab4220
 workflow-type: tm+mt
-source-wordcount: 1221
+source-wordcount: 1378
 ht-degree: 0%
 
 ---
@@ -335,6 +335,8 @@ Configure front-ends separados para suporte a cache obsoleto:
 >
 >Essas melhorias se aplicam às implantações do Adobe Commerce 2.4.9 que usam o `symfony_l2` e estão disponíveis com o patch ACP2E-5132. Consulte [Patches da nuvem do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) para obter as notas de versão de patch mais recentes.
 
+As atualizações mais recentes melhoram a escalabilidade do cache L2 do Symfony, reduzem a E/S desnecessária do sistema de arquivos e melhoram a consistência e a confiabilidade do cache.
+
 #### Armazenamento otimizado de tags de cache do Symfony L2
 
 Otimização do comportamento do cache do Symfony L2 para implantações com suporte da Valkey, eliminando gravações redundantes de índice de tags no sistema de arquivos. As tags de cache agora são armazenadas exclusivamente no Valkey, alinhando o comportamento do cache Symfony L2 com a implementação do cache herdado. Isso reduz a E/S de disco desnecessária, melhora o desempenho de gravação de cache e impede o crescimento do diretório `var/cache/symfony/tags/`.
@@ -343,22 +345,30 @@ Otimização do comportamento do cache do Symfony L2 para implantações com sup
 
 Para implantações que usam o cache baseado em arquivos (sem Valkey), o índice de tag local continua sendo mantido para oferecer suporte à invalidação do cache. O índice de tag agora é gravado no `cache_dir` configurado, em vez do local `var/cache` previamente codificado, garantindo um uso consistente do diretório de cache e melhor suporte para configurações de cache personalizadas.
 
-#### Invalidação de cache aprimorada
+#### Correção de associações de tag obsoletas após a retag
 
-A invalidação de cache agora usa bloqueios de regeneração baseados em TTL com limpeza adequada de tags L1, eliminando entradas de cache obsoletas que poderiam persistir anteriormente após a invalidação de tags.
+A remarcação de uma entrada de cache pode deixá-la associada a tags às quais ela não pertencia mais. As associações de tag obsoletas agora são limpas na remarcação, portanto, as entradas de cache são invalidadas somente pelas tags atribuídas a elas no momento.
 
-#### Compactação ativada por padrão
+#### Corrigida a gravação remota redundante no salvamento inalterado
 
-A compactação Redis/Valkey (`compress_data`) agora está habilitada por padrão para o cache L2 do Symfony, reduzindo o consumo de memória e o tráfego de rede, e alinhando-se ao comportamento padrão da implementação do cache herdado.
+Salvar uma entrada de cache com conteúdo inalterado ainda acionava uma gravação no back-end remoto (Valkey). Os salvamentos agora são ignorados quando o conteúdo não é alterado, reduzindo as gravações remotas desnecessárias.
+
+#### Remoção baseada no tamanho L1 fixa (cleanup_percentage)
+
+O limite `cleanup_percentage` usado para remoção baseada no tamanho L1 não disparou a limpeza de forma consistente. A remoção do cache L1 agora respeita corretamente o `cleanup_percentage` configurado.
+
+#### Adição de bloqueio de regeneração para cache obsoleto
+
+Quando `use_stale_cache` está habilitado e a cópia remota de uma entrada está temporariamente indisponível, apenas um processo agora adquire um bloqueio de vida curta para regenerar essa entrada. Outras solicitações simultâneas para a mesma entrada continuam a servir o valor local existente em vez de regenerá-lo, reduzindo os carimbos de regeneração e a carga de back-end redundante.
 
 #### Impacto
 
-- Elimina gravações redundantes de índice de tags do sistema de arquivos para implantações de cache do Symfony L2 com suporte da Valkey.
-- Reduz o I/O de disco e melhora o desempenho de gravação em cache.
-- Impede o crescimento desnecessário do diretório `var/cache/symfony/tags/`.
-- Garante que as implantações de cache baseadas em arquivo usem consistentemente o `cache_dir` configurado, preservando o comportamento de invalidação do cache.
-- Elimina entradas de cache obsoletas por meio de bloqueios de regeneração baseados em TTL e limpeza adequada da tag L1.
-- Reduz o consumo de memória e o tráfego de rede com o `compress_data` habilitado por padrão.
+- Elimina gravações redundantes de índice de tags do sistema de arquivos para implantações de cache do Symfony L2 com suporte da Valkey, reduzindo a E/S de disco e evitando o crescimento desnecessário do diretório `var/cache/symfony/tags/`.
+- Garante que as implantações de cache baseadas em arquivo usem consistentemente o `cache_dir` configurado para o índice de tag local, preservando o comportamento de invalidação do cache.
+- Evita a invalidação incorreta do cache causada por associações de tag obsoletas deixadas para trás após a remarcação.
+- Reduz gravações remotas desnecessárias para salvamentos inalterados de cache, diminuindo a carga de rede e back-end.
+- Garante que a remoção do cache L1 acione de forma confiável no limite `cleanup_percentage` configurado.
+- Reduz os carimbos de regeneração para `use_stale_cache` entradas ao selecionar um único regenerador por chave, em vez de cada solicitação simultânea para recriá-lo.
 
 Para obter opções de configuração detalhadas, consulte:
 - [Configuração do cache Valkey com o Symfony Cache](valkey-pg-cache.md)

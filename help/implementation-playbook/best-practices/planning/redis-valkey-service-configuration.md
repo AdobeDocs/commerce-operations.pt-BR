@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="Commerce na nuvem" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce na nuvem."
 nudge: true
-source-git-commit: 5f0b6f7a04ee96b2aa650ee242e31d383bd7512b
+source-git-commit: 0c69ccdfcb3592a717b8b3a5a59762c8daeceec7
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2524'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ Definir a variável de implantação `VALKEY_BACKEND` como `symfony_l2` cria aut
 
 >[!NOTE]
 >
->O Adobe Commerce 2.4.9 inclui melhorias no cache L2 do Symfony — incluindo armazenamento, invalidação e compactação de tags de cache — com patch ACP2E-5132, reduzindo a E/S de disco, eliminando entradas de cache obsoletas e reduzindo a sobrecarga da memória e da rede. Consulte [Desempenho e confiabilidade aprimorados do cache Symfony L2](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability.md) no _Guia de Configuração do Adobe Commerce_. Patch O patch ACP2E-5132 está incluído em Patches de nuvem e aplicado automaticamente através de ece-tools.
+>O Patch ACP2E-5132 para Adobe Commerce 2.4.9 melhora o desempenho e a confiabilidade do cache L2 do Symfony — armazenamento otimizado de tags, um bloqueio de regeneração de cache obsoleto e correções para associações de tags obsoletas após a remarcação, gravações remotas redundantes em salvamentos inalterados e remoção baseada no tamanho L1 (`cleanup_percentage`). Isso reduz a carga de I/O de disco e de back-end, além de melhorar a consistência do cache. Consulte [Desempenho e confiabilidade aprimorados do cache Symfony L2](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability) no _Guia de Configuração do Adobe Commerce_.
+>
+>O patch está incluído no [pacote de Patches da Nuvem para o Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) (uma dependência de `ece-tools`) e é aplicado automaticamente durante a implantação quando você atualiza para a versão mais recente do `ece-tools`. Atualize para a versão mais recente do `ece-tools` para receber o patch.
 
 #### Personalizar a configuração do cache Symfony L2
 
