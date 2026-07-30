@@ -46,7 +46,7 @@ Os endereços de email puderam ser inseridos nos campos **[!UICONTROL First Name
 
 <u>Resultados esperados</u>:
 
-As mensagens de validação devem aparecer indicando que os campos **[!UICONTROL First Name]** e **[!UICONTROL Last Name]** não são válidos, como *O Nome não é válido! e o sobrenome não é válido!* e o pedido não devem ser feitos.
+As mensagens de validação devem aparecer indicando que os campos **[!UICONTROL First Name]** e **[!UICONTROL Last Name]** não são válidos, como *O Nome não é válido! e Sobrenome inválido!* e o pedido não deve ser feito.
 
 <u>Resultados reais</u>:
 

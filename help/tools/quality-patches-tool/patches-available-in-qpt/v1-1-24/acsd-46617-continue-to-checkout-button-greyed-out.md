@@ -7,7 +7,7 @@ exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -45,10 +45,10 @@ O botão **[!UICONTROL Continue to Checkout]** ficará esmaecido mesmo se o subt
    * [!UICONTROL Coupon Code]: *[!UICONTROL TEST (optional)]*
    * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
    * [!UICONTROL Actions]:
-      * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
-      * &#x200B;
-        [!UICONTROL Discount Amount]: *92*
-      * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
+     * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
+     * &#x200B;
+       [!UICONTROL Discount Amount]: *92*
+     * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. Crie um produto com o preço de US$ 25.
 1. Adicione o produto ao carrinho.
 1. Vá para o carrinho de compras, selecione o método $5 **[!UICONTROL Flat Rate shipping]** e aplique o código do cupom.

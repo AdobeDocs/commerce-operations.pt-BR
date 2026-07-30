@@ -7,7 +7,7 @@ exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,13 @@ Depois de criar um memorando de crédito parcial com pontos de premiação do cl
 2. Vá para **[!UICONTROL Stores]** > **[!UICONTROL Other Setting]** > **[!UICONTROL Reward Exchange Rates]** > **[!UICONTROL Add New Rate]**.
 3. Adicione duas taxas:
    * *[!UICONTROL First]*:
-      * *[!UICONTROL Direction]* = *Pontos para Moeda*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
+     * *[!UICONTROL Direction]* = *Pontos para Moeda*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
    * *[!UICONTROL Second]*:
-      * *[!UICONTROL Direction]* = *Moeda para Pontos*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
+     * *[!UICONTROL Direction]* = *Moeda para Pontos*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
 4. Crie um produto simples com o preço de *$100* e com *Qtd* : *100*.
 5. Crie um cliente na loja.
 6. Acesse o back-end novamente: **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** > **[!UICONTROL Edit]** > **[!UICONTROL Reward Points]** > **[!UICONTROL Update Points]** > Adicionar *100* e salve o cliente.

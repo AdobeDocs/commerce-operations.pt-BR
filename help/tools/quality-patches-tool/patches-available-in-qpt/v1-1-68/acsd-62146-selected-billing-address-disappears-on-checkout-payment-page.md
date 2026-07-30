@@ -4,13 +4,13 @@ description: Aplique o patch ACSD-62146 para corrigir o problema do Adobe Commer
 feature: Customers, Checkout
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3de3de80383372d0e3bec5485fd65b9d70fe8860
+exl-id: 2a2f1afe-8a48-4beb-b78d-a894b685717d
+source-git-commit: 4e6eaf9519fd74e407c25992d367babfddf404a7
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62146: o endereço de faturamento selecionado desaparece na página de pagamento do check-out
 

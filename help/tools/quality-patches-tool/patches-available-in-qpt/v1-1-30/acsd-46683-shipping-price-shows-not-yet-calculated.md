@@ -7,7 +7,7 @@ exl-id: ebd79187-2835-403b-945d-80ac34d6fb9c
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -49,20 +49,20 @@ Os módulos Adobe Commerce Inventory management (MSI) são instalados.
    * Prioridade = 1
    * Condições: Subtotal é igual ou maior que *$75*
    * Ações:
-      * Aplicar à Quantia de Entrega = Sim
-      * Descartar regras subsequentes = Não
-      * Frete Livre = Para entregas com itens correspondentes
+     * Aplicar à Quantia de Entrega = Sim
+     * Descartar regras subsequentes = Não
+     * Frete Livre = Para entregas com itens correspondentes
 1. Crie outra regra de preço de carrinho:
    * Nome = *35off*
    * Prioridade = 0
    * Cupom = Cupom Específico
    * Código do cupom = 35off
    * Ações:
-      * Aplicar = Percentual de desconto de preço do produto
-      * Quantia de Desconto = 35
-      * Aplicar à Quantia de Entrega = Não
-      * Descartar regras subsequentes = Sim
-      * Frete Gratuito = Não
+     * Aplicar = Percentual de desconto de preço do produto
+     * Quantia de Desconto = 35
+     * Aplicar à Quantia de Entrega = Não
+     * Descartar regras subsequentes = Sim
+     * Frete Gratuito = Não
 1. Abra a loja e adicione três produtos ao carrinho para que o subtotal exceda US$ 75.
 1. Prossiga para o check-out como convidado.
 1. Na etapa de envio, selecione **$0 - envio gratuito** e prossiga para a etapa de pagamento.

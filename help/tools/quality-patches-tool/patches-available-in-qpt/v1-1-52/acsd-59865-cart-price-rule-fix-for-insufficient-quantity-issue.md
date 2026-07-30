@@ -7,7 +7,7 @@ exl-id: 5838a740-018d-44c2-8135-54426ea08627
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ O [!UICONTROL Cart Price Rule] não cancela as regras aplicadas anteriormente de
    * Selecionar todos os *Sites* e *Grupos de clientes*
    * Conjunto **[!UICONTROL Priority]** = *0*
    * Vá para a seção **[!UICONTROL Actions]**:
-      * Definir **[!UICONTROL Apply]** = *Percentual de desconto no preço do produto*
-      * Conjunto **[!UICONTROL Discount amount]** = *10*
-      * Conjunto **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
-      * Conjunto **[!UICONTROL Discount Qty Step (Buy X)]** = *0*
-      * Definir **[!UICONTROL Discard subsequent rules]** como *Não*
+     * Definir **[!UICONTROL Apply]** = *Percentual de desconto no preço do produto*
+     * Conjunto **[!UICONTROL Discount amount]** = *10*
+     * Conjunto **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+     * Conjunto **[!UICONTROL Discount Qty Step (Buy X)]** = *0*
+     * Definir **[!UICONTROL Discard subsequent rules]** como *Não*
 1. Limpe o cache.
 1. Vá para a Loja, adicione um item ao carrinho e prossiga para *check-out/carrinho*.
 1. Verifique se o desconto de *10%* foi aplicado ao carrinho.
@@ -55,10 +55,10 @@ O [!UICONTROL Cart Price Rule] não cancela as regras aplicadas anteriormente de
    * Selecionar todos os **[!UICONTROL Websites]** e **[!UICONTROL Customer Groups]**
    * Conjunto **[!UICONTROL Priority]** = *2*
    * Navegue até a seção **[!UICONTROL Actions]**:
-      * Definir **[!UICONTROL Apply]** = *Percentual de desconto no preço do produto*
-      * Conjunto **[!UICONTROL Discount amount]** = *20*
-      * Conjunto **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
-      * Conjunto **[!UICONTROL Discount Qty Step (Buy X)]** = *3*
+     * Definir **[!UICONTROL Apply]** = *Percentual de desconto no preço do produto*
+     * Conjunto **[!UICONTROL Discount amount]** = *20*
+     * Conjunto **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+     * Conjunto **[!UICONTROL Discount Qty Step (Buy X)]** = *3*
 1. Limpe o cache.
 1. Volte para a Loja novamente.
 1. Atualize o carrinho para atualizar as regras. Verifique se o desconto de *10%* não é mais aplicado.

@@ -6,7 +6,7 @@ feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1444'
 ht-degree: 0%
 
 ---
@@ -197,12 +197,12 @@ A configuração de muitas SKUs de produtos pode afetar o desempenho, retardando
 Use as seguintes estratégias para reduzir o número de produtos (SKUs):
 
 - Minimizar multiplicadores—
-   - A consolidação de sites reduz o multiplicador.
-   - Use recursos alternativos do produto para preços personalizados para substituir o catálogo compartilhado e os multiplicadores de grupos de clientes.
-   - Os grupos de clientes e o catálogo compartilhado funcionam como multiplicadores do número de SKUs efetivas em uma loja.
+  - A consolidação de sites reduz o multiplicador.
+  - Use recursos alternativos do produto para preços personalizados para substituir o catálogo compartilhado e os multiplicadores de grupos de clientes.
+  - Os grupos de clientes e o catálogo compartilhado funcionam como multiplicadores do número de SKUs efetivas em uma loja.
 - Reestruturar o catálogo —
-   - Reduza o número de produtos atribuídos a categorias.
-   - Diminua o número de SKUs diminuindo o número de sites, grupos de clientes, catálogos compartilhados, número de produtos ou número de opções de produtos configuráveis
+  - Reduza o número de produtos atribuídos a categorias.
+  - Diminua o número de SKUs diminuindo o número de sites, grupos de clientes, catálogos compartilhados, número de produtos ou número de opções de produtos configuráveis
 - Forneça mais variações de produtos usando opções personalizadas em vez de criar produtos separados.
 - Levando em consideração que um SKU efetivo pode incluir uma série de permutas potenciais de preços, porque os preços podem ser especificados de forma diferente para cada loja ou grupo de clientes.
 - Desative ou remova componentes não utilizados do sistema, como módulos. Consulte [Desinstalar módulos](../../../installation/tutorials/uninstall-modules.md).
@@ -241,11 +241,11 @@ Exceder o número recomendado de variações de produtos pode afetar o desempenh
 Siga estas práticas recomendadas para configurar vendas e promoções para itens em um carrinho de compras:
 
 - **Regras de vendas (regras de preço do carrinho)**
-   - Gerenciar e remover regras não usadas.
-   - Adicione condições de regra estritas (como atributo ou filtro de categoria) para a correspondência mais eficiente.
+  - Gerenciar e remover regras não usadas.
+  - Adicione condições de regra estritas (como atributo ou filtro de categoria) para a correspondência mais eficiente.
 - **Cupons**
-   - Remova os cupons não utilizados e expirados.
-   - Gere apenas o número de cupons necessários para atender aos requisitos da campanha.
+  - Remova os cupons não utilizados e expirados.
+  - Gere apenas o número de cupons necessários para atender aos requisitos da campanha.
 
 ### Produtos e versões afetados
 
