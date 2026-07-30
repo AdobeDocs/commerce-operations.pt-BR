@@ -7,7 +7,7 @@ exl-id: 79fb3161-f56e-45f3-9933-cf95703f1554
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O patch ACSD-62481 corrige o problema em que o recurso de carrinho persistente f
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -40,12 +40,12 @@ O recurso de carrinho persistente falha ao usar o pop-up de logon durante o chec
 
    * Navegue até **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Checkout]** > **[!UICONTROL Checkout Options]** e defina *[!UICONTROL Allow Guest Checkout]* como *Não*.
 
-      * Clique em **[!UICONTROL Save Config]**.
+     * Clique em **[!UICONTROL Save Config]**.
 
    * Navegue até **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Persistent Shopping Cart]** > **[!UICONTROL General Options]** e defina *[!UICONTROL Enable Persistence]* como *Sim*.
    * Deixe todas as outras configurações como padrão, mas altere *[!UICONTROL Clear Persistence on Sign Out]* para *Não*.
 
-      * Clique em **[!UICONTROL Save Config]**.
+     * Clique em **[!UICONTROL Save Config]**.
 
 1. Vá para **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > **[!UICONTROL Add product]** para adicionar um produto simples ao catálogo.
 
