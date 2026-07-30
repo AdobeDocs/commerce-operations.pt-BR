@@ -5,8 +5,8 @@ feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 0%
+source-wordcount: '900'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Esta seção lista nomes de variáveis e caminhos de configuração disponíveis para opções no Administrador em **Lojas** > Configurações > **Configuração** > **Catálogo**.
 
-O comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem. Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir definições de configuração](override-config-settings.md#environment-variables). Este tópico _não_ lista [valores confidenciais e específicos do sistema](config-reference-sens.md).
+O comando [`magento app:config:dump` ](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem. Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir definições de configuração](override-config-settings.md#environment-variables). Este tópico _não_ lista [valores confidenciais e específicos do sistema](config-reference-sens.md).
 
 ## Caminhos do catálogo
 
@@ -151,7 +151,7 @@ Estes valores de configuração estão disponíveis no Administrador em **Lojas*
 
 ## Caminhos do Visual Merchandiser
 
-[!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
+[!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
 
 Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Catálogo** > **Merchandiser Visual**.
 

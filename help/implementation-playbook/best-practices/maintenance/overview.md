@@ -5,8 +5,8 @@ exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
 source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 3%
+source-wordcount: '428'
+ht-degree: 2%
 
 ---
 
@@ -73,7 +73,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 | [Desempenho de front-end de auditoria](frontend-performance.md) | Identificar e solucionar problemas que afetam negativamente o desempenho do site usando ferramentas de desempenho da Web. |
 | [Pronto, Definir, Manter](https://business.adobe.com/blog/basics/ready-set-maintain) | Dicas para manter seus sites do Adobe Commerce a fim de maximizar o valor comercial e o tempo de atividade. |
 | [Usar o [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Veja insights importantes sobre seu site do Adobe Commerce em um só lugar. |
-| [Monitorar desempenho, espaço em disco e logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=pt-BR) | Use o New Relic para monitorar os principais insights de desempenho sobre o seu Adobe Commerce no site de infraestrutura em nuvem. |
+| [Monitorar desempenho, espaço em disco e logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | Use o New Relic para monitorar os principais insights de desempenho sobre o seu Adobe Commerce no site de infraestrutura em nuvem. |
 | [Responder a incidentes de segurança](respond-to-security-incident.md) | Use o New Relic para monitorar os principais insights de desempenho sobre o seu Adobe Commerce no site de infraestrutura em nuvem. |
 
 ### Atualizações
@@ -82,4 +82,4 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [Patches em escala](patching-at-scale.md) | Saiba como o patch centralizado para o Adobe Commerce pode ajudar você a gerenciar projetos empresariais. |
 | [Atualizar serviços e componentes para a versão mais recente&#x200B;](update-services.md) | mantenha sua pilha de tecnologia Adobe Commerce on cloud infrastructure atualizada. |
-| [Atualizar lista de verificação para Adobe Commerce&#x200B;](upgrade-checklist.md) | Crie e use uma lista de verificação de atualização para planejar sua estratégia de atualização do Adobe Commerce. |
+| [Atualizar lista de verificação para &#x200B;](upgrade-checklist.md) | Crie e use uma lista de verificação de atualização para planejar sua estratégia de atualização do Adobe Commerce. |

@@ -7,7 +7,7 @@ exl-id: 7f88a28b-f166-4c5b-8d69-239c57cc4001
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ O QPT v1.1.24 inclui os seguintes patches:
 1. **ACSD-47004**: corrige o problema em que o IVA não é aplicado a um endereço de cobrança sem uma ID de IVA.
 1. **ACSD-47079**: corrige o problema em que o status do estoque de produtos compostos (agrupados, agrupados e configuráveis) não é atualizado quando o status do estoque de subprodutos é alterado via REST API POST /rest/V1/inventory/source-items.
 1. **ACSD-47137**: melhora a velocidade de carregamento da galeria de imagens quando a pasta pub/media é muito grande.
-1. **ACSD-47336**: correções *Algo deu errado.Erro* ao dispensar notificações no Administrador do Commerce.
+1. **ACSD-47336**: correções *Algo deu errado.* erro ao dispensar notificações no Commerce Admin.
 1. **ACSD-47559**: corrige o problema em que a área Visualizar Modelo de Email não está totalmente visível.
 1. **ACSD-47803**: corrige o problema em que amostras de produtos configuráveis e sem estoque são exibidas como disponíveis.
 1. **ACSD-47920**: corrige o problema em que os pedidos podem ser feitos por meio da API Rest como um usuário convidado mesmo quando a *Permitir check-out de convidado* está desativada.
