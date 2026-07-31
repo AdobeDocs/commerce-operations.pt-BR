@@ -2,7 +2,8 @@
 title: Notas de versão do patch de segurança do Adobe Commerce 2.4.6
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
+last-update: 2026-06-18T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '2398'
 ht-degree: 0%
@@ -236,8 +237,8 @@ Esta versão apresenta dois aprimoramentos significativos de segurança:
 
 * **Alterações no comportamento de chaves de cache não geradas**:
 
-   * As chaves de cache não geradas para blocos agora incluem prefixos que diferem dos prefixos para chaves geradas automaticamente. (As chaves de cache não geradas são chaves definidas por meio da sintaxe de diretiva de modelo ou pelos métodos `setCacheKey` ou `setData`.)
-   * As chaves de cache não geradas para blocos agora devem conter apenas letras, dígitos, hifens (-) e caracteres de sublinhado (_). <!-- AC-9831 -->
+  * As chaves de cache não geradas para blocos agora incluem prefixos que diferem dos prefixos para chaves geradas automaticamente. (As chaves de cache não geradas são chaves definidas por meio da sintaxe de diretiva de modelo ou pelos métodos `setCacheKey` ou `setData`.)
+  * As chaves de cache não geradas para blocos agora devem conter apenas letras, dígitos, hifens (-) e caracteres de sublinhado (_). <!-- AC-9831 -->
 
 * **Limitações sobre o número de códigos de cupom gerados automaticamente**. O Commerce agora limita o número de códigos de cupom gerados automaticamente. O máximo padrão é 250.000. Os comerciantes podem usar a nova opção de configuração **[!UICONTROL Code Quantity Limit]** (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) para controlar esse novo limite. <!-- AC-8753 -->
 

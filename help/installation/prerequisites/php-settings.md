@@ -3,7 +3,8 @@ title: Configurações do PHP
 description: Siga estas etapas para instalar as extensões necessárias do PHP e definir as configurações necessárias do PHP para instalações locais do Adobe Commerce.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -77,9 +78,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   A Adobe recomenda o seguinte:
 
-   - Compilando código ou implantando ativos estáticos, `1G`
-   - Depurando, `2G`
-   - Testando, `~3-4G`
+  - Compilando código ou implantando ativos estáticos, `1G`
+  - Depurando, `2G`
+  - Testando, `~3-4G`
 
 - Aumente os valores do PHP `realpath_cache_size` e `realpath_cache_ttl` para as configurações recomendadas:
 

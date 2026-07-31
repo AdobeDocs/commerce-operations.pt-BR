@@ -3,7 +3,8 @@ title: Configurar o Apache para seu mecanismo de pesquisa
 description: Siga estas etapas para configurar um mecanismo de pesquisa com o servidor Web Apache para instalações locais do Adobe Commerce.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
@@ -130,11 +131,11 @@ Onde
 
 * `<username>` pode ser:
 
-   * Configuração do cron: o usuário do servidor Web ou outro usuário.
+  * Configuração do cron: o usuário do servidor Web ou outro usuário.
 
   Neste exemplo, usamos o usuário do servidor Web, mas a escolha do usuário depende de você.
 
-   * Configurando o Elasticsearch: o usuário é nomeado como `magento_elasticsearch` neste exemplo
+  * Configurando o Elasticsearch: o usuário é nomeado como `magento_elasticsearch` neste exemplo
 
 * `<password file name>` deve ser um arquivo oculto (começa com `.`) e deve refletir o nome do usuário. Consulte os exemplos posteriormente nesta seção para obter detalhes.
 

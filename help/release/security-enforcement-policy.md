@@ -23,9 +23,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Adobe Commerce somente na nuvem" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce na nuvem versão 2.4.4 - 2.4.9"
 nudge: true
-source-git-commit: 7512d5cd3fa1917c87b53e25ca69a3dc3c813727
+source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
 workflow-type: tm+mt
-source-wordcount: 1985
+source-wordcount: 1981
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Continuar a administrar sua loja de comércio eletrônico com software não supo
 
 ### Ação 1: atualizar dependências de software de terceiros
 
-Dependendo do software, todas as dependências de software não suportadas devem ser atualizadas pelos cronogramas compartilhados na tabela abaixo. Você pode exibir seus ambientes no [Cloud Console](https://console.adobecommerce.com/) e verificar as versões de dependência em execução usando estas [instruções](#check-software-dependency-versions). As atualizações de dependência de software se aplicam a todo o Adobe Commerce nas versões 2.4.4 a 2.4.9.
+Dependendo do software, todas as dependências de software não suportadas devem ser atualizadas pelos cronogramas compartilhados na tabela abaixo. Você pode exibir seus ambientes no [Cloud Console](https://console.adobecommerce.com/) e verificar as versões de dependência em execução usando estas [instruções](#how-to-check-the-versions-you-are-running). As atualizações de dependência de software se aplicam a todo o Adobe Commerce nas versões 2.4.4 a 2.4.9.
 
 | Dependência | Versão | Deve atualizar para | Data de aplicação |
 | --- | --- | --- | --- |
@@ -136,7 +136,7 @@ Dependendo do software, todas as dependências de software não suportadas devem
 
 O Adobe o ajudará a atualizar essas dependências de software diretamente.
 
-* **Introdução:** abra um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) listando os ambientes que você precisa atualizar e as dependências envolvidas. Abra o tíquete pelo menos 30 dias antes da data de imposição para que nossa equipe possa agendar o trabalho.
+* **Introdução:** abra um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) listando os ambientes que você precisa atualizar e as dependências envolvidas. Abra o tíquete pelo menos 30 dias antes da data de imposição para que nossa equipe possa agendar o trabalho.
 
 * **Tempo de inatividade:** O Adobe confirmará a janela esperada com você ao agendar.
 
@@ -187,7 +187,7 @@ O Adobe oferece ferramentas e suporte para tornar sua transição o mais suave p
 
 * **Relatório de Compatibilidade de Atualização:** O Adobe fornece um relatório detalhado que identifica exatamente o que a atualização para o Adobe Commerce versão 2.4.9 exige, incluindo tempo e escopo de custo. [Gerar seu relatório de compatibilidade de atualização](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **Atualização de Dependência de Software:** como não é possível atualizar diretamente as dependências de software, [abra um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"} para que o Adobe resolva a atualização para você. Para obter detalhes, consulte [Configurar Serviços](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
+* **Atualização de Dependência de Software:** como não é possível atualizar diretamente as dependências de software, [abra um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} para que o Adobe resolva a atualização para você. Para obter detalhes, consulte [Configurar Serviços](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
 
 **Se você optar por migrar para o Adobe Commerce as a Cloud Service**
 

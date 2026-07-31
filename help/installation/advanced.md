@@ -2,7 +2,8 @@
 title: Instalação avançada local
 description: Saiba mais sobre cenários de instalação avançada para implantações locais do Adobe Commerce. Descubra configurações complexas e opções de configuração personalizadas.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '2527'
 ht-degree: 0%
@@ -246,9 +247,9 @@ O exemplo a seguir instala o Adobe Commerce com as seguintes opções:
 
 * O administrador tem as seguintes propriedades:
 
-   * O nome e o sobrenome são `Magento User`
-   * Nome de usuário é `admin` e senha é `admin123`
-   * O endereço de email é `user@example.com`
+  * O nome e o sobrenome são `Magento User`
+  * Nome de usuário é `admin` e senha é `admin123`
+  * O endereço de email é `user@example.com`
 
 * O idioma padrão é `en_US` (inglês americano)
 * A moeda padrão é dólares americanos
@@ -314,9 +315,9 @@ O exemplo a seguir instala o Adobe Commerce com as seguintes opções:
 
 * O administrador tem as seguintes propriedades:
 
-   * O nome e o sobrenome são `Magento User`
-   * Nome de usuário é `admin` e senha é `admin123`
-   * O endereço de email é `user@example.com`
+  * O nome e o sobrenome são `Magento User`
+  * Nome de usuário é `admin` e senha é `admin123`
+  * O endereço de email é `user@example.com`
 
 * O idioma padrão é `en_US` (inglês americano)
 * A moeda padrão é dólares americanos
