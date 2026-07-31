@@ -2,9 +2,10 @@
 title: Instalar o Adobe Commerce
 description: Siga estas etapas para instalar o Adobe Commerce na sua infraestrutura.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -212,9 +213,9 @@ O exemplo a seguir instala o aplicativo com as seguintes opções:
 
 * O administrador tem as seguintes propriedades:
 
-   * O nome e o sobrenome são `Commerce User`
-   * Nome de usuário é `admin` e senha é `admin123`
-   * O endereço de email é `user@example.com`
+  * O nome e o sobrenome são `Commerce User`
+  * Nome de usuário é `admin` e senha é `admin123`
+  * O endereço de email é `user@example.com`
 
 * O idioma padrão é `en_US` (inglês americano)
 * A moeda padrão é dólares americanos
@@ -280,9 +281,9 @@ O exemplo a seguir instala o aplicativo com as seguintes opções:
 
 * O administrador tem as seguintes propriedades:
 
-   * O nome e o sobrenome são `Commerce User`
-   * Nome de usuário é `admin` e senha é `admin123`
-   * O endereço de email é `user@example.com`
+  * O nome e o sobrenome são `Commerce User`
+  * Nome de usuário é `admin` e senha é `admin123`
+  * O endereço de email é `user@example.com`
 
 * O idioma padrão é `en_US` (inglês americano)
 * A moeda padrão é dólares americanos

@@ -4,7 +4,8 @@ description: Saiba mais sobre as práticas recomendadas de gerenciamento de cód
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+last-update: 2024-11-25T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
@@ -21,7 +22,7 @@ Este tópico foi projetado para ajudá-lo a decidir se usará o Git ou o Compose
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
