@@ -2,9 +2,9 @@
 title: Política de Imposição de Atualização de Versão da Nuvem
 description: Saiba mais sobre a imposição de atualização de versão do Adobe Commerce na nuvem — por que a Adobe impõe atualizações, datas de imposição, desativação e ações necessárias. Consulte a política de ciclo de vida para obter disposições transitórias e caminhos de migração.
 nudge: false
-source-git-commit: 797f067de451c8b1b4d735e82de66a3fd9b56563
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Política de imposição de atualização de versão para Adobe Commerce na nuvem
 
-Quando o suporte regular e o suporte estendido terminam para uma versão do Adobe Commerce, a Adobe se reserva o direito de desativar o Adobe Commerce em ambientes na nuvem que ainda estejam executando essa versão não compatível. A aplicação de atualização de versão se aplica somente a ambientes do Adobe Commerce na nuvem; os clientes locais gerenciam sua própria infraestrutura.
+Quando o suporte regular e o suporte estendido terminam para uma versão do Adobe Commerce, a Adobe se reserva o direito de desativar o Adobe Commerce em ambientes na nuvem que ainda estejam executando essa versão não compatível. A imposição de atualização de versão se aplica somente a ambientes do Adobe Commerce na nuvem. Os clientes locais gerenciam sua própria infraestrutura. A Adobe fornece recursos de aviso antecipado e suporte com bastante antecedência em relação a essas datas para ajudar você a planejar sua atualização ou migração.
 
 Você deve mudar para uma versão com suporte do Adobe Commerce ou migrar para o [!DNL Adobe Commerce as a Cloud Service] antes da data publicada de [fim do suporte estendido](lifecycle-policy.md#end-of-support-dates) para sua linha de lançamento.
 
@@ -20,13 +20,13 @@ As seções a seguir explicam por que o Adobe impõe atualizações, como as dat
 
 >[!NOTE]
 >
->Este tópico aborda somente a imposição de atualização da nuvem. Para obter definições de camada de suporte, a tabela [fim das datas de suporte](lifecycle-policy.md#end-of-support-dates), [disposições transitórias de segurança](lifecycle-policy.md#security-only-transitional-period), [dependências de software de terceiros](lifecycle-policy.md#platform-dependencies), [fim da vida útil do PHP e conformidade com o PCI](lifecycle-policy.md#php-end-of-life-and-pci-compliance) e [opções de atualização e migração](lifecycle-policy.md#upgrade-and-migration-options), consulte a [política de ciclo de vida](lifecycle-policy.md). Além de atualizar para uma versão compatível do Adobe Commerce, a Adobe também exige que você mantenha as dependências de software de terceiros em versões ativamente compatíveis.
+>Este tópico aborda somente a imposição de atualização da nuvem. Consulte a [política de ciclo de vida](lifecycle-policy.md) para obter definições de camada de suporte, [datas de fim de suporte](lifecycle-policy.md#end-of-support-dates), [disposições transitórias somente de segurança](lifecycle-policy.md#security-only-transitional-period), [dependências de software de terceiros](lifecycle-policy.md#platform-dependencies), [fim da vida útil do PHP e conformidade com o PCI](lifecycle-policy.md#php-end-of-life-and-pci-compliance) e [opções de atualização e migração](lifecycle-policy.md#upgrade-and-migration-options). Além de atualizar para um [!DNL Adobe Commerce version] com suporte, a Adobe também exige que você mantenha as dependências de software de terceiros em versões com suporte ativo. Para as ações e prazos finais específicos necessários que se aplicam às versões de [!DNL Adobe Commerce on Cloud] 2.4.4 a 2.4.9, consulte o [Aviso de Segurança e Conformidade](security-enforcement-policy.md).
 
 ## Por que a Adobe está introduzindo esta política
 
 A Adobe é responsável pela segurança e conformidade da infraestrutura de plataforma hospedada em que os clientes do Adobe Commerce na nuvem são executados. Isso inclui manter todas as dependências de software subjacentes atualizadas, aplicar patches de segurança e atender aos padrões de conformidade, como o PCI, dos quais os clientes dependem.
 
-Quando o suporte de segurança para dependências de software subjacentes é oficialmente encerrado pelos fornecedores, a Adobe não pode mais fornecer o nível necessário de cobertura de segurança e suporte à plataforma. Continuar a administrar lojas em infraestruturas não compatíveis coloca os clientes, seus compradores e a Adobe em riscos inaceitáveis. Portanto, o Adobe está introduzindo uma política formal de aplicação de atualização de versão que define quando os ambientes do Adobe Commerce na nuvem que executam versões do Commerce não compatíveis serão descontinuados.
+Quando os fornecedores terminam oficialmente o suporte de segurança para dependências de software subjacentes, a Adobe não pode mais fornecer o nível necessário de cobertura de segurança e suporte à plataforma. Continuar a administrar lojas em infraestruturas não compatíveis coloca os clientes, seus compradores e a Adobe em riscos inaceitáveis. Portanto, a Adobe está introduzindo uma política formal de aplicação de atualização de versão que define quando os ambientes do Adobe Commerce na nuvem que executam versões não compatíveis do Commerce são descontinuados, juntamente com o suporte que a Adobe oferece para ajudá-lo a planejar sua atualização ou migração. Consulte o [Aviso de Segurança e Conformidade] para obter mais informações.
 
 ## Como as datas de imposição de atualização são calculadas
 

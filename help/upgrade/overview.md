@@ -1,11 +1,11 @@
 ---
 title: Visão geral do processo de atualização
-description: Saiba como atualizar seu projeto do Adobe Commerce mantém sua loja segura e eficiente. Descubra as práticas recomendadas para planejar e executar atualizações bem-sucedidas.
+description: Saiba como uma atualização de projeto do Adobe Commerce mantém sua vitrine segura e eficiente. Descubra as melhores práticas para planejar e executar atualizações bem-sucedidas.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '960'
+ht-degree: 2%
 
 ---
 
@@ -43,6 +43,8 @@ A segurança é um dos principais motivos para fazer upgrade, pois 83% dos incid
 
 - **Versões de patch** — Inclua segurança, desempenho, qualidade e correções de erros de alta prioridade.
 - **Versões de patch de segurança** — Inclua correções e aprimoramentos para manter seu site seguro e sejam mais fáceis de implementar.
+
+Se você estiver usando o Adobe Commerce na versão 2.4.4 a 2.4.9, consulte o [Aviso de Segurança e Conformidade](../release/security-enforcement-policy.md) para obter as ações e os prazos necessários para manter seu ambiente seguro e em conformidade.
 
 ### Desempenho
 

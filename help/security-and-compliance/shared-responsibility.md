@@ -2,9 +2,9 @@
 title: Responsabilidade Compartilhada Segurança e Modelo Operacional
 description: Saiba mais sobre as responsabilidades de segurança de cada parte envolvida em seu projeto Adobe Commerce na infraestrutura em nuvem.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 7dcd7f79417df28402a29e1e52d99eb288e8c6b9
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3270'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Os comerciantes são responsáveis pelo seguinte:
 * Garantia de desenvolvimento seguro de aplicativos
 * Obter a certificação PCI, se solicitado pelo processador de pagamento do comerciante
 * Reagir e responder a incidentes de segurança
-* Manutenção de todas as dependências de terceiros, serviços de plataforma e extensões dos Serviços da Adobe Commerce em versões que têm suporte ativo. A Adobe não fornece suporte ou assistência de segurança para implantações que executam versões de dependências não compatíveis. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) e a [Matriz de disponibilidade do produto](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability) para obter as versões com suporte.
+* Manutenção de todas as dependências de terceiros, serviços de plataforma e extensões dos Serviços da Adobe Commerce em versões que têm suporte ativo. A Adobe não fornece suporte ou assistência de segurança para implantações que executam versões de dependências não compatíveis. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) e a [Matriz de disponibilidade do produto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) para obter as versões com suporte.
 
 >[!NOTE]
 >
@@ -39,6 +39,7 @@ Os comerciantes são responsáveis pelo seguinte:
 >
 >* [Política de ciclo de vida do software](../release/lifecycle-policy.md) — datas de fim de suporte, suporte estendido e disposições transitórias somente de segurança
 >* [Política de imposição de atualização de versão da nuvem](../release/version-upgrade-enforcement-policy.md) — datas de imposição e ações necessárias
+>* [Aviso de segurança e conformidade](../release/security-enforcement-policy.md) — ações e prazos necessários para o Adobe Commerce nas versões 2.4.4 a 2.4.9 da nuvem
 
 {{supported-versions-only}}
 
@@ -99,11 +100,11 @@ O comerciante é responsável por seguir as práticas recomendadas de segurança
 * Manutenção da segurança de quaisquer sistemas ou redes que o comerciante conecte à Adobe Commerce no aplicativo de infraestrutura em nuvem
 * Manutenção de todos os serviços da plataforma, dependências de terceiros e extensões dos Serviços da Adobe Commerce em versões ativamente suportadas pelos respectivos fornecedores ou pela Adobe. Isso inclui:
 
-   * Serviços de infraestrutura como banco de dados, cache, pesquisa, tempo de execução PHP e servidor Web
-   * Extensões do Adobe Commerce Services
-   * Todas as extensões de terceiros e integrações personalizadas
+  * Serviços de infraestrutura como banco de dados, cache, pesquisa, tempo de execução PHP e servidor Web
+  * Extensões do Adobe Commerce Services
+  * Todas as extensões de terceiros e integrações personalizadas
 
-  A Adobe não fornece suporte para implantações que executam versões não compatíveis. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) e a [Matriz de disponibilidade do produto](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability) para obter as versões com suporte.
+  A Adobe não fornece suporte para implantações que executam versões não compatíveis. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) e a [Matriz de disponibilidade do produto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) para obter as versões com suporte.
 
 ## Responsabilidades do provedor de serviços em nuvem
 
