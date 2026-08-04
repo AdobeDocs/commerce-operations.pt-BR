@@ -4,9 +4,9 @@ description: Saiba como otimizar o desempenho do Adobe Commerce atualizando a co
 role: Developer
 feature: Best Practices, Cache
 exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: bdb900e81b3088ac452b7bfb975d5a68ecc44e7e
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '187'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ O cache do Realpath armazena em cache os caminhos reais do sistema de arquivos d
 
 Para melhorar o desempenho do Commerce, use as seguintes configurações recomendadas para definir as configurações de `realpath_cache` no arquivo `php.ini`:
 
-- Defina o tamanho do cache como 10 MB (`realpath cache_size=10M`)
+- Defina o tamanho do cache como 10 MB (`realpath_cache_size=10M`)
 - Defina a vida útil (ttl) como 7.200 segundos (`realpath_cache_ttl=7200`)
 
 Para obter instruções de configuração, consulte [Como definir opções do PHP](../../../installation/prerequisites/php-settings.md#how-to-set-php-options).
@@ -35,6 +35,6 @@ Se os valores de configuração do cache do Realpath forem muito baixos ou muito
 
 - [Local: configurações de PHP](../../../performance/software.md#php-settings)
 - Em infraestrutura de nuvem:
-   - [Práticas recomendadas do banco de dados](database-on-cloud.md)
-   - [Problemas mais comuns de banco de dados no Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
+  - [Práticas recomendadas do banco de dados](database-on-cloud.md)
+  - [Problemas mais comuns de banco de dados no Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
 - [A &quot;Atualização programada&quot; dos indexadores otimiza o desempenho do Magento](../maintenance/indexer-configuration.md)
