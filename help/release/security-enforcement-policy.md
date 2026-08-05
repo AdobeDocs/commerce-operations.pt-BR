@@ -1,7 +1,6 @@
 ---
-title: 'Política de Segurança: Ações Necessárias e Prazos'
+title: 'Segurança e conformidade: ações e prazos obrigatórios'
 description: Saiba mais sobre a aplicação de segurança para versões e dependências de software não compatíveis do Adobe Commerce na nuvem, incluindo prazos, ações necessárias e riscos.
-TQID: 'https://experienceleague.adobe.com/0JX-Z-dRjsiQk5jO-LLRi-J4GWdylTh4pOfXRPOabxs'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
@@ -21,184 +20,176 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-badgePaas: label="Adobe Commerce somente na nuvem" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce na nuvem versão 2.4.4 - 2.4.9"
+badgePaas: label="Adobe Commerce somente na nuvem" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce na versão 2.4.4 a 2.4.9"
 color: blue
-source-git-commit: 7cd1bf694234196313373dea6620bdf67e08e82c
+source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
 workflow-type: tm+mt
-source-wordcount: 2017
+source-wordcount: 2040
 ht-degree: 0%
 
 ---
 
-# Política de segurança: ações e prazos necessários
 
-O Adobe impõe requisitos de segurança para o Adobe Commerce em ambientes na nuvem, incluindo versões de dependência de software compatíveis e versões Adobe Commerce compatíveis. Esta página descreve o que é necessário, as datas de imposição e o que acontece se os requisitos não forem atendidos.
+# Aviso de segurança e conformidade: ações e prazos necessários
 
-## O que está acontecendo?
+>[!NOTE]
+>
+> **Aplica-se a:** ambientes Adobe Commerce on Cloud (PaaS) que executam as versões 2.4.4 a 2.4.9 do Adobe Commerce.
+>
+> Esta orientação não se aplica a ambientes [!DNL Adobe Commerce as a Cloud Service] (SaaS) ou a implantações locais do Adobe Commerce.
 
-A política de segurança corporativa da Adobe exige que todos os ambientes hospedados pela Adobe para o Adobe Commerce na nuvem sejam executados em software seguro e compatível, incluindo o seguinte:
+O panorama da cibersegurança está a mudar fundamentalmente, e os mecanismos defensivos que as empresas têm em vigor têm de evoluir rapidamente. A segurança é fundamental para as empresas de comércio eletrônico porque as transações on-line exigem que elas lidem com dados pessoais e comerciais confidenciais, expondo-as a riscos financeiros e de identidade em caso de violação. Os ambientes de comércio eletrônico PaaS têm um modelo de responsabilidade de segurança compartilhada entre a Adobe e nossos clientes, em que os clientes são responsáveis pela manutenção das dependências da camada de aplicativo, pelas integrações com software de terceiros e pelos pipelines de implantação.
 
-1. Versões compatíveis de todas as dependências de software de terceiros (PHP, MariaDB, Elasticsearch/OpenSearch, Redis, RabbitMQ)
+Na Adobe, abordamos proativamente a evolução dos riscos e garantimos que nossos clientes do Adobe Commerce on Cloud sejam configurados com os mais altos padrões de segurança. Isso inclui:
 
-1. Uma versão segura e compatível do Adobe Commerce na nuvem (versão 2.4.8, 2.4.9 ou a versão mais recente)
+* Correções de segurança mensais e isoladas para uma proteção mais rápida e previsível contra vulnerabilidades críticas
+* Versões anuais de patches com suporte a longo prazo
+* Políticas de ciclo de vida simplificadas para cada versão com uma janela de suporte de 3 anos
 
-Isso é para reduzir os riscos de segurança em seus ambientes de comércio eletrônico. Os ambientes que não atenderem a esses requisitos dentro dos prazos da [Tabela 1](#determine-your-required-actions) terão o tráfego de entrada suspenso, colocando a vitrine offline. Considere esta notificação como um requisito de segurança e conformidade com datas de imposição.
+Embora a Adobe siga as etapas necessárias para manter nossos clientes seguros, o [modelo de responsabilidade compartilhada](../security-and-compliance/shared-responsibility.md) para o Adobe Commerce na Nuvem exige que nossos clientes estejam sempre em uma versão com suporte do Adobe Commerce na Nuvem e de software de terceiros, apliquem patches de aplicativos, auditem extensões de terceiros e protejam o código personalizado. O software que passou pelo fim do suporte do fornecedor não recebe mais patches de segurança, deixando problemas de segurança no software sem solução. Continuar executando sua loja de comércio eletrônico em software não suportado cria um risco de segurança real e crescente.
 
-Talvez seja necessário executar duas ações.
+Esta página descreve as ações que todos os clientes do Adobe Commerce na nuvem (versões 2.4.4 a 2.4.9) precisam tomar para garantir que seus ambientes de comércio eletrônico permaneçam seguros, juntamente com as datas de aplicação e o que esperar quando os requisitos de segurança não forem atendidos.
 
-1. Verifique se as dependências de software de terceiros são suportadas. Caso contrário, atualize para uma versão compatível.
+## Ações necessárias para manter um ambiente seguro e compatível
 
-1. Verifique se é necessário atualizar a versão do Adobe Commerce na nuvem para uma versão compatível.
+Para manter seu ambiente de comércio eletrônico seguro e compatível, todos os clientes do Adobe Commerce na nuvem devem usar:
 
-Encontre sua versão do Adobe Commerce na nuvem abaixo para ver o que é necessário de você e veja os requisitos para:
+1. Versões compatíveis de todas as dependências de software de terceiros: PHP, MariaDB, Elasticsearch/OpenSearch, Redis e RabbitMQ
 
-1. Dependências de software de terceiros
+1. Uma versão segura e compatível do Adobe Commerce na nuvem
 
-1. Versão do Adobe Commerce na nuvem
+Siga as diretrizes abaixo para verificar se é necessário tomar medidas para proteger o Adobe Commerce em ambientes na nuvem. Os ambientes que não atenderem aos requisitos de segurança dentro dos prazos descritos na Tabela 1 abaixo terão o tráfego de entrada suspenso, colocando a vitrine offline. Se você tiver dúvidas sobre o cumprimento do prazo e precisar de uma breve extensão, contate a equipe de conta ou o [Suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) da Adobe.
 
-| Sua versão | Atualize dependências de software de terceiros<br>(PHP, MariaDB, Elasticsearch/OpenSearch, Redis, RabbitMQ)<br>*Consulte [Ação 1: atualizar dependências de software de terceiros](#action-1-upgrade-third-party-software-dependencies) para obter detalhes e as próximas etapas.* | Atualize ou migre sua versão do Adobe Commerce <br>*Consulte [Ação 2: se precisar atualizar sua versão do Adobe Commerce na Nuvem](#action-2-if-you-need-to-upgrade-your-adobe-commerce-on-cloud-version) para obter detalhes e as próximas etapas.* |
+**Tabela 1: Requisitos e prazos de segurança**
+
+| Sua versão do Adobe Commerce na nuvem | Atualização para dependências de software de terceiros compatíveis | Atualize para a versão mais recente do Adobe Commerce na nuvem ou migre para [!DNL Adobe Commerce as a Cloud Service] |
 | --- | --- | --- |
 | 2.4.4 ou 2.4.5 | Exigido até 30 de outubro de 2026. | Exigido até 1 de junho de 2027 |
 | 2.4.6 ou 2.4.7 | Exigido até 30 de outubro de 2026 ou 31 de maio de 2027, dependendo do software. | Exigido até 1 de junho de 2028 |
 | 2.4.8 ou 2.4.9 | Exigido até 30 de outubro de 2026 ou 31 de maio de 2027, dependendo do software. | Não é obrigatório neste momento |
 
-**Tabela 1: Ações e prazos obrigatórios por versão**
+## Etapas detalhadas para proteger seu ambiente
 
-Se precisar de uma extensão de prazo, contate sua equipe de conta ou o [Suporte da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
+### Ação 1: verificar e atualizar dependências de software de terceiros
 
-## Quem não precisa tomar uma ação
+Verifique se o seu ambiente está executando versões compatíveis com fornecedores das seguintes dependências de software de terceiros: PHP, MariaDB, Elasticsearch/OpenSearch, Redis, RabbitMQ. Caso contrário, atualize a dependência do software para uma versão compatível.
 
-O presente aviso não se aplica a:
+#### Etapa 1: verifique suas versões de dependência de software de terceiros
 
-* Clientes no Adobe Commerce na nuvem versão 2.4.8 ou 2.4.9 e cujos ambientes estão executando versões compatíveis de software de terceiros
+1. Entre no [Cloud Console](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/start/cloud-console).
+2. Abra o projeto relevante e selecione o ambiente que deseja revisar.
+3. Verifique a configuração de serviço desse ambiente no arquivo `.magento/services.yaml`, que define os nomes e as versões de serviço com suporte usados pelo Adobe Commerce na Nuvem.
 
-* Clientes em [!DNL Adobe Commerce as a Cloud Service]
+Para obter instruções detalhadas, consulte [Configurar Serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
 
-### Como verificar as versões que você está executando
+Todas as dependências de software não suportadas devem ser atualizadas para as versões descritas pelos cronogramas na Tabela 2 abaixo.
 
-Você precisa da ajuda do administrador do eCommerce para executar as etapas a seguir para verificar qual versão está sendo executada.
+**Tabela 2: atualizações de dependência necessárias**
 
-**Versão do Adobe Commerce na nuvem**
-
-1. Faça logon no painel de administração do Adobe Commerce.
-
-   A versão atual deve ser exibida no canto inferior direito de qualquer página de Administrador.
-
-1. Se a versão não for exibida no Admin, use a [Ferramenta de linha de comando do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/config-cli){target="_blank"} para executar o comando da versão:
-
-   ```shell
-   bin/magento --version
-   ```
-
-**Suas versões de dependência de software**
-
-1. Entre no [Cloud Console](https://console.adobecommerce.com/).
-1. Abra o projeto relevante e selecione o ambiente que deseja revisar.
-1. Verifique a configuração de serviço desse ambiente no arquivo `.magento/services.yaml`, que define os nomes e as versões de serviço com suporte usados pelo Adobe Commerce na infraestrutura em nuvem.
-Para obter instruções detalhadas, consulte a documentação [Configurar serviços](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/services/config-services){target="_blank"}.
-
-## Por que essa exigência de segurança é importante
-
-O software que passou pelo fim do suporte do fornecedor não recebe mais patches de segurança, o que significa que os problemas de segurança conhecidos nesse software não podem ser corrigidos. Além disso, de acordo com a [Política de Ciclo de Vida do Adobe](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/lifecycle-policy):
-
-* **As versões 2.4.4 e 2.4.5** do Adobe Commerce agora recebem apenas correções de segurança limitadas e isoladas para o aplicativo principal até 31 de maio de 2027. Esse suporte limitado não inclui correções de qualidade, suporte de compatibilidade para dependências de aplicativos (por exemplo, PHP) ou atualizações de dependência de plataforma
-
-* O **Adobe Commerce 2.4.6** receberá suporte estendido até 30 de agosto de 2027 e receberá apenas correções de segurança limitadas e isoladas para o aplicativo principal até 31 de maio de 2028
-
-* O **Adobe Commerce versão 2.4.7** receberá suporte padrão até 31 de maio de 2027, e suporte estendido até 31 de maio de 2028
-
-* O **Adobe Commerce na Nuvem versões 2.4.8 e 2.4.9** permanece com suporte e não requer atualização de versão no momento.
-
-Continuar a administrar sua loja de comércio eletrônico com software não suportado cria um risco real e crescente à segurança de sua empresa, incluindo sua capacidade de manter a conformidade com o PCI e proteger os dados de seus clientes.
-
->[!IMPORTANT]
->
->Se o ambiente não atender aos requisitos pelos prazos detalhados na [Tabela 1](#determine-your-required-actions), o Adobe suspenderá o tráfego de entrada para o ambiente afetado. Sua loja de comércio eletrônico ficará offline e não atenderá os compradores. Consulte [O que acontece se nenhuma ação for executada](#what-happens-if-no-action-is-taken).
-
-## Detalhes sobre as ações que você precisa realizar
-
-### Ação 1: atualizar dependências de software de terceiros
-
-Dependendo do software, todas as dependências de software não suportadas devem ser atualizadas pelos cronogramas compartilhados na tabela abaixo. Você pode exibir seus ambientes no [Cloud Console](https://console.adobecommerce.com/) e verificar as versões de dependência em execução usando estas [instruções](#how-to-check-the-versions-you-are-running). As atualizações de dependência de software se aplicam a todo o Adobe Commerce nas versões 2.4.4 a 2.4.9.
-
-| Dependência | Versão | Deve atualizar para | Data de aplicação |
+| Dependência | Versão | Deve atualizar para | Prazo |
 | --- | --- | --- | --- |
 | PHP | 8.1 e inferior | 8.2 ou superior | 31 de maio de 2027 |
 | MariaDB/Galera | 10.5 e inferior | 10.6 ou superior | 30 de outubro de 2026 |
-| MariaDB/Galera | Maior que 10,5 mas inferior a 10,11 | 10.11 ou superior | 31 de maio de 2027 |
-| Elasticsearch | qualquer versão | OpenSearch:<br><br>- versão 2.19 para clientes 2.4.4 e 2.4.5<br>- versão 3 para clientes 2.4.6 e superiores. | 30 de outubro de 2026 |
-| OpenSearch | 1.x | versão 2.19 para clientes 2.4.4 e 2.4.5.<br>versão 3 para clientes 2.4.6 e superiores. | 31 de maio de 2027 |
-| Redis | 5 e abaixo | Valkey 8 ou superior | 31 de maio de 2027 |
-| RabbitMQ | 3.9 e inferior | 3.13 ou superior | 30 de outubro de 2026 |
+| MariaDB/Galera | Maior que 10,5 mas inferior a 10,11 | Versão 10.11 ou superior | 31 de maio de 2027 |
+| Elasticsearch | qualquer versão | OpenSearch: versão 2.19 para clientes 2.4.4 e 2.4.5. Versão 3 para clientes 2.4.6 e superiores. | 30 de outubro de 2026 |
+| OpenSearch | 1.x | Versão 2.19 para clientes das versões 2.4.4 e 2.4.5. Versão 3 para clientes 2.4.6 e superiores. | 31 de maio de 2027 |
+| Redis | 5 e abaixo | Valkey versão 8 ou superior | 31 de maio de 2027 |
+| RabbitMQ | 3.9 e inferior | Versão 3.13 ou superior | 30 de outubro de 2026 |
 | RabbitMQ | Maior que 3,9 mas inferior a 3,13 | 4.3 ou posterior | 31 de maio de 2027 |
 
-**Tabela 2: requisitos para atualização de dependência de software**
-
-#### Prepare-se para uma atualização de dependência de software de terceiros
+#### Etapa 2: Prepare-se para uma atualização de dependência de software de terceiros
 
 O Adobe o ajudará a atualizar essas dependências de software diretamente.
 
-* **Introdução:** abra um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) listando os ambientes que você precisa atualizar e as dependências envolvidas. Abra o tíquete pelo menos 30 dias antes da data de imposição para que nossa equipe possa agendar o trabalho.
+* **Introdução**: abra um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) listando os ambientes que você precisa atualizar e as dependências envolvidas. Abra o tíquete pelo menos 30 dias antes da data de imposição para que a Adobe possa agendar o trabalho.
 
-* **Tempo de inatividade:** O Adobe confirmará a janela esperada com você ao agendar.
+* **Tempo de inatividade:** o Adobe confirma a janela esperada com você ao agendar.
 
 * **Testando:** atualize e valide um ambiente de não produção antes da produção. No mínimo, valide o check-out, a pesquisa, o carrinho e qualquer integração personalizada. Os requisitos se aplicam a todos os seus ambientes, portanto, planeje atualizar cada ambiente em vez de apenas a produção.
 
-* **Compatibilidade:** A maioria dessas alterações são atualizações de versão no mesmo software e apresentam baixo risco. Os seguintes aspectos merecem mais atenção:
+* **Compatibilidade:** A maioria dessas alterações são atualizações de versão no mesmo software e apresentam baixo risco. As seguintes mudanças exigem mais atenção:
 
   * O **Elasticsearch para OpenSearch** e o **Redis para Valkey** são migrações para software diferente em vez de atualizações de versão. Talvez seja necessário atualizar o código personalizado, as extensões ou a configuração que fazem referência ao serviço original.
-  * O **PHP 8.1 a 8.2** pode exibir descontinuações no código personalizado e em extensões de terceiros.
+  * A atualização do **PHP 8.1 para o 8.2** pode exibir avisos de desativação no código personalizado e em extensões de terceiros.
 
-Se você usar extensões de terceiros, confirme com os fornecedores de extensão se as versões atuais deles são compatíveis com as versões de destino. Se você trabalhar com um integrador de soluções, envolva-o no planejamento e na validação.
+Se você usa extensões de terceiros, confirme com seus fornecedores que as versões atuais deles oferecem suporte às versões de software de destino. Se você trabalhar com um integrador de soluções, envolva-os antecipadamente no planejamento de atualização, no teste e na validação.
 
-### Ação 2: se precisar atualizar a versão do Adobe Commerce na nuvem:
+### Ação 2: verificar a versão do Commerce na nuvem e atualizar para uma versão compatível
 
-Você tem a opção de (i) atualizar para um Adobe Commerce compatível na versão na nuvem ou (ii) migrar para o Adobe Commerce as a Cloud Service (plataforma de comércio totalmente gerenciada da Adobe)
+Verifique qual versão do Adobe Commerce na nuvem seus ambientes executam. Se algum ambiente não tiver uma versão com suporte, você poderá atualizar para a versão 2.4.9 ou a versão com suporte mais recente, ou migrar para o [!DNL Adobe Commerce as a Cloud Service].
 
-A data de imposição da sua versão atual se aplica independentemente da opção escolhida.
+#### Etapa 1: verifique a versão do Adobe Commerce na nuvem e a ação necessária
 
-| Versão atual | Ação | Data de aplicação |
-| --- | --- | --- |
-| Uso do Adobe Commerce na nuvem versão 2.4.4 ou 2.4.5 | Atualize para o Adobe Commerce na nuvem versão 2.4.9 (ou para a versão mais recente) ou migre para o Adobe Commerce as a Cloud Service | 1 de junho de 2027 |
-| Uso do Adobe Commerce na nuvem versão 2.4.6 ou 2.4.7 | Atualize para o Adobe Commerce na nuvem versão 2.4.9 (ou para a versão mais recente) ou migre para o Adobe Commerce as a Cloud Service | 1 de junho de 2028 |
-| Utilização do Adobe Commerce nas versões 2.4.8 ou 2.4.9 da nuvem | Nenhuma ação de atualização de versão do Adobe Commerce na nuvem é necessária no momento. Os prazos de dependência do software na Ação 1 ainda se aplicam. | n/d |
+1. Faça logon no painel de administração do Adobe Commerce.
 
-**Tabela 3: Diretrizes e prazos se você precisar atualizar sua versão atual do Adobe Commerce na nuvem**
+   A versão atual é exibida no canto inferior direito de qualquer página de Administrador.
 
-Consulte a matriz a seguir para obter detalhes adicionais sobre o Adobe Commerce na nuvem versão 2.4.9 e o Adobe Commerce as a Cloud Service, para que você possa tomar uma decisão embasada.
+1. Se a versão estiver oculta no painel Admin:
 
-**Tabela 4: atualizar para o Adobe Commerce na nuvem vs. migrar para o Adobe Commerce as a Cloud Service**
+   * Conecte-se ao [ambiente remoto](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/secure-connections#connect-to-a-remote-environment).
+   * Use a [Ferramenta de linha de comando](../configuration/cli/config-cli.md) do Adobe Commerce para verificar a versão.
 
-| | Adobe Commerce na nuvem versão 2.4.9 | Adobe Commerce as a Cloud Service |
-| --- | --- | --- |
-| O que é | A versão mais recente do Adobe Commerce com cobertura de segurança completa, correções de qualidade e atualizações de dependência da plataforma. | A plataforma comercial totalmente gerenciada da Adobe, criada para inovação contínua sem a sobrecarga de atualização. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/overview). |
-| Melhor para você se | Você deseja continuar gerenciando sua própria infraestrutura, upgrades e patches por enquanto. Você pode migrar para o Adobe Commerce as a Cloud Service quando estiver pronto. | Você quer deixar os ciclos de atualização para trás para sempre, reduzir seu custo total de propriedade e obter os recursos mais recentes da Adobe automaticamente, sem esforço extra. |
-| Principal benefício | Atende aos requisitos de segurança atuais e, ao mesmo tempo, preserva a configuração existente. | Uma loja de ponta ultrarrápida, um catálogo altamente escalável, gerenciamento de ativos digitais nativos e IA gerativa integrada, tudo em uma infraestrutura gerenciada pela Adobe. |
+     ```shell
+     bin/magento --version
+     ```
 
-## O que acontece se nenhuma ação for tomada?
+Verifique as ações necessárias para a sua versão do Adobe Commerce na tabela abaixo.
 
-Se um ambiente não atender a esses requisitos até as datas de imposição compartilhadas [acima](#determine-your-required-actions), a Adobe tomará as medidas apropriadas. Isso inclui a suspensão do tráfego para a infraestrutura afetada e, como resultado, sua loja de eCommerce ficará offline.
+**Tabela 3: requisitos de atualização da versão do Adobe Commerce na nuvem**
+
+| Versão atual do Adobe Commerce na nuvem | Ação necessária | Prazo |
+|---|---|---|
+| Versão 2.4.4 ou 2.4.5 | Atualize para o Adobe Commerce na versão 2.4.9 (ou a versão mais recente) ou migre para o [!DNL Adobe Commerce as a Cloud Service].<br>Motivo: as versões 2.4.4 e 2.4.5 recebem apenas correções de segurança limitadas e isoladas para o aplicativo principal até 31 de maio de 2027 — isso não inclui correções de qualidade, suporte de compatibilidade para dependências de aplicativos (por exemplo, PHP) ou atualizações de dependência de plataforma. Consulte a [Política de ciclo de vida](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/lifecycle-policy) da Adobe. | 1 de junho de 2027 |
+| Versão 2.4.6 ou 2.4.7 | Atualize para o Adobe Commerce na versão 2.4.9 (ou a versão mais recente) ou migre para o [!DNL Adobe Commerce as a Cloud Service].<br>Motivo: a versão 2.4.6 recebe suporte estendido até 30 de agosto de 2027 e recebe apenas correções de segurança limitadas e isoladas para o aplicativo principal até 31 de maio de 2028. A versão 2.4.7 recebe suporte padrão até 31 de maio de 2027 e suporte estendido até 31 de maio de 2028. Consulte a [Política de ciclo de vida](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/lifecycle-policy) da Adobe. | 1 de junho de 2028 |
+| Versão 2.4.8 ou 2.4.9 | Nenhuma ação de atualização de versão do Adobe Commerce na nuvem é necessária. Os prazos de dependência de software de terceiros na Ação 1 ainda se aplicam.<br>Motivo: nenhum prazo foi definido. | Não é obrigatório neste momento |
+
+#### Etapa 2: Determinar o caminho de atualização ou migração
+
+Se você precisar atualizar a versão do Adobe Commerce na nuvem, há duas opções:
+
+1. Atualizar para uma versão compatível do Adobe Commerce na nuvem
+1. Migrar para [!DNL Adobe Commerce as a Cloud Service] (SaaS)
+
+Para ajudá-lo a decidir o melhor caminho, use a tabela a seguir para comparar suas opções:
+
+**Tabela 4: Comparação entre o Adobe Commerce na nuvem e o[!DNL Adobe Commerce as a Cloud Service]**
+
+| | Adobe Commerce na nuvem versão 2.4.9 | [!DNL Adobe Commerce as a Cloud Service] |
+|---|---|---|
+| **O que é** | A versão mais recente do Adobe Commerce com cobertura de segurança completa, correções de qualidade e atualizações de dependência da plataforma. | A plataforma comercial totalmente gerenciada da Adobe, criada para inovação contínua sem a sobrecarga de atualização. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/overview). |
+| **O melhor para você se** | Você deseja continuar gerenciando sua própria infraestrutura, upgrades e patches. | Você quer deixar os ciclos de atualização para trás para sempre, reduzir seu custo total de propriedade e obter os recursos mais recentes da Adobe automaticamente, sem esforço extra. |
+| **Principais benefícios** | Atende aos requisitos de segurança e, ao mesmo tempo, preserva a configuração existente. | Uma loja de ponta ultrarrápida, um catálogo altamente escalável, gerenciamento de ativos digitais nativos e IA gerativa integrada, tudo em uma infraestrutura gerenciada pela Adobe. |
+
+## O que acontece se nenhuma ação for tomada até o prazo?
+
+A Adobe continua comprometida em ajudar você a tomar as medidas necessárias para atualizar para versões compatíveis do Adobe Commerce na nuvem e software de terceiros.
+
+Se um ambiente não atender aos requisitos de segurança pelas datas de imposição compartilhadas acima, a Adobe será forçada a tomar as medidas apropriadas para garantir a segurança da base de instalação maior. Isso inclui a suspensão do tráfego para a infraestrutura afetada e, como resultado, sua loja de comércio eletrônico ficará offline.
 
 Se um ambiente continuar a não ser compatível após a suspensão do tráfego, a Adobe poderá encerrar os serviços em nuvem, iniciando o processo de desativação. Como resultado da desativação, todos os dados e ativos no ambiente de comércio eletrônico hospedado, incluindo todas as instâncias, ambientes e ramificações, serão excluídos permanentemente e não poderão ser restaurados.
 
-## Resumo de como o Adobe ajudará você
+## Recursos para suporte de atualização ou migração
 
-O Adobe oferece ferramentas e suporte para tornar sua transição o mais suave possível, seja para atualização ou migração.
+**Se você optar por atualizar para o Adobe Commerce na Cloud versão 2.4.9:**
 
-**Se você optar por atualizar para o Adobe Commerce na Nuvem versão 2.4.9**
+* **Relatório de Compatibilidade de Atualização:** O Adobe fornece um relatório detalhado que identifica exatamente o que a atualização para o Adobe Commerce versão 2.4.9 exige, incluindo o escopo de custo. [Gere seu Relatório de Compatibilidade de Atualização](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **Relatório de Compatibilidade de Atualização:** O Adobe fornece um relatório detalhado que identifica exatamente o que a atualização para o Adobe Commerce versão 2.4.9 exige, incluindo tempo e escopo de custo. [Gerar seu relatório de compatibilidade de atualização](https://supportinsights.adobe.com/commerce/tab/main).
+* **Atualização de dependência de software:** Como não é possível atualizar diretamente dependências de software, abra um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) para que a Adobe possa realizar a atualização para você. Para obter detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
 
-* **Atualização de Dependência de Software:** como não é possível atualizar diretamente as dependências de software, [abra um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} para que o Adobe resolva a atualização para você. Para obter detalhes, consulte [Configurar Serviços](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
+**Se você optar por migrar para [!DNL Adobe Commerce as a Cloud Service]:**
 
-**Se você optar por migrar para o Adobe Commerce as a Cloud Service**
-
-O Adobe fornece ferramentas que reduzem o custo e o tempo de migração para o Adobe Commerce as a Cloud Service. Isso não tem custo para você. Essas ferramentas se aplicam apenas à migração; elas não são usadas para uma atualização de versão no Adobe Commerce na nuvem. Consulte a [visão geral da migração](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/migration/overview) para obter o guia de migração completo, incluindo caminhos e fases de migração.
+A Adobe fornece ferramentas que reduzem o custo e o tempo de migração para o [!DNL Adobe Commerce as a Cloud Service]. Eles estão disponíveis sem custo para você. Essas ferramentas se aplicam somente à migração. Eles não são usados para atualizações de versão do Adobe Commerce na nuvem. Consulte a [visão geral da migração](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/migration/overview) para obter o guia de migração completo, incluindo caminhos e fases de migração.
 
 * **Avaliação da migração:** classifica a complexidade da migração de suas personalizações. Consulte a [visão geral da Ferramenta de Avaliação de Migração](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/migration/migration-tools/assessment).
 
-* **Migração de dados:** a [ferramenta de migração de dados em massa e incremental](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool) move seus dados para o novo ambiente do Adobe Commerce as a Cloud Service.
+* **Migração de dados:** a [ferramenta de migração de dados em massa e incremental](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool) move seus dados para o novo ambiente [!DNL Adobe Commerce as a Cloud Service].
 
-* As [ferramentas de migração e desenvolvedor assistidas por IA](https://developer.adobe.com/commerce/extensibility/developer-agent/) da Adobe, incluindo o **[!DNL Adobe Developer App Builder]** e o **[!DNL Commerce Storefront powered by Edge Delivery Services]**, ajudam a acelerar a modernização da loja e a replataforma da extensão.
+* **Ferramentas de migração e desenvolvedor assistidas por IA:** a Adobe Developer App Builder e a Commerce Storefront, com a tecnologia da Edge Delivery Services, ajudam a acelerar a modernização da loja e a reformulação da extensão.
 
-Em caso de dúvidas, entre em contato com a equipe de conta, o Gerente de Conta de Solução, o Especialista em Renovação ou os [Serviços de Suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
+Em caso de dúvidas, entre em contato com a equipe de conta ou com os [Serviços de Suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
+
+>[!MORELIKETHIS]
+>
+>* [Política de ciclo de vida](lifecycle-policy.md)
+>* [Política de imposição de atualização de versão para Adobe Commerce na Nuvem](version-upgrade-enforcement-policy.md)
+>* [Modelo operacional e de segurança de responsabilidade compartilhada](../security-and-compliance/shared-responsibility.md)
