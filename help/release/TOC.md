@@ -4,9 +4,9 @@ user-guide-description: Acesse todas as informações da versão de patches e se
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: 9e4142150097f7d1109929c3785e3448288bb8ff
+source-git-commit: 5e0e4b0dc59aa2d8bd08d2d4af1176d14577f063
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '109'
 ht-degree: 30%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 30%
 - [Versões do Beta](beta.md)
 - Planejamento e políticas {#planning}
   - [Política de ciclo de vida](lifecycle-policy.md)
-  - [Ações e prazos necessários para manter a segurança e a conformidade](security-enforcement-policy.md)
+  - [Ações e prazos necessários para proteger ambientes Commerce](security-enforcement-policy.md)
   - [Política de imposição de atualização de versão](version-upgrade-enforcement-policy.md)
   - [Política de controle de versão](versioning-policy.md)
   - [Programação de lançamento](schedule.md)
