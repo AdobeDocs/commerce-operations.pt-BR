@@ -3,7 +3,7 @@ title: 'Início: Guias Operacionais'
 description: Saiba mais sobre a administração do sistema e os conceitos operacionais do Adobe Commerce. Navegue por guias abrangentes para planejar, configurar e manter a implantação do Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 last-update: 2026-08-03T00:00:00Z
-source-git-commit: 070a4fbfba024595fa818c0849837cfd79bf2757
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 7%
@@ -103,5 +103,4 @@ Use esta coleção de guias a seguir para saber mais sobre conceitos, processos,
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-07-22 16:57:45 -->
-
+<!-- Last updated from includes: 2026-08-03 19:17:52 -->

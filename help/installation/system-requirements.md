@@ -3,9 +3,9 @@ title: Requisitos do sistema
 description: Saiba mais sobre dependências de software e requisitos de sistema para o Adobe Commerce. Consulte as configurações testadas para compatibilidade com seu ambiente de implantação.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 last-update: 2026-07-23T00:00:00Z
-source-git-commit: 6da5a8645b46807eed654f6958f19f10d0095945
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ O [modelo do Commerce na Nuvem](https://github.com/magento/magento-cloud) fornec
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
 Para a configuração padrão, os serviços e as versões são definidos no [arquivo `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia do *Commerce na Infraestrutura de Nuvem*.
+Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia *Commerce na Infraestrutura de Nuvem*.
 
 >[!TAB Commerce local]
 
@@ -56,7 +56,7 @@ aconselhados a migrar seus servidores de banco de dados para uma versão compat�
 
 Os clientes do Adobe Commerce na nuvem devem manter as dependências da plataforma nas versões compatíveis. Consulte [Dependências da plataforma](../release/lifecycle-policy.md#platform-dependencies) na política de ciclo de vida.
 
-**O Elasticsearch 7.17 atingiu o fim do suporte (EOS) em 15 de janeiro de 2026.**
+O **Elasticsearch 7.17 chegou ao Fim do Suporte (EOS) em 15 de janeiro de 2026.**
 Após essa data, o Adobe Commerce 2.4.6, 2.4.5 e 2.4.4 não fornecerá compatibilidade ou
 suporte para qualquer versão do Elasticsearch lançada após o Elasticsearch 7. O Adobe não
 validar ou fornecer suporte para versões principais mais recentes do Elasticsearch neste Adobe
@@ -89,7 +89,7 @@ O [modelo do Commerce na Nuvem](https://github.com/magento/magento-cloud) fornec
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
 Para a configuração padrão, os serviços e as versões são definidos no [arquivo `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia do *Commerce na Infraestrutura de Nuvem*.
+Para obter mais detalhes, consulte [Configurar serviços](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) no guia *Commerce na Infraestrutura de Nuvem*.
 
 >[!TAB Commerce local]
 
@@ -105,7 +105,7 @@ aconselhados a migrar seus servidores de banco de dados para uma versão compat�
 
 Os clientes do Adobe Commerce na nuvem devem manter as dependências da plataforma nas versões compatíveis. Consulte [Dependências da plataforma](../release/lifecycle-policy.md#platform-dependencies) na política de ciclo de vida.
 
-**O Elasticsearch 7.17 atingiu o fim do suporte (EOS) em 15 de janeiro de 2026.**
+O **Elasticsearch 7.17 chegou ao Fim do Suporte (EOS) em 15 de janeiro de 2026.**
 Após essa data, o Adobe Commerce 2.4.6, 2.4.5 e 2.4.4 não fornecerá compatibilidade ou
 suporte para qualquer versão do Elasticsearch lançada após o Elasticsearch 7. O Adobe não
 validar ou fornecer suporte para versões principais mais recentes do Elasticsearch neste Adobe
@@ -230,5 +230,4 @@ Para o Adobe Commerce na nuvem, consulte [Configurar Xdebug](https://experiencel
 >
 >Há um problema conhecido com o `xdebug` que pode afetar as instalações do Adobe Commerce ou o acesso à loja ou ao Administrador após a instalação. Consulte [Problema conhecido que afeta a instalação de `xdebug`](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) na _Base de Dados de Conhecimento de Suporte da Commerce_.
 
-<!-- Last updated from includes: 2026-07-22 16:57:39 -->
-
+<!-- Last updated from includes: 2026-07-23 16:17:19 -->
