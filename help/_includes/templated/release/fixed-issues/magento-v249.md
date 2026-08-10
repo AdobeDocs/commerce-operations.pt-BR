@@ -1,7 +1,7 @@
 ---
 source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '32399'
+source-wordcount: '32815'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Agora, as APIs validam corretamente a entrada e retornam um erro 400 para cargas
 
 _AC-6419 - [Problema do GitHub](https://github.com/magento/magento2/issues/35934) - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Erro interno do servidor no ponto de extremidade de API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Erro interno do servidor no ponto de extremidade de API `/V1/order/{orderId}/ship`
 
 O Sistema agora corrige o Erro Interno do Servidor no Ponto de Extremidade da API `/V1/order/{orderId}/ship` e Retorna um erro 400, pois a solicitação está malformada.
 
@@ -3529,7 +3529,7 @@ _ACP2E-4285 - [Contribuição de código do GitHub](https://github.com/magento/m
 
 #### Erro interno do servidor
 
-A Magento agora adiciona produtos com sucesso ao carrinho de um cliente ao usar o endpoint REST assíncrono POST /rest/default/async/V1/carts/mine/items. Anteriormente, essa solicitação assíncrona de &quot;adicionar ao carrinho&quot; resultava em um Erro de Servidor Interno, e o Magento registrava o seguinte erro: Erro: Chamada para uma função de membro setFinalPrice() em nulo em app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
+A Magento agora adiciona produtos com sucesso ao carrinho de um cliente ao usar o endpoint REST assíncrono POST /rest/default/async/V1/carts/mine/items. Anteriormente, essa solicitação assíncrona de &quot;adicionar ao carrinho&quot; resultava em um Erro interno do servidor. A Magento registrava o seguinte erro: Erro: Chamada para uma função de membro setFinalPrice() em nulo em app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
 
 _AC-16344 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/8670a2b4)_
 

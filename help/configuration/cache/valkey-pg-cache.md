@@ -50,19 +50,19 @@ O Commerce fornece opções de linha de comando para configurar o padrão Valkey
 >[!TAB Zend Cache (2.4.8 e anterior)]
 
 - **Zend Cache (2.4.8 e anterior)** — Back-end Valkey herdado para Commerce 2.4.8 e anterior:
-   - **Infraestrutura Valkey herdada** — Usa o caminho de classe completo (`Magento\Framework\Cache\Backend\Valkey`)
-   - **Chaves de pré-carregamento** — Suporta o pré-carregamento de chaves de cache usadas com frequência
-   - **Scripts Lua** — Lua para coleta de lixo
-   - **Compactação** — Suporta compactação de dados
+  - **Infraestrutura Valkey herdada** — Usa o caminho de classe completo (`Magento\Framework\Cache\Backend\Valkey`)
+  - **Chaves de pré-carregamento** — Suporta o pré-carregamento de chaves de cache usadas com frequência
+  - **Scripts Lua** — Lua para coleta de lixo
+  - **Compactação** — Suporta compactação de dados
 
 >[!TAB Cache do Symfony (2.4.9+)]
 
 - **Symfony Cache (2.4.9+)** — A partir do Commerce 2.4.9, o Symfony Cache fornece uma implementação de cache moderna e compatível com PSR-6 para Valkey, com melhorias significativas de desempenho:
-   - **Pipeline automático do Valkey** — agrupa várias operações em solicitações únicas, reduzindo a latência
-   - **PSR-6 TagAwareAdapter** — Invalidação eficiente de cache com base em marcas com operações atômicas
-   - **Serialização binária** — a serialização binária reduz o tamanho da entrada de cache em 45% e melhora a velocidade em 5-10%
-   - **Conexões persistentes aprimoradas** — Pool de conexões mais estável com melhor tratamento de processos bifurcados
-   - **Scripts Lua otimizados** — Execução no lado do servidor combinada com pipeline para eficiência máxima
+  - **Pipeline automático do Valkey** — agrupa várias operações em solicitações únicas, reduzindo a latência
+  - **PSR-6 TagAwareAdapter** — Invalidação eficiente de cache com base em marcas com operações atômicas
+  - **Serialização binária** — a serialização binária reduz o tamanho da entrada de cache em 45% e melhora a velocidade em 5-10%
+  - **Conexões persistentes aprimoradas** — Pool de conexões mais estável com melhor tratamento de processos bifurcados
+  - **Scripts Lua otimizados** — Execução no lado do servidor combinada com pipeline para eficiência máxima
 
 >[!ENDTABS]
 

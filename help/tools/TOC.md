@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
+source-git-commit: 324a61ed4f6ea349e1e30095452e5311f688c931
 workflow-type: tm+mt
-source-wordcount: '10583'
+source-wordcount: '10588'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,9 @@ ht-degree: 0%
       - [ACP2E-4709: As páginas do CMS não são salvas no Page Builder quando a hierarquia da página inclui aspas duplas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4799: GraphQL query requisition_lists retorna contagem total incorreta com paginação](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
+      - [ACP2E-4797: O editor WYSIWYG do administrador e o Page Builder bloqueiam caracteres Unicode de 4 bytes quando utf8mb4 for suportado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
+      - [ACP2E-4682: Páginas de vitrine que verificam a cotação isActive criam registros de cotação vazios](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)
       - [ACP2E-4593: Página de CMS de Restrição de Site Incorreta servida no site secundário em vitrines de vários sites](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)
       - [ACP2E-4547: O administrador não pode adicionar um produto de catálogo padrão a uma cotação quando ele não está atribuído ao catálogo compartilhado do usuário](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
       - [ACP2E-4805: as solicitações de finalização de compra ficam lentas para produtos configuráveis quando o primeiro filho que pode ser vendido aparece posteriormente na lista](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
