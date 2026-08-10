@@ -3,24 +3,14 @@ title: Configurar Valkey para Padrão e Cache de Página
 description: Saiba como configurar o Valkey como o padrão e o back-end do cache de página do Adobe Commerce. Descubra os comandos da ILC, as configurações do env.php e a verificação da conexão.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 autotag-review: '2026-06-22T22:00:55.389Z'
 TQID: 'https://experienceleague.adobe.com/AjJ86dYGRVFuY1T73ct1Gpcf6iDbb4ewP8OiGX8otQs'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
 source-wordcount: 1315
@@ -50,19 +40,19 @@ O Commerce fornece opções de linha de comando para configurar o padrão Valkey
 >[!TAB Zend Cache (2.4.8 e anterior)]
 
 - **Zend Cache (2.4.8 e anterior)** — Back-end Valkey herdado para Commerce 2.4.8 e anterior:
-   - **Infraestrutura Valkey herdada** — Usa o caminho de classe completo (`Magento\Framework\Cache\Backend\Valkey`)
-   - **Chaves de pré-carregamento** — Suporta o pré-carregamento de chaves de cache usadas com frequência
-   - **Scripts Lua** — Lua para coleta de lixo
-   - **Compactação** — Suporta compactação de dados
+  - **Infraestrutura Valkey herdada** — Usa o caminho de classe completo (`Magento\Framework\Cache\Backend\Valkey`)
+  - **Chaves de pré-carregamento** — Suporta o pré-carregamento de chaves de cache usadas com frequência
+  - **Scripts Lua** — Lua para coleta de lixo
+  - **Compactação** — Suporta compactação de dados
 
 >[!TAB Cache do Symfony (2.4.9+)]
 
 - **Symfony Cache (2.4.9+)** — A partir do Commerce 2.4.9, o Symfony Cache fornece uma implementação de cache moderna e compatível com PSR-6 para Valkey, com melhorias significativas de desempenho:
-   - **Pipeline automático do Valkey** — agrupa várias operações em solicitações únicas, reduzindo a latência
-   - **PSR-6 TagAwareAdapter** — Invalidação eficiente de cache com base em marcas com operações atômicas
-   - **Serialização binária** — a serialização binária reduz o tamanho da entrada de cache em 45% e melhora a velocidade em 5-10%
-   - **Conexões persistentes aprimoradas** — Pool de conexões mais estável com melhor tratamento de processos bifurcados
-   - **Scripts Lua otimizados** — Execução no lado do servidor combinada com pipeline para eficiência máxima
+  - **Pipeline automático do Valkey** — agrupa várias operações em solicitações únicas, reduzindo a latência
+  - **PSR-6 TagAwareAdapter** — Invalidação eficiente de cache com base em marcas com operações atômicas
+  - **Serialização binária** — a serialização binária reduz o tamanho da entrada de cache em 45% e melhora a velocidade em 5-10%
+  - **Conexões persistentes aprimoradas** — Pool de conexões mais estável com melhor tratamento de processos bifurcados
+  - **Scripts Lua otimizados** — Execução no lado do servidor combinada com pipeline para eficiência máxima
 
 >[!ENDTABS]
 
