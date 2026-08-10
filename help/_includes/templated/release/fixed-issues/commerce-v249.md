@@ -1191,7 +1191,7 @@ A validação de dados de endereço do cliente foi aprimorada para ser mais cons
 
 _ACP2E-4223 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0a8c9a9a)_
 
-#### [Problema relacionado ao preço do produto na {Cloud] na página do carrinho
+#### [Problema relacionado ao preço do produto na &lbrace;Cloud] na página do carrinho
 
 Correção do problema de preço do produto no pacote na página do carrinho para lojas de várias moedas
 
@@ -1682,7 +1682,7 @@ Antes da correção, as permissões de categoria não eram aplicadas corretament
 
 _ACP2E-4294 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/c135fc3a)_
 
-#### [Problema de preço de produto de pacote na {Cloud] em PDP e PLP
+#### [Problema de preço de produto de pacote na &lbrace;Cloud] em PDP e PLP
 
 Preço do pacote O produto com preço normal é mostrado corretamente na PDP/PLP para moeda não padrão
 
@@ -3333,7 +3333,7 @@ Antes da correção, ao solicitar um produto combinado com a opção &quot;Envia
 
 _ACP2E-3947 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/2a252ae6)_
 
-#### [Código OOTB da ]Magento da {Cloud- Problema de configuração de modelo de email
+#### [Código OOTB da ]Magento da &lbrace;Cloud- Problema de configuração de modelo de email
 
 Antes da correção, ao usar o envio assíncrono de email, os emails de remessa eram inconsistentes com a ordem da loja. Agora, após a correção, a ordem de e-mail de envio da loja correta é entregue.
 
