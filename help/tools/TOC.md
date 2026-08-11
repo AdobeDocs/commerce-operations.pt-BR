@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 324a61ed4f6ea349e1e30095452e5311f688c931
+source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
 workflow-type: tm+mt
-source-wordcount: '10588'
+source-wordcount: '10598'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,7 @@ ht-degree: 0%
       - [ACP2E-4709: As páginas do CMS não são salvas no Page Builder quando a hierarquia da página inclui aspas duplas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4870: Emails de alerta do produto ignoram configurações de email de exibição da loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
       - [ACP2E-4799: GraphQL query requisition_lists retorna contagem total incorreta com paginação](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
       - [ACP2E-4797: O editor WYSIWYG do administrador e o Page Builder bloqueiam caracteres Unicode de 4 bytes quando utf8mb4 for suportado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
       - [ACP2E-4682: Páginas de vitrine que verificam a cotação isActive criam registros de cotação vazios](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)
