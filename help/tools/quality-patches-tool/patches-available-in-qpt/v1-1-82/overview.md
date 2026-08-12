@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: e8b1a5c1161eab0a0e76e1cca6a4b8b528124b45
 workflow-type: tm+mt
 source-wordcount: 488
 ht-degree: 0%
@@ -41,7 +36,7 @@ O QPT v1.1.82 inclui os seguintes patches:
 1. **ACP2E-4840**: corrige o problema em que o valor de quantidade solicitado na consulta do GraphQL `products` retorna *null*.
 1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**: corrige o problema em que as notificações por email de alerta do produto ignoram as configurações de email de exibição da loja.
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: corrige o problema em que a exibição de contas de clientes com catálogos de endereços grandes no Administrador faz logoff inesperado de usuários Administradores.
-1. **ACP2E-4894**: corrige o problema em que novos pedidos atrasam a exibição nas grades de gerenciamento de pedidos de Administrador quando **[!UICONTROL Asynchronous Indexing]** está habilitado em armazenamentos de alto volume.
+1. **[ACP2E-4894](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)**: corrige o problema em que novos pedidos atrasam a exibição nas grades de gerenciamento de pedidos de Administrador quando **[!UICONTROL Asynchronous Indexing]** está habilitado em armazenamentos de alto volume.
 1. **ACP2E-4981**: corrige o problema em que os carrosséis de produtos do Page Builder exibem produtos em uma ordem que não reflete a posição definida no Administrador e inclui produtos configuráveis quando os produtos secundários correspondentes estão visíveis individualmente.
 
 Use o menu à esquerda para navegar até uma página de patch específica.
