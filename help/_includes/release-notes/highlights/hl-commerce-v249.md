@@ -1,7 +1,7 @@
 ---
-source-git-commit: b829cf3685457f9f9ad3dfca2d294b6167accb82
+source-git-commit: 332c042213d3ee25cc5d60c35570a41543e24bfc
 workflow-type: tm+mt
-source-wordcount: '3479'
+source-wordcount: '3474'
 ht-degree: 0%
 
 ---
@@ -276,17 +276,17 @@ _AC-16533_
 
 #### Compatibilidade com PHP 8.5
 
-O Adobe Commerce 2.4.9 agora suporta PHP 8.5 e PHP 8.4, permitindo que você execute sua loja nas versões mais recentes seguras e compatíveis do PHP. Todos os recursos principais, extensões agrupadas (incluindo Page Builder, B2B, Braintree e outros) e serviços SaaS Adobe são compatíveis com o PHP 8.5.
+O Adobe Commerce 2.4.9 agora suporta o PHP 8.5, permitindo que você execute sua loja nas versões mais recentes seguras e compatíveis do PHP. Todos os recursos principais, extensões agrupadas (incluindo Page Builder, B2B, Braintree e outros) e serviços SaaS Adobe são compatíveis com o PHP 8.5.
 
-- O PHP 8.5 e 8.4 são totalmente suportados.
-- O PHP 8.3 é permitido apenas para fins de atualização (não recomendado para produção).
+- O PHP 8.5 é totalmente suportado.
+- O PHP 8.4 é permitido apenas para fins de atualização (não recomendado para produção).
 - Garante a conformidade com o PCI e prepara a instalação do Adobe Commerce.
 
 _AC-15615_
 
 #### Suporte ao PHP 8.2 removido
 
-A partir do Adobe Commerce 2.4.9, o PHP 8.2 não é mais suportado. A plataforma agora tem como alvo o PHP 8.3 e posterior, com código principal, dependências e ferramentas atualizadas para rodar de forma limpa e confiável no PHP 8.4 e 8.5.
+Começando com Adobe Commerce 2.4.9, PHP 8.2 e PHP 8.3 não são mais suportados. A plataforma agora tem como alvo o PHP 8.4 e posterior, com código principal, dependências e ferramentas atualizadas para serem executadas de forma limpa e confiável no 8.5.
 
 _AC-15758_
 
@@ -428,12 +428,12 @@ Principais melhorias:
 - Atualização de autenticação: usa o OAuth 2.0 para acesso seguro à API.
 - Formato de dados aprimorado: usa JSON em vez de XML para uma comunicação mais limpa e eficiente.
 - Novos campos de administrador:
-   - URL REST do gateway (com base no modo: Desenvolvimento ou Ativo)
-   - ID do cliente e segredo
-   - Tipo de conta, Número da conta
-   - CRID, MID, Código de identificação do correio
-   - AES/ITN para remessas internacionais
-   - Métodos de envio permitidos específicos para REST
+  - URL REST do gateway (com base no modo: Desenvolvimento ou Ativo)
+  - ID do cliente e segredo
+  - Tipo de conta, Número da conta
+  - CRID, MID, Código de identificação do correio
+  - AES/ITN para remessas internacionais
+  - Métodos de envio permitidos específicos para REST
 
 Essa migração garante que a Adobe Commerce permaneça em conformidade com os padrões USPS, melhora a confiabilidade do sistema e garante integrações de envio que não se tornarão obsoletas para os comerciantes.
 
