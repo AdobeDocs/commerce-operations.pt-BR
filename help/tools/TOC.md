@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: e8b1a5c1161eab0a0e76e1cca6a4b8b528124b45
+source-git-commit: 2864bda142df307248f5e29524eaf42441538f5b
 workflow-type: tm+mt
-source-wordcount: '10616'
+source-wordcount: '10632'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,7 @@ ht-degree: 0%
       - [ACP2E-4709: As páginas do CMS não são salvas no Page Builder quando a hierarquia da página inclui aspas duplas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4698: A edição em linha do texto do Page Builder salva URLs de mídia absolutas em vez da diretiva portátil](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
       - [ACP2E-4894: Novos pedidos são exibidos na grade Pedidos de administração com um atraso quando a indexação assíncrona está habilitada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)
       - [ACP2E-4870: Emails de alerta do produto ignoram configurações de email de exibição da loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
       - [ACP2E-4799: GraphQL query requisition_lists retorna contagem total incorreta com paginação](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)

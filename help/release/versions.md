@@ -4,7 +4,7 @@ description: Saiba quando versões específicas do Adobe Commerce foram lançada
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
 last-update: 2026-06-02T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+source-git-commit: 90f54aef167dd29ec6bdc0639cf3eb6c5d7244ce
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Versões lançadas
 
-Esta página lista versões lançadas do Adobe Commerce. Ele contém datas de lançamento para cada versão secundária, patch e segurança e datas para o fim do suporte **_regular_**. Ela não lista datas para o fim do suporte **_estendido_**.
+Esta página lista versões lançadas do Adobe Commerce. Ele contém datas de lançamento para cada versão secundária, patch e segurança, e datas para o fim do suporte **_regular_**. Ela não lista datas para o fim do suporte **_estendido_**.
 
 >[!BEGINSHADEBOX]
 
@@ -29,4 +29,4 @@ A Adobe oferece uma extensão de suporte de um ano sem custo adicional para os c
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
-<!-- Last updated from includes: 2026-06-02 11:13:39 -->
+<!-- Last updated from includes: 2026-08-12 14:19:05 -->

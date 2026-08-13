@@ -1,7 +1,7 @@
 ---
-source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
+source-git-commit: 420e4af6778d3f493e9ad4fcc4ae175446d31243
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '2131'
 ht-degree: 3%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 3%
 
 ## 2.4.9
 
-O suporte regular para a linha de versão 2.4.9 termina em maio de 2029.
+O suporte regular para a linha de versão 2.4.9 termina em 31 de maio de 2029.
 
 <table>
   <thead>
@@ -30,7 +30,7 @@ O suporte regular para a linha de versão 2.4.9 termina em maio de 2029.
 
 ## 2.4.8
 
-O suporte regular para a linha de versão 2.4.8 termina em 11 de abril de 2028.
+O suporte regular para a linha de versão 2.4.8 termina em 31 de maio de 2028.
 
 <table>
   <thead>
@@ -81,7 +81,8 @@ O suporte regular para a linha de versão 2.4.8 termina em 11 de abril de 2028.
 
 ## 2.4.7
 
-O suporte regular para a linha de versão 2.4.7 termina em 9 de abril de 2027.
+O suporte regular para a linha de versão 2.4.7 termina em 31 de maio de 2027.
+O suporte estendido para a linha de versão 2.4.7 termina em 31 de maio de 2028.
 
 <table>
   <thead>
@@ -163,6 +164,8 @@ O suporte regular para a linha de versão 2.4.7 termina em 9 de abril de 2027.
 ## 2.4.6
 
 O suporte regular para a linha de versão 2.4.6 terminou em 11 de agosto de 2026.
+O suporte estendido para a linha de versão 2.4.6 termina em 31 de agosto de 2027.
+O provisionamento de correções de segurança adicionais para a linha de versão 2.4.6 termina em 31 de maio de 2028.
 
 <table>
   <thead>
@@ -275,7 +278,7 @@ O suporte regular para a linha de versão 2.4.6 terminou em 11 de agosto de 2026
 
 O suporte regular para a linha de versão 2.4.5 terminou em 12 de agosto de 2025.
 O suporte estendido para a linha de versão 2.4.5 terminou em 11 de agosto de 2026.
-O provisionamento de correções de segurança adicionais para a linha de versão 2.4.5 termina em maio de 2027.
+O provisionamento de correções de segurança adicionais para a linha de versão 2.4.5 termina em 31 de maio de 2027.
 
 <table>
   <thead>
@@ -400,7 +403,7 @@ O provisionamento de correções de segurança adicionais para a linha de versã
 
 O suporte regular para a linha de versão 2.4.4 terminou em 12 de abril de 2025.
 O suporte estendido para a linha de versão 2.4.4 terminou em 14 de abril de 2026.
-O provisionamento de correções de segurança adicionais para a linha de versão 2.4.4 termina em maio de 2027.
+O provisionamento de correções de segurança adicionais para a linha de versão 2.4.4 termina em 31 de maio de 2027.
 
 <table>
   <thead>
