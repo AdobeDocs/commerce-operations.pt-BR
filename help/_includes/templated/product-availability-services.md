@@ -1,8 +1,8 @@
 ---
-source-git-commit: a5120adab9f624677447889722359951e775c3f3
+source-git-commit: 31bd80523a08f03c1e9a707e5f3fc2c4046bc32c
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 17%
+source-wordcount: '120'
+ht-degree: 24%
 
 ---
 # Disponibilidade do produto dos serviços da Commerce
@@ -50,12 +50,12 @@ ht-degree: 17%
       </tr>
       <tr>
           <td>Payment Services</td>
-          <td>PHP 8.4</td>
-          <td>PHP 8.4</td>
-          <td>PHP 8.4</td>
-          <td>PHP 8.4</td>
-          <td>PHP 8.4</td>
-          <td>PHP 8.4</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
+          <td>2.16.1</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/payment-services/release-notes">Notas de versão</a><br/>
