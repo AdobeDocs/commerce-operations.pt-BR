@@ -1,7 +1,7 @@
 ---
-source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
+source-git-commit: b14e0f2c4656ec9afa79545a9e8db83cc2e0d4d4
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2809'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,210 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 14 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Etapas atualizadas sobre como os clientes podem verificar a versão de suas dependências de serviço na interface do usuário da Nuvem e atualização do link para o guia sobre como os clientes podem gerar um relatório de compatibilidade de atualização para sua loja, em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/security-enforcement-policy#action-1-verify-and-upgrade-third-party-software-dependencies">Verificar e atualizar dependências de software de terceiros</a>.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/54ac98c35e1f161f390587601484db4e3294b6af">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 13 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194">ACP2E-4194: solicitações GraphQL com nomes de filtro desconhecidos causam logs de exceção do PHP</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d4202395c5b7bb5e8c4a95d8fb353ec0fc523fcb">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695">ACP2E-4695: falhas de memória insuficiente do indexador de regra de catálogo causadas pelo uso excessivo de memória</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc891435d573c4c333e58e25b2dbe003ffa08f27">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Correção de erros de digitação em datas do EOS para as versões 2.4.5 e 2.4.6 do Adobe Commerce.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8de65d309dcd4158627910ce5c0b87966db5c948">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 12 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>O PHP 8.4 foi removido como uma versão suportada do PHP nas <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/adobe-commerce/2-4-9#php-and-composer">notas de versão 2.4.9</a>, pois ele não é recomendado para uso em produção e só está presente para compatibilidade de atualização.</p>
+</td>
+      <td>
+        Notas de versão, técnicas
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/603bb70012a2f92ceeaad644d5252c4677a1a47c">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894">ACP2E-4894: novos pedidos aparecem na grade Pedidos de administração com um atraso quando a indexação assíncrona está habilitada</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad40d94c1618f7e423fd6a773185b8fba48c2c72">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698">ACP2E-4698: a edição em linha do Texto do Page Builder salva URLs de mídia absoluta em vez da diretiva portátil</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/68e5e99ac0717b0e358acd6acf9934044a917a82">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>As datas de provisionamento de fim de suporte, suporte estendido e correções de segurança adicionais foram corrigidas e concluídas para várias linhas de versão do Adobe Commerce na página <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/versions">Versões lançadas</a>.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fc5a7f7a466e6419a3e712bcbec4224f98f8c480">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 11 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">Requisitos do sistema</a> para adicionar RabbitMQ 3.13 como uma versão com suporte para Adobe Commerce 2.4.4-p18 (mais recente), resolvendo um bloqueador para o caminho de atualização do sistema operacional Debian.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/046d641dc45b269c6495bef0c06c53bdc500227b">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 10 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797">ACP2E-4797: o editor WYSIWYG de administração e o Page Builder bloqueiam caracteres Unicode de 4 bytes quando utf8mb4 é compatível</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c97bb9c77eb0ec4bbc92d042cfa9fd440e970ca7">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682">ACP2E-4682: as páginas de vitrine que verificam a cotação isActive criam registros de cotação vazios</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ceac870e3ccb9eeee64e3b574aaccd33c6ab69d0">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799">ACP2E-4799: a consulta GraphQL requisition_lists retorna total_count incorreto com a paginação</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/19f854db1a0ff78d0a6dca070b4b6db09d3de83e">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870">ACP2E-4870: os emails de Alertas de produto ignoram as configurações de email de exibição do armazenamento</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/907df07e641ab7124353f89ca799f92d097aa54f">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Atualização da tabela <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability">Disponibilidade do produto</a> com o suporte para Adobe Commerce 2.4.9 e remoção da entrada do Page Builder, que faz parte do produto principal desde a versão 2.4.3.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a5120adab9f624677447889722359951e775c3f3">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 9 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593">ACP2E-4593: página CMS de Restrição de Site incorreta servida no site secundário em vitrines de vários sites</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/86c85db0098192092241b680d38b882f1a52b578">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 6 de agosto de 2026
 
@@ -597,36 +801,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Técnico
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/23f2234eb2b9e11e36e49607b21c3c092266fec4">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 15 de junho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização da tabela <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability#commerce-services">Disponibilidade do produto</a> com a versão mais recente do Payment Services v2.15.0.</p>
-</td>
-      <td>
-        Atualização importante, notas de versão
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a47aff5b5ae138748584cb5dbd646ca7b69e294a">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Atualização dos <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">Requisitos de sistema do Commerce</a> para esclarecer que o modelo do Commerce na nuvem agora fornece uma configuração de serviços padrão compatível com a versão mais recente do Commerce para cada linha de versão.</p>
-</td>
-      <td>
-        Feedback, técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaa05baf7a213a2f949e2eadbf72bc13e1ed247a">confirmar</a></td>
     </tr>
   </tbody>
 </table>
