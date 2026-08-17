@@ -4,7 +4,7 @@ description: Saiba mais sobre o  [!DNL Upgrade Compatibility Tool] e como ele po
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
 source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Diagrama ![[!DNL Upgrade Compatibility Tool]](../../assets/upgrade-guide/uct-dia
 
 Assista a este vídeo para saber mais sobre o [!DNL Upgrade Compatibility Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344389?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/344389?captions=por_br&quality=12)
 
 ## Ajude a melhorar o [!DNL Upgrade Compatibility Tool]
 
