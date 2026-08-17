@@ -54,6 +54,6 @@ Consulte o tópico [Contribute](https://developer.adobe.com/commerce/php/coding-
 Consulte os seguintes recursos para ajudá-lo a entender as atualizações do Adobe Commerce:
 
 - O [guia de atualização](../overview.md) fornece uma visão geral da jornada de atualização típica do Adobe Commerce e as práticas recomendadas para seguir ao longo dessa jornada.
-- A página [versões futuras](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) fornece as datas das versões programadas e futuras.
+- A página [versões futuras](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/schedule) fornece as datas das versões programadas e futuras.
 - A página [recursos da comunidade](https://developer.adobe.com/commerce/contributor/community/) é o local ideal para iniciar discussões ou encontrar mais informações.
 - Verifique a página [ferramentas relacionadas](../upgrade-compatibility-tool/related-tools.md) para obter ferramentas úteis na jornada de atualização típica.
