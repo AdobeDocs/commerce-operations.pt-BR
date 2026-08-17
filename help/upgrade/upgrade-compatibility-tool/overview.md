@@ -4,7 +4,7 @@ description: Saiba mais sobre o  [!DNL Upgrade Compatibility Tool] e como ele po
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
 source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Diagrama ![[!DNL Upgrade Compatibility Tool]](../../assets/upgrade-guide/uct-dia
 
 Assista a este vídeo para saber mais sobre o [!DNL Upgrade Compatibility Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344389?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
 
 ## Ajude a melhorar o [!DNL Upgrade Compatibility Tool]
 
@@ -54,6 +54,6 @@ Consulte o tópico [Contribute](https://developer.adobe.com/commerce/php/coding-
 Consulte os seguintes recursos para ajudá-lo a entender as atualizações do Adobe Commerce:
 
 - O [guia de atualização](../overview.md) fornece uma visão geral da jornada de atualização típica do Adobe Commerce e as práticas recomendadas para seguir ao longo dessa jornada.
-- A página [versões futuras](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/schedule) fornece as datas das versões programadas e futuras.
+- A página [versões futuras](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) fornece as datas das versões programadas e futuras.
 - A página [recursos da comunidade](https://developer.adobe.com/commerce/contributor/community/) é o local ideal para iniciar discussões ou encontrar mais informações.
 - Verifique a página [ferramentas relacionadas](../upgrade-compatibility-tool/related-tools.md) para obter ferramentas úteis na jornada de atualização típica.
