@@ -1,7 +1,7 @@
 ---
-source-git-commit: b14e0f2c4656ec9afa79545a9e8db83cc2e0d4d4
+source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2690'
 ht-degree: 1%
 
 ---
@@ -757,50 +757,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Novo tópico, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eb7012dd29323ae70a19c7b37ab82dac5215c705">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 18 de junho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/lifecycle-policy">Política de ciclo de vida do software</a> com as datas de imposição de atualização da versão em nuvem, definições do período de suporte (incluindo período de transição somente para segurança), uma tabela expandida de fim de suporte para 2.4.4-2.4.9, orientação do PHP PCI e caminhos para migrar para o Adobe Commerce as a Cloud Service ou atualizar no PaaS.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc8326755ceee435f9980d7ea8003a6692ba1e92">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 16 de junho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Versão do Composer atualizada para 2.10 nas tabelas <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements">Requisitos do sistema</a> para nuvem e no local para Adobe Commerce 2.4.9, 2.4.8 e 2.4.7.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/23f2234eb2b9e11e36e49607b21c3c092266fec4">confirmar</a></td>
     </tr>
   </tbody>
 </table>
