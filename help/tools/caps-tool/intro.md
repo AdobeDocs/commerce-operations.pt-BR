@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: Saiba mais sobre  [!DNL Cloud Automation Patching Service (CAPS)], seus usos, como acessá-lo e as práticas recomendadas para aplicação automática de patches
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -18,31 +18,32 @@ Este guia foi projetado para comerciantes e parceiros da Adobe Commerce Cloud qu
 ## [!DNL CAPS] tópicos
 
 * **[Como acessar](access.md)**
-* **[Fluxo de trabalho](workflow.md)**
+* **[Visão geral do fluxo de trabalho](workflow.md)**
+* **[Integração com o GitHub](github-integration.md)**
 * **[Práticas recomendadas](best-practices.md)**
 * **[Solução de problemas](troubleshooting.md)**
 
 ## Visão geral da ferramenta
 
 * **Interface de usuário**
-   * Disponibilidade de patch e exibição de status em tempo real para combinações específicas de projeto e ambiente
-   * Informações abrangentes sobre status de patch mostrando progresso, erros e outras mensagens relevantes
-   * [!UICONTROL Patch Management Dashboard] para:
-      * Exibição de patches disponíveis
-      * Aplicação de patches com operação de um clique
-      * Reverter patches aplicados anteriormente
-      * Monitoramento do status e dos resultados da operação de patch
+  * Disponibilidade de patch e exibição de status em tempo real para combinações específicas de projeto e ambiente
+  * Informações abrangentes sobre status de patch mostrando progresso, erros e outras mensagens relevantes
+  * [!UICONTROL Patch Management Dashboard] para:
+    * Exibição de patches disponíveis
+    * Aplicação de patches com operação de um clique
+    * Reverter patches aplicados anteriormente
+    * Monitoramento do status e dos resultados da operação de patch
 
 * **Serviço de patch automatizado com fluxo de trabalho estruturado**
-   * **Verificação preliminar** - Valida a compatibilidade de patches e a preparação do ambiente
-   * **Patches** - Aplica ou reverte patches automaticamente em ambientes de integração
-   * **Validação** - Executa verificações de integridade e garante que as funcionalidades críticas não sejam afetadas
+  * **Verificação preliminar** - Valida a compatibilidade de patches e a preparação do ambiente
+  * **Patches** - Aplica ou reverte patches automaticamente em ambientes de integração
+  * **Validação** - Executa verificações de integridade e garante que as funcionalidades críticas não sejam afetadas
 
 * **Recursos de segurança**
-   * Cria ambientes de integração temporários para testes
-   * Valida a compatibilidade de patches antes do aplicativo
-   * Fornece reversão automática em caso de falhas de validação
-   * Aplica patches à pasta `m2-hotfixes` com remoção automática durante a reversão
+  * Cria ambientes de integração temporários para testes
+  * Valida a compatibilidade de patches antes do aplicativo
+  * Mantém o ambiente de destino inalterado até que o patch passe na validação no ambiente temporário
+  * Aplica patches à pasta `m2-hotfixes` com remoção automática durante a reversão
 
 ## Integrações com a Adobe Commerce Cloud
 

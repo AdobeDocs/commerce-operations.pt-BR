@@ -4,7 +4,7 @@ description: Saiba mais sobre a importância das permissões do sistema de arqui
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ Há dois tipos de proprietários de sistemas de arquivos:
 
   A hospedagem privada é útil se você gerenciar um servidor de aplicativos. Cada usuário tem uma responsabilidade específica:
 
-   - O _usuário do servidor Web_ executa o Administrador e a loja.
+  - O _usuário do servidor Web_ executa o Administrador e a loja.
 
-   - O _usuário da linha de comando_ executa trabalhos cron e utilitários de linha de comando.
+  - O _usuário da linha de comando_ executa trabalhos cron e utilitários de linha de comando.
 
   Ambos os usuários exigem as mesmas permissões para o sistema de arquivos, portanto, é melhor usar um [grupo compartilhado](configure-permissions.md#set-ownership-and-permissions-for-two-users) e definir um [`umask`](#restrict-access-with-a-umask).
 

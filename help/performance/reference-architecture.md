@@ -4,7 +4,7 @@ description: Saiba mais sobre a arquitetura de referência no Adobe Commerce. De
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ As seções a seguir fornecem recomendações e considerações para cada seçã
 
 ### Arquitetura de referência [!DNL Varnish] recomendada
 
-O Magento oferece suporte a vários mecanismos de cache de página inteira (File, Memcache, Redis, [!DNL Varnish]) prontos para uso, juntamente com uma cobertura expandida por meio de extensões. [!DNL Varnish] é o mecanismo de cache de página inteira recomendado.  O [!DNL Commerce] oferece suporte a várias configurações diferentes do [!DNL Varnish].
+O Magento oferece suporte a vários mecanismos de cache de página inteira (File, Memcache, Redis, [!DNL Varnish]) prontos para uso, juntamente com uma cobertura expandida por meio de extensões. [!DNL Varnish] é o mecanismo de cache de página inteira recomendado.  O [!DNL Commerce] oferece suporte a várias configurações [!DNL Varnish] diferentes.
 
 Para sites que não exigem alta disponibilidade, recomendamos usar uma configuração simples do [!DNL Varnish] com terminação SSL Nginx.
 

@@ -5,7 +5,7 @@ feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ O nível de esforço para atualizar a instância do Adobe Commerce depende deste
 
 - **Como você criou seu site?** A quantidade de trabalho personalizado e o número de módulos de terceiros instalados afetam fortemente a complexidade de uma atualização. A qualidade do trabalho e dos módulos personalizados pode determinar se uma atualização ocorre sem problemas.
 
-- **Você está ignorando várias versões?** Ignorar versões torna a próxima atualização mais complexa, atualizar de versões subsequentes torna o processo mais fácil e barato.
+- **Você está ignorando várias versões?** Ignorar as versões torna a próxima atualização mais complexa, atualizar das versões subsequentes torna o processo mais fácil e barato.
 
 - **Que tipo de atualização você está executando?** Uma atualização para uma versão secundária (de 2.3.x para 2.4.0, por exemplo) é mais extensa do que uma atualização entre versões de patch (como de 2.4.2 para 2.4.3). As atualizações de segurança são o tipo mais fácil de implementar.
 

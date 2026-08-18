@@ -3,7 +3,7 @@ title: Noções básicas sobre pontuações e recomendações do SWAT Health Ind
 description: Saiba o que o Índice de integridade da ferramenta de análise em todo o site significa para seu site do Adobe Commerce. Descubra como interpretar pontuações e usar recomendações de maneira eficaz.
 source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
