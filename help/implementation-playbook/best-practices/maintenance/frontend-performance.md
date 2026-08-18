@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Essas ferramentas usam várias métricas para fornecer insights e recomendaçõe
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -37,5 +37,5 @@ Para verificar o desempenho de front-end da loja de sites:
 ## Informações adicionais
 
 - [Gerenciamento de índice para usuários administradores](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gerenciamento de Índice usando a CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=pt-BR)
-- [Visão geral da indexação para desenvolvedores](https://developer.adobe.com/commerce/php/development/components/indexing/)
+- [Gerenciamento de índice usando a CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
+- [Visão geral de indexação para desenvolvedores](https://developer.adobe.com/commerce/php/development/components/indexing/)

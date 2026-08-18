@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '161'
 ht-degree: 1%
 
 ---
@@ -24,14 +24,14 @@ As ações críticas resultam em operações de invalidação e reindexação de
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
 
 ## Informações adicionais
 
-- [Práticas recomendadas para armazenamento em cache](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
-- [Conteúdo privado: Invalidar conteúdo privado](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [Práticas recomendadas para armazenamento em cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [Conteúdo privado: invalidar conteúdo privado](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Recomendações de hardware: caches](../../../performance/hardware.md#caches)
 - [Configuração avançada: Configurar Redis](../../../performance/advanced-setup.md#set-up-redis)

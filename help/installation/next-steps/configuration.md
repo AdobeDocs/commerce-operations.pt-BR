@@ -5,7 +5,7 @@ feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
 source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ O utilitário UNIX `logrotate` permite administrar sistemas que geram um grande 
 
 Para obter mais informações, consulte uma das seguintes opções:
 
-* [ComoFazer: o último tutorial do comando de rotação de log com dez exemplos](https://www.thegeekstuff.com/2010/07/logrotate-examples)
-* [Empilhar Exchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
-* [`logrotate` página do manual](https://linuxconfig.org/logrotate-8-manual-page)
+* [ComoFazer: O tutorial final do comando de rotação de log com dez exemplos](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [Stack Exchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
+* [Página do manual `logrotate`](https://linuxconfig.org/logrotate-8-manual-page)
 
 >[!AVAILABILITY]
 >
@@ -65,7 +65,7 @@ Para obter mais informações, consulte uma das seguintes opções:
 >
 >* Os ambientes iniciais não têm rotação de log.
 >
->* Não é possível configurar a rotação de logs em ambientes de Integração Pro. Você deve implementar uma solução/script personalizado e [configurar seu cron](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para executar o script conforme necessário.
+>* Não é possível configurar a rotação de logs em ambientes de Integração Pro. Você deve implementar uma solução/script personalizado e [configurar seu cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para executar o script conforme necessário.
 
 ### Configurar regras do iptables para permitir que vários serviços se comuniquem
 
