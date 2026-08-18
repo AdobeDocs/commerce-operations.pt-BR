@@ -57,11 +57,11 @@ Comece a adotar a plataforma Adobe Commerce Extensibility, se ainda não tiver a
 
 À medida que expandimos continuamente os recursos do Adobe Commerce, é essencial desenvolver na versão mais recente disponível e definir uma estratégia de atualização em seus planos de projeto. Dessa forma, você permanecerá seguro, em conformidade e atualizado com os últimos aprimoramentos que lhe permitem aumentar as vendas mais rapidamente, operar com mais eficiência e manter-se à frente da concorrência agora e no futuro.
 
-Para ajudá-lo a planejar e orçar atualizações, você deve monitorar nossa [programação de lançamento](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule). Planeje tarefas de atualização na lista de pendências da sua equipe com antecedência. Pretende concluir este trabalho com a DG.
+Para ajudá-lo a planejar e orçar atualizações, você deve monitorar nossa [programação de lançamento](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/schedule). Planeje tarefas de atualização na lista de pendências da sua equipe com antecedência. Pretende concluir este trabalho com a DG.
 
 - Use a versão de pré-lançamento para saber mais sobre cada nova versão. O pré-lançamento é o código de Disponibilidade geral disponível para os comerciantes da Adobe Commerce e todos os parceiros duas semanas antes da Disponibilidade geral. Se você tiver vários armazenamentos, use o pré-lançamento em seu armazenamento básico e verifique se os módulos e temas personalizados são compatíveis com ele.
 
-- Revise a [lista de verificação do plano de atualização](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) para o Adobe Commerce para ajudá-lo a planejar sua atualização.
+- Revise a [lista de verificação do plano de atualização](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) para o Adobe Commerce para ajudá-lo a planejar sua atualização.
 
 - Planeje atualizações no início do ano. Você deve reservar um orçamento e recursos para concluir cada atualização. Lembre-se, o esforço de atualização pode variar significativamente de projeto para projeto. Use suas experiências e conhecimento para fazer um plano o mais preciso possível.
 
@@ -73,7 +73,7 @@ As atualizações devem ser feitas regularmente e com um orçamento predefinido.
 
 Avaliar o trabalho a ser feito para atualização:
 
-- Revise as [notas de versão](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) para entender o escopo e o impacto da nova versão.
+- Revise as [notas de versão](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview) para entender o escopo e o impacto da nova versão.
 
 - Use o [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) para identificar possíveis problemas que devem ser corrigidos em seu código personalizado antes de tentar atualizar para uma versão mais recente.
 

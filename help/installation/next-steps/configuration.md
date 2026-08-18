@@ -65,7 +65,7 @@ Para obter mais informações, consulte uma das seguintes opções:
 >
 >* Os ambientes iniciais não têm rotação de log.
 >
->* Não é possível configurar a rotação de logs em ambientes de Integração Pro. Você deve implementar uma solução/script personalizado e [configurar seu cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para executar o script conforme necessário.
+>* Não é possível configurar a rotação de logs em ambientes de Integração Pro. Você deve implementar uma solução/script personalizado e [configurar seu cron](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para executar o script conforme necessário.
 
 ### Configurar regras do iptables para permitir que vários serviços se comuniquem
 
