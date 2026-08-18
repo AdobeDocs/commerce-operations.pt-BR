@@ -1,27 +1,27 @@
 ---
-title: Como o fluxo de trabalho  [!DNL Cloud Automation Patching Service (CAPS)]  funciona
+title: Visão geral do fluxo de trabalho [!DNL Cloud Automation Patching Service (CAPS)]
 description: Saiba mais sobre o  [!DNL Cloud Automation Patching Service (CAPS)] processo de fluxo de trabalho, incluindo terminologia, fases de fluxo de trabalho e operações para gerenciamento automatizado de patches.
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
 
-# Como o fluxo de trabalho [!DNL Cloud Automation Patching Service (CAPS)] funciona
+# Visão geral do fluxo de trabalho [!DNL Cloud Automation Patching Service (CAPS)]
 
 Este tópico fornece uma visão geral de alto nível de como as operações de patch funcionam usando o [!DNL CAPS (Cloud Automation Patching Service)].
 
 ## Terminologia
 
 * **Operações** - as principais ações executadas por [!DNL CAPS]:
-   * Aplicar
-   * Reverter
+  * Aplicar
+  * Reverter
 * **Fases** - as três fases do fluxo de trabalho:
-   * Verificação preliminar
-   * Patches
-   * Validação
+  * Verificação preliminar
+  * Patches
+  * Validação
 * **Ambiente** - o ambiente da Adobe Commerce Cloud onde os patches são aplicados.
 
 ## Operações
@@ -53,10 +53,10 @@ A fase de Verificação Preliminar valida que o patch pode ser aplicado com segu
 **O que acontece:**
 
 * **Proteções do ambiente de produção** (Somente ambientes de produção):
-   * Verifica se o armazenamento está no modo de manutenção
-   * Verifica se os trabalhos cron estão desabilitados
-   * Bloqueia patches se as condições não forem atendidas
-   * Exibe caixa de diálogo de confirmação se as condições forem atendidas
+  * Verifica se o armazenamento está no modo de manutenção
+  * Verifica se os trabalhos cron estão desabilitados
+  * Bloqueia patches se as condições não forem atendidas
+  * Exibe caixa de diálogo de confirmação se as condições forem atendidas
 * **Validação de patch** - verifica se o arquivo de patch é válido e compatível
 * **Avaliação do ambiente** - verifica a preparação e os recursos do ambiente
 * **Detecção de conflitos** - identifica possíveis conflitos com o código existente
@@ -92,6 +92,10 @@ Essa abordagem oferece:
 **Operações do Git** - as alterações são confirmadas e enviadas para a ramificação do ambiente de integração
 
 **Ativação do ambiente** - O ambiente de integração é ativado para implantar o código corrigido
+
+>[!NOTE]
+>
+>Se o seu projeto usa um repositório GitHub externo, o [!DNL CAPS] manipula a autenticação automaticamente usando o [[!DNL CAPS] Aplicativo GitHub](github-integration.md). Nenhuma credencial adicional é necessária.
 
 #### Estágio 2c: mesclar de volta ao ambiente de destino
 
@@ -159,5 +163,6 @@ Se nenhuma das condições for atendida, o aplicativo de patch será bloqueado e
 
 * [Introdução ao CAPS](intro.md)
 * [Como acessar o](access.md)
+* [Integração com o GitHub](github-integration.md)
 * [Práticas recomendadas](best-practices.md)
 * [Solução de problemas](troubleshooting.md)

@@ -2,9 +2,9 @@
 title: Guia de práticas recomendadas do [!DNL Cloud Automation Patching Service (CAPS)]
 description: Conheça as práticas recomendadas para usar o  [!DNL Cloud Automation Patching Service (CAPS)]  de maneira eficaz e segura
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,23 @@ As práticas recomendadas a seguir são essenciais para operações de patch bem
 Antes de aplicar patches, verifique se o ambiente está preparado corretamente:
 
 * **Conta da Adobe Commerce Cloud**
-   * Assinatura ativa da Adobe Commerce Cloud
-   * Licença válida do Adobe Commerce
-   * Credenciais de acesso ao repositório configuradas
-   * Permissões de projeto e ambiente
+  * Assinatura ativa da Adobe Commerce Cloud
+  * Licença válida do Adobe Commerce
+  * Credenciais de acesso ao repositório configuradas
+  * Permissões de projeto e ambiente
 
 * **Recursos do ambiente**
-   * Slots de ambiente disponíveis para teste temporário
-   * Recursos suficientes de armazenamento, CPU e memória
-   * Acesso à rede para repositórios Adobe
-   * Ambiente pai estável para sincronização
+  * Slots de ambiente disponíveis para teste temporário
+  * Recursos suficientes de armazenamento, CPU e memória
+  * Acesso à rede para repositórios Adobe
+  * Ambiente pai estável para sincronização
 
 * **Preparação do ambiente de produção** (para correção de produção)
-   * O modo de manutenção pode ser ativado
-   * Os trabalhos do Cron podem ser desabilitados
-   * Procedimentos de janela de manutenção estabelecidos
-   * Procedimentos de reversão documentados
-   * Plano de comunicação das partes interessadas pronto
+  * O modo de manutenção pode ser ativado
+  * Os trabalhos do Cron podem ser desabilitados
+  * Procedimentos de janela de manutenção estabelecidos
+  * Procedimentos de reversão documentados
+  * Plano de comunicação das partes interessadas pronto
 
 ## Práticas recomendadas para aplicativos de patch
 
@@ -49,29 +49,29 @@ Antes de aplicar patches, verifique se o ambiente está preparado corretamente:
 **Escolha a hora certa para o aplicativo de patch:**
 
 * **Períodos de tráfego baixo**
-   * Agendar patches fora do horário de pico
-   * Evite aplicar patches durante eventos de alto tráfego
-   * Planejar tempo de inatividade potencial durante a validação
+  * Agendar patches fora do horário de pico
+  * Evite aplicar patches durante eventos de alto tráfego
+  * Planejar tempo de inatividade potencial durante a validação
 
 * **Considerações sobre o ambiente de produção**
-   * **Janelas de manutenção** - Agendar patches de produção durante janelas de manutenção planejadas
-   * **Comunicação com o cliente** - Notifique os clientes sobre o modo de manutenção e o tempo de inatividade esperado
-   * **Coordenação da equipe** - Verifique se todos os membros da equipe estão cientes do cronograma de manutenção
-   * **Preparação da reversão** - Tenha membros da equipe disponíveis para reversão imediata, se necessário
+  * **Janelas de manutenção** - Agendar patches de produção durante janelas de manutenção planejadas
+  * **Comunicação com o cliente** - Notifique os clientes sobre o modo de manutenção e o tempo de inatividade esperado
+  * **Coordenação da equipe** - Verifique se todos os membros da equipe estão cientes do cronograma de manutenção
+  * **Preparação da reversão** - Tenha membros da equipe disponíveis para reversão imediata, se necessário
 
 ### Monitoramento e validação
 
 **Durante operações de patch:**
 
 * **Monitorar progresso**
-   * Observar o status da operação em tempo real
-   * Preste atenção a quaisquer avisos ou erros
-   * Não interromper o processo depois de iniciado
+  * Observar o status da operação em tempo real
+  * Preste atenção a quaisquer avisos ou erros
+  * Não interromper o processo depois de iniciado
 
 * **Validar resultados**
-   * Testar funcionalidade crítica após o aplicativo bem-sucedido
-   * Verificar se há degradação nas métricas de desempenho
-   * Verifique se as medidas de segurança permanecem intactas
+  * Testar funcionalidade crítica após o aplicativo bem-sucedido
+  * Verificar se há degradação nas métricas de desempenho
+  * Verifique se as medidas de segurança permanecem intactas
 
 ## Práticas recomendadas pós-patch
 
@@ -82,19 +82,19 @@ Antes de aplicar patches, verifique se o ambiente está preparado corretamente:
 **Após o aplicativo de patch bem-sucedido:**
 
 * **Teste funcional**
-   * Testar todos os processos críticos de negócios
-   * Verificar fluxos de pagamento e check-out
-   * Verificar a funcionalidade do painel do administrador
+  * Testar todos os processos críticos de negócios
+  * Verificar fluxos de pagamento e check-out
+  * Verificar a funcionalidade do painel do administrador
 
 * **Monitoramento de desempenho**
-   * Monitorar tempos de carregamento da página
-   * Verificar desempenho do banco de dados
-   * Fique atento a picos de uso de recursos
+  * Monitorar tempos de carregamento da página
+  * Verificar desempenho do banco de dados
+  * Fique atento a picos de uso de recursos
 
 * **Validação de segurança**
-   * Verifique se os recursos de segurança estão funcionando
-   * Verifique se há novas vulnerabilidades de segurança
-   * Testar autenticação e autorização
+  * Verifique se os recursos de segurança estão funcionando
+  * Verifique se há novas vulnerabilidades de segurança
+  * Testar autenticação e autorização
 
 ## Práticas recomendadas do ambiente de produção
 
@@ -105,39 +105,39 @@ Antes de aplicar patches, verifique se o ambiente está preparado corretamente:
 **Sempre testar patches antes da implantação de produção:**
 
 * **Configuração de ambiente de teste**
-   * Usar ambientes de preparo ou integração para testes
-   * Garantir que o ambiente de teste espelhe a configuração de produção
-   * Testar com dados semelhantes aos de produção quando possível
+  * Usar ambientes de preparo ou integração para testes
+  * Garantir que o ambiente de teste espelhe a configuração de produção
+  * Testar com dados semelhantes aos de produção quando possível
 
 * **Teste abrangente**
-   * Testar todos os processos críticos de negócios
-   * Verificar fluxos de pagamento e check-out
-   * Verificar a funcionalidade do painel do administrador
-   * Testar todas as integrações personalizadas
+  * Testar todos os processos críticos de negócios
+  * Verificar fluxos de pagamento e check-out
+  * Verificar a funcionalidade do painel do administrador
+  * Testar todas as integrações personalizadas
 
 * **Teste de desempenho**
-   * Monitorar o impacto de patches no desempenho
-   * Verifique se há degradação de desempenho
-   * Verificar se o uso de recursos permanece aceitável
+  * Monitorar o impacto de patches no desempenho
+  * Verifique se há degradação de desempenho
+  * Verificar se o uso de recursos permanece aceitável
 
 ### Redução de riscos
 
 **Minimizar riscos durante a aplicação de patch de produção:**
 
 * **Plano de comunicação**
-   * Notifique os clientes sobre as janelas de manutenção
-   * Manter as partes interessadas informadas sobre o progresso
-   * Tenha os procedimentos de encaminhamento prontos
+  * Notifique os clientes sobre as janelas de manutenção
+  * Manter as partes interessadas informadas sobre o progresso
+  * Tenha os procedimentos de encaminhamento prontos
 
 * **Estratégia de reversão**
-   * Saber como reverter patches rapidamente, se necessário
-   * Disponibilizar membros da equipe para resposta imediata
-   * Procedimentos de reversão de documentos
+  * Saber como reverter patches rapidamente, se necessário
+  * Disponibilizar membros da equipe para resposta imediata
+  * Procedimentos de reversão de documentos
 
 * **Monitoramento e alertas**
-   * Configurar monitoramento para problemas pós-patch
-   * Ter alertas para falhas críticas
-   * Monitore atentamente as métricas de desempenho
+  * Configurar monitoramento para problemas pós-patch
+  * Ter alertas para falhas críticas
+  * Monitore atentamente as métricas de desempenho
 
 ## Resumo das principais práticas recomendadas
 
@@ -156,5 +156,6 @@ Antes de aplicar patches, verifique se o ambiente está preparado corretamente:
 
 * [Introdução ao CAPS](intro.md)
 * [Como acessar o](access.md)
-* [Fluxo de trabalho (WRK)](workflow.md)
+* [Visão geral do fluxo de trabalho](workflow.md)
+* [Integração com o GitHub](github-integration.md)
 * [Solução de problemas](troubleshooting.md)
