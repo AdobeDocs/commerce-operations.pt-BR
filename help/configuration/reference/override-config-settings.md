@@ -2,9 +2,9 @@
 title: Substituir definições de configuração
 description: Saiba como usar variáveis de ambiente para substituir as configurações do Adobe Commerce. Descubra as práticas recomendadas de gerenciamento e implantação de configuração.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Você pode substituir o valor de _qualquer_ definição de configuração usando
 
 >[!TIP]
 >
->Confira o tópico [Configurar ambientes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=pt-BR) no _guia do Commerce sobre a infraestrutura na nuvem_.
+>Confira o tópico [Configurar ambientes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-intro) no _guia do Commerce sobre a infraestrutura na nuvem_.
 
 ## Variáveis de ambiente
 
@@ -28,9 +28,9 @@ Um nome de variável de ambiente consiste em seu escopo seguido por seu caminho 
 - [Valores confidenciais](config-reference-sens.md) devem ser definidos usando variáveis de ambiente ou o comando [`magento config:sensitive:set`](../cli/set-configuration-values.md).
 - Os valores específicos do sistema devem ser definidos usando:
 
-   - Variáveis de ambiente
-   - O comando [`magento config:set`](../cli/set-configuration-values.md)
-   - O Administrador seguido pelo comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md)
+  - Variáveis de ambiente
+  - O comando [`magento config:set`](../cli/set-configuration-values.md)
+  - O Administrador seguido pelo comando [`magento app:config:dump` ](../cli/export-configuration.md)
 
 Os caminhos de configuração podem ser encontrados em:
 
@@ -61,9 +61,9 @@ O formato geral dos nomes das variáveis de configurações do sistema é o segu
 
   Para obter mais informações sobre escopos, consulte:
 
-   - [Etapa 1: Localizar o valor do escopo de exibição do site ou da loja](#step-1-find-the-website-or-store-view-scope-value)
-   - [Tópico do Guia do usuário do Commerce sobre escopo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [Referência rápida do escopo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/scope-change#scope-quick-reference)
+  - [Etapa 1: Localizar o valor do escopo de exibição do site ou da loja](#step-1-find-the-website-or-store-view-scope-value)
+  - [Tópico do Guia do usuário do Commerce sobre escopo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+  - [Referência rápida do escopo](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` é o caminho de configuração com caracteres de sublinhado duplo substituído por `/`. Para obter mais informações, consulte [Etapa 2: definir variáveis do sistema](#step-2-set-global-website-or-store-view-variables).
 
@@ -103,10 +103,10 @@ Como ler a tabela:
 
   Você tem a opção de especificar valores do sistema para esses parâmetros de configuração como variáveis de ambiente, se desejar.
 
-   - O nome inteiro da variável é sempre ALL CAPS
-   - Iniciar um nome de variável com `CONFIG__` (observe dois caracteres sublinhados)
-   - Você pode encontrar a parte `<STORE_VIEW_CODE>` ou `<WEBSITE_CODE>` de um nome de variável no banco de dados de Administração ou Commerce, conforme indicado nas seções a seguir.
-   - Você pode encontrar `<SYSTEM__VARIABLE__NAME>` conforme discutido em [Etapa 2: definir variáveis de exibição globais, de site ou de repositório](#step-2-set-global-website-or-store-view-variables).
+  - O nome inteiro da variável é sempre ALL CAPS
+  - Iniciar um nome de variável com `CONFIG__` (observe dois caracteres sublinhados)
+  - Você pode encontrar a parte `<STORE_VIEW_CODE>` ou `<WEBSITE_CODE>` de um nome de variável no banco de dados de Administração ou Commerce, conforme indicado nas seções a seguir.
+  - Você pode encontrar `<SYSTEM__VARIABLE__NAME>` conforme discutido em [Etapa 2: definir variáveis de exibição globais, de site ou de repositório](#step-2-set-global-website-or-store-view-variables).
 
 ### Localizar um escopo de exibição de site ou loja no Administrador
 
@@ -185,8 +185,8 @@ Esta seção discute como definir variáveis do sistema.
 
 - Para definir um valor para uma exibição de loja ou site específico, inicie o nome da variável conforme discutido em [Etapa 1: Localize o valor do escopo](#step-1-find-the-website-or-store-view-scope-value):
 
-   - `CONFIG__WEBSITES`
-   - `CONFIG__STORES`
+  - `CONFIG__WEBSITES`
+  - `CONFIG__STORES`
 
 - A última parte do nome da variável é o caminho de configuração, que é exclusivo para cada definição de configuração.
 
@@ -253,6 +253,6 @@ Um exemplo passo a passo é mostrado em [Definir valores de configuração usand
 >
 >- Para usar os valores definidos na matriz `$_ENV`, você deve definir `variables_order = "EGPCS"`(Ambiente, Obtenção, Publicação, Cookie e Servidor) no arquivo `php.ini`. Para obter detalhes, consulte [documentação sobre PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Para o Adobe Commerce na infraestrutura em nuvem, se você estiver tentando substituir as definições de configuração usando a [Interface da Web do Project](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=pt-BR#configure-the-project), você deve anexar o nome da variável a `env:` como prefixo. Por exemplo:
+>- Para o Adobe Commerce na infraestrutura em nuvem, se você estiver tentando substituir as definições de configuração usando a [Interface da Web do Project](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-the-project), você deve anexar o nome da variável a `env:` como prefixo. Por exemplo:
 >
 >![Exemplo de variável de ambiente](../../assets/configuration/cloud-console-envvariable.png)

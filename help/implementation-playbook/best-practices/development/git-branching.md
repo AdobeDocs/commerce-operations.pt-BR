@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes estratégias de ramificação para o
 feature: Best Practices
 role: Developer
 exl-id: 7d7736e8-7023-4315-9965-71866b0be5c3
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ O código do Source passa por várias fases de estabilidade durante o processo d
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -40,7 +40,7 @@ Cada fase de desenvolvimento deve ter uma ramificação correspondente no Git pa
 
 >[!TIP]
 >
->O Adobe Commerce em projetos de infraestrutura em nuvem contém ramificações específicas que correspondem a ambientes diferentes. Consulte o [Fluxo de trabalho do projeto Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=pt-BR) e o [Fluxo de trabalho do projeto inicial](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=pt-BR) no _Guia da Nuvem_.
+>O Adobe Commerce em projetos de infraestrutura em nuvem contém ramificações específicas que correspondem a ambientes diferentes. Consulte o [Fluxo de trabalho do projeto Pro](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) e o [Fluxo de trabalho do projeto inicial](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow) no _Guia da Nuvem_.
 
 ## Estratégias de ramificação
 
@@ -48,9 +48,9 @@ Há várias estratégias de ramificação que podem ser usadas. Escolha uma estr
 
 Para obter mais informações, consulte os seguintes recursos externos:
 
-- [Fluxos de trabalho de ramificação](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+- [Branching de workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 - [Fluxos de trabalho distribuídos](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
-- [Padrões para gerenciar ramificações de código-fonte](https://martinfowler.com/articles/branching-patterns.html)
+- [Padrões para gerenciar ramificações do código-fonte](https://martinfowler.com/articles/branching-patterns.html)
 - [Um modelo de ramificação Git bem-sucedido](https://nvie.com/posts/a-successful-git-branching-model/)
 - [Fluxo do GitHub](https://docs.github.com/en/get-started/quickstart/github-flow)
 - [Fluxo do GitLab](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)

@@ -5,9 +5,9 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: fb6dee57-281e-4165-8b70-7ff5949eb677
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ O patch ACSD-63469 corrige o problema em que os descontos de valor fixo para tod
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -39,11 +39,11 @@ Quando várias regras **[!UICONTROL Fixed amount discount for whole cart]** são
 1. Crie dois produtos com preços de US$ 850 e US$ 85 e defina seus preços especiais como US$ 765 e US$ 68, respectivamente.
 1. Crie dois **[!UICONTROL Cart Price Rules]** da seguinte maneira:
    * Regra 1
-      * **[!UICONTROL Conditions]**: Para o produto de $850, defina *Qtd* como *igual ou maior que 2*
-      * **[!UICONTROL Actions]**: Aplicar **[!UICONTROL Fixed amount discount for whole cart]** de *$153*
+     * **[!UICONTROL Conditions]**: Para o produto de $850, defina *Qtd* como *igual ou maior que 2*
+     * **[!UICONTROL Actions]**: Aplicar **[!UICONTROL Fixed amount discount for whole cart]** de *$153*
    * Regra 2
-      * **[!UICONTROL Conditions]**: Para o produto de $85, defina *Qtd* como *igual ou maior que 2*
-      * **[!UICONTROL Actions]**: Aplicar **[!UICONTROL Fixed amount discount for whole cart]** de *$14*
+     * **[!UICONTROL Conditions]**: Para o produto de $85, defina *Qtd* como *igual ou maior que 2*
+     * **[!UICONTROL Actions]**: Aplicar **[!UICONTROL Fixed amount discount for whole cart]** de *$14*
 1. Adicione ambos os produtos ao carrinho, cada um com uma quantidade de 2.
 
 <u>Resultados esperados</u>:
@@ -59,7 +59,7 @@ O desconto aplicado no carrinho é de US$ 41.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Etapas adicionais necessárias após a instalação do patch
 

@@ -4,9 +4,9 @@ description: Saiba como criar e configurar arquivos de log personalizados no Ado
 feature: Configuration, Logs
 badge: label="Contribuição de Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ Você pode usar uma das seguintes abordagens para fazer logon em um arquivo pers
 
 ## Configurar um arquivo de log personalizado no `di.xml`
 
-Este exemplo mostra como usar [tipos virtuais](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) para registrar mensagens `debug` em um arquivo de log personalizado em vez de um `/var/log/debug.log` padrão.
+Este exemplo mostra como usar [tipos virtuais](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) para registrar mensagens `debug` em um arquivo de log personalizado em vez de um `/var/log/debug.log` padrão.
 
-1. No arquivo `di.xml` do módulo, defina um arquivo de log personalizado como um [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
+1. No arquivo `di.xml` do módulo, defina um arquivo de log personalizado como um [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -46,7 +46,7 @@ Este exemplo mostra como usar [tipos virtuais](https://developer.adobe.com/comme
 
    O valor `name` de `Magento\Payment\Model\Method\MyCustomDebug` deve ser exclusivo.
 
-1. Defina o manipulador em outro [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) com um `name` exclusivo:
+1. Defina o manipulador em outro [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) com um `name` exclusivo:
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ Este exemplo mostra como usar [tipos virtuais](https://developer.adobe.com/comme
    </virtualType>
    ```
 
-1. Insira o `MyCustomLogger` [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) no objeto `Magento\Payment\Model\Method\Logger`:
+1. Insira o `MyCustomLogger` [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) no objeto `Magento\Payment\Model\Method\Logger`:
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -117,7 +117,7 @@ Este exemplo mostra como usar uma classe de manipulador de agente de log persona
    }
    ```
 
-1. Defina o manipulador para esta classe como um [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) no arquivo `di.xml` do módulo.
+1. Defina o manipulador para esta classe como um [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) no arquivo `di.xml` do módulo.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">

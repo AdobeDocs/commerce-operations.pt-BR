@@ -2,9 +2,9 @@
 title: Configurar vários sites com o Nginx
 description: Siga este tutorial para configurar vários sites com o Nginx.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -17,16 +17,16 @@ Presumimos que:
 
   Tarefas adicionais podem ser necessárias para implantar vários sites em um ambiente hospedado; verifique com seu provedor de hospedagem para obter mais informações.
 
-  Tarefas adicionais são necessárias para configurar a Adobe Commerce na infraestrutura em nuvem. Após concluir as tarefas discutidas neste tópico, consulte [Configurar vários sites ou lojas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=pt-BR) no _guia do Commerce na Infraestrutura da Nuvem_.
+  Tarefas adicionais são necessárias para configurar a Adobe Commerce na infraestrutura em nuvem. Após concluir as tarefas discutidas neste tópico, consulte [Configurar vários sites ou lojas](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) no _guia do Commerce na Infraestrutura da Nuvem_.
 
 - Você aceita vários domínios em um arquivo de host virtual ou usa um host virtual por site; os arquivos de configuração de host virtual estão localizados em `/etc/nginx/sites-available`.
 - Você usa o `nginx.conf.sample` fornecido pelo Commerce somente com as modificações discutidas neste tutorial.
 - O software Commerce está instalado em `/var/www/html/magento2`.
 - Você tem dois sites diferentes do padrão:
 
-   - `french.mysite.mg` com código de site `french` e código de exibição de armazenamento `fr`
-   - `german.mysite.mg` com código de site `german` e código de exibição de armazenamento `de`
-   - `mysite.mg` é o site padrão e a exibição de armazenamento padrão
+  - `french.mysite.mg` com código de site `french` e código de exibição de armazenamento `fr`
+  - `german.mysite.mg` com código de site `german` e código de exibição de armazenamento `de`
+  - `mysite.mg` é o site padrão e a exibição de armazenamento padrão
 
 >[!TIP]
 >
@@ -40,8 +40,8 @@ Este é um roteiro para configurar vários sites com nginx:
 
    - `$MAGE_RUN_TYPE` pode ser `store` ou `website`:
 
-      - Use o `website` para carregar seu site na vitrine eletrônica.
-      - Use `store` para carregar qualquer exibição de loja em sua vitrine eletrônica.
+     - Use o `website` para carregar seu site na vitrine eletrônica.
+     - Use `store` para carregar qualquer exibição de loja em sua vitrine eletrônica.
 
    - `$MAGE_RUN_CODE` é o código de exibição de site ou loja exclusivo que corresponde a `$MAGE_RUN_TYPE`.
 
@@ -280,7 +280,7 @@ A menos que você tenha um DNS configurado para as URLs dos armazenamentos, é n
 >[!INFO]
 >
 >- Tarefas adicionais podem ser necessárias para implantar vários sites em um ambiente hospedado; verifique com seu provedor de hospedagem para obter mais informações.
->- Tarefas adicionais são necessárias para configurar o Adobe Commerce na infraestrutura em nuvem; consulte [Configurar vários sites ou lojas na nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=pt-BR) no _guia do Commerce na Infraestrutura em Nuvem_.
+>- Tarefas adicionais são necessárias para configurar o Adobe Commerce na infraestrutura em nuvem; consulte [Configurar vários sites ou lojas na nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) no _guia do Commerce na Infraestrutura em Nuvem_.
 
 ### Solução de problemas
 

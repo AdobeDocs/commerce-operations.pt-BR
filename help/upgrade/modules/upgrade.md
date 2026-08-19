@@ -2,9 +2,9 @@
 title: Atualizar módulos e extensões
 description: Use a interface de linha de comando e o Composer para atualizar módulos e extensões do Adobe Commerce.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Para atualizar ou atualizar um módulo ou uma extensão:
 
 ## VBEs (Vendor bundled extensions)
 
-O Adobe removeu todos os [VBEs](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/upgrade-guide/modules/upgrade) na versão 2.4.4. Os fornecedores continuam a oferecer suporte a essas extensões no Adobe Commerce Marketplace.
+O Adobe removeu todos os [VBEs](/help/upgrade/modules/upgrade.md) na versão 2.4.4. Os fornecedores continuam a oferecer suporte a essas extensões no Adobe Commerce Marketplace.
 
 Se quiser continuar usando essas extensões com o Adobe Commerce 2.4.4 e posterior, atualize as dependências de pacote correspondentes no arquivo `composer.json` _antes_ de atualizar para a versão 2.4.4. Entre em contato com o fornecedor para obter o nome e a versão do pacote que serão usados.
 
