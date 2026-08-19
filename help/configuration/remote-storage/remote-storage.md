@@ -38,7 +38,7 @@ A habilitação do armazenamento remoto pode afetar sua experiência de desenvol
 
 ## Opções de armazenamento remoto
 
-Você pode configurar o armazenamento remoto usando a opção `remote-storage` com o comando ](../../installation/tutorials/deployment.md) da CLI [`setup`. A opção `remote-storage` usa a seguinte sintaxe:
+Você pode configurar o armazenamento remoto usando a opção `remote-storage` com o comando [&#128279;](../../installation/tutorials/deployment.md) da CLI `setup`. A opção `remote-storage` usa a seguinte sintaxe:
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
