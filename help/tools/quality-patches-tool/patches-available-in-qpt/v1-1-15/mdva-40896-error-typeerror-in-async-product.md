@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40896: erro "Erro: TypeError: Argument 3" no produto assíncrono'
-description: 'O patch MDVA-40896 corrige o problema em que o erro "Error: TypeError: Argument 3" passado para MagentoFrameworkWebapiServiceInputProcessor::process() deve ser do tipo matriz, o erro "string given" é mostrado na API assíncrona do produto em massa. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 está instalada. A ID do patch é MDVA-40896. Observe que o problema foi corrigido no Adobe Commerce 2.4.4.'
+description: 'O patch MDVA-40896 corrige o problema em que o erro "Error: TypeError: Argument 3" passado para MagentoFrameworkWebapiServiceInputProcessor::process() deve ser do tipo matriz, o erro "string given" é mostrado na API assíncrona do produto em massa. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 está instalada. A ID do patch é MDVA-40896. Observe que o problema foi corrigido no Adobe Commerce 2.4.4.'
 feature: Products
 role: Admin
 exl-id: 24eedd8d-4ae1-4ebc-a3e4-993f0c361a67
@@ -92,7 +92,7 @@ O erro `Error: TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceI
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
@@ -101,4 +101,4 @@ Para saber mais sobre a Ferramenta de correção de qualidade, consulte:
 * [Ferramenta de correções de qualidade lançada: uma nova ferramenta para autoatender correções de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) na base de dados de conhecimento de suporte.
 * [Verifique se há um patch disponível para o problema do Adobe Commerce usando a Ferramenta de Patches de Qualidade](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!DNL Quality Patches Tool].
 
-Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no guia [!DNL Quality Patches Tool].
+Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no guia [!DNL Quality Patches Tool].

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-39043: Erros dos usuários administradores ao adicionar widget à página do CMS'
-description: O patch MDVA-39043 corrige o problema em que usuários administradores com acesso limitado obtêm um erro ao adicionar o widget "Produtos" à página do CMS. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 está instalada. A ID do patch é MDVA-39043. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
+description: O patch MDVA-39043 corrige o problema em que usuários administradores com acesso limitado obtêm um erro ao adicionar o widget "Produtos" à página do CMS. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 está instalada. A ID do patch é MDVA-39043. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: Admin Workspace, CMS, Products
 role: Admin
 exl-id: 82488249-cca3-4a28-bdc1-fa93a4c9dc2f
@@ -58,7 +58,7 @@ A seguinte mensagem de erro é recebida:
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

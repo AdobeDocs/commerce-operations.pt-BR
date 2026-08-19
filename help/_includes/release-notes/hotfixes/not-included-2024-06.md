@@ -25,22 +25,22 @@ Opção 1:
 
    * [2.4.4-p9](/help/release/release-notes/security/2-4-4-patches.md#adobe-commerce-244-p9)
 
-1. Aplique o [hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) lançado em 17 de julho de 2024.
+1. Aplique o [hotfix](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27136) lançado em 17 de julho de 2024.
 
-1. [Girar](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) chaves de criptografia.
+1. [Girar](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/encryption-key) chaves de criptografia.
 
 Opção 2:
 
-1. Aplicar o [patch isolado](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136).
+1. Aplicar o [patch isolado](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27136).
 
-1. [Girar](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) chaves de criptografia.
+1. [Girar](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/encryption-key) chaves de criptografia.
 
 **Para clientes que já aplicaram um patch de segurança lançado em 11 de junho de 2024 ou o patch isolado lançado em 28 de junho de 2024:**
 
-1. Aplique o [hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) lançado em 17 de julho de 2024.
+1. Aplique o [hotfix](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27136) lançado em 17 de julho de 2024.
 
-1. [Girar](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) chaves de criptografia.
+1. [Girar](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/encryption-key) chaves de criptografia.
 
 **Para clientes que já tenham 1) aplicado um patch de segurança lançado em 11 de junho de 2024 ou 2) o patch isolado lançado em 28 de junho de 2024 e 3) girado suas chaves de criptografia:**
  
-1. Aplique o [hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) lançado em 17 de julho de 2024.
+1. Aplique o [hotfix](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27136) lançado em 17 de julho de 2024.

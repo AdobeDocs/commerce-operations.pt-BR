@@ -91,5 +91,5 @@ Depois de habilitar o armazenamento remoto para um adaptador específico, você 
 
 >[!INFO]
 >
->O comando sync migra somente arquivos no diretório `pub/media`, _não_ os arquivos de importação/exportação no diretório `var`. Consulte [Importação/Exportação agendada](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) no _Guia do Usuário do Commerce 2.4_.
+>O comando sync migra somente arquivos no diretório `pub/media`, _não_ os arquivos de importação/exportação no diretório `var`. Consulte [Importação/Exportação agendada](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=pt-BR) no _Guia do Usuário do Commerce 2.4_.
 

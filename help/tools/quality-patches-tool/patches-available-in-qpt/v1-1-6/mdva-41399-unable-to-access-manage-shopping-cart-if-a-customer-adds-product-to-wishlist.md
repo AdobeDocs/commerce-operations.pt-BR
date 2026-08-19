@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41399: Não é possível acessar o Gerenciar carrinho de compras se um cliente adicionar produto à lista de desejos'
-description: O patch MDVA-41399 resolve o problema em que os usuários administradores não conseguem acessar a página Gerenciar carrinho de compras se um cliente adicionar um produto à lista de desejos. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6 está instalada. A ID do patch é MDVA-41399. Observe que o problema foi corrigido no Adobe Commerce 2.4.2.
+description: O patch MDVA-41399 resolve o problema em que os usuários administradores não conseguem acessar a página Gerenciar carrinho de compras se um cliente adicionar um produto à lista de desejos. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6 está instalada. A ID do patch é MDVA-41399. Observe que o problema foi corrigido no Adobe Commerce 2.4.2.
 feature: Orders, Products, Shopping Cart
 role: Admin
 exl-id: 81a128b5-0c38-4f8f-b297-1f264952d431
@@ -59,7 +59,7 @@ O usuário administrador recebe uma mensagem de erro: *Ocorreu um erro. Consulte
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

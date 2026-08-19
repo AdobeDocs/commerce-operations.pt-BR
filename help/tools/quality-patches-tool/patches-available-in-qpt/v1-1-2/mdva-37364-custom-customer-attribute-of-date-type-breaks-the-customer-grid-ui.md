@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37364: Atributo de cliente personalizado do tipo de data quebra a interface de grade'
-description: O patch MDVA-37364 resolve o problema em que o atributo de cliente personalizado do tipo de data quebra a interface do usuário da Grade do cliente. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 está instalada. A ID do patch é MDVA-37364. Observe que o problema está programado para ser corrigido no Adobe Commerce versão 2.4.4.
+description: O patch MDVA-37364 resolve o problema em que o atributo de cliente personalizado do tipo de data quebra a interface do usuário da Grade do cliente. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 está instalada. A ID do patch é MDVA-37364. Observe que o problema está programado para ser corrigido no Adobe Commerce versão 2.4.4.
 feature: Attributes, Cache
 role: Developer
 exl-id: 5bd64004-06c4-49fd-8e56-e2c44008ca82
@@ -61,7 +61,7 @@ A interface do usuário da Grade de clientes de administração está com proble
 Para aplicar patches individuais, use os links a seguir, dependendo do tipo de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

@@ -54,7 +54,7 @@ No software, uma função de usuário com privilégios totais de administrador p
 No Adobe Commerce, os usuários administradores têm permissões totais e acesso a todos os recursos, opções e funcionalidades no Admin.
 Eles também podem criar usuários e funções.
 
-Saiba mais: [Adicionando usuários](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
+Saiba mais: [Adicionando usuários](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=pt-BR)
 
 _Atributos de termo :_
 
@@ -70,7 +70,7 @@ O back office protegido por senha da loja onde os pedidos, o catálogo, o conte�
 Os usuários acessam a área de Administração para gerenciar a loja, incluindo produtos, pedidos, remessas, conteúdo do CMS, design da loja, informações do cliente e assim por diante.
 Os usuários administradores têm uma função associada com permissões que controlam o acesso a recursos, opções e funcionalidades.
 
-Saiba mais: [Guia do Usuário do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+Saiba mais: [Guia do Usuário do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=pt-BR)
 
 _Atributos de termo :_
 
@@ -84,7 +84,7 @@ _substantivo_
 
 As variáveis ADMIN são variáveis de ambiente do projeto para substituir as definições de configuração da conta de usuário Admin para acessar a interface de usuário Admin.
 
-Saiba mais: [Variáveis de ADMINISTRAÇÃO](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin)
+Saiba mais: [Variáveis de ADMINISTRAÇÃO](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin)
 
 _Atributos de termo :_
 
@@ -96,7 +96,7 @@ _substantivo_
 
 O nome da área interna atribuído ao Administrador.
 
-Saiba mais: [Guia do Usuário do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+Saiba mais: [Guia do Usuário do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=pt-BR)
 
 _Atributos de termo :_
 
@@ -190,7 +190,7 @@ A loja fornece um seletor de moedas para várias moedas aceitas para um país ou
 Os símbolos de moeda são exibidos nos preços dos produtos e nos documentos de venda, como pedidos e faturas.
 Você pode personalizar os símbolos de moeda conforme necessário e definir a exibição do preço separadamente para cada loja ou exibição.
 
-Saiba mais: [Moeda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
+Saiba mais: [Moeda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html?lang=pt-BR)
 
 _Atributos de termo :_
 
@@ -212,13 +212,13 @@ _Atributos de termo :_
 _substantivo_
 
 Uma unidade de saída de página que renderiza algum conteúdo distinto — uma parte das informações, um elemento da interface do usuário — qualquer coisa visualmente tangível para o usuário final.
-[Os blocos](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) são implementados e fornecidos por módulos.
+[Os blocos](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=pt-BR) são implementados e fornecidos por módulos.
 Os blocos usam modelos para gerar o HTML.
 Exemplos de blocos incluem uma lista de categorias, um minicarrinho, tags de produtos e listas de produtos.
 
-[Blocos dinâmicos](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) fornecem conteúdo com base na lógica, como regras de preço.
+[Blocos dinâmicos](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html?lang=pt-BR) fornecem conteúdo com base na lógica, como regras de preço.
 
-O Page Builder expande a interatividade e a criação de [blocos](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) e [blocos dinâmicos](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
+O Page Builder expande a interatividade e a criação de [blocos](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html?lang=pt-BR) e [blocos dinâmicos](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html?lang=pt-BR).
 
 _Atributos de termo :_
 
@@ -248,7 +248,7 @@ _adjetivo_
 
 Uma empresa de varejo com um local físico permanente, em oposição às empresas que funcionam virtual ou exclusivamente pela Internet.
 
-Para o [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) e o [Order Management](#oms), esta loja é uma fonte para rastrear quantidades de produtos, pedidos de remessa e suporte para retirada na loja.
+Para o [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=pt-BR) e o [Order Management](#oms), esta loja é uma fonte para rastrear quantidades de produtos, pedidos de remessa e suporte para retirada na loja.
 
 _Atributos de termo :_
 
@@ -274,7 +274,7 @@ _substantivo_
 Permite que os clientes montem um produto personalizável &quot;crie o seu próprio&quot; a partir de várias opções e configurações.
 Cada item no pacote é um produto simples ou virtual separado.
 
-Saiba mais: [Produtos configuráveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
+Saiba mais: [Produtos configuráveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=pt-BR)
 
 _Atributos de termo :_
 
@@ -448,7 +448,7 @@ _substantivo_
 
 As variáveis de nuvem são variáveis de ambiente específicas do Adobe Commerce na infraestrutura de nuvem e usam o prefixo **`MAGENTO_CLOUD`**.
 
-Saiba mais: [Variáveis de nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
+Saiba mais: [Variáveis de nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
 
 _Atributos de termo :_
 
@@ -458,7 +458,7 @@ _Atributos de termo :_
 
 _substantivo_
 
-Uma variante especial de [bloco](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) que só pode ser criada no Administrador e não pode ser referenciada por meio de arquivos de layout.
+Uma variante especial de [bloco](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=pt-BR) que só pode ser criada no Administrador e não pode ser referenciada por meio de arquivos de layout.
 
 _Atributos de termo :_
 
@@ -619,7 +619,7 @@ _substantivo_
 
 Uma chave de implantação é a chave pública SSH do projeto e permite acesso somente leitura ou leitura-gravação (se habilitado) a um repositório Git.
 
-Saiba mais: [Conexões seguras](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)
+Saiba mais: [Conexões seguras](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/secure-connections)
 
 _Atributos de termo :_
 
@@ -688,7 +688,7 @@ _substantivo_
 
 Um conjunto de scripts e ferramentas projetado para gerenciar e implantar o aplicativo do Commerce. Esse pacote simplifica muitos processos do Adobe Commerce na infraestrutura em nuvem, incluindo a implantação em um ambiente Docker, o gerenciamento de crons, a verificação da configuração do projeto e a aplicação de patches do Adobe.
 
-Saiba mais: [pacote ece-tools](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview)
+Saiba mais: [pacote ece-tools](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview)
 
 _Atributos de termo :_
 
@@ -978,7 +978,7 @@ _substantivo_
 A MAGEID normalmente é o contato de faturamento na conta da Adobe Commerce (e pode não ser o Proprietário do projeto do Adobe Commerce na infraestrutura em nuvem).
 Para obter direito de acesso ao Adobe Commerce e Adobe Commerce em pacotes de infraestrutura em nuvem, você deve usar chaves de acesso associadas a uma MAGEID que recebeu acesso a esses pacotes.
 
-Saiba mais: [Obtenha suas chaves de autenticação](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
+Saiba mais: [Obtenha suas chaves de autenticação](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=pt-BR)
 
 _Atributos de termo :_
 
@@ -989,7 +989,7 @@ _Atributos de termo :_
 _substantivo_
 
 Em marketing e varejo, uma porcentagem adicionada ao custo de um item para determinar o preço de varejo.
-[Configure a marcação](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html) ou o Markdown de um produto por meio de opções personalizáveis do produto.
+[Configure a marcação](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=pt-BR) ou o Markdown de um produto por meio de opções personalizáveis do produto.
 
 Em desenvolvimento, um idioma de computador que controla o processamento, a apresentação e a formatação do texto.
 Além disso, as tags de marcação são trechos de código que adicionam funcionalidade ou conteúdo a uma página ou bloco do CMS.
@@ -1087,7 +1087,7 @@ _substantivo_
 
 O cloaking de origem é um recurso de segurança que permite que o Adobe Commerce na infraestrutura em nuvem bloqueie qualquer tráfego que não seja do Fastly para evitar ataques de DDoS, indo para a infraestrutura em nuvem (origem).
 
-Saiba mais: [Fastly origin cloaking](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)
+Saiba mais: [Fastly origin cloaking](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly)
 
 _Atributos de termo :_
 
@@ -1105,7 +1105,7 @@ Esses controles também são conhecidos como &quot;tipos de conteúdo&quot;.
 Os comerciantes podem criar layouts e páginas sem experiência de codificação.
 O suporte à extensão é fornecido para desenvolvedores que ampliam o Page Builder.
 
-Saiba mais: [Guia do Usuário do Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [DevDocs do Page Builder](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+Saiba mais: [Guia do Usuário do Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=pt-BR), [DevDocs do Page Builder](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
 _Atributos de termo :_
 
@@ -1397,8 +1397,8 @@ nos URLs de acesso da instância do Commerce ou nos detalhes da instância do Co
 
 Saiba mais:
 
-[Noções básicas sobre o Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started#adobe-commerce-as-a-cloud-service-basics)
-[Introdução ao Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started#manage-instances)
+[Noções básicas sobre o Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/getting-started#adobe-commerce-as-a-cloud-service-basics)
+[Introdução ao Adobe Commerce Optimizer](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/get-started#manage-instances)
 
 _Atributos de termo :_
 
@@ -1435,7 +1435,7 @@ As metas do sistema de componentes da interface do usuário incluem o seguinte:
 * Utilização do AJAX para atualizar dados de componentes
 * Introdução de um novo DSL para criar os itens acima
 
-Saiba mais: [guia de Componentes da Interface do Usuário](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
+Saiba mais: [guia de Componentes da Interface do Usuário](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=pt-BR)
 
 _Atributos de termo :_
 
@@ -1474,7 +1474,7 @@ O código produzido pelo fornecedor que estende ou personaliza o comportamento d
 Os VBEs são totalmente testados e incluídos em cada versão compatível do Adobe Commerce.
 Um VBE pode incluir módulos, temas e pacotes de idiomas.
 
-Saiba mais no [tópico sobre Extensão agrupada de fornecedores](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
+Saiba mais no [tópico sobre Extensão agrupada de fornecedores](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=pt-BR).
 
 _Atributos de termo :_
 
@@ -1540,7 +1540,7 @@ _Atributos de termo :_
 
 _substantivo_
 
-Um [widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) é um trecho de código preparado que pode ser usado para colocar blocos, links e conteúdo dinâmico em locais específicos nas páginas da loja.
+Um [widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html?lang=pt-BR) é um trecho de código preparado que pode ser usado para colocar blocos, links e conteúdo dinâmico em locais específicos nas páginas da loja.
 Você pode usar widgets para criar páginas de aterrissagem para campanhas de marketing, exibir conteúdo promocional em locais específicos na loja.
 Os widgets também podem ser usados para adicionar elementos interativos e blocos de ação para sistemas de revisão externos, chats de vídeo, votações e formulários de subscrição ou para fornecer elementos de navegação para nuvens de tags e controles deslizantes de imagem.
 

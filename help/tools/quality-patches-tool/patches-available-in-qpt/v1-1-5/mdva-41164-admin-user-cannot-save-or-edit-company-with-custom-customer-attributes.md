@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41164: não é possível salvar ou editar a Empresa com atributos personalizados do cliente'
-description: O patch MDVA-41164 resolve o problema em que o usuário administrador não pode salvar ou editar uma empresa com atributos personalizados do cliente de arquivos ou imagens de qualquer tipo. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 está instalada. A ID do patch é MDVA-41164. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
+description: O patch MDVA-41164 resolve o problema em que o usuário administrador não pode salvar ou editar uma empresa com atributos personalizados do cliente de arquivos ou imagens de qualquer tipo. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 está instalada. A ID do patch é MDVA-41164. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: Admin Workspace, Attributes, B2B, Companies
 role: Developer
 exl-id: 9d1792e0-ba7b-444b-b1b1-771fd0e328eb
@@ -67,7 +67,7 @@ O usuário pode concluir a criação da empresa e o anexo é carregado sem erros
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
