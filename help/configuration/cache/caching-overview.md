@@ -56,7 +56,7 @@ Você pode atribuir diferentes tipos de cache a diferentes front-ends quando con
 O cache de página inteira HTTP armazena respostas completas na camada HTTP ou CDN. Para implantações de produção:
 
 - **Adobe Commerce no local**—A Adobe recomenda [Verniz](config-varnish.md) para armazenamento em cache de página inteira. O verniz opera como um proxy reverso na frente do servidor Web.
-- A **infraestrutura do Adobe Commerce na nuvem** usa o [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} para a camada de armazenamento em cache de borda e página inteira. A infraestrutura em nuvem não usa um serviço verniz gerenciado separadamente.
+- A **infraestrutura do Adobe Commerce na nuvem** usa o [Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} para a camada de armazenamento em cache de borda e página inteira. A infraestrutura em nuvem não usa um serviço verniz gerenciado separadamente.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ As tarefas de configuração a seguir variam de acordo com o tipo de implantaç�
 | Tarefa | No local | Infraestrutura em nuvem |
 | --- | --- | --- |
 | Infraestruturas do cache de aplicativos | [Opções de back-end do cache e referência de armazenamento](cache-options.md) | [Práticas recomendadas para a configuração do serviço Valkey e Redis](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
-| Cache de página inteira HTTP | [Configurar verniz](config-varnish.md) | [Visão geral dos serviços do Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
+| Cache de página inteira HTTP | [Configurar verniz](config-varnish.md) | [Visão geral dos serviços do Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
 As seguintes tarefas se aplicam a todos os tipos de implantação:
 

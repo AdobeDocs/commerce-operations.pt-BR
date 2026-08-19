@@ -39,7 +39,7 @@ Para obter uma visão geral da arquitetura de cache do Commerce, consulte [Visã
 
 >[!NOTE]
 >
->Para o Adobe Commerce na infraestrutura em nuvem, use a [Configuração de implantação da nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) descrita no guia de nuvem. Não edite `app/etc/env.php` diretamente. As ferramentas de implantação geram esse arquivo e podem substituir alterações manuais.
+>Para o Adobe Commerce na infraestrutura em nuvem, use a [Configuração de implantação da nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) descrita no guia de nuvem. Não edite `app/etc/env.php` diretamente. As ferramentas de implantação geram esse arquivo e podem substituir alterações manuais.
 
 ## Usar o front-end padrão
 

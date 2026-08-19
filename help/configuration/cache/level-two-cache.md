@@ -3,7 +3,7 @@ title: Configuração de cache L2 para otimização de desempenho
 description: Saiba como configurar o cache L2 no Adobe Commerce para reduzir o tráfego de rede e melhorar o desempenho. Conheça as opções de implementação herdadas e do Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce no local."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce no local."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -361,7 +361,7 @@ Use o exemplo a seguir para configurar front-ends separados para o suporte a cac
 
 >[!NOTE]
 >
->Essas melhorias se aplicam às implantações do Adobe Commerce 2.4.9 que usam o `symfony_l2` e estão disponíveis no patch ACP2E-5132. Para o Adobe Commerce no local, aplique este patch usando a Ferramenta de correções de qualidade (QPT). Para o Adobe Commerce na Nuvem, este patch é entregue automaticamente via [Patches da Nuvem para o Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest).
+>Essas melhorias se aplicam às implantações do Adobe Commerce 2.4.9 que usam o `symfony_l2` e estão disponíveis no patch ACP2E-5132. Para o Adobe Commerce no local, aplique este patch usando a Ferramenta de correções de qualidade (QPT). Para o Adobe Commerce na Nuvem, este patch é entregue automaticamente via [Patches da Nuvem para o Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest).
 
 As atualizações mais recentes melhoram a escalabilidade do cache L2 do Symfony, reduzem a E/S desnecessária do sistema de arquivos e melhoram a consistência e a confiabilidade do cache.
 
