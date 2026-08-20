@@ -5,10 +5,10 @@ feature: Shopping Cart, Price Rules
 role: Admin, Developer
 exl-id: 73979b71-9b15-4a4b-a1c9-37d3213c177f
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 0%
+source-wordcount: '467'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +38,7 @@ As regras de preço do carrinho para produtos de remessa múltipla não se aplic
 
 **Configurações:**
 1. **[!UICONTROL Free Shipping]** = *Habilitado*
-1. **[!UICONTROL Minimum Order Amount]** = *9999999*
+1. **[!UICONTROL Minimum Order Amount]** = *99999999*
 
 **Categorias necessárias:**
 1. Categoria de teste 1
@@ -103,7 +103,7 @@ Nenhum erro.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

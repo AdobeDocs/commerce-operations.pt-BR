@@ -5,16 +5,16 @@ feature: Attributes, Configuration
 role: Admin
 exl-id: 1ce0c8dc-0d03-4ebd-b02a-08090b244190
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
 
 # ACSD-48313: coluna **[!UICONTROL configurable_variations]** não analisada se o valor do atributo contiver vírgula
 
-O patch ACSD-48313 resolve o problema em que a coluna **[!UICONTROL configurable_variations]** não é analisada se o valor do atributo contiver uma vírgula. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.25 está instalado. A ID do patch é ACSD-48313. A versão na qual esse problema será corrigido ainda não está disponível.
+O patch ACSD-48313 resolve o problema em que a coluna **[!UICONTROL configurable_variations]** não é analisada se o valor do atributo contiver uma vírgula. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.25 está instalado. A ID do patch é ACSD-48313. A versão na qual esse problema será corrigido ainda não está disponível.
 
 ## Produtos e versões afetados
 
@@ -62,14 +62,14 @@ O usuário deve conseguir importar o arquivo.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 
 ## Leitura relacionada
 
 Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
+* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) na base de dados de conhecimento de suporte.
 * [Verifique se há patch disponível para o problema do Adobe Commerce usando o  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!UICONTROL Quality Patches Tool].
 
 

@@ -3,9 +3,9 @@ title: Notas de versão do patch de segurança do Adobe Commerce 2.4.7
 description: Saiba mais sobre correções de bugs de segurança, aprimoramentos de segurança e outras atualizações relacionadas à segurança incluídas nas versões de patch de segurança para o Adobe Commerce versão 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 last-update: 2026-05-12T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -19,15 +19,19 @@ ht-degree: 0%
 >
 >O MySQL 8.0 atingirá o fim do suporte (EOS) a partir de 30 de abril de 2026.
 >
->Após esta data, o Adobe Commerce 2.4.7 não fornecerá compatibilidade ou>suporte para qualquer versão do MySQL lançada após o MySQL 8.0. A Adobe não>validará ou fornecerá suporte para versões principais mais recentes do MySQL nesta linha de versão do Adobe>Commerce.
+>Após essa data, o Adobe Commerce 2.4.7 não fornecerá compatibilidade ou
+>suporte para qualquer versão do MySQL lançada após o MySQL 8.0. O Adobe não
+>validar ou fornecer suporte para versões principais mais recentes do MySQL neste Adobe
+>Linha de versão do Commerce.
 >
->Todos os clientes locais do Adobe Commerce que executam a versão 2.4.7 são >aconselhados a migrar seus servidores de banco de dados para uma versão MariaDB compatível.
+>Todos os clientes locais do Adobe Commerce que executam a versão 2.4.7 são altamente
+>aconselhados a migrar seus servidores de banco de dados para uma versão compatível do MariaDB.
 
 ## 2.4.7-p10
 
 A versão de segurança do Adobe Commerce 2.4.7-p10 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.7.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-49](https://helpx.adobe.com/br/security/products/magento/apsb26-49.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
 
 {{b2b-patches}}
 
@@ -63,7 +67,7 @@ Para lidar com a aposentadoria do Laminas MVC, a Adobe Commerce agora usa uma bi
 
 A versão de segurança 2.4.7-p9 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.7.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-05](https://helpx.adobe.com/br/security/products/magento/apsb26-05.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html).
 
 {{b2b-patches}}
 
@@ -83,7 +87,7 @@ O Adobe Commerce 2.4.7 foi atualizado para oferecer suporte ao Composer 2.9.x, p
 
 A versão de segurança do Adobe Commerce 2.4.7-p8 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.7.
 
-Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-94](https://helpx.adobe.com/br/security/products/magento/apsb25-94.html).
+Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -103,7 +107,7 @@ Esta versão inclui os seguintes destaques:
 
 A versão de segurança do Adobe Commerce 2.4.7-p7 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.7.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-71](https://helpx.adobe.com/br/security/products/magento/apsb25-71.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
 
 {{b2b-patches}}
 
@@ -111,7 +115,7 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 
 A versão de segurança 2.4.7-p6 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.7.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-50](https://helpx.adobe.com/br/security/products/magento/apsb25-50.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -135,7 +139,7 @@ Esta versão inclui os seguintes destaques:
 
 A versão de segurança do Adobe Commerce 2.4.7-p5 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.7.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-26](https://helpx.adobe.com/br/security/products/magento/apsb25-26.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
 
 {{b2b-patches}}
 
@@ -161,7 +165,7 @@ Além disso, para as versões 2.4.7-p3, 2.4.7-p4 e 2.4.7-p5, a extensão do Brai
 
 A versão de segurança 2.4.7-p4 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.7.
 
-Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-08](https://helpx.adobe.com/br/security/products/magento/apsb25-08.html).
+Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
 
 {{b2b-patches}}
 
@@ -173,7 +177,7 @@ Para obter as últimas informações sobre as correções de erros de segurança
 
 A versão de segurança 2.4.7-p3 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.7.
 
-Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB24-73](https://helpx.adobe.com/br/security/products/magento/apsb24-73.html).
+Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
 {{b2b-patches}}
 
@@ -189,7 +193,7 @@ Para obter as últimas informações sobre as correções de erros de segurança
 
 A versão de segurança 2.4.7-p2 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.7.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB24-61](https://helpx.adobe.com/br/security/products/magento/apsb24-61.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 ### Destaques
 
@@ -203,7 +207,7 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 
 A versão de segurança do Adobe Commerce 2.4.7-p1 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.7.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB24-40](https://helpx.adobe.com/br/security/products/magento/apsb24-40.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
 ### Aplicar hotfix para CVE-2024-34102
 
@@ -219,6 +223,6 @@ Esta versão inclui os seguintes destaques:
 
 ### Hotfixes incluídos nesta versão
 
-O Adobe Commerce 2.4.7-p1 resolve um problema introduzido no escopo da migração de integração de UPS do SOAP para a API REST. Esse problema afetou os clientes que enviavam para fora dos EUA e os impediu de usar as medições do Sistema de Métrica/SI de quilogramas e centímetros para que os pacotes criassem remessas com a UPS. Consulte o artigo da base de conhecimento [Migração da integração do método de envio UPS do SOAP para a API RESTful](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api) para obter mais detalhes.
+O Adobe Commerce 2.4.7-p1 resolve um problema introduzido no escopo da migração de integração de UPS do SOAP para a API REST. Esse problema afetou os clientes que enviavam para fora dos EUA e os impediu de usar as medições do Sistema de Métrica/SI de quilogramas e centímetros para que os pacotes criassem remessas com a UPS. Consulte o artigo da base de conhecimento [Migração da integração do método de envio UPS do SOAP para a API RESTful](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27146) para obter mais detalhes.
 
 <!-- Last updated from includes: 2026-04-08 15:01:38 -->

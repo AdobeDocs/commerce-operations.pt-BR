@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 405
+source-wordcount: 392
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Depois de instalar e configurar o Verniz para funcionar com o Commerce, as segui
 
   Por exemplo, qualquer coisa que você fizer no Administrador do:
 
-   - **LOJAS** > **Configurações** > **Configuração** > GERAL > **Geral**
-   - **LOJAS** > **Configurações** > **Configuração** > GERAL > **Configuração de Moeda**
-   - **LOJAS** > **Configurações** > **Configuração** > GERAL > **Armazenar Endereços de Email**
+  - **LOJAS** > **Configurações** > **Configuração** > GERAL > **Geral**
+  - **LOJAS** > **Configurações** > **Configuração** > GERAL > **Configuração de Moeda**
+  - **LOJAS** > **Configurações** > **Configuração** > GERAL > **Armazenar Endereços de Email**
 
   Quando o Commerce detecta essa alteração, uma mensagem é exibida informando que você atualize o cache.
 
@@ -61,7 +61,7 @@ Depois de instalar e configurar o Verniz para funcionar com o Commerce, as segui
 
 ## Configurar o Commerce para limpar o verniz
 
-O Commerce limpa hosts do Varnish depois que você configura hosts do Varnish usando o comando [`magento setup:config:set`](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
+O Commerce limpa hosts do Varnish depois que você configura hosts do Varnish usando o comando [`magento setup:config:set`](/help/tools/reference/commerce-on-premises.md#setupconfigset).
 
 Você pode usar o parâmetro opcional `--http-cache-hosts` para especificar uma lista separada por vírgulas de hosts vernizes e portas de escuta. Configure todos os hosts de verniz, independentemente de você ter um ou vários. (Não separe hosts com um caractere de espaço.)
 

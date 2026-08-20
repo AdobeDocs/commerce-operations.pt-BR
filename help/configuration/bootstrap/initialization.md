@@ -3,9 +3,9 @@ title: Inicialização e inicialização do aplicativo
 description: Leia sobre a inicialização e a lógica de inicialização do aplicativo do Commerce.
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Temos os seguintes aplicativos de ponto de entrada (ou seja, aplicativos definid
 
 [\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http) opera da seguinte maneira:
 
-1. Determina a [área do aplicativo](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
+1. Determina a [área do aplicativo](https://developer.adobe.com/commerce/php/architecture/modules/areas).
 1. Inicia o controlador frontal e os sistemas de roteamento para localizar e executar uma ação do controlador.
 1. Usa um objeto de resposta HTTP para retornar o resultado obtido da ação do controlador.
 1. Tratamento de erros (na seguinte ordem de prioridade):

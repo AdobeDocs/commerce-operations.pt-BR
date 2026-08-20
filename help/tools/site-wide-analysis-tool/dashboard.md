@@ -2,9 +2,9 @@
 title: '[!DNL Dashboard]'
 description: Saiba mais sobre a  [!DNL Dashboard] guia em  [!DNL Site-Wide Analysis Tool], elementos, quando usar, benefícios e práticas recomendadas.
 exl-id: 37d848ff-2cff-48b1-8391-520531300bbc
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 # [!UICONTROL Dashboard]
 
 A página [!UICONTROL Dashboard] mostra rapidamente [!DNL widgets] que fornecem um &quot;painel único de visão&quot; da integridade e do status atual do site do Adobe Commerce. Cada [!DNL widget] contém um link de acesso para a página de cada recurso, para cada ferramenta ou para relatórios (dependendo do [!DNL widget]).
-Também há uma lista de links [!UICONTROL External Resources] para o Adobe Commerce, incluindo a [Base de Dados de Conhecimento de Suporte da Central de Ajuda da Adobe Commerce (Central de Ajuda)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=pt-BR), [Documentação de Desenvolvedor do Adobe Commerce (DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}, [Central de Segurança](https://helpx.adobe.com/br/security.html) e [Observação para Adobe Commerce (OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=pt-BR).
+Também há uma lista de links [!UICONTROL External Resources] para o Adobe Commerce, incluindo a [Base de Dados de Conhecimento de Suporte da Central de Ajuda da Adobe Commerce (Central de Ajuda)](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview), [Documentação de Desenvolvedor do Adobe Commerce (DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}, [Central de Segurança](https://helpx.adobe.com/br/security.html) e [Observação para Adobe Commerce (OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=pt-BR).
 
 ## Elementos
 
@@ -28,7 +28,7 @@ O [[!UICONTROL Security Scan Tool]](https://experienceleague.adobe.com/docs/comm
 
 * **[!UICONTROL Extensions]**: exibe as extensões atualmente instaladas em sua instância do Adobe Commerce. As informações do [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//extensions.html) são fornecidas, quando disponíveis, para as extensões listadas lá.
 
-* **[!UICONTROL Alerts]**: exibe o [!DNL New Relic Managed Alerts] mais recente para a instância do Adobe Commerce. Saiba mais sobre [Alertas gerenciados para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html?lang=pt-BR) e como [Acessar serviços da New Relic](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html?lang=pt-BR) na Base de Dados de Conhecimento de Suporte da Adobe Commerce.
+* **[!UICONTROL Alerts]**: exibe o [!DNL New Relic Managed Alerts] mais recente para a instância do Adobe Commerce. Saiba mais sobre [Alertas gerenciados para Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) e como [Acessar serviços da New Relic](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/faq/access-new-relic-services) na Base de Dados de Conhecimento de Suporte da Adobe Commerce.
 
 * **[!UICONTROL Non-recommended software in use]**: exibe o software não recomendado que sua instância do Adobe Commerce está usando no momento, com base na sua versão do Adobe Commerce. O software não recomendado está listado por [!UICONTROL Name], [!UICONTROL Installed Version] e [!UICONTROL Recommended Version].
 
@@ -57,4 +57,4 @@ A página **[!UICONTROL Dashboard]** é a sua central de comandos rápida no [!D
 
 * Vá para o [!UICONTROL Security Scan Tool] [!DNL widget] e clique em [!UICONTROL View Report] para exibir um relatório [!UICONTROL Recommendations] para seu site.
 
-* Use os links [!DNL External Resources] para saber mais informações, manter-se atualizado sobre patches de segurança, atualizações e práticas recomendadas, ou aproveitar o insight da [Base de Dados de Conhecimento de Suporte da Central de Ajuda da Adobe Commerce (Central de Ajuda)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=pt-BR), [Documentação para Desenvolvedores da Adobe Commerce (DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}, [Central de Segurança](https://helpx.adobe.com/br/security.html) e [Observação para Adobe Commerce (OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=pt-BR).
+* Use os links [!DNL External Resources] para saber mais informações, manter-se atualizado sobre patches de segurança, atualizações e práticas recomendadas, ou aproveitar o insight da [Base de Dados de Conhecimento de Suporte da Central de Ajuda da Adobe Commerce (Central de Ajuda)](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview), [Documentação para Desenvolvedores da Adobe Commerce (DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}, [Central de Segurança](https://helpx.adobe.com/br/security.html) e [Observação para Adobe Commerce (OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=pt-BR).

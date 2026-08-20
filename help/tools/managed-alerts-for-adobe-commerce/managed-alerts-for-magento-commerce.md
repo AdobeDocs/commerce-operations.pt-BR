@@ -4,9 +4,9 @@ description: Se você for cliente da arquitetura de plano Pro da infraestrutura 
 feature: Observability, Support, Tools and External Services
 role: Admin
 exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
-source-git-commit: 4560e7d000ad8333c3089b8b5e8ffd25f5d31b67
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Configuramos os principais painéis e alertas para ajudá-lo a entender quando s
 
 >[!NOTE]
 >
->Se os alertas gerenciados para a política de alertas da Adobe Commerce não estiverem disponíveis, talvez seja porque essa conta foi recém-criada ou [!DNL New Relic] foi configurada recentemente. Um processo é executado todas as terças-feiras para adicionar a política de alerta a essas contas. A política de alerta deve estar disponível para você no dia seguinte à execução do próximo processo. Se a política ainda estiver ausente, [envie uma solicitação de suporte do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) e inclua a ID do projeto.
+>Se os alertas gerenciados para a política de alertas da Adobe Commerce não estiverem disponíveis, talvez seja porque essa conta foi recém-criada ou [!DNL New Relic] foi configurada recentemente. Um processo é executado todas as terças-feiras para adicionar a política de alerta a essas contas. A política de alerta deve estar disponível para você no dia seguinte à execução do próximo processo. Se a política ainda estiver ausente, [envie uma solicitação de suporte do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) e inclua a ID do projeto.
 
 Consulte a tabela abaixo para obter os links para os artigos da Base de Dados de Conhecimento que fornecem as etapas de solução de problemas para esses alertas:
 

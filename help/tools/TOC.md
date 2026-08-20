@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 2fce4e7794a3defe46c03b3795df3e62f96dbf73
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '10661'
+source-wordcount: '10678'
 ht-degree: 0%
 
 ---
@@ -1007,6 +1007,7 @@ ht-degree: 0%
       - [ACP2E-4706: O indexador de Regra de Destino cron não escolhe produtos habilitados somente no escopo de exibição da loja](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706.md)
       - [ACP2E-4402: O indexador incremental da Regra de Destino não escolhe produtos desabilitados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
       - [ACP2E-4505: Dependência de categoria circular ao salvar uma categoria com dados obsoletos em uma guia do navegador duplicada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
+      - [ACP2E-4531: A hierarquia CMS não atualiza o URL hierárquico quando a chave do URL da página secundária é alterada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531.md)
       - [ACP2E-4720: As regras de preço do carrinho de frete gratuito não são redefinidas para produtos de pacote de preço fixo com itens de remessa separadamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
       - [AC-10698: Os preços e os totais das transações não são enviados para a etiqueta da Google](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
       - [ACP2E-4475: Pedido ou filtro por preço não funcionando para produtos de pacote esgotados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
@@ -1105,6 +1106,6 @@ ht-degree: 0%
     - [Dados que exigem migração manual](data-migration-tool/migrate-data/manual.md)
     - [Etapas de migração pós-dados](data-migration-tool/migrate-data/post-migration.md)
   - Recursos {#resources}
-    - [Solução de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=pt-BR)
+    - [Solução de problemas](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)

@@ -4,13 +4,13 @@ description: Aplique o patch AC-15223 para corrigir o problema do Adobe Commerce
 feature: Cache
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ea3584e180acad1765f5b8105c45170725c71269
+exl-id: 22257e94-8d59-4221-bf79-1d63b5600498
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
-
 
 # AC-15223: A página de frente de loja mostra o conteúdo em cache após alternar lojas
 
@@ -53,7 +53,7 @@ O nome da exibição de armazenamento não é alterado no cabeçalho até que o 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

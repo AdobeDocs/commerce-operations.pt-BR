@@ -4,13 +4,13 @@ description: Aplique o patch ACP2E-3767 para corrigir o problema do Adobe Commer
 feature: Products, Catalog Management
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f39442925d9cc82087af9e84d91137a0fcd0ec14
+exl-id: 8c0645e3-47ab-4604-a9db-b070c3779e78
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3767: A última opção de pacote reaparece após salvar um produto de pacote
 
@@ -63,7 +63,7 @@ A última opção de pacote em um produto de pacote não pode ser removida.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

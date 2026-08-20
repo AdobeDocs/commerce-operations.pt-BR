@@ -3,9 +3,9 @@ title: Hash de senha
 description: Saiba mais sobre o hash de senha no Adobe Commerce, algoritmos compatíveis, como Argon2 e SHA256, e como os hashes herdados são atualizados sem alterar senhas.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ Como o Commerce armazena todas as versões de hash de senha usadas junto com o h
 
 ## Implementação
 
-A classe `\Magento\Framework\Encryption\Encryptor` é responsável pela geração e verificação do hash de senha. O comando [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) atualiza um hash de senha do cliente para o algoritmo de hash mais recente.
+A classe `\Magento\Framework\Encryption\Encryptor` é responsável pela geração e verificação do hash de senha. O comando [`bin/magento customer:hash:upgrade`](/help/tools/reference/commerce-on-premises.md#customerhashupgrade) atualiza um hash de senha do cliente para o algoritmo de hash mais recente.

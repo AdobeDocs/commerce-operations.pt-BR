@@ -2,9 +2,9 @@
 title: Integrar o  [!DNL Site-Wide Analysis Tool]
 description: Siga estas etapas para recuperar o relatório [!DNL Upgrade Compatibility Tool] do painel [!DNL Site-Wide Analysis Tool] do seu projeto do Adobe Commerce.
 exl-id: 1ef37294-a837-47a4-841c-4027087acf12
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ O [!DNL Site-Wide Analysis Tool] fornece monitoramento, relatórios e recomenda�
 
 O [!DNL Upgrade Compatibility Tool] agora está integrado ao [!DNL Site-Wide Analysis Tool] para fornecer a capacidade para que pessoas não técnicas executem o [!DNL Upgrade Compatibility Tool] e obtenham um [relatório](../upgrade-compatibility-tool/reports.md) contendo uma lista de problemas para cada arquivo.
 
-Consulte o [[!DNL Site-Wide Analysis Tool] guia do usuário](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/access) para obter mais informações.
+Consulte o [[!DNL Site-Wide Analysis Tool] guia do usuário](/help/tools/site-wide-analysis-tool/access.md) para obter mais informações.
 
 ## Executar o [!DNL Upgrade Compatibility Tool] a partir do [!DNL Site-Wide Analysis Tool]
 

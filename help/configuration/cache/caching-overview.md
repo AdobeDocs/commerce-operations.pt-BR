@@ -17,64 +17,72 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+source-git-commit: 8c5dc151b00fd73e939c32fdc083fb0e8fc41dc8
 workflow-type: tm+mt
-source-wordcount: 593
+source-wordcount: 536
 ht-degree: 0%
 
 ---
 
 # Visão geral do armazenamento em cache e opções de configuração
 
-O Adobe Commerce conta com uma arquitetura de cache em várias camadas para reduzir a carga do banco de dados, minimizar o processamento redundante e acelerar a entrega de páginas. No nível do aplicativo, o Commerce mantém mais de uma dúzia de [tipos de cache](../cli/manage-cache.md#clean-and-flush-cache-types), como configuração, layout, HTML de bloco e coleções, cada um deles pode ser roteado para um back-end de armazenamento dedicado como [Redis](config-redis.md) ou [Valkey](config-valkey.md). Para armazenamento em cache de página inteira em implantações locais, a Adobe recomenda [Verniz](config-varnish.md). As implantações do Commerce na nuvem usam o Fastly. Camadas adicionais, como [cache L2](level-two-cache.md) e [assinatura de conteúdo estático](static-content-signing.md), melhoram ainda mais o desempenho de implantações de vários nós e alto tráfego.
+O Adobe Commerce usa várias camadas de cache para reduzir o processamento repetido, diminuir a carga do banco de dados e melhorar os tempos de resposta. Essas camadas operam em diferentes pontos na solicitação e na entrega de ativos:
 
-Este guia explica como cada camada de armazenamento em cache funciona e mostra como configurar front-ends, back-ends e opções avançadas para atender aos requisitos de implantação.
+- O **cache de aplicativo** armazena dados gerados ou processados usando tipos de cache do Commerce.
+- O **cache de página inteira do HTTP** armazena respostas HTTP completas antes de chegar ao aplicativo do Commerce.
+- O **cache L2** pode adicionar um cache local em cada nó da Web em frente ao armazenamento de cache remoto compartilhado.
+- **O armazenamento em cache de conteúdo estático** permite que os navegadores reutilizem CSS, JavaScript, imagens e outros recursos estáticos.
 
-## Armazenamento em cache de front-ends
+Esta página fornece uma visão geral conceitual dessas camadas e links para sua orientação de configuração. Para opções de back-end, detalhes de implementação e configurações específicas da versão, consulte [Opções de back-end de cache e referência de armazenamento](cache-options.md).
 
-Um front-end de cache é uma interface entre o Commerce e o back-end de armazenamento em cache. Você pode definir vários front-ends, cada um com configurações de back-end diferentes, e atribuir [tipos de cache](../cli/manage-cache.md#clean-and-flush-cache-types) específicos a cada front-end. Para obter detalhes sobre a configuração, consulte [Configurar front-ends e tipos de cache](cache-types.md).
+## Armazenamento em cache de camadas
 
-## Armazenamento em cache de back-end
+### Armazenamento em cache do aplicativo
 
-Um back-end de cache é o mecanismo de armazenamento subjacente para dados em cache. O Commerce fornece um back-end padrão do sistema de arquivos, mas você pode configurar outros back-end, como Redis ou Valkey, para melhorar o desempenho e a escalabilidade. Para obter detalhes sobre as opções disponíveis, consulte [Opções de back-end do cache](cache-options.md).
+O armazenamento em cache de aplicativos do Commerce é organizado como:
 
-## Armazenamento em cache de página inteira com Vernish
+>[!BEGINSHADEBOX]
 
-O [Cache de Verniz](config-varnish.md) é um acelerador HTTP que armazena páginas inteiras em cache na memória. Para ambientes de produção locais, a Adobe recomenda o Vernish, pois ele é significativamente mais rápido que o cache de página inteira integrado. O Commerce em ambientes na nuvem usa o [Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/cdn/fastly) para armazenamento em cache de página inteira, em vez do Varnish.
+tipo de cache → front-end do cache → back-end do cache
+
+>[!ENDSHADEBOX]
+
+Um **tipo de cache** identifica o tipo de dados que está sendo armazenado em cache, como configuração, layout, HTML de bloco ou conteúdo de página inteira. Um **front-end do cache** conecta um ou mais tipos de cache ao armazenamento. Um **back-end de cache** fornece a implementação de armazenamento.
+
+Você pode atribuir diferentes tipos de cache a diferentes front-ends quando configurações de cache ou armazenamento separados forem necessários. Para obter detalhes sobre a configuração, consulte [Configurar front-ends e tipos de cache](cache-types.md).
+
+### Cache HTTP de página inteira
+
+O cache de página inteira HTTP armazena respostas completas na camada HTTP ou CDN. Para implantações de produção:
+
+- **Adobe Commerce no local**—A Adobe recomenda [Verniz](config-varnish.md) para armazenamento em cache de página inteira. O verniz opera como um proxy reverso na frente do servidor Web.
+- A **infraestrutura do Adobe Commerce na nuvem** usa o [Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} para a camada de armazenamento em cache de borda e página inteira. A infraestrutura em nuvem não usa um serviço verniz gerenciado separadamente.
 
 >[!NOTE]
 >
->O Varnish opera como um proxy reverso na frente do servidor da Web e não requer alterações na configuração de back-end do cache do Commerce.
+>Alterar o back-end do cache de aplicativos do Commerce não configura o Varnish ou o Fastly. O cache HTTP de página inteira é configurado e gerenciado separadamente do cache de aplicativos de baixo nível.
 
-## Cache L2 (dois níveis)
+### Cache L2
 
-O [cache L2](level-two-cache.md) armazena os dados do cache localmente em cada nó da Web ao usar um cache remoto (Redis ou Valkey) como fonte da verdade. Isso reduz o tráfego de rede entre os nós da Web e o cache remoto, o que melhora o desempenho para sites de alto tráfego.
+O cache L2, ou de dois níveis, adiciona um cache local em cada nó da Web do Commerce, além de reter o armazenamento em cache remoto compartilhado. Os dados acessados com frequência podem ser fornecidos localmente, reduzindo a comunicação com o cache remoto em implantações de vários nós.
 
-## Armazenamento em cache de conteúdo estático
+A configuração L2 e as implementações compatíveis variam de acordo com a versão e o tipo de implantação do Commerce. Para obter detalhes, consulte [configuração do cache L2](level-two-cache.md).
 
-[Assinatura de conteúdo estático](static-content-signing.md) invalida o cache do navegador para recursos estáticos (CSS, JavaScript, imagens) incorporando uma versão de implantação nas URLs de arquivo.
+### Armazenamento em cache de conteúdo estático
 
-## Terminologia de cache
+O Commerce pode melhorar o cache do navegador para recursos estáticos, como CSS, JavaScript e imagens, adicionando uma versão de implantação a seus URLs. Quando o conteúdo é alterado, o URL muda, fazendo com que o navegador solicite o novo recurso em vez de usar uma cópia em cache mais antiga.
 
-[!DNL Commerce] usa a seguinte terminologia de cache:
+## Configuração específica para implantação
 
-- **Front-end** — Uma interface ou gateway para armazenar em cache, implementado por [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
-- **Tipos de cache** — Um dos tipos internos fornecidos com [!DNL Commerce] (como `config`, `layout`, `block_html`, `full_page`) ou um [tipo personalizado](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
-- **Back-end** — Especifica os detalhes do [armazenamento em cache](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implementado por [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend).
-- **Back-end de dois níveis** — Armazena registros de cache em dois back-ends: um cache local (rápido) e um cache remoto (compartilhado). Consulte [configuração do cache L2](level-two-cache.md).
+As tarefas de configuração a seguir variam de acordo com o tipo de implantação.
 
-## Opções de configuração
+| Tarefa | No local | Infraestrutura em nuvem |
+| --- | --- | --- |
+| Infraestruturas do cache de aplicativos | [Opções de back-end do cache e referência de armazenamento](cache-options.md) | [Práticas recomendadas para a configuração do serviço Valkey e Redis](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
+| Cache de página inteira HTTP | [Configurar verniz](config-varnish.md) | [Visão geral dos serviços do Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
-Para mapeamento de front-end para tipo e sintaxe de configuração de cache:
+As seguintes tarefas se aplicam a todos os tipos de implantação:
 
-**No local** — A configuração de cache é armazenada em dois arquivos:
-
-- `<magento_root>/app/etc/di.xml` — A configuração de injeção de dependência global. Modifique este arquivo para alterar o front-end do cache `default` fornecido.
-- `<magento_root>/app/etc/env.php` — Configuração específica do ambiente. Modifique este arquivo para configurar os front-ends do cache personalizado. Este arquivo substitui a configuração equivalente em `di.xml`.
-
-Para obter detalhes, consulte:
-
-- [Configurar front-ends e tipos de cache](cache-types.md) — Associe um front-end de cache a tipos de cache específicos
-- [Opções de back-end do cache](cache-options.md)—Referência de opção de back-end
-
-**Adobe Commerce na Nuvem** — Configurar cache com `CACHE_CONFIGURATION` em `.magento.env.yaml`. Consulte [Práticas recomendadas para a configuração do serviço Redis e Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).
+- **Configurar tipos de cache e front-ends** [Configurar front-ends e tipos de cache](cache-types.md) para associar tipos de cache com front-ends de cache.
+- **Configurar cache L2**—[Configuração de cache L2](level-two-cache.md).
+- **Configurar a invalidação do cache do navegador para conteúdo estático**—[Assinatura de conteúdo estático e invalidação do cache do navegador](static-content-signing.md).

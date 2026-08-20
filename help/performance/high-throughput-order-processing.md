@@ -3,7 +3,7 @@ title: Práticas recomendadas de desempenho de check-out
 description: Saiba mais sobre as práticas recomendadas de desempenho de check-out no Adobe Commerce. Descubra a orientação para a implementação e as estratégias de otimização.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 5d94ecbe32b94acf9604db9618a9ae6eb1ae04f9
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1299'
 ht-degree: 0%
@@ -56,7 +56,7 @@ O comando `set` grava o seguinte no arquivo `app/etc/env.php`:
    ]
 ```
 
-Consulte [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order/) no _Guia de Referência de Módulo_.
+Consulte [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order) no _Guia de Referência de Módulo_.
 
 **Para desabilitar AsyncOrder**:
 
@@ -162,7 +162,7 @@ O comando `set` grava o seguinte no arquivo `app/etc/env.php`:
    ]
 ```
 
-Consulte [DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/) no _Guia de Referência de Módulo_.
+Consulte [DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating) no _Guia de Referência de Módulo_.
 
 ### Imposto Fixo do Produto
 
@@ -180,7 +180,7 @@ Quando desativada, a verificação de inventário não ocorre ao adicionar um pr
 
 Você pode ajudar a balancear a carga em diferentes nós, habilitando conexões secundárias para o banco de dados MySQL e a instância Redis.
 
-O Adobe Commerce pode ler vários bancos de dados ou instâncias Redis de forma assíncrona. Se você estiver usando o Commerce na infraestrutura em nuvem, poderá configurar as conexões secundárias editando os valores de [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) no arquivo `.magento.env.yaml`. Somente um nó precisa manipular o tráfego de leitura e gravação. Portanto, definir as variáveis como `true` resultará na criação de uma conexão secundária para o tráfego somente leitura. Defina os valores como `false` para remover qualquer matriz de conexão somente leitura existente do arquivo `env.php`.
+O Adobe Commerce pode ler vários bancos de dados ou instâncias Redis de forma assíncrona. Se você estiver usando o Commerce na infraestrutura em nuvem, poderá configurar as conexões secundárias editando os valores de [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) e [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) no arquivo `.magento.env.yaml`. Somente um nó precisa manipular o tráfego de leitura e gravação. Portanto, definir as variáveis como `true` resultará na criação de uma conexão secundária para o tráfego somente leitura. Defina os valores como `false` para remover qualquer matriz de conexão somente leitura existente do arquivo `env.php`.
 
 Exemplo do arquivo `.magento.env.yaml`:
 

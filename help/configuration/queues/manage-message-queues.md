@@ -2,9 +2,9 @@
 title: Gerenciar filas de mensagens
 description: Saiba como gerenciar filas de mensagens na linha de comando do Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Você também pode usar um gerenciador de processos, como o [Supervisor](https:/
 
 >[!INFO]
 >
->Se sua loja da Adobe Commerce estiver hospedada na plataforma Cloud, use o [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#cron_consumers_runner) para configurar o trabalho cron do `consumers_runner`.
+>Se sua loja da Adobe Commerce estiver hospedada na plataforma Cloud, use o [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) para configurar o trabalho cron do `consumers_runner`.
 
 ### Configuração específica
 
@@ -82,7 +82,7 @@ Edite o arquivo `/app/etc/env.php` para configurar o trabalho cron `consumers_ru
 
   >[!INFO]
   >
-  >Se o armazenamento do Adobe Commerce estiver hospedado na plataforma de nuvem, use o [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#consumers_wait_for_max_messages) para configurar como os consumidores processam mensagens da fila de mensagens.
+  >Se o armazenamento do Adobe Commerce estiver hospedado na plataforma de nuvem, use o [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#consumers_wait_for_max_messages) para configurar como os consumidores processam mensagens da fila de mensagens.
 
   >[!NOTE]
   >

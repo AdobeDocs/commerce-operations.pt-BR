@@ -5,9 +5,9 @@ feature: Data Import/Export
 role: Admin, Developer
 exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
 type: Troubleshooting
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ A exportação de produtos falha quando os atributos de produto contêm milhares
    bin/magento cron:install
    ```
 
-1. Configure o [!DNL RabbitMQ] seguindo as instruções em [[!DNL RabbitMQ] pré-requisitos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/prerequisites/message-brokers/rabbitmq).
+1. Configure o [!DNL RabbitMQ] seguindo as instruções em [[!DNL RabbitMQ] pré-requisitos](/help/installation/prerequisites/rabbitmq.md).
 1. Abra o arquivo `php.ini`, defina o limite de memória como 4G e reinicie o serviço PHP.
 1. No Painel de Administração, vá para **[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**.
 1. Na seção *[!UICONTROL Export Settings]*, defina **[!UICONTROL Entity Type]** como *Produtos*, role até a parte inferior e clique em **[!UICONTROL Continue]**.
@@ -74,7 +74,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

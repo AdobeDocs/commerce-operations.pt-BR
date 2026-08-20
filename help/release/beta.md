@@ -4,9 +4,9 @@ description: Saiba mais sobre as versões beta do Adobe Commerce e como particip
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: bf0f269900468870a1da7b5360548d49e009097c
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Os programas do Beta para [soluções de produtos da Adobe Commerce](https://exp
 >[!IMPORTANT]
 >
 >**Aviso de isenção legal**<br/>
->As versões do Beta incluem recursos de pré-lançamento e código que podem conter defeitos e são fornecidos &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantia de nenhum tipo. A Adobe tem o único critério de disponibilizar versões beta de modo geral. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar, oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) ou fornecer essas versões beta até qualquer data específica. Caso uma versão beta seja disponibilizada para o público em geral, ela poderá estar sujeita a termos e condições adicionais, incluindo taxas aplicáveis. As versões do Beta estão sujeitas a alterações sem aviso prévio, incluindo a descontinuação. Os clientes são aconselhados a ter cuidado e não depender de forma alguma do funcionamento ou do desempenho ininterrupto ou livre de erros das versões beta.  Portanto, qualquer uso das versões beta é de inteira responsabilidade do cliente.
+>As versões do Beta incluem recursos de pré-lançamento e código que podem conter defeitos e são fornecidos &quot;NO ESTADO EM QUE SE ENCONTRAM&quot; sem garantias de nenhum tipo. A Adobe tem o único critério de disponibilizar versões beta de modo geral. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar, oferecer suporte (por meio dos Serviços de suporte da Adobe ou de outra forma) ou fornecer essas versões beta até qualquer data específica. Caso uma versão beta seja disponibilizada para o público em geral, ela poderá estar sujeita a termos e condições adicionais, incluindo taxas aplicáveis. As versões do Beta estão sujeitas a alterações sem aviso prévio, incluindo a descontinuação. Os clientes são aconselhados a ter cuidado e não depender de forma alguma do funcionamento ou do desempenho ininterrupto ou livre de erros das versões beta.  Portanto, qualquer uso das versões beta é de inteira responsabilidade do cliente.
 
 ## Benefícios da participação
 
@@ -73,7 +73,7 @@ Para compartilhar seus comentários enquanto você usa este recurso beta, envie 
 
 O [Serviço de Patch de Automação da Nuvem](../tools/caps-tool/intro.md) automatiza o processo de aplicação de patches de segurança isolados aos ambientes do [Adobe Commerce na Infraestrutura da Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview).
 
-Em outubro de 2025, a versão beta do Serviço de patch de automação de nuvem será adicionada ao [painel de ferramentas de Análise do site](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este serviço oferece suporte aos administradores de projetos da Commerce com um fluxo de trabalho simplificado de patch que inclui:
+Em outubro de 2025, a versão beta do Serviço de patch de automação de nuvem será adicionada ao [painel de ferramentas de Análise do site](/help/tools/site-wide-analysis-tool/dashboard.md). Este serviço oferece suporte aos administradores de projetos da Commerce com um fluxo de trabalho simplificado de patch que inclui:
 
 - Instalação de patch automatizada
 - Reverter recuperação

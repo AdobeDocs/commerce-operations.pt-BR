@@ -5,9 +5,9 @@ feature: Catalog Management, Media, REST, Products, Cache
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 1eaa8ed0-fde6-47c4-9339-8f5e7bce7b19
-source-git-commit: f82dcd6c76ba3512e59275c26815b6bb89e53733
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ A imagem é duplicada com um novo nome (por exemplo, wb04-blue-1.jpg), causando 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

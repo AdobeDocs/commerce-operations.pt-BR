@@ -4,9 +4,9 @@ description: Descreve como evitar a degradação de desempenho por configuraçõ
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 6c0a9268cb3a3b2e76f4a389846e8407f0893b4f
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '159'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Aloque pelo menos **2GB** de memória para o [módulo OPcache PHP](https://www.p
 ## Informações adicionais
 
 * [Práticas recomendadas de desempenho - Configurações do PHP](../../../performance/software.md#php-settings)
-* [Configurar opções do PHP](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
+* [Configurar opções do PHP](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/app/configure-app-yaml)
 * [Práticas recomendadas de banco de dados para o Adobe Commerce na infraestrutura em nuvem](database-on-cloud.md)
 * [Problemas mais comuns de banco de dados no Adobe Commerce na infraestrutura em nuvem](../maintenance/resolve-database-performance-issues.md)
 * [A &quot;Atualização programada&quot; dos indexadores otimiza o desempenho do Adobe Commerce](../maintenance/indexer-configuration.md)

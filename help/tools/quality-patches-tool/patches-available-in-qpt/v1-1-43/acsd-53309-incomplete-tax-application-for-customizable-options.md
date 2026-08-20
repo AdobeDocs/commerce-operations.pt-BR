@@ -5,16 +5,16 @@ feature: Taxes, Shipping/Delivery
 role: Admin, Developer
 exl-id: 7f4a8923-11dd-48b2-9d97-77de5c2b24ce
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 0%
+source-wordcount: '512'
+ht-degree: 20%
 
 ---
 
 # ACSD-53309: aplicativo de imposto incompleto para opções personalizáveis e rótulo &#39;[!UICONTROL Regular Price]&#39;
 
-O patch ACSD-53309 corrige o problema em que o imposto não é totalmente aplicado no rótulo &#39;[!UICONTROL Regular Price]&#39; quando uma opção personalizável é selecionada. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.43 está instalado. A ID do patch é ACSD-53309. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.7.
+O patch ACSD-53309 corrige o problema em que o imposto não é totalmente aplicado no rótulo &#39;[!UICONTROL Regular Price]&#39; quando uma opção personalizável é selecionada. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.43 está instalado. A ID do patch é ACSD-53309. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.7.
 
 ## Produtos e versões afetados
 
@@ -41,29 +41,29 @@ O imposto não é totalmente refletido no rótulo &#39;[!UICONTROL Regular Price
 
    * [!UICONTROL Tax Classes]:
 
-      * [!UICONTROL Tax Class for Shipping] = [!UICONTROL Taxable Goods]
-      * [!UICONTROL Tax Class for Gift Options] = [!UICONTROL Taxable Goods]
+     * [!UICONTROL Tax Class for Shipping] = [!UICONTROL Taxable Goods]
+     * [!UICONTROL Tax Class for Gift Options] = [!UICONTROL Taxable Goods]
 
    * [!UICONTROL Calculation Settings]:
 
-      * [!UICONTROL Catalog Prices] = [!UICONTROL Including Tax]
-      * [!UICONTROL Shipping Prices] = [!UICONTROL Including Tax]
-      * [!UICONTROL Apply Discount On Prices] = [!UICONTROL Including Tax]
+     * [!UICONTROL Catalog Prices] = [!UICONTROL Including Tax]
+     * [!UICONTROL Shipping Prices] = [!UICONTROL Including Tax]
+     * [!UICONTROL Apply Discount On Prices] = [!UICONTROL Including Tax]
 
    * [!UICONTROL Default Tax Destination Calculation]:
 
-      * [!UICONTROL Default Post Code] = *
+     * [!UICONTROL Default Post Code] = *
 
    * [!UICONTROL Price Display Settings]:
 
-      * [!UICONTROL Display Product Prices In Catalog] = [!UICONTROL Including Tax]
-      * [!UICONTROL Display Shipping Prices] = [!UICONTROL Including Tax]
+     * [!UICONTROL Display Product Prices In Catalog] = [!UICONTROL Including Tax]
+     * [!UICONTROL Display Shipping Prices] = [!UICONTROL Including Tax]
 
    * [!UICONTROL Shopping Cart Display Settings]:
 
-      * [!UICONTROL Display Prices] = [!UICONTROL Including Tax]
-      * [!UICONTROL Display Subtotal] = [!UICONTROL Including Tax]
-      * [!UICONTROL Display Shipping Amount] = [!UICONTROL Including Tax]
+     * [!UICONTROL Display Prices] = [!UICONTROL Including Tax]
+     * [!UICONTROL Display Subtotal] = [!UICONTROL Including Tax]
+     * [!UICONTROL Display Shipping Amount] = [!UICONTROL Including Tax]
 
 1. Conjunto **[!UICONTROL Shipping Settings]** > **[!UICONTROL Origin]** > **[!UICONTROL Country]** = *Reino Unido*.
 
@@ -83,25 +83,25 @@ O imposto não é totalmente refletido no rótulo &#39;[!UICONTROL Regular Price
 <u>Resultados esperados</u>:
 
 * O imposto de 20% é aplicado à opção personalizada selecionada.
-* &#39;[!UICONTROL Regular Price]&#39; = 151,80.
+* &#39;[!UICONTROL Regular Price]&#39; = 151.80.
 
 <u>Resultados reais</u>:
 
 * O imposto de 20% não é aplicado à opção personalizada selecionada.
-* &#39;[!UICONTROL Regular Price]&#39; = 148,50.
+* &#39;[!UICONTROL Regular Price]&#39; = 148.50.
 
 ## Aplicar o patch
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
 Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
+* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) na base de dados de conhecimento de suporte.
 * [Verifique se há patch disponível para o problema do Adobe Commerce usando o  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!UICONTROL Quality Patches Tool].
 
 

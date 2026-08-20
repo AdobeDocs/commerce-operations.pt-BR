@@ -3,9 +3,9 @@ title: Práticas recomendadas de configuração
 description: Saiba mais sobre as práticas recomendadas de configuração para otimizar o desempenho do Adobe Commerce. Descubra configurações e ferramentas para melhorar o tempo de resposta e a taxa de transferência.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Pode haver momentos em que vendas intensas em uma loja ocorram ao mesmo tempo em
 
 >[!WARNING]
 >
->A guia **[!UICONTROL Developer]** e as opções estão disponíveis somente no [Modo de desenvolvedor](../configuration/cli/set-mode.md). [O Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) não oferece suporte ao modo `Developer`.
+>A guia **[!UICONTROL Developer]** e as opções estão disponíveis somente no [Modo de desenvolvedor](../configuration/cli/set-mode.md). [O Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-test) não oferece suporte ao modo `Developer`.
 
 ## Salvamento assíncrono de configuração
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## Atualização de estoque adiada
 
-Em tempos de vendas intensas, a Commerce pode adiar atualizações de estoque relacionadas a pedidos. Isso minimiza o número de operações e acelera o processo de colocação de pedidos. No entanto, essa opção é arriscada e só pode ser usada quando Backorders são ativados no armazenamento, porque essa opção pode levar a quantidades de estoque negativas. Essa opção pode trazer uma melhora significativa no desempenho dos fluxos de saída para lojas que podem facilmente reabastecer seu estoque sob demanda. Para ativar atualizações de estoque adiadas em seu site, vá para **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Consulte [Gerenciamento de inventário](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) no _Guia do Usuário do Adobe Commerce_ para obter mais informações.
+Em tempos de vendas intensas, a Commerce pode adiar atualizações de estoque relacionadas a pedidos. Isso minimiza o número de operações e acelera o processo de colocação de pedidos. No entanto, essa opção é arriscada e só pode ser usada quando Backorders são ativados no armazenamento, porque essa opção pode levar a quantidades de estoque negativas. Essa opção pode trazer uma melhora significativa no desempenho dos fluxos de saída para lojas que podem facilmente reabastecer seu estoque sob demanda. Para ativar atualizações de estoque adiadas em seu site, vá para **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Consulte [Gerenciamento de inventário](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud) no _Guia do Usuário do Adobe Commerce_ para obter mais informações.
 
 >[!INFO]
 >
@@ -95,19 +95,19 @@ Para melhorar a capacidade de resposta da loja da sua instância do [!DNL Commer
 
 >[!INFO]
 >
->A guia **[!UICONTROL Developer]** e as opções estão disponíveis somente no [Modo de desenvolvedor](../configuration/cli/set-mode.md). [O Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) não oferece suporte ao modo `Developer`.
+>A guia **[!UICONTROL Developer]** e as opções estão disponíveis somente no [Modo de desenvolvedor](../configuration/cli/set-mode.md). [O Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-test) não oferece suporte ao modo `Developer`.
 
 Ao ativar a opção **[!UICONTROL Enable [!DNL JavaScript] Bundling]**, você permite que o Commerce mescle todos os recursos JS em um ou um conjunto de pacotes que são carregados nas páginas de frente da loja. O agrupamento de JS resulta em menos solicitações para o servidor, o que melhora o desempenho da página. Também ajuda o navegador a armazenar em cache recursos JS na primeira chamada e a reutilizá-los para navegação adicional. Essa opção também traz uma avaliação lenta, pois todo o JS é carregado como texto. Ele inicia a análise e a avaliação do código somente após ações específicas serem acionadas na página. No entanto, essa configuração não é recomendada para lojas onde o tempo de carregamento da primeira página é extremamente crítico, porque todo o conteúdo JS será carregado na primeira chamada.
 
 >[!INFO]
 >
->Consulte [Otimizar arquivos de recursos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files) para obter mais informações sobre como otimizar CSS e Javascript.
+>Consulte [Otimizar arquivos de recursos](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md) para obter mais informações sobre como otimizar CSS e Javascript.
 
 ### Dicas de agrupamento {#bundling-tips}
 
 * Recomendamos que você use ferramentas de terceiros para minificação e agrupamento (como [r.js](https://requirejs.org/)). Os mecanismos integrados do Commerce não são ideais e são enviados como alternativas de fallback.
 * A ativação do protocolo HTTP/2 pode ser uma boa alternativa para usar o empacotamento JS. O protocolo oferece muitos dos mesmos benefícios. Ela é ativada por padrão na Adobe Commerce em projetos de infraestrutura em nuvem.
-* Não recomendamos usar configurações obsoletas, como mesclar arquivos JS e CSS, pois foram projetadas apenas para JS carregado de forma síncrona na seção HEAD da página. O uso dessa técnica pode fazer com que o agrupamento e a lógica requireJS funcionem incorretamente.
+* Não recomendamos usar configurações obsoletas, como mesclar arquivos JS e CSS, pois eles foram projetados apenas para JS carregado de forma síncrona na seção HEAD da página. O uso dessa técnica pode fazer com que o agrupamento e a lógica requireJS funcionem incorretamente.
 
 ## Validação de segmentos de cliente
 

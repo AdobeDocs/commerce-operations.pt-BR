@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin, Developer
 exl-id: 3e252a71-f35f-4046-9353-169060451ffe
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ O QPT v1.1.57 inclui os seguintes patches:
 1. **ACSD-57570**: corrige o problema em que um usuário administrador restrito com acesso a uma determinada loja nem sempre consegue ver todos os catálogos compartilhados aos quais os produtos estão atribuídos ou os clientes que não podem ser salvos, resultando em inconsistências no sistema.
 1. **ACSD-58325**: corrige o problema em que o botão [!UICONTROL Import] fica disponível mesmo após um erro de validação.
 1. **ACSD-59083**: corrige o problema em que algumas operações de atualização do banco de dados resultam em erro de _Tabela base ou exibição não encontrada_ se a atualização [!DNL mview] estiver sendo executada ao mesmo tempo.
-1. **ACSD-61622**: corrige o problema em que [!DNL FedEx] taxas específicas da conta estão ausentes na resposta. ACSD-61622 substitui a correção documentada na migração de integração do método de envio [[!DNL FedEx] de [!DNL SOAP] para [!DNL RESTful API]](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api).
+1. **ACSD-61622**: corrige o problema em que [!DNL FedEx] taxas específicas da conta estão ausentes na resposta. ACSD-61622 substitui a correção documentada na migração de integração do método de envio [[!DNL FedEx] de [!DNL SOAP] para [!DNL RESTful API]](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27131).
 1. **ACSD-61895**: corrige o problema em que a consulta de categorias [!DNL GraphQL] retorna categorias com a permissão *permitir*, mesmo que a categoria raiz não tenha a permissão *permitir*.
 1. **ACSD-62212**: corrige o problema em que o conteúdo de email [!UICONTROL Forgot Password] não é traduzido para o idioma do modo de exibição de armazenamento.
 1. **ACSD-62481**: corrige o problema em que o carrinho de compras do cliente fica vazio mesmo se [!UICONTROL Persistence] estiver habilitado.

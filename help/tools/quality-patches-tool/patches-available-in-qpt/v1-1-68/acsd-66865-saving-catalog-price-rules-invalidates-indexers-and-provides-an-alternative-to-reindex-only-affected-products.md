@@ -1,16 +1,16 @@
 ---
 title: 'ACSD-66865: salvar um [!UICONTROL Catalog Price Rule] invalida indexadores e fornece uma alternativa para reindexar somente produtos afetados'
-description: Aplique o patch ACSD-66865 para corrigir o problema do Adobe Commerce em que  salvar um [!UICONTROL Catalog Price Rules] invalida os indexadores e fornece uma alternativa para reindexar somente os produtos afetados.
+description: Aplique o patch ACSD-66865 para corrigir o problema do Adobe Commerce em que salvar um [!UICONTROL Catalog Price Rules] invalida os indexadores e fornece uma alternativa para reindexar apenas os produtos afetados.
 feature: Price Rules, Price Indexer
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: fe36522b99ec3fe7189d164cfca6127c9119e06e
+exl-id: 68baf176-ee6e-4ba8-8a34-8adb8d1e16fe
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66865: salvar um **[!UICONTROL Catalog Price Rule]** invalida indexadores e fornece uma alternativa para reindexar somente produtos afetados
 
@@ -56,7 +56,7 @@ Uma reindexação completa é acionada para todos os indexadores, mesmo quando a
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
