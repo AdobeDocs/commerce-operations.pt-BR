@@ -2,9 +2,9 @@
 title: Programação de lançamento de patches
 description: Saiba quando a Adobe planeja anunciar o lançamento de novos patches e correções de segurança para o Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 0f46bdfd0afbca07e0d60e995ee9426f5408671d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '402'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ O objetivo deste cronograma é fornecer datas para quando a Adobe planeja anunci
 
 >[!NOTE]
 >
->Para saber mais sobre novos recursos, infraestrutura em nuvem e versões de extensibilidade, consulte a documentação da versão dos [Serviços da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/release-information/release-notes-all).
+>Para saber mais sobre novos recursos, infraestrutura em nuvem e versões de extensibilidade, consulte a documentação da versão dos [Serviços da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Além dos patches de qualidade, segurança e beta agendados listados nesta página, a Adobe fornece acesso a [patches individuais](versioning-policy.md#individual-patch) por meio da [Ferramenta de Patches de Qualidade](../tools/quality-patches-tool/usage.md). A ferramenta permite aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para a versão instalada do Adobe Commerce.
 
@@ -45,10 +45,10 @@ Consulte a imagem a seguir para obter detalhes:
 
 A Adobe notifica os clientes sobre novas versões de patches pelos seguintes canais:
 
-- [Boletins e conselhos de segurança do Adobe](https://helpx.adobe.com/br/security/security-bulletin.html#magento)
+- [Boletins e conselhos de segurança do Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
 - Email
 - Alertas no produto
 
 >[!NOTE]
 >
-> Para obter as datas de lançamento de cada versão secundária, patch e segurança, e as datas para o fim do suporte regular, consulte [Versões lançadas](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/versions).
+> Para obter as datas de lançamento de cada versão secundária, patch e segurança, e as datas para o fim do suporte regular, consulte [Versões lançadas](/help/release/versions.md).

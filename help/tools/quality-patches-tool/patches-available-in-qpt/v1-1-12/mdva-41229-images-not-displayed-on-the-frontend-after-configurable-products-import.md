@@ -1,20 +1,20 @@
 ---
 title: 'MDVA-41229: Imagens disponíveis no back-end não exibidas no front-end após a importação de produtos configuráveis'
-description: O patch MDVA-41229 resolve o problema em que as imagens disponíveis no back-end não são exibidas no front-end após a importação de produtos configuráveis. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 está instalada. A ID do patch é MDVA-41229. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
+description: O patch MDVA-41229 resolve o problema em que as imagens disponíveis no back-end não são exibidas no front-end após a importação de produtos configuráveis. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 está instalada. A ID do patch é MDVA-41229. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 feature: Data Import/Export, Configuration, Products
 role: Admin
 exl-id: 894fdc5b-545c-4ed8-ae1b-573d1d8d3cd6
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '712'
 ht-degree: 2%
 
 ---
 
 # MDVA-41229: Imagens disponíveis no back-end não exibidas no front-end após a importação de produtos configuráveis
 
-O patch MDVA-41229 resolve o problema em que as imagens disponíveis no back-end não são exibidas no front-end após a importação de produtos configuráveis. Este patch está disponível quando a [Ferramenta de Patches de Qualidade (QPT)](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 está instalada. A ID do patch é MDVA-41229. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
+O patch MDVA-41229 resolve o problema em que as imagens disponíveis no back-end não são exibidas no front-end após a importação de produtos configuráveis. Este patch está disponível quando a [Ferramenta de Patches de Qualidade (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12 está instalada. A ID do patch é MDVA-41229. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.
 
 ## Produtos e versões afetados
 
@@ -28,7 +28,7 @@ O patch MDVA-41229 resolve o problema em que as imagens disponíveis no back-end
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões da Ferramenta de patches de qualidade. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões da Ferramenta de patches de qualidade. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -40,50 +40,50 @@ As imagens disponíveis no back-end não são exibidas no front-end após a impo
 1. Adicione um atributo personalizado indo para **Lojas** > **Atributos** > **Produto** > **Adicionar Novo Atributo** com as configurações abaixo:
 
    * Propriedades:
-      * Propriedades do atributo:
+     * Propriedades do atributo:
 
-         * Rótulo padrão: definir tamanho
-         * Tipo de Entrada de Catálogo para Proprietário da Loja: Amostra de Texto
-         * Valores Obrigatórios: Não
-         * Atualizar imagem de visualização do produto: Sim
+       * Rótulo padrão: definir tamanho
+       * Tipo de Entrada de Catálogo para Proprietário da Loja: Amostra de Texto
+       * Valores Obrigatórios: Não
+       * Atualizar imagem de visualização do produto: Sim
 
-      * Gerenciar amostra (valores do seu atributo):
+     * Gerenciar amostra (valores do seu atributo):
 
-        | É padrão | Amostra do administrador | Descrição do administrador | Amostra de exibição de loja padrão | Descrição da exibição da loja padrão |
-        |---|---|---|---|---|
-        | não | 4 | 4 | 4 | 4 |
-        | não | 24 | 24 | 24 | 24 |
-        | não | 30 | 30 | 30 | 30 |
-        | não | 60 | 60 | 60 | 60 |
-        | não | 68 | 68 | 68 | 68 |
+       | É padrão | Amostra do administrador | Descrição do administrador | Amostra de exibição de loja padrão | Descrição da exibição da loja padrão |
+       |---|---|---|---|---|
+       | não | 4 | 4 | 4 | 4 |
+       | não | 24 | 24 | 24 | 24 |
+       | não | 30 | 30 | 30 | 30 |
+       | não | 60 | 60 | 60 | 60 |
+       | não | 68 | 68 | 68 | 68 |
 
-      * Propriedades avançadas de atributo:
+     * Propriedades avançadas de atributo:
 
-         * Código do atributo: set_size
-         * Escopo: Global
-         * Valor Único: Não
-         * Validação de Entrada para Proprietário da Loja: Nenhuma
-         * Adicionar às Opções de Coluna: Não
-         * Usar nas Opções de Filtro: Não
+       * Código do atributo: set_size
+       * Escopo: Global
+       * Valor Único: Não
+       * Validação de Entrada para Proprietário da Loja: Nenhuma
+       * Adicionar às Opções de Coluna: Não
+       * Usar nas Opções de Filtro: Não
 
    * Gerenciar rótulos:
 
-      * Gerenciar títulos (tamanho, cor etc.)
+     * Gerenciar títulos (tamanho, cor etc.)
 
-         * Visualização de armazenamento padrão: definir tamanho
+       * Visualização de armazenamento padrão: definir tamanho
 
    * Propriedades da vitrine:
 
-      * Usar na pesquisa: Sim
-      * Peso da pesquisa: 1
-      * Visível na Pesquisa Avançada: Não
-      * Comparável na loja: sim
-      * Uso na navegação em camadas: filtrável (com resultados)
-      * Usar na Navegação em Camadas dos Resultados da Pesquisa: Sim
-      * Usar para Condições de Regra Promocional: Não
-      * Visível nas Páginas do Catálogo na Loja: Sim
-      * Usado na Lista de Produtos: Sim
-      * Usado para Classificação na Lista de Produtos: Não
+     * Usar na pesquisa: Sim
+     * Peso da pesquisa: 1
+     * Visível na Pesquisa Avançada: Não
+     * Comparável na loja: sim
+     * Uso na navegação em camadas: filtrável (com resultados)
+     * Usar na Navegação em Camadas dos Resultados da Pesquisa: Sim
+     * Usar para Condições de Regra Promocional: Não
+     * Visível nas Páginas do Catálogo na Loja: Sim
+     * Usado na Lista de Produtos: Sim
+     * Usado para Classificação na Lista de Produtos: Não
 
 1. Adicione este atributo ao Conjunto de Atributos Padrão dentro do Grupo de Detalhes do Produto (**Lojas** > **Atributos** > **Conjunto de Atributos**).
 1. Baixe imagens definidas na pasta var dentro do diretório raiz do Adobe Commerce.
@@ -91,22 +91,22 @@ As imagens disponíveis no back-end não são exibidas no front-end após a impo
 
    * Importar configurações:
 
-      * Tipo de entidade: produtos
+     * Tipo de entidade: produtos
 
    * Comportamento de Importação:
 
-      * Comportamento de Importação: Adicionar/Atualizar
-      * Estratégia de validação: Parar se houver Erro
-      * Contagem de Erros Permitidos: 1
-      * Separador de campos: `;`
-      * Separador de valores múltiplos: `,`
-      * Constante de valor do atributo: EMPTYVALUE
-      * Compartimento de campos: desmarcado
+     * Comportamento de Importação: Adicionar/Atualizar
+     * Estratégia de validação: Parar se houver Erro
+     * Contagem de Erros Permitidos: 1
+     * Separador de campos: `;`
+     * Separador de valores múltiplos: `,`
+     * Constante de valor do atributo: EMPTYVALUE
+     * Compartimento de campos: desmarcado
 
    * Arquivo a importar:
 
-      * Selecione o arquivo para importar
-      * Diretório do arquivo de imagens: deixe em branco
+     * Selecione o arquivo para importar
+     * Diretório do arquivo de imagens: deixe em branco
 
 1. Vá para a loja na página `/product-set.html` e alterne entre diferentes Tamanhos de Conjunto. Para o Tamanho definido 24, não haverá galeria.
 
@@ -123,13 +123,13 @@ Não há galeria para os produtos.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
 Para saber mais sobre a Ferramenta de correção de qualidade, consulte:
 
-* [Ferramenta de correções de qualidade lançada: uma nova ferramenta para autoatender correções de qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
+* [Ferramenta de correções de qualidade lançada: uma nova ferramenta para autoatender correções de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) na base de dados de conhecimento de suporte.
 * [Verifique se há um patch disponível para o problema do Adobe Commerce usando a Ferramenta de Patches de Qualidade](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!DNL Quality Patches Tool].
 
-Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no guia [!DNL Quality Patches Tool].
+Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no guia [!DNL Quality Patches Tool].

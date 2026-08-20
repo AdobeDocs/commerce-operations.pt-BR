@@ -4,7 +4,7 @@ description: Saiba mais sobre as recomendações para configurar limites de carr
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Para obter o melhor desempenho, use as diretrizes a seguir para gerenciar os lim
 
 ### Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -47,7 +47,7 @@ Configurar um grande número de categorias pode afetar o desempenho.
 
 ### Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -70,7 +70,7 @@ Configurar muitos atributos de produto ou opções de atributos de produto pode 
 
 ### Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -100,7 +100,7 @@ Remover conjuntos de atributos de produto não utilizados usando o MySQL.
 
 #### Revisar configuração do conjunto de atributos
 
-1. [Conectar ao banco de dados do site](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [Conectar ao banco de dados do site](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Localizar o número de conjuntos de atributos usando MySQL
 
@@ -138,7 +138,7 @@ A configuração de muitas opções de produto por produto pode afetar o desempe
 
 ### Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -170,7 +170,7 @@ A exibição de muitos produtos por página pode afetar o desempenho.
 
 ### Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -179,7 +179,7 @@ A exibição de muitos produtos por página pode afetar o desempenho.
 
 Se você tiver muitos produtos em uma categoria, atualize a configuração do catálogo da loja para desabilitar a opção para **Permitir todos os produtos por página**.
 
-Depois que você desativa essa opção, o Adobe Commerce usa os controles de paginação de vitrine eletrônica de produtos para gerenciar o número de produtos exibidos nos componentes da vitrine eletrônica. Para obter instruções, consulte [Configurar controles de paginação](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=pt-BR#configure-the-pagination-controls).
+Depois que você desativa essa opção, o Adobe Commerce usa os controles de paginação de vitrine eletrônica de produtos para gerenciar o número de produtos exibidos nos componentes da vitrine eletrônica. Para obter instruções, consulte [Configurar controles de paginação](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Limites de SKU do produto
 
@@ -187,7 +187,7 @@ A configuração de muitas SKUs de produtos pode afetar o desempenho, retardando
 
 ### Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -214,7 +214,7 @@ A configuração de muitas variações por produto pode afetar o desempenho.
 
 ### Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -249,7 +249,7 @@ Siga estas práticas recomendadas para configurar vendas e promoções para iten
 
 ### Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local

@@ -4,7 +4,7 @@ description: Conheça as práticas recomendadas para configurar blocos de conte�
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Quando um bloco de conteúdo privado contém a variável `_isScopePrivate`, o bloco não pode ser armazenado em cache. Como o bloco privado não é armazenado em cache, o Adobe Commerce deve recuperar os mesmos dados para cada solicitação do cliente, o que aumenta a carga do servidor.
 
-Em vez de usar a variável `_isScopePrivate` para conteúdo privado, crie um bloco e um modelo para exibir dados agnósticos do usuário. Esses dados são substituídos por dados específicos do usuário pelo componente de interface do usuário do Adobe Commerce, que lida com dados de pré-renderização de maneira mais eficiente. Para obter instruções, consulte [Conteúdo privado](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) em _[!DNL Commerce PHP Extensions Guide]_.
+Em vez de usar a variável `_isScopePrivate` para conteúdo privado, crie um bloco e um modelo para exibir dados agnósticos do usuário. Esses dados são substituídos por dados específicos do usuário pelo componente de interface do usuário do Adobe Commerce, que lida com dados de pré-renderização de maneira mais eficiente. Para obter instruções, consulte [Conteúdo privado](https://developer.adobe.com/commerce/php/development/cache/page/private-content) em _[!DNL Commerce PHP Extensions Guide]_.
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -31,4 +31,4 @@ Sites que têm blocos de conteúdo privado contendo as variáveis `_isScopePriva
 ## Informações adicionais
 
 - [Conteúdo privado](../../../performance/configuration.md#client-side-optimization-settings)
-- [Blocos Armazenáveis em Cache e Privados](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#cacheable-and-private-blocks) em _[!DNL Commerce PHP Extensions Guide]_
+- [Blocos Armazenáveis em Cache e Privados](https://developer.adobe.com/commerce/php/development/cache/page/private-content#cacheable-and-private-blocks) em _[!DNL Commerce PHP Extensions Guide]_

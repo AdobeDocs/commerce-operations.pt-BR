@@ -4,7 +4,7 @@ description: Saiba mais sobre as práticas recomendadas gerais que desenvolvem p
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -50,7 +50,7 @@ As palavras-chave &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, 
 ## Controle de versão
 
 As versões de módulo DEVEM seguir o [Controle de Versão Semântico 2.0.0 padrão](https://semver.org/).
-As dependências na base de código do Adobe Commerce DEVEM seguir as [diretrizes de Dependências de Versão de Módulo](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
+As dependências na base de código do Adobe Commerce DEVEM seguir as [diretrizes de Dependências de Versão de Módulo](https://developer.adobe.com/commerce/php/development/versioning/dependencies).
 
 ## CONTROLE DE REVISÃO
 
@@ -58,7 +58,7 @@ As confirmações DEVEM ser acompanhadas por mensagens de confirmação signific
 
 ## Segurança
 
-1. [Funções não seguras](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) NÃO DEVEM ser usadas.
-1. [Estratégias de prevenção XSS](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) DEVEM ser aplicadas.
-1. [Políticas de Segurança de Conteúdo](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) DEVEM ser aplicadas.
+1. [Funções não seguras](https://developer.adobe.com/commerce/php/development/security/non-secure-functions) NÃO DEVEM ser usadas.
+1. [Estratégias de prevenção XSS](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting) DEVEM ser aplicadas.
+1. [Políticas de Segurança de Conteúdo](https://developer.adobe.com/commerce/php/development/security/content-security-policies) DEVEM ser aplicadas.
 1. As novas instâncias do Adobe Commerce DEVEM ser entregues na versão de segurança mais recente de uma versão que ainda não atingiu a data de &quot;Fim das correções de segurança&quot;. Consulte [Política de Ciclo de Vida de Software da Adobe Commerce](../../../release/lifecycle-policy.md).
