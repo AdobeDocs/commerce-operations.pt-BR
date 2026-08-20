@@ -23,9 +23,9 @@ Adobe Commerce na infraestrutura em nuvem 2.4.x e posterior
 
 Atualize os serviços e componentes usados pelo Adobe Commerce antes de atingirem ou estarem próximos da data de término da vida útil. Isso ajuda a manter a conformidade com o PCI e a diminuir as vulnerabilidades de segurança.
 
-Os clientes com planos iniciais podem realizar ações de autoatendimento em atualizações de serviços. Consulte [Alterar versão do serviço](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version) para obter detalhes sobre como fazer isso.
+Os clientes com planos iniciais podem realizar ações de autoatendimento em atualizações de serviços. Consulte [Alterar versão do serviço](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version) para obter detalhes sobre como fazer isso.
 
-Os clientes com planos Pro só podem realizar autoatendimento em atualizações de serviços em seu [ambiente de integração](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242). Para atualizações de serviços em Produção, você deve [enviar um tíquete de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando a atualização.
+Os clientes com planos Pro só podem realizar autoatendimento em atualizações de serviços em seu [ambiente de integração](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27242). Para atualizações de serviços em Produção, você deve [enviar um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando a atualização.
 
 >[!WARNING]
 >

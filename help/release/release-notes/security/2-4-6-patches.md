@@ -211,13 +211,13 @@ A versão de segurança 2.4.6-p6 do Adobe Commerce fornece correções de bugs d
 
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
-Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do B2B2B.
+Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1[&#128279;](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do B2B2B.
 
 ### Aplicar hotfix para CVE-2024-34102
 
 {{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
-Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do B2B2B.
+Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1[&#128279;](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do B2B2B.
 
 ### Destaques
 
@@ -279,7 +279,7 @@ Para obter as últimas informações sobre as correções de erros de segurança
 
 ### Aplicar hotfix para CVE-2022-31160
 
-A biblioteca do `jQuery-UI` versão 1.13.1 tem uma vulnerabilidade de segurança conhecida (CVE-2022-31160) que afeta várias versões do Adobe Commerce e do Magento Open Source. Esta biblioteca é uma dependência do Adobe Commerce e do Magento Open Source 2.4.4, 2.4.5 e 2.4.6. Os comerciantes que executam implantações afetadas devem aplicar o patch especificado no artigo da Base de Dados de Conhecimento [vulnerabilidade de segurança da interface do usuário do jQuery CVE-2022-31160 para 2.4.4, 2.4.5 e 2.4.6 versões](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176).
+A biblioteca do `jQuery-UI` versão 1.13.1 tem uma vulnerabilidade de segurança conhecida (CVE-2022-31160) que afeta várias versões do Adobe Commerce e do Magento Open Source. Esta biblioteca é uma dependência do Adobe Commerce e do Magento Open Source 2.4.4, 2.4.5 e 2.4.6. Os comerciantes que executam implantações afetadas devem aplicar o patch especificado no artigo da Base de Dados de Conhecimento [vulnerabilidade de segurança da interface do usuário do jQuery CVE-2022-31160 para 2.4.4, 2.4.5 e 2.4.6 versões](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27176).
 
 ### Destaques
 
@@ -297,7 +297,7 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 
 ### Aplicar hotfix para CVE-2022-31160
 
-A biblioteca do `jQuery-UI` versão 1.13.1 tem uma vulnerabilidade de segurança conhecida (CVE-2022-31160) que afeta várias versões do Adobe Commerce e do Magento Open Source. Esta biblioteca é uma dependência do Adobe Commerce e do Magento Open Source 2.4.4, 2.4.5 e 2.4.6. Os comerciantes que executam implantações afetadas devem aplicar o patch especificado no artigo da Base de Dados de Conhecimento [vulnerabilidade de segurança da interface de consulta CVE-2022-31160 para as versões 2.4.4, 2.4.5 e 2.4.6](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27176).
+A biblioteca do `jQuery-UI` versão 1.13.1 tem uma vulnerabilidade de segurança conhecida (CVE-2022-31160) que afeta várias versões do Adobe Commerce e do Magento Open Source. Esta biblioteca é uma dependência do Adobe Commerce e do Magento Open Source 2.4.4, 2.4.5 e 2.4.6. Os comerciantes que executam implantações afetadas devem aplicar o patch especificado no artigo da Base de Dados de Conhecimento [vulnerabilidade de segurança da interface de consulta CVE-2022-31160 para as versões 2.4.4, 2.4.5 e 2.4.6](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27176).
 
 #### Realce
 
@@ -329,6 +329,6 @@ As atualizações de plataforma para esta versão melhoram a conformidade com as
   Installation failed, reverting ./composer.json and ./composer.lock to their original content.
   ```
 
-  Esse problema pode ser resolvido adicionando dependências manuais para o pacote de segurança B2B com uma [marca de estabilidade](https://getcomposer.org/doc/04-schema.md#package-links). Para obter detalhes, consulte as [notas de versão B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
+  Esse problema pode ser resolvido adicionando dependências manuais para o pacote de segurança B2B com uma [marca de estabilidade](https://getcomposer.org/doc/04-schema.md#package-links). Para obter detalhes, consulte as [notas de versão B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=pt-BR#known-issue).
 
 <!-- Last updated from includes: 2026-04-08 15:01:38 -->

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40545: Somente o primeiro nó de uma página é recuperado'
-description: O patch MDVA-40545 resolve o problema em que apenas o primeiro nó de uma página é recuperado mesmo se houver mais de um nó para a mesma página. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 está instalada. A ID do patch é MDVA-40545. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
+description: O patch MDVA-40545 resolve o problema em que apenas o primeiro nó de uma página é recuperado mesmo se houver mais de um nó para a mesma página. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 está instalada. A ID do patch é MDVA-40545. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
 feature: CMS, Cache
 role: Admin
 exl-id: f87344e9-5a63-4c38-af2b-1500ef053dec
@@ -55,7 +55,7 @@ As navegações estruturais e os links no segundo submenu são iguais ao primeir
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
