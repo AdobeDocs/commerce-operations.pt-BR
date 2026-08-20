@@ -76,6 +76,6 @@ Fornecemos uma maneira de sincronizar a configuração de seus sistemas:
 >
 >Esses novos métodos para gerenciar sua configuração são opcionais. Não é necessário, mas é altamente recomendável usá-los.
 
-Na maioria das vezes, as opções de configuração definidas na configuração compartilhada, específica do sistema ou confidencial não podem ser editadas no Administrador. Isso ajuda a manter as configurações consistentes em todos os sistemas. (Opcionalmente, você pode usar o comando [`magento config:set` ](../cli/set-configuration-values.md) sem a opção `--lock` para definir configurações editáveis no Administrador.)
+Na maioria das vezes, as opções de configuração definidas na configuração compartilhada, específica do sistema ou confidencial não podem ser editadas no Administrador. Isso ajuda a manter as configurações consistentes em todos os sistemas. (Opcionalmente, você pode usar o comando [`magento config:set` &#x200B;](../cli/set-configuration-values.md) sem a opção `--lock` para definir configurações editáveis no Administrador.)
 
 Cada opção de configuração do Commerce tem um _caminho de configuração_ exclusivo. Para definir um valor para uma opção de configuração, você pode usar um comando da CLI ou uma variável de ambiente para definir o valor desse caminho de configuração em um sistema específico.

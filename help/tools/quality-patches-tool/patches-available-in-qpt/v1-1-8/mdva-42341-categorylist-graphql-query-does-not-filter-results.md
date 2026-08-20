@@ -43,19 +43,19 @@ A consulta &quot;categoryList&quot; do GraphQL não filtra os resultados se uma 
 
 <pre>
 <code class="language-graphql">
-{
-  categoryList(filters: {name: {match: "category1"}}) {
+&lbrace;
+  categoryList(filters: {name: {match: "category1"}&#x200B;}) &lbrace;
     uid
     level
     name
-    breadcrumbs {
+    breadcrumbs &lbrace;
       category_uid
       category_name
       category_level
       category_url_key
-    }
-  }
-}
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
