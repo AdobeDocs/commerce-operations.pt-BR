@@ -17,7 +17,7 @@ Este artigo fala sobre as práticas recomendadas de implantação de conteúdo e
 
 ## Produtos e versões afetados
 
-[Todas as versões ](../../../release/versions.md) com suporte de:
+[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
 
 * Adobe Commerce na infraestrutura em nuvem
 * Adobe Commerce no local
