@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-33606: Os usuários recebem um erro ao salvar a página do CMS atribuída à hierarquia'
-description: O patch MDVA-33606 resolve o problema em que os usuários obtêm o erro *Violação de restrição exclusiva encontrada* ao salvar uma página do CMS atribuída à árvore de hierarquia. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 está instalada. A ID do patch é MDVA-33606. Observe que o problema foi corrigido no Adobe Commerce 2.4.3.
+description: O patch MDVA-33606 resolve o problema em que os usuários obtêm o erro *Violação de restrição exclusiva encontrada* ao salvar uma página do CMS atribuída à árvore de hierarquia. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 está instalada. A ID do patch é MDVA-33606. Observe que o problema foi corrigido no Adobe Commerce 2.4.3.
 feature: CMS
 role: Admin
 exl-id: 19aaa13f-7ee6-49bc-b1d9-c288dc93b951
@@ -64,7 +64,7 @@ Você recebe o seguinte erro: *Violação de restrição exclusiva encontrada*.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

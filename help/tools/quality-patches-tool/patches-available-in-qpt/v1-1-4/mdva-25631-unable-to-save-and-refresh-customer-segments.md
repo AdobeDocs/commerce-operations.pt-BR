@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-25631: Não é possível salvar e atualizar segmentos de clientes'
-description: O patch MDVA-25631 resolve o problema em que os usuários não podem salvar e atualizar segmentos de clientes que contêm um grande número de clientes. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 está instalada. A ID do patch é MDVA-25631. Observe que o problema foi corrigido no Adobe Commerce 2.4.2.
+description: O patch MDVA-25631 resolve o problema em que os usuários não podem salvar e atualizar segmentos de clientes que contêm um grande número de clientes. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 está instalada. A ID do patch é MDVA-25631. Observe que o problema foi corrigido no Adobe Commerce 2.4.2.
 feature: Customer Service
 role: Admin
 exl-id: 3cf40538-822a-4d3e-b8fa-20f9ef9228ae
@@ -55,7 +55,7 @@ Você recebe o erro *500* porque o tamanho de memória permitido está sendo esg
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

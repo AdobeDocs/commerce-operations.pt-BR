@@ -41,5 +41,5 @@ Sites e lojas são multiplicadores para dados de catálogo, portanto, ter muitos
 
 ## Informações adicionais
 
-- [Noções básicas sobre sites, lojas e visualizações de loja](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
-- [Configurar vários sites ou lojas](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)
+- [Noções básicas sobre sites, lojas e visualizações de loja](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [Configurar vários sites ou lojas](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)

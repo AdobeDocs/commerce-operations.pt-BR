@@ -73,7 +73,7 @@ A Adobe recomenda seguir estas etapas quando você adiciona uma coluna a uma tab
 
    Por exemplo: `app/code/YourCompany/Customer`
 
-1. Crie os arquivos apropriados para habilitar o módulo (consulte [Criar um módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
+1. Crie os arquivos apropriados para habilitar o módulo (consulte [Criar um módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=pt-BR){target="_blank"}.
 
 1. Crie um arquivo chamado `db_schema.xml` na pasta `etc` e faça as alterações apropriadas.
 
@@ -155,7 +155,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Localizar tabelas MySQL grandes
 
-Para identificar as tabelas grandes, conecte-se ao banco de dados conforme descrito no artigo [Conectar-se ao banco de dados](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) e execute o comando a seguir. Use `project_id` para o ambiente de produção. Para ambientes de preparo, use `[project_id]_stg`, `[project_id]_stg2`.
+Para identificar as tabelas grandes, conecte-se ao banco de dados conforme descrito no artigo [Conectar-se ao banco de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) e execute o comando a seguir. Use `project_id` para o ambiente de produção. Para ambientes de preparo, use `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,
