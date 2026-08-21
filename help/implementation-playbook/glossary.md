@@ -3,8 +3,8 @@ title: Glossário
 description: Saiba mais sobre os termos principais e as definições usadas nos projetos de implementação do Adobe Commerce. Descubra o vocabulário essencial para desenvolvedores, comerciantes e equipes técnicas.
 exl-id: 82abd8c3-fb5a-4599-8435-f1f2f6122397
 recommendations: noDisplay, noCatalog
-last-update: 2025-09-12T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '23'
 ht-degree: 0%

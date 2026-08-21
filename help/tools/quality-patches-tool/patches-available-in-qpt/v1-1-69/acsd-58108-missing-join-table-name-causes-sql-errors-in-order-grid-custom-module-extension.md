@@ -4,13 +4,13 @@ description: Aplique o patch ACSD-58108 para corrigir o problema do Adobe Commer
 feature: Orders, System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 26009fee51fb81e2517ad09319bac1190d127564
+exl-id: 1195e1c3-575c-48d6-8a10-c300f9bbb84a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58108: Erros SQL ocorrem na extensão de módulo personalizado da grade de ordem devido à falta de nome de tabela de junção
 
@@ -28,7 +28,7 @@ O patch ACSD-58108 corrige o problema em que um nome de tabela de junção ausen
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -36,12 +36,12 @@ O nome ausente da tabela de junção na tabela de busca original causa erros SQL
 
 <u>Etapas a serem reproduzidas</u>:
 
-&#x200B;01. Instale uma instância 2.4-develop.
-&#x200B;02. Criar um novo pedido.
-&#x200B;03. Instale um módulo personalizado com uma extensão SQL.
-&#x200B;04. Navegue até **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
-&#x200B;05. Aplique o filtro **[!UICONTROL Purchase Date]** e aguarde o resultado.
-&#x200B;06. Aplicar filtro **[!UICONTROL Product SKU]**.
+01. Instale uma instância 2.4-develop.
+02. Criar um novo pedido.
+03. Instale um módulo personalizado com uma extensão SQL.
+04. Navegue até **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
+05. Aplique o filtro **[!UICONTROL Purchase Date]** e aguarde o resultado.
+06. Aplicar filtro **[!UICONTROL Product SKU]**.
 
 <u>Resultados esperados</u>:
 
@@ -56,7 +56,7 @@ Ocorre um erro ao aplicar filtros na grade da ordem.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

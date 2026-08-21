@@ -3,9 +3,9 @@ title: A guia [!UICONTROL Summary]
 description: Saiba mais sobre a guia [!UICONTROL Summary] do  [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 818c25db0442f5288191ee414b7e2ab07c4cbedf
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '2636'
+source-wordcount: '2640'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ O quadro **[!UICONTROL Swap memory free in bytes]** exibe, por nó, a quantidade
 
 ![Percentual de CPU por host](../../assets/tools/cpu-percent-by-host.jpg)
 
-A agregação de todos os ambientes e nós é exibida no quadro **[!UICONTROL CPU % by host]**. Você deve desmarcar os ambientes de não produção. Observe também quaisquer instâncias em que todos os nós do ambiente de produção não estejam presentes. Para obter mais dicas sobre alta utilização do CPU, consulte [Solucionar problemas de desempenho usando o New Relic no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=pt-BR).
+A agregação de todos os ambientes e nós é exibida no quadro **[!UICONTROL CPU % by host]**. Você deve desmarcar os ambientes de não produção. Observe também quaisquer instâncias em que todos os nós do ambiente de produção não estejam presentes. Para obter mais dicas sobre alta utilização do CPU, consulte [Solucionar problemas de desempenho usando o New Relic no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -72,7 +72,7 @@ O **[!UICONTROL Alerts during timeframe]** exibe todos os alertas, incluindo o [
 
 ![uso do CPU](../../assets/tools/cpu-usage.jpg)
 
-Se o quadro **[!UICONTROL CPU Usage]** estiver em branco, isso indica que o aplicativo de infraestrutura [!DNL New Relic] não está habilitado. Se seu site está no Starter, você não vê essas informações. Se o seu site for Pro, abra um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR) para habilitar o [!DNL New Relic Infrastructure] para o seu site.
+Se o quadro **[!UICONTROL CPU Usage]** estiver em branco, isso indica que o aplicativo de infraestrutura [!DNL New Relic] não está habilitado. Se seu site está no Starter, você não vê essas informações. Se o seu site for Pro, abra um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para habilitar o [!DNL New Relic Infrastructure] para o seu site.
 
 ## [!UICONTROL Average Response Time]
 
@@ -386,7 +386,7 @@ O quadro **[!UICONTROL Order transactions (default?)]** procura transações `re
 * &#39;%Você pode corrigir esse problema atualizando o serviço Elasticsearch na infraestrutura do Magento Cloud para a versão%&#39; como &#39;ver_err&#39;
 * Status de integridade de &#39;%cluster alterado de \[YELLOW\] para \[RED\] (motivo:%&#39; como &#39;yel_red&#39;
 * &#39;%No space left on device%&#39; como &#39;no_space&#39;
-* &#39;% Falha ao executar &lbrack;SearchRequest&lbrace;searchType=%&#39; as &#39;failed_query&#39;
+* &#39;% Falha ao executar [SearchRequest{searchType=%&#39; as &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 
