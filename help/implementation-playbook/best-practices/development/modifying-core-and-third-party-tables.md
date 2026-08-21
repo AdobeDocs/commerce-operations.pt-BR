@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Outra opção relacionada para manter os dados externos para o comércio, mas pe
 
 Por exemplo, você pode `stitch` agrupar pedidos antigos de um banco de dados externo, talvez o site antigo do Magento 1 que está descontinuado. Em seguida, usando a malha do GraphQL, mostre-as como parte do histórico de pedidos dos clientes. Esses pedidos antigos podem ser combinados com os pedidos do seu ambiente [!DNL Adobe Commerce] atual.
 
-Para obter mais informações sobre como usar a malha de API com o GraphQL, consulte [O que é malha de API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) e [Gateway do GraphQL Mesh](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+Para obter mais informações sobre como usar a malha de API com o GraphQL, consulte [O que é malha de API](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}) e [Gateway do GraphQL Mesh](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## Migrar dados herdados com atributos de extensão
 
-Se você determinar que os dados herdados exigem migração ou que os novos dados precisam ser salvos em [!DNL Adobe Commerce], a Adobe recomenda o uso de [atributos de extensão](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. A utilização de atributos de extensão para salvar dados adicionais oferece as seguintes vantagens:
+Se você determinar que os dados herdados exigem migração ou que os novos dados precisam ser salvos em [!DNL Adobe Commerce], a Adobe recomenda o uso de [atributos de extensão](https://developer.adobe.com/commerce/php/development/components/add-attributes){target="_blank"}. A utilização de atributos de extensão para salvar dados adicionais oferece as seguintes vantagens:
 
 - Você pode controlar os dados que estão sendo mantidos e a estrutura do banco de dados, o que garante que os dados sejam salvos com o tipo de coluna correto e índices adequados.
 - A maioria das entidades em [!DNL Adobe Commerce] dá suporte ao uso de atributos de extensão.
@@ -54,7 +54,7 @@ Dois exemplos de locais de armazenamento são tabelas de banco de dados e [!DNL 
 
 Como desenvolvedor, é vital sempre considerar o uso de ferramentas fora do seu ambiente [!DNL Adobe Commerce], como a malha do GraphQL e o Adobe App Builder. Essas ferramentas podem ajudar você a reter o acesso aos dados, mas não têm impacto no aplicativo principal de comércio ou em suas tabelas de banco de dados subjacentes. Com essa abordagem, você expõe seus dados por meio de uma API. Em seguida, adicione uma fonte de dados à configuração do App Builder. Usando o GraphQL Mesh, você pode combinar essas fontes de dados e produzir uma única resposta, como mencionado em [dados herdados](#legacy-data).
 
-Para obter detalhes adicionais sobre a malha do GraphQL, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obter informações sobre o Adobe App Builder, consulte [Introdução ao App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=pt-BR){target="_blank"}.
+Para obter detalhes adicionais sobre a malha do GraphQL, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obter informações sobre o Adobe App Builder, consulte [Introdução ao App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Modificação de uma tabela principal ou de terceiros
 
@@ -77,7 +77,7 @@ A Adobe recomenda seguir estas etapas quando você adiciona uma coluna a uma tab
 
 1. Crie um arquivo chamado `db_schema.xml` na pasta `etc` e faça as alterações apropriadas.
 
-   Se aplicável, gere um arquivo `db_schema_whitelist.json`. Consulte [Esquema Declarativo](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} para obter mais informações.
+   Se aplicável, gere um arquivo `db_schema_whitelist.json`. Consulte [Esquema Declarativo](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration){target="_blank"} para obter mais informações.
 
 ### Impactos potenciais
 
@@ -97,19 +97,19 @@ Algumas tabelas principais têm uma coluna `additional_data` que contém dados c
 
 - Vantagens de usar o campo `additional_data`
 
-   - Nenhum campo adicional é necessário, o que mantém o número de colunas mínimo. Isso é útil no fluxo de vendas, em que já há muitas tabelas envolvidas. É melhor não adicionar mais complexidade a esse processo já complicado. Este método satisfaz muitos casos de uso, mas não todos.
+  - Nenhum campo adicional é necessário, o que mantém o número de colunas mínimo. Isso é útil no fluxo de vendas, em que já há muitas tabelas envolvidas. É melhor não adicionar mais complexidade a esse processo já complicado. Este método satisfaz muitos casos de uso, mas não todos.
 
 - Desvantagens
 
-   - Esse método é ideal apenas para armazenar dados somente leitura. Esse problema ocorre porque nosso código precisaria ter sua serialização cancelada para modificar e criar o objeto para adicionar dependências ou relações de banco de dados.
+  - Esse método é ideal apenas para armazenar dados somente leitura. Esse problema ocorre porque nosso código precisaria ter sua serialização cancelada para modificar e criar o objeto para adicionar dependências ou relações de banco de dados.
 
-   - É difícil usar operações de banco de dados para procurar por esses campos. A pesquisa com esse método está lenta.
+  - É difícil usar operações de banco de dados para procurar por esses campos. A pesquisa com esse método está lenta.
 
-   - Cuidado extra deve ser tomado ao armazenar dados na coluna `additional_data` para evitar o acionamento de operações de serialização ou desserialização que possam quebrar o código criando um JSON inválido ou causando erros de leitura durante o tempo de execução.
+  - Cuidado extra deve ser tomado ao armazenar dados na coluna `additional_data` para evitar o acionamento de operações de serialização ou desserialização que possam quebrar o código criando um JSON inválido ou causando erros de leitura durante o tempo de execução.
 
-   - Esses campos devem ser claramente declarados no código, para que um desenvolvedor possa encontrá-los facilmente.
+  - Esses campos devem ser claramente declarados no código, para que um desenvolvedor possa encontrá-los facilmente.
 
-   - Outros problemas que podem ocorrer e que podem ser muito difíceis de diagnosticar. Por exemplo, com algumas funções nativas do PHP, se você não usar os métodos do wrapper [!DNL Adobe Commerce] fornecidos pelo aplicativo principal, o resultado final dos dados transformados pode ser diferente do formato esperado. Sempre use as funções do invólucro para garantir a consistência e a previsibilidade dos dados que estão sendo salvos ou recuperados.
+  - Outros problemas que podem ocorrer e que podem ser muito difíceis de diagnosticar. Por exemplo, com algumas funções nativas do PHP, se você não usar os métodos do wrapper [!DNL Adobe Commerce] fornecidos pelo aplicativo principal, o resultado final dos dados transformados pode ser diferente do formato esperado. Sempre use as funções do invólucro para garantir a consistência e a previsibilidade dos dados que estão sendo salvos ou recuperados.
 
 Estes são exemplos de tabelas que têm a coluna e a estrutura para a coluna `additional_data`.
 
@@ -155,7 +155,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Localizar tabelas MySQL grandes
 
-Para identificar as tabelas grandes, conecte-se ao banco de dados conforme descrito no artigo [Conectar-se ao banco de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) e execute o comando a seguir. Use `project_id` para o ambiente de produção. Para ambientes de preparo, use `[project_id]_stg`, `[project_id]_stg2`.
+Para identificar as tabelas grandes, conecte-se ao banco de dados conforme descrito no artigo [Conectar-se ao banco de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) e execute o comando a seguir. Use `project_id` para o ambiente de produção. Para ambientes de preparo, use `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

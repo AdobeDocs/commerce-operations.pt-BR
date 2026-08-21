@@ -2,9 +2,9 @@
 title: Executar configuração dentro de  [!DNL Magento PHPStorm plugin]
 description: Siga este guia para usar o [!DNL Upgrade Compatibility Tool] em  [!DNL Magento PHPStorm plugin].
 exl-id: 8d5a0666-83c0-4249-8601-7d081acb9009
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -13,12 +13,12 @@ ht-degree: 0%
 
 O [!DNL Magento PHPStorm plugin] é uma ferramenta criada pela comunidade para otimizar as operações de codificação de rotina e melhorar a experiência de desenvolvimento do Adobe Commerce. O plug-in é compatível com o IntelliJ IDEA Ultimate e com os IDEs PhpStorm. A funcionalidade inclui atalhos de geração de código específicos do Adobe Commerce, inspeções de código, funcionalidade de preenchimento automático para arquivos de configuração, testes MFTF e RequireJS.
 
-Verifique o tópico [Instalação](https://developer.adobe.com/commerce/php/best-practices/phpstorm/install/) para obter as etapas detalhadas sobre como instalar o [!DNL Magento PHPStorm plugin].
+Verifique o tópico [Instalação](https://developer.adobe.com/commerce/php/best-practices/phpstorm/install) para obter as etapas detalhadas sobre como instalar o [!DNL Magento PHPStorm plugin].
 
-Você pode executar o [!DNL Upgrade Compatibility Tool] com uma configuração de execução via [!DNL Magento PHPStorm plugin]. Consulte o tópico [[!DNL Upgrade Compatibility Tool] Executar configuração](https://developer.adobe.com/commerce/php/best-practices/phpstorm/run-configuration/) para obter mais informações.
+Você pode executar o [!DNL Upgrade Compatibility Tool] com uma configuração de execução via [!DNL Magento PHPStorm plugin]. Consulte o tópico [[!DNL Upgrade Compatibility Tool] Executar configuração](https://developer.adobe.com/commerce/php/best-practices/phpstorm/run-configuration) para obter mais informações.
 
 ## Demonstração do [!DNL Magento PHPStorm plugin]
 
 Assista a este vídeo para saber mais sobre o [!DNL Magento PHPStorm plugin]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344409?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/344409?captions=por_br&quality=12)

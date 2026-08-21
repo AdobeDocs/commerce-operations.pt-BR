@@ -4,9 +4,9 @@ description: Conheça as práticas recomendadas para configurar sites, lojas e e
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -41,5 +41,5 @@ Sites e lojas são multiplicadores para dados de catálogo, portanto, ter muitos
 
 ## Informações adicionais
 
-- [Compreendendo sites, lojas e exibições de loja](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Configurar vários sites ou lojas](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Noções básicas sobre sites, lojas e visualizações de loja](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [Configurar vários sites ou lojas](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)

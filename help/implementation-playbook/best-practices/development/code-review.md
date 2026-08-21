@@ -4,7 +4,7 @@ description: Saiba mais sobre as práticas recomendadas de revisão de código p
 feature: Best Practices
 role: Developer
 exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Além disso, considere os seguintes pontos ao implementar processos de revisão 
 
 O estilo pode ser testado automaticamente executando a inspeção PhpStorm (veja abaixo).
 
-Configure o [PHPMD e o PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) e execute a ferramenta [Padrão de Codificação](https://github.com/magento/magento-coding-standard) da CLI (também abaixo). Há algumas sobreposições, mas ambas também têm testes únicos.
+Configure o [PHPMD e o PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection) e execute a ferramenta [Padrão de Codificação](https://github.com/magento/magento-coding-standard) da CLI (também abaixo). Há algumas sobreposições, mas ambas também têm testes únicos.
 
 ### Convenção e estrutura
 

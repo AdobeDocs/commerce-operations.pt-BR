@@ -5,9 +5,9 @@ feature: Catalog Management, Search
 role: Admin, Developer
 type: Troubleshooting
 exl-id: d61c6b9e-bbcf-4285-b97b-b1fee67048e5
-source-git-commit: 515e6d1f00c910455a2ffddf70c4a450184e7e81
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ A Navegação em camadas exibe opções de atributo (tamanhos) de produtos atrib
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

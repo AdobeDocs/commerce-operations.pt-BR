@@ -2,9 +2,9 @@
 title: Implementação de atualização
 description: Saiba mais sobre as diferentes fases da implementação de atualização para projetos do Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 3c54a3c429a3dadc826bffcb91f99a5a3a31b42c
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '857'
 ht-degree: 1%
 
 ---
@@ -29,9 +29,9 @@ A seguir estão itens que talvez você queira incluir em uma análise completa:
 
 - **[!DNL Upgrade Compatibility Tool]resultados**—Esta ferramenta torna qualquer atualização mais rápida e fácil ao comparar seu código atual ao código da versão de destino e produzir um relatório de todos os problemas que precisam ser resolvidos. Consulte o [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Os principais detalhes do relatório incluem:
 
-   - Versão instalada atual
-   - Atualizar versão de destino
-   - Número e detalhes de erros críticos encontrados
+  - Versão instalada atual
+  - Atualizar versão de destino
+  - Número e detalhes de erros críticos encontrados
 
   >[!TIP]
   >
@@ -88,4 +88,4 @@ Por fim, informe-se com sua equipe para determinar as lições aprendidas e as a
 
 Depois que o site for iniciado, verifique os dados de análise, o Google Search Console e outros recursos para garantir que não haja problemas inesperados e que tudo funcione conforme esperado.
 
-É sempre uma boa ideia acompanhar o desempenho por meio de ferramentas de monitoramento bem projetadas. Há muitas ferramentas e meios de monitorar o desempenho do site, portanto, escolha um que se pareça bem com a sua organização. Recomendamos que os clientes da Adobe Commerce que usam nosso sistema de gerenciamento de infraestrutura em nuvem aproveitem serviços como o [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=pt-BR) para monitorar o desempenho do site.
+É sempre uma boa ideia acompanhar o desempenho por meio de ferramentas de monitoramento bem projetadas. Há muitas ferramentas e meios de monitorar o desempenho do site, portanto, escolha um que se pareça bem com a sua organização. Recomendamos que os clientes da Adobe Commerce que usam nosso sistema de gerenciamento de infraestrutura em nuvem aproveitem serviços como o [New Relic](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) para monitorar o desempenho do site.

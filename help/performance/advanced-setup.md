@@ -2,7 +2,7 @@
 title: Configuração avançada
 description: Saiba como fazer a configuração avançada do Adobe Commerce. Descubra as instruções passo a passo e os requisitos de configuração.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Por exemplo, se você estiver executando um perfil semelhante ao Medium B2B, é 
 
 Um grande número de SKUs de produtos, sites, grupos de clientes ou catálogos compartilhados afetará o tempo de execução dos indexadores de Preço do produto e Regra do catálogo. Isso ocorre porque, por padrão, todos os sites são atribuídos a todos os grupos de clientes (catálogos compartilhados).
 
-Para diminuir o tempo de indexação, você pode [excluir determinados sites dos grupos de clientes (catálogos compartilhados)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
+Para diminuir o tempo de indexação, você pode [excluir determinados sites dos grupos de clientes (catálogos compartilhados)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization#customer-group-limitations-by-websites).
 
 ## Configurar Redis
 
@@ -92,7 +92,7 @@ bin/magento setup:db-schema:add-slave
 
 Esse comando executa alterações de configuração, mas não configura a própria replicação. Isso deve ser feito manualmente.
 
-Depois de dividir o banco de dados mestre e definir bancos de dados subordinados, o [!DNL Commerce] regula automaticamente as conexões com um banco de dados específico, tomando decisões com base no tipo de solicitação (POST, PUT, GET etc.) e recurso de dados. Se o [!DNL Commerce] ou suas extensões executarem operações de gravação em uma solicitação GET, o sistema alternará automaticamente a conexão do banco de dados subordinado para o mestre. Funciona da mesma forma com bancos de dados mestres: assim que você trabalha com uma tabela relacionada a check-out, o sistema redireciona todas as consultas para um banco de dados específico. Enquanto isso, todas as consultas relacionadas ao catálogo irão para o banco de dados principal.
+Depois de dividir o banco de dados mestre e definir bancos de dados subordinados, o [!DNL Commerce] regula automaticamente as conexões com um banco de dados específico, tomando decisões com base no tipo de solicitação (POST, PUT, GET etc.) e recurso de dados. Se o [!DNL Commerce] ou suas extensões executam operações de gravação em uma solicitação GET, o sistema alterna automaticamente a conexão do banco de dados subordinado para o mestre. Funciona da mesma forma com bancos de dados mestres: assim que você trabalha com uma tabela relacionada a check-out, o sistema redireciona todas as consultas para um banco de dados específico. Enquanto isso, todas as consultas relacionadas ao catálogo irão para o banco de dados principal.
 
 Para obter mais detalhes sobre a configuração e os benefícios de várias configurações mestre/escravo, consulte
 [Dividir solução de desempenho de banco de dados](../configuration/storage/multi-master.md).
