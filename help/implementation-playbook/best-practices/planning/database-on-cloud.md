@@ -4,7 +4,7 @@ description: Saiba como definir configurações de banco de dados e aplicativo p
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### Alterar o mecanismo de armazenamento para o InnoDB
 
-No arquivo `db_schema.xml` declarando a tabela, defina o valor do atributo `engine` do nó `table` correspondente como `innodb`. Para referência, consulte [Configurar esquema declarativo > nó da tabela](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) na documentação do desenvolvedor.
+No arquivo `db_schema.xml` declarando a tabela, defina o valor do atributo `engine` do nó `table` correspondente como `innodb`. Para referência, consulte [Configurar esquema declarativo > nó da tabela](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration) na documentação do desenvolvedor.
 
 O esquema declarativo foi introduzido no Adobe Commerce na versão 2.3 da infraestrutura em nuvem.
 
@@ -59,9 +59,9 @@ Para determinar qual mecanismo de pesquisa está em uso no momento, execute o se
 
 Para obter instruções de configuração, consulte o Guia do desenvolvedor do Adobe Commerce na nuvem:
 
-- [Configurar o serviço OpenSearch](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [Configurar o serviço OpenSearch](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [Configurar o serviço Elasticsearch](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Configurar o serviço Elasticsearch](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## Evitar acionadores personalizados
 
@@ -76,7 +76,7 @@ Para saber mais sobre alternativas ao uso de acionadores personalizados, consult
 
 ## Atualizar [!DNL ECE-Tools] para a versão 2002.0.21 ou superior {#ece-tools-version}
 
-Para evitar possíveis problemas com bloqueios do cron, atualize as ECE-Tools para a versão 2002.0.21 ou superior. Para obter instruções, consulte [Atualizar `ece-tools` versão](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) na documentação do desenvolvedor.
+Para evitar possíveis problemas com bloqueios do cron, atualize as ECE-Tools para a versão 2002.0.21 ou superior. Para obter instruções, consulte [Atualizar `ece-tools` versão](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) na documentação do desenvolvedor.
 
 ## Alternar modo indexador com segurança
 

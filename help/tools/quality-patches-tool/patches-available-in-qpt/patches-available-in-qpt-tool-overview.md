@@ -5,9 +5,9 @@ feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
 type: Troubleshooting
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Consulte [Commerce > Ferramentas > Uso](../usage.md) em nossa documentação do 
 
 ### Como instalar e usar o QPT para Adobe Commerce na infraestrutura em nuvem
 
-Consulte o [Guia de Infraestrutura do Commerce na Nuvem > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) em nossa documentação do desenvolvedor para obter detalhes sobre como instalar e usar o QPT para aplicar e reverter patches na infraestrutura na nuvem do Adobe Commerce.
+Consulte o [Guia de Infraestrutura do Commerce na Nuvem > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) em nossa documentação do desenvolvedor para obter detalhes sobre como instalar e usar o QPT para aplicar e reverter patches na infraestrutura na nuvem do Adobe Commerce.
 
 ## Leitura relacionada
 

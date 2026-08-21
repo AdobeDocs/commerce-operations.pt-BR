@@ -2,7 +2,7 @@
 title: Instalação de início rápido local
 description: Saiba como instalar o Adobe Commerce em sua própria infraestrutura usando o Composer. Descubra as etapas de início rápido e os requisitos de configuração.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Para obter o metappackage do Adobe Commerce:
 
    >[!NOTE]
    >
-   > Se você usar um arquivo do Composer `[auth.json](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` ou uma variável de ambiente configurada com suas chaves de autenticação da Commerce, não será solicitado a inserir chaves de autenticação.
+   > Se você usar um arquivo do Composer `[auth.json](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/authentication-keys)` ou uma variável de ambiente configurada com suas chaves de autenticação da Commerce, não será solicitado a inserir chaves de autenticação.
 
    Se você encontrar erros, como `Could not find package...` ou `...no matching package found`, verifique se não há erros de digitação no comando. Se ainda encontrar erros, talvez você não esteja autorizado a baixar o Adobe Commerce. Contate o [Suporte da Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
 

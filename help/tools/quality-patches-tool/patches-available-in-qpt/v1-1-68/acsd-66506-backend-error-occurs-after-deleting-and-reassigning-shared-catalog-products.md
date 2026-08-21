@@ -4,13 +4,13 @@ description: Aplique o patch ACSD-66506 para corrigir o problema do Adobe Commer
 feature: B2B
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8f77101832ccfb415d040c202f0fc7221f97419a
+exl-id: db08c58b-7e14-4bd8-af85-8f63aba9051b
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66506: Ocorre um erro de backend após a exclusão e reatribuição de produtos do Catálogo compartilhado
 
@@ -61,7 +61,7 @@ Erro: *O produto solicitado não existe. Verifique o produto e tente novamente*,
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

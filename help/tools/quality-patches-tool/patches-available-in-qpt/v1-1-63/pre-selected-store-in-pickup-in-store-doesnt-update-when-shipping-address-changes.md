@@ -5,9 +5,9 @@ feature: Inventory
 role: Admin, Developer
 exl-id: 4efc99d6-88a3-43f9-88d4-dedb9d8a269e
 type: Troubleshooting
-source-git-commit: 036c1b81d9ec8f55f002446a8ea6078c6f8014d9
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ A origem em Illinois pode ser selecionada e o cliente pode prosseguir para o che
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

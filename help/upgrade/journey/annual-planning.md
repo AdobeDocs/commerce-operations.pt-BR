@@ -2,9 +2,9 @@
 title: Planejamento anual de atualizações
 description: Analise as dicas para criar um plano de atualização anual para seu projeto do Adobe Commerce.
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Muitas empresas trabalham com orçamentos e roteiros anuais. É fundamental durante essas discussões anuais que você fale sobre a integridade, a direção e a estratégia de atualização da sua plataforma para o ano, juntamente com como ela se encaixa nas metas gerais e nos indicadores-chave de desempenho (KPIs) da empresa.
 
-Seguindo o [cronograma de lançamento](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/schedule), atribua janelas de orçamento e de lançamento para atualizações, evitando feriados, fechamentos de empresas e horários de pico. Ao entender o cronograma de lançamento do Adobe e permanecer informado sobre quais alterações e melhorias fazem parte de cada versão por meio das [notas de versão](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview), você pode planejar melhor seu ano.
+Seguindo o [cronograma de lançamento](/help/release/schedule.md), atribua janelas de orçamento e de lançamento para atualizações, evitando feriados, fechamentos de empresas e horários de pico. Ao entender o cronograma de lançamento do Adobe e permanecer informado sobre quais alterações e melhorias fazem parte de cada versão por meio das [notas de versão](/help/release/release-notes/overview.md), você pode planejar melhor seu ano.
 
 Durante o planejamento, talvez você queira se perguntar:
 

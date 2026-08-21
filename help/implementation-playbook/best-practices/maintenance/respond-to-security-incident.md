@@ -3,9 +3,9 @@ title: Responder a um incidente de segurança
 description: Lidar com incidentes de segurança seguindo as práticas recomendadas para responder e corrigir problemas de segurança que afetam a disponibilidade e o desempenho do site.
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ No caso infeliz de um compromisso do site, aqui estão algumas recomendações i
 - Envolva o integrador de sistemas e o pessoal de segurança apropriado para conduzir esforços de investigação e correção.
 
 - Determine o escopo do ataque:
-   - As informações de cartão de crédito foram acessadas?
-   - Que informações foram roubadas?
-   - Quanto tempo decorreu desde o compromisso?
-   - As informações eram criptografadas?
+  - As informações de cartão de crédito foram acessadas?
+  - Que informações foram roubadas?
+  - Quanto tempo decorreu desde o compromisso?
+  - As informações eram criptografadas?
 
 - Tente encontrar o vetor de ataque para determinar quando e como o site foi comprometido, revisando os arquivos de log do servidor e as alterações nos arquivos.
 
-   - Em determinadas circunstâncias, pode ser aconselhável limpar e reinstalar tudo ou, no caso de hospedagem virtual, criar uma nova instância. Malware pode ser escondido em um local insuspeito apenas esperando para restaurar a si mesmo.
+  - Em determinadas circunstâncias, pode ser aconselhável limpar e reinstalar tudo ou, no caso de hospedagem virtual, criar uma nova instância. Malware pode ser escondido em um local insuspeito apenas esperando para restaurar a si mesmo.
 
-   - Remova todos os arquivos desnecessários. Em seguida, reinstale os arquivos necessários de uma fonte conhecida e limpa. Por exemplo, você pode reinstalar usando arquivos do sistema de controle de versão ou dos arquivos de distribuição originais do Adobe.
+  - Remova todos os arquivos desnecessários. Em seguida, reinstale os arquivos necessários de uma fonte conhecida e limpa. Por exemplo, você pode reinstalar usando arquivos do sistema de controle de versão ou dos arquivos de distribuição originais do Adobe.
 
-   - Redefina todas as credenciais, incluindo o banco de dados, o acesso a arquivos, as integrações de pagamento e envio, os serviços da Web e o logon de Administrador. Além disso, redefina todas as chaves e contas de integração e API que podem ser usadas para atacar o sistema.
+  - Redefina todas as credenciais, incluindo o banco de dados, o acesso a arquivos, as integrações de pagamento e envio, os serviços da Web e o logon de Administrador. Além disso, redefina todas as chaves e contas de integração e API que podem ser usadas para atacar o sistema.
 
 ## Analisar um incidente
 
@@ -73,13 +73,13 @@ A primeira etapa da análise de incidentes é coletar o máximo de fatos possív
 
   Use a guia **Segurança** da ferramenta para obter uma visão clara dos possíveis problemas de segurança e ajudar a identificar as causas raiz e manter os sites com desempenho ideal.
 
-- Analisar logs com [Logs do New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=pt-BR)
+- Analisar logs com [Logs do New Relic](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)
 
-  Os projetos Pro do Adobe Commerce na infraestrutura em nuvem incluem o serviço [Logs do New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=pt-BR). O serviço é pré-configurado para agregar todos os dados de log dos ambientes de preparo e produção para exibi-los em um painel de gerenciamento de log centralizado, onde você pode pesquisar e visualizar dados agregados.
+  Os projetos Pro do Adobe Commerce na infraestrutura em nuvem incluem o serviço [Logs do New Relic](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management). O serviço é pré-configurado para agregar todos os dados de log dos ambientes de preparo e produção para exibi-los em um painel de gerenciamento de log centralizado, onde você pode pesquisar e visualizar dados agregados.
 
   Para outros projetos da Commerce, você pode configurar e usar o serviço [Logs do New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) para concluir as seguintes tarefas:
-   - Use [consultas New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) para pesquisar dados de log agregados.
-   - Visualizar dados de log por meio do aplicativo New Relic Logs.
+  - Use [consultas New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) para pesquisar dados de log agregados.
+  - Visualizar dados de log por meio do aplicativo New Relic Logs.
 
 ## Contas de auditoria, código e banco de dados
 
@@ -93,9 +93,9 @@ Continue a monitorar de perto o local após o incidente, pois muitos locais ser�
 
 - [Revisar configurações de segurança do administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=pt-BR) — Verifique se as configurações de segurança do administrador seguem as práticas recomendadas de segurança.
 
-- [Revisar contas de usuário do Adobe Commerce em projetos de infraestrutura em nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=pt-BR)—Remover contas antigas, não utilizadas ou suspeitas e girar senhas para todos os usuários administradores de projetos em nuvem. Verifique se as configurações de segurança da conta estão definidas corretamente.
+- [Revisar contas de usuário do Adobe Commerce em projetos de infraestrutura em nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/user-access)—Remover contas antigas, não utilizadas ou suspeitas e girar senhas para todos os usuários administradores de projetos em nuvem. Verifique se as configurações de segurança da conta estão definidas corretamente.
 
-- [Auditoria de chaves SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=pt-BR) para Adobe Commerce na infraestrutura em nuvem — revisão, exclusão e rotação de chaves SSH.
+- [Auditoria de chaves SSH](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/secure-connections) para Adobe Commerce na infraestrutura em nuvem — revisão, exclusão e rotação de chaves SSH.
 
 ### Código de auditoria
 

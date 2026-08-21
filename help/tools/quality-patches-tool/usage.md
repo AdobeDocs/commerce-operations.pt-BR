@@ -4,9 +4,9 @@ description: Saiba como usar a Ferramenta de correção de qualidade para aplica
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -62,18 +62,18 @@ Adobe Commerce 2.3.5
 A tabela de status inclui:
 
 - **Tipo**:
-   - `Optional` — Todos os patches do pacote [!DNL Quality Patches Tool] e do [Guia de Infraestrutura do Commerce on Cloud > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) são opcionais para instalações do Adobe Commerce.
-   - `Deprecated` — A Adobe substituiu o patch individual. Se você tiver aplicado o patch, recomendamos que o reverta. A operação de reversão também remove o patch da tabela de status.
+  - `Optional` — Todos os patches do pacote [!DNL Quality Patches Tool] e do [Guia de Infraestrutura do Commerce on Cloud > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) são opcionais para instalações do Adobe Commerce.
+  - `Deprecated` — A Adobe substituiu o patch individual. Se você tiver aplicado o patch, recomendamos que o reverta. A operação de reversão também remove o patch da tabela de status.
 
 - **Status**:
-   - `Applied` — O patch foi aplicado.
-   - `Not applied` — O patch não foi aplicado.
-   - `N/A` — O status do patch não pode ser definido devido a conflitos.
+  - `Applied` — O patch foi aplicado.
+  - `Not applied` — O patch não foi aplicado.
+  - `N/A` — O status do patch não pode ser definido devido a conflitos.
 
 - **Detalhes**:
-   - `Affected components` — A lista de módulos afetados.
-   - `Required patches` — A lista de patches que devem ser aplicados para que um patch indicado funcione corretamente (dependências).
-   - `Recommended replacement` — O patch que é um substituto recomendado para um patch obsoleto.
+  - `Affected components` — A lista de módulos afetados.
+  - `Required patches` — A lista de patches que devem ser aplicados para que um patch indicado funcione corretamente (dependências).
+  - `Recommended replacement` — O patch que é um substituto recomendado para um patch obsoleto.
 
 >[!INFO]
 >

@@ -5,9 +5,9 @@ feature: Admin Workspace
 role: Admin, Developer
 exl-id: cd934aa9-901a-4f03-ab83-716131e6bd85
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -56,8 +56,8 @@ A página de edição do produto configurável leva muito tempo para ser carrega
 
 1. Crie um produto configurável que use os atributos recém-criados:
    * Adicione um produto secundário com a seguinte configuração:
-      * Use a última opção do Atributo 1 e a primeira opção dos Atributos 2 a 9.
-      * Isso resulta em 1 produto configurável e 1 produto secundário.
+     * Use a última opção do Atributo 1 e a primeira opção dos Atributos 2 a 9.
+     * Isso resulta em 1 produto configurável e 1 produto secundário.
 1. Vá para a guia **[!UICONTROL Configurations]** do produto configurável.
 1. Clique em **[!UICONTROL Add Products]** manualmente e comece a adicionar os produtos simples criados anteriormente, um por um.
 1. Salve as alterações após cada adição.
@@ -77,7 +77,7 @@ A edição do produto configurável leva muito tempo para carregar e pode atingi
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

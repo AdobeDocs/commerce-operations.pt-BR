@@ -4,13 +4,13 @@ description: Aplique o patch ACSD-62415 para corrigir o problema do Adobe Commer
 feature: Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8040414630cf3c992e0d68d5693990f8f50fdbcb
+exl-id: 3101723d-dcc0-49fa-a823-2a2d37037534
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62415: o back-end do Adobe Commerce carrega **[!UICONTROL Categories]** muito lentamente quando categorias de âncora estão presentes
 
@@ -52,7 +52,7 @@ O carregamento leva de 7 a 20 segundos e a consulta é executada mais de 1.000 v
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

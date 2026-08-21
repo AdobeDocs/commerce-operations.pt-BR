@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de implementação para 
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
     <td>Use as ferramentas de gerenciamento de cache para melhorar o desempenho do site.</td>
   </tr>
   <tr>
-    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Armazenamento em cache de página inteira</a></td>
+    <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content">Armazenamento em cache de página inteira</a></td>
     <td>Saiba como trabalhar com dados públicos ao implementar o armazenamento em cache na extensão do Adobe Commerce.</td>
   </tr>
   <tr>
@@ -76,11 +76,11 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
     <td colspan="2"><em>Configuração de serviços</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=pt-BR">Configurar o Fastly</a></td>
+    <td><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Configurar o Fastly</a></td>
     <td>Configure os serviços do Fastly para o projeto de infraestrutura do Adobe Commerce na nuvem.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=pt-BR">Configurar canais de notificação para o New Relic</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic">Configurar canais de notificação para o New Relic</a></td>
     <td>Acesse seu painel do New Relic e analise os dados de seu projeto do Adobe Commerce na infraestrutura em nuvem.</td>
   </tr>
   <tr>

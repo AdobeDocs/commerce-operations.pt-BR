@@ -2,9 +2,9 @@
 title: Programação de lançamento de patches
 description: Saiba quando a Adobe planeja anunciar o lançamento de novos patches e correções de segurança para o Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 0f46bdfd0afbca07e0d60e995ee9426f5408671d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '402'
 ht-degree: 4%
 
 ---
@@ -51,4 +51,4 @@ A Adobe notifica os clientes sobre novas versões de patches pelos seguintes can
 
 >[!NOTE]
 >
-> Para obter as datas de lançamento de cada versão secundária, patch e segurança, e as datas para o fim do suporte regular, consulte [Versões lançadas](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/versions).
+> Para obter as datas de lançamento de cada versão secundária, patch e segurança, e as datas para o fim do suporte regular, consulte [Versões lançadas](/help/release/versions.md).

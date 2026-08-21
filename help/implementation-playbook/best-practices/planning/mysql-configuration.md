@@ -4,9 +4,9 @@ description: Saiba como os acionadores MySQL e as conexões subordinadas afetam 
 role: Developer
 feature: Best Practices
 exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Para evitar problemas de desempenho ao usar acionadores, siga estas diretrizes:
 
 - Se você tiver acionadores personalizados que gravam alguns dados quando o acionador é executado, mova essa lógica para gravar diretamente nas tabelas de auditoria. Por exemplo, adicionando uma consulta adicional no código do aplicativo, após a consulta, você pretendia criar o acionador para.
 - Revise os acionadores personalizados existentes e considere removê-los e gravá-los diretamente nas tabelas do lado do aplicativo. Verifique se há gatilhos no banco de dados usando a [`SHOW TRIGGERS` Instrução SQL](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- Para obter assistência, dúvidas ou preocupações adicionais, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR&#submit-ticket).
+- Para obter assistência, dúvidas ou preocupações adicionais, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Conexões subordinadas
 
@@ -62,7 +62,7 @@ Adobe Commerce na infraestrutura em nuvem, somente arquitetura Pro
 
 ### Configuração
 
-Na infraestrutura do Adobe Commerce na nuvem, é possível substituir a configuração padrão da conexão slave do MYSQL definindo a variável [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=pt-BR#mysql_use_slave_connection). Defina essa variável como `true` para usar automaticamente uma conexão somente leitura com o banco de dados.
+Na infraestrutura do Adobe Commerce na nuvem, é possível substituir a configuração padrão da conexão slave do MYSQL definindo a variável [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection). Defina essa variável como `true` para usar automaticamente uma conexão somente leitura com o banco de dados.
 
 **Para habilitar a conexão subordinada do MySQL**:
 

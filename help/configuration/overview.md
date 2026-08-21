@@ -1,11 +1,11 @@
 ---
 title: Visão geral do guia de configuração
-description: Saiba mais sobre recursos e serviços configuráveis para seu aplicativo do Adobe Commerce. Descubra como gerenciar a implantação, o armazenamento em cache, a segurança e outras configurações críticas.
+description: Saiba mais sobre recursos e serviços configuráveis para o aplicativo Adobe Commerce. Descubra como gerenciar implantação, armazenamento em cache, segurança e outras configurações essenciais.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 0%
+source-wordcount: '182'
+ht-degree: 12%
 
 ---
 
@@ -29,4 +29,4 @@ Há tópicos correspondentes no [Guia do Usuário do Commerce](https://experienc
 
 ## Configuração na nuvem
 
-[!DNL Commerce on cloud infrastructure] usa um [conjunto de arquivos de configuração](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html?lang=pt-BR) para atualizar os recursos e serviços do aplicativo Commerce nos ambientes hospedados. Devido à natureza exclusiva dos ambientes hospedados na nuvem do Adobe, você sempre deve revisar o [Guia da nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html?lang=pt-BR) para obter requisitos de configuração adicionais.
+[!DNL Commerce on cloud infrastructure] usa um [conjunto de arquivos de configuração](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/overview) para atualizar os recursos e serviços do aplicativo Commerce nos ambientes hospedados. Devido à natureza exclusiva dos ambientes hospedados na nuvem do Adobe, você sempre deve revisar o [Guia da nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview) para obter requisitos de configuração adicionais.

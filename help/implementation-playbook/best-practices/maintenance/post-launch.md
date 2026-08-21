@@ -4,9 +4,9 @@ description: Garanta o desempenho e a segurança ideais da loja Adobe Commerce c
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: f02a13ca-c851-4508-a2bd-e5bc196a330c
-source-git-commit: 60444d3ef7208d12af3f06af6e3cab2cae93700b
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2297'
 ht-degree: 0%
 
 ---
@@ -21,30 +21,30 @@ O suporte e a manutenção pós-lançamento são cruciais para garantir que sua 
 
 - **Teste de carga e velocidade do site**: o Adobe Commerce pode consumir muitos recursos, portanto, o monitoramento regular do desempenho é fundamental.
 
-   - **Ferramentas para usar**: todos os projetos de infraestrutura em nuvem do Adobe Commerce incluem acesso ao New Relic, que auxilia no monitoramento do desempenho e na investigação de eventos no aplicativo e na infraestrutura em nuvem do Commerce. Ferramentas adicionais incluem Google PageSpeed Insights e GTMetrix.
+  - **Ferramentas para usar**: todos os projetos de infraestrutura em nuvem do Adobe Commerce incluem acesso ao New Relic, que auxilia no monitoramento do desempenho e na investigação de eventos no aplicativo e na infraestrutura em nuvem do Commerce. Ferramentas adicionais incluem Google PageSpeed Insights e GTMetrix.
 
-   - **O que monitorar**: estes são os principais itens a serem monitorados para o Adobe Commerce na infraestrutura em nuvem:
+  - **O que monitorar**: estes são os principais itens a serem monitorados para o Adobe Commerce na infraestrutura em nuvem:
 
-      - **Notificações de integridade**: Alertas de espaço em disco e integridade do ambiente.
+    - **Notificações de integridade**: Alertas de espaço em disco e integridade do ambiente.
 
-      - **Observação**: monitoramento abrangente combinando dados de log de várias fontes para um gerenciamento de site eficaz.
+    - **Observação**: monitoramento abrangente combinando dados de log de várias fontes para um gerenciamento de site eficaz.
 
-      - **Serviço New Relic**: monitora o desempenho no preparo e na produção, com foco nas métricas principais.
+    - **Serviço New Relic**: monitora o desempenho no preparo e na produção, com foco nas métricas principais.
 
-      - **Política de alertas gerenciada**: rastreia métricas com limites predefinidos para disparar notificações sobre problemas de infraestrutura ou aplicativos que afetam o desempenho.
+    - **Política de alertas gerenciada**: rastreia métricas com limites predefinidos para disparar notificações sobre problemas de infraestrutura ou aplicativos que afetam o desempenho.
 
   >[!TIP]
   >
-  >Consulte o [monitoramento de desempenho](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/monitor/performance) no _Guia da Nuvem_.
+  >Consulte o [monitoramento de desempenho](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/performance) no _Guia da Nuvem_.
 
 
 - **Otimização do desempenho do banco de dados**: para otimizar o desempenho do banco de dados na Adobe Commerce Cloud, implemente o seguinte:
 
-   - **Monitorar e otimizar consultas do MySQL**: identifique e resolva consultas de execução lenta, o que pode ser feito usando os comandos SHOW FULL PROCESSLIST e EXPLAIN do MySQL. Para configurações mais complexas, os usuários da arquitetura Pro podem utilizar o Percona Toolkit para analisar registros de consultas para detectar problemas de desempenho.
+  - **Monitorar e otimizar consultas do MySQL**: identifique e resolva consultas de execução lenta, o que pode ser feito usando os comandos SHOW FULL PROCESSLIST e EXPLAIN do MySQL. Para configurações mais complexas, os usuários da arquitetura Pro podem utilizar o Percona Toolkit para analisar registros de consultas para detectar problemas de desempenho.
 
-   - **Gerenciamento de índice**: verifique se cada tabela tem uma chave primária e remova os índices duplicados, pois eles podem reduzir a eficiência e gerar conflitos durante gravações simultâneas.
+  - **Gerenciamento de índice**: verifique se cada tabela tem uma chave primária e remova os índices duplicados, pois eles podem reduzir a eficiência e gerar conflitos durante gravações simultâneas.
 
-   - **Otimização do trabalho do Cron**: os trabalhos do Cron devem ser agendados fora do horário de pico para minimizar o impacto no desempenho, especialmente se tarefas em segundo plano, como indexação, forem frequentes.
+  - **Otimização do trabalho do Cron**: os trabalhos do Cron devem ser agendados fora do horário de pico para minimizar o impacto no desempenho, especialmente se tarefas em segundo plano, como indexação, forem frequentes.
 
   >[!TIP]
   >
@@ -52,21 +52,21 @@ O suporte e a manutenção pós-lançamento são cruciais para garantir que sua 
 
 - **Monitorar CDN**: para monitorar o desempenho do Fastly CDN na Adobe Commerce Cloud, você pode realizar as seguintes ações:
 
-   - **Aproveite o New Relic para monitoramento**: a Adobe Commerce oferece o New Relic para monitorar o desempenho do Fastly e outras métricas em ambientes de preparo e produção. Essa ferramenta fornece informações sobre a integridade do servidor, o armazenamento em cache de CDN e as solicitações de rede ao longo do tempo, o que ajuda a identificar padrões e otimizar as configurações de CDN.
+  - **Aproveite o New Relic para monitoramento**: a Adobe Commerce oferece o New Relic para monitorar o desempenho do Fastly e outras métricas em ambientes de preparo e produção. Essa ferramenta fornece informações sobre a integridade do servidor, o armazenamento em cache de CDN e as solicitações de rede ao longo do tempo, o que ajuda a identificar padrões e otimizar as configurações de CDN.
 
-   - **Análise de logs do Fastly**: para projetos do Adobe Commerce Cloud Pro, você pode usar os Logs do New Relic para revisar e analisar os dados de log do Fastly CDN e do WAF para rastrear tendências de desempenho, eventos de segurança e diagnosticar erros ou problemas de latência.
+  - **Análise de logs do Fastly**: para projetos do Adobe Commerce Cloud Pro, você pode usar os Logs do New Relic para revisar e analisar os dados de log do Fastly CDN e do WAF para rastrear tendências de desempenho, eventos de segurança e diagnosticar erros ou problemas de latência.
 
-   - **Usar comandos cURL**: execute comandos cURL com cabeçalhos específicos do Fastly para inspecionar o status do cache do site. Os principais cabeçalhos de resposta incluem `X-Cache` (HIT/MISS), `Fastly-Module-Enabled`, `Fastly-Magento-VCL-Uploaded` e `Cache-Control` para verificar o cache e o status do módulo. O Adobe fornece comandos cURL de amostra para ambientes de preparo e produção.
+  - **Usar comandos cURL**: execute comandos cURL com cabeçalhos específicos do Fastly para inspecionar o status do cache do site. Os principais cabeçalhos de resposta incluem `X-Cache` (HIT/MISS), `Fastly-Module-Enabled`, `Fastly-Magento-VCL-Uploaded` e `Cache-Control` para verificar o cache e o status do módulo. O Adobe fornece comandos cURL de amostra para ambientes de preparo e produção.
 
-   - **Verifique as informações do cabeçalho**: Inspecione cabeçalhos como `Cache-Control`, `Pragma` e `X-Magento-Tags` para confirmar o comportamento adequado de armazenamento em cache e o tratamento de marcas no conteúdo em cache. Os valores de cabeçalho adequados indicam se as configurações de cache são aplicadas efetivamente na CDN.
+  - **Verifique as informações do cabeçalho**: Inspecione cabeçalhos como `Cache-Control`, `Pragma` e `X-Magento-Tags` para confirmar o comportamento adequado de armazenamento em cache e o tratamento de marcas no conteúdo em cache. Os valores de cabeçalho adequados indicam se as configurações de cache são aplicadas efetivamente na CDN.
 
-   - **Depuração e teste do Fastly**: use o recurso de depuração do Fastly para identificar e solucionar problemas com taxas de HIT e MISS de cache, lógica de cache ou respostas de cabeçalho incorretas, que podem apontar para problemas de configuração ou desalinhamento com as regras de cache esperadas.
+  - **Depuração e teste do Fastly**: use o recurso de depuração do Fastly para identificar e solucionar problemas com taxas de HIT e MISS de cache, lógica de cache ou respostas de cabeçalho incorretas, que podem apontar para problemas de configuração ou desalinhamento com as regras de cache esperadas.
 
 Essas etapas de monitoramento ajudam a manter o desempenho ideal do CDN e abordam problemas que afetam a velocidade e a confiabilidade do site.
 
 >[!TIP]
 >
->Consulte a [Visão geral dos serviços do Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/cdn/fastly) no _Guia da Nuvem_.
+>Consulte a [Visão geral dos serviços do Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly) no _Guia da Nuvem_.
 
 #### Monitoramento de segurança regular
 
@@ -102,7 +102,7 @@ Para monitorar o registro de erros na Adobe Commerce Cloud, o Adobe fornece vár
 
 >[!TIP]
 >
->Para obter mais detalhes sobre práticas de registro e rastreamento de erros na Adobe Commerce Cloud, consulte [Gerenciamento de logs do New Relic](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management) e [monitoramento de exceção](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/exceptions).
+>Para obter mais detalhes sobre práticas de registro e rastreamento de erros na Adobe Commerce Cloud, consulte [Gerenciamento de logs do New Relic](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management) e [monitoramento de exceção](/help/tools/site-wide-analysis-tool/exceptions.md).
 
 ### Segurança e atualizações
 
@@ -112,17 +112,17 @@ Para permanecer atualizado e garantir a segurança do seu sistema da Adobe Comme
 
 - **Assinar alertas de segurança do Adobe Commerce**: mantenha-se informado sobre vulnerabilidades de segurança ao [se registrar para receber notificações do Adobe](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/security).
 
-- **Verificar notas de versão**: examine regularmente as [notas de versão de correção de segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/security-patches/overview), que estão marcadas com &quot;-pN&quot; para versões (por exemplo, 2.3.5-p1), e contêm correções críticas e melhorias.
+- **Verificar notas de versão**: examine regularmente as [notas de versão de correção de segurança](/help/release/release-notes/security/overview.md), que estão marcadas com &quot;-pN&quot; para versões (por exemplo, 2.3.5-p1), e contêm correções críticas e melhorias.
 
 - **Aplicar patches de segurança imediatamente**: aplique patches de segurança assim que estiverem disponíveis. Isso inclui a atualização para as versões mais recentes ou a aplicação de arquivos de patch específicos.
 
 - **Usar patches de nuvem**: para a Adobe Commerce Cloud, os patches de segurança podem ser agrupados no Conjunto de ferramentas da nuvem. Atualize o conjunto ou a versão do Commerce para receber essas correções.
 
-- **Gerenciamento automatizado de patches**: considere usar ferramentas como o patcher centralizado para [gerenciar e aplicar patches em vários armazenamentos automaticamente](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale).
+- **Gerenciamento automatizado de patches**: considere usar ferramentas como o patcher centralizado para [gerenciar e aplicar patches em vários armazenamentos automaticamente](/help/implementation-playbook/best-practices/maintenance/patching-at-scale.md).
 
 >[!TIP]
 >
->Para obter mais detalhes e instruções passo a passo sobre como aplicar patches e manter a segurança, consulte [notas de versão de patch de segurança](../../../release/release-notes/security/overview.md) e [Como aplicar patches de segurança](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches). Você também deve revisar os relatórios da [Ferramenta de Análise do Site](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/access).
+>Para obter mais detalhes e instruções passo a passo sobre como aplicar patches e manter a segurança, consulte [notas de versão de patch de segurança](../../../release/release-notes/security/overview.md) e [Como aplicar patches de segurança](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches). Você também deve revisar os relatórios da [Ferramenta de Análise do Site](/help/tools/site-wide-analysis-tool/access.md).
 
 #### Conformidade com o PCI
 
@@ -132,11 +132,11 @@ Para garantir a conformidade com o PCI na Adobe Commerce Cloud, siga estas prát
 
 - **Usar protocolos de transmissão seguros**: sempre transmita dados de pagamento através de protocolos seguros, como TLS, com criptografia e gerenciamento de chaves adequado.
 
-- **Utilizar o WAF (firewall de aplicativo da Web)**: o serviço WAF com tecnologia Fastly ajuda a atender aos requisitos do PCI DSS 6.6 e protege contra vulnerabilidades comuns, bloqueando o tráfego mal-intencionado antes que ele chegue ao seu site. Veja mais informações [aqui](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage) e [aqui](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service).
+- **Utilizar o WAF (firewall de aplicativo da Web)**: o serviço WAF com tecnologia Fastly ajuda a atender aos requisitos do PCI DSS 6.6 e protege contra vulnerabilidades comuns, bloqueando o tráfego mal-intencionado antes que ele chegue ao seu site. Veja mais informações [aqui](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md) e [aqui](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly-waf-service).
 
-- **Limitar acesso**: certifique-se de que somente a equipe autorizada tenha acesso aos dados confidenciais de pagamento e [aplique o controle de acesso para reduzir o risco de exposição](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage).
+- **Limitar acesso**: certifique-se de que somente a equipe autorizada tenha acesso aos dados confidenciais de pagamento e [aplique o controle de acesso para reduzir o risco de exposição](/help/implementation-playbook/best-practices/planning/payment-processing-storage.md).
 
-- **Verificação de segurança regular**: execute verificações PCI ASV regulares e [monitore seu ambiente](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/shared-responsibility) para resolver possíveis vulnerabilidades.
+- **Verificação de segurança regular**: execute verificações PCI ASV regulares e [monitore seu ambiente](/help/security-and-compliance/shared-responsibility.md) para resolver possíveis vulnerabilidades.
 
 >[!TIP]
 >
@@ -148,11 +148,11 @@ Para garantir a conformidade com o PCI na Adobe Commerce Cloud, siga estas prát
 
 - **Canais de suporte**: implementar canais de suporte ao cliente como:
 
-   - **Chat ao vivo**: ofereça suporte ao chat ao vivo para assistência imediata. As soluções populares incluem Zendesk, Intercom e Tidio.
+  - **Chat ao vivo**: ofereça suporte ao chat ao vivo para assistência imediata. As soluções populares incluem Zendesk, Intercom e Tidio.
 
-   - **Suporte por email**: use um sistema de emissão de tíquetes de suporte, como o Freshdesk ou o Zoho Desk, para gerenciar consultas de clientes com eficiência.
+  - **Suporte por email**: use um sistema de emissão de tíquetes de suporte, como o Freshdesk ou o Zoho Desk, para gerenciar consultas de clientes com eficiência.
 
-   - **Suporte telefônico**: se você tiver uma grande base de clientes, considere oferecer suporte telefônico durante o horário comercial.
+  - **Suporte telefônico**: se você tiver uma grande base de clientes, considere oferecer suporte telefônico durante o horário comercial.
 
 #### Treinamento do usuário administrador
 
@@ -202,27 +202,27 @@ Para garantir a conformidade com o PCI na Adobe Commerce Cloud, siga estas prát
 
 - **Dimensionamento automático para tratamento de tráfego**:
 
-   - A Adobe Commerce Cloud oferece suporte ao dimensionamento automático para ajustar dinamicamente os recursos do servidor (por exemplo, nós da Web) com base nas demandas de tráfego em tempo real, garantindo que sua loja possa lidar com grandes volumes de visitantes sem intervenção manual. Consulte [dimensionamento automático](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/architecture/autoscaling) no _Guia da Nuvem_.
+  - A Adobe Commerce Cloud oferece suporte ao dimensionamento automático para ajustar dinamicamente os recursos do servidor (por exemplo, nós da Web) com base nas demandas de tráfego em tempo real, garantindo que sua loja possa lidar com grandes volumes de visitantes sem intervenção manual. Consulte [dimensionamento automático](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/autoscaling) no _Guia da Nuvem_.
 
-   - As camadas de serviço e da Web podem ser dimensionadas independentemente, adicionando mais nós da Web para aumentar o tráfego e dimensionando nós de serviço ou banco de dados para desempenho de back-end durante períodos de pico. Consulte [arquitetura escalada](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture) no _Guia da Nuvem_.
+  - As camadas de serviço e da Web podem ser dimensionadas independentemente, adicionando mais nós da Web para aumentar o tráfego e dimensionando nós de serviço ou banco de dados para desempenho de back-end durante períodos de pico. Consulte [arquitetura escalada](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture) no _Guia da Nuvem_.
 
 - **Monitoramento de desempenho**:
 
-   - Use o **New Relic** para monitorar métricas de desempenho em tempo real (por exemplo, uso do CPU, níveis de tráfego) e fazer ajustes, conforme necessário.
+  - Use o **New Relic** para monitorar métricas de desempenho em tempo real (por exemplo, uso do CPU, níveis de tráfego) e fazer ajustes, conforme necessário.
 
-   - Teste o desempenho em ambientes de preparo antes do dimensionamento para evitar problemas na produção.
+  - Teste o desempenho em ambientes de preparo antes do dimensionamento para evitar problemas na produção.
 
 - **Desenvolvimento de novos recursos**:
 
-   - Integre recursos avançados, como **personalização orientada por IA**, **gerenciamento de assinaturas** e soluções personalizadas.
+  - Integre recursos avançados, como **personalização orientada por IA**, **gerenciamento de assinaturas** e soluções personalizadas.
 
-   - Teste e refine continuamente os recursos em ambientes de preparo antes da implantação na produção para minimizar o tempo de inatividade.
+  - Teste e refine continuamente os recursos em ambientes de preparo antes da implantação na produção para minimizar o tempo de inatividade.
 
 - **Manutenção do site em andamento**:
 
-   - Analise regularmente os registros do sistema e as métricas de desempenho para identificar áreas que precisam ser melhoradas.
+  - Analise regularmente os registros do sistema e as métricas de desempenho para identificar áreas que precisam ser melhoradas.
 
-   - Garantir que a infraestrutura permaneça escalável e adaptável às novas necessidades e ao crescimento dos negócios.
+  - Garantir que a infraestrutura permaneça escalável e adaptável às novas necessidades e ao crescimento dos negócios.
 
 >[!TIP]
 >

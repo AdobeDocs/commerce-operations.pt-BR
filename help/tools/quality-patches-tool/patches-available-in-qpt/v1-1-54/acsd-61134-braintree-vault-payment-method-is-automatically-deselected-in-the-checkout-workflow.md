@@ -5,16 +5,16 @@ feature: Checkout
 role: Admin, Developer
 exl-id: 8aad34e2-89ef-460c-8921-91098bd1645b
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 # ACSD-61134: *[!UICONTROL Braintree Vault]* método de pagamento automaticamente desmarcado no fluxo de trabalho de check-out
 
-O patch ACSD-61134 corrige o problema em que o método de pagamento *[!UICONTROL Braintree Vault]* é automaticamente desmarcado no fluxo de trabalho de check-out quando um comprador atualiza seu endereço de cobrança ao desmarcar a caixa de seleção *[!UICONTROL My billing and shipping address are the same]*. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.54 está instalado. A ID do patch é ACSD-61134. Observe que este problema está programado para ser corrigido no Adobe Commerce 2.4.7-beta1.
+O patch ACSD-61134 corrige o problema em que o método de pagamento *[!UICONTROL Braintree Vault]* é automaticamente desmarcado no fluxo de trabalho de check-out quando um comprador atualiza seu endereço de cobrança ao desmarcar a caixa de seleção *[!UICONTROL My billing and shipping address are the same]*. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 está instalado. A ID do patch é ACSD-61134. Observe que este problema está programado para ser corrigido no Adobe Commerce 2.4.7-beta1.
 
 ## Produtos e versões afetados
 
@@ -55,7 +55,7 @@ O método de pagamento selecionado está desmarcado.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

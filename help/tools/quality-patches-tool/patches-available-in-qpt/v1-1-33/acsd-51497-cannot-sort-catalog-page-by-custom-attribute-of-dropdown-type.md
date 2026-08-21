@@ -5,16 +5,16 @@ feature: Attributes, Cache, Catalog Management, Categories
 role: Developer
 exl-id: c66a7e04-fd2a-47be-8f7a-7982780a5414
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
 
 # ACSD-51497: Não é possível classificar a página de catálogo pelo atributo personalizado do tipo *Suspenso*
 
-O patch ACSD-51497 corrige o problema em que um cliente não consegue classificar uma página de catálogo por um atributo personalizado do tipo *Suspensão*. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.33 está instalado. A ID do patch é ACSD-51497. Observe que o problema foi corrigido no Adobe Commerce 2.4.7.
+O patch ACSD-51497 corrige o problema em que um cliente não consegue classificar uma página de catálogo por um atributo personalizado do tipo *Suspensão*. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.33 está instalado. A ID do patch é ACSD-51497. Observe que o problema foi corrigido no Adobe Commerce 2.4.7.
 
 ## Produtos e versões afetados
 
@@ -42,19 +42,19 @@ Um cliente não pode classificar uma página de catálogo por um atributo person
    * Vá para **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Add New Attribute]**.
    * Na guia **[!UICONTROL Properties]**, defina o seguinte:
 
-      * *[!UICONTROL Default Label]* = *teste*
-      * *[!UICONTROL Catalog Input Type]* para Proprietário da Loja = *Lista Suspensa*
-      * *[!UICONTROL Options]*:
+     * *[!UICONTROL Default Label]* = *teste*
+     * *[!UICONTROL Catalog Input Type]* para Proprietário da Loja = *Lista Suspensa*
+     * *[!UICONTROL Options]*:
 
-         * *primeiro*
-         * *segundo*
-         * *terço*
-         * *quarto*
+       * *primeiro*
+       * *segundo*
+       * *terço*
+       * *quarto*
 
    * Na guia **[!UICONTROL Storefront Properties]**, defina o seguinte:
 
-      * *[!UICONTROL Used for sorting in product listing]* = *Sim*
-      * Deixe todas as outras opções como *Padrão*.
+     * *[!UICONTROL Used for sorting in product listing]* = *Sim*
+     * Deixe todas as outras opções como *Padrão*.
 
 1. Atribua o atributo *test* ao atributo *Padrão* definido em **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Attribute Set]**.
 1. Configure os produtos para terem valores de atributo de *teste*.
@@ -83,13 +83,13 @@ Os produtos não estão classificados pelo atributo *test*.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
 Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
+* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) na base de dados de conhecimento de suporte.
 * [Verifique se há patch disponível para o problema do Adobe Commerce usando o  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!UICONTROL Quality Patches Tool].
 
 

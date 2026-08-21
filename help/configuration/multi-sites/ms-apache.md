@@ -2,9 +2,9 @@
 title: Configurar vários sites com o Apache
 description: Siga este tutorial para configurar vários sites com o Apache.
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Se necessário, copie o script de ponto de entrada `index.php` existente para a 
 
   Tarefas adicionais podem ser necessárias para implantar vários sites em um ambiente hospedado; verifique com seu provedor de hospedagem para obter mais informações.
 
-  Tarefas adicionais são necessárias para configurar a Adobe Commerce na infraestrutura em nuvem. Após concluir as tarefas discutidas neste tópico, consulte [Configurar vários sites ou lojas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=pt-BR) no _guia do Commerce na Infraestrutura da Nuvem_.
+  Tarefas adicionais são necessárias para configurar a Adobe Commerce na infraestrutura em nuvem. Após concluir as tarefas discutidas neste tópico, consulte [Configurar vários sites ou lojas](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) no _guia do Commerce na Infraestrutura da Nuvem_.
 
 - Você usa um host virtual por site; o arquivo de configuração do host virtual é `/etc/httpd/httpd.conf`
 
@@ -28,8 +28,8 @@ Se necessário, copie o script de ponto de entrada `index.php` existente para a 
 - O software Commerce está instalado em `/var/www/html/magento2`
 - Você tem dois sites diferentes do padrão:
 
-   - `french.mysite.mg` com código de site `french` e código de exibição de armazenamento `fr`
-   - `german.mysite.mg` com código de site `german` e código de exibição de armazenamento `de`
+  - `french.mysite.mg` com código de site `french` e código de exibição de armazenamento `fr`
+  - `german.mysite.mg` com código de site `german` e código de exibição de armazenamento `de`
 
 ## Roteiro para configurar vários sites com o Apache
 
@@ -110,7 +110,7 @@ A menos que você tenha um DNS configurado para as URLs dos armazenamentos, é n
 >[!INFO]
 >
 >- Tarefas adicionais podem ser necessárias para implantar vários sites em um ambiente hospedado; verifique com seu provedor de hospedagem para obter mais informações.
->- Tarefas adicionais são necessárias para configurar o Adobe Commerce na infraestrutura em nuvem; consulte [Configurar vários sites ou lojas na nuvem](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=pt-BR) no _guia do Commerce na Infraestrutura em Nuvem_.
+>- Tarefas adicionais são necessárias para configurar o Adobe Commerce na infraestrutura em nuvem; consulte [Configurar vários sites ou lojas na nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) no _guia do Commerce na Infraestrutura em Nuvem_.
 
 ### Solução de problemas
 

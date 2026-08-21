@@ -1,20 +1,20 @@
 ---
 title: 'ACSD-46856: melhora o desempenho ao atualizar os preços de nível'
-description: Aplique o patch ACSD-46856 para melhorar o desempenho ao atualizar os preços de camada por meio do System &gt; Configuration &gt; Import &gt; Advanced Pricing.
+description: Aplique o patch ACSD-46856 para melhorar o desempenho ao atualizar os preços de camada por meio da Configuração do sistema > > Importar o Advanced Pricing >.
 feature: Orders
 role: Admin
 exl-id: 5c954f2c-a55c-43ba-919f-406f4b173d30
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
 
 # ACSD-46856: a atualização de preços de camada por meio de Sistema > Configuração > Importação > Advanced Pricing é lenta
 
-O patch ACSD-46856 melhora o desempenho ao atualizar preços de camada via **[!UICONTROL System]** > **[!UICONTROL Configuration]** > **[!UICONTROL Import]** > **[!UICONTROL Advanced Pricing]**. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.21 está instalado. A ID do patch é ACSD-46856. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.6.
+O patch ACSD-46856 melhora o desempenho ao atualizar preços de camada via **[!UICONTROL System]** > **[!UICONTROL Configuration]** > **[!UICONTROL Import]** > **[!UICONTROL Advanced Pricing]**. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.21 está instalado. A ID do patch é ACSD-46856. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.6.
 
 ## Produtos e versões afetados
 
@@ -40,24 +40,24 @@ A atualização de preços de camada via **[!UICONTROL System]** > **[!UICONTROL
 
 <u>Resultados esperados</u>:
 
-Com o patch, o tempo de processamento é de aproximadamente 1:00 minuto para mais de 200 mil produtos.
+Com o patch, o tempo de processamento é de aproximadamente 1 minuto para mais de 200 mil produtos.
 
 <u>Resultados reais</u>:
 
-Sem o patch, o tempo de processamento é de aproximadamente 10:00 minutos para mais de 10 mil produtos.
+Sem o patch, o tempo de processamento é de aproximadamente 10:00 minutos para produtos com mais de 10.000 rpm.
 
 ## Aplicar o patch
 
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
 Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) na base de dados de conhecimento de suporte.
+* [[!DNL Quality Patches Tool] lançamento: uma nova ferramenta para autoatender patches de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) na base de dados de conhecimento de suporte.
 * [Verifique se há patch disponível para o problema do Adobe Commerce usando o  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!UICONTROL Quality Patches Tool].
 
 

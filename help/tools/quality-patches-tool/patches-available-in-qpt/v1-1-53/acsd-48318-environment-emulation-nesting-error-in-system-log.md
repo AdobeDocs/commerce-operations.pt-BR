@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-48318: Erro de aninhamento de emulação de ambiente em "system.log"'
-description: Aplique o patch ACSD-48318 para corrigir o problema do Adobe Commerce em que uma mensagem de erro *main.ERROR:Environment emulation nested is not allowed* aparece em &grave;system.log&grave; toda vez que um email de fatura é enviado.
+description: Aplique o patch ACSD-48318 para corrigir o problema do Adobe Commerce em que uma mensagem de erro *main.ERROR:Environment emulation nested is not allowed* aparece em `system.log` toda vez que um email de fatura é enviado.
 feature: System, Orders
 role: Admin, Developer
 exl-id: 24af18de-80dd-4e0a-bdf9-5b9c075fc608
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Nenhum erro em `system.log`.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

@@ -3,9 +3,9 @@ title: Visão geral da implantação
 description: Leia sobre as estratégias de implantação do aplicativo Commerce.
 feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Usamos os termos a seguir para descrever os sistemas envolvidos na implantação
 
 - **Sistema de preparo**—_Opcional_. Opcionalmente, é possível configurar um sistema de preparo para usar no teste final de todo o código integrado, incluindo o Teste de aceitação do usuário (UAT). Configure um sistema de preparo da mesma forma que configura um sistema de produção. Exceto pelo fato de que o armazenamento temporário não é sua loja ao vivo e não processa pedidos de clientes, ele é idêntico à produção.
 
-- **Sistema de produção**—Seu armazenamento ativo. Você deve fazer o mínimo de alterações diretas na configuração aqui e certamente nada que não tenha sido testado em uma instância de preparo. Se possível, faça alterações na configuração com [Patches de Dados](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) que foram testados em uma instância de Preparo/Desenvolvimento.
+- **Sistema de produção**—Seu armazenamento ativo. Você deve fazer o mínimo de alterações diretas na configuração aqui e certamente nada que não tenha sido testado em uma instância de preparo. Se possível, faça alterações na configuração com [Patches de Dados](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) que foram testados em uma instância de Preparo/Desenvolvimento.
 
 ## Outros métodos de implantação
 

@@ -4,13 +4,13 @@ description: Aplique o patch ACSD-67264 para corrigir o pacote do Adobe Commerce
 feature: Page Content, Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9b6794366ba552d86cdfc6a3d6f699c307fcd8f6
+exl-id: 783271ba-176c-4542-8dd8-82bc029ea453
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-67264: layouts de pacote e de página de produto baixáveis inconsistentes entre dispositivos
 
@@ -54,7 +54,7 @@ A PDP do produto do pacote é renderizada com espaços aleatórios.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool]
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=pt-BR) no guia do Commerce na infraestrutura em nuvem
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem
 
 ## Leitura relacionada
 
