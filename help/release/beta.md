@@ -44,7 +44,7 @@ O mesmo modelo de relevância interage com **pesos de pesquisa**, **classificaç
 - Expectativas mais claras sobre como os pesos, a classificação inteligente e as regras manuais se combinam no momento do query.
 - Orientação para validar consultas de alto valor e ajustar regras de aumento após a alteração.
 
-Saiba mais sobre a estratégia de correspondência e classificação de pesquisa no [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/manage-results/search-relevance-matching) e no [Live Search (PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching).
+Saiba mais sobre a estratégia de correspondência e classificação de pesquisa no [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/manage-results/search-relevance-matching) e no [Live Search (PaaS)](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/live-search-admin/search-relevance-matching).
 
 Para solicitar um convite para este beta privado, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). A equipe do Adobe responderá com as próximas etapas e os requisitos de qualificação.
 
