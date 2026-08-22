@@ -37,4 +37,4 @@ Depois de configurar o serviço Fastly para o seu projeto na Adobe Commerce Clou
 ## Informações adicionais
 
 - [Configurar o Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)
-- [Imagens mal otimizadas podem causar problemas de desempenho](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow)
+- [Imagens mal otimizadas podem causar problemas de desempenho](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow)
