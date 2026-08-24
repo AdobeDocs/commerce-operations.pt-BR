@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
+source-git-commit: 9f9c38163d91b655bf44cac81875dab59ee2c77d
 workflow-type: tm+mt
-source-wordcount: '2690'
-ht-degree: 1%
+source-wordcount: '2845'
+ht-degree: 0%
 
 ---
 # Modelo de novidades
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 19 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualização da documentação de armazenamento em cache do Commerce com orientação local mais clara em relação à nuvem e nova orientação de migração para mudar para o Valkey com cache L2 do Symfony:<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cache/caching-overview">Visão geral sobre armazenamento em cache e opções de configuração</a>.<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cache/cache-types">Configuração de front-ends e tipos de cache</a>.<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cache/cache-options">Opções de back-end de cache e referência de armazenamento</a>.<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cache/level-two-cache">Configuração de cache L2 para otimização de desempenho</a> com orientação para migrar do <code>RemoteSynchronizedCache</code> para o cache L2 do Symfony.<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Práticas recomendadas para a configuração do Valkey e do serviço Redis</a> com etapas de migração específicas da nuvem para o Valkey com cache L2 do Symfony.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 14 de agosto de 2026
 
