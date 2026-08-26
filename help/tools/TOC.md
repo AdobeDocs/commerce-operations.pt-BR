@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: e1ac67f8533c6a9f7948e982c3ddbd79f4e02855
 workflow-type: tm+mt
-source-wordcount: '10678'
+source-wordcount: '10694'
 ht-degree: 0%
 
 ---
@@ -1046,6 +1046,7 @@ ht-degree: 0%
       - [ACP2E-4709: As páginas do CMS não são salvas no Page Builder quando a hierarquia da página inclui aspas duplas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4840: a consulta de produtos GraphQL retorna uma quantidade nula para produtos em estoque em estoques de estoque personalizados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)
       - [ACP2E-4695: Falhas de memória insuficiente do indexador de regras de catálogo causadas pelo uso excessivo de memória](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)
       - [ACP2E-4194: solicitações GraphQL com nomes de filtro desconhecidos causam logs de exceção do PHP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)
       - [ACP2E-4698: A edição em linha do texto do Page Builder salva URLs de mídia absolutas em vez da diretiva portátil](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
@@ -1106,6 +1107,6 @@ ht-degree: 0%
     - [Dados que exigem migração manual](data-migration-tool/migrate-data/manual.md)
     - [Etapas de migração pós-dados](data-migration-tool/migrate-data/post-migration.md)
   - Recursos {#resources}
-    - [Solução de problemas](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [Solução de problemas](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
