@@ -52,7 +52,7 @@ O [!DNL Patching Automation] é totalmente integrado à infraestrutura da Adobe 
 
 Saiba mais sobre o [!DNL Adobe Commerce Patching Automation] e como essa ferramenta ajuda os usuários a encontrar e aplicar patches de segurança rapidamente. O vídeo a seguir mostra como acessá-lo pelo painel da Ferramenta de análise do site (SWAT), escolher o projeto e o ambiente e aplicar patches com um clique.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476252/?captions=por_br&learn=on&enablevpops)
 
 ## Casos de uso comuns
 
