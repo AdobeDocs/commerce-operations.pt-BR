@@ -24,11 +24,11 @@ Antes de aplicar patches, verifique se o ambiente está preparado corretamente:
 * **Conta da Adobe Commerce Cloud**
   * Assinatura ativa da Adobe Commerce Cloud
   * Licença válida do Adobe Commerce
-  * [Chaves de autenticação do Composer](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configuradas para acessar o repositório do Adobe Commerce
+  * [Chaves de autenticação do Composer](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configuradas para acessar o repositório do Adobe Commerce
   * Permissões de projeto e ambiente
 
 * **Recursos do ambiente**
-  * O projeto tem a capacidade de criar um ambiente de integração ativo adicional para a operação de patch — consulte [Gerenciar ramificações com o Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches) para obter informações sobre limites de ambientes ativos
+  * O projeto tem a capacidade de criar um ambiente de integração ativo adicional para a operação de patch — consulte [Gerenciar ramificações com o Cloud Console](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/console-branches) para obter informações sobre limites de ambientes ativos
   * Recursos suficientes de armazenamento, CPU e memória
   * Acesso à rede para repositórios Adobe
   * Ambiente pai estável para sincronização
