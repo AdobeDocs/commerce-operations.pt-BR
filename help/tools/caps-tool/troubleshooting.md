@@ -1,17 +1,17 @@
 ---
-title: Guia de Solução de Problemas do [!DNL Cloud Automation Patching Service (CAPS)]
-description: Solucionar problemas comuns e mensagens de erro no [!DNL Cloud Automation Patching Service (CAPS)]
+title: Guia de Solução de Problemas do [!DNL Adobe Commerce Patching Automation]
+description: Solucionar problemas comuns e mensagens de erro no [!DNL Adobe Commerce Patching Automation]
 hide: true
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
 
-# Guia de solução de problemas do [!DNL Cloud Automation Patching Service (CAPS)]
+# Guia de solução de problemas do [!DNL Adobe Commerce Patching Automation]
 
-Ao usar o [!DNL CAPS] para operações de patch, você pode encontrar mensagens de erro e problemas que podem impedir o êxito do aplicativo de patch ou da reversão. Este guia fornece soluções para os problemas mais comuns.
+Ao usar o [!DNL Patching Automation] para operações de patch, você pode encontrar mensagens de erro e problemas que podem impedir o êxito do aplicativo de patch ou da reversão. Este guia fornece soluções para os problemas mais comuns.
 
 ## Etapas rápidas de solução de problemas
 
@@ -22,6 +22,10 @@ Ao usar o [!DNL CAPS] para operações de patch, você pode encontrar mensagens 
 * Examinar logs de erros para obter detalhes técnicos
 * Siga as soluções fornecidas neste guia
 
+>[!TIP]
+>
+>No Cloud Console, os logs de implantação estão disponíveis no Feed de atividades do projeto, mesmo após a exclusão de um ambiente de integração temporário.
+
 ### Duração das operações de patch
 
 Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as operações de patch devem levar, mas pode levar mais tempo, dependendo do tamanho e da complexidade do ambiente:
@@ -30,6 +34,10 @@ Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as
 * **Patches:** 5-15 minutos
 * **Pós-processamento:** 10-40 minutos
 * **Total:** 15-60 minutos
+
+>[!NOTE]
+>
+>O tempo de pós-processamento é estimado a partir do histórico de implantação do próprio ambiente, portanto, pode estar fora do intervalo acima para ambientes de implantação excepcionalmente rápida ou lenta.
 
 ### Cancelamento de uma correção em andamento
 
@@ -47,9 +55,23 @@ Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as
 
 ## Mensagens e soluções de erro comuns
 
+>[!NOTE]
+>
+>Nem todos os erros possíveis estão listados abaixo. Uma falha não listada durante a verificação preliminar é exibida como o &quot;Erro durante a verificação preliminar&quot; genérico; uma falha não listada durante a validação é exibida como o &quot;Erro durante o pós-processamento&quot; genérico — entre em contato com o suporte com o texto exato do erro de qualquer maneira. Durante a correção, uma falha imprevista mostra a mensagem de erro subjacente bruta diretamente em vez de qualquer fallback genérico.
+
+### Erros de prontidão do ambiente
+
+#### &quot;A última implantação não foi bem-sucedida. Verifique se o ambiente está estável antes de aplicar ou reverter patches.&quot;
+
+**Quando ocorrer:** No início da verificação preliminar, antes de qualquer validação específica de patch
+
+**Causa:** a implantação mais recente do ambiente de destino não foi concluída com êxito
+
+**Solução:** reimplante seu ambiente de destino e confirme se a implantação foi concluída com êxito (verifique seu log de implantação no Cloud Console) antes de tentar novamente a operação de patch.
+
 ### Correção de erros de aplicação
 
-#### &quot;O patch não pode ser aplicado porque o [!DNL CAPS] detectou esses problemas na sua base de código ou no arquivo de patch&quot;
+#### &quot;O patch não pode ser aplicado porque o [!DNL Patching Automation] detectou esses problemas na sua base de código ou no arquivo de patch&quot;
 
 **Quando ocorrer:** Durante a verificação preliminar
 
@@ -62,11 +84,11 @@ Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as
 * Verifique se o patch é compatível com a sua versão do Adobe Commerce
 * Considere resolver conflitos manualmente ou entre em contato com o suporte
 
-#### &quot;Este patch não foi gerenciado por [!DNL CAPS]. Não é possível reverter&quot;
+#### &quot;Você está tentando reverter um patch que não foi aplicado através do [!DNL Patching Automation]. É provável que o patch tenha sido aplicado manualmente.&quot;
 
 **Quando ocorrer:** Durante operações de reversão
 
-**Causa:** Você está tentando reverter um patch que não foi aplicado através de [!DNL CAPS]
+**Causa:** Você está tentando reverter um patch que não foi aplicado através de [!DNL Patching Automation]
 
 **Solução:** Use o mesmo método usado para aplicar o patch originalmente ou contate o suporte para obter assistência manual
 
@@ -74,17 +96,28 @@ Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as
 
 #### &quot;O ambiente não está sincronizado com o pai&quot;
 
-**Quando ocorrer:** Durante a validação
+**Quando ocorrer:** Durante a validação, na verificação de sincronização pré-mesclagem — antes que o ambiente de integração seja mesclado ao seu ambiente de destino
 
-**Causa:** seu ambiente de integração é diferente do ambiente pai
+**Causa:** seu ambiente de integração difere do ambiente pai, geralmente porque o ambiente de destino foi alterado enquanto o patch estava sendo testado
 
 **Soluções:**
 
-* Sincronizar o ambiente com a ramificação principal
-* Repita a operação de patch
+* Repita a operação de patch depois que o ambiente de destino estiver estável
+* Evite fazer alterações no ambiente de destino enquanto uma operação de patch estiver em andamento
 * Entre em contato com o suporte se os problemas de sincronização persistirem
 
-#### &quot;Proteções do ambiente de produção não atendidas&quot;
+#### &quot;Falha na verificação pós-mesclagem: os ambientes não estão sincronizados após a mesclagem.&quot;
+
+**Quando ocorrer:** Durante a validação, depois que o ambiente de integração já tiver sido mesclado ao seu ambiente de destino
+
+**Causa:** o código no código dos dois ambientes não corresponde após a mesclagem, geralmente um atraso temporário de propagação da API Platform.sh em vez de um conflito real
+
+**Soluções:**
+
+* Aguarde alguns minutos e verifique o status do ambiente novamente. Esse problema geralmente é resolvido sozinho
+* Se os ambientes ainda não corresponderem após alguns minutos, entre em contato com o Suporte da Adobe.
+
+#### &quot;Não é possível criar o trabalho de patch no ambiente de produção quando o cron está habilitado e o modo de manutenção está desabilitado. Ative o modo de manutenção e desative as tarefas cron antes de aplicar os patches.&quot;
 
 **Quando ocorrer:** Durante a verificação preliminar de ambientes de produção
 
@@ -95,57 +128,31 @@ Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as
 * Habilitar modo de manutenção para o armazenamento de produção
 * Desabilitar trabalhos cron no ambiente de produção
 * Verifique se ambas as condições foram atendidas antes de tentar novamente
+* Como alternativa, marque a caixa de seleção Substituir na interface do usuário para ignorar essas verificações e continuar mesmo assim. Use a opção de substituição somente se você entender o risco de corrigir a produção sem as proteções em vigor
 
 >[!IMPORTANT]
 >
-> [!DNL CAPS] não habilita automaticamente o modo de manutenção ou desabilita trabalhos cron - eles devem ser feitos externamente por você
+> [!DNL Patching Automation] não habilita automaticamente o modo de manutenção ou desabilita trabalhos cron - eles devem ser feitos externamente por você
 
-#### &quot;O patch foi aplicado, mas houve falha na verificação de integridade. Considere reverter&quot;
+#### &quot;A operação de patch foi concluída, mas a verificação de integridade do ambiente falhou. Isso indica possíveis problemas com a implantação. Revise o status do ambiente e considere reverter a alteração.&quot;
 
-**Quando ocorrer:** Após o aplicativo de patch durante a validação
+**Quando ocorrer:** Após o aplicativo de patch ou a reversão, durante a validação
 
-**Causa:** o patch foi aplicado com êxito, mas as verificações de integridade falharam
+**Causa:** o patch foi aplicado ou revertido com êxito, mas a verificação de integridade subsequente falhou
 
 **Soluções:**
 
-* Revisar logs de aplicativo para erros específicos
-* Testar funcionalidade crítica manualmente
-* Considere reverter o patch se os problemas persistirem
-* Entre em contato com o suporte se precisar de assistência
+* Teste a loja, a finalização crítica e os fluxos de trabalho do administrador para confirmar se os clientes foram realmente afetados
+* No Cloud Console, revise o status do ambiente e inspecione os logs de aplicativo e implantação no feed de projetos **Atividade**. Procure erros associados à operação ou implantação do patch.
+* Acione uma reimplantação manual para determinar se a falha de verificação de integridade foi causada por um problema transitório de implantação ou infraestrutura.
+* Se o problema persistir, reverta o patch. Se o patch for gerenciado por [!DNL Patching Automation] e a operação estiver disponível, selecione [!UICONTROL Revert]. Se o patch for um patch personalizado no diretório `m2-hotfixes`, exclua o arquivo de patch do repositório do projeto. Confirme, envie a alteração e reimplante o ambiente.
+* Se o problema persistir, entre em contato com o Suporte da Adobe.Inclua as seguintes informações em sua solicitação de suporte: ID do projeto de suporte, ID do ambiente e esta mensagem exata: a última operação não foi concluída corretamente, portanto, o suporte pode precisar confirmar o estado do ambiente.
 
 ### Erros de autenticação e acesso
 
-#### &quot;Falha de autenticação para o repositório do Adobe Commerce&quot;
+#### &quot;Acesso negado&quot;
 
-**Quando ocorrer:** Durante qualquer estágio
-
-**Causa:** credenciais de repositório do Adobe Commerce inválidas ou expiradas
-
-**Soluções:**
-
-Há duas opções recomendadas para resolver esse problema:
-
-**Opção 1: Corrigir `env:COMPOSER_AUTH` variável de nível de ambiente (Recomendado)**
-
-* Verifique se você configurou as credenciais corretas para `env:COMPOSER_AUTH`.
-* Acesse a configuração global clicando no ícone de engrenagem na parte superior esquerda da interface do usuário do projeto na nuvem e selecione a guia **Variáveis**.
-* Selecione _Disponível durante o tempo de compilação_ e desmarque _Disponível durante o tempo de execução_.
-
-Se a Opção 1 não resolver seu problema, continue com a Opção 2.
-
-**Opção 2: criar e implantar o arquivo `auth.json` manualmente**
-
-* SSH no servidor.
-* Recupere o conteúdo da variável `env:COMPOSER_AUTH` atual usando:\
-  `echo $COMPOSER_AUTH`
-* Copie todo o conteúdo da etapa acima (no formato JSON).
-* Crie um novo arquivo chamado `auth.json` com este conteúdo.
-* Confirme este arquivo `auth.json` recém-criado no diretório raiz do seu repositório.
-* Acione uma nova implantação.
-
-#### &quot;Permissões insuficientes para acessar o ambiente&quot;
-
-**Quando ocorrer:** Durante a criação ou acesso do ambiente
+**Quando ocorrer:** Quando sua conta não tiver as permissões necessárias durante a criação ou o acesso ao ambiente
 
 **Causa:** sua conta de usuário não tem as permissões necessárias
 
@@ -158,19 +165,19 @@ Se a Opção 1 não resolver seu problema, continue com a Opção 2.
 
 ### Erros de integração do GitHub
 
-#### &quot;Nenhuma credencial do Git disponível para o github do provedor. Instale o aplicativo CAPS GitHub para este repositório&quot;
+#### &quot;Não há credenciais Git disponíveis para o provedor &quot;github&quot;. Instale o aplicativo GitHub de Automação de Patches para este repositório&quot;
 
 **Quando ocorrer:** Durante operações de patch para projetos conectados ao GitHub
 
-**Causa:** o aplicativo GitHub [!DNL CAPS] não está instalado em seu repositório
+**Causa:** o aplicativo GitHub [!DNL Patching Automation] não está instalado em seu repositório
 
-**Solução:** Siga as etapas em [Configurar a integração do GitHub para [!DNL CAPS]](github-integration.md)
+**Solução:** Siga as etapas em [Configurar a integração do GitHub para [!DNL Patching Automation]](github-integration.md)
 
 #### &quot;Falha na solicitação da API do GitHub&quot;
 
 **Quando ocorrer:** Durante operações de patch para projetos conectados ao GitHub
 
-**Causa:** um problema temporário impediu [!DNL CAPS] de se conectar ao GitHub
+**Causa:** um problema temporário impediu o serviço de se conectar ao GitHub
 
 **Solução:** aguarde alguns minutos e repita a operação. Se o erro persistir, entre em contato com o [suporte da Adobe Commerce Cloud](https://experienceleague.adobe.com/home?lang=pt-BR#support)
 
@@ -178,37 +185,36 @@ Se a Opção 1 não resolver seu problema, continue com a Opção 2.
 
 **Quando ocorrer:** Durante a criação do ambiente de integração
 
-**Causa:** a integração GitHub do projeto tem a opção `fetch-branches` desabilitada, portanto, as ramificações temporárias [!DNL CAPS] não são sincronizadas e o ambiente de integração nunca é criado.
+**Causa:** a integração GitHub do projeto tem a opção `fetch-branches` desabilitada. Como resultado, as ramificações temporárias enviadas pelo serviço não são sincronizadas e o ambiente de integração nunca é criado.
 
-**Solução:** Habilite a [`fetch-branches` opção](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) da integração e repita a operação. Consulte [Configurar a integração do GitHub para [!DNL CAPS]](github-integration.md).
+**Solução:** Habilite a [`fetch-branches` opção](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) da integração e repita a operação. Consulte [Configurar a integração do GitHub para [!DNL Patching Automation]](github-integration.md).
 
-### Erros de recursos e cotas
+### Erros de ativação de ambiente
 
-#### &quot;Cota de ambiente excedida&quot;
+#### &quot;Não é possível ativar o ambiente de integração.&quot;
 
-**Quando ocorrer:** Durante a criação do ambiente
+**Quando ocorrer:** Quando [!DNL Patching Automation] não puder ativar o ambiente de integração temporária necessário para testar o patch com segurança.
 
-**Causa:** Você atingiu seu limite de ambiente
+**Causa:** Depende dos detalhes adicionais exibidos junto com o erro:
 
-**Soluções:**
+**Se os detalhes mencionarem os pacotes do Composer ou do Adobe Commerce:**
 
-* Desativar ambientes não utilizados
-* Limpar ramificações e implantações antigas
-* Entre em contato com o suporte para solicitar aumento de cota
-* Considere atualizar seu plano
+* Faça logon em [https://account.magento.com/](https://account.magento.com/) (ou peça ao proprietário da conta que o faça) e confirme se a sua conta tem acesso à base de código do Commerce Enterprise.
+* Verifique se o par de chaves públicas/privadas do Composer do seu projeto está correto. Consulte [Chaves de autenticação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Faça logon em [https://account.magento.com/](https://account.magento.com/) (ou peça ao proprietário da conta para fazer isso) e confirme se a sua conta tem acesso à base de código do Commerce Enterprise.
+* Verifique se as chaves de autenticação pública e privada do Composer do seu projeto estão corretas. Consulte [Chaves de autenticação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Confirme se o pacote chamado na mensagem de erro está disponível para a sua versão do Commerce. Consulte [pacotes Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/packages/adobe-commerce).
 
-#### &quot;Recursos insuficientes para a operação&quot;
+**Se os detalhes mencionarem slots ou recursos do ambiente:**
 
-**Quando ocorrer:** Durante qualquer estágio
+* No Cloud Console, abra a visão geral do projeto e revise os ambientes e seus status. Desativar ou excluir quaisquer ambientes de integração não utilizados: selecione o ambiente. Vá para **[!UICONTROL Settings]>[!UICONTROL General]**. Defina o status do ambiente como inativo.
 
-**Causa:** seu ambiente não tem CPU, memória ou armazenamento suficientes
+  Alternativamente, use a CLI: `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`
+* Verifique se o projeto tem recursos suficientes, por exemplo, espaço em disco.
+* Verifique se o ambiente pai está estável (sem implantação ativa) no momento da operação.
+* Entre em contato com o Suporte da Adobe se precisar aumentar o limite do ambiente.
 
-**Soluções:**
-
-* Verifique o uso de recursos do ambiente
-* Liberar recursos limpando arquivos
-* Aguardar a disponibilização de recursos
-* Entre em contato com o suporte se os problemas de recurso persistirem
+**Para qualquer outra causa:** revise os logs de erro detalhados na Interface de Automação de Patches ou contate o suporte com o texto de erro exato.
 
 ## Obtendo ajuda
 
@@ -228,7 +234,7 @@ Ao entrar em contato com o suporte, forneça:
 
 * **ID do projeto** - O identificador do projeto do Adobe Commerce Cloud
 * **ID do Ambiente** - O ambiente específico onde o problema ocorreu
-* **ID da Operação** - O identificador de operação [!DNL CAPS]
+* **ID da Operação** - O identificador de operação [!DNL Patching Automation]
 * **Detalhes do erro** - Concluir mensagens e logs de erro
 * **Etapas a serem reproduzidas** - O que você estava fazendo quando ocorreu o erro
 * **Tentativas anteriores** - O que você já tentou resolver
@@ -245,7 +251,7 @@ Para obter informações técnicas mais detalhadas:
 
 * [Documentação da Adobe Commerce Cloud](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview)
 * [Guia de instalação do Adobe Commerce](/help/installation/overview.md)
-* [Introdução ao CAPS](intro.md)
+* [Introdução à automação de patches](intro.md)
 * [Como acessar o](access.md)
 * [Visão geral do fluxo de trabalho](workflow.md)
 * [Integração com o GitHub](github-integration.md)

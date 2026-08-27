@@ -1,21 +1,21 @@
 ---
-title: Como acessar [!DNL Cloud Automation Patching Service (CAPS)]
-description: Saiba como acessar e usar o  [!DNL Cloud Automation Patching Service (CAPS)]
+title: Como acessar [!DNL Adobe Commerce Patching Automation]
+description: Saiba como acessar e usar o  [!DNL Adobe Commerce Patching Automation]
 hide: true
-source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '336'
 ht-degree: 1%
 
 ---
 
-# Como acessar [!DNL Cloud Automation Patching Service (CAPS)]
+# Como acessar [!DNL Adobe Commerce Patching Automation]
 
 ## Pré-requisitos
 
-[!DNL CAPS] usa o controle de acesso baseado em função da Adobe Commerce Cloud. Seu nível de acesso no Cloud Console determina o que você pode fazer com o [!DNL CAPS].
+[!DNL Patching Automation] usa o controle de acesso baseado em função da Adobe Commerce Cloud. Seu nível de acesso no Cloud Console determina o que você pode fazer com o serviço.
 
-### Quem pode usar [!DNL CAPS]
+### Quem pode usar [!DNL Patching Automation]
 
 * **Administrador do projeto** - Pode aplicar ou reverter patches em todos os ambientes
 * **Colaborador** - Pode aplicar ou reverter patches em seus ambientes atribuídos
@@ -23,21 +23,22 @@ ht-degree: 1%
 
 ### Como solicitar acesso a um projeto
 
-Se você não vir nenhum projeto na interface do usuário do [!DNL CAPS], será necessário solicitar acesso à pessoa apropriada:
+Se você não vir nenhum projeto na interface do usuário do [!DNL Patching Automation], solicite acesso à pessoa apropriada:
 
 * Contate o proprietário da conta ou o administrador do projeto
 * Eles concederão a função apropriada por meio do Cloud Console
-* Depois de receber acesso, você pode fazer logon no Cloud Console para usar o [!DNL CAPS]
+* Depois de receber o acesso, você pode fazer logon no Cloud Console para usar o serviço
 
 >[!NOTE]
 >
->O [!DNL CAPS] segue o mesmo modelo de permissão da Adobe Commerce Cloud, portanto, seu nível de acesso no Console da Nuvem determina o que você pode fazer com o [!DNL CAPS].
+>O [!DNL Patching Automation] segue o mesmo modelo de permissão da Adobe Commerce Cloud, portanto, seu nível de acesso no Console da Nuvem determina o que você pode fazer com o serviço.
 
-## Acessando [!DNL CAPS]
+## Acessando [!DNL Patching Automation]
 
-A ferramenta CAPS está disponível no painel da Ferramenta de Análise do Site em [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/). Na guia Automação de patch, você pode selecionar o projeto e o ambiente.
+[!DNL Patching Automation] está disponível como uma guia no painel [!DNL Site-Wide Analysis Tool]. Você pode acessá-lo pelo Painel de Administração acessando **Relatórios** > **Insights do Sistema** > **Ferramenta de Análise do Site** na barra lateral de Administração. Consulte [Como acessar a Ferramenta de Análise do Site](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/access) para obter os pré-requisitos e a configuração de permissões.
 
-1. Navegue até a Ferramenta de Análise do Site em [https://supportinsights.adobe.com/commerce/](https://supportinsights.adobe.com/commerce/).
+Quando estiver no painel:
+
 1. Clique na guia [!UICONTROL Patching Automation] na interface.
 1. Selecione o projeto e o ambiente em que deseja aplicar patches.
 1. Revise os patches disponíveis e seu status de compatibilidade.
@@ -45,7 +46,7 @@ A ferramenta CAPS está disponível no painel da Ferramenta de Análise do Site 
 
 ## Acesso ao ambiente de produção
 
-Para ambientes de produção, proteções adicionais se aplicam:
+Para ambientes de produção, proteções adicionais se aplicam por padrão:
 
 * **Modo de manutenção** - Deve ser habilitado
 * **Trabalhos do Cron** - Devem ser desabilitados
@@ -55,9 +56,13 @@ Para ambientes de produção, proteções adicionais se aplicam:
 >
 >A aplicação de patches no ambiente de produção requer preparação e proteção adequadas para evitar interrupções acidentais.
 
+>[!NOTE]
+>
+>Você pode ignorar as verificações de modo de manutenção e trabalho cron marcando a caixa de seleção de substituição na interface (*[!UICONTROL I want to skip maintenance mode and cron checks before applying patches to production environment]*). Use-a somente se você entender o risco de corrigir a produção sem essas proteções em vigor.
+
 ## Tópicos relacionados
 
-* [Introdução ao CAPS](intro.md)
+* [Introdução à automação de patches](intro.md)
 * [Visão geral do fluxo de trabalho](workflow.md)
 * [Integração com o GitHub](github-integration.md)
 * [Práticas recomendadas](best-practices.md)

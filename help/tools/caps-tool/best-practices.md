@@ -1,17 +1,17 @@
 ---
-title: Guia de práticas recomendadas do [!DNL Cloud Automation Patching Service (CAPS)]
-description: Conheça as práticas recomendadas para usar o  [!DNL Cloud Automation Patching Service (CAPS)]  de maneira eficaz e segura
+title: Guia de práticas recomendadas do [!DNL Adobe Commerce Patching Automation]
+description: Saiba como usar o [!DNL Adobe Commerce Patching Automation] para planejar, validar e aplicar patches com segurança, minimizando o risco de implantação e interrupções de serviço.
 hide: true
-source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# Guia de práticas recomendadas do [!DNL Cloud Automation Patching Service (CAPS)]
+# Guia de práticas recomendadas do [!DNL Adobe Commerce Patching Automation]
 
-As práticas recomendadas a seguir são essenciais para operações de patch bem-sucedidas e seguras com [!DNL Cloud Automation Patching Service] ([!DNL CAPS]). Este guia fornece práticas recomendadas abrangentes para operações eficazes de patch, gerenciamento de ambiente e excelência operacional.
+As práticas recomendadas a seguir são essenciais para operações de patch bem-sucedidas e seguras com o [!DNL Adobe Commerce Patching Automation]. Este guia fornece práticas recomendadas abrangentes para operações eficazes de patch, gerenciamento de ambiente e excelência operacional.
 
 ## Práticas recomendadas de pré-patch
 
@@ -24,21 +24,21 @@ Antes de aplicar patches, verifique se o ambiente está preparado corretamente:
 * **Conta da Adobe Commerce Cloud**
   * Assinatura ativa da Adobe Commerce Cloud
   * Licença válida do Adobe Commerce
-  * Credenciais de acesso ao repositório configuradas
+  * [Chaves de autenticação do Composer](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configuradas para acessar o repositório do Adobe Commerce
   * Permissões de projeto e ambiente
 
 * **Recursos do ambiente**
-  * Slots de ambiente disponíveis para teste temporário
+  * O projeto tem a capacidade de criar um ambiente de integração ativo adicional para a operação de patch — consulte [Gerenciar ramificações com o Cloud Console](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/console-branches) para obter informações sobre limites de ambientes ativos
   * Recursos suficientes de armazenamento, CPU e memória
   * Acesso à rede para repositórios Adobe
   * Ambiente pai estável para sincronização
 
 * **Preparação do ambiente de produção** (para correção de produção)
-  * O modo de manutenção pode ser ativado
-  * Os trabalhos do Cron podem ser desabilitados
-  * Procedimentos de janela de manutenção estabelecidos
-  * Procedimentos de reversão documentados
-  * Plano de comunicação das partes interessadas pronto
+  * Habilitar modo de manutenção
+  * Desabilitar trabalhos Cron
+  * Estabelecer procedimentos de janela de manutenção
+  * Procedimentos de reversão de documentos
+  * Preparar o plano de comunicação com as partes interessadas
 
 ## Práticas recomendadas para aplicativos de patch
 
@@ -141,7 +141,7 @@ Antes de aplicar patches, verifique se o ambiente está preparado corretamente:
 
 ## Resumo das principais práticas recomendadas
 
-### Práticas recomendadas críticas para o sucesso de [!DNL CAPS]
+### Práticas recomendadas críticas para o sucesso de [!DNL Patching Automation]
 
 * Sempre teste na pré-produção antes de aplicar patches a ambientes de produção
 * Ativar modo de manutenção e desativar trabalhos cron para operações de patch de produção
@@ -154,7 +154,7 @@ Antes de aplicar patches, verifique se o ambiente está preparado corretamente:
 
 ## Tópicos relacionados
 
-* [Introdução ao CAPS](intro.md)
+* [Introdução à automação de patches](intro.md)
 * [Como acessar o](access.md)
 * [Visão geral do fluxo de trabalho](workflow.md)
 * [Integração com o GitHub](github-integration.md)
