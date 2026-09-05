@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3d85f2181ca7d234ceb181583533b25884b12fe1
+source-git-commit: 1459bd6961b08d778d43a87b380e23c3041c89bb
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '1988'
 ht-degree: 1%
 
 ---
@@ -567,28 +567,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Novo tópico, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 de julho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.80 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493">ACP2E-4493: a grade Arquivo Morto da Ordem de Venda mostra o status de pedido incorreto quando a Indexação Assíncrona está habilitada</a>.</p>
-</td>
-      <td>
-        Novo tópico, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2fdbf6a4fd4924947a2cb2a508e067b8bb0d694c">confirmar</a></td>
     </tr>
   </tbody>
 </table>
