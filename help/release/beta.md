@@ -4,9 +4,9 @@ description: Saiba mais sobre as versões beta do Adobe Commerce e como particip
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: ba69e06096892027bd50485eaf69cef94b40d6ce
+source-git-commit: 041a0c42c83cbab28eac6562c67ce9169c07aa02
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -83,31 +83,6 @@ Você pode definir intervalos **estáticos** com valores mínimos e máximos fix
 Para saber mais, consulte [Filtros de recomendação — Preço](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/recommendations/filters#price) no guia do comerciante e [Configuração de recomendações de produto](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/?lang=pt-BR) no guia de entrega da loja.
 
 Para compartilhar seus comentários enquanto você usa este recurso beta, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
-
-### Serviço de patch de automação de nuvem (Private Beta)
-
-[!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
-
-O [Serviço de Patch de Automação da Nuvem](../tools/caps-tool/intro.md) automatiza o processo de aplicação de patches de segurança isolados aos ambientes do [Adobe Commerce na Infraestrutura da Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview).
-
-Em outubro de 2025, a versão beta do Serviço de patch de automação de nuvem será adicionada ao [painel de ferramentas de Análise do site](/help/tools/site-wide-analysis-tool/dashboard.md). Este serviço oferece suporte aos administradores de projetos da Commerce com um fluxo de trabalho simplificado de patch que inclui:
-
-- Instalação de patch automatizada
-- Reverter recuperação
-- Verificação pós-implantação.
-
-O serviço garante que você possa manter ambientes seguros, estáveis e atualizados com o mínimo de esforço e risco manual.
-
-O beta inclui os seguintes recursos:
-
-- **Automatizar a instalação de patches**: simplifique e automatize o processo de correção de vulnerabilidades críticas em ambientes.
-- **Minimizar risco**: Evite interrupções do site com recursos de verificação de integridade e reversão pós-implantação.
-
->[!NOTE]
->
->Como o Serviço de patch de automação de nuvem aplica automaticamente patches de segurança isolados, você deve ter a [função de Colaborador ou Administrador de projeto](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/user-access) para usá-los.
-
-Para participar deste beta, preencha e envie o [Serviço de patch de automação de nuvem - Formulário de inscrição no Beta](https://forms.office.com/r/3Wfxj5nPdB).
 
 ### Assistente de IA de produtividade do comerciante (Beta público)
 

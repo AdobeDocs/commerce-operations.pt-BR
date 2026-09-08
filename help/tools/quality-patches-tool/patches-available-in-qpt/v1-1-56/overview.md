@@ -7,7 +7,7 @@ exl-id: 6433df73-b6df-4c88-93a4-12ac1e5080ea
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 
 O QPT v1.1.56 inclui os seguintes patches:
 
-1. **ACSD-63244**: corrige os problemas em que um erro de JavaScript impede que o [!DNL Google Maps] seja renderizado corretamente e em que há muitos *TypeError Não Capturados: este._each não é uma função* erros no console no painel [!UICONTROL Admin].
+1. **ACSD-63244**: corrige os problemas em que um erro de JavaScript impede que o [!DNL Google Maps] seja renderizado corretamente e em que há muitos *TypeError Não Capturados: this._each não é uma função* erros no console no painel [!UICONTROL Admin].
 1. **ACSD-63242**: corrige o problema de lentidão de importação ao adicionar produtos de catálogo com mais de 10.000 entradas.
 1. **ACSD-63062**: corrige o problema em que cálculos incorretos de desconto do carrinho ocorrem quando várias regras de sobreposição são aplicadas.
 1. **ACSD-62979**: corrige o problema em que o uso do [!UICONTROL Store ID] incorreto no cabeçalho do GraphQL causa um erro fatal de memória.
