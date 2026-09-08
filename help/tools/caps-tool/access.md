@@ -1,9 +1,9 @@
 ---
 title: Como acessar [!DNL Adobe Commerce Patching Automation]
 description: Saiba como acessar e usar o  [!DNL Adobe Commerce Patching Automation]
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: e7e2cb120377e73f2a6f80edcacfcf644b48be84
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 Se você não vir nenhum projeto na interface do usuário do [!DNL Patching Automation], solicite acesso à pessoa apropriada:
 
 * Contate o proprietário da conta ou o administrador do projeto
-* Eles concederão a função apropriada por meio do Cloud Console
+* Eles podem conceder a função apropriada por meio do Cloud Console
 * Depois de receber o acesso, você pode fazer logon no Cloud Console para usar o serviço
 
 >[!NOTE]
@@ -34,7 +34,7 @@ Se você não vir nenhum projeto na interface do usuário do [!DNL Patching Auto
 
 ## Acessando [!DNL Patching Automation]
 
-[!DNL Patching Automation] está disponível como uma guia no painel [!DNL Site-Wide Analysis Tool]. Você pode acessá-lo pelo Painel de Administração acessando **Relatórios** > **Insights do Sistema** > **Ferramenta de Análise do Site** na barra lateral de Administração. Consulte [Como acessar a Ferramenta de Análise do Site](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/site-wide-analysis-tool/access) para obter os pré-requisitos e a configuração de permissões.
+[!DNL Patching Automation] está disponível como uma guia no painel [!DNL Site-Wide Analysis Tool]. Você o acessa pelo Painel de Administração acessando **Relatórios** > **Insights do Sistema** > **Ferramenta de Análise do Site** na barra lateral de Administração. Consulte [Como acessar a Ferramenta de Análise do Site](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) para obter os pré-requisitos e a configuração de permissões.
 
 Quando estiver no painel:
 

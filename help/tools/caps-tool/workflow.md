@@ -1,7 +1,7 @@
 ---
 title: Visão geral do fluxo de trabalho [!DNL Adobe Commerce Patching Automation]
 description: Saiba mais sobre o  [!DNL Adobe Commerce Patching Automation] processo de fluxo de trabalho, incluindo terminologia, fases de fluxo de trabalho e operações para gerenciamento automatizado de patches.
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: a56211744d35006924bd4ffd35c76ddb77118ed4
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -63,7 +63,7 @@ A fase de Verificação Preliminar valida que o patch pode ser aplicado com segu
 
 ### Fase 2: Patches
 
-A fase Patch aplica ou reverte o patch em um ambiente de integração temporário. Durante esse estágio, o serviço cria um ambiente de integração temporário para aplicar com segurança o patch, confirmar sua implantação e verificar se ele passa em uma verificação de integridade — antes de fazer qualquer alteração no ambiente real.
+A fase Patch aplica ou reverte o patch em um ambiente de integração temporário. Durante esse estágio, o serviço cria um ambiente de integração temporário para aplicar o patch com segurança, confirmar sua implantação e verificar se ele passa em uma verificação de integridade — antes de fazer qualquer alteração no ambiente real.
 
 Essa abordagem oferece:
 
@@ -73,27 +73,27 @@ Essa abordagem oferece:
 
 #### Estágio 2a: criação de ambiente de integração
 
-**A criação de ramificação** - [!DNL Patching Automation] cria uma ramificação de ambiente de integração temporária chamada `{target-environment}-CAPS-{patch-id}`
+**Criação de ramificação** — [!DNL Patching Automation] cria uma ramificação de ambiente de integração temporária chamada `{target-environment}-CAPS-{patch-id}`
 
-**Configuração do ambiente** - O ambiente de integração é criado como filho do ambiente de destino
+**Configuração do ambiente** — o ambiente de integração é criado como filho do ambiente de destino
 
-**Sincronização de código** - O ambiente de integração herda o estado de código exato do ambiente de destino (a mesma base de código)
+**Sincronização de código** — o ambiente de integração herda o estado de código exato do ambiente de destino (a mesma base de código)
 
-**Sem clonagem de dados** - O ambiente de integração não recebe uma cópia dos dados do ambiente de destino (banco de dados, mídia ou outro conteúdo armazenado); somente a base de código é usada para aplicar e verificar o patch
+**Sem clonagem de dados** — O ambiente de integração não recebe uma cópia dos dados do ambiente de destino (banco de dados, mídia ou outro conteúdo armazenado). Somente a base de código é usada para aplicar e verificar o patch
 
-**Requisitos de recursos** - A capacidade total de armazenamento do seu projeto na nuvem está definida em seu contrato. (Verifique na página da sua conta ou `magento-cloud subscription:info`). Cada alocação de disco do ambiente é configurada separadamente, por meio da propriedade `disk` em `.magento.app.yaml`/`.magento/services.yaml`. Consulte [Gerenciar espaço em disco](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) para obter detalhes. Se uma operação de patch falhar devido a limitações de armazenamento, verifique o uso de disco do ambiente de integração (`magento-cloud db:size` / `magento-cloud mount:size`) em relação à alocação configurada.
+**Requisitos de recursos** — a capacidade total de armazenamento do seu projeto na nuvem está definida em seu contrato. (Verifique na página da sua conta ou `magento-cloud subscription:info`). Cada alocação de disco do ambiente é configurada separadamente, por meio da propriedade `disk` em `.magento.app.yaml`/`.magento/services.yaml`. Consulte [Gerenciar espaço em disco](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) para obter detalhes. Se uma operação de patch falhar devido a limitações de armazenamento, verifique o uso de disco do ambiente de integração (`magento-cloud db:size` / `magento-cloud mount:size`) em relação à alocação configurada.
 
 #### Estágio 2b: aplicação de patches no ambiente de integração
 
-**Teste seguro** - O patch é aplicado ao ambiente de integração, não diretamente ao ambiente de destino
+**Teste seguro** — O patch é aplicado ao ambiente de integração, não diretamente ao ambiente de destino
 
-**Gerenciamento de arquivos** - Os arquivos de patch são colocados na pasta `m2-hotfixes`
+**Gerenciamento de arquivos** — Os arquivos de patch são colocados na pasta `m2-hotfixes`
 
-**Operações do Git** - as alterações são confirmadas e enviadas para a ramificação do ambiente de integração
+**Operações do Git** — as alterações são confirmadas e enviadas para a ramificação do ambiente de integração
 
-**Ativação do ambiente** - O ambiente de integração é ativado para implantar o código corrigido
+**Ativação do ambiente** — O ambiente de integração é ativado para implantar o código com patch
 
-**Verificação de integridade** - Depois de ativada, [!DNL Patching Automation] confirma o seguinte antes de prosseguir com a mesclagem: o ambiente de integração foi implantado com êxito e está íntegro, o aplicativo é iniciado e suas conexões de banco de dados e cache estão acessíveis.
+**Verificação de integridade** — Uma vez ativada, [!DNL Patching Automation] confirma o seguinte antes de prosseguir com a mesclagem: o ambiente de integração foi implantado com êxito e está íntegro, o aplicativo é iniciado e suas conexões de banco de dados e cache estão acessíveis.
 
 >[!NOTE]
 >
@@ -101,17 +101,17 @@ Essa abordagem oferece:
 
 #### Estágio 2c: mesclar de volta ao ambiente de destino
 
-**Verificação de sincronização** - Antes de mesclar, o serviço confirma que o ambiente de integração ainda está ativo, sincronizado com o ambiente de destino e íntegro. Se o destino tiver sido alterado durante a aplicação de patch, a operação pára aqui em vez de mesclar
+**Verificação de sincronização** — Antes de mesclar, o serviço confirma que o ambiente de integração ainda está ativo, sincronizado com o ambiente de destino e íntegro. Se o destino tiver sido alterado durante a aplicação de patch, a operação pára aqui em vez de mesclar
 
-**Check-out do ambiente** - O serviço faz o check-out do ambiente de destino localmente
+**Check-out do ambiente** — O serviço faz o check-out do ambiente de destino localmente
 
-**Operação de mesclagem** - A ramificação do ambiente de integração é mesclada ao ambiente de destino
+**Operação de mesclagem** — a ramificação do ambiente de integração é mesclada ao ambiente de destino
 
-**Tratamento de conflitos** - Se ocorrer um conflito de mesclagem, a operação falhará e será relatada como um erro; ela não será resolvida automaticamente
+**Tratamento de conflitos** — Se ocorrer um conflito de mesclagem, a operação falhará e será relatada como um erro — ela não será resolvida automaticamente
 
-**Implantação** - As alterações mescladas são implantadas no ambiente de destino
+**Implantação** — As alterações mescladas são implantadas no ambiente de destino
 
-**Verificação** - O serviço verifica se a mesclagem foi bem-sucedida e se os ambientes estão sincronizados
+**Verificação** — O serviço verifica se a mesclagem foi bem-sucedida e se os ambientes estão sincronizados
 
 ### Ciclo de vida do ambiente de integração
 
