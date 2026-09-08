@@ -7,7 +7,7 @@ exl-id: 61f8a517-1a50-4d51-b576-38ae29a7ca32
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ O QPT v1.1.13 inclui os seguintes patches:
 1. **MDVA-42046**: corrige o problema em que um valor incorreto é atribuído a um atributo de produto com um campo de entrada de data ao atualizar um produto.
 1. **MDVA-42283**: corrige o problema em que o formato de data e hora na grade de ordem do administrador para a localidade francesa é inválido.
 1. **MDVA-42969**: corrige o problema em que a Regra de Produto Relacionada funciona somente quando o Segmento de Cliente está definido como *Todos*.
-1. **MDVA-43451**: corrige o problema em que o erro *O armazenamento solicitado não foi encontrado. Verifique o armazenamento e tente novamente.* aparece ao configurar um catálogo compartilhado para um site específico.
+1. **MDVA-43451**: corrige o problema em que o erro *O armazenamento solicitado não foi encontrado. Verifique o armazenamento e tente novamente.* é exibido ao configurar um catálogo compartilhado para um site específico.
 1. **MDVA-43491**: corrige o problema em que o rótulo da imagem base não é atualizado ao importar produtos para um site de várias lojas.
 1. **MDVA-43601**: corrige o problema de disparadores ausentes após a reindexação completa.
 1. **MDVA-43824**: corrige o problema em que um erro aparece ao cancelar pedidos com desconto.

@@ -7,7 +7,7 @@ exl-id: 31812668-1d24-4da6-992f-981c259e00da
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 O QPT v1.1.33 inclui os seguintes patches:
 
 1. **ACSD-50478**: corrige o comando de reversão de banco de dados para um caso em que o despejo de banco de dados contém disparadores e um comando SQL delimitador.
-1. **ACSD-50512**: corrige o erro: *O link disponível para download não está relacionado ao produto. Verifique o link e tente novamente.* isso acontece ao atualizar a data de início de uma atualização de preparo de produto baixável.
+1. **ACSD-50512**: corrige o erro: *O link disponível para download não está relacionado ao produto. Verifique o link e tente novamente.*  isso acontece ao atualizar a data de início de uma atualização de preparo de produto baixável.
 1. **ACSD-50949**: corrige o problema em que o filtro de preço em [!UICONTROL Advanced Search] não retorna resultados adequados quando usado com o filtro SKU.
 1. **ACSD-51645**: corrige o erro lançado ao salvar um novo [!UICONTROL Cart Price Rule] se a extensão `Magento_OfflineShipping` estiver desabilitada.
 1. **ACSD-50895**: corrige o problema em que [!DNL Google Analytics] 3 marcas GTM não são acionadas se [!DNL Google Analytics] 4 GTM não estiver configurado.
