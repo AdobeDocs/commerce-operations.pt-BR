@@ -1,8 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]'
 description: Saiba mais sobre  [!DNL Adobe Commerce Patching Automation], seus usos, como acessá-lo e as práticas recomendadas para aplicação automática de patches
-hide: true
-source-git-commit: f70924d6f0d1777104c59f3f9e776360308abceb
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -52,7 +51,7 @@ O [!DNL Patching Automation] é totalmente integrado à infraestrutura da Adobe 
 
 Saiba mais sobre o [!DNL Adobe Commerce Patching Automation] e como essa ferramenta ajuda os usuários a encontrar e aplicar patches de segurança rapidamente. O vídeo a seguir mostra como acessá-lo pelo painel da Ferramenta de análise do site (SWAT), escolher o projeto e o ambiente e aplicar patches com um clique.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476252/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## Casos de uso comuns
 
