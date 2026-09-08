@@ -23,7 +23,7 @@ Este guia foi projetado para comerciantes, desenvolvedores e integradores para f
 * [[!DNL Commerce Version Tool]](../tools/commerce-version-tool/intro.md)
 * [[!DNL Patching Automation]](../tools/caps-tool/workflow.md)
 * [[!DNL Managed alerts for Adobe Commerce]](../tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
-* [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+* [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}
 * [Ferramenta de linha de comando `bin/magento`](reference/commerce-on-premises.md)
 * [Ferramenta de linha de comando `bin/uct`](reference/commerce-on-premises.md)
 * [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
