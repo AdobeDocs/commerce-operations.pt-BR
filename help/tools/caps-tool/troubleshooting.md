@@ -1,9 +1,9 @@
 ---
 title: Guia de Solução de Problemas do [!DNL Adobe Commerce Patching Automation]
 description: Solucionar problemas comuns e mensagens de erro no [!DNL Adobe Commerce Patching Automation]
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: f2b9ba118bfe4982a67ec5041141e5ee7548fc4d
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Ao usar o [!DNL Patching Automation] para operações de patch, você pode encon
 
 ### Duração das operações de patch
 
-Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as operações de patch devem levar, mas pode levar mais tempo, dependendo do tamanho e da complexidade do ambiente:
+Para a maioria dos ambientes, a linha do tempo a seguir descreve a duração das operações de patch, mas pode demorar mais dependendo do tamanho e da complexidade do ambiente:
 
 * **Pré-processando:** 2-5 minutos
 * **Patches:** 5-15 minutos
@@ -56,7 +56,7 @@ Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as
 
 >[!NOTE]
 >
->Nem todos os erros possíveis estão listados abaixo. Uma falha não listada durante a verificação preliminar é exibida como o &quot;Erro durante a verificação preliminar&quot; genérico; uma falha não listada durante a validação é exibida como o &quot;Erro durante o pós-processamento&quot; genérico — entre em contato com o suporte com o texto exato do erro de qualquer maneira. Durante a correção, uma falha imprevista mostra a mensagem de erro subjacente bruta diretamente em vez de qualquer fallback genérico.
+>Nem todos os erros possíveis estão listados abaixo. Falhas não listadas durante a verificação ou validação preliminar aparecem como erros genéricos. Entre em contato com o suporte com o texto exato do erro. Durante a correção, uma falha imprevista mostra a mensagem de erro subjacente bruta diretamente em vez de qualquer fallback genérico.
 
 ### Erros de prontidão do ambiente
 
@@ -113,7 +113,7 @@ Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as
 
 **Soluções:**
 
-* Aguarde alguns minutos e verifique o status do ambiente novamente. Esse problema geralmente é resolvido sozinho
+* Aguarde alguns minutos e verifique o status do ambiente novamente. Esse problema geralmente é resolvido automaticamente
 * Se os ambientes ainda não corresponderem após alguns minutos, entre em contato com o Suporte da Adobe.
 
 #### &quot;Não é possível criar o trabalho de patch no ambiente de produção quando o cron está habilitado e o modo de manutenção está desabilitado. Ative o modo de manutenção e desative as tarefas cron antes de aplicar os patches.&quot;
@@ -131,7 +131,7 @@ Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as
 
 >[!IMPORTANT]
 >
-> [!DNL Patching Automation] não habilita automaticamente o modo de manutenção ou desabilita trabalhos cron - eles devem ser feitos externamente por você
+> [!DNL Patching Automation] não habilita automaticamente o modo de manutenção ou desabilita trabalhos cron. Conclua esses procedimentos manualmente.
 
 #### &quot;A operação de patch foi concluída, mas a verificação de integridade do ambiente falhou. Isso indica possíveis problemas com a implantação. Revise o status do ambiente e considere reverter a alteração.&quot;
 
@@ -141,11 +141,11 @@ Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as
 
 **Soluções:**
 
-* Teste a loja, a finalização crítica e os fluxos de trabalho do administrador para confirmar se os clientes foram realmente afetados
+* Teste a loja, a finalização crítica e os fluxos de trabalho do administrador para confirmar se os clientes foram afetados
 * No Cloud Console, revise o status do ambiente e inspecione os logs de aplicativo e implantação no feed de projetos **Atividade**. Procure erros associados à operação ou implantação do patch.
-* Acione uma reimplantação manual para determinar se a falha de verificação de integridade foi causada por um problema transitório de implantação ou infraestrutura.
-* Se o problema persistir, reverta o patch. Se o patch for gerenciado por [!DNL Patching Automation] e a operação estiver disponível, selecione [!UICONTROL Revert]. Se o patch for um patch personalizado no diretório `m2-hotfixes`, exclua o arquivo de patch do repositório do projeto. Confirme, envie a alteração e reimplante o ambiente.
-* Se o problema persistir, entre em contato com o Suporte da Adobe.Inclua as seguintes informações em sua solicitação de suporte: ID do projeto de suporte, ID do ambiente e esta mensagem exata: a última operação não foi concluída corretamente, portanto, o suporte pode precisar confirmar o estado do ambiente.
+* Acione uma reimplantação manual para determinar se um problema transitório de implantação ou infraestrutura causou a falha de verificação de integridade.
+* Se o problema persistir, reverta o patch. Se [!DNL Patching Automation] gerencia o patch e a operação está disponível, selecione [!UICONTROL Revert]. Se o patch for um patch personalizado no diretório `m2-hotfixes`, exclua o arquivo de patch do repositório do projeto. Confirme, envie a alteração e reimplante o ambiente.
+* Se o problema persistir, entre em contato com o Suporte da Adobe. Inclua as seguintes informações na solicitação de suporte: ID do projeto de suporte, ID do ambiente e esta mensagem exata: a última operação não foi concluída corretamente, portanto, o suporte precisa confirmar o estado do ambiente.
 
 ### Erros de autenticação e acesso
 
@@ -198,15 +198,13 @@ Para a maioria dos ambientes, a linha do tempo a seguir descreve quanto tempo as
 
 **Se os detalhes mencionarem os pacotes do Composer ou do Adobe Commerce:**
 
-* Faça logon em [https://account.magento.com/](https://account.magento.com/) (ou peça ao proprietário da conta que o faça) e confirme se a sua conta tem acesso à base de código do Commerce Enterprise.
-* Verifique se o par de chaves públicas/privadas do Composer do seu projeto está correto. Consulte [Chaves de autenticação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Faça logon em [https://account.magento.com/](https://account.magento.com/) (ou peça ao proprietário da conta para fazer isso) e confirme se a sua conta tem acesso à base de código do Commerce Enterprise.
+* Faça logon em [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login) (ou peça ao proprietário da conta que o faça) e confirme se a sua conta tem acesso à base de código do Commerce Enterprise.
 * Verifique se as chaves de autenticação pública e privada do Composer do seu projeto estão corretas. Consulte [Chaves de autenticação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
 * Confirme se o pacote chamado na mensagem de erro está disponível para a sua versão do Commerce. Consulte [pacotes Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/packages/adobe-commerce).
 
 **Se os detalhes mencionarem slots ou recursos do ambiente:**
 
-* No Cloud Console, abra a visão geral do projeto e revise os ambientes e seus status. Desativar ou excluir quaisquer ambientes de integração não utilizados: selecione o ambiente. Vá para **[!UICONTROL Settings]>[!UICONTROL General]**. Defina o status do ambiente como inativo.
+* No Cloud Console, abra a visão geral do projeto e revise os ambientes e seus status. Desativar ou excluir quaisquer ambientes de integração não utilizados: selecione o ambiente. Vá para **[!UICONTROL Settings]>[!UICONTROL General]**. Para desativar o ambiente, defina o status como inativo.
 
   Alternativamente, use a CLI: `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`
 * Verifique se o projeto tem recursos suficientes, por exemplo, espaço em disco.
