@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1459bd6961b08d778d43a87b380e23c3041c89bb
+source-git-commit: 526e20111bfbdf299b18c39879ccbffc1550b22a
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 1%
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 8 de setembro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>A Automação de patch do Adobe Commerce agora está disponível no mercado. Consulte a <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/caps-tool/intro">documentação</a> para saber mais.</p>
+</td>
+      <td>
+        Atualização importante, novo tópico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 26 de agosto de 2026
 
@@ -545,28 +567,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Novo tópico
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/43571d84d9a27ffa113ba4f3a8a08883602211f6">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 de julho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.81</a>.</p>
-</td>
-      <td>
-        Novo tópico, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4">confirmar</a></td>
     </tr>
   </tbody>
 </table>
