@@ -27,5 +27,5 @@ Os arquivos de patch de segurança isolados são arquivos de patch autônomos e 
 
 Para aplicar um arquivo de patch de segurança isolado, os clientes devem estar na versão de patch de segurança mais recente (a versão mais recente -p) para a linha de lançamento com suporte, já que os arquivos de patch de segurança isolados são testados exclusivamente em relação a essa versão.
 
-Consulte a [Central de Segurança](https://helpx.adobe.com/security/products/magento.html) para encontrar as atualizações de segurança mais recentes disponíveis para o Adobe Commerce.
+Consulte a [Central de Segurança](https://helpx.adobe.com/br/security/products/magento.html) para encontrar as atualizações de segurança mais recentes disponíveis para o Adobe Commerce.
 
