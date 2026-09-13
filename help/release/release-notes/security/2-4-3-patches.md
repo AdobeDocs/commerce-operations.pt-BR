@@ -19,7 +19,7 @@ ht-degree: 0%
 
 A versão de segurança 2.4.3-p3 do Adobe Commerce fornece correções de segurança para vulnerabilidades que foram identificadas em versões anteriores da 2.4.3. Esta versão também inclui aprimoramentos de segurança que melhoram a conformidade com as práticas recomendadas de segurança mais recentes.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB22-38](https://helpx.adobe.com/br/security/products/magento/apsb22-38.html).
 
 ### Aplique o AC-3022.patch para continuar oferecendo a DHL como transportadora
 
@@ -36,7 +36,7 @@ A DHL apresentou o schema versão 6.2 e descontinuará o schema versão 6.0 em b
 
 A versão de segurança 2.4.3-p2 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades que foram identificadas em versões anteriores. Esta versão também inclui aprimoramentos de segurança que melhoram a conformidade com as práticas recomendadas de segurança mais recentes.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  A versão de patch também resolve a vulnerabilidade tratada pelo `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`,`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` e `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB22-13](https://helpx.adobe.com/br/security/products/magento/apsb22-13.html).  A versão de patch também resolve a vulnerabilidade tratada pelo `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`,`MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` e `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
 
 
 ### Aplique o AC-3022.patch para continuar oferecendo a DHL como transportadora
@@ -65,7 +65,7 @@ A DHL apresentou o schema versão 6.2 e descontinuará o schema versão 6.0 em b
 A versão de segurança do Adobe Commerce 2.4.3-p1 fornece correções de bugs de segurança para vulnerabilidades identificadas na versão anterior (Adobe Commerce 2.4.3 e Magento Open Source 2.4.3). Esta versão também inclui aprimoramentos de segurança que melhoram a conformidade com as práticas recomendadas de segurança mais recentes.
 
 
-Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). A versão de correção também fornece correções de erros para as [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=pt-BR), [Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html) e [Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html) extensões desenvolvidas pelo fornecedor.
+Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB21-86](https://helpx.adobe.com/br/security/products/magento/apsb21-86.html). A versão de correção também fornece correções de erros para as [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=pt-BR), [Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html) e [Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html) extensões desenvolvidas pelo fornecedor.
 
 ### Aplique o AC-3022.patch para continuar oferecendo a DHL como transportadora
 

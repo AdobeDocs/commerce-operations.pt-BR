@@ -37,7 +37,7 @@ ht-degree: 0%
 
 A versão de segurança do Adobe Commerce 2.4.6-p15 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.6.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-49](https://helpx.adobe.com/br/security/products/magento/apsb26-49.html).
 
 {{b2b-patches}}
 
@@ -69,7 +69,7 @@ Para lidar com a aposentadoria do Laminas MVC, a Adobe Commerce agora usa uma bi
 
 A versão de segurança do Adobe Commerce 2.4.6-p14 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.6.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-05](https://helpx.adobe.com/br/security/products/magento/apsb26-05.html).
 
 {{b2b-patches}}
 
@@ -91,7 +91,7 @@ A integração de envio da DHL agora oferece suporte a APIs REST MyDHL, além da
 
 A versão de segurança do Adobe Commerce 2.4.6-p13 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.6.
 
-Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
+Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-94](https://helpx.adobe.com/br/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -123,7 +123,7 @@ composer require magento/inventory-composer-installer
 
 A versão de segurança do Adobe Commerce 2.4.6-p12 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.6.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-71](https://helpx.adobe.com/br/security/products/magento/apsb25-71.html).
 
 {{b2b-patches}}
 
@@ -131,7 +131,7 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 
 A versão de segurança do Adobe Commerce 2.4.6-p11 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.6.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-50](https://helpx.adobe.com/br/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -155,7 +155,7 @@ Esta versão inclui os seguintes destaques:
 
 A versão de segurança do Adobe Commerce 2.4.6-p10 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.6.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB25-26](https://helpx.adobe.com/br/security/products/magento/apsb25-26.html).
 
 {{b2b-patches}}
 
@@ -167,7 +167,7 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 
 A versão de segurança 2.4.6-p9 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.6.
 
-Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
+Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-08](https://helpx.adobe.com/br/security/products/magento/apsb25-08.html).
 
 {{b2b-patches}}
 
@@ -179,7 +179,7 @@ Para obter as últimas informações sobre as correções de erros de segurança
 
 A versão de segurança do Adobe Commerce 2.4.6-p8 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.6.
 
-Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB24-73](https://helpx.adobe.com/br/security/products/magento/apsb24-73.html).
 
 {{b2b-patches}}
 
@@ -195,7 +195,7 @@ Para obter as últimas informações sobre as correções de erros de segurança
 
 A versão de segurança do Adobe Commerce 2.4.6-p7 fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores do 2.4.6.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB24-61](https://helpx.adobe.com/br/security/products/magento/apsb24-61.html).
 
 ### Destaques
 
@@ -209,7 +209,7 @@ Para obter as informações mais recentes sobre as correções de erros de segur
 
 A versão de segurança 2.4.6-p6 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.6.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB24-40](https://helpx.adobe.com/br/security/products/magento/apsb24-40.html).
 
 Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que têm a extensão B2B do Adobe Commerce devem atualizar para a versão 1.4.2-p1[&#128279;](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) do B2B2B.
 
@@ -227,13 +227,13 @@ Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que tê
 
 A versão de segurança 2.4.6-p5 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades que foram identificadas em versões anteriores da 2.4.6.
 
-Para obter as informações mais recentes sobre essas correções, consulte o [Boletim de Segurança do Adobe APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html).
+Para obter as informações mais recentes sobre essas correções, consulte o [Boletim de Segurança do Adobe APSB24-18](https://helpx.adobe.com/br/security/products/magento/apsb24-18.html).
 
 ## 2.4.6-p4
 
 A versão de segurança 2.4.6-p4 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores. Esta versão também inclui aprimoramentos de segurança que melhoram a conformidade com as práticas recomendadas de segurança mais recentes.
 
-Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html).
+Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB24-03](https://helpx.adobe.com/br/security/products/magento/apsb24-03.html).
 
 ### Destaques
 
@@ -250,7 +250,7 @@ Esta versão apresenta dois aprimoramentos significativos de segurança:
 
 A versão de segurança 2.4.6-p3 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades que foram identificadas em versões anteriores. Esta versão também inclui aprimoramentos de segurança para melhorar a conformidade com as práticas recomendadas de segurança mais recentes.
 
-Para obter as informações mais recentes sobre as correções de segurança, consulte o [Boletim de Segurança do Adobe APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html).
+Para obter as informações mais recentes sobre as correções de segurança, consulte o [Boletim de Segurança do Adobe APSB23-50](https://helpx.adobe.com/br/security/products/magento/apsb23-50.html).
 
 ### Destaques
 
@@ -275,7 +275,7 @@ Se o problema de soma de verificação persistir, remova o arquivo `composer.loc
 
 A versão de segurança 2.4.6-p2 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades que foram identificadas em versões anteriores. Esta versão também oferece aprimoramentos de segurança para melhorar a conformidade com as práticas recomendadas de segurança mais recentes.
 
-Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html).
+Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB23-42](https://helpx.adobe.com/br/security/products/magento/apsb23-42.html).
 
 ### Aplicar hotfix para CVE-2022-31160
 
@@ -293,7 +293,7 @@ O Adobe Commerce 2.4.6-p2 inclui a resolução da degradação do desempenho que
 
 A versão de segurança 2.4.6-p1 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades que foram identificadas em versões anteriores. Esta versão também inclui aprimoramentos de segurança e atualizações de plataforma para melhorar a conformidade com as práticas recomendadas de segurança mais recentes.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB23-35](https://helpx.adobe.com/br/security/products/magento/apsb23-35.html).
 
 ### Aplicar hotfix para CVE-2022-31160
 

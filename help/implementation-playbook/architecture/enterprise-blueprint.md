@@ -48,7 +48,7 @@ A [Conexão de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce/dat
 >Consulte os seguintes recursos para obter mais informações:
 >
 >- [blueprints de experiência digital](https://experienceleague.adobe.com/pt-br/docs/blueprints-learn/architecture/overview) para obter mais detalhes técnicos.
->- Consulte [Personalizando a experiência do cliente](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
+>- Consulte [Personalizando a experiência do cliente](https://experienceleague.adobe.com/pt-br/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Integração com sistemas de terceiros
@@ -70,7 +70,7 @@ A Adobe fornece as seguintes ferramentas de desenvolvedor para criar integraçõ
 
 >[!NOTE]
 >
->Consulte [A abordagem moderna: extensibilidade efetiva no Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
+>Consulte [A abordagem moderna: extensibilidade efetiva no Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Serviços de vitrine
 

@@ -39,7 +39,7 @@ Uma ferramenta que você pode usar para testes de estresse é o GTmetrix. Medir 
 
 Saiba mais sobre como preparar projetos do Commerce para períodos de alto tráfego:
 
-- [Disponibilidade para feriados](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [Disponibilidade para feriados](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=pt-BR)
 - [Análise de Compras de Feriado](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=pt-BR)
 - [Aumento da capacidade de sobretensão](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
 
