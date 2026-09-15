@@ -3,27 +3,32 @@ title: Instalar e configurar o Valkey
 description: Saiba como instalar e configurar o Valkey para armazenamento em cache e armazenamento de sessão com o Adobe Commerce. Descubra opções para otimização e ajuste de desempenho.
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 TQID: 'https://experienceleague.adobe.com/Ef4WREy0eq0ChsrI5-0FtrjMZWNjwr7l71Pm-RHD1GI'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+    internal-label: Implementation
+source-git-commit: c17dcd295b7a27ac1732a700b97af26316a98b7d
 workflow-type: tm+mt
-source-wordcount: 414
+source-wordcount: '428'
 ht-degree: 0%
-
 ---
-
 # Instalar e configurar o Valkey
 
 Valkey é um armazenamento de dados em memória de código aberto e compatível com Redis que pode ser usado como um back-end de cache e para armazenamento de sessão. Os principais recursos incluem:
@@ -56,7 +61,15 @@ A Adobe recomenda ativar a persistência para que as sessões copiem dados Valke
 
 Você também pode ativar as opções RDB e AOF ao mesmo tempo. Para obter detalhes adicionais, incluindo as vantagens e desvantagens das opções de persistência, consulte a [documentação sobre Persistência Valkey](https://valkey.io/topics/persistence/).
 
-Para a instância de cache, configure-a de modo que seja grande o suficiente para armazenar todo o cache do Commerce. Os requisitos de tamanho dependem de fatores diferentes, como o número de produtos e as visualizações da loja. Como ponto de partida, você pode usar o tamanho da pasta de cache no sistema de arquivos. Por exemplo, se a pasta `var/cache` no sistema de arquivos tiver 5 GB, configure a instância do Valkey com pelo menos 5 GB para começar. A persistência não é necessária para a instância de cache porque o cache do Commerce pode ser restaurado.
+Para a instância de cache, configure-a de modo que seja grande o suficiente para armazenar todo o cache do Commerce.
+
+- Os requisitos de tamanho dependem de fatores diferentes, como o número de produtos e as visualizações da loja.
+
+  Como ponto de partida, você pode usar o tamanho da pasta de cache no sistema de arquivos. Por exemplo, se a pasta `var/cache` no sistema de arquivos tiver 5 GB, configure a instância do Valkey com pelo menos 5 GB para começar.
+
+- A persistência não é necessária para a instância de cache porque o cache do Commerce pode ser restaurado.
+
+  Consulte o [Guia de cache Valkey](https://valkey.io/docs/latest/develop/use/) para obter mais informações.
 
 Para ajuste de desempenho, é possível ativar as seguintes configurações para exclusão assíncrona. Essas configurações não alteram o comportamento do Valkey.
 
