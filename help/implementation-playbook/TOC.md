@@ -3,20 +3,18 @@ user-guide-title: Manual de implementação
 user-guide-description: Saiba mais sobre as estratégias de planejamento e implementação de um site bem-sucedido do Adobe Commerce.
 mini-toc-levels: 3
 nudge: true
-source-git-commit: 9343b1fb2832ea0865614e8fb58e5283a72c990d
+source-git-commit: d891254482ae9d0fa5b154f56de83a4a483feef7
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
-
 ---
-
 
 # Manual de implementação {#implementation-playbook}
 
 - [Visão geral](overview.md)
 - Arquitetura e integrações {#architecture}
   - [Referência empresarial](architecture/enterprise-blueprint.md)
-- Manutenção e suporte {#maintenance}
+- Manutenção e suporte {#maintenance-and-support}
   - [Visão geral](maintenance/overview.md)
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Práticas recomendadas {#best-practices}
@@ -49,7 +47,7 @@ ht-degree: 14%
     - [Blocos de conteúdo privado](best-practices/development/private-content-block-configuration.md)
     - [Implantação de conteúdo estático](best-practices/development/static-content-deployment.md)
     - [Modificação de tabelas de banco de dados](best-practices/development/modifying-core-and-third-party-tables.md)
-    - [Modificando código principal e de terceiros](best-practices/development/modifying-core-and-third-party-code.md)
+    - [Modificação do código principal e de terceiros](best-practices/development/modifying-core-and-third-party-code.md)
   - Launch {#launch}
     - [Visão geral](best-practices/launch/overview.md)
     - [Configurar rastreadores da Web](best-practices/launch/robots-txt.md)

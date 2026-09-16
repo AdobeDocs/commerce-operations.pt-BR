@@ -8,26 +8,34 @@ autotag-review: '2026-06-22T22:00:55.389Z'
 TQID: 'https://experienceleague.adobe.com/AjJ86dYGRVFuY1T73ct1Gpcf6iDbb4ewP8OiGX8otQs'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+    internal-label: Security
+source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
 workflow-type: tm+mt
-source-wordcount: 1315
+source-wordcount: '1309'
 ht-degree: 0%
-
 ---
-
 
 # Configurar Valkey para cache padrão e de página
 
@@ -49,15 +57,15 @@ O Commerce fornece opções de linha de comando para configurar o padrão Valkey
 
 >[!TAB Zend Cache (2.4.8 e anterior)]
 
-- **Zend Cache (2.4.8 e anterior)** — Back-end Valkey herdado para Commerce 2.4.8 e anterior:
-  - **Infraestrutura Valkey herdada** — Usa o caminho de classe completo (`Magento\Framework\Cache\Backend\Valkey`)
+- **Zend Cache (2.4.8 e anterior)** — Back-end do Valkey para Commerce 2.4.8 e anterior:
+  - **Back-end Valkey baseado em Zend** — Usa o caminho de classe completo (`Magento\Framework\Cache\Backend\Valkey`)
   - **Chaves de pré-carregamento** — Suporta o pré-carregamento de chaves de cache usadas com frequência
   - **Scripts Lua** — Lua para coleta de lixo
   - **Compactação** — Suporta compactação de dados
 
 >[!TAB Cache do Symfony (2.4.9+)]
 
-- **Symfony Cache (2.4.9+)** — A partir do Commerce 2.4.9, o Symfony Cache fornece uma implementação de cache moderna e compatível com PSR-6 para Valkey, com melhorias significativas de desempenho:
+- **Symfony Cache (2.4.9+)** — A partir do Commerce 2.4.9, o Symfony Cache fornece uma implementação de cache compatível com PSR-6 para Valkey com melhorias significativas de desempenho:
   - **Pipeline automático do Valkey** — agrupa várias operações em solicitações únicas, reduzindo a latência
   - **PSR-6 TagAwareAdapter** — Invalidação eficiente de cache com base em marcas com operações atômicas
   - **Serialização binária** — a serialização binária reduz o tamanho da entrada de cache em 45% e melhora a velocidade em 5-10%
@@ -279,7 +287,7 @@ Ao usar o recurso de pré-carregamento com um cache L2, você deve adicionar o s
 
 ### Geração paralela
 
-A partir da versão 2.4.0 do Commerce, a Adobe apresentou a opção `allow_parallel_generation` para usuários que desejam eliminar a espera por bloqueios. Ela está desativada por padrão e a Adobe recomenda desativá-la até que você tenha configurações e/ou blocos em excesso.
+O Adobe Commerce fornece a opção `allow_parallel_generation` para usuários que desejam eliminar a espera por bloqueios. Ela está desativada por padrão e a Adobe recomenda desativá-la até que você tenha configurações e/ou blocos em excesso.
 
 **Para habilitar a geração paralela**:
 

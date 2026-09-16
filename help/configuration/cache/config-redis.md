@@ -8,23 +8,28 @@ autotag-review: '2026-06-22T20:26:29.348Z'
 TQID: 'https://experienceleague.adobe.com/N61AAy4ihSIlhEjdvpji2XVOdZuHWhytp9zgoAU41K4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+    internal-label: Implementation
+source-git-commit: c17dcd295b7a27ac1732a700b97af26316a98b7d
 workflow-type: tm+mt
-source-wordcount: 456
+source-wordcount: '460'
 ht-degree: 0%
-
 ---
-
 # Instalar e configurar o Redis
 
 O Redis é um armazenamento de dados na memória que pode ser usado como back-end de cache e para armazenamento de sessão. Os principais recursos incluem:
@@ -48,7 +53,7 @@ A instalação e configuração do software Redis está fora do escopo deste gui
 
 Dependendo da sua instalação, você geralmente pode encontrar sua configuração Redis em um dos seguintes arquivos: `/etc/redis/redis.conf` ou `/etc/redis/<port>.conf`
 
-Para otimizar a instância Redis de acordo com seus requisitos, você obtém melhores resultados usando uma instância dedicada a cada sessão, cache do Commerce e FPC.
+Para otimizar a instância Redis de acordo com seus requisitos, você obtém melhores resultados usando uma instância dedicada a cada sessão, cache do Commerce e cache de página inteira (FPC).
 
 Para sessões, a Adobe recomenda que você ative a persistência para copiar dados Redis para o disco usando uma das seguintes opções de persistência: instantâneos comuns do Backup do banco de dados Redis (RDB) ou logs de persistência de Anexar somente arquivo (AOF).
 
@@ -56,9 +61,17 @@ Para sessões, a Adobe recomenda que você ative a persistência para copiar dad
 
 - **Anexar Somente Arquivo** (AOF) armazena cada operação de gravação enviada para Redis em um arquivo de diário. O Redis lê esse arquivo somente ao reiniciar e o usa para restaurar o conjunto de dados original.
 
-Você também pode ativar as opções RDB e AOF ao mesmo tempo. Para obter detalhes adicionais, incluindo as vantagens e desvantagens das opções de persistência, consulte a [documentação sobre Persistência Redis](https://redis.io/topics/persistence).
+Você também pode ativar as opções RDB e AOF ao mesmo tempo. Para obter detalhes adicionais, incluindo as vantagens e desvantagens das opções de persistência, consulte a [documentação sobre Persistência Redis](https://redis.io/docs/latest/operate/rs/databases/configure/database-persistence/).
 
-Para a instância de cache, configure-a de modo que seja grande o suficiente para armazenar todo o cache do Commerce. Os requisitos de tamanho dependem de fatores diferentes, como o número de produtos e as visualizações da loja. Como ponto de partida, você pode usar o tamanho da pasta de cache no sistema de arquivos. Por exemplo, se a pasta `var/cache` no sistema de arquivos tiver 5 GB, configure a instância Redis com pelo menos 5 GB para começar. A persistência não é necessária para a instância de cache porque o cache do Commerce pode ser restaurado. Consulte [Guia de cache Redis](https://redis.io/docs/latest/develop/use/).
+Para a instância de cache, configure-a de modo que seja grande o suficiente para armazenar todo o cache do Commerce.
+
+- Os requisitos de tamanho dependem de fatores diferentes, como o número de produtos e as visualizações da loja.
+
+  Como ponto de partida, use o tamanho da pasta `var/cache` no sistema de arquivos. Por exemplo, se `var/cache` tiver 5 GB, configure sua instância Redis com pelo menos 5 GB para começar.
+
+- A persistência não é necessária para a instância de cache porque o cache do Commerce pode ser restaurado.
+
+  Consulte o [Guia de cache Redis](https://redis.io/docs/latest/develop/use/) para obter mais informações.
 
 Para ajuste de desempenho, é possível ativar as seguintes configurações para exclusão assíncrona. Essas configurações não alteram o comportamento do Redis.
 
