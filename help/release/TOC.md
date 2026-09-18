@@ -4,13 +4,11 @@ user-guide-description: Acesse todas as informações da versão de patches e se
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: 5e0e4b0dc59aa2d8bd08d2d4af1176d14577f063
+source-git-commit: 7f611e9d05ddc53c853839d33bcacf48a59c126e
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '110'
 ht-degree: 30%
-
 ---
-
 
 # Informações da versão {#release}
 
@@ -55,7 +53,7 @@ ht-degree: 30%
 - Planejamento e políticas {#planning}
   - [Política de ciclo de vida](lifecycle-policy.md)
   - [Ações e prazos necessários para proteger ambientes Commerce](security-enforcement-policy.md)
-  - [Política de imposição de atualização de versão](version-upgrade-enforcement-policy.md)
+  - [Política mensal de patch isolado de segurança](monthly-isolated-security-patches.md)
   - [Política de controle de versão](versioning-policy.md)
   - [Programação de lançamento](schedule.md)
 - [Recursos por versão](features.md)
@@ -63,4 +61,4 @@ ht-degree: 30%
 - Pacotes {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [Magento Open Source](packages/magento-open-source.md)
-- [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=pt-BR)
+- [Retornar aos Guias operacionais](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '86'
 ht-degree: 0%
-
 ---
 # Nota de política de suporte estendido
 
@@ -16,4 +15,4 @@ ht-degree: 0%
 >Consulte também:
 >
 >- [Política de ciclo de vida do software](/help/release/lifecycle-policy.md) — datas de fim de suporte, suporte estendido e disposições transitórias somente de segurança
->- [Política de imposição de atualização de versão da nuvem](/help/release/version-upgrade-enforcement-policy.md) — datas de imposição e ações necessárias
+>- [Ações e prazos necessários para proteger ambientes do Commerce](/help/release/security-enforcement-policy.md) — datas de imposição e ações necessárias
