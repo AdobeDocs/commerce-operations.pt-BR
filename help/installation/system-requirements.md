@@ -2,14 +2,12 @@
 title: Requisitos do sistema
 description: Saiba mais sobre dependências de software e requisitos de sistema para o Adobe Commerce. Consulte as configurações testadas para compatibilidade com seu ambiente de implantação.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-last-update: 2026-08-11T00:00:00Z
-source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
+last-update: 2026-08-11
+source-git-commit: 0e218207eb48d6c93139bd05215f5804b21ee216
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 0%
-
 ---
-
 # Requisitos do sistema
 
 As informações a seguir resumem as dependências de software e os serviços testados para Adobe Commerce.
@@ -74,7 +72,7 @@ As tabelas a seguir listam os requisitos de sistema para versões do Adobe Comme
 >
 >O Adobe Commerce 2.4.6 está no [suporte estendido](../release/lifecycle-policy.md#extended-support) até **30 de agosto de 2027**, seguido por um [período de transição somente de segurança](../release/lifecycle-policy.md#security-only-transitional-period) até **31 de maio de 2028**. Essas provisões estão disponíveis somente para clientes do Adobe Commerce. Eles não estendem o suporte para dependências de terceiros, como MySQL.
 >
->Se você executar o Adobe Commerce na Nuvem, deverá atualizar para uma versão com suporte ou migrar para o [!DNL Adobe Commerce as a Cloud Service] antes da **data de imposição de atualização de versão de [&#x200B; de** de 1 de junho de 2028](../release/version-upgrade-enforcement-policy.md). Consulte a tabela [fim das datas de suporte](../release/lifecycle-policy.md#end-of-support-dates) para obter as datas do ciclo de vida completo.
+>Se você executar o Adobe Commerce na Nuvem, deverá atualizar para uma versão com suporte ou migrar para o [!DNL Adobe Commerce as a Cloud Service] antes dos **requisitos e prazos de segurança do [&#x200B; do** de 1 de junho de 2028](../release/security-enforcement-policy.md). Consulte a tabela [fim das datas de suporte](../release/lifecycle-policy.md#end-of-support-dates) para obter as datas do ciclo de vida completo.
 >
 >A tabela é recolhida para minimizar o comprimento deste artigo. Selecione o cabeçalho para expandi-lo.
 
