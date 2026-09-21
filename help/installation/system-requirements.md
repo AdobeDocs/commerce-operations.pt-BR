@@ -2,8 +2,8 @@
 title: Requisitos do sistema
 description: Saiba mais sobre dependências de software e requisitos de sistema para o Adobe Commerce. Consulte as configurações testadas para compatibilidade com seu ambiente de implantação.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-last-update: 2026-08-11
-source-git-commit: 0e218207eb48d6c93139bd05215f5804b21ee216
+last-update: 2026-09-18
+source-git-commit: 7e982102bc8c3b13a67a0ca4b0a8b21ada1a5825
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 0%
