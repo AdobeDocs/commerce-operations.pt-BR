@@ -225,7 +225,7 @@ Para compatibilidade com a versão 2.4.6-p6 do Commerce, os comerciantes que tê
 
 A versão de segurança 2.4.6-p5 do Adobe Commerce fornece correções de bugs de segurança para vulnerabilidades que foram identificadas em versões anteriores da 2.4.6.
 
-Para obter as informações mais recentes sobre essas correções, consulte o [Boletim de Segurança do Adobe APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html).
+Para obter as informações mais recentes sobre essas correções, consulte o [Boletim de Segurança do Adobe APSB24-18](https://helpx.adobe.com/br/security/products/magento/apsb24-18.html).
 
 ## 2.4.6-p4
 
