@@ -1,17 +1,15 @@
 ---
 title: 'Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.30'
-description: Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no  [!DNL Quality Patches Tool] (QPT) v1.1.30.
+description: Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no [!DNL Quality Patches Tool] (QPT) v1.1.30.
 feature: Tools and External Services
 role: Admin
 exl-id: 36c6e0cc-fd8c-4583-b147-fe4897b101d8
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '347'
 ht-degree: 0%
-
 ---
-
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.30
 
 Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no [!DNL Quality Patches Tool] (QPT) v1.1.30.
