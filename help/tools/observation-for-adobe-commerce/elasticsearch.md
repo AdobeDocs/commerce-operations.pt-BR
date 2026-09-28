@@ -1,15 +1,13 @@
 ---
 title: A guia [!UICONTROL Elasticsearch]
-description: Saiba mais sobre a guia [!UICONTROL Elasticsearch] do  [!DNL Observation for Adobe Commerce].
+description: Saiba mais sobre a guia [!UICONTROL Elasticsearch] do [!DNL Observation for Adobe Commerce].
 exl-id: e98d351d-b3b1-47bc-bc0d-f96ba9ec2b80
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 0%
-
+source-wordcount: '548'
+ht-degree: 1%
 ---
-
 # A guia [!UICONTROL Elasticsearch]
 
 ## [!UICONTROL Cluster Status Summary]:

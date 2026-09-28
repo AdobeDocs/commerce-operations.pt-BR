@@ -1,15 +1,13 @@
 ---
 title: A guia [!UICONTROL Indexing]
-description: Saiba mais sobre a guia [!UICONTROL Indexing] do  [!DNL Observation for Adobe Commerce].
+description: Saiba mais sobre a guia [!UICONTROL Indexing] do [!DNL Observation for Adobe Commerce].
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '177'
 ht-degree: 0%
-
 ---
-
 # A guia [!UICONTROL Indexing]
 
 A guia **[!UICONTROL Indexing]** tenta explicar problemas com a indexação e identificar possíveis causas.
