@@ -1,17 +1,15 @@
 ---
-title: 'ACSD-65127: a minificação do JavaScript no modo de produção causa erros [!DNL TinyMCE] 6 no navegador'
-description: Aplique o patch ACSD-65127 para corrigir o problema do Adobe Commerce em que a habilitação da minificação do JavaScript no modo de produção fazia com que  [!DNL TinyMCE] 6 gerasse erros no console do navegador, afetando a funcionalidade e a experiência do usuário.
+title: 'ACSD-65127: a minificação do JavaScript no modo de produção causa [!DNL TinyMCE] 6 erros no navegador'
+description: Aplique o patch ACSD-65127 para corrigir o problema do Adobe Commerce em que a habilitação da minificação do JavaScript no modo de produção fazia com que o [!DNL TinyMCE] 6 gerasse erros no console do navegador, afetando a funcionalidade e a experiência do usuário.
 feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '363'
 ht-degree: 0%
-
 ---
-
 # ACSD-65127: a minificação do JavaScript no modo de produção causa [!DNL TinyMCE] 6 erros no navegador
 
 O patch ACSD-65127 corrige o problema em que a ativação da minificação do JavaScript no modo de produção fazia com que o [!DNL TinyMCE] 6 gerasse erros no console do navegador, afetando a funcionalidade e a experiência do usuário. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.64 está instalado. A ID do patch é ACSD-65127. Observe que esse problema foi corrigido no Adobe Commerce 2.4.8.
@@ -28,7 +26,7 @@ O patch ACSD-65127 corrige o problema em que a ativação da minificação do Ja
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na página [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na página [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -38,15 +36,15 @@ Habilitar a minificação do JavaScript no modo de produção fez com que o [!DN
 
 1. Defina a configuração executando os comandos abaixo:
 
-```shell
-bin/magento config:set --lock-config dev/js/minify_files 1
-bin/magento config:set --lock-config dev/js/enable_js_bundling 1
-bin/magento config:set --lock-config dev/js/merge_files 1
-```
+   ```shell
+   bin/magento config:set --lock-config dev/js/minify_files 1
+   bin/magento config:set --lock-config dev/js/enable_js_bundling 1
+   bin/magento config:set --lock-config dev/js/merge_files 1
+   ```
 
->[!NOTE]
->
->A Adobe não recomenda habilitar **[!UICONTROL Merge JavaScript Files]**. Consulte [Mesclar arquivos JS (não recomendado)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
+   >[!NOTE]
+   >
+   >A Adobe não recomenda habilitar **[!UICONTROL Merge JavaScript Files]**. Consulte [Mesclar arquivos JS (não recomendado)](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md#merge-js-files).
 
 1. Ativar modo de produção.
 
@@ -69,7 +67,7 @@ Nenhum erro de JS no console do navegador.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool]
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem
 
 ## Leitura relacionada
 
