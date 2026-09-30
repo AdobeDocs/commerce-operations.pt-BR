@@ -2,14 +2,12 @@
 title: Exemplo usando uma configuração compartilhada
 description: Veja um exemplo de como alterar configurações em um sistema de desenvolvimento com um arquivo de configuração compartilhado.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
-
 ---
-
 # Exemplo usando uma configuração compartilhada
 
 Este exemplo mostra como alterar as seguintes configurações no sistema de desenvolvimento, atualizar o arquivo de configuração compartilhado, `config.php`, no sistema de compilação, e implementar as mesmas configurações no sistema de produção:
@@ -87,8 +85,8 @@ A última etapa do processo é atualizar o sistema de produção do controle do 
 
    ![Opções de configuração não editáveis no Admin](../../assets/configuration/split-deploy-not-editable.png)
 
->[!INFO]
->
->Para alterar uma configuração bloqueada no Admin, use o comando [`magento config:set --lock` &#x200B;](../cli/set-configuration-values.md).
+   >[!INFO]
+   >
+   >Para alterar uma configuração bloqueada no Admin, use o comando [`magento config:set --lock` &#x200B;](../cli/set-configuration-values.md).
 
 <!-- Last updated from includes: 2026-04-17 13:49:36 -->
