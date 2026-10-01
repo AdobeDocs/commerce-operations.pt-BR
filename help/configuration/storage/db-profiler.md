@@ -6,11 +6,9 @@ badge: label="Contribuição de Atish Goswami" type="Informative" url="https://g
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '198'
 ht-degree: 0%
-
 ---
-
 # Configurar o profiler do banco de dados
 
 O profiler do banco de dados do Commerce exibe todas as consultas implementadas em uma página, incluindo o tempo para cada consulta e quais parâmetros foram aplicados.
