@@ -16,9 +16,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ed51278b96a445aab6d1194e473e55d85ce6ef1d
+source-git-commit: ec5bfb45c2c170168c0e30a8c2197ba3ab58ccfe
 workflow-type: tm+mt
-source-wordcount: '32496'
+source-wordcount: '33143'
 ht-degree: 0%
 ---
 # Notas de versão
@@ -27,11 +27,35 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.84 {#v1-1-84}
+
+* **ACP2E-4913** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.9) - Corrige o problema em que as operações de remessa e faturamento falham devido a um deadlock.
+* **ACP2E-5005** (para Adobe Commerce, B2B >=1.5.0 &lt;1.5.4) - Corrige o problema em que a quantidade de uma opção de produto agrupado em uma cotação negociável reverte para o valor anterior quando o produto agrupado é reconfigurado no Administrador e a quantidade é editada.
+* **ACP2E-5009** (para Adobe Commerce >=2.4.5 &lt;2.4.10) - Corrige o problema em que a migração de dados do Magento Open Source para o Adobe Commerce não migra corretamente as alterações de design agendado da categoria e as atualizações agendadas de Preço Especial do produto, fazendo com que algumas atualizações agendadas fiquem ausentes ou sejam ignoradas durante a migração, e melhora o desempenho da migração.
+* **ACP2E-5017** (para Adobe Commerce, B2B >=1.5.0 &lt;1.5.4) - Corrige o problema em que a consulta da função do cliente por meio do GraphQL retorna um *erro de servidor interno* quando o cliente não está atribuído a uma empresa.
+* **ACP2E-5027** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.10) - Corrige o problema em que os indexadores permanecem presos em um loop e a reindexação não é concluída quando o bloqueio de arquivos está habilitado.
+* **ACP2E-5029** (para Adobe Commerce e Magento Open Source >=2.4.7 &lt;2.4.10) - Corrige o problema em que as alterações nas regras de preço do catálogo não aparecem em [!DNL Live Search] até que uma ressincronização manual seja executada.
+* **ACP2E-5041** (para Adobe Commerce >=2.4.5 &lt;2.4.9) - Corrige o problema em que salvar um produto durante uma atualização agendada faz com que a loja mostre o preço normal em vez de [!UICONTROL Special Price] após o término da atualização.
+* **ACP2E-5059** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.10) - Corrige o problema em que os clientes recebem emails de confirmação de pedido duplicados para o mesmo pedido.
+* **ACP2E-5122** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.10) - Corrige o problema em que erros manipulados de solicitações do GraphQL para o carrinho de compras são registrados incorretamente em logs de exceção como erros de aplicativo.
+* **ACP2E-5143** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.8) - Corrige o problema em que a consulta de rota do GraphQL renderiza o conteúdo completo da página do CMS quando somente os metadados de roteamento são solicitados, aumentando as consultas do banco de dados para páginas do CMS que contêm widgets do Page Builder.
+* **ACP2E-5183** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.10) - Corrige o problema em que a implantação de conteúdo estático falha no PHP 8.5 durante a compilação de um arquivo `LESS` que usa a diretiva `@magento_import`.
+* **ACP2E-5242** (para Adobe Commerce e Magento Open Source >=2.4.9 &lt;2.4.10) - Corrige o problema em que a verificação da disponibilidade do produto ao adicionar itens ao carrinho exibe um erro indicando que o site não pode ser encontrado.
+* **ACP2E-5263** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.9) - Corrige o problema em que a exportação de produtos para um arquivo CSV pode parar antes da inclusão de todos os produtos, resultando em um arquivo incompleto.
+* **ACP2E-5034** (para Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Corrige o problema em que o gerenciamento de cotações negociáveis redefine incorretamente os totais para *zero* ao recalcular uma cotação após selecionar um método de envio, descarta atualizações para quantidades de opção de produto agrupadas feitas por meio da ação [!UICONTROL Configure] no Administrador e não reflete corretamente os descontos no nível do item aplicados aos produtos de pacote de preço dinâmico em subtotais de cota.
+* **ACP2E-4741** (para Adobe Commerce e Magento Open Source >=2.4.9 &lt;2.4.10) - Corrige o problema em que um produto desaparece da loja depois que um produto vinculado a ele como [!UICONTROL Related Product], [!UICONTROL Up-Sell] ou venda cruzada é salvo enquanto um estoque e uma origem não padrão estão em uso.
+* **ACP2E-5079** (para Adobe Commerce >=2.4.4 &lt;2.4.10) - Corrige o problema em que a avaliação de um segmento de cliente atribuído a vários sites retorna clientes correspondentes somente do primeiro site quando as contas de cliente são compartilhadas globalmente.
+* **ACP2E-5127** (para Adobe Commerce, B2B >=1.3.3 &lt;1.5.4) - Corrige o problema em que a edição de uma conta da empresa no painel Admin com uma localidade não padrão redefine seu [!UICONTROL Credit Limit] como *0*.
+* **AC-15494** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que a consulta de produtos retorna nomes de produtos com caracteres especiais de escape HTML em vez de seus caracteres originais.
+* Versões atualizadas: **AC-18096**, **ACSD-60584**, **ACSD-65775**
+* Patches substituídos: **ACP2E-4801**, **ACP2E-4194**
+* Patches atualizados: **ACP2E-4815**
 
 ## v1.1.83 {#v1-1-83}
 
@@ -110,7 +134,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **ACP2E-4156** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que a validação do endereço de entrega na API REST não adere à configuração de atributo definida em Administração.
 * **ACP2E-4813** (para Adobe Commerce e Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - Corrige o problema em que os métodos de envio do USPS não estão disponíveis no check-out e as estimativas de envio estão incorretas para determinados produtos, incluindo pedidos divididos em vários pacotes.
 * **ACSD-53502** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Corrige o problema em que Adicionar ao carrinho falha intermitentemente na loja do iOS Safari devido a chamadas recursivas para o script de monitoramento do New Relic, causando recarregamentos de página.
-* Versões atualizadas: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686**, **,** ACP2E-4402 **,** ACP2E-4505 **,** ACP2E-4603 **,** ACP2E-4706 **&#x200B;**
+* Versões atualizadas: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686**, **,** ACP2E-4402 **,** ACP2E-4505 **,** ACP2E-4603 **,** ACP2E-4706 ****
 * Patches substituídos: **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
@@ -733,7 +757,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **ACSD-54776** (para Adobe Commerce >=2.4.5 &lt;2.4.7) - Corrige o problema em que valores de campo de produto desmarcados *[!UICONTROL Use Default Value]* e não padrão não são salvos no segundo modo de exibição de site, loja e loja.
 * **ACSD-53998** (para Adobe Commerce e Magento Open Source >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.7) - Corrige o problema em que um **[!UICONTROL Dynamic Block]** baseado em um **[!UICONTROL Customer Segment]** não funciona corretamente depois de sair de uma conta de cliente.
 * **ACSD-53204** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Correções *O produto não pode ser salvo.* erro ao fazer solicitações simultâneas para adicionar imagens à galeria de produtos usando o ponto de extremidade `rest/V1/products/<sku>/media`.
-* **ACSD-47657** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Adição de um mecanismo de cache para credenciais AWS. Um provedor de credenciais agora usa o cache da Magento para armazenar em cache credenciais recuperadas do AWS para configuração EC2.
+* **ACSD-47657** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Adição de um mecanismo de cache para credenciais AWS. Um provedor de credenciais agora usa o cache do Magento para armazenar em cache credenciais recuperadas do AWS para configuração EC2.
 * Patches atualizados: ACSD-51984, ACSD-51574.
 
 ## v1.1.38 {#v1-1-38}
@@ -1083,7 +1107,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **MDVA-44887** (*para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.5*) - Corrige o erro *Uncaught SyntaxError: Unexpected token &#39;const&#39;* no painel de Administração.
 * **MDVA-43718** (*para Adobe Commerce e Magento Open Source >=2.3.0 &lt;2.4.5*) - Correções *O consumidor não está autorizado a acessar %resources.* erro que aparece ao acessar um catálogo compartilhado de uma integração personalizada.
 * **MDVA-44660** (*para Adobe Commerce e Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - Corrige o problema em que o caractere de acento grave (\`) não podia ser usado para o nome e sobrenome de um cliente.
-* **MDVA-40896** (*para Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.4*) - Corrige o *Erro: TypeError: Argumento 3 passado para o erro Magento* na API assíncrona de produto em massa.
+* **MDVA-40896** (*para Adobe Commerce e Magento Open Source >=2.4.3 &lt;2.4.4*) - Corrige o *Erro: TypeError: Argumento 3 transmitido para o erro do Magento* na API assíncrona de produto em massa.
 * **MDVA-38559** (*para Adobe Commerce e Magento Open Source >=2.4.0 &lt;2.4.3*) - Corrige o erro */V1/customers/search API* para clientes com mais de uma assinatura.
 * **MDVA-44533** (*para Adobe Commerce e Magento Open Source >=2.3.1 &lt;2.4.4*) - Corrige o problema em que o desconto é aplicado incorretamente a um pacote de produto filho.
 * Patches atualizados: MDVA-41061, MDVA-42269.
