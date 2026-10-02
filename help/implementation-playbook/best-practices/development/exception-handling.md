@@ -6,11 +6,9 @@ role: Developer
 exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
 source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '589'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas de tratamento de exceções
 
 Se uma exceção não for gravada no arquivo `exception.log` com o modelo de exceção como contexto, ela não será reconhecida e analisada corretamente no New Relic ou em outro armazenamento de log compatível com monólogo PSR-3. Registrar somente uma parte da exceção (ou registrá-la no arquivo errado) gera bugs na produção quando as exceções são ignoradas.
