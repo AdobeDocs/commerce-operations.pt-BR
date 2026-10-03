@@ -22,7 +22,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição da <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.83</a>.</p>
+      <td><p>Adição da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.83</a>.</p>
 </td>
       <td>
         Novo tópico, qpt
