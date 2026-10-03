@@ -4,13 +4,11 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: 9c17eea494812648e488f181d025e0eb78eda0ff
 workflow-type: tm+mt
-source-wordcount: '10695'
+source-wordcount: '10699'
 ht-degree: 0%
-
 ---
-
 
 # Ferramentas {#tools}
 
@@ -1060,6 +1058,8 @@ ht-degree: 0%
       - [ACP2E-4805: as solicitações de finalização de compra ficam lentas para produtos configuráveis quando o primeiro filho que pode ser vendido aparece posteriormente na lista](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
       - [ACP2E-4748: A expiração dos pontos de recompensa é executada lentamente nas lojas com um histórico de pontos de recompensa grande](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
       - [ACP2E-4875: Usuários administradores desconectados ao abrir contas de clientes com catálogos de endereços grandes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
+    - v1.1.83 {#v1-1-83}
+      - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
   - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referência de ferramentas de linha de comando {#cli-reference}
   - [Adobe Commerce (no local)](reference/commerce-on-premises.md)

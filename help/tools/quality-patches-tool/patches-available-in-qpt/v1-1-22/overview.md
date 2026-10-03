@@ -1,17 +1,15 @@
 ---
 title: 'Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.22'
-description: Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no  [!DNL Quality Patches Tool] (QPT) v1.1.22.
+description: Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no [!DNL Quality Patches Tool] (QPT) v1.1.22.
 feature: Tools and External Services
 role: Admin
 exl-id: 66a7c7bb-e099-44d2-97ee-832ccbce1443
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '153'
 ht-degree: 0%
-
 ---
-
 # Visão geral do [!DNL Quality Patches Tool] (QPT) v1.1.22
 
 Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos patches disponíveis no [!DNL Quality Patches Tool] (QPT) v1.1.22.
