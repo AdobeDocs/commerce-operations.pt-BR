@@ -1,15 +1,13 @@
 ---
-title: A guia [!DNL RabbitMQ]
-description: Saiba mais sobre a guia [!DNL RabbitMQ] do  [!DNL Observation for Adobe Commerce].
+title: A guia [!UICONTROL [!DNL RabbitMQ]]
+description: Saiba mais sobre a guia [!UICONTROL [!DNL RabbitMQ]] do [!DNL Observation for Adobe Commerce].
 exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
-
 ---
-
 # A guia [!UICONTROL [!DNL RabbitMQ]]
 
 A guia **[!UICONTROL [!DNL RabbitMQ]]** tem informações que estão focadas nos sinais [!DNL RabbitMQ].
