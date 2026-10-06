@@ -1,15 +1,13 @@
 ---
 title: A guia [!UICONTROL MySQL]
-description: Saiba mais sobre a guia [!UICONTROL MySQL] do  [!DNL Observation for Adobe Commerce].
+description: Saiba mais sobre a guia [!UICONTROL MySQL] do [!DNL Observation for Adobe Commerce].
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1640'
 ht-degree: 0%
-
 ---
-
 # A guia [!UICONTROL MySQL]
 
 ## [!UICONTROL MySQL% free storage by node]
@@ -59,7 +57,7 @@ O quadro **[!UICONTROL Galera log]** mostra as contagens de sinais específicos 
 * &#39;%member = 1/2%&#39;) como &#39;1of2&#39;
 * &#39;%member = 1/3%&#39;) como &#39;1of3&#39;
 * &#39;%member = 1/1%&#39;) como &#39;1of1&#39;
-* &#39;%\[Nota\] /usr/sbin/mysqld (mysqld 10.%&#39;) como&#39;sql_restart&#39;
+* &#39;%\[Nota\] /usr/sbin/mysqld (mysqld 10.%&#39;) as&#39;sql_restart&#39;
 * &#39;%Quorum: Nenhum nó com estado concluído:%&#39;) como &#39;no_node_count&#39;
 * &#39;%WSREP: Membro 0%&#39;) como &#39;mem_0&#39;
 * &#39;%WSREP: Membro 1.0%&#39;) como &#39;mem_1&#39;
