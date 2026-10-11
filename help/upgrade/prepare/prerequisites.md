@@ -2,14 +2,23 @@
 title: Concluir pré-requisitos
 description: Prepare seu projeto do Adobe Commerce para uma atualização concluindo essas etapas de pré-requisito.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1991'
 ht-degree: 0%
-
 ---
-
 # Concluir os pré-requisitos de atualização
 
 É importante entender o que é necessário para executar o Adobe Commerce. Você deve primeiro revisar os [requisitos do sistema](../../installation/system-requirements.md) para a versão para a qual você pretende atualizar.
@@ -34,7 +43,7 @@ Atualize todos os requisitos e dependências do sistema em seu ambiente. Revise 
 
 >[!NOTE]
 >
->Para projetos Pro da infraestrutura em nuvem do Adobe Commerce, você deve criar um tíquete de [Suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para instalar ou atualizar serviços em ambientes de Preparo e Produção. Indique as mudanças de serviço necessárias e inclua seus arquivos `.magento.app.yaml` e `services.yaml` atualizados e a versão do PHP no tíquete. Pode levar até 48 horas para a equipe de infraestrutura da nuvem atualizar seu projeto. Consulte [Software e serviços com suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
+>Para projetos Pro da infraestrutura em nuvem do Adobe Commerce, você deve criar um tíquete de [Suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para instalar ou atualizar serviços em ambientes de Preparo e Produção. Indique as mudanças de serviço necessárias e inclua seus arquivos `.magento.app.yaml` e `services.yaml` atualizados e a versão do PHP no tíquete. Pode levar até 48 horas para a equipe de infraestrutura da nuvem atualizar seu projeto. Consulte [Software e serviços com suporte](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
 
 ## Verifique se há um mecanismo de pesquisa compatível instalado
 
@@ -360,7 +369,7 @@ Para definir a variável de ambiente:
 
 Por motivos de segurança, o Adobe Commerce exige determinadas permissões no sistema de arquivos. As permissões são diferentes de _[propriedade](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. A propriedade determina quem pode executar ações no sistema de arquivos; as permissões determinam o que o usuário pode fazer.
 
-Os diretórios no sistema de arquivos devem ser graváveis pelo grupo [&#128279;](../../installation/prerequisites/file-system/overview.md) do proprietário do sistema de arquivos.
+Os diretórios no sistema de arquivos devem ser graváveis pelo grupo ](../../installation/prerequisites/file-system/overview.md) do [proprietário do sistema de arquivos.
 
 Para verificar se as permissões do sistema de arquivos estão definidas corretamente, faça logon no servidor de aplicativos ou use o aplicativo gerenciador de arquivos do provedor de hospedagem.
 
