@@ -3,7 +3,7 @@ title: Configurar nginx para cache de verniz
 description: Saiba como configurar seu servidor Web para funcionar com o armazenamento em cache do Varnish para o Adobe Commerce. Conheça os requisitos de configuração e configuração de porta.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 autotag-review: '2026-06-22T21:49:41.837Z'
 TQID: 'https://experienceleague.adobe.com/0vOg86gRkST8CZGhdIESzhld63HQ5IUlO4go-Hgw9Xs'
 product_v2:

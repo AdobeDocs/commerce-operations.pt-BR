@@ -2,7 +2,7 @@
 title: Instalar o Nginx para implantações locais
 description: Saiba como instalar e configurar o servidor Web Nginx para implantações locais do Adobe Commerce. Configure o PHP-FPM e seu host virtual.
 feature: Install, Configuration
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047

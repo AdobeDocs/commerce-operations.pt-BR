@@ -3,7 +3,7 @@ title: Instalar verniz
 description: Saiba mais sobre os requisitos de instalação do Varnish para o armazenamento em cache do Adobe Commerce. Descubra os recursos de instalação e as orientações de configuração.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 autotag-review: '2026-06-22T21:26:58.525Z'
 TQID: 'https://experienceleague.adobe.com/Cvy4Qsi-5Fom1t5wqNlq1SiSs4Bb8-DPsWrGfapWfSc'
 product_v2:

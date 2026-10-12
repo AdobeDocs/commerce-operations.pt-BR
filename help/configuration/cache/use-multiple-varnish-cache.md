@@ -3,7 +3,7 @@ title: Limpeza de cache com várias instâncias de verniz
 description: Saiba como a limpeza do cache funciona com várias instâncias de Verniz no Adobe Commerce. Descubra as práticas recomendadas de configuração e gerenciamento.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
+badgePaas: label="No local" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos locais do Adobe Commerce."
 autotag-review: '2026-06-22T22:16:50.500Z'
 TQID: 'https://experienceleague.adobe.com/GeX8wkpM1rLLWM7jMhP2r-SJ8uV-x7fLXC8WEazZQDo'
 product_v2:
