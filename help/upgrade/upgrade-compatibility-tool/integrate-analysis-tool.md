@@ -1,14 +1,23 @@
 ---
-title: Integrar o  [!DNL Site-Wide Analysis Tool]
-description: Siga estas etapas para recuperar o relatório [!DNL Upgrade Compatibility Tool] do painel [!DNL Site-Wide Analysis Tool] do seu projeto do Adobe Commerce.
+title: Integrar o [!DNL Site-Wide Analysis Tool]
+description: Siga estas etapas para recuperar o relatório do [!DNL Upgrade Compatibility Tool] no painel [!DNL Site-Wide Analysis Tool] do seu projeto do Adobe Commerce.
 exl-id: 1ef37294-a837-47a4-841c-4027087acf12
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '190'
 ht-degree: 0%
-
 ---
-
 # Integrar o [!DNL Site-Wide Analysis Tool]
 
 O [!DNL Site-Wide Analysis Tool] fornece monitoramento, relatórios e recomendações de desempenho em tempo real 24 horas por dia, 7 dias por semana, para garantir a segurança e a operabilidade das instâncias do Adobe Commerce.

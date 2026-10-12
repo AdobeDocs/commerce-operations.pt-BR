@@ -3,20 +3,36 @@ title: Armazenamento remoto para Commerce na infraestrutura em nuvem
 description: Consulte orientações sobre como configurar o armazenamento remoto para o Adobe Commerce na infraestrutura em nuvem.
 feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
-
 ---
-
 # Configurar o armazenamento remoto para a infraestrutura do Commerce na nuvem
 
 A partir do pacote `ece-tools` 2002.1.5, você pode usar uma variável de ambiente para habilitar o módulo de Armazenamento Remoto; no entanto, o módulo de Armazenamento Remoto tem _suporte limitado_ no Adobe Commerce na infraestrutura em nuvem. A Adobe não pode solucionar totalmente os problemas do serviço de adaptador de armazenamento de terceiros.
 
 ## Variável de ambiente
 
-A variável `REMOTE_STORAGE` é usada durante a [fase de implantação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/deploy/process) de um projeto de infraestrutura de nuvem.
+A variável `REMOTE_STORAGE` é usada durante a [fase de implantação](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process) de um projeto de infraestrutura de nuvem.
 
 ### `REMOTE_STORAGE`
 
@@ -40,7 +56,7 @@ stage:
 
 ### Definir a variável com a CLI da nuvem
 
-Defina a variável `REMOTE_STORAGE` como uma [variável de nível de ambiente](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/variable-levels) para que os arquivos não sejam compartilhados entre os ambientes de Produção, de Preparo e de Integração. Definir as variáveis no nível do ambiente proporciona a flexibilidade de usar somente o armazenamento remoto em ambientes selecionados, como excluir o uso do armazenamento remoto no ambiente de integração.
+Defina a variável `REMOTE_STORAGE` como uma [variável de nível de ambiente](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels) para que os arquivos não sejam compartilhados entre os ambientes de Produção, de Preparo e de Integração. Definir as variáveis no nível do ambiente proporciona a flexibilidade de usar somente o armazenamento remoto em ambientes selecionados, como excluir o uso do armazenamento remoto no ambiente de integração.
 
 **Para adicionar a variável de armazenamento remoto usando a CLI da Nuvem**:
 
@@ -89,7 +105,7 @@ Como alternativa, você pode usar a Interface da Web do projeto para adicionar a
 
 ### Usar autenticação opcional
 
-O `key` e o `secret` são opcionais. Ao criar a variável, você pode ocultar o `key` e o `secret` selecionando a opção `sensitive`. Com essa configuração, os valores não ficam visíveis na interface da Web. Consulte [Visibilidade da variável](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility) no _guia do Commerce on Cloud Infrastructure_.
+O `key` e o `secret` são opcionais. Ao criar a variável, você pode ocultar o `key` e o `secret` selecionando a opção `sensitive`. Com essa configuração, os valores não ficam visíveis na interface da Web. Consulte [Visibilidade da variável](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility) no _guia do Commerce on Cloud Infrastructure_.
 
 Se quiser usar um método de autenticação diferente, omita o `key` e o `secret` da configuração JSON,. Configure o método de autenticação alternativo e verifique se o servidor está autorizado para o bucket do S3.
 
@@ -111,7 +127,7 @@ bin/magento remote-storage:sync
 
 Se você optar por usar a solução de armazenamento remoto com um projeto Adobe Commerce na infraestrutura em nuvem, use a orientação do [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) na documentação do _Fastly_ para garantir que o Fastly Image Otimization funcione com o AWS S3.
 
-Esteja preparado com suas [credenciais do Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration#get-fastly-credentials). Em projetos Pro, use SSH para se conectar ao servidor e obter as credenciais do Fastly no arquivo `/mnt/shared/fastly_tokens.txt`. Os ambientes de preparo e produção têm credenciais exclusivas. Você deve obter as credenciais para cada ambiente.
+Esteja preparado com suas [credenciais do Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration#get-fastly-credentials). Em projetos Pro, use SSH para se conectar ao servidor e obter as credenciais do Fastly no arquivo `/mnt/shared/fastly_tokens.txt`. Os ambientes de preparo e produção têm credenciais exclusivas. Você deve obter as credenciais para cada ambiente.
 
 Continue configurando o armazenamento remoto para projetos na nuvem com as seguintes tarefas:
 

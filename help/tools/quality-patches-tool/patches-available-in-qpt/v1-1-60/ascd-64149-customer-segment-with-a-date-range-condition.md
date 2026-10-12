@@ -5,13 +5,30 @@ feature: Customers, Admin Workspace
 role: Admin, Developer
 exl-id: 5423bbd3-75e9-4137-b2d5-3a0ceb3384ad
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
-
 ---
-
 # ACSD-64149: Um segmento de cliente com uma condição [!UICONTROL Date range] pode ser salvo quando apenas uma data é editada
 
 O patch ACSD-64149 corrige o problema em que um segmento de cliente com uma condição de intervalo de datas pode ser salvo quando apenas uma das datas é editada. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 está instalado. A ID do patch é ACSD-64149. Observe que esse problema está programado para ser corrigido no Adobe Commerce 2.4.8.
@@ -28,7 +45,7 @@ O patch ACSD-64149 corrige o problema em que um segmento de cliente com uma cond
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -59,7 +76,7 @@ O seletor **[!UICONTROL Date range]** não deve adicionar hora à data ao editar
 <u>Resultados reais</u>:
 
 * O seletor **[!UICONTROL Date range]** adiciona hora à data:
-   * Uma data tem apenas a data, enquanto a outra tem a data e a hora especificadas.
+  * Uma data tem apenas a data, enquanto a outra tem a data e a hora especificadas.
 * O seguinte erro é exibido nos logs:
 
   ```yaml

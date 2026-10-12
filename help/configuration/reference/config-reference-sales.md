@@ -3,18 +3,38 @@ title: Referência dos caminhos de configuração de vendas
 description: Saiba mais sobre caminhos de configuração de vendas e nomes de variáveis no Adobe Commerce. Descubra as configurações de administrador para check-out, envio e impostos.
 feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
 exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 4fc0a729-4349-5307-bd06-1b4bfbaf5d0c
+    internal-label: Gift
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+  - id: 42e094d8-211b-5acf-b52f-d8979151ab30
+    internal-label: Taxes
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1546'
 ht-degree: 1%
-
 ---
-
 # Referência dos caminhos de configuração de vendas
 
 Esta seção lista nomes de variáveis e caminhos de configuração disponíveis para opções no Administrador em **Lojas** > Configurações > **Configuração** > **Vendas**.
 
-O comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem. Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir definições de configuração](override-config-settings.md#environment-variables). Este tópico _não_ lista [valores confidenciais e específicos do sistema](config-reference-sens.md).
+O comando [`magento app:config:dump` ](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem. Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir definições de configuração](override-config-settings.md#environment-variables). Este tópico _não_ lista [valores confidenciais e específicos do sistema](config-reference-sens.md).
 
 ## Caminhos de vendas
 

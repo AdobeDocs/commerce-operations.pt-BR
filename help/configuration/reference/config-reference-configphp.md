@@ -2,13 +2,22 @@
 title: referência config.php
 description: Saiba mais sobre os valores do arquivo config.php e as seções de configuração do Adobe Commerce. Descubra módulos, escopos, configurações do sistema e práticas recomendadas de implantação.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 1%
-
+ht-degree: 2%
 ---
-
 # referência config.php
 
 O arquivo `config.php` contém as seguintes seções:
@@ -34,7 +43,7 @@ Contém uma matriz de módulos e seus estados. Se o módulo estiver ativado, o v
 ]
 ```
 
-Saiba mais sobre [Módulos](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=pt-BR).
+Saiba mais sobre [Módulos](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
 
 ## escopos
 
@@ -82,7 +91,7 @@ Contém uma matriz de valores de configuração de escopo. Ele tem os seguintes 
 ]
 ```
 
-Saiba mais sobre [Escopos do Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings).
+Saiba mais sobre [Escopos do Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
 
 ## sistema
 

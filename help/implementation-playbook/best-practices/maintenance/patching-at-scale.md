@@ -5,13 +5,23 @@ role: Developer
 feature: Best Practices
 badge: label="Contribuição de Tony Evers, arquiteto técnico sênior, Adobe" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="Contribuição de Tony Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1361'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas para distribuição de patches do Adobe Commerce em escala
 
 Se você gerencia várias instalações do Adobe Commerce, o [patch](../../../upgrade/patches/apply.md) pode ser um processo complexo. _A aplicação centralizada de patches_ é uma prática recomendada para empresas. Ele ajuda a aplicar os patches corretos em todas as instalações do Adobe Commerce. Este tópico explica como obter a distribuição centralizada de patches para todos os tipos de [patches](../../../upgrade/patches/overview.md) do Adobe Commerce.
@@ -22,7 +32,7 @@ Se você gerencia várias instalações do Adobe Commerce, o [patch](../../../up
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -33,8 +43,8 @@ Como há vários tipos diferentes de patches e muitas maneiras de aplicá-los, c
 
 1. **Patches de segurança** fazem parte da base de código estático de uma versão do Adobe Commerce.
 1. **Patches do compositor** por meio de `composer install` e `composer update` plug-ins, como [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
-1. Todos os **patches necessários** incluídos no pacote [Patches da Nuvem para o Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches).
-1. **patches de qualidade** selecionados incluídos em [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
+1. Todos os **patches necessários** incluídos no pacote [Patches da Nuvem para o Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches).
+1. **patches de qualidade** selecionados incluídos em [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
 1. **Patches personalizados** e patches do Suporte da Adobe Commerce no diretório `/m2-hotfixes` em ordem alfabética por nome de patch.
 
    >[!IMPORTANT]
@@ -148,7 +158,7 @@ Para criar o pacote do componente `centralized-patcher`:
    ```
 
 
-O atributo `quality-patches` na amostra de código anterior contém dois patches da [lista completa de patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR), por exemplo.  Esses patches de qualidade são instalados em todos os projetos que exigem o pacote `centralized-patcher` usando o comando `vendor/bin/magento-patches apply`.
+O atributo `quality-patches` na amostra de código anterior contém dois patches da [lista completa de patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html), por exemplo.  Esses patches de qualidade são instalados em todos os projetos que exigem o pacote `centralized-patcher` usando o comando `vendor/bin/magento-patches apply`.
 
 Para fins de teste, você pode criar um exemplo de patch (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
@@ -365,7 +375,7 @@ Assim como com o Adobe Commerce na infraestrutura em nuvem, este artigo presume 
 
 Dessa forma, você pode gerenciar centralmente todos os patches de todas as suas instalações e pode garantir melhor a segurança e a estabilidade das lojas Adobe Commerce. Use os seguintes métodos para verificar o status do patch:
 
-- [Projetos de infraestrutura em nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+- [Projetos de infraestrutura em nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 - [Projetos no local](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Exemplos de código

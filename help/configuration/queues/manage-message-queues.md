@@ -2,13 +2,22 @@
 title: Gerenciar filas de mensagens
 description: Saiba como gerenciar filas de mensagens na linha de comando do Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
-
 ---
-
 # Gerenciar filas de mensagens
 
 Você pode gerenciar filas de mensagens a partir da linha de comando usando tarefas cron ou um gerenciador de processo externo para garantir que os consumidores estejam recuperando mensagens. Isso se aplica a todos os agentes de mensagem compatíveis, incluindo RabbitMQ (AMQP), Apache AtiveMQ Artemis (STOMP) e o adaptador MySQL.
@@ -49,7 +58,7 @@ Você também pode usar um gerenciador de processos, como o [Supervisor](https:/
 
 >[!INFO]
 >
->Se sua loja da Adobe Commerce estiver hospedada na plataforma Cloud, use o [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) para configurar o trabalho cron do `consumers_runner`.
+>Se sua loja da Adobe Commerce estiver hospedada na plataforma Cloud, use o [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) para configurar o trabalho cron do `consumers_runner`.
 
 ### Configuração específica
 
@@ -82,7 +91,7 @@ Edite o arquivo `/app/etc/env.php` para configurar o trabalho cron `consumers_ru
 
   >[!INFO]
   >
-  >Se o armazenamento do Adobe Commerce estiver hospedado na plataforma de nuvem, use o [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#consumers_wait_for_max_messages) para configurar como os consumidores processam mensagens da fila de mensagens.
+  >Se o armazenamento do Adobe Commerce estiver hospedado na plataforma de nuvem, use o [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#consumers_wait_for_max_messages) para configurar como os consumidores processam mensagens da fila de mensagens.
 
   >[!NOTE]
   >

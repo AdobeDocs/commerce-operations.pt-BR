@@ -3,18 +3,32 @@ title: Referência de caminhos de configuração de pagamento
 description: Saiba mais sobre caminhos de configuração de pagamento e valores de método no Adobe Commerce Admin. Descubra as opções de configuração do PayPal, cartão de crédito e gateway de pagamento.
 feature: Configuration, Payments
 exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '5833'
+source-wordcount: '5835'
 ht-degree: 0%
-
 ---
-
 # Referência de caminhos de configuração de pagamento
 
 Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Vendas** > **Métodos de Pagamento**.
 
-O comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem. Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir definições de configuração](override-config-settings.md#environment-variables). Este tópico _Alerta_ lista [valores confidenciais e específicos do sistema](config-reference-sens.md).
+O comando [`magento app:config:dump` ](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem. Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir definições de configuração](override-config-settings.md#environment-variables). Este tópico _Alerta_ lista [valores confidenciais e específicos do sistema](config-reference-sens.md).
 
 As configurações são organizadas ainda mais por método de pagamento.
 

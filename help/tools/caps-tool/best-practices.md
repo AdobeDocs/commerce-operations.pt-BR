@@ -1,13 +1,22 @@
 ---
 title: Guia de práticas recomendadas do [!DNL Adobe Commerce Patching Automation]
 description: Saiba como usar o [!DNL Adobe Commerce Patching Automation] para planejar, validar e aplicar patches com segurança, minimizando o risco de implantação e interrupções de serviço.
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 0%
-
 ---
-
 # Guia de práticas recomendadas do [!DNL Adobe Commerce Patching Automation]
 
 As práticas recomendadas a seguir são essenciais para operações de patch bem-sucedidas e seguras com o [!DNL Adobe Commerce Patching Automation]. Este guia fornece práticas recomendadas abrangentes para operações eficazes de patch, gerenciamento de ambiente e excelência operacional.
@@ -23,11 +32,11 @@ Antes de aplicar patches, verifique se o ambiente está preparado corretamente:
 * **Conta da Adobe Commerce Cloud**
   * Assinatura ativa da Adobe Commerce Cloud
   * Licença válida do Adobe Commerce
-  * [Chaves de autenticação do Composer](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configuradas para acessar o repositório do Adobe Commerce
+  * [Chaves de autenticação do Composer](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configuradas para acessar o repositório do Adobe Commerce
   * Permissões de projeto e ambiente
 
 * **Recursos do ambiente**
-  * O projeto tem a capacidade de criar um ambiente de integração ativo adicional para a operação de patch — consulte [Gerenciar ramificações com o Cloud Console](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/console-branches) para obter informações sobre limites de ambientes ativos
+  * O projeto tem a capacidade de criar um ambiente de integração ativo adicional para a operação de patch — consulte [Gerenciar ramificações com o Cloud Console](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches) para obter informações sobre limites de ambientes ativos
   * Recursos suficientes de armazenamento, CPU e memória
   * Acesso à rede para repositórios Adobe
   * Ambiente pai estável para sincronização

@@ -4,13 +4,23 @@ description: Saiba como transmitir instruções sobre o site do Adobe Commerce p
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
-
 ---
-
 
 # Práticas recomendadas para configurar rastreadores da Web
 
@@ -22,7 +32,7 @@ Este artigo fornece práticas recomendadas para usar arquivos do `robots.txt` e 
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -35,7 +45,7 @@ Um projeto padrão do Adobe Commerce contém uma hierarquia que inclui uma únic
 
 Siga estas práticas recomendadas ao configurar os arquivos `robots.txt` e `sitemap.xml` para vitrines de site único:
 
-- Verifique se o projeto está usando o [`ece-tools`](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package) versão 2002.0.12 ou posterior.
+- Verifique se o projeto está usando o [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package) versão 2002.0.12 ou posterior.
 - Use o aplicativo Administrador para adicionar conteúdo ao arquivo `robots.txt`.
 
   >[!TIP]
@@ -64,12 +74,12 @@ Siga estas práticas recomendadas ao configurar os arquivos `robots.txt` e `site
 
 >[!INFO]
 >
->Consulte [Adicionar o mapa do site e os robôs do mecanismo de pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap) para obter instruções detalhadas.
+>Consulte [Adicionar o mapa do site e os robôs do mecanismo de pesquisa](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap) para obter instruções detalhadas.
 
 
 ### Lojas de vários sites
 
-Você pode configurar e executar várias lojas com uma única implementação do Adobe Commerce na infraestrutura em nuvem. Consulte [Configurar vários sites ou lojas](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites).
+Você pode configurar e executar várias lojas com uma única implementação do Adobe Commerce na infraestrutura em nuvem. Consulte [Configurar vários sites ou lojas](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites).
 
 As mesmas práticas recomendadas para configurar os arquivos `robots.txt` e `sitemap.xml` para [vitrines de site único](#single-site-storefronts) aplicam-se a vitrines de vários sites com duas diferenças importantes:
 
@@ -93,7 +103,7 @@ As mesmas práticas recomendadas para configurar os arquivos `robots.txt` e `sit
 
 ## Adobe Commerce no local
 
-Use o aplicativo de Administração para configurar os arquivos `robots.txt` e `sitemap.xml` para impedir que os bots verifiquem e indexem conteúdo desnecessário (consulte [Robôs do Mecanismo de Pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=pt-BR#search-engine-robots)).
+Use o aplicativo de Administração para configurar os arquivos `robots.txt` e `sitemap.xml` para impedir que os bots verifiquem e indexem conteúdo desnecessário (consulte [Robôs do Mecanismo de Pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)).
 
 >[!TIP]
 >
@@ -103,15 +113,15 @@ Use o aplicativo de Administração para configurar os arquivos `robots.txt` e `
 
 Não exponha o caminho de Administrador no arquivo `robots.txt`. Ter o caminho de administrador exposto é uma vulnerabilidade para hackers no site e perda potencial de dados. Remova o caminho Admin do arquivo `robots.txt`.
 
-Para obter as etapas para editar o arquivo `robots.txt` e remover todas as entradas do caminho de Administrador, consulte [Guia do Usuário de Marketing > SEO e Pesquisa > Robôs do Mecanismo de Pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=pt-BR#search-engine-robots).
+Para obter as etapas para editar o arquivo `robots.txt` e remover todas as entradas do caminho de Administrador, consulte [Guia do Usuário de Marketing > SEO e Pesquisa > Robôs do Mecanismo de Pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
 
 >[!TIP]
 >
->Se precisar de ajuda, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+>Se precisar de ajuda, [envie um tíquete de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Informações adicionais
 
-- [Noções básicas sobre sites, lojas e visualizações de loja](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
-- [Adicionar sites](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Use o Fastly para bloquear o tráfego mal-intencionado em seus sites do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [o robots.txt fornece um erro 404 no Adobe Commerce na infraestrutura em nuvem 2.3.x](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-26885)
+- [Noções básicas sobre sites, lojas e visualizações de loja](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [Adicionar sites](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Use o Fastly para bloquear o tráfego mal-intencionado em seus sites do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [o robots.txt fornece um erro 404 no Adobe Commerce na infraestrutura em nuvem 2.3.x](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26885)

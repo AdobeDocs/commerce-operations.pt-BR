@@ -2,13 +2,22 @@
 title: Configurar vários sites com o Nginx
 description: Siga este tutorial para configurar vários sites com o Nginx.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
-
 ---
-
 # Configurar vários sites com o Nginx
 
 Presumimos que:
@@ -17,7 +26,7 @@ Presumimos que:
 
   Tarefas adicionais podem ser necessárias para implantar vários sites em um ambiente hospedado; verifique com seu provedor de hospedagem para obter mais informações.
 
-  Tarefas adicionais são necessárias para configurar a Adobe Commerce na infraestrutura em nuvem. Após concluir as tarefas discutidas neste tópico, consulte [Configurar vários sites ou lojas](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) no _guia do Commerce na Infraestrutura da Nuvem_.
+  Tarefas adicionais são necessárias para configurar a Adobe Commerce na infraestrutura em nuvem. Após concluir as tarefas discutidas neste tópico, consulte [Configurar vários sites ou lojas](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) no _guia do Commerce na Infraestrutura da Nuvem_.
 
 - Você aceita vários domínios em um arquivo de host virtual ou usa um host virtual por site; os arquivos de configuração de host virtual estão localizados em `/etc/nginx/sites-available`.
 - Você usa o `nginx.conf.sample` fornecido pelo Commerce somente com as modificações discutidas neste tutorial.
@@ -280,7 +289,7 @@ A menos que você tenha um DNS configurado para as URLs dos armazenamentos, é n
 >[!INFO]
 >
 >- Tarefas adicionais podem ser necessárias para implantar vários sites em um ambiente hospedado; verifique com seu provedor de hospedagem para obter mais informações.
->- Tarefas adicionais são necessárias para configurar o Adobe Commerce na infraestrutura em nuvem; consulte [Configurar vários sites ou lojas na nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) no _guia do Commerce na Infraestrutura em Nuvem_.
+>- Tarefas adicionais são necessárias para configurar o Adobe Commerce na infraestrutura em nuvem; consulte [Configurar vários sites ou lojas na nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) no _guia do Commerce na Infraestrutura em Nuvem_.
 
 ### Solução de problemas
 

@@ -3,13 +3,27 @@ title: Configurar bucket do AWS S3 para armazenamento remoto
 description: Configure seu projeto do Commerce para usar o serviço de armazenamento AWS S3 para armazenamento remoto.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
 # Configurar bucket do AWS S3 para armazenamento remoto
 
 O [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3) é um serviço de armazenamento de objetos que oferece escalabilidade, disponibilidade de dados, segurança e desempenho líderes do setor. O serviço AWS S3 usa buckets ou containers para armazenamento de dados. Esta configuração requer que você crie um bucket _privado_. Para o Adobe Commerce na infraestrutura em nuvem, consulte [Configurar armazenamento remoto para a infraestrutura do Commerce na nuvem](cloud-support.md).

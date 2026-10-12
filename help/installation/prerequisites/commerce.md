@@ -2,13 +2,22 @@
 title: Obtenha o software Adobe Commerce
 description: Saiba como obter o software Adobe Commerce usando o Composer, verificar a compatibilidade da extensão e escolher a distribuição correta para instalação.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Obtenha o software Adobe Commerce
 
 Você está entre os 240.000 comerciantes em todo o mundo que confiam em nosso software de comércio eletrônico. Coletamos algumas informações para ajudar você a começar a instalação.
@@ -21,7 +30,7 @@ Verifique a disponibilidade e a compatibilidade das extensões criadas pela Adob
 >
 >As bases de código do Adobe Commerce agora são distribuídas exclusivamente pelo Composer devido a alterações de política. Use o Composer para baixar qualquer uma das versões do Adobe Commerce listadas, pois a base de código não está mais disponível na seção Downloads.
 >
->Para obter mais informações, consulte [Não é possível acessar o demonstrativo de cobrança e baixar a base de código na Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>Para obter mais informações, consulte [Não é possível acessar o demonstrativo de cobrança e baixar a base de código na Adobe Commerce na infraestrutura de nuvem](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Consulte a tabela a seguir para começar a instalar o Adobe Commerce.
 

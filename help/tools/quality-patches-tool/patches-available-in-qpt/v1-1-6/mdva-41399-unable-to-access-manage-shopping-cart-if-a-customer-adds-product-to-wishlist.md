@@ -1,17 +1,31 @@
 ---
 title: 'MDVA-41399: Não é possível acessar o Gerenciar carrinho de compras se um cliente adicionar produto à lista de desejos'
-description: O patch MDVA-41399 resolve o problema em que os usuários administradores não conseguem acessar a página Gerenciar carrinho de compras se um cliente adicionar um produto à lista de desejos. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6 está instalada. A ID do patch é MDVA-41399. Observe que o problema foi corrigido no Adobe Commerce 2.4.2.
+description: O patch MDVA-41399 resolve o problema em que os usuários administradores não conseguem acessar a página Gerenciar carrinho de compras se um cliente adicionar um produto à lista de desejos. Este patch está disponível quando a [Ferramenta de correções de qualidade (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6 está instalada. A ID do patch é MDVA-41399. Observe que o problema foi corrigido no Adobe Commerce 2.4.2.
 feature: Orders, Products, Shopping Cart
 role: Admin
 exl-id: 81a128b5-0c38-4f8f-b297-1f264952d431
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
-
 ---
-
 # MDVA-41399: Não é possível acessar o Gerenciar carrinho de compras se um cliente adicionar produto à lista de desejos
 
 O patch MDVA-41399 resolve o problema em que os usuários administradores não conseguem acessar a página Gerenciar carrinho de compras se um cliente adicionar um produto à lista de desejos. Este patch está disponível quando a [Ferramenta de Patches de Qualidade (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.6 está instalada. A ID do patch é MDVA-41399. Observe que o problema foi corrigido no Adobe Commerce 2.4.2.
@@ -59,7 +73,7 @@ O usuário administrador recebe uma mensagem de erro: *Ocorreu um erro. Consulte
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

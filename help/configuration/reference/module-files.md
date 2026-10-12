@@ -2,13 +2,22 @@
 title: Arquivos de configuração de módulo
 description: Saiba como personalizar módulos usando tipos de configuração no Adobe Commerce. Descubra as práticas recomendadas de gerenciamento de arquivos de configuração e personalização de módulo.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 0%
-
 ---
-
 # Visão geral dos arquivos de configuração do módulo
 
 As responsabilidades do arquivo de configuração `config.xml` usado em versões anteriores do Commerce agora são divididas entre vários arquivos, localizados em vários diretórios de módulo. Vários arquivos de configuração do Commerce são carregados sob demanda somente quando um módulo solicita um tipo de configuração específico.
@@ -104,7 +113,7 @@ A tabela a seguir mostra cada tipo de configuração e o objeto de configuraçã
 | `module.xml` | Define os dados de configuração do módulo e a dependência suave | principal, global | [\Magento\Framework\Module\ModuleList\Loader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Module/ModuleList/Loader.php) |
 | `mview.xml` | [Configuração do MView](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer#mview-configuration) | principal, global | [\Magento\Framework\Mview\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview/Config/Data.php) |
 | `payment.xml` | Configuração do módulo de pagamento | principal, global | [\Magento\Payment\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Config.php) |
-| `persistent.xml` | Arquivo de configuração [Magento_Persistent](https://developer.adobe.com/commerce/php/module-reference/module-persistent) | global | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
+| `persistent.xml` | [Arquivo de configuração Magento_Persistent](https://developer.adobe.com/commerce/php/module-reference/module-persistent) | global | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
 | `pdf.xml` | Configurações do PDF | global | [\Magento\Sales\Model\Order\Pdf\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config/Reader.php) |
 | `product_options.xml` | Fornece configuração de opções de produto | global | [\Magento\Catalog\Model\ProductOptions\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductOptions/Config.php) |
 | `product_types.xml` | Define o tipo de produto | global | [\Magento\Catalog\Model\ProductTypes\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductTypes/Config.php) |

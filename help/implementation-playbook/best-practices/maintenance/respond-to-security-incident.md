@@ -3,13 +3,25 @@ title: Responder a um incidente de segurança
 description: Lidar com incidentes de segurança seguindo as práticas recomendadas para responder e corrigir problemas de segurança que afetam a disponibilidade e o desempenho do site.
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1291'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas para responder a um incidente de segurança
 
 O artigo a seguir resume as práticas recomendadas para responder a um incidente de segurança e corrigir problemas que afetam a disponibilidade, a confiabilidade e o desempenho do site da Adobe Commerce.
@@ -23,7 +35,7 @@ Seguir essas práticas recomendadas pode ajudar a impedir acessos não autorizad
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -63,7 +75,7 @@ No caso infeliz de um compromisso do site, aqui estão algumas recomendações i
 
 A primeira etapa da análise de incidentes é coletar o máximo de fatos possível, o mais rápido possível. Reunir informações sobre o incidente pode ajudar a determinar a possível causa do incidente. A Adobe Commerce fornece as ferramentas abaixo para ajudar na análise de incidentes.
 
-- [Auditoria de Logs de Ações do Administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=pt-BR).
+- [Auditoria de Logs de Ações do Administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
 
   O Relatório de logs de ação exibe um registro detalhado de todas as ações administrativas que estão ativadas para fazer logon. Cada registro recebe o carimbo de data e hora e registra o endereço IP e o nome do usuário. Os detalhes do log incluem dados do usuário administrador e alterações relacionadas que foram feitas durante a ação.
 
@@ -73,9 +85,9 @@ A primeira etapa da análise de incidentes é coletar o máximo de fatos possív
 
   Use a guia **Segurança** da ferramenta para obter uma visão clara dos possíveis problemas de segurança e ajudar a identificar as causas raiz e manter os sites com desempenho ideal.
 
-- Analisar logs com [Logs do New Relic](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)
+- Analisar logs com [Logs do New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)
 
-  Os projetos Pro do Adobe Commerce na infraestrutura em nuvem incluem o serviço [Logs do New Relic](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management). O serviço é pré-configurado para agregar todos os dados de log dos ambientes de preparo e produção para exibi-los em um painel de gerenciamento de log centralizado, onde você pode pesquisar e visualizar dados agregados.
+  Os projetos Pro do Adobe Commerce na infraestrutura em nuvem incluem o serviço [Logs do New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management). O serviço é pré-configurado para agregar todos os dados de log dos ambientes de preparo e produção para exibi-los em um painel de gerenciamento de log centralizado, onde você pode pesquisar e visualizar dados agregados.
 
   Para outros projetos da Commerce, você pode configurar e usar o serviço [Logs do New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) para concluir as seguintes tarefas:
   - Use [consultas New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) para pesquisar dados de log agregados.
@@ -89,17 +101,17 @@ Continue a monitorar de perto o local após o incidente, pois muitos locais ser�
 
 ### Auditoria de contas de usuário Admin
 
-- [Revisar acesso de usuário Administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=pt-BR)—Remova contas antigas, não utilizadas ou suspeitas e alterne senhas para todos os usuários Administradores.
+- [Revisar acesso de usuário Administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)—Remova contas antigas, não utilizadas ou suspeitas e alterne senhas para todos os usuários Administradores.
 
-- [Revisar configurações de segurança do administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=pt-BR) — Verifique se as configurações de segurança do administrador seguem as práticas recomendadas de segurança.
+- [Revisar configurações de segurança do administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) — Verifique se as configurações de segurança do administrador seguem as práticas recomendadas de segurança.
 
-- [Revisar contas de usuário do Adobe Commerce em projetos de infraestrutura em nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/project/user-access)—Remover contas antigas, não utilizadas ou suspeitas e girar senhas para todos os usuários administradores de projetos em nuvem. Verifique se as configurações de segurança da conta estão definidas corretamente.
+- [Revisar contas de usuário do Adobe Commerce em projetos de infraestrutura em nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)—Remover contas antigas, não utilizadas ou suspeitas e girar senhas para todos os usuários administradores de projetos em nuvem. Verifique se as configurações de segurança da conta estão definidas corretamente.
 
-- [Auditoria de chaves SSH](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/secure-connections) para Adobe Commerce na infraestrutura em nuvem — revisão, exclusão e rotação de chaves SSH.
+- [Auditoria de chaves SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) para Adobe Commerce na infraestrutura em nuvem — revisão, exclusão e rotação de chaves SSH.
 
 ### Código de auditoria
 
-- Do Administrador, examine a [configuração de Cabeçalho e Rodapé do HTML](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=pt-BR) em todos os níveis de escopo, incluindo `website` e `store view`. Remova qualquer código JavaScript desconhecido das configurações de scripts e folhas de estilos e do HTML. Reter somente código reconhecido, como trechos de rastreamento.
+- Do Administrador, examine a [configuração de Cabeçalho e Rodapé do HTML](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) em todos os níveis de escopo, incluindo `website` e `store view`. Remova qualquer código JavaScript desconhecido das configurações de scripts e folhas de estilos e do HTML. Reter somente código reconhecido, como trechos de rastreamento.
 
 - Compare a base de código de produção atual com a base de código armazenada no Sistema de controle de versão (VCS).
 

@@ -1,20 +1,29 @@
 ---
-title: Personalizar o  [!DNL Data Migration Tool]
-description: Saiba como personalizar o  [!DNL Data Migration Tool]  para transferir dados criados por extensões entre o Magento 1 e o Magento 2.
+title: Personalizar o [!DNL Data Migration Tool]
+description: Saiba como personalizar o [!DNL Data Migration Tool] para transferir dados criados por extensões entre a Magento 1 e a Magento 2.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '844'
 ht-degree: 0%
-
 ---
-
 # Configurar o [!DNL Data Migration Tool]
 
 Às vezes, o formato e a estrutura dos dados criados por [extensões](https://commercemarketplace.adobe.com//extensions.html) ou o código personalizado são diferentes no Magento 1 e no Magento 2. Use pontos de extensão no [!DNL Data Migration Tool] para migrar esses dados. Se o formato e a estrutura dos dados forem iguais, a ferramenta poderá migrar os dados automaticamente sem a intervenção do usuário.
 
-Durante a migração, a [Etapa do mapa](technical-specification.md#map-step) verifica e compara todas as tabelas do Magento 1 e do Magento 2, incluindo aquelas criadas por extensões. Se as tabelas forem iguais, a ferramenta migrará os dados automaticamente. Se as tabelas forem diferentes, a ferramenta será finalizada e notificará o usuário.
+Durante a migração, a [Etapa do mapa](technical-specification.md#map-step) verifica e compara todas as tabelas da Magento 1 e da Magento 2, incluindo aquelas criadas por extensões. Se as tabelas forem iguais, a ferramenta migrará os dados automaticamente. Se as tabelas forem diferentes, a ferramenta será finalizada e notificará o usuário.
 
 >[!NOTE]
 >
@@ -28,7 +37,7 @@ Na maioria dos casos, a [Etapa do mapa](technical-specification.md#map-step) res
 - Alterar nomes de tabela ou campo com regras de mapeamento
 - Transformar formatos de dados com manipuladores existentes ou um manipulador personalizado
 
-O exemplo a seguir mostra como usar as regras de mapeamento e um manipulador. Este exemplo usa uma extensão hipotética do Magento 1 chamada &quot;GreatBlog&quot; que foi aprimorada para o Magento 2.
+O exemplo a seguir mostra como usar as regras de mapeamento e um manipulador. Esse exemplo usa uma extensão hipotética do Magento 1 chamada &quot;GreatBlog&quot; que foi aprimorada para o Magento 2.
 
 ```xml
 <source>
@@ -72,17 +81,17 @@ O exemplo a seguir mostra como usar as regras de mapeamento e um manipulador. Es
 ```
 
 - Não migre dados desnecessários da tabela de índice `great_blog_index`.
-- A tabela `great_blog_publication` foi renomeada para `great_blog_post` no Magento 2, portanto, os dados são migrados para a nova tabela.
-   - O campo `summary` foi renomeado para `title`, portanto, os dados são migrados para o novo campo.
-   - O campo `priority` foi removido e não existe mais no Magento 2.
-   - Os dados no campo `body` foram alterados e devem ser processados pelo manipulador personalizado: `\Migration\Handler\GreatBlog\NewFormat`.
+- A tabela `great_blog_publication` foi renomeada para `great_blog_post` na Magento 2, portanto, os dados são migrados para a nova tabela.
+  - O campo `summary` foi renomeado para `title`, portanto, os dados são migrados para o novo campo.
+  - O campo `priority` foi removido e não existe mais na Magento 2.
+  - Os dados no campo `body` foram alterados e devem ser processados pelo manipulador personalizado: `\Migration\Handler\GreatBlog\NewFormat`.
 - Um novo recurso de classificação foi desenvolvido para a extensão &quot;GreatBlog&quot; no Magento 2.
-   - Uma nova tabela `great_blog_rating` foi criada.
-   - Um novo campo `great_blog_post.rating` foi criado.
+  - Uma nova tabela `great_blog_rating` foi criada.
+  - Um novo campo `great_blog_post.rating` foi criado.
 
 ### Estender mapeamento em outras etapas
 
-Outras etapas oferecem suporte ao mapeamento, como a [Etapa EAV](technical-specification.md#eav-step) e a Etapa de Atributos do Cliente. Essas etapas migram uma lista predefinida de tabelas do Magento. Por exemplo, suponha que a extensão &quot;GreatBlog&quot; tenha um campo adicional na tabela `eav_attribute` e o nome alterado no Magento 2. Como a tabela é processada pela [Etapa EAV](technical-specification.md#eav-step), as regras de mapeamento devem ser gravadas para o arquivo `map-eav.xml`. Os arquivos `map.xml` e `map-eav.xml` usam o mesmo esquema `map.xsd`, portanto as regras de mapeamento permanecem as mesmas.
+Outras etapas oferecem suporte ao mapeamento, como a [Etapa EAV](technical-specification.md#eav-step) e a Etapa de Atributos do Cliente. Essas etapas migram uma lista predefinida de tabelas da Magento. Por exemplo, suponha que a extensão &quot;GreatBlog&quot; tenha um campo adicional na tabela `eav_attribute` e o nome alterado na Magento 2. Como a tabela é processada pela [Etapa EAV](technical-specification.md#eav-step), as regras de mapeamento devem ser gravadas para o arquivo `map-eav.xml`. Os arquivos `map.xml` e `map-eav.xml` usam o mesmo esquema `map.xsd`, portanto as regras de mapeamento permanecem as mesmas.
 
 ## Principais alterações no formato de dados e na estrutura
 
@@ -98,7 +107,7 @@ Para alterações importantes no formato de dados e na estrutura, crie uma etapa
 
 ### Criar uma etapa personalizada
 
-Usando o mesmo exemplo &quot;GreatBlog&quot;, suponha que a extensão tenha uma tabela no Magento 1, mas foi reprojetada para ter duas tabelas no Magento 2.
+Usando o mesmo exemplo de &quot;GreatBlog&quot;, suponha que a extensão tenha uma tabela na Magento 1, mas foi reprojetada para ter duas tabelas na Magento 2.
 
 No Magento 1, havia uma única tabela `greatblog_post`:
 
@@ -112,7 +121,7 @@ No Magento 1, havia uma única tabela `greatblog_post`:
 | tags      | TEXT     |
 ```
 
-Na Magento 2, uma nova tabela para tags `greatblog_post_tags` foi introduzida:
+No Magento 2, uma nova tabela para tags `greatblog_post_tags` foi introduzida:
 
 ```text
 | Field      | Type     |
@@ -122,7 +131,7 @@ Na Magento 2, uma nova tabela para tags `greatblog_post_tags` foi introduzida:
 | sort_order | SMALLINT |
 ```
 
-A tabela `greatblog_post` do Magento 2 agora tem esta aparência:
+Agora a tabela `greatblog_post` do Magento 2 tem esta aparência:
 
 ```text
 | Field     | Type     |
@@ -406,7 +415,7 @@ class Delta extends \Migration\App\Step\AbstractDelta
 }
 ```
 
-Após a implementação da etapa personalizada fornecida nos exemplos, o sistema retira os dados da única tabela do Magento 1,
+Após a implementação da etapa personalizada fornecida nos exemplos, o sistema extrai dados da única tabela da Magento 1,
 processe-o usando a classe `Vendor\Migration\Step\GreatBlog\Data` e armazene os dados em duas tabelas do Magento 2. Registros novos e alterados são entregues na migração delta usando a classe `Vendor\Migration\Step\GreatBlog\Delta`.
 
 ## Métodos de extensão proibidos

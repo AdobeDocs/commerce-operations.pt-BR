@@ -1,15 +1,29 @@
 ---
 title: A guia [!UICONTROL Summary]
-description: Saiba mais sobre a guia [!UICONTROL Summary] do  [!DNL Observation for Adobe Commerce].
+description: Saiba mais sobre a guia [!UICONTROL Summary] do [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2640'
 ht-degree: 0%
-
 ---
-
 # A guia [!UICONTROL Summary]
 
 A guia [!UICONTROL Summary] do [!DNL Observation for Adobe Commerce] destina-se a ver rapidamente alguns dos problemas enfrentados pelos sites para ajudá-lo a resolver automaticamente ou identificar possíveis causas raiz de problemas do site. As guias adicionais fornecem informações mais detalhadas sobre os serviços de componentes, banco de dados, infraestrutura e estados do processo.
@@ -60,7 +74,7 @@ O quadro **[!UICONTROL Swap memory free in bytes]** exibe, por nó, a quantidade
 
 ![Percentual de CPU por host](../../assets/tools/cpu-percent-by-host.jpg)
 
-A agregação de todos os ambientes e nós é exibida no quadro **[!UICONTROL CPU % by host]**. Você deve desmarcar os ambientes de não produção. Observe também quaisquer instâncias em que todos os nós do ambiente de produção não estejam presentes. Para obter mais dicas sobre alta utilização do CPU, consulte [Solucionar problemas de desempenho usando o New Relic no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=pt-BR).
+A agregação de todos os ambientes e nós é exibida no quadro **[!UICONTROL CPU % by host]**. Você deve desmarcar os ambientes de não produção. Observe também quaisquer instâncias em que todos os nós do ambiente de produção não estejam presentes. Para obter mais dicas sobre alta utilização do CPU, consulte [Solucionar problemas de desempenho usando o New Relic no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -72,7 +86,7 @@ O **[!UICONTROL Alerts during timeframe]** exibe todos os alertas, incluindo o [
 
 ![uso do CPU](../../assets/tools/cpu-usage.jpg)
 
-Se o quadro **[!UICONTROL CPU Usage]** estiver em branco, isso indica que o aplicativo de infraestrutura [!DNL New Relic] não está habilitado. Se seu site está no Starter, você não vê essas informações. Se o seu site for Pro, abra um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para habilitar o [!DNL New Relic Infrastructure] para o seu site.
+Se o quadro **[!UICONTROL CPU Usage]** estiver em branco, isso indica que o aplicativo de infraestrutura [!DNL New Relic] não está habilitado. Se seu site está no Starter, você não vê essas informações. Se o seu site for Pro, abra um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para habilitar o [!DNL New Relic Infrastructure] para o seu site.
 
 ## [!UICONTROL Average Response Time]
 
@@ -383,10 +397,10 @@ O quadro **[!UICONTROL Order transactions (default?)]** procura transações `re
 * &#39;%all_shards failed%&#39; como &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39; como &#39;no_alive_nodes&#39;
 * &#39;%PHP Erro fatal: Erro não detectado: Parâmetros incorretos para Elasticsearch%&#39; como &#39;error_param&#39;
-* &#39;%Você pode corrigir esse problema atualizando o serviço Elasticsearch na infraestrutura do Magento Cloud para a versão%&#39; como &#39;ver_err&#39;
+* &#39;%Você pode corrigir esse problema atualizando o serviço Elasticsearch na infraestrutura da Magento Cloud para a versão%&#39; como &#39;ver_err&#39;
 * Status de integridade de &#39;%cluster alterado de \[YELLOW\] para \[RED\] (motivo:%&#39; como &#39;yel_red&#39;
 * &#39;%No space left on device%&#39; como &#39;no_space&#39;
-* &#39;% Falha ao executar &lbrack;SearchRequest&lbrace;searchType=%&#39; as &#39;failed_query&#39;
+* &#39;% Falha ao executar [SearchRequest{searchType=%&#39; as &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

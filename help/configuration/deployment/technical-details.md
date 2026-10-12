@@ -2,13 +2,22 @@
 title: Detalhes técnicos
 description: Leia sobre os detalhes técnicos da implantação de pipeline, os tipos de configurações e os fluxos de trabalho recomendados.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1282'
 ht-degree: 0%
-
 ---
-
 # Detalhes técnicos
 
 Este tópico discute detalhes de implementação técnica sobre a implantação de pipeline no Commerce 2.2 e versões posteriores. As melhorias podem ser divididas nas seguintes áreas:
@@ -44,7 +53,7 @@ Defina a configuração compartilhada no Administrador em seu sistema de desenvo
 
 A configuração específica do sistema é armazenada em `app/etc/env.php`, que deve _não_ estar no controle de origem.
 
-Defina a configuração específica do sistema no Admin em seu sistema de desenvolvimento (ou Adobe Commerce na integração da infraestrutura em nuvem) e grave a configuração em `env.php` usando o comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md).
+Defina a configuração específica do sistema no Admin em seu sistema de desenvolvimento (ou Adobe Commerce na integração da infraestrutura em nuvem) e grave a configuração em `env.php` usando o comando [`magento app:config:dump` ](../cli/export-configuration.md).
 
 Este comando também grava configurações confidenciais em `env.php`.
 
@@ -69,16 +78,16 @@ O Administrador exibe o seguinte comportamento enquanto está no modo de produç
 - Não é possível ativar ou desativar os tipos de cache no Administrador
 - As configurações do desenvolvedor não estão disponíveis (**Lojas** > Configurações > **Configuração** > Avançado > **Desenvolvedor**), incluindo:
 
-   - Reduza CSS, JavaScript e HTML
-   - Mesclar CSS e JavaScript
-   - Compilação LESS do lado do servidor ou do lado do cliente
-   - Traduções integradas
-   - Conforme discutido anteriormente, qualquer definição de configuração em `config.php` ou `env.php` está bloqueada e não pode ser editada no Administrador.
-   - Você pode alterar a localidade do administrador somente para idiomas usados por temas implantados
+  - Reduza CSS, JavaScript e HTML
+  - Mesclar CSS e JavaScript
+  - Compilação LESS do lado do servidor ou do lado do cliente
+  - Traduções integradas
+  - Conforme discutido anteriormente, qualquer definição de configuração em `config.php` ou `env.php` está bloqueada e não pode ser editada no Administrador.
+  - Você pode alterar a localidade do administrador somente para idiomas usados por temas implantados
 
-     A figura a seguir mostra um exemplo da lista **Configuração da Conta** > **Localidade da Interface** no Administrador mostrando apenas duas localidades implantadas:
+    A figura a seguir mostra um exemplo da lista **Configuração da Conta** > **Localidade da Interface** no Administrador mostrando apenas duas localidades implantadas:
 
-     ![Você pode alterar a localidade do Administrador somente para localidades implantadas](../../assets/configuration/split-deploy-admin-locale.png)
+    ![Você pode alterar a localidade do Administrador somente para localidades implantadas](../../assets/configuration/split-deploy-admin-locale.png)
 
 - Não é possível alterar as configurações de local de nenhum escopo usando o Administrador.
 
@@ -88,7 +97,7 @@ O Administrador exibe o seguinte comportamento enquanto está no modo de produç
 
 ## Instalar e remover o cron
 
-Na versão 2.2, pela primeira vez, ajudamos você a configurar seu trabalho cron fornecendo o comando [`magento cron:install` &#x200B;](../cli/configure-cron-jobs.md). Este comando configura um crontab como o usuário que executa o comando.
+Na versão 2.2, pela primeira vez, ajudamos você a configurar seu trabalho cron fornecendo o comando [`magento cron:install` ](../cli/configure-cron-jobs.md). Este comando configura um crontab como o usuário que executa o comando.
 
 Além disso, você pode remover o crontab usando o comando `magento cron:remove`.
 

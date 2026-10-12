@@ -1,17 +1,34 @@
 ---
-title: 'ACSD-52831: Não é possível colocar ordens de cotação negociáveis quando [!DNL Google reCAPTCHA v3 Invisible] habilitado'
-description: Aplique o patch ACSD-52831 para corrigir o problema do Adobe Commerce em que você não pode fazer pedidos de cotação negociáveis quando o  [!DNL Google reCAPTCHA v3 Invisible]  está habilitado.
+title: 'ACSD-52831: Não é possível colocar ordens de cotação negociáveis quando [!DNL Google reCAPTCHA v3 Invisible] está habilitado'
+description: Aplique o patch ACSD-52831 para corrigir o problema do Adobe Commerce em que você não pode fazer pedidos de cotação negociáveis quando [!DNL Google reCAPTCHA v3 Invisible] está habilitado.
 feature: Quotes, B2B, Checkout
 role: Admin
 exl-id: fa09e41f-f6c3-4cc7-a814-0e1ac5e9ea2e
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 792a7e9b-6519-5e99-a913-56c3dd2408da
+    internal-label: Quotes
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '369'
 ht-degree: 0%
-
 ---
-
 # ACSD-52831: Não é possível colocar ordens de cotação negociáveis quando [!DNL Google reCAPTCHA v3 Invisible] está habilitado
 
 O patch ACSD-52831 corrige o problema em que você não consegue fazer pedidos de cota negociáveis quando [!DNL Google reCAPTCHA v3 Invisible] está habilitado. Este patch está disponível quando o [!DNL Quality Patches Tool (QPT)] 1.1.35 está instalado. A ID do patch é ACSD-52831. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.7.
@@ -28,7 +45,7 @@ O patch ACSD-52831 corrige o problema em que você não consegue fazer pedidos d
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões do [!DNL Quality Patches Tool]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -54,7 +71,7 @@ Você recebeu o erro *Falha na validação do reCAPTCHA. Tente novamente*.
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
@@ -64,4 +81,4 @@ Para saber mais sobre [!DNL Quality Patches Tool], consulte:
 * [Verifique se há patch disponível para o problema do Adobe Commerce usando o  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!UICONTROL Quality Patches Tool].
 
 
-Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no guia [!DNL Quality Patches Tool].
+Para obter informações sobre outros patches disponíveis no QPT, consulte [[!DNL Quality Patches Tool]: Pesquisar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no guia [!DNL Quality Patches Tool].

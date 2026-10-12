@@ -2,13 +2,22 @@
 title: Modos de aplicação
 description: O aplicativo Commerce pode operar em diferentes modos, dependendo das suas necessidades. Exibir uma lista detalhada dos modos de aplicação disponíveis.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
-
 ---
-
 # Modos de aplicação
 
 Você pode executar o aplicativo Commerce em qualquer um dos _modos_ a seguir:
@@ -26,7 +35,7 @@ Consulte [Definir o modo de operação](../cli/set-mode.md) para saber como alte
 
 Devido ao sistema de arquivos somente leitura, há uma restrição estrita contra a alteração dos modos em ambientes de nuvem remotos e ele não pode ser substituído pelo Suporte da Adobe Commerce. Não tente alterar os modos modificando o arquivo `app/etc/env.php` porque o pacote `ece-tools` substitui o arquivo com base em várias fontes de configuração.
 
-A infraestrutura do Adobe Commerce na nuvem executa automaticamente o aplicativo no modo de _manutenção_ durante uma implantação, o que coloca o site offline até que a implantação seja concluída. Caso contrário, o aplicativo permanecerá no modo de _produção_. Consulte [Processo de implantação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/deploy/process#deploy-phase) no _guia do Commerce on Cloud Infrastructure_.
+A infraestrutura do Adobe Commerce na nuvem executa automaticamente o aplicativo no modo de _manutenção_ durante uma implantação, o que coloca o site offline até que a implantação seja concluída. Caso contrário, o aplicativo permanecerá no modo de _produção_. Consulte [Processo de implantação](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process#deploy-phase) no _guia do Commerce on Cloud Infrastructure_.
 
 Se você usa o Cloud Docker para Commerce como uma ferramenta de desenvolvimento, é possível implantar seu projeto de infraestrutura em nuvem em um ambiente do Docker no modo _desenvolvedor_, mas o desempenho é mais lento devido a operações adicionais de sincronização de arquivos. Consulte [Implantar o ambiente do Docker](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) no _Guia do Cloud Docker for Commerce_.
 
@@ -78,7 +87,7 @@ O modo de _manutenção_ limita ou impede o acesso a um site durante tarefas de 
 
 Você pode criar uma [página de manutenção personalizada](../../upgrade/troubleshooting/maintenance-mode-options.md), habilitar e desabilitar manualmente o modo de manutenção e configurar o modo de manutenção para permitir que os visitantes de endereços IP autorizados vejam o armazenamento normalmente. Consulte [habilitar e desabilitar o modo de manutenção](../../installation/tutorials/maintenance-mode.md) no _Guia de Instalação_.
 
-Se você estiver usando o Commerce na infraestrutura em nuvem, o aplicativo do Commerce será executado no modo de manutenção durante a fase de implantação. Quando a implantação é concluída com sucesso, o aplicativo do Commerce volta a ser executado no modo de produção. Consulte [Ganchos de implantação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices#phase-5%3A-deployment-hooks) no _guia do Commerce on Cloud Infrastructure_.
+Se você estiver usando o Commerce na infraestrutura em nuvem, o aplicativo do Commerce será executado no modo de manutenção durante a fase de implantação. Quando a implantação é concluída com sucesso, o aplicativo do Commerce volta a ser executado no modo de produção. Consulte [Ganchos de implantação](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices#phase-5%3A-deployment-hooks) no _guia do Commerce on Cloud Infrastructure_.
 
 No modo de manutenção:
 

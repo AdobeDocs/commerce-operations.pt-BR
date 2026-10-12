@@ -2,21 +2,30 @@
 title: Configurar vários sites, lojas e visualizações de loja no Administrador
 description: Configure sites, lojas e visualizações de loja adicionais no Administrador do Commerce.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
-
 ---
-
 # Configurar várias exibições no Administrador
 
 Esta tarefa requer que você crie uma categoria raiz (e categorias adicionais, se desejado) para cada loja. As tarefas discutidas neste tópico fornecem uma maneira de configurar várias lojas. Para obter informações adicionais, consulte os seguintes recursos no Guia do usuário do Commerce:
 
-- [Categorias](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/categories)
-- [Adicionar sites](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Armazenar URLs](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [Conteúdo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/content-menu)
+- [Categorias](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [Adicionar sites](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Armazenar URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Conteúdo](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +43,7 @@ Para criar uma categoria raiz:
 1. No campo **Nome da Categoria**, digite um nome exclusivo para identificar esta categoria.
 1. Verifique se a opção Habilitar categoria está definida como **Sim**.
 
-   Para obter informações sobre as outras opções desta página, consulte [Categorias raiz](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/category-root).
+   Para obter informações sobre as outras opções desta página, consulte [Categorias raiz](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
 
    A figura a seguir mostra um exemplo.
 
@@ -131,7 +140,7 @@ O Commerce oferece a opção de adicionar o código da loja ao URL base do site,
 
 Isso evita que o `index.php` e o `.htaccess` fiquem fora de sincronia com a base de código do Commerce em atualizações futuras.
 
-Consulte o [Guia do Usuário do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-urls).
+Consulte o [Guia do Usuário do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 Para adicionar o código da loja ao URL base:
 

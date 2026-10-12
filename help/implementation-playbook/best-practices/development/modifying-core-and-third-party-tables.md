@@ -3,15 +3,25 @@ title: Práticas recomendadas para modificar tabelas de banco de dados
 description: Saiba como e quando modificar tabelas de banco de dados do Adobe Commerce e de terceiros.
 role: Developer
 feature: Best Practices
-last-substantial-update: 2022-11-15T00:00:00Z
+last-substantial-update: 2022-11-15T00:00:00.000Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1591'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas para modificar tabelas de banco de dados
 
 Este artigo fornece práticas recomendadas para modificar tabelas de banco de dados criadas por [!DNL Adobe Commerce] ou módulos de terceiros. Entender quando e como modificar tabelas com eficiência ajuda a garantir a viabilidade e a estabilidade a longo prazo de sua plataforma de comércio.
@@ -36,7 +46,7 @@ Essa situação exigiria que o banco de dados fosse migrado para um servidor, of
 
 Outra opção relacionada para manter os dados externos para o comércio, mas permitir que você os use em tempo real, seria aproveitar outras ferramentas, como o GraphQL mesh. Essa opção combina diferentes fontes de dados e as retorna como uma única resposta.
 
-Por exemplo, você pode `stitch` agrupar pedidos antigos de um banco de dados externo, talvez o site antigo do Magento 1 que está descontinuado. Em seguida, usando a malha do GraphQL, mostre-as como parte do histórico de pedidos dos clientes. Esses pedidos antigos podem ser combinados com os pedidos do seu ambiente [!DNL Adobe Commerce] atual.
+Por exemplo, você pode `stitch` agrupar pedidos antigos de um banco de dados externo, talvez do antigo site da Magento 1 que está descontinuado. Em seguida, usando a malha do GraphQL, mostre-as como parte do histórico de pedidos dos clientes. Esses pedidos antigos podem ser combinados com os pedidos do seu ambiente [!DNL Adobe Commerce] atual.
 
 Para obter mais informações sobre como usar a malha de API com o GraphQL, consulte [O que é malha de API](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}) e [Gateway do GraphQL Mesh](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
@@ -54,7 +64,7 @@ Dois exemplos de locais de armazenamento são tabelas de banco de dados e [!DNL 
 
 Como desenvolvedor, é vital sempre considerar o uso de ferramentas fora do seu ambiente [!DNL Adobe Commerce], como a malha do GraphQL e o Adobe App Builder. Essas ferramentas podem ajudar você a reter o acesso aos dados, mas não têm impacto no aplicativo principal de comércio ou em suas tabelas de banco de dados subjacentes. Com essa abordagem, você expõe seus dados por meio de uma API. Em seguida, adicione uma fonte de dados à configuração do App Builder. Usando o GraphQL Mesh, você pode combinar essas fontes de dados e produzir uma única resposta, como mencionado em [dados herdados](#legacy-data).
 
-Para obter detalhes adicionais sobre a malha do GraphQL, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obter informações sobre o Adobe App Builder, consulte [Introdução ao App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=pt-BR){target="_blank"}.
+Para obter detalhes adicionais sobre a malha do GraphQL, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obter informações sobre o Adobe App Builder, consulte [Introdução ao App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Modificação de uma tabela principal ou de terceiros
 
@@ -73,7 +83,7 @@ A Adobe recomenda seguir estas etapas quando você adiciona uma coluna a uma tab
 
    Por exemplo: `app/code/YourCompany/Customer`
 
-1. Crie os arquivos apropriados para habilitar o módulo (consulte [Criar um módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=pt-BR){target="_blank"}.
+1. Crie os arquivos apropriados para habilitar o módulo (consulte [Criar um módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Crie um arquivo chamado `db_schema.xml` na pasta `etc` e faça as alterações apropriadas.
 
@@ -155,7 +165,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Localizar tabelas MySQL grandes
 
-Para identificar as tabelas grandes, conecte-se ao banco de dados conforme descrito no artigo [Conectar-se ao banco de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) e execute o comando a seguir. Use `project_id` para o ambiente de produção. Para ambientes de preparo, use `[project_id]_stg`, `[project_id]_stg2`.
+Para identificar as tabelas grandes, conecte-se ao banco de dados conforme descrito no artigo [Conectar-se ao banco de dados](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) e execute o comando a seguir. Use `project_id` para o ambiente de produção. Para ambientes de preparo, use `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

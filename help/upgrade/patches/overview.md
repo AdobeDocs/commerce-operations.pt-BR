@@ -2,13 +2,22 @@
 title: Como funcionam os patches
 description: Saiba mais sobre os diferentes tipos de patches para o Adobe Commerce e como eles funcionam.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
-
 ---
-
 # Como funcionam os patches
 
 >[!WARNING]
@@ -43,7 +52,7 @@ Você pode encontrar hotfixes na [Central de Segurança](https://magento.com/sec
 
 Patches individuais contêm correções de qualidade de baixo impacto para um problema específico. Essas correções são aplicadas à versão secundária com suporte mais recente (por exemplo, 2.4.x), mas podem estar ausentes da versão secundária com suporte anterior (por exemplo, 2.3.x). O Adobe lança patches individuais conforme necessário.
 
-Use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"} para aplicar patches individuais.
+Use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} para aplicar patches individuais.
 
 >[!NOTE]
 >
@@ -92,10 +101,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 Você pode aplicar patches usando qualquer um dos métodos a seguir:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Linha de comando](/help/upgrade/patches/apply.md#command-line)
 - [Compositor](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Para aplicar um patch a um projeto do Adobe Commerce na infraestrutura em nuvem, consulte [Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no _guia do Commerce na nuvem_.
+>Para aplicar um patch a um projeto do Adobe Commerce na infraestrutura em nuvem, consulte [Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no _guia do Commerce na nuvem_.

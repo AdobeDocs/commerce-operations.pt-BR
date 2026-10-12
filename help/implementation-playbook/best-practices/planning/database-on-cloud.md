@@ -4,13 +4,25 @@ description: Saiba como definir configurações de banco de dados e aplicativo p
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas para configuração de banco de dados
 
 Saiba mais sobre as práticas recomendadas para melhorar o desempenho do banco de dados e trabalhar de forma eficiente com o banco de dados ao implantar o Adobe Commerce na infraestrutura em nuvem.
@@ -59,9 +71,9 @@ Para determinar qual mecanismo de pesquisa está em uso no momento, execute o se
 
 Para obter instruções de configuração, consulte o Guia do desenvolvedor do Adobe Commerce na nuvem:
 
-- [Configurar o serviço OpenSearch](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
+- [Configurar o serviço OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [Configurar o serviço Elasticsearch](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
+- [Configurar o serviço Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## Evitar acionadores personalizados
 
@@ -76,14 +88,14 @@ Para saber mais sobre alternativas ao uso de acionadores personalizados, consult
 
 ## Atualizar [!DNL ECE-Tools] para a versão 2002.0.21 ou superior {#ece-tools-version}
 
-Para evitar possíveis problemas com bloqueios do cron, atualize as ECE-Tools para a versão 2002.0.21 ou superior. Para obter instruções, consulte [Atualizar `ece-tools` versão](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) na documentação do desenvolvedor.
+Para evitar possíveis problemas com bloqueios do cron, atualize as ECE-Tools para a versão 2002.0.21 ou superior. Para obter instruções, consulte [Atualizar `ece-tools` versão](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) na documentação do desenvolvedor.
 
 ## Alternar modo indexador com segurança
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 Alternar indexadores gera instruções [!DNL data definition language] (DDL) para criar disparadores que podem causar bloqueios de banco de dados. Você pode evitar esse problema colocando o site no modo de manutenção e desabilitando os trabalhos cron antes de alterar a configuração.
-Para obter instruções, consulte [Configurar indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=pt-BR#configure-indexers-1) no *Guia de Configuração do Adobe Commerce*.
+Para obter instruções, consulte [Configurar indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) no *Guia de Configuração do Adobe Commerce*.
 
 ## Não executar instruções DDL na Produção
 
@@ -95,7 +107,7 @@ Se você precisar executar uma instrução DDL, coloque o site no modo de manute
 
 Ative o arquivamento de pedidos do administrador para reduzir o espaço necessário para tabelas de vendas à medida que os dados de pedidos aumentam. O arquivamento economiza espaço em disco do MySQL e melhora o desempenho do check-out.
 
-Consulte [Habilitar arquivamento](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=pt-BR) na documentação do Adobe Commerce Merchant.
+Consulte [Habilitar arquivamento](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) na documentação do Adobe Commerce Merchant.
 
 ## Informações adicionais
 

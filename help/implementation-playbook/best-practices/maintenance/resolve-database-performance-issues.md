@@ -4,13 +4,25 @@ description: Saiba como corrigir problemas de banco de dados que reduzem o desem
 role: Developer, Admin
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
-
 ---
-
 <!--Consider moving this topic to the Maintenance section-->
 
 # Práticas recomendadas para resolver problemas de desempenho do banco de dados
@@ -38,7 +50,7 @@ Você pode usar o MySQL para identificar e resolver consultas de longa execuçã
 Se seu projeto do Adobe Commerce for implantado na arquitetura Pro, você poderá usar o Percona Toolkit para analisar consultas.
 
 1. Execute o comando `pt-query-digest --type=slowlog` nos logs de consulta lenta do MySQL.
-   * Para encontrar a localização dos logs de consulta lenta, consulte **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs) em nossa documentação do desenvolvedor.
+   * Para encontrar a localização dos logs de consulta lenta, consulte **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs) em nossa documentação do desenvolvedor.
    * Consulte a documentação do [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest).
 1. Com base nos problemas encontrados, siga as etapas para corrigir a consulta para que ela seja executada mais rapidamente.
 

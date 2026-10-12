@@ -2,13 +2,22 @@
 title: Referência de informações pessoais do cliente (versão 1.x)
 description: Saiba mais sobre os mapeamentos de entidade de banco de dados e fluxo de dados para informações pessoais do cliente no Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%
-
 ---
-
 # Referência de informações pessoais do cliente (versão 1.x)
 
 >[!NOTE]
@@ -54,7 +63,7 @@ O Magento 1 armazena informações do cliente em tabelas de clientes, vendas e o
 
 ### Dados do cliente
 
-O Magento 1 armazena informações do cliente nas tabelas `customer_entity` e `customer_address_entity`. Ambas as tabelas têm várias tabelas de referência que podem conter atributos personalizados do cliente.
+A Magento 1 armazena informações do cliente nas tabelas `customer_entity` e `customer_address_entity`. Ambas as tabelas têm várias tabelas de referência que podem conter atributos personalizados do cliente.
 
 #### `customer_entity` e tabelas de referência
 

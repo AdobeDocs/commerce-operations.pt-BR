@@ -2,13 +2,22 @@
 title: Fazer backup e reverter o sistema de arquivos, a mídia e o banco de dados
 description: Siga estas etapas para fazer backup e restaurar seu aplicativo do Adobe Commerce.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
-
 ---
-
 # Fazer backup e reverter o sistema de arquivos, a mídia e o banco de dados
 
 Esse comando permite fazer backup:
@@ -23,7 +32,7 @@ Depois do backup, você pode [reverter](#rollback) mais tarde.
 
 >[!TIP]
 >
->Para obter informações sobre projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Gerenciamento de instantâneos e backup](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) no _Guia da nuvem_.
+>Para obter informações sobre projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Gerenciamento de instantâneos e backup](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) no _Guia da nuvem_.
 
 ## Habilitar backups
 

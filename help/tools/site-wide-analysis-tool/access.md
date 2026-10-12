@@ -2,18 +2,27 @@
 title: Como acessar [!DNL Site-Wide Analysis Tool]
 description: Saiba como acessar o painel da Ferramenta de análise do site no Painel de administração do Adobe Commerce. Descubra as permissões de usuário e os requisitos de função.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
-
 ---
-
 # Como acessar o [!DNL Site-Wide Analysis Tool]
 
 Você pode acessar o painel [!DNL Site-Wide Analysis Tool] no [!UICONTROL Admin Panel] da sua loja.
 
-O serviço [!DNL Site-Wide Analysis Tool] está disponível no [modo de produção](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/developer-tools#operation-modes) para [!UICONTROL Admin] usuários com permissão para acessar os [recursos de função](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/user-accounts/permissions-user-roles) do usuário.
+O serviço [!DNL Site-Wide Analysis Tool] está disponível no [modo de produção](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) para [!UICONTROL Admin] usuários com permissão para acessar os [recursos de função](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) do usuário.
 
 >[!NOTE]
 >
@@ -31,7 +40,7 @@ O serviço [!DNL Site-Wide Analysis Tool] está disponível no [modo de produç�
 
 ### Etapa 1: verificar permissões
 
-Verifique se a conta de usuário [!UICONTROL Admin] tem permissão para acessar [!DNL Site-Wide Analysis Tool] por meio de sua [função de usuário atribuída](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
+Verifique se a conta de usuário [!UICONTROL Admin] tem permissão para acessar [!DNL Site-Wide Analysis Tool] por meio de sua [função de usuário atribuída](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
 
 >[!IMPORTANT]
 >
@@ -50,7 +59,7 @@ Para a função personalizada que precisa de acesso de [!DNL Site-Wide Analysis 
 
 >[!NOTE]
 >
->Se você tiver verificado que a conta de usuário tem permissão para acessar o [!DNL Site-Wide Analysis Tool] e o usuário receber um erro 403 ao tentar acessar a ferramenta a partir do [!UICONTROL Admin], sua instância do Adobe Commerce na infraestrutura em nuvem poderá ter o controle de acesso HTTP habilitado. O Painel [!DNL Site-Wide Analysis Tool] NÃO é suportado se a Autenticação HTTP estiver habilitada. Para obter mais informações sobre como resolver esse problema, consulte nosso [Artigo de suporte](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-26852).
+>Se você tiver verificado que a conta de usuário tem permissão para acessar o [!DNL Site-Wide Analysis Tool] e o usuário receber um erro 403 ao tentar acessar a ferramenta a partir do [!UICONTROL Admin], sua instância do Adobe Commerce na infraestrutura em nuvem poderá ter o controle de acesso HTTP habilitado. O Painel [!DNL Site-Wide Analysis Tool] NÃO é suportado se a Autenticação HTTP estiver habilitada. Para obter mais informações sobre como resolver esse problema, consulte nosso [Artigo de suporte](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26852).
 
 ### Etapa 2: acessar [!DNL Site-Wide Analysis Tool]
 

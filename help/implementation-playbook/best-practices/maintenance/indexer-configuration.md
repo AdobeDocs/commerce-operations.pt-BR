@@ -4,7 +4,21 @@ description: Mantenha e otimize o desempenho do site seguindo as práticas recom
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 29168544e3a33b874b104f308bd53cb475ac2638
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -15,7 +29,7 @@ Para otimizar e manter o desempenho do site, revise e atualize a configuração 
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local
@@ -33,7 +47,7 @@ Ter um grande armazenamento com vários Administradores trabalhando no back-end 
 Para maximizar o desempenho do site, siga estas práticas recomendadas para indexação:
 
 - Revise a configuração do índice.
-- Defina os indexadores como _[!UICONTROL Update on Schedule]_&#x200B;para sites grandes e sites com atualizações frequentes e tráfego intenso. Consulte [Gerenciamento de Índice](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Defina os indexadores como _[!UICONTROL Update on Schedule]_para sites grandes e sites com atualizações frequentes e tráfego intenso. Consulte [Gerenciamento de Índice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Siga as [práticas recomendadas de desempenho](../../../performance/configuration.md) para gerenciar índices.
 
 >[!IMPORTANT]
@@ -46,5 +60,5 @@ Para maximizar o desempenho do site, siga estas práticas recomendadas para inde
 ## Informações adicionais
 
 - [Gerenciamento de índice para usuários administradores](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Gerenciamento de índice usando a CLI do Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=pt-BR)
+- [Gerenciamento de índice usando a CLI do Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Visão geral de indexação para desenvolvedores](https://developer.adobe.com/commerce/php/development/components/indexing/)

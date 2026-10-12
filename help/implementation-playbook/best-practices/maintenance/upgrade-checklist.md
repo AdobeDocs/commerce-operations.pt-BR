@@ -4,13 +4,23 @@ description: Saiba como criar e usar uma lista de verificação de atualização
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas da lista de verificação de atualização
 
 Use essa lista de verificação durante suas conversas anuais e trimestrais com a equipe de comércio eletrônico. Muitas empresas trabalham com orçamentos e roteiros anuais. É fundamental, durante essas discussões anuais, que você fale sobre a saúde, a direção e a estratégia de atualização da sua plataforma para o ano, juntamente com como ela se encaixa nas metas gerais e KPIs da empresa. Durante as conversas trimestrais, verifique se o plano anual criado ainda está alinhado à sua situação atual ou dinâmico, se não estiver. A meta desta Lista de verificação do plano de atualização é ajudar você a planejar e agendar atualizações do Adobe Commerce para garantir um processo de atualização bem-sucedido durante o ano. Esta lista de verificação deve ser usada pelos seguintes públicos-alvo para planejamento anual e revisão trimestral:
@@ -25,7 +35,7 @@ Use essa lista de verificação durante suas conversas anuais e trimestrais com 
 
 ## Produtos e versões afetados
 
-[Todas as versões &#x200B;](../../../release/versions.md) com suporte de:
+[Todas as versões ](../../../release/versions.md) com suporte de:
 
 - Adobe Commerce na infraestrutura em nuvem
 - Adobe Commerce no local

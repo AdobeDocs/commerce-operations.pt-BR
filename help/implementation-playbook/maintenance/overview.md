@@ -3,13 +3,25 @@ title: Visão geral de manutenção e suporte
 description: Manter e oferecer suporte adequadamente à implementação do Adobe Commerce recém-lançada.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '531'
 ht-degree: 0%
-
 ---
-
 # Visão geral de manutenção e suporte
 
 Os consumidores já têm mais opções do que nunca ao seu alcance. Sem falta de marcas disputando por atenção, você não pode dar aos consumidores nenhuma razão para olhar para seus concorrentes. Como já vimos, a lealdade e a paciência com os consumidores são escassas. Não é preciso muito para eles desistirem da sua marca e ter uma experiência ruim de comércio eletrônico é uma maneira fácil para eles desistirem.
@@ -33,5 +45,5 @@ O diagrama a seguir mostra as fases e atividades que seriam incluídas em um res
 Identificar o modelo de suporte correto para sua empresa continuar aprimorando e otimizando sua plataforma — e a prática comercial como um todo — é uma etapa essencial para manter todo o trabalho árduo que foi feito durante o processo de implementação. Com um plano de suporte abrangente e contínuo em vigor, seu site de comércio pode acompanhar as expectativas de seus clientes e você pode continuar atingindo seus objetivos.
 
 Ao implantar o Adobe Commerce, é importante pensar no que incluir em sua estratégia de manutenção e suporte.
-O suporte de especialistas está incluído em uma licença do Adobe Commerce. Para obter mais informações sobre suporte de especialistas e planos de suporte da Adobe, consulte [Planos de suporte da Adobe](https://business.adobe.com/br/customers/consulting-services/premier-support.html).
+O suporte de especialistas está incluído em uma licença do Adobe Commerce. Para obter mais informações sobre suporte de especialistas e planos de suporte da Adobe, consulte [Planos de suporte da Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
 Além dos planos de suporte da Adobe, há termos de suporte herdados da Magento. Para entender quais serviços de suporte são aplicáveis a você, consulte seu contrato para ver qual contrato de suporte você tem ou entre em contato com a equipe de conta da Adobe.

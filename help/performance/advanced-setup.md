@@ -2,13 +2,22 @@
 title: Configuração avançada
 description: Saiba como fazer a configuração avançada do Adobe Commerce. Descubra as instruções passo a passo e os requisitos de configuração.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
-
 ---
-
 # Configuração avançada
 
 O [!DNL Commerce] é um produto altamente flexível e escalonável que contém soluções para comerciantes de todos os tamanhos. Esta seção aborda práticas recomendadas e a configuração do [!DNL Commerce] para trabalhar com grandes quantidades de dados, carga extrema e outros casos corporativos.
@@ -42,7 +51,7 @@ Para diminuir o tempo de indexação, você pode [excluir determinados sites dos
 
 Às vezes, uma instância do Redis não é suficiente para atender às solicitações recebidas. Há várias soluções que podemos recomendar para resolver essa situação.
 
-Primeiro, [!DNL Commerce] permite configurar o armazenamento em cache separado para cada tipo de cache. Isso permite instalar quantas instâncias Redis separadas quantos forem o número de tipos de cache registrados no Magento. Na prática, você pode desejar instâncias do Redis para os caches usados mais ativamente, como configuração, layout e blocos.
+Primeiro, [!DNL Commerce] permite configurar o armazenamento em cache separado para cada tipo de cache. Isso permite instalar quantas instâncias do Redis separadas quantas vezes o número de tipos de cache forem registrados na Magento. Na prática, você pode desejar instâncias do Redis para os caches usados mais ativamente, como configuração, layout e blocos.
 
 Outra solução pode ser colocar o cache de configuração no sistema de arquivos e mover os outros caches para o servidor Redis. Com essa solução, você precisa de uma ferramenta separada para a invalidação centralizada do cache de configuração em todos os nós da Web.
 
@@ -99,7 +108,7 @@ Para obter mais detalhes sobre a configuração e os benefícios de várias conf
 
 ## Veicular conteúdo de mídia
 
-O Magento não fornece nenhuma integração específica para veicular e fornecer conteúdo de mídia. Todas as abordagens comuns podem ser usadas juntas no Magento.
+A Magento não fornece nenhuma integração específica para veicular e fornecer conteúdo de mídia. Todas as abordagens comuns podem ser usadas juntas na Magento.
 
 A maneira mais fácil de veicular conteúdo de mídia é entregá-lo e armazená-lo em cache em um servidor [!DNL Varnish]. Essa abordagem pressupõe um sistema de arquivos compartilhado para armazenamento de conteúdo de mídia ou um servidor dedicado apontando para [!DNL Varnish].
 

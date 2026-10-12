@@ -2,13 +2,22 @@
 title: Implementação de atualização
 description: Saiba mais sobre as diferentes fases da implementação de atualização para projetos do Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
-
 ---
-
 # Atualizar implementação
 
 A implementação do upgrade consiste em cinco fases:
@@ -88,4 +97,4 @@ Por fim, informe-se com sua equipe para determinar as lições aprendidas e as a
 
 Depois que o site for iniciado, verifique os dados de análise, o Google Search Console e outros recursos para garantir que não haja problemas inesperados e que tudo funcione conforme esperado.
 
-É sempre uma boa ideia acompanhar o desempenho por meio de ferramentas de monitoramento bem projetadas. Há muitas ferramentas e meios de monitorar o desempenho do site, portanto, escolha um que se pareça bem com a sua organização. Recomendamos que os clientes da Adobe Commerce que usam nosso sistema de gerenciamento de infraestrutura em nuvem aproveitem serviços como o [New Relic](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) para monitorar o desempenho do site.
+É sempre uma boa ideia acompanhar o desempenho por meio de ferramentas de monitoramento bem projetadas. Há muitas ferramentas e meios de monitorar o desempenho do site, portanto, escolha um que se pareça bem com a sua organização. Recomendamos que os clientes da Adobe Commerce que usam nosso sistema de gerenciamento de infraestrutura em nuvem aproveitem serviços como o [New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) para monitorar o desempenho do site.

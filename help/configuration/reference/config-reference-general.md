@@ -3,16 +3,34 @@ title: Referência de caminhos de configuração geral
 description: Saiba mais sobre caminhos e valores de configuração gerais e avançados para o Adobe Commerce. Descubra as opções de configuração do sistema, de segurança e administrativa.
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 0%
-
+source-wordcount: '997'
+ht-degree: 1%
 ---
-
 # Referência de caminhos de configuração gerais e avançados
 
-Este tópico lista caminhos de configuração gerais e avançados e _não_ [valores confidenciais e específicos do sistema](config-reference-sens.md). O comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem.
+Este tópico lista caminhos de configuração gerais e avançados e _não_ [valores confidenciais e específicos do sistema](config-reference-sens.md). O comando [`magento app:config:dump` ](../cli/export-configuration.md) grava esses valores no arquivo de configuração compartilhado, `app/etc/config.php`, que deve estar no controle de origem.
 
 Para substituir opcionalmente qualquer definição de configuração ou definir definições confidenciais, consulte [Usar variáveis de ambiente para substituir definições de configuração](override-config-settings.md#environment-variables).
 

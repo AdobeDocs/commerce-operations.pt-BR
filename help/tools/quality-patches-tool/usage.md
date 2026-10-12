@@ -4,7 +4,23 @@ description: Saiba como usar a Ferramenta de correção de qualidade para aplica
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 2b2ac06c54af242407ae4f3fbfb23180e6ec3ae8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -13,11 +29,11 @@ ht-degree: 0%
 
 O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) fornece patches individuais desenvolvidos pela Adobe e pela comunidade Magento Open Source. Ela permite aplicar, reverter e exibir informações gerais sobre todos os patches individuais disponíveis para a versão instalada do Adobe Commerce. Você pode aplicar patches a projetos Adobe Commerce, independentemente de quem os desenvolveu. Por exemplo, você pode aplicar uma correção desenvolvida pela comunidade para projetos do Adobe Commerce.
 
-Assista a este [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=pt-BR) e saiba como usar a Ferramenta de correção de qualidade para Adobe Commerce.
+Assista a este [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html) e saiba como usar a Ferramenta de correção de qualidade para Adobe Commerce.
 
 >[!INFO]
 >
->Consulte [Aplicar patches individuais](#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) para revisar uma lista completa de patches lançados.
+>Consulte [Aplicar patches individuais](#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar uma lista completa de patches lançados.
 
 >[!WARNING]
 >
@@ -60,7 +76,7 @@ Adobe Commerce 2.3.5
 A tabela de status inclui:
 
 - **Tipo**:
-  - `Optional` — Todos os patches do pacote [!DNL Quality Patches Tool] e do [Guia de Infraestrutura do Commerce on Cloud > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) são opcionais para instalações do Adobe Commerce.
+  - `Optional` — Todos os patches do pacote [!DNL Quality Patches Tool] e do [Guia de Infraestrutura do Commerce on Cloud > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) são opcionais para instalações do Adobe Commerce.
   - `Deprecated` — A Adobe substituiu o patch individual. Se você tiver aplicado o patch, recomendamos que o reverta. A operação de reversão também remove o patch da tabela de status.
 
 - **Status**:
@@ -81,7 +97,7 @@ A tabela de status inclui:
 
 >[!WARNING]
 >
->É uma prática recomendada testar todos os patches em um ambiente de preparo ou desenvolvimento antes de implantar na produção. Também é recomendável fazer backup dos dados antes de aplicar um patch. Consulte [Fazer backup e reverter sistema de arquivos, mídia e banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=pt-BR).
+>É uma prática recomendada testar todos os patches em um ambiente de preparo ou desenvolvimento antes de implantar na produção. Também é recomendável fazer backup dos dados antes de aplicar um patch. Consulte [Fazer backup e reverter sistema de arquivos, mídia e banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Para aplicar um único patch, execute o seguinte comando, onde `MAGETWO-XXXX` é a ID do patch especificada na tabela de status:
 
@@ -109,7 +125,7 @@ Você deve limpar o cache após aplicar os patches para ver as alterações no a
 
 >[!WARNING]
 >
->É uma prática recomendada testar todos os patches em um ambiente de preparo ou desenvolvimento antes de implantar na produção. Também é recomendável fazer backup dos dados antes de aplicar um patch. Consulte [Fazer backup e reverter sistema de arquivos, mídia e banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=pt-BR).
+>É uma prática recomendada testar todos os patches em um ambiente de preparo ou desenvolvimento antes de implantar na produção. Também é recomendável fazer backup dos dados antes de aplicar um patch. Consulte [Fazer backup e reverter sistema de arquivos, mídia e banco de dados](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Para reverter um único patch, execute o seguinte comando, onde `MAGETWO-XXXX` é a ID do patch especificada na tabela de status:
 

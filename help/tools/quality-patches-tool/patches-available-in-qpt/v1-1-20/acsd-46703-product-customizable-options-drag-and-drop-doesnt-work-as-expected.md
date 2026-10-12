@@ -5,13 +5,23 @@ feature: Products
 role: Developer
 exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%
-
 ---
-
 # ACSD-46703: o arrastar e soltar da personalização do produto não funciona
 
 O patch ACSD-46703 corrige o problema em que as opções personalizáveis do produto (arrastar e soltar) não funcionam conforme esperado. Este patch está disponível quando a [Ferramenta de Patches de Qualidade (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.20 está instalada. A ID do patch é ACSD-46703. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.6.
@@ -28,7 +38,7 @@ O patch ACSD-46703 corrige o problema em que as opções personalizáveis do pro
 
 >[!NOTE]
 >
->O patch pode se tornar aplicável a outras versões com as novas versões da [Ferramenta de Patches de Qualidade]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
+>O patch pode se tornar aplicável a outras versões com as novas versões da [Ferramenta de Patches de Qualidade]. Para verificar se o patch é compatível com a sua versão do Adobe Commerce, atualize o pacote `magento/quality-patches` para a versão mais recente e verifique a compatibilidade na [[!DNL Quality Patches Tool]: página Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Use a ID do patch como palavra-chave de pesquisa para localizar o patch.
 
 ## Problema
 
@@ -55,7 +65,7 @@ Você não pode mover nenhum valor para outra página usando a funcionalidade ar
 Para aplicar patches individuais, use os links a seguir, dependendo do método de implantação:
 
 * Adobe Commerce ou Magento Open Source no local: [Ferramentas de correção de qualidade > Uso](/help/tools/quality-patches-tool/usage.md) no guia Ferramenta de correção de qualidade.
-* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 

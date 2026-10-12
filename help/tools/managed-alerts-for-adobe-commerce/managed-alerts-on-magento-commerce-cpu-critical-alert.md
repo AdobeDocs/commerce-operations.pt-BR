@@ -1,16 +1,37 @@
 ---
 title: 'Alertas gerenciados no Adobe Commerce: alerta crítico do CPU'
-description: Este artigo fornece etapas de solução de problemas quando você recebe um alerta crítico do CPU para Adobe Commerce no [!DNL New Relic]. É necessária uma ação imediata para corrigir o problema.
+description: Este artigo fornece etapas de solução de problemas quando você recebe um alerta crítico do CPU para Adobe Commerce em [!DNL New Relic]. É necessária uma ação imediata para corrigir o problema.
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 exl-id: 8629ab18-5eef-4d76-9cf8-88fe2d3439df
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 0%
-
 ---
-
 # Alertas gerenciados no Adobe Commerce: alerta crítico do CPU
 
 Este artigo fornece etapas de solução de problemas quando você recebe um alerta crítico do CPU para Adobe Commerce em [!DNL New Relic]. É necessária uma ação imediata para corrigir o problema. O alerta será semelhante ao seguinte, dependendo do canal de notificação de alerta selecionado.
@@ -47,7 +68,7 @@ Siga estas etapas para identificar e solucionar problemas da causa.
 >
 >Como este é um alerta crítico, é altamente recomendável concluir a **Etapa 1** antes de tentar solucionar o problema (Etapa 2 em diante).
 
-Verifique se o tíquete de suporte do Adobe Commerce existe. Para ver as etapas, consulte [Rastrear seus tíquetes de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) na Base de Dados de Conhecimento de Suporte da Commerce. O suporte pode ter recebido um alerta de limite [!DNL New Relic], criado um tíquete e começado a trabalhar no problema. Se não houver nenhum ticket, crie um. O ticket deve ter as seguintes informações:
+Verifique se o tíquete de suporte do Adobe Commerce existe. Para ver as etapas, consulte [Rastrear seus tíquetes de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) na Base de Dados de Conhecimento de Suporte da Commerce. O suporte pode ter recebido um alerta de limite [!DNL New Relic], criado um tíquete e começado a trabalhar no problema. Se não houver nenhum ticket, crie um. O ticket deve ter as seguintes informações:
 
 1. Motivo do Contato: selecione **[!UICONTROL New Relic CRITICAL alert received]**.
 1. Descrição do alerta.
@@ -56,9 +77,9 @@ Verifique se o tíquete de suporte do Adobe Commerce existe. Para ver as etapas,
    * Classifique as transações pelas pontuações crescentes do Apdex. [[!DNL Apdex]](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction) refere-se à satisfação do usuário com o tempo de resposta de seus aplicativos e serviços Web. Um [low [!DNL Apdex] score](managed-alerts-for-magento-commerce-apdex-warning-alert.md) pode indicar um afunilamento (uma transação com um tempo de resposta mais alto). Normalmente, está relacionado ao banco de dados, [!DNL Redis], ou PHP. Para obter as etapas, consulte [Exibir transações com a  [!DNL Apdex] insatisfação](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/view-your-apdex-score#apdex-dissat) mais alta.
    * Classifique as transações por throughput mais alto, tempo médio de resposta mais lento, mais demorado e outros limites. Para etapas, consulte [!DNL New Relic] [Encontrar problemas específicos de desempenho](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems).
 1. Se você ainda estiver com dificuldades para identificar a origem, use a [[!DNL New Relic] página Infraestrutura do APM](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page) para identificar serviços com muitos recursos. Para ver as etapas, consulte [!DNL New Relic] [Página de Hosts do monitoramento de infraestrutura: guia Processos](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes).
-1. Se você identificar a origem, o SSH no ambiente para investigar mais detalhadamente. Para ver as etapas, consulte [SSH para o seu ambiente](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/secure-connections) no Guia do Commerce na Nuvem.
+1. Se você identificar a origem, o SSH no ambiente para investigar mais detalhadamente. Para ver as etapas, consulte [SSH para o seu ambiente](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) no Guia do Commerce na Nuvem.
 1. Se você ainda estiver lutando para identificar a origem:
    * Revise tendências recentes para identificar problemas com implantações de código recentes ou alterações de configuração (por exemplo, novos grupos de clientes e grandes alterações no catálogo). É recomendável que você verifique os últimos sete dias de atividade para obter correlações em implantações ou alterações de código.
-   * Considere verificar e desativar catálogos simples. Para ver as etapas, consulte [Cores de desempenho lento e execução lenta](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons) na Base de Dados de Conhecimento de Suporte da Commerce.
-   * Se você suspeitar que esteja enfrentando um ataque de DDoS, tente bloquear o tráfego de bot. Para ver as etapas, consulte [Como bloquear tráfego mal-intencionado do Adobe Commerce na infraestrutura em nuvem no nível Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) na Base de Dados de Conhecimento de Suporte da Commerce.
-1. Se o problema parecer temporário, execute etapas de mitigação, como um upsize ou coloque o site no modo de manutenção. Para obter as etapas, consulte [Como solicitar o redimensionamento temporário](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) na Base de Dados de Conhecimento de Suporte da Commerce e [Habilitar ou desabilitar o modo de manutenção](/help/installation/tutorials/maintenance-mode.md) no Guia de Instalação do Commerce. Se o upsize retornar o site às operações normais, considere solicitar um upsize permanente (entre em contato com a equipe de conta da Adobe) ou tente reproduzir o problema no ambiente de preparo dedicado executando um teste de carga e otimizando consultas ou código que reduz a pressão sobre os serviços. Para obter as etapas, consulte [Teste de carga e tensão](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/test/staging-and-production#load-and-stress-testing) no Guia do Commerce na Nuvem.
+   * Considere verificar e desativar catálogos simples. Para ver as etapas, consulte [Cores de desempenho lento e execução lenta](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons) na Base de Dados de Conhecimento de Suporte da Commerce.
+   * Se você suspeitar que esteja enfrentando um ataque de DDoS, tente bloquear o tráfego de bot. Para ver as etapas, consulte [Como bloquear tráfego mal-intencionado do Adobe Commerce na infraestrutura em nuvem no nível Fastly](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) na Base de Dados de Conhecimento de Suporte da Commerce.
+1. Se o problema parecer temporário, execute etapas de mitigação, como um upsize ou coloque o site no modo de manutenção. Para obter as etapas, consulte [Como solicitar o redimensionamento temporário](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) na Base de Dados de Conhecimento de Suporte da Commerce e [Habilitar ou desabilitar o modo de manutenção](/help/installation/tutorials/maintenance-mode.md) no Guia de Instalação do Commerce. Se o upsize retornar o site às operações normais, considere solicitar um upsize permanente (entre em contato com a equipe de conta da Adobe) ou tente reproduzir o problema no ambiente de preparo dedicado executando um teste de carga e otimizando consultas ou código que reduz a pressão sobre os serviços. Para obter as etapas, consulte [Teste de carga e tensão](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/staging-and-production#load-and-stress-testing) no Guia do Commerce na Nuvem.
