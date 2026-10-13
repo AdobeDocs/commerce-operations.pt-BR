@@ -395,7 +395,7 @@ Corrige o problema em que o atributo Weight na página de produto Storefront exi
 
 _ACP2E-4808 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/b63925d9)_
 
-#### [Ativação da regra de preço de catálogo da {Cloud] não refletida no Live Search até a próxima ressincronização forçada — atraso de sincronização do feed de preço
+#### [Ativação da regra de preço de catálogo da &lbrace;Cloud] não refletida no Live Search até a próxima ressincronização forçada — atraso de sincronização do feed de preço
 
 Correção de um problema em que a ativação de uma regra de preço de catálogo não atualizava os preços no Live Search até uma ressincronização forçada posterior. O indexador de feed de preço poderia ser executado antes do indexador de regra de catálogo do qual dependia ter terminado e, portanto, exportou preços obsoletos. Os indexadores com dependências não concluídas agora são adiados para a próxima execução de cron, portanto, o feed de preço sempre é executado com preços atualizados.
 
@@ -883,7 +883,7 @@ _ACP2E-5137 - [Contribuição de código do GitHub](https://github.com/magento/m
 
 ### Pedido, Promoção
 
-#### [Problema na {Cloud] ao adicionar vários cupons para reordenar
+#### [Problema na &lbrace;Cloud] ao adicionar vários cupons para reordenar
 
 Correção de um problema em que os cupons válidos não eram mais aplicados a um pedido após uma falha em uma tentativa de cupom inválida. Agora, se um cupom inválido for inserido, todos os cupons válidos aplicados anteriormente permanecerão aplicados corretamente.
 

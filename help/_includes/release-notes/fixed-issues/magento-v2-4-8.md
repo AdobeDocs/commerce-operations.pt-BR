@@ -871,7 +871,7 @@ O &quot;Carrinho de compras&quot; no lado esquerdo é atualizado ao selecionar o
 
 _ACP2E-2620 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
 
-#### [Regra de Vendas da {Cloud] não aplicada à primeira ordem de Envio Múltiplo
+#### [Regra de Vendas da &lbrace;Cloud] não aplicada à primeira ordem de Envio Múltiplo
 
 Após a correção, o desconto é mostrado corretamente para cada pedido da mesma cotação de remessa múltipla.
 
@@ -1185,7 +1185,7 @@ Os produtos do pacote que não podem ser vendidos no contexto da loja atual não
 
 _ACP2E-2874 - [Contribuição de código do GitHub](https://github.com/magento/inventory/commit/bc37ec76)_
 
-#### [Problema de Cotação da {Cloud] na arquitetura de vários sites
+#### [Problema de Cotação da &lbrace;Cloud] na arquitetura de vários sites
 
 Anteriormente, a arquitetura de vários sites com moedas e grupos de clientes diferentes não podia aplicar descontos corretamente à loja. Depois que essa correção for implementada, a arquitetura de vários sites com descontos de preço de grupo de clientes diferentes será aplicada com sucesso a diferentes lojas.
 
@@ -2073,7 +2073,7 @@ Anteriormente, com produtos configuráveis separados com o mesmo produto simples
 
 _ACP2E-3190 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/148c3ead)_
 
-#### [Problema na {Cloud] com Autenticação de Usuário e Acesso a Token Entre Sites na Instalação de Vários Sites
+#### [Problema na &lbrace;Cloud] com Autenticação de Usuário e Acesso a Token Entre Sites na Instalação de Vários Sites
 
 As consultas de informações do cliente e do carrinho do GraphQl na configuração de vários sites verificam se o cliente em um site não padrão existe.
 Anteriormente, a consulta funcionava sem verificar se o cliente existe em um site não padrão na configuração de vários sites.
@@ -2122,7 +2122,7 @@ Após a correção, as solicitações graphql inválidas não serão registradas
 
 _ACP2E-3467 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/1984c61c)_
 
-#### [Problemas de {Cloud] com a API Graphql
+#### [Problemas de &lbrace;Cloud] com a API Graphql
 
 Antes da correção com o uso do servidor de aplicativos Graphql, a solicitação de endereço do cliente não retornava os dados mais recentes.
 
@@ -2352,7 +2352,7 @@ Antes dessa correção, a exportação do produto falhava se os atributos do pro
 
 _ACP2E-3475 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/1984c61c)_
 
-#### [Processos De Importação Da {Cloud] Que Interferem Entre Si
+#### [Processos De Importação Da &lbrace;Cloud] Que Interferem Entre Si
 
 Mensagens corretas serão exibidas se o mesmo usuário administrador executar duas ou mais operações de importação usando a mesma sessão de usuário.
 
