@@ -4,10 +4,10 @@ user-guide-description: Acesse todas as informações da versão de patches e se
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: 7f611e9d05ddc53c853839d33bcacf48a59c126e
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 30%
+source-wordcount: '112'
+ht-degree: 31%
 ---
 
 # Informações da versão {#release}
@@ -17,6 +17,7 @@ ht-degree: 30%
   - [Alterações incompatíveis com versões anteriores](backward-incompatible-changes.md)
   - Adobe Commerce {#adobe-commerce}
     - [Visão geral](release-notes/commerce/overview.md)
+    - [2.4.10](release-notes/commerce/2-4-10.md)
     - [2.4.9](release-notes/commerce/2-4-9.md)
     - [2.4.8](release-notes/commerce/2-4-8.md)
     - [2.4.7](release-notes/commerce/2-4-7.md)
@@ -29,6 +30,7 @@ ht-degree: 30%
     - [2.4.0](release-notes/commerce/2-4-0.md)
   - Magento Open Source {#magento-open-source}
     - [Visão geral](release-notes/open-source/overview.md)
+    - [2.4.10](release-notes/open-source/2-4-10.md)
     - [2.4.9](release-notes/open-source/2-4-9.md)
     - [2.4.8](release-notes/open-source/2-4-8.md)
     - [2.4.7](release-notes/open-source/2-4-7.md)

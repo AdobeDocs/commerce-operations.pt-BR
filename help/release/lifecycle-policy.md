@@ -15,7 +15,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -216,4 +216,4 @@ Se você não puder migrar para o [!DNL Adobe Commerce as a Cloud Service] imedi
 
 Observe que esse caminho não elimina obrigações de atualização futuras. Os clientes com Adobe Commerce em implantações na nuvem devem continuar atualizando à medida que as linhas de versão atingem suas datas de imposição de atualização de versão.
 
-<!-- Last updated from includes: 2026-09-17 13:05:40 -->
+<!-- Last updated from includes: 2026-09-17 14:58:18 -->
