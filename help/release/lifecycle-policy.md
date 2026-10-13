@@ -15,7 +15,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
@@ -31,7 +31,7 @@ A Adobe não fornece correções de segurança e qualidade para serviços e depe
 
 O período de suporte padrão de três anos a partir da data de disponibilidade geral (GA). O suporte Standard inclui correções de qualidade, patches de segurança e suporte completo do Adobe Commerce on-call.
 
-- **Correções de qualidade** - Os clientes podem acessar correções de qualidade entrando em contato com o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) ou por meio do autoatendimento [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR).
+- **Correções de qualidade** - Os clientes podem acessar correções de qualidade entrando em contato com o [Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) ou por meio do autoatendimento [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
 
 - **Correções de segurança** - A Adobe fornece correções de segurança por meio de patches de segurança cumulativos e [arquivos de patch de segurança isolados](versioning-policy.md#isolated-security-patch-file) não cumulativos para o período de suporte de três anos.
 
@@ -208,7 +208,7 @@ Se você estiver em uma versão que está se aproximando ou que ultrapassou suas
 - Você tem acesso aos recursos mais recentes da Adobe: merchandising alimentado por IA, arquitetura de vitrine combinável e integrações nativas da Adobe Experience Cloud.
 - Você elimina ciclos recorrentes de atualização.
 
-Entre em contato com a equipe de conta da Adobe para iniciar uma avaliação de migração. Consulte [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/overview) para obter uma visão geral do produto.
+Entre em contato com a equipe de conta da Adobe para iniciar uma avaliação de migração. Consulte [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) para obter uma visão geral do produto.
 
 ### Caminho alternativo: atualizar para um Adobe Commerce compatível na nuvem ou versão local
 
@@ -216,4 +216,4 @@ Se você não puder migrar para o [!DNL Adobe Commerce as a Cloud Service] imedi
 
 Observe que esse caminho não elimina obrigações de atualização futuras. Os clientes com Adobe Commerce em implantações na nuvem devem continuar atualizando à medida que as linhas de versão atingem suas datas de imposição de atualização de versão.
 
-<!-- Last updated from includes: 2026-09-17 13:05:40 -->
+<!-- Last updated from includes: 2026-09-17 14:58:18 -->
