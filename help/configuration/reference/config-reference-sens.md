@@ -19,17 +19,17 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 06034766e0c2e09e414e1ebc7a5b388a07593406
 workflow-type: tm+mt
 source-wordcount: '4570'
-ht-degree: 0%
+ht-degree: 1%
 ---
 # Configurações sensíveis e específicas do sistema
 
 Este tópico lista os caminhos de configuração para configurações confidenciais e específicas do sistema:
 
-- O comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md) grava configurações específicas do sistema no arquivo de configuração específico do sistema, `app/etc/env.php`, que deve _não_ estar no controle de origem. Também grava a configuração compartilhada de todas as instâncias do Commerce em `app/etc/config.php`. Este arquivo _deve_ estar no controle de origem.
-- O comando [`magento config:sensitive:set` &#x200B;](../cli/set-configuration-values.md) grava configurações confidenciais em `app/etc/env.php`.
+- O comando [`magento app:config:dump` ](../cli/export-configuration.md) grava configurações específicas do sistema no arquivo de configuração específico do sistema, `app/etc/env.php`, que deve _não_ estar no controle de origem. Também grava a configuração compartilhada de todas as instâncias do Commerce em `app/etc/config.php`. Este arquivo _deve_ estar no controle de origem.
+- O comando [`magento config:sensitive:set` ](../cli/set-configuration-values.md) grava configurações confidenciais em `app/etc/env.php`.
 
   Você também pode definir valores confidenciais usando variáveis de configuração, conforme discutido em [Usar variáveis de ambiente para substituir as definições de configuração](../reference/override-config-settings.md#environment-variables).
 
@@ -185,9 +185,9 @@ Estes valores de configuração estão disponíveis no Administrador em **Lojas*
 
 Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Catálogo** > **Inventário**.
 
-| Nome | Caminho de configuração | Suporte à versão do | Commerce Criptografado? | Específico do sistema? | Sensível? |
+| Nome | Caminho de configuração | Suporte à versão do Commerce | Criptografado? | Específico do sistema? | Sensível? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
-| Chave de API do Google |0&rbrace; |  | Criptografado | Sensível |`cataloginventory/source_selection_distance_based_google/api_key`|
+| Chave da API do Google | `cataloginventory/source_selection_distance_based_google/api_key` |  | Criptografado | | Sensível |
 
 ### Caminhos sensíveis ao mapa de site XML e específicos do sistema
 
