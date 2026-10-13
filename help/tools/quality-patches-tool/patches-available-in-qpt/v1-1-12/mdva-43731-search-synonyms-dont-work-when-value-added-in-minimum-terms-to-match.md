@@ -5,13 +5,32 @@ feature: Cache, Marketing Tools, Search
 role: Admin
 exl-id: 1eada0cd-c0ab-4f0f-b6bf-7c10e1df07ce
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 0%
-
 ---
-
 # MDVA-43731: Os sinônimos de pesquisa não funcionam quando o valor é adicionado em &quot;Termos mínimos para correspondência&quot;
 
 O patch MDVA-43731 corrige o problema em que os Sinônimos de pesquisa param de funcionar quando um valor é adicionado em &quot;Termos mínimos para correspondência&quot;. Este patch está disponível quando a [Ferramenta de Patches de Qualidade (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12 está instalada. A ID do patch é MDVA-43731. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.

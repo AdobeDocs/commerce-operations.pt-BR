@@ -1,15 +1,24 @@
 ---
 title: Migrar alterações
-description: Saiba como migrar apenas dados alterados desde a última migração de dados do Magento 1 com o  [!DNL Data Migration Tool].
+description: Saiba como migrar somente dados que foram alterados desde a última migração de dados do Magento 1 com o [!DNL Data Migration Tool].
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
-
 ---
-
 # Migrar alterações
 
 A ferramenta de migração incremental instala tabelas deltalog (com prefixo `m2_cl_*`) e acionadores (para alterações de rastreamento) no banco de dados Magento 1 durante a [migração de dados](data.md). Esses acionadores e tabelas de catálogo são essenciais para garantir que você migre apenas as alterações feitas no Magento 1 desde a última vez que migrou os dados. Essas alterações são:
@@ -53,7 +62,7 @@ Onde:
 
 ## Migrar dados criados por extensões de terceiros
 
-No modo `Delta`, o [!DNL Data Migration Tool] migra dados criados apenas por módulos próprios da Magento e não é responsável pelo código ou pelas extensões feitas por desenvolvedores de terceiros. Se essas extensões criaram dados no banco de dados da loja e o comerciante quiser que esses dados estejam no Magento 2 — os arquivos de configuração do [!DNL Data Migration Tool] devem ser criados e modificados adequadamente.
+No modo `Delta`, o [!DNL Data Migration Tool] migra dados criados apenas pelos próprios módulos da Magento e não é responsável pelo código ou pelas extensões feitas por desenvolvedores de terceiros. Se essas extensões criaram dados no banco de dados da loja e o comerciante quiser que esses dados estejam no Magento 2 — os arquivos de configuração do [!DNL Data Migration Tool] devem ser criados e modificados adequadamente.
 
 Se uma extensão tiver suas próprias tabelas e você precisar rastrear suas alterações para migração delta, siga estas etapas:
 

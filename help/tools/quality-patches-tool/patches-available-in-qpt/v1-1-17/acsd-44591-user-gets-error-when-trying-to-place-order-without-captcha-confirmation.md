@@ -5,13 +5,23 @@ feature: Orders
 role: Admin
 exl-id: 4b8a8090-a2ba-428c-9a04-7c0842e94a6f
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
-
 ---
-
 # ACSD-44591: erros ao fazer pedido sem confirmação CAPTCHA
 
 O patch ACSD-44591 resolve o problema em que o usuário recebe erros ao tentar fazer um pedido sem a confirmação CAPTCHA.

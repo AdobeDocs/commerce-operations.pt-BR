@@ -5,13 +5,30 @@ feature: Categories, GraphQL
 role: Admin
 exl-id: c50e9f77-66eb-4c4c-b0b5-b77db84a4a0b
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
-
 ---
-
 # MDVA-40601: Não é possível recuperar dados sobre categoria alterada pela atualização agendada via GraphQL
 
 O patch de qualidade MDVA-40601 do Adobe Commerce corrige o problema em que os usuários recebem um erro ao obter informações sobre a categoria alterada por atualização agendada por meio do GraphQL. Este patch está disponível quando a [Ferramenta de Patches de Qualidade (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.3 está instalada. A ID do patch é MDVA-40601. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.4.
@@ -124,14 +141,14 @@ Você recebe o seguinte erro:
 
 Para aplicar patches individuais, use os links a seguir, dependendo do tipo de implantação:
 
-&#x200B;* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
-&#x200B;* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
+* Adobe Commerce ou Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) no guia [!DNL Quality Patches Tool].
+* Adobe Commerce na infraestrutura em nuvem: [Atualizações e patches > Aplicar patches](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) no guia do Commerce na infraestrutura em nuvem.
 
 ## Leitura relacionada
 
 Para saber mais sobre correções de qualidade para o Adobe Commerce, consulte:
 
-&#x200B;* [Ferramenta de correções de qualidade lançada: uma nova ferramenta para autoatender correções de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) na base de dados de conhecimento de suporte.
-&#x200B;* [Verifique se há um patch disponível para o problema do Adobe Commerce usando a Ferramenta de Patches de Qualidade](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!DNL Quality Patches Tool].
+* [Ferramenta de correções de qualidade lançada: uma nova ferramenta para autoatender correções de qualidade](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) na base de dados de conhecimento de suporte.
+* [Verifique se há um patch disponível para o problema do Adobe Commerce usando a Ferramenta de Patches de Qualidade](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) no guia [!DNL Quality Patches Tool].
 
 Para obter informações sobre outros patches disponíveis no QPT, consulte a seção [Patches disponíveis no QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR).

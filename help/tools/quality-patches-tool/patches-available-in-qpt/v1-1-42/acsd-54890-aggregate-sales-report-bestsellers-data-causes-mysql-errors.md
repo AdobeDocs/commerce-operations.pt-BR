@@ -1,17 +1,29 @@
 ---
-title: 'ACSD-54890: "aggregate_sales_report_bestsellers_data" causa  [!DNL MySQL] erros'
-description: Aplique o patch ACSD-54890 para corrigir o problema do Adobe Commerce em que "aggregate_sales_report_bestsellers_data" causa  [!DNL MySQL] erros devido a `/tmpdisk` estar sem espaço.
+title: 'ACSD-54890: "aggregate_sales_report_bestsellers_data" causa erros [!DNL MySQL]'
+description: Aplique o patch ACSD-54890 para corrigir o problema do Adobe Commerce em que "aggregate_sales_report_bestsellers_data" causa [!DNL MySQL] erros devido a `/tmpdisk` estar sem espaço.
 feature: Attributes
 role: Admin, Developer
 exl-id: 21f926e0-a4f4-45ae-9397-4885a85db947
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 76cfaac4-e563-56dd-8938-708bf8b84956
+    internal-label: Attributes
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '335'
 ht-degree: 0%
-
 ---
-
 # ACSD-54890: `aggregate_sales_report_bestsellers_data` causa erros do MySQL
 
 O patch ACSD-54890 corrige o problema em que `aggregate_sales_report_bestsellers_data` causa erros [!DNL MySQL] devido a `/tmpdisk` ficar sem espaço. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.42 está instalado. A ID do patch é ACSD-54890. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.7.

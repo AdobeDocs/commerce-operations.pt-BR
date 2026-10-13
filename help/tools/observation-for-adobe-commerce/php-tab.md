@@ -1,15 +1,29 @@
 ---
 title: A guia [!UICONTROL PHP]
-description: Saiba mais sobre a guia [!UICONTROL PHP] do  [!DNL Observation for Adobe Commerce].
+description: Saiba mais sobre a guia [!UICONTROL PHP] do [!DNL Observation for Adobe Commerce].
 exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '560'
 ht-degree: 0%
-
 ---
-
 # A guia [!UICONTROL PHP]
 
 A aba **PHP** mostra problemas do processo PHP para fornecer uma análise mais profunda dos problemas do PHP.
@@ -45,7 +59,7 @@ O quadro **[!UICONTROL PHP CPU Utilization]** mostra a utilização percentual d
 O quadro **[!UICONTROL PHP Process states]** mostra os estados do processo PHP durante o período selecionado. Ele é exibido quando os processos do PHP terminam e reiniciam. Cuidado com os processos terminados do PHP que não mostram reinicializações.
 
 * &#39;%NOTICE: Encerrando ...%&#39;) como &#39;php_term&#39;
-* &#39;% AVISO: saindo, até logo!%&#39;) como &#39;php_ exit&#39;
+* &#39;% NOTICE: saindo, bye-bye!%&#39;) como &#39;php_exit&#39;
 * &#39;% NOTICE: fpm está em execução, pid%&#39;) como &#39;fpm_start&#39;
 * &#39;%NOTICE: pronto para manipular conexões&#39;) como &#39;php_ready&#39;
 
@@ -56,7 +70,7 @@ O quadro **[!UICONTROL PHP Process states]** mostra os estados do processo PHP d
 O quadro **[!UICONTROL PHP Errors]** mostra o número de erros de trabalho do PHP durante o período selecionado. As mensagens de erro analisadas e exibidas incluem:
 
 * &#39;%worker_connections are not insufficient%&#39;) como &#39;worker&#39;
-* Erro fatal &#39;%PHP: tamanho de memória permitido!%&#39;) como &#39;mem_size&#39;
+* &#39;%PHP Erro fatal: tamanho de memória permitido!%&#39;) como &#39;mem_size&#39;
 * &#39;%exited on signal 11 (SIGSEGV)%&#39;) como &#39;sig_11&#39;
 * &#39;%exited on signal 7 (SIGBUS)%&#39;) como &#39;sig_7&#39;
 * &#39;%aumente pm.start_servers%&#39;) como &#39;pmstart_serv&#39;

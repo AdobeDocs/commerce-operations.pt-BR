@@ -2,13 +2,22 @@
 title: Recomendações do ambiente de desenvolvimento
 description: Saiba mais sobre as recomendações do ambiente de desenvolvimento no Adobe Commerce. Descubra a orientação para a implementação e as estratégias de otimização.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
-
 ---
-
 # Recomendações para o ambiente de desenvolvimento
 
 Esta página fornece recomendações para ambientes de desenvolvimento do Commerce.
@@ -31,7 +40,7 @@ No modo de desenvolvimento, não execute comandos para compilação, geração d
   bin/magento setup:di:compile
   ```
 
-  No modo de desenvolvimento, o Magento executa a geração sob demanda; não é necessário executá-la. Se você modificou uma assinatura de uma classe e precisa gerar novamente a `factories/proxies/interceptors` gerada automaticamente, remova essas classes ou a pasta _gerada_.
+  No modo de desenvolvimento, a Magento executa a geração sob demanda; não é necessário executá-la. Se você modificou uma assinatura de uma classe e precisa gerar novamente a `factories/proxies/interceptors` gerada automaticamente, remova essas classes ou a pasta _gerada_.
 
 * `setup:static-content:deploy` implanta conteúdo estático para um armazenamento.
 
@@ -39,8 +48,8 @@ No modo de desenvolvimento, não execute comandos para compilação, geração d
   bin/magento setup:static-content:deploy
   ```
 
-  No modo de desenvolvimento, o Magento o executa sob demanda; não é necessário executá-lo.
+  No modo de desenvolvimento, a Magento o executa sob demanda; não é necessário executá-lo.
 
 ## Tempo normal de carregamento de página em uma máquina virtual
 
-Se você desenvolver em uma VM e levar mais de 2 segundos para carregar uma página do Magento, revise as configurações do ambiente.
+Se você desenvolver em uma VM e levar mais de 2 segundos para carregar uma página da Magento, revise as configurações do ambiente.

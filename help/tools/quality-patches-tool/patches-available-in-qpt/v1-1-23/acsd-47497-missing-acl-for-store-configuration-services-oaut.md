@@ -5,13 +5,30 @@ feature: Configuration, Identity Management, Services
 role: Admin
 exl-id: 4dbbd7df-f34b-4db8-a207-3de40fb39c6f
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 23bc8570-95c6-5ef5-a563-2e4a4e6b4853
+    internal-label: Identity Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
-
 ---
-
 # ACSD-47497: ACL ausente para Armazenamento / Configuração / Serviços [!UICONTROL OAuth]
 
 O patch ACSD-47497 resolve o problema em que a guia **[!UICONTROL Services]** não está visível na seção **[!UICONTROL Configuration]** no Administrador do Adobe Commerce. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.23 está instalado. A ID do patch é ACSD-47497. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.6.

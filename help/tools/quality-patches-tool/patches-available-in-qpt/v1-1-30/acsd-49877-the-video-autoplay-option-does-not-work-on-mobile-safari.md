@@ -1,17 +1,27 @@
 ---
-title: 'ACSD-49877: a reprodução automática de vídeo não funciona no celular [!DNL Safari]'
-description: Aplique o patch ACSD-49877 para corrigir o problema do Adobe Commerce em que a opção de reprodução automática de vídeo não funciona em dispositivos móveis [!DNL Safari] quando o vídeo estiver vinculado diretamente a um arquivo de vídeo remoto.
+title: 'ACSD-49877: a reprodução automática de vídeo não funciona no [!DNL Safari] móvel'
+description: Aplique o patch ACSD-49877 para corrigir o problema do Adobe Commerce em que a opção de reprodução automática de vídeo não funciona no [!DNL Safari] móvel quando o vídeo é vinculado diretamente a um arquivo de vídeo remoto.
 feature: CMS
 role: Admin
 exl-id: aa2557e2-4bed-4004-b9bc-36c59f1e9cdc
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 0%
-
 ---
-
 # ACSD-49877: a reprodução automática de vídeo não funciona no [!DNL Safari] móvel
 
 O ACSD-49877 corrige o problema em que a opção de reprodução automática no [!DNL Safari] móvel não funciona quando o vídeo é vinculado diretamente a um arquivo de vídeo remoto. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.30 está instalado. A ID do patch é ACSD-49877. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.7.

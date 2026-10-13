@@ -3,13 +3,27 @@ title: PHP cron seguro
 description: Saiba como restringir o acesso do navegador a pub/cron.php e proteger tarefas agendadas do Adobe Commerce contra execução cron não autorizada ou mal-intencionada.
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
-
 ---
-
 # PHP cron seguro
 
 Este tópico discute a proteção do `pub/cron.php` para evitar que ele seja usado em uma exploração mal-intencionada. Se você não proteger o cron, qualquer usuário poderá executar o cron para atacar seu aplicativo do Commerce.
@@ -259,7 +273,7 @@ Você pode executar o cron a qualquer momento, como durante o desenvolvimento, u
 Se você estiver usando um servidor Web Apache, remova a restrição do arquivo `.htaccess` antes de executar o cron em um navegador:
 
 1. Faça logon no servidor do Commerce como um usuário com permissões para gravar no sistema de arquivos do Commerce.
-1. Abra qualquer um dos seguintes em um editor de texto (dependendo do seu ponto de entrada para o Magento):
+1. Abra qualquer um dos itens a seguir em um editor de texto (dependendo do ponto de entrada para a Magento):
 
    ```text
    <magento_root>/pub/.htaccess

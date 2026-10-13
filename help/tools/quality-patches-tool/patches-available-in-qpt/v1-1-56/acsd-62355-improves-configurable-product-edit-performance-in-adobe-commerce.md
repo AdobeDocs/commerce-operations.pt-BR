@@ -5,13 +5,28 @@ feature: Admin Workspace
 role: Admin, Developer
 exl-id: cd934aa9-901a-4f03-ab83-716131e6bd85
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
-
 ---
-
 # ACSD-62355: melhora o desempenho de edição do produto configurável no Adobe Commerce
 
 O patch ACSD-62355 corrige o problema de tempos lentos de carregamento e alto consumo de memória na página de edição do produto configurável quando o produto tem muitos atributos com vários valores. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56 está instalado. A ID do patch é ACSD-62355. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.

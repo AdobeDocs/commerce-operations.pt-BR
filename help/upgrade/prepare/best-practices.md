@@ -3,13 +3,27 @@ title: Práticas recomendadas
 description: Use as práticas recomendadas pela Adobe para gerenciar o processo de atualização de seus projetos do Adobe Commerce.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas para atualização
 
 Este tópico lista as ações que você deve tomar para gerenciar a complexidade da atualização de projetos do Adobe Commerce. Sua equipe deve pensar em atualizações a partir do momento em que o desenvolvimento do projeto começa e continuar em cada versão. Seguindo essas práticas recomendadas, o processo de atualização será muito mais fácil, mais rápido e mais barato.

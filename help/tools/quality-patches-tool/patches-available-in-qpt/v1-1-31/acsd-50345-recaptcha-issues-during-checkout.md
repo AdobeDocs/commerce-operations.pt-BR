@@ -5,13 +5,25 @@ feature: Checkout, Orders
 role: Admin
 exl-id: eae9a6ad-0999-4581-b3c0-7667ee7beb54
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
-
 ---
-
 # ACSD-50345: problemas do reCAPTCHA durante a finalização
 
 O patch ACSD-50345 corrige o problema em que as validações do reCAPTCHA v2 e v3 falham ao fazer pedidos e durante a finalização. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.31 está instalado. A ID do patch é ACSD-50345. Observe que o problema foi parcialmente corrigido no Adobe Commerce 2.4.6 e está programado para ser completamente corrigido no Adobe Commerce 2.4.7.

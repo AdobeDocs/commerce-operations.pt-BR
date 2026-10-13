@@ -3,13 +3,22 @@ title: 'ACSD-51857: trabalho cron lento de "aggregate_sales_report_bestsellers_d
 description: Aplique o patch ACSD-51857 para corrigir o problema do Adobe Commerce em que o trabalho lento do cron "aggregate_sales_report_bestsellers_data" afeta grandes tabelas de banco de dados "sales_order" e "sales_order_item".
 exl-id: 48e9852d-2cf6-411c-adf6-f91ac7743338
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
-
 ---
-
 # ACSD-51857: O trabalho cron lento de `aggregate_sales_report_bestsellers_data` afeta o desempenho
 
 O patch ACSD-51857 corrige o problema em que o trabalho lento do cron `aggregate_sales_report_bestsellers_data` afeta tabelas de banco de dados `sales_order` e `sales_order_item` grandes. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.34 está instalado. A ID do patch é ACSD-51857. Observe que o problema foi corrigido no Adobe Commerce 2.4.7.

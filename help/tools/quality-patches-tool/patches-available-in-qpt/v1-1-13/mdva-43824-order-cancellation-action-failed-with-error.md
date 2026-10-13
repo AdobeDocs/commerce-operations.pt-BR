@@ -5,13 +5,23 @@ feature: Orders
 role: Admin
 exl-id: 8c2d15a0-2f53-4583-bdf2-86746f61160f
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
-
 ---
-
 # MDVA-43824: Falha na ação de cancelamento do pedido com o erro &quot;Você não cancelou o item&quot;
 
 O patch MDVA-43824 resolve o problema em que a ação de cancelamento do pedido falhou com o erro: *Você não cancelou o item*. Este patch está disponível quando a [Ferramenta de Patches de Qualidade (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.13 está instalada. A ID do patch é MDVA-43824. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.5.

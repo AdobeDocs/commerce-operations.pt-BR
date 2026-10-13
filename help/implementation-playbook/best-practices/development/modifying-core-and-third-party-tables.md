@@ -3,15 +3,25 @@ title: Práticas recomendadas para modificar tabelas de banco de dados
 description: Saiba como e quando modificar tabelas de banco de dados do Adobe Commerce e de terceiros.
 role: Developer
 feature: Best Practices
-last-substantial-update: 2022-11-15T00:00:00Z
+last-substantial-update: 2022-11-15T00:00:00.000Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1591'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas para modificar tabelas de banco de dados
 
 Este artigo fornece práticas recomendadas para modificar tabelas de banco de dados criadas por [!DNL Adobe Commerce] ou módulos de terceiros. Entender quando e como modificar tabelas com eficiência ajuda a garantir a viabilidade e a estabilidade a longo prazo de sua plataforma de comércio.
@@ -36,7 +46,7 @@ Essa situação exigiria que o banco de dados fosse migrado para um servidor, of
 
 Outra opção relacionada para manter os dados externos para o comércio, mas permitir que você os use em tempo real, seria aproveitar outras ferramentas, como o GraphQL mesh. Essa opção combina diferentes fontes de dados e as retorna como uma única resposta.
 
-Por exemplo, você pode `stitch` agrupar pedidos antigos de um banco de dados externo, talvez o site antigo do Magento 1 que está descontinuado. Em seguida, usando a malha do GraphQL, mostre-as como parte do histórico de pedidos dos clientes. Esses pedidos antigos podem ser combinados com os pedidos do seu ambiente [!DNL Adobe Commerce] atual.
+Por exemplo, você pode `stitch` agrupar pedidos antigos de um banco de dados externo, talvez do antigo site da Magento 1 que está descontinuado. Em seguida, usando a malha do GraphQL, mostre-as como parte do histórico de pedidos dos clientes. Esses pedidos antigos podem ser combinados com os pedidos do seu ambiente [!DNL Adobe Commerce] atual.
 
 Para obter mais informações sobre como usar a malha de API com o GraphQL, consulte [O que é malha de API](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}) e [Gateway do GraphQL Mesh](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 

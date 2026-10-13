@@ -2,13 +2,22 @@
 title: Desabilitar saída do módulo
 description: Saiba como desativar a saída do módulo no Adobe Commerce sem remover dependências. Descubra as etapas de configuração e os casos de uso.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
-
 ---
-
 # Desabilitar saída do módulo
 
 Por padrão, todos os módulos são configurados para que a saída do módulo possa ser gravada em uma visualização. Desativar a saída oferece uma maneira de essencialmente desativar um módulo que não pode ser desativado devido a dependências permanentes.

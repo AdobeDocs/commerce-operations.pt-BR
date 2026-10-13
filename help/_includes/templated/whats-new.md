@@ -1,7 +1,7 @@
 ---
-source-git-commit: 206f502c41b53c822cca42957d7705184f18c0ab
+source-git-commit: d3d2fcd6dd6023ced00872b04bbf6b624deca3be
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1132'
 ht-degree: 1%
 ---
 # Modelo de novidades
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 9 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.83 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101">ACP2E-5101: a instalação B2B do Adobe Commerce falha quando os indexadores usam a Atualização por Agendamento</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aae0dcd4753bf36df994a76e1311057fce65e32a">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.83 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223">ACP2E-5223: o índice de Permissões de Catálogo inclui sites excluídos dos grupos de clientes</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4a441aea67627b23c7f6a79c20317404283243f7">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 8 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.83 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854">AC-12854: a reordenação do administrador usa o número do pedido original com um sufixo -1</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/087b7f48c2864837d394c6a9a72f9b30d6db3d90">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 5 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview">Visão geral: Ferramenta de correções de qualidade (QPT) v1.1.84</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7550eaff7dfabecaf2d5ace52e4f28d8da9ff45a">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2 de outubro de 2026
 
@@ -266,104 +340,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Técnico
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/046d641dc45b269c6495bef0c06c53bdc500227b">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição de descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797">ACP2E-4797: o editor WYSIWYG de administração e o Page Builder bloqueiam caracteres Unicode de 4 bytes quando utf8mb4 é compatível</a>.</p>
-</td>
-      <td>
-        Novo tópico, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c97bb9c77eb0ec4bbc92d042cfa9fd440e970ca7">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682">ACP2E-4682: as páginas de vitrine que verificam a cotação isActive criam registros de cotação vazios</a>.</p>
-</td>
-      <td>
-        Novo tópico, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ceac870e3ccb9eeee64e3b574aaccd33c6ab69d0">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799">ACP2E-4799: a consulta GraphQL requisition_lists retorna total_count incorreto com a paginação</a>.</p>
-</td>
-      <td>
-        Novo tópico, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/19f854db1a0ff78d0a6dca070b4b6db09d3de83e">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Adição de descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870">ACP2E-4870: os emails de Alertas de produto ignoram as configurações de email de exibição do armazenamento</a>.</p>
-</td>
-      <td>
-        Novo tópico, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/907df07e641ab7124353f89ca799f92d097aa54f">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Atualização da tabela <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability">Disponibilidade do produto</a> com o suporte para Adobe Commerce 2.4.9 e remoção da entrada do Page Builder, que faz parte do produto principal desde a versão 2.4.3.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a5120adab9f624677447889722359951e775c3f3">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 9 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição da descrição detalhada da correção QPT 1.1.82 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593">ACP2E-4593: página CMS de Restrição de Site incorreta servida no site secundário em vitrines de vários sites</a>.</p>
-</td>
-      <td>
-        Novo tópico, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/86c85db0098192092241b680d38b882f1a52b578">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Correção da matriz de suporte da versão da extensão B2B em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability">Disponibilidade do produto</a> para Adobe Commerce 2.4.6, 2.4.7 e 2.4.8.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/50fb71aa968abf1302e86ffeb3d3b3a66b3c33d5">confirmar</a></td>
     </tr>
   </tbody>
 </table>

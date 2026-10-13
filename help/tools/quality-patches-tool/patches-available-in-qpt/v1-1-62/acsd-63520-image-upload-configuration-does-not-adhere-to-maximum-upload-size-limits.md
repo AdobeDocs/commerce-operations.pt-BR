@@ -5,13 +5,27 @@ feature: Media, Products
 role: Admin, Developer
 exl-id: 5132bfa9-813a-4623-8e02-a8801f6396e8
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
-
 ---
-
 # ACSD-63520: Imagens carregadas por meio de [!UICONTROL Image Upload Configuration] excedem os limites de tamanho configurados
 
 O patch ACSD-63520 resolve um problema em que imagens carregadas por meio do [!UICONTROL Images Upload Configuration] não aderem aos limites de tamanho máximo de upload configurados. Para resolver isso, defina as configurações de [!UICONTROL Images Upload Configuration] no painel [!UICONTROL Admin]. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 está instalado. A ID do patch é ACSD-63520. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.

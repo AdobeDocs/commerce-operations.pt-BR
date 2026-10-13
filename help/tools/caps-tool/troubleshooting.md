@@ -1,13 +1,22 @@
 ---
 title: Guia de Solução de Problemas do [!DNL Adobe Commerce Patching Automation]
 description: Solucionar problemas comuns e mensagens de erro no [!DNL Adobe Commerce Patching Automation]
-source-git-commit: f2b9ba118bfe4982a67ec5041141e5ee7548fc4d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
-
 ---
-
 # Guia de solução de problemas do [!DNL Adobe Commerce Patching Automation]
 
 Ao usar o [!DNL Patching Automation] para operações de patch, você pode encontrar mensagens de erro e problemas que podem impedir o êxito do aplicativo de patch ou da reversão. Este guia fornece soluções para os problemas mais comuns.

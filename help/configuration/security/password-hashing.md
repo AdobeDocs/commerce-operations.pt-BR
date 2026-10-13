@@ -3,13 +3,27 @@ title: Hash de senha
 description: Saiba mais sobre o hash de senha no Adobe Commerce, algoritmos compatíveis, como Argon2 e SHA256, e como os hashes herdados são atualizados sem alterar senhas.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
-
 ---
-
 # Hash de senha
 
 Atualmente, o Commerce usa sua própria estratégia para hash de senha, com base em diferentes algoritmos nativos de hash do PHP. O Commerce oferece suporte a vários algoritmos, como `MD5`, `SHA256` ou `Argon 2ID13`. Se a extensão Sodium estiver instalada (instalada por padrão no PHP 7.3), então `Argon 2ID13` é escolhido como o algoritmo de hash padrão. Caso contrário, `SHA256` será o padrão. O Commerce pode usar a função nativa `password_hash` do PHP com suporte ao algoritmo Argon 2i.

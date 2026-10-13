@@ -4,19 +4,28 @@ description: Saiba mais sobre as versões beta do Adobe Commerce e como particip
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: efdc4734b5c0db8efc0c83bef41e7ccaafd9b6af
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 0%
-
 ---
-
 # Versões beta do Adobe Commerce
 
 Os programas do Beta para [soluções de produtos da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions) são uma maneira de os comerciantes obterem acesso a recursos e códigos de pré-lançamento, fornecer feedback e orientar o futuro do Adobe Commerce. Há dois tipos de programas beta:
 
 - Beta público: um programa beta público está disponível para todos os clientes e parceiros da Adobe Commerce
-- Private Beta: um programa beta privado requer aprovação com base em critérios de qualificação para participar
+- Private beta: um programa beta privado requer aprovação com base em critérios de qualificação para participar
 
 >[!IMPORTANT]
 >
@@ -48,7 +57,7 @@ Para saber mais, consulte [Classificação de atributo](https://experienceleague
 
 Para compartilhar feedback sobre este recurso beta, envie um email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
-### Correspondência de pesquisa e classificação (Private Beta)
+### Correspondência de pesquisa e classificação (Private beta)
 
 A Adobe está aprimorando a forma como a descoberta de produtos classifica os resultados da pesquisa para [!DNL Live Search] em [!DNL Adobe Commerce] e para [!DNL Adobe Commerce Optimizer]. A atualização prioriza **correspondências de frase exata e próxima**, em seguida, correspondências em que **todos os termos de consulta aparecem no mesmo atributo pesquisável** e, por fim, **correspondências entre campos** (incluindo comportamento compatível com sugestões de estilo de preenchimento automático). Esse modelo em camadas ajuda as consultas de alta intenção a exibir os produtos mais relevantes primeiro, além de ainda retornar alternativas úteis.
 

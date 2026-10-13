@@ -2,8 +2,7 @@
 source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 0%
-
+ht-degree: 1%
 ---
 # Opções de CLI para consumidores da fila de mensagens
 

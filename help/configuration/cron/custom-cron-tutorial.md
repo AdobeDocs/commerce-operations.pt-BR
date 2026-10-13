@@ -2,13 +2,22 @@
 title: Configurar um trabalho cron personalizado e um grupo cron (tutorial)
 description: Saiba como criar trabalhos cron personalizados usando este tutorial passo a passo para o Adobe Commerce. Descubra a configuração do módulo e a configuração do grupo cron.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '850'
 ht-degree: 0%
-
 ---
-
 # Configurar um trabalho cron personalizado
 
 Este tutorial passo a passo mostra como criar um trabalho cron personalizado e, opcionalmente, um grupo cron em um módulo de amostra. Você pode usar um módulo que já tem ou pode usar um módulo de exemplo de nosso [`magento2-samples` repositório](https://github.com/magento/magento2-samples).

@@ -1,17 +1,32 @@
 ---
-title: 'ACSD-62708: o tamanho da fonte do editor  [!DNL TinyMCE] 7 no painel do administrador mostra PT'
-description: Aplique o patch ACSD-62708 para corrigir o problema do Adobe Commerce em que o tamanho da fonte do editor do  [!DNL TinyMCE] 7 no administrador mostra PT e não PX. Agora, você também pode definir o tamanho da fonte em PX em vez de PT.
+title: 'ACSD-62708: tamanho da fonte do editor do [!DNL TinyMCE] 7 no painel de administração mostra PT'
+description: Aplique o patch ACSD-62708 para corrigir o problema do Adobe Commerce em que o tamanho da fonte do editor do [!DNL TinyMCE] 7 no administrador mostra PT e não PX. Agora, você também pode definir o tamanho da fonte em PX em vez de PT.
 feature: Admin Workspace
 role: Admin, Developer
 exl-id: 037a5831-dbc7-4834-ab8e-9b1f765b92b2
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # ACSD-62708: tamanho da fonte do editor do [!DNL TinyMCE] 7 no painel de administração mostra PT
 
 O patch ACSD-62708 resolve o problema em que o tamanho da fonte do editor do [!DNL TinyMCE] 7 no painel de administração é exibido em PT em vez de PX. Este patch permite que você defina o tamanho da fonte em PX. Este patch está disponível quando o [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 está instalado. A ID do patch é ACSD-62708. Observe que o problema está programado para ser corrigido no Adobe Commerce 2.4.8.

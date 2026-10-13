@@ -3,13 +3,25 @@ title: Adobe Managed Services
 description: Saiba como o Adobe Managed Services pode ajudar a apoiar e manter sua implementação do Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Managed Services
 
@@ -28,12 +40,12 @@ O Adobe Managed Services oferece os principais benefícios em implementações d
 - **Destinos de nível de serviço (SLT) aprimorados**—Tempos de resposta mais rápidos que o suporte padrão da Adobe Commerce.
 - **Contratos de nível de serviço (SLAs) aprimorados** — nível de aplicativo de 99,9% que os clientes regulares da Adobe Commerce em infraestrutura em nuvem obtêm acima do nível de infraestrutura de 99,99%.
 - **Especialização em nuvem designada** — a Managed Services fornece aos clientes um CSE (Engenheiro de sucesso do cliente) designado que atua como um especialista em infraestrutura de nuvem e aplicativos. O CSE trabalha com os clientes e seus parceiros, fornecendo práticas recomendadas e orientação para acelerar o tempo de entrada no mercado, incluindo:
-   - Guia e suporte por meio do processo de integração
-   - Gerenciar provisionamento e configuração de plataforma
-   - Dar conselhos sobre princípios de arquitetura para integrações e personalizações
-   - Impulsionar o gerenciamento de incidentes e a continuidade de negócios
-   - Fornecer suporte a eventos por meio de planejamento, execução e monitoramento
-   - Suporte e experiência em nuvem (otimização proativa, relatórios e práticas recomendadas)
+  - Guia e suporte por meio do processo de integração
+  - Gerenciar provisionamento e configuração de plataforma
+  - Dar conselhos sobre princípios de arquitetura para integrações e personalizações
+  - Impulsionar o gerenciamento de incidentes e a continuidade de negócios
+  - Fornecer suporte a eventos por meio de planejamento, execução e monitoramento
+  - Suporte e experiência em nuvem (otimização proativa, relatórios e práticas recomendadas)
 
 Consulte a tabela a seguir para obter uma comparação mais detalhada dos principais benefícios da Managed Services:
 

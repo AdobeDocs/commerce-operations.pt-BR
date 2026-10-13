@@ -5,13 +5,23 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2023-12-8
 exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas para modificar ou substituir o código PHP principal e de terceiros
 
 Este documento descreve as práticas recomendadas quando surge a necessidade de modificar a funcionalidade, o resultado ou a entrada de qualquer código que você não criou ou não controla diretamente. Em outras palavras, código principal e código de terceiros. Este documento se concentra principalmente no código PHP de back-end.
@@ -104,7 +114,7 @@ As preferências são uma maneira ambiciosa de modificar o código e só devem s
 
 ### Observador
 
-Um observador é o conceito de um ouvinte de eventos, como encontrado em muitos aplicativos, plataformas, bibliotecas e linguagens de codificação. O conceito não é exclusivo da plataforma Adobe Commerce. Os observadores são colocados na plataforma desde os dias do Magento 1 e são considerados uma escolha primária de como modificar o código principal e o código de terceiros. 
+Um observador é o conceito de um ouvinte de eventos, como encontrado em muitos aplicativos, plataformas, bibliotecas e linguagens de codificação. O conceito não é exclusivo da plataforma Adobe Commerce. Os observadores são colocados na plataforma desde os dias da Magento 1 e são considerados uma escolha primária de como modificar o código principal e o código de terceiros. 
 
 A base de código principal e qualquer módulo de terceiros pode despachar um evento em um local escolhido no código. O observador, que é declarado em um arquivo `events.xml` e está escutando o evento despachado pelo nome, pode trabalhar em um nível global ou ser restrito a qualquer &quot;área&quot; do Adobe Commerce, como `frontend`, `adminhtml`, `graphql`, `webapi_rest` e `crontab`.
 

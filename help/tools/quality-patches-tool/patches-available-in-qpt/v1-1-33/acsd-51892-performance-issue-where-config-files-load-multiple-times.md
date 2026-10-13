@@ -5,13 +5,23 @@ feature: Observability
 role: Admin
 exl-id: ef3d3b85-b6a0-4037-95c0-e84125fa9088
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
-
 ---
-
 # ACSD-51892: problema de desempenho em que os arquivos de configuração são carregados várias vezes
 
 O patch ACSD-51892 corrige o problema de desempenho que surge do carregamento dos arquivos `app/etc/env.php` e `app/etc/config.php` sempre que os valores de configuração de implantação são acessados em uma única solicitação. A leitura excessiva de arquivos sobrecarrega o sistema, levando a uma deterioração no desempenho geral. Este patch está disponível quando o [!DNL Quality Patches Tool (QPT)] 1.1.33 está instalado. A ID do patch é ACSD-51892. Observe que o problema foi corrigido no Adobe Commerce 2.4.6-p2.

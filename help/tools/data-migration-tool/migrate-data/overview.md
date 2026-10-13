@@ -1,28 +1,37 @@
 ---
 title: Visão geral da migração
-description: Saiba como iniciar a migração de dados do Magento 1 para o Magento 2 com o  [!DNL Data Migration Tool].
+description: Saiba como iniciar a migração de dados da Magento 1 para a Magento 2 com o [!DNL Data Migration Tool].
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
-
 ---
-
 # Visão geral da migração
 
-Antes de iniciar a migração, interrompa todos os trabalhos cron do Magento 1.
+Antes de iniciar a migração, pare todos os trabalhos de cron do Magento 1.
 
 Durante o processo de migração, siga estas regras gerais para uma migração bem-sucedida:
 
-1. **Não** faça alterações no Administrador do Magento 1, exceto para gerenciamento de pedidos (remessa, criação de fatura e avisos de crédito)
+1. **Não** faça alterações no Administrador do Magento 1, com exceção do gerenciamento de pedidos (remessa, criação de fatura e avisos de crédito)
 1. **Não** altere qualquer código
-1. **Não** faça alterações no Administrador e na loja do Magento 2
+1. **Não** faça alterações no Administrador e na loja da Magento 2
 
 >[!TIP]
 >
->Todas as operações na loja do Magento 1 são permitidas.
+>Todas as operações na loja da Magento 1 são permitidas.
 
 ## Executar o [!DNL Data Migration Tool]
 
@@ -44,7 +53,7 @@ Esta seção mostra como executar o [!DNL Data Migration Tool] para migrar confi
    sudo -u <file system owner>  <command>
    ```
 
-1. Para executar comandos Magento de qualquer diretório, adicione `<magento_root>/bin` ao sistema `PATH`.
+1. Para executar comandos da Magento de qualquer diretório, adicione `<magento_root>/bin` ao sistema `PATH`.
 
    Como os shells têm sintaxe diferente, consulte uma referência como [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 

@@ -3,13 +3,22 @@ title: Configurar manualmente bancos de dados mestres
 description: Consulte orientações sobre como configurar manualmente a solução de banco de dados dividido.
 recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
-
 ---
-
 # Configurar manualmente bancos de dados mestres
 
 {{ee-only}}
@@ -23,9 +32,9 @@ A divisão manual de bancos de dados envolve:
 - Criar os bancos de dados do sistema de gerenciamento de pedidos e check-out (OMS)
 - Execute uma série de scripts SQL que:
 
-   - Soltar chaves estrangeiras
-   - Fazer backup de tabelas de banco de dados de vendas e cotações
-   - Mover tabelas do banco de dados principal para os bancos de dados de vendas e cotações
+  - Soltar chaves estrangeiras
+  - Fazer backup de tabelas de banco de dados de vendas e cotações
+  - Mover tabelas do banco de dados principal para os bancos de dados de vendas e cotações
 
 >[!WARNING]
 >

@@ -4,13 +4,27 @@ description: Garanta o desempenho e a segurança ideais da loja Adobe Commerce c
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: f02a13ca-c851-4508-a2bd-e5bc196a330c
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2297'
 ht-degree: 0%
-
 ---
-
 # Suporte e manutenção pós-lançamento do Adobe Commerce
 
 O suporte e a manutenção pós-lançamento são cruciais para garantir que sua loja da Adobe Commerce funcione sem problemas, tenha bom desempenho, permaneça segura e continue a atender aos seus objetivos de negócios. Esta fase envolve monitoramento contínuo, otimização, correção de erros, atualizações e suporte ao usuário. As seguintes seções dividem o **suporte pós-inicialização** em categorias principais:
@@ -122,7 +136,7 @@ Para permanecer atualizado e garantir a segurança do seu sistema da Adobe Comme
 
 >[!TIP]
 >
->Para obter mais detalhes e instruções passo a passo sobre como aplicar patches e manter a segurança, consulte [notas de versão de patch de segurança](../../../release/release-notes/security/overview.md) e [Como aplicar patches de segurança](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches). Você também deve revisar os relatórios da [Ferramenta de Análise do Site](/help/tools/site-wide-analysis-tool/access.md).
+>Para obter mais detalhes e instruções passo a passo sobre como aplicar patches e manter a segurança, consulte [notas de versão de patch de segurança](../../../release/release-notes/security/overview.md) e [Como aplicar patches de segurança](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches). Você também deve revisar os relatórios da [Ferramenta de Análise do Site](/help/tools/site-wide-analysis-tool/access.md).
 
 #### Conformidade com o PCI
 
