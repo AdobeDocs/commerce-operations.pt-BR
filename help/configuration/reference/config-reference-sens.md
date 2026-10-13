@@ -185,9 +185,9 @@ Estes valores de configuração estão disponíveis no Administrador em **Lojas*
 
 Estes valores de configuração estão disponíveis no Administrador em **Lojas** > Configurações > **Configuração** > **Catálogo** > **Inventário**.
 
-| Nome Caminho de configuração | Suporte à versão do Commerce Criptografado? | Específico do sistema? Sensível? | |
-|--------------|--------------|--------------|--------------|--------------|--------------| |
-| Chave de API do Google |0&rbrace; |  | Criptografado | | Sensível |`cataloginventory/source_selection_distance_based_google/api_key`
+| Nome | Caminho de configuração | Suporte à versão do | Commerce Criptografado? | Específico do sistema? | Sensível? |
+|--------------|--------------|--------------|--------------|--------------|--------------|
+| Chave de API do Google |0&rbrace; |  | Criptografado | Sensível |`cataloginventory/source_selection_distance_based_google/api_key`|
 
 ### Caminhos sensíveis ao mapa de site XML e específicos do sistema
 
