@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '1984'
 ht-degree: 0%
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 0%
 
 ## 2.4.5-p17
 
-O Adobe Commerce 2.4.5-p17 é uma [versão de segurança de suporte estendida](../../lifecycle-policy.md#security-only-transitional-period) que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.5.
+O Adobe Commerce 2.4.5-p17 é uma [versão de segurança de suporte estendida](/help/release/lifecycle-policy.md#security-only-transitional-period) que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.5.
 
-Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-49](https://helpx.adobe.com/br/security/products/magento/apsb26-49.html).
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 
@@ -60,7 +60,7 @@ O Adobe Commerce 2.4.5 agora é compatível com o RabbitMQ 4.2, que aborda a dat
 
 ## 2.4.5-p16
 
-O Adobe Commerce 2.4.5-p16 é uma [versão de segurança de suporte estendida](../../lifecycle-policy.md#security-only-transitional-period) que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.5.
+O Adobe Commerce 2.4.5-p16 é uma [versão de segurança de suporte estendida](/help/release/lifecycle-policy.md#security-only-transitional-period) que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.5.
 
 Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-05](https://helpx.adobe.com/br/security/products/magento/apsb26-05.html).
 
@@ -84,7 +84,7 @@ O Adobe Commerce 2.4.5-p16 foi verificado quanto à compatibilidade com o MariaD
 
 ## 2.4.5-p15
 
-O Adobe Commerce 2.4.5-p15 é uma [versão de segurança de suporte estendida](../../lifecycle-policy.md#security-only-transitional-period) que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.5.
+O Adobe Commerce 2.4.5-p15 é uma [versão de segurança de suporte estendida](/help/release/lifecycle-policy.md#security-only-transitional-period) que fornece correções de bugs de segurança para vulnerabilidades identificadas em versões anteriores da 2.4.5.
 
 Para obter as últimas informações sobre as correções de erros de segurança, consulte [Boletim de Segurança do Adobe APSB25-94](https://helpx.adobe.com/br/security/products/magento/apsb25-94.html).
 
