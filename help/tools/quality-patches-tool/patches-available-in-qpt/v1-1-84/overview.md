@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 4fcf88b6e7e67204ac07a82d756c068ac715d120
+source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -41,7 +41,7 @@ O QPT v1.1.84 inclui os seguintes patches:
 1. **ACP2E-5041**: corrige o problema em que salvar um produto durante uma atualização agendada faz com que a loja mostre o preço normal em vez de **[!UICONTROL Special Price]** depois que a atualização termina.
 1. **ACP2E-5059**: corrige o problema em que os clientes recebem emails de confirmação de pedido duplicados para o mesmo pedido.
 1. **ACP2E-5122**: corrige o problema em que erros manipulados de solicitações do GraphQL para o carrinho de compras são registrados incorretamente em logs de exceção como erros de aplicativo.
-1. **ACP2E-5143**: corrige o problema em que a consulta de rota do GraphQL renderiza o conteúdo completo da página do CMS quando somente os metadados de roteamento são solicitados, aumentando as consultas do banco de dados para páginas do CMS que contêm widgets do Page Builder.
+1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: corrige o problema em que a consulta do GraphQL `route` renderiza o conteúdo completo da página do CMS quando somente metadados de roteamento são solicitados, aumentando o número de consultas do banco de dados para páginas do CMS que contêm widgets do Page Builder.
 1. **ACP2E-5183**: Corrige o problema em que a implantação de conteúdo estático falha no PHP 8.5 durante a compilação de um arquivo `LESS` que usa a diretiva `@magento_import`.
 1. **ACP2E-5242**: corrige o problema em que a verificação da disponibilidade do produto ao adicionar itens ao carrinho exibe um erro indicando que o site não pode ser encontrado.
 1. **ACP2E-5263**: corrige o problema em que a exportação de produtos para um arquivo CSV pode ser interrompida antes da inclusão de todos os produtos, resultando em um arquivo incompleto.
