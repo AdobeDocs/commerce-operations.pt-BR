@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
+source-git-commit: 6a3ffddee54d8f9f04e8f72a0d2708baa5c1f37a
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '513'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -43,7 +43,7 @@ O QPT v1.1.83 inclui os seguintes patches:
 1. **ACP2E-4977**: corrige o problema em que os totais gerais de faturas e memorandos de crédito para produtos configuráveis não incluem **[!UICONTROL Fixed Product Tax]** (FPT), resultando em totais inferiores ao total do pedido.
 1. **AC-16530**: corrige o problema em que o carrinho de compras não refletia consistentemente as atualizações agendadas das regras de preço do catálogo.
 1. **AC-11389**: corrige o problema em que descontos, impostos e totais de pedidos são calculados incorretamente em alguns cenários de arredondamento.
-1. **ACP2E-4998**: corrige o problema em que a solicitação da API REST `POST /V1/products/tier-prices` falhava para toda a solicitação quando uma SKU na carga não existia, impedindo que SKUs válidas fossem atualizadas.
+1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: corrige o problema em que a solicitação da API REST `POST /V1/products/tier-prices` falhava totalmente quando uma SKU na carga não existia, impedindo que SKUs válidas fossem atualizadas.
 1. **ACP2E-5015**: corrige o problema em que salvar um catálogo compartilhado no Administrador pode remover involuntariamente os produtos atribuídos e os preços quando os dados de catálogo necessários não estiverem disponíveis.
 1. **AC-14940**: corrige o problema em que clicar em **[!UICONTROL Reset Password]** para uma conta de cliente no Administrador não enviava o email de redefinição de senha em alguns casos relacionados a lojas.
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: corrige o problema em que a instalação do módulo B2B falhava quando indexadores eram definidos como **[!UICONTROL Update by Schedule]**.
