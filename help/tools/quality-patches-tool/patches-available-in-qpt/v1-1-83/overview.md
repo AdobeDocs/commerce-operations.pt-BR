@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 42ccea80dbbf503f58ba7d63d4731687b3c310a8
+source-git-commit: e7d4ea592892d77cea7891773645a8381870f80a
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '514'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -33,7 +33,7 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 O QPT v1.1.83 inclui os seguintes patches:
 
 1. **AC-17975**: corrige vários problemas de compatibilidade do PHP 8.5 que afetam workflows de administração, autenticação de checkout, processamento de CAPTCHA, gerenciamento de categorias, páginas de configuração e operações de linha de comando em determinados ambientes PHP.
-1. **AC-18128**: corrige o problema em que as datas de pedidos e os carimbos de data/hora de comentários de pedidos retornados pelo GraphQL exibem datas de calendário incorretas em configurações de localidade fora do inglês.
+1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: corrige o problema em que datas de pedidos e carimbos de data/hora de comentários de pedidos retornados pelo GraphQL podem exibir datas de calendário incorretas em configurações de localidade em outros idiomas.
 1. **AC-18096**: corrige o problema em que os campos de data do Sales GraphQL retornam datas em um formato diferente das versões anteriores revertendo o formato de data de separado por barra (`/`) para separado por traço (`-`).
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: corrige o problema em que um usuário administrador com permissões restritas não pode excluir clientes da grade Clientes.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: corrige o problema em que o tipo de itens da lista de requisições é digitado incorretamente no esquema do GraphQL. O campo `items` mais antigo e o tipo `RequistionListItems` permanecem disponíveis, mas estão obsoletos.
