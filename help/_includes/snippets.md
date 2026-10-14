@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1188'
 ht-degree: 0%
-
 ---
 # Trechos
 
@@ -21,7 +20,7 @@ O cache Redis não é compatível com o Adobe Commerce 2.4.9 ou versões de patc
 
 >[!NOTE]
 >
->Se seu projeto do Commerce for implantado na nuvem, o armazenamento em cache de página inteira usará [Fastly](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly) em vez de Varnish. Os tópicos desta seção se aplicam somente a instalações locais.
+>Se seu projeto do Commerce for implantado na nuvem, o armazenamento em cache de página inteira usará [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) em vez de Varnish. Os tópicos desta seção se aplicam somente a instalações locais.
 
 ## Suporte à versão do serviço Adobe {#supported-versions-only}
 
@@ -29,7 +28,7 @@ O cache Redis não é compatível com o Adobe Commerce 2.4.9 ou versões de patc
 >
 >A Adobe fornece suporte somente para implantações que executam versões compatíveis de todas as dependências e serviços. Isso se aplica a:
 >
->* **Serviços da plataforma** (incluindo, mas não limitados a, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ e Nginx) — os comerciantes devem permanecer nas versões compatíveis com a versão do Adobe Commerce implantada. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR).
+>* **Serviços da plataforma** (incluindo, mas não limitados a, PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ e Nginx) — os comerciantes devem permanecer nas versões compatíveis com a versão do Adobe Commerce implantada. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
 >* **Extensões de serviços da Commerce** (incluindo, mas não limitado a, Live Search, Recomendações de produto e Serviços de pagamento) — somente a versão mais recente é suportada.
 >* **Extensões personalizadas e integrações de terceiros** — os comerciantes são responsáveis por garantir que elas permaneçam nas versões com suporte do fornecedor.
 >
@@ -39,7 +38,20 @@ O cache Redis não é compatível com o Adobe Commerce 2.4.9 ou versões de patc
 
 ## Patches de segurança para suporte estendido {#extended-support}
 
-{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
+>[!NOTE]
+>
+>Os patches de segurança do **suporte estendido** estão disponíveis apenas para clientes do Adobe Commerce. Eles não estão disponíveis para a base de código do Magento Open Source.
+>
+>**Adobe Commerce na Nuvem (linhas de versão 2.4.4-2.4.6)** — Atualize para uma versão com suporte ou migre para [!DNL Adobe Commerce as a Cloud Service] antes da data de imposição de atualização da sua versão. As disposições transitórias de suporte não substituem a imposição de atualização da nuvem.
+>
+>Consulte também:
+>
+>- [Política de ciclo de vida do software](/help/release/lifecycle-policy.md) — datas de fim de suporte, suporte estendido e disposições transitórias somente de segurança
+>- [Ações e prazos necessários para proteger ambientes do Commerce](/help/release/security-enforcement-policy.md) — datas de imposição e ações necessárias
+
+## Boletim de segurança do Adobe APSB26-49 {#security-bulletin-apsb26-49}
+
+Para obter as informações mais recentes sobre as correções de erros de segurança, consulte o [Boletim de Segurança do Adobe APSB26-49](https://www.adobe.com/trust/security/products/commerce/apsb26-49.html).
 
 ## Somente Commerce {#commerce-only}
 
@@ -65,7 +77,7 @@ O cache Redis não é compatível com o Adobe Commerce 2.4.9 ou versões de patc
 
 >[!NOTE]
 >
->Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/release-notes).
+>Depois de instalar esse patch de segurança, os comerciantes B2B do Adobe Commerce também devem atualizar para a versão mais recente do patch de segurança B2B compatível. Consulte as [notas de versão B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Somente Adobe Commerce {#ee-only}
 
@@ -119,7 +131,7 @@ Antes de executar indexadores no modo paralelo, você deve habilitar o suporte d
 
 >[!IMPORTANT]
 >
->A Adobe não oferece suporte à aplicação de patches oficiais fornecidos pela Adobe usando esse método. Use o método a seguir por sua conta e risco. Para aplicar patches oficiais, use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR){target="_blank"}. Sempre realize testes abrangentes antes de implantar qualquer patch personalizado.
+>A Adobe não oferece suporte à aplicação de patches oficiais fornecidos pela Adobe usando esse método. Use o método a seguir por sua conta e risco. Para aplicar patches oficiais, use o [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Sempre realize testes abrangentes antes de implantar qualquer patch personalizado.
 
 ## Backports de patch de segurança de outubro de 2025 {#oct-2025-backports}
 
@@ -150,7 +162,7 @@ Após alterações recentes da CSP/SRI, a página de check-out não carrega stat
 
 **Hotfix**:
 
-Uma correção está disponível. Consulte [Falha no check-out quando a minificação e o agrupamento JS estiverem habilitados](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-27997) na Base de Dados de Conhecimento para obter detalhes de patch.
+Uma correção está disponível. Consulte [Falha no check-out quando a minificação e o agrupamento JS estiverem habilitados](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) na Base de Dados de Conhecimento para obter detalhes de patch.
 
 ## Nota da CLI do Valkey Redis {#valkey-redis-cli-note}
 

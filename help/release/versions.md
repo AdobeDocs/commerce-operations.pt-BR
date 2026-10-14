@@ -15,9 +15,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 37a993a1f9b187dcfa74ecde581cf705eb66570d
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '133'
 ht-degree: 0%
 ---
 # Versões lançadas
@@ -33,8 +33,8 @@ A Adobe oferece uma extensão de suporte de um ano sem custo adicional para os c
 >[!NOTE]
 >
 >- A Adobe recomenda instalar ou atualizar o Adobe Commerce para o patch de segurança mais recente disponível para cada versão.
->- Para outras atualizações de segurança, consulte [Atualizações de Segurança para Magento/Adobe Commerce](https://helpx.adobe.com/br/security/products/magento.html).
->- Para obter preços, consulte [preços do Adobe Commerce](https://business.adobe.com/br/products/magento/pricing.html).
+>- Para obter outras atualizações de segurança, consulte [Boletins e conselhos de segurança do Adobe](https://www.adobe.com/trust/security/bulletins-and-advisories.html) na Central de Confiabilidade.
+>- Para obter preços, consulte [preços do Adobe Commerce](https://business.adobe.com/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
