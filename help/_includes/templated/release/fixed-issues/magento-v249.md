@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '32815'
 ht-degree: 0%
-
 ---
 # Correção de problemas do Magento Open Source (v2.4.9)
 
@@ -1020,7 +1019,7 @@ A validação de dados de endereço do cliente foi aprimorada para ser mais cons
 
 _ACP2E-4223 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0a8c9a9a)_
 
-#### [Problema relacionado ao preço do produto na &lbrace;Cloud] na página do carrinho
+#### [Problema relacionado ao preço do produto na {Cloud] na página do carrinho
 
 Correção do problema de preço do produto no pacote na página do carrinho para lojas de várias moedas
 
@@ -1456,7 +1455,7 @@ Antes da correção, as permissões de categoria não eram aplicadas corretament
 
 _ACP2E-4294 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/c135fc3a)_
 
-#### [Problema de preço de produto de pacote na &lbrace;Cloud] em PDP e PLP
+#### [Problema de preço de produto de pacote na {Cloud] em PDP e PLP
 
 Preço do pacote O produto com preço normal é mostrado corretamente na PDP/PLP para moeda não padrão
 
@@ -2987,7 +2986,7 @@ Antes da correção, ao solicitar um produto combinado com a opção &quot;Envia
 
 _ACP2E-3947 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/2a252ae6)_
 
-#### [Código OOTB da ]Magento da &lbrace;Cloud- Problema de configuração de modelo de email
+#### [Código OOTB da ]Magento da {Cloud- Problema de configuração de modelo de email
 
 Antes da correção, ao usar o envio assíncrono de email, os emails de remessa eram inconsistentes com a ordem da loja. Agora, após a correção, a ordem de e-mail de envio da loja correta é entregue.
 
@@ -3033,7 +3032,7 @@ _ACP2E-4455 - [Contribuição de código do GitHub](https://github.com/magento/m
 
 #### O administrador exibe um símbolo de moeda incorreto na ao criar a devolução
 
-Em uma configuração de vários sites com moedas diferentes (EUR/USD/GBP), a página de seleção de produto de retorno no admin agora exibe o símbolo de moeda correto. Anteriormente, ele exibia o símbolo de moeda padrão.
+Em uma configuração de vários sites com moedas diferentes (EUR/USD/GBP), a página de seleção de produto de devolução no admin agora exibe o símbolo de moeda correto. Anteriormente, ele exibia o símbolo de moeda padrão.
 
 _ACP2E-3658 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/df92debe)_
 
@@ -3648,7 +3647,7 @@ _ACP2E-4212 - [Contribuição de código do GitHub](https://github.com/magento/m
 
 #### Não é possível navegar entre sites na visualização da Atualização da programação
 
-Antes dessa correção, a visualização da atualização agendada falhava ao tentar visualizar o conteúdo de lojas com domínios personalizados. Após essa correção, os domínios de armazenamento personalizados podem ser visualizados como estão e navegados no iframe de visualização. A correção abrange produtos, categorias, páginas do CMS e blocos do CMS, além de oferecer suporte a links de navegação usando as marcas de marcação `{{store url}}`, conforme documentado em [Variáveis e Marcas de Marcação do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/variables/markup-tags).
+Antes dessa correção, a visualização da atualização agendada falhava ao tentar visualizar o conteúdo de lojas com domínios personalizados. Após essa correção, os domínios de armazenamento personalizados podem ser visualizados como estão e navegados no iframe de visualização. A correção abrange produtos, categorias, páginas do CMS e blocos do CMS, além de oferecer suporte a links de navegação usando as marcas de marcação `{{store url}}`, conforme documentado em [Variáveis e Marcas de Marcação do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
