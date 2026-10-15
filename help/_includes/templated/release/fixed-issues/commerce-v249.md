@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '37133'
 ht-degree: 0%
-
 ---
 # Correção de problemas do Adobe Commerce (v2.4.9)
 
@@ -3397,7 +3396,7 @@ _ACP2E-4525_
 
 #### O administrador exibe um símbolo de moeda incorreto na ao criar a devolução
 
-Em uma configuração de vários sites com moedas diferentes (EUR/USD/GBP), a página de seleção de produto de retorno no admin agora exibe o símbolo de moeda correto. Anteriormente, ele exibia o símbolo de moeda padrão.
+Em uma configuração de vários sites com moedas diferentes (EUR/USD/GBP), a página de seleção de produto de devolução no admin agora exibe o símbolo de moeda correto. Anteriormente, ele exibia o símbolo de moeda padrão.
 
 _ACP2E-3658 - [Contribuição de código do GitHub](https://github.com/magento/magento2/commit/df92debe)_
 

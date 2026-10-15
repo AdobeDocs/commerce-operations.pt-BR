@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -41,12 +41,12 @@ O QPT v1.1.84 inclui os seguintes patches:
 1. **ACP2E-5041**: corrige o problema em que salvar um produto durante uma atualização agendada faz com que a loja mostre o preço normal em vez de **[!UICONTROL Special Price]** depois que a atualização termina.
 1. **ACP2E-5059**: corrige o problema em que os clientes recebem emails de confirmação de pedido duplicados para o mesmo pedido.
 1. **ACP2E-5122**: corrige o problema em que erros manipulados de solicitações do GraphQL para o carrinho de compras são registrados incorretamente em logs de exceção como erros de aplicativo.
-1. **ACP2E-5143**: corrige o problema em que a consulta de rota do GraphQL renderiza o conteúdo completo da página do CMS quando somente os metadados de roteamento são solicitados, aumentando as consultas do banco de dados para páginas do CMS que contêm widgets do Page Builder.
+1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: corrige o problema em que a consulta do GraphQL `route` renderiza o conteúdo completo da página do CMS quando somente metadados de roteamento são solicitados, aumentando o número de consultas do banco de dados para páginas do CMS que contêm widgets do Page Builder.
 1. **ACP2E-5183**: Corrige o problema em que a implantação de conteúdo estático falha no PHP 8.5 durante a compilação de um arquivo `LESS` que usa a diretiva `@magento_import`.
 1. **ACP2E-5242**: corrige o problema em que a verificação da disponibilidade do produto ao adicionar itens ao carrinho exibe um erro indicando que o site não pode ser encontrado.
 1. **ACP2E-5263**: corrige o problema em que a exportação de produtos para um arquivo CSV pode ser interrompida antes da inclusão de todos os produtos, resultando em um arquivo incompleto.
 1. **ACP2E-5034**: corrige o problema em que o gerenciamento de cotações negociáveis redefine incorretamente os totais como *zero* ao recalcular uma cotação após selecionar um método de envio, descarta atualizações de quantidades de opções de produtos agrupados feitas por meio da ação **[!UICONTROL Configure]** no Administrador e não reflete corretamente os descontos no nível do item aplicados aos produtos de pacotes de preços dinâmicos nos subtotais da cotação.
-1. **ACP2E-4741**: corrige o problema em que um produto desaparece da loja depois que um produto vinculado a ele como [!UICONTROL Related Product], [!UICONTROL Up-Sell] ou Venda Cruzada é salvo enquanto um estoque e uma origem não padrão estão em uso.
+1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: corrige o problema em que um produto desaparece da Loja depois que um produto vinculado a ele como um Produto Relacionado, Venda Suplementar ou Venda Cruzada é salvo enquanto um estoque e uma origem não padrão estão em uso.
 1. **ACP2E-5079**: corrige o problema em que a avaliação de um segmento de cliente atribuído a vários sites retorna clientes correspondentes somente do primeiro site quando as contas de cliente são compartilhadas globalmente.
 1. **ACP2E-5127**: Corrige o problema no qual a edição de uma conta de empresa no painel Admin com uma localidade não padrão redefine seu **[!UICONTROL Credit Limit]** como *zero*.
 1. **AC-15494**: corrige o problema em que a consulta de produtos retorna nomes de produtos com caracteres especiais com escape de HTML em vez de seus caracteres originais.

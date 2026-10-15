@@ -35,9 +35,9 @@ level_v2:
     internal-label: Experienced
 badgePaas: label="Somente Adobe Commerce na nuvem 2.4.4 - 2.4.9" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce na versão 2.4.4 a 2.4.9"
 nudge: true
-source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
+source-git-commit: 5cfbac0f93bc8f82c1af04057c0d9ac3b1f3abb4
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2181'
 ht-degree: 0%
 ---
 
@@ -74,7 +74,7 @@ Para manter seu ambiente de comércio eletrônico seguro e reduzir riscos, todos
 
 1. Uma versão segura e compatível do Adobe Commerce na nuvem. As versões totalmente compatíveis incluem 2.4.8, 2.4.9 ou a versão mais recente disponível. Consulte a documentação da [política de ciclo de vida](/help/release/lifecycle-policy.md).
 
-Siga as diretrizes abaixo para verificar se é necessário tomar medidas para proteger o ambiente do Adobe Commerce na nuvem. Os ambientes que não atenderem aos requisitos de segurança dentro dos prazos descritos na Tabela 1 abaixo terão o tráfego de entrada suspenso, colocando a vitrine offline. Se você tiver dúvidas sobre o cumprimento do prazo, entre em contato com sua equipe de conta ou com o [Suporte da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) assim que possível.
+Siga as diretrizes abaixo para verificar se é necessário tomar medidas para proteger o ambiente do Adobe Commerce na nuvem. Os ambientes que não atenderem aos requisitos de segurança dentro dos prazos descritos na Tabela 1 abaixo podem ter o acesso de administrador suspenso, enquanto a loja permanece online, e/ou ter tráfego de entrada suspenso, colocando a loja offline. Se você tiver dúvidas sobre o cumprimento do prazo, entre em contato com sua equipe de conta ou com o [Suporte da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) assim que possível.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ A tabela a seguir ajuda a comparar suas opções e determinar o melhor caminho p
 
 A Adobe continua comprometida em ajudar você a executar as etapas necessárias para adotar uma versão compatível de software de terceiros, atualizar para a versão mais recente do Adobe Commerce na nuvem ou migrar para o Adobe Commerce as a Cloud Service.  Se você estiver preocupado em cumprir o prazo e precisar de uma breve extensão, contate a equipe de conta ou o [Suporte da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) assim que possível.
 
-Se um ambiente não atender aos requisitos de segurança pelas datas de imposição compartilhadas acima, a Adobe será forçada a tomar as medidas apropriadas para manter a segurança da plataforma Adobe Commerce e de seus clientes. Isso inclui a suspensão do tráfego para a infraestrutura afetada e, como resultado, sua loja da Commerce ficará offline.
+Se um ambiente não atender aos requisitos de segurança pelas datas de imposição compartilhadas acima, a Adobe será forçada a tomar as medidas apropriadas para manter a segurança da plataforma Adobe Commerce e de seus clientes. Isso pode incluir a suspensão do acesso ao administrador do Adobe Commerce para todos os usuários no ambiente afetado, enquanto a loja permanece online, e/ou a suspensão do tráfego para a infraestrutura afetada, o que resultará na sua loja do Commerce ficar offline.
 
 Se um ambiente continuar a não ser compatível após a suspensão do tráfego, a Adobe poderá encerrar os serviços em nuvem, iniciando o processo de desativação. Como resultado da desativação, todos os dados e ativos no ambiente de comércio hospedado, incluindo todas as instâncias, ambientes e ramificações, serão excluídos permanentemente e não poderão ser restaurados.
 

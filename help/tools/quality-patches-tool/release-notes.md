@@ -759,7 +759,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **ACSD-54776** (para Adobe Commerce >=2.4.5 &lt;2.4.7) - Corrige o problema em que valores de campo de produto desmarcados *[!UICONTROL Use Default Value]* e não padrão não são salvos no segundo modo de exibição de site, loja e loja.
 * **ACSD-53998** (para Adobe Commerce e Magento Open Source >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.7) - Corrige o problema em que um **[!UICONTROL Dynamic Block]** baseado em um **[!UICONTROL Customer Segment]** não funciona corretamente depois de sair de uma conta de cliente.
 * **ACSD-53204** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Correções *O produto não pode ser salvo.* erro ao fazer solicitações simultâneas para adicionar imagens à galeria de produtos usando o ponto de extremidade `rest/V1/products/<sku>/media`.
-* **ACSD-47657** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Adição de um mecanismo de cache para credenciais AWS. Um provedor de credenciais agora usa o cache da Magento para armazenar em cache credenciais recuperadas do AWS para configuração EC2.
+* **ACSD-47657** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Adição de um mecanismo de cache para credenciais AWS. Um provedor de credenciais agora usa o cache do Magento para armazenar em cache credenciais recuperadas do AWS para configuração EC2.
 * Patches atualizados: ACSD-51984, ACSD-51574.
 
 ## v1.1.38 {#v1-1-38}
