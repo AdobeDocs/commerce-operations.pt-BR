@@ -90,7 +90,7 @@ Siga estas etapas para identificar e solucionar problemas da causa.
 1. Se as etapas acima não ajudarem a identificar ou solucionar o problema, considere habilitar o cache L2 para reduzir o tráfego de rede entre o aplicativo e o [!DNL Redis]. Para obter informações gerais sobre o que é cache L2, consulte [cache L2 no aplicativo do Adobe Commerce](/help/configuration/cache/level-two-cache.md) no Guia de Configuração do Commerce. Para habilitar o cache L2 para a infraestrutura em nuvem, tente o seguinte:
 
    * Atualize as Ferramentas ECE se estiverem abaixo da versão 2002.1.2.
-   * Configure o Cache L2 usando a [variável REDIS\_BACKEND](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) e atualizando o arquivo `.magento.env.yaml`:
+   * Configure o Cache L2 usando a [variável REDIS\_BACKEND](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) e atualizando o arquivo `.magento.env.yaml`:
 
    ```yaml
    stage:
