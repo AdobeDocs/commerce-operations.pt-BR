@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
+source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '523'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -39,8 +39,8 @@ O QPT v1.1.83 inclui os seguintes patches:
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: corrige o problema em que um usuário administrador com permissões restritas não pode excluir clientes da grade Clientes.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: corrige o problema em que o tipo de itens da lista de requisições é digitado incorretamente no esquema do GraphQL. O campo `items` mais antigo e o tipo `RequistionListItems` permanecem disponíveis, mas estão obsoletos.
 1. **ACP2E-4908**: corrige o problema em que catálogos grandes causam o uso excessivo de memória no Redis ou Valkey porque foram criadas entradas de cache de layout separadas para cada produto em cada exibição de loja.
+1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)**: corrige o problema em que os totais gerais de faturas e memorandos de crédito para produtos configuráveis não incluem o Imposto Fixo do Produto (FPT), resultando em totais inferiores ao total do pedido.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: corrige o problema em que reordenar um pedido no Administrador cria um novo número de pedido com um sufixo `-1` em vez de atribuir o próximo número de pedido sequencial.
-1. **ACP2E-4977**: corrige o problema em que os totais gerais de faturas e memorandos de crédito para produtos configuráveis não incluem **[!UICONTROL Fixed Product Tax]** (FPT), resultando em totais inferiores ao total do pedido.
 1. **AC-16530**: corrige o problema em que o carrinho de compras não refletia consistentemente as atualizações agendadas das regras de preço do catálogo.
 1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)**: corrige o problema em que descontos, impostos e totais de pedidos são calculados incorretamente em alguns cenários de arredondamento.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**: corrige o problema em que salvar um catálogo compartilhado no Administrador pode remover involuntariamente os produtos atribuídos e os preços quando os dados de catálogo necessários não estiverem disponíveis.
