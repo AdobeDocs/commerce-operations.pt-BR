@@ -38,7 +38,7 @@ As seções a seguir incluem informações de práticas recomendadas para a fase
 
 | Prática recomendada | Descrição |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Serviço de Notificação de Segurança do Adobe](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Assine as notificações de segurança do Adobe. |
+| [Serviço de Notificação de Segurança do Adobe](https://www.adobe.com/br/subscription/adbeSecurityNotifications.html) | Assine as notificações de segurança do Adobe. |
 | [Proteja seu site e sua infraestrutura do Commerce](security-best-practices.md) | Reforce a postura de segurança das instalações do Commerce para proteger a loja, o administrador, a infraestrutura e os dados da Commerce contra acesso não autorizado e ataques cibernéticos. |
 | [reCAPTCHA do Google](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=pt-BR) | Configure o Google reCAPTCHA para acesso de Administrador e várias ações de loja iniciadas por clientes registrados. |
 | [Configurar rastreadores da Web](robots-txt.md) | Transmita instruções sobre o site do Adobe Commerce para rastreadores da Web. |
