@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
+source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
 workflow-type: tm+mt
-source-wordcount: '10911'
+source-wordcount: '10961'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,10 @@ ht-degree: 0%
       - [AC-12854: A reordenação do administrador usa o número do pedido original com um sufixo -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5059: Os trabalhos cron simultâneos enviam emails de confirmação de pedido duplicados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
+      - [ACP2E-5122: Erros de carrinho tratados do GraphQL são gravados incorretamente no log de exceções](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)
+      - [ACP2E-4913: Entrega da API REST e criação de fatura não são repetidas após um deadlock do banco de dados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)
+      - [ACP2E-5017: Falha na consulta de função do cliente do GraphQL para clientes sem uma empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
       - [ACP2E-5143: A consulta de rota do GraphQL renderiza conteúdo de página do CMS não solicitado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
       - [ACP2E-4741: Salvar um produto vinculado oculta outro produto da loja com estoque personalizado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
   - [Verifique o problema do Adobe Commerce com a Ferramenta de correções de qualidade](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)

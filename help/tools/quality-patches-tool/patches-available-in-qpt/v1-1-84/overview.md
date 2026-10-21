@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
+source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -32,15 +32,15 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 
 O QPT v1.1.84 inclui os seguintes patches:
 
-1. **ACP2E-4913**: corrige o problema em que as operações de remessa e faturamento falham devido a um deadlock.
+1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: corrige o problema em que a entrega da API REST e a criação da fatura falham permanentemente após um deadlock do banco de dados.
 1. **ACP2E-5005**: corrige o problema em que a quantidade de uma opção de produto agrupado em uma cotação negociável é revertida para seu valor anterior quando o produto agrupado é reconfigurado no Administrador e a quantidade é editada.
 1. **ACP2E-5009**: corrige o problema em que a migração de dados do Magento Open Source para o Adobe Commerce não migra corretamente as alterações de design agendado da categoria e as atualizações agendadas do produto **[!UICONTROL Special Price]**, fazendo com que algumas atualizações agendadas sejam ignoradas ou ausentes durante a migração, e melhora o desempenho da migração.
-1. **ACP2E-5017**: corrige o problema em que a consulta da função do cliente por meio do GraphQL retorna um *Erro interno de servidor* quando o cliente não está atribuído a uma empresa.
+1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: corrige o problema em que a consulta do cliente `role` por meio do GraphQL retorna o *erro interno do servidor* quando o cliente não está atribuído a uma empresa.
 1. **ACP2E-5027**: corrige o problema em que indexadores permanecem presos em um loop e a reindexação não é concluída quando o bloqueio de arquivos está habilitado.
 1. **ACP2E-5029**: corrige o problema em que as alterações nas regras de preço do catálogo não aparecem em **[!DNL Live Search]** até que uma ressincronização manual seja executada.
 1. **ACP2E-5041**: corrige o problema em que salvar um produto durante uma atualização agendada faz com que a loja mostre o preço normal em vez de **[!UICONTROL Special Price]** depois que a atualização termina.
-1. **ACP2E-5059**: corrige o problema em que os clientes recebem emails de confirmação de pedido duplicados para o mesmo pedido.
-1. **ACP2E-5122**: corrige o problema em que erros manipulados de solicitações do GraphQL para o carrinho de compras são registrados incorretamente em logs de exceção como erros de aplicativo.
+1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**: corrige o problema em que os clientes recebem emails de confirmação de pedido duplicados para o mesmo pedido.
+1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**: corrige o problema em que erros manipulados de solicitações do GraphQL para o carrinho de compras são registrados incorretamente em logs de exceção como erros de aplicativo.
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: corrige o problema em que a consulta do GraphQL `route` renderiza o conteúdo completo da página do CMS quando somente metadados de roteamento são solicitados, aumentando o número de consultas do banco de dados para páginas do CMS que contêm widgets do Page Builder.
 1. **ACP2E-5183**: Corrige o problema em que a implantação de conteúdo estático falha no PHP 8.5 durante a compilação de um arquivo `LESS` que usa a diretiva `@magento_import`.
 1. **ACP2E-5242**: corrige o problema em que a verificação da disponibilidade do produto ao adicionar itens ao carrinho exibe um erro indicando que o site não pode ser encontrado.
