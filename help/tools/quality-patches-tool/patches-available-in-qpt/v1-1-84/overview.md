@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: ea739d12f02672cf585925b90860bca3b44de02a
+source-git-commit: 9d7a2fd125245848466442b66f53fd9b0476da4e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -34,7 +34,7 @@ O QPT v1.1.84 inclui os seguintes patches:
 
 1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**: corrige o problema em que a quantidade de uma opção de produto agrupado em uma cotação negociável é revertida para seu valor anterior quando o produto agrupado é reconfigurado no Administrador e a quantidade é editada.
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: corrige o problema em que a entrega da API REST e a criação da fatura falham permanentemente após um deadlock do banco de dados.
-1. **ACP2E-5009**: corrige o problema em que a migração de dados do Magento Open Source para o Adobe Commerce não migra corretamente as alterações de design agendado da categoria e as atualizações agendadas do produto **[!UICONTROL Special Price]**, fazendo com que algumas atualizações agendadas sejam ignoradas ou ausentes durante a migração, e melhora o desempenho da migração.
+1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: corrige o problema em que a migração de dados do Magento Open Source para o Adobe Commerce não migra corretamente as alterações de design agendado da categoria e as atualizações agendadas do produto **[!UICONTROL Special Price]**, fazendo com que algumas atualizações agendadas fiquem ausentes ou sejam ignoradas durante a migração, e melhora o desempenho da migração.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: corrige o problema em que a consulta do cliente `role` por meio do GraphQL retorna o *erro interno do servidor* quando o cliente não está atribuído a uma empresa.
 1. **ACP2E-5027**: corrige o problema em que indexadores permanecem presos em um loop e a reindexação não é concluída quando o bloqueio de arquivos está habilitado.
 1. **ACP2E-5029**: corrige o problema em que as alterações nas regras de preço do catálogo não aparecem em **[!DNL Live Search]** até que uma ressincronização manual seja executada.
