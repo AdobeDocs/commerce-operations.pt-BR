@@ -1,7 +1,7 @@
 ---
-source-git-commit: 42acba2c908566207c9cbdd3b1c5b849366f9d32
+source-git-commit: e402a703aa2b493618d866ba001273d4f3b21bc6
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1830'
 ht-degree: 1%
 ---
 # Modelo de novidades
@@ -9,6 +9,180 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 23 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.84 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263">ACP2E-5263: a exportação de produtos CSV para mais cedo e omite produtos</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b9382dc0f240bcebddcb833940f6074854949964">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 22 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.84 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127">ACP2E-5127: salvar uma empresa com uma localidade Admin que não esteja em inglês redefine o Limite de Crédito para zero</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/67377f54c43f6dc50cb33aafbd003d4b365cbaf5">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.84 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005">ACP2E-5005: as quantidades de produtos do pacote não são atualizadas nas cotações negociáveis do administrador</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d6fa3a2ebb8591baad26251a7e0adde24b7adab6">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.84 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009">ACP2E-5009: a migração de Armazenamento temporário de conteúdo cria atualizações inválidas e reduz a velocidade da configuração:atualização</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9ee0ee2a0dd1f55f4b49b6023d69f61065387d49">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 21 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.84 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079">ACP2E-5079: os segmentos de clientes correspondem somente ao primeiro site com compartilhamento de conta global</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b243d218091c48dc97f2ff7ffa3e79325aa889c5">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 20 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.84 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913">ACP2E-4913: a remessa da API REST e a criação da fatura não são repetidas após um deadlock do banco de dados</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf4c32b6c0780b2f6f8dbccd27f4d7bba3579520">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.84 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017">ACP2E-5017: falha na consulta de função de cliente do GraphQL para clientes sem uma empresa</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a5cc23e2d9c50215402b7454267cfe7a3c3201cd">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.84 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122">ACP2E-5122: os erros de carrinho manipulados do GraphQL são gravados incorretamente no log de exceção</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ba9e8ab95a6e8f079953f6de8906512f64ade22f">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.84 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059">ACP2E-5059: trabalhos cron simultâneos enviam emails de confirmação de pedido duplicados</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7e234cf6acf7fa74f7f5eff0e39f606123dcc485">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 19 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição de descrição detalhada da correção QPT 1.1.83 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940">AC-14940: o email de redefinição de senha não é enviado após a exclusão de uma exibição de loja do cliente</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7ab75a56bd8ca9bc9bcc96dc21678c99711b6ef3">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.83 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389">AC-11389: os totais do pedido variam com base nos produtos do pedido adicionados ao carrinho</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3e45719183a23e37a98a94aca955b902f5e795ed">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.83 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877">ACP2E-4877: o botão Editar está ausente para pagamentos pendentes em ordens de Conta no Administrador</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/620de17746347e5cb352b2c9f6a345bd5b41accb">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Adição da descrição detalhada da correção QPT 1.1.83 para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977">ACP2E-4977: os totais configuráveis da fatura do produto e do memorando de crédito excluem o Imposto Fixo do Produto</a>.</p>
+</td>
+      <td>
+        Novo tópico, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd42ed03b4661e13c24dd3ce8df29375ae1c9e32">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 16 de outubro de 2026
 
@@ -320,28 +494,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Novo tópico, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edfc38af34925749c5acb36d2c0bcfc5d16a577a">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização da documentação de armazenamento em cache do Commerce com orientação local mais clara em relação à nuvem e nova orientação de migração para mudar para o Valkey com cache L2 do Symfony:<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cache/caching-overview">Visão geral sobre armazenamento em cache e opções de configuração</a>.<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cache/cache-types">Configuração de front-ends e tipos de cache</a>.<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cache/cache-options">Opções de back-end de cache e referência de armazenamento</a>.<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cache/level-two-cache">Configuração de cache L2 para otimização de desempenho</a> com orientação para migrar do <code>RemoteSynchronizedCache</code> para o cache L2 do Symfony.<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Práticas recomendadas para a configuração do Valkey e do serviço Redis</a> com etapas de migração específicas da nuvem para o Valkey com cache L2 do Symfony.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">confirmar</a></td>
     </tr>
   </tbody>
 </table>
