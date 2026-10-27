@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: e3fec5eba866e1d0ae4c7285667f41b289edf21b
+source-git-commit: d83b72ab0780e56af7cf7732de2bfe8de7d7b9c5
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '616'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -43,6 +43,8 @@ O QPT v1.1.84 inclui os seguintes patches:
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**: corrige o problema em que erros manipulados de solicitações do GraphQL para o carrinho de compras são registrados incorretamente em logs de exceção como erros de aplicativo.
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: corrige o problema em que a consulta do GraphQL `route` renderiza o conteúdo completo da página do CMS quando somente metadados de roteamento são solicitados, aumentando o número de consultas do banco de dados para páginas do CMS que contêm widgets do Page Builder.
 1. **ACP2E-5183**: Corrige o problema em que a implantação de conteúdo estático falha no PHP 8.5 durante a compilação de um arquivo `LESS` que usa a diretiva `@magento_import`.
+1. **[ACP2E-5242](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)**: corrige o problema em que a verificação da disponibilidade do produto ao adicionar itens ao carrinho exibe um erro indicando que o site não pode ser encontrado.
+1. **ACP2E-5263**: corrige o problema em que a exportação de produtos para um arquivo CSV pode ser interrompida antes da inclusão de todos os produtos, resultando em um arquivo incompleto.
 1. **ACP2E-5242**: corrige o problema em que a verificação da disponibilidade do produto ao adicionar itens ao carrinho exibe um erro indicando que o site não pode ser encontrado.
 1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)**: corrige um problema em que os produtos estão ausentes do CSV de exportação do produto depois que uma exportação é interrompida por um erro causado por dados inconsistentes.
 1. **ACP2E-5034**: corrige o problema em que o gerenciamento de cotações negociáveis redefine incorretamente os totais como *zero* ao recalcular uma cotação após selecionar um método de envio, descarta atualizações de quantidades de opções de produtos agrupados feitas por meio da ação **[!UICONTROL Configure]** no Administrador e não reflete corretamente os descontos no nível do item aplicados aos produtos de pacotes de preços dinâmicos nos subtotais da cotação.
