@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
+source-git-commit: 5c33cd529bff9208d640cec3c4068f578a9e376c
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '525'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -44,7 +44,7 @@ O QPT v1.1.83 inclui os seguintes patches:
 1. **AC-16530**: corrige o problema em que o carrinho de compras não refletia consistentemente as atualizações agendadas das regras de preço do catálogo.
 1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)**: corrige o problema em que descontos, impostos e totais de pedidos são calculados incorretamente em alguns cenários de arredondamento.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**: corrige o problema em que salvar um catálogo compartilhado no Administrador pode remover involuntariamente os produtos atribuídos e os preços quando os dados de catálogo necessários não estiverem disponíveis.
-1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: corrige o problema em que a solicitação da API REST `POST /V1/products/tier-prices` falhava totalmente quando uma SKU na carga não existia, impedindo que SKUs válidas fossem atualizadas.
+1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: corrige o problema em que a solicitação da API REST `POST /V1/products/tier-prices` falhava para toda a solicitação quando uma SKU na carga não existia, impedindo que SKUs válidas fossem atualizadas.
 1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)**: corrige o problema em que clicar em [!UICONTROL Reset Password] para uma conta de cliente no Administrador não envia o email de redefinição de senha em alguns casos relacionados a lojas.
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: corrige o problema em que a instalação do módulo B2B falhava quando indexadores eram definidos como **[!UICONTROL Update by Schedule]**.
 1. **ACP2E-5205**: corrige o problema quando o carregamento de categoria leva um tempo considerável ou causa um tempo limite quando um grande número de categorias e produtos está envolvido. Além disso, a contagem de produtos agora é exibida corretamente para cada folha de categoria.
