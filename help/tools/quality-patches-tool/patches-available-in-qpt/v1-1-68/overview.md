@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a257144a94d94d7eb572031e2a188809cbff6ea8
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '267'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.68
@@ -44,7 +44,6 @@ O QPT v1.1.68 inclui os seguintes patches:
 1. **ACSD-66865**: salvar um **[!UICONTROL Catalog Price Rule]** invalida os indexadores e fornece uma alternativa para reindexar somente os produtos afetados.
 1. **ACSD-66889**: erro durante a reindexação do inventário na CLI.
 1. **ACSD-66963**: a mutação `estimateTotals` retorna *null* para descontos quando um código de desconto é aplicado a um carrinho com produtos virtuais.
-1. **ACSD-66965**: a opção Imprimir na página Lista de Requisições causa um erro.
 1. **ACSD-66965**: a opção **[!UICONTROL Print]** na página **[!UICONTROL Requisition List]** causa um erro.
 1. **ACSD-67039**: os registros do cliente não foram salvos devido à validação do atributo do sistema `rp_token`.
 
