@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
 workflow-type: tm+mt
-source-wordcount: '33143'
+source-wordcount: '33534'
 ht-degree: 0%
 ---
 # Notas de versão
@@ -29,11 +29,28 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 
 >[!INFO]
 >
->Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=pt-BR#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=pt-BR) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
+>Consulte [Aplicar patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obter instruções sobre como aplicar patches aos seus projetos do Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Procurar patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) no Guia de Atualização de Software para verificar uma lista completa de patches lançados.
 
 >[!INFO]
 >
 >Para obter informações sobre [!DNL quality patches] criado pela Comunidade para o Magento Open Source, consulte as [notas de versão](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.85 {#v1-1-85}
+
+* **ACP2E-4929** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10) - Corrige o problema em que os rótulos de atributo na página [!UICONTROL Compare Products] exibem traduções de uma exibição de repositório diferente em vez da exibição de repositório atual.
+* **ACP2E-5075** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.10) - Corrige o problema em que uma regra de preço de carrinho de valor fixo com uma condição de categoria aplicava incorretamente um desconto a todos os filhos de um produto de pacote de preço dinâmico quando a regra correspondia somente ao produto pai do pacote.
+* **ACP2E-5077** (para Adobe Commerce e Magento Open Source >=2.4.7-p7 &lt;2.4.10) - Corrige o problema em que consultas simultâneas do `customerCart` GraphQL ou solicitações do `POST /V1/carts/mine REST` criam carrinhos ativos duplicados para clientes que ainda não têm um carrinho ativo.
+* **ACP2E-5088** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.10) - Corrige o problema em que o carrinho de compras persistente de um cliente é limpo quando a sessão expira.
+* **ACP2E-3991** (para Adobe Commerce >=2.4.7 &lt;2.4.9) - Corrige o problema em que o endereço IP do cliente não é determinado corretamente.
+* **ACP2E-5092** (para Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Corrige o problema em que a página [!UICONTROL Company Profile] e a página Admin [!UICONTROL Customer Edit] exibem um erro quando um endereço de empresa é salvo sem uma região e, posteriormente, uma região é adicionada ao seu país.
+* **ACP2E-5124** (para Adobe Commerce e Magento Open Source >=2.4.5 &lt;2.4.10) - Corrige o problema em que o botão [!UICONTROL Import] permanece disponível nos resultados da validação após a falha da validação quando o [!UICONTROL Validation Strategy] está definido como *Parar com Erro*.
+* **AC-17456** (para Adobe Commerce e Magento Open Source >=2.4.9 &lt;2.4.10) - Corrige o problema em que a edição do escopo *[!UICONTROL Global]* na página [!UICONTROL Design Configuration] do Painel de Administração retorna um erro *HTTP 500* no PHP 8.4 e 8.5.
+* **ACP2E-5212** (para Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Corrige o problema em que [!UICONTROL Quick Order] aceita arquivos não CSV renomeados com uma extensão `.csv`.
+* **ACP2E-5300** (para Adobe Commerce e Magento Open Source >=2.4.9 &lt;2.4.10) - Corrige o problema em que pesquisas por palavras-chave para vários números de ordem separados por espaços ou vírgulas na grade do Painel de Administração [!UICONTROL Orders] não retornam ordens correspondentes.
+* **ACP2E-5354** (para Adobe Commerce, B2B >=1.5.3 &lt;1.5.4) - Corrige o problema em que a atualização de um cliente por meio da API REST faz com que um cliente associado a uma conta da empresa apareça várias vezes na grade de Administração [!UICONTROL Customers].
+* **ACP2E-5208** (para Adobe Commerce, B2B >=1.5.1 &lt;1.5.4) - Corrige o problema em que a seção [!UICONTROL Requisition List] é recarregada em cada navegação de página da Storefront, mesmo quando nenhuma alteração é feita.
+* Versões atualizadas: **ACP2E-4894**
+* Patches substituídos: **ACP2E-4626**
 
 ## v1.1.84 {#v1-1-84}
 
@@ -136,7 +153,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **ACP2E-4156** (para Adobe Commerce e Magento Open Source >=2.4.8 &lt;2.4.9) - Corrige o problema em que a validação do endereço de entrega na API REST não adere à configuração de atributo definida em Administração.
 * **ACP2E-4813** (para Adobe Commerce e Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - Corrige o problema em que os métodos de envio do USPS não estão disponíveis no check-out e as estimativas de envio estão incorretas para determinados produtos, incluindo pedidos divididos em vários pacotes.
 * **ACSD-53502** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.6) - Corrige o problema em que Adicionar ao carrinho falha intermitentemente na loja do iOS Safari devido a chamadas recursivas para o script de monitoramento do New Relic, causando recarregamentos de página.
-* Versões atualizadas: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686**, **,** ACP2E-4402 **,** ACP2E-4505 **,** ACP2E-4603 **,** ACP2E-4706 **&#x200B;**
+* Versões atualizadas: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686**, **,** ACP2E-4402 **,** ACP2E-4505 **,** ACP2E-4603 **,** ACP2E-4706 ****
 * Patches substituídos: **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
@@ -759,7 +776,7 @@ O [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) forn
 * **ACSD-54776** (para Adobe Commerce >=2.4.5 &lt;2.4.7) - Corrige o problema em que valores de campo de produto desmarcados *[!UICONTROL Use Default Value]* e não padrão não são salvos no segundo modo de exibição de site, loja e loja.
 * **ACSD-53998** (para Adobe Commerce e Magento Open Source >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.7) - Corrige o problema em que um **[!UICONTROL Dynamic Block]** baseado em um **[!UICONTROL Customer Segment]** não funciona corretamente depois de sair de uma conta de cliente.
 * **ACSD-53204** (para Adobe Commerce e Magento Open Source >=2.4.6 &lt;2.4.7) - Correções *O produto não pode ser salvo.* erro ao fazer solicitações simultâneas para adicionar imagens à galeria de produtos usando o ponto de extremidade `rest/V1/products/<sku>/media`.
-* **ACSD-47657** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Adição de um mecanismo de cache para credenciais AWS. Um provedor de credenciais agora usa o cache do Magento para armazenar em cache credenciais recuperadas do AWS para configuração EC2.
+* **ACSD-47657** (para Adobe Commerce e Magento Open Source >=2.4.4 &lt;2.4.7) - Adição de um mecanismo de cache para credenciais AWS. Um provedor de credenciais agora usa o cache da Magento para armazenar em cache credenciais recuperadas do AWS para configuração EC2.
 * Patches atualizados: ACSD-51984, ACSD-51574.
 
 ## v1.1.38 {#v1-1-38}
