@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-badgePaas: label="Commerce na nuvem" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce na nuvem."
+badgePaas: label="Commerce na nuvem" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce na nuvem."
 source-git-commit: f1894f3a95e38f64affff0769e80557fe0b4a4d7
 workflow-type: tm+mt
 source-wordcount: '1201'
@@ -403,7 +403,7 @@ A Adobe fornece um conjunto de serviços para o provisionamento, o desenvolvimen
 
 A pilha de segurança do Adobe para Managed Services cria segurança em todos os níveis, usando automação e consistência para reduzir erros humanos. As equipes de desenvolvimento e operações herdam automaticamente os controles de segurança de diferentes níveis da pilha.
 
-Parceiros de plataforma, como Amazon Web Services e Microsoft Azure, garantem a máxima cobertura de segurança ao aplicar personalizações de plataforma, enquanto a equipe Managed Services da Adobe fornece serviços essenciais de segurança, como conformidade, registro, autenticação, verificação e monitoramento, segurança do servidor e configuração de aplicativos seguros. Consulte [Segurança do Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) para obter mais informações.
+Parceiros de plataforma, como Amazon Web Services e Microsoft Azure, garantem a máxima cobertura de segurança ao aplicar personalizações de plataforma, enquanto a equipe Managed Services da Adobe fornece serviços essenciais de segurança, como conformidade, registro, autenticação, verificação e monitoramento, segurança do servidor e configuração de aplicativos seguros. Consulte [Segurança do Adobe Commerce](https://business.adobe.com/br/products/magento/secure-ecommerce.html) para obter mais informações.
 
 O diagrama a seguir mostra a pilha da tecnologia de segurança do Adobe Managed Services:
 
