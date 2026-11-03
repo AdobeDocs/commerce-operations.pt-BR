@@ -1,8 +1,8 @@
 ---
-source-git-commit: 20f6d0f674fed8844b8d3160cea705648003845c
+source-git-commit: 5fdb263426174cb95808b21ec3dc527367ba3b31
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 20%
+source-wordcount: '259'
+ht-degree: 18%
 ---
 # Disponibilidade do produto das extensões criadas pela Adobe
 
@@ -97,6 +97,19 @@ ht-degree: 20%
           <td>
               <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/install">Compositor</a><br/>
               <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/release-notes">Notas de versão</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Enriquecimento do catálogo</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
+          <td>não suportado</td>
+          <td>não suportado</td>
+          <td>não suportado</td>
+          <td>
+              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment">Compositor</a><br/>
+              <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes">Notas de versão</a><br/>
           </td>
       </tr>
       <tr>
