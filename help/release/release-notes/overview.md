@@ -27,14 +27,14 @@ A tabela abaixo fornece notas de versão e informações importantes para produt
 
 **Notas de versão para outros produtos:**
 
-- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes)
-- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes)
+- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes)
+- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/release-notes)
 
 >[!ENDSHADEBOX]
 
 >[!TIP]
 >
->- Se você é novo no Adobe Commerce, consulte os tópicos [arquitetura corporativa](../../implementation-playbook/architecture/enterprise-blueprint.md) e [sobre o Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) para obter orientação.
+>- Se você é novo no Adobe Commerce, consulte os tópicos [arquitetura corporativa](../../implementation-playbook/architecture/enterprise-blueprint.md) e [sobre o Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/about) para obter orientação.
 >- Para obter informações sobre atualizações, consulte [leitura recomendada](../../upgrade/resources/recommended-reading.md).
 
 <table>
@@ -49,17 +49,17 @@ A tabela abaixo fornece notas de versão e informações importantes para produt
             <li><a href="../lifecycle-policy.md">Política de ciclo de vida do software</a></li>
             <li><a href="../security-enforcement-policy.md">Aviso de segurança e conformidade</a></li>
             <li><a href="https://www.adobe.com/trust/security/bulletins-and-advisories.html">Boletins e conselhos de segurança do Adobe</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B para Adobe Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=pt-BR">B2B para Adobe Commerce</a></li>
           </ul>
         </td>
       <td><strong>Adobe Commerce na infraestrutura em nuvem</strong>
         <p>Saiba mais sobre as últimas melhorias nos pacotes do Cloud Suite for Adobe Commerce, que foram projetados para implantar e gerenciar instalações e atualizações do Adobe Commerce na plataforma de nuvem.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">Alterações incompatíveis com versões anteriores</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Patches da nuvem para o Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">Cloud Docker para Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">Componentes na nuvem do Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
+            <li><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">Alterações incompatíveis com versões anteriores</a></li>
+            <li><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Patches da nuvem para o Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">Cloud Docker para Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">Componentes na nuvem do Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
           </ul>
       </td>
     </tr>
@@ -71,12 +71,12 @@ A tabela abaixo fornece notas de versão e informações importantes para produt
             <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes">Serviço de catálogo</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes">Live Search</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes">Payment Services</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">Integração do AEM Assets para Commerce/a&gt;</li>
+            <li><a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/release-notes">Integração do AEM Assets para Commerce/a&gt;</li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes">Recomendações de produto</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Serviço de exportação de dados SaaS</a></li>
+            <li><a href="https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/release-notes">Serviço de exportação de dados SaaS</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas">Commerce Services Connector</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes">Commerce Optimizer Connector</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/release-notes">Commerce Optimizer Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/release-notes">Experience Platform Connector</a></li>
           </ul>
         </td>
       <td><strong>Ferramentas</strong>
@@ -97,7 +97,7 @@ A tabela abaixo fornece notas de versão e informações importantes para produt
         <p>Saiba mais sobre as últimas melhorias na tecnologia de vitrine eletrônica que você pode usar para construir experiências exclusivas para seus clientes.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/"">Adobe Commerce Storefront</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=pt-BR">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>
