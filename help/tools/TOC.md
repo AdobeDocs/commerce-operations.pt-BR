@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
+source-git-commit: ea5f12bca7e8a3969ffa775d6a675a224f08155f
 workflow-type: tm+mt
-source-wordcount: '11112'
+source-wordcount: '11124'
 ht-degree: 0%
 ---
 
@@ -417,7 +417,7 @@ ht-degree: 0%
     - v1.1.33 {#v1-1-33}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
       - [ACSD-51792: a página não tem evento de impressão](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
-      - [ACSD-51645: Salvando uma nova Regra de Preço do Carrinho se a extensão Magento_OfflineShipping estiver desativada](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
+      - [ACSD-51645: Salvar uma nova Regra de preço do carrinho se a extensão Magento_OfflineShipping estiver desativada](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
       - [ACSD-51240: arquivo carregado ausente durante o registro por meio do formulário de registro da empresa](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51240-uploaded-file-missing-while-registering-via-company-registration-form.md)
       - [ACSD-51907: O usuário administrador restrito não pode criar aviso de crédito para reembolso offline](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51907-restricted-admin-user-cannot-create-a-credit-memo-with-an-offline-refund.md)
       - [ACSD-51892: problema de desempenho em que os arquivos de configuração são carregados várias vezes](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md)
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875: Usuários administradores desconectados ao abrir contas de clientes com catálogos de endereços grandes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-5205: Catálogos grandes causam carregamento lento de categoria e tempos limite no Administrador](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205.md)
       - [ACP2E-4908: Catálogos grandes causam uso excessivo de memória Redis ou Valkey](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908.md)
       - [AC-17975: problemas de compatibilidade do PHP 8.5 afetam comandos CLI, edição de categoria, configuração de design e login do cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)
       - [AC-16530: O carrinho de compras mostra preços inconsistentes após uma atualização programada da regra de preço do catálogo](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)
