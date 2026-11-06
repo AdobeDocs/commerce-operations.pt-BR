@@ -32,9 +32,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4e0c8bca6f53821914bf40481eb0cee7ededa411
+source-git-commit: 49785473e0154e72e675b54f9d8119460c53bd8c
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '276'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.81
@@ -46,7 +46,7 @@ O QPT v1.1.81 inclui os seguintes patches:
 
 1. **[ACP2E-4401](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)**: corrige o problema em que o [!UICONTROL Scheduled Update Preview] do [!UICONTROL Home Page] link com produtos configuráveis redireciona para o [!UICONTROL maintenance page] em vez de exibir a lista de produtos.
 1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**: corrige o problema em que alterar um grupo de clientes no Administrador não atualiza as permissões de catálogo na loja, fazendo com que o catálogo e o carrinho reflitam permissões desatualizadas.
-1. **[ACP2E-4395](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)**: a criação do produto Giftcard API agora exibirá um erro se nenhum valor for especificado para o escopo global.
+1. **[ACP2E-4395](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)**: corrige o problema em que a criação do produto API de Cartão-presente não exibe um erro quando nenhum valor é especificado para o escopo global.
 1. **[ACP2E-4468](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)**: corrige o problema em que os usuários administradores com permissões de escopo de site não podem editar conteúdo de banner.
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: corrige o problema em que nomes longos de produtos com opções personalizadas se sobrepõem a colunas ou itens adjacentes em PDFs de várias páginas de Fatura, Remessa, Aviso de Crédito e Devolução após quebras de página, tornando os itens de linha ilegíveis.
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: corrige o problema em que produtos não vendáveis ou excluídos desaparecem das cotações negociáveis finalizadas.
