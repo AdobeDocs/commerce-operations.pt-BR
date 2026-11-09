@@ -1,14 +1,13 @@
 ---
-source-git-commit: 68e483f3ff751d51b8cdd795a76b35b8141f1416
+source-git-commit: 114e203ce1226139cf2d31b758329ccd8a00205c
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '39'
 ht-degree: 0%
-
 ---
 # Novidades das práticas recomendadas
 
 ## Novidades nas práticas recomendadas de implementação
 
-Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+Esta página contém as alterações feitas nos últimos 60 dias. Pequenas atualizações, como edição de cópia, são excluídas desta lista.
 
 __Nenhuma atualização significativa da documentação até o momento.__
