@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: ea5f12bca7e8a3969ffa775d6a675a224f08155f
+source-git-commit: c60a79bd95f2378541498961025c3ba838d15358
 workflow-type: tm+mt
-source-wordcount: '11124'
+source-wordcount: '11139'
 ht-degree: 0%
 ---
 
@@ -1080,6 +1080,7 @@ ht-degree: 0%
       - [AC-12854: A reordenação do administrador usa o número do pedido original com um sufixo -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5041: Salvar um formulário de produto obsoleto expira o preço especial após uma atualização programada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)
       - [ACP2E-5183: Falha na implantação de conteúdo estático no PHP 8.5 com `@magento_import`](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
       - [AC-15494: a consulta de produtos do GraphQL retorna nomes de produtos com escape do HTML](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
       - [ACP2E-5242: O GraphQL usa a ID da loja como a ID do site durante solicitações de adição ao carrinho](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
