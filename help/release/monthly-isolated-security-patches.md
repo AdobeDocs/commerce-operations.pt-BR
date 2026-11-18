@@ -33,9 +33,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 66d7c9fd19785e791635d8e8bdf3d6ff3aa27a20
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1570'
 ht-degree: 0%
 ---
 # Política de patch de segurança isolada mensal
@@ -78,13 +78,13 @@ Para aplicar o arquivo de patch de segurança isolado mensalmente e manter-se at
 
    Novos arquivos de patch isolados mensais são enviados de acordo com a programação de lançamento. Revise o boletim de segurança correspondente para os componentes e CVEs afetados. Cada boletim está vinculado às notas de versão com instruções passo a passo para instalar o arquivo de patch isolado desse mês.
 
-1. **Verifique o status de segurança da instalação do Commerce usando a [Ferramenta de Versão do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/commerce-version-tool/intro).**
+1. **Verifique o status de segurança da instalação do Commerce usando a [Ferramenta de Versão do Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro).**
 
    A ferramenta relata quais patches mensais estão instalados no momento, quais estão ausentes e a quais CVEs a instalação permanece exposta. Isso fornece uma avaliação definitiva de qual ação é necessária, em vez de depender apenas do número da versão.
 
 1. **Confirme sua versão da linha de base.**
 
-   Os patches isolados só são testados na versão `-p` somente de segurança mais recente para a sua linha. Se você estiver atrasado em relação a essa linha de base, aplique-a primeiro.
+   Os patches isolados só são testados na versão `-p` somente de segurança mais recente para a sua linha. Se você estiver atrasado em relação a essa linha de base, aplique-a primeiro. Consulte o [exemplo de atualização de patch de segurança](../upgrade/implementation/perform-upgrade.md#example---security-patch) para obter instruções sobre como especificar uma versão de patch de segurança durante uma atualização.
 
 1. **Aplicar todos os patches ausentes em ordem.**
 
@@ -92,7 +92,7 @@ Para aplicar o arquivo de patch de segurança isolado mensalmente e manter-se at
 
    >[!NOTE]
    >
-   >**Clientes da nuvem:** verifique primeiro os Patches da nuvem instalados para a [versão](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) do Commerce. A correção pode já estar incluída e aplicá-la manualmente pode criar um conflito ou duplicar a correção.
+   >**Clientes da nuvem:** verifique primeiro os Patches da nuvem instalados para a [versão](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) do Commerce. A correção pode já estar incluída e aplicá-la manualmente pode criar um conflito ou duplicar a correção.
 
 1. **Corresponder arquivos aos componentes instalados.**
 
@@ -106,7 +106,7 @@ Para aplicar o arquivo de patch de segurança isolado mensalmente e manter-se at
 
    Valide no preparo antes de promover para produção, de acordo com o processo normal de alteração.
 
-Os clientes da nuvem também podem usar a [Automação de patch do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/caps-tool/intro) para aplicar ou reverter patches por meio do painel do Administrador, em vez das etapas manuais do Git e do Composer acima.
+Os clientes da nuvem também podem usar a [Automação de patch do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro) para aplicar ou reverter patches por meio do painel do Administrador, em vez das etapas manuais do Git e do Composer acima.
 
 ## Ações de patch por tipo de implantação
 
@@ -131,7 +131,7 @@ Em uma instalação com vários componentes — CE, EE, B2B e Page Builder — u
 
 ### Com patches em camadas, como sei em que estado de segurança minha instalação está?
 
-Com o lançamento de patches de segurança mensais, a Adobe Commerce apresentou a [Ferramenta de Versão do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/tools/commerce-version-tool/intro), um utilitário autônomo que relata quais patches estão instalados ou ausentes e quais CVEs sua instalação está protegida. Em vez de depender dos números de versão, a ferramenta lê os metadados de patch e fornece saída legível por máquina para relatórios e integração contínua (CI).
+Com o lançamento de patches de segurança mensais, a Adobe Commerce apresentou a [Ferramenta de Versão do Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro), um utilitário autônomo que relata quais patches estão instalados ou ausentes e quais CVEs sua instalação está protegida. Em vez de depender dos números de versão, a ferramenta lê os metadados de patch e fornece saída legível por máquina para relatórios e integração contínua (CI).
 
 ### Isso significa que a Adobe saiu das versões cumulativas de segurança?
 
@@ -149,4 +149,4 @@ Não. O mecanismo de entrega não afeta o resultado de segurança da correção.
 >* [Política de versão](versioning-policy.md)
 >* [Cronograma de lançamento de patches](schedule.md)
 >* [Ferramenta de Versão do Commerce](../tools/commerce-version-tool/intro.md)
->* [Boletins e conselhos de segurança do Adobe](https://helpx.adobe.com/br/security/security-bulletin.html)
+>* [Boletins e conselhos de segurança do Adobe](https://helpx.adobe.com/security/security-bulletin.html)
