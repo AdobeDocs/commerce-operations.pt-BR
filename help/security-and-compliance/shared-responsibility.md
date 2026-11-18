@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3286'
 ht-degree: 0%
 ---
 # Segurança de responsabilidade compartilhada e modelo operacional
@@ -85,7 +85,7 @@ A Adobe também garante a disponibilidade da infraestrutura do comerciante, conf
 O comerciante é responsável por seguir as práticas recomendadas de segurança para a instância personalizada da solução Adobe Commerce na infraestrutura em nuvem:
 
 * Adicionar o Adobe Commerce necessário nos arquivos de configuração da infraestrutura em nuvem ao repositório
-* Aplicar patches de segurança e outros à solução personalizada Adobe Commerce on cloud infrastructure imediatamente após o lançamento pela Adobe
+* Aplicar patches de segurança e outros à solução personalizada Adobe Commerce na infraestrutura em nuvem imediatamente após o lançamento pela Adobe. Para obter arquivos de patch de segurança individuais, consulte [Como aplicar um patch de compositor fornecido pelo Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) no _Guia de Ferramentas e Suporte da Adobe_.
 * Aplicação de patches de segurança e outros a todas as extensões e códigos personalizados imediatamente após o lançamento pelo fornecedor
 * Criação, implantação e teste de arquivos personalizados de VCL do Varnish
 * Projetar, criar temas, instalar, integrar e proteger a solução personalizada do Adobe Commerce na infraestrutura em nuvem, incluindo todas as extensões e códigos personalizados
@@ -979,4 +979,3 @@ A coleção de eventos da loja aumenta a qualidade das Recomendações de produt
 | Monitoramento do uso da vCPU em relação aos limites | R |   |
 
 {style="table-layout:auto"}
-

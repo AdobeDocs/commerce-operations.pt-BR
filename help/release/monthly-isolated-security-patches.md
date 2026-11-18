@@ -33,9 +33,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 66d7c9fd19785e791635d8e8bdf3d6ff3aa27a20
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1570'
 ht-degree: 0%
 ---
 # Política de patch de segurança isolada mensal
@@ -84,7 +84,7 @@ Para aplicar o arquivo de patch de segurança isolado mensalmente e manter-se at
 
 1. **Confirme sua versão da linha de base.**
 
-   Os patches isolados só são testados na versão `-p` somente de segurança mais recente para a sua linha. Se você estiver atrasado em relação a essa linha de base, aplique-a primeiro.
+   Os patches isolados só são testados na versão `-p` somente de segurança mais recente para a sua linha. Se você estiver atrasado em relação a essa linha de base, aplique-a primeiro. Consulte o [exemplo de atualização de patch de segurança](../upgrade/implementation/perform-upgrade.md#example---security-patch) para obter instruções sobre como especificar uma versão de patch de segurança durante uma atualização.
 
 1. **Aplicar todos os patches ausentes em ordem.**
 

@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1300'
 ht-degree: 0%
 ---
 # Práticas recomendadas para responder a um incidente de segurança
@@ -47,7 +47,7 @@ Se você suspeitar que seu projeto do Adobe Commerce na infraestrutura em nuvem 
 - Auditoria de acesso a todas as contas de usuários administradores
 - Habilitar controles avançados de autenticação multifator (MFA)
 - Preservar registros críticos
-- Revise as atualizações de segurança para sua versão do Adobe Commerce.
+- Revise as [notas de versão do patch de segurança](../../../release/release-notes/security/overview.md) para sua versão do Adobe Commerce e aplique os patches de segurança necessários.
 
 Mais recomendações são detalhadas abaixo.
 
