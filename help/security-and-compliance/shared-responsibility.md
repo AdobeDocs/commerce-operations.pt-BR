@@ -40,7 +40,7 @@ Os comerciantes são responsáveis pelo seguinte:
 * Garantia de desenvolvimento seguro de aplicativos
 * Obter a certificação PCI, se solicitado pelo processador de pagamento do comerciante
 * Reagir e responder a incidentes de segurança
-* Manutenção de todas as dependências de terceiros, serviços de plataforma e extensões dos Serviços da Adobe Commerce em versões que têm suporte ativo. A Adobe não fornece suporte ou assistência de segurança para implantações que executam versões de dependências não compatíveis. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) e a [Matriz de disponibilidade do produto](/help/release/product-availability.md) para obter as versões com suporte.
+* Manutenção de todas as dependências de terceiros, serviços de plataforma e extensões dos Serviços da Adobe Commerce em versões que têm suporte ativo. A Adobe não fornece suporte ou assistência de segurança para implantações que executam versões de dependências não compatíveis. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) e a [Matriz de disponibilidade do produto](/help/release/product-availability.md) para obter as versões com suporte.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ A Adobe também garante a disponibilidade da infraestrutura do comerciante, conf
 O comerciante é responsável por seguir as práticas recomendadas de segurança para a instância personalizada da solução Adobe Commerce na infraestrutura em nuvem:
 
 * Adicionar o Adobe Commerce necessário nos arquivos de configuração da infraestrutura em nuvem ao repositório
-* Aplicar patches de segurança e outros à solução personalizada Adobe Commerce na infraestrutura em nuvem imediatamente após o lançamento pela Adobe. Para obter arquivos de patch de segurança individuais, consulte [Como aplicar um patch de compositor fornecido pelo Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) no _Guia de Ferramentas e Suporte da Adobe_.
+* Aplicar patches de segurança e outros à solução personalizada Adobe Commerce na infraestrutura em nuvem imediatamente após o lançamento pela Adobe. Para obter arquivos de patch de segurança individuais, consulte [Como aplicar um patch de compositor fornecido pelo Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) no _Guia de Ferramentas e Suporte da Adobe_.
 * Aplicação de patches de segurança e outros a todas as extensões e códigos personalizados imediatamente após o lançamento pelo fornecedor
 * Criação, implantação e teste de arquivos personalizados de VCL do Varnish
 * Projetar, criar temas, instalar, integrar e proteger a solução personalizada do Adobe Commerce na infraestrutura em nuvem, incluindo todas as extensões e códigos personalizados
@@ -112,7 +112,7 @@ O comerciante é responsável por seguir as práticas recomendadas de segurança
   * Extensões do Adobe Commerce Services
   * Todas as extensões de terceiros e integrações personalizadas
 
-  A Adobe não fornece suporte para implantações que executam versões não compatíveis. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) e a [Matriz de disponibilidade do produto](/help/release/product-availability.md) para obter as versões com suporte.
+  A Adobe não fornece suporte para implantações que executam versões não compatíveis. Consulte [Requisitos do sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=pt-BR) e a [Matriz de disponibilidade do produto](/help/release/product-availability.md) para obter as versões com suporte.
 
 ## Responsabilidades do provedor de serviços em nuvem
 
