@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 22c0b3cac685762f9c0d36f225a418a07ed5e1db
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # Instalação de início rápido local
@@ -102,7 +102,7 @@ Para obter o metappackage do Adobe Commerce:
 
    >[!NOTE]
    >
-   > Se você usar um arquivo do Composer `[auth.json](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/authentication-keys)` ou uma variável de ambiente configurada com suas chaves de autenticação da Commerce, não será solicitado a inserir chaves de autenticação.
+   > Se você usar um arquivo do Composer [`auth.json`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) ou uma variável de ambiente configurada com suas chaves de autenticação da Commerce, não será solicitado a inserir chaves de autenticação.
 
    Se você encontrar erros, como `Could not find package...` ou `...no matching package found`, verifique se não há erros de digitação no comando. Se ainda encontrar erros, talvez você não esteja autorizado a baixar o Adobe Commerce. Contate o [Suporte da Adobe Commerce](https://support.magento.com/hc/en-us) para obter ajuda.
 
