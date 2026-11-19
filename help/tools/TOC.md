@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 73b32dcbf7f306d5b98277ff757e8e9b2eb4f0fa
+source-git-commit: d8a15da2f255c5cac40003ea677e49c5d288d36d
 workflow-type: tm+mt
-source-wordcount: '11161'
+source-wordcount: '11174'
 ht-degree: 0%
 ---
 
@@ -1089,6 +1089,7 @@ ht-degree: 0%
       - [ACP2E-5263: A exportação de produtos CSV é interrompida antecipadamente e omite produtos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
       - [ACP2E-5009: A migração de Preparo de Conteúdo cria atualizações inválidas e reduz a instalação:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
       - [ACP2E-5005: Quantidades de produtos do pacote não são atualizadas em Cotações negociáveis do administrador](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
+      - [ACP2E-5029: As alterações da Regra de Preço do Catálogo não são sincronizadas com os feeds de preço do Live Search](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5029.md)
       - [ACP2E-5127: Salvar uma empresa com uma localidade Admin que não seja em inglês redefine o Limite de Crédito para zero](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)
       - [ACP2E-5079: Os segmentos do cliente correspondem somente ao primeiro site com compartilhamento de conta global](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)
       - [ACP2E-5059: Os trabalhos cron simultâneos enviam emails de confirmação de pedido duplicados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
