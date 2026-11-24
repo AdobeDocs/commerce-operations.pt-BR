@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: eb417e7d25291df12e4b35e4e581e3771cd9c55b
+source-git-commit: 50215e62371db397c96f9dbd2ff2b9a26ef3a131
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Esta subseção fornece uma descrição detalhada dos problemas corrigidos pelos
 
 O QPT v1.1.86 inclui os seguintes patches:
 
-1. **ACP2E-3094**: Corrige o problema em que visualizar ou editar **[!UICONTROL Category Permissions]** para uma categoria com muitas permissões pode fazer com que o navegador pare de responder.
+1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**: Corrige o problema em que visualizar ou editar **[!UICONTROL Category Permissions]** para uma categoria com muitas permissões pode fazer com que o navegador pare de responder.
 1. **ACP2E-5046**: corrige o problema em que atualizar a página ao criar um pedido no Administrador adiciona a mesma SKU várias vezes.
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**: Corrige o problema no qual a exibição ou o salvamento de uma RMA no Administrador não exibe o número da RMA no relatório **[!UICONTROL Action Logs]**.
 1. **ACP2E-5057**: corrige o problema em que [!DNL GraphQL] consultas de produtos de pacotes retornam preços de opções de pacotes globais em vez de preços específicos de sites quando **[!UICONTROL Catalog Price Scope]** está definido como **[!UICONTROL Website]**.
