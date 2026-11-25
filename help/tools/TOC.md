@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 86872648c372158143f5bbe707ba7a3f15552bc3
+source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
 workflow-type: tm+mt
-source-wordcount: '11234'
+source-wordcount: '11262'
 ht-degree: 0%
 ---
 
@@ -417,7 +417,7 @@ ht-degree: 0%
     - v1.1.33 {#v1-1-33}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.33](quality-patches-tool/patches-available-in-qpt/v1-1-33/overview.md)
       - [ACSD-51792: a página não tem evento de impressão](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51792-page-does-not-have-impression-event.md)
-      - [ACSD-51645: Salvar uma nova Regra de preço do carrinho se a extensão Magento_OfflineShipping estiver desativada](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
+      - [ACSD-51645: Salvando uma nova Regra de Preço do Carrinho se a extensão Magento_OfflineShipping estiver desativada](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51645-saving-a-new-cart-price-rule-if-the-extension-magento-offlineshipping-is-disabled.md)
       - [ACSD-51240: arquivo carregado ausente durante o registro por meio do formulário de registro da empresa](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51240-uploaded-file-missing-while-registering-via-company-registration-form.md)
       - [ACSD-51907: O usuário administrador restrito não pode criar aviso de crédito para reembolso offline](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51907-restricted-admin-user-cannot-create-a-credit-memo-with-an-offline-refund.md)
       - [ACSD-51892: problema de desempenho em que os arquivos de configuração são carregados várias vezes](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.md)
@@ -1102,6 +1102,8 @@ ht-degree: 0%
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - v1.1.86 {#v1-1-86}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5134: A remoção do produto empacotado do Catálogo Compartilhado deixa o pacote no carrinho e causa erros na finalização](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
+      - [ACP2E-5118: a pré-visualização do Page Builder não é renderizada quando o cache de traduções está desativado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061: A regra de merchandising Categoria não pode combinar condições AND com uma condição que corresponde a vários valores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
       - [ACP2E-5046: Atualizando a página ao criar um pedido no Administrador adiciona a mesma SKU várias vezes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)
       - [ACP2E-3094: Exibir ou editar Permissões de Categoria para categoria com muitas permissões causa falha de resposta do navegador](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)
