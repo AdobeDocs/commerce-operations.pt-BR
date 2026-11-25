@@ -4,7 +4,7 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 86872648c372158143f5bbe707ba7a3f15552bc3
+source-git-commit: 8070923142c6b28c5e34d47200d2f8995aae5dcb
 workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 0%
@@ -23,7 +23,7 @@ O QPT v1.1.86 inclui os seguintes patches:
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: corrige o problema em que uma regra de merchandising de categoria não pode combinar condições AND com uma condição que corresponde a qualquer um dos vários valores.
 1. **ACP2E-5071**: corrige o problema em que a mensagem de indisponibilidade de estoque nem sempre é exibida na página do produto quando o carrinho do comprador já contém a quantidade total disponível.
 1. **ACP2E-5094**: corrige o problema em que os carregamentos de página são significativamente mais lentos quando uma variável de ambiente `MAGENTO_DC_*` é definida.
-1. **ACP2E-5118**: corrige o problema em que a visualização do [!DNL Page Builder] não é renderizada quando o cache do **[!UICONTROL Translations]** está desabilitado.
+1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: corrige o problema em que a visualização do [!DNL Page Builder] não é renderizada quando o cache do **[!UICONTROL Translations]** está desabilitado.
 1. **ACP2E-5134**: corrige o problema em que a remoção do produto componente de um pacote do [!UICONTROL Shared Catalog] de uma empresa deixa o produto de pacote no carrinho de compras, causando um erro no carrinho e durante o check-out.
 1. **ACP2E-5146**: corrige o problema em que um usuário Administrador restrito a sites específicos não pode excluir clientes quando um cliente em outro site tem a mesma ID que o usuário Administrador.
 1. **ACP2E-5176**: corrige o problema em que eventos de comércio eletrônico enviados para [!DNL Google Analytics 4] por meio de [!DNL Google Tag Manager] usam o formato [!DNL Universal Analytics] e omitem vários eventos de check-out.
