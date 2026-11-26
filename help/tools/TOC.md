@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '11262'
+source-wordcount: '11345'
 ht-degree: 0%
 ---
 
@@ -1100,8 +1100,13 @@ ht-degree: 0%
       - [ACP2E-4741: Salvar um produto vinculado oculta outro produto da loja com estoque personalizado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - v1.1.85 {#v1-1-85}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+      - [ACP2E-3991: O endereço IP do cliente não foi determinado corretamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)
+      - [ACP2E-4929: Os rótulos de atributo na página Comparar Produtos exibem traduções de uma visualização de loja diferente em vez da atual](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5245: O novo cliente usa o mesmo endereço para remessa e faturamento na primeira ordem vê o endereço listado duas vezes na finalização da compra](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
+      - [ACP2E-3752: A importação de produto lança um erro de chave de matriz indefinido quando muitas operações de importação são executadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
+      - [ACP2E-4973: Alternar do Delivery na Loja para outro método de delivery não limpa o endereço da loja do carrinho](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
       - [ACP2E-5134: A remoção do produto empacotado do Catálogo Compartilhado deixa o pacote no carrinho e causa erros na finalização](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
       - [ACP2E-5118: a pré-visualização do Page Builder não é renderizada quando o cache de traduções está desativado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061: A regra de merchandising Categoria não pode combinar condições AND com uma condição que corresponde a vários valores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
