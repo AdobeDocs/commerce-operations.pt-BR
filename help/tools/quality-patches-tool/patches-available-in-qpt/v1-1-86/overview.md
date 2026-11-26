@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: 22769f702de10db88f28a5d4218a4f4c5d91cf0a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '639'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -29,13 +29,13 @@ O QPT v1.1.86 inclui os seguintes patches:
 1. **ACP2E-5176**: corrige o problema em que eventos de comércio eletrônico enviados para [!DNL Google Analytics 4] por meio de [!DNL Google Tag Manager] usam o formato [!DNL Universal Analytics] e omitem vários eventos de check-out.
 1. **ACP2E-5185**: corrige o problema em que mover uma categoria na árvore de categorias exibe o erro `There was a category move error` ou demora vários minutos para ser concluído quando o repositório tem muitas regravações de URL.
 1. **ACP2E-4191**: corrige o problema em que determinadas solicitações da API REST entram em um loop infinito quando o cache do **[!UICONTROL EAV types and attributes]** está desabilitado.
-1. **ACP2E-4973**: Corrige o problema no qual a alternância de **[!UICONTROL In-Store Delivery]** para outro método de entrega não limpa o endereço de armazenamento associado do carrinho.
+1. **[ACP2E-4973](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)**: corrige o problema em que a alternância da Entrega na Loja para outro método de entrega não limpa o endereço da loja associado do carrinho.
 1. **ACP2E-5221**: corrige o problema em que o indexador **[!UICONTROL Catalog Product Permissions]** demora significativamente mais quando o **[!UICONTROL Quick Order]** é habilitado em instalações com muitas lojas e grupos de clientes.
-1. **ACP2E-5245**: corrige o problema em que um cliente recém-registrado que usa o mesmo endereço para remessa e cobrança em seu primeiro pedido vê esse endereço listado duas vezes durante o próximo check-out.
+1. **[ACP2E-5245](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)**: corrige o problema em que um cliente recém-registrado que usa o mesmo endereço para remessa e cobrança em seu primeiro pedido vê esse endereço listado duas vezes durante o próximo check-out.
 1. **ACP2E-5248**: Corrige o problema em que usuários Administradores sem a permissão **[!UICONTROL Edit Product Status]** veem o erro de descontinuação `null as array offset` ao abrir a página **[!UICONTROL Add Product]** em [!DNL PHP] 8.5.
 1. **ACP2E-5254**: corrige o problema em que os produtos adicionados a uma lista de requisições não aparecem quando um cliente abre a lista até que o cache seja limpo.
 1. **ACP2E-5268**: corrige o problema em que a criação de um produto configurável falha quando **[!UICONTROL Enable Frontend Resize]** está definido como **[!UICONTROL No]**.
-1. **ACP2E-3752**: corrige o problema em que o processamento de importação de produtos gera o erro `Undefined array key "apply_to"` quando muitas operações de importação de produtos são criadas.
+1. **[ACP2E-3752](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)**: corrige o problema em que o processamento de importação de produtos gera o erro *Aviso: Chave de matriz indefinida &quot;apply_to&quot;* quando muitas operações de importação de produtos são criadas.
 1. **ACP2E-5280**: corrige o problema em que os clientes encontram um erro ao entrar enquanto o **[!UICONTROL Category Permissions]** está habilitado.
 1. **ACP2E-5295**: corrige o problema em que a reindexação paralela de preços de produtos falha com o erro `Fail in child process` quando executada após o indexador **[!UICONTROL Inventory]** no mesmo processo.
 1. **ACP2E-5298**: corrige o problema em que os usuários administradores com acesso somente para visualização às regras de preço do carrinho podem gerar ou excluir códigos de cupom.
