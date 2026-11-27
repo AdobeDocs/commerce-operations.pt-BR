@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 22769f702de10db88f28a5d4218a4f4c5d91cf0a
+source-git-commit: f8cefa66cb9be57ac6441be28ee0898dbc4810f7
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '692'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -26,8 +26,10 @@ O QPT v1.1.86 inclui os seguintes patches:
 1. **[ACP2E-5134](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)**: corrige o problema em que a remoção de um produto incluído em um pacote do Catálogo Compartilhado de uma empresa deixa o produto do pacote no carrinho de compras e causa um erro no carrinho e durante o check-out.
 1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: corrige o problema em que a visualização do [!DNL Page Builder] não é renderizada quando o cache do **[!UICONTROL Translations]** está desabilitado.
 1. **ACP2E-5146**: corrige o problema em que um usuário Administrador restrito a sites específicos não pode excluir clientes quando um cliente em outro site tem a mesma ID que o usuário Administrador.
-1. **ACP2E-5176**: corrige o problema em que eventos de comércio eletrônico enviados para [!DNL Google Analytics 4] por meio de [!DNL Google Tag Manager] usam o formato [!DNL Universal Analytics] e omitem vários eventos de check-out.
+1. **[ACP2E-5176](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)**: corrige o problema em que eventos de comércio eletrônico enviados para o Google Analytics 4 por meio do Google Tag Manager usam o formato Universal Analytics e omitem vários eventos de check-out.
 1. **ACP2E-5185**: corrige o problema em que mover uma categoria na árvore de categorias exibe o erro `There was a category move error` ou demora vários minutos para ser concluído quando o repositório tem muitas regravações de URL.
+1. **[ACP2E-4191](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)**: corrige o problema em que determinadas solicitações da API REST entram em um loop infinito quando o cache de tipos e atributos de EAV está desabilitado.
+1. **ACP2E-4973**: Corrige o problema no qual a alternância de **[!UICONTROL In-Store Delivery]** para outro método de entrega não limpa o endereço de armazenamento associado do carrinho.
 1. **ACP2E-4191**: corrige o problema em que determinadas solicitações da API REST entram em um loop infinito quando o cache do **[!UICONTROL EAV types and attributes]** está desabilitado.
 1. **[ACP2E-4973](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)**: corrige o problema em que a alternância da Entrega na Loja para outro método de entrega não limpa o endereço da loja associado do carrinho.
 1. **ACP2E-5221**: corrige o problema em que o indexador **[!UICONTROL Catalog Product Permissions]** demora significativamente mais quando o **[!UICONTROL Quick Order]** é habilitado em instalações com muitas lojas e grupos de clientes.
