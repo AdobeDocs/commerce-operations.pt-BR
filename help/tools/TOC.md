@@ -4,9 +4,9 @@ user-guide-description: Saiba mais sobre as diferentes ferramentas que você pod
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '11345'
+source-wordcount: '11399'
 ht-degree: 0%
 ---
 
@@ -1104,6 +1104,9 @@ ht-degree: 0%
       - [ACP2E-4929: Os rótulos de atributo na página Comparar Produtos exibem traduções de uma visualização de loja diferente em vez da atual](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5071: A mensagem de indisponibilidade de estoque nem sempre é exibida na página do produto quando o carrinho do comprador contém a quantidade total disponível](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)
+      - [ACP2E-5176: Eventos de comércio eletrônico enviados para o Google Analytics 4 por meio do Google Tag Manager usam o formato do Universal Analytics e omitem eventos de check-out](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)
+      - [ACP2E-4191: As solicitações da API REST entram em loop infinito quando o cache de tipos e atributos EAV está desabilitado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)
       - [ACP2E-5245: O novo cliente usa o mesmo endereço para remessa e faturamento na primeira ordem vê o endereço listado duas vezes na finalização da compra](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
       - [ACP2E-3752: A importação de produto lança um erro de chave de matriz indefinido quando muitas operações de importação são executadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
       - [ACP2E-4973: Alternar do Delivery na Loja para outro método de delivery não limpa o endereço da loja do carrinho](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
