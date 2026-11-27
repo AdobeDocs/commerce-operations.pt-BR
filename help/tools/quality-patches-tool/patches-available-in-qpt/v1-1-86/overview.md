@@ -4,9 +4,9 @@ description: Esta subseção fornece uma descrição detalhada dos problemas cor
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f8cefa66cb9be57ac6441be28ee0898dbc4810f7
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '742'
 ht-degree: 0%
 ---
 # Visão geral: [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -20,6 +20,8 @@ O QPT v1.1.86 inclui os seguintes patches:
 1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**: Corrige o problema em que visualizar ou editar **[!UICONTROL Category Permissions]** para uma categoria com muitas permissões pode fazer com que o navegador pare de responder.
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**: Corrige o problema no qual a exibição ou o salvamento de uma RMA no Administrador não exibe o número da RMA no relatório **[!UICONTROL Action Logs]**.
 1. **ACP2E-5057**: corrige o problema em que [!DNL GraphQL] consultas de produtos de pacotes retornam preços de opções de pacotes globais em vez de preços específicos de sites quando **[!UICONTROL Catalog Price Scope]** está definido como **[!UICONTROL Website]**.
+1. **ACP2E-5061**: corrige o problema em que uma regra de merchandising de categoria não pode combinar as condições `AND` com uma condição que corresponde a qualquer um dos vários valores.
+1. **[ACP2E-5071](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)**: corrige o problema em que a mensagem de indisponibilidade de estoque nem sempre é exibida na página do produto quando o carrinho do comprador já contém a quantidade total disponível.
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: corrige o problema em que uma regra de merchandising de categoria não pode combinar condições AND com uma condição que corresponde a qualquer um dos vários valores.
 1. **ACP2E-5071**: corrige o problema em que a mensagem de indisponibilidade de estoque nem sempre é exibida na página do produto quando o carrinho do comprador já contém a quantidade total disponível.
 1. **ACP2E-5094**: corrige o problema em que os carregamentos de página são significativamente mais lentos quando uma variável de ambiente `MAGENTO_DC_*` é definida.
